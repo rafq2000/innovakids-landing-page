@@ -139,6 +139,7 @@ export default function ComunaPage({ data }: ComunaPageProps) {
             <div className="fixed bottom-6 right-6 z-50">
                 <Button
                     size="lg"
+                    aria-label="Consultar por WhatsApp"
                     className="rounded-full w-16 h-16 bg-emerald-600 hover:bg-emerald-700 text-white shadow-2xl hover:shadow-3xl transition-all duration-300 animate-pulse hover:animate-none hover:scale-110 border-2 border-emerald-500"
                     onClick={() =>
                         window.open(

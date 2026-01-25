@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import {
@@ -287,11 +288,13 @@ export default function HomePage() {
                 <Card
                   className="hover:shadow-2xl transition-all duration-500 border border-slate-200 shadow-lg bg-white hover:-translate-y-2 h-full"
                 >
-                  <div className="relative overflow-hidden rounded-t-xl">
-                    <img
+                  <div className="relative overflow-hidden rounded-t-xl h-56">
+                    <Image
                       src={service.image || "/placeholder.svg"}
                       alt={service.title}
-                      className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     <div className="absolute top-4 left-4">
@@ -580,9 +583,11 @@ export default function HomePage() {
             </div>
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-slate-200 to-amber-200 rounded-2xl blur-2xl opacity-30"></div>
-              <img
+              <Image
                 src="/physiotherapist-elderly-exercise.png"
                 alt="Kinesiólogo profesional atendiendo paciente en casa"
+                width={600}
+                height={400}
                 className="relative rounded-2xl shadow-2xl w-full hover:shadow-3xl transition-shadow duration-500 border border-slate-200"
               />
             </div>
@@ -753,10 +758,12 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
             <Link href="/blog/neuroplasticidad-recuperacion-acv" className="group cursor-pointer block">
               <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-slate-100">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Recovery Science"
-                  className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute top-4 left-4">
                   <Badge className="bg-white/90 text-slate-900 backdrop-blur-sm shadow-sm">
@@ -777,10 +784,12 @@ export default function HomePage() {
 
             <Link href="/blog/ergonomia-home-office-guia-2024" className="group cursor-pointer block">
               <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-slate-100">
-                <img
+                <Image
                   src="/placeholder.svg?height=400&width=600"
                   alt="Ergonomics"
-                  className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute top-4 left-4">
                   <Badge className="bg-white/90 text-slate-900 backdrop-blur-sm shadow-sm">

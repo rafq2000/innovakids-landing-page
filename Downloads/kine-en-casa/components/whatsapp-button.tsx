@@ -31,6 +31,7 @@ export function WhatsAppButton() {
 
                 <Button
                     onClick={() => window.open("https://wa.me/56999679593?text=Hola, me interesa información sobre kinesiología premium", "_blank")}
+                    aria-label="Contactar por WhatsApp"
                     className={cn(
                         "relative h-14 pl-5 pr-6 rounded-full shadow-2xl transition-all duration-300 border border-white/20 backdrop-blur-md",
                         "bg-slate-900/90 hover:bg-slate-800 text-white", // Dark premium base
