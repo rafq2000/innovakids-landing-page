@@ -7,9 +7,16 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin, Star } from "lucide-rea
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Niños en Quito 2026 | Cursos Online | InnovaKids",
+  title: "Clases de Vibe Coding en Quito 2026 | InnovaKids",
   description:
-    "Clases de Inteligencia Artificial para niños en Quito, Ecuador. Cursos online en vivo, grupos de máx 5 alumnos. $197 USD por 10 clases.",
+    "Clases de programación con IA (Vibe Coding) para niños en Quito. Cumbayá, Tumbaco, Valle de los Chillos. Grupos de 5 alumnos. Primera clase GRATIS.",
+  keywords: [
+    "clases vibe coding quito",
+    "clases ia niños quito",
+    "curso inteligencia artificial niños cumbaya",
+    "ia para niños tumbaco",
+    "clases programacion niños valle de los chillos",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/ec/clases-ia-ninos-quito",
   },
@@ -35,8 +42,10 @@ export default function QuitoPage() {
             <div className="max-w-4xl mx-auto text-center">
               <Badge className="mb-6 bg-[#0033A0] text-white px-4 py-2">🇪🇨 Quito, Ecuador</Badge>
 
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-                Clases de IA para Niños en <span className="text-[#0033A0]">Quito</span>
+              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                Clases de Vibe Coding e IA
+                <br />
+                <span className="text-[#FFCD00]">para Niños en Quito</span>
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

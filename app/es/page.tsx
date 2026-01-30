@@ -5,18 +5,18 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de Inteligencia Artificial para Niños en España | InnovaKids",
+  title: "Curso de IA y Vibe Coding en España | InnovaKids",
   description:
-    "Formación líder en inteligencia artificial para niños de 8 a 14 años en España. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en España. Clases online en vivo para Madrid, Barcelona, Valencia y todo el país.",
   keywords:
-    "cursos ia niños españa, clases inteligencia artificial madrid, curso ia barcelona, programación ia valencia, innovakids españa",
+    "vibe coding españa, curso ia niños españa, clases programacion niños madrid, escuela inteligencia artificial niños, innovakids españa",
   alternates: {
     canonical: "https://www.innovakidslatam.com/es",
   },
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños en España | InnovaKids",
+    title: "Curso de IA y Vibe Coding en España | InnovaKids",
     description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años en España. Clases online en vivo, grupos de 5 alumnos.",
+      "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en España. Clases online en vivo para todo el país.",
     url: "https://www.innovakidslatam.com/es",
     locale: "es_ES",
     siteName: "InnovaKids",
@@ -62,7 +62,7 @@ export default function EspanaHub() {
             </div>
 
             <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              Cursos de IA para Niños en Toda España
+              Escuela de Inteligencia Artificial y Vibe Coding en España
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90">

@@ -10,10 +10,11 @@ import { PricingSection } from "@/components/pricing-section"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA para Chicos Argentina 2026 | Prueba Gratis | InnovaKids",
+  title: "Curso de Vibe Coding para Chicos Argentina 2026 | InnovaKids",
   description:
-    "🚀 ¡Que tu hijo cree tecnología! Curso IA para Chicos 8-14 años Argentina. Clases en vivo, grupos pequeños. 🎁 Clase de Prueba GRATIS. ¡Cupos Limitados!",
+    "🚀 ¡Que tu hijo cree tecnología! Curso de Vibe Coding e IA para Chicos 8-14 años Argentina. Clases en vivo, grupos pequeños. 🎁 Clase de Prueba GRATIS.",
   keywords: [
+    "vibe coding argentina",
     "cursos de ia para chicos",
     "cursos de ia para chicos argentina",
     "cursos de inteligencia artificial para chicos",
@@ -114,9 +115,9 @@ export default function ArgentinaCursosIAPage() {
               </div>
 
               <h1 className="mx-auto max-w-4xl text-3xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl px-2 text-white">
-                Cursos de Inteligencia Artificial
+                Curso de Vibe Coding
                 <br />
-                <span className="text-[#75AADB]">para Chicos en Argentina</span>
+                <span className="text-[#75AADB]">Aprende a Programar con IA</span>
               </h1>
 
               <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">

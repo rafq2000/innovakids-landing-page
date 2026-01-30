@@ -5,9 +5,16 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, Target, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Niños en San José Costa Rica 2026 | InnovaKids 🇨🇷",
+  title: "Clases de Vibe Coding en San José 2026 | InnovaKids",
   description:
-    "Clases de inteligencia artificial para niños en San José. Escazú, Santa Ana, Curridabat. Grupos de máx 5 niños. Evaluación gratis.",
+    "Clases de programación con IA (Vibe Coding) para niños en San José. Escazú, Santa Ana, San Pedro. Grupos de 5 alumnos. Primera clase GRATIS.",
+  keywords: [
+    "clases vibe coding san jose",
+    "clases ia niños san jose",
+    "curso inteligencia artificial niños escazu",
+    "ia para niños santa ana",
+    "clases programacion niños san pedro",
+  ],
 }
 
 export default function ClasesIANinosSanJose() {
@@ -46,8 +53,10 @@ export default function ClasesIANinosSanJose() {
               <span className="font-medium">San José, Costa Rica</span>
             </div>
 
-            <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-6xl lg:text-7xl">
-              Clases de IA para Niños en San José
+            <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+              Clases de Vibe Coding e IA
+              <br />
+              <span className="text-[#CE1126]">para Niños en San José</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">

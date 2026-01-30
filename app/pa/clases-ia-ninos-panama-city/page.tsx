@@ -5,11 +5,16 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, Target, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Niños en Ciudad de Panamá 2026 | InnovaKids 🇵🇦",
+  title: "Clases de Vibe Coding en Ciudad de Panamá 2026 | InnovaKids",
   description:
-    "Clases de inteligencia artificial para niños en Ciudad de Panamá. Punta Pacífica, Costa del Este, San Francisco. Grupos de máx 5 niños. Evaluación gratis.",
-  keywords:
-    "clases ia niños panama city, curso inteligencia artificial niños punta pacifica, ia niños costa del este, programación niños san francisco panama",
+    "Clases de programación con IA (Vibe Coding) para niños en Ciudad de Panamá. Costa del Este, San Francisco, Paitilla. Grupos de 5 alumnos. Primera clase GRATIS.",
+  keywords: [
+    "clases vibe coding panama city",
+    "clases ia niños ciudad de panama",
+    "curso inteligencia artificial niños costa del este",
+    "ia para niños san francisco",
+    "clases programacion niños paitilla",
+  ],
 }
 
 export default function ClasesIANinosPanamaCity() {
@@ -51,8 +56,10 @@ export default function ClasesIANinosPanamaCity() {
               <span className="font-medium">Ciudad de Panamá</span>
             </div>
 
-            <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
-              Clases de IA para Niños en Ciudad de Panamá
+            <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+              Clases de Vibe Coding e IA
+              <br />
+              <span className="text-[#DA121A]">para Niños en Ciudad de Panamá</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">

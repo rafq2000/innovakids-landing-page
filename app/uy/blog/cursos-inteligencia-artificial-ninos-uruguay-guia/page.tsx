@@ -7,15 +7,15 @@ import { Check, Clock, User, Calendar } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Cursos de Inteligencia Artificial para Niños en Uruguay 2026: Guía Completa",
+  title: "Vibe Coding en Uruguay: Guía Completa para Padres 2026",
   description:
-    "Guía definitiva de cursos de IA para niños en Uruguay. Comparamos precios, metodologías y resultados. Descubrí por qué InnovaKids es el #1 en Montevideo y todo el país.",
+    "Descubre el Vibe Coding: la nueva forma en que los niños aprenden a programar con IA en Uruguay. Comparativa de programas y precios.",
   keywords: [
+    "que es vibe coding",
     "cursos inteligencia artificial niños uruguay",
-    "mejores cursos ia niños montevideo",
-    "clases ia niños uruguay 2026",
-    "aprender ia niños uruguay",
-    "curso programación niños montevideo",
+    "mejores cursos ia niños",
+    "donde estudiar ia niños uruguay",
+    "cursos programacion niños montevideo",
   ],
   openGraph: {
     title: "Cursos de IA para Niños en Uruguay 2026: Guía Completa",
@@ -63,8 +63,8 @@ export default function UruguayBlogGuiaPage() {
               <span className="inline-block bg-[#0038A8]/20 text-[#0038A8] px-4 py-2 rounded-full text-sm font-medium mb-6">
                 Guía Completa 2026
               </span>
-              <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight mb-6">
-                Cursos de Inteligencia Artificial para Niños en Uruguay
+              <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+                Vibe Coding en Uruguay: La Guía Completa para Padres 2026
               </h1>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                 Todo lo que necesitás saber para elegir el mejor curso de IA para tu hijo en Uruguay.
@@ -280,15 +280,14 @@ export default function UruguayBlogGuiaPage() {
 
               {/* CONCLUSIÓN */}
               <section className="mb-12">
-                <h2 className="text-3xl font-bold text-white mb-6">Conclusión</h2>
-                <p className="text-gray-300 mb-4">
-                  Uruguay tiene una ventaja única en tecnología educativa gracias al Plan Ceibal. Ahora es el momento de
-                  que los niños uruguayos den el siguiente paso y aprendan a crear con inteligencia artificial.
+                <h2 className="text-3xl font-bold text-white mb-6">¿Qué es el Vibe Coding y Por Qué Aprenderlo?</h2>
+                <p className="text-gray-300 mb-6">
+                  El **Vibe Coding** es escribir código usando lenguaje natural y asistido por Inteligencia Artificial.
+                  Ya no hace falta memorizar sintaxis compleja. Hoy, un niño en Uruguay puede decirle a la IA:
+                  "Crea un juego de naves espaciales", y la IA genera el código base.
                 </p>
-                <p className="text-gray-300">
-                  InnovaKids ofrece el programa más completo de IA para niños en Uruguay: 10 clases, grupos de máximo 5
-                  alumnos, herramientas profesionales y garantía de 10 días.
-                  <strong className="text-white"> Reservá tu clase demo gratuita hoy.</strong>
+                <p className="text-gray-300 mb-6">
+                  En Uruguay, con el auge del sector tecnológico y zonas francas, el Vibe Coding es la habilidad del futuro.
                 </p>
               </section>
             </div>

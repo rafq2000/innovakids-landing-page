@@ -5,11 +5,11 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Clock, CheckCircle, Target, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA para Niños Colombia: Guía Completa 2026",
+  title: "Guía Colombia 2026: ¿Qué es el Vibe Coding y por qué tu hijo debe aprenderlo?",
   description:
-    "Guía completa sobre cursos de IA para niños en Colombia. Comparativas, herramientas, edades recomendadas. Todo lo que necesitas saber antes de inscribir.",
+    "El Vibe Coding es la revolución en la educación tecnológica. Descubre cómo la IA está cambiando la forma en que los niños aprenden a programar en Colombia.",
   keywords:
-    "cursos inteligencia artificial niños colombia, clases ia bogotá, educación tecnológica infantil, chatgpt niños, programación ia colombia",
+    "que es vibe coding, ia para niños colombia, guia padres tecnologia, educacion futuro colombia, innovakids blog",
   alternates: {
     canonical: "https://www.innovakidslatam.com/co/blog/cursos-inteligencia-artificial-ninos-colombia-guia",
   },
@@ -43,7 +43,7 @@ export default function GuiaCursosIAColombia() {
             </div>
 
             <h1 className="max-w-4xl text-3xl font-bold leading-tight md:text-5xl lg:text-6xl">
-              Cursos de Inteligencia Artificial para Niños en Colombia: Guía Completa 2026
+              Vibe Coding en Colombia: La Guía Completa para Padres 2026
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg text-white/80">
@@ -93,15 +93,14 @@ export default function GuiaCursosIAColombia() {
           <div className="container mx-auto max-w-4xl px-4">
             {/* Section 1 */}
             <section className="mb-16">
-              <h2 className="mb-6 text-3xl font-bold">¿Qué es la Inteligencia Artificial para Niños?</h2>
+              <h2 className="mb-6 text-3xl font-bold">¿Qué es el Vibe Coding?</h2>
               <p className="mb-4 text-lg leading-relaxed text-muted-foreground">
-                La inteligencia artificial para niños no es enseñarles a programar robots complejos o matemáticas
-                avanzadas. Es <strong>enseñarles a usar herramientas de IA como colaboradores creativos</strong> para
-                crear cosas increíbles que antes requerían años de estudio técnico.
+                El **Vibe Coding** no es solo escribir líneas de código. Es programar usando el lenguaje natural y la Inteligencia Artificial.
+                Antes, para crear un videojuego, un niño necesitaba memorizar sintaxis compleja. Hoy, un pelado en Colombia puede decirle a la IA:
+                "Crea un juego donde un gato salte obstáculos", y la IA genera el código base.
               </p>
               <p className="mb-6 text-muted-foreground">
-                Imagínalo así: hace 20 años, para crear una animación necesitabas años estudiando diseño gráfico. Hoy,
-                un pelado de 10 años puede crear animaciones profesionales usando IA en menos de una hora.
+                Imagínalo así: el niño se convierte en el arquitecto y la IA en su equipo de construcción. Esto permite crear proyectos increíbles en horas, no meses.
               </p>
 
               <div className="rounded-2xl bg-[#FCD116]/10 p-6">

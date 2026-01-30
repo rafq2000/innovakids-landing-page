@@ -6,15 +6,15 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Clases de IA para Niños en Caracas 2026 | Chacao, Altamira | InnovaKids 🇻🇪",
+    title: "Clases de Vibe Coding en Caracas 2026 | InnovaKids",
     description:
-        "Clases de inteligencia artificial para niños en Caracas. Chacao, Altamira, Las Mercedes, El Rosal. Online en vivo, grupos de 5 alumnos. Horarios flexibles.",
+        "Clases de programación con IA (Vibe Coding) para niños en Caracas. Altamira, Chacao, Las Mercedes. Grupos de 5 alumnos. Primera clase GRATIS.",
     keywords: [
+        "clases vibe coding caracas",
         "clases ia niños caracas",
-        "cursos inteligencia artificial caracas",
+        "curso inteligencia artificial niños altamira",
         "ia para niños chacao",
-        "clases programación niños altamira",
-        "innovakids caracas",
+        "clases programacion niños las mercedes",
     ],
     openGraph: {
         title: "Clases de IA para Niños en Caracas | InnovaKids",
@@ -34,10 +34,10 @@ export default function ClasesCaracasPage() {
             <main className="min-h-screen bg-background">
                 <section className="relative pt-32 pb-24 bg-gradient-to-b from-background to-[#0a1628]">
                     <div className="container mx-auto px-6 max-w-5xl text-center">
-                        <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 font-premium">
-                            Clases de IA para Niños
+                        <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                            Clases de Vibe Coding e IA
                             <br />
-                            <span className="text-primary">en Caracas</span>
+                            <span className="text-[#CF142B]">para Niños en Caracas</span>
                         </h1>
                         <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
                             El mejor curso de inteligencia artificial para niños caraqueños. Online en vivo con grupos de máximo 5 alumnos, adaptado a tu horario.

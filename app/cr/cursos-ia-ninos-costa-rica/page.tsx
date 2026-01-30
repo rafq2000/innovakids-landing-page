@@ -8,11 +8,11 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso Inteligencia Artificial Niños Costa Rica 2026 | InnovaKids 🇨🇷",
+  title: "Curso de Vibe Coding para Niños Costa Rica 2026 | InnovaKids",
   description:
-    "El mejor curso de IA y programación para niños en Costa Rica. Clases online 100% en vivo. Grupos pequeños. Certificación incluida.",
+    "El primer curso de Vibe Coding e IA para niños de 8-14 años en Costa Rica. Clases online en vivo. Grupos reducidos. Aprende a crear Apps.",
   keywords:
-    "curso ia niños costa rica, clases inteligencia artificial san jose, programación niños costa rica, innovakids costa rica, campamento tecnologico niños",
+    "vibe coding costa rica, cursos de ia para niños costa rica, clases inteligencia artificial san jose, curso ia niños heredia, innovakids costa rica",
   openGraph: {
     title: "Curso de IA para Niños en Costa Rica | InnovaKids Latam",
     description:
@@ -64,9 +64,9 @@ export default function CursosIANinosCostaRicaPage() {
                 🇨🇷 #1 en Cursos de IA para Niños en Costa Rica
               </Badge>
 
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-                Tu satisfacción <br />
-                <span className="text-[#002B7F]">Garantizada</span>
+              <h1 className="mx-auto max-w-4xl text-3xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl px-2">
+                Curso de Vibe Coding: Aprende a Crear con IA
+                <span className="block text-2xl md:text-4xl mt-4 text-white/90">Para Niños en Costa Rica</span>
               </h1>
 
               <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto">

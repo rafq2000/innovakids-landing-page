@@ -10,17 +10,17 @@ import { generateHreflangs } from "@/lib/seo-config"
 export const metadata: Metadata = {
   title: "Cursos de IA para Niños Colombia 2026 | Evaluación Gratis | InnovaKids 🇨🇴",
   description:
-    "Curso de inteligencia artificial para niños 8-14 años en Colombia. Aprende ChatGPT, Midjourney, crea apps. 10 clases, grupos de máx 5 niños. Evaluación gratis.",
+    "Inscripciones abiertas 2026. Curso de Vibe Coding y Programación con IA para niños en Colombia. 10 clases online, grupos pequeños. Evaluación gratis.",
   keywords:
-    "cursos de ia para niños colombia, clases inteligencia artificial bogotá, curso ia niños medellín, programación ia niños cali, innovakids colombia, curso inteligencia artificial niños, clases online ia niños, escuela de inteligencia artificial para niños, aprender chatgpt para niños, tecnología para niños colombia",
+    "cursos de vibe coding colombia, clases inteligencia artificial bogotá, curso ia niños medellín, programación ia niños cali, innovakids colombia, curso inteligencia artificial niños",
   alternates: {
     canonical: "https://www.innovakidslatam.com/co/cursos-ia-ninos-colombia",
     languages: generateHreflangs("sales"),
   },
   openGraph: {
-    title: "Cursos de IA para Niños en Colombia | InnovaKids",
+    title: "Curso de Vibe Coding e IA para Niños en Colombia | InnovaKids",
     description:
-      "Curso de inteligencia artificial para niños 8-14 años. ChatGPT, Midjourney, apps. 10 clases prácticas. Evaluación gratuita.",
+      "Aprende Vibe Coding: La nueva forma de programar con Inteligencia Artificial. Curso online para niños 8-14 años. Evaluación gratuita.",
     url: "https://www.innovakidslatam.com/co/cursos-ia-ninos-colombia",
     locale: "es_CO",
     type: "website",
@@ -59,11 +59,11 @@ export default function CursosIANinosColombia() {
             </div>
 
             <h1 className="mx-auto max-w-4xl text-3xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl px-2">
-              Cursos de Inteligencia Artificial para Niños en Colombia
+              Curso de Vibe Coding: Aprende a Crear Apps en Colombia
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">
-              Tu hijo aprenderá a crear con IA desde la primera clase. ChatGPT, Midjourney, apps y más. Edad: 8-14 años.
+              No es solo código, es Vibe Coding. Tu hijo creará apps, videojuegos y arte usando Inteligencia Artificial desde la primera clase.
             </p>
 
             {/* Stats */}

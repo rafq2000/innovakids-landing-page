@@ -5,11 +5,11 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Calendar, Clock, User, ArrowRight, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Cursos de Inteligencia Artificial para Niños en España: Guía Completa 2026",
+  title: "Vibe Coding en España: Guía Completa 2026 | InnovaKids",
   description:
-    "Guía definitiva sobre cursos de IA para niños en España. Comparativa de opciones, precios, metodologías y cómo elegir el mejor curso para tu hijo de 8-14 años.",
+    "Descubre el Vibe Coding: la revolución en la educación tecnológica para niños en España. Comparativa de opciones, precios y metodologías.",
   keywords:
-    "cursos inteligencia artificial niños españa, mejores cursos ia niños madrid, curso programación ia barcelona, educación ia niños valencia, innovakids españa guia",
+    "que es vibe coding, cursos inteligencia artificial niños españa, mejores cursos ia niños madrid, curso programación ia barcelona, educación ia niños valencia",
   alternates: {
     canonical: "https://www.innovakidslatam.com/es/blog/cursos-inteligencia-artificial-ninos-espana-guia",
   },
@@ -55,7 +55,7 @@ export default function GuiaCompletaEspana() {
 
               {/* Title */}
               <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl">
-                Cursos de Inteligencia Artificial para Niños en España: Guía Completa 2026
+                Vibe Coding en España: La Guía Completa 2026
               </h1>
 
               {/* Meta */}
@@ -92,12 +92,16 @@ export default function GuiaCompletaEspana() {
                   ¿Cuál es el mejor para su edad? En esta guía completa responderemos todas tus dudas.
                 </p>
 
-                <h2 className="mt-12 text-2xl font-bold">¿Por Qué Es Importante que los Niños Aprendan IA en 2026?</h2>
+                <h2 className="mt-12 text-2xl font-bold">¿Qué es el Vibe Coding y Por Qué Aprenderlo?</h2>
 
                 <p>
-                  Según el último informe del Observatorio Nacional de Tecnología y Sociedad (ONTSI), el 78% de los
-                  empleos en España requerirán competencias digitales avanzadas para 2030. La inteligencia artificial no
-                  es una moda pasajera, es el futuro del trabajo y la educación.
+                  El **Vibe Coding** es escribir código utilizando lenguaje natural y la ayuda de la Inteligencia Artificial.
+                  Ya no es necesario memorizar sintaxis compleja. Hoy, un niño en España puede decirle a la IA:
+                  "Crea una página web para mi equipo de fútbol", y la IA genera el código base.
+                </p>
+
+                <p>
+                  Esto democratiza la creación de tecnología. No se trata de que tu hijo sea programador clásico, sino de que sea un **creador** potenciado por IA.
                 </p>
 
                 <div className="my-8 rounded-2xl bg-muted/50 p-6">

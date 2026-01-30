@@ -8,19 +8,19 @@ import { Users, Clock, Shield, Star, CheckCircle, Zap, Target } from "lucide-rea
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA para Niños Perú 2026 | InnovaKids 🇵🇪",
+  title: "Cursos de IA para Niños Perú 2026 | Evaluación Gratis | InnovaKids 🇵🇪",
   description:
-    "Curso de IA para niños 8-14 años en Perú. Clases online en vivo desde Lima, Arequipa, Trujillo. Aprende a crear apps con inteligencia artificial.",
+    "Inscripciones abiertas 2026. Curso de Vibe Coding y Programación con IA para niños en Perú. 10 clases online, grupos pequeños. Agenda tu evaluación gratuita.",
   keywords:
-    "curso ia niños peru, clases inteligencia artificial lima, programación para niños perú, innovakids peru, curso verano niños peru, tecnologia niños peru",
+    "curso vibe coding peru, clases ia niños 2026, curso verano niños peru, aprender a programar con ia, innovakids matricula",
   alternates: {
     canonical: "https://www.innovakidslatam.com/pe/cursos-ia-ninos-peru",
     languages: generateHreflangs("sales"),
   },
   openGraph: {
-    title: "Cursos de IA para Niños en Perú | InnovaKids",
+    title: "Cursos de IA para Niños Perú 2026 | Evaluación Gratis",
     description:
-      "Curso de inteligencia artificial para niños 8-14 años. ChatGPT, Midjourney, apps. 10 clases prácticas. Evaluación gratuita.",
+      "Aprende Vibe Coding: La nueva forma de programar con Inteligencia Artificial. Curso online para niños 8-14 años.",
     url: "https://www.innovakidslatam.com/pe/cursos-ia-ninos-peru",
     locale: "es_PE",
     type: "website",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: "https://www.innovakidslatam.com/og-peru.jpg",
         width: 1200,
         height: 630,
-        alt: "Cursos de IA para Niños en Perú - InnovaKids",
+        alt: "Cursos de IA y Vibe Coding en Perú - InnovaKids",
       },
     ],
   },
@@ -59,11 +59,11 @@ export default function CursosIANinosPeru() {
             </div>
 
             <h1 className="mx-auto max-w-4xl text-3xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl px-2">
-              Cursos de Inteligencia Artificial para Niños en Perú
+              Curso de Vibe Coding: Aprende a Programar con IA en Perú
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">
-              Tu hijo aprenderá a crear con IA desde la primera clase. ChatGPT, Midjourney, apps y más. Edad: 8-14 años.
+              No es solo código, es Vibe Coding. Tu hijo creará apps, videojuegos y arte usando Inteligencia Artificial desde la primera clase.
             </p>
 
             {/* Stats */}

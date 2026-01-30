@@ -5,16 +5,16 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { ArrowRight, CheckCircle, Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de Inteligencia Artificial para Niños y Adolescentes en Colombia 🇨🇴",
+  title: "Curso de IA y Vibe Coding en Colombia 🇨🇴 | InnovaKids",
   description:
-    "Escuela de IA para niños y adolescentes en Colombia (Bogotá, Medellín, Cali). Clases en vivo, horario Colombia. Aprende a crear con IA hoy.",
+    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Colombia (Bogotá, Medellín, Cali). Clases en vivo, horario Colombia. Aprende a crear con IA hoy.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/co",
   },
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños y Adolescentes en Colombia 🇨🇴",
+    title: "Curso de IA y Vibe Coding en Colombia 🇨🇴 | InnovaKids",
     description:
-      "Escuela de IA para niños y adolescentes en Colombia (Bogotá, Medellín, Cali). Clases en vivo, horario Colombia.",
+      "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Colombia (Bogotá, Medellín, Cali). Clases en vivo, horario Colombia.",
     url: "https://www.innovakidslatam.com/co",
     locale: "es_CO",
     siteName: "InnovaKids",
@@ -81,10 +81,10 @@ export default function ColombiaHub() {
           <div className="absolute inset-0 bg-black/40" />
           <div className="container relative z-10 mx-auto px-4 text-center text-white">
             <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
-              InnovaKids Colombia 🇨🇴
+              Escuela de IA y Vibe Coding en Colombia 🇨🇴
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-xl text-white/90 md:text-2xl">
-              Inteligencia Artificial para Niños en Todo el País
+              Inteligencia Artificial y Programación para Niños en Todo el País
             </p>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">

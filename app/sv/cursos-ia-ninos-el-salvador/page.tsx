@@ -8,11 +8,11 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA para Niños en El Salvador 2026 | Clases Online en Vivo | InnovaKids",
+  title: "Curso de Vibe Coding para Niños El Salvador 2026 | InnovaKids",
   description:
-    "✅ Cursos de Inteligencia Artificial para cipotes salvadoreños de 8-17 años. Clases online en vivo, grupos de máx 5 alumnos. $197 USD por 10 clases. ¡Garantía 10 días!",
+    "El primer curso de Vibe Coding e IA para niños de 8-14 años en El Salvador. Clases online en vivo. Grupos reducidos. Aprende a crear Apps.",
   keywords:
-    "cursos ia niños el salvador, clases inteligencia artificial niños san salvador, cursos programacion niños el salvador, ia para cipotes",
+    "vibe coding el salvador, cursos de ia para niños el salvador, clases inteligencia artificial san salvador, curso ia niños santa tecla, innovakids el salvador",
   openGraph: {
     title: "Cursos de IA para Niños en El Salvador | InnovaKids Latam",
     description:
@@ -63,9 +63,9 @@ export default function CursosIANinosElSalvadorPage() {
                 🇸🇻 #1 en Cursos de IA para Cipotes en El Salvador
               </Badge>
 
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-6">
-                Tu satisfacción <br />
-                <span className="text-[#0F47AF]">Garantizada</span>
+              <h1 className="mx-auto max-w-4xl text-3xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl px-2">
+                Curso de Vibe Coding: Aprende a Crear con IA
+                <span className="block text-2xl md:text-4xl mt-4 text-white/90">Para Niños en El Salvador</span>
               </h1>
 
               <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto">

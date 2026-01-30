@@ -5,17 +5,17 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, CheckCircle, Target, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Niños Lima 2026 | Miraflores, Surco, San Isidro | InnovaKids 🇵🇪",
+  title: "Clases de Vibe Coding en Lima (Miraflores, Surco) | InnovaKids",
   description:
-    "Clases de inteligencia artificial para niños en Lima. Miraflores, San Isidro, Surco, La Molina, San Borja. 100% online en vivo. Grupos de máx 5 niños. Evaluación gratis.",
+    "Clases de programación con IA (Vibe Coding) para niños en Lima. Miraflores, San Isidro, Surco, La Molina. Aprende online con horarios de Perú.",
   keywords:
-    "clases ia niños lima, cursos inteligencia artificial miraflores, ia para niños surco, cursos programación san isidro, innovakids lima",
+    "clases vibe coding lima, talleres ia niños miraflores, programacion para niños surco, academia ia san isidro, innovakids lima",
   alternates: {
     canonical: "https://www.innovakidslatam.com/pe/clases-ia-ninos-lima",
   },
   openGraph: {
-    title: "Clases de IA para Niños en Lima | InnovaKids",
-    description: "Clases de inteligencia artificial para niños en Lima. 100% online. Grupos de máx 5 niños.",
+    title: "Clases de Vibe Coding e IA para Niños en Lima",
+    description: "Talleres de tecnología y Vibe Coding para niños en Lima. 100% online en vivo.",
     url: "https://www.innovakidslatam.com/pe/clases-ia-ninos-lima",
     locale: "es_PE",
   },
@@ -60,12 +60,11 @@ export default function ClasesIANinosLima() {
             </div>
 
             <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
-              Clases de IA para Niños en Lima
+              Clases de Vibe Coding e IA para Niños en Lima
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">
-              Tu hijo aprenderá a crear con IA desde la primera clase. Disponible para familias en Miraflores, San
-              Isidro, Surco, La Molina y todo Lima.
+              La nueva forma de crear tecnología llega a Lima. Disponible para familias en Miraflores, San Isidro, Surco, La Molina y todos los distritos.
             </p>
 
             {/* Stats */}

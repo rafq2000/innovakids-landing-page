@@ -5,11 +5,16 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { CheckCircle, Target, Clock, Star, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Cursos de Inteligencia Artificial para Niños en Chile: Guía Completa 2026",
+  title: "Vibe Coding en Chile: Guía Completa para Padres 2026",
   description:
-    "Guía definitiva sobre cursos de IA para niños en Chile. Compara opciones, precios, metodologías. Descubre cómo tu hijo puede aprender ChatGPT, Midjourney y más.",
-  keywords:
-    "cursos inteligencia artificial niños chile, guía ia para niños, aprender ia santiago, cursos programación niños chile, innovakids chile guía",
+    "Descubre el Vibe Coding: la nueva forma en que los niños aprenden a programar con IA en Chile. Comparativa de programas y precios.",
+  keywords: [
+    "que es vibe coding",
+    "cursos inteligencia artificial niños chile",
+    "mejores cursos ia niños",
+    "donde estudiar ia niños chile",
+    "cursos programacion niños santiago",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/cl/blog/cursos-inteligencia-artificial-ninos-chile-guia",
   },
@@ -42,8 +47,8 @@ export default function GuiaIANinosChile() {
               <span>Actualizado Enero 2026 • 15 min lectura</span>
             </div>
 
-            <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-              Cursos de Inteligencia Artificial para Niños en Chile: Guía Completa 2026
+            <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+              Vibe Coding en Chile: La Guía Completa para Padres 2026
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
@@ -180,6 +185,16 @@ export default function GuiaIANinosChile() {
                   </tbody>
                 </table>
               </div>
+
+              <h2 className="text-3xl font-bold text-white mb-6">¿Qué es el Vibe Coding y Por Qué Aprenderlo?</h2>
+              <p className="text-gray-300 mb-6">
+                El **Vibe Coding** es escribir código usando lenguaje natural y asistido por Inteligencia Artificial.
+                Ya no hace falta memorizar sintaxis compleja. Hoy, un niño en Chile puede decirle a la IA:
+                "Crea un juego de naves espaciales", y la IA genera el código base.
+              </p>
+              <p className="text-gray-300 mb-6">
+                En Chile, la demanda de perfiles tecnológicos sigue creciendo, y el Vibe Coding es la habilidad del futuro.
+              </p>
 
               <h2 className="mt-12 text-3xl font-bold">¿Qué Aprenderá Tu Hijo en InnovaKids?</h2>
 

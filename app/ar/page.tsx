@@ -7,20 +7,20 @@ import { MapPin, Users, Star, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Curso de Inteligencia Artificial para Niños en Argentina | InnovaKids",
+  title: "Curso de IA y Vibe Coding en Argentina | InnovaKids",
   description:
-    "Formación líder en inteligencia artificial para niños de 8 a 14 años en Argentina. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+    "La primera escuela de Vibe Coding e Inteligencia Artificial para chicos en Argentina. Clases online en vivo para Buenos Aires, Córdoba, Rosario y todo el país.",
   keywords: [
-    "cursos ia niños argentina",
-    "clases inteligencia artificial niños buenos aires",
-    "curso ia niños cordoba",
-    "ia para niños rosario",
-    "cursos programacion niños argentina",
+    "vibe coding argentina",
+    "curso ia chicos argentina",
+    "clases programacion chicos buenos aires",
+    "escuela inteligencia artificial chicos",
+    "innovakids argentina",
   ],
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños en Argentina | InnovaKids",
+    title: "Curso de IA y Vibe Coding en Argentina | InnovaKids",
     description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años en Argentina. Clases online en vivo, grupos de 5 alumnos.",
+      "La primera escuela de Vibe Coding e Inteligencia Artificial para chicos en Argentina. Clases online en vivo para todo el país.",
     url: "https://www.innovakidslatam.com/ar",
     siteName: "InnovaKids",
     locale: "es_AR",
@@ -58,9 +58,9 @@ export default function ArgentinaHubPage() {
             </div>
 
             <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
-              Cursos de IA para Chicos
+              Escuela de Inteligencia Artificial
               <br />
-              <span className="text-[#75AADB]">en Argentina</span>
+              <span className="text-[#75AADB]">y Vibe Coding en Argentina</span>
             </h1>
 
             <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-12">

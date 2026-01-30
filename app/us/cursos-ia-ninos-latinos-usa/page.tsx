@@ -6,19 +6,19 @@ import { Users, Clock, Shield, Star, CheckCircle, Zap, Target, Globe } from "luc
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA para Niños Latinos en USA 2026 | En Español | InnovaKids 🇺🇸",
+  title: "Curso de Vibe Coding para Niños Latinos USA 2026 | InnovaKids",
   description:
-    "Curso de inteligencia artificial en español para niños latinos en Estados Unidos. 8-14 años. ChatGPT, Midjourney, apps. 10 clases, grupos de máx 5 niños. Miami, LA, Houston, NYC.",
+    "El primer curso de Vibe Coding e IA para niños latinos de 8-14 años en USA. Clases 100% en español. Grupos reducidos. Aprende a crear Apps.",
   keywords:
-    "cursos de ia para niños en español usa, clases inteligencia artificial niños latinos, curso ia niños miami, programación ia niños houston, clases ia español los angeles, innovakids usa",
+    "vibe coding usa, cursos de ia para niños latinos usa, clases inteligencia artificial miami, curso ia niños orlando, innovakids usa",
   alternates: {
     canonical: "https://www.innovakidslatam.com/us/cursos-ia-ninos-latinos-usa",
     languages: generateHreflangs("sales"),
   },
   openGraph: {
-    title: "Cursos de IA para Niños Latinos en USA | En Español | InnovaKids",
+    title: "Curso de Vibe Coding para Niños Latinos en USA | En Español | InnovaKids",
     description:
-      "Curso de inteligencia artificial en español para niños latinos 8-14 años. ChatGPT, Midjourney, apps. 10 clases prácticas. Evaluación gratuita.",
+      "El primer curso de Vibe Coding e IA para niños latinos de 8-14 años en USA. Clases 100% en español. Grupos reducidos. Aprende a crear Apps.",
     url: "https://www.innovakidslatam.com/us/cursos-ia-ninos-latinos-usa",
     locale: "es_US",
     type: "website",
@@ -56,8 +56,9 @@ export default function CursosIANinosLatinosUSA() {
               <span className="font-medium">Para Latinos en USA • 100% en Español</span>
             </div>
 
-            <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
-              Cursos de Inteligencia Artificial en Español para Niños Latinos en USA
+            <h1 className="mx-auto max-w-4xl text-3xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl px-2">
+              Curso de Vibe Coding: Aprende a Crear con IA
+              <span className="block text-2xl md:text-4xl mt-4 text-white/90">Para Niños Latinos en USA</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">

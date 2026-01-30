@@ -7,16 +7,24 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin } from "lucide-react"
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Curso de Inteligencia Artificial para Niños en Guatemala | InnovaKids",
+  title: "Curso de IA y Vibe Coding en Guatemala | InnovaKids",
   description:
-    "Formación líder en inteligencia artificial para niños de 8 a 14 años en Guatemala. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Guatemala. Clases online en vivo para Ciudad de Guatemala, Mixco, Villa Nueva y todo el país.",
+  keywords: [
+    "vibe coding guatemala",
+    "cursos ia niños guatemala",
+    "clases ia niños ciudad de guatemala",
+    "inteligencia artificial niños mixco",
+    "curso ia niños villa nueva",
+    "ia para niños petapa",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/gt",
   },
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños en Guatemala | InnovaKids",
+    title: "Curso de IA y Vibe Coding en Guatemala | InnovaKids",
     description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años en Guatemala. Clases online en vivo, grupos de 5 alumnos.",
+      "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Guatemala. Clases online en vivo para Ciudad de Guatemala, Mixco, Villa Nueva y todo el país.",
     url: "https://www.innovakidslatam.com/gt",
     locale: "es_GT",
     siteName: "InnovaKids",
@@ -43,13 +51,15 @@ export default function GuatemalaHubPage() {
             <div className="max-w-4xl mx-auto text-center">
               <Badge className="mb-6 bg-[#4997D0] text-white px-4 py-2">🇬🇹 Guatemala</Badge>
 
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-6">
-                Cursos de IA para Patojos en <span className="text-[#4997D0]">Guatemala</span>
+              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                Curso de IA y Vibe Coding
+                <br />
+                <span className="text-[#4997D0]">en Guatemala</span>
               </h1>
 
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Clases online en vivo para patojos de 8 a 17 años desde cualquier ciudad de Guatemala. Grupos pequeños
-                de máximo 5 alumnos.
+              <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+                La primera escuela de Vibe Coding para niños de 8-14 años.
+                <strong className="text-white"> Clases 100% online</strong> desde cualquier departamento del país.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">

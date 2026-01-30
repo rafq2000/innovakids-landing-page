@@ -5,9 +5,16 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, Target, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Niños en Santo Domingo 2026 | InnovaKids 🇩🇴",
+  title: "Clases de Vibe Coding en Santo Domingo 2026 | InnovaKids",
   description:
-    "Clases de inteligencia artificial para niños en Santo Domingo. Piantini, Naco, Bella Vista. Grupos de máx 5 niños. Evaluación gratis.",
+    "Clases de programación con IA (Vibe Coding) para niños en Santo Domingo. Piantini, Naco, Bella Vista. Grupos de 5 alumnos. Primera clase GRATIS.",
+  keywords: [
+    "clases vibe coding santo domingo",
+    "clases ia niños santo domingo",
+    "curso inteligencia artificial niños piantini",
+    "ia para niños naco",
+    "clases programacion niños bella vista",
+  ],
 }
 
 export default function ClasesIANinosSantoDomingo() {
@@ -46,8 +53,10 @@ export default function ClasesIANinosSantoDomingo() {
               <span className="font-medium">Santo Domingo, RD</span>
             </div>
 
-            <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-6xl lg:text-7xl">
-              Clases de IA para Niños en Santo Domingo
+            <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+              Clases de Vibe Coding e IA
+              <br />
+              <span className="text-[#002D62]">para Niños en Santo Domingo</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">

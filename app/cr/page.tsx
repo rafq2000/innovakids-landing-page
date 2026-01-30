@@ -5,9 +5,17 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, Users, Clock, Shield, Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de Inteligencia Artificial para Niños en Costa Rica | InnovaKids",
+  title: "Curso de IA y Vibe Coding en Costa Rica | InnovaKids",
   description:
-    "Formación líder en inteligencia artificial para niños de 8 a 14 años en Costa Rica. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Costa Rica. Clases online en vivo para San José, Heredia, Alajuela y todo el país.",
+  keywords: [
+    "vibe coding costa rica",
+    "cursos ia niños costa rica",
+    "clases ia niños san jose",
+    "inteligencia artificial niños heredia",
+    "curso ia niños alajuela",
+    "ia para niños cartago",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/cr",
   },
@@ -52,8 +60,10 @@ export default function CostaRicaHub() {
               <span className="font-medium">Costa Rica - Todas las Provincias</span>
             </div>
 
-            <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-6xl lg:text-7xl">
-              Cursos de IA para Niños en Todo Costa Rica
+            <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+              Curso de IA y Vibe Coding
+              <br />
+              <span className="text-[#CE1126]">en Costa Rica</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">

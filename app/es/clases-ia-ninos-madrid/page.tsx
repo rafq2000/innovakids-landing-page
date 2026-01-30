@@ -5,11 +5,11 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, CheckCircle, MapPin, Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Niños en Madrid 2026 | Evaluación Gratis | InnovaKids 🇪🇸",
+  title: "Clases de Vibe Coding en Madrid 2026 | Evaluación Gratis | InnovaKids",
   description:
-    "Clases de inteligencia artificial para niños 8-14 años en Madrid. ChatGPT, Midjourney, programación. 10 clases online en vivo, grupos de máx 5 niños.",
+    "Clases de programación con IA (Vibe Coding) para niños 8-14 años en Madrid. 10 clases online en vivo, grupos de máx 5 niños. Chamberí, Salamanca, Retiro.",
   keywords:
-    "clases ia niños madrid, curso inteligencia artificial madrid, programación ia niños chamberí, curso ia niños salamanca, innovakids madrid",
+    "clases vibe coding madrid, clases ia niños madrid, curso inteligencia artificial madrid, programación ia niños chamberí, curso ia niños salamanca",
   alternates: {
     canonical: "https://www.innovakidslatam.com/es/clases-ia-ninos-madrid",
   },
@@ -64,7 +64,7 @@ export default function ClasesIANinosMadrid() {
             </div>
 
             <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
-              Clases de Inteligencia Artificial para Niños en Madrid
+              Clases de Vibe Coding e IA para Niños en Madrid
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">

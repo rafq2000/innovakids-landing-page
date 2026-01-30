@@ -5,11 +5,16 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Target, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA para Niños Latinos en USA: Guía Completa 2026 | InnovaKids",
+  title: "Vibe Coding en USA: Guía Completa para Padres Latinos 2026",
   description:
-    "Guía definitiva sobre cursos de inteligencia artificial en español para niños latinos en Estados Unidos. Beneficios del bilingüismo, qué aprenden, precios y cómo elegir el mejor programa.",
-  keywords:
-    "cursos ia niños latinos usa, clases inteligencia artificial español estados unidos, programación niños hispanos, educación tecnología bilingüe, innovakids guia",
+    "Descubre el Vibe Coding: la nueva forma en que los niños latinos aprenden a programar con IA en USA. Comparativa de programas y precios.",
+  keywords: [
+    "que es vibe coding",
+    "cursos inteligencia artificial niños usa",
+    "mejores cursos ia niños latinos",
+    "donde estudiar ia niños miami",
+    "cursos programacion niños español usa",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/us/blog/cursos-inteligencia-artificial-ninos-latinos-usa-guia",
   },
@@ -41,8 +46,8 @@ export default function GuiaIANinosLatinosUSA() {
               <Clock className="h-4 w-4" />
               <span className="text-sm">15 min de lectura • Actualizado Enero 2026</span>
             </div>
-            <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-              Cursos de Inteligencia Artificial para Niños Latinos en USA: Guía Completa 2026
+            <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+              Vibe Coding en USA: La Guía Completa para Padres Latinos 2026
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
               Todo lo que necesitas saber para elegir el mejor curso de IA en español para tu hijo en Estados Unidos.
@@ -239,10 +244,14 @@ export default function GuiaIANinosLatinosUSA() {
               </ol>
 
               <div className="my-8 rounded-2xl bg-[#002868] p-8 text-white">
-                <h3 className="mt-0 text-white">Garantía de 10 Días</h3>
-                <p className="mb-0">
-                  Si después de las primeras clases no estás 100% satisfecho, te devolvemos tu dinero completo. Sin
-                  preguntas, sin complicaciones. Queremos que estés completamente seguro antes de comprometerte.
+                <h2 className="text-3xl font-bold text-white mb-6">¿Qué es el Vibe Coding y Por Qué Aprenderlo?</h2>
+                <p className="text-gray-300 mb-6">
+                  El **Vibe Coding** es escribir código usando lenguaje natural y asistido por Inteligencia Artificial.
+                  Ya no hace falta memorizar sintaxis compleja. Hoy, un niño latino en USA puede decirle a la IA:
+                  "Crea un juego de naves espaciales", y la IA genera el código base.
+                </p>
+                <p className="text-gray-300 mb-6">
+                  En Estados Unidos, el bilingüismo tecnológico (Español + Inglés + Código) es una ventaja competitiva enorme.
                 </p>
               </div>
 

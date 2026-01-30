@@ -5,11 +5,16 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Cursos de Inteligencia Artificial para Niños en Panamá 2026: Guía Completa",
+  title: "Vibe Coding en Panamá: Guía Completa para Padres 2026",
   description:
-    "Guía definitiva sobre cursos de IA para niños en Panamá. Qué aprenden, mejores opciones, precios, edades recomendadas. Todo lo que necesitas saber.",
-  keywords:
-    "cursos inteligencia artificial niños panama, ia para niños panama, aprender ia niños panama city, programación ia niños panama",
+    "Descubre el Vibe Coding: la nueva forma en que los niños aprenden a programar con IA en Panamá. Comparativa de programas y precios.",
+  keywords: [
+    "que es vibe coding",
+    "cursos inteligencia artificial niños panama",
+    "mejores cursos ia niños",
+    "donde estudiar ia niños panama",
+    "cursos programacion niños ciudad de panama",
+  ],
 }
 
 export default function BlogCursosIANinosPanama() {
@@ -28,8 +33,8 @@ export default function BlogCursosIANinosPanama() {
         <section className="bg-gradient-to-br from-[#072357] to-[#041633] py-20 md:py-28">
           <div className="container mx-auto px-4 text-center text-white">
             <div className="mb-4 text-sm font-medium text-[#DA121A]">GUÍA COMPLETA 2026</div>
-            <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-              Cursos de Inteligencia Artificial para Niños en Panamá
+            <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+              Vibe Coding en Panamá: La Guía Completa para Padres 2026
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
               Todo lo que necesitas saber para elegir el mejor curso de IA para tu hijo
@@ -179,6 +184,19 @@ export default function BlogCursosIANinosPanama() {
                   Consultar por WhatsApp
                 </Link>
               </div>
+            </div>
+
+            {/* NEW SECTION: What is Vibe Coding */}
+            <div className="mt-12 rounded-3xl bg-gradient-to-br from-[#072357] to-[#041633] p-8 text-white">
+              <h2 className="text-3xl font-bold text-white mb-6">¿Qué es el Vibe Coding y Por Qué Aprenderlo?</h2>
+              <p className="text-gray-300 mb-6">
+                El **Vibe Coding** es escribir código usando lenguaje natural y asistido por Inteligencia Artificial.
+                Ya no hace falta memorizar sintaxis compleja. Hoy, un niño en Panamá puede decirle a la IA:
+                "Crea un juego de naves espaciales", y la IA genera el código base.
+              </p>
+              <p className="text-gray-300 mb-6">
+                En Panamá, con el crecimiento del hub tecnológico y la Ciudad del Saber, el Vibe Coding es la habilidad del futuro.
+              </p>
             </div>
 
             {/* RELATED LINKS */}

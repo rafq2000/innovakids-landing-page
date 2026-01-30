@@ -8,11 +8,11 @@ import { PricingSection } from "@/components/pricing-section"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA para Niños Chile 2026 | Evaluación Gratis | InnovaKids 🇨🇱",
+  title: "Curso de Vibe Coding para Niños Chile 2026 | InnovaKids 🇨🇱",
   description:
-    "Curso de inteligencia artificial para niños 8-14 años en Chile. Aprende ChatGPT, Midjourney, crea apps. 10 clases, grupos de máx 5 niños. Evaluación gratis.",
+    "El primer curso de Vibe Coding e IA para niños de 8-14 años en Chile. Clases online en vivo (Horario Chile). Grupos reducidos. Aprende a crear Apps.",
   keywords:
-    "cursos de ia para niños chile, clases inteligencia artificial santiago, curso ia niños viña del mar, programación ia niños concepción, innovakids chile, curso inteligencia artificial niños, clases online ia niños, escuela de inteligencia artificial para niños, aprender chatgpt para niños, tecnología para niños chile",
+    "vibe coding chile, cursos de ia para niños chile, clases inteligencia artificial santiago, curso ia niños viña del mar, innovakids chile",
   alternates: {
     canonical: "https://www.innovakidslatam.com/cl/cursos-ia-ninos-chile",
     languages: generateHreflangs("sales"),
@@ -59,7 +59,8 @@ export default function CursosIANinosChile() {
             </div>
 
             <h1 className="mx-auto max-w-4xl text-3xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl px-2">
-              Cursos de Inteligencia Artificial para Niños en Chile
+              Curso de Vibe Coding: Aprende a Crear con IA
+              <span className="block text-2xl md:text-4xl mt-4 text-white/90">Para Niños en Chile</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">

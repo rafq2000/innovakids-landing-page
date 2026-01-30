@@ -7,9 +7,16 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin, Star } from "lucide-rea
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Cipotes en San Salvador 2026 | Cursos Online | InnovaKids",
+  title: "Clases de Vibe Coding en San Salvador 2026 | InnovaKids",
   description:
-    "Clases de Inteligencia Artificial para cipotes en San Salvador. Cursos online en vivo, grupos de máx 5 alumnos. $197 USD por 10 clases. ¡Garantía 10 días!",
+    "Clases de programación con IA (Vibe Coding) para niños en San Salvador. San Benito, Escalón, Santa Elena. Grupos de 5 alumnos. Primera clase GRATIS.",
+  keywords: [
+    "clases vibe coding san salvador",
+    "clases ia niños san salvador",
+    "curso inteligencia artificial niños san benito",
+    "ia para niños escalon",
+    "clases programacion niños santa elena",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/sv/clases-ia-ninos-san-salvador",
   },
@@ -36,8 +43,10 @@ export default function SanSalvadorPage() {
             <div className="max-w-4xl mx-auto text-center">
               <Badge className="mb-6 bg-[#0F47AF] text-white px-4 py-2">🇸🇻 San Salvador, El Salvador</Badge>
 
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-                Clases de IA para Cipotes en <span className="text-[#0F47AF]">San Salvador</span>
+              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                Clases de Vibe Coding e IA
+                <br />
+                <span className="text-[#0047AB]">para Niños en San Salvador</span>
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
