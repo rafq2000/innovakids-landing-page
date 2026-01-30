@@ -7,15 +7,15 @@ import Link from "next/link"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-    title: "Cursos de IA para Niños en Venezuela 2026 | Clases Online | InnovaKids 🇻🇪",
+    title: "Curso de Vibe Coding para Niños Venezuela 2026 | InnovaKids",
     description:
-        "Aprende inteligencia artificial desde Venezuela. Cursos online para niños de 8-14 años. ChatGPT, creación de videojuegos, arte digital. Grupos de 5 alumnos. $197 USD.",
+        "El primer curso de Vibe Coding e IA para niños de 8-14 años en Venezuela. Clases online en vivo. Grupos reducidos. Aprende a crear Apps.",
     keywords: [
-        "cursos ia niños venezuela",
-        "clases inteligencia artificial niños caracas",
-        "aprender ia niños venezuela",
-        "chatgpt para niños venezuela",
-        "programación niños venezuela",
+        "vibe coding venezuela",
+        "cursos de ia para niños venezuela",
+        "clases inteligencia artificial caracas",
+        "curso ia niños maracaibo",
+        "innovakids venezuela",
     ],
     openGraph: {
         title: "Cursos de IA para Niños en Venezuela | InnovaKids",
@@ -41,10 +41,9 @@ export default function CursosVenezuelaPage() {
                             <span className="text-white font-medium">Curso #1 en Venezuela</span>
                         </div>
 
-                        <h1 className="text-4xl lg:text-6xl font-bold text-white leading-tight mb-6 font-premium">
-                            Cursos de Inteligencia Artificial
-                            <br />
-                            <span className="text-primary">para Niños en Venezuela</span>
+                        <h1 className="mx-auto max-w-4xl text-3xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl px-2">
+                            Curso de Vibe Coding: Aprende a Crear con IA
+                            <span className="block text-2xl md:text-4xl mt-4 text-white/90">Para Niños en Venezuela</span>
                         </h1>
 
                         <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">

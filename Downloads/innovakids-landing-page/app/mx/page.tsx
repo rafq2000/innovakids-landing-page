@@ -7,20 +7,20 @@ import { MapPin, Users, Clock, Shield } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Curso de Inteligencia Artificial para Niños en México | InnovaKids",
+  title: "Curso de IA y Vibe Coding en México | InnovaKids",
   description:
-    "Formación líder en inteligencia artificial para niños de 8 a 14 años en México. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en México. Clases online en vivo para CDMX, GDL, MTY y todo el país. Aprende a crear con IA.",
   keywords: [
-    "ia para niños mexico",
-    "cursos ia niños cdmx",
-    "clases ia niños guadalajara",
-    "cursos inteligencia artificial monterrey",
+    "vibe coding mexico",
+    "curso ia niños mexico",
+    "clases programacion ia cdmx",
+    "escuela inteligencia artificial niños",
     "innovakids mexico",
   ],
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños en México | InnovaKids",
+    title: "Curso de IA y Vibe Coding en México | InnovaKids",
     description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años en México. Clases online en vivo, grupos de 5 alumnos.",
+      "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en México. Clases online en vivo para todo el país.",
     url: "https://www.innovakidslatam.com/mx",
     locale: "es_MX",
     siteName: "InnovaKids",
@@ -61,9 +61,9 @@ export default function MexicoHubPage() {
             </div>
 
             <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
-              Cursos de IA para Niños
+              Escuela de Inteligencia Artificial
               <br />
-              <span className="text-[#4DD0E1]">en México</span>
+              <span className="text-[#4DD0E1]">y Vibe Coding en México</span>
             </h1>
 
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">

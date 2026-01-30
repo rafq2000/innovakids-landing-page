@@ -7,12 +7,19 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin, Star } from "lucide-rea
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Niños en Asunción 2026 | Cursos Online | InnovaKids",
+  title: "Clases de Vibe Coding en Asunción 2026 | InnovaKids",
   description:
-    "Clases de Inteligencia Artificial para niños en Asunción, Paraguay. Cursos online en vivo, grupos de máx 5 alumnos. $197 USD por 10 clases.",
+    "Clases de programación con IA (Vibe Coding) para niños en Asunción. Villa Morra, Carmelitas, Las Lomas. Grupos de 5 alumnos. Primera clase GRATIS.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/py/clases-ia-ninos-asuncion",
   },
+  keywords: [
+    "clases vibe coding asuncion",
+    "clases ia niños asuncion",
+    "curso inteligencia artificial niños villa morra",
+    "ia para niños carmelitas",
+    "clases programacion niños las lomas",
+  ],
 }
 
 const barrios = ["Villa Morra", "Carmelitas", "Las Mercedes", "Recoleta", "San Roque", "Sajonia", "Manorá", "Mburucuyá"]
@@ -26,8 +33,10 @@ export default function AsuncionPage() {
             <div className="max-w-4xl mx-auto text-center">
               <Badge className="mb-6 bg-[#D52B1E] text-white px-4 py-2">🇵🇾 Asunción, Paraguay</Badge>
 
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-                Clases de IA para Niños en <span className="text-[#D52B1E]">Asunción</span>
+              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                Clases de Vibe Coding e IA
+                <br />
+                <span className="text-[#D52B1E]">para Niños en Asunción</span>
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

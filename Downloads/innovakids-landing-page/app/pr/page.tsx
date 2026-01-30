@@ -7,15 +7,16 @@ import { MapPin, Users, Clock, Shield } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Curso de Inteligencia Artificial para Niños en Puerto Rico | InnovaKids",
+    title: "Curso de IA y Vibe Coding en Puerto Rico | InnovaKids",
     description:
-        "Formación líder en inteligencia artificial para niños de 8 a 14 años en Puerto Rico. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+        "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Puerto Rico. Clases online en vivo para San Juan, Bayamón, Carolina y todo el país.",
     keywords: [
-        "ia para niños puerto rico",
-        "cursos ia niños san juan",
-        "clases inteligencia artificial puerto rico",
-        "innovakids puerto rico",
-        "programación niños boricuas",
+        "vibe coding puerto rico",
+        "cursos ia niños puerto rico",
+        "clases ia niños san juan",
+        "inteligencia artificial niños bayamon",
+        "curso ia niños carolina",
+        "ia para niños ponce",
     ],
     openGraph: {
         title: "Curso de Inteligencia Artificial para Niños en Puerto Rico | InnovaKids",
@@ -53,14 +54,15 @@ export default function PuertoRicoHubPage() {
                             <span className="text-white font-medium">InnovaKids en Puerto Rico</span>
                         </div>
 
-                        <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6 font-premium">
-                            Cursos de IA para Niños
+                        <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                            Curso de IA y Vibe Coding
                             <br />
-                            <span className="premium-gradient-text">en Puerto Rico</span>
+                            <span className="text-[#0050f0]">en Puerto Rico</span>
                         </h1>
 
-                        <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-                            El mejor curso de inteligencia artificial para niños boricuas de 8-14 años. Online en vivo con grupos de máximo 5 alumnos.
+                        <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+                            La primera escuela de Vibe Coding para niños de 8-14 años.
+                            <strong className="text-white"> Clases 100% online</strong> desde cualquier municipio de la isla.
                         </p>
 
                         <div className="flex flex-wrap justify-center gap-4 mb-12">

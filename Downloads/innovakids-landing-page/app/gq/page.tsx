@@ -7,16 +7,16 @@ import { MapPin, Users, Clock, Shield } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Curso de Inteligencia Artificial para Niños en Guinea Ecuatorial | InnovaKids",
+    title: "Curso de IA y Vibe Coding en Guinea Ecuatorial | InnovaKids",
     description:
-        "Formación líder en inteligencia artificial para niños de 8 a 14 años en Guinea Ecuatorial. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+        "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Guinea Ecuatorial. Clases online en vivo para Malabo, Bata y todo el país.",
     keywords: [
-        "ia para niños guinea ecuatorial",
-        "cursos ia niños malabo",
-        "clases inteligencia artificial bata",
-        "innovakids guinea ecuatorial",
-        "programación niños africa",
-        "cursos ia español africa",
+        "vibe coding guinea ecuatorial",
+        "cursos ia niños guinea ecuatorial",
+        "clases ia niños malabo",
+        "inteligencia artificial niños bata",
+        "curso ia niños ebibeyin",
+        "ia para niños mongomo",
     ],
     openGraph: {
         title: "Curso de Inteligencia Artificial para Niños en Guinea Ecuatorial | InnovaKids",
@@ -53,13 +53,14 @@ export default function GuineaEcuatorialHubPage() {
                         </div>
 
                         <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6 font-premium">
-                            Cursos de IA para Niños
+                            Curso de IA y Vibe Coding
                             <br />
                             <span className="premium-gradient-text">en Guinea Ecuatorial</span>
                         </h1>
 
-                        <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-                            El único curso de inteligencia artificial en español para niños ecuatoguineanos de 8-14 años. Online en vivo con grupos de máximo 5 alumnos.
+                        <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+                            La primera escuela de Vibe Coding para niños de 8-14 años.
+                            <strong className="text-white"> Clases 100% online</strong> desde cualquier ciudad del país.
                         </p>
 
                         <div className="flex flex-wrap justify-center gap-4 mb-12">
@@ -87,9 +88,11 @@ export default function GuineaEcuatorialHubPage() {
 
                 <section className="py-24 bg-[#0a1628]">
                     <div className="container mx-auto px-6 max-w-6xl">
-                        <h2 className="text-3xl font-bold text-white text-center mb-12 font-premium">
-                            Disponible en <span className="text-primary">Toda Guinea Ecuatorial</span>
-                        </h2>
+                        <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                            Curso de IA y Vibe Coding
+                            <br />
+                            <span className="text-[#3E7C17]">en Guinea Ecuatorial</span>
+                        </h1>
                         <div className="grid md:grid-cols-3 gap-6">
                             {ciudades.map((ciudad, i) => (
                                 <Link key={i} href={ciudad.link}>

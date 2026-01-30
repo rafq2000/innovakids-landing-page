@@ -8,11 +8,11 @@ import { Users, Clock, Shield, Star, CheckCircle, Zap, Target } from "lucide-rea
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso Inteligencia Artificial Niños España 2026 | InnovaKids 🇪🇸",
+  title: "Curso de Vibe Coding para Niños España 2026 | InnovaKids 🇪🇸",
   description:
-    "El primer curso de IA para niños de 8-14 años en España. Clases online en vivo (Horario Madrid). Grupos reducidos. Aprende ChatGPT y Midjourney.",
+    "El primer curso de Vibe Coding e IA para niños de 8-14 años en España. Clases online en vivo (Horario Madrid). Grupos reducidos. Aprende a crear Apps.",
   keywords:
-    "curso ia niños españa, clases extraescolares tecnologia madrid, programación niños barcelona, innovakids españa, curso inteligencia artificial niños online",
+    "vibe coding españa, curso ia niños españa, clases extraescolares tecnologia madrid, programación niños barcelona, innovakids españa",
   alternates: {
     canonical: "https://www.innovakidslatam.com/es/cursos-ia-ninos-espana",
     languages: generateHreflangs("sales"),
@@ -59,7 +59,8 @@ export default function CursosIANinosEspana() {
             </div>
 
             <h1 className="mx-auto max-w-4xl text-3xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl px-2">
-              Cursos de Inteligencia Artificial para Niños en España
+              Curso de Vibe Coding: Aprende a Crear con IA
+              <span className="block text-2xl md:text-4xl mt-4 text-white/90">Para Niños en España</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">

@@ -10,11 +10,11 @@ import { Footer } from "@/components/footer"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso Inteligencia Artificial Niños Uruguay 2026 | InnovaKids 🇺🇾",
+  title: "Curso de Vibe Coding para Niños Uruguay 2026 | InnovaKids",
   description:
-    "Curso de IA para niños en Uruguay (Montevideo y todo el país). Aprende a programar con inteligencia artificial. Desde 8 años.",
+    "El primer curso de Vibe Coding e IA para niños de 8-14 años en Uruguay. Clases online en vivo. Grupos reducidos. Aprende a crear Apps.",
   keywords:
-    "curso ia niños uruguay, clases inteligencia artificial montevideo, programación niños uruguay, innovakids uruguay, talleres tecnologia niños",
+    "vibe coding uruguay, cursos de ia para niños uruguay, clases inteligencia artificial montevideo, curso ia niños punta del este, innovakids uruguay",
   openGraph: {
     title: "Cursos de IA para Niños en Uruguay | InnovaKids",
     description: "Curso de IA para niños 8-14 años. ChatGPT, Midjourney, apps. Primera clase gratis.",
@@ -144,10 +144,9 @@ export default function UruguayCursosIAPage() {
                 <span className="text-white font-medium">4.9/5 de 187+ familias uruguayas</span>
               </div>
 
-              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
-                Cursos de Inteligencia Artificial
-                <br />
-                <span className="text-[#0038A8]">para Niños en Uruguay</span>
+              <h1 className="mx-auto max-w-4xl text-3xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl px-2">
+                Curso de Vibe Coding: Aprende a Crear con IA
+                <span className="block text-2xl md:text-4xl mt-4 text-white/90">Para Niños en Uruguay</span>
               </h1>
 
               <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">

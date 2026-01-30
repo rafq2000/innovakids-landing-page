@@ -7,15 +7,16 @@ import { MapPin, Users, Clock, Shield } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Curso de Inteligencia Artificial para Niños en Nicaragua | InnovaKids",
+    title: "Curso de IA y Vibe Coding en Nicaragua | InnovaKids",
     description:
-        "Formación líder en inteligencia artificial para niños de 8 a 14 años en Nicaragua. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+        "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Nicaragua. Clases online en vivo para Managua, León, Masaya and todo el país.",
     keywords: [
-        "ia para niños nicaragua",
-        "cursos ia niños managua",
-        "clases inteligencia artificial nicaragua",
-        "innovakids nicaragua",
-        "programación niños managua",
+        "vibe coding nicaragua",
+        "cursos ia niños nicaragua",
+        "clases ia niños managua",
+        "inteligencia artificial niños leon",
+        "curso ia niños masaya",
+        "ia para niños granada",
     ],
     openGraph: {
         title: "Curso de Inteligencia Artificial para Niños en Nicaragua | InnovaKids",
@@ -52,14 +53,15 @@ export default function NicaraguaHubPage() {
                             <span className="text-white font-medium">InnovaKids en Nicaragua</span>
                         </div>
 
-                        <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6 font-premium">
-                            Cursos de IA para Niños
+                        <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                            Curso de IA y Vibe Coding
                             <br />
-                            <span className="premium-gradient-text">en Nicaragua</span>
+                            <span className="text-[#0067c6]">en Nicaragua</span>
                         </h1>
 
-                        <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-                            El mejor curso de inteligencia artificial para niños nicaragüenses de 8-14 años. Online en vivo con grupos de máximo 5 alumnos.
+                        <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+                            La primera escuela de Vibe Coding para niños de 8-14 años.
+                            <strong className="text-white"> Clases 100% online</strong> desde cualquier departamento del país.
                         </p>
 
                         <div className="flex flex-wrap justify-center gap-4 mb-12">

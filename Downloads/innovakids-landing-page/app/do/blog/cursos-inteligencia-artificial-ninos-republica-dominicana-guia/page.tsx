@@ -5,9 +5,16 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Cursos de Inteligencia Artificial para Niños en República Dominicana 2026: Guía Completa",
+  title: "Vibe Coding en Rep. Dominicana: Guía Completa para Padres 2026",
   description:
-    "Guía definitiva sobre cursos de IA para niños en RD. Qué aprenden, mejores opciones, precios, edades recomendadas. Todo lo que necesitas saber.",
+    "Descubre el Vibe Coding: la nueva forma en que los niños aprenden a programar con IA en República Dominicana. Comparativa de programas y precios.",
+  keywords: [
+    "que es vibe coding",
+    "cursos inteligencia artificial niños republica dominicana",
+    "mejores cursos ia niños",
+    "donde estudiar ia niños santo domingo",
+    "cursos programacion niños rd",
+  ],
 }
 
 export default function BlogCursosIANinosRD() {
@@ -26,8 +33,8 @@ export default function BlogCursosIANinosRD() {
         <section className="bg-gradient-to-br from-[#002D62] to-[#001a3d] py-20 md:py-28">
           <div className="container mx-auto px-4 text-center text-white">
             <div className="mb-4 text-sm font-medium text-[#CE1126]">GUÍA COMPLETA 2026</div>
-            <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-              Cursos de Inteligencia Artificial para Niños en República Dominicana
+            <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
+              Vibe Coding en Rep. Dominicana: La Guía Completa para Padres 2026
             </h1>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
               Todo lo que necesitas saber para elegir el mejor curso de IA para tu hijo. ¡Klk!
@@ -108,9 +115,14 @@ export default function BlogCursosIANinosRD() {
 
             {/* CTA BOX */}
             <div className="mt-16 rounded-3xl bg-gradient-to-br from-[#002D62] to-[#001a3d] p-8 text-center text-white">
-              <h2 className="mb-4 text-2xl font-bold">¿Listo para Inscribir a Tu Hijo?</h2>
-              <p className="mb-8 text-white/80">
-                Agenda una evaluación gratuita y descubre si InnovaKids es ideal para tu familia
+              <h2 className="text-3xl font-bold text-white mb-6">¿Qué es el Vibe Coding y Por Qué Aprenderlo?</h2>
+              <p className="text-gray-300 mb-6">
+                El **Vibe Coding** es escribir código usando lenguaje natural y asistido por Inteligencia Artificial.
+                Ya no hace falta memorizar sintaxis compleja. Hoy, un niño en República Dominicana puede decirle a la IA:
+                "Crea un juego de naves espaciales", y la IA genera el código base.
+              </p>
+              <p className="text-gray-300 mb-6">
+                En República Dominicana, la demanda de perfiles tecnológicos sigue creciendo, y el Vibe Coding es la habilidad del futuro.
               </p>
               <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
                 <Link

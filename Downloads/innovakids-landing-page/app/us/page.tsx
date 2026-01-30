@@ -5,11 +5,18 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, Users, Clock, Shield, ArrowRight, Globe } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños Latinos en USA (En Español) | InnovaKids",
+  title: "Curso de IA y Vibe Coding para Niños Latinos en USA | InnovaKids",
   description:
-    "Clases de Inteligencia Artificial 100% en español para niños y adolescentes en Estados Unidos. Horarios adaptados (EST/PST). Mantén su idioma mientras aprenden tecnología.",
-  keywords:
-    "cursos ia niños latinos usa, clases inteligencia artificial español estados unidos, curso ia niños miami, curso ia niños los angeles, curso ia adolescentes usa, innovakids usa",
+    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños latinos en USA. Clases 100% en español. Miami, Orlando, Houston, LA, NYC.",
+  keywords: [
+    "vibe coding usa",
+    "cursos ia niños latinos usa",
+    "clases ia niños miami",
+    "inteligencia artificial niños orlando",
+    "curso ia niños houston",
+    "ia para niños los angeles",
+    "innovakids usa",
+  ],
   openGraph: {
     title: "Curso de IA para Niños Latinos en USA (En Español)",
     description:
@@ -60,13 +67,15 @@ export default function USAHub() {
               <span className="font-medium">Para Latinos en USA • 100% en Español</span>
             </div>
 
-            <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-6xl">
-              Cursos de IA en Español para Niños Latinos en Estados Unidos
+            <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+              Curso de IA y Vibe Coding
+              <br />
+              <span className="text-[#BF0A30]">para Niños Latinos en USA</span>
             </h1>
 
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90">
-              Tu hijo aprenderá inteligencia artificial sin perder su español. Clases 100% en castellano con horarios
-              USA.
+            <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+              La primera escuela de Vibe Coding para niños de 8-14 años.
+              <strong className="text-white"> Clases 100% en español</strong> para familias latinas en Estados Unidos.
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

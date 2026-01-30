@@ -5,18 +5,18 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, ArrowRight, Users, Clock, Shield, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de Inteligencia Artificial para Niños y Adolescentes en Perú 🇵🇪",
+  title: "Curso de IA y Vibe Coding en Perú | InnovaKids",
   description:
-    "El curso #1 de IA para niños y adolescentes en Perú (Lima, Arequipa, Trujillo). Clases online en vivo, horario Perú. Aprende ChatGPT y Programación.",
+    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Perú. Clases online en vivo para Lima, Arequipa, Trujillo y todo el país. Aprende a crear con IA.",
   keywords:
-    "cursos ia niños peru, clases inteligencia artificial lima, ia para niños arequipa, curso ia adolescentes peru, vacaciones utiles tecnologia, innovakids peru",
+    "curso ia niños peru, vibe coding peru, escuela inteligencia artificial niños, clases programacion niños lima, innovakids peru",
   alternates: {
     canonical: "https://www.innovakidslatam.com/pe",
   },
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños y Adolescentes en Perú 🇵🇪",
+    title: "Curso de IA y Vibe Coding en Perú | InnovaKids",
     description:
-      "El curso #1 de IA para niños y adolescentes en Perú (Lima, Arequipa, Trujillo). Clases online en vivo, horario Perú.",
+      "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Perú. Clases online en vivo para todo el país.",
     url: "https://www.innovakidslatam.com/pe",
     locale: "es_PE",
     siteName: "InnovaKids",
@@ -53,12 +53,11 @@ export default function PeruHub() {
             </div>
 
             <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight md:text-6xl">
-              Cursos de IA para Niños en Todo Perú
+              Escuela de Inteligencia Artificial y Vibe Coding en Perú
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">
-              Clases 100% online en vivo. Tu hijo puede participar desde Lima, Arequipa, Trujillo, Cusco o cualquier
-              ciudad del país.
+              La metodología revolucionaria donde tu hijo aprende a programar usando IA. Clases 100% online en vivo para Lima, Arequipa, Trujillo y todo el país.
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

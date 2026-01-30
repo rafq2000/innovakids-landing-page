@@ -7,9 +7,16 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin, Star } from "lucide-rea
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Niños en La Paz 2026 | Cursos Online | InnovaKids",
+  title: "Clases de Vibe Coding en La Paz 2026 | InnovaKids",
   description:
-    "Clases de Inteligencia Artificial para niños en La Paz, Bolivia. Cursos online en vivo, grupos de máx 5 alumnos. $197 USD por 10 clases.",
+    "Clases de programación con IA (Vibe Coding) para niños en La Paz. Calacoto, Sopocachi, Obrajes. Grupos de 5 alumnos. Primera clase GRATIS.",
+  keywords: [
+    "clases vibe coding la paz",
+    "clases ia niños la paz",
+    "curso inteligencia artificial niños calacoto",
+    "ia para niños sopocachi",
+    "clases programacion niños obrajes",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/bo/clases-ia-ninos-la-paz",
   },
@@ -26,8 +33,10 @@ export default function LaPazPage() {
             <div className="max-w-4xl mx-auto text-center">
               <Badge className="mb-6 bg-[#007934] text-white px-4 py-2">🇧🇴 La Paz, Bolivia</Badge>
 
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-                Clases de IA para Niños en <span className="text-[#007934]">La Paz</span>
+              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                Clases de Vibe Coding e IA
+                <br />
+                <span className="text-[#007934]">para Niños en La Paz</span>
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

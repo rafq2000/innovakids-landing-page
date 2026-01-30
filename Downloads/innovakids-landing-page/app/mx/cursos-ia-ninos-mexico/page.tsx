@@ -10,35 +10,30 @@ import { PricingSection } from "@/components/pricing-section"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "#1 Curso de IA para Niños en México 2026 | InnovaKids - Mejor Valorado",
+  title: "Cursos de IA para Niños México 2026 | Evaluación Gratis | InnovaKids",
   description:
-    "El curso de inteligencia artificial #1 para niños en México. 4.9★ de 847 familias. Grupos de solo 5 niños. $197 USD por 10 clases en vivo. Garantía 10 días. ChatGPT, Midjourney, apps reales.",
+    "Inscripciones abiertas 2026. Curso de Vibe Coding y Programación con IA para niños en México. 10 clases online, grupos pequeños. Agenda tu evaluación gratuita.",
   keywords: [
+    "curso vibe coding mexico",
     "mejor curso de ia para niños mexico",
     "curso de ia para niños numero 1",
     "cursos de ia para niños mexico",
-    "cursos de inteligencia artificial para niños mexico",
     "clases de ia para niños cdmx",
     "innovakids mexico",
-    "curso inteligencia artificial niños",
-    "clases online ia niños",
-    "escuela de inteligencia artificial para niños",
-    "aprender chatgpt para niños",
-    "tecnología para niños mexico",
   ],
   openGraph: {
-    title: "#1 Curso de IA para Niños en México | InnovaKids",
+    title: "Cursos de IA para Niños México 2026 | Evaluación Gratis",
     description:
-      "El curso mejor valorado de Latinoamérica. 4.9★ de 252 familias mexicanas. Grupos de 5 niños. $197 USD.",
+      "Aprende Vibe Coding: La nueva forma de programar con Inteligencia Artificial. Curso online para niños 8-14 años. Evaluación gratuita.",
     url: "https://www.innovakidslatam.com/mx/cursos-ia-ninos-mexico",
     siteName: "InnovaKids",
     locale: "es_MX",
     type: "website",
   },
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/mx/cursos-ia-ninos-mexico",
-    languages: generateHreflangs("sales"),
-  },
+}  alternates: {
+  canonical: "https://www.innovakidslatam.com/mx/cursos-ia-ninos-mexico",
+  languages: generateHreflangs("sales"),
+},
 }
 
 const jsonLd = {
@@ -135,9 +130,9 @@ export default function MexicoCursosIAPage() {
               </div>
 
               <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-white leading-tight px-2">
-                El Mejor Curso de IA
+                Curso de Vibe Coding
                 <br />
-                <span className="text-primary">para Niños en México</span>
+                <span className="text-primary">Aprende a Programar con IA</span>
               </h1>
 
               <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">

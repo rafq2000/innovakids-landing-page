@@ -5,11 +5,17 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, Users, Clock, Shield, Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de Inteligencia Artificial para Niños en Panamá | InnovaKids",
+  title: "Curso de IA y Vibe Coding en Panamá | InnovaKids",
   description:
-    "Formación líder en inteligencia artificial para niños de 8 a 14 años en Panamá. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
-  keywords:
-    "cursos ia niños panama, clases ia panama city, curso inteligencia artificial niños colon, ia niños david chiriqui, innovakids panama",
+    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Panamá. Clases online en vivo para Ciudad de Panamá, David, Colón y todo el país.",
+  keywords: [
+    "vibe coding panama",
+    "cursos ia niños panama",
+    "clases ia niños panama city",
+    "inteligencia artificial niños david",
+    "curso ia niños colon",
+    "ia para niños chorrera",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/pa",
   },
@@ -57,8 +63,10 @@ export default function PanamaHub() {
               <span className="font-medium">Panamá - Todas las Ciudades</span>
             </div>
 
-            <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
-              Cursos de IA para Niños en Todo Panamá
+            <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+              Curso de IA y Vibe Coding
+              <br />
+              <span className="text-[#DA121A]">en Panamá</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">

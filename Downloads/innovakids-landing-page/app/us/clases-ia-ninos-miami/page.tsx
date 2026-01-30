@@ -5,11 +5,16 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, CheckCircle, Target, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Niños en Miami 2026 | En Español | InnovaKids 🌴",
+  title: "Clases de Vibe Coding en Miami 2026 | InnovaKids",
   description:
-    "Clases de inteligencia artificial en español para niños latinos en Miami, Florida. Doral, Hialeah, Kendall, Brickell. 10 clases, grupos de 5 niños. Evaluación gratis.",
-  keywords:
-    "clases ia niños miami, cursos inteligencia artificial niños doral, curso ia niños hialeah, clases ia español miami, programación niños kendall, innovakids miami florida",
+    "Clases de programación con IA (Vibe Coding) para niños en Miami. Doral, Coral Gables, Brickell. En español. Grupos de 5 alumnos. Primera clase GRATIS.",
+  keywords: [
+    "clases vibe coding miami",
+    "clases ia niños miami",
+    "curso inteligencia artificial niños doral",
+    "ia para niños coral gables",
+    "clases programacion niños brickell",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/us/clases-ia-ninos-miami",
   },
@@ -56,8 +61,10 @@ export default function ClasesIANinosMiami() {
               <span className="font-medium">Miami, Florida • 100% en Español</span>
             </div>
 
-            <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-6xl lg:text-7xl">
-              Clases de Inteligencia Artificial para Niños en Miami
+            <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+              Clases de Vibe Coding e IA
+              <br />
+              <span className="text-[#BF0A30]">para Niños en Miami</span>
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">

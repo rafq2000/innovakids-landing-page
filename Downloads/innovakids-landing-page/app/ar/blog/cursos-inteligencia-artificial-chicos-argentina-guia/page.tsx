@@ -7,15 +7,15 @@ import { Calendar, Clock, User, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Cursos de Inteligencia Artificial para Chicos en Argentina: Guía Completa 2026",
+  title: "Vibe Coding en Argentina: Guía Completa para Padres 2026",
   description:
-    "Guía definitiva sobre cursos de IA para chicos en Argentina. Comparativa de programas, precios, edades y qué aprenden. Todo lo que necesitás saber antes de inscribir a tu hijo.",
+    "Descubrí el Vibe Coding: la nueva forma en que los chicos aprenden a programar con IA en Argentina. Comparativa de programas y precios.",
   keywords: [
+    "que es vibe coding",
     "cursos inteligencia artificial chicos argentina",
     "mejores cursos ia chicos",
     "donde estudiar ia chicos argentina",
     "cursos programacion chicos buenos aires",
-    "ia para chicos online argentina",
   ],
   openGraph: {
     title: "Cursos de IA para Chicos en Argentina: Guía Completa 2026",
@@ -72,7 +72,7 @@ export default function ArgentinaBlogGuiaPage() {
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-              Cursos de Inteligencia Artificial para Chicos en Argentina: Guía Completa 2026
+              Vibe Coding en Argentina: La Guía Completa para Padres 2026
             </h1>
 
             <p className="text-xl text-gray-300 leading-relaxed">
@@ -87,18 +87,14 @@ export default function ArgentinaBlogGuiaPage() {
         <article className="py-16 bg-[#0a1628]">
           <div className="container mx-auto px-6 max-w-4xl">
             <div className="prose prose-lg prose-invert max-w-none">
-              <h2 className="text-3xl font-bold text-white mb-6">¿Por Qué Tu Hijo Debería Aprender IA en 2026?</h2>
-
+              <h2 className="text-3xl font-bold text-white mb-6">¿Qué es el Vibe Coding y Por Qué Aprenderlo?</h2>
               <p className="text-gray-300 mb-6">
-                La inteligencia artificial ya no es el futuro: es el presente. Según el Foro Económico Mundial, el 65%
-                de los chicos que hoy están en primaria trabajarán en empleos que todavía no existen. Y la mayoría de
-                esos empleos estarán relacionados con IA.
+                El **Vibe Coding** es escribir código usando lenguaje natural y asistido por Inteligencia Artificial.
+                Ya no hace falta memorizar sintaxis compleja. Hoy, un chico en Argentina puede decirle a la IA:
+                "Creá un juego de naves espaciales", y la IA genera el código base.
               </p>
-
               <p className="text-gray-300 mb-6">
-                En Argentina, la demanda de profesionales con conocimientos en IA creció un 340% en los últimos 3 años.
-                Las empresas tecnológicas argentinas como Mercado Libre, Globant y Ualá buscan constantemente talento
-                con habilidades en inteligencia artificial.
+                En Argentina, la demanda de perfiles tecnológicos sigue volando, y el Vibe Coding es la habilidad del futuro.
               </p>
 
               <div className="bg-[#0f2744] rounded-xl p-6 border border-white/10 my-8">

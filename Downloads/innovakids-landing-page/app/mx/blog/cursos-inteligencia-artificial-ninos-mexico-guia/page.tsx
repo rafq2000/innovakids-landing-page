@@ -7,10 +7,11 @@ import { Clock, Calendar } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Cursos de Inteligencia Artificial para Niños México: Guía Completa 2026",
+  title: "Guía México 2026: ¿Qué es el Vibe Coding y por qué tu hijo debe aprenderlo?",
   description:
-    "¿Buscas cursos de IA para niños en México? Guía completa con comparativas, precios, herramientas y todo lo que necesitas saber antes de inscribir a tu hijo.",
+    "El Vibe Coding es la revolución en la educación tecnológica. Descubre cómo la IA está cambiando la forma en que los niños aprenden a programar en México.",
   keywords: [
+    "que es vibe coding",
     "cursos de inteligencia artificial para niños",
     "cursos ia niños mexico guia",
     "mejores cursos ia niños",
@@ -18,8 +19,8 @@ export const metadata: Metadata = {
     "inteligencia artificial para niños mexico",
   ],
   openGraph: {
-    title: "Cursos de Inteligencia Artificial para Niños México: Guía Completa 2026",
-    description: "Guía completa con comparativas, precios y herramientas de IA para niños.",
+    title: "Guía México 2026: ¿Qué es el Vibe Coding?",
+    description: "Todo lo que necesitas saber sobre la nueva era de la programación con IA para niños en México.",
     url: "https://www.innovakidslatam.com/mx/blog/cursos-inteligencia-artificial-ninos-mexico-guia",
     type: "article",
     locale: "es_MX",
@@ -70,7 +71,7 @@ export default function GuiaCompletaPage() {
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-              Cursos de Inteligencia Artificial para Niños en México: Guía Completa 2026
+              Vibe Coding en México: La Guía Completa para Padres 2026
             </h1>
 
             <p className="text-xl text-gray-300 mb-8">
@@ -133,20 +134,14 @@ export default function GuiaCompletaPage() {
             <div className="prose prose-lg prose-invert max-w-none">
               {/* SECCIÓN 1 */}
               <section id="que-es-ia" className="mb-16">
-                <h2 className="text-3xl font-bold text-white mb-6">1. ¿Qué es la IA para Niños?</h2>
+                <h2 className="text-3xl font-bold text-white mb-6">1. ¿Qué es el Vibe Coding?</h2>
                 <p className="text-gray-300 mb-4">
-                  La <strong className="text-white">inteligencia artificial para niños</strong> es un enfoque educativo
-                  que enseña a los más jóvenes a entender, usar y crear con herramientas de IA de manera segura y
-                  productiva.
+                  El <strong className="text-white">Vibe Coding</strong> no es solo escribir líneas de código. Es programar usando el lenguaje natural y la Inteligencia Artificial.
+                  Antes, para crear un videojuego, un niño necesitaba memorizar sintaxis compleja. Hoy, un niño en México puede decirle a la IA:
+                  "Crea un juego donde un gato salte obstáculos", y la IA genera el código base.
                 </p>
                 <p className="text-gray-300 mb-4">
-                  No se trata de convertir a tu hijo en un programador experto de la noche a la mañana. Se trata de
-                  darle las herramientas para que pueda <strong className="text-white">crear</strong> en lugar de solo{" "}
-                  <strong className="text-white">consumir</strong> tecnología.
-                </p>
-                <p className="text-gray-300">
-                  En un curso de IA para niños, aprenderán a usar ChatGPT para escribir historias, Midjourney para crear
-                  arte, Suno AI para componer música, y mucho más. Todo de forma práctica y divertida.
+                  No se trata solo de <strong className="text-white">consumir</strong> tecnología, sino de darle el poder de <strong className="text-white">crear</strong> cualquier cosa que imagine en cuestión de minutos.
                 </p>
               </section>
 

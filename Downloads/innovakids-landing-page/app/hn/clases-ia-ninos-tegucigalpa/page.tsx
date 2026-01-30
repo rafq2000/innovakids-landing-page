@@ -7,11 +7,16 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin, Star } from "lucide-rea
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Niños en Tegucigalpa 2026 | Cursos Online | InnovaKids",
+  title: "Clases de Vibe Coding en Tegucigalpa 2026 | InnovaKids",
   description:
-    "Clases de Inteligencia Artificial para niños en Tegucigalpa. Cursos online en vivo, grupos de máx 5 alumnos. $197 USD por 10 clases. ¡Garantía 10 días!",
-  keywords:
-    "clases ia niños tegucigalpa, cursos inteligencia artificial niños tegucigalpa, ia para niños honduras capital",
+    "Clases de programación con IA (Vibe Coding) para niños en Tegucigalpa. Lomas del Guijarro, Palmira, El Hatillo. Grupos de 5 alumnos. Primera clase GRATIS.",
+  keywords: [
+    "clases vibe coding tegucigalpa",
+    "clases ia niños tegucigalpa",
+    "curso inteligencia artificial niños lomas del guijarro",
+    "ia para niños palmira",
+    "clases programacion niños el hatillo",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/hn/clases-ia-ninos-tegucigalpa",
   },
@@ -38,8 +43,10 @@ export default function TegucigalpaPage() {
             <div className="max-w-4xl mx-auto text-center">
               <Badge className="mb-6 bg-[#0073CF] text-white px-4 py-2">🇭🇳 Tegucigalpa, Honduras</Badge>
 
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-                Clases de IA para Niños en <span className="text-[#0073CF]">Tegucigalpa</span>
+              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                Clases de Vibe Coding e IA
+                <br />
+                <span className="text-[#0073CF]">para Niños en Tegucigalpa</span>
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

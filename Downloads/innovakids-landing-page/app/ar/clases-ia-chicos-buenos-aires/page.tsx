@@ -7,15 +7,15 @@ import { Check, Users, Shield, Star, MapPin } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Chicos Buenos Aires 2026 | Online | InnovaKids",
+  title: "Clases de Vibe Coding en Buenos Aires 2026 | InnovaKids",
   description:
-    "Clases de inteligencia artificial para chicos en Buenos Aires. Curso online de IA para niños 8-14 años. Grupos de 5 alumnos. Primera clase GRATIS. CABA, Zona Norte, Sur y Oeste.",
+    "Clases de programación con IA (Vibe Coding) para chicos en Buenos Aires. CABA, Zona Norte, Sur y Oeste. Grupos de 5 alumnos. Primera clase GRATIS.",
   keywords: [
+    "clases vibe coding buenos aires",
     "clases ia chicos buenos aires",
     "curso inteligencia artificial chicos caba",
     "ia para chicos zona norte",
     "clases programacion chicos buenos aires",
-    "curso ia chicos online argentina",
   ],
   openGraph: {
     title: "Clases de IA para Chicos en Buenos Aires | InnovaKids",
@@ -76,9 +76,9 @@ export default function BuenosAiresClasesIAPage() {
             </div>
 
             <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
-              Clases de IA para Chicos
+              Clases de Vibe Coding e IA
               <br />
-              <span className="text-[#75AADB]">en Buenos Aires</span>
+              <span className="text-[#75AADB]">para Chicos en Buenos Aires</span>
             </h1>
 
             <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">

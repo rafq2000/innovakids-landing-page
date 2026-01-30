@@ -5,16 +5,24 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, Users, Clock, Shield, Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de Inteligencia Artificial para Niños en República Dominicana | InnovaKids",
+  title: "Curso de IA y Vibe Coding en República Dominicana | InnovaKids",
   description:
-    "Formación líder en inteligencia artificial para niños de 8 a 14 años en República Dominicana. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en República Dominicana. Clases online en vivo para Santo Domingo, Santiago, Punta Cana y todo el país.",
+  keywords: [
+    "vibe coding republica dominicana",
+    "cursos ia niños republica dominicana",
+    "clases ia niños santo domingo",
+    "inteligencia artificial niños santiago",
+    "curso ia niños punta cana",
+    "ia para niños puerto plata",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/do",
   },
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños en República Dominicana | InnovaKids",
+    title: "Curso de IA y Vibe Coding en República Dominicana | InnovaKids",
     description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años en República Dominicana. Clases online en vivo, grupos de 5 alumnos.",
+      "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en República Dominicana. Clases online en vivo para Santo Domingo, Santiago, Punta Cana y todo el país.",
     url: "https://www.innovakidslatam.com/do",
     locale: "es_DO",
     siteName: "InnovaKids",
@@ -52,12 +60,15 @@ export default function RepublicaDominicanaHub() {
               <span className="font-medium">República Dominicana - Todas las Ciudades</span>
             </div>
 
-            <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight md:text-6xl lg:text-7xl">
-              Cursos de IA para Niños en Toda República Dominicana
+            <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+              Curso de IA y Vibe Coding
+              <br />
+              <span className="text-[#002D62]">en República Dominicana</span>
             </h1>
 
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">
-              Clases 100% online en vivo desde cualquier ciudad. Santo Domingo, Santiago, Punta Cana y más.
+            <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+              La primera escuela de Vibe Coding para niños de 8-14 años.
+              <strong className="text-white"> Clases 100% online</strong> desde cualquier provincia del país.
             </p>
 
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

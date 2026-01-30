@@ -7,9 +7,17 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin } from "lucide-react"
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Curso de Inteligencia Artificial para Niños en Bolivia | InnovaKids",
+  title: "Curso de IA y Vibe Coding en Bolivia | InnovaKids",
   description:
-    "Formación líder en inteligencia artificial para niños de 8 a 14 años en Bolivia. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Bolivia. Clases online en vivo para La Paz, Santa Cruz, Cochabamba y todo el país.",
+  keywords: [
+    "vibe coding bolivia",
+    "cursos ia niños bolivia",
+    "clases ia niños la paz",
+    "inteligencia artificial niños santa cruz",
+    "curso ia niños cochabamba",
+    "ia para niños el alto",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/bo",
   },
@@ -42,12 +50,15 @@ export default function BoliviaHubPage() {
             <div className="max-w-4xl mx-auto text-center">
               <Badge className="mb-6 bg-[#007934] text-white px-4 py-2">🇧🇴 Bolivia</Badge>
 
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tight mb-6">
-                Cursos de IA para Niños en <span className="text-[#007934]">Bolivia</span>
+              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                Curso de IA y Vibe Coding
+                <br />
+                <span className="text-[#007934]">en Bolivia</span>
               </h1>
 
-              <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                Clases online en vivo para niños de 8 a 17 años desde cualquier ciudad de Bolivia.
+              <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
+                La primera escuela de Vibe Coding para niños de 8-14 años.
+                <strong className="text-white"> Clases 100% online</strong> desde cualquier departamento del país.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">

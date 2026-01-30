@@ -7,9 +7,16 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin, Star } from "lucide-rea
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Patojos en Ciudad de Guatemala 2026 | Cursos Online | InnovaKids",
+  title: "Clases de Vibe Coding en Ciudad de Guatemala 2026 | InnovaKids",
   description:
-    "Clases de Inteligencia Artificial para patojos en Ciudad de Guatemala. Cursos online en vivo, grupos de máx 5 alumnos. $197 USD por 10 clases. ¡Garantía 10 días!",
+    "Clases de programación con IA (Vibe Coding) para niños en Ciudad de Guatemala. Zona 10, Zona 14, Zona 15. Grupos de 5 alumnos. Primera clase GRATIS.",
+  keywords: [
+    "clases vibe coding ciudad de guatemala",
+    "clases ia niños ciudad de guatemala",
+    "curso inteligencia artificial niños zona 10",
+    "ia para niños zona 14",
+    "clases programacion niños zona 15",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/gt/clases-ia-ninos-ciudad-guatemala",
   },
@@ -36,8 +43,10 @@ export default function CiudadGuatemalaPage() {
             <div className="max-w-4xl mx-auto text-center">
               <Badge className="mb-6 bg-[#4997D0] text-white px-4 py-2">🇬🇹 Ciudad de Guatemala</Badge>
 
-              <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-                Clases de IA para Patojos en <span className="text-[#4997D0]">Guatemala City</span>
+              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                Clases de Vibe Coding e IA
+                <br />
+                <span className="text-[#4997D0]">para Niños en Guatemala</span>
               </h1>
 
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">

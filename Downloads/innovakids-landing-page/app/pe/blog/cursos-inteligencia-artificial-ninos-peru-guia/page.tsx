@@ -5,17 +5,17 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { CheckCircle, Target, ArrowRight, Clock, Users, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Cursos de Inteligencia Artificial para Niños en Perú: Guía Completa 2026",
+  title: "Guía Perú 2026: ¿Qué es el Vibe Coding y por qué tu hijo debe aprenderlo?",
   description:
-    "Guía definitiva sobre cursos de IA para niños en Perú. Qué aprenden, metodología, herramientas, precios y cómo elegir el mejor programa. Información actualizada 2026.",
+    "El Vibe Coding es la revolución en la educación tecnológica. Descubre cómo la IA está cambiando la forma en que los niños aprenden a programar en Perú.",
   keywords:
-    "cursos inteligencia artificial niños peru, ia para niños lima, como enseñar ia a niños, programación para niños peru, innovakids peru guia",
+    "que es vibe coding, ia para niños peru, guia padres tecnologia, educacion futuro peru, innovakids blog",
   alternates: {
     canonical: "https://www.innovakidslatam.com/pe/blog/cursos-inteligencia-artificial-ninos-peru-guia",
   },
   openGraph: {
-    title: "Cursos de Inteligencia Artificial para Niños en Perú: Guía Completa 2026",
-    description: "Todo lo que necesitas saber sobre cursos de IA para niños en Perú.",
+    title: "Guía Perú 2026: ¿Qué es el Vibe Coding?",
+    description: "Todo lo que necesitas saber sobre la nueva era de la programación con IA para niños en Perú.",
     type: "article",
     publishedTime: "2026-01-01",
     authors: ["InnovaKids"],
@@ -49,12 +49,11 @@ export default function GuiaIANinosPeru() {
               </div>
 
               <h1 className="mb-6 text-4xl font-bold leading-tight md:text-5xl lg:text-6xl">
-                Cursos de Inteligencia Artificial para Niños en Perú: Guía Completa 2026
+                Vibe Coding en Perú: La Guía Completa para Padres 2026
               </h1>
 
               <p className="text-xl text-white/90">
-                Todo lo que necesitas saber para elegir el mejor curso de IA para tu hijo en Perú. Metodologías,
-                herramientas, precios y recomendaciones actualizadas.
+                ¿Qué es el Vibe Coding? Descubre cómo la Inteligencia Artificial está democratizando la creación de tecnología para los niños peruanos.
               </p>
             </div>
           </div>
@@ -95,16 +94,14 @@ export default function GuiaIANinosPeru() {
             <div className="mx-auto max-w-4xl">
               {/* Section 1 */}
               <section id="que-es-ia" className="mb-16">
-                <h2 className="mb-6 text-3xl font-bold">1. ¿Qué es la Inteligencia Artificial para Niños?</h2>
+                <h2 className="mb-6 text-3xl font-bold">1. ¿Qué es el Vibe Coding?</h2>
                 <p className="mb-4 text-lg text-muted-foreground">
-                  La inteligencia artificial para niños no es programación compleja ni matemáticas avanzadas. Es
-                  enseñarles a usar herramientas de IA como ChatGPT, Midjourney, Suno AI y otras para crear proyectos
-                  reales: desde comics y música hasta aplicaciones y videojuegos.
+                  El **Vibe Coding** no es solo escribir líneas de código. Es programar usando el lenguaje natural y la Inteligencia Artificial.
+                  Antes, para crear un videojuego, un niño necesitaba memorizar sintaxis compleja. Hoy, con el Vibe Coding, un niño puede decirle a la IA:
+                  "Crea un juego donde un gato salte obstáculos", y la IA genera el código base.
                 </p>
                 <p className="mb-4 text-lg text-muted-foreground">
-                  En Perú, cada vez más familias en Lima, Arequipa, Trujillo y otras ciudades buscan programas que
-                  preparen a sus hijos para el futuro digital. La IA no es el futuro, es el presente, y los niños que
-                  aprenden a usarla hoy tendrán una ventaja competitiva enorme.
+                  En Perú, esto significa que los niños de Lima, Arequipa y Trujillo pueden pasar de ser consumidores a **creadores de tecnología** en cuestión de semanas, no años.
                 </p>
               </section>
 
