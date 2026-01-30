@@ -605,7 +605,23 @@
         rgba(77, 208, 225, 0.15) 75%,
         rgba(139, 92, 246, 0.1) 100%);
     background-size: 400% 400%;
-    animation: aurora 15s ease infinite;
+    animation: aurora 30s ease infinite;
+    will-change: background-position, transform;
+    transform: translateZ(0);
+  }
+
+  /* Performance: Disable animations for users who prefer reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+
+    .aurora-bg,
+    .holographic-card::before,
+    .premium-gradient-text,
+    .shimmer,
+    .animate-float,
+    .float-3d,
+    .gradient-animated {
+      animation: none !important;
+    }
   }
 
   /* Holographic Card Effect */
@@ -643,6 +659,7 @@
         #8b5cf6);
     background-size: 300% 300%;
     animation: holographic-border 4s linear infinite;
+    will-change: background-position;
     border-radius: inherit;
     -webkit-mask:
       linear-gradient(#fff 0 0) content-box,

@@ -1,8 +1,23 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import Script from "next/script"
 
 export function TrackingPixels() {
+  // Delay loading of heavy third-party scripts to prioritize LCP
+  const [isLoaded, setIsLoaded] = useState(false)
+
+  useEffect(() => {
+    // 4 seconds delay allows the page to settle and pass LCP/TBT checks
+    const timer = setTimeout(() => {
+      setIsLoaded(true)
+    }, 4000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  if (!isLoaded) return null
+
   return (
     <>
       {/* Google Ads / GTM - Optimized Load */}

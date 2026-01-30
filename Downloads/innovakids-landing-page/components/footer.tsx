@@ -56,6 +56,7 @@ export function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-10 h-10 rounded-full bg-[#0a1628]/10 flex items-center justify-center hover:bg-[#0a1628]/20 transition-colors group"
+                    aria-label="Síguenos en Instagram"
                   >
                     <Instagram className="w-5 h-5 text-[#0a1628] group-hover:scale-110 transition-transform" />
                   </a>

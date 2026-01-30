@@ -6,7 +6,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 
 const AIFutureSection = dynamic(
   () => import("@/components/ai-future-section").then((mod) => ({ default: mod.AIFutureSection })),
-  { ssr: true },
+  { ssr: true, loading: () => <div className="h-[400px] bg-background animate-pulse" /> },
 )
 const ModulePreviewSection = dynamic(
   () => import("@/components/module-preview-section").then((mod) => ({ default: mod.ModulePreviewSection })),
@@ -42,12 +42,16 @@ const UpcomingCoursesSection = dynamic(
 )
 const CalendlySection = dynamic(
   () => import("@/components/calendly-section").then((mod) => ({ default: mod.CalendlySection })),
-  { ssr: true },
+  { ssr: true, loading: () => <div className="h-[600px] bg-background animate-pulse" /> },
 )
 const FAQSection = dynamic(() => import("@/components/faq-section").then((mod) => ({ default: mod.FAQSection })), {
   ssr: true,
+  loading: () => <div className="h-[500px] bg-background animate-pulse" />,
 })
-const Footer = dynamic(() => import("@/components/footer").then((mod) => ({ default: mod.Footer })), { ssr: true })
+const Footer = dynamic(() => import("@/components/footer").then((mod) => ({ default: mod.Footer })), {
+  ssr: true,
+  loading: () => <div className="h-[300px] bg-[#030712] animate-pulse" />,
+})
 const SEOContent = dynamic(() => import("@/components/seo-content").then((mod) => ({ default: mod.SEOContent })), {
   ssr: true,
 })
