@@ -53,7 +53,7 @@ export const salesPageSlugs: Record<string, string> = {
  * Generates the 'languages' object for Next.js Metadata alternates.
  * Usage: matches the CURRENT page type (home, product, blog) across all country variants.
  */
-export function generateHreflangs(pageType: "home" | "sales" | "city" | "magnet", extraSlug?: string) {
+export function generateHreflangs(pageType: "home" | "sales" | "city" | "magnet", extraSlug?: string): Record<string, string> {
     const languages: Record<string, string> = {}
 
     countryCodes.forEach(({ code }) => {
