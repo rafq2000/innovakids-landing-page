@@ -30,10 +30,10 @@ export const metadata: Metadata = {
     locale: "es_MX",
     type: "website",
   },
-}  alternates: {
-  canonical: "https://www.innovakidslatam.com/mx/cursos-ia-ninos-mexico",
-  languages: generateHreflangs("sales"),
-},
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/mx/cursos-ia-ninos-mexico",
+    languages: generateHreflangs("sales"),
+  },
 }
 
 const jsonLd = {
