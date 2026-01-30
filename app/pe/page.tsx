@@ -5,18 +5,18 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, ArrowRight, Users, Clock, Shield, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de Inteligencia Artificial para Niños en Perú | InnovaKids",
+  title: "Curso de Inteligencia Artificial para Niños y Adolescentes en Perú 🇵🇪",
   description:
-    "Formación líder en inteligencia artificial para niños de 8 a 14 años en Perú. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+    "El curso #1 de IA para niños y adolescentes en Perú (Lima, Arequipa, Trujillo). Clases online en vivo, horario Perú. Aprende ChatGPT y Programación.",
   keywords:
-    "cursos ia niños peru, clases inteligencia artificial lima, ia para niños arequipa, cursos programación trujillo, innovakids peru",
+    "cursos ia niños peru, clases inteligencia artificial lima, ia para niños arequipa, curso ia adolescentes peru, vacaciones utiles tecnologia, innovakids peru",
   alternates: {
     canonical: "https://www.innovakidslatam.com/pe",
   },
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños en Perú | InnovaKids",
+    title: "Curso de Inteligencia Artificial para Niños y Adolescentes en Perú 🇵🇪",
     description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años en Perú. Clases online en vivo, grupos de 5 alumnos.",
+      "El curso #1 de IA para niños y adolescentes en Perú (Lima, Arequipa, Trujillo). Clases online en vivo, horario Perú.",
     url: "https://www.innovakidslatam.com/pe",
     locale: "es_PE",
     siteName: "InnovaKids",

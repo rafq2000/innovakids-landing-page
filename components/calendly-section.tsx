@@ -186,11 +186,10 @@ export function CalendlySection() {
                     <button
                       key={age.value}
                       onClick={() => setChildAge(age.value)}
-                      className={`px-3 md:px-4 py-2.5 md:py-3 rounded-lg border-2 transition-all font-medium text-sm md:text-base ${
-                        childAge === age.value
+                      className={`px-3 md:px-4 py-2.5 md:py-3 rounded-lg border-2 transition-all font-medium text-sm md:text-base ${childAge === age.value
                           ? "border-[#4DD0E1] bg-[#4DD0E1]/10 text-[#0a1628]"
                           : "border-gray-200 hover:border-[#4DD0E1]/50 text-gray-700"
-                      }`}
+                        }`}
                     >
                       {age.label}
                     </button>
@@ -207,11 +206,10 @@ export function CalendlySection() {
                     <button
                       key={interest.value}
                       onClick={() => setChildInterest(interest.value)}
-                      className={`px-3 md:px-4 py-2.5 md:py-3 rounded-lg border-2 transition-all font-medium text-left text-sm md:text-base ${
-                        childInterest === interest.value
+                      className={`px-3 md:px-4 py-2.5 md:py-3 rounded-lg border-2 transition-all font-medium text-left text-sm md:text-base ${childInterest === interest.value
                           ? "border-[#4DD0E1] bg-[#4DD0E1]/10 text-[#0a1628]"
                           : "border-gray-200 hover:border-[#4DD0E1]/50 text-gray-700"
-                      }`}
+                        }`}
                     >
                       {interest.label}
                     </button>
@@ -231,6 +229,7 @@ export function CalendlySection() {
                       setCustomCountry("")
                     }}
                     className="w-full px-4 py-3 pr-10 border-2 border-gray-200 rounded-lg appearance-none focus:outline-none focus:border-[#4DD0E1] text-gray-800 font-medium cursor-pointer"
+                    aria-label="Selecciona tu país"
                   >
                     {LATIN_AMERICA_COUNTRIES.map((country) => (
                       <option key={country.code} value={country.code}>
@@ -266,6 +265,7 @@ export function CalendlySection() {
                     onChange={(e) => setSelectedDate(e.target.value)}
                     min={new Date().toISOString().split("T")[0]}
                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-[#4DD0E1] text-gray-800 font-medium"
+                    aria-label="Selecciona una fecha"
                   />
                   <Calendar className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
                 </div>

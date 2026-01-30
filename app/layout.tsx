@@ -8,14 +8,16 @@ import "./globals.css"
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  weight: ["400", "600", "700"],
   variable: "--font-poppins",
+  display: "swap",
 })
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["500", "700"],
   variable: "--font-space-grotesk",
+  display: "swap",
 })
 
 export const viewport: Viewport = {
@@ -26,9 +28,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Curso de Inteligencia Artificial para Niños y Adolescentes | InnovaKids",
+  title: "InnovaKids | Cursos de IA para Niños y Adolescentes Online",
   description:
-    "Formación líder en inteligencia artificial para niños de 8 a 14 años. Clases en vivo online, grupos pequeños y certificación internacional. Prepara a tu hijo para el futuro tecnológico.",
+    "La escuela #1 de Inteligencia Artificial para niños y adolescentes (8-14 años) en Latinoamérica y USA. Clases en vivo 100% en español. Certificación Internacional.",
   keywords: [
     "curso inteligencia artificial niños",
     "curso inteligencia artificial adolescentes",
@@ -36,17 +38,11 @@ export const metadata: Metadata = {
     "escuela de inteligencia artificial para niños",
     "aprender chatgpt para niños",
     "curso de programación y ia para niños",
-    "talleres de tecnologia para niños",
-    "inteligencia artificial para niños de 8 a 14 años",
-    "curso de verano inteligencia artificial",
-
-    "clases extraescolares tecnologia",
-    "codingal alternativa",
-    "tekhne alternativa",
-    "crack the code alternativa",
-    "byju's future school alternativa",
+    "innovakids",
+    "innovakidslatam",
+    "cursos de tecnologia para niños"
   ],
-  authors: [{ name: "Innovakids" }],
+  authors: [{ name: "Innovakids Team" }],
   creator: "Innovakids",
   publisher: "Innovakids",
   formatDetection: {

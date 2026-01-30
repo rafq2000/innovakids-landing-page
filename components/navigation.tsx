@@ -72,19 +72,18 @@ export function Navigation() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo with subtle glow on hover */}
-          <motion.div
-            whileHover={{ scale: 1.02 }}
-            className="relative"
-          >
+          {/* Logo - Priority Loading */}
+          <div className="relative hover:scale-[1.02] transition-transform">
             <Image
               src="/logo-innovakids-v4.png"
               alt="Innovakids"
               width={240}
               height={80}
               className="h-12 sm:h-16 md:h-20 w-auto"
+              priority
             />
             <div className="absolute inset-0 bg-primary/20 blur-2xl opacity-0 hover:opacity-100 transition-opacity pointer-events-none" />
-          </motion.div>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6 xl:gap-8">

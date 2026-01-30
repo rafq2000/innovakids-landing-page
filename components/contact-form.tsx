@@ -33,7 +33,7 @@ export function ContactForm() {
 
       if (result.success) {
         setIsSuccess(true)
-        ;(e.target as HTMLFormElement).reset()
+          ; (e.target as HTMLFormElement).reset()
         setShowCustomCode(false)
         setCustomCode("")
         setTimeout(() => setIsSuccess(false), 5000)
@@ -93,6 +93,7 @@ export function ContactForm() {
                 }
               }}
               className="bg-[#0a1628] border border-[#2a3952] text-white rounded-md px-3 py-2 w-36"
+              aria-label="Código de país"
             >
               <option value="+56">🇨🇱 Chile +56</option>
               <option value="+54">🇦🇷 Argentina +54</option>
