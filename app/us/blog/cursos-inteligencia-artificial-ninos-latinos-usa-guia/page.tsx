@@ -159,7 +159,7 @@ export default function GuiaIANinosLatinosUSA() {
                     </tr>
                     <tr className="border-t bg-[#002868]/5">
                       <td className="p-4 font-bold">InnovaKids (recomendado)</td>
-                      <td className="p-4 font-bold">$197</td>
+                      <td className="p-4 font-bold">$267</td>
                       <td className="p-4 font-bold">Máximo 5</td>
                     </tr>
                   </tbody>
@@ -309,7 +309,7 @@ export default function GuiaIANinosLatinosUSA() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-6 text-sm text-white/60">$197 USD • 10 clases • Máximo 5 niños • Garantía 10 días</p>
+              <p className="mt-6 text-sm text-white/60">$267 USD • 10 clases • Máximo 5 niños • Garantía 10 días</p>
             </div>
 
             {/* RELATED LINKS */}

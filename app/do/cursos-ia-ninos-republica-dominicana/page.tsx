@@ -47,7 +47,7 @@ const schemaData = {
   inLanguage: "es",
   offers: {
     "@type": "Offer",
-    price: "197",
+    price: "267",
     priceCurrency: "USD",
     availability: "https://schema.org/LimitedAvailability",
   },
@@ -113,7 +113,7 @@ export default function CursosIANinosRepublicaDominicanaPage() {
               </div>
 
               <div className="bg-[#002D62]/10 border border-[#002D62]/20 rounded-2xl p-6 max-w-xl mx-auto">
-                <p className="text-lg font-semibold text-[#002D62]">💰 Inversión: $197 USD</p>
+                <p className="text-lg font-semibold text-[#002D62]">💰 Inversión: $267 USD</p>
                 <p className="text-muted-foreground">
                   10 clases online en vivo (90 min c/u) • Garantía de satisfacción 10 días
                 </p>

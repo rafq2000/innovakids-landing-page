@@ -30,7 +30,7 @@ interface PaymentDetails {
 const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   explorer: {
     title: "Innovakids Explorer",
-    price: 197,
+    price: 267,
     description: "Módulo 1 Base - 10 Clases Fundamentales",
   },
   start_pack: {
@@ -60,7 +60,7 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   },
   earlybird: {
     title: "Early Bird - Primeros 10",
-    price: 197,
+    price: 267,
     description: "Precio especial para los primeros 10 inscritos (60% OFF)",
   },
   complete: {

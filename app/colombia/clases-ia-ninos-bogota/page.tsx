@@ -281,7 +281,7 @@ export default function ClasesIANinosBogota() {
                 },
                 {
                   q: "¿Cómo son los métodos de pago?",
-                  a: "Aceptamos tarjetas de crédito/débito, PSE, Nequi y PayPal. El precio total del programa es $197 USD.",
+                  a: "Aceptamos tarjetas de crédito/débito, PSE, Nequi y PayPal. El precio total del programa es $267 USD.",
                 },
               ].map((faq, i) => (
                 <div key={i} className="rounded-2xl bg-card p-6">
@@ -331,7 +331,7 @@ export default function ClasesIANinosBogota() {
                 <CheckCircle className="h-4 w-4" /> Grupos máx 5 niños
               </span>
               <span className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4" /> $197 USD total
+                <CheckCircle className="h-4 w-4" /> $267 USD total
               </span>
             </div>
           </div>

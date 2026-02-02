@@ -237,7 +237,7 @@ export default function CursosIANinosColombia() {
                 },
                 {
                   q: "¿Cuánto cuesta el curso?",
-                  a: "El programa completo tiene un valor de $497 USD, pero actualmente tenemos oferta de lanzamiento 2026 por $197 USD (60% de descuento). Incluye 10 clases, portafolio web, todos los bonos y garantía de 10 días. Puedes reservar con solo $50 USD.",
+                  a: "El programa completo tiene un valor de $497 USD, pero actualmente tenemos oferta de lanzamiento 2026 por $267 USD (60% de descuento). Incluye 10 clases, portafolio web, todos los bonos y garantía de 10 días. Puedes reservar con solo $50 USD.",
                 },
                 {
                   q: "¿Tienen eventos presenciales en Colombia?",
@@ -291,7 +291,7 @@ export default function CursosIANinosColombia() {
                 <CheckCircle className="h-4 w-4" /> Grupos máx 5 niños
               </span>
               <span className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4" /> $197 USD programa completo
+                <CheckCircle className="h-4 w-4" /> $267 USD programa completo
               </span>
             </div>
           </div>
@@ -336,7 +336,7 @@ export default function CursosIANinosColombia() {
             },
             offers: {
               "@type": "Offer",
-              price: "197",
+              price: "267",
               priceCurrency: "USD",
               availability: "https://schema.org/InStock",
             },

@@ -104,7 +104,7 @@ export default function PeruHub() {
               </div>
               <div className="text-center">
                 <Zap className="mx-auto mb-2 h-8 w-8 text-[#D91023]" />
-                <div className="text-2xl font-bold">$197</div>
+                <div className="text-2xl font-bold">$267</div>
                 <div className="text-sm text-muted-foreground">USD total</div>
               </div>
             </div>

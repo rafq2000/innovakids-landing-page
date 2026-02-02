@@ -8,7 +8,7 @@
 ## 1. Estrategia de Precios (Precios por Volumen)
 
 **🟡 BASE (Obligatoria)**
-*   **Vibe Explorer** (10 Clases) = **$197 USD**.
+*   **Vibe Explorer** (10 Clases) = **$267 USD**.
 
 **🔵 LAS ESPECIALIDADES (Upgrades)**
 *Precio unitario base: $297 USD. Descuentos por volumen.*
@@ -17,7 +17,7 @@
 | :--- | :--- | :--- | :--- |
 | **START** | Explorer + 1 Especialidad | **$494 USD** | $297 c/u |
 | **PRO** | Explorer + 2 Especialidades | **$691 USD** | $247 c/u |
-| **UNIVERSITY** | Explorer + 4 Especialidades | **$788 USD** | **$197 c/u (Oferta Máxima)** |
+| **UNIVERSITY** | Explorer + 4 Especialidades | **$788 USD** | **$267 c/u (Oferta Máxima)** |
 
 ---
 

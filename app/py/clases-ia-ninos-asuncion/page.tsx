@@ -65,7 +65,7 @@ export default function AsuncionPage() {
               </div>
 
               <div className="bg-[#D52B1E]/10 rounded-2xl p-6 max-w-xl mx-auto">
-                <p className="text-lg font-semibold text-[#D52B1E]">💰 $197 USD - 10 Clases</p>
+                <p className="text-lg font-semibold text-[#D52B1E]">💰 $267 USD - 10 Clases</p>
                 <p className="text-muted-foreground">Garantía de satisfacción 10 días • Máx 5 niños por grupo</p>
               </div>
             </div>

@@ -88,7 +88,7 @@ export default function CursosIANinosParaguayPage() {
               </div>
 
               <div className="bg-[#D52B1E]/10 border border-[#D52B1E]/20 rounded-2xl p-6 max-w-xl mx-auto">
-                <p className="text-lg font-semibold text-[#D52B1E]">💰 Inversión: $197 USD</p>
+                <p className="text-lg font-semibold text-[#D52B1E]">💰 Inversión: $267 USD</p>
                 <p className="text-muted-foreground">
                   10 clases online en vivo (90 min c/u) • Garantía de satisfacción 10 días
                 </p>

@@ -177,7 +177,7 @@ export default function MexicoHubPage() {
             <h2 className="text-3xl font-bold text-white mb-8">Inversión para Familias Mexicanas</h2>
 
             <div className="bg-gradient-to-br from-[#0f2744] to-[#1a3a5c] rounded-3xl p-10 border border-[#4DD0E1]/30">
-              <div className="text-5xl font-bold text-white mb-2">$197 USD</div>
+              <div className="text-5xl font-bold text-white mb-2">$267 USD</div>
               <p className="text-gray-400 mb-6">≈ $3,600 MXN • 10 clases completas</p>
 
               <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-300 mb-8">

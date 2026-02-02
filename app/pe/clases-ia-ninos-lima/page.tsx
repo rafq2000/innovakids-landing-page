@@ -84,7 +84,7 @@ export default function ClasesIANinosLima() {
                 <div className="text-sm text-white/80">Niños máx/grupo</div>
               </div>
               <div className="rounded-2xl bg-white/10 p-4 backdrop-blur-sm">
-                <div className="text-3xl font-bold md:text-4xl">$197</div>
+                <div className="text-3xl font-bold md:text-4xl">$267</div>
                 <div className="text-sm text-white/80">USD total</div>
               </div>
             </div>
@@ -242,7 +242,7 @@ export default function ClasesIANinosLima() {
                 <CheckCircle className="h-4 w-4" /> Garantía 10 días
               </span>
               <span className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4" /> $197 USD total
+                <CheckCircle className="h-4 w-4" /> $267 USD total
               </span>
             </div>
           </div>
@@ -268,7 +268,7 @@ export default function ClasesIANinosLima() {
             },
             offers: {
               "@type": "Offer",
-              price: "197",
+              price: "267",
               priceCurrency: "USD",
             },
           }),

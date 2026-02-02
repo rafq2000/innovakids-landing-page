@@ -38,7 +38,7 @@ export function ModulePreviewSection() {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-yellow-500/20 border border-yellow-500/30 rounded-full text-yellow-400 text-sm font-bold mb-4">
                         <Sparkles className="w-4 h-4" />
-                        Módulo 1: Vibe Explorer • $197 USD
+                        Módulo 1: Vibe Explorer • $267 USD
                     </div>
 
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">

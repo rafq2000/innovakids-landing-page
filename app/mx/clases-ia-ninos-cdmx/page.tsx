@@ -51,7 +51,7 @@ const jsonLd = {
     ratingValue: "4.9",
     reviewCount: "312",
   },
-  priceRange: "$197 USD",
+  priceRange: "$267 USD",
 }
 
 export default function CDMXPage() {
@@ -208,7 +208,7 @@ export default function CDMXPage() {
             <div className="bg-gradient-to-br from-[#0f2744] to-[#1a3a5c] rounded-3xl p-10 border border-[#4DD0E1]/30">
               <h2 className="text-2xl font-bold text-white mb-6">Programa Completo para Niños de CDMX</h2>
 
-              <div className="text-5xl font-bold text-white mb-2">$197 USD</div>
+              <div className="text-5xl font-bold text-white mb-2">$267 USD</div>
               <p className="text-gray-400 mb-6">≈ $3,600 MXN • 10 clases en vivo</p>
 
               <div className="grid grid-cols-2 gap-3 max-w-md mx-auto mb-8 text-left text-sm">

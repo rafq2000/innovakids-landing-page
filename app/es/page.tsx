@@ -135,7 +135,7 @@ export default function EspanaHub() {
               {[
                 { stat: "10", label: "Clases en vivo", desc: "90 minutos cada una" },
                 { stat: "5", label: "Niños máximo", desc: "Por grupo" },
-                { stat: "$197", label: "USD", desc: "Precio total del programa" },
+                { stat: "$267", label: "USD", desc: "Precio total del programa" },
                 { stat: "10", label: "Días de garantía", desc: "Devolución sin preguntas" },
               ].map((item, i) => (
                 <div key={i} className="rounded-2xl bg-card p-6 text-center">

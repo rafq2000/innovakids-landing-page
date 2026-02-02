@@ -93,7 +93,7 @@ const jsonLd = {
           name: "¿Cuánto cuesta el curso de IA para niños en México?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "El programa completo de InnovaKids tiene un valor de $497 USD. Actualmente hay una oferta de lanzamiento 2026 por $197 USD (60% de descuento). Incluye 10 clases en vivo, grupos de máximo 5 niños, portafolio web con 10 proyectos, acceso de por vida a grabaciones, y garantía de devolución de 10 días.",
+            text: "El programa completo de InnovaKids tiene un valor de $497 USD. Actualmente hay una oferta de lanzamiento 2026 por $267 USD (60% de descuento). Incluye 10 clases en vivo, grupos de máximo 5 niños, portafolio web con 10 proyectos, acceso de por vida a grabaciones, y garantía de devolución de 10 días.",
           },
         },
         {
@@ -282,7 +282,7 @@ export default function MexicoCursosIAPage() {
                     ["Herramientas IA", "10+ profesionales", "2-3 básicas", "3-4"],
                     ["Garantía", "10 días devolución", "No", "No"],
                     ["Soporte", "WhatsApp 24/7", "Foro", "Email"],
-                    ["Precio", "$197 USD", "$348/año", "$350-450/mes"],
+                    ["Precio", "$267 USD", "$348/año", "$350-450/mes"],
                   ].map(([feature, innovakids, platzi, crack], i) => (
                     <tr key={i} className="border-b border-border/50">
                       <td className="py-4 px-4 text-gray-300">{feature}</td>
@@ -370,7 +370,7 @@ export default function MexicoCursosIAPage() {
               </p>
               <p className="text-gray-300 mb-4">
                 El programa tiene un valor de $497 USD, pero actualmente ofrecemos precio de lanzamiento 2026 de{" "}
-                <strong>$197 USD</strong> (60% de descuento). Incluye garantía de devolución de 10 días, acceso de por
+                <strong>$267 USD</strong> (60% de descuento). Incluye garantía de devolución de 10 días, acceso de por
                 vida a grabaciones, y nuestra exclusiva garantía de aprendizaje con tutoría 1-1 si el niño no completa
                 sus proyectos.
               </p>

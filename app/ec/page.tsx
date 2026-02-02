@@ -76,7 +76,7 @@ export default function EcuadorHubPage() {
               <div className="flex flex-wrap justify-center gap-4">
                 <div className="flex items-center gap-2 bg-card/50 px-4 py-2 rounded-full">
                   <CheckCircle className="h-5 w-5 text-green-500" />
-                  <span>$197 USD - 10 Clases</span>
+                  <span>$267 USD - 10 Clases</span>
                 </div>
                 <div className="flex items-center gap-2 bg-card/50 px-4 py-2 rounded-full">
                   <CheckCircle className="h-5 w-5 text-green-500" />

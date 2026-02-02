@@ -143,7 +143,7 @@ export default function UruguayHubPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Pagos en USD</h3>
                 <p className="text-gray-400">
-                  Pagá con tarjeta de crédito, débito o transferencia. $197 USD el programa completo.
+                  Pagá con tarjeta de crédito, débito o transferencia. $267 USD el programa completo.
                 </p>
               </div>
               <div className="text-center">

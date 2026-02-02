@@ -48,7 +48,7 @@ const jsonLd = {
     reviewCount: "89",
     bestRating: "5",
   },
-  priceRange: "$197 USD",
+  priceRange: "$267 USD",
 }
 
 const neighborhoods = [
@@ -198,7 +198,7 @@ export default function MontevideoClasesIAPage() {
               <h2 className="text-3xl font-bold text-white mb-6">Programa Completo</h2>
 
               <div className="mb-8">
-                <div className="text-6xl font-bold text-white mb-2">$197 USD</div>
+                <div className="text-6xl font-bold text-white mb-2">$267 USD</div>
                 <p className="text-gray-400">10 clases en vivo</p>
               </div>
 

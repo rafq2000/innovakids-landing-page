@@ -154,7 +154,7 @@ export default function VenezuelaHubPage() {
 
                         <div className="holographic-card p-10">
                             <div className="relative z-10">
-                                <div className="text-5xl font-bold text-white mb-2 font-premium">$197 USD</div>
+                                <div className="text-5xl font-bold text-white mb-2 font-premium">$267 USD</div>
                                 <p className="text-gray-400 mb-6">Pago único • 10 clases completas</p>
 
                                 <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-300 mb-8">
