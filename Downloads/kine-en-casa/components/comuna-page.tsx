@@ -24,6 +24,7 @@ import {
     ArrowLeft,
 } from "lucide-react"
 import Link from "next/link"
+import { SiteFooter } from "@/components/site-footer"
 
 interface ComunaData {
     nombre: string
@@ -163,7 +164,7 @@ export default function ComunaPage({ data }: ComunaPageProps) {
                                 </div>
                                 <div>
                                     <h1 className="text-3xl font-bold font-serif text-white">KineEnCasa</h1>
-                                    <p className="text-sm text-slate-300">Rehabilitación Profesional</p>
+                                    <p className="text-sm text-slate-200">Rehabilitación Profesional</p>
                                 </div>
                             </Link>
                         </div>
@@ -464,24 +465,7 @@ export default function ComunaPage({ data }: ComunaPageProps) {
             </section>
 
             {/* Footer */}
-            <footer className="bg-slate-950 text-slate-300 py-12 border-t border-slate-800">
-                <div className="container mx-auto px-4">
-                    <div className="text-center">
-                        <Link href="/" className="inline-flex items-center space-x-3 mb-4 hover:opacity-80 transition-opacity">
-                            <div className="bg-amber-600 p-2 rounded-xl">
-                                <Home className="h-6 w-6 text-white" />
-                            </div>
-                            <span className="text-xl font-bold text-white font-serif">KineEnCasa</span>
-                        </Link>
-                        <p className="text-slate-400 mb-6">
-                            Kinesiología profesional a domicilio en {data.nombre} y todo el sector oriente de Santiago
-                        </p>
-                        <p className="text-sm text-slate-500">
-                            © 2024 KineEnCasa. Todos los derechos reservados.
-                        </p>
-                    </div>
-                </div>
-            </footer>
+            <SiteFooter />
         </div>
     )
 }

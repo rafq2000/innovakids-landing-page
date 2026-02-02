@@ -35,6 +35,7 @@ import {
 } from "lucide-react"
 
 import { WhatsAppButton } from "@/components/whatsapp-button"
+import { SiteFooter } from "@/components/site-footer"
 
 export default function HomePage() {
   const services = [
@@ -467,7 +468,7 @@ export default function HomePage() {
                   <CardTitle className="text-2xl font-bold text-slate-900 font-serif mb-2">{plan.name}</CardTitle>
                   <div className="mb-4">
                     <span className="text-3xl font-bold text-slate-900">${plan.price}</span>
-                    {plan.price !== "Consultar" && <span className="text-slate-500 font-medium">/mes</span>}
+                    {plan.price !== "Consultar" && <span className="text-slate-600 font-medium">/mes</span>}
                   </div>
                   <CardDescription className="text-slate-600 text-base leading-relaxed">
                     {plan.description}
@@ -695,32 +696,32 @@ export default function HomePage() {
             <a href="/kinesiologo-a-domicilio-las-condes" className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 hover:-translate-y-1 text-center">
               <MapPin className="h-8 w-8 mx-auto mb-3 text-amber-600 group-hover:scale-110 transition-transform" />
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700 transition-colors">Las Condes</h3>
-              <p className="text-sm text-slate-500 mt-1">Ver más →</p>
+              <p className="text-sm text-slate-600 mt-1">Ver más →</p>
             </a>
             <a href="/kinesiologo-a-domicilio-vitacura" className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 hover:-translate-y-1 text-center">
               <MapPin className="h-8 w-8 mx-auto mb-3 text-amber-600 group-hover:scale-110 transition-transform" />
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700 transition-colors">Vitacura</h3>
-              <p className="text-sm text-slate-500 mt-1">Ver más →</p>
+              <p className="text-sm text-slate-600 mt-1">Ver más →</p>
             </a>
             <a href="/kinesiologo-a-domicilio-providencia" className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 hover:-translate-y-1 text-center">
               <MapPin className="h-8 w-8 mx-auto mb-3 text-amber-600 group-hover:scale-110 transition-transform" />
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700 transition-colors">Providencia</h3>
-              <p className="text-sm text-slate-500 mt-1">Ver más →</p>
+              <p className="text-sm text-slate-600 mt-1">Ver más →</p>
             </a>
             <a href="/kinesiologo-a-domicilio-nunoa" className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 hover:-translate-y-1 text-center">
               <MapPin className="h-8 w-8 mx-auto mb-3 text-amber-600 group-hover:scale-110 transition-transform" />
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700 transition-colors">Ñuñoa</h3>
-              <p className="text-sm text-slate-500 mt-1">Ver más →</p>
+              <p className="text-sm text-slate-600 mt-1">Ver más →</p>
             </a>
             <a href="/kinesiologo-a-domicilio-la-reina" className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 hover:-translate-y-1 text-center">
               <MapPin className="h-8 w-8 mx-auto mb-3 text-amber-600 group-hover:scale-110 transition-transform" />
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700 transition-colors">La Reina</h3>
-              <p className="text-sm text-slate-500 mt-1">Ver más →</p>
+              <p className="text-sm text-slate-600 mt-1">Ver más →</p>
             </a>
             <a href="/kinesiologo-a-domicilio-lo-barnechea" className="group bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200 hover:-translate-y-1 text-center">
               <MapPin className="h-8 w-8 mx-auto mb-3 text-amber-600 group-hover:scale-110 transition-transform" />
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700 transition-colors">Lo Barnechea</h3>
-              <p className="text-sm text-slate-500 mt-1">Ver más →</p>
+              <p className="text-sm text-slate-600 mt-1">Ver más →</p>
             </a>
           </div>
 
@@ -878,90 +879,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <footer className="bg-slate-950 text-slate-400 py-20 border-t border-slate-900">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
-            <div>
-              <div className="flex items-center space-x-3 mb-6">
-                <div className="bg-slate-900 p-2 rounded-xl border border-slate-800">
-                  <Activity className="h-6 w-6 text-amber-500" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white font-serif tracking-widest">KINEUM</h3>
-                  <p className="text-xs text-slate-500 uppercase">Clinical Home Care</p>
-                </div>
-              </div>
-              <p className="text-slate-500 text-sm leading-relaxed mb-6">
-                Redefiniendo el estándar de la rehabilitación domiciliaria en Chile mediante la integración de expertos clínicos y tecnología de vanguardia.
-              </p>
-              <div className="flex space-x-3">
-                <div className="bg-slate-900 p-2 rounded-lg border border-slate-800 hover:border-amber-900/50 transition-colors">
-                  <Star className="h-4 w-4 text-amber-500" />
-                </div>
-                <div className="bg-slate-900 p-2 rounded-lg border border-slate-800 hover:border-emerald-900/50 transition-colors">
-                  <Shield className="h-4 w-4 text-emerald-500" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-6 text-sm uppercase tracking-wider">Especialidades</h4>
-              <ul className="space-y-3 text-sm">
-                <li className="hover:text-amber-400 transition-colors cursor-pointer">Neurorrehabilitación</li>
-                <li className="hover:text-amber-400 transition-colors cursor-pointer">Kinesiología Respiratoria</li>
-                <li className="hover:text-amber-400 transition-colors cursor-pointer">Traumatología Avanzada</li>
-                <li className="hover:text-amber-400 transition-colors cursor-pointer">Geriatría Activa</li>
-                <li className="hover:text-amber-400 transition-colors cursor-pointer">Training Cognitivo</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-6 text-sm uppercase tracking-wider">Paciente</h4>
-              <ul className="space-y-3 text-sm">
-                <li className="hover:text-amber-400 transition-colors cursor-pointer">Portal de Pacientes</li>
-                <a href="/ejercicios" className="hover:text-amber-400 transition-colors cursor-pointer block">Biblioteca de Ejercicios</a>
-                <li className="hover:text-amber-400 transition-colors cursor-pointer">Journal Clínico</li>
-                <li className="hover:text-amber-400 transition-colors cursor-pointer">Preguntas Frecuentes</li>
-                <li className="hover:text-amber-400 transition-colors cursor-pointer">Convenios Isapre</li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-6 text-sm uppercase tracking-wider">Contacto</h4>
-              <ul className="space-y-4 text-sm">
-                <li className="flex items-start space-x-3">
-                  <Phone className="h-5 w-5 text-amber-500 mt-0.5" />
-                  <div>
-                    <span className="block text-white font-medium">+56 9 9967 9593</span>
-                    <span className="text-xs">Línea Exclusiva Pacientes</span>
-                  </div>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <MapPin className="h-5 w-5 text-amber-500 mt-0.5" />
-                  <div>
-                    <span className="block text-white font-medium">Santiago, Chile</span>
-                    <span className="text-xs">Sector Oriente & Zona Central</span>
-                  </div>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <MessageCircle className="h-5 w-5 text-amber-500 mt-0.5" />
-                  <div>
-                    <span className="block text-white font-medium">Chat AI 24/7</span>
-                    <span className="text-xs">Soporte Continuo</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-slate-900 mt-16 pt-8 text-center md:text-left flex flex-col md:flex-row justify-between items-center">
-            <p className="text-xs text-slate-600">
-              © 2024 KINEUM Clinical Home Care. Todos los derechos reservados.
-            </p>
-            <div className="flex space-x-6 mt-4 md:mt-0 text-xs text-slate-600">
-              <span className="hover:text-slate-400 cursor-pointer">Privacidad</span>
-              <span className="hover:text-slate-400 cursor-pointer">Términos</span>
-              <span className="hover:text-slate-400 cursor-pointer">Sitemap</span>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }

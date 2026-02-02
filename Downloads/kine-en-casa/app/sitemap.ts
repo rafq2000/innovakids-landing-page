@@ -13,6 +13,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/servicios/geriatrica',
         '/servicios/neurologica',
         '/servicios/traumatologica',
+        '/kinesiologo-a-domicilio-las-condes',
+        '/kinesiologo-a-domicilio-vitacura',
+        '/kinesiologo-a-domicilio-lo-barnechea',
+        '/kinesiologo-a-domicilio-nunoa',
+        '/kinesiologo-a-domicilio-la-reina',
+        '/kinesiologo-a-domicilio-providencia',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
