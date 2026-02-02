@@ -7,22 +7,22 @@ import { MapPin, Users, Clock, Shield, Star, Check } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en CDMX (Polanco, Roma) | InnovaKids",
+  title: "Clases de IA para Niños en CDMX | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en CDMX. Polanco, Roma, Condesa, Santa Fe. Aprende online con horarios de México.",
+    "¿Vives en CDMX? Tu hijo puede crear apps y videojuegos con IA desde casa (Polanco, Roma, Condesa, Coyoacán). Horarios flexibles tardes y sábados. Garantía total.",
   keywords: [
-    "clases vibe coding cdmx",
-    "clases de ia para niños cdmx",
-    "cursos ia niños ciudad de mexico",
-    "clases inteligencia artificial cdmx",
-    "curso ia polanco",
-    "clases ia roma condesa",
+    "clases ia niños cdmx",
+    "curso programación niños ciudad de mexico",
+    "vacacional tecnologia cdmx",
+    "innovakids cdmx",
   ],
   openGraph: {
-    title: "Clases de Vibe Coding e IA para Niños en CDMX",
-    description: "Talleres de tecnología y Vibe Coding para niños en Ciudad de México. Grupos de 5 alumnos.",
+    title: "Clases de IA para Niños en CDMX | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños en Ciudad de México. Grupos pequeños, atención personalizada.",
     url: "https://www.innovakidslatam.com/mx/clases-ia-ninos-cdmx",
     locale: "es_MX",
+    siteName: "InnovaKids CDMX",
+    type: "website",
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/mx/clases-ia-ninos-cdmx",

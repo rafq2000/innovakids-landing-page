@@ -5,13 +5,25 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Clock, CheckCircle, Target, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Guía Colombia 2026: ¿Qué es el Vibe Coding y por qué tu hijo debe aprenderlo?",
+  title: "Cursos de IA para Niños en Colombia (Guía 2026)",
   description:
-    "El Vibe Coding es la revolución en la educación tecnológica. Descubre cómo la IA está cambiando la forma en que los niños aprenden a programar en Colombia.",
-  keywords:
-    "que es vibe coding, ia para niños colombia, guia padres tecnologia, educacion futuro colombia, innovakids blog",
+    "Guía Completa: Lo que todo padre colombiano debe saber antes de inscribir a su hijo en un curso de IA. Precios, herramientas, seguridad y mejores opciones en Colombia.",
+  keywords: [
+    "guia cursos ia niños colombia",
+    "mejores cursos programacion niños colombia",
+    "comparativa escuelas ia colombia",
+    "consejos padres tecnologia colombia",
+  ],
+  openGraph: {
+    title: "Cursos de IA para Niños en Colombia (Guía 2026)",
+    description: "Todo lo que necesitas saber para elegir la mejor educación tecnológica para tu hijo en Colombia.",
+    url: "https://www.innovakidslatam.com/colombia/blog/cursos-inteligencia-artificial-ninos-colombia-guia",
+    locale: "es_CO",
+    type: "article",
+    siteName: "Blog InnovaKids Colombia",
+  },
   alternates: {
-    canonical: "https://www.innovakidslatam.com/co/blog/cursos-inteligencia-artificial-ninos-colombia-guia",
+    canonical: "https://www.innovakidslatam.com/colombia/blog/cursos-inteligencia-artificial-ninos-colombia-guia",
   },
 }
 

@@ -7,23 +7,22 @@ import { Calendar, Clock, User, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Vibe Coding en Argentina: Guía Completa para Padres 2026",
+  title: "Cursos de IA para Chicos en Argentina (Guía 2026)",
   description:
-    "Descubrí el Vibe Coding: la nueva forma en que los chicos aprenden a programar con IA en Argentina. Comparativa de programas y precios.",
+    "Guía Completa: Lo que todo padre argentino debe saber antes de inscribir a su hijo en un curso de IA. Precios en pesos, herramientas, seguridad y mejores opciones.",
   keywords: [
-    "que es vibe coding",
-    "cursos inteligencia artificial chicos argentina",
-    "mejores cursos ia chicos",
-    "donde estudiar ia chicos argentina",
-    "cursos programacion chicos buenos aires",
+    "guia cursos ia chicos argentina",
+    "mejores cursos programacion chicos argentina",
+    "comparativa escuelas ia argentina",
+    "consejos padres tecnologia argentina",
   ],
   openGraph: {
-    title: "Cursos de IA para Chicos en Argentina: Guía Completa 2026",
-    description: "Todo lo que necesitás saber sobre cursos de inteligencia artificial para chicos en Argentina.",
+    title: "Cursos de IA para Chicos en Argentina (Guía 2026)",
+    description: "Todo lo que necesitas saber para elegir la mejor educación tecnológica para tu hijo en Argentina.",
     url: "https://www.innovakidslatam.com/ar/blog/cursos-inteligencia-artificial-chicos-argentina-guia",
-    siteName: "InnovaKids",
     locale: "es_AR",
     type: "article",
+    siteName: "Blog InnovaKids Argentina",
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/ar/blog/cursos-inteligencia-artificial-chicos-argentina-guia",

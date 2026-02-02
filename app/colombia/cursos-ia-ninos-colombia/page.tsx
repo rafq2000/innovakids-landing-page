@@ -8,30 +8,25 @@ import { Users, Clock, Shield, Star, CheckCircle, Zap, Target } from "lucide-rea
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA para Niños Colombia 2026 | Evaluación Gratis | InnovaKids 🇨🇴",
+  title: "Curso Inteligencia Artificial Niños Colombia | Vibe Coding",
   description:
-    "Inscripciones abiertas 2026. Curso de Vibe Coding y Programación con IA para niños en Colombia. 10 clases online, grupos pequeños. Evaluación gratis.",
-  keywords:
-    "cursos de vibe coding colombia, clases inteligencia artificial bogotá, curso ia niños medellín, programación ia niños cali, innovakids colombia, curso inteligencia artificial niños",
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/co/cursos-ia-ninos-colombia",
-    languages: generateHreflangs("sales"),
-  },
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+  keywords: [
+    "curso inteligencia artificial niños colombia",
+    "cursos de tecnologia para niños colombia",
+    "aprender ia colombia",
+    "innovakids cursos",
+  ],
   openGraph: {
-    title: "Curso de Vibe Coding e IA para Niños en Colombia | InnovaKids",
-    description:
-      "Aprende Vibe Coding: La nueva forma de programar con Inteligencia Artificial. Curso online para niños 8-14 años. Evaluación gratuita.",
-    url: "https://www.innovakidslatam.com/co/cursos-ia-ninos-colombia",
+    title: "Curso Inteligencia Artificial Niños Colombia | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Colombia para niños de 8-14 años.",
+    url: "https://www.innovakidslatam.com/colombia/cursos-ia-ninos-colombia",
     locale: "es_CO",
+    siteName: "InnovaKids",
     type: "website",
-    images: [
-      {
-        url: "https://www.innovakidslatam.com/og-colombia.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Cursos de IA para Niños en Colombia - InnovaKids",
-      },
-    ],
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/colombia/cursos-ia-ninos-colombia",
   },
 }
 

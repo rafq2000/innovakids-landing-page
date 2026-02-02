@@ -7,23 +7,22 @@ import { Clock, Calendar } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Guía México 2026: ¿Qué es el Vibe Coding y por qué tu hijo debe aprenderlo?",
+  title: "Cursos de IA para Niños en México (Guía 2026)",
   description:
-    "El Vibe Coding es la revolución en la educación tecnológica. Descubre cómo la IA está cambiando la forma en que los niños aprenden a programar en México.",
+    "Guía Completa: Lo que todo padre mexicano debe saber antes de inscribir a su hijo en un curso de IA. Precios en pesos, herramientas, seguridad y mejores opciones.",
   keywords: [
-    "que es vibe coding",
-    "cursos de inteligencia artificial para niños",
-    "cursos ia niños mexico guia",
-    "mejores cursos ia niños",
-    "como enseñar ia a niños",
-    "inteligencia artificial para niños mexico",
+    "guia cursos ia niños mexico",
+    "mejores cursos programacion niños mexico",
+    "comparativa escuelas ia mexico",
+    "consejos padres tecnologia mexico",
   ],
   openGraph: {
-    title: "Guía México 2026: ¿Qué es el Vibe Coding?",
-    description: "Todo lo que necesitas saber sobre la nueva era de la programación con IA para niños en México.",
+    title: "Cursos de IA para Niños en México (Guía 2026)",
+    description: "Todo lo que necesitas saber para elegir la mejor educación tecnológica para tu hijo en México.",
     url: "https://www.innovakidslatam.com/mx/blog/cursos-inteligencia-artificial-ninos-mexico-guia",
-    type: "article",
     locale: "es_MX",
+    type: "article",
+    siteName: "Blog InnovaKids México",
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/mx/blog/cursos-inteligencia-artificial-ninos-mexico-guia",

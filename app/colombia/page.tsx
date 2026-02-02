@@ -5,20 +5,26 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { ArrowRight, CheckCircle, Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding en Colombia 🇨🇴 | InnovaKids",
+  title: "Curso de IA para Niños en Colombia | Online en Vivo",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Colombia (Bogotá, Medellín, Cali). Clases en vivo, horario Colombia. Aprende a crear con IA hoy.",
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/co",
-  },
+    "Niños colombianos de 8-14 crean arte, música y apps con IA. Horario Bogotá, pago con Nequi o PSE. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+  keywords: [
+    "curso ia niños colombia",
+    "clases programación ia bogota",
+    "escuela inteligencia artificial niños medellin",
+    "innovakids colombia",
+    "vibe coding colombia",
+  ],
   openGraph: {
-    title: "Curso de IA y Vibe Coding en Colombia 🇨🇴 | InnovaKids",
-    description:
-      "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Colombia (Bogotá, Medellín, Cali). Clases en vivo, horario Colombia.",
-    url: "https://www.innovakidslatam.com/co",
+    title: "Curso de IA para Niños en Colombia | InnovaKids",
+    description: "La primera escuela de Vibe Coding en Colombia. Tu hijo crea apps y juegos con IA. Clases en vivo desde Bogotá/Medellín.",
+    url: "https://www.innovakidslatam.com/colombia",
     locale: "es_CO",
-    siteName: "InnovaKids",
+    siteName: "InnovaKids Colombia",
     type: "website",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/colombia",
   },
 }
 

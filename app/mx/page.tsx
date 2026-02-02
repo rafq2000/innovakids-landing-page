@@ -7,9 +7,9 @@ import { MapPin, Users, Clock, Shield } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding en México | InnovaKids",
+  title: "Curso de IA para Niños en México | Crea Apps y Videojuegos",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en México. Clases online en vivo para CDMX, GDL, MTY y todo el país. Aprende a crear con IA.",
+    "Niños mexicanos de 8-14 ya crean con IA en InnovaKids. Horario CDMX, paga en OXXO o Mercado Pago. Grupos de 5 en vivo. Sin requisitos previos. Garantía total ⭐",
   keywords: [
     "vibe coding mexico",
     "curso ia niños mexico",
@@ -18,12 +18,11 @@ export const metadata: Metadata = {
     "innovakids mexico",
   ],
   openGraph: {
-    title: "Curso de IA y Vibe Coding en México | InnovaKids",
-    description:
-      "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en México. Clases online en vivo para todo el país.",
+    title: "Curso de IA para Niños en México | InnovaKids",
+    description: "527 alumnos graduados. La primera escuela de Vibe Coding en México. Clases en vivo horario CDMX/Monterrey/Kanasín.",
     url: "https://www.innovakidslatam.com/mx",
     locale: "es_MX",
-    siteName: "InnovaKids",
+    siteName: "InnovaKids México",
     type: "website",
   },
   alternates: {

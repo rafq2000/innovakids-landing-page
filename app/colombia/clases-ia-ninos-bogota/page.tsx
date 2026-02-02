@@ -5,13 +5,25 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, Users, Clock, Shield, Star, CheckCircle, Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en Bogotá (Chapinero, Usaquén) | InnovaKids",
+  title: "Clases de IA para Niños en Bogotá | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en Bogotá. Chapinero, Usaquén, Norte, Suba. Aprende online con horarios de Colombia.",
-  keywords:
-    "clases vibe coding bogota, talleres ia niños chapinero, programacion para niños usaquen, academia ia bogota, innovakids colombia",
+    "¿Vives en Bogotá? Tu hijo puede crear apps y videojuegos con IA desde casa. Únete a otros niños de Usaquén, Chapinero y Cedritos. Horarios flexibles. Garantía total.",
+  keywords: [
+    "clases ia niños bogota",
+    "curso programación niños bogota",
+    "vacacional tecnologia bogota",
+    "innovakids bogota",
+  ],
+  openGraph: {
+    title: "Clases de IA para Niños en Bogotá | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños en Bogotá. Grupos pequeños, atención personalizada y proyectos increíbles.",
+    url: "https://www.innovakidslatam.com/colombia/clases-ia-ninos-bogota",
+    locale: "es_CO",
+    siteName: "InnovaKids Bogotá",
+    type: "website",
+  },
   alternates: {
-    canonical: "https://www.innovakidslatam.com/co/clases-ia-ninos-bogota",
+    canonical: "https://www.innovakidslatam.com/colombia/clases-ia-ninos-bogota",
   },
 }
 

@@ -5,16 +5,23 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, Star, CheckCircle, Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en Santiago 2026 | InnovaKids",
+  title: "Clases de IA para Niños en Santiago | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en Santiago. Las Condes, Vitacura, Providencia. Grupos de 5 alumnos. Primera clase GRATIS.",
+    "¿Vives en Santiago? Tu hijo puede crear apps y videojuegos con IA desde casa (Las Condes, Vitacura, Providencia). Horarios flexibles tardes y sábados. Garantía total.",
   keywords: [
-    "clases vibe coding santiago",
     "clases ia niños santiago",
-    "curso inteligencia artificial niños las condes",
-    "ia para niños vitacura",
-    "clases programacion niños providencia",
+    "curso programación niños las condes",
+    "vacacional tecnologia vitacura",
+    "innovakids santiago",
   ],
+  openGraph: {
+    title: "Clases de IA para Niños en Santiago | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños en Santiago de Chile. Grupos pequeños, atención personalizada.",
+    url: "https://www.innovakidslatam.com/cl/clases-ia-ninos-santiago",
+    locale: "es_CL",
+    siteName: "InnovaKids Santiago",
+    type: "website",
+  },
   alternates: {
     canonical: "https://www.innovakidslatam.com/cl/clases-ia-ninos-santiago",
   },

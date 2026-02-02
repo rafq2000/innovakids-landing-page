@@ -10,37 +10,22 @@ import { PricingSection } from "@/components/pricing-section"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso de Vibe Coding para Chicos Argentina 2026 | InnovaKids",
+  title: "Curso Inteligencia Artificial Chicos Argentina | Vibe Coding",
   description:
-    "🚀 ¡Que tu hijo cree tecnología! Curso de Vibe Coding e IA para Chicos 8-14 años Argentina. Clases en vivo, grupos pequeños. 🎁 Clase de Prueba GRATIS.",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
   keywords: [
-    "vibe coding argentina",
-    "cursos de ia para chicos",
-    "cursos de ia para chicos argentina",
-    "cursos de inteligencia artificial para chicos",
-    "clases de ia para chicos",
-    "ia para chicos argentina",
-    "curso inteligencia artificial chicos",
-    "clases online ia chicos",
-    "escuela de inteligencia artificial para chicos",
-    "aprender chatgpt para chicos",
-    "tecnología para chicos argentina",
+    "curso inteligencia artificial chicos argentina",
+    "cursos de tecnologia para chicos argentina",
+    "aprender ia argentina",
+    "innovakids cursos",
   ],
   openGraph: {
-    title: "Cursos de IA para Chicos en Argentina | InnovaKids",
-    description: "Curso de IA para chicos de 8-14 años. ChatGPT, Midjourney, apps. Primera clase gratis.",
+    title: "Curso Inteligencia Artificial Chicos Argentina | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Argentina para chicos de 8-14 años.",
     url: "https://www.innovakidslatam.com/ar/cursos-ia-chicos-argentina",
-    siteName: "InnovaKids",
     locale: "es_AR",
+    siteName: "InnovaKids Argentina",
     type: "website",
-    images: [
-      {
-        url: "https://www.innovakidslatam.com/og-argentina.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Cursos de IA para Chicos en Argentina - InnovaKids",
-      },
-    ],
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/ar/cursos-ia-chicos-argentina",

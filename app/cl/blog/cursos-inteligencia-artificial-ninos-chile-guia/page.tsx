@@ -5,25 +5,25 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { CheckCircle, Target, Clock, Star, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Vibe Coding en Chile: Guía Completa para Padres 2026",
+  title: "Cursos de IA para Niños en Chile (Guía 2026)",
   description:
-    "Descubre el Vibe Coding: la nueva forma en que los niños aprenden a programar con IA en Chile. Comparativa de programas y precios.",
+    "Guía Completa: Lo que todo padre chileno debe saber antes de inscribir a su hijo en un curso de IA. Precios en pesos, herramientas, seguridad y mejores opciones.",
   keywords: [
-    "que es vibe coding",
-    "cursos inteligencia artificial niños chile",
-    "mejores cursos ia niños",
-    "donde estudiar ia niños chile",
-    "cursos programacion niños santiago",
+    "guia cursos ia niños chile",
+    "mejores cursos programacion niños chile",
+    "comparativa escuelas ia chile",
+    "consejos padres tecnologia chile",
   ],
+  openGraph: {
+    title: "Cursos de IA para Niños en Chile (Guía 2026)",
+    description: "Todo lo que necesitas saber para elegir la mejor educación tecnológica para tu hijo en Chile.",
+    url: "https://www.innovakidslatam.com/cl/blog/cursos-inteligencia-artificial-ninos-chile-guia",
+    locale: "es_CL",
+    type: "article",
+    siteName: "Blog InnovaKids Chile",
+  },
   alternates: {
     canonical: "https://www.innovakidslatam.com/cl/blog/cursos-inteligencia-artificial-ninos-chile-guia",
-  },
-  openGraph: {
-    title: "Cursos de IA para Niños en Chile: Guía Completa 2026",
-    description: "Todo lo que necesitas saber sobre cursos de inteligencia artificial para niños en Chile.",
-    type: "article",
-    publishedTime: "2026-01-01",
-    authors: ["InnovaKids"],
   },
 }
 
