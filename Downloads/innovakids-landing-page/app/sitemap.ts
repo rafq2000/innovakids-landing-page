@@ -50,25 +50,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Colombia
     {
-      url: `${baseUrl}/co`,
+      url: `${baseUrl}/colombia`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/co/cursos-ia-ninos-colombia`,
+      url: `${baseUrl}/colombia/cursos-ia-ninos-colombia`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/co/clases-ia-ninos-bogota`,
+      url: `${baseUrl}/colombia/clases-ia-ninos-bogota`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/co/blog/cursos-inteligencia-artificial-ninos-colombia-guia`,
+      url: `${baseUrl}/colombia/blog/cursos-inteligencia-artificial-ninos-colombia-guia`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.7,

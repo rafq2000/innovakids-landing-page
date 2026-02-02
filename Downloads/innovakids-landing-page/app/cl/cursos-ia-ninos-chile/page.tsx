@@ -8,30 +8,25 @@ import { PricingSection } from "@/components/pricing-section"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso de Vibe Coding para Niños Chile 2026 | InnovaKids 🇨🇱",
+  title: "Curso Inteligencia Artificial Niños Chile | Vibe Coding",
   description:
-    "El primer curso de Vibe Coding e IA para niños de 8-14 años en Chile. Clases online en vivo (Horario Chile). Grupos reducidos. Aprende a crear Apps.",
-  keywords:
-    "vibe coding chile, cursos de ia para niños chile, clases inteligencia artificial santiago, curso ia niños viña del mar, innovakids chile",
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/cl/cursos-ia-ninos-chile",
-    languages: generateHreflangs("sales"),
-  },
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+  keywords: [
+    "curso inteligencia artificial niños chile",
+    "cursos de tecnologia para niños chile",
+    "aprender ia chile",
+    "innovakids cursos",
+  ],
   openGraph: {
-    title: "Cursos de IA para Niños en Chile | InnovaKids",
-    description:
-      "Curso de inteligencia artificial para niños 8-14 años. ChatGPT, Midjourney, apps. 10 clases prácticas. Evaluación gratuita.",
+    title: "Curso Inteligencia Artificial Niños Chile | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Chile para niños de 8-14 años.",
     url: "https://www.innovakidslatam.com/cl/cursos-ia-ninos-chile",
     locale: "es_CL",
+    siteName: "InnovaKids Chile",
     type: "website",
-    images: [
-      {
-        url: "https://www.innovakidslatam.com/og-chile.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Cursos de IA para Niños en Chile - InnovaKids",
-      },
-    ],
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/cl/cursos-ia-ninos-chile",
   },
 }
 

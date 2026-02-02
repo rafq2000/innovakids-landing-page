@@ -139,8 +139,8 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/colombia',
-        destination: '/co',
+        source: '/co',
+        destination: '/colombia',
         permanent: true,
       },
       {

@@ -9,7 +9,7 @@ import Link from "next/link"
 const pricingTiers = [
   {
     name: "Vibe Explorer",
-    price: 197,
+    price: 267,
     description: "El punto de partida obligatorio para todo creador digital.",
     icon: Sparkles,
     color: "from-yellow-400 to-orange-400",
@@ -25,7 +25,7 @@ const pricingTiers = [
   },
   {
     name: "Start Pack",
-    price: 494,
+    price: 534,
     description: "Explorer + 1 Especialidad a tu elección.",
     icon: Zap,
     color: "from-cyan-400 to-blue-400",
@@ -33,7 +33,7 @@ const pricingTiers = [
       "Todo lo de Explorer",
       "1 Especialidad (Coding, Business o Study)",
       "Total 20 Clases Maestras",
-      "Ahorro de Acceso Bundled",
+      "Ahorros por Pack incluido",
     ],
     cta: "Elegir Pack",
     link: "/pagar?option=start_pack",
@@ -41,9 +41,9 @@ const pricingTiers = [
   },
   {
     name: "Academy University",
-    price: 788,
+    price: 1068,
     description: "La experiencia completa. Transforma el futuro de tu hijo.",
-    originalPrice: 1088,
+    originalPrice: 1497,
     icon: Crown,
     color: "from-purple-500 to-pink-500",
     features: [
@@ -51,7 +51,7 @@ const pricingTiers = [
       "Incubadora de Startups incluida",
       "Mentoria 'Future Founder'",
       "Certificación Master Completa",
-      "Ahorras $300 USD (Mejor Oferta)",
+      "Ahorras +$400 USD (Mejor Oferta)",
     ],
     cta: "Inscripción VIP",
     link: "/pagar?option=university",

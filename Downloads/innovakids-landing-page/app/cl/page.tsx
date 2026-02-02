@@ -5,24 +5,17 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, Users, Clock, Shield, Target, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding en Chile | InnovaKids",
+  title: "Curso de IA para Niños en Chile | Aprende Creando",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Chile. Clases online en vivo para Santiago, Viña del Mar, Concepción y todo el país.",
-  keywords:
-    "vibe coding chile, curso ia niños chile, clases programacion ia santiago, escuela inteligencia artificial niños, innovakids chile",
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/cl",
-    languages: {
-      "es-CL": "https://www.innovakidslatam.com/cl",
-      "es-MX": "https://www.innovakidslatam.com/mx",
-      "es-CO": "https://www.innovakidslatam.com/co",
-      "es-AR": "https://www.innovakidslatam.com/ar",
-      "es-PE": "https://www.innovakidslatam.com/pe",
-      "es-ES": "https://www.innovakidslatam.com/es",
-    },
-  },
+    "Niños chilenos de 8-14 crean arte, música y apps con IA. Horario Santiago, pago con Webpay o Transferencia. 10 clases en vivo, máx 5 por grupo. Garantía total ⭐",
+  keywords: [
+    "curso ia niños chile",
+    "clases programación ia santiago",
+    "taller tecnologia niños providencia",
+    "innovakids chile",
+    "vibe coding chile",
+  ],
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños en Chile | InnovaKids",
     description:
       "Formación líder en inteligencia artificial para niños de 8 a 14 años en Chile. Clases online en vivo, grupos de 5 alumnos.",
     url: "https://www.innovakidslatam.com/cl",

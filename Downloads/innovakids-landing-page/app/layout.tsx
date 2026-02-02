@@ -30,7 +30,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "InnovaKids | Cursos de IA para Niños y Adolescentes Online",
   description:
-    "La escuela #1 de Inteligencia Artificial para niños y adolescentes (8-14 años) en Latinoamérica y USA. Clases en vivo 100% en español. Certificación Internacional.",
+    "527 niños en 9 países ya crean aplicaciones y música con IA. La escuela online #1 para transformar consumidores en creadores (8-14 años). Garantía total.",
   keywords: [
     "curso inteligencia artificial niños",
     "curso inteligencia artificial adolescentes",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de Inteligencia Artificial para Niños | InnovaKids",
     description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+      "527 alumnos graduados. Tu hijo crea su primera app en 5 semanas. Clases en vivo, máx 5 por grupo. Garantía 100% de devolución.",
     url: "https://www.innovakidslatam.com",
     siteName: "Innovakids",
     images: [
@@ -133,7 +133,7 @@ export default function RootLayout({
               name: "Innovakids",
               alternateName: ["Innova Kids", "InnovaKids LATAM", "Cursos IA Niños"],
               description:
-                "Los mejores cursos de inteligencia artificial para niños y adolescentes de 8 a 17 años en Latinoamérica. Clases de IA online con grupos reducidos y proyectos reales.",
+                "Academia de Vibe Coding para niños. 527 graduados en 9 países. Enseñamos a niños de 8-14 años a crear software, arte y música usando Inteligencia Artificial.",
               url: "https://www.innovakidslatam.com",
               logo: "https://www.innovakidslatam.com/logo-innovakids.png",
               address: {
@@ -180,7 +180,7 @@ export default function RootLayout({
               "@type": "Course",
               name: "Cursos de IA para Niños y Adolescentes | Clases de Inteligencia Artificial Online - Innovakids",
               description:
-                "Programa completo de cursos de inteligencia artificial para niños y adolescentes de 8-17 años. Clases de IA en vivo con grupos de 5 alumnos. Aprende a crear apps, juegos y proyectos con IA desde cero.",
+                "Curso práctico de 5 semanas donde tu hijo crea Videojuegos, Apps y Arte con IA. Sin experiencia previa. Incluye certificación internacional y portafolio de proyectos.",
               provider: {
                 "@type": "Organization",
                 name: "Innovakids",
@@ -231,7 +231,7 @@ export default function RootLayout({
               "@type": "Product",
               name: "Curso de IA para Niños y Adolescentes - Innovakids",
               description:
-                "Programa completo de 10 clases de IA para niños y adolescentes de 8-17 años en toda Latinoamérica. Grupos reducidos de 5 alumnos, acceso de por vida, certificado incluido.",
+                "Programa Vibe Explorer (10 Clases en Vivo). Aprende a programar con IA. Incluye software, grabaciones de por vida y garantía de satisfacción de 10 días.",
               image: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
               brand: {
                 "@type": "Brand",

@@ -7,23 +7,22 @@ import { MapPin, Users, Star, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding en Argentina | InnovaKids",
+  title: "Curso de IA para Chicos en Argentina | Online en Vivo",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para chicos en Argentina. Clases online en vivo para Buenos Aires, Córdoba, Rosario y todo el país.",
+    "Niños argentinos de 8-14 crean arte, música y apps con IA. Horario Buenos Aires, pago con Mercado Pago. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
   keywords: [
-    "vibe coding argentina",
     "curso ia chicos argentina",
-    "clases programacion chicos buenos aires",
-    "escuela inteligencia artificial chicos",
+    "clases programación chicos buenos aires",
+    "taller tecnologia niños cordoba",
     "innovakids argentina",
+    "vibe coding argentina",
   ],
   openGraph: {
-    title: "Curso de IA y Vibe Coding en Argentina | InnovaKids",
-    description:
-      "La primera escuela de Vibe Coding e Inteligencia Artificial para chicos en Argentina. Clases online en vivo para todo el país.",
+    title: "Curso de IA para Chicos en Argentina | InnovaKids",
+    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Argentina. Clases en vivo horario Buenos Aires. Proyectos reales.",
     url: "https://www.innovakidslatam.com/ar",
-    siteName: "InnovaKids",
     locale: "es_AR",
+    siteName: "InnovaKids Argentina",
     type: "website",
   },
   alternates: {

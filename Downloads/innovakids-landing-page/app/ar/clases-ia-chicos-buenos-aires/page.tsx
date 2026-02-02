@@ -7,23 +7,21 @@ import { Check, Users, Shield, Star, MapPin } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en Buenos Aires 2026 | InnovaKids",
+  title: "Clases de IA para Chicos en Buenos Aires | Online",
   description:
-    "Clases de programación con IA (Vibe Coding) para chicos en Buenos Aires. CABA, Zona Norte, Sur y Oeste. Grupos de 5 alumnos. Primera clase GRATIS.",
+    "¿Vives en CABA o GBA? Tu hijo puede crear apps y videojuegos con IA desde casa (Palermo, Belgrano, Nordelta). Horarios flexibles tardes y sábados. Garantía total.",
   keywords: [
-    "clases vibe coding buenos aires",
     "clases ia chicos buenos aires",
-    "curso inteligencia artificial chicos caba",
-    "ia para chicos zona norte",
-    "clases programacion chicos buenos aires",
+    "curso programación chicos caba",
+    "vacacional tecnologia nordelta",
+    "innovakids buenos aires",
   ],
   openGraph: {
     title: "Clases de IA para Chicos en Buenos Aires | InnovaKids",
-    description:
-      "Curso online de inteligencia artificial para chicos de Buenos Aires. Grupos de 5 alumnos. Primera clase gratis.",
+    description: "El curso #1 de Inteligencia Artificial para chicos en Buenos Aires. Grupos pequeños, atención personalizada.",
     url: "https://www.innovakidslatam.com/ar/clases-ia-chicos-buenos-aires",
-    siteName: "InnovaKids",
     locale: "es_AR",
+    siteName: "InnovaKids Buenos Aires",
     type: "website",
   },
   alternates: {

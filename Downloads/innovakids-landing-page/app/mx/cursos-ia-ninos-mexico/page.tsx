@@ -10,24 +10,21 @@ import { PricingSection } from "@/components/pricing-section"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA para Niños México 2026 | Evaluación Gratis | InnovaKids",
+  title: "Curso Inteligencia Artificial Niños México | Vibe Coding",
   description:
-    "Inscripciones abiertas 2026. Curso de Vibe Coding y Programación con IA para niños en México. 10 clases online, grupos pequeños. Agenda tu evaluación gratuita.",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
   keywords: [
-    "curso vibe coding mexico",
-    "mejor curso de ia para niños mexico",
-    "curso de ia para niños numero 1",
-    "cursos de ia para niños mexico",
-    "clases de ia para niños cdmx",
-    "innovakids mexico",
+    "curso inteligencia artificial niños mexico",
+    "cursos de tecnologia para niños mexico",
+    "aprender ia mexico",
+    "innovakids cursos",
   ],
   openGraph: {
-    title: "Cursos de IA para Niños México 2026 | Evaluación Gratis",
-    description:
-      "Aprende Vibe Coding: La nueva forma de programar con Inteligencia Artificial. Curso online para niños 8-14 años. Evaluación gratuita.",
+    title: "Curso Inteligencia Artificial Niños México | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de México para niños de 8-14 años.",
     url: "https://www.innovakidslatam.com/mx/cursos-ia-ninos-mexico",
-    siteName: "InnovaKids",
     locale: "es_MX",
+    siteName: "InnovaKids México",
     type: "website",
   },
   alternates: {
