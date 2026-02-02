@@ -67,6 +67,15 @@ const SEOContent = dynamic(() => import("@/components/seo-content").then((mod) =
   ssr: true,
 })
 
+const VisionSection = dynamic(
+  () => import("@/components/vision-section").then((mod) => ({ default: mod.VisionSection })),
+  { ssr: true },
+)
+const QualificationSection = dynamic(
+  () => import("@/components/qualification-section").then((mod) => ({ default: mod.QualificationSection })),
+  { ssr: true },
+)
+
 import { faqs } from "@/lib/faq-data"
 
 export default function Home() {
@@ -93,6 +102,9 @@ export default function Home() {
         {/* AI Future Stats - Show urgency immediately */}
         <AIFutureSection />
 
+        {/* NEW: Disqualification Section - Hormozi Lead Quality */}
+        <QualificationSection />
+
         {/* Module Preview - Show exactly what they get */}
         <ModulePreviewSection />
 
@@ -103,6 +115,11 @@ export default function Home() {
 
         {/* Testimonials - Social proof from parents and AIs */}
         <TestimonialsSection />
+
+        <div className="h-24" />
+
+        {/* NEW: Vision Section - The Bridge */}
+        <VisionSection />
 
         <div className="h-24" />
 

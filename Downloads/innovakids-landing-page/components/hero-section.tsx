@@ -69,12 +69,12 @@ export function HeroSection() {
           {/* Main Headline - Static for Instant LCP */}
           <div className="relative">
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.05] tracking-tight font-premium px-2">
-              <span className="block text-white">Cursos de IA para Niños:</span>
-              <span className="block text-white">Tu Hijo Aprende a</span>
+              <span className="block text-white">Tu hijo pierde horas en pantallas</span>
+              <span className="block text-white">sin aprender nada útil.</span>
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#4dd0e1] to-[#8b5cf6]"
                 style={{ textShadow: "0 0 30px rgba(77, 208, 225, 0.3)" }}
               >
-                CREAR con IA
+                Cámbiale el futuro hoy.
               </span>
             </h1>
 
@@ -82,7 +82,7 @@ export function HeroSection() {
               className="mt-6 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white/90 animate-fadeIn"
               style={{ animationDelay: "0.2s" }}
             >
-              No solo consume tecnología. <span className="text-primary">La domina.</span>
+              En 5 semanas pasará de consumidor pasivo a <span className="text-primary">Creador de Tecnología.</span>
             </p>
 
             <div
@@ -139,7 +139,7 @@ export function HeroSection() {
                 />
                 <span className="relative flex items-center gap-2">
                   <Sparkles className="w-5 h-5" />
-                  AGENDAR ENTREVISTA ADMISIÓN
+                  RESERVAR CLASE MUESTRA GRATIS
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </a>

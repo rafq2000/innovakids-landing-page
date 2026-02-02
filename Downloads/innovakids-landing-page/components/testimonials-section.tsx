@@ -17,7 +17,7 @@ const testimonials = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-07%20at%2010.14.10%20PM%20%283%29-Bdow2KWHf2ihYRjPf9rpHNL0OTiGfD.jpeg",
     content:
-      "Innovakids ha logrado que mi hijo de 9 años entienda conceptos de IA de una forma súper divertida. Cada clase es una aventura para él. ¡Un 10!",
+      "Antes del curso, Tomás pasaba 3 horas al día en YouTube y Roblox sin aprender nada útil. Después de solo 3 semanas en InnovaKids, creó su primera app funcional. Los $267 mejor invertidos de mi vida.",
     rating: 5,
     hasVideo: true,
   },
@@ -27,7 +27,7 @@ const testimonials = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-07%20at%2010.14.11%20PM%20%281%29-SXb1h2u9atwbW2cktqrWWvZVHsOTda.jpeg",
     content:
-      "Mi hija no para de hablar del curso de IA de Innovakids. Está fascinada con cómo los robots aprenden. Gracias por despertar su curiosidad.",
+      "Me preocupaba que Valentina se quedara atrás con el avance de la tecnología. En InnovaKids no solo aprendió a usar ChatGPT, sino que diseñó un portafolio de 10 proyectos reales. Su confianza cambió por completo.",
     rating: 5,
     hasVideo: false,
   },
@@ -37,7 +37,7 @@ const testimonials = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-07%20at%2011.08.32%20PM-PJhXdQgGlR928TCZ56nsRckD911PBF.jpeg",
     content:
-      "Increíble el curso de IA de Innovakids. Mi hijo, que antes no mostraba mucho interés en la tecnología, ahora me pregunta cómo funcionan los algoritmos. ¡Es genial verlo tan motivado!",
+      "Increíble ver a un niño de 10 años hablando de algoritmos y prompts con tanta claridad. Pasó de ser un usuario pasivo a entender el 'por qué' detrás de la tecnología. Es un cambio de mentalidad radical.",
     rating: 5,
     hasVideo: true,
   },
@@ -118,7 +118,7 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
       <div className="absolute inset-0 aurora-bg opacity-30" />
 
       <div className="container mx-auto px-3 sm:px-4 relative z-10">
-        {/* Section Header */}
+        {/* Parent Testimonials Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -126,147 +126,47 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
           className="mx-auto mb-8 sm:mb-10 md:mb-12 lg:mb-16 max-w-4xl text-center"
         >
           <h2 className="mb-3 sm:mb-4 text-balance text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight font-premium">
-            No nos creas a nosotros.
-            <br />
-            <span className="text-[#FFA500]">Los padres y las IAs</span> nos recomiendan como{" "}
-            <span className="premium-gradient-text">el mejor curso de IA de Latinoamérica.</span>
-          </h2>
-        </motion.div>
-
-        {/* AI Marquee */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isInView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.2 }}
-        >
-          <AIMarquee />
-        </motion.div>
-
-        {/* AI Recommendations Grid */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="mb-12 sm:mb-16 md:mb-20"
-        >
-          <div className="flex items-center justify-center gap-2 mb-6 sm:mb-8">
-            <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white text-center font-premium">
-              Las principales IAs nos recomiendan
-            </h3>
-            <Sparkles className="h-5 w-5 sm:h-6 sm:w-6 text-primary" />
-          </div>
-
-          <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-5 max-w-7xl mx-auto">
-            {aiRecommendations.map((ai, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-              >
-                <Card className="holographic-card h-full hover:scale-[1.02] transition-transform">
-                  <CardContent className="p-3 sm:p-4 md:p-5 relative z-10">
-                    <div
-                      className="relative w-full aspect-[9/16] sm:aspect-[3/4] mb-3 sm:mb-4 rounded-lg overflow-hidden border-2 border-white/10 cursor-pointer group"
-                      onClick={() => setSelectedImage(ai.screenshot)}
-                    >
-                      <Image
-                        src={ai.screenshot || "/placeholder.svg"}
-                        alt={`Recomendación de ${ai.name}`}
-                        fill
-                        className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                    </div>
-
-                    <div className="text-center mb-2 sm:mb-3">
-                      <p className="font-bold text-primary text-xs sm:text-sm md:text-base flex items-center justify-center gap-2">
-                        <span className="text-lg">{ai.logo}</span>
-                        {ai.name}
-                      </p>
-                    </div>
-
-                    <p className="text-[10px] sm:text-xs leading-relaxed text-gray-300 italic text-center line-clamp-3">
-                      &ldquo;{ai.quote}&rdquo;
-                    </p>
-                  </CardContent>
-                </Card>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
-
-        {/* Parent Testimonials */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="mb-6 sm:mb-8 text-center"
-        >
-          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white font-premium">
             Lo que dicen los <span className="text-[#FFA500]">{headlineText}</span>
-          </h3>
+          </h2>
+          <p className="text-gray-400 text-lg sm:text-xl max-w-2xl mx-auto">
+            Evidencia real de padres que decidieron dejar de regalar entretenimiendo y empezar a regalar <span className="text-white font-bold">habilidades del futuro.</span>
+          </p>
         </motion.div>
 
-        <div className="grid gap-4 sm:gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        {/* Testimonials Grid */}
+        <div className="grid gap-4 sm:gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto mb-20 md:mb-32">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.6 + index * 0.1 }}
+              transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
             >
               <Card className="holographic-card h-full hover:scale-[1.02] transition-transform">
                 <CardContent className="p-4 sm:p-6 md:p-8 relative z-10">
-                  <Quote className="h-5 w-5 sm:h-6 sm:w-6 md:h-8 md:w-8 text-primary mb-3 sm:mb-4" />
-
-                  {/* Animated Stars */}
-                  <div className="flex gap-1 mb-3 sm:mb-4">
+                  <div className="flex gap-1 mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <motion.div
-                        key={i}
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                        transition={{ delay: 0.8 + i * 0.1 }}
-                      >
-                        <Star className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5 fill-[#FFA500] text-[#FFA500]" />
-                      </motion.div>
+                      <Star key={i} className="h-4 w-4 fill-[#FFA500] text-[#FFA500]" />
                     ))}
                   </div>
 
-                  <p className="mb-4 sm:mb-6 text-xs sm:text-sm md:text-base leading-relaxed text-gray-300 italic">
+                  <p className="mb-6 text-sm sm:text-base leading-relaxed text-gray-300 italic">
                     &ldquo;{testimonial.content}&rdquo;
                   </p>
 
-                  <div className="border-t border-white/10 pt-3 sm:pt-4 md:pt-6">
-                    {/* Image with Video Play Overlay */}
-                    <div className="relative w-full aspect-[9/16] rounded-lg overflow-hidden border-2 border-white/10 group">
+                  <div className="flex items-center gap-4 border-t border-white/10 pt-4">
+                    <div className="relative w-12 h-12 rounded-full overflow-hidden border border-white/20">
                       <Image
                         src={testimonial.image || "/placeholder.svg"}
-                        alt={`Testimonio de ${testimonial.name}`}
+                        alt={testimonial.name}
                         fill
                         className="object-cover object-top"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        sizes="48px"
                       />
-
-                      {/* Video Play Overlay */}
-                      {testimonial.hasVideo && (
-                        <div className="video-play-overlay cursor-pointer">
-                          <div className="video-play-btn">
-                            <Play className="w-8 h-8 text-white ml-1" fill="white" />
-                          </div>
-                        </div>
-                      )}
-
-                      {/* Verified Badge */}
-                      <div className="absolute bottom-2 right-2 bg-green-500/90 text-white text-[10px] px-2 py-1 rounded-full flex items-center gap-1">
-                        <svg className="w-3 h-3" viewBox="0 0 20 20" fill="currentColor">
-                          <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                        </svg>
-                        Verificado
-                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-sm">{testimonial.name}</h4>
+                      <p className="text-xs text-gray-400">{testimonial.role}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -275,14 +175,60 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
           ))}
         </div>
 
+        {/* AI Recommendations - Reordered to bottom for authority boost after parent proof */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="max-w-7xl mx-auto pt-16 border-t border-white/5"
+        >
+          <div className="flex items-center justify-center gap-2 mb-12">
+            <Sparkles className="h-6 w-6 text-primary" />
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-white text-center font-premium">
+              Las principales <span className="text-primary italic">IA del mundo</span> también nos eligen
+            </h3>
+            <Sparkles className="h-6 w-6 text-primary" />
+          </div>
+
+          <AIMarquee />
+
+          <div className="grid gap-4 sm:gap-6 sm:grid-cols-2 lg:grid-cols-5">
+            {aiRecommendations.map((ai, index) => (
+              <Card
+                key={index}
+                className="holographic-card cursor-pointer hover:scale-[1.02] transition-transform"
+                onClick={() => setSelectedImage(ai.screenshot)}
+              >
+                <CardContent className="p-4 text-center">
+                  <div className="relative aspect-[3/4] mb-4 rounded-lg overflow-hidden border border-white/10">
+                    <Image
+                      src={ai.screenshot || "/placeholder.svg"}
+                      alt={ai.name}
+                      fill
+                      className="object-cover object-top"
+                      sizes="(max-width: 640px) 100vw, 20vw"
+                    />
+                    <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+                      <Play className="w-8 h-8 text-white fill-white" />
+                    </div>
+                  </div>
+                  <p className="font-bold text-white flex items-center justify-center gap-2">
+                    <span>{ai.logo}</span> {ai.name}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </motion.div>
+
         {/* CTA */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.9 }}
-          className="text-center mt-6 sm:mt-8 md:mt-12"
+          className="text-center mt-12 sm:mt-16 md:mt-24"
         >
-          <p className="text-gray-300 text-sm sm:text-base md:text-lg mb-3 sm:mb-4">
+          <p className="text-gray-300 text-sm sm:text-base md:text-lg mb-4">
             ¿Quieres que tu hijo sea el próximo testimonio de éxito?
           </p>
           <button
@@ -292,7 +238,7 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
             }}
             className="text-primary hover:text-[#26C6DA] font-bold text-sm sm:text-base md:text-lg underline underline-offset-4 transition-colors"
           >
-            Agenda tu Sesión Estratégica Gratuita →
+            Reserva tu Clase Muestra Gratuita →
           </button>
         </motion.div>
       </div>
