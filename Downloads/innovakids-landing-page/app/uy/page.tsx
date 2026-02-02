@@ -7,24 +7,22 @@ import { MapPin, Users, Star, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding en Uruguay | InnovaKids",
+  title: "Curso de IA para Niños en Uruguay | Crea Apps y Videojuegos",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Uruguay. Clases online en vivo para Montevideo, Punta del Este, Maldonado y todo el país.",
+    "Niños uruguayos de 8-14 crean arte, música y apps con IA. Horario Montevideo, pago en Pesos/USD. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
   keywords: [
+    "curso ia niños uruguay",
+    "clases programación ia montevideo",
+    "taller tecnologia niños pocitos",
+    "innovakids uruguay",
     "vibe coding uruguay",
-    "cursos ia niños uruguay",
-    "clases ia niños montevideo",
-    "inteligencia artificial niños punta del este",
-    "curso ia niños maldonado",
-    "ia para niños salto",
   ],
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños en Uruguay | InnovaKids",
-    description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años en Uruguay. Clases online en vivo, grupos de 5 alumnos.",
+    title: "Curso de IA para Niños en Uruguay | InnovaKids",
+    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Uruguay. Clases en vivo horario Montevideo. Proyectos reales.",
     url: "https://www.innovakidslatam.com/uy",
-    siteName: "InnovaKids",
     locale: "es_UY",
+    siteName: "InnovaKids Uruguay",
     type: "website",
   },
   alternates: {

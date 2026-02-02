@@ -7,28 +7,26 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin } from "lucide-react"
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding en Bolivia | InnovaKids",
+  title: "Curso de IA para Niños en Bolivia | Crea Apps y Videojuegos",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Bolivia. Clases online en vivo para La Paz, Santa Cruz, Cochabamba y todo el país.",
+    "Niños bolivianos de 8-14 crean arte, música y apps con IA. Horario La Paz/Santa Cruz. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
   keywords: [
+    "curso ia niños bolivia",
+    "clases programación ia la paz",
+    "taller tecnologia niños santa cruz",
+    "innovakids bolivia",
     "vibe coding bolivia",
-    "cursos ia niños bolivia",
-    "clases ia niños la paz",
-    "inteligencia artificial niños santa cruz",
-    "curso ia niños cochabamba",
-    "ia para niños el alto",
   ],
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/bo",
-  },
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños en Bolivia | InnovaKids",
-    description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años en Bolivia. Clases online en vivo, grupos de 5 alumnos.",
+    title: "Curso de IA para Niños en Bolivia | InnovaKids",
+    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Bolivia. Clases en vivo horario local. Proyectos reales.",
     url: "https://www.innovakidslatam.com/bo",
     locale: "es_BO",
-    siteName: "InnovaKids",
+    siteName: "InnovaKids Bolivia",
     type: "website",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/bo",
   },
 }
 

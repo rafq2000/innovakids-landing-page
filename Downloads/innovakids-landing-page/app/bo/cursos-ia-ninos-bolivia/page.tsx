@@ -8,16 +8,21 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso de Vibe Coding para Niños Bolivia 2026 | InnovaKids",
+  title: "Curso Inteligencia Artificial Niños Bolivia | Vibe Coding",
   description:
-    "El primer curso de Vibe Coding e IA para niños de 8-14 años en Bolivia. Clases online en vivo. Grupos reducidos. Aprende a crear Apps.",
-  keywords:
-    "vibe coding bolivia, cursos de ia para niños bolivia, clases inteligencia artificial la paz, curso ia niños santa cruz, innovakids bolivia",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+  keywords: [
+    "curso inteligencia artificial niños bolivia",
+    "cursos de tecnologia para niños bolivia",
+    "aprender ia la paz",
+    "innovakids cursos",
+  ],
   openGraph: {
-    title: "Cursos de IA para Niños en Bolivia | InnovaKids Latam",
-    description: "Clases de Inteligencia Artificial para niños bolivianos. Online en vivo, grupos pequeños.",
+    title: "Curso Inteligencia Artificial Niños Bolivia | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Bolivia para niños de 8-14 años.",
     url: "https://www.innovakidslatam.com/bo/cursos-ia-ninos-bolivia",
     locale: "es_BO",
+    siteName: "InnovaKids Bolivia",
     type: "website",
   },
   alternates: {

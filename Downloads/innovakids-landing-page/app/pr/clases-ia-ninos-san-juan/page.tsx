@@ -6,12 +6,27 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Clases de Vibe Coding en San Juan 2026 | InnovaKids",
-    description: "Clases de programación con IA (Vibe Coding) para niños en San Juan. Condado, Miramar, Hato Rey. Grupos de 5 alumnos. Primera clase GRATIS.",
-    keywords: ["clases vibe coding san juan", "clases ia niños san juan", "curso inteligencia artificial niños condado", "ia para niños miramar", "clases programacion niños hato rey"],
-    alternates: { canonical: "https://www.innovakidslatam.com/pr/clases-ia-ninos-san-juan" },
+    title: "Clases de IA para Niños en San Juan | Online en Vivo",
+    description:
+        "¿Vives en San Juan? Tu hijo puede crear apps y videojuegos con IA desde casa (Condado, Miramar, Viejo San Juan). Horarios flexibles tardes y sábados. Garantía total.",
+    keywords: [
+        "clases ia niños san juan",
+        "curso programación niños condado",
+        "vacacional tecnologia san juan",
+        "innovakids san juan",
+    ],
+    openGraph: {
+        title: "Clases de IA para Niños en San Juan | InnovaKids",
+        description: "El curso #1 de Inteligencia Artificial para niños en San Juan. Grupos pequeños, atención personalizada.",
+        url: "https://www.innovakidslatam.com/pr/clases-ia-ninos-san-juan",
+        locale: "es_PR",
+        siteName: "InnovaKids San Juan",
+        type: "website",
+    },
+    alternates: {
+        canonical: "https://www.innovakidslatam.com/pr/clases-ia-ninos-san-juan",
+    },
 }
-
 export default function ClasesSanJuanPage() {
     return (
         <>

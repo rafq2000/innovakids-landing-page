@@ -7,28 +7,26 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin } from "lucide-react"
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding en Paraguay | InnovaKids",
+  title: "Curso de IA para Niños en Paraguay | Crea Apps y Videojuegos",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Paraguay. Clases online en vivo para Asunción, Ciudad del Este, San Lorenzo y todo el país.",
+    "Niños paraguayos de 8-14 crean arte, música y apps con IA. Horario Asunción. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
   keywords: [
+    "curso ia niños paraguay",
+    "clases programación ia asuncion",
+    "taller tecnologia niños encarnacion",
+    "innovakids paraguay",
     "vibe coding paraguay",
-    "cursos ia niños paraguay",
-    "clases ia niños asuncion",
-    "inteligencia artificial niños ciudad del este",
-    "curso ia niños san lorenzo",
-    "ia para niños luque",
   ],
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/py",
-  },
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños en Paraguay | InnovaKids",
-    description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años en Paraguay. Clases online en vivo, grupos de 5 alumnos.",
+    title: "Curso de IA para Niños en Paraguay | InnovaKids",
+    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Paraguay. Clases en vivo horario local. Proyectos reales.",
     url: "https://www.innovakidslatam.com/py",
     locale: "es_PY",
-    siteName: "InnovaKids",
+    siteName: "InnovaKids Paraguay",
     type: "website",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/py",
   },
 }
 

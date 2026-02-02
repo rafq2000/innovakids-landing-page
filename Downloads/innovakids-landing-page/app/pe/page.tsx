@@ -5,22 +5,26 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, ArrowRight, Users, Clock, Shield, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding en Perú | InnovaKids",
+  title: "Curso de IA para Niños en Perú | Crea Apps y Videojuegos",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Perú. Clases online en vivo para Lima, Arequipa, Trujillo y todo el país. Aprende a crear con IA.",
-  keywords:
-    "curso ia niños peru, vibe coding peru, escuela inteligencia artificial niños, clases programacion niños lima, innovakids peru",
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/pe",
-  },
+    "Niños peruanos de 8-14 crean arte, música y apps con IA. Horario Lima, pago con Yape o Transferencia. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+  keywords: [
+    "curso ia niños peru",
+    "clases programación ia lima",
+    "taller tecnologia niños miraflores",
+    "innovakids peru",
+    "vibe coding peru",
+  ],
   openGraph: {
-    title: "Curso de IA y Vibe Coding en Perú | InnovaKids",
-    description:
-      "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Perú. Clases online en vivo para todo el país.",
+    title: "Curso de IA para Niños en Perú | InnovaKids",
+    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Perú. Clases en vivo horario Lima. Proyectos reales.",
     url: "https://www.innovakidslatam.com/pe",
     locale: "es_PE",
-    siteName: "InnovaKids",
+    siteName: "InnovaKids Perú",
     type: "website",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/pe",
   },
 }
 

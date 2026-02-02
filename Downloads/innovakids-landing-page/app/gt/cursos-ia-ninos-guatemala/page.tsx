@@ -8,25 +8,27 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso de Vibe Coding para Niños Guatemala 2026 | InnovaKids",
+  title: "Curso Inteligencia Artificial Niños Guatemala | Vibe Coding",
   description:
-    "El primer curso de Vibe Coding e IA para niños de 8-14 años en Guatemala. Clases online en vivo. Grupos reducidos. Aprende a crear Apps.",
-  keywords:
-    "vibe coding guatemala, cursos de ia para niños guatemala, clases inteligencia artificial ciudad de guatemala, curso ia niños mixco, innovakids guatemala",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+  keywords: [
+    "curso inteligencia artificial niños guatemala",
+    "cursos de tecnologia para niños guatemala",
+    "aprender ia ciudad de guatemala",
+    "innovakids cursos",
+  ],
   openGraph: {
-    title: "Cursos de IA para Patojos en Guatemala | InnovaKids Latam",
-    description:
-      "Clases de Inteligencia Artificial para patojos guatemaltecos. Online en vivo, grupos pequeños, profesores expertos.",
+    title: "Curso Inteligencia Artificial Niños Guatemala | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Guatemala para niños de 8-14 años.",
     url: "https://www.innovakidslatam.com/gt/cursos-ia-ninos-guatemala",
-    siteName: "InnovaKids Latam",
     locale: "es_GT",
+    siteName: "InnovaKids Guatemala",
     type: "website",
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/gt/cursos-ia-ninos-guatemala",
   },
 }
-
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "Course",

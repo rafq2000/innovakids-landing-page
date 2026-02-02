@@ -7,28 +7,26 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin } from "lucide-react"
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding en El Salvador | InnovaKids",
+  title: "Curso de IA para Niños en El Salvador | Crea Apps y Videojuegos",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en El Salvador. Clases online en vivo para San Salvador, Santa Tecla, Santa Ana y todo el país.",
+    "Niños salvadoreños de 8-14 crean arte, música y apps con IA. Horario San Salvador. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
   keywords: [
+    "curso ia niños el salvador",
+    "clases programación ia san salvador",
+    "taller tecnologia niños santa tecla",
+    "innovakids el salvador",
     "vibe coding el salvador",
-    "cursos ia niños el salvador",
-    "clases ia niños san salvador",
-    "inteligencia artificial niños santa tecla",
-    "curso ia niños santa ana",
-    "ia para niños san miguel",
   ],
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/sv",
-  },
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños en El Salvador | InnovaKids",
-    description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años en El Salvador. Clases online en vivo, grupos de 5 alumnos.",
+    title: "Curso de IA para Niños en El Salvador | InnovaKids",
+    description: "527 alumnos graduados. La primera escuela de Vibe Coding en El Salvador. Clases en vivo horario local. Proyectos reales.",
     url: "https://www.innovakidslatam.com/sv",
     locale: "es_SV",
-    siteName: "InnovaKids",
+    siteName: "InnovaKids El Salvador",
     type: "website",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/sv",
   },
 }
 

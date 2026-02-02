@@ -5,20 +5,25 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Calendar, Clock, User, ArrowRight, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Vibe Coding en España: Guía Completa 2026 | InnovaKids",
+  title: "Cursos de IA para Niños en España (Guía 2026)",
   description:
-    "Descubre el Vibe Coding: la revolución en la educación tecnológica para niños en España. Comparativa de opciones, precios y metodologías.",
-  keywords:
-    "que es vibe coding, cursos inteligencia artificial niños españa, mejores cursos ia niños madrid, curso programación ia barcelona, educación ia niños valencia",
+    "Guía Completa: Lo que todo padre español debe saber antes de inscribir a su hijo en un curso de IA. Precios en euros, herramientas, seguridad y mejores opciones.",
+  keywords: [
+    "guia cursos ia niños españa",
+    "mejores cursos programacion niños españa",
+    "comparativa escuelas ia españa",
+    "consejos padres tecnologia españa",
+  ],
+  openGraph: {
+    title: "Cursos de IA para Niños en España (Guía 2026)",
+    description: "Todo lo que necesitas saber para elegir la mejor educación tecnológica para tu hijo en España.",
+    url: "https://www.innovakidslatam.com/es/blog/cursos-inteligencia-artificial-ninos-espana-guia",
+    locale: "es_ES",
+    type: "article",
+    siteName: "Blog InnovaKids España",
+  },
   alternates: {
     canonical: "https://www.innovakidslatam.com/es/blog/cursos-inteligencia-artificial-ninos-espana-guia",
-  },
-  openGraph: {
-    title: "Cursos de Inteligencia Artificial para Niños en España: Guía Completa 2026",
-    description: "Todo lo que necesitas saber para elegir el mejor curso de IA para tu hijo en España.",
-    type: "article",
-    publishedTime: "2026-01-01T00:00:00.000Z",
-    authors: ["InnovaKids España"],
   },
 }
 

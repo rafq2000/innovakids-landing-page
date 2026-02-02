@@ -7,16 +7,23 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin, Star } from "lucide-rea
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en Ciudad de Guatemala 2026 | InnovaKids",
+  title: "Clases de IA para Niños en Ciudad de Guatemala | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en Ciudad de Guatemala. Zona 10, Zona 14, Zona 15. Grupos de 5 alumnos. Primera clase GRATIS.",
+    "¿Vives en Ciudad de Guatemala? Tu hijo puede crear apps y videojuegos con IA desde casa (Cayalá, Zona 10, Mixco). Horarios flexibles tardes y sábados. Garantía total.",
   keywords: [
-    "clases vibe coding ciudad de guatemala",
     "clases ia niños ciudad de guatemala",
-    "curso inteligencia artificial niños zona 10",
-    "ia para niños zona 14",
-    "clases programacion niños zona 15",
+    "curso programación niños cayala",
+    "vacacional tecnologia zona 10",
+    "innovakids guatemala",
   ],
+  openGraph: {
+    title: "Clases de IA para Niños en Ciudad de Guatemala | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños en Guatemala. Grupos pequeños, atención personalizada.",
+    url: "https://www.innovakidslatam.com/gt/clases-ia-ninos-ciudad-guatemala",
+    locale: "es_GT",
+    siteName: "InnovaKids Guatemala",
+    type: "website",
+  },
   alternates: {
     canonical: "https://www.innovakidslatam.com/gt/clases-ia-ninos-ciudad-guatemala",
   },

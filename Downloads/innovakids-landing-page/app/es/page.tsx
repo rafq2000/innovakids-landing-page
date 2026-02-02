@@ -5,21 +5,25 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding en España | InnovaKids",
+  title: "Curso de IA para Niños en España | Crea Apps y Videojuegos",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en España. Clases online en vivo para Madrid, Barcelona, Valencia y todo el país.",
-  keywords:
-    "vibe coding españa, curso ia niños españa, clases programacion niños madrid, escuela inteligencia artificial niños, innovakids españa",
+    "Niños en España de 8-14 crean arte, música y apps con IA. Horario Madrid, pago en Euros. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+  keywords: [
+    "curso ia niños españa",
+    "clases programación ia madrid",
+    "taller tecnologia niños barcelona",
+    "innovakids españa",
+    "vibe coding españa",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/es",
   },
   openGraph: {
-    title: "Curso de IA y Vibe Coding en España | InnovaKids",
-    description:
-      "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en España. Clases online en vivo para todo el país.",
+    title: "Curso de IA para Niños en España | InnovaKids",
+    description: "527 alumnos graduados. La primera escuela de Vibe Coding en España. Clases en vivo horario Madrid/Barcelona. Proyectos reales.",
     url: "https://www.innovakidslatam.com/es",
     locale: "es_ES",
-    siteName: "InnovaKids",
+    siteName: "InnovaKids España",
     type: "website",
   },
 }

@@ -8,26 +8,25 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso de Vibe Coding para Niños Honduras 2026 | InnovaKids",
+  title: "Curso Inteligencia Artificial Niños Honduras | Vibe Coding",
   description:
-    "El primer curso de Vibe Coding e IA para niños de 8-14 años en Honduras. Clases online en vivo. Grupos reducidos. Aprende a crear Apps.",
-  keywords:
-    "vibe coding honduras, cursos de ia para niños honduras, clases inteligencia artificial tegucigalpa, curso ia niños san pedro sula, innovakids honduras",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+  keywords: [
+    "curso inteligencia artificial niños honduras",
+    "cursos de tecnologia para niños honduras",
+    "aprender ia tegucigalpa",
+    "innovakids cursos",
+  ],
   openGraph: {
-    title: "Cursos de IA para Niños en Honduras | InnovaKids Latam",
-    description:
-      "Clases de Inteligencia Artificial para niños hondureños. Online en vivo, grupos pequeños, profesores expertos.",
+    title: "Curso Inteligencia Artificial Niños Honduras | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Honduras para niños de 8-14 años.",
     url: "https://www.innovakidslatam.com/hn/cursos-ia-ninos-honduras",
-    siteName: "InnovaKids Latam",
     locale: "es_HN",
+    siteName: "InnovaKids Honduras",
     type: "website",
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/hn/cursos-ia-ninos-honduras",
-    languages: {
-      "es-HN": "https://www.innovakidslatam.com/hn/cursos-ia-ninos-honduras",
-      es: "https://www.innovakidslatam.com",
-    },
   },
 }
 

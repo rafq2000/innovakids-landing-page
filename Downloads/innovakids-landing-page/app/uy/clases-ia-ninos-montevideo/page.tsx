@@ -7,22 +7,21 @@ import { Check, Users, Shield, Star, MapPin } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en Montevideo 2026 | InnovaKids",
+  title: "Clases de IA para Niños en Montevideo | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en Montevideo. Pocitos, Carrasco, Punta Carretas. Grupos de 5 alumnos. Primera clase GRATIS.",
+    "¿Vives en Montevideo? Tu hijo puede crear apps y videojuegos con IA desde casa (Pocitos, Carrasco, Punta Carretas). Horarios flexibles tardes y sábados. Garantía total.",
   keywords: [
-    "clases vibe coding montevideo",
     "clases ia niños montevideo",
-    "curso inteligencia artificial niños pocitos",
-    "ia para niños carrasco",
-    "clases programacion niños punta carretas",
+    "curso programación niños pocitos",
+    "vacacional tecnologia montevideo",
+    "innovakids montevideo",
   ],
   openGraph: {
     title: "Clases de IA para Niños en Montevideo | InnovaKids",
-    description: "Cursos de inteligencia artificial para niños en Montevideo. Primera clase gratis.",
+    description: "El curso #1 de Inteligencia Artificial para niños en Montevideo. Grupos pequeños, atención personalizada.",
     url: "https://www.innovakidslatam.com/uy/clases-ia-ninos-montevideo",
-    siteName: "InnovaKids",
     locale: "es_UY",
+    siteName: "InnovaKids Montevideo",
     type: "website",
   },
   alternates: {

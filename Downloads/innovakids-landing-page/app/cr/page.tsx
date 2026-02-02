@@ -5,28 +5,26 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, Users, Clock, Shield, Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding en Costa Rica | InnovaKids",
+  title: "Curso de IA para Niños en Costa Rica | Crea Apps y Videojuegos",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Costa Rica. Clases online en vivo para San José, Heredia, Alajuela y todo el país.",
+    "Niños ticos de 8-14 crean arte, música y apps con IA. Horario San José, pago en Colones o USD. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
   keywords: [
+    "curso ia niños costa rica",
+    "clases programación ia san jose",
+    "taller tecnologia niños escazu",
+    "innovakids costa rica",
     "vibe coding costa rica",
-    "cursos ia niños costa rica",
-    "clases ia niños san jose",
-    "inteligencia artificial niños heredia",
-    "curso ia niños alajuela",
-    "ia para niños cartago",
   ],
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/cr",
-  },
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños en Costa Rica | InnovaKids",
-    description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años en Costa Rica. Clases online en vivo, grupos de 5 alumnos.",
+    title: "Curso de IA para Niños en Costa Rica | InnovaKids",
+    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Costa Rica. Clases en vivo horario San José. Proyectos reales.",
     url: "https://www.innovakidslatam.com/cr",
     locale: "es_CR",
-    siteName: "InnovaKids",
+    siteName: "InnovaKids Costa Rica",
     type: "website",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/cr",
   },
 }
 

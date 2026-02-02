@@ -5,19 +5,25 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, CheckCircle, Target, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en Lima (Miraflores, Surco) | InnovaKids",
+  title: "Clases de IA para Niños en Lima | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en Lima. Miraflores, San Isidro, Surco, La Molina. Aprende online con horarios de Perú.",
-  keywords:
-    "clases vibe coding lima, talleres ia niños miraflores, programacion para niños surco, academia ia san isidro, innovakids lima",
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/pe/clases-ia-ninos-lima",
-  },
+    "¿Vives en Lima? Tu hijo puede crear apps y videojuegos con IA desde casa (Miraflores, San Isidro, La Molina). Horarios flexibles tardes y sábados. Garantía total.",
+  keywords: [
+    "clases ia niños lima",
+    "curso programación niños miraflores",
+    "vacacional tecnologia lima",
+    "innovakids lima",
+  ],
   openGraph: {
-    title: "Clases de Vibe Coding e IA para Niños en Lima",
-    description: "Talleres de tecnología y Vibe Coding para niños en Lima. 100% online en vivo.",
+    title: "Clases de IA para Niños en Lima | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños en Lima. Grupos pequeños, atención personalizada.",
     url: "https://www.innovakidslatam.com/pe/clases-ia-ninos-lima",
     locale: "es_PE",
+    siteName: "InnovaKids Lima",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/pe/clases-ia-ninos-lima",
   },
 }
 

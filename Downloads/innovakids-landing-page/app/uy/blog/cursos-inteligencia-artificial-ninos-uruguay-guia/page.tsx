@@ -7,23 +7,22 @@ import { Check, Clock, User, Calendar } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Vibe Coding en Uruguay: Guía Completa para Padres 2026",
+  title: "Cursos de IA para Niños en Uruguay (Guía 2026)",
   description:
-    "Descubre el Vibe Coding: la nueva forma en que los niños aprenden a programar con IA en Uruguay. Comparativa de programas y precios.",
+    "Guía Completa: Lo que todo padre uruguayo debe saber antes de inscribir a su hijo en un curso de IA. Precios, herramientas, seguridad y mejores opciones.",
   keywords: [
-    "que es vibe coding",
-    "cursos inteligencia artificial niños uruguay",
-    "mejores cursos ia niños",
-    "donde estudiar ia niños uruguay",
-    "cursos programacion niños montevideo",
+    "guia cursos ia niños uruguay",
+    "mejores cursos programacion niños uruguay",
+    "comparativa escuelas ia uruguay",
+    "consejos padres tecnologia uruguay",
   ],
   openGraph: {
-    title: "Cursos de IA para Niños en Uruguay 2026: Guía Completa",
-    description: "Todo lo que necesitás saber sobre cursos de inteligencia artificial para niños en Uruguay.",
+    title: "Cursos de IA para Niños en Uruguay (Guía 2026)",
+    description: "Todo lo que necesitas saber para elegir la mejor educación tecnológica para tu hijo en Uruguay.",
     url: "https://www.innovakidslatam.com/uy/blog/cursos-inteligencia-artificial-ninos-uruguay-guia",
-    siteName: "InnovaKids",
     locale: "es_UY",
     type: "article",
+    siteName: "Blog InnovaKids Uruguay",
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/uy/blog/cursos-inteligencia-artificial-ninos-uruguay-guia",

@@ -6,17 +6,26 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Clases de Vibe Coding en Managua 2026 | InnovaKids",
+    title: "Clases de IA para Niños en Managua | Online en Vivo",
     description:
-        "Clases de programación con IA (Vibe Coding) para niños en Managua. Los Robles, Altamira, Bolonia. Grupos de 5 alumnos. Primera clase GRATIS.",
+        "¿Vives en Managua? Tu hijo puede crear apps y videojuegos con IA desde casa (Los Robles, Villa Fontana). Horarios flexibles tardes y sábados. Garantía total.",
     keywords: [
-        "clases vibe coding managua",
         "clases ia niños managua",
-        "curso inteligencia artificial niños los robles",
-        "ia para niños altamira",
-        "clases programacion niños bolonia",
+        "curso programación niños los robles",
+        "vacacional tecnologia managua",
+        "innovakids managua",
     ],
-    alternates: { canonical: "https://www.innovakidslatam.com/ni/clases-ia-ninos-managua" },
+    openGraph: {
+        title: "Clases de IA para Niños en Managua | InnovaKids",
+        description: "El curso #1 de Inteligencia Artificial para niños en Managua. Grupos pequeños, atención personalizada.",
+        url: "https://www.innovakidslatam.com/ni/clases-ia-ninos-managua",
+        locale: "es_NI",
+        siteName: "InnovaKids Managua",
+        type: "website",
+    },
+    alternates: {
+        canonical: "https://www.innovakidslatam.com/ni/clases-ia-ninos-managua",
+    },
 }
 
 export default function ClasesManaguaPage() {

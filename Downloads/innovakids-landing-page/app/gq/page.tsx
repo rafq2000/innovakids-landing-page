@@ -7,24 +7,22 @@ import { MapPin, Users, Clock, Shield } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Curso de IA y Vibe Coding en Guinea Ecuatorial | InnovaKids",
+    title: "Curso de IA para Niños en Guinea Ecuatorial | Crea Apps",
     description:
-        "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Guinea Ecuatorial. Clases online en vivo para Malabo, Bata y todo el país.",
+        "Niños de Guinea Ecuatorial (8-14 años) crean arte y apps con IA. Horario Malabo. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
     keywords: [
+        "curso ia niños guinea ecuatorial",
+        "clases programación ia malabo",
+        "taller tecnologia niños bata",
+        "innovakids guinea ecuatorial",
         "vibe coding guinea ecuatorial",
-        "cursos ia niños guinea ecuatorial",
-        "clases ia niños malabo",
-        "inteligencia artificial niños bata",
-        "curso ia niños ebibeyin",
-        "ia para niños mongomo",
     ],
     openGraph: {
-        title: "Curso de Inteligencia Artificial para Niños en Guinea Ecuatorial | InnovaKids",
-        description:
-            "Formación líder en inteligencia artificial para niños de 8 a 14 años en Guinea Ecuatorial. Clases online en vivo, grupos de 5 alumnos.",
+        title: "Curso de IA para Niños en Guinea Ecuatorial | InnovaKids",
+        description: "527 alumnos graduados. La primera escuela de Vibe Coding en Guinea Ecuatorial. Clases en vivo horario local. Proyectos reales.",
         url: "https://www.innovakidslatam.com/gq",
         locale: "es_GQ",
-        siteName: "InnovaKids",
+        siteName: "InnovaKids Guinea Ecuatorial",
         type: "website",
     },
     alternates: {

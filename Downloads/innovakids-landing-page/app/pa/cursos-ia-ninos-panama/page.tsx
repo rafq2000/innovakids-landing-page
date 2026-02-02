@@ -8,18 +8,21 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso de Vibe Coding para Niños Panamá 2026 | InnovaKids",
+  title: "Curso Inteligencia Artificial Niños Panamá | Vibe Coding",
   description:
-    "El primer curso de Vibe Coding e IA para niños de 8-14 años en Panamá. Clases online en vivo. Grupos reducidos. Aprende a crear Apps.",
-  keywords:
-    "vibe coding panama, cursos de ia para niños panama, clases inteligencia artificial panama city, curso ia niños david, innovakids panama",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+  keywords: [
+    "curso inteligencia artificial niños panama",
+    "cursos de tecnologia para niños panama",
+    "aprender ia ciudad de panama",
+    "innovakids cursos",
+  ],
   openGraph: {
-    title: "Cursos de IA para Niños en Panamá | InnovaKids Latam",
-    description:
-      "Clases de Inteligencia Artificial para niños panameños. Online en vivo, grupos pequeños, profesores expertos.",
+    title: "Curso Inteligencia Artificial Niños Panamá | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Panamá para niños de 8-14 años.",
     url: "https://www.innovakidslatam.com/pa/cursos-ia-ninos-panama",
-    siteName: "InnovaKids Latam",
     locale: "es_PA",
+    siteName: "InnovaKids Panamá",
     type: "website",
   },
   alternates: {

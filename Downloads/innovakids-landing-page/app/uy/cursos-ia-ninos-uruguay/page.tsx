@@ -10,26 +10,22 @@ import { Footer } from "@/components/footer"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso de Vibe Coding para Niños Uruguay 2026 | InnovaKids",
+  title: "Curso Inteligencia Artificial Niños Uruguay | Vibe Coding",
   description:
-    "El primer curso de Vibe Coding e IA para niños de 8-14 años en Uruguay. Clases online en vivo. Grupos reducidos. Aprende a crear Apps.",
-  keywords:
-    "vibe coding uruguay, cursos de ia para niños uruguay, clases inteligencia artificial montevideo, curso ia niños punta del este, innovakids uruguay",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+  keywords: [
+    "curso inteligencia artificial niños uruguay",
+    "cursos de tecnologia para niños uruguay",
+    "aprender ia montevideo",
+    "innovakids cursos",
+  ],
   openGraph: {
-    title: "Cursos de IA para Niños en Uruguay | InnovaKids",
-    description: "Curso de IA para niños 8-14 años. ChatGPT, Midjourney, apps. Primera clase gratis.",
+    title: "Curso Inteligencia Artificial Niños Uruguay | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Uruguay para niños de 8-14 años.",
     url: "https://www.innovakidslatam.com/uy/cursos-ia-ninos-uruguay",
-    siteName: "InnovaKids",
     locale: "es_UY",
+    siteName: "InnovaKids Uruguay",
     type: "website",
-    images: [
-      {
-        url: "https://www.innovakidslatam.com/og-uruguay.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Cursos de IA para Niños en Uruguay - InnovaKids",
-      },
-    ],
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/uy/cursos-ia-ninos-uruguay",

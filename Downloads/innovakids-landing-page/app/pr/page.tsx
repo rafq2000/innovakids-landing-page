@@ -7,24 +7,22 @@ import { MapPin, Users, Clock, Shield } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Curso de IA y Vibe Coding en Puerto Rico | InnovaKids",
+    title: "Curso de IA para Niños en Puerto Rico | Crea Apps y Videojuegos",
     description:
-        "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Puerto Rico. Clases online en vivo para San Juan, Bayamón, Carolina y todo el país.",
+        "Niños boricuas de 8-14 crean arte, música y apps con IA. Horario San Juan. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
     keywords: [
+        "curso ia niños puerto rico",
+        "clases programación ia san juan",
+        "taller tecnologia niños bayamon",
+        "innovakids puerto rico",
         "vibe coding puerto rico",
-        "cursos ia niños puerto rico",
-        "clases ia niños san juan",
-        "inteligencia artificial niños bayamon",
-        "curso ia niños carolina",
-        "ia para niños ponce",
     ],
     openGraph: {
-        title: "Curso de Inteligencia Artificial para Niños en Puerto Rico | InnovaKids",
-        description:
-            "Formación líder en inteligencia artificial para niños de 8 a 14 años en Puerto Rico. Clases online en vivo, grupos de 5 alumnos.",
+        title: "Curso de IA para Niños en Puerto Rico | InnovaKids",
+        description: "527 alumnos graduados. La primera escuela de Vibe Coding en Puerto Rico. Clases en vivo horario local. Proyectos reales.",
         url: "https://www.innovakidslatam.com/pr",
         locale: "es_PR",
-        siteName: "InnovaKids",
+        siteName: "InnovaKids Puerto Rico",
         type: "website",
     },
     alternates: {

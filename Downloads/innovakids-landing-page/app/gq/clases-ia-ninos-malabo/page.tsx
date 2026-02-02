@@ -6,16 +6,26 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Clases de Vibe Coding en Malabo 2026 | InnovaKids",
-    description: "Clases de programación con IA (Vibe Coding) para niños en Malabo. Malabo II, Caracolas, Paraíso. Grupos de 5 alumnos. Primera clase GRATIS.",
+    title: "Clases de IA para Niños en Malabo | Online en Vivo",
+    description:
+        "¿Vives en Malabo? Tu hijo puede crear apps y videojuegos con IA desde casa (Malabo II, Ela Nguema). Horarios flexibles tardes y sábados. Garantía total.",
     keywords: [
-        "clases vibe coding malabo",
         "clases ia niños malabo",
-        "curso inteligencia artificial niños malabo ii",
-        "ia para niños caracolas",
-        "clases programacion niños paraiso",
+        "curso programación niños malabo ii",
+        "vacacional tecnologia malabo",
+        "innovakids malabo",
     ],
-    alternates: { canonical: "https://www.innovakidslatam.com/gq/clases-ia-ninos-malabo" },
+    openGraph: {
+        title: "Clases de IA para Niños en Malabo | InnovaKids",
+        description: "El curso #1 de Inteligencia Artificial para niños en Malabo. Grupos pequeños, atención personalizada.",
+        url: "https://www.innovakidslatam.com/gq/clases-ia-ninos-malabo",
+        locale: "es_GQ",
+        siteName: "InnovaKids Malabo",
+        type: "website",
+    },
+    alternates: {
+        canonical: "https://www.innovakidslatam.com/gq/clases-ia-ninos-malabo",
+    },
 }
 
 export default function ClasesMalaboPage() {

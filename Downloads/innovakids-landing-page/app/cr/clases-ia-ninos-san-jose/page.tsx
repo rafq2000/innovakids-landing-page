@@ -5,16 +5,26 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, Target, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en San José 2026 | InnovaKids",
+  title: "Clases de IA para Niños en San José | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en San José. Escazú, Santa Ana, San Pedro. Grupos de 5 alumnos. Primera clase GRATIS.",
+    "¿Vives en San José? Tu hijo puede crear apps y videojuegos con IA desde casa (Escazú, Santa Ana, Heredia). Horarios flexibles tardes y sábados. Garantía total.",
   keywords: [
-    "clases vibe coding san jose",
     "clases ia niños san jose",
-    "curso inteligencia artificial niños escazu",
-    "ia para niños santa ana",
-    "clases programacion niños san pedro",
+    "curso programación niños escazu",
+    "vacacional tecnologia heredia",
+    "innovakids san jose",
   ],
+  openGraph: {
+    title: "Clases de IA para Niños en San José | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños en San José. Grupos pequeños, atención personalizada.",
+    url: "https://www.innovakidslatam.com/cr/clases-ia-ninos-san-jose",
+    locale: "es_CR",
+    siteName: "InnovaKids San José",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/cr/clases-ia-ninos-san-jose",
+  },
 }
 
 export default function ClasesIANinosSanJose() {
