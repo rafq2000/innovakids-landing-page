@@ -47,7 +47,7 @@ const schemaData = {
   inLanguage: "es",
   offers: {
     "@type": "Offer",
-    price: "197",
+    price: "267",
     priceCurrency: "USD",
     availability: "https://schema.org/LimitedAvailability",
   },
@@ -113,7 +113,7 @@ export default function CursosIANinosHondurasPage() {
               </div>
 
               <div className="bg-[#0073CF]/10 border border-[#0073CF]/20 rounded-2xl p-6 max-w-xl mx-auto">
-                <p className="text-lg font-semibold text-[#0073CF]">💰 Inversión: $197 USD</p>
+                <p className="text-lg font-semibold text-[#0073CF]">💰 Inversión: $267 USD</p>
                 <p className="text-muted-foreground">
                   10 clases online en vivo (90 min c/u) • Garantía de satisfacción 10 días
                 </p>

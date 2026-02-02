@@ -140,7 +140,7 @@ export default function DescargarGuiaPage() {
                 y certificación. <span className="font-bold text-primary">¡Ahora con descuento especial!</span>
               </p>
               <Button size="lg" variant="default" asChild>
-                <a href="/#inversion">Ver Oferta Especial $197 USD</a>
+                <a href="/#inversion">Ver Oferta Especial $267 USD</a>
               </Button>
             </div>
           </div>

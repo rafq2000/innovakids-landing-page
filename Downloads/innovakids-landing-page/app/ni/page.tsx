@@ -113,7 +113,7 @@ export default function NicaraguaHubPage() {
                         <div className="holographic-card p-10">
                             <div className="relative z-10">
                                 <h2 className="text-3xl font-bold text-white mb-4 font-premium">Inversión</h2>
-                                <div className="text-5xl font-bold text-white mb-2">$197 USD</div>
+                                <div className="text-5xl font-bold text-white mb-2">$267 USD</div>
                                 <p className="text-gray-400 mb-6">≈ C$10,900 NIO • 10 clases</p>
                                 <Link href="/#sesion-estrategica">
                                     <Button className="bg-white hover:bg-gray-100 text-[#0a1628] px-10 py-6 text-lg font-bold rounded-full">

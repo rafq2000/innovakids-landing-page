@@ -256,7 +256,7 @@ export default function BrochurePage() {
                     Programa Completo
                   </p>
                   <p className="text-slate-400 text-sm mb-4">Inversión Única</p>
-                  <div className="text-5xl font-bold text-white mb-2">$197 <span className="text-xl text-cyan-400">USD</span></div>
+                  <div className="text-5xl font-bold text-white mb-2">$267 <span className="text-xl text-cyan-400">USD</span></div>
                   <ul className="text-slate-300 text-sm space-y-2 mb-8 mt-6">
                     <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-400" /> 10 Clases en Vivo</li>
                     <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-400" /> Grabaciones de por vida</li>
@@ -264,7 +264,7 @@ export default function BrochurePage() {
                   </ul>
                 </div>
                 <Button asChild size="lg" className="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold">
-                  <Link href="/pagar?option=explorer">Inscribir Ahora ($197)</Link>
+                  <Link href="/pagar?option=explorer">Inscribir Ahora ($267)</Link>
                 </Button>
               </div>
 

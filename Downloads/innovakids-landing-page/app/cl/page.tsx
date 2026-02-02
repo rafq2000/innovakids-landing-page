@@ -168,7 +168,7 @@ export default function ChileHub() {
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#D52B1E]/20">
                   <Target className="h-8 w-8 text-[#0039A6]" />
                 </div>
-                <h3 className="mb-2 text-xl font-bold">$197 USD</h3>
+                <h3 className="mb-2 text-xl font-bold">$267 USD</h3>
                 <p className="text-muted-foreground">10 clases completas con certificado</p>
               </div>
             </div>

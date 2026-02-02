@@ -87,7 +87,7 @@ export default function CursosIANinosEcuadorPage() {
               </div>
 
               <div className="bg-[#0033A0]/10 border border-[#0033A0]/20 rounded-2xl p-6 max-w-xl mx-auto">
-                <p className="text-lg font-semibold text-[#0033A0]">💰 Inversión: $197 USD</p>
+                <p className="text-lg font-semibold text-[#0033A0]">💰 Inversión: $267 USD</p>
                 <p className="text-muted-foreground">
                   10 clases online en vivo (90 min c/u) • Garantía de satisfacción 10 días
                 </p>

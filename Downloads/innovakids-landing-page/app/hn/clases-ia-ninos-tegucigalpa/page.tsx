@@ -77,7 +77,7 @@ export default function TegucigalpaPage() {
               </div>
 
               <div className="bg-[#0073CF]/10 rounded-2xl p-6 max-w-xl mx-auto">
-                <p className="text-lg font-semibold text-[#0073CF]">💰 $197 USD - 10 Clases</p>
+                <p className="text-lg font-semibold text-[#0073CF]">💰 $267 USD - 10 Clases</p>
                 <p className="text-muted-foreground">Garantía de satisfacción 10 días • Máx 5 niños por grupo</p>
               </div>
             </div>

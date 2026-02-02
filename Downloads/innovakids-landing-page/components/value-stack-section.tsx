@@ -146,10 +146,10 @@ export function ValueStackSection() {
                         <p className="text-gray-400 mb-2">Valor total del programa:</p>
                         <div className="flex items-center justify-center gap-4 mb-4">
                             <span className="text-3xl md:text-4xl text-gray-500 line-through">${totalValue} USD</span>
-                            <span className="text-4xl md:text-5xl font-bold text-green-400">$197 USD</span>
+                            <span className="text-4xl md:text-5xl font-bold text-green-400">$267 USD</span>
                         </div>
                         <p className="text-white font-medium">
-                            Ahorra <span className="text-green-400 font-bold">${totalValue - 197} USD</span> con el precio de lanzamiento 2026
+                            Ahorra <span className="text-green-400 font-bold">${totalValue - 267} USD</span> con el precio de lanzamiento 2026
                         </p>
                     </div>
                 </motion.div>
@@ -181,7 +181,7 @@ export function ValueStackSection() {
                         className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-black px-10 py-6 text-lg font-bold rounded-full shadow-2xl"
                     >
                         <Link href="https://calendly.com/innovakids/evaluacion" target="_blank">
-                            Sí, quiero todo esto por $197 →
+                            Sí, quiero todo esto por $267 →
                         </Link>
                     </Button>
                     <p className="mt-4 text-gray-500 text-sm">Solo 2 cupos disponibles • Inicia 16 de Febrero</p>

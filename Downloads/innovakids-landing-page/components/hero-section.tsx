@@ -102,7 +102,7 @@ export function HeroSection() {
             <br className="hidden sm:block" />
             Crea <span className="text-white">apps, juegos y startups reales</span> con ChatGPT, Midjourney y más.
             <br />
-            Para niños de <span className="text-primary font-semibold">8-14 años</span> • <span className="text-green-400 font-bold">$197 USD</span>
+            Para niños de <span className="text-primary font-semibold">8-14 años</span> • <span className="text-green-400 font-bold">$267 USD</span>
           </p>
 
           {/* Countdown Timer - Client Island */}

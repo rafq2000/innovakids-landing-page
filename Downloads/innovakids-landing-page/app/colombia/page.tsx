@@ -108,7 +108,7 @@ export default function ColombiaHub() {
                 <div className="text-sm text-white/80">Niños máx/grupo</div>
               </div>
               <div className="rounded-2xl bg-white/10 p-4 backdrop-blur-sm">
-                <div className="text-3xl font-bold md:text-4xl">$197</div>
+                <div className="text-3xl font-bold md:text-4xl">$267</div>
                 <div className="text-sm text-white/80">USD total</div>
               </div>
             </div>

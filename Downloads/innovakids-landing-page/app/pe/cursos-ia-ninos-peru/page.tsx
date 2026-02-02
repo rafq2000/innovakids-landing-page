@@ -237,7 +237,7 @@ export default function CursosIANinosPeru() {
                 },
                 {
                   q: "¿Cuánto cuesta el curso?",
-                  a: "El programa completo tiene un valor de $497 USD, pero actualmente tenemos oferta de lanzamiento 2026 por $197 USD (60% de descuento). Incluye 10 clases, portafolio web, todos los bonos y garantía de 10 días. Puedes reservar con solo $50 USD.",
+                  a: "El programa completo tiene un valor de $497 USD, pero actualmente tenemos oferta de lanzamiento 2026 por $267 USD (60% de descuento). Incluye 10 clases, portafolio web, todos los bonos y garantía de 10 días. Puedes reservar con solo $50 USD.",
                 },
                 {
                   q: "¿Tienen eventos presenciales en Perú?",
@@ -342,7 +342,7 @@ export default function CursosIANinosPeru() {
             },
             offers: {
               "@type": "Offer",
-              price: "197",
+              price: "267",
               priceCurrency: "USD",
               availability: "https://schema.org/InStock",
             },

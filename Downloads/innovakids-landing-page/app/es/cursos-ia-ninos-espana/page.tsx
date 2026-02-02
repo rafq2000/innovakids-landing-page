@@ -237,7 +237,7 @@ export default function CursosIANinosEspana() {
                 },
                 {
                   q: "¿Cómo puedo pagar desde España?",
-                  a: "Aceptamos tarjetas de crédito/débito, Bizum, transferencia bancaria y PayPal. El precio es $197 USD (aprox. 185€) que puedes pagar con cualquier método.",
+                  a: "Aceptamos tarjetas de crédito/débito, Bizum, transferencia bancaria y PayPal. El precio es $267 USD (aprox. 185€) que puedes pagar con cualquier método.",
                 },
                 {
                   q: "¿Tenéis eventos presenciales en España?",

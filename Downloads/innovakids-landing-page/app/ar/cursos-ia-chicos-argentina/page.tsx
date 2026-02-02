@@ -73,7 +73,7 @@ const jsonLd = {
           name: "¿Cuánto cuesta el curso de IA para chicos en Argentina?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "El programa completo tiene un valor de $497 USD. Actualmente hay oferta de lanzamiento 2026 por $197 USD (60% de descuento). Incluye 10 clases en vivo, grupos de máximo 5 chicos, portafolio web, acceso de por vida, y garantía de 10 días.",
+            text: "El programa completo tiene un valor de $497 USD. Actualmente hay oferta de lanzamiento 2026 por $267 USD (60% de descuento). Incluye 10 clases en vivo, grupos de máximo 5 chicos, portafolio web, acceso de por vida, y garantía de 10 días.",
           },
         },
       ],
@@ -275,7 +275,7 @@ export default function ArgentinaCursosIAPage() {
               {[
                 {
                   q: "¿Cuánto cuesta el curso de IA para chicos?",
-                  a: "El programa completo tiene un valor de $497 USD. Actualmente hay oferta de lanzamiento 2026 por $197 USD (60% de descuento). Incluye 10 clases en vivo, grupos de máximo 5 chicos, portafolio web, acceso de por vida, y garantía de 10 días.",
+                  a: "El programa completo tiene un valor de $497 USD. Actualmente hay oferta de lanzamiento 2026 por $267 USD (60% de descuento). Incluye 10 clases en vivo, grupos de máximo 5 chicos, portafolio web, acceso de por vida, y garantía de 10 días.",
                 },
                 {
                   q: "¿Las clases son online o presenciales?",
@@ -295,7 +295,7 @@ export default function ArgentinaCursosIAPage() {
                 },
                 {
                   q: "¿Cómo puedo pagar desde Argentina?",
-                  a: "Aceptamos PayPal, tarjetas de crédito internacionales y transferencia bancaria. El precio es de $197 USD durante la oferta de lanzamiento.",
+                  a: "Aceptamos PayPal, tarjetas de crédito internacionales y transferencia bancaria. El precio es de $267 USD durante la oferta de lanzamiento.",
                 },
               ].map((faq, i) => (
                 <div key={i} className="bg-[#0f2744] rounded-xl p-6 border border-white/10">

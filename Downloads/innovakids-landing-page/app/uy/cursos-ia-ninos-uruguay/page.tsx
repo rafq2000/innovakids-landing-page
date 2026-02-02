@@ -56,7 +56,7 @@ const jsonLd = {
       },
       offers: {
         "@type": "Offer",
-        price: "197",
+        price: "267",
         priceCurrency: "USD",
         availability: "https://schema.org/LimitedAvailability",
         validFrom: "2026-01-01",
@@ -98,7 +98,7 @@ const jsonLd = {
           name: "¿Cuánto cuesta el curso de IA para niños en Uruguay?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "El programa completo tiene un valor de $497 USD. Actualmente hay una oferta de lanzamiento 2026 por $197 USD (60% OFF). Incluye 10 clases en vivo, grupos de máximo 5 niños, acceso a grabaciones, certificado y garantía de devolución de 10 días.",
+            text: "El programa completo tiene un valor de $497 USD. Actualmente hay una oferta de lanzamiento 2026 por $267 USD (60% OFF). Incluye 10 clases en vivo, grupos de máximo 5 niños, acceso a grabaciones, certificado y garantía de devolución de 10 días.",
           },
         },
         {
@@ -402,7 +402,7 @@ export default function UruguayCursosIAPage() {
 
               <div className="mb-8">
                 <div className="text-xl text-gray-400 line-through mb-2">$497 USD</div>
-                <div className="text-6xl font-bold text-white mb-2">$197 USD</div>
+                <div className="text-6xl font-bold text-white mb-2">$267 USD</div>
                 <span className="bg-[#0038A8] text-white px-3 py-1 rounded-full text-sm font-bold">40% OFF</span>
                 <p className="text-gray-400 mt-2">Programa completo de 10 clases</p>
               </div>
@@ -428,7 +428,7 @@ export default function UruguayCursosIAPage() {
               <div className="bg-[#FCD116]/10 border border-[#FCD116]/30 rounded-xl p-6 mb-8">
                 <div className="text-[#FCD116] font-bold mb-2">🔥 EARLY BIRD - Primeros 10 inscritos</div>
                 <div className="text-3xl font-bold text-white">
-                  $197 USD <span className="text-lg text-gray-400">(60% OFF)</span>
+                  $267 USD <span className="text-lg text-gray-400">(60% OFF)</span>
                 </div>
                 <p className="text-gray-400 mt-2">Aprovecha el precio de lanzamiento</p>
               </div>

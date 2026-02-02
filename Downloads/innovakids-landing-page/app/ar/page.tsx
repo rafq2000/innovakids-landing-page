@@ -132,7 +132,7 @@ export default function ArgentinaHubPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">Precio Accesible</h3>
                 <p className="text-gray-400">
-                  $197 USD por el programa completo de 10 clases. Aceptamos PayPal y tarjetas internacionales.
+                  $267 USD por el programa completo de 10 clases. Aceptamos PayPal y tarjetas internacionales.
                 </p>
               </div>
 
