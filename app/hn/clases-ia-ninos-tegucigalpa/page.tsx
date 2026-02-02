@@ -7,16 +7,23 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin, Star } from "lucide-rea
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en Tegucigalpa 2026 | InnovaKids",
+  title: "Clases de IA para Niños en Tegucigalpa | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en Tegucigalpa. Lomas del Guijarro, Palmira, El Hatillo. Grupos de 5 alumnos. Primera clase GRATIS.",
+    "¿Vives en Tegucigalpa? Tu hijo puede crear apps y videojuegos con IA desde casa (Lomas del Guijarro, Las Lomas). Horarios flexibles tardes y sábados. Garantía total.",
   keywords: [
-    "clases vibe coding tegucigalpa",
     "clases ia niños tegucigalpa",
-    "curso inteligencia artificial niños lomas del guijarro",
-    "ia para niños palmira",
-    "clases programacion niños el hatillo",
+    "curso programación niños san pedro sula",
+    "vacacional tecnologia tegucigalpa",
+    "innovakids tegucigalpa",
   ],
+  openGraph: {
+    title: "Clases de IA para Niños en Tegucigalpa | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños en Tegucigalpa. Grupos pequeños, atención personalizada.",
+    url: "https://www.innovakidslatam.com/hn/clases-ia-ninos-tegucigalpa",
+    locale: "es_HN",
+    siteName: "InnovaKids Tegucigalpa",
+    type: "website",
+  },
   alternates: {
     canonical: "https://www.innovakidslatam.com/hn/clases-ia-ninos-tegucigalpa",
   },

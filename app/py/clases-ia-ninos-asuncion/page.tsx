@@ -7,19 +7,26 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin, Star } from "lucide-rea
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en Asunción 2026 | InnovaKids",
+  title: "Clases de IA para Niños en Asunción | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en Asunción. Villa Morra, Carmelitas, Las Lomas. Grupos de 5 alumnos. Primera clase GRATIS.",
+    "¿Vives en Asunción? Tu hijo puede crear apps y videojuegos con IA desde casa (Villa Morra, Carmelitas). Horarios flexibles tardes y sábados. Garantía total.",
+  keywords: [
+    "clases ia niños asuncion",
+    "curso programación niños villa morra",
+    "vacacional tecnologia asuncion",
+    "innovakids asuncion",
+  ],
+  openGraph: {
+    title: "Clases de IA para Niños en Asunción | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños en Asunción. Grupos pequeños, atención personalizada.",
+    url: "https://www.innovakidslatam.com/py/clases-ia-ninos-asuncion",
+    locale: "es_PY",
+    siteName: "InnovaKids Asunción",
+    type: "website",
+  },
   alternates: {
     canonical: "https://www.innovakidslatam.com/py/clases-ia-ninos-asuncion",
   },
-  keywords: [
-    "clases vibe coding asuncion",
-    "clases ia niños asuncion",
-    "curso inteligencia artificial niños villa morra",
-    "ia para niños carmelitas",
-    "clases programacion niños las lomas",
-  ],
 }
 
 const barrios = ["Villa Morra", "Carmelitas", "Las Mercedes", "Recoleta", "San Roque", "Sajonia", "Manorá", "Mburucuyá"]

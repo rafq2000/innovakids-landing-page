@@ -7,14 +7,25 @@ import Link from "next/link"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-    title: "Curso de Vibe Coding para Niños Guinea Ecuatorial 2026 | InnovaKids",
+    title: "Curso Inteligencia Artificial Niños Guinea Ecuatorial | Vibe Coding",
     description:
-        "El primer curso de Vibe Coding e IA para niños de 8-14 años en Guinea Ecuatorial. Clases online en vivo. Grupos reducidos. Aprende a crear Apps.",
-    keywords:
-        "vibe coding guinea ecuatorial, cursos de ia para niños guinea ecuatorial, clases inteligencia artificial malabo, curso ia niños bata, innovakids guinea ecuatorial",
+        "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+    keywords: [
+        "curso inteligencia artificial niños guinea ecuatorial",
+        "cursos de tecnologia para niños guinea ecuatorial",
+        "aprender ia malabo",
+        "innovakids cursos",
+    ],
+    openGraph: {
+        title: "Curso Inteligencia Artificial Niños Guinea Ecuatorial | Vibe Coding",
+        description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Guinea Ecuatorial para niños de 8-14 años.",
+        url: "https://www.innovakidslatam.com/gq/cursos-ia-ninos-guinea-ecuatorial",
+        locale: "es_GQ",
+        siteName: "InnovaKids Guinea Ecuatorial",
+        type: "website",
+    },
     alternates: {
         canonical: "https://www.innovakidslatam.com/gq/cursos-ia-ninos-guinea-ecuatorial",
-        languages: generateHreflangs("sales"),
     },
 }
 

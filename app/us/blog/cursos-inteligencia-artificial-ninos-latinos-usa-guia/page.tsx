@@ -5,23 +5,27 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Target, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Vibe Coding en USA: Guía Completa para Padres Latinos 2026",
+  title: "Cursos de IA para Niños Latinos en USA (Guía 2026)",
   description:
-    "Descubre el Vibe Coding: la nueva forma en que los niños latinos aprenden a programar con IA en USA. Comparativa de programas y precios.",
+    "Guía Completa: Lo que todo padre latino en USA debe saber. Cómo lograr que tu hijo aprenda tecnología de punta sin perder su español.",
   keywords: [
-    "que es vibe coding",
-    "cursos inteligencia artificial niños usa",
-    "mejores cursos ia niños latinos",
-    "donde estudiar ia niños miami",
-    "cursos programacion niños español usa",
+    "guia cursos ia niños latinos",
+    "mejores cursos programacion niños español usa",
+    "educacion bilingue tecnologia",
+    "consejos padres latinos usa",
   ],
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/us/blog/cursos-inteligencia-artificial-ninos-latinos-usa-guia",
-  },
   openGraph: {
+    title: "Cursos de IA para Niños Latinos en USA (Guía 2026)",
+    description: "Todo lo que necesitas saber para elegir la mejor educación tecnológica en español para tu hijo en USA.",
+    url: "https://www.innovakidslatam.com/us/blog/cursos-inteligencia-artificial-ninos-latinos-usa-guia",
+    locale: "es_US",
     type: "article",
+    siteName: "Blog InnovaKids USA",
     publishedTime: "2026-01-01T00:00:00Z",
     authors: ["InnovaKids"],
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/us/blog/cursos-inteligencia-artificial-ninos-latinos-usa-guia",
   },
 }
 

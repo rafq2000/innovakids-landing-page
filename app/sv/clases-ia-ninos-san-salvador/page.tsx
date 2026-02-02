@@ -7,16 +7,23 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin, Star } from "lucide-rea
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en San Salvador 2026 | InnovaKids",
+  title: "Clases de IA para Niños en San Salvador | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en San Salvador. San Benito, Escalón, Santa Elena. Grupos de 5 alumnos. Primera clase GRATIS.",
+    "¿Vives en San Salvador? Tu hijo puede crear apps y videojuegos con IA desde casa (San Benito, Escalón, Santa Tecla). Horarios flexibles tardes y sábados. Garantía total.",
   keywords: [
-    "clases vibe coding san salvador",
     "clases ia niños san salvador",
-    "curso inteligencia artificial niños san benito",
-    "ia para niños escalon",
-    "clases programacion niños santa elena",
+    "curso programación niños santa tecla",
+    "vacacional tecnologia san salvador",
+    "innovakids san salvador",
   ],
+  openGraph: {
+    title: "Clases de IA para Niños en San Salvador | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños en San Salvador. Grupos pequeños, atención personalizada.",
+    url: "https://www.innovakidslatam.com/sv/clases-ia-ninos-san-salvador",
+    locale: "es_SV",
+    siteName: "InnovaKids San Salvador",
+    type: "website",
+  },
   alternates: {
     canonical: "https://www.innovakidslatam.com/sv/clases-ia-ninos-san-salvador",
   },

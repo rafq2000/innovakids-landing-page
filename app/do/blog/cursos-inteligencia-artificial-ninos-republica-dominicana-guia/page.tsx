@@ -5,16 +5,26 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Vibe Coding en Rep. Dominicana: Guía Completa para Padres 2026",
+  title: "Cursos de IA para Niños en República Dominicana (Guía 2026)",
   description:
-    "Descubre el Vibe Coding: la nueva forma en que los niños aprenden a programar con IA en República Dominicana. Comparativa de programas y precios.",
+    "Guía Completa: Lo que todo padre dominicano debe saber antes de inscribir a su hijo en un curso de IA. Precios, herramientas, seguridad y mejores opciones.",
   keywords: [
-    "que es vibe coding",
-    "cursos inteligencia artificial niños republica dominicana",
-    "mejores cursos ia niños",
-    "donde estudiar ia niños santo domingo",
-    "cursos programacion niños rd",
+    "guia cursos ia niños republica dominicana",
+    "mejores cursos programacion niños republica dominicana",
+    "comparativa escuelas ia republica dominicana",
+    "consejos padres tecnologia republica dominicana",
   ],
+  openGraph: {
+    title: "Cursos de IA para Niños en República Dominicana (Guía 2026)",
+    description: "Todo lo que necesitas saber para elegir la mejor educación tecnológica para tu hijo en República Dominicana.",
+    url: "https://www.innovakidslatam.com/do/blog/cursos-inteligencia-artificial-ninos-republica-dominicana-guia",
+    locale: "es_DO",
+    type: "article",
+    siteName: "Blog InnovaKids República Dominicana",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/do/blog/cursos-inteligencia-artificial-ninos-republica-dominicana-guia",
+  },
 }
 
 export default function BlogCursosIANinosRD() {

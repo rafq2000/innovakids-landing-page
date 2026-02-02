@@ -5,33 +5,27 @@ import { PricingSection } from "@/components/pricing-section"
 import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, CheckCircle, Zap, Target } from "lucide-react"
-import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso de Vibe Coding para Niños España 2026 | InnovaKids 🇪🇸",
+  title: "Curso Inteligencia Artificial Niños España | Vibe Coding",
   description:
-    "El primer curso de Vibe Coding e IA para niños de 8-14 años en España. Clases online en vivo (Horario Madrid). Grupos reducidos. Aprende a crear Apps.",
-  keywords:
-    "vibe coding españa, curso ia niños españa, clases extraescolares tecnologia madrid, programación niños barcelona, innovakids españa",
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/es/cursos-ia-ninos-espana",
-    languages: generateHreflangs("sales"),
-  },
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+  keywords: [
+    "curso inteligencia artificial niños españa",
+    "cursos de tecnologia para niños españa",
+    "aprender ia españa",
+    "innovakids cursos",
+  ],
   openGraph: {
-    title: "Curso de IA para Niños en España | InnovaKids",
-    description:
-      "Curso de inteligencia artificial para niños 8-14 años. ChatGPT, Midjourney, apps. 10 clases prácticas. Evaluación gratuita.",
+    title: "Curso Inteligencia Artificial Niños España | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de España para niños de 8-14 años.",
     url: "https://www.innovakidslatam.com/es/cursos-ia-ninos-espana",
     locale: "es_ES",
+    siteName: "InnovaKids España",
     type: "website",
-    images: [
-      {
-        url: "https://www.innovakidslatam.com/og-espana.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Cursos de IA para Niños en España - InnovaKids",
-      },
-    ],
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/es/cursos-ia-ninos-espana",
   },
 }
 

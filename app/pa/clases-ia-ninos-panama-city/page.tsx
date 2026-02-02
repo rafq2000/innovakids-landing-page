@@ -5,16 +5,26 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, Target, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en Ciudad de Panamá 2026 | InnovaKids",
+  title: "Clases de IA para Niños en Ciudad de Panamá | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en Ciudad de Panamá. Costa del Este, San Francisco, Paitilla. Grupos de 5 alumnos. Primera clase GRATIS.",
+    "¿Vives en Ciudad de Panamá? Tu hijo puede crear apps y videojuegos con IA desde casa (Costa del Este, San Francisco). Horarios flexibles tardes y sábados. Garantía total.",
   keywords: [
-    "clases vibe coding panama city",
-    "clases ia niños ciudad de panama",
-    "curso inteligencia artificial niños costa del este",
-    "ia para niños san francisco",
-    "clases programacion niños paitilla",
+    "clases ia niños panama",
+    "curso programación niños costa del este",
+    "vacacional tecnologia panama city",
+    "innovakids panama",
   ],
+  openGraph: {
+    title: "Clases de IA para Niños en Ciudad de Panamá | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños en Panamá. Grupos pequeños, atención personalizada.",
+    url: "https://www.innovakidslatam.com/pa/clases-ia-ninos-panama-city",
+    locale: "es_PA",
+    siteName: "InnovaKids Panamá",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/pa/clases-ia-ninos-panama-city",
+  },
 }
 
 export default function ClasesIANinosPanamaCity() {

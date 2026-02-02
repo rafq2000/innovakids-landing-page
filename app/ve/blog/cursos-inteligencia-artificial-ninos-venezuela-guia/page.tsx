@@ -6,19 +6,22 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Vibe Coding en Venezuela: Guía Completa para Padres 2026",
+    title: "Cursos de IA para Niños en Venezuela (Guía 2026)",
     description:
-        "Descubre el Vibe Coding: la nueva forma en que los niños aprenden a programar con IA en Venezuela. Comparativa de programas y precios.",
+        "Guía Completa: Lo que todo padre venezolano debe saber antes de inscribir a su hijo en un curso de IA. Precios, herramientas, seguridad y mejores opciones.",
     keywords: [
-        "que es vibe coding",
-        "cursos inteligencia artificial niños venezuela",
-        "mejores cursos ia niños",
-        "donde estudiar ia niños venezuela",
-        "cursos programacion niños caracas",
+        "guia cursos ia niños venezuela",
+        "mejores cursos programacion niños venezuela",
+        "comparativa escuelas ia venezuela",
+        "consejos padres tecnologia venezuela",
     ],
     openGraph: {
-        title: "Vibe Coding en Venezuela: Guía Completa para Padres 2026",
+        title: "Cursos de IA para Niños en Venezuela (Guía 2026)",
+        description: "Todo lo que necesitas saber para elegir la mejor educación tecnológica para tu hijo en Venezuela.",
         url: "https://www.innovakidslatam.com/ve/blog/cursos-inteligencia-artificial-ninos-venezuela-guia",
+        locale: "es_VE",
+        type: "article",
+        siteName: "Blog InnovaKids Venezuela",
     },
     alternates: {
         canonical: "https://www.innovakidslatam.com/ve/blog/cursos-inteligencia-artificial-ninos-venezuela-guia",

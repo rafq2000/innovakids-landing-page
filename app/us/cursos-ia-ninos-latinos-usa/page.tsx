@@ -6,30 +6,25 @@ import { Users, Clock, Shield, Star, CheckCircle, Zap, Target, Globe } from "luc
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso de Vibe Coding para Niños Latinos USA 2026 | InnovaKids",
+  title: "Curso Inteligencia Artificial Niños Latinos USA | Vibe Coding",
   description:
-    "El primer curso de Vibe Coding e IA para niños latinos de 8-14 años en USA. Clases 100% en español. Grupos reducidos. Aprende a crear Apps.",
-  keywords:
-    "vibe coding usa, cursos de ia para niños latinos usa, clases inteligencia artificial miami, curso ia niños orlando, innovakids usa",
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/us/cursos-ia-ninos-latinos-usa",
-    languages: generateHreflangs("sales"),
-  },
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Mantén sus raíces latinas. Garantía de 10 días.",
+  keywords: [
+    "curso inteligencia artificial niños usa español",
+    "cursos de tecnologia para niños latinos",
+    "aprender ia miami",
+    "innovakids cursos",
+  ],
   openGraph: {
-    title: "Curso de Vibe Coding para Niños Latinos en USA | En Español | InnovaKids",
-    description:
-      "El primer curso de Vibe Coding e IA para niños latinos de 8-14 años en USA. Clases 100% en español. Grupos reducidos. Aprende a crear Apps.",
+    title: "Curso Inteligencia Artificial Niños Latinos USA | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado para latinos en USA (8-14 años).",
     url: "https://www.innovakidslatam.com/us/cursos-ia-ninos-latinos-usa",
     locale: "es_US",
+    siteName: "InnovaKids USA",
     type: "website",
-    images: [
-      {
-        url: "https://www.innovakidslatam.com/og-usa-latinos.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Cursos de IA para Niños Latinos en USA - InnovaKids",
-      },
-    ],
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/us/cursos-ia-ninos-latinos-usa",
   },
 }
 

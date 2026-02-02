@@ -5,16 +5,23 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, CheckCircle, Target, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en Miami 2026 | InnovaKids",
+  title: "Clases de IA para Niños en Miami | En Español",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en Miami. Doral, Coral Gables, Brickell. En español. Grupos de 5 alumnos. Primera clase GRATIS.",
+    "¿Vives en Miami? Tu hijo puede crear apps y videojuegos con IA mientras refuerza su español (Doral, Weston, Brickell). Horarios flexibles. Garantía total.",
   keywords: [
-    "clases vibe coding miami",
     "clases ia niños miami",
-    "curso inteligencia artificial niños doral",
-    "ia para niños coral gables",
-    "clases programacion niños brickell",
+    "curso programación niños doral",
+    "vacacional tecnologia weston",
+    "innovakids miami",
   ],
+  openGraph: {
+    title: "Clases de IA para Niños en Miami | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños latinos en Miami. 100% en Español.",
+    url: "https://www.innovakidslatam.com/us/clases-ia-ninos-miami",
+    locale: "es_US",
+    siteName: "InnovaKids Miami",
+    type: "website",
+  },
   alternates: {
     canonical: "https://www.innovakidslatam.com/us/clases-ia-ninos-miami",
   },

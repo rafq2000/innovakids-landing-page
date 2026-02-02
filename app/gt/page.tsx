@@ -7,28 +7,26 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin } from "lucide-react"
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding en Guatemala | InnovaKids",
+  title: "Curso de IA para Niños en Guatemala | Crea Apps y Videojuegos",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Guatemala. Clases online en vivo para Ciudad de Guatemala, Mixco, Villa Nueva y todo el país.",
+    "Niños guatemaltecos de 8-14 crean arte, música y apps con IA. Horario Ciudad de Guatemala. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
   keywords: [
+    "curso ia niños guatemala",
+    "clases programación ia ciudad de guatemala",
+    "taller tecnologia niños cayala",
+    "innovakids guatemala",
     "vibe coding guatemala",
-    "cursos ia niños guatemala",
-    "clases ia niños ciudad de guatemala",
-    "inteligencia artificial niños mixco",
-    "curso ia niños villa nueva",
-    "ia para niños petapa",
   ],
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/gt",
-  },
   openGraph: {
-    title: "Curso de IA y Vibe Coding en Guatemala | InnovaKids",
-    description:
-      "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Guatemala. Clases online en vivo para Ciudad de Guatemala, Mixco, Villa Nueva y todo el país.",
+    title: "Curso de IA para Niños en Guatemala | InnovaKids",
+    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Guatemala. Clases en vivo horario local. Proyectos reales.",
     url: "https://www.innovakidslatam.com/gt",
     locale: "es_GT",
-    siteName: "InnovaKids",
+    siteName: "InnovaKids Guatemala",
     type: "website",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/gt",
   },
 }
 

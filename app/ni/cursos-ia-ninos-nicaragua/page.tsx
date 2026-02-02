@@ -7,14 +7,25 @@ import Link from "next/link"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-    title: "Curso de Vibe Coding para Niños Nicaragua 2026 | InnovaKids",
+    title: "Curso Inteligencia Artificial Niños Nicaragua | Vibe Coding",
     description:
-        "El primer curso de Vibe Coding e IA para niños de 8-14 años en Nicaragua. Clases online en vivo. Grupos reducidos. Aprende a crear Apps.",
-    keywords:
-        "vibe coding nicaragua, cursos de ia para niños nicaragua, clases inteligencia artificial managua, curso ia niños leon, innovakids nicaragua",
+        "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+    keywords: [
+        "curso inteligencia artificial niños nicaragua",
+        "cursos de tecnologia para niños nicaragua",
+        "aprender ia managua",
+        "innovakids cursos",
+    ],
+    openGraph: {
+        title: "Curso Inteligencia Artificial Niños Nicaragua | Vibe Coding",
+        description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Nicaragua para niños de 8-14 años.",
+        url: "https://www.innovakidslatam.com/ni/cursos-ia-ninos-nicaragua",
+        locale: "es_NI",
+        siteName: "InnovaKids Nicaragua",
+        type: "website",
+    },
     alternates: {
         canonical: "https://www.innovakidslatam.com/ni/cursos-ia-ninos-nicaragua",
-        languages: generateHreflangs("sales"),
     },
 }
 

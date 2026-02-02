@@ -5,20 +5,25 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { CheckCircle, Target, ArrowRight, Clock, Users, Shield } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Guía Perú 2026: ¿Qué es el Vibe Coding y por qué tu hijo debe aprenderlo?",
+  title: "Cursos de IA para Niños en Perú (Guía 2026)",
   description:
-    "El Vibe Coding es la revolución en la educación tecnológica. Descubre cómo la IA está cambiando la forma en que los niños aprenden a programar en Perú.",
-  keywords:
-    "que es vibe coding, ia para niños peru, guia padres tecnologia, educacion futuro peru, innovakids blog",
+    "Guía Completa: Lo que todo padre peruano debe saber antes de inscribir a su hijo en un curso de IA. Precios en soles, herramientas, seguridad y mejores opciones.",
+  keywords: [
+    "guia cursos ia niños peru",
+    "mejores cursos programacion niños peru",
+    "comparativa escuelas ia peru",
+    "consejos padres tecnologia peru",
+  ],
+  openGraph: {
+    title: "Cursos de IA para Niños en Perú (Guía 2026)",
+    description: "Todo lo que necesitas saber para elegir la mejor educación tecnológica para tu hijo en Perú.",
+    url: "https://www.innovakidslatam.com/pe/blog/cursos-inteligencia-artificial-ninos-peru-guia",
+    locale: "es_PE",
+    type: "article",
+    siteName: "Blog InnovaKids Perú",
+  },
   alternates: {
     canonical: "https://www.innovakidslatam.com/pe/blog/cursos-inteligencia-artificial-ninos-peru-guia",
-  },
-  openGraph: {
-    title: "Guía Perú 2026: ¿Qué es el Vibe Coding?",
-    description: "Todo lo que necesitas saber sobre la nueva era de la programación con IA para niños en Perú.",
-    type: "article",
-    publishedTime: "2026-01-01",
-    authors: ["InnovaKids"],
   },
 }
 

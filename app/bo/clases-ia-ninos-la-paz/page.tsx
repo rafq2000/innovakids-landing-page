@@ -7,16 +7,23 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin, Star } from "lucide-rea
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en La Paz 2026 | InnovaKids",
+  title: "Clases de IA para Niños en La Paz | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en La Paz. Calacoto, Sopocachi, Obrajes. Grupos de 5 alumnos. Primera clase GRATIS.",
+    "¿Vives en La Paz? Tu hijo puede crear apps y videojuegos con IA desde casa (Calacoto, San Miguel, Sopocachi). Horarios flexibles tardes y sábados. Garantía total.",
   keywords: [
-    "clases vibe coding la paz",
     "clases ia niños la paz",
-    "curso inteligencia artificial niños calacoto",
-    "ia para niños sopocachi",
-    "clases programacion niños obrajes",
+    "curso programación niños calacoto",
+    "vacacional tecnologia la paz",
+    "innovakids la paz",
   ],
+  openGraph: {
+    title: "Clases de IA para Niños en La Paz | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños en La Paz. Grupos pequeños, atención personalizada.",
+    url: "https://www.innovakidslatam.com/bo/clases-ia-ninos-la-paz",
+    locale: "es_BO",
+    siteName: "InnovaKids La Paz",
+    type: "website",
+  },
   alternates: {
     canonical: "https://www.innovakidslatam.com/bo/clases-ia-ninos-la-paz",
   },

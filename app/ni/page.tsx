@@ -7,24 +7,22 @@ import { MapPin, Users, Clock, Shield } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Curso de IA y Vibe Coding en Nicaragua | InnovaKids",
+    title: "Curso de IA para Niños en Nicaragua | Crea Apps y Videojuegos",
     description:
-        "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Nicaragua. Clases online en vivo para Managua, León, Masaya and todo el país.",
+        "Niños nicaragüenses de 8-14 crean arte, música y apps con IA. Horario Managua. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
     keywords: [
+        "curso ia niños nicaragua",
+        "clases programación ia managua",
+        "taller tecnologia niños leon",
+        "innovakids nicaragua",
         "vibe coding nicaragua",
-        "cursos ia niños nicaragua",
-        "clases ia niños managua",
-        "inteligencia artificial niños leon",
-        "curso ia niños masaya",
-        "ia para niños granada",
     ],
     openGraph: {
-        title: "Curso de Inteligencia Artificial para Niños en Nicaragua | InnovaKids",
-        description:
-            "Formación líder en inteligencia artificial para niños de 8 a 14 años en Nicaragua. Clases online en vivo, grupos de 5 alumnos.",
+        title: "Curso de IA para Niños en Nicaragua | InnovaKids",
+        description: "527 alumnos graduados. La primera escuela de Vibe Coding en Nicaragua. Clases en vivo horario local. Proyectos reales.",
         url: "https://www.innovakidslatam.com/ni",
         locale: "es_NI",
-        siteName: "InnovaKids",
+        siteName: "InnovaKids Nicaragua",
         type: "website",
     },
     alternates: {

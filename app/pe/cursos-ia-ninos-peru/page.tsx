@@ -8,30 +8,25 @@ import { Users, Clock, Shield, Star, CheckCircle, Zap, Target } from "lucide-rea
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA para Niños Perú 2026 | Evaluación Gratis | InnovaKids 🇵🇪",
+  title: "Curso Inteligencia Artificial Niños Perú | Vibe Coding",
   description:
-    "Inscripciones abiertas 2026. Curso de Vibe Coding y Programación con IA para niños en Perú. 10 clases online, grupos pequeños. Agenda tu evaluación gratuita.",
-  keywords:
-    "curso vibe coding peru, clases ia niños 2026, curso verano niños peru, aprender a programar con ia, innovakids matricula",
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/pe/cursos-ia-ninos-peru",
-    languages: generateHreflangs("sales"),
-  },
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+  keywords: [
+    "curso inteligencia artificial niños peru",
+    "cursos de tecnologia para niños peru",
+    "aprender ia peru",
+    "innovakids cursos",
+  ],
   openGraph: {
-    title: "Cursos de IA para Niños Perú 2026 | Evaluación Gratis",
-    description:
-      "Aprende Vibe Coding: La nueva forma de programar con Inteligencia Artificial. Curso online para niños 8-14 años.",
+    title: "Curso Inteligencia Artificial Niños Perú | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Perú para niños de 8-14 años.",
     url: "https://www.innovakidslatam.com/pe/cursos-ia-ninos-peru",
     locale: "es_PE",
+    siteName: "InnovaKids Perú",
     type: "website",
-    images: [
-      {
-        url: "https://www.innovakidslatam.com/og-peru.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Cursos de IA y Vibe Coding en Perú - InnovaKids",
-      },
-    ],
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/pe/cursos-ia-ninos-peru",
   },
 }
 

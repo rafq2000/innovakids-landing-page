@@ -8,16 +8,21 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso de Vibe Coding para Niños Paraguay 2026 | InnovaKids",
+  title: "Curso Inteligencia Artificial Niños Paraguay | Vibe Coding",
   description:
-    "El primer curso de Vibe Coding e IA para niños de 8-14 años en Paraguay. Clases online en vivo. Grupos reducidos. Aprende a crear Apps.",
-  keywords:
-    "vibe coding paraguay, cursos de ia para niños paraguay, clases inteligencia artificial asuncion, curso ia niños ciudad del este, innovakids paraguay",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+  keywords: [
+    "curso inteligencia artificial niños paraguay",
+    "cursos de tecnologia para niños paraguay",
+    "aprender ia asuncion",
+    "innovakids cursos",
+  ],
   openGraph: {
-    title: "Cursos de IA para Niños en Paraguay | InnovaKids Latam",
-    description: "Clases de Inteligencia Artificial para niños paraguayos. Online en vivo, grupos pequeños.",
+    title: "Curso Inteligencia Artificial Niños Paraguay | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Paraguay para niños de 8-14 años.",
     url: "https://www.innovakidslatam.com/py/cursos-ia-ninos-paraguay",
     locale: "es_PY",
+    siteName: "InnovaKids Paraguay",
     type: "website",
   },
   alternates: {

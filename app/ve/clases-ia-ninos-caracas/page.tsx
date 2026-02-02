@@ -6,20 +6,22 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Clases de Vibe Coding en Caracas 2026 | InnovaKids",
+    title: "Clases de IA para Niños en Caracas | Online en Vivo",
     description:
-        "Clases de programación con IA (Vibe Coding) para niños en Caracas. Altamira, Chacao, Las Mercedes. Grupos de 5 alumnos. Primera clase GRATIS.",
+        "¿Vives en Caracas? Tu hijo puede crear apps y videojuegos con IA desde casa (Chacao, Baruta, El Hatillo). Horarios flexibles tardes y sábados. Garantía total.",
     keywords: [
-        "clases vibe coding caracas",
         "clases ia niños caracas",
-        "curso inteligencia artificial niños altamira",
-        "ia para niños chacao",
-        "clases programacion niños las mercedes",
+        "curso programación niños chacao",
+        "vacacional tecnologia caracas",
+        "innovakids caracas",
     ],
     openGraph: {
         title: "Clases de IA para Niños en Caracas | InnovaKids",
-        description: "Aprende IA en Caracas. Clases online para niños de 8-14 años.",
+        description: "El curso #1 de Inteligencia Artificial para niños en Caracas. Grupos pequeños, atención personalizada.",
         url: "https://www.innovakidslatam.com/ve/clases-ia-ninos-caracas",
+        locale: "es_VE",
+        siteName: "InnovaKids Caracas",
+        type: "website",
     },
     alternates: {
         canonical: "https://www.innovakidslatam.com/ve/clases-ia-ninos-caracas",

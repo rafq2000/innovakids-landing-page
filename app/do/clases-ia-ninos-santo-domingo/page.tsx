@@ -5,16 +5,26 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, Target, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en Santo Domingo 2026 | InnovaKids",
+  title: "Clases de IA para Niños en Santo Domingo | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en Santo Domingo. Piantini, Naco, Bella Vista. Grupos de 5 alumnos. Primera clase GRATIS.",
+    "¿Vives en Santo Domingo? Tu hijo puede crear apps y videojuegos con IA desde casa (Piantini, Naco, Arroyo Hondo). Horarios flexibles tardes y sábados. Garantía total.",
   keywords: [
-    "clases vibe coding santo domingo",
     "clases ia niños santo domingo",
-    "curso inteligencia artificial niños piantini",
-    "ia para niños naco",
-    "clases programacion niños bella vista",
+    "curso programación niños piantini",
+    "vacacional tecnologia santo domingo",
+    "innovakids santo domingo",
   ],
+  openGraph: {
+    title: "Clases de IA para Niños en Santo Domingo | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños en Santo Domingo. Grupos pequeños, atención personalizada.",
+    url: "https://www.innovakidslatam.com/do/clases-ia-ninos-santo-domingo",
+    locale: "es_DO",
+    siteName: "InnovaKids Santo Domingo",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/do/clases-ia-ninos-santo-domingo",
+  },
 }
 
 export default function ClasesIANinosSantoDomingo() {

@@ -8,18 +8,21 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso de Vibe Coding para Niños República Dominicana 2026 | InnovaKids",
+  title: "Curso Inteligencia Artificial Niños República Dominicana | Vibe Coding",
   description:
-    "El primer curso de Vibe Coding e IA para niños de 8-14 años en República Dominicana. Clases online en vivo. Grupos reducidos. Aprende a crear Apps.",
-  keywords:
-    "vibe coding republica dominicana, cursos de ia para niños republica dominicana, clases inteligencia artificial santo domingo, curso ia niños santiago, innovakids republica dominicana",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+  keywords: [
+    "curso inteligencia artificial niños republica dominicana",
+    "cursos de tecnologia para niños republica dominicana",
+    "aprender ia santo domingo",
+    "innovakids cursos",
+  ],
   openGraph: {
-    title: "Cursos de IA para Niños en República Dominicana | InnovaKids Latam",
-    description:
-      "Clases de Inteligencia Artificial para niños dominicanos. Online en vivo, grupos pequeños, profesores expertos.",
+    title: "Curso Inteligencia Artificial Niños República Dominicana | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de República Dominicana para niños de 8-14 años.",
     url: "https://www.innovakidslatam.com/do/cursos-ia-ninos-republica-dominicana",
-    siteName: "InnovaKids Latam",
     locale: "es_DO",
+    siteName: "InnovaKids República Dominicana",
     type: "website",
   },
   alternates: {

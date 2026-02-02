@@ -5,19 +5,25 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, CheckCircle, MapPin, Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en Madrid 2026 | Evaluación Gratis | InnovaKids",
+  title: "Clases de IA para Niños en Madrid | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños 8-14 años en Madrid. 10 clases online en vivo, grupos de máx 5 niños. Chamberí, Salamanca, Retiro.",
-  keywords:
-    "clases vibe coding madrid, clases ia niños madrid, curso inteligencia artificial madrid, programación ia niños chamberí, curso ia niños salamanca",
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/es/clases-ia-ninos-madrid",
-  },
+    "¿Vives en Madrid? Tu hijo puede crear apps y videojuegos con IA desde casa (Salamanca, Chamberí, Pozuelo). Horarios flexibles tardes y sábados. Garantía total.",
+  keywords: [
+    "clases ia niños madrid",
+    "curso programación niños pozuelo",
+    "vacacional tecnologia madrid",
+    "innovakids madrid",
+  ],
   openGraph: {
     title: "Clases de IA para Niños en Madrid | InnovaKids",
-    description: "Clases de inteligencia artificial para niños 8-14 años. 10 clases online en vivo desde Madrid.",
+    description: "El curso #1 de Inteligencia Artificial para niños en Madrid. Grupos pequeños, atención personalizada.",
     url: "https://www.innovakidslatam.com/es/clases-ia-ninos-madrid",
     locale: "es_ES",
+    siteName: "InnovaKids Madrid",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/es/clases-ia-ninos-madrid",
   },
 }
 

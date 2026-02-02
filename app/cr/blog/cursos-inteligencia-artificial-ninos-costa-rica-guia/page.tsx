@@ -5,18 +5,27 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Vibe Coding en Costa Rica: Guía Completa para Padres 2026",
+  title: "Cursos de IA para Niños en Costa Rica (Guía 2026)",
   description:
-    "Descubre el Vibe Coding: la nueva forma en que los niños aprenden a programar con IA en Costa Rica. Comparativa de programas y precios.",
+    "Guía Completa: Lo que todo padre tico debe saber antes de inscribir a su hijo en un curso de IA. Precios, herramientas, seguridad y mejores opciones.",
   keywords: [
-    "que es vibe coding",
-    "cursos inteligencia artificial niños costa rica",
-    "mejores cursos ia niños",
-    "donde estudiar ia niños costa rica",
-    "cursos programacion niños san jose",
+    "guia cursos ia niños costa rica",
+    "mejores cursos programacion niños costa rica",
+    "comparativa escuelas ia costa rica",
+    "consejos padres tecnologia costa rica",
   ],
+  openGraph: {
+    title: "Cursos de IA para Niños en Costa Rica (Guía 2026)",
+    description: "Todo lo que necesitas saber para elegir la mejor educación tecnológica para tu hijo en Costa Rica.",
+    url: "https://www.innovakidslatam.com/cr/blog/cursos-inteligencia-artificial-ninos-costa-rica-guia",
+    locale: "es_CR",
+    type: "article",
+    siteName: "Blog InnovaKids Costa Rica",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/cr/blog/cursos-inteligencia-artificial-ninos-costa-rica-guia",
+  },
 }
-
 export default function BlogCursosIANinosCostaRica() {
   const whatsappNumber = "56964754219"
   const whatsappMessage = encodeURIComponent(

@@ -7,28 +7,26 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin } from "lucide-react"
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding en Ecuador | InnovaKids",
+  title: "Curso de IA para Niños en Ecuador | Crea Apps y Videojuegos",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños en Ecuador. Clases online en vivo para Quito, Guayaquil, Cuenca y todo el país.",
+    "Niños ecuatorianos de 8-14 crean arte, música y apps con IA. Horario Quito, pago con Transferencia. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
   keywords: [
+    "curso ia niños ecuador",
+    "clases programación ia quito",
+    "taller tecnologia niños guayaquil",
+    "innovakids ecuador",
     "vibe coding ecuador",
-    "cursos ia niños ecuador",
-    "clases ia niños quito",
-    "inteligencia artificial niños guayaquil",
-    "curso ia niños cuenca",
-    "ia para niños ambato",
   ],
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/ec",
-  },
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños en Ecuador | InnovaKids",
-    description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años en Ecuador. Clases online en vivo, grupos de 5 alumnos.",
+    title: "Curso de IA para Niños en Ecuador | InnovaKids",
+    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Ecuador. Clases en vivo horario Quito. Proyectos reales.",
     url: "https://www.innovakidslatam.com/ec",
     locale: "es_EC",
-    siteName: "InnovaKids",
+    siteName: "InnovaKids Ecuador",
     type: "website",
+  },
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/ec",
   },
 }
 

@@ -7,16 +7,23 @@ import { CheckCircle, ArrowRight, MessageCircle, MapPin, Star } from "lucide-rea
 import WhatsAppButton from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Clases de Vibe Coding en Quito 2026 | InnovaKids",
+  title: "Clases de IA para Niños en Quito | Online en Vivo",
   description:
-    "Clases de programación con IA (Vibe Coding) para niños en Quito. Cumbayá, Tumbaco, Valle de los Chillos. Grupos de 5 alumnos. Primera clase GRATIS.",
+    "¿Vives en Quito? Tu hijo puede crear apps y videojuegos con IA desde casa (Cumbayá, Valle de los Chillos). Horarios flexibles tardes y sábados. Garantía total.",
   keywords: [
-    "clases vibe coding quito",
     "clases ia niños quito",
-    "curso inteligencia artificial niños cumbaya",
-    "ia para niños tumbaco",
-    "clases programacion niños valle de los chillos",
+    "curso programación niños cumbaya",
+    "vacacional tecnologia quito",
+    "innovakids quito",
   ],
+  openGraph: {
+    title: "Clases de IA para Niños en Quito | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños en Quito. Grupos pequeños, atención personalizada.",
+    url: "https://www.innovakidslatam.com/ec/clases-ia-ninos-quito",
+    locale: "es_EC",
+    siteName: "InnovaKids Quito",
+    type: "website",
+  },
   alternates: {
     canonical: "https://www.innovakidslatam.com/ec/clases-ia-ninos-quito",
   },
