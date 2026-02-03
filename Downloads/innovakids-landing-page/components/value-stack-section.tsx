@@ -18,6 +18,7 @@ import {
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { CountdownTimer } from "@/components/countdown-timer"
 
 const included = [
     {
@@ -184,7 +185,9 @@ export function ValueStackSection() {
                             Sí, quiero todo esto por $267 →
                         </Link>
                     </Button>
-                    <p className="mt-4 text-gray-500 text-sm">Solo 2 cupos disponibles • Inicia 16 de Febrero</p>
+                    <div className="mt-6">
+                        <CountdownTimer targetDate="2026-02-14T23:59:00-03:00" label="Inscripciones abiertas por" />
+                    </div>
                 </motion.div>
             </div>
         </section>

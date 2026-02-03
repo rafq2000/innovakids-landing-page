@@ -131,15 +131,15 @@ export function HeroSection() {
             <Button
               asChild
               size="lg"
-              className="magnetic-btn relative group bg-gradient-to-r from-primary via-primary to-[#8b5cf6] hover:opacity-90 text-background px-8 sm:px-12 py-6 sm:py-7 text-lg sm:text-xl font-bold rounded-full transition-all duration-300 hover:shadow-[0_0_50px_rgba(77,208,225,0.5)] overflow-hidden"
+              className="magnetic-btn relative group bg-gradient-to-r from-green-500 via-green-400 to-emerald-400 hover:opacity-90 text-background px-8 sm:px-12 py-6 sm:py-7 text-lg sm:text-xl font-bold rounded-full transition-all duration-300 hover:shadow-[0_0_50px_rgba(34,197,94,0.6)] overflow-hidden"
             >
-              <a href="#sesion-estrategica">
+              <a href="#inversion">
                 <span
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity shimmer"
                 />
                 <span className="relative flex items-center gap-2">
                   <Sparkles className="w-5 h-5" />
-                  RESERVAR CLASE MUESTRA GRATIS
+                  EMPEZAR POR SOLO $147 😱
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </a>
@@ -151,9 +151,9 @@ export function HeroSection() {
               size="lg"
               className="group border-white/20 hover:border-primary/50 hover:bg-primary/5 text-white px-8 py-6 text-lg rounded-full transition-all duration-300"
             >
-              <a href="#programa">
-                <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                Ver Programa
+              <a href="#sesion-estrategica">
+                <Sparkles className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
+                Clase Muestra Gratis
               </a>
             </Button>
           </div>
