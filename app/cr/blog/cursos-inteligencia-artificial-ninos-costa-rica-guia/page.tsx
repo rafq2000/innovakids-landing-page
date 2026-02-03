@@ -104,7 +104,7 @@ export default function BlogCursosIANinosCostaRica() {
                 El programa completo de InnovaKids cuesta <strong>$267 USD</strong> e incluye:
               </p>
               <ul>
-                <li>10 clases en vivo de 90 minutos cada una</li>
+                <li>10 clases en vivo de 60 minutos cada una</li>
                 <li>Grupos de máximo 5 niños</li>
                 <li>Acceso a 10+ herramientas de IA profesionales</li>
                 <li>Proyectos reales publicables</li>

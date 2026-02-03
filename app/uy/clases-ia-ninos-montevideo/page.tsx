@@ -204,7 +204,7 @@ export default function MontevideoClasesIAPage() {
 
               <div className="grid md:grid-cols-2 gap-4 max-w-2xl mx-auto mb-8 text-left">
                 {[
-                  "10 clases en vivo (90 min)",
+                  "10 clases en vivo (60 min)",
                   "Grupos de máximo 5 niños",
                   "Acceso a grabaciones",
                   "Certificado internacional",

@@ -133,7 +133,7 @@ export default function EspanaHub() {
 
             <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
               {[
-                { stat: "10", label: "Clases en vivo", desc: "90 minutos cada una" },
+                { stat: "10", label: "Clases en vivo", desc: "60 minutos cada una" },
                 { stat: "5", label: "Niños máximo", desc: "Por grupo" },
                 { stat: "$267", label: "USD", desc: "Precio total del programa" },
                 { stat: "10", label: "Días de garantía", desc: "Devolución sin preguntas" },

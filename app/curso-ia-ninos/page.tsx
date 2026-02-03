@@ -67,7 +67,7 @@ export default function CursoIANinos() {
                 <ul className="space-y-3">
                   <li className="flex items-start">
                     <span className="text-cyan-400 mr-3">✓</span>
-                    <span>10 clases en vivo de 90 minutos (grupos de 5 máximo)</span>
+                    <span>10 clases en vivo de 60 minutos (grupos de 5 máximo)</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-cyan-400 mr-3">✓</span>

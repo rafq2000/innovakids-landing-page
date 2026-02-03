@@ -331,7 +331,7 @@ export default function ComoEnsenarIAPage() {
             <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
               <h3 className="text-2xl font-bold text-white mb-4">¿Cuánto tiempo necesita dedicar mi hijo?</h3>
               <p className="text-gray-300 text-lg">
-                2 clases de 90 minutos por semana durante 5 semanas. Es un compromiso manejable que cabe perfectamente
+                2 clases de 60 minutos por semana durante 5 semanas. Es un compromiso manejable que cabe perfectamente
                 en el horario escolar.
               </p>
             </div>

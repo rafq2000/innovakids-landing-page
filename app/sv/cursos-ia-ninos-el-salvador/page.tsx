@@ -113,7 +113,7 @@ export default function CursosIANinosElSalvadorPage() {
               <div className="bg-[#0F47AF]/10 border border-[#0F47AF]/20 rounded-2xl p-6 max-w-xl mx-auto">
                 <p className="text-lg font-semibold text-[#0F47AF]">💰 Inversión: $267 USD</p>
                 <p className="text-muted-foreground">
-                  10 clases online en vivo (90 min c/u) • Garantía de satisfacción 10 días
+                  10 clases online en vivo (60 min c/u) • Garantía de satisfacción 10 días
                 </p>
               </div>
             </div>
@@ -185,7 +185,7 @@ export default function CursosIANinosElSalvadorPage() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 {[
-                  "10 clases online en vivo de 90 minutos",
+                  "10 clases online en vivo de 60 minutos",
                   "Grupos pequeños de máximo 5 cipotes",
                   "Profesor experto en IA y educación",
                   "Proyectos prácticos con herramientas reales",

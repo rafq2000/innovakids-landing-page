@@ -139,7 +139,7 @@ export default function BuenosAiresClasesIAPage() {
             <div className="bg-[#0f2744] rounded-2xl p-8 border border-white/10">
               <div className="grid md:grid-cols-2 gap-4">
                 {[
-                  "10 clases en vivo de 90 minutos",
+                  "10 clases en vivo de 60 minutos",
                   "Grupos de máximo 5 chicos",
                   "Acceso de por vida a grabaciones",
                   "Certificado oficial internacional",
