@@ -137,7 +137,7 @@ export default function PanamaHub() {
                   <Clock className="h-8 w-8 text-[#072357]" />
                 </div>
                 <h3 className="mb-2 text-xl font-bold">10 Clases en Vivo</h3>
-                <p className="text-muted-foreground">90 minutos cada una, horario Panamá</p>
+                <p className="text-muted-foreground">60 minutos cada una, horario Panamá</p>
               </div>
               <div className="text-center">
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#DA121A]/20">
