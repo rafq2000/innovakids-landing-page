@@ -130,13 +130,13 @@ export default function CursoIANinos() {
                 </div>
 
                 <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-pink-500">
-                  <h4 className="font-bold text-pink-400 mb-2">Clase 7: Vibe Cinema</h4>
-                  <p className="text-gray-300 text-sm">Creación de video con IA: ¡Luces, cámara, prompt!</p>
+                  <h4 className="font-bold text-pink-400 mb-2">Clase 7: Vibe Coding</h4>
+                  <p className="text-gray-300 text-sm">Programación de videojuegos (Roblox/Minecraft vibes) con IA</p>
                 </div>
 
                 <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-blue-500">
-                  <h4 className="font-bold text-blue-400 mb-2">Clase 8: Digital Twin</h4>
-                  <p className="text-gray-300 text-sm">Creando tu avatar 3D parlante para tus videos</p>
+                  <h4 className="font-bold text-blue-400 mb-2">Clase 8: Vibe Study</h4>
+                  <p className="text-gray-300 text-sm">Convierte la IA en tu tutor personal para matemáticas y ciencias</p>
                 </div>
 
                 <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-green-500">

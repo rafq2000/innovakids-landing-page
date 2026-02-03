@@ -13,8 +13,8 @@ const lessons = [
     { num: 4, title: "Vibe Music", desc: "Composición musical con IA" },
     { num: 5, title: "Generative Art I", desc: "De la imaginación a la imagen" },
     { num: 6, title: "Generative Art II", desc: "Storytelling visual consistente" },
-    { num: 7, title: "Vibe Cinema", desc: "Creación de video con IA" },
-    { num: 8, title: "Digital Twin", desc: "Creando tu avatar 3D parlante" },
+    { num: 7, title: "Vibe Coding", desc: "Programación de Videojuegos con IA" },
+    { num: 8, title: "Vibe Study", desc: "Técnicas de estudio y super-memoria" },
     { num: 9, title: "Cyber Ethics", desc: "Deepfakes y seguridad digital" },
     { num: 10, title: "The Vibe Project", desc: "Presentación final de identidad" },
 ]

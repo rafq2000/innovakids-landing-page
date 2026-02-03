@@ -168,13 +168,13 @@ export default function BrochurePage() {
                 },
                 {
                   num: "7",
-                  title: "Vibe Cinema",
-                  desc: "Creación de video con IA"
+                  title: "Vibe Coding",
+                  desc: "Programación de videojuegos y apps con IA"
                 },
                 {
                   num: "8",
-                  title: "Digital Twin",
-                  desc: "Creando tu avatar 3D parlante"
+                  title: "Vibe Study",
+                  desc: "Hackea tu escuela: estudio eficiente con IA"
                 },
                 {
                   num: "9",
