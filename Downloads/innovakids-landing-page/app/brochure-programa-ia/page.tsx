@@ -129,142 +129,98 @@ export default function BrochurePage() {
           <CardHeader>
             <CardTitle className="text-3xl text-cyan-400 flex items-center gap-3">
               <span className="text-4xl">📖</span>
-              Las 10 Clases del Programa
+              Las 10 Clases del Programa Vibe Explorer
             </CardTitle>
             <p className="text-slate-300 text-lg mt-4">Cada clase = 1 proyecto real que tu hijo puede mostrar</p>
           </CardHeader>
           <CardContent>
-            <div className="space-y-6">
-              {/* Módulo 1 */}
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
-                  <span className="text-cyan-400">MÓDULO 1:</span> Fundamentos de IA
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {[
-                    {
-                      num: "1",
-                      title: "Introducción a la IA",
-                      project: "Primer chatbot personalizado",
-                      tools: "ChatGPT, Gemini"
-                    },
-                    {
-                      num: "2",
-                      title: "IA Conversacional Avanzada",
-                      project: "Asistente de tareas escolares",
-                      tools: "ChatGPT Pro, Claude"
-                    },
-                    {
-                      num: "3",
-                      title: "Generación de Imágenes",
-                      project: "Galería de arte personal (10+ imágenes)",
-                      tools: "Leonardo.ai, DALL-E, Midjourney"
-                    },
-                    {
-                      num: "4",
-                      title: "Creación de Video",
-                      project: "Video de YouTube/TikTok completo",
-                      tools: "InVideo AI, Runway, Pika"
-                    },
-                    {
-                      num: "5",
-                      title: "Producción Musical",
-                      project: "Canción original con letra",
-                      tools: "Suno.ai, Udio"
-                    },
-                    {
-                      num: "6",
-                      title: "Síntesis de Voz",
-                      project: "Audiolibro narrado con múltiples voces",
-                      tools: "ElevenLabs, PlayHT"
-                    },
-                  ].map((clase, idx) => (
-                    <div
-                      key={idx}
-                      className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg p-5 hover:scale-105 transition-transform duration-300"
-                    >
-                      <div className="flex items-start gap-3 mb-3">
-                        <span className="text-3xl font-bold text-cyan-400">#{clase.num}</span>
-                        <div>
-                          <h4 className="text-white font-bold text-lg">{clase.title}</h4>
-                          <p className="text-emerald-400 text-sm font-semibold mt-1">✓ {clase.project}</p>
-                          <p className="text-slate-400 text-xs mt-2">🛠️ {clase.tools}</p>
-                        </div>
-                      </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {[
+                {
+                  num: "1",
+                  title: "Vibe IA: Tu nuevo superpoder",
+                  desc: "Configuración completa de herramientas"
+                },
+                {
+                  num: "2",
+                  title: "Prompt Engineering",
+                  desc: "El arte de hablar con máquinas"
+                },
+                {
+                  num: "3",
+                  title: "Vibe Voice",
+                  desc: "Clonación de voz y narración con IA"
+                },
+                {
+                  num: "4",
+                  title: "Vibe Music",
+                  desc: "Composición musical con IA"
+                },
+                {
+                  num: "5",
+                  title: "Generative Art I",
+                  desc: "De la imaginación a la imagen"
+                },
+                {
+                  num: "6",
+                  title: "Generative Art II",
+                  desc: "Storytelling visual consistente"
+                },
+                {
+                  num: "7",
+                  title: "Vibe Cinema",
+                  desc: "Creación de video con IA"
+                },
+                {
+                  num: "8",
+                  title: "Digital Twin",
+                  desc: "Creando tu avatar 3D parlante"
+                },
+                {
+                  num: "9",
+                  title: "Cyber Ethics",
+                  desc: "Deepfakes y seguridad digital"
+                },
+                {
+                  num: "10",
+                  title: "The Vibe Project",
+                  desc: "Presentación final de identidad"
+                },
+              ].map((clase, idx) => (
+                <div
+                  key={idx}
+                  className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg p-5 hover:scale-105 transition-transform duration-300"
+                >
+                  <div className="flex items-start gap-3">
+                    <span className="text-3xl font-bold text-cyan-400">#{clase.num}</span>
+                    <div>
+                      <h4 className="text-white font-bold text-lg">{clase.title}</h4>
+                      <p className="text-slate-400 text-sm mt-1">{clase.desc}</p>
                     </div>
-                  ))}
+                  </div>
                 </div>
-              </div>
+              ))}
+            </div>
 
-              {/* Módulo 2 */}
-              <div className="mt-8">
-                <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
-                  <span className="text-emerald-400">MÓDULO 2:</span> Aplicación Práctica
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {[
-                    {
-                      num: "7",
-                      title: "Programación con IA",
-                      project: "Primera app/juego funcional",
-                      tools: "ChatGPT Code, Replit AI, Cursor"
-                    },
-                    {
-                      num: "8",
-                      title: "Estudio Eficiente con IA",
-                      project: "Sistema de estudio personal + Podcast",
-                      tools: "NotebookLM, ChatGPT, Quizlet AI"
-                    },
-                    {
-                      num: "9",
-                      title: "Ética y Seguridad Digital",
-                      project: "Guía de seguridad personal + Plan familiar",
-                      tools: "Deepfake detection, Privacidad online"
-                    },
-                    {
-                      num: "10",
-                      title: "Proyecto Final",
-                      project: "Presentación profesional de startup IA",
-                      tools: "Gamma AI, Canva AI, Beautiful.ai"
-                    },
-                  ].map((clase, idx) => (
-                    <div
-                      key={idx}
-                      className="bg-gradient-to-br from-emerald-500/10 to-green-500/10 border border-emerald-500/30 rounded-lg p-5 hover:scale-105 transition-transform duration-300"
-                    >
-                      <div className="flex items-start gap-3 mb-3">
-                        <span className="text-3xl font-bold text-emerald-400">#{clase.num}</span>
-                        <div>
-                          <h4 className="text-white font-bold text-lg">{clase.title}</h4>
-                          <p className="text-cyan-400 text-sm font-semibold mt-1">✓ {clase.project}</p>
-                          <p className="text-slate-400 text-xs mt-2">🛠️ {clase.tools}</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+            {/* Summary */}
+            <div className="bg-gradient-to-r from-cyan-500/20 to-emerald-500/20 border-2 border-cyan-400/30 rounded-xl p-6 mt-8">
+              <h4 className="text-white text-xl font-bold mb-3">🎯 Al finalizar, tu hijo habrá creado:</h4>
+              <div className="grid md:grid-cols-2 gap-3 text-slate-300">
+                <div className="flex items-start gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>Su propio asistente IA configurado</span>
                 </div>
-              </div>
-
-              {/* Summary */}
-              <div className="bg-gradient-to-r from-cyan-500/20 to-emerald-500/20 border-2 border-cyan-400/30 rounded-xl p-6 mt-8">
-                <h4 className="text-white text-xl font-bold mb-3">🎯 Al finalizar, tu hijo tendrá:</h4>
-                <div className="grid md:grid-cols-2 gap-3 text-slate-300">
-                  <div className="flex items-start gap-2">
-                    <span className="text-green-400">✓</span>
-                    <span>10 proyectos reales en su portafolio</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-green-400">✓</span>
-                    <span>15+ herramientas de IA dominadas</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-green-400">✓</span>
-                    <span>Capacidad de crear apps, videos, música</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <span className="text-green-400">✓</span>
-                    <span>Habilidades para estudiar 3x más eficiente</span>
-                  </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>Arte y videos generados con IA</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>Música original y su voz clonada</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>Avatar 3D y proyecto final de identidad</span>
                 </div>
               </div>
             </div>

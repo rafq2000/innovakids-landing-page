@@ -182,7 +182,7 @@ export function CurriculumSection() {
         </Tabs>
 
         <div className="mt-12 text-center">
-          <p className="text-sm text-gray-500 italic">Cada módulo consta de 10 clases maestras de 90 minutos.</p>
+          <p className="text-sm text-gray-500 italic">Cada módulo consta de 10 clases maestras de 60 minutos.</p>
         </div>
       </div>
     </section>
