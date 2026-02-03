@@ -222,7 +222,7 @@ export default function ClasesIANinosMiami() {
 
               <ul className="mb-8 space-y-3 text-left">
                 {[
-                  "10 clases en vivo (90 min c/u)",
+                  "10 clases en vivo (60 min c/u)",
                   "100% en español",
                   "Grupos de máximo 5 niños",
                   "Horarios Eastern Time",

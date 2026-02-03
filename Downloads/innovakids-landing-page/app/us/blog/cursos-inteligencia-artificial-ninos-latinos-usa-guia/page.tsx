@@ -237,7 +237,7 @@ export default function GuiaIANinosLatinosUSA() {
                   similar
                 </li>
                 <li>
-                  <strong>10 clases en vivo</strong> - Una vez por semana, 90 minutos, 100% en español
+                  <strong>10 clases en vivo</strong> - Una vez por semana, 60 minutos, 100% en español
                 </li>
                 <li>
                   <strong>Proyectos reales</strong> - Tu hijo termina con 6+ proyectos publicables

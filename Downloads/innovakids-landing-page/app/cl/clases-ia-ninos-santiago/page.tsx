@@ -196,7 +196,7 @@ export default function ClasesIANinosSantiago() {
 
               <ul className="mb-8 space-y-3 text-left">
                 {[
-                  "10 clases en vivo (90 min c/u)",
+                  "10 clases en vivo (60 min c/u)",
                   "Grupos de máximo 5 niños",
                   "10+ herramientas de IA profesionales",
                   "Proyectos reales publicables",

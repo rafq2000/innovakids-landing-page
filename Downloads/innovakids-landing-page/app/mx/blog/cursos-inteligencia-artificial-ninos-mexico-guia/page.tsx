@@ -356,7 +356,7 @@ export default function GuiaCompletaPage() {
                     ¿Qué obtiene tu hijo por $267 USD en InnovaKids?
                   </h3>
                   <ul className="space-y-3 text-gray-300">
-                    <li>✅ 10 clases en vivo de 90 minutos cada una</li>
+                    <li>✅ 10 clases en vivo de 60 minutos cada una</li>
                     <li>✅ Grupos de máximo 5 niños (atención personalizada real)</li>
                     <li>✅ 10 proyectos completos para su portfolio</li>
                     <li>✅ Acceso de por vida a grabaciones</li>

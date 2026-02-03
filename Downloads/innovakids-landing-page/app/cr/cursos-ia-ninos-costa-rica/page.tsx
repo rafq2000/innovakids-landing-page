@@ -115,7 +115,7 @@ export default function CursosIANinosCostaRicaPage() {
               <div className="bg-[#002B7F]/10 border border-[#002B7F]/20 rounded-2xl p-6 max-w-xl mx-auto">
                 <p className="text-lg font-semibold text-[#002B7F]">💰 Inversión: $267 USD</p>
                 <p className="text-muted-foreground">
-                  10 clases online en vivo (90 min c/u) • Garantía de satisfacción 10 días
+                  10 clases online en vivo (60 min c/u) • Garantía de satisfacción 10 días
                 </p>
               </div>
             </div>
@@ -188,7 +188,7 @@ export default function CursosIANinosCostaRicaPage() {
 
               <div className="grid md:grid-cols-2 gap-6">
                 {[
-                  "10 clases online en vivo de 90 minutos",
+                  "10 clases online en vivo de 60 minutos",
                   "Grupos pequeños de máximo 5 niños",
                   "Profesor experto en IA y educación",
                   "Proyectos prácticos con herramientas reales",
