@@ -98,19 +98,19 @@ export default function ClasesIANinos() {
                   <div>
                     <h4 className="font-bold text-white mb-3">🎨 Creatividad con IA</h4>
                     <ul className="space-y-2 text-sm text-gray-300">
-                      <li>• Generación de imágenes profesionales</li>
-                      <li>• Creación de videos y animaciones</li>
-                      <li>• Diseño de personajes y avatares</li>
-                      <li>• Producción de contenido multimedia</li>
+                      <li>• Vibe Art: Generación de imágenes pro</li>
+                      <li>• Vibe Cinema: Creación de video con IA</li>
+                      <li>• Vibe Music: Composición musical original</li>
+                      <li>• Digital Twin: Tu avatar 3D parlante</li>
                     </ul>
                   </div>
                   <div>
                     <h4 className="font-bold text-white mb-3">💻 Tecnología Práctica</h4>
                     <ul className="space-y-2 text-sm text-gray-300">
-                      <li>• Programación de apps con IA</li>
-                      <li>• Uso avanzado de ChatGPT</li>
-                      <li>• Creación de páginas web</li>
-                      <li>• Desarrollo de videojuegos</li>
+                      <li>• Vibe Coding: Programación asistida</li>
+                      <li>• Prompt Engineering avanzado</li>
+                      <li>• Vibe Voice: Clonación de voz</li>
+                      <li>• Cyber Ethics y seguridad digital</li>
                     </ul>
                   </div>
                 </div>

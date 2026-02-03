@@ -99,51 +99,54 @@ export default function CursoIANinos() {
               <h2 className="text-3xl font-bold text-white mt-12 mb-6">Programa del Curso de IA para Niños</h2>
 
               <div className="space-y-4 my-8">
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-cyan-500">
-                  <h4 className="font-bold text-cyan-400 mb-2">Clase 1-2: Fundamentos de IA</h4>
-                  <p className="text-gray-300 text-sm">
-                    Introducción a la inteligencia artificial, ChatGPT y primeros prompts creativos
-                  </p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-purple-500">
-                  <h4 className="font-bold text-purple-400 mb-2">Clase 3-4: Creación Visual con IA</h4>
-                  <p className="text-gray-300 text-sm">
-                    Generación de imágenes, diseño de personajes y creación de cómics con IA
-                  </p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-pink-500">
-                  <h4 className="font-bold text-pink-400 mb-2">Clase 5-6: Producción de Videos</h4>
-                  <p className="text-gray-300 text-sm">
-                    Creación de videos con IA, voces sintéticas y avatar digital personalizado
-                  </p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-blue-500">
-                  <h4 className="font-bold text-blue-400 mb-2">Clase 7: Programación con IA</h4>
-                  <p className="text-gray-300 text-sm">
-                    Vibe Coding: crea apps, páginas web y juegos usando inteligencia artificial
-                  </p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-green-500">
-                  <h4 className="font-bold text-green-400 mb-2">Clase 8: Estudio con IA</h4>
-                  <p className="text-gray-300 text-sm">
-                    Convierte la IA en tu tutor personal, técnicas de estudio y aprendizaje acelerado
-                  </p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-orange-500">
-                  <h4 className="font-bold text-orange-400 mb-2">Clase 9: Ética y Seguridad Digital</h4>
-                  <p className="text-gray-300 text-sm">
-                    Identificación de fake news, sesgos en IA, riesgos digitales y uso responsable
-                  </p>
+                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-yellow-500">
+                  <h4 className="font-bold text-yellow-400 mb-2">Clase 1: Vibe IA (Configuración)</h4>
+                  <p className="text-gray-300 text-sm">Tu nuevo superpoder: Configurando ChatGPT como copiloto</p>
                 </div>
 
                 <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-yellow-500">
-                  <h4 className="font-bold text-yellow-400 mb-2">Clase 10: Demo Day Final</h4>
-                  <p className="text-gray-300 text-sm">Presentación del proyecto final y certificación oficial</p>
+                  <h4 className="font-bold text-yellow-400 mb-2">Clase 2: Prompt Engineering</h4>
+                  <p className="text-gray-300 text-sm">El arte de hablar con máquinas para que te obedezcan</p>
+                </div>
+
+                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-orange-500">
+                  <h4 className="font-bold text-orange-400 mb-2">Clase 3: Vibe Voice</h4>
+                  <p className="text-gray-300 text-sm">Clonación de voz y narración con IA + Traducción</p>
+                </div>
+
+                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-orange-500">
+                  <h4 className="font-bold text-orange-400 mb-2">Clase 4: Vibe Music</h4>
+                  <p className="text-gray-300 text-sm">Composición musical: crea tu primer hit con IA</p>
+                </div>
+
+                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-purple-500">
+                  <h4 className="font-bold text-purple-400 mb-2">Clase 5: Generative Art I</h4>
+                  <p className="text-gray-300 text-sm">De la imaginación a la imagen: Midjourney y DALL-E</p>
+                </div>
+
+                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-purple-500">
+                  <h4 className="font-bold text-purple-400 mb-2">Clase 6: Generative Art II</h4>
+                  <p className="text-gray-300 text-sm">Storytelling visual consistente para cómics y cuentos</p>
+                </div>
+
+                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-pink-500">
+                  <h4 className="font-bold text-pink-400 mb-2">Clase 7: Vibe Cinema</h4>
+                  <p className="text-gray-300 text-sm">Creación de video con IA: ¡Luces, cámara, prompt!</p>
+                </div>
+
+                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-blue-500">
+                  <h4 className="font-bold text-blue-400 mb-2">Clase 8: Digital Twin</h4>
+                  <p className="text-gray-300 text-sm">Creando tu avatar 3D parlante para tus videos</p>
+                </div>
+
+                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-green-500">
+                  <h4 className="font-bold text-green-400 mb-2">Clase 9: Cyber Ethics</h4>
+                  <p className="text-gray-300 text-sm">Deepfakes y seguridad digital: navegando el futuro</p>
+                </div>
+
+                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-cyan-500">
+                  <h4 className="font-bold text-cyan-400 mb-2">Clase 10: The Vibe Project</h4>
+                  <p className="text-gray-300 text-sm">Presentación final de identidad digital y portafolio</p>
                 </div>
               </div>
 
