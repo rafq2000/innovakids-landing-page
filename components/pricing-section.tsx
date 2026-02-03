@@ -8,23 +8,41 @@ import Link from "next/link"
 
 const pricingTiers = [
   {
-    name: "Academy University",
-    price: 1068,
-    description: "La experiencia completa. Transforma el futuro de tu hijo.",
-    originalPrice: 1497,
-    icon: Crown,
-    color: "from-purple-500 to-pink-500",
+    name: "Starter",
+    price: 147,
+    description: "Prueba el programa. Descubre si tu hijo califica.",
+    originalPrice: 197,
+    icon: Star,
+    color: "from-green-400 to-emerald-400",
     features: [
-      "Acceso Total a los 4 Módulos (40 Clases)",
-      "Incubadora de Startups incluida",
-      "Certificación Master Completa",
-      "Crédito: Abona tus $267 si ya eres Explorer",
-      "Ahorras +$400 USD (Mejor Oferta)",
+      "4 Clases de Fundamentos IA",
+      "Prueba el método sin compromiso",
+      "Acceso a Discord Community",
+      "😱 Solo válido hasta agotar cupos",
+      "Crédito completo hacia Explorer ($147)",
     ],
-    cta: "Inscripción VIP",
-    link: "/pagar?option=university",
+    cta: "Empezar por $147",
+    link: "/pagar?option=starter",
+    popular: false,
+    badge: "🔥 Entrada Perfecta",
+  },
+  {
+    name: "Vibe Explorer",
+    price: 267,
+    description: "El punto de partida completo para todo creador digital.",
+    icon: Sparkles,
+    color: "from-yellow-400 to-orange-400",
+    features: [
+      "Módulo 1: Fundamentos IA (10 Clases)",
+      "Certificado 'Explorer' Digital",
+      "Acceso a 15+ herramientas IA",
+      "Soporte 24/7 por Discord + WhatsApp",
+      "Boletín semanal de novedades IA 😱",
+    ],
+    cta: "Comenzar Ahora",
+    link: "/pagar?option=explorer",
     popular: true,
-    badge: "Oferta Máxima",
+    badge: "⭐ Más Popular",
   },
   {
     name: "Start Pack",
@@ -43,20 +61,23 @@ const pricingTiers = [
     popular: false,
   },
   {
-    name: "Vibe Explorer",
-    price: 267,
-    description: "El punto de partida obligatorio para todo creador digital.",
-    icon: Sparkles,
-    color: "from-yellow-400 to-orange-400",
+    name: "Academy University",
+    price: 1068,
+    description: "La experiencia completa. Transforma el futuro de tu hijo.",
+    originalPrice: 1497,
+    icon: Crown,
+    color: "from-purple-500 to-pink-500",
     features: [
-      "Módulo 1: Fundamentos IA (10 Clases)",
-      "Certificado 'Explorer' Digital",
-      "Acceso a herramientas básicas",
-      "Soporte por Discord",
+      "Acceso Total a los 4 Módulos (40 Clases)",
+      "🚀 Incubadora de Startups incluida",
+      "Certificación Master Completa",
+      "Crédito: Abona tus $267 si ya eres Explorer",
+      "😱 Ahorras +$400 USD (Mejor Oferta)",
     ],
-    cta: "Comenzar Ahora",
-    link: "/pagar?option=explorer",
+    cta: "Inscripción VIP",
+    link: "/pagar?option=university",
     popular: false,
+    badge: "👑 Transformación Total",
   },
 ]
 
@@ -76,7 +97,7 @@ export function PricingSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto items-start">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto items-start">
           {pricingTiers.map((tier, index) => (
             <Card
               key={index}
