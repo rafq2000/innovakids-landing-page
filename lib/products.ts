@@ -11,7 +11,7 @@ export const PRODUCTS: Product[] = [
     id: "curso-ia-ninos",
     name: "Curso de Inteligencia Artificial para Niños",
     description:
-      "10 clases en vivo de 90 minutos cada una durante 5 semanas. Grupos de máximo 5 alumnos. Incluye certificado y proyectos reales.",
+      "10 clases en vivo de 60 minutos cada una durante 5 semanas. Grupos de máximo 5 alumnos. Incluye certificado y proyectos reales.",
     priceInCents: 26700, // $267 USD - Vibe Explorer
   },
 ]

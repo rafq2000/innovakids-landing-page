@@ -24,7 +24,7 @@ const included = [
     {
         icon: Video,
         title: "10 Clases en Vivo",
-        desc: "90 minutos cada una con instructor experto",
+        desc: "60 minutos cada una con instructor experto",
         value: "$500",
     },
     {
