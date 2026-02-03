@@ -86,7 +86,7 @@ export default function BrochurePage() {
                 { icon: "🚀", label: "Inicio", value: "16 de Febrero, 2026" },
                 { icon: "💻", label: "Plataforma", value: "Clases en vivo vía Zoom" },
                 { icon: "⏱️", label: "Duración", value: "5 semanas (10 clases exclusivas)" },
-                { icon: "📆", label: "Frecuencia", value: "2 clases por semana (90 min c/u)" },
+                { icon: "📆", label: "Frecuencia", value: "2 clases por semana (60 min c/u)" },
                 { icon: "👦", label: "Edad", value: "8 a 14 años" },
               ].map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3 text-slate-300">
@@ -129,29 +129,238 @@ export default function BrochurePage() {
           <CardHeader>
             <CardTitle className="text-3xl text-cyan-400 flex items-center gap-3">
               <span className="text-4xl">📖</span>
-              Estructura Académica
+              Las 10 Clases del Programa
+            </CardTitle>
+            <p className="text-slate-300 text-lg mt-4">Cada clase = 1 proyecto real que tu hijo puede mostrar</p>
+          </CardHeader>
+          <CardContent>
+            <div className="space-y-6">
+              {/* Módulo 1 */}
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                  <span className="text-cyan-400">MÓDULO 1:</span> Fundamentos de IA
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {[
+                    {
+                      num: "1",
+                      title: "Introducción a la IA",
+                      project: "Primer chatbot personalizado",
+                      tools: "ChatGPT, Gemini"
+                    },
+                    {
+                      num: "2",
+                      title: "IA Conversacional Avanzada",
+                      project: "Asistente de tareas escolares",
+                      tools: "ChatGPT Pro, Claude"
+                    },
+                    {
+                      num: "3",
+                      title: "Generación de Imágenes",
+                      project: "Galería de arte personal (10+ imágenes)",
+                      tools: "Leonardo.ai, DALL-E, Midjourney"
+                    },
+                    {
+                      num: "4",
+                      title: "Creación de Video",
+                      project: "Video de YouTube/TikTok completo",
+                      tools: "InVideo AI, Runway, Pika"
+                    },
+                    {
+                      num: "5",
+                      title: "Producción Musical",
+                      project: "Canción original con letra",
+                      tools: "Suno.ai, Udio"
+                    },
+                    {
+                      num: "6",
+                      title: "Síntesis de Voz",
+                      project: "Audiolibro narrado con múltiples voces",
+                      tools: "ElevenLabs, PlayHT"
+                    },
+                  ].map((clase, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg p-5 hover:scale-105 transition-transform duration-300"
+                    >
+                      <div className="flex items-start gap-3 mb-3">
+                        <span className="text-3xl font-bold text-cyan-400">#{clase.num}</span>
+                        <div>
+                          <h4 className="text-white font-bold text-lg">{clase.title}</h4>
+                          <p className="text-emerald-400 text-sm font-semibold mt-1">✓ {clase.project}</p>
+                          <p className="text-slate-400 text-xs mt-2">🛠️ {clase.tools}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Módulo 2 */}
+              <div className="mt-8">
+                <h3 className="text-2xl font-bold text-white mb-4 flex items-center gap-2">
+                  <span className="text-emerald-400">MÓDULO 2:</span> Aplicación Práctica
+                </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {[
+                    {
+                      num: "7",
+                      title: "Programación con IA",
+                      project: "Primera app/juego funcional",
+                      tools: "ChatGPT Code, Replit AI, Cursor"
+                    },
+                    {
+                      num: "8",
+                      title: "Estudio Eficiente con IA",
+                      project: "Sistema de estudio personal + Podcast",
+                      tools: "NotebookLM, ChatGPT, Quizlet AI"
+                    },
+                    {
+                      num: "9",
+                      title: "Ética y Seguridad Digital",
+                      project: "Guía de seguridad personal + Plan familiar",
+                      tools: "Deepfake detection, Privacidad online"
+                    },
+                    {
+                      num: "10",
+                      title: "Proyecto Final",
+                      project: "Presentación profesional de startup IA",
+                      tools: "Gamma AI, Canva AI, Beautiful.ai"
+                    },
+                  ].map((clase, idx) => (
+                    <div
+                      key={idx}
+                      className="bg-gradient-to-br from-emerald-500/10 to-green-500/10 border border-emerald-500/30 rounded-lg p-5 hover:scale-105 transition-transform duration-300"
+                    >
+                      <div className="flex items-start gap-3 mb-3">
+                        <span className="text-3xl font-bold text-emerald-400">#{clase.num}</span>
+                        <div>
+                          <h4 className="text-white font-bold text-lg">{clase.title}</h4>
+                          <p className="text-cyan-400 text-sm font-semibold mt-1">✓ {clase.project}</p>
+                          <p className="text-slate-400 text-xs mt-2">🛠️ {clase.tools}</p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Summary */}
+              <div className="bg-gradient-to-r from-cyan-500/20 to-emerald-500/20 border-2 border-cyan-400/30 rounded-xl p-6 mt-8">
+                <h4 className="text-white text-xl font-bold mb-3">🎯 Al finalizar, tu hijo tendrá:</h4>
+                <div className="grid md:grid-cols-2 gap-3 text-slate-300">
+                  <div className="flex items-start gap-2">
+                    <span className="text-green-400">✓</span>
+                    <span>10 proyectos reales en su portafolio</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-green-400">✓</span>
+                    <span>15+ herramientas de IA dominadas</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-green-400">✓</span>
+                    <span>Capacidad de crear apps, videos, música</span>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <span className="text-green-400">✓</span>
+                    <span>Habilidades para estudiar 3x más eficiente</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Methodology Section */}
+        <Card className="bg-white/5 border-cyan-500/20 backdrop-blur-xl mb-16">
+          <CardHeader>
+            <CardTitle className="text-3xl text-cyan-400 flex items-center gap-3">
+              <span className="text-4xl">🎯</span>
+              Metodología 100% Práctica: Aprenden Creando
             </CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {[
-                "1. Introducción a la IA",
-                "2. IA Conversacional",
-                "3. Generación de Imágenes",
-                "4. Creación de Video",
-                "5. Producción Musical",
-                "6. Síntesis de Voz",
-                "7. Estudio Eficiente con IA",
-                "8. Presentaciones Profesionales",
-                "9. Ética y Seguridad Digital",
-              ].map((module, idx) => (
-                <div
-                  key={idx}
-                  className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg p-4 text-center font-semibold text-white hover:scale-105 transition-transform duration-300"
-                >
-                  {module}
+            <div className="space-y-8">
+              <p className="text-slate-300 text-lg leading-relaxed">
+                En InnovaKids, <span className="text-white font-bold">tu hijo NO mira videos pasivamente</span>. Desde el minuto 1, construye proyectos reales que puede mostrar a amigos y familia.
+              </p>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-xl p-6 hover:scale-105 transition-transform">
+                  <div className="text-4xl mb-4">🛠️</div>
+                  <h4 className="text-white font-bold text-lg mb-2">1. Crear</h4>
+                  <p className="text-slate-400 text-sm">Cada clase termina con un proyecto funcional: app, videojuego, música o video generado con IA</p>
                 </div>
-              ))}
+
+                <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-xl p-6 hover:scale-105 transition-transform">
+                  <div className="text-4xl mb-4">🧪</div>
+                  <h4 className="text-white font-bold text-lg mb-2">2. Experimentar</h4>
+                  <p className="text-slate-400 text-sm">Prueban, fallan, ajustan. Aprenden resolviendo problemas reales, no memorizando teoría</p>
+                </div>
+
+                <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-xl p-6 hover:scale-105 transition-transform">
+                  <div className="text-4xl mb-4">🎓</div>
+                  <h4 className="text-white font-bold text-lg mb-2">3. Dominar</h4>
+                  <p className="text-slate-400 text-sm">Al final tienen 10 proyectos en su portafolio. Habilidades que usan inmediatamente en su escuela</p>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border-l-4 border-cyan-400 rounded-r-xl p-6">
+                <p className="text-white text-lg font-semibold flex items-start gap-3">
+                  <span className="text-2xl">✨</span>
+                  <span><span className="text-cyan-400">Lo que hace diferente a InnovaKids:</span> Mientras otros cursos enseñan SOBRE IA, nosotros enseñamos a CREAR CON IA. Tu hijo no será espectador, será constructor.</span>
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 mt-8">
+                <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-6">
+                  <h4 className="text-red-400 font-bold text-lg mb-3 flex items-center gap-2">
+                    <span>❌</span> Cursos Tradicionales
+                  </h4>
+                  <ul className="space-y-2 text-slate-400">
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-1">•</span>
+                      <span>Miran videos grabados (aburrido)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-1">•</span>
+                      <span>Ejercicios repetitivos sin creatividad</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-1">•</span>
+                      <span>Nada tangible para mostrar</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-red-500 mt-1">•</span>
+                      <span>Olvidan todo en semanas</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-6">
+                  <h4 className="text-green-400 font-bold text-lg mb-3 flex items-center gap-2">
+                    <span>✅</span> Metodología InnovaKids
+                  </h4>
+                  <ul className="space-y-2 text-slate-300">
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-1">•</span>
+                      <span>Crean proyectos desde minuto 1</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-1">•</span>
+                      <span>Cada clase = algo funcionando</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-1">•</span>
+                      <span>Portafolio de 10 proyectos reales</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-green-500 mt-1">•</span>
+                      <span>Usan habilidades inmediatamente</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </CardContent>
         </Card>
@@ -276,8 +485,8 @@ export default function BrochurePage() {
                     Reserva Flexible
                   </p>
                   <p className="text-slate-400 text-sm mb-4">Asegura tu cupo hoy</p>
-                  <div className="text-5xl font-bold text-white mb-2">$20 <span className="text-xl text-cyan-400">USD</span></div>
-                  <p className="text-slate-400 text-xs mb-6">Paga el resto ($177 USD) antes de iniciar las clases.</p>
+                  <div className="text-5xl font-bold text-white mb-2">$27 <span className="text-xl text-cyan-400">USD</span></div>
+                  <p className="text-slate-400 text-xs mb-6">Paga el resto ($240 USD) antes de iniciar las clases.</p>
                   <ul className="text-slate-300 text-sm space-y-2 mb-8">
                     <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-slate-500" /> Asegura tu lugar</li>
                     <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-slate-500" /> Acceso inmediato a comunidad</li>
@@ -285,7 +494,7 @@ export default function BrochurePage() {
                   </ul>
                 </div>
                 <Button asChild size="lg" variant="outline" className="w-full border-white/20 text-white hover:bg-white/10">
-                  <Link href="/pagar?option=reserve">Reservar por $20 USD</Link>
+                  <Link href="/pagar?option=reserve">Reservar por $27 USD</Link>
                 </Button>
               </div>
             </div>
