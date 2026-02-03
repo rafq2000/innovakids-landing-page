@@ -105,11 +105,11 @@ export default function ClasesIANinos() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-bold text-white mb-3">💻 Tecnología Práctica</h4>
+                    <h4 className="font-bold text-white mb-3">💻 Tecnología & Futuro</h4>
                     <ul className="space-y-2 text-sm text-gray-300">
-                      <li>• Vibe Coding: Programación asistida</li>
-                      <li>• Prompt Engineering avanzado</li>
-                      <li>• Vibe Voice: Clonación de voz</li>
+                      <li>• Vibe Coding: Programación de Videojuegos</li>
+                      <li>• Vibe Study: Hackea tus tareas y exámenes</li>
+                      <li>• Vibe Voice: Clonación de voz con IA</li>
                       <li>• Cyber Ethics y seguridad digital</li>
                     </ul>
                   </div>
