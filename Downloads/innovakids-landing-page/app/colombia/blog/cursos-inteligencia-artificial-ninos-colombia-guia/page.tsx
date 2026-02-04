@@ -279,23 +279,23 @@ export default function GuiaCursosIAColombia() {
                 {[
                   {
                     week: "Semana 1-2",
-                    project: "Comic Ilustrado con IA",
-                    desc: "Un comic de 8-12 páginas con historia original usando ChatGPT y Midjourney.",
+                    project: "Vibe IA & Art",
+                    desc: "Chatbots propios con GPT-4 y Comics ilustrados con Midjourney.",
                   },
                   {
                     week: "Semana 3-4",
-                    project: "Canción Original",
-                    desc: "Una canción completa con letra, melodía y producción profesional usando Suno AI.",
+                    project: "Vibe Music & Voice",
+                    desc: "Composición musical con Suno AI y clonación de voz.",
                   },
                   {
                     week: "Semana 5-6",
-                    project: "Video Editado Profesionalmente",
-                    desc: "Video de 2-3 min con calidad YouTuber usando Runway y Descript.",
+                    project: "Vibe Coding & Cinema",
+                    desc: "Programación de videojuegos y creación de películas con IA.",
                   },
                   {
                     week: "Semana 7-10",
-                    project: "App o Chatbot Funcional",
-                    desc: "Una aplicación o chatbot que resuelve un problema real.",
+                    project: "Vibe Study & Final Project",
+                    desc: "Hackeo de estudio y creación de una Startup o Identidad Digital completa.",
                   },
                 ].map((item, i) => (
                   <div key={i} className="flex gap-6 rounded-2xl bg-card p-6">

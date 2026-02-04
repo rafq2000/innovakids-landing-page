@@ -328,17 +328,19 @@ export default function GuiaCompletaPage() {
                   <h3 className="text-xl font-bold text-[#4DD0E1] mb-4">Primeras 4 clases:</h3>
                   <ul className="space-y-3 text-gray-300">
                     <li>
-                      <strong className="text-white">Clase 1:</strong> Crean su primer chatbot personalizado con ChatGPT
+                      <strong className="text-white">Clase 1-2:</strong> Vibe IA & Art (Chatbots y Comics)
                     </li>
                     <li>
-                      <strong className="text-white">Clase 2:</strong> Generan arte digital con Midjourney para su
-                      proyecto
+                      <strong className="text-white">Clase 3-4:</strong> Vibe Music & Voice (Canciones y Voz)
                     </li>
                     <li>
-                      <strong className="text-white">Clase 3:</strong> Componen una canción original con Suno AI
+                      <strong className="text-white">Clase 5-6:</strong> Vibe Cinema & Gen Art (Cine con IA)
                     </li>
                     <li>
-                      <strong className="text-white">Clase 4:</strong> Integran todo en una presentación interactiva
+                      <strong className="text-white">Clase 7-8:</strong> Vibe Coding & Study (Programación y Estudio)
+                    </li>
+                    <li>
+                      <strong className="text-white">Clase 9-10:</strong> Cyber Ethics & The Vibe Project
                     </li>
                   </ul>
                 </div>

@@ -224,14 +224,14 @@ export default function GuiaCompletaEspana() {
 
                 <div className="my-8 grid gap-4 md:grid-cols-2">
                   {[
-                    "Crear imágenes y arte digital con Midjourney y DALL-E",
-                    "Escribir historias y guiones con ChatGPT y Claude",
-                    "Componer música original con Suno AI",
-                    "Editar vídeos profesionales con Runway",
-                    "Programar aplicaciones con asistencia de IA",
-                    "Desarrollar videojuegos desde cero",
-                    "Construir chatbots personalizados",
-                    "Usar IA de forma ética y responsable",
+                    "Vibe IA: Chatbots inteligentes con GPT-4",
+                    "Vibe Art: Comics y Storytelling con Midjourney",
+                    "Vibe Music: Composición musical con Suno AI",
+                    "Vibe Cinema: Producción de video con Runway",
+                    "Vibe Coding: Programación de videojuegos con asistencia IA",
+                    "Vibe Study: Técnicas de estudio y productividad escolar",
+                    "Cyber Ethics: Seguridad y uso responsable",
+                    "The Vibe Project: Proyecto final de identidad digital",
                   ].map((skill, i) => (
                     <div key={i} className="flex items-start gap-2 rounded-lg bg-card p-4">
                       <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-[#C60B1E]" />

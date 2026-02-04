@@ -66,12 +66,13 @@ export default function CursosVenezuelaPage() {
                         </h2>
                         <div className="grid md:grid-cols-2 gap-6">
                             {[
-                                { emoji: "🎮", title: "Creación de Videojuegos", desc: "Diseña y programa juegos usando IA" },
-                                { emoji: "🎨", title: "Arte con IA", desc: "Genera imágenes, cómics y animaciones" },
-                                { emoji: "🎵", title: "Música con IA", desc: "Compone canciones originales" },
-                                { emoji: "💻", title: "Programación", desc: "Aprende a programar con asistencia de IA" },
-                                { emoji: "📚", title: "Estudio Inteligente", desc: "Usa IA para estudiar mejor" },
-                                { emoji: "🛡️", title: "Seguridad Digital", desc: "Identifica deepfakes y fake news" },
+                                { emoji: "🤖", title: "Vibe IA", desc: "Crea tu propio Chatbot Inteligente" },
+                                { emoji: "🎨", title: "Vibe Art", desc: "Genera arte digital y cómics increíbles" },
+                                { emoji: "🎵", title: "Vibe Music", desc: "Compón música original con IA" },
+                                { emoji: "💻", title: "Vibe Coding", desc: "Programa videojuegos y apps con IA" },
+                                { emoji: "🧠", title: "Vibe Study", desc: "Hackea tu escuela y tareas" },
+                                { emoji: "🎬", title: "Vibe Cinema", desc: "Produce videos de cine con IA" },
+                                { emoji: "🛡️", title: "Cyber Ethics", desc: "Seguridad digital y deepfakes" },
                             ].map((item, i) => (
                                 <div key={i} className="bg-white/5 rounded-xl p-6 border border-white/10">
                                     <span className="text-3xl mb-3 block">{item.emoji}</span>
