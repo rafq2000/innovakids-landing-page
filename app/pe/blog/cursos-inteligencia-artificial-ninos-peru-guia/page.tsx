@@ -150,12 +150,12 @@ export default function GuiaIANinosPeru() {
                 </p>
                 <div className="grid gap-4 md:grid-cols-2">
                   {[
-                    { emoji: "📚", title: "Creación de Comics con IA", tools: "ChatGPT, Midjourney" },
-                    { emoji: "🎵", title: "Composición Musical", tools: "Suno AI, Udio" },
-                    { emoji: "🎬", title: "Edición de Video con IA", tools: "Runway, CapCut" },
-                    { emoji: "📱", title: "Desarrollo de Apps", tools: "Cursor, Replit" },
-                    { emoji: "🤖", title: "Chatbots Personalizados", tools: "GPT-4, Make.com" },
-                    { emoji: "🎮", title: "Creación de Videojuegos", tools: "Phaser, GPT-4" },
+                    { emoji: "📚", title: "Vibe Art (Storytelling)", tools: "ChatGPT, Midjourney" },
+                    { emoji: "🎵", title: "Vibe Music", tools: "Suno AI, Udio" },
+                    { emoji: "🎬", title: "Vibe Cinema", tools: "Runway, CapCut" },
+                    { emoji: "💻", title: "Vibe Coding", tools: "Cursor, Replit" },
+                    { emoji: "🤖", title: "Vibe IA (Chatbots)", tools: "GPT-4, Make.com" },
+                    { emoji: "🧠", title: "Vibe Study", tools: "Perplexity, GPT-4o" },
                   ].map((project, i) => (
                     <div key={i} className="rounded-xl bg-muted/50 p-4">
                       <div className="mb-2 text-2xl">{project.emoji}</div>

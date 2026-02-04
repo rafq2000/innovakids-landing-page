@@ -180,16 +180,16 @@ export default function ArgentinaBlogGuiaPage() {
 
               <div className="grid md:grid-cols-2 gap-4 my-8">
                 {[
-                  "Chatbot personalizado con ChatGPT",
-                  "Arte digital profesional con Midjourney",
-                  "Canción original compuesta con IA",
-                  "App funcional sin código previo",
-                  "Videojuego completo",
-                  "Comic ilustrado con IA",
-                  "Video con efectos especiales",
-                  "Presentación tipo TED",
-                  "Análisis de datos con IA",
-                  "Startup presentada en Demo Day",
+                  "Chatbot con Vibe IA (ChatGPT)",
+                  "Arte digital con Vibe Art",
+                  "Canción original con Vibe Music",
+                  "Programación de juegos con Vibe Coding",
+                  "Avatar parlante (Digital Twin)",
+                  "Videos de cine con Vibe Cinema",
+                  "Técnicas de estudio (Vibe Study)",
+                  "Seguridad digital (Cyber Ethics)",
+                  "Comic ilustrado (Storytelling)",
+                  "Proyecto Final (The Vibe Project)",
                 ].map((proyecto, i) => (
                   <div key={i} className="flex items-center gap-3 bg-[#0f2744]/50 rounded-lg p-4">
                     <span className="text-[#75AADB]">✓</span>

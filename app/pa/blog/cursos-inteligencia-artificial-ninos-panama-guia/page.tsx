@@ -56,19 +56,22 @@ export default function BlogCursosIANinosPanama() {
               <h2>¿Qué Aprenden los Niños en un Curso de IA?</h2>
               <ul>
                 <li>
-                  <strong>ChatGPT y prompting:</strong> Comunicarse efectivamente con inteligencias artificiales
+                  <strong>Vibe IA (Chatbots):</strong> Asistentes virtuales con GPT-4
                 </li>
                 <li>
-                  <strong>Midjourney:</strong> Crear arte e ilustraciones con IA
+                  <strong>Vibe Art (Storytelling):</strong> Comics e historias ilustradas con Midjourney
                 </li>
                 <li>
-                  <strong>Programación asistida:</strong> Desarrollar apps con ayuda de IA
+                  <strong>Vibe Music:</strong> Canciones originales compuestas con Suno AI
                 </li>
                 <li>
-                  <strong>Creación de contenido:</strong> Videos, música, historias generadas con IA
+                  <strong>Vibe Coding:</strong> Videojuegos y apps reales con Cursor y Replit
                 </li>
                 <li>
-                  <strong>Pensamiento crítico:</strong> Evaluar y verificar información de IA
+                  <strong>Vibe Cinema:</strong> Producción de video y efectos con Runway
+                </li>
+                <li>
+                  <strong>Vibe Study:</strong> Técnicas de estudio y productividad escolar con IA
                 </li>
               </ul>
 

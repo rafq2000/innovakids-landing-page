@@ -207,37 +207,43 @@ export default function GuiaIANinosChile() {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-1 h-5 w-5 shrink-0 text-[#0039A6]" />
                   <span>
-                    <strong>Comics con IA:</strong> Historias ilustradas usando ChatGPT y Midjourney
+                    <strong>Vibe IA (Chatbots):</strong> Asistentes virtuales con GPT-4
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-1 h-5 w-5 shrink-0 text-[#0039A6]" />
                   <span>
-                    <strong>Música original:</strong> Canciones personalizadas con Suno AI
+                    <strong>Vibe Art (Storytelling):</strong> Comics e historias ilustradas con Midjourney
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-1 h-5 w-5 shrink-0 text-[#0039A6]" />
                   <span>
-                    <strong>Videos profesionales:</strong> Edición con efectos especiales usando Runway
+                    <strong>Vibe Music:</strong> Canciones originales compuestas con Suno AI
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-1 h-5 w-5 shrink-0 text-[#0039A6]" />
                   <span>
-                    <strong>Apps funcionales:</strong> Aplicaciones reales con Cursor y Replit
+                    <strong>Vibe Coding:</strong> Videojuegos y apps reales con Cursor y Replit
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-1 h-5 w-5 shrink-0 text-[#0039A6]" />
                   <span>
-                    <strong>Chatbots inteligentes:</strong> Asistentes virtuales con GPT-4
+                    <strong>Vibe Cinema:</strong> Producción de video y efectos con Runway
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle className="mt-1 h-5 w-5 shrink-0 text-[#0039A6]" />
                   <span>
-                    <strong>Videojuegos:</strong> Juegos desde cero con ayuda de IA
+                    <strong>Vibe Study:</strong> Técnicas de estudio y "hackeo" escolar con IA
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle className="mt-1 h-5 w-5 shrink-0 text-[#0039A6]" />
+                  <span>
+                    <strong>The Vibe Project:</strong> Proyecto final de identidad digital
                   </span>
                 </li>
               </ul>

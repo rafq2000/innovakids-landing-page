@@ -113,23 +113,25 @@ export default function GuiaIANinosLatinosUSA() {
 
               <ol>
                 <li>
-                  <strong>Comics ilustrados con IA</strong> - Usando ChatGPT para escribir historias y Midjourney para
-                  ilustrarlas
+                  <strong>Vibe IA (Chatbots)</strong> - Asistentes virtuales propios con GPT-4
                 </li>
                 <li>
-                  <strong>Música original</strong> - Componiendo canciones con Suno AI
+                  <strong>Vibe Art (Storytelling)</strong> - Comics e historias ilustradas con Midjourney
                 </li>
                 <li>
-                  <strong>Videos con efectos especiales</strong> - Editando con Runway y CapCut
+                  <strong>Vibe Music</strong> - Canciones originales compuestas con Suno AI
                 </li>
                 <li>
-                  <strong>Apps funcionales</strong> - Programando con asistencia de IA
+                  <strong>Vibe Coding</strong> - Programación de apps y juegos con Cursor y Replit
                 </li>
                 <li>
-                  <strong>Chatbots personalizados</strong> - Creando asistentes virtuales
+                  <strong>Vibe Cinema</strong> - Producción de video y efectos con Runway
                 </li>
                 <li>
-                  <strong>Videojuegos</strong> - Desarrollando juegos desde cero
+                  <strong>Vibe Study</strong> - Técnicas de estudio y productividad escolar con IA
+                </li>
+                <li>
+                  <strong>The Vibe Project</strong> - Proyecto final de identidad digital
                 </li>
               </ol>
 
