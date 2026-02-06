@@ -20,6 +20,8 @@ type PaymentOption =
   | "university"
   | "promo180"
   | "restante177"
+  | "promo27"
+  | "promo240"
 
 interface PaymentDetails {
   title: string
@@ -92,6 +94,16 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
     title: "Pago Restante del Programa",
     price: 177,
     description: "Completa tu inscripción - $177 USD restantes después de reserva",
+  },
+  promo27: {
+    title: "Promoción Especial",
+    price: 27,
+    description: "Pago único de $27 USD - Oferta por tiempo limitado",
+  },
+  promo240: {
+    title: "Programa Completo con Descuento",
+    price: 240,
+    description: "Pago único de $240 USD - Ahorra $27 sobre el precio regular",
   },
 }
 
