@@ -257,6 +257,109 @@ export default function BrochurePage() {
           </CardContent>
         </Card>
 
+        {/* Programa Explorer Completo - 10 Clases */}
+        <Card className="bg-white/5 border-purple-500/20 backdrop-blur-xl mb-16">
+          <CardHeader>
+            <CardTitle className="text-3xl text-purple-400 flex items-center gap-3">
+              <span className="text-4xl">🚀</span>
+              Programa Vibe Explorer: 10 Clases Completas
+            </CardTitle>
+            <p className="text-slate-300 text-lg mt-4">El programa completo para dominar todas las herramientas de IA = $267 USD</p>
+          </CardHeader>
+          <CardContent>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {[
+                {
+                  num: "1",
+                  title: "Vibe IA: Tu nuevo superpoder",
+                  desc: "Configuración completa de herramientas"
+                },
+                {
+                  num: "2",
+                  title: "Prompt Engineering",
+                  desc: "El arte de hablar con máquinas"
+                },
+                {
+                  num: "3",
+                  title: "Vibe Voice",
+                  desc: "Clonación de voz y narración con IA"
+                },
+                {
+                  num: "4",
+                  title: "Vibe Music",
+                  desc: "Composición musical con IA"
+                },
+                {
+                  num: "5",
+                  title: "Generative Art I",
+                  desc: "De la imaginación a la imagen"
+                },
+                {
+                  num: "6",
+                  title: "Generative Art II",
+                  desc: "Storytelling visual consistente"
+                },
+                {
+                  num: "7",
+                  title: "Vibe Coding",
+                  desc: "Programación de videojuegos y apps con IA"
+                },
+                {
+                  num: "8",
+                  title: "Vibe Study",
+                  desc: "Hackea tu escuela: estudio eficiente con IA"
+                },
+                {
+                  num: "9",
+                  title: "Cyber Ethics",
+                  desc: "Deepfakes y seguridad digital"
+                },
+                {
+                  num: "10",
+                  title: "The Vibe Project",
+                  desc: "Presentación final de identidad"
+                },
+              ].map((clase, idx) => (
+                <div
+                  key={idx}
+                  className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 border border-purple-500/30 rounded-lg p-5 hover:scale-105 transition-transform duration-300"
+                >
+                  <div className="flex items-start gap-3">
+                    <span className="text-3xl font-bold text-purple-400">#{clase.num}</span>
+                    <div>
+                      <h4 className="text-white font-bold text-lg">{clase.title}</h4>
+                      <p className="text-slate-400 text-sm mt-1">{clase.desc}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Summary */}
+            <div className="bg-gradient-to-r from-purple-500/20 to-emerald-500/20 border-2 border-purple-400/30 rounded-xl p-6 mt-8">
+              <h4 className="text-white text-xl font-bold mb-3">🎯 Al finalizar, tu hijo habrá creado:</h4>
+              <div className="grid md:grid-cols-2 gap-3 text-slate-300">
+                <div className="flex items-start gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>Su propio asistente IA configurado</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>Arte y videos generados con IA</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>Música original y su voz clonada</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-green-400">✓</span>
+                  <span>Videojuego y proyecto final de identidad</span>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Methodology Section */}
         <Card className="bg-white/5 border-cyan-500/20 backdrop-blur-xl mb-16">
           <CardHeader>
