@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, Users, Clock, Shield, Target } from "lucide-react"
+import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
   title: "Curso de IA para Niños en Costa Rica | Crea Apps y Videojuegos",
@@ -119,8 +120,15 @@ export default function CostaRicaHub() {
           </div>
         </section>
 
-        {/* KEY INFO */}
-        <section className="bg-muted/30 py-20 md:py-28">
+        {/* PROGRAMA COMPLETO - HORMOZI */}
+        <CountryProgramSection
+          countryName="Costa Rica"
+          primaryColor="#002B7F"
+          secondaryColor="#CE1126"
+        />
+
+        {/* RELATED PAGES */}
+        <section className="py-16">
           <div className="container mx-auto px-4">
             <div className="grid gap-8 md:grid-cols-3">
               <div className="text-center">

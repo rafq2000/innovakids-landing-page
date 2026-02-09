@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, ArrowRight } from "lucide-react"
+import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
   title: "Curso de IA para Niños en España | Crea Apps y Videojuegos",
@@ -126,8 +127,15 @@ export default function EspanaHub() {
           </div>
         </section>
 
-        {/* PROGRAMA RESUMEN */}
-        <section className="bg-muted/30 py-20">
+        {/* PROGRAMA COMPLETO - HORMOZI */}
+        <CountryProgramSection
+          countryName="España"
+          primaryColor="#C60B1E"
+          secondaryColor="#FFC400"
+        />
+
+        {/* INTERNAL LINKS */}
+        <section className="py-20">
           <div className="container mx-auto px-4">
             <h2 className="mb-12 text-center text-3xl font-bold">¿Qué Incluye el Programa?</h2>
 

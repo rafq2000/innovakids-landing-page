@@ -5,6 +5,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Button } from "@/components/ui/button"
 import { MapPin, Users, Clock, Shield } from "lucide-react"
 import Link from "next/link"
+import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
     title: "Curso de IA para Niños en Nicaragua | Crea Apps y Videojuegos",
@@ -107,6 +108,13 @@ export default function NicaraguaHubPage() {
                         </div>
                     </div>
                 </section>
+
+                {/* PROGRAMA COMPLETO - HORMOZI */}
+                <CountryProgramSection
+                    countryName="Nicaragua"
+                    primaryColor="#0067C6"
+                    secondaryColor="#FFFFFF"
+                />
 
                 <section className="py-24 bg-background">
                     <div className="container mx-auto px-6 max-w-3xl text-center">

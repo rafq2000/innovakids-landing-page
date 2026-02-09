@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, Users, Clock, Shield, ArrowRight, Globe } from "lucide-react"
+import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
   title: "Curso de IA y Vibe Coding para Niños Latinos en USA | InnovaKids",
@@ -167,8 +168,15 @@ export default function USAHub() {
           </div>
         </section>
 
-        {/* PRICING QUICK */}
-        <section className="py-20">
+        {/* PROGRAMA COMPLETO - HORMOZI */}
+        <CountryProgramSection
+          countryName="USA - Latinos"
+          primaryColor="#002868"
+          secondaryColor="#BF0A30"
+        />
+
+        {/* MAIN PAGES */}
+        <section className="bg-muted/30 py-16">
           <div className="container mx-auto px-4 text-center">
             <h2 className="mb-8 text-3xl font-bold">Inversión: $267 USD</h2>
             <p className="mx-auto mb-8 max-w-xl text-muted-foreground">

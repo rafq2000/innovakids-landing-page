@@ -5,6 +5,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Button } from "@/components/ui/button"
 import { MapPin, Users, Clock, Shield } from "lucide-react"
 import Link from "next/link"
+import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
   title: "Curso de IA para Niños en México | Crea Apps y Videojuegos",
@@ -122,6 +123,13 @@ export default function MexicoHubPage() {
             </div>
           </div>
         </section>
+
+        {/* PROGRAMA COMPLETO - HORMOZI */}
+        <CountryProgramSection
+          countryName="México"
+          primaryColor="#006341"
+          secondaryColor="#CE1126"
+        />
 
         {/* POR QUÉ INNOVAKIDS MÉXICO */}
         <section className="py-24 bg-background">
