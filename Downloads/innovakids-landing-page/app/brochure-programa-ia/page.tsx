@@ -85,8 +85,8 @@ export default function BrochurePage() {
               {[
                 { icon: "🚀", label: "Inicio", value: "16 de Febrero, 2026" },
                 { icon: "💻", label: "Plataforma", value: "Clases en vivo vía Zoom" },
-                { icon: "⏱️", label: "Duración", value: "5 semanas (10 clases exclusivas)" },
-                { icon: "📆", label: "Frecuencia", value: "2 clases por semana (60 min c/u)" },
+                { icon: "⏱️", label: "Duración", value: "5 semanas (5 clases)" },
+                { icon: "📆", label: "Frecuencia", value: "1 clase por semana (60 min c/u)" },
                 { icon: "👦", label: "Edad", value: "8 a 14 años" },
               ].map((item, idx) => (
                 <div key={idx} className="flex items-start gap-3 text-slate-300">
@@ -129,98 +129,128 @@ export default function BrochurePage() {
           <CardHeader>
             <CardTitle className="text-3xl text-cyan-400 flex items-center gap-3">
               <span className="text-4xl">📖</span>
-              Las 10 Clases del Programa Vibe Explorer
+              Programa Vibe Starter: 5 Clases
             </CardTitle>
-            <p className="text-slate-300 text-lg mt-4">Cada clase = 1 proyecto real que tu hijo puede mostrar</p>
+            <p className="text-slate-300 text-lg mt-4">2 clases obligatorias + 2 electivas + Proyecto final = $147 USD</p>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                {
-                  num: "1",
-                  title: "Vibe IA: Tu nuevo superpoder",
-                  desc: "Configuración completa de herramientas"
-                },
-                {
-                  num: "2",
-                  title: "Prompt Engineering",
-                  desc: "El arte de hablar con máquinas"
-                },
-                {
-                  num: "3",
-                  title: "Vibe Voice",
-                  desc: "Clonación de voz y narración con IA"
-                },
-                {
-                  num: "4",
-                  title: "Vibe Music",
-                  desc: "Composición musical con IA"
-                },
-                {
-                  num: "5",
-                  title: "Generative Art I",
-                  desc: "De la imaginación a la imagen"
-                },
-                {
-                  num: "6",
-                  title: "Generative Art II",
-                  desc: "Storytelling visual consistente"
-                },
-                {
-                  num: "7",
-                  title: "Vibe Coding",
-                  desc: "Programación de videojuegos y apps con IA"
-                },
-                {
-                  num: "8",
-                  title: "Vibe Study",
-                  desc: "Hackea tu escuela: estudio eficiente con IA"
-                },
-                {
-                  num: "9",
-                  title: "Cyber Ethics",
-                  desc: "Deepfakes y seguridad digital"
-                },
-                {
-                  num: "10",
-                  title: "The Vibe Project",
-                  desc: "Presentación final de identidad"
-                },
-              ].map((clase, idx) => (
-                <div
-                  key={idx}
-                  className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg p-5 hover:scale-105 transition-transform duration-300"
-                >
+            {/* OBLIGATORIAS */}
+            <div className="mb-8">
+              <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                <span className="bg-red-500 text-white text-xs px-2 py-1 rounded">OBLIGATORIAS</span>
+                Las 2 primeras clases son base para todo el programa
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[
+                  {
+                    num: "1",
+                    title: "Vibe IA: Tu nuevo superpoder",
+                    desc: "Configuración completa de herramientas"
+                  },
+                  {
+                    num: "2",
+                    title: "Prompt Engineering",
+                    desc: "El arte de hablar con máquinas"
+                  },
+                ].map((clase, idx) => (
+                  <div
+                    key={idx}
+                    className="bg-gradient-to-br from-red-500/20 to-orange-500/10 border border-red-500/30 rounded-lg p-5 hover:scale-105 transition-transform duration-300"
+                  >
+                    <div className="flex items-start gap-3">
+                      <span className="text-3xl font-bold text-red-400">#{clase.num}</span>
+                      <div>
+                        <h4 className="text-white font-bold text-lg">{clase.title}</h4>
+                        <p className="text-slate-400 text-sm mt-1">{clase.desc}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* ELECTIVAS */}
+            <div className="mb-8">
+              <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                <span className="bg-cyan-500 text-slate-900 text-xs px-2 py-1 rounded">ELIGE 2</span>
+                Escoge 2 clases según los intereses de tu hijo
+              </h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                {[
+                  {
+                    title: "Vibe Voice",
+                    desc: "Clonación de voz y narración con IA"
+                  },
+                  {
+                    title: "Vibe Music",
+                    desc: "Composición musical con IA"
+                  },
+                  {
+                    title: "Generative Art I",
+                    desc: "De la imaginación a la imagen"
+                  },
+                  {
+                    title: "Generative Art II",
+                    desc: "Storytelling visual consistente"
+                  },
+                  {
+                    title: "Vibe Coding",
+                    desc: "Programación de videojuegos con IA"
+                  },
+                  {
+                    title: "Vibe Study",
+                    desc: "Hackea tu escuela: estudio eficiente"
+                  },
+                  {
+                    title: "Cyber Ethics",
+                    desc: "Deepfakes y seguridad digital"
+                  },
+                ].map((clase, idx) => (
+                  <div
+                    key={idx}
+                    className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-lg p-4 hover:scale-105 transition-transform duration-300"
+                  >
+                    <h4 className="text-white font-bold">{clase.title}</h4>
+                    <p className="text-slate-400 text-sm mt-1">{clase.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* PROYECTO FINAL */}
+            <div className="mb-8">
+              <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
+                <span className="bg-green-500 text-white text-xs px-2 py-1 rounded">OBLIGATORIO</span>
+                Proyecto Final
+              </h4>
+              <div className="grid grid-cols-1 gap-4">
+                <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/10 border border-green-500/30 rounded-lg p-5 hover:scale-105 transition-transform duration-300">
                   <div className="flex items-start gap-3">
-                    <span className="text-3xl font-bold text-cyan-400">#{clase.num}</span>
+                    <span className="text-3xl font-bold text-green-400">#5</span>
                     <div>
-                      <h4 className="text-white font-bold text-lg">{clase.title}</h4>
-                      <p className="text-slate-400 text-sm mt-1">{clase.desc}</p>
+                      <h4 className="text-white font-bold text-lg">The Vibe Project</h4>
+                      <p className="text-slate-400 text-sm mt-1">Presentación final de identidad - Tu hijo presenta su proyecto ante padres y compañeros</p>
                     </div>
                   </div>
                 </div>
-              ))}
+              </div>
             </div>
 
             {/* Summary */}
             <div className="bg-gradient-to-r from-cyan-500/20 to-emerald-500/20 border-2 border-cyan-400/30 rounded-xl p-6 mt-8">
-              <h4 className="text-white text-xl font-bold mb-3">🎯 Al finalizar, tu hijo habrá creado:</h4>
-              <div className="grid md:grid-cols-2 gap-3 text-slate-300">
-                <div className="flex items-start gap-2">
-                  <span className="text-green-400">✓</span>
-                  <span>Su propio asistente IA configurado</span>
+              <h4 className="text-white text-xl font-bold mb-3">🎯 Estructura del Programa:</h4>
+              <div className="grid md:grid-cols-3 gap-3 text-slate-300">
+                <div className="flex items-center gap-2 bg-red-500/10 rounded-lg p-3">
+                  <span className="text-2xl">📚</span>
+                  <span><strong>2 Obligatorias:</strong> Vibe IA + Prompt Engineering</span>
                 </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-green-400">✓</span>
-                  <span>Arte y videos generados con IA</span>
+                <div className="flex items-center gap-2 bg-cyan-500/10 rounded-lg p-3">
+                  <span className="text-2xl">🎨</span>
+                  <span><strong>2 Electivas:</strong> A elección del estudiante</span>
                 </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-green-400">✓</span>
-                  <span>Música original y su voz clonada</span>
-                </div>
-                <div className="flex items-start gap-2">
-                  <span className="text-green-400">✓</span>
-                  <span>Avatar 3D y proyecto final de identidad</span>
+                <div className="flex items-center gap-2 bg-green-500/10 rounded-lg p-3">
+                  <span className="text-2xl">🏆</span>
+                  <span><strong>1 Proyecto Final:</strong> The Vibe Project</span>
                 </div>
               </div>
             </div>
@@ -257,7 +287,7 @@ export default function BrochurePage() {
                 <div className="bg-gradient-to-br from-cyan-500/10 to-blue-500/10 border border-cyan-500/30 rounded-xl p-6 hover:scale-105 transition-transform">
                   <div className="text-4xl mb-4">🎓</div>
                   <h4 className="text-white font-bold text-lg mb-2">3. Dominar</h4>
-                  <p className="text-slate-400 text-sm">Al final tienen 10 proyectos en su portafolio. Habilidades que usan inmediatamente en su escuela</p>
+                  <p className="text-slate-400 text-sm">Al final tienen 5 proyectos en su portafolio. Habilidades que usan inmediatamente en su escuela</p>
                 </div>
               </div>
 
@@ -308,7 +338,7 @@ export default function BrochurePage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500 mt-1">•</span>
-                      <span>Portafolio de 10 proyectos reales</span>
+                      <span>Portafolio de 5 proyectos reales</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <span className="text-green-500 mt-1">•</span>
@@ -410,47 +440,49 @@ export default function BrochurePage() {
           </CardHeader>
           <CardContent>
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Opción 1: Pago Completo */}
+              {/* Opción 1: Programa Starter */}
               <div className="flex flex-col justify-between p-8 bg-gradient-to-br from-cyan-500/10 to-blue-500/5 border border-cyan-400/30 rounded-xl backdrop-blur-xl relative overflow-hidden group hover:border-cyan-400/60 transition-all">
                 <div className="absolute top-0 right-0 bg-cyan-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-bl-lg">
-                  MEJOR VALOR
+                  RECOMENDADO
                 </div>
                 <div>
                   <p className="text-white font-bold text-xl mb-2 flex items-center gap-2">
                     <span className="text-2xl">⚡</span>
-                    Programa Completo
+                    Programa Vibe Starter
                   </p>
-                  <p className="text-slate-400 text-sm mb-4">Inversión Única</p>
-                  <div className="text-5xl font-bold text-white mb-2">$267 <span className="text-xl text-cyan-400">USD</span></div>
+                  <p className="text-slate-400 text-sm mb-4">5 clases personalizadas</p>
+                  <div className="text-5xl font-bold text-white mb-2">$147 <span className="text-xl text-cyan-400">USD</span></div>
                   <ul className="text-slate-300 text-sm space-y-2 mb-8 mt-6">
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-400" /> 10 Clases en Vivo</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-red-400" /> 2 Clases Obligatorias (base)</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-400" /> 2 Clases Electivas (a elección)</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-green-400" /> 1 Proyecto Final (The Vibe Project)</li>
                     <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-400" /> Grabaciones de por vida</li>
                     <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-400" /> Certificado Incluido</li>
                   </ul>
                 </div>
                 <Button asChild size="lg" className="w-full bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold">
-                  <Link href="/pagar?option=explorer">Inscribir Ahora ($267)</Link>
+                  <Link href="/pagar?option=starter">Inscribir Ahora ($147)</Link>
                 </Button>
               </div>
 
-              {/* Opción 2: Reserva */}
+              {/* Opción 2: Programa Completo */}
               <div className="flex flex-col justify-between p-8 bg-white/5 border border-white/10 rounded-xl backdrop-blur-xl hover:bg-white/10 transition-all">
                 <div>
                   <p className="text-white font-bold text-xl mb-2 flex items-center gap-2">
-                    <span className="text-2xl">🔒</span>
-                    Reserva Flexible
+                    <span className="text-2xl">🚀</span>
+                    Programa Explorer Completo
                   </p>
-                  <p className="text-slate-400 text-sm mb-4">Asegura tu cupo hoy</p>
-                  <div className="text-5xl font-bold text-white mb-2">$27 <span className="text-xl text-cyan-400">USD</span></div>
-                  <p className="text-slate-400 text-xs mb-6">Paga el resto ($240 USD) antes de iniciar las clases.</p>
-                  <ul className="text-slate-300 text-sm space-y-2 mb-8">
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-slate-500" /> Asegura tu lugar</li>
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-slate-500" /> Acceso inmediato a comunidad</li>
-                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-slate-500" /> Cancela si cambias de opinión</li>
+                  <p className="text-slate-400 text-sm mb-4">Las 10 clases del programa</p>
+                  <div className="text-5xl font-bold text-white mb-2">$267 <span className="text-xl text-cyan-400">USD</span></div>
+                  <ul className="text-slate-300 text-sm space-y-2 mb-8 mt-6">
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-400" /> 10 Clases Completas</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-400" /> Grabaciones de por vida</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-400" /> Certificado Incluido</li>
+                    <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-400" /> Acceso comunidad exclusiva</li>
                   </ul>
                 </div>
                 <Button asChild size="lg" variant="outline" className="w-full border-white/20 text-white hover:bg-white/10">
-                  <Link href="/pagar?option=reserve">Reservar por $27 USD</Link>
+                  <Link href="/pagar?option=explorer">Inscribir Programa Completo ($267)</Link>
                 </Button>
               </div>
             </div>
