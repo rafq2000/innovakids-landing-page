@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { ArrowRight, CheckCircle, Target } from "lucide-react"
+import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
   title: "Curso de IA para Niños en Colombia | Online en Vivo",
@@ -173,6 +174,13 @@ export default function ColombiaHub() {
             </div>
           </div>
         </section>
+
+        {/* PROGRAMA COMPLETO - HORMOZI */}
+        <CountryProgramSection
+          countryName="Colombia"
+          primaryColor="#003893"
+          secondaryColor="#FCD116"
+        />
 
         {/* CITIES MAP */}
         <section className="bg-muted/30 py-20 md:py-28">

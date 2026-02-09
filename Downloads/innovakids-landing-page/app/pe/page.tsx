@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, ArrowRight, Users, Clock, Shield, Zap } from "lucide-react"
+import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
   title: "Curso de IA para Niños en Perú | Crea Apps y Videojuegos",
@@ -137,6 +138,13 @@ export default function PeruHub() {
             </div>
           </div>
         </section>
+
+        {/* PROGRAMA COMPLETO - HORMOZI */}
+        <CountryProgramSection
+          countryName="Perú"
+          primaryColor="#D91023"
+          secondaryColor="#FFFFFF"
+        />
 
         {/* PAGES NAVIGATION */}
         <section className="bg-muted/30 py-20 md:py-28">

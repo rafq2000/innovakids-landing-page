@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { CheckCircle, ArrowRight, MessageCircle, MapPin } from "lucide-react"
 import WhatsAppButton from "@/components/whatsapp-button"
+import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
   title: "Curso de IA para Niños en El Salvador | Crea Apps y Videojuegos",
@@ -119,6 +120,13 @@ export default function ElSalvadorHubPage() {
             </div>
           </div>
         </section>
+
+        {/* PROGRAMA COMPLETO - HORMOZI */}
+        <CountryProgramSection
+          countryName="El Salvador"
+          primaryColor="#0F47AF"
+          secondaryColor="#FFFFFF"
+        />
 
         {/* CTA */}
         <section className="py-20 bg-[#0F47AF]">
