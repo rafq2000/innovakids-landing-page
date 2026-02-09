@@ -145,32 +145,31 @@ export default function ChileHub() {
                 PROGRAMA COMPLETO 2025
               </span>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                InnovaKids LATAM: 2 Módulos × 12 Clases
+                Módulo Explorer: 10 Clases Maestras
               </h2>
               <p className="max-w-2xl mx-auto text-muted-foreground">
-                El programa más completo de IA para niños en Latinoamérica. Tu hijo pasará de consumidor a creador en solo 6 semanas.
+                Cada módulo consta de 10 clases maestras de 60 minutos. Tu hijo pasará de consumidor a creador.
               </p>
             </div>
 
-            {/* MÓDULOS */}
+            {/* CLASES */}
             <div className="grid md:grid-cols-2 gap-8 mb-16">
-              {/* MÓDULO 1 */}
+              {/* CLASES 1-5 */}
               <div className="rounded-3xl bg-card border border-border p-8">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="h-12 w-12 rounded-full bg-[#0039A6] flex items-center justify-center text-white font-bold">1</div>
+                  <div className="h-12 w-12 rounded-full bg-[#0039A6] flex items-center justify-center text-white font-bold">1-5</div>
                   <div>
-                    <h3 className="text-xl font-bold">Módulo Fundamentos IA</h3>
-                    <p className="text-sm text-muted-foreground">Clases 1-6 • Domina las herramientas</p>
+                    <h3 className="text-xl font-bold">Fundamentos Creativos</h3>
+                    <p className="text-sm text-muted-foreground">Generativa, Prompts y Creatividad</p>
                   </div>
                 </div>
                 <ul className="space-y-3">
                   {[
-                    { clase: "1", nombre: "Vibe IA", desc: "Primer chatbot personalizado con GPT-4" },
-                    { clase: "2", nombre: "Vibe Art", desc: "Comics e historias ilustradas con Midjourney" },
-                    { clase: "3", nombre: "Vibe Music", desc: "Canción original con Suno AI" },
-                    { clase: "4", nombre: "Vibe Cinema", desc: "Video profesional con Runway" },
-                    { clase: "5", nombre: "Vibe Voice", desc: "Clonación de voz con ElevenLabs" },
-                    { clase: "6", nombre: "Vibe Gen Art", desc: "Arte generativo avanzado" },
+                    { clase: "1", nombre: "Vibe IA", desc: "Tu nuevo superpoder (Configuración)" },
+                    { clase: "2", nombre: "Prompt Engineering", desc: "El arte de hablar con máquinas" },
+                    { clase: "3", nombre: "Vibe Voice", desc: "Clonación de voz y narración" },
+                    { clase: "4", nombre: "Vibe Music", desc: "Composición musical con IA" },
+                    { clase: "5", nombre: "Generative Art I", desc: "De la imaginación a la imagen" },
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="h-6 w-6 rounded-full bg-[#D52B1E]/20 text-[#D52B1E] text-xs flex items-center justify-center font-bold shrink-0">{item.clase}</span>
@@ -183,23 +182,22 @@ export default function ChileHub() {
                 </ul>
               </div>
 
-              {/* MÓDULO 2 */}
+              {/* CLASES 6-10 */}
               <div className="rounded-3xl bg-card border border-[#D52B1E]/30 p-8">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="h-12 w-12 rounded-full bg-[#D52B1E] flex items-center justify-center text-white font-bold">2</div>
+                  <div className="h-12 w-12 rounded-full bg-[#D52B1E] flex items-center justify-center text-white font-bold">6-10</div>
                   <div>
-                    <h3 className="text-xl font-bold">Módulo Aplicación Práctica</h3>
-                    <p className="text-sm text-muted-foreground">Clases 7-12 • Crea proyectos reales</p>
+                    <h3 className="text-xl font-bold">Aplicación Práctica</h3>
+                    <p className="text-sm text-muted-foreground">Proyectos reales y presentación</p>
                   </div>
                 </div>
                 <ul className="space-y-3">
                   {[
-                    { clase: "7", nombre: "Vibe Coding", desc: "Programación de videojuegos con Cursor" },
-                    { clase: "8", nombre: "Vibe Study", desc: "Hackeo escolar y técnicas de estudio" },
+                    { clase: "6", nombre: "Generative Art II", desc: "Storytelling visual consistente" },
+                    { clase: "7", nombre: "Vibe Coding", desc: "Programación de Videojuegos con IA" },
+                    { clase: "8", nombre: "Vibe Study", desc: "Hackea tu escuela (Técnicas de estudio)" },
                     { clase: "9", nombre: "Cyber Ethics", desc: "Deepfakes y seguridad digital" },
-                    { clase: "10", nombre: "Startup Lab", desc: "Crea tu primera startup con IA" },
-                    { clase: "11", nombre: "Portafolio", desc: "Identidad digital profesional" },
-                    { clase: "12", nombre: "The Vibe Project", desc: "Presentación final ante padres" },
+                    { clase: "10", nombre: "The Vibe Project", desc: "Presentación final de identidad" },
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <span className="h-6 w-6 rounded-full bg-[#0039A6]/20 text-[#0039A6] text-xs flex items-center justify-center font-bold shrink-0">{item.clase}</span>
@@ -218,13 +216,13 @@ export default function ChileHub() {
               <h3 className="text-2xl font-bold text-center mb-8">Lo Que Recibes (Valor Real)</h3>
               <ul className="space-y-4 mb-8">
                 {[
-                  { item: "12 Clases en Vivo (90 min c/u)", valor: "$480" },
+                  { item: "10 Clases en Vivo (60 min c/u)", valor: "$400" },
                   { item: "Acceso a 20+ Herramientas IA Premium", valor: "$300" },
-                  { item: "Portafolio Profesional de 12 Proyectos", valor: "$200" },
+                  { item: "Portafolio Profesional de 10 Proyectos", valor: "$200" },
                   { item: "Certificado de Completación", valor: "$50" },
                   { item: "Comunidad Discord Exclusiva", valor: "$97" },
                   { item: "Soporte WhatsApp Ilimitado", valor: "$150" },
-                  { item: "Grabaciones de Todas las Clases", valor: "$120" },
+                  { item: "Grabaciones de Todas las Clases", valor: "$100" },
                   { item: "Grupos de Máximo 5 Niños", valor: "Invaluable" },
                 ].map((item, i) => (
                   <li key={i} className="flex items-center justify-between border-b border-white/20 pb-3">
@@ -237,13 +235,14 @@ export default function ChileHub() {
                 ))}
               </ul>
               <div className="text-center border-t border-white/20 pt-6">
-                <p className="text-white/70 mb-2">Valor Total: <span className="line-through">$1,397 USD</span></p>
+                <p className="text-white/70 mb-2">Valor Total: <span className="line-through">$1,297 USD</span></p>
                 <p className="text-4xl font-bold text-[#4ADE80] mb-2">Tu Inversión: $267 USD</p>
                 <p className="text-sm text-white/60">Pago único • Garantía 10 días • Webpay o Transferencia</p>
               </div>
             </div>
           </div>
         </section>
+
 
         {/* BENEFICIOS */}
         <section className="bg-muted/30 py-20 md:py-28">
