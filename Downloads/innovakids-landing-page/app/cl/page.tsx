@@ -3,7 +3,7 @@ import { getCountryConfig } from "@/lib/countries-config"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 
-const countryCode = "pr"
+const countryCode = "cl"
 
 export async function generateMetadata(): Promise<Metadata> {
     const country = getCountryConfig(countryCode)
