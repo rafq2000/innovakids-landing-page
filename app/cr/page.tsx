@@ -6,9 +6,9 @@ import { MapPin, Users, Clock, Shield, Target } from "lucide-react"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños en Costa Rica | Crea Apps y Videojuegos",
+  title: "Curso de IA para Niños y Adolescentes en Costa Rica | Clases Online en Vivo",
   description:
-    "Niños ticos de 8-14 crean arte, música y apps con IA. Horario San José, pago en Colones o USD. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+    "Niños y adolescentes ticos de 8-17 años crean apps, arte y música con IA. Horario San José, pago en Colones o USD. Máx 5 por grupo. Garantía 10 días.",
   keywords: [
     "curso ia niños costa rica",
     "clases programación ia san jose",
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     "vibe coding costa rica",
   ],
   openGraph: {
-    title: "Curso de IA para Niños en Costa Rica | InnovaKids",
-    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Costa Rica. Clases en vivo horario San José. Proyectos reales.",
+    title: "Curso de IA para Niños y Adolescentes en Costa Rica | InnovaKids",
+    description: "527 graduados en 9 países. Tu hijo crea apps y videojuegos con IA. Grupos de 5, horario Costa Rica.",
     url: "https://www.innovakidslatam.com/cr",
     locale: "es_CR",
     siteName: "InnovaKids Costa Rica",
@@ -149,7 +149,7 @@ export default function CostaRicaHub() {
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#CE1126]/20">
                   <Shield className="h-8 w-8 text-[#002B7F]" />
                 </div>
-                <h3 className="mb-2 text-xl font-bold">Garantía 10 Días</h3>
+                <h3 className="mb-2 text-xl font-bold">Garantía 10 días.10 Días</h3>
                 <p className="text-muted-foreground">Devolución completa si no estás satisfecho</p>
               </div>
             </div>
@@ -201,6 +201,29 @@ export default function CostaRicaHub() {
           </div>
         </section>
       </main>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids Costa Rica",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Costa Rica. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/cr",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

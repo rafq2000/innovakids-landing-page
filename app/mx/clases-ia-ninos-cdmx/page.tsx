@@ -9,7 +9,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Clases de IA para Niños en CDMX | Online en Vivo",
   description:
-    "¿Vives en CDMX? Tu hijo puede crear apps y videojuegos con IA desde casa (Polanco, Roma, Condesa, Coyoacán). Horarios flexibles tardes y sábados. Garantía total.",
+    "¿Vives en CDMX? Tu hijo puede crear apps y videojuegos con IA desde casa (Polanco, Roma, Condesa, Coyoacán). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
   keywords: [
     "clases ia niños cdmx",
     "curso programación niños ciudad de mexico",
@@ -77,7 +77,7 @@ export default function CDMXPage() {
             </h1>
 
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-              El mejor curso de IA para niños de 8-14 años en Ciudad de México. Online en vivo con horarios adaptados a
+              El mejor curso de IA para niños de 8-17 años en Ciudad de México. Online en vivo con horarios adaptados a
               GMT-6.
             </p>
 
@@ -89,7 +89,7 @@ export default function CDMXPage() {
                 <Clock className="w-5 h-5 text-[#4DD0E1]" /> 10 clases
               </span>
               <span className="flex items-center gap-2">
-                <Shield className="w-5 h-5 text-[#4DD0E1]" /> Garantía 10 días
+                <Shield className="w-5 h-5 text-[#4DD0E1]" /> Garantía 10 días.10 días
               </span>
             </div>
 
@@ -215,7 +215,7 @@ export default function CDMXPage() {
                 {[
                   "Grupos máx. 5 niños",
                   "Horarios CDMX",
-                  "Garantía 10 días",
+                  "Garantía 10 días.10 días",
                   "Certificado oficial",
                   "Soporte WhatsApp",
                   "Grabaciones incluidas",

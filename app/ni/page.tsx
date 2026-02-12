@@ -8,9 +8,9 @@ import Link from "next/link"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-    title: "Curso de IA para Niños en Nicaragua | Crea Apps y Videojuegos",
+    title: "Curso de IA para Niños y Adolescentes en Nicaragua | Online en Vivo",
     description:
-        "Niños nicaragüenses de 8-14 crean arte, música y apps con IA. Horario Managua. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+    "Niños y adolescentes nicaragüenses de 8-17 años crean apps, arte y música con IA. Horario Managua. Máx 5 por grupo. Garantía 10 días.",
     keywords: [
         "curso ia niños nicaragua",
         "clases programación ia managua",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
         "vibe coding nicaragua",
     ],
     openGraph: {
-        title: "Curso de IA para Niños en Nicaragua | InnovaKids",
-        description: "527 alumnos graduados. La primera escuela de Vibe Coding en Nicaragua. Clases en vivo horario local. Proyectos reales.",
+        title: "Curso de IA para Niños y Adolescentes en Nicaragua | InnovaKids",
+        description: "La primera escuela de Vibe Coding en Nicaragua. Clases en vivo, grupos reducidos.",
         url: "https://www.innovakidslatam.com/ni",
         locale: "es_NI",
         siteName: "InnovaKids Nicaragua",
@@ -59,7 +59,7 @@ export default function NicaraguaHubPage() {
                         </h1>
 
                         <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-                            La primera escuela de Vibe Coding para niños de 8-14 años.
+                            La primera escuela de Vibe Coding para niños de 8-17 años.
                             <strong className="text-white"> Clases 100% online</strong> desde cualquier departamento del país.
                         </p>
 
@@ -74,7 +74,7 @@ export default function NicaraguaHubPage() {
                             </div>
                             <div className="flex items-center gap-2 text-gray-400">
                                 <Shield className="w-5 h-5 text-primary" />
-                                <span>Garantía 10 días</span>
+                                <span>Garantía 10 días.10 días</span>
                             </div>
                         </div>
 
@@ -134,6 +134,29 @@ export default function NicaraguaHubPage() {
                 </section>
             </main>
             <Footer />
-        </>
-    )
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids Nicaragua",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Nicaragua. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/ni",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
+    </>
+  )
 }

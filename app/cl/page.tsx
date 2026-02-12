@@ -5,9 +5,9 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, Users, Clock, Shield, Target, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños en Chile | Aprende Creando",
+  title: "Curso de IA para Niños y Adolescentes en Chile | Clases Online en Vivo",
   description:
-    "Niños chilenos de 8-14 crean arte, música y apps con IA. Horario Santiago, pago con Webpay o Transferencia. 10 clases en vivo, máx 5 por grupo. Garantía total ⭐",
+    "Niños y adolescentes chilenos de 8-17 años crean arte, música y apps con IA. Horario Santiago. Pago con Webpay o Transferencia. 10 clases en vivo, máx 5 por grupo. Garantía 10 días.",
   keywords: [
     "curso ia niños chile",
     "clases programación ia santiago",
@@ -237,7 +237,7 @@ export default function ChileHub() {
               <div className="text-center border-t border-white/20 pt-6">
                 <p className="text-white/70 mb-2">Valor Total: <span className="line-through">$1,297 USD</span></p>
                 <p className="text-4xl font-bold text-[#4ADE80] mb-2">Tu Inversión: $267 USD</p>
-                <p className="text-sm text-white/60">Pago único • Garantía 10 días • Webpay o Transferencia</p>
+                <p className="text-sm text-white/60">Pago único • Garantía 10 días.10 días • Webpay o Transferencia</p>
               </div>
             </div>
           </div>
@@ -268,7 +268,7 @@ export default function ChileHub() {
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#D52B1E]/20">
                   <Shield className="h-8 w-8 text-[#0039A6]" />
                 </div>
-                <h3 className="mb-2 text-xl font-bold">Garantía 10 Días</h3>
+                <h3 className="mb-2 text-xl font-bold">Garantía 10 días.10 Días</h3>
                 <p className="text-muted-foreground">Devolución completa si no estás satisfecho</p>
               </div>
               <div className="text-center">
@@ -378,7 +378,7 @@ export default function ChileHub() {
                 <CheckCircle className="h-4 w-4" /> Sin compromiso
               </span>
               <span className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4" /> Garantía 10 días
+                <CheckCircle className="h-4 w-4" /> Garantía 10 días.10 días
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle className="h-4 w-4" /> Grupos máx 5 niños
@@ -387,6 +387,29 @@ export default function ChileHub() {
           </div>
         </section>
       </main>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids Chile",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Chile. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/cl",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

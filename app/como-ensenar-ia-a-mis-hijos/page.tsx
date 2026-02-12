@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Cómo Enseñar IA a Mis Hijos en 2026: Guía Completa para Padres | Innovakids",
   description:
-    "Descubre cómo enseñar inteligencia artificial a tus hijos de 8-14 años con métodos probados. Guía paso a paso para padres en Latinoamérica sobre educación en IA para niños.",
+    "Descubre cómo enseñar inteligencia artificial a tus hijos de 8-17 años con métodos probados. Guía paso a paso para padres en Latinoamérica sobre educación en IA para niños.",
   keywords: [
     "cómo enseñar ia a mis hijos",
     "cómo aprender ia",
@@ -95,7 +95,7 @@ export default function ComoEnsenarIAPage() {
             <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
               <h3 className="text-2xl font-bold text-cyan-400 mb-4">Momento Perfecto</h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Entre 8-14 años es la edad ideal. Tienen la madurez cognitiva necesaria y la curiosidad para aprender
+                Entre 8-17 años es la edad ideal. Tienen la madurez cognitiva necesaria y la curiosidad para aprender
                 sin miedo.
               </p>
             </div>
@@ -281,7 +281,7 @@ export default function ComoEnsenarIAPage() {
               <div className="w-16 h-16 rounded-full bg-pink-500 flex items-center justify-center mb-6">
                 <Shield className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Garantía Total</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Garantía 10 días.Total</h3>
               <p className="text-gray-300 text-lg">
                 Si después de la primera clase no estás satisfecho, te devolvemos el 100%. Sin preguntas, sin
                 complicaciones.
@@ -323,7 +323,7 @@ export default function ComoEnsenarIAPage() {
             <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
               <h3 className="text-2xl font-bold text-white mb-4">¿Qué edad es la ideal para empezar?</h3>
               <p className="text-gray-300 text-lg">
-                Entre 8-14 años es perfecto. Tienen la madurez cognitiva para entender conceptos abstractos y la
+                Entre 8-17 años es perfecto. Tienen la madurez cognitiva para entender conceptos abstractos y la
                 creatividad para aplicarlos sin límites.
               </p>
             </div>

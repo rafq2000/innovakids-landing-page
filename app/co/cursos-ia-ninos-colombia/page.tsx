@@ -1,39 +1,39 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import { CurriculumSection } from "@/components/curriculum-section"
+import { PricingSection } from "@/components/pricing-section"
 import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, CheckCircle, Zap, Target } from "lucide-react"
-import { CurriculumSection } from "@/components/curriculum-section"
-import { PricingSection } from "@/components/pricing-section"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso Inteligencia Artificial Niños y Adolescentes Chile | Vibe Coding",
+  title: "Curso Inteligencia Artificial Niños y Adolescentes Colombia | Vibe Coding",
   description:
-    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía 10 días.de 10 días.",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. 8-17 años. Garantía 10 días.de 10 días.",
   keywords: [
-    "curso inteligencia artificial niños chile",
-    "cursos de tecnologia para niños chile",
-    "aprender ia chile",
+    "curso inteligencia artificial niños colombia",
+    "cursos de tecnologia para niños colombia",
+    "aprender ia colombia",
     "innovakids cursos",
   ],
   openGraph: {
-    title: "Curso Inteligencia Artificial Niños y Adolescentes Chile | Vibe Coding",
-    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Chile para niños de 8-17 años.",
-    url: "https://www.innovakidslatam.com/cl/cursos-ia-ninos-chile",
-    locale: "es_CL",
-    siteName: "InnovaKids Chile",
+    title: "Curso Inteligencia Artificial Niños y Adolescentes Colombia | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Colombia para niños y adolescentes de 8-17 años.",
+    url: "https://www.innovakidslatam.com/co/cursos-ia-ninos-colombia",
+    locale: "es_CO",
+    siteName: "InnovaKids",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.innovakidslatam.com/cl/cursos-ia-ninos-chile",
+    canonical: "https://www.innovakidslatam.com/co/cursos-ia-ninos-colombia",
   },
 }
 
-export default function CursosIANinosChile() {
+export default function CursosIANinosColombia() {
   const whatsappNumber = "56964754219"
   const whatsappMessage = encodeURIComponent(
-    "Hola! Me interesa el curso de IA para niños en Chile. Quisiera agendar una evaluación gratuita.",
+    "Hola! Me interesa el curso de IA para niños en Colombia. Quisiera agendar una evaluación gratuita.",
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
   const calendlyLink = "https://calendly.com/innovakids/evaluacion"
@@ -44,22 +44,21 @@ export default function CursosIANinosChile() {
       <WhatsAppButton />
 
       <main className="min-h-screen bg-background">
-        {/* HERO SECTION CHILE */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-[#D52B1E] via-[#0039A6] to-[#FFFFFF] py-24 md:py-32">
+        {/* HERO SECTION COLOMBIA */}
+        <section className="relative overflow-hidden bg-gradient-to-br from-[#FCD116] via-[#003893] to-[#CE1126] py-24 md:py-32">
           <div className="absolute inset-0 bg-black/40" />
           <div className="container relative z-10 mx-auto px-4 text-center text-white">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 backdrop-blur-sm">
-              <span className="text-2xl">🇨🇱</span>
-              <span className="font-medium">Chile</span>
+              <span className="text-2xl">🇨🇴</span>
+              <span className="font-medium">Colombia</span>
             </div>
 
             <h1 className="mx-auto max-w-4xl text-3xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl px-2">
-              Curso de Vibe Coding: Aprende a Crear con IA
-              <span className="block text-2xl md:text-4xl mt-4 text-white/90">Para Niños en Chile</span>
+              Curso de Vibe Coding: Aprende a Crear Apps en Colombia
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">
-              Tu hijo aprenderá a crear con IA desde la primera clase. ChatGPT, Midjourney, apps y más. Edad: 8-17 años.
+              No es solo código, es Vibe Coding. Tu hijo creará apps, videojuegos y arte usando Inteligencia Artificial desde la primera clase.
             </p>
 
             {/* Stats */}
@@ -83,7 +82,7 @@ export default function CursosIANinosChile() {
               <Link
                 href={calendlyLink}
                 target="_blank"
-                className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-[#0039A6] shadow-2xl transition-all hover:scale-105 hover:shadow-white/25"
+                className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-4 text-lg font-bold text-[#003893] shadow-2xl transition-all hover:scale-105 hover:shadow-white/25"
               >
                 <Target className="h-5 w-5" />
                 Agendar Evaluación GRATIS
@@ -91,7 +90,7 @@ export default function CursosIANinosChile() {
               <Link
                 href={whatsappLink}
                 target="_blank"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-transparent px-8 py-4 text-lg font-bold text-white transition-all hover:bg-white hover:text-[#0039A6]"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-transparent px-8 py-4 text-lg font-bold text-white transition-all hover:bg-white hover:text-[#003893]"
               >
                 Consultar por WhatsApp
               </Link>
@@ -105,16 +104,16 @@ export default function CursosIANinosChile() {
         <section className="py-20 md:py-28">
           <div className="container mx-auto px-4">
             <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">
-              ¿Por Qué Familias Chilenas Eligen InnovaKids?
+              ¿Por Qué Familias Colombianas Eligen InnovaKids?
             </h2>
             <p className="mx-auto mb-16 max-w-2xl text-center text-muted-foreground">
-              Somos el programa de IA para niños más completo de Chile
+              Somos el programa de IA para niños más completo de Colombia
             </p>
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
               <div className="rounded-2xl bg-card/50 p-6 text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#D52B1E]/20">
-                  <Users className="h-8 w-8 text-[#0039A6]" />
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#FCD116]/20">
+                  <Users className="h-8 w-8 text-[#003893]" />
                 </div>
                 <h3 className="mb-2 text-xl font-bold">Grupos de Máximo 5 Niños</h3>
                 <p className="text-muted-foreground">
@@ -123,18 +122,18 @@ export default function CursosIANinosChile() {
               </div>
 
               <div className="rounded-2xl bg-card/50 p-6 text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#D52B1E]/20">
-                  <Clock className="h-8 w-8 text-[#0039A6]" />
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#FCD116]/20">
+                  <Clock className="h-8 w-8 text-[#003893]" />
                 </div>
-                <h3 className="mb-2 text-xl font-bold">Horarios Zona Chile</h3>
+                <h3 className="mb-2 text-xl font-bold">Horarios Zona Colombia</h3>
                 <p className="text-muted-foreground">
-                  Horarios diseñados para familias chilenas (GMT-4). Nos adaptamos a tu agenda.
+                  Horarios diseñados para familias colombianas (GMT-5). Nos adaptamos a tu agenda.
                 </p>
               </div>
 
               <div className="rounded-2xl bg-card/50 p-6 text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#D52B1E]/20">
-                  <Shield className="h-8 w-8 text-[#0039A6]" />
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#FCD116]/20">
+                  <Shield className="h-8 w-8 text-[#003893]" />
                 </div>
                 <h3 className="mb-2 text-xl font-bold">Garantía 10 días.10 Días</h3>
                 <p className="text-muted-foreground">
@@ -143,12 +142,12 @@ export default function CursosIANinosChile() {
               </div>
 
               <div className="rounded-2xl bg-card/50 p-6 text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#D52B1E]/20">
-                  <Zap className="h-8 w-8 text-[#0039A6]" />
+                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#FCD116]/20">
+                  <Zap className="h-8 w-8 text-[#003893]" />
                 </div>
                 <h3 className="mb-2 text-xl font-bold">100% Online en Vivo</h3>
                 <p className="text-muted-foreground">
-                  Clases en vivo desde cualquier ciudad de Chile. Santiago, Viña, Concepción y más.
+                  Clases en vivo desde cualquier ciudad de Colombia. Bogotá, Medellín, Cali y más.
                 </p>
               </div>
             </div>
@@ -164,34 +163,34 @@ export default function CursosIANinosChile() {
         {/* TESTIMONIALS */}
         <section className="bg-muted/30 py-20 md:py-28">
           <div className="container mx-auto px-4">
-            <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">Lo Que Dicen Familias Chilenas</h2>
+            <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">Lo Que Dicen Familias Colombianas</h2>
             <p className="mx-auto mb-16 max-w-2xl text-center text-muted-foreground">
-              Testimonios reales de papás en Santiago, Viña del Mar, Concepción y más
+              Testimonios reales de padres en Bogotá, Medellín, Cali y más
             </p>
 
             <div className="grid gap-8 md:grid-cols-3">
               {[
                 {
-                  name: "Francisca Muñoz",
-                  location: "Santiago - Las Condes",
-                  child: "Mamá de Tomás (11 años)",
-                  text: "Tomás creó su primera app en 4 semanas. Como ingeniera quedé impresionada con el nivel. Los profes son muy secos y el contenido está súper actualizado.",
+                  name: "Carolina Rodríguez",
+                  location: "Bogotá - Chapinero",
+                  child: "Madre de Santiago (10 años)",
+                  text: "Santiago creó su primera app en 4 semanas. Como desarrolladora quedé impresionada con el nivel. Los profes son muy bacanos y el contenido actualizado.",
                 },
                 {
-                  name: "Rodrigo Valenzuela",
-                  location: "Viña del Mar",
-                  child: "Papá de Catalina (12 años)",
-                  text: "La Cata pasaba todo el día en TikTok. Ahora usa IA para crear sus propios videos y hasta diseñó stickers para vender. InnovaKids transformó su pasión.",
+                  name: "Andrés Gómez",
+                  location: "Medellín - El Poblado",
+                  child: "Padre de Mariana (12 años)",
+                  text: "Mariana pasaba todo el día en TikTok. Ahora usa IA para crear sus propios videos y hasta diseñó stickers para vender. InnovaKids transformó su pasión.",
                 },
                 {
-                  name: "Carolina Sepúlveda",
-                  location: "Concepción",
-                  child: "Mamá de Matías (9 años)",
-                  text: "Como profe pensé que sería muy técnico para el Mati. Me equivoqué. La metodología es perfecta para su edad. Aprende creando, jugando.",
+                  name: "Roberto Martínez",
+                  location: "Cali - Norte",
+                  child: "Padre de Sofía (9 años)",
+                  text: "Como ingeniero pensé que sería muy técnico para Sofía. Me equivoqué. La metodología es perfecta para su edad. Aprende creando, jugando.",
                 },
               ].map((testimonial, i) => (
                 <div key={i} className="rounded-2xl bg-card p-6">
-                  <div className="mb-4 flex text-[#D52B1E]">
+                  <div className="mb-4 flex text-[#FCD116]">
                     {[...Array(5)].map((_, j) => (
                       <Star key={j} className="h-5 w-5 fill-current" />
                     ))}
@@ -212,7 +211,7 @@ export default function CursosIANinosChile() {
         <section className="py-20 md:py-28">
           <div className="container mx-auto px-4">
             <h2 className="mb-4 text-center text-3xl font-bold md:text-4xl">
-              Preguntas Frecuentes de Familias en Chile
+              Preguntas Frecuentes de Familias en Colombia
             </h2>
             <p className="mx-auto mb-16 max-w-2xl text-center text-muted-foreground">
               Resolvemos tus dudas antes de inscribir
@@ -222,11 +221,11 @@ export default function CursosIANinosChile() {
               {[
                 {
                   q: "¿Las clases son presenciales o en línea?",
-                  a: "Todas las clases son 100% online en vivo. Tu hijo puede participar desde cualquier ciudad de Chile: Santiago, Viña del Mar, Concepción, Valparaíso, Antofagasta, etc. Solo necesita computador e internet.",
+                  a: "Todas las clases son 100% online en vivo. Tu hijo puede participar desde cualquier ciudad de Colombia: Bogotá, Medellín, Cali, Barranquilla, Cartagena, etc. Solo necesita computador e internet.",
                 },
                 {
-                  q: "¿Los horarios son en zona horaria Chile?",
-                  a: "Sí. Todos los horarios están adaptados a la zona horaria de Chile (GMT-4). Nos adaptamos a tu agenda, con opciones entre semana después del colegio y fines de semana.",
+                  q: "¿Los horarios son en zona horaria Colombia?",
+                  a: "Sí. Todos los horarios están adaptados a la zona horaria de Colombia (GMT-5). Nos adaptamos a tu agenda, con opciones entre semana después del colegio y fines de semana.",
                 },
                 {
                   q: "¿Cuántos niños hay por clase?",
@@ -241,8 +240,8 @@ export default function CursosIANinosChile() {
                   a: "El programa completo tiene un valor de $497 USD, pero actualmente tenemos oferta de lanzamiento 2026 por $267 USD (60% de descuento). Incluye 10 clases, portafolio web, todos los bonos y garantía de 10 días. Puedes reservar con solo $50 USD.",
                 },
                 {
-                  q: "¿Tienen eventos presenciales en Chile?",
-                  a: "Próximamente estaremos organizando talleres y eventos presenciales en las principales ciudades de Chile. Por ahora todas las clases son 100% online en vivo.",
+                  q: "¿Tienen eventos presenciales en Colombia?",
+                  a: "Próximamente estaremos organizando talleres y eventos presenciales en las principales ciudades de Colombia. Por ahora todas las clases son 100% online en vivo.",
                 },
               ].map((faq, i) => (
                 <div key={i} className="rounded-2xl bg-card p-6">
@@ -254,59 +253,20 @@ export default function CursosIANinosChile() {
           </div>
         </section>
 
-        {/* INTERNAL LINKS */}
-        <section className="bg-muted/30 py-16">
-          <div className="container mx-auto px-4">
-            <h2 className="mb-8 text-center text-2xl font-bold">También Disponible en Otros Países</h2>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link
-                href="/mx/cursos-ia-ninos-mexico"
-                className="rounded-full bg-card px-6 py-3 transition-all hover:bg-primary hover:text-primary-foreground"
-              >
-                🇲🇽 México
-              </Link>
-              <Link
-                href="/co/cursos-ia-ninos-colombia"
-                className="rounded-full bg-card px-6 py-3 transition-all hover:bg-primary hover:text-primary-foreground"
-              >
-                🇨🇴 Colombia
-              </Link>
-              <Link
-                href="/ar/cursos-ia-chicos-argentina"
-                className="rounded-full bg-card px-6 py-3 transition-all hover:bg-primary hover:text-primary-foreground"
-              >
-                🇦🇷 Argentina
-              </Link>
-              <Link
-                href="/pe/cursos-ia-ninos-peru"
-                className="rounded-full bg-card px-6 py-3 transition-all hover:bg-primary hover:text-primary-foreground"
-              >
-                🇵🇪 Perú
-              </Link>
-              <Link
-                href="/es/cursos-ia-ninos-espana"
-                className="rounded-full bg-card px-6 py-3 transition-all hover:bg-primary hover:text-primary-foreground"
-              >
-                🇪🇸 España
-              </Link>
-            </div>
-          </div>
-        </section>
-
         {/* FINAL CTA */}
-        <section className="bg-gradient-to-br from-[#0039A6] to-[#001d53] py-20 md:py-28">
+        <section className="bg-gradient-to-br from-[#003893] to-[#001d4a] py-20 md:py-28">
           <div className="container mx-auto px-4 text-center text-white">
             <h2 className="mb-4 text-3xl font-bold md:text-4xl">Dale a Tu Hijo la Ventaja del Futuro</h2>
             <p className="mx-auto mb-10 max-w-2xl text-lg text-white/80">
-              Niños de Santiago, Viña del Mar, Concepción y todo Chile ya están creando proyectos increíbles con IA. Tu
-              hijo puede ser el siguiente.
+              Niños de Bogotá, Medellín, Cali y toda Colombia ya están creando proyectos increíbles con IA. Tu hijo
+              puede ser el siguiente.
             </p>
 
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Link
                 href={calendlyLink}
                 target="_blank"
-                className="inline-flex items-center gap-2 rounded-full bg-[#D52B1E] px-8 py-4 text-lg font-bold text-white shadow-2xl transition-all hover:scale-105"
+                className="inline-flex items-center gap-2 rounded-full bg-[#FCD116] px-8 py-4 text-lg font-bold text-[#003893] shadow-2xl transition-all hover:scale-105"
               >
                 <Target className="h-5 w-5" />
                 Agendar Evaluación Gratuita
@@ -314,7 +274,7 @@ export default function CursosIANinosChile() {
               <Link
                 href={whatsappLink}
                 target="_blank"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-transparent px-8 py-4 text-lg font-bold text-white transition-all hover:bg-white hover:text-[#0039A6]"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-transparent px-8 py-4 text-lg font-bold text-white transition-all hover:bg-white hover:text-[#003893]"
               >
                 Consultar por WhatsApp
               </Link>
@@ -330,10 +290,64 @@ export default function CursosIANinosChile() {
               <span className="flex items-center gap-2">
                 <CheckCircle className="h-4 w-4" /> Grupos máx 5 niños
               </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle className="h-4 w-4" /> $267 USD programa completo
+              </span>
+            </div>
+          </div>
+        </section>
+
+        {/* INTERNAL LINKS */}
+        <section className="py-16">
+          <div className="container mx-auto px-4 text-center">
+            <h3 className="mb-6 text-xl font-bold">Explora más sobre InnovaKids Colombia</h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link href="/co" className="text-primary hover:underline">
+                InnovaKids Colombia
+              </Link>
+              <Link href="/co/clases-ia-ninos-bogota" className="text-primary hover:underline">
+                Clases en Bogotá
+              </Link>
+              <Link
+                href="/co/blog/cursos-inteligencia-artificial-ninos-colombia-guia"
+                className="text-primary hover:underline"
+              >
+                Guía Completa Cursos IA
+              </Link>
             </div>
           </div>
         </section>
       </main>
+
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Course",
+            name: "Curso de Inteligencia Artificial para Niños y Adolescentes - Colombia",
+            description:
+              "Curso de IA para niños y adolescentes de 8-17 años en Colombia. 10 clases en vivo, grupos de máximo 5 alumnos, garantía 10 días.",
+            provider: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            offers: {
+              "@type": "Offer",
+              price: "267",
+              priceCurrency: "USD",
+              availability: "https://schema.org/InStock",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

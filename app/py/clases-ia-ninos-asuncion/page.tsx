@@ -9,7 +9,7 @@ import WhatsAppButton from "@/components/whatsapp-button"
 export const metadata: Metadata = {
   title: "Clases de IA para Niños en Asunción | Online en Vivo",
   description:
-    "¿Vives en Asunción? Tu hijo puede crear apps y videojuegos con IA desde casa (Villa Morra, Carmelitas). Horarios flexibles tardes y sábados. Garantía total.",
+    "¿Vives en Asunción? Tu hijo puede crear apps y videojuegos con IA desde casa (Villa Morra, Carmelitas). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
   keywords: [
     "clases ia niños asuncion",
     "curso programación niños villa morra",
@@ -66,7 +66,7 @@ export default function AsuncionPage() {
 
               <div className="bg-[#D52B1E]/10 rounded-2xl p-6 max-w-xl mx-auto">
                 <p className="text-lg font-semibold text-[#D52B1E]">💰 $267 USD - 10 Clases</p>
-                <p className="text-muted-foreground">Garantía de satisfacción 10 días • Máx 5 niños por grupo</p>
+                <p className="text-muted-foreground">Garantía 10 días.de satisfacción 10 días • Máx 5 niños por grupo</p>
               </div>
             </div>
           </div>

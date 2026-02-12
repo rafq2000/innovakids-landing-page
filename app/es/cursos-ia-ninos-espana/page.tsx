@@ -7,9 +7,9 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Users, Clock, Shield, Star, CheckCircle, Zap, Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso Inteligencia Artificial Niños España | Vibe Coding",
+  title: "Curso Inteligencia Artificial Niños y Adolescentes España | Vibe Coding",
   description:
-    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía 10 días.de 10 días.",
   keywords: [
     "curso inteligencia artificial niños españa",
     "cursos de tecnologia para niños españa",
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     "innovakids cursos",
   ],
   openGraph: {
-    title: "Curso Inteligencia Artificial Niños España | Vibe Coding",
-    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de España para niños de 8-14 años.",
+    title: "Curso Inteligencia Artificial Niños y Adolescentes España | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de España para niños de 8-17 años.",
     url: "https://www.innovakidslatam.com/es/cursos-ia-ninos-espana",
     locale: "es_ES",
     siteName: "InnovaKids España",
@@ -58,7 +58,7 @@ export default function CursosIANinosEspana() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">
-              Tu hijo aprenderá a crear con IA desde la primera clase. ChatGPT, Midjourney, apps y más. Edad: 8-14 años.
+              Tu hijo aprenderá a crear con IA desde la primera clase. ChatGPT, Midjourney, apps y más. Edad: 8-17 años.
             </p>
 
             {/* Stats */}
@@ -135,7 +135,7 @@ export default function CursosIANinosEspana() {
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#C60B1E]/20">
                   <Shield className="h-8 w-8 text-[#C60B1E]" />
                 </div>
-                <h3 className="mb-2 text-xl font-bold">Garantía 10 Días</h3>
+                <h3 className="mb-2 text-xl font-bold">Garantía 10 días.10 Días</h3>
                 <p className="text-muted-foreground">
                   Si no estás 100% satisfecho, te devolvemos tu dinero. Sin preguntas.
                 </p>

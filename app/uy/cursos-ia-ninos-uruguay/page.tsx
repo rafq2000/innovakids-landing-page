@@ -10,9 +10,9 @@ import { Footer } from "@/components/footer"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso Inteligencia Artificial Niños Uruguay | Vibe Coding",
+  title: "Curso Inteligencia Artificial Niños y Adolescentes Uruguay | Vibe Coding",
   description:
-    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía 10 días.de 10 días.",
   keywords: [
     "curso inteligencia artificial niños uruguay",
     "cursos de tecnologia para niños uruguay",
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     "innovakids cursos",
   ],
   openGraph: {
-    title: "Curso Inteligencia Artificial Niños Uruguay | Vibe Coding",
-    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Uruguay para niños de 8-14 años.",
+    title: "Curso Inteligencia Artificial Niños y Adolescentes Uruguay | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Uruguay para niños de 8-17 años.",
     url: "https://www.innovakidslatam.com/uy/cursos-ia-ninos-uruguay",
     locale: "es_UY",
     siteName: "InnovaKids Uruguay",
@@ -48,7 +48,7 @@ const jsonLd = {
       "@type": "Course",
       name: "Curso de Inteligencia Artificial para Niños - Uruguay",
       description:
-        "Curso de IA para niños de 8-14 años en Uruguay. 10 clases en vivo con grupos de máximo 5 alumnos. Aprenden ChatGPT, Midjourney, creación de apps y proyectos reales.",
+        "Curso de IA para niños de 8-17 años en Uruguay. 10 clases en vivo con grupos de máximo 5 alumnos. Aprenden ChatGPT, Midjourney, creación de apps y proyectos reales.",
       provider: {
         "@type": "Organization",
         name: "InnovaKids",
@@ -147,7 +147,7 @@ export default function UruguayCursosIAPage() {
 
               <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
                 Tu hijo aprenderá a <strong className="text-white">crear con IA</strong> desde la primera clase.
-                ChatGPT, Midjourney, apps y más. Edad: 8-14 años. 🇺🇾
+                ChatGPT, Midjourney, apps y más. Edad: 8-17 años. 🇺🇾
               </p>
 
               {/* Stats */}
@@ -179,7 +179,7 @@ export default function UruguayCursosIAPage() {
               {/* Trust Badges */}
               <div className="flex flex-wrap justify-center gap-6 pt-8 text-sm text-gray-400">
                 <span className="flex items-center gap-2">
-                  <Shield className="w-4 h-4 text-green-400" /> Garantía 10 días
+                  <Shield className="w-4 h-4 text-green-400" /> Garantía 10 días.10 días
                 </span>
                 <span className="flex items-center gap-2">
                   <Users className="w-4 h-4 text-[#0038A8]" /> Grupos de 5 niños
@@ -436,7 +436,7 @@ export default function UruguayCursosIAPage() {
               <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 mb-8">
                 <div className="flex items-center justify-center gap-3 text-green-400">
                   <Shield className="w-6 h-6" />
-                  <span className="text-xl font-bold">Garantía de 10 Días</span>
+                  <span className="text-xl font-bold">Garantía 10 días.de 10 Días</span>
                 </div>
                 <p className="text-gray-400 mt-2">
                   Si no quedás satisfecho, te devolvemos el 100% de tu dinero. Sin preguntas.
@@ -537,7 +537,7 @@ export default function UruguayCursosIAPage() {
                 Reservar Clase Demo GRATIS
               </Button>
             </Link>
-            <p className="text-gray-500 text-sm mt-6">Sin compromiso • Cupos limitados • Garantía 10 días</p>
+            <p className="text-gray-500 text-sm mt-6">Sin compromiso • Cupos limitados • Garantía 10 días.10 días</p>
           </div>
         </section>
       </main>

@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
     title: "Clases de IA para Niños en San Juan | Online en Vivo",
     description:
-        "¿Vives en San Juan? Tu hijo puede crear apps y videojuegos con IA desde casa (Condado, Miramar, Viejo San Juan). Horarios flexibles tardes y sábados. Garantía total.",
+        "¿Vives en San Juan? Tu hijo puede crear apps y videojuegos con IA desde casa (Condado, Miramar, Viejo San Juan). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
     keywords: [
         "clases ia niños san juan",
         "curso programación niños condado",

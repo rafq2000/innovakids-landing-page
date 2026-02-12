@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
     title: "Clases de IA para Niños en Malabo | Online en Vivo",
     description:
-        "¿Vives en Malabo? Tu hijo puede crear apps y videojuegos con IA desde casa (Malabo II, Ela Nguema). Horarios flexibles tardes y sábados. Garantía total.",
+        "¿Vives en Malabo? Tu hijo puede crear apps y videojuegos con IA desde casa (Malabo II, Ela Nguema). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
     keywords: [
         "clases ia niños malabo",
         "curso programación niños malabo ii",

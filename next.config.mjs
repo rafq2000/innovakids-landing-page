@@ -139,8 +139,23 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/co',
-        destination: '/colombia',
+        source: '/colombia',
+        destination: '/co',
+        permanent: true,
+      },
+      {
+        source: '/colombia/cursos-ia-ninos-colombia',
+        destination: '/co/cursos-ia-ninos-colombia',
+        permanent: true,
+      },
+      {
+        source: '/colombia/clases-ia-ninos-bogota',
+        destination: '/co/clases-ia-ninos-bogota',
+        permanent: true,
+      },
+      {
+        source: '/colombia/blog/:slug*',
+        destination: '/co/blog/:slug*',
         permanent: true,
       },
       {

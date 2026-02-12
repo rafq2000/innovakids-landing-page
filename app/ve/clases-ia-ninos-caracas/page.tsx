@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
     title: "Clases de IA para Niños en Caracas | Online en Vivo",
     description:
-        "¿Vives en Caracas? Tu hijo puede crear apps y videojuegos con IA desde casa (Chacao, Baruta, El Hatillo). Horarios flexibles tardes y sábados. Garantía total.",
+        "¿Vives en Caracas? Tu hijo puede crear apps y videojuegos con IA desde casa (Chacao, Baruta, El Hatillo). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
     keywords: [
         "clases ia niños caracas",
         "curso programación niños chacao",

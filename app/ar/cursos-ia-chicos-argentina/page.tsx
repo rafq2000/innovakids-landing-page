@@ -12,7 +12,7 @@ import { generateHreflangs } from "@/lib/seo-config"
 export const metadata: Metadata = {
   title: "Curso Inteligencia Artificial Chicos Argentina | Vibe Coding",
   description:
-    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía 10 días.de 10 días.",
   keywords: [
     "curso inteligencia artificial chicos argentina",
     "cursos de tecnologia para chicos argentina",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Curso Inteligencia Artificial Chicos Argentina | Vibe Coding",
-    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Argentina para chicos de 8-14 años.",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Argentina para chicos de 8-17 años.",
     url: "https://www.innovakidslatam.com/ar/cursos-ia-chicos-argentina",
     locale: "es_AR",
     siteName: "InnovaKids Argentina",
@@ -40,7 +40,7 @@ const jsonLd = {
       "@type": "Course",
       name: "Curso de Inteligencia Artificial #1 para Chicos - Argentina",
       description:
-        "El mejor curso de IA para chicos de 8-14 años en Argentina y Latinoamérica. 10 clases en vivo con grupos de máximo 5 alumnos. Aprenden ChatGPT, Midjourney, creación de apps y proyectos reales. Metodología 100% práctica.",
+        "El mejor curso de IA para chicos de 8-17 años en Argentina y Latinoamérica. 10 clases en vivo con grupos de máximo 5 alumnos. Aprenden ChatGPT, Midjourney, creación de apps y proyectos reales. Metodología 100% práctica.",
       provider: {
         "@type": "Organization",
         name: "InnovaKids",
@@ -107,7 +107,7 @@ export default function ArgentinaCursosIAPage() {
 
               <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
                 Tu hijo aprenderá a <strong className="text-white">crear con IA</strong> desde la primera clase.
-                ChatGPT, Midjourney, apps y más. Edad: 8-14 años. 🇦🇷
+                ChatGPT, Midjourney, apps y más. Edad: 8-17 años. 🇦🇷
               </p>
 
               {/* Stats */}
@@ -139,7 +139,7 @@ export default function ArgentinaCursosIAPage() {
               {/* Trust Badges */}
               <div className="flex flex-wrap justify-center gap-6 pt-8 text-sm text-gray-400">
                 <span className="flex items-center gap-2">
-                  <Shield className="w-4 h-4 text-green-400" /> Garantía 10 días
+                  <Shield className="w-4 h-4 text-green-400" /> Garantía 10 días.10 días
                 </span>
                 <span className="flex items-center gap-2">
                   <Users className="w-4 h-4 text-[#75AADB]" /> Grupos de 5 chicos

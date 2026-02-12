@@ -300,7 +300,7 @@ export default function GuiaCompletaPage() {
                   <ul className="space-y-2 text-gray-300">
                     <li>✅ Grupos más pequeños (5 vs 15-30 de la competencia)</li>
                     <li>✅ 10 proyectos reales que pueden mostrar a familia y amigos</li>
-                    <li>✅ Garantía de 10 días con devolución completa</li>
+                    <li>✅ Garantía 10 días.de 10 días con devolución completa</li>
                     <li>✅ Soporte WhatsApp 24/7 en español</li>
                   </ul>
                 </div>
@@ -363,7 +363,7 @@ export default function GuiaCompletaPage() {
                     <li>✅ 10 proyectos completos para su portfolio</li>
                     <li>✅ Acceso de por vida a grabaciones</li>
                     <li>✅ Certificado oficial internacional</li>
-                    <li>✅ Garantía de 10 días (devolución completa)</li>
+                    <li>✅ Garantía 10 días.de 10 días (devolución completa)</li>
                   </ul>
                 </div>
               </section>

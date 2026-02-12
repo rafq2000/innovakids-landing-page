@@ -8,9 +8,9 @@ import Link from "next/link"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-    title: "Curso de IA para Niños en Venezuela | Crea Apps y Videojuegos",
+    title: "Curso de IA para Niños y Adolescentes en Venezuela | Online en Vivo",
     description:
-        "Niños venezolanos de 8-14 crean arte, música y apps con IA. Horario Caracas. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+    "Niños y adolescentes venezolanos de 8-17 años crean apps, arte y música con IA. Horario Caracas. Máx 5 por grupo. Garantía 10 días.",
     keywords: [
         "curso ia niños venezuela",
         "clases programación ia caracas",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
         "vibe coding venezuela",
     ],
     openGraph: {
-        title: "Curso de IA para Niños en Venezuela | InnovaKids",
-        description: "527 alumnos graduados. La primera escuela de Vibe Coding en Venezuela. Clases en vivo horario local. Proyectos reales.",
+        title: "Curso de IA para Niños y Adolescentes en Venezuela | InnovaKids",
+        description: "La primera escuela de Vibe Coding para niños y adolescentes en Venezuela. Clases en vivo, grupos reducidos.",
         url: "https://www.innovakidslatam.com/ve",
         locale: "es_VE",
         siteName: "InnovaKids Venezuela",
@@ -62,7 +62,7 @@ export default function VenezuelaHubPage() {
                         </h1>
 
                         <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-                            La primera escuela de Vibe Coding para niños de 8-14 años.
+                            La primera escuela de Vibe Coding para niños de 8-17 años.
                             <strong className="text-white"> Clases 100% online</strong> desde cualquier estado del país.
                         </p>
 
@@ -77,7 +77,7 @@ export default function VenezuelaHubPage() {
                             </div>
                             <div className="flex items-center gap-2 text-gray-400">
                                 <Shield className="w-5 h-5 text-[#4DD0E1]" />
-                                <span>Garantía 10 días</span>
+                                <span>Garantía 10 días.10 días</span>
                             </div>
                         </div>
 
@@ -140,7 +140,7 @@ export default function VenezuelaHubPage() {
                                 { icon: "🎯", title: "Grupos Ultra Reducidos", desc: "Máximo 5 niños por clase para atención 100% personalizada." },
                                 { icon: "⏰", title: "Horarios Venezuela", desc: "Clases adaptadas a GMT-4. Mañana, tarde o fin de semana." },
                                 { icon: "💵", title: "Pagos en USD", desc: "Zelle, PayPal, Binance, tarjetas internacionales. Como te sea más fácil." },
-                                { icon: "🛡️", title: "Garantía 10 Días", desc: "No satisfecho = devolución completa. Sin preguntas." },
+                                { icon: "🛡️", title: "Garantía 10 días.10 Días", desc: "No satisfecho = devolución completa. Sin preguntas." },
                                 { icon: "📱", title: "Soporte WhatsApp", desc: "Atención 24/7 en español. Respuesta inmediata." },
                                 { icon: "🏆", title: "Certificación", desc: "Diploma oficial + portfolio digital de proyectos creados." },
                             ].map((item, i) => (
@@ -167,7 +167,7 @@ export default function VenezuelaHubPage() {
 
                                 <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-300 mb-8">
                                     <span>✅ Grupos de 5 niños</span>
-                                    <span>✅ Garantía 10 días</span>
+                                    <span>✅ Garantía 10 días.10 días</span>
                                     <span>✅ Certificado oficial</span>
                                 </div>
 
@@ -193,6 +193,29 @@ export default function VenezuelaHubPage() {
             </main>
 
             <Footer />
-        </>
-    )
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids Venezuela",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Venezuela. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/ve",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
+    </>
+  )
 }

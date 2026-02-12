@@ -6,9 +6,9 @@ import { Users, Clock, Shield, Star, CheckCircle, Zap, Target, Globe } from "luc
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso Inteligencia Artificial Niños Latinos USA | Vibe Coding",
+  title: "Curso Inteligencia Artificial Niños y Adolescentes Latinos USA | Vibe Coding",
   description:
-    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Mantén sus raíces latinas. Garantía de 10 días.",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Mantén sus raíces latinas. Garantía 10 días.de 10 días.",
   keywords: [
     "curso inteligencia artificial niños usa español",
     "cursos de tecnologia para niños latinos",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     "innovakids cursos",
   ],
   openGraph: {
-    title: "Curso Inteligencia Artificial Niños Latinos USA | Vibe Coding",
-    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado para latinos en USA (8-14 años).",
+    title: "Curso Inteligencia Artificial Niños y Adolescentes Latinos USA | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado para latinos en USA (8-17 años).",
     url: "https://www.innovakidslatam.com/us/cursos-ia-ninos-latinos-usa",
     locale: "es_US",
     siteName: "InnovaKids USA",
@@ -57,7 +57,7 @@ export default function CursosIANinosLatinosUSA() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/90 md:text-xl">
-              Tu hijo aprenderá IA sin perder su español. Clases 100% en castellano con horarios USA. Edad: 8-14 años.
+              Tu hijo aprenderá IA sin perder su español. Clases 100% en castellano con horarios USA. Edad: 8-17 años.
             </p>
 
             {/* Stats */}
@@ -187,7 +187,7 @@ export default function CursosIANinosLatinosUSA() {
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#BF0A30]/20">
                   <Shield className="h-8 w-8 text-[#002868]" />
                 </div>
-                <h3 className="mb-2 text-xl font-bold">Garantía 10 Días</h3>
+                <h3 className="mb-2 text-xl font-bold">Garantía 10 días.10 Días</h3>
                 <p className="text-muted-foreground">
                   Si no estás 100% satisfecho, te devolvemos tu dinero. Sin preguntas.
                 </p>
@@ -330,7 +330,7 @@ export default function CursosIANinosLatinosUSA() {
                   "Proyectos reales publicables",
                   "Certificado de finalización",
                   "Soporte por WhatsApp",
-                  "Garantía de 10 días",
+                  "Garantía 10 días.de 10 días",
                 ].map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
                     <CheckCircle className="h-5 w-5 shrink-0 text-[#BF0A30]" />
@@ -546,7 +546,7 @@ export default function CursosIANinosLatinosUSA() {
               "@type": "Course",
               name: "Curso de Inteligencia Artificial para Niños Latinos en USA",
               description:
-                "Programa de 10 clases en vivo 100% en español para niños latinos de 8-14 años en Estados Unidos. Aprenden ChatGPT, Midjourney, creación de apps y más.",
+                "Programa de 10 clases en vivo 100% en español para niños latinos de 8-17 años en Estados Unidos. Aprenden ChatGPT, Midjourney, creación de apps y más.",
               provider: {
                 "@type": "Organization",
                 name: "InnovaKids",

@@ -91,7 +91,7 @@ export default function BlogVenezuelaGuiaPage() {
                                     <li>✅ Clases en vivo (no videos pregrabados)</li>
                                     <li>✅ Horarios adaptados a Venezuela (GMT-4)</li>
                                     <li>✅ Pagos en USD vía Zelle, PayPal, Binance</li>
-                                    <li>✅ Garantía de 10 días (devolución completa)</li>
+                                    <li>✅ Garantía 10 días.de 10 días (devolución completa)</li>
                                     <li>✅ Certificación oficial + portfolio</li>
                                 </ul>
                             </div>

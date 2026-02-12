@@ -9,7 +9,7 @@ import WhatsAppButton from "@/components/whatsapp-button"
 export const metadata: Metadata = {
   title: "Clases de IA para Niños en Ciudad de Guatemala | Online en Vivo",
   description:
-    "¿Vives en Ciudad de Guatemala? Tu hijo puede crear apps y videojuegos con IA desde casa (Cayalá, Zona 10, Mixco). Horarios flexibles tardes y sábados. Garantía total.",
+    "¿Vives en Ciudad de Guatemala? Tu hijo puede crear apps y videojuegos con IA desde casa (Cayalá, Zona 10, Mixco). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
   keywords: [
     "clases ia niños ciudad de guatemala",
     "curso programación niños cayala",
@@ -78,7 +78,7 @@ export default function CiudadGuatemalaPage() {
 
               <div className="bg-[#4997D0]/10 rounded-2xl p-6 max-w-xl mx-auto">
                 <p className="text-lg font-semibold text-[#4997D0]">💰 $267 USD - 10 Clases</p>
-                <p className="text-muted-foreground">Garantía de satisfacción 10 días • Máx 5 patojos por grupo</p>
+                <p className="text-muted-foreground">Garantía 10 días.de satisfacción 10 días • Máx 5 patojos por grupo</p>
               </div>
             </div>
           </div>

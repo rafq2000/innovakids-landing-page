@@ -8,9 +8,9 @@ import Link from "next/link"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños en México | Crea Apps y Videojuegos",
+  title: "Curso de IA para Niños y Adolescentes en México | Clases Online en Vivo",
   description:
-    "Niños mexicanos de 8-14 ya crean con IA en InnovaKids. Horario CDMX, paga en OXXO o Mercado Pago. Grupos de 5 en vivo. Sin requisitos previos. Garantía total ⭐",
+    "Niños y adolescentes mexicanos de 8-17 años crean apps, arte y música con IA. Horario CDMX, pago OXXO o Mercado Pago. Máx 5 por grupo. Garantía 10 días.",
   keywords: [
     "vibe coding mexico",
     "curso ia niños mexico",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     "innovakids mexico",
   ],
   openGraph: {
-    title: "Curso de IA para Niños en México | InnovaKids",
-    description: "527 alumnos graduados. La primera escuela de Vibe Coding en México. Clases en vivo horario CDMX/Monterrey/Kanasín.",
+    title: "Curso de IA para Niños y Adolescentes en México | InnovaKids",
+    description: "527 graduados en 9 países. Tu hijo crea apps y videojuegos con IA. Grupos de 5, horario México.",
     url: "https://www.innovakidslatam.com/mx",
     locale: "es_MX",
     siteName: "InnovaKids México",
@@ -67,7 +67,7 @@ export default function MexicoHubPage() {
             </h1>
 
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-              El mejor curso de inteligencia artificial para niños mexicanos de 8-14 años. Online en vivo con grupos de
+              El mejor curso de inteligencia artificial para niños mexicanos de 8-17 años. Online en vivo con grupos de
               máximo 5 alumnos.
             </p>
 
@@ -82,7 +82,7 @@ export default function MexicoHubPage() {
               </div>
               <div className="flex items-center gap-2 text-gray-400">
                 <Shield className="w-5 h-5 text-[#4DD0E1]" />
-                <span>Garantía 10 días</span>
+                <span>Garantía 10 días.10 días</span>
               </div>
             </div>
 
@@ -155,7 +155,7 @@ export default function MexicoHubPage() {
                   title: "Pagos Locales",
                   desc: "OXXO, Mercado Pago, PayPal, tarjetas. Como te sea más fácil.",
                 },
-                { icon: "🛡️", title: "Garantía 10 Días", desc: "No satisfecho = devolución completa. Sin preguntas." },
+                { icon: "🛡️", title: "Garantía 10 días.10 Días", desc: "No satisfecho = devolución completa. Sin preguntas." },
                 {
                   icon: "📱",
                   title: "Soporte WhatsApp",
@@ -190,7 +190,7 @@ export default function MexicoHubPage() {
 
               <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-300 mb-8">
                 <span>✅ Grupos de 5 niños</span>
-                <span>✅ Garantía 10 días</span>
+                <span>✅ Garantía 10 días.10 días</span>
                 <span>✅ Certificado oficial</span>
               </div>
 
@@ -241,6 +241,29 @@ export default function MexicoHubPage() {
       </main>
 
       <Footer />
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids México",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en México. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/mx",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

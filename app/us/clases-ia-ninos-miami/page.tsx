@@ -7,7 +7,7 @@ import { Users, Clock, Shield, Star, CheckCircle, Target, MapPin } from "lucide-
 export const metadata: Metadata = {
   title: "Clases de IA para Niños en Miami | En Español",
   description:
-    "¿Vives en Miami? Tu hijo puede crear apps y videojuegos con IA mientras refuerza su español (Doral, Weston, Brickell). Horarios flexibles. Garantía total.",
+    "¿Vives en Miami? Tu hijo puede crear apps y videojuegos con IA mientras refuerza su español (Doral, Weston, Brickell). Horarios flexibles. Garantía 10 días.total.",
   keywords: [
     "clases ia niños miami",
     "curso programación niños doral",
@@ -150,7 +150,7 @@ export default function ClasesIANinosMiami() {
               </div>
               <div className="rounded-2xl bg-card/50 p-6 text-center">
                 <Shield className="mx-auto mb-4 h-10 w-10 text-[#FF6B35]" />
-                <h3 className="mb-2 font-bold">Garantía 10 Días</h3>
+                <h3 className="mb-2 font-bold">Garantía 10 días.10 Días</h3>
                 <p className="text-sm text-muted-foreground">Devolución sin preguntas</p>
               </div>
               <div className="rounded-2xl bg-card/50 p-6 text-center">
@@ -226,7 +226,7 @@ export default function ClasesIANinosMiami() {
                   "100% en español",
                   "Grupos de máximo 5 niños",
                   "Horarios Eastern Time",
-                  "Garantía de 10 días",
+                  "Garantía 10 días.de 10 días",
                 ].map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
                     <CheckCircle className="h-5 w-5 shrink-0 text-[#FF6B35]" />

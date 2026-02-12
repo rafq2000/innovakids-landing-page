@@ -6,9 +6,9 @@ import { MapPin, Users, Clock, Shield, Target } from "lucide-react"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños en República Dominicana | Crea Apps",
+  title: "Curso de IA para Niños y Adolescentes en Rep. Dominicana | Online en Vivo",
   description:
-    "Niños dominicanos de 8-14 crean arte, música y apps con IA. Horario Santo Domingo. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+    "Niños y adolescentes dominicanos de 8-17 años crean apps, arte y música con IA. Horario Santo Domingo. Máx 5 por grupo. Garantía 10 días.",
   keywords: [
     "curso ia niños republica dominicana",
     "clases programación ia santo domingo",
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     "vibe coding republica dominicana",
   ],
   openGraph: {
-    title: "Curso de IA para Niños en República Dominicana | InnovaKids",
-    description: "527 alumnos graduados. La primera escuela de Vibe Coding en RD. Clases en vivo horario local. Proyectos reales.",
+    title: "Curso de IA para Niños y Adolescentes en República Dominicana | InnovaKids",
+    description: "La primera escuela de Vibe Coding para niños y adolescentes en RD. Clases en vivo, grupos reducidos.",
     url: "https://www.innovakidslatam.com/do",
     locale: "es_DO",
     siteName: "InnovaKids República Dominicana",
@@ -66,7 +66,7 @@ export default function RepublicaDominicanaHub() {
             </h1>
 
             <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-              La primera escuela de Vibe Coding para niños de 8-14 años.
+              La primera escuela de Vibe Coding para niños de 8-17 años.
               <strong className="text-white"> Clases 100% online</strong> desde cualquier provincia del país.
             </p>
 
@@ -146,7 +146,7 @@ export default function RepublicaDominicanaHub() {
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#CE1126]/20">
                   <Shield className="h-8 w-8 text-[#002D62]" />
                 </div>
-                <h3 className="mb-2 text-xl font-bold">Garantía 10 Días</h3>
+                <h3 className="mb-2 text-xl font-bold">Garantía 10 días.10 Días</h3>
                 <p className="text-muted-foreground">Devolución completa si no estás satisfecho</p>
               </div>
             </div>
@@ -198,6 +198,29 @@ export default function RepublicaDominicanaHub() {
           </div>
         </section>
       </main>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids República Dominicana",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en República Dominicana. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/do",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

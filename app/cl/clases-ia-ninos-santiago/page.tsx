@@ -7,7 +7,7 @@ import { MapPin, Star, CheckCircle, Target } from "lucide-react"
 export const metadata: Metadata = {
   title: "Clases de IA para Niños en Santiago | Online en Vivo",
   description:
-    "¿Vives en Santiago? Tu hijo puede crear apps y videojuegos con IA desde casa (Las Condes, Vitacura, Providencia). Horarios flexibles tardes y sábados. Garantía total.",
+    "¿Vives en Santiago? Tu hijo puede crear apps y videojuegos con IA desde casa (Las Condes, Vitacura, Providencia). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
   keywords: [
     "clases ia niños santiago",
     "curso programación niños las condes",
@@ -202,7 +202,7 @@ export default function ClasesIANinosSantiago() {
                   "Proyectos reales publicables",
                   "Certificado de finalización",
                   "Soporte por WhatsApp",
-                  "Garantía de 10 días",
+                  "Garantía 10 días.de 10 días",
                 ].map((feature, i) => (
                   <li key={i} className="flex items-center gap-2">
                     <CheckCircle className="h-5 w-5 shrink-0 text-[#D52B1E]" />

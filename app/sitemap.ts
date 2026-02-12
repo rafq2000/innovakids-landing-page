@@ -50,25 +50,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Colombia
     {
-      url: `${baseUrl}/colombia`,
+      url: `${baseUrl}/co`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/colombia/cursos-ia-ninos-colombia`,
+      url: `${baseUrl}/co/cursos-ia-ninos-colombia`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/colombia/clases-ia-ninos-bogota`,
+      url: `${baseUrl}/co/clases-ia-ninos-bogota`,
       lastModified: currentDate,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/colombia/blog/cursos-inteligencia-artificial-ninos-colombia-guia`,
+      url: `${baseUrl}/co/blog/cursos-inteligencia-artificial-ninos-colombia-guia`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.7,
@@ -519,6 +519,55 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/gq/clases-ia-ninos-malabo`,
       lastModified: currentDate,
       changeFrequency: "weekly",
+      priority: 0.6,
+    },
+    // Páginas de contenido
+    {
+      url: `${baseUrl}/que-es-innovakids`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/descargar-guia-ia-ninos`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/testimonios`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/curso-ia-ninos`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/clases-ia-ninos`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/como-ensenar-ia-a-mis-hijos`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/brochure-programa-ia`,
+      lastModified: currentDate,
+      changeFrequency: "monthly",
       priority: 0.6,
     },
   ]

@@ -137,7 +137,7 @@ export default async function PagarPage({
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-5 w-5 text-green-400" />
-                <span className="text-sm font-semibold text-white">Garantía 10 Días</span>
+                <span className="text-sm font-semibold text-white">Garantía 10 días.10 Días</span>
               </div>
             </div>
           </div>
@@ -218,7 +218,7 @@ export default async function PagarPage({
                 <Shield className="h-8 w-8 text-cyan-400" />
               </div>
               <div className="text-center md:text-left">
-                <h3 className="text-lg md:text-xl font-bold text-white mb-2">Garantía de Satisfacción 100%</h3>
+                <h3 className="text-lg md:text-xl font-bold text-white mb-2">Garantía 10 días.de Satisfacción 100%</h3>
                 <p className="text-sm md:text-base text-gray-300">
                   Si después de los primeros 10 días no estás satisfecho, te devolvemos el 100% de tu inversión. Sin
                   preguntas, sin complicaciones.

@@ -17,13 +17,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cursos de IA para Niños en Colombia (Guía 2026)",
     description: "Todo lo que necesitas saber para elegir la mejor educación tecnológica para tu hijo en Colombia.",
-    url: "https://www.innovakidslatam.com/colombia/blog/cursos-inteligencia-artificial-ninos-colombia-guia",
+    url: "https://www.innovakidslatam.com/co/blog/cursos-inteligencia-artificial-ninos-colombia-guia",
     locale: "es_CO",
     type: "article",
     siteName: "Blog InnovaKids Colombia",
   },
   alternates: {
-    canonical: "https://www.innovakidslatam.com/colombia/blog/cursos-inteligencia-artificial-ninos-colombia-guia",
+    canonical: "https://www.innovakidslatam.com/co/blog/cursos-inteligencia-artificial-ninos-colombia-guia",
   },
 }
 

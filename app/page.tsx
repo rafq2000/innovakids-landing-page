@@ -6,12 +6,12 @@ import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños | De Consumidor a Creador en 5 Semanas",
+  title: "Curso de IA para Niños y Adolescentes | 527 Graduados en 9 Países",
   description:
-    "527 niños en 9 países ya crean sus propias apps y música con IA. Tu hijo puede ser el próximo. Clases en vivo, máx 5 alumnos. Garantía de 10 días o devolvemos todo.",
+    "La escuela #1 de inteligencia artificial para niños y adolescentes online. Tu hijo crea apps, música y arte con IA en 5 semanas. Máx 5 por grupo. Garantía 10 días.10 días o devolvemos todo.",
   openGraph: {
-    title: "Curso de IA para Niños | De Consumidor a Creador",
-    description: "527 niños en 9 países ya crean apps con IA. Transforma a tu hijo de consumidor a creador. Clases en vivo 100% prácticas.",
+    title: "Curso de IA para Niños y Adolescentes | 527 Graduados",
+    description: "527 alumnos en 9 países crean apps con IA. Transforma a tu hijo de consumidor a creador. Clases en vivo 100% prácticas.",
   }
 }
 

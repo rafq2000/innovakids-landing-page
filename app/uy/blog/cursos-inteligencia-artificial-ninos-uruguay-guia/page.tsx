@@ -222,7 +222,7 @@ export default function UruguayBlogGuiaPage() {
                     </p>
                   </div>
                   <div className="bg-[#0f2744]/50 rounded-xl p-6 border border-white/10">
-                    <h4 className="text-xl font-bold text-white mb-3">Garantía Total</h4>
+                    <h4 className="text-xl font-bold text-white mb-3">Garantía 10 días.Total</h4>
                     <p className="text-gray-400">
                       10 días de garantía. Si no te convence, devolvemos el 100% de tu dinero.
                     </p>
@@ -332,7 +332,7 @@ export default function UruguayBlogGuiaPage() {
                 Reservar Clase Demo GRATIS
               </Button>
             </Link>
-            <p className="text-gray-500 text-sm mt-6">Sin compromiso • Cupos limitados • Garantía 10 días</p>
+            <p className="text-gray-500 text-sm mt-6">Sin compromiso • Cupos limitados • Garantía 10 días.10 días</p>
           </div>
         </section>
       </main>

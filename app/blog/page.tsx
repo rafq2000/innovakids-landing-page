@@ -53,7 +53,7 @@ const blogPosts = [
   },
   {
     slug: "como-ensenar-ia-ninos",
-    title: "Cómo Enseñar Inteligencia Artificial a Niños de 8-14 Años",
+    title: "Cómo Enseñar Inteligencia Artificial a Niños de 8-17 Años",
     excerpt:
       "Descubre las mejores estrategias y herramientas para introducir a tus hijos en el fascinante mundo de la IA de manera divertida y educativa.",
     image: "/kids-learning-ai-on-computer.jpg",

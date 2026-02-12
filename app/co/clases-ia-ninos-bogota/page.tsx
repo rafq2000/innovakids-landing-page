@@ -5,9 +5,9 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { MapPin, Users, Clock, Shield, Star, CheckCircle, Target } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Niños en Bogotá | Online en Vivo",
+  title: "Clases de IA para Niños y Adolescentes en Bogotá | Online en Vivo",
   description:
-    "¿Vives en Bogotá? Tu hijo puede crear apps y videojuegos con IA desde casa. Únete a otros niños de Usaquén, Chapinero y Cedritos. Horarios flexibles. Garantía 10 días.total.",
+    "Niños y adolescentes de 8-17 años en Bogotá crean apps y videojuegos con IA desde casa. Horarios flexibles, máx 5 por grupo. Garantía 10 días.total de 10 días.",
   keywords: [
     "clases ia niños bogota",
     "curso programación niños bogota",
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
     "innovakids bogota",
   ],
   openGraph: {
-    title: "Clases de IA para Niños en Bogotá | InnovaKids",
-    description: "El curso #1 de Inteligencia Artificial para niños en Bogotá. Grupos pequeños, atención personalizada y proyectos increíbles.",
-    url: "https://www.innovakidslatam.com/colombia/clases-ia-ninos-bogota",
+    title: "Clases de IA para Niños y Adolescentes en Bogotá | InnovaKids",
+    description: "El curso #1 de Inteligencia Artificial para niños y adolescentes en Bogotá. Grupos pequeños, atención personalizada y proyectos increíbles.",
+    url: "https://www.innovakidslatam.com/co/clases-ia-ninos-bogota",
     locale: "es_CO",
     siteName: "InnovaKids Bogotá",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.innovakidslatam.com/colombia/clases-ia-ninos-bogota",
+    canonical: "https://www.innovakidslatam.com/co/clases-ia-ninos-bogota",
   },
 }
 
