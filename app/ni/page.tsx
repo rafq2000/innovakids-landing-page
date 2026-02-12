@@ -1,162 +1,26 @@
+import { CountryHomePage } from "@/components/country-home-page"
+import { getCountryConfig } from "@/lib/countries-config"
+import { notFound } from "next/navigation"
 import type { Metadata } from "next"
-import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
-import { WhatsAppButton } from "@/components/whatsapp-button"
-import { Button } from "@/components/ui/button"
-import { MapPin, Users, Clock, Shield } from "lucide-react"
-import Link from "next/link"
-import { CountryProgramSection } from "@/components/country-program-section"
 
-export const metadata: Metadata = {
-    title: "Curso de IA para Niños y Adolescentes en Nicaragua | Online en Vivo",
-    description:
-    "Niños y adolescentes nicaragüenses de 8-17 años crean apps, arte y música con IA. Horario Managua. Máx 5 por grupo. Garantía 10 días.",
-    keywords: [
-        "curso ia niños nicaragua",
-        "clases programación ia managua",
-        "taller tecnologia niños leon",
-        "innovakids nicaragua",
-        "vibe coding nicaragua",
-    ],
-    openGraph: {
-        title: "Curso de IA para Niños y Adolescentes en Nicaragua | InnovaKids",
-        description: "La primera escuela de Vibe Coding en Nicaragua. Clases en vivo, grupos reducidos.",
-        url: "https://www.innovakidslatam.com/ni",
-        locale: "es_NI",
-        siteName: "InnovaKids Nicaragua",
-        type: "website",
-    },
-    alternates: {
-        canonical: "https://www.innovakidslatam.com/ni",
-    },
+const countryCode = "ni"
+
+export async function generateMetadata(): Promise<Metadata> {
+    const country = getCountryConfig(countryCode)
+    if (!country) return {}
+
+    return {
+        title: country.metaTitle,
+        description: country.metaDescription,
+        alternates: {
+            canonical: `https://www.innovakidslatam.com/${country.code}`,
+        },
+    }
 }
 
-const ciudades = [
-    { nombre: "Managua", emoji: "🏛️", link: "/ni/clases-ia-ninos-managua", desc: "Distrito Capital, Zona Rosa" },
-    { nombre: "León", emoji: "📚", link: "/ni/cursos-ia-ninos-nicaragua", desc: "Zona Universitaria" },
-    { nombre: "Granada", emoji: "🏰", link: "/ni/cursos-ia-ninos-nicaragua", desc: "Centro Histórico" },
-    { nombre: "Masaya", emoji: "🎭", link: "/ni/cursos-ia-ninos-nicaragua", desc: "Zona Artesanal" },
-]
+export default function CountryPage() {
+    const country = getCountryConfig(countryCode)
+    if (!country) return notFound()
 
-export default function NicaraguaHubPage() {
-    return (
-        <>
-            <Navigation />
-            <WhatsAppButton />
-            <main className="min-h-screen bg-background">
-                <section className="relative pt-32 pb-24 bg-gradient-to-b from-background to-[#0a1628] noise-overlay">
-                    <div className="absolute inset-0 aurora-bg opacity-30" />
-                    <div className="container mx-auto px-6 max-w-6xl text-center relative z-10">
-                        <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 rounded-full px-6 py-2 mb-8">
-                            <span className="text-4xl">🇳🇮</span>
-                            <span className="text-white font-medium">InnovaKids en Nicaragua</span>
-                        </div>
-
-                        <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-6">
-                            Curso de IA y Vibe Coding
-                            <br />
-                            <span className="text-[#0067c6]">en Nicaragua</span>
-                        </h1>
-
-                        <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-                            La primera escuela de Vibe Coding para niños de 8-17 años.
-                            <strong className="text-white"> Clases 100% online</strong> desde cualquier departamento del país.
-                        </p>
-
-                        <div className="flex flex-wrap justify-center gap-4 mb-12">
-                            <div className="flex items-center gap-2 text-gray-400">
-                                <Users className="w-5 h-5 text-primary" />
-                                <span>Máx. 5 niños/clase</span>
-                            </div>
-                            <div className="flex items-center gap-2 text-gray-400">
-                                <Clock className="w-5 h-5 text-primary" />
-                                <span>10 clases en vivo</span>
-                            </div>
-                            <div className="flex items-center gap-2 text-gray-400">
-                                <Shield className="w-5 h-5 text-primary" />
-                                <span>Garantía 10 días.10 días</span>
-                            </div>
-                        </div>
-
-                        <Link href="/#sesion-estrategica">
-                            <Button className="magnetic-btn bg-gradient-to-r from-primary to-[#8b5cf6] hover:opacity-90 text-[#0a1628] px-12 py-8 text-xl font-bold rounded-full shadow-2xl">
-                                🎯 Reservar Evaluación Gratis
-                            </Button>
-                        </Link>
-                    </div>
-                </section>
-
-                <section className="py-24 bg-[#0a1628]">
-                    <div className="container mx-auto px-6 max-w-6xl">
-                        <h2 className="text-3xl font-bold text-white text-center mb-12 font-premium">
-                            Disponible en <span className="text-primary">Toda Nicaragua</span>
-                        </h2>
-                        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {ciudades.map((ciudad, i) => (
-                                <Link key={i} href={ciudad.link}>
-                                    <div className="bg-[#0f2744]/50 rounded-xl p-6 border border-white/10 hover:border-primary/50 transition-all">
-                                        <span className="text-4xl mb-4 block">{ciudad.emoji}</span>
-                                        <h3 className="text-xl font-bold text-white mb-2">{ciudad.nombre}</h3>
-                                        <p className="text-gray-500 text-sm mb-4">{ciudad.desc}</p>
-                                        <div className="flex items-center gap-2 text-primary text-sm">
-                                            <MapPin className="w-4 h-4" />
-                                            <span>Ver clases →</span>
-                                        </div>
-                                    </div>
-                                </Link>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-
-                {/* PROGRAMA COMPLETO - HORMOZI */}
-                <CountryProgramSection
-                    countryName="Nicaragua"
-                    primaryColor="#0067C6"
-                    secondaryColor="#FFFFFF"
-                />
-
-                <section className="py-24 bg-background">
-                    <div className="container mx-auto px-6 max-w-3xl text-center">
-                        <div className="holographic-card p-10">
-                            <div className="relative z-10">
-                                <h2 className="text-3xl font-bold text-white mb-4 font-premium">Inversión</h2>
-                                <div className="text-5xl font-bold text-white mb-2">$267 USD</div>
-                                <p className="text-gray-400 mb-6">≈ C$10,900 NIO • 10 clases</p>
-                                <Link href="/#sesion-estrategica">
-                                    <Button className="bg-white hover:bg-gray-100 text-[#0a1628] px-10 py-6 text-lg font-bold rounded-full">
-                                        Agendar Evaluación Gratuita
-                                    </Button>
-                                </Link>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <Footer />
-      {/* Schema Markup */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "EducationalOrganization",
-            name: "InnovaKids Nicaragua",
-            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Nicaragua. Clases online en vivo, máximo 5 alumnos por grupo.",
-            url: "https://www.innovakidslatam.com/ni",
-            parentOrganization: {
-              "@type": "Organization",
-              name: "InnovaKids",
-              url: "https://www.innovakidslatam.com",
-            },
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              reviewCount: "523",
-            },
-          }),
-        }}
-      />
-    </>
-  )
+    return <CountryHomePage country={country} />
 }
