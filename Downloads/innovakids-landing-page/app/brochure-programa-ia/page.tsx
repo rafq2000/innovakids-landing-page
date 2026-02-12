@@ -592,7 +592,7 @@ export default function BrochurePage() {
 
             <div className="mt-8 text-center">
               <p className="text-cyan-400 text-sm font-semibold uppercase tracking-wider flex items-center justify-center gap-2">
-                <Shield className="w-4 h-4" /> Garantía de Satisfacción de 10 días
+                <Shield className="w-4 h-4" /> Garantía 10 días.de Satisfacción de 10 días
               </p>
             </div>
           </CardContent>

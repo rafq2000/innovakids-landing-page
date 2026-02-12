@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Descarga GRATIS: Guía de IA para Niños 2026",
     description:
-      "Guía completa y gratuita para enseñar Inteligencia Artificial a niños de 8-14 años. Incluye proyectos prácticos y ejercicios.",
+      "Guía completa y gratuita para enseñar Inteligencia Artificial a niños de 8-17 años. Incluye proyectos prácticos y ejercicios.",
     type: "website",
   },
 }
@@ -84,7 +84,7 @@ export default function DescargarGuiaPage() {
                   <ul className="space-y-2 md:space-y-3 mb-6 md:mb-8">
                     <li className="flex items-start gap-2 md:gap-3">
                       <Brain className="w-4 h-4 md:w-5 md:h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-sm md:text-base">Introducción a la IA para niños de 8-14 años</span>
+                      <span className="text-sm md:text-base">Introducción a la IA para niños de 8-17 años</span>
                     </li>
                     <li className="flex items-start gap-2 md:gap-3">
                       <Rocket className="w-4 h-4 md:w-5 md:h-5 text-primary mt-0.5 flex-shrink-0" />

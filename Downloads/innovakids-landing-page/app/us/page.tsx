@@ -6,9 +6,9 @@ import { MapPin, Users, Clock, Shield, ArrowRight, Globe } from "lucide-react"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-  title: "Curso de IA y Vibe Coding para Niños Latinos en USA | InnovaKids",
+  title: "Curso de IA para Niños y Adolescentes Latinos en USA | En Español",
   description:
-    "La primera escuela de Vibe Coding e Inteligencia Artificial para niños latinos en USA. Clases 100% en español. Miami, Orlando, Houston, LA, NYC.",
+    "La primera escuela de Vibe Coding e IA para niños y adolescentes latinos en USA. Clases 100% en español. Miami, Orlando, Houston, LA, NYC. Máx 5 por grupo.",
   keywords: [
     "vibe coding usa",
     "cursos ia niños latinos usa",
@@ -19,9 +19,8 @@ export const metadata: Metadata = {
     "innovakids usa",
   ],
   openGraph: {
-    title: "Curso de IA para Niños Latinos en USA (En Español)",
-    description:
-      "Clases de Inteligencia Artificial 100% en español para niños y adolescentes en Estados Unidos. Horarios adaptados. ¡Agenda una clase de prueba!",
+    title: "Curso de IA para Niños y Adolescentes Latinos en USA | InnovaKids",
+    description: "527 graduados en 9 países. Clases 100% en español para niños y adolescentes latinos en Estados Unidos.",
     url: "https://www.innovakidslatam.com/us",
     locale: "es_US",
     siteName: "InnovaKids",
@@ -75,7 +74,7 @@ export default function USAHub() {
             </h1>
 
             <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-              La primera escuela de Vibe Coding para niños de 8-14 años.
+              La primera escuela de Vibe Coding para niños de 8-17 años.
               <strong className="text-white"> Clases 100% en español</strong> para familias latinas en Estados Unidos.
             </p>
 
@@ -126,7 +125,7 @@ export default function USAHub() {
               </div>
               <div className="rounded-2xl bg-card p-6 text-center">
                 <Shield className="mx-auto mb-4 h-10 w-10 text-[#002868]" />
-                <h3 className="mb-2 font-bold">Garantía 10 Días</h3>
+                <h3 className="mb-2 font-bold">Garantía 10 días.10 Días</h3>
                 <p className="text-sm text-muted-foreground">Devolución sin preguntas</p>
               </div>
               <div className="rounded-2xl bg-card p-6 text-center">
@@ -180,7 +179,7 @@ export default function USAHub() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="mb-8 text-3xl font-bold">Inversión: $267 USD</h2>
             <p className="mx-auto mb-8 max-w-xl text-muted-foreground">
-              10 clases en vivo • Grupos de máximo 5 niños • 100% en español • Garantía 10 días
+              10 clases en vivo • Grupos de máximo 5 niños • 100% en español • Garantía 10 días.10 días
             </p>
             <Link
               href="/us/cursos-ia-ninos-latinos-usa#precio"
@@ -290,6 +289,29 @@ export default function USAHub() {
           </div>
         </section>
       </main>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids Estados Unidos",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Estados Unidos. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/us",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

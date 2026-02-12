@@ -8,9 +8,9 @@ import { Users, Clock, Shield, Star, CheckCircle, Zap, Target } from "lucide-rea
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso Inteligencia Artificial Niños Perú | Vibe Coding",
+  title: "Curso Inteligencia Artificial Niños y Adolescentes Perú | Vibe Coding",
   description:
-    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía 10 días.de 10 días.",
   keywords: [
     "curso inteligencia artificial niños peru",
     "cursos de tecnologia para niños peru",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     "innovakids cursos",
   ],
   openGraph: {
-    title: "Curso Inteligencia Artificial Niños Perú | Vibe Coding",
-    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Perú para niños de 8-14 años.",
+    title: "Curso Inteligencia Artificial Niños y Adolescentes Perú | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Perú para niños de 8-17 años.",
     url: "https://www.innovakidslatam.com/pe/cursos-ia-ninos-peru",
     locale: "es_PE",
     siteName: "InnovaKids Perú",
@@ -135,7 +135,7 @@ export default function CursosIANinosPeru() {
                 <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#D91023]/20">
                   <Shield className="h-8 w-8 text-[#D91023]" />
                 </div>
-                <h3 className="mb-2 text-xl font-bold">Garantía 10 Días</h3>
+                <h3 className="mb-2 text-xl font-bold">Garantía 10 días.10 Días</h3>
                 <p className="text-muted-foreground">
                   Si no estás 100% satisfecho, te devolvemos tu dinero. Sin preguntas.
                 </p>
@@ -312,7 +312,7 @@ export default function CursosIANinosPeru() {
                 <CheckCircle className="h-4 w-4" /> Sin compromiso
               </span>
               <span className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4" /> Garantía 10 días
+                <CheckCircle className="h-4 w-4" /> Garantía 10 días.10 días
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle className="h-4 w-4" /> Grupos máx 5 niños
@@ -330,7 +330,7 @@ export default function CursosIANinosPeru() {
             "@context": "https://schema.org",
             "@type": "Course",
             name: "Curso de Inteligencia Artificial para Niños - Perú",
-            description: "Programa de 10 clases en vivo donde niños de 8-14 años aprenden a crear con IA",
+            description: "Programa de 10 clases en vivo donde niños de 8-17 años aprenden a crear con IA",
             provider: {
               "@type": "Organization",
               name: "InnovaKids",

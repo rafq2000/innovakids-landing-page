@@ -9,7 +9,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Clases de IA para Chicos en Buenos Aires | Online",
   description:
-    "¿Vives en CABA o GBA? Tu hijo puede crear apps y videojuegos con IA desde casa (Palermo, Belgrano, Nordelta). Horarios flexibles tardes y sábados. Garantía total.",
+    "¿Vives en CABA o GBA? Tu hijo puede crear apps y videojuegos con IA desde casa (Palermo, Belgrano, Nordelta). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
   keywords: [
     "clases ia chicos buenos aires",
     "curso programación chicos caba",
@@ -33,7 +33,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Course",
   name: "Clases de Inteligencia Artificial para Chicos - Buenos Aires",
-  description: "Clases online de IA para chicos de 8-14 años en Buenos Aires. 10 clases en vivo, grupos de 5 alumnos.",
+  description: "Clases online de IA para chicos de 8-17 años en Buenos Aires. 10 clases en vivo, grupos de 5 alumnos.",
   provider: {
     "@type": "Organization",
     name: "InnovaKids",
@@ -80,7 +80,7 @@ export default function BuenosAiresClasesIAPage() {
             </h1>
 
             <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-              Curso 100% online para chicos de 8-14 años. CABA, Zona Norte, Zona Sur, Zona Oeste.
+              Curso 100% online para chicos de 8-17 años. CABA, Zona Norte, Zona Sur, Zona Oeste.
               <strong className="text-white"> Grupos de máximo 5 alumnos.</strong>
             </p>
 
@@ -89,7 +89,7 @@ export default function BuenosAiresClasesIAPage() {
                 <Check className="w-4 h-4 text-green-400" /> $267 USD - 10 clases
               </span>
               <span className="flex items-center gap-2">
-                <Shield className="w-4 h-4 text-green-400" /> Garantía 10 días
+                <Shield className="w-4 h-4 text-green-400" /> Garantía 10 días.10 días
               </span>
               <span className="flex items-center gap-2">
                 <Users className="w-4 h-4 text-[#75AADB]" /> Máximo 5 chicos
@@ -157,7 +157,7 @@ export default function BuenosAiresClasesIAPage() {
 
               <div className="mt-8 pt-8 border-t border-white/10 text-center">
                 <div className="text-4xl font-bold text-white mb-2">$267 USD</div>
-                <p className="text-gray-400 mb-4">Programa completo - Garantía 10 días</p>
+                <p className="text-gray-400 mb-4">Programa completo - Garantía 10 días.10 días</p>
                 <Link href="/#sesion-estrategica">
                   <Button className="bg-[#75AADB] hover:bg-[#5a8fc0] text-white px-8 py-4 text-lg font-bold rounded-full">
                     Reservar Ahora

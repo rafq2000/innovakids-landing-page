@@ -6,7 +6,7 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Niños (8-14 Años) | Crea Apps y Videojuegos | Innovakids",
+  title: "Clases de IA para Niños (8-17 Años) | Crea Apps y Videojuegos | Innovakids",
   description:
     "🚀 Curso de IA para niños online. Aprende ChatGPT, Programación y Diseño de Videojuegos. Clases en vivo 100% prácticas. ⭐ 4.9/5. 🎁 ¡Agenda tu Clase GRATIS!",
   openGraph: {

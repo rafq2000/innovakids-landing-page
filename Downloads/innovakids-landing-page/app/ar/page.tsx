@@ -8,9 +8,9 @@ import Link from "next/link"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Chicos en Argentina | Online en Vivo",
+  title: "Curso de IA para Niños y Adolescentes en Argentina | Clases Online en Vivo",
   description:
-    "Niños argentinos de 8-14 crean arte, música y apps con IA. Horario Buenos Aires, pago con Mercado Pago. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+    "Niños y adolescentes argentinos de 8-17 años crean apps, arte y música con IA. Horario Buenos Aires, pago con Mercado Pago. Máx 5 por grupo. Garantía 10 días.",
   keywords: [
     "curso ia chicos argentina",
     "clases programación chicos buenos aires",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     "vibe coding argentina",
   ],
   openGraph: {
-    title: "Curso de IA para Chicos en Argentina | InnovaKids",
-    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Argentina. Clases en vivo horario Buenos Aires. Proyectos reales.",
+    title: "Curso de IA para Niños y Adolescentes en Argentina | InnovaKids",
+    description: "527 graduados en 9 países. Tu hijo crea apps y videojuegos con IA desde la primera clase. Grupos de 5, horario Argentina.",
     url: "https://www.innovakidslatam.com/ar",
     locale: "es_AR",
     siteName: "InnovaKids Argentina",
@@ -64,7 +64,7 @@ export default function ArgentinaHubPage() {
             </h1>
 
             <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-12">
-              Clases 100% online para chicos de 8-14 años desde Buenos Aires, Córdoba, Rosario, Mendoza y toda
+              Clases 100% online para chicos de 8-17 años desde Buenos Aires, Córdoba, Rosario, Mendoza y toda
               Argentina.
               <strong className="text-white"> Grupos de máximo 5 alumnos.</strong>
             </p>
@@ -148,7 +148,7 @@ export default function ArgentinaHubPage() {
                 <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">🛡️</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Garantía 10 Días</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Garantía 10 días.10 Días</h3>
                 <p className="text-gray-400">
                   Si no quedás satisfecho, te devolvemos el 100% de tu dinero. Sin preguntas.
                 </p>
@@ -195,6 +195,29 @@ export default function ArgentinaHubPage() {
         </section>
       </main>
       <Footer />
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids Argentina",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Argentina. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/ar",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

@@ -30,17 +30,17 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "InnovaKids | Cursos de IA para Niños y Adolescentes Online",
   description:
-    "527 niños en 9 países ya crean aplicaciones y música con IA. La escuela online #1 para transformar consumidores en creadores (8-14 años). Garantía total.",
+    "527 alumnos graduados en 9 países ya crean aplicaciones y música con IA. La escuela online #1 de inteligencia artificial para niños y adolescentes (8-17 años). Garantía 10 días.total.",
   keywords: [
     "curso inteligencia artificial niños",
     "curso inteligencia artificial adolescentes",
-    "clases online ia niños",
+    "clases online ia niños adolescentes",
     "escuela de inteligencia artificial para niños",
     "aprender chatgpt para niños",
-    "curso de programación y ia para niños",
+    "curso de programación y ia para adolescentes",
     "innovakids",
     "innovakidslatam",
-    "cursos de tecnologia para niños"
+    "cursos de tecnologia para niños y adolescentes"
   ],
   authors: [{ name: "Innovakids Team" }],
   creator: "Innovakids",
@@ -64,9 +64,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños | InnovaKids",
+    title: "Curso de Inteligencia Artificial para Niños y Adolescentes | InnovaKids",
     description:
-      "527 alumnos graduados. Tu hijo crea su primera app en 5 semanas. Clases en vivo, máx 5 por grupo. Garantía 100% de devolución.",
+      "527 alumnos graduados. Tu hijo crea su primera app en 5 semanas. Clases en vivo, máx 5 por grupo. Garantía 10 días.100% de devolución.",
     url: "https://www.innovakidslatam.com",
     siteName: "Innovakids",
     images: [
@@ -82,9 +82,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Curso de Inteligencia Artificial para Niños | InnovaKids",
+    title: "Curso de Inteligencia Artificial para Niños y Adolescentes | InnovaKids",
     description:
-      "Formación líder en inteligencia artificial para niños de 8 a 14 años. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+      "Formación líder en inteligencia artificial para niños y adolescentes de 8 a 17 años. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
     images: ["/hero-child-learning-ai.jpg"],
   },
   robots: {
@@ -133,7 +133,7 @@ export default function RootLayout({
               name: "Innovakids",
               alternateName: ["Innova Kids", "InnovaKids LATAM", "Cursos IA Niños"],
               description:
-                "Academia de Vibe Coding para niños. 527 graduados en 9 países. Enseñamos a niños de 8-14 años a crear software, arte y música usando Inteligencia Artificial.",
+                "Academia de Vibe Coding para niños y adolescentes. 527 graduados en 9 países. Enseñamos a niños y adolescentes de 8-17 años a crear software, arte y música usando Inteligencia Artificial.",
               url: "https://www.innovakidslatam.com",
               logo: "https://www.innovakidslatam.com/logo-innovakids.png",
               address: {

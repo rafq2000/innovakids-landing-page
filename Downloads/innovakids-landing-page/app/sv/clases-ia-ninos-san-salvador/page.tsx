@@ -9,7 +9,7 @@ import WhatsAppButton from "@/components/whatsapp-button"
 export const metadata: Metadata = {
   title: "Clases de IA para Niños en San Salvador | Online en Vivo",
   description:
-    "¿Vives en San Salvador? Tu hijo puede crear apps y videojuegos con IA desde casa (San Benito, Escalón, Santa Tecla). Horarios flexibles tardes y sábados. Garantía total.",
+    "¿Vives en San Salvador? Tu hijo puede crear apps y videojuegos con IA desde casa (San Benito, Escalón, Santa Tecla). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
   keywords: [
     "clases ia niños san salvador",
     "curso programación niños santa tecla",
@@ -78,7 +78,7 @@ export default function SanSalvadorPage() {
 
               <div className="bg-[#0F47AF]/10 rounded-2xl p-6 max-w-xl mx-auto">
                 <p className="text-lg font-semibold text-[#0F47AF]">💰 $267 USD - 10 Clases</p>
-                <p className="text-muted-foreground">Garantía de satisfacción 10 días • Máx 5 cipotes por grupo</p>
+                <p className="text-muted-foreground">Garantía 10 días.de satisfacción 10 días • Máx 5 cipotes por grupo</p>
               </div>
             </div>
           </div>

@@ -8,9 +8,9 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Curso Inteligencia Artificial Niños Bolivia | Vibe Coding",
+  title: "Curso Inteligencia Artificial Niños y Adolescentes Bolivia | Vibe Coding",
   description:
-    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía 10 días.de 10 días.",
   keywords: [
     "curso inteligencia artificial niños bolivia",
     "cursos de tecnologia para niños bolivia",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     "innovakids cursos",
   ],
   openGraph: {
-    title: "Curso Inteligencia Artificial Niños Bolivia | Vibe Coding",
-    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Bolivia para niños de 8-14 años.",
+    title: "Curso Inteligencia Artificial Niños y Adolescentes Bolivia | Vibe Coding",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Bolivia para niños de 8-17 años.",
     url: "https://www.innovakidslatam.com/bo/cursos-ia-ninos-bolivia",
     locale: "es_BO",
     siteName: "InnovaKids Bolivia",
@@ -63,7 +63,7 @@ export default function CursosIANinosBoliviaPage() {
                 </div>
                 <div className="flex items-center gap-2 bg-card/50 px-4 py-2 rounded-full">
                   <Shield className="h-5 w-5 text-green-500" />
-                  <span className="font-medium">Garantía 10 Días</span>
+                  <span className="font-medium">Garantía 10 días.10 Días</span>
                 </div>
               </div>
 
@@ -90,7 +90,7 @@ export default function CursosIANinosBoliviaPage() {
               <div className="bg-[#007934]/10 border border-[#007934]/20 rounded-2xl p-6 max-w-xl mx-auto">
                 <p className="text-lg font-semibold text-[#007934]">💰 Inversión: $267 USD</p>
                 <p className="text-muted-foreground">
-                  10 clases online en vivo (60 min c/u) • Garantía de satisfacción 10 días
+                  10 clases online en vivo (60 min c/u) • Garantía 10 días.de satisfacción 10 días
                 </p>
               </div>
             </div>

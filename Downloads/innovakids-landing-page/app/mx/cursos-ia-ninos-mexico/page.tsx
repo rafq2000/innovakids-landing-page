@@ -12,7 +12,7 @@ import { generateHreflangs } from "@/lib/seo-config"
 export const metadata: Metadata = {
   title: "Curso Inteligencia Artificial Niños México | Vibe Coding",
   description:
-    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+    "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía 10 días.de 10 días.",
   keywords: [
     "curso inteligencia artificial niños mexico",
     "cursos de tecnologia para niños mexico",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Curso Inteligencia Artificial Niños México | Vibe Coding",
-    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de México para niños de 8-14 años.",
+    description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de México para niños de 8-17 años.",
     url: "https://www.innovakidslatam.com/mx/cursos-ia-ninos-mexico",
     locale: "es_MX",
     siteName: "InnovaKids México",
@@ -40,7 +40,7 @@ const jsonLd = {
       "@type": "Course",
       name: "Curso de Inteligencia Artificial para Niños #1 en México",
       description:
-        "El mejor curso de IA para niños de 8-14 años en México y Latinoamérica. 10 clases en vivo con grupos de máximo 5 alumnos. Aprenden ChatGPT, Midjourney, creación de apps y proyectos reales. Metodología práctica única. Garantía de 10 días.",
+        "El mejor curso de IA para niños de 8-17 años en México y Latinoamérica. 10 clases en vivo con grupos de máximo 5 alumnos. Aprenden ChatGPT, Midjourney, creación de apps y proyectos reales. Metodología práctica única. Garantía 10 días.de 10 días.",
       provider: {
         "@type": "Organization",
         name: "InnovaKids",
@@ -101,7 +101,7 @@ const jsonLd = {
           name: "¿Por qué InnovaKids es mejor que otros cursos de IA para niños?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "InnovaKids se diferencia por: 1) Grupos de máximo 5 niños vs 20-30 en otros cursos, 2) Metodología 100% práctica con 10 proyectos reales, 3) Uso de herramientas profesionales de Silicon Valley, 4) Garantía de aprendizaje con tutoría 1-1, 5) Garantía de devolución de 10 días.",
+            text: "InnovaKids se diferencia por: 1) Grupos de máximo 5 niños vs 20-30 en otros cursos, 2) Metodología 100% práctica con 10 proyectos reales, 3) Uso de herramientas profesionales de Silicon Valley, 4) Garantía 10 días.de aprendizaje con tutoría 1-1, 5) Garantía 10 días.de devolución de 10 días.",
           },
         },
       ],
@@ -134,7 +134,7 @@ export default function MexicoCursosIAPage() {
 
               <p className="text-lg sm:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
                 Tu hijo aprenderá a <strong className="text-white">crear con IA</strong> desde la primera clase.
-                ChatGPT, Midjourney, apps y más. Edad: 8-14 años.
+                ChatGPT, Midjourney, apps y más. Edad: 8-17 años.
               </p>
 
               <div className="flex items-center justify-center gap-2">
@@ -176,7 +176,7 @@ export default function MexicoCursosIAPage() {
               {/* Trust Badges */}
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6 pt-8 text-sm text-gray-400">
                 <span className="flex items-center gap-2">
-                  <Shield className="w-4 h-4 text-green-400" /> Garantía 10 días
+                  <Shield className="w-4 h-4 text-green-400" /> Garantía 10 días.10 días
                 </span>
                 <span className="flex items-center gap-2">
                   <Users className="w-4 h-4 text-primary" /> Grupos de 5 niños

@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
     title: "Clases de IA para Niños en Managua | Online en Vivo",
     description:
-        "¿Vives en Managua? Tu hijo puede crear apps y videojuegos con IA desde casa (Los Robles, Villa Fontana). Horarios flexibles tardes y sábados. Garantía total.",
+        "¿Vives en Managua? Tu hijo puede crear apps y videojuegos con IA desde casa (Los Robles, Villa Fontana). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
     keywords: [
         "clases ia niños managua",
         "curso programación niños los robles",

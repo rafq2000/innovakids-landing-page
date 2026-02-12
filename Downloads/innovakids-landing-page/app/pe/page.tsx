@@ -6,9 +6,9 @@ import { MapPin, ArrowRight, Users, Clock, Shield, Zap } from "lucide-react"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños en Perú | Crea Apps y Videojuegos",
+  title: "Curso de IA para Niños y Adolescentes en Perú | Clases Online en Vivo",
   description:
-    "Niños peruanos de 8-14 crean arte, música y apps con IA. Horario Lima, pago con Yape o Transferencia. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+    "Niños y adolescentes peruanos de 8-17 años crean apps, arte y música con IA. Horario Lima, pago con Yape o Transferencia. Máx 5 por grupo. Garantía 10 días.",
   keywords: [
     "curso ia niños peru",
     "clases programación ia lima",
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     "vibe coding peru",
   ],
   openGraph: {
-    title: "Curso de IA para Niños en Perú | InnovaKids",
-    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Perú. Clases en vivo horario Lima. Proyectos reales.",
+    title: "Curso de IA para Niños y Adolescentes en Perú | InnovaKids",
+    description: "527 graduados en 9 países. Tu hijo crea apps y videojuegos con IA. Grupos de 5, horario Perú.",
     url: "https://www.innovakidslatam.com/pe",
     locale: "es_PE",
     siteName: "InnovaKids Perú",
@@ -101,7 +101,7 @@ export default function PeruHub() {
               <div className="text-center">
                 <Shield className="mx-auto mb-2 h-8 w-8 text-[#D91023]" />
                 <div className="text-2xl font-bold">10 días</div>
-                <div className="text-sm text-muted-foreground">Garantía total</div>
+                <div className="text-sm text-muted-foreground">Garantía 10 días.total</div>
               </div>
               <div className="text-center">
                 <Zap className="mx-auto mb-2 h-8 w-8 text-[#D91023]" />
@@ -158,7 +158,7 @@ export default function PeruHub() {
               >
                 <h3 className="mb-3 text-xl font-bold group-hover:text-[#D91023]">Cursos de IA para Niños Perú</h3>
                 <p className="mb-4 text-muted-foreground">
-                  Programa completo de 10 clases para niños de 8-14 años. ChatGPT, Midjourney, apps y más.
+                  Programa completo de 10 clases para niños de 8-17 años. ChatGPT, Midjourney, apps y más.
                 </p>
                 <span className="inline-flex items-center gap-2 text-[#D91023]">
                   Ver más <ArrowRight className="h-4 w-4" />
@@ -221,6 +221,29 @@ export default function PeruHub() {
           </div>
         </section>
       </main>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids Perú",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Perú. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/pe",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

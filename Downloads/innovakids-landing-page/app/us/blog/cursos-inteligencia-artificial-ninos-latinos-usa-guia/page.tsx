@@ -180,7 +180,7 @@ export default function GuiaIANinosLatinosUSA() {
                     <li>Clases en vivo (no pregrabadas)</li>
                     <li>Proyectos prácticos reales</li>
                     <li>Profesores hispanohablantes nativos</li>
-                    <li>Garantía de devolución</li>
+                    <li>Garantía 10 días.de devolución</li>
                     <li>Horarios en tu zona horaria</li>
                   </ul>
                 </div>
@@ -311,7 +311,7 @@ export default function GuiaIANinosLatinosUSA() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-6 text-sm text-white/60">$267 USD • 10 clases • Máximo 5 niños • Garantía 10 días</p>
+              <p className="mt-6 text-sm text-white/60">$267 USD • 10 clases • Máximo 5 niños • Garantía 10 días.10 días</p>
             </div>
 
             {/* RELATED LINKS */}

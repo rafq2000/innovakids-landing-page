@@ -8,9 +8,9 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños en Honduras | Crea Apps y Videojuegos",
+  title: "Curso de IA para Niños y Adolescentes en Honduras | Online en Vivo",
   description:
-    "Niños hondureños de 8-14 crean arte, música y apps con IA. Horario Tegucigalpa. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+    "Niños y adolescentes hondureños de 8-17 años crean apps, arte y música con IA. Horario Tegucigalpa. Máx 5 por grupo. Garantía 10 días.",
   keywords: [
     "curso ia niños honduras",
     "clases programación ia tegucigalpa",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     "vibe coding honduras",
   ],
   openGraph: {
-    title: "Curso de IA para Niños en Honduras | InnovaKids",
-    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Honduras. Clases en vivo horario local. Proyectos reales.",
+    title: "Curso de IA para Niños y Adolescentes en Honduras | InnovaKids",
+    description: "La primera escuela de Vibe Coding para niños y adolescentes en Honduras. Clases en vivo, grupos reducidos.",
     url: "https://www.innovakidslatam.com/hn",
     locale: "es_HN",
     siteName: "InnovaKids Honduras",
@@ -57,7 +57,7 @@ export default function HondurasHubPage() {
               </h1>
 
               <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-                La primera escuela de Vibe Coding para niños de 8-14 años.
+                La primera escuela de Vibe Coding para niños de 8-17 años.
                 <strong className="text-white"> Clases 100% online</strong> desde cualquier departamento del país.
               </p>
 
@@ -87,7 +87,7 @@ export default function HondurasHubPage() {
                 </div>
                 <div className="flex items-center gap-2 bg-card/50 px-4 py-2 rounded-full">
                   <CheckCircle className="h-5 w-5 text-green-500" />
-                  <span>Garantía 10 Días</span>
+                  <span>Garantía 10 días.10 Días</span>
                 </div>
               </div>
             </div>
@@ -166,6 +166,29 @@ export default function HondurasHubPage() {
       </div>
 
       <WhatsAppButton />
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids Honduras",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Honduras. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/hn",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

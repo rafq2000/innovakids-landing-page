@@ -7,9 +7,9 @@ import Link from "next/link"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-    title: "Curso Inteligencia Artificial Niños Venezuela | Vibe Coding",
+    title: "Curso Inteligencia Artificial Niños y Adolescentes Venezuela | Vibe Coding",
     description:
-        "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía de 10 días.",
+        "No es un curso de computación tradicional. Es Vibe Coding. Tu hijo crea software hablando en español con la IA. Sin matemáticas complejas. Garantía 10 días.de 10 días.",
     keywords: [
         "curso inteligencia artificial niños venezuela",
         "cursos de tecnologia para niños venezuela",
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
         "innovakids cursos",
     ],
     openGraph: {
-        title: "Curso Inteligencia Artificial Niños Venezuela | Vibe Coding",
-        description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Venezuela para niños de 8-14 años.",
+        title: "Curso Inteligencia Artificial Niños y Adolescentes Venezuela | Vibe Coding",
+        description: "Transforma a tu hijo en un creador digital. El curso de IA más avanzado de Venezuela para niños de 8-17 años.",
         url: "https://www.innovakidslatam.com/ve/cursos-ia-ninos-venezuela",
         locale: "es_VE",
         siteName: "InnovaKids Venezuela",

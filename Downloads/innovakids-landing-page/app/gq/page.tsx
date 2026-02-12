@@ -8,9 +8,9 @@ import Link from "next/link"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-    title: "Curso de IA para Niños en Guinea Ecuatorial | Crea Apps",
+    title: "Curso de IA para Niños y Adolescentes en Guinea Ecuatorial | Online en Vivo",
     description:
-        "Niños de Guinea Ecuatorial (8-14 años) crean arte y apps con IA. Horario Malabo. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+    "Niños y adolescentes de Guinea Ecuatorial de 8-17 años crean apps, arte y música con IA. Horario Malabo. Máx 5 por grupo. Garantía 10 días.",
     keywords: [
         "curso ia niños guinea ecuatorial",
         "clases programación ia malabo",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
         "vibe coding guinea ecuatorial",
     ],
     openGraph: {
-        title: "Curso de IA para Niños en Guinea Ecuatorial | InnovaKids",
-        description: "527 alumnos graduados. La primera escuela de Vibe Coding en Guinea Ecuatorial. Clases en vivo horario local. Proyectos reales.",
+        title: "Curso de IA para Niños y Adolescentes en Guinea Ecuatorial | InnovaKids",
+        description: "La primera escuela de Vibe Coding en Guinea Ecuatorial. Clases en vivo, grupos reducidos.",
         url: "https://www.innovakidslatam.com/gq",
         locale: "es_GQ",
         siteName: "InnovaKids Guinea Ecuatorial",
@@ -58,7 +58,7 @@ export default function GuineaEcuatorialHubPage() {
                         </h1>
 
                         <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-                            La primera escuela de Vibe Coding para niños de 8-14 años.
+                            La primera escuela de Vibe Coding para niños de 8-17 años.
                             <strong className="text-white"> Clases 100% online</strong> desde cualquier ciudad del país.
                         </p>
 
@@ -73,7 +73,7 @@ export default function GuineaEcuatorialHubPage() {
                             </div>
                             <div className="flex items-center gap-2 text-gray-400">
                                 <Shield className="w-5 h-5 text-primary" />
-                                <span>Garantía 10 días</span>
+                                <span>Garantía 10 días.10 días</span>
                             </div>
                         </div>
 
@@ -127,7 +127,7 @@ export default function GuineaEcuatorialHubPage() {
                                 { icon: "🌍", title: "100% en Español", desc: "Clases completamente en español, adaptadas a la cultura ecuatoguineana." },
                                 { icon: "⏰", title: "Horarios Adaptados", desc: "Clases en horario GMT+1, perfecto para Malabo y Bata." },
                                 { icon: "💵", title: "Pagos Internacionales", desc: "PayPal, transferencias internacionales, tarjetas Visa/Mastercard." },
-                                { icon: "🛡️", title: "Garantía 10 Días", desc: "No satisfecho = devolución completa. Sin preguntas." },
+                                { icon: "🛡️", title: "Garantía 10 días.10 Días", desc: "No satisfecho = devolución completa. Sin preguntas." },
                             ].map((item, i) => (
                                 <div key={i} className="flex gap-4">
                                     <div className="text-4xl flex-shrink-0">{item.icon}</div>
@@ -159,6 +159,29 @@ export default function GuineaEcuatorialHubPage() {
                 </section>
             </main>
             <Footer />
-        </>
-    )
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids Guinea Ecuatorial",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Guinea Ecuatorial. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/gq",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
+    </>
+  )
 }

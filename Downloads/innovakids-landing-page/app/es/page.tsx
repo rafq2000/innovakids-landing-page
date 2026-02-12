@@ -6,9 +6,9 @@ import { MapPin, ArrowRight } from "lucide-react"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños en España | Crea Apps y Videojuegos",
+  title: "Curso de IA para Niños y Adolescentes en España | Clases Online en Vivo",
   description:
-    "Niños en España de 8-14 crean arte, música y apps con IA. Horario Madrid, pago en Euros. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+    "Niños y adolescentes en España de 8-17 años crean apps, arte y música con IA. Horario Madrid y Barcelona. Pago en Euros. Máx 5 por grupo. Garantía 10 días.",
   keywords: [
     "curso ia niños españa",
     "clases programación ia madrid",
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     canonical: "https://www.innovakidslatam.com/es",
   },
   openGraph: {
-    title: "Curso de IA para Niños en España | InnovaKids",
-    description: "527 alumnos graduados. La primera escuela de Vibe Coding en España. Clases en vivo horario Madrid/Barcelona. Proyectos reales.",
+    title: "Curso de IA para Niños y Adolescentes en España | InnovaKids",
+    description: "527 graduados en 9 países. Tu hijo crea apps y videojuegos con IA. Grupos de 5, horario España.",
     url: "https://www.innovakidslatam.com/es",
     locale: "es_ES",
     siteName: "InnovaKids España",
@@ -167,7 +167,7 @@ export default function EspanaHub() {
                 className="group rounded-2xl bg-card p-6 transition-all hover:shadow-lg"
               >
                 <h3 className="mb-2 text-xl font-bold group-hover:text-[#C60B1E]">Cursos de IA para Niños</h3>
-                <p className="text-muted-foreground">Programa completo de 10 clases para niños 8-14 años</p>
+                <p className="text-muted-foreground">Programa completo de 10 clases para niños 8-17 años</p>
                 <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#C60B1E]">
                   Ver más <ArrowRight className="h-4 w-4" />
                 </span>
@@ -225,6 +225,29 @@ export default function EspanaHub() {
           </div>
         </section>
       </main>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids España",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en España. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/es",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

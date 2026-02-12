@@ -330,7 +330,7 @@ export default function GuiaIANinosChile() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$267 USD • 10 clases • Máx 5 niños • Garantía 10 días</p>
+              <p className="mt-4 text-sm text-white/60">$267 USD • 10 clases • Máx 5 niños • Garantía 10 días.10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

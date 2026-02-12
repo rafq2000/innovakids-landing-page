@@ -8,9 +8,9 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños en Ecuador | Crea Apps y Videojuegos",
+  title: "Curso de IA para Niños y Adolescentes en Ecuador | Clases Online en Vivo",
   description:
-    "Niños ecuatorianos de 8-14 crean arte, música y apps con IA. Horario Quito, pago con Transferencia. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+    "Niños y adolescentes ecuatorianos de 8-17 años crean apps, arte y música con IA. Horario Quito y Guayaquil. Máx 5 por grupo. Garantía 10 días.",
   keywords: [
     "curso ia niños ecuador",
     "clases programación ia quito",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     "vibe coding ecuador",
   ],
   openGraph: {
-    title: "Curso de IA para Niños en Ecuador | InnovaKids",
-    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Ecuador. Clases en vivo horario Quito. Proyectos reales.",
+    title: "Curso de IA para Niños y Adolescentes en Ecuador | InnovaKids",
+    description: "527 graduados en 9 países. Tu hijo crea apps y videojuegos con IA. Grupos de 5, horario Ecuador.",
     url: "https://www.innovakidslatam.com/ec",
     locale: "es_EC",
     siteName: "InnovaKids Ecuador",
@@ -56,7 +56,7 @@ export default function EcuadorHubPage() {
               </h1>
 
               <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-                La primera escuela de Vibe Coding para niños de 8-14 años.
+                La primera escuela de Vibe Coding para niños de 8-17 años.
                 <strong className="text-white"> Clases 100% online</strong> desde cualquier provincia del país.
               </p>
 
@@ -85,7 +85,7 @@ export default function EcuadorHubPage() {
                 </div>
                 <div className="flex items-center gap-2 bg-card/50 px-4 py-2 rounded-full">
                   <CheckCircle className="h-5 w-5 text-green-500" />
-                  <span>Garantía 10 Días</span>
+                  <span>Garantía 10 días.10 Días</span>
                 </div>
               </div>
             </div>
@@ -157,6 +157,29 @@ export default function EcuadorHubPage() {
       </div>
 
       <WhatsAppButton />
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids Ecuador",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Ecuador. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/ec",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

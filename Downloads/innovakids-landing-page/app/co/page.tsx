@@ -6,26 +6,26 @@ import { ArrowRight, CheckCircle, Target } from "lucide-react"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños en Colombia | Online en Vivo",
+  title: "Curso de IA para Niños y Adolescentes en Colombia | Online en Vivo",
   description:
-    "Niños colombianos de 8-17 crean arte, música y apps con IA. Horario Bogotá, pago con Nequi o PSE. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía 10 días.⭐",
+    "Niños y adolescentes colombianos de 8-17 años crean apps, arte y música con IA. Horario Bogotá, pago Nequi o PSE. 10 clases en vivo, máx 5 por grupo. Garantía total.",
   keywords: [
-    "curso ia niños colombia",
+    "curso ia niños adolescentes colombia",
     "clases programación ia bogota",
-    "escuela inteligencia artificial niños medellin",
+    "escuela inteligencia artificial adolescentes medellin",
     "innovakids colombia",
     "vibe coding colombia",
   ],
   openGraph: {
-    title: "Curso de IA para Niños en Colombia | InnovaKids",
-    description: "La primera escuela de Vibe Coding en Colombia. Tu hijo crea apps y juegos con IA. Clases en vivo desde Bogotá/Medellín.",
-    url: "https://www.innovakidslatam.com/colombia",
+    title: "Curso de IA para Niños y Adolescentes en Colombia | InnovaKids",
+    description: "La primera escuela de Vibe Coding en Colombia. Tu hijo crea apps y juegos con IA. Clases en vivo desde Bogotá, Medellín y todo el país.",
+    url: "https://www.innovakidslatam.com/co",
     locale: "es_CO",
     siteName: "InnovaKids Colombia",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.innovakidslatam.com/colombia",
+    canonical: "https://www.innovakidslatam.com/co",
   },
 }
 
@@ -91,11 +91,11 @@ export default function ColombiaHub() {
               Escuela de IA y Vibe Coding en Colombia 🇨🇴
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-xl text-white/90 md:text-2xl">
-              Inteligencia Artificial y Programación para Niños en Todo el País
+              Inteligencia Artificial y Programación para Niños y Adolescentes en Todo el País
             </p>
 
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/80">
-              Niños colombianos de 8-17 años están creando el futuro con IA. Desde comics hasta apps, desde música hasta
+              Niños y adolescentes colombianos de 8-17 años están creando el futuro con IA. Desde comics hasta apps, desde música hasta
               videojuegos. 100% online en vivo.
             </p>
 
@@ -330,6 +330,29 @@ export default function ColombiaHub() {
           </div>
         </section>
       </main>
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids Colombia",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Colombia. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/co",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

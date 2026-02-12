@@ -9,7 +9,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Clases de IA para Niños en Montevideo | Online en Vivo",
   description:
-    "¿Vives en Montevideo? Tu hijo puede crear apps y videojuegos con IA desde casa (Pocitos, Carrasco, Punta Carretas). Horarios flexibles tardes y sábados. Garantía total.",
+    "¿Vives en Montevideo? Tu hijo puede crear apps y videojuegos con IA desde casa (Pocitos, Carrasco, Punta Carretas). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
   keywords: [
     "clases ia niños montevideo",
     "curso programación niños pocitos",
@@ -120,7 +120,7 @@ export default function MontevideoClasesIAPage() {
 
               <div className="flex flex-wrap justify-center gap-6 pt-8 text-sm text-gray-400">
                 <span className="flex items-center gap-2">
-                  <Shield className="w-4 h-4 text-green-400" /> Garantía 10 días
+                  <Shield className="w-4 h-4 text-green-400" /> Garantía 10 días.10 días
                 </span>
                 <span className="flex items-center gap-2">
                   <Users className="w-4 h-4 text-[#0038A8]" /> Grupos de 5 niños
@@ -209,7 +209,7 @@ export default function MontevideoClasesIAPage() {
                   "Acceso a grabaciones",
                   "Certificado internacional",
                   "Soporte WhatsApp 24/7",
-                  "Garantía 10 días",
+                  "Garantía 10 días.10 días",
                 ].map((item, i) => (
                   <div key={i} className="flex items-center gap-3">
                     <Check className="w-5 h-5 text-[#0038A8] flex-shrink-0" />

@@ -7,7 +7,7 @@ import { Users, Clock, Shield, Star, Target, MapPin } from "lucide-react"
 export const metadata: Metadata = {
   title: "Clases de IA para Niños en Santo Domingo | Online en Vivo",
   description:
-    "¿Vives en Santo Domingo? Tu hijo puede crear apps y videojuegos con IA desde casa (Piantini, Naco, Arroyo Hondo). Horarios flexibles tardes y sábados. Garantía total.",
+    "¿Vives en Santo Domingo? Tu hijo puede crear apps y videojuegos con IA desde casa (Piantini, Naco, Arroyo Hondo). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
   keywords: [
     "clases ia niños santo domingo",
     "curso programación niños piantini",
@@ -143,7 +143,7 @@ export default function ClasesIANinosSantoDomingo() {
               </div>
               <div className="rounded-2xl bg-card p-6 text-center">
                 <Shield className="mx-auto mb-4 h-12 w-12 text-[#002D62]" />
-                <h3 className="mb-2 text-xl font-bold">Garantía 10 Días</h3>
+                <h3 className="mb-2 text-xl font-bold">Garantía 10 días.10 Días</h3>
                 <p className="text-muted-foreground">Devolución completa sin preguntas</p>
               </div>
             </div>
@@ -215,7 +215,7 @@ export default function ClasesIANinosSantoDomingo() {
           <div className="container mx-auto px-4 text-center text-white">
             <h2 className="mb-4 text-3xl font-bold md:text-4xl">Inscribe a Tu Hijo Hoy</h2>
             <p className="mx-auto mb-10 max-w-2xl text-lg text-white/80">
-              $267 USD - 10 clases en vivo - Grupos de máximo 5 niños - Garantía 10 días
+              $267 USD - 10 clases en vivo - Grupos de máximo 5 niños - Garantía 10 días.10 días
             </p>
 
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">

@@ -7,7 +7,7 @@ import { Users, Clock, Shield, Star, CheckCircle, Target, MapPin } from "lucide-
 export const metadata: Metadata = {
   title: "Clases de IA para Niños en Lima | Online en Vivo",
   description:
-    "¿Vives en Lima? Tu hijo puede crear apps y videojuegos con IA desde casa (Miraflores, San Isidro, La Molina). Horarios flexibles tardes y sábados. Garantía total.",
+    "¿Vives en Lima? Tu hijo puede crear apps y videojuegos con IA desde casa (Miraflores, San Isidro, La Molina). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
   keywords: [
     "clases ia niños lima",
     "curso programación niños miraflores",
@@ -148,7 +148,7 @@ export default function ClasesIANinosLima() {
               </div>
               <div className="rounded-2xl bg-card p-6 text-center">
                 <Shield className="mx-auto mb-4 h-12 w-12 text-[#D91023]" />
-                <h3 className="mb-2 font-bold">Garantía 10 Días</h3>
+                <h3 className="mb-2 font-bold">Garantía 10 días.10 Días</h3>
                 <p className="text-sm text-muted-foreground">Devolución completa si no quedas satisfecho</p>
               </div>
               <div className="rounded-2xl bg-card p-6 text-center">
@@ -239,7 +239,7 @@ export default function ClasesIANinosLima() {
                 <CheckCircle className="h-4 w-4" /> Sin compromiso
               </span>
               <span className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4" /> Garantía 10 días
+                <CheckCircle className="h-4 w-4" /> Garantía 10 días.10 días
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle className="h-4 w-4" /> $267 USD total

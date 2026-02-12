@@ -8,9 +8,9 @@ import Link from "next/link"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-    title: "Curso de IA para Niños en Puerto Rico | Crea Apps y Videojuegos",
+    title: "Curso de IA para Niños y Adolescentes en Puerto Rico | Online en Vivo",
     description:
-        "Niños boricuas de 8-14 crean arte, música y apps con IA. Horario San Juan. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+    "Niños y adolescentes boricuas de 8-17 años crean apps, arte y música con IA. Horario San Juan. Máx 5 por grupo. Garantía 10 días.",
     keywords: [
         "curso ia niños puerto rico",
         "clases programación ia san juan",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
         "vibe coding puerto rico",
     ],
     openGraph: {
-        title: "Curso de IA para Niños en Puerto Rico | InnovaKids",
-        description: "527 alumnos graduados. La primera escuela de Vibe Coding en Puerto Rico. Clases en vivo horario local. Proyectos reales.",
+        title: "Curso de IA para Niños y Adolescentes en Puerto Rico | InnovaKids",
+        description: "La primera escuela de Vibe Coding para niños y adolescentes en Puerto Rico. Clases en vivo, grupos reducidos.",
         url: "https://www.innovakidslatam.com/pr",
         locale: "es_PR",
         siteName: "InnovaKids Puerto Rico",
@@ -60,7 +60,7 @@ export default function PuertoRicoHubPage() {
                         </h1>
 
                         <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-                            La primera escuela de Vibe Coding para niños de 8-14 años.
+                            La primera escuela de Vibe Coding para niños de 8-17 años.
                             <strong className="text-white"> Clases 100% online</strong> desde cualquier municipio de la isla.
                         </p>
 
@@ -75,7 +75,7 @@ export default function PuertoRicoHubPage() {
                             </div>
                             <div className="flex items-center gap-2 text-gray-400">
                                 <Shield className="w-5 h-5 text-primary" />
-                                <span>Garantía 10 días</span>
+                                <span>Garantía 10 días.10 días</span>
                             </div>
                         </div>
 
@@ -135,6 +135,29 @@ export default function PuertoRicoHubPage() {
                 </section>
             </main>
             <Footer />
-        </>
-    )
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids Puerto Rico",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Puerto Rico. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/pr",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
+    </>
+  )
 }

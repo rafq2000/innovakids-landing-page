@@ -106,7 +106,7 @@ export default function BlogCursosIANinosPanama() {
                 <li>Proyectos reales publicables</li>
                 <li>Certificado de finalización</li>
                 <li>Soporte por WhatsApp</li>
-                <li>Garantía de 10 días</li>
+                <li>Garantía 10 días.de 10 días</li>
               </ul>
 
               <h2>Comparativa con Otras Opciones en Panamá</h2>

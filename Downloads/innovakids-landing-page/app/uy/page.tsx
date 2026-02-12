@@ -8,9 +8,9 @@ import Link from "next/link"
 import { CountryProgramSection } from "@/components/country-program-section"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños en Uruguay | Crea Apps y Videojuegos",
+  title: "Curso de IA para Niños y Adolescentes en Uruguay | Clases Online en Vivo",
   description:
-    "Niños uruguayos de 8-14 crean arte, música y apps con IA. Horario Montevideo, pago en Pesos/USD. 10 clases en vivo, grupos de 5. Sin requisitos. Garantía ⭐",
+    "Niños y adolescentes uruguayos de 8-17 años crean apps, arte y música con IA. Horario Montevideo, pago en Pesos o USD. Máx 5 por grupo. Garantía 10 días.",
   keywords: [
     "curso ia niños uruguay",
     "clases programación ia montevideo",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     "vibe coding uruguay",
   ],
   openGraph: {
-    title: "Curso de IA para Niños en Uruguay | InnovaKids",
-    description: "527 alumnos graduados. La primera escuela de Vibe Coding en Uruguay. Clases en vivo horario Montevideo. Proyectos reales.",
+    title: "Curso de IA para Niños y Adolescentes en Uruguay | InnovaKids",
+    description: "527 graduados en 9 países. Tu hijo crea apps y videojuegos con IA. Grupos de 5, horario Uruguay.",
     url: "https://www.innovakidslatam.com/uy",
     locale: "es_UY",
     siteName: "InnovaKids Uruguay",
@@ -64,7 +64,7 @@ export default function UruguayHubPage() {
             </h1>
 
             <p className="text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto mb-8">
-              La primera escuela de Vibe Coding para niños de 8-14 años.
+              La primera escuela de Vibe Coding para niños de 8-17 años.
               <strong className="text-white"> Clases 100% online</strong> desde cualquier departamento del país.
             </p>
 
@@ -158,7 +158,7 @@ export default function UruguayHubPage() {
                 <div className="w-16 h-16 rounded-full bg-[#0038A8]/20 flex items-center justify-center mx-auto mb-4">
                   <span className="text-3xl">🛡️</span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">Garantía 10 Días</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Garantía 10 días.10 Días</h3>
                 <p className="text-gray-400">
                   Si no estás satisfecho, te devolvemos el 100% de tu dinero. Sin preguntas.
                 </p>
@@ -244,6 +244,29 @@ export default function UruguayHubPage() {
       </main>
 
       <Footer />
+      {/* Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "EducationalOrganization",
+            name: "InnovaKids Uruguay",
+            description: "Escuela de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8-17 años en Uruguay. Clases online en vivo, máximo 5 alumnos por grupo.",
+            url: "https://www.innovakidslatam.com/uy",
+            parentOrganization: {
+              "@type": "Organization",
+              name: "InnovaKids",
+              url: "https://www.innovakidslatam.com",
+            },
+            aggregateRating: {
+              "@type": "AggregateRating",
+              ratingValue: "4.9",
+              reviewCount: "523",
+            },
+          }),
+        }}
+      />
     </>
   )
 }

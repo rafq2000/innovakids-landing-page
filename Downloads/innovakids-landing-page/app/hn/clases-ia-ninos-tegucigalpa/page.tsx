@@ -9,7 +9,7 @@ import WhatsAppButton from "@/components/whatsapp-button"
 export const metadata: Metadata = {
   title: "Clases de IA para Niños en Tegucigalpa | Online en Vivo",
   description:
-    "¿Vives en Tegucigalpa? Tu hijo puede crear apps y videojuegos con IA desde casa (Lomas del Guijarro, Las Lomas). Horarios flexibles tardes y sábados. Garantía total.",
+    "¿Vives en Tegucigalpa? Tu hijo puede crear apps y videojuegos con IA desde casa (Lomas del Guijarro, Las Lomas). Horarios flexibles tardes y sábados. Garantía 10 días.total.",
   keywords: [
     "clases ia niños tegucigalpa",
     "curso programación niños san pedro sula",
@@ -78,7 +78,7 @@ export default function TegucigalpaPage() {
 
               <div className="bg-[#0073CF]/10 rounded-2xl p-6 max-w-xl mx-auto">
                 <p className="text-lg font-semibold text-[#0073CF]">💰 $267 USD - 10 Clases</p>
-                <p className="text-muted-foreground">Garantía de satisfacción 10 días • Máx 5 niños por grupo</p>
+                <p className="text-muted-foreground">Garantía 10 días.de satisfacción 10 días • Máx 5 niños por grupo</p>
               </div>
             </div>
           </div>
