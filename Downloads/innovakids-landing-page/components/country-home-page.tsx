@@ -100,7 +100,7 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
                 <AIFutureSection />
                 <QualificationSection />
                 <ModulePreviewSection />
-                <ValueStackSection />
+                <ValueStackSection country={country} />
 
                 <div className="h-16" />
 

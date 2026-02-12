@@ -19,174 +19,205 @@ import {
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { CountdownTimer } from "@/components/countdown-timer"
+import type { CountryConfig } from "@/lib/countries-config"
+
+interface ValueStackSectionProps {
+    country?: CountryConfig
+}
 
 const included = [
     {
         icon: Video,
         title: "10 Clases en Vivo",
         desc: "60 minutos cada una con instructor experto",
-        value: "$500",
+        valueUSD: 500,
     },
     {
         icon: Users,
         title: "Grupos de Máximo 5 Niños",
         desc: "Atención 100% personalizada para tu hijo",
-        value: "$200",
+        valueUSD: 200,
     },
     {
         icon: FileVideo,
         title: "Grabaciones de Todas las Clases",
         desc: "Acceso ilimitado para repasar cuando quiera",
-        value: "$150",
+        valueUSD: 150,
     },
     {
         icon: Palette,
         title: "Acceso a 15+ Herramientas de IA",
         desc: "ChatGPT, Midjourney, ElevenLabs, Runway y más",
-        value: "$300",
+        valueUSD: 300,
     },
     {
         icon: BookOpen,
         title: "Material Descargable",
         desc: "Guías, plantillas y recursos exclusivos",
-        value: "$100",
+        valueUSD: 100,
     },
     {
         icon: MessageCircle,
         title: "Comunidad Privada Discord",
         desc: "Conexión con otros alumnos y mentores",
-        value: "$50",
+        valueUSD: 50,
     },
     {
         icon: Headphones,
         title: "Soporte WhatsApp 24/7",
         desc: "Respuestas en menos de 2 horas",
-        value: "$100",
+        valueUSD: 100,
     },
     {
         icon: Award,
         title: "Certificado Digital",
         desc: "Reconocimiento oficial de InnovaKids",
-        value: "$50",
+        valueUSD: 50,
     },
     {
         icon: Zap,
         title: "Portfolio de Proyectos",
         desc: "5+ proyectos reales para mostrar",
-        value: "$200",
+        valueUSD: 200,
     },
     {
         icon: Gift,
         title: "BONUS: Clase de Seguridad Digital",
         desc: "Protección contra deepfakes y estafas",
-        value: "$100",
+        valueUSD: 100,
     },
 ]
 
-export function ValueStackSection() {
+export function ValueStackSection({ country }: ValueStackSectionProps) {
     const sectionRef = useRef<HTMLElement>(null)
     const isInView = useInView(sectionRef, { once: true, margin: "-100px" })
 
-    const totalValue = included.reduce((acc, item) => acc + parseInt(item.value.replace("$", "")), 0)
+    // Helper to format currency
+    const formatCurrency = (amount: number) => {
+        if (!country) return `$${amount} USD`
+        if (country.currency === 'USD' || country.currency === 'EUR') return `${country.currencySymbol}${amount} ${country.currency}`
+        // For LATAM currencies, we approximate the "Value" visually
+        // 1 USD approx conversion for display value (not exact exchange, just anchor)
+        const exchangeRate = country.priceLocal / 267 // derived rate
+        const localVal = Math.round(amount * exchangeRate / 100) * 100 // round to nearest 100
+        return `${country.currencySymbol}${localVal.toLocaleString()}`
+    }
+
+    const totalValueUSD = included.reduce((acc, item) => acc + item.valueUSD, 0)
+    const totalValueDisplay = formatCurrency(totalValueUSD)
+
+    // The actual price to pay
+    const actualPriceDisplay = country ? country.priceDisplay : "$267 USD"
+    const savingsDisplay = country
+        ? formatCurrency(totalValueUSD - (country.priceUSD)) // rough savings calc
+        : `$${totalValueUSD - 267} USD`
 
     return (
-        <section ref={sectionRef} className="relative bg-gradient-to-b from-[#030712] to-[#0a1628] py-16 md:py-24 overflow-hidden">
-            {/* Background */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-green-500/10 rounded-full blur-[150px]" />
+        <section ref={sectionRef} className="relative bg-[#0a1628] py-24 overflow-hidden">
+            {/* Background Gradients */}
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-500/20 rounded-full blur-[120px] mix-blend-screen" />
+            <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] mix-blend-screen" />
 
             <div className="container mx-auto px-4 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
                     animate={isInView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.6 }}
-                    className="text-center mb-12"
+                    className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-                        Todo lo que <span className="text-green-400">recibe</span> tu hijo
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20 mb-6">
+                        <Award className="w-5 h-5 text-purple-400" />
+                        <span className="text-purple-300 font-medium text-sm">Todo incluido en tu inscripción</span>
+                    </div>
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
+                        No es solo un curso. <br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+                            Es un ecosistema de aprendizaje.
+                        </span>
                     </h2>
-                    <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-                        No solo son clases. Es un programa completo para transformar a tu hijo en un creador de tecnología.
+                    <p className="text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                        Hemos diseñado cada detalle para garantizar que tu hijo no solo aprenda, sino que se transforme en un creador digital seguro y capaz.
                     </p>
                 </motion.div>
 
                 {/* Value items grid */}
-                <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto mb-10">
+                <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-16">
                     {included.map((item, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                            animate={isInView ? { opacity: 1, x: 0 } : {}}
-                            transition={{ duration: 0.4, delay: 0.1 + index * 0.05 }}
-                            className="flex items-start gap-4 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-green-500/30 hover:bg-green-500/5 transition-all group"
+                            initial={{ opacity: 0, scale: 0.95 }}
+                            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                            transition={{ duration: 0.4, delay: index * 0.05 }}
+                            className="flex items-center gap-6 p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-purple-500/30 transition-all group backdrop-blur-sm"
                         >
-                            <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-green-500/20 flex items-center justify-center">
-                                <item.icon className="w-6 h-6 text-green-400" />
+                            <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <item.icon className="w-8 h-8 text-purple-400 group-hover:text-pink-400 transition-colors" />
                             </div>
                             <div className="flex-1">
-                                <div className="flex items-start justify-between gap-2">
-                                    <h3 className="text-white font-semibold group-hover:text-green-400 transition-colors">
+                                <div className="flex items-center justify-between gap-4 mb-1">
+                                    <h3 className="text-lg font-bold text-white group-hover:text-purple-300 transition-colors">
                                         {item.title}
                                     </h3>
-                                    <span className="text-gray-500 line-through text-sm">{item.value}</span>
+                                    <span className="text-slate-500 text-sm font-mono bg-black/20 px-2 py-1 rounded">
+                                        Valor: {formatCurrency(item.valueUSD)}
+                                    </span>
                                 </div>
-                                <p className="text-gray-400 text-sm">{item.desc}</p>
+                                <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
                             </div>
-                            <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
                         </motion.div>
                     ))}
                 </div>
 
                 {/* Total value box */}
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                    transition={{ duration: 0.5, delay: 0.6 }}
-                    className="max-w-2xl mx-auto mb-8"
+                    initial={{ opacity: 0, y: 40 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.6, delay: 0.5 }}
+                    className="max-w-3xl mx-auto"
                 >
-                    <div className="rounded-2xl bg-gradient-to-r from-green-500/20 to-emerald-500/20 border-2 border-green-500/30 p-6 text-center">
-                        <p className="text-gray-400 mb-2">Valor total del programa:</p>
-                        <div className="flex items-center justify-center gap-4 mb-4">
-                            <span className="text-3xl md:text-4xl text-gray-500 line-through">${totalValue} USD</span>
-                            <span className="text-4xl md:text-5xl font-bold text-green-400">$267 USD</span>
+                    <div className="relative rounded-3xl bg-gradient-to-b from-[#1a2942] to-[#0f192b] border border-white/10 p-8 md:p-12 text-center overflow-hidden shadow-2xl">
+                        {/* Glow effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-transparent to-blue-500/10 opacity-50" />
+
+                        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 mb-8">
+                            <div className="text-center md:text-right">
+                                <p className="text-slate-400 mb-1 text-lg">Valor Real Total</p>
+                                <p className="text-3xl md:text-4xl text-slate-500 line-through decoration-red-500 decoration-2 font-bold opacity-70">
+                                    {totalValueDisplay}
+                                </p>
+                            </div>
+                            <div className="w-px h-16 bg-white/10 hidden md:block" />
+                            <div className="text-center md:text-left">
+                                <p className="text-purple-400 mb-1 text-lg font-medium">Tu Inversión Hoy</p>
+                                <p className="text-5xl md:text-6xl font-black text-white tracking-tight drop-shadow-lg">
+                                    {actualPriceDisplay}
+                                </p>
+                            </div>
                         </div>
-                        <p className="text-white font-medium">
-                            Ahorra <span className="text-green-400 font-bold">${totalValue - 267} USD</span> con el precio de lanzamiento 2026
-                        </p>
-                    </div>
-                </motion.div>
 
-                {/* Guarantee */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.7 }}
-                    className="flex items-center justify-center gap-4 mb-8"
-                >
-                    <Shield className="w-12 h-12 text-yellow-500" />
-                    <div className="text-left">
-                        <p className="text-white font-bold text-lg">Garantía de 10 días</p>
-                        <p className="text-gray-400 text-sm">Si no estás satisfecho, te devolvemos el 100%. Sin preguntas.</p>
-                    </div>
-                </motion.div>
+                        <div className="inline-block bg-green-500/20 border border-green-500/30 rounded-full px-6 py-2 mb-10">
+                            <p className="text-green-400 font-bold">
+                                Ahorras más del 80% ({savingsDisplay})
+                            </p>
+                        </div>
 
-                {/* CTA */}
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={isInView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.5, delay: 0.8 }}
-                    className="text-center"
-                >
-                    <Button
-                        size="lg"
-                        asChild
-                        className="bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-400 hover:to-emerald-400 text-black px-10 py-6 text-lg font-bold rounded-full shadow-2xl"
-                    >
-                        <Link href="https://calendly.com/innovakids/evaluacion" target="_blank">
-                            Sí, quiero todo esto por $267 →
-                        </Link>
-                    </Button>
-                    <div className="mt-6">
-                        <CountdownTimer targetDate="2026-02-14T23:59:00-03:00" label="Inscripciones abiertas por" />
+                        <div className="flex flex-col items-center gap-6">
+                            <Button
+                                size="lg"
+                                asChild
+                                className="w-full md:w-auto bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-12 py-8 text-xl font-bold rounded-full shadow-xl hover:shadow-purple-500/25 transition-all transform hover:-translate-y-1"
+                            >
+                                <Link href="#inversion">
+                                    Reservar Cupo Ahora
+                                    <Zap className="ml-2 w-6 h-6 fill-current" />
+                                </Link>
+                            </Button>
+
+                            <div className="flex items-center gap-2 text-slate-400 text-sm">
+                                <Shield className="w-4 h-4 text-purple-400" />
+                                <span>Garantía de Satisfacción 10 Días o Devolvemos tu Dinero</span>
+                            </div>
+                        </div>
                     </div>
                 </motion.div>
             </div>
