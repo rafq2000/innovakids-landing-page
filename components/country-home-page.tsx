@@ -93,7 +93,7 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(countrySchema) }} />
-            <Navigation />
+            <Navigation countryCode={country.code} />
             <main className="min-h-screen bg-background">
                 <CountryHeroSection country={country} />
 

@@ -6,7 +6,11 @@ import { Menu, X } from "lucide-react"
 import Image from "next/image"
 import { motion, useScroll, useTransform } from "framer-motion"
 
-export function Navigation() {
+interface NavigationProps {
+  countryCode?: string
+}
+
+export function Navigation({ countryCode }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [activeSection, setActiveSection] = useState("")
@@ -52,12 +56,15 @@ export function Navigation() {
   const calendlyUrl =
     "https://calendly.com/innovakidslatam/reunion-informativa-innovakids?hide_gdpr_banner=1&hide_event_type_details=1&primary_color=4dd0e1"
 
+  const basePath = countryCode ? `/${countryCode}` : ""
+
   const navLinks = [
-    { href: "/#programa", label: "El Programa", section: "programa" },
-    { href: "/metodologia-aprender-creando", label: "Metodología", section: "metodologia" },
-    { href: "/#testimonios", label: "Resultados", section: "testimonios" },
+    { href: `${basePath}/programa`, label: "El Programa", section: "programa" },
+    { href: `${basePath}/metodologia-aprender-creando`, label: "Metodología", section: "metodologia" },
+    { href: `${basePath}/resultados`, label: "Resultados", section: "testimonios" },
     { href: "/blog", label: "Blog", section: "blog" },
   ]
+
 
   return (
     <motion.nav
