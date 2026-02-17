@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Scale, Mail, Phone, MapPin, ExternalLink, Heart } from "lucide-react"
+import { Scale, Mail, Phone, MapPin, ExternalLink, Heart, Briefcase, Scroll } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -72,7 +72,50 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Recursos Legales */}
+          {/* Servicios Especializados (New SEO Column) */}
+          <div className="space-y-6">
+            <h3 className="text-white font-semibold text-lg">Abogados Especialistas</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/abogado-laboral"
+                  className="text-slate-400 hover:text-emerald-400 transition-colors text-sm flex items-center gap-2"
+                >
+                  <Briefcase className="h-3 w-3" />
+                  Abogado Laboral
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/abogado-herencias"
+                  className="text-slate-400 hover:text-emerald-400 transition-colors text-sm flex items-center gap-2"
+                >
+                  <Scroll className="h-3 w-3" />
+                  Abogado Herencias
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/abogado-familia"
+                  className="text-slate-400 hover:text-emerald-400 transition-colors text-sm flex items-center gap-2"
+                >
+                  <Heart className="h-3 w-3" />
+                  Abogado Familia
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/abogado-deudas"
+                  className="text-slate-400 hover:text-emerald-400 transition-colors text-sm flex items-center gap-2"
+                >
+                  <Scale className="h-3 w-3" />
+                  Abogado Deudas
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Recursos Legales (Moved/Condensed if needed, but I'll keeping it) */}
           <div className="space-y-6">
             <h3 className="text-white font-semibold text-lg">Recursos Oficiales</h3>
             <ul className="space-y-3">

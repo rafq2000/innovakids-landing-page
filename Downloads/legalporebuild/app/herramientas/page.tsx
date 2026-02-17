@@ -143,6 +143,67 @@ export default function HerramientasPage() {
         </div>
       </section>
 
+      {/* Servicios Relacionados - Cross Linking SEO */}
+      <section className="py-16 bg-slate-800/30 border-y border-white/5">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-white mb-4">
+              ¿Buscas un <span className="text-emerald-400">Abogado Especialista?</span>
+            </h2>
+            <p className="text-lg text-slate-400 max-w-2xl mx-auto">
+              Complementa el uso de nuestras calculadoras con asesoría experta
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link href="/abogado-laboral" className="group">
+              <Card className="bg-white/5 border-white/10 hover:border-emerald-500/50 transition-all h-full">
+                <CardContent className="p-6 flex flex-col items-center text-center h-full">
+                  <div className="p-4 bg-emerald-500/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
+                    <Users className="h-8 w-8 text-emerald-400" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-2">Abogado Laboral</h3>
+                  <p className="text-slate-400 text-sm mb-4 flex-grow">
+                    Expertos en despidos injustificados, autodespido y tutela laboral.
+                  </p>
+                  <Button variant="outline" className="w-full border-white/20 text-emerald-400 hover:bg-emerald-500/10">Ver Servicios</Button>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link href="/abogado-herencias" className="group">
+              <Card className="bg-white/5 border-white/10 hover:border-purple-500/50 transition-all h-full">
+                <CardContent className="p-6 flex flex-col items-center text-center h-full">
+                  <div className="p-4 bg-purple-500/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
+                    <Star className="h-8 w-8 text-purple-400" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-2">Abogado Herencias</h3>
+                  <p className="text-slate-400 text-sm mb-4 flex-grow">
+                    Tramitamos tu Posesión Efectiva, Testamentos y Particiones.
+                  </p>
+                  <Button variant="outline" className="w-full border-white/20 text-purple-400 hover:bg-purple-500/10">Ver Servicios</Button>
+                </CardContent>
+              </Card>
+            </Link>
+
+            <Link href="/abogado-deudas" className="group">
+              <Card className="bg-white/5 border-white/10 hover:border-blue-500/50 transition-all h-full">
+                <CardContent className="p-6 flex flex-col items-center text-center h-full">
+                  <div className="p-4 bg-blue-500/10 rounded-full mb-4 group-hover:scale-110 transition-transform">
+                    <TrendingUp className="h-8 w-8 text-blue-400" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-2">Abogado Deudas</h3>
+                  <p className="text-slate-400 text-sm mb-4 flex-grow">
+                    Defensa ante embargos, Ley de Quiebras y eliminación de DICOM.
+                  </p>
+                  <Button variant="outline" className="w-full border-white/20 text-blue-400 hover:bg-blue-500/10">Ver Servicios</Button>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-r from-emerald-600/20 to-emerald-700/20 border-t border-emerald-500/30">
         <div className="container text-center">

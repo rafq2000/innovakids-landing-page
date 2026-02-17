@@ -1696,6 +1696,74 @@ Calcula el tuyo GRATIS en LegalPO.cl
               </CardContent>
             </Card>
 
+            {/* Guía Definitiva 2026 - SEO Content Expansion */}
+            <Card className="bg-white/5 border-white/10 mt-8">
+              <CardContent className="p-8">
+                <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
+                  <BookOpen className="h-6 w-6 mr-3 text-emerald-400" />
+                  Guía Definitiva de Finiquito 2026
+                </h3>
+
+                <div className="space-y-8">
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-3">¿Qué debe contener el finiquito legalmente?</h4>
+                    <p className="text-slate-300 mb-4">
+                      Según la Inspección del Trabajo, el finiquito debe ser ratificado ante un ministro de fe y contener:
+                    </p>
+                    <ul className="list-disc list-inside text-slate-300 space-y-2 ml-4">
+                      <li><strong className="text-white">Causal de término:</strong> Debe ser clara y específica (Art. 159, 160 o 161).</li>
+                      <li><strong className="text-white">Montos desglosados:</strong> Cada ítem (vacaciones, indemnización, descuentos) debe estar separado claramente.</li>
+                      <li><strong className="text-white">Reserva de derechos:</strong> Tienes el derecho irrenunciable a escribir "Me reservo el derecho a demandar..." si no estás de acuerdo con algo.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h4 className="text-xl font-semibold text-white mb-3">Renuncia vs. Despido: Diferencias Clave</h4>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-left border-collapse mt-2">
+                        <thead>
+                          <tr className="border-b border-white/20">
+                            <th className="p-3 text-white">Concepto</th>
+                            <th className="p-3 text-emerald-400">Renuncia (Art. 159 N°2)</th>
+                            <th className="p-3 text-red-400">Despido (Art. 161)</th>
+                          </tr>
+                        </thead>
+                        <tbody className="text-slate-300">
+                          <tr className="border-b border-white/10">
+                            <td className="p-3 font-medium">Aviso Previo</td>
+                            <td className="p-3">30 días (idealmente)</td>
+                            <td className="p-3">30 días o pago sustitutivo</td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="p-3 font-medium">Indemnización Años</td>
+                            <td className="p-3">NO corresponde</td>
+                            <td className="p-3">SÍ corresponde (tope 11 años)</td>
+                          </tr>
+                          <tr className="border-b border-white/10">
+                            <td className="p-3 font-medium">Seguro Cesantía</td>
+                            <td className="p-3">Acceso limitado (Fondo Solidario depende)</td>
+                            <td className="p-3">Acceso total + aporte empleador</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div className="bg-slate-800/50 p-6 rounded-xl border border-white/10">
+                    <h4 className="text-xl font-semibold text-white mb-3">¿Qué hacer si no me pagan el finiquito?</h4>
+                    <p className="text-slate-300 mb-4">
+                      El empleador tiene un plazo de <strong className="text-white">10 días hábiles</strong> desde el término de la relación laboral para poner el finiquito a disposición. Si no lo hace:
+                    </p>
+                    <ol className="list-decimal list-inside text-slate-300 space-y-2">
+                      <li>Acude a la Inspección del Trabajo a interponer un reclamo administrativo.</li>
+                      <li>No firmes nada si no estás de acuerdo con los montos ofrecidos.</li>
+                      <li>Si firmas, escribe siempre de puño y letra: <em>"Me reservo el derecho a reclamar por [causal/montos/descuentos]..."</em> antes de tu firma.</li>
+                    </ol>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             {/* CTA Section */}
             <Card className="bg-gradient-to-r from-emerald-600/20 to-emerald-700/20 border-emerald-500/30">
               <CardContent className="p-8 text-center">
