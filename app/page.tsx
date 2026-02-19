@@ -8,7 +8,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 export const metadata: Metadata = {
   title: "Curso de IA para Niños y Adolescentes | 527 Graduados en 9 Países",
   description:
-    "La escuela #1 de inteligencia artificial para niños y adolescentes online. Tu hijo crea apps, música y arte con IA en 5 semanas. Máx 5 por grupo. Garantía 10 días.10 días o devolvemos todo.",
+    "La escuela #1 de inteligencia artificial para niños y adolescentes online. Tu hijo crea apps, música y arte con IA en 5 semanas. Máx 5 por grupo. Garantía de 10 días o devolvemos todo.",
   openGraph: {
     title: "Curso de IA para Niños y Adolescentes | 527 Graduados",
     description: "527 alumnos en 9 países crean apps con IA. Transforma a tu hijo de consumidor a creador. Clases en vivo 100% prácticas.",
@@ -102,8 +102,7 @@ export default function Home() {
         {/* AI Future Stats - Show urgency immediately */}
         <AIFutureSection />
 
-        {/* NEW: Disqualification Section - Hormozi Lead Quality */}
-        <QualificationSection />
+        {/* DISQUALIFICATION SECTION REMOVED PER USER REQUEST */}
 
         {/* Module Preview - Show exactly what they get */}
         <ModulePreviewSection />
@@ -135,11 +134,9 @@ export default function Home() {
 
         <div className="h-24" />
 
-        <UpcomingCoursesSection />
+        {/* <UpcomingCoursesSection /> */}
 
-        <div className="h-24" />
-
-        <ConsequencesSection />
+        {/* Consequences Section Removed - Positivity Focus */}
 
         <div className="h-24" />
 
@@ -154,6 +151,38 @@ export default function Home() {
         <FAQSection />
 
         <div className="h-24" />
+
+        {/* Specialized Courses - Internal Linking for SEO */}
+        <section className="container mx-auto px-4 py-16">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Especializaciones: Elige Tu Camino en IA</h2>
+            <p className="text-slate-400 max-w-2xl mx-auto">
+              Después de completar Vibe Explorer (Nivel 1), tu hijo puede especializarse en el área que más le apasiona.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <a href="/curso-creacion-videojuegos-ninos" className="bg-gradient-to-br from-green-900/30 to-emerald-900/20 p-8 rounded-2xl border border-green-500/20 hover:border-green-500/50 transition-all group hover:scale-[1.02]">
+              <div className="text-4xl mb-4">🎮</div>
+              <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-colors mb-3">Creación de Videojuegos con IA</h3>
+              <p className="text-slate-400 text-sm mb-4">Diseña mundos, personajes y lógicas de juego. Tu hijo pasa de jugar a crear.</p>
+              <span className="text-green-400 text-sm font-semibold">Ver curso →</span>
+            </a>
+            <a href="/curso-creador-contenido-ia" className="bg-gradient-to-br from-pink-900/30 to-purple-900/20 p-8 rounded-2xl border border-pink-500/20 hover:border-pink-500/50 transition-all group hover:scale-[1.02]">
+              <div className="text-4xl mb-4">🎬</div>
+              <h3 className="text-xl font-bold text-white group-hover:text-pink-400 transition-colors mb-3">Creador de Contenido y Cine IA</h3>
+              <p className="text-slate-400 text-sm mb-4">Producción de videos, cortometrajes y contenido social con IA como copiloto.</p>
+              <span className="text-pink-400 text-sm font-semibold">Ver curso →</span>
+            </a>
+            <a href="/curso-emprendimiento-ninos" className="bg-gradient-to-br from-yellow-900/30 to-orange-900/20 p-8 rounded-2xl border border-yellow-500/20 hover:border-yellow-500/50 transition-all group hover:scale-[1.02]">
+              <div className="text-4xl mb-4">💡</div>
+              <h3 className="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors mb-3">Emprendimiento y Startups con IA</h3>
+              <p className="text-slate-400 text-sm mb-4">Educación financiera, creación de startups y negocios digitales con IA.</p>
+              <span className="text-yellow-400 text-sm font-semibold">Ver curso →</span>
+            </a>
+          </div>
+        </section>
+
+        <div className="h-12" />
 
         <Footer />
       </main>

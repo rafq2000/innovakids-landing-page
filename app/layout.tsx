@@ -30,7 +30,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "InnovaKids | Cursos de IA para Niños y Adolescentes Online",
   description:
-    "527 alumnos graduados en 9 países ya crean aplicaciones y música con IA. La escuela online #1 de inteligencia artificial para niños y adolescentes (8-17 años). Garantía 10 días.total.",
+    "527 alumnos graduados en 9 países ya crean aplicaciones y música con IA. La escuela online #1 de inteligencia artificial para niños y adolescentes (8-17 años). Garantía Total.",
   keywords: [
     "curso inteligencia artificial niños",
     "curso inteligencia artificial adolescentes",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de Inteligencia Artificial para Niños y Adolescentes | InnovaKids",
     description:
-      "527 alumnos graduados. Tu hijo crea su primera app en 5 semanas. Clases en vivo, máx 5 por grupo. Garantía 10 días.100% de devolución.",
+      "527 alumnos graduados. Tu hijo crea su primera app en 5 semanas. Clases en vivo, máx 5 por grupo. Garantía 100% de devolución.",
     url: "https://www.innovakidslatam.com",
     siteName: "Innovakids",
     images: [
@@ -153,6 +153,18 @@ export default function RootLayout({
                 { "@type": "Country", name: "Uruguay" },
                 { "@type": "Country", name: "Costa Rica" },
                 { "@type": "Country", name: "Panamá" },
+                { "@type": "Country", name: "República Dominicana" },
+                { "@type": "Country", name: "Honduras" },
+                { "@type": "Country", name: "El Salvador" },
+                { "@type": "Country", name: "Guatemala" },
+                { "@type": "Country", name: "Paraguay" },
+                { "@type": "Country", name: "Bolivia" },
+                { "@type": "Country", name: "Venezuela" },
+                { "@type": "Country", name: "Nicaragua" },
+                { "@type": "Country", name: "Puerto Rico" },
+                { "@type": "Country", name: "Guinea Ecuatorial" },
+                { "@type": "Country", name: "España" },
+                { "@type": "Country", name: "Estados Unidos" },
                 { "@type": "Place", name: "Latinoamérica" },
               ],
               contactPoint: {
@@ -212,6 +224,29 @@ export default function RootLayout({
                   name: "Innovakids Team",
                 },
               },
+              hasPart: [
+                {
+                  "@type": "Course",
+                  name: "Curso de Creación de Videojuegos con IA para Niños",
+                  description: "Aprende a crear videojuegos con Inteligencia Artificial. Roblox, Unity y diseño de mundos 3D.",
+                  url: "https://www.innovakidslatam.com/curso-creacion-videojuegos-ninos",
+                  courseMode: "online",
+                },
+                {
+                  "@type": "Course",
+                  name: "Curso de Creador de Contenido y Cine IA para Niños",
+                  description: "Producción de contenido, YouTube, cine y edición con Inteligencia Artificial.",
+                  url: "https://www.innovakidslatam.com/curso-creador-contenido-ia",
+                  courseMode: "online",
+                },
+                {
+                  "@type": "Course",
+                  name: "Curso de Emprendimiento y Startups con IA para Niños",
+                  description: "Educación financiera, creación de startups y negocios digitales con IA.",
+                  url: "https://www.innovakidslatam.com/curso-emprendimiento-ninos",
+                  courseMode: "online",
+                },
+              ],
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "4.9",
@@ -269,6 +304,44 @@ export default function RootLayout({
                   position: 3,
                   name: "Clases de Inteligencia Artificial",
                   item: "https://www.innovakidslatam.com/#clases",
+                },
+              ],
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              name: "Cursos de Inteligencia Artificial para Niños y Adolescentes - InnovaKids",
+              description: "Catálogo completo de cursos de IA: Vibe Explorer (nivel base), Creación de Videojuegos, Creador de Contenido y Cine, Emprendimiento y Startups.",
+              numberOfItems: 4,
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Vibe Explorer - Curso Base de IA para Niños",
+                  url: "https://www.innovakidslatam.com/curso-ia-ninos",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Creación de Videojuegos con IA",
+                  url: "https://www.innovakidslatam.com/curso-creacion-videojuegos-ninos",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: "Creador de Contenido y Cine IA",
+                  url: "https://www.innovakidslatam.com/curso-creador-contenido-ia",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 4,
+                  name: "Emprendimiento y Startups con IA",
+                  url: "https://www.innovakidslatam.com/curso-emprendimiento-ninos",
                 },
               ],
             }),
