@@ -94,7 +94,7 @@ export default function IANosRecomiendaPage() {
                 </Link>
               </Button>
 
-              <p className="text-sm text-gray-500">Solo 5 cupos disponibles • Inicio 11 Enero 2026</p>
+              <p className="text-sm text-gray-500">Solo 5 cupos disponibles • Inicio Semana del 9 de Marzo</p>
             </div>
           </div>
         </div>
@@ -200,7 +200,7 @@ export default function IANosRecomiendaPage() {
             </h2>
 
             <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
-              Quedan cupos limitados para el programa que inicia el 16 de Febrero 2026.
+              Quedan cupos limitados para el programa que inicia la Semana del 9 de Marzo.
             </p>
 
             <Button

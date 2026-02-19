@@ -373,7 +373,7 @@ export default function QueEsInnovaKids() {
                 <CheckCircle className="h-4 w-4" /> Sin compromiso
               </span>
               <span className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4" /> Garantía 10 días.10 días
+                <CheckCircle className="h-4 w-4" /> Garantía de 10 días
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle className="h-4 w-4" /> Grupos máx 5 alumnos

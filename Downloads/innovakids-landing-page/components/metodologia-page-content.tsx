@@ -246,7 +246,7 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                             </h2>
 
                             <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
-                                Quedan solo 5 cupos para el programa de Enero 2026. Agenda tu evaluación gratuita.
+                                Quedan solo 5 cupos para el programa de Marzo 2026. Agenda tu evaluación gratuita.
                             </p>
 
                             <Button

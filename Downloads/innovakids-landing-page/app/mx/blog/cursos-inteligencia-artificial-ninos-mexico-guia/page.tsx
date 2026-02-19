@@ -62,7 +62,7 @@ export default function GuiaCompletaPage() {
             <div className="flex items-center gap-4 text-sm text-gray-400 mb-6">
               <span className="bg-[#4DD0E1]/20 text-[#4DD0E1] px-3 py-1 rounded-full">Guía</span>
               <span className="flex items-center gap-1">
-                <Calendar className="w-4 h-4" /> Enero 2026
+                <Calendar className="w-4 h-4" /> Marzo 2026
               </span>
               <span className="flex items-center gap-1">
                 <Clock className="w-4 h-4" /> 15 min lectura
@@ -300,7 +300,7 @@ export default function GuiaCompletaPage() {
                   <ul className="space-y-2 text-gray-300">
                     <li>✅ Grupos más pequeños (5 vs 15-30 de la competencia)</li>
                     <li>✅ 10 proyectos reales que pueden mostrar a familia y amigos</li>
-                    <li>✅ Garantía 10 días.de 10 días con devolución completa</li>
+                    <li>✅ Garantía de 10 días con devolución completa</li>
                     <li>✅ Soporte WhatsApp 24/7 en español</li>
                   </ul>
                 </div>
@@ -363,7 +363,7 @@ export default function GuiaCompletaPage() {
                     <li>✅ 10 proyectos completos para su portfolio</li>
                     <li>✅ Acceso de por vida a grabaciones</li>
                     <li>✅ Certificado oficial internacional</li>
-                    <li>✅ Garantía 10 días.de 10 días (devolución completa)</li>
+                    <li>✅ Garantía de 10 días (devolución completa)</li>
                   </ul>
                 </div>
               </section>

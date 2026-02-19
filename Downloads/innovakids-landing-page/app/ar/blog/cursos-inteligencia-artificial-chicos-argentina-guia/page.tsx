@@ -60,7 +60,7 @@ export default function ArgentinaBlogGuiaPage() {
           <div className="container mx-auto px-6 max-w-4xl">
             <div className="flex items-center gap-4 text-sm text-gray-400 mb-6">
               <span className="flex items-center gap-2">
-                <Calendar className="w-4 h-4" /> 8 Enero 2026
+                <Calendar className="w-4 h-4" /> Marzo 2026
               </span>
               <span className="flex items-center gap-2">
                 <Clock className="w-4 h-4" /> 12 min lectura
@@ -131,7 +131,7 @@ export default function ArgentinaBlogGuiaPage() {
                 mismas herramientas que usan los profesionales: ChatGPT, Claude, Midjourney, Cursor, etc.
               </p>
 
-              <h3 className="text-2xl font-bold text-white mb-4">4. Garantía 10 días.de Satisfacción</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">4. Garantía de Satisfacción</h3>
               <p className="text-gray-300 mb-6">
                 Un programa serio ofrece garantía de devolución. Si no estás satisfecho con las primeras clases,
                 deberías poder recuperar tu inversión.

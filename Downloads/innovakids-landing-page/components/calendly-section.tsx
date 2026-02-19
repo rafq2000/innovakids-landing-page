@@ -74,7 +74,8 @@ export function CalendlySection() {
       calendlyUrl.searchParams.set("hide_gdpr_banner", "1")
       calendlyUrl.searchParams.set("primary_color", "4dd0e1")
 
-      window.open(calendlyUrl.toString(), "_blank")
+      // Use same tab to avoid popup blockers and perceived friction
+      window.location.href = calendlyUrl.toString()
     } catch (error) {
       setSubmitError(error instanceof Error ? error.message : "Error desconocido")
     } finally {

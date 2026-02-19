@@ -44,7 +44,7 @@ export default function GuiaIANinosChile() {
           <div className="container mx-auto px-4 text-center text-white">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-sm">
               <Clock className="h-4 w-4" />
-              <span>Actualizado Enero 2026 • 15 min lectura</span>
+              <span>Actualizado Marzo 2026 • 15 min lectura</span>
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
@@ -330,7 +330,7 @@ export default function GuiaIANinosChile() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$267 USD • 10 clases • Máx 5 niños • Garantía 10 días.10 días</p>
+              <p className="mt-4 text-sm text-white/60">$267 USD • 10 clases • Máx 5 niños • Garantía de 10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

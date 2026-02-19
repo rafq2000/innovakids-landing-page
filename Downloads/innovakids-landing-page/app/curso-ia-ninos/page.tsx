@@ -91,7 +91,7 @@ export default function CursoIANinos() {
                   </li>
                   <li className="flex items-start">
                     <span className="text-cyan-400 mr-3">✓</span>
-                    <span>Garantía 10 días.100% de satisfacción o devolución total</span>
+                    <span>Garantía 100% de satisfacción o devolución total</span>
                   </li>
                 </ul>
               </div>
@@ -158,7 +158,7 @@ export default function CursoIANinos() {
                 </p>
                 <p className="text-sm text-gray-300 mb-6">Precio Vibe Edition 2026 • Oferta por tiempo limitado</p>
                 <p className="text-lg text-yellow-300 mb-8">
-                  ⏰ Curso inicia la semana del 26 de enero de 2026 • Cupos limitados
+                  ⏰ Curso inicia la semana del 9 de Marzo de 2026 • Cupos limitados
                 </p>
                 <Link href="/#sesion-estrategica">
                   <Button
@@ -195,7 +195,7 @@ export default function CursoIANinos() {
               </div>
 
               <div className="bg-cyan-900/20 p-6 rounded-xl border border-cyan-500/30 my-8">
-                <h3 className="text-xl font-bold text-white mb-4 text-center">🎁 Garantía 10 días.Sin Riesgo</h3>
+                <h3 className="text-xl font-bold text-white mb-4 text-center">🎁 Garantía Sin Riesgo</h3>
                 <p className="text-gray-300 text-center">
                   Si después de la primera clase sientes que el curso no es lo que esperabas, te devolvemos el 100% de
                   tu inversión. Sin preguntas, sin complicaciones.

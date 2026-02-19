@@ -12,7 +12,7 @@ export function UrgencyBanner() {
   })
 
   useEffect(() => {
-    const targetDate = new Date("2026-01-15T00:00:00-03:00").getTime() // Chile timezone (UTC-3)
+    const targetDate = new Date("2026-03-09T00:00:00-03:00").getTime() // Chile timezone (UTC-3)
 
     const updateCountdown = () => {
       const now = new Date().getTime()
@@ -42,7 +42,7 @@ export function UrgencyBanner() {
         <div className="flex items-center gap-2">
           <AlertCircle className="w-5 h-5 md:w-6 md:h-6 text-red-500 animate-pulse flex-shrink-0" />
           <h3 className="text-base md:text-xl lg:text-2xl font-bold text-white text-center">
-            ¡Curso inicia la semana del 16 de Febrero 2026!
+            ¡Curso inicia la semana del 9 de Marzo!
           </h3>
         </div>
 

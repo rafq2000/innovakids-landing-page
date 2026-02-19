@@ -61,6 +61,16 @@ export function FAQSection() {
               Agendar Evaluación Gratuita
               <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
             </Button>
+
+            <div className="mt-6 flex justify-center">
+              <Button
+                variant="link"
+                className="text-gray-400 hover:text-[#4DD0E1] p-0 h-auto font-normal text-sm"
+                onClick={() => window.open("https://wa.me/56964754219?text=Hola%2C%20tengo%20una%20pregunta%20que%20no%20está%20en%20las%20FAQs", "_blank")}
+              >
+                ¿Todavía tienes dudas? Chatea con nosotros
+              </Button>
+            </div>
           </div>
         </div>
       </div>

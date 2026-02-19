@@ -75,7 +75,7 @@ export function CountryHeroSection({ country }: CountryHeroSectionProps) {
 
           {/* Subtítulo localizado */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty max-w-2xl mx-auto">
-            {country.tone.split(",")[0]}. Clases online de IA para {country.childTerm} {country.demonym} de 8-14 años en
+            {country.tone}. Clases online de IA para {country.childTerm} {country.demonym} de 8-14 años en
             grupos de máximo 5 alumnos.
           </p>
 

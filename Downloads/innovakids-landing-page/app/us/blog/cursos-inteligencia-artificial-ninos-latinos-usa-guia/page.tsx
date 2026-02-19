@@ -48,7 +48,7 @@ export default function GuiaIANinosLatinosUSA() {
           <div className="container mx-auto px-4 text-center text-white">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2">
               <Clock className="h-4 w-4" />
-              <span className="text-sm">15 min de lectura • Actualizado Enero 2026</span>
+              <span className="text-sm">15 min de lectura • Actualizado Marzo 2026</span>
             </div>
             <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
               Vibe Coding en USA: La Guía Completa para Padres Latinos 2026
@@ -180,7 +180,7 @@ export default function GuiaIANinosLatinosUSA() {
                     <li>Clases en vivo (no pregrabadas)</li>
                     <li>Proyectos prácticos reales</li>
                     <li>Profesores hispanohablantes nativos</li>
-                    <li>Garantía 10 días.de devolución</li>
+                    <li>Garantía de devolución</li>
                     <li>Horarios en tu zona horaria</li>
                   </ul>
                 </div>
@@ -311,7 +311,7 @@ export default function GuiaIANinosLatinosUSA() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-6 text-sm text-white/60">$267 USD • 10 clases • Máximo 5 niños • Garantía 10 días.10 días</p>
+              <p className="mt-6 text-sm text-white/60">$267 USD • 10 clases • Máximo 5 niños • Garantía de 10 días</p>
             </div>
 
             {/* RELATED LINKS */}
