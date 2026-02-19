@@ -32,7 +32,7 @@ export default function BlogPostPage() {
                             Inteligencia Artificial para Niños: <br /> Guía Completa para Padres 2026
                         </h1>
                         <div className="flex items-center justify-center gap-4 text-gray-500 text-sm mb-8">
-                            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Febrero 2026</span>
+                            <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Marzo 2026</span>
                             <span>•</span>
                             <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> Lectura: 15 min</span>
                             <span>•</span>

@@ -48,7 +48,7 @@ export default function GuiaIANinosPeru() {
               <div className="mb-6 flex items-center gap-4 text-sm text-white/70">
                 <span>Guía Educativa</span>
                 <span>•</span>
-                <span>Actualizado Enero 2026</span>
+                <span>Actualizado Marzo 2026</span>
                 <span>•</span>
                 <span>15 min lectura</span>
               </div>
@@ -220,7 +220,7 @@ export default function GuiaIANinosPeru() {
                     </p>
                   </div>
                   <div className="rounded-xl border-l-4 border-[#D91023] bg-card p-6">
-                    <h3 className="mb-2 font-bold">Garantía 10 días.de Satisfacción</h3>
+                    <h3 className="mb-2 font-bold">Garantía de Satisfacción</h3>
                     <p className="text-muted-foreground">
                       Un buen programa ofrece garantía de devolución. Si no estás satisfecho, recuperas tu dinero.
                     </p>
@@ -258,7 +258,7 @@ export default function GuiaIANinosPeru() {
                     <div className="rounded-xl bg-card p-4 text-center">
                       <Shield className="mx-auto mb-2 h-8 w-8 text-[#D91023]" />
                       <div className="font-bold">10 días</div>
-                      <div className="text-sm text-muted-foreground">Garantía 10 días.total</div>
+                      <div className="text-sm text-muted-foreground">Garantía Total</div>
                     </div>
                   </div>
 

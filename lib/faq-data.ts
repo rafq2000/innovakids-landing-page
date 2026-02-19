@@ -36,7 +36,7 @@ export const faqs = [
     {
         question: "¿Cuándo inicia y cuáles son los horarios?",
         answer:
-            "Iniciamos la semana del 16 de Febrero, 2026. Los horarios son 100% flexibles: al agendar tu evaluación elegimos juntos el bloque que mejor se adapte a tu rutina escolar (tenemos opciones de Lunes a Sábado, mañanas y tardes).",
+            "Iniciamos la semana del 9 de Marzo. Los horarios son 100% flexibles: al agendar tu evaluación elegimos juntos el bloque que mejor se adapte a tu rutina escolar (tenemos opciones de Lunes a Sábado, mañanas y tardes).",
     },
     {
         question: "¿Cuánto cuesta el programa completo?",

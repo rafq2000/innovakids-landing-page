@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Check, Sparkles, Star, Zap, Crown } from "lucide-react"
+import { Check, Sparkles, Star, Zap, Crown, MessageCircle } from "lucide-react"
 import Link from "next/link"
 import type { CountryConfig } from "@/lib/countries-config"
 
@@ -27,76 +27,41 @@ export function PricingSection({ country }: PricingSectionProps) {
   // Base prices in USD
   const pricingTiers = [
     {
-      name: "Starter",
-      priceUSD: 147,
-      description: "Prueba el programa. Descubre si tu hijo califica.",
-      originalPriceUSD: 197,
-      icon: Star,
-      color: "from-green-400 to-emerald-400",
-      features: [
-        "4 Clases de Fundamentos IA",
-        "Prueba el método sin compromiso",
-        "Acceso a Discord Community",
-        "😱 Solo válido hasta agotar cupos",
-        `Crédito completo hacia Explorer (${formatPrice(147)})`,
-      ],
-      cta: `Empezar por ${formatPrice(147)}`,
-      link: "/pagar?option=starter",
-      popular: false,
-      badge: "🔥 Entrada Perfecta",
-    },
-    {
-      name: "Vibe Explorer",
+      name: "Vibe Explorer (Nivel 1)",
       priceUSD: 267,
-      description: "El punto de partida completo para todo creador digital.",
+      description: "El fundamento obligatorio para dominar la IA.",
       icon: Sparkles,
-      color: "from-yellow-400 to-orange-400",
+      color: "from-purple-400 to-pink-400",
       features: [
         "Módulo 1: Fundamentos IA (10 Clases)",
-        "Certificado 'Explorer' Digital",
+        "Certificado 'Vibe Explorer' Digital",
         "Acceso a 15+ herramientas IA",
         "Soporte 24/7 por Discord + WhatsApp",
-        "Boletín semanal de novedades IA 😱",
+        "Requisito para Especializaciones",
       ],
-      cta: "Comenzar Ahora",
+      cta: "Inscribir Nivel 1",
       link: "/pagar?option=explorer",
       popular: true,
-      badge: "⭐ Más Popular",
+      badge: "⚡ Comienza Aquí",
     },
     {
-      name: "Start Pack",
-      priceUSD: 534,
-      description: "Explorer + 1 Especialidad a tu elección.",
-      icon: Zap,
-      color: "from-cyan-400 to-blue-400",
-      features: [
-        "Todo lo de Explorer",
-        "1 Especialidad (Coding o Business)",
-        "Total 20 Clases Maestras",
-        "Ahorros por Pack incluido",
-      ],
-      cta: "Elegir Pack",
-      link: "/pagar?option=start_pack",
-      popular: false,
-    },
-    {
-      name: "Academy University",
+      name: "Vibe Academy (4 Módulos)",
       priceUSD: 1068,
-      description: "La experiencia completa. Transforma el futuro de tu hijo.",
-      originalPriceUSD: 1497,
+      description: "Carrera completa: Nivel 1 + 3 Especializaciones.",
+      originalPriceUSD: 1335,
       icon: Crown,
-      color: "from-purple-500 to-pink-500",
+      color: "from-yellow-400 to-orange-400",
       features: [
-        "Acceso Total a los 4 Módulos (40 Clases)",
-        "🚀 Incubadora de Startups incluida",
+        "Nivel 1 + Creators + Gamers + Enterprise",
+        "40 Clases en Total (Ahorro Inteligente)",
+        "Incubadora de Startups incluida",
         "Certificación Master Completa",
-        "Crédito: Abona tus $267 si ya eres Explorer",
-        "😱 Ahorras +$400 USD (Mejor Oferta)",
+        "Pago Único (Equivale a $267 x 4)",
       ],
       cta: "Inscripción VIP",
       link: "/pagar?option=university",
       popular: false,
-      badge: "👑 Transformación Total",
+      badge: "💎 Carrera Completa",
     },
   ]
 
@@ -115,7 +80,7 @@ export function PricingSection({ country }: PricingSectionProps) {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto items-start">
+        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto items-start">
           {pricingTiers.map((tier, index) => (
             <Card
               key={index}
@@ -185,6 +150,18 @@ export function PricingSection({ country }: PricingSectionProps) {
           <p className="text-gray-400 text-sm">
             Prueba el Módulo 1 sin riesgo. Si en 10 días no estás impresionado, te devolvemos tu dinero.
           </p>
+        </div>
+
+        <div className="mt-8 text-center">
+          <a
+            href="https://wa.me/56964754219?text=Hola%2C%20necesito%20ayuda%20para%20elegir%20el%20plan%20perfecto%20para%20mi%20hijo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-primary hover:text-white transition-colors text-sm font-medium border-b border-primary/20 hover:border-white pb-0.5"
+          >
+            <MessageCircle className="w-4 h-4" />
+            ¿No sabes qué plan elegir? Háblame por WhatsApp
+          </a>
         </div>
       </div>
     </section>

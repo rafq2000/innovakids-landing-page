@@ -41,7 +41,7 @@ export default function BlogVenezuelaGuiaPage() {
                             <h1 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
                                 Vibe Coding en Venezuela: La Guía Completa para Padres 2026
                             </h1>
-                            <p className="text-gray-400">Actualizado: Enero 2026 • 8 min lectura</p>
+                            <p className="text-gray-400">Actualizado: Marzo 2026 • 8 min lectura</p>
                         </div>
 
                         <div className="prose prose-invert max-w-none">
@@ -91,7 +91,7 @@ export default function BlogVenezuelaGuiaPage() {
                                     <li>✅ Clases en vivo (no videos pregrabados)</li>
                                     <li>✅ Horarios adaptados a Venezuela (GMT-4)</li>
                                     <li>✅ Pagos en USD vía Zelle, PayPal, Binance</li>
-                                    <li>✅ Garantía 10 días.de 10 días (devolución completa)</li>
+                                    <li>✅ Garantía de 10 días (devolución completa)</li>
                                     <li>✅ Certificación oficial + portfolio</li>
                                 </ul>
                             </div>

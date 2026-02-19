@@ -21,7 +21,7 @@ export function ConsequencesSection() {
         <div className="max-w-5xl mx-auto space-y-12">
           {/* HOY */}
           <div className="bg-[#0f2744] rounded-2xl p-8 border-2 border-[#4DD0E1]">
-            <div className="text-2xl font-bold text-[#4DD0E1] mb-6">HOY - 15 de Enero</div>
+            <div className="text-2xl font-bold text-[#4DD0E1] mb-6">HOY</div>
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-green-900/20 rounded-xl p-6 border-2 border-green-500/50">
@@ -44,7 +44,7 @@ export function ConsequencesSection() {
 
           {/* 26 DE ENERO */}
           <div className="bg-[#0f2744] rounded-2xl p-8 border-2 border-white/10">
-            <div className="text-2xl font-bold text-white mb-6">16 de Febrero - Día del Inicio</div>
+            <div className="text-2xl font-bold text-white mb-6">Semana del 9 de Marzo - Día del Inicio</div>
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-green-900/20 rounded-xl p-6 border-2 border-green-500/50">

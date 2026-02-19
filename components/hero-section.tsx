@@ -69,12 +69,15 @@ export function HeroSection() {
           {/* Main Headline - Static for Instant LCP */}
           <div className="relative">
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.05] tracking-tight font-premium px-2">
-              <span className="block text-white">Tu hijo pierde horas en pantallas</span>
-              <span className="block text-white">sin aprender nada útil.</span>
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#4dd0e1] to-[#8b5cf6]"
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#4dd0e1] to-[#8b5cf6] mb-4 text-2xl sm:text-4xl md:text-5xl lg:text-6xl"
                 style={{ textShadow: "0 0 30px rgba(77, 208, 225, 0.3)" }}
               >
-                Cámbiale el futuro hoy.
+                Curso de Inteligencia Artificial para Niños
+              </span>
+              <span className="block text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+                Tu hijo pierde horas en pantallas.
+                <br />
+                <span className="text-white/80">Cámbiale el futuro hoy.</span>
               </span>
             </h1>
 
@@ -118,7 +121,7 @@ export function HeroSection() {
               <HeroCountdown />
 
               <p className="text-white font-semibold mt-6 text-lg font-premium">
-                Próximo curso: <span className="text-primary">16 de Febrero, 2026</span>
+                Próximo curso: <span className="text-primary">Semana del 9 de Marzo</span>
               </p>
             </div>
           </div>
@@ -131,15 +134,15 @@ export function HeroSection() {
             <Button
               asChild
               size="lg"
-              className="magnetic-btn relative group bg-gradient-to-r from-green-500 via-green-400 to-emerald-400 hover:opacity-90 text-background px-8 sm:px-12 py-6 sm:py-7 text-lg sm:text-xl font-bold rounded-full transition-all duration-300 hover:shadow-[0_0_50px_rgba(34,197,94,0.6)] overflow-hidden"
+              className="magnetic-btn relative group bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 hover:opacity-90 text-white px-8 sm:px-12 py-6 sm:py-7 text-lg sm:text-xl font-bold rounded-full transition-all duration-300 hover:shadow-[0_0_50px_rgba(59,130,246,0.6)] overflow-hidden"
             >
-              <a href="#inversion">
+              <a href="#sesion-estrategica">
                 <span
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity shimmer"
                 />
                 <span className="relative flex items-center gap-2">
                   <Sparkles className="w-5 h-5" />
-                  EMPEZAR POR SOLO $147 😱
+                  AGENDAR CLASE GRATIS
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </a>
@@ -151,9 +154,8 @@ export function HeroSection() {
               size="lg"
               className="group border-white/20 hover:border-primary/50 hover:bg-primary/5 text-white px-8 py-6 text-lg rounded-full transition-all duration-300"
             >
-              <a href="#sesion-estrategica">
-                <Sparkles className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
-                Clase Muestra Gratis
+              <a href="#inversion">
+                Ver Planes y Precios
               </a>
             </Button>
           </div>

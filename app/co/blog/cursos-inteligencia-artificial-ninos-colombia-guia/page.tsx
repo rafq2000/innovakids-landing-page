@@ -51,7 +51,7 @@ export default function GuiaCursosIAColombia() {
               <span className="flex items-center gap-1">
                 <Clock className="h-4 w-4" /> 18 min lectura
               </span>
-              <span>Actualizado: Enero 2026</span>
+              <span>Actualizado: Marzo 2026</span>
             </div>
 
             <h1 className="max-w-4xl text-3xl font-bold leading-tight md:text-5xl lg:text-6xl">
@@ -375,7 +375,7 @@ export default function GuiaCursosIAColombia() {
                 <CheckCircle className="h-4 w-4" /> Sin compromiso
               </span>
               <span className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4" /> Garantía 10 días.10 días
+                <CheckCircle className="h-4 w-4" /> Garantía de 10 días
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle className="h-4 w-4" /> $267 USD total

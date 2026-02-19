@@ -281,7 +281,7 @@ export default function ComoEnsenarIAPage() {
               <div className="w-16 h-16 rounded-full bg-pink-500 flex items-center justify-center mb-6">
                 <Shield className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">Garantía 10 días.Total</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Garantía Total</h3>
               <p className="text-gray-300 text-lg">
                 Si después de la primera clase no estás satisfecho, te devolvemos el 100%. Sin preguntas, sin
                 complicaciones.

@@ -9,12 +9,12 @@ export function WhatsAppButton() {
   const [hasInteracted, setHasInteracted] = useState(false)
 
   useEffect(() => {
-    // Show tooltip after 30 seconds if user hasn't interacted
+    // Show tooltip after 15 seconds (reduced from 30s for higher engagement)
     const timer = setTimeout(() => {
       if (!hasInteracted) {
         setShowTooltip(true)
       }
-    }, 30000)
+    }, 15000)
 
     return () => clearTimeout(timer)
   }, [hasInteracted])
@@ -23,7 +23,7 @@ export function WhatsAppButton() {
     setHasInteracted(true)
     setShowTooltip(false)
     window.open(
-      "https://wa.me/56964754219?text=Hola%2C%20quiero%20información%20sobre%20el%20curso%20de%20IA%20para%20niños",
+      "https://wa.me/56964754219?text=Hola%2C%20quiero%20saber%20si%20mi%20hijo%20califica%20para%20InnovaKids",
       "_blank"
     )
   }
@@ -43,7 +43,7 @@ export function WhatsAppButton() {
             initial={{ opacity: 0, y: 10, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.9 }}
-            className="relative bg-white rounded-2xl shadow-2xl p-4 max-w-[280px]"
+            className="relative bg-white rounded-2xl shadow-2xl p-4 max-w-[280px] border border-green-100"
           >
             <button
               onClick={dismissTooltip}
@@ -51,13 +51,13 @@ export function WhatsAppButton() {
             >
               <X className="w-3 h-3" />
             </button>
-            <p className="text-gray-800 font-medium text-sm mb-2">
-              ¿Tienes dudas sobre el programa? 🤔
+            <p className="text-gray-800 font-bold text-sm mb-1">
+              ¿Tu hijo tiene 8-17 años? 🎓
             </p>
             <p className="text-gray-600 text-xs">
-              Escríbenos y te respondemos en menos de 5 minutos
+              Averigua si califica para nuestros cupos disponibles. Te respondo ya.
             </p>
-            <div className="absolute bottom-0 right-6 translate-y-1/2 rotate-45 w-3 h-3 bg-white" />
+            <div className="absolute bottom-0 right-6 translate-y-1/2 rotate-45 w-3 h-3 bg-white border-b border-r border-green-100" />
           </motion.div>
         )}
       </AnimatePresence>

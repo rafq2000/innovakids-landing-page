@@ -1,14 +1,26 @@
 import type { Metadata } from "next"
 import dynamic from "next/dynamic"
+import { TeenHeroSection } from "@/components/teen-hero-section"
+import { KeyFeaturesSection } from "@/components/key-features-section"
 import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
-import { CountryHeroSection } from "@/components/country-hero-section"
-import { CountryPricingSection } from "@/components/country-pricing-section"
-import { CountryFAQ } from "@/components/country-faq"
-import type { CountryConfig } from "@/lib/countries-config"
 
-// Generic imports from home
-import { KeyFeaturesSection } from "@/components/key-features-section"
+export const metadata: Metadata = {
+    title: "Curso de IA para Adolescentes (14-17 Años) | Vibe Coding & Startups",
+    description:
+        "El primer acelerador de talento tecnológico para adolescentes en LatAm. Aprende a programar con IA, crea apps reales y prepara tu portafolio universitario. Certificado.",
+    keywords: [
+        "curso ia adolescentes",
+        "programacion para jovenes",
+        "bootcamp tecnologia secundaria",
+        "preparacion universitaria ingenieria",
+        "vibe coding",
+    ],
+    openGraph: {
+        title: "Curso de IA para Adolescentes | Crea Apps y Startups antes de los 18",
+        description: "Programa intensivo para jóvenes de 14-17 años. Domina la IA, crea tu portafolio y destaca en tu aplicación universitaria.",
+    }
+}
 
 const AIFutureSection = dynamic(
     () => import("@/components/ai-future-section").then((mod) => ({ default: mod.AIFutureSection })),
@@ -38,6 +50,10 @@ const ConsequencesSection = dynamic(
     () => import("@/components/consequences-section").then((mod) => ({ default: mod.ConsequencesSection })),
     { ssr: true },
 )
+const PricingSection = dynamic(
+    () => import("@/components/pricing-section").then((mod) => ({ default: mod.PricingSection })),
+    { ssr: true },
+)
 const UpcomingCoursesSection = dynamic(
     () => import("@/components/upcoming-courses-section").then((mod) => ({ default: mod.UpcomingCoursesSection })),
     { ssr: true },
@@ -46,12 +62,13 @@ const CalendlySection = dynamic(
     () => import("@/components/calendly-section").then((mod) => ({ default: mod.CalendlySection })),
     { ssr: true, loading: () => <div className="h-[600px] bg-background animate-pulse" /> },
 )
+const FAQSection = dynamic(() => import("@/components/faq-section").then((mod) => ({ default: mod.FAQSection })), {
+    ssr: true,
+    loading: () => <div className="h-[500px] bg-background animate-pulse" />,
+})
 const Footer = dynamic(() => import("@/components/footer").then((mod) => ({ default: mod.Footer })), {
     ssr: true,
     loading: () => <div className="h-[300px] bg-[#030712] animate-pulse" />,
-})
-const SEOContent = dynamic(() => import("@/components/seo-content").then((mod) => ({ default: mod.SEOContent })), {
-    ssr: true,
 })
 const VisionSection = dynamic(
     () => import("@/components/vision-section").then((mod) => ({ default: mod.VisionSection })),
@@ -62,95 +79,55 @@ const QualificationSection = dynamic(
     { ssr: true },
 )
 
-interface CountryHomePageProps {
-    country: CountryConfig
-}
+import { faqs } from "@/lib/faq-data"
 
-export function CountryHomePage({ country }: CountryHomePageProps) {
-    // Schema specific for country
-    const countrySchema = {
+export default function AdolescentesPage() {
+    const faqSchema = {
         "@context": "https://schema.org",
-        "@type": "Course",
-        "name": `Curso de IA para ${country.childTerm} en ${country.name} - InnovaKids`,
-        "description": `Clases de inteligencia artificial para ${country.childTerm} de 8-14 años en ${country.name}.`,
-        "provider": {
-            "@type": "Organization",
-            "name": "InnovaKids"
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": country.priceUSD.toString(),
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock",
-            "areaServed": country.name
-        },
-        "areaServed": {
-            "@type": "Country",
-            "name": country.name
-        }
+        "@type": "FAQPage",
+        mainEntity: faqs.map((faq: any) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+            },
+        })),
     }
 
     return (
         <>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(countrySchema) }} />
-            <Navigation countryCode={country.code} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <Navigation />
             <main className="min-h-screen bg-background">
-                <CountryHeroSection country={country} />
+                <TeenHeroSection />
 
+                {/* Keeping the same high-converting structure but with the new Hero context */}
                 <AIFutureSection />
                 {/* Qualification Section Removed */}
                 <ModulePreviewSection />
-                <ValueStackSection country={country} />
-
+                <ValueStackSection />
                 <div className="h-16" />
-
                 <TestimonialsSection />
-                {/* TODO: Add logic to filter testimonials by country if possible, currently shows general */}
-
                 <div className="h-24" />
-
                 <VisionSection />
-
                 <div className="h-24" />
-
                 <KeyFeaturesSection />
-
                 <div className="h-24" />
-
                 <WhyNowSection />
-
                 <div className="h-24" />
-
                 <CurriculumSection />
-
                 <div className="h-24" />
-
                 {/* <UpcomingCoursesSection /> */}
-
                 <div className="h-24" />
-
+                {/* Consequences Section Removed */}\n
                 <div className="h-24" />
-
-                {/* Consequences Section Removed */}
-
+                <PricingSection />
                 <div className="h-24" />
-
-                <div className="h-24" />
-
-                <CountryPricingSection country={country} />
-
-                <div className="h-24" />
-
                 <CalendlySection />
-
                 <div className="h-24" />
-
-                <CountryFAQ country={country} />
-
+                <FAQSection />
                 <div className="h-24" />
-
-                <SEOContent />
-
                 <Footer />
             </main>
             <WhatsAppButton />

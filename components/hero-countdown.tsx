@@ -6,7 +6,7 @@ export function HeroCountdown() {
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 })
 
     useEffect(() => {
-        const startDate = new Date("2026-02-16T00:00:00")
+        const startDate = new Date("2026-03-09T00:00:00")
         const updateCountdown = () => {
             const now = new Date()
             const diff = startDate.getTime() - now.getTime()

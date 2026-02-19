@@ -67,7 +67,7 @@ export default function GuiaCompletaEspana() {
               <div className="mb-8 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
                 <div className="flex items-center gap-1">
                   <Calendar className="h-4 w-4" />
-                  <span>Enero 2026</span>
+                  <span>Marzo 2026</span>
                 </div>
                 <div className="flex items-center gap-1">
                   <Clock className="h-4 w-4" />
@@ -203,7 +203,7 @@ export default function GuiaCompletaEspana() {
                         <td className="p-4">No necesario</td>
                       </tr>
                       <tr className="border-b">
-                        <td className="p-4 font-medium">Garantía 10 días.devolución</td>
+                        <td className="p-4 font-medium">Garantía de devolución</td>
                         <td className="p-4 text-[#C60B1E] font-bold">10 días</td>
                         <td className="p-4">Variable</td>
                         <td className="p-4">Variable</td>
