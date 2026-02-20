@@ -116,7 +116,7 @@ export function ModulePreviewSection() {
                             Quiero que mi hijo aprenda esto →
                         </Link>
                     </Button>
-                    <p className="mt-4 text-gray-500 text-sm">Solo 2 cupos disponibles para el grupo de Enero</p>
+                    <p className="mt-4 text-gray-500 text-sm">Solo 2 cupos disponibles para el grupo de Marzo</p>
                 </motion.div>
             </div>
         </section>

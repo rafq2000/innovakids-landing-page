@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 
 interface CountdownTimerProps {
-  targetDate?: string // ISO format: "2026-02-14T23:59:00-03:00"
+  targetDate?: string // ISO format: "2026-03-09T23:59:00-03:00"
   label?: string
 }
 
