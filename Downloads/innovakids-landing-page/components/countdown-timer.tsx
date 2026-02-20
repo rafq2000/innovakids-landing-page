@@ -16,11 +16,7 @@ export function CountdownTimer({ targetDate, label = "Cierra en" }: CountdownTim
   })
 
   useEffect(() => {
-    const deadline = targetDate ? new Date(targetDate) : (() => {
-      const d = new Date()
-      d.setDate(d.getDate() + 7)
-      return d
-    })()
+    const deadline = targetDate ? new Date(targetDate) : new Date("2026-03-05T23:59:59")
 
     const timer = setInterval(() => {
       const now = new Date().getTime()
