@@ -15,7 +15,7 @@ export function CountryHeroSection({ country }: CountryHeroSectionProps) {
   const cuposTotales = 20
 
   useEffect(() => {
-    const targetDate = new Date("2026-03-09T00:00:00")
+    const targetDate = new Date("2026-03-05T23:59:59")
 
     const calculateTimeLeft = () => {
       const now = new Date()
@@ -81,7 +81,7 @@ export function CountryHeroSection({ country }: CountryHeroSectionProps) {
 
           {/* Countdown */}
           <div className="mb-8">
-            <p className="text-sm text-muted-foreground mb-3">Próximo grupo inicia en:</p>
+            <p className="text-sm text-muted-foreground mb-3">Cierre de inscripciones en:</p>
             <div className="flex justify-center gap-4">
               {[
                 { value: timeLeft.days, label: "Días" },

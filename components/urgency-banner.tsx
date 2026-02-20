@@ -12,7 +12,7 @@ export function UrgencyBanner() {
   })
 
   useEffect(() => {
-    const targetDate = new Date("2026-03-09T00:00:00-03:00").getTime() // Chile timezone (UTC-3)
+    const targetDate = new Date("2026-03-05T23:59:59-03:00").getTime() // Cierre inscripciones (Jueves previo)
 
     const updateCountdown = () => {
       const now = new Date().getTime()
