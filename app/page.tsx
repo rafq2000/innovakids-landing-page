@@ -184,6 +184,8 @@ export default function Home() {
 
         <div className="h-12" />
 
+        <SEOContent />
+
         <Footer />
       </main>
       <WhatsAppButton />
