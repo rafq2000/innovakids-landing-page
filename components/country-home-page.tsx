@@ -172,21 +172,50 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
         })),
     }
 
+    // Coordinates per country for LocalBusiness
+    const countryGeo: Record<string, { lat: number; lng: number }> = {
+        cl: { lat: -33.4489, lng: -70.6693 },
+        mx: { lat: 19.4326, lng: -99.1332 },
+        co: { lat: 4.7110, lng: -74.0721 },
+        ar: { lat: -34.6037, lng: -58.3816 },
+        pe: { lat: -12.0464, lng: -77.0428 },
+        es: { lat: 40.4168, lng: -3.7038 },
+        us: { lat: 25.7617, lng: -80.1918 },
+        ec: { lat: -0.1807, lng: -78.4678 },
+        bo: { lat: -16.5000, lng: -68.1500 },
+        uy: { lat: -34.9011, lng: -56.1645 },
+        ve: { lat: 10.4806, lng: -66.9036 },
+        cr: { lat: 9.9281, lng: -84.0907 },
+        pa: { lat: 8.9936, lng: -79.5197 },
+        do: { lat: 18.4861, lng: -69.9312 },
+        hn: { lat: 14.0818, lng: -87.2068 },
+        sv: { lat: 13.6929, lng: -89.2182 },
+        gt: { lat: 14.6407, lng: -90.5133 },
+        py: { lat: -25.2637, lng: -57.5759 },
+        ni: { lat: 12.8654, lng: -85.2072 },
+        pr: { lat: 18.2208, lng: -66.5901 },
+    }
+    const geo = countryGeo[country.code] || { lat: 0, lng: 0 }
+
     // LocalBusiness Schema: para búsquedas locales por ciudad/país
     const localSchema = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "EducationalOrganization",
         "name": `InnovaKids ${country.name}`,
-        "description": `Academia de inteligencia artificial para ${country.childTerm} en ${country.name}`,
+        "description": `Academia online de inteligencia artificial para ${country.childTerm} en ${country.name}. Grupos de 5 alumnos, clases en vivo, garantía de 10 días.`,
         "url": `https://www.innovakidslatam.com/${country.code}`,
         "telephone": country.whatsapp,
         "email": "innovakidslatam@gmail.com",
+        "priceRange": `$${country.priceUSD} USD`,
         "address": {
             "@type": "PostalAddress",
             "addressCountry": country.code.toUpperCase(),
+            "addressLocality": country.mainCity,
         },
         "geo": {
             "@type": "GeoCoordinates",
+            "latitude": geo.lat,
+            "longitude": geo.lng,
         },
         "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
@@ -199,7 +228,9 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
             "ratingValue": "4.9",
             "reviewCount": "127",
             "bestRating": "5",
+            "worstRating": "1",
         },
+        "sameAs": ["https://www.instagram.com/innovakidslatam"],
     }
 
     return (
