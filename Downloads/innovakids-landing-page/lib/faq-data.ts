@@ -5,12 +5,12 @@ export const faqs = [
     {
         question: "¿Mi hijo necesita saber programación o matemáticas avanzadas?",
         answer:
-            "Absolutamente NO. El 90% de nuestros alumnos empieza desde cero. Nuestra metodología 'Vibe Coding' está diseñada para que niños de 8-14 años creen apps y juegos usando lenguaje natural (español), no código complejo. Si tu hijo sabe usar YouTube, está listo para crear con IA.",
+            "Absolutamente NO. El 90% de nuestros alumnos empieza desde cero. Nuestra metodología 'Vibe Coding' está diseñada para que niños y adolescentes de 8-17 años creen apps y juegos usando lenguaje natural (español), no código complejo. Si tu hijo sabe usar YouTube, está listo para crear con IA.",
     },
     {
         question: "¿Cuál es la edad ideal? ¿Es muy pequeño o muy grande?",
         answer:
-            "El programa está optimizado para el rango de 8 a 14 años. A esta edad tienen la mezcla perfecta de creatividad explosiva y capacidad lógica para dirigir una IA. Tenemos grupos separados por edad (8-10 y 11-14) para asegurar que la dinámica sea perfecta para su etapa.",
+            "El programa está optimizado para el rango de 8 a 17 años. A esta edad tienen la mezcla perfecta de creatividad explosiva y capacidad lógica para dirigir una IA. Tenemos grupos separados por edad (8-11, 12-14 y 15-17) para asegurar que la dinámica sea perfecta para su etapa.",
     },
 
     // 2. DREAM OUTCOME (¿Qué va a lograr?) -> Dream Outcome ↑

@@ -8,10 +8,10 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 export const metadata: Metadata = {
   title: "Cursos de Inteligencia Artificial para Niños | #1 Latinoamérica · InnovaKids | Clase Gratis",
   description:
-    "🏆 527 graduados en 9 países. Tu hijo crea apps, juegos y arte con IA en 5 semanas. Clases online en vivo, grupos de máx 5 alumnos. Garantía de 10 días o devolvemos todo. ¡Agenda clase gratis!",
+    "🏆 527 graduados en 9 países. Tu hijo crea apps reales con IA en 5 semanas. Grupos de 5. Garantía 10 días. ¡Clase gratis!",
   openGraph: {
-    title: "Cursos de IA para Niños y Adolescentes | #1 en Latinoamérica | InnovaKids",
-    description: "527 niños latinoamericanos ya crean apps y videojuegos con IA. Clases en vivo, grupos de 5. Tu hijo crea su proyecto en 5 semanas. ¡Agenda tu clase de prueba gratis hoy!",
+    title: "Cursos de IA para Niños | #1 en Latinoamérica | InnovaKids",
+    description: "527 niños ya crean apps y videojuegos con IA. Clases en vivo, grupos de 5. Tu hijo crea su proyecto en 5 semanas. ¡Clase gratis!",
   }
 }
 
@@ -92,9 +92,44 @@ export default function Home() {
     })),
   }
 
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": "Curso de Inteligencia Artificial para Niños y Adolescentes - InnovaKids",
+    "description": "Aprende a crear apps, videojuegos y arte con IA en 5 semanas. Clases online en vivo para niños y adolescentes de 8 a 17 años. Grupos de máximo 5 alumnos. Garantía de 10 días.",
+    "url": "https://www.innovakidslatam.com",
+    "image": "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+    "provider": {
+      "@type": "Organization",
+      "name": "InnovaKids",
+      "url": "https://www.innovakidslatam.com",
+    },
+    "educationalLevel": "Beginner",
+    "coursePrerequisites": "Ninguno",
+    "numberOfLessons": 10,
+    "timeRequired": "P5W",
+    "inLanguage": "es",
+    "courseMode": "online",
+    "offers": {
+      "@type": "Offer",
+      "price": "267",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.innovakidslatam.com",
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1",
+    },
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
       <Navigation />
       <main className="min-h-screen bg-background">
         <HeroSection />
