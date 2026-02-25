@@ -6,6 +6,7 @@ import { CountryHeroSection } from "@/components/country-hero-section"
 import { CountryPricingSection } from "@/components/country-pricing-section"
 import { CountryFAQ } from "@/components/country-faq"
 import type { CountryConfig } from "@/lib/countries-config"
+import { CountrySEOContent } from "@/components/country-seo-content"
 
 // Generic imports from home
 import { KeyFeaturesSection } from "@/components/key-features-section"
@@ -53,6 +54,7 @@ const Footer = dynamic(() => import("@/components/footer").then((mod) => ({ defa
 const SEOContent = dynamic(() => import("@/components/seo-content").then((mod) => ({ default: mod.SEOContent })), {
     ssr: true,
 })
+
 const VisionSection = dynamic(
     () => import("@/components/vision-section").then((mod) => ({ default: mod.VisionSection })),
     { ssr: true },
@@ -149,6 +151,7 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
 
                 <div className="h-24" />
 
+                <CountrySEOContent country={country} />
                 <SEOContent />
 
                 <Footer />

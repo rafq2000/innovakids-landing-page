@@ -6,12 +6,12 @@ import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños y Adolescentes | 527 Graduados en 9 Países",
+  title: "Cursos de Inteligencia Artificial para Niños | #1 Latinoamérica · InnovaKids | Clase Gratis",
   description:
-    "La escuela #1 de inteligencia artificial para niños y adolescentes online. Tu hijo crea apps, música y arte con IA en 5 semanas. Máx 5 por grupo. Garantía de 10 días o devolvemos todo.",
+    "🏆 527 graduados en 9 países. Tu hijo crea apps, juegos y arte con IA en 5 semanas. Clases online en vivo, grupos de máx 5 alumnos. Garantía de 10 días o devolvemos todo. ¡Agenda clase gratis!",
   openGraph: {
-    title: "Curso de IA para Niños y Adolescentes | 527 Graduados",
-    description: "527 alumnos en 9 países crean apps con IA. Transforma a tu hijo de consumidor a creador. Clases en vivo 100% prácticas.",
+    title: "Cursos de IA para Niños y Adolescentes | #1 en Latinoamérica | InnovaKids",
+    description: "527 niños latinoamericanos ya crean apps y videojuegos con IA. Clases en vivo, grupos de 5. Tu hijo crea su proyecto en 5 semanas. ¡Agenda tu clase de prueba gratis hoy!",
   }
 }
 
