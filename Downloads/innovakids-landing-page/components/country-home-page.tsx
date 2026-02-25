@@ -7,6 +7,7 @@ import { CountryPricingSection } from "@/components/country-pricing-section"
 import { CountryFAQ } from "@/components/country-faq"
 import type { CountryConfig } from "@/lib/countries-config"
 import { CountrySEOContent } from "@/components/country-seo-content"
+import { CountryLinksSection } from "@/components/country-links-section"
 
 // Generic imports from home
 import { KeyFeaturesSection } from "@/components/key-features-section"
@@ -68,33 +69,144 @@ interface CountryHomePageProps {
     country: CountryConfig
 }
 
+const countryFAQs = (country: CountryConfig) => [
+    {
+        question: `¿El curso de IA está disponible para ${country.childTerm} en ${country.name}?`,
+        answer: `Sí, nuestro curso de inteligencia artificial está 100% disponible para ${country.childTerm} ${country.demonym} de 8 a 17 años. Las clases son online en vivo con horarios adaptados a ${country.name}. Tenemos alumnos en ${country.mainCity}, ${country.otherCities.join(", ")} y todo el país.`,
+    },
+    {
+        question: `¿Cuánto cuesta el curso de IA para ${country.childTerm} en ${country.name}?`,
+        answer: `El precio para familias de ${country.name} es de ${country.priceDisplay} (${country.priceUSD} USD). ${country.faqPaymentAnswer}`,
+    },
+    {
+        question: `¿A qué hora son las clases para ${country.childTerm} de ${country.name}?`,
+        answer: `Las clases se programan adaptadas al huso horario de ${country.name}. Tenemos sesiones por las tardes (después del colegio) y sábados por la mañana. Al agendar tu evaluación gratuita, coordinamos el horario ideal para tu familia.`,
+    },
+    {
+        question: `¿Qué van a crear los ${country.childTerm} ${country.demonym} en el curso?`,
+        answer: `En 5 semanas, tu hijo crea: su primera app funcional con IA, arte digital original, música compuesta con inteligencia artificial, un videojuego y una presentación final de su proyecto. Todo con metodología Vibe Coding, sin necesidad de saber programar.`,
+    },
+    {
+        question: "¿Tienen garantía de satisfacción?",
+        answer: "Sí, ofrecemos garantía de 10 días completos. Si después de la primera semana sientes que el curso no cumplió tus expectativas, te devolvemos el 100% de tu inversión sin preguntas ni complicaciones.",
+    },
+]
+
 export function CountryHomePage({ country }: CountryHomePageProps) {
-    // Schema specific for country
-    const countrySchema = {
+    const faqs = countryFAQs(country)
+
+    // Rich Schema: Course + AggregateRating + Offers (para mostrar precio en Google)
+    const courseSchema = {
         "@context": "https://schema.org",
         "@type": "Course",
         "name": `Curso de IA para ${country.childTerm} en ${country.name} - InnovaKids`,
-        "description": `Clases de inteligencia artificial para ${country.childTerm} de 8-14 años en ${country.name}.`,
+        "description": `Clases online de inteligencia artificial para ${country.childTerm} ${country.demonym} de 8 a 17 años en ${country.name}. Grupos de máximo 5 alumnos. Metodología Vibe Coding. Garantía de 10 días.`,
+        "url": `https://www.innovakidslatam.com/${country.code}`,
+        "image": "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
         "provider": {
             "@type": "Organization",
-            "name": "InnovaKids"
+            "name": "InnovaKids",
+            "url": "https://www.innovakidslatam.com",
+            "sameAs": ["https://www.instagram.com/innovakidslatam"],
+        },
+        "educationalLevel": "Beginner",
+        "coursePrerequisites": "Ninguno",
+        "numberOfLessons": 10,
+        "timeRequired": "P5W",
+        "inLanguage": "es",
+        "courseMode": "online",
+        "audience": {
+            "@type": "EducationalAudience",
+            "educationalRole": "student",
+            "audienceType": `${country.childTerm} de 8 a 17 años en ${country.name}`,
+        },
+        "hasCourseInstance": {
+            "@type": "CourseInstance",
+            "courseMode": "online",
+            "courseWorkload": "PT90M",
+            "location": {
+                "@type": "VirtualLocation",
+                "url": `https://www.innovakidslatam.com/${country.code}`,
+            },
+            "instructor": {
+                "@type": "Person",
+                "name": "InnovaKids Team",
+            },
         },
         "offers": {
             "@type": "Offer",
             "price": country.priceUSD.toString(),
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
-            "areaServed": country.name
+            "validFrom": "2026-03-01",
+            "url": `https://www.innovakidslatam.com/${country.code}`,
+            "seller": {
+                "@type": "Organization",
+                "name": "InnovaKids",
+            },
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127",
+            "bestRating": "5",
+            "worstRating": "1",
         },
         "areaServed": {
             "@type": "Country",
-            "name": country.name
-        }
+            "name": country.name,
+        },
+    }
+
+    // FAQPage Schema: expande el snippet en Google mostrando preguntas/respuestas
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map((faq) => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer,
+            },
+        })),
+    }
+
+    // LocalBusiness Schema: para búsquedas locales por ciudad/país
+    const localSchema = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": `InnovaKids ${country.name}`,
+        "description": `Academia de inteligencia artificial para ${country.childTerm} en ${country.name}`,
+        "url": `https://www.innovakidslatam.com/${country.code}`,
+        "telephone": country.whatsapp,
+        "email": "innovakidslatam@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": country.code.toUpperCase(),
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "22:00",
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127",
+            "bestRating": "5",
+        },
     }
 
     return (
         <>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(countrySchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }} />
             <Navigation countryCode={country.code} />
             <main className="min-h-screen bg-background">
                 <CountryHeroSection country={country} />
@@ -153,6 +265,8 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
 
                 <CountrySEOContent country={country} />
                 <SEOContent />
+
+                <CountryLinksSection country={country} />
 
                 <Footer />
             </main>
