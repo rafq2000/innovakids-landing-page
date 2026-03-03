@@ -1,3 +1,4 @@
+import { generateHreflangs } from "@/lib/seo-config";
 import { ProgramPageContent } from "@/components/program-page-content"
 import { getCountryConfig, getAllCountryCodes, CountryCode } from "@/lib/countries-config"
 import type { Metadata } from "next"
@@ -26,7 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: `Programa de IA para ${country.childTerm} en ${country.name} | Curriculum Completo`,
         description: `Conoce las 10 clases del programa InnovaKids en ${country.name}. Tu hijo creará arte con IA, aplicaciones y más. Precio en ${country.currency}.`,
         alternates: {
-            canonical: `https://www.innovakids.cl/${countryCode}/programa`,
+            canonical: `https://www.innovakidslatam.com/${countryCode}/programa`,
+      languages: generateHreflangs("sales"),
         }
     }
 }

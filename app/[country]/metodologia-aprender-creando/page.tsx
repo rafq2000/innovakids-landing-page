@@ -1,3 +1,4 @@
+import { generateHreflangs } from "@/lib/seo-config";
 import { MetodologiaPageContent } from "@/components/metodologia-page-content"
 import { getCountryConfig, getAllCountryCodes, CountryCode } from "@/lib/countries-config"
 import type { Metadata } from "next"
@@ -26,7 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: `Metodología Aprender Creando | Curso IA ${country.name}`,
         description: `Descubre cómo los ${country.childTerm} en ${country.name} aprenden IA creando proyectos reales. Metodología práctica InnovaKids.`,
         alternates: {
-            canonical: `https://www.innovakids.cl/${countryCode}/metodologia-aprender-creando`,
+            canonical: `https://www.innovakidslatam.com/${countryCode}/metodologia-aprender-creando`,
+      languages: generateHreflangs("home"),
         }
     }
 }
