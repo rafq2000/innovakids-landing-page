@@ -15,7 +15,7 @@ export function CountryHeroSection({ country }: CountryHeroSectionProps) {
   const cuposTotales = 20
 
   useEffect(() => {
-    const targetDate = new Date("2026-03-05T23:59:59")
+    const targetDate = new Date("2026-04-30T23:59:59")
 
     const calculateTimeLeft = () => {
       const now = new Date()
@@ -75,7 +75,7 @@ export function CountryHeroSection({ country }: CountryHeroSectionProps) {
 
           {/* Subtítulo localizado */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty max-w-2xl mx-auto">
-            {country.tone}. Clases online de IA para {country.childTerm} {country.demonym} de 8-14 años en
+            {country.tone}. Clases online de IA para {country.childTerm} {country.demonym} de 8-17 años en
             grupos de máximo 5 alumnos.
           </p>
 

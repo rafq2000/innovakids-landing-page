@@ -12,6 +12,24 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "cursos-online-tecnologia-ninos-adolescentes",
+    title: "Cursos Online para Niños y Adolescentes de 8 a 17 años (2026) 🚀",
+    excerpt: "⭐ ¿Buscas cursos para niños de 10 a 12 años o adolescentes de 14 a 17? Descubre las mejores opciones en programación, videojuegos e IA. ¡Inscripciones abiertas! Grupos reducidos.",
+    image: "/kids-learning-ai-on-computer.jpg",
+    date: "2026-03-03",
+    category: "Guías 2026",
+    readTime: "7 min",
+  },
+  {
+    slug: "codingal-vs-innovakids-comparativa",
+    title: "Codingal vs Innovakids (2026) 🏆 ¿Cuál es el Mejor Curso de Programación Online?",
+    excerpt: "✅ Análisis HONESTO: Codingal vs Innovakids. Descubre qué academia online de programación, robótica e Inteligencia Artificial es mejor para tu hijo o adolescente.",
+    image: "/children-using-ai-educational-tools.jpg",
+    date: "2026-03-03",
+    category: "Comparativa",
+    readTime: "6 min",
+  },
+  {
     slug: "curso-storytelling-digital-ninos",
     title: "Maestros del Storytelling Digital: Crea Cuentos Ilustrados con IA",
     excerpt:
@@ -145,11 +163,10 @@ export default function BlogPage() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                   <div
-                    className={`absolute top-4 left-4 px-3 py-1 rounded-full text-sm font-semibold ${
-                      post.category === "Próximos Cursos"
+                    className={`absolute top-4 left-4 px-3 py-1 rounded-full text-sm font-semibold ${post.category === "Próximos Cursos"
                         ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white"
                         : "bg-[#4DD0E1] text-[#0a1628]"
-                    }`}
+                      }`}
                   >
                     {post.category}
                   </div>

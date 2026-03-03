@@ -4,15 +4,30 @@ import { HeroSection } from "@/components/hero-section"
 import { KeyFeaturesSection } from "@/components/key-features-section"
 import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
+import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Cursos de Inteligencia Artificial para Niños | #1 Latinoamérica · InnovaKids | Clase Gratis",
+  title: "Cursos de Inteligencia Artificial para Niños | #1 Latinoamérica y España · InnovaKids | Clase Gratis",
   description:
-    "🏆 527 graduados en 9 países. Tu hijo crea apps reales con IA en 5 semanas. Grupos de 5. Garantía 10 días. ¡Clase gratis!",
+    "🏆 527 graduados en 9 países. Tu hijo crea apps, videojuegos y startups reales con IA en 5 semanas. Grupos de 5 alumnos. Garantía 10 días. ¡Clase gratis!",
+  alternates: {
+    canonical: "https://www.innovakidslatam.com",
+    languages: generateHreflangs("home"),
+  },
   openGraph: {
-    title: "Cursos de IA para Niños | #1 en Latinoamérica | InnovaKids",
+    title: "Cursos de IA para Niños | #1 en Latinoamérica y España | InnovaKids",
     description: "527 niños ya crean apps y videojuegos con IA. Clases en vivo, grupos de 5. Tu hijo crea su proyecto en 5 semanas. ¡Clase gratis!",
-  }
+    url: "https://www.innovakidslatam.com",
+    type: "website",
+    locale: "es_419",
+    images: [{ url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg", width: 1200, height: 630, alt: "Curso de Inteligencia Artificial para Niños - InnovaKids" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cursos de IA para Niños | #1 en Latinoamérica y España | InnovaKids",
+    description: "527 niños ya crean apps y videojuegos con IA en 5 semanas. ¡Clase gratis!",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
+  },
 }
 
 const AIFutureSection = dynamic(
@@ -92,6 +107,32 @@ export default function Home() {
     })),
   }
 
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "InnovaKids",
+    "alternateName": ["InnovaKids LATAM", "Cursos IA Niños"],
+    "url": "https://www.innovakidslatam.com",
+    "description": "Academia líder de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Latinoamérica y España.",
+    "inLanguage": "es",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://www.innovakidslatam.com/blog?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "InnovaKids", "item": "https://www.innovakidslatam.com" }
+    ]
+  }
+
   const courseSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
@@ -128,6 +169,8 @@ export default function Home() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
       <Navigation />
