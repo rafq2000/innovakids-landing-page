@@ -17,6 +17,9 @@ type PaymentOption =
   | "promo180"
   | "restante177"
   | "remaining"
+  | "promo27"
+  | "promo240"
+  | "promo120"
 
 const paymentTitles: Record<PaymentOption, string> = {
   reserve: "Innovakids - Reserva de Cupo",
@@ -33,6 +36,9 @@ const paymentTitles: Record<PaymentOption, string> = {
   pro_pack: "Vibe Pro Pack",
   university: "Academy University Pass",
   restante177: "Innovakids - Pago Restante $177",
+  promo27: "Innovakids - Promoción $27",
+  promo240: "Innovakids - Promoción $240",
+  promo120: "Innovakids - Promoción Especial $120",
 }
 
 const paymentDescriptions: Record<PaymentOption, string> = {
@@ -50,6 +56,9 @@ const paymentDescriptions: Record<PaymentOption, string> = {
   pro_pack: "Explorer + 2 Especialidades",
   university: "Acceso Total 4 Módulos",
   restante177: "Pago restante de $177 USD",
+  promo27: "Pago único de $27 USD",
+  promo240: "Pago único de $240 USD",
+  promo120: "Pago especial de $120 USD",
 }
 
 export async function createMercadoPagoCheckout(
