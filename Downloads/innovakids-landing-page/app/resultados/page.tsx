@@ -1,3 +1,4 @@
+import { generateHreflangs } from "@/lib/seo-config";
 import type { Metadata } from "next"
 import { ResultsPageContent } from "@/components/results-page-content"
 
@@ -7,6 +8,7 @@ export const metadata: Metadata = {
         "Mira lo que crean niños de 8-14 años con IA en InnovaKids. Videojuegos, arte, música y apps. Testimonios reales de padres en 9 países.",
     alternates: {
         canonical: "https://www.innovakidslatam.com/resultados",
+      languages: generateHreflangs("sales")
     },
 }
 

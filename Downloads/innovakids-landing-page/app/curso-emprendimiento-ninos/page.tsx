@@ -1,3 +1,4 @@
+import { generateHreflangs } from "@/lib/seo-config";
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/curso-emprendimiento-ninos",
+      languages: generateHreflangs("home")
     },
     openGraph: {
         title: "Curso de Emprendimiento con IA para Niños | InnovaKids",

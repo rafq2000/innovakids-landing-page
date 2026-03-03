@@ -1,3 +1,4 @@
+import { generateHreflangs } from "@/lib/seo-config";
 import { ResultsPageContent } from "@/components/results-page-content"
 import { getCountryConfig, getAllCountryCodes, CountryCode } from "@/lib/countries-config"
 import type { Metadata } from "next"
@@ -26,7 +27,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: `Proyectos de Alumnos InnovaKids ${country.name} | Galería de Resultados`,
         description: `Mira lo que los ${country.childTerm} de ${country.name} están creando con Inteligencia Artificial. Videojuegos, Arte, Música y más.`,
         alternates: {
-            canonical: `https://www.innovakids.cl/${countryCode}/resultados`,
+            canonical: `https://www.innovakidslatam.com/${countryCode}/resultados`,
+      languages: generateHreflangs("sales"),
         }
     }
 }

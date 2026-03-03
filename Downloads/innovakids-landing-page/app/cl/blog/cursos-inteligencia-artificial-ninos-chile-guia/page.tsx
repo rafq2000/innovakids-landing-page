@@ -1,3 +1,4 @@
+import { generateHreflangs } from "@/lib/seo-config";
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
@@ -24,6 +25,7 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/cl/blog/cursos-inteligencia-artificial-ninos-chile-guia",
+      languages: generateHreflangs("home")
   },
 }
 

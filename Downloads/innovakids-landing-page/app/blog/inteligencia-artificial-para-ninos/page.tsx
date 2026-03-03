@@ -1,3 +1,4 @@
+import { generateHreflangs } from "@/lib/seo-config";
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
         "Todo lo que necesitas saber sobre IA para niños. Qué es, por qué importa, mejores herramientas, actividades para hacer en casa y cómo elegir un curso.",
     alternates: {
         canonical: "https://www.innovakidslatam.com/blog/inteligencia-artificial-para-ninos",
+      languages: generateHreflangs("home")
     },
 }
 

@@ -1,3 +1,4 @@
+import { generateHreflangs } from "@/lib/seo-config";
 import { CountryHomePage } from "@/components/country-home-page"
 import { getCountryConfig, getAllCountryCodes, CountryCode } from "@/lib/countries-config"
 import type { Metadata } from "next"
@@ -28,7 +29,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         title: country.metaTitle,
         description: country.metaDescription,
         alternates: {
-            canonical: `https://www.innovakidslatam.com/${country.code}`,
+            canonical: `https://www.innovakidslatam.com/${country.code}`, 
+      languages: generateHreflangs("home"),
         }
     }
 }
