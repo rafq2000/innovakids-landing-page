@@ -233,14 +233,26 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
         "sameAs": ["https://www.instagram.com/innovakidslatam"],
     }
 
+    // BreadcrumbList: makes Google show breadcrumb path in SERP → improves CTR
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "InnovaKids", "item": "https://www.innovakidslatam.com" },
+            { "@type": "ListItem", "position": 2, "name": `InnovaKids ${country.name}`, "item": `https://www.innovakidslatam.com/${country.code}` },
+        ]
+    }
+
     return (
         <>
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navigation countryCode={country.code} />
             <main className="min-h-screen bg-background">
                 <CountryHeroSection country={country} />
+
 
                 <AIFutureSection />
                 {/* Qualification Section Removed */}
