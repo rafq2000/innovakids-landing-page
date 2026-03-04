@@ -3,9 +3,30 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
-import { Sparkles, Palette, Cpu, Rocket, Check, Clock, Users, Star } from "lucide-react"
+import { Sparkles, Palette, Cpu, Rocket, Film, Check, Clock, Users, Star } from "lucide-react"
 
 const upcomingCourses = [
+  {
+    level: 5,
+    title: "Creadores de Películas con IA 🎬",
+    subtitle: "De la imaginación a la pantalla grande",
+    description:
+      "Aprende a crear películas completas con IA: diseña personajes, crea storyboards, produce shorts virales, compone música de cine y edita como un director profesional.",
+    classes: "10 Clases",
+    skills: [
+      "Diseña tu Personaje Legendario",
+      "Tu Avatar Habla por Ti",
+      "La Historia Secreta de 7 Escenas",
+      "El Mapa de la Aventura (Storyboard)",
+      "Shorts Súper Virales",
+      "Tu Primera Película IA",
+      "Música Mágica de Cine",
+      "Edición de Director Profesional",
+      "Tráiler Tipo Netflix",
+      "Transformaciones Pro: Cambia Personajes y Anima Mundos ✨",
+    ],
+    icon: Film,
+  },
   {
     level: 2,
     title: "Creadores de Universos",
@@ -78,7 +99,7 @@ export function UpcomingCoursesSection() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {upcomingCourses.map((course, index) => (
             <div
               key={course.level}
