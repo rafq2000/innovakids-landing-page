@@ -3,7 +3,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { CheckCircle2, Sparkles, Code2, Rocket, Brain } from "lucide-react"
+import { CheckCircle2, Sparkles, Code2, Rocket, Brain, Film } from "lucide-react"
 
 const modules = {
   explorer: {
@@ -83,6 +83,25 @@ const modules = {
       "Master Project: Tesis final multimedia",
     ],
   },
+  visual: {
+    title: "Especialidad: Creador Visual",
+    subtitle: "Creadores de Películas con IA 🚀🎬",
+    icon: Film,
+    color: "text-pink-400",
+    description: "De la imaginación a la pantalla grande. Crea películas completas con IA: personajes, storyboards, shorts virales, música de cine y edición profesional.",
+    lessons: [
+      "Diseña tu Personaje Legendario",
+      "Tu Avatar Habla por Ti",
+      "La Historia Secreta de 7 Escenas",
+      "El Mapa de la Aventura (Storyboard)",
+      "Shorts Súper Virales",
+      "Tu Primera Película IA",
+      "Música Mágica de Cine",
+      "Edición de Director Profesional",
+      "Tráiler Tipo Netflix",
+      "Transformaciones Pro: Cambia Personajes y Anima Mundos ✨",
+    ],
+  },
 }
 
 export function CurriculumSection() {
@@ -95,7 +114,7 @@ export function CurriculumSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <Badge className="mb-4 bg-cyan-500/10 text-cyan-400 border-cyan-500/20 px-4 py-1">
-            40 Clases Premium
+            50 Clases Premium
           </Badge>
           <h2 className="mb-6 text-4xl md:text-5xl font-bold text-white tracking-tight">
             El Currículum <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">Vibe Academy</span>
@@ -106,7 +125,7 @@ export function CurriculumSection() {
         </div>
 
         <Tabs defaultValue="explorer" className="w-full max-w-5xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-4 h-auto p-2 bg-[#0f1f3a] border border-white/10 rounded-xl mb-8">
+          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5 h-auto p-2 bg-[#0f1f3a] border border-white/10 rounded-xl mb-8">
             <TabsTrigger
               value="explorer"
               className="py-3 px-2 data-[state=active]:bg-yellow-500/20 data-[state=active]:text-yellow-400 text-gray-400"
@@ -141,6 +160,15 @@ export function CurriculumSection() {
               <div className="flex flex-col items-center gap-2">
                 <Brain className="h-5 w-5" />
                 <span className="font-bold">Learning</span>
+              </div>
+            </TabsTrigger>
+            <TabsTrigger
+              value="visual"
+              className="py-3 px-2 data-[state=active]:bg-pink-500/20 data-[state=active]:text-pink-400 text-gray-400"
+            >
+              <div className="flex flex-col items-center gap-2">
+                <Film className="h-5 w-5" />
+                <span className="font-bold">Creador Visual</span>
               </div>
             </TabsTrigger>
           </TabsList>
