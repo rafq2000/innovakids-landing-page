@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next"
-import { getAllCountryCodes } from "@/lib/countries-config"
+import { getAllCountryCodes, getCountryConfig } from "@/lib/countries-config"
 import fs from "fs"
 import path from "path"
 
@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog",
     "/descargar-guia-ia-ninos",
     "/testimonios",
-    "/curso-ia-ninos",
+    "/cursos/inteligencia-artificial",
     "/clases-ia-ninos",
     "/como-ensenar-ia-a-mis-hijos",
     "/brochure-programa-ia",
@@ -30,6 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/curso-creacion-videojuegos-ninos",
     "/curso-creador-contenido-ia",
     "/curso-emprendimiento-ninos",
+    "/colegios",
   ]
 
   const coursePages = ["/curso-creacion-videojuegos-ninos", "/curso-creador-contenido-ia", "/curso-emprendimiento-ninos", "/curso-ia-ninos"]
@@ -88,6 +89,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }
     } catch (error) {
       console.error(`Error scanning blogs for ${code}:`, error)
+    }
+
+    // 4. City-level SEO routes for course specialization (Long-tail)
+    const config = getCountryConfig(code)
+    if (config && config.otherCities && config.otherCities.length > 0) {
+      config.otherCities.forEach((city: string) => {
+        // Formateo simple para URLs (minúscula y reemplazo de espacios por guiones)
+        const citySlug = city.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-")
+        sitemapEntries.push({
+          url: `${baseUrl}/${code}/${citySlug}/cursos/inteligencia-artificial`,
+          lastModified: currentDate,
+          changeFrequency: "weekly",
+          priority: 0.8,
+        })
+      })
     }
   })
 

@@ -323,7 +323,7 @@ export default function RootLayout({
                   "@type": "ListItem",
                   position: 1,
                   name: "Vibe Explorer - Curso Base de IA para Niños",
-                  url: "https://www.innovakidslatam.com/curso-ia-ninos",
+                  url: "https://www.innovakidslatam.com/cursos/inteligencia-artificial",
                 },
                 {
                   "@type": "ListItem",

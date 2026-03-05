@@ -238,7 +238,7 @@ export default function GameDesignPage() {
                 <div className="container mx-auto px-4 py-16 border-t border-white/10">
                     <h2 className="text-2xl font-bold text-center mb-8">Explora Otros Cursos de InnovaKids</h2>
                     <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                        <Link href="/curso-ia-ninos" className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 p-6 rounded-xl border border-cyan-500/30 hover:border-cyan-500/60 transition-colors text-center group">
+                        <Link href="/cursos/inteligencia-artificial" className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 p-6 rounded-xl border border-cyan-500/30 hover:border-cyan-500/60 transition-colors text-center group">
                             <div className="text-3xl mb-3">🧠</div>
                             <h3 className="font-bold text-white group-hover:text-cyan-400 transition-colors">Curso Base de IA</h3>
                             <p className="text-slate-400 text-sm mt-2">Vibe Explorer — Nivel 1</p>

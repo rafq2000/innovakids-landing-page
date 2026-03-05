@@ -250,6 +250,10 @@ const nextConfig = {
       { source: '/grupos-pequenos-5-alumnos', destination: '/clases-ia-ninos', permanent: true },
       { source: '/oferta-180', destination: '/clases-ia-ninos', permanent: true },
       { source: '/oferta-180a-aprender-c', destination: '/clases-ia-ninos', permanent: true }, // potential variation
+      // Arquitectura Silo B2C
+      { source: '/curso-ia-ninos', destination: '/cursos/inteligencia-artificial', permanent: true },
+      { source: '/oferta-180', destination: '/clases-ia-ninos', permanent: true },
+      { source: '/oferta-180a-aprender-c', destination: '/clases-ia-ninos', permanent: true }, // potential variation
     ]
   },
 }
