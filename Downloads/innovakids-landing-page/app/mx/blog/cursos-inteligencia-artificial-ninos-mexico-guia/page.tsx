@@ -8,6 +8,10 @@ import { Clock, Calendar } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
   title: "Cursos de IA para Niños en México (Guía 2026)",
   description:
     "Guía Completa: Lo que todo padre mexicano debe saber antes de inscribir a su hijo en un curso de IA. Precios en pesos, herramientas, seguridad y mejores opciones.",

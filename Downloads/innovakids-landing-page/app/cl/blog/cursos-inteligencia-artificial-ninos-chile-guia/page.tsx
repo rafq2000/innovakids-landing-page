@@ -6,6 +6,10 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { CheckCircle, Target, Clock, Star, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
   title: "Cursos de IA para Niños en Chile (Guía 2026)",
   description:
     "Guía Completa: Lo que todo padre chileno debe saber antes de inscribir a su hijo en un curso de IA. Precios en pesos, herramientas, seguridad y mejores opciones.",

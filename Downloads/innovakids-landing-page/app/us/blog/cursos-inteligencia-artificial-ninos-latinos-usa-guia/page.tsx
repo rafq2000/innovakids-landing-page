@@ -6,6 +6,10 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Target, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
   title: "Cursos de IA para Niños Latinos en USA (Guía 2026)",
   description:
     "Guía Completa: Lo que todo padre latino en USA debe saber. Cómo lograr que tu hijo aprenda tecnología de punta sin perder su español.",

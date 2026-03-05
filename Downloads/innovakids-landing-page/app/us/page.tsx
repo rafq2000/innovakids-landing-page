@@ -13,6 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: country.metaTitle,
     description: country.metaDescription,
+        keywords: [...(country.keywords || []), ...(country.longTailKeywords || [])],
     alternates: {
       canonical: `https://www.innovakidslatam.com/${country.code}`, 
       languages: generateHreflangs("home"),

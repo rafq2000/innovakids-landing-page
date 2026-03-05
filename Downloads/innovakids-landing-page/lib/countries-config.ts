@@ -50,27 +50,20 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     hreflang: "es-CL",
     tone: "Prepáralos para el futuro digital",
     keywords: [
-      "cursos de IA para niños chile",
-      "clases inteligencia artificial niños santiago",
-      "curso ia para niños santiago",
-      "inteligencia artificial para niños chile",
-      "clases de ia para niños chile",
-      "cursos tecnologia niños chile",
-      "programacion para niños chile",
+      "curso de ia para niños chile",
+      "cursos ia para adolescentes chile",
+      "clases inteligencia artificial niños santiago"
     ],
     longTailKeywords: [
-      "donde estudiar ia niños en chile",
-      "cursos de chatgpt para niños en santiago",
-      "clases de programacion para niños santiago chile",
-      "academia de inteligencia artificial para niños chile",
-      "curso online ia niños chile garantia",
+      "mejor curso online de inteligencia artificial para niños chilenos",
+      "donde estudiar programacion con ia niños en chile"
     ],
-    paymentMethods: ["Webpay", "Mercado Pago", "PayPal", "Transferencia"],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇨🇱",
-    metaTitle: "Cursos de IA y Programación para Niños (8 a 17) en Chile 🇨🇱 [2026]",
-    metaDescription: "⭐ Cursos online en VIVO de IA para niños y adolescentes (8-17). Crea videojuegos y apps. Grupos de 5. ¡Prueba sin riesgo por 10 días! Cupos limitados hoy.",
+    metaTitle: "Curso de IA para Niños en Chile | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Chile. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Santiago, Viña del Mar, Concepción y todo Chile ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tu tarjeta de crédito o débito directamente, con Mercado Pago, PayPal o transferencia bancaria. La reserva es de $27 USD (aprox. $25.000 CLP). Solo pagas el resto después de las 2 primeras clases."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. $25.000 CLP). Solo pagas el resto después de las 2 primeras clases."
   },
   mx: {
     code: "mx",
@@ -92,27 +85,20 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     hreflang: "es-MX",
     tone: "Dale una ventaja competitiva a tu hijo",
     keywords: [
-      "cursos de inteligencia artificial para niños mexico",
-      "clases de IA para niños cdmx",
-      "curso ia niños mexico df",
-      "inteligencia artificial niños guadalajara monterrey",
-      "aprender ia para niños en mexico",
-      "cursos tecnologia niños mexico online",
-      "programacion con ia para niños mexico",
+      "curso de ia para niños mexico",
+      "cursos ia para adolescentes mexico",
+      "clases de IA para niños cdmx"
     ],
     longTailKeywords: [
-      "donde aprenden IA mis hijos en méxico",
-      "cursos de chatgpt para niños en cdmx",
-      "clases online ia niños guadalajara",
-      "academia inteligencia artificial niños mexico",
-      "mejor curso ia niños mexico certificado",
+      "mejor curso online de inteligencia artificial para niños mexicanos",
+      "donde aprenden IA mis hijos en méxico"
     ],
-    paymentMethods: ["OXXO", "Mercado Pago", "PayPal", "Tarjeta de crédito"],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇲🇽",
-    metaTitle: "Curso Online de IA para Niños y Adolescentes en México 🇲🇽 [2026]",
-    metaDescription: "🎯 El #1 de México para preadolescentes (8-17). Clases de programación en VIVO con IA. Grupos de 5. Tu hijo crea apps reales. Garantía total. ¡Inscríbelo!",
+    metaTitle: "Curso de IA para Niños en México | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en México. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Ciudad de México, Guadalajara, Monterrey y todo México ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tu tarjeta de crédito o débito directamente, con Mercado Pago o PayPal. La reserva es de $27 USD (aprox. $540 MXN). Solo pagas el resto después de las 2 primeras clases."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. $540 MXN). Solo pagas el resto después de las 2 primeras clases."
   },
   co: {
     code: "co",
@@ -134,27 +120,20 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     hreflang: "es-CO",
     tone: "Impulsa su creatividad y espíritu innovador",
     keywords: [
-      "cursos de inteligencia artificial para niños colombia",
-      "clases de IA para niños bogota",
-      "curso ia niños medellin",
-      "inteligencia artificial para niños colombia online",
-      "programacion con ia para niños colombia",
-      "cursos tecnologia niños bogota medellin",
-      "clases de chatgpt para niños colombia",
+      "curso de ia para niños colombia",
+      "cursos ia para adolescentes colombia",
+      "clases de IA para niños bogota"
     ],
     longTailKeywords: [
-      "donde estudiar ia niños en colombia",
-      "cursos de programacion para niños bogota colombia",
-      "clases de inteligencia artificial medellin niños",
-      "academia ia niños colombia online certificado",
-      "mejor curso ia para hijos colombia garantia",
+      "mejor curso online de inteligencia artificial para niños colombianos",
+      "donde estudiar ia niños en colombia"
     ],
-    paymentMethods: ["PSE", "Nequi", "Daviplata", "Mercado Pago"],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇨🇴",
-    metaTitle: "Cursos de IA para Niños de 8 a 17 años en Colombia 🇨🇴 | 2026",
-    metaDescription: "🚀 El curso definitivo de tecnología. Clases online en vivo (Grupos de 5). Tu hijo crea apps y arte con Inteligencia Artificial. Paga con Nequi. ¡Reserva hoy!",
+    metaTitle: "Curso de IA para Niños en Colombia | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Colombia. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Bogotá, Medellín, Cali, Barranquilla y toda Colombia ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tu tarjeta de crédito o débito (Visa, Mastercard, American Express), con Mercado Pago o PayPal. La reserva es de $27 USD (aprox. $113.000 COP). Solo pagas el resto después de las 2 primeras clases."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. $113.000 COP). Solo pagas el resto después de las 2 primeras clases."
   },
   ar: {
     code: "ar",
@@ -176,27 +155,20 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     hreflang: "es-AR",
     tone: "Potencia su pensamiento crítico creando tecnología",
     keywords: [
-      "cursos de inteligencia artificial para chicos argentina",
-      "talleres de IA para niños argentina",
-      "clases ia para chicos buenos aires",
-      "curso programacion ia niños argentina",
-      "inteligencia artificial para chicos cordoba rosario",
-      "cursos tecnologia chicos argentina online",
-      "aprender ia para niños buenos aires",
+      "curso de ia para chicos argentina",
+      "cursos ia para adolescentes argentina",
+      "clases ia para chicos buenos aires"
     ],
     longTailKeywords: [
-      "donde aprenden ia los chicos en argentina",
-      "cursos de chatgpt para chicos en buenos aires",
-      "clases online ia niños cordoba argentina",
-      "academia inteligencia artificial chicos argentina",
-      "mejor curso ia para chicos argentina con garantia",
+      "mejor curso online de inteligencia artificial para chicos argentinos",
+      "donde aprenden ia los chicos en argentina"
     ],
-    paymentMethods: ["Mercado Pago", "Transferencia", "PayPal"],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇦🇷",
-    metaTitle: "Programación e IA para Chicos/Adolescentes en Argentina 🇦🇷",
-    metaDescription: "🏆 El futuro es ahora. Curso de inteligencia artificial para edades 8 a 17. Clases online EN VIVO. Top en Buenos Aires. Paga en ARS con Mercado Pago. [100% Garantizado]",
+    metaTitle: "Curso de IA para Chicos en Argentina | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para chicos y adolescentes de 8 a 17 años en Argentina. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Buenos Aires, Córdoba, Rosario y toda Argentina ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tu tarjeta de crédito o débito internacional (el cobro es en USD), con Mercado Pago o PayPal. La reserva es de $27 USD. Solo pagas el resto después de las 2 primeras clases."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito o débito internacional. El cobro seguro en plataforma procesa sin fricción. La reserva es de $27 USD. Solo pagas el resto después de las 2 primeras clases."
   },
   pe: {
     code: "pe",
@@ -218,27 +190,20 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     hreflang: "es-PE",
     tone: "Educación tecnológica de clase mundial",
     keywords: [
-      "cursos de inteligencia artificial para niños peru",
-      "clases de IA para niños lima",
-      "curso ia niños arequipa trujillo",
-      "inteligencia artificial para niños peru online",
-      "programacion con ia para niños lima",
-      "cursos tecnologia niños peru certificado",
-      "aprender ia para niños peru",
+      "curso de ia para niños peru",
+      "cursos ia para adolescentes peru",
+      "clases de IA para niños lima"
     ],
     longTailKeywords: [
-      "donde estudiar ia niños en peru",
-      "cursos de chatgpt para niños en lima peru",
-      "clases online inteligencia artificial niños arequipa",
-      "academia ia niños peru online garantia",
-      "mejor curso ia para hijos peru yape plin",
+      "mejor curso online de inteligencia artificial para niños peruanos",
+      "donde estudiar ia niños en peru"
     ],
-    paymentMethods: ["Yape", "Plin", "Mercado Pago", "PayPal"],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇪",
-    metaTitle: "Curso Online de IA y Videojuegos p/ Niños de 8-17 (Perú) 🇵🇪",
-    metaDescription: "✅ ¡Paga con Yape o Plin! El mejor curso online de Inteligencia Artificial para niños de 10 a 14 años en Lima y todo Perú. Tu hijo crea apps reales en VIVO. 5 cupos por clase.",
+    metaTitle: "Curso de IA para Niños en Perú | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Perú. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Lima, Arequipa, Trujillo y todo Perú ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tu tarjeta de crédito o débito (Visa, Mastercard), con Mercado Pago o PayPal. La reserva es de $27 USD (aprox. S/ 100). Solo pagas el resto después de las 2 primeras clases."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. S/ 100). Solo pagas el resto después de las 2 primeras clases."
   },
   es: {
     code: "es",
@@ -260,27 +225,20 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     hreflang: "es-ES",
     tone: "Formación tecnológica de alta calidad",
     keywords: [
-      "cursos de inteligencia artificial para niños españa",
-      "clases de ia para niños madrid barcelona",
-      "curso ia niños online españa",
-      "inteligencia artificial para niños españa certificado",
-      "extraescolares tecnologia ia niños spain",
-      "programacion con ia para niños madrid",
-      "clases particulares ia niños españa",
+      "curso de ia para niños españa",
+      "cursos ia para adolescentes madrid",
+      "clases inteligencia artificial niños barcelona"
     ],
     longTailKeywords: [
-      "mejores cursos de ia para niños madrid",
-      "clases extraescolares inteligencia artificial barcelona niños",
-      "academia de ia para niños online en españa",
-      "cursos de robotica e ia para niños sevilla valencia",
-      "donde aprenden ia mis hijos en españa garantia",
+      "mejor curso online de inteligencia artificial para niños españoles",
+      "donde estudiar programacion con ia niños en españa"
     ],
-    paymentMethods: ["Tarjeta", "Bizum", "PayPal"],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇪🇸",
-    metaTitle: "Curso de IA para Niños en España 🇪🇸 | Madrid · Barcelona | InnovaKids | Clase Gratis",
-    metaDescription: "🏆 Extraescolares de inteligencia artificial para niños en España (8-17 años). Clases online en vivo, grupos de 5. Tu hijo crea apps y juegos con IA. Paga con Bizum. ¡Garantía total!",
+    metaTitle: "Curso de IA para Niños en España | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en España. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Madrid, Barcelona, Valencia, Sevilla y toda España ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tu tarjeta de crédito o débito directamente, o con PayPal. La reserva es de solo 25€. Tu hijo prueba las 2 primeras clases y solo si te convence pagas el resto (220€)."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de solo 25€. Tu hijo prueba las 2 primeras clases y solo si te convence pagas el resto (220€)."
   },
   ec: {
     code: "ec",
@@ -301,14 +259,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_EC",
     hreflang: "es-EC",
     tone: "Innovación y tecnología al alcance de tus hijos",
-    keywords: ["cursos de ia para niños ecuador"],
-    longTailKeywords: ["clases de computación para niños guayaquil"],
-    paymentMethods: ["Tarjeta", "PayPal", "Mercado Pago"],
+    keywords: [
+      "curso de ia para niños ecuador",
+      "cursos ia para adolescentes quito"
+    ],
+    longTailKeywords: [
+      "mejor curso online de inteligencia artificial para niños en guayaquil"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇪🇨",
-    metaTitle: "Curso de IA para Niños en Ecuador | Online y Certificado | InnovaKids",
-    metaDescription: "🇪🇨 Curso #1 de IA para niños en Ecuador (8-17 años). Aprende a programar, crear apps y más. Clase de Prueba GRATIS. ¡Reserva tu cupo hoy!",
+    metaTitle: "Curso de IA para Niños en Ecuador | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Ecuador. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Quito, Guayaquil, Cuenca y todo Ecuador ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tu tarjeta de crédito directamente, PayPal o Mercado Pago. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de solo $27 USD. Después de las 2 primeras clases pagas el resto."
   },
   uy: {
     code: "uy",
@@ -329,14 +292,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_UY",
     hreflang: "es-UY",
     tone: "Educación de calidad para el futuro",
-    keywords: ["cursos de programación para niños uruguay"],
-    longTailKeywords: ["escuela de programación para niños montevideo"],
-    paymentMethods: ["Tarjeta", "Mercado Pago", "PayPal"],
+    keywords: [
+      "curso de ia para niños uruguay",
+      "cursos ia para adolescentes montevideo"
+    ],
+    longTailKeywords: [
+      "mejor curso online de programacion con ia para niños en uruguay"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇺🇾",
-    metaTitle: "Curso de IA para Niños en Uruguay | Online y Certificado | InnovaKids",
-    metaDescription: "🇺🇾 Curso #1 de IA para niños en Uruguay (8-17 años). Aprende a programar, crear apps y más. Clase de Prueba GRATIS. ¡Reserva tu cupo hoy!",
+    metaTitle: "Curso de IA para Niños en Uruguay | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Uruguay. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Montevideo, Punta del Este y todo Uruguay ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tu tarjeta de crédito o débito, Mercado Pago o PayPal. La reserva es de $27 USD (aprox $1.160 UYU)."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox $1.160 UYU). Después de las 2 primeras clases pagas el resto."
   },
   cr: {
     code: "cr",
@@ -357,14 +325,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_CR",
     hreflang: "es-CR",
     tone: "Líderes en educación tecnológica",
-    keywords: ["cursos de ia costa rica niños"],
-    longTailKeywords: ["clases de robotica y programacion para niños costa rica"],
-    paymentMethods: ["Tarjeta", "PayPal"],
+    keywords: [
+      "curso de ia para niños costa rica",
+      "cursos ia para adolescentes san jose"
+    ],
+    longTailKeywords: [
+      "mejor curso online de inteligencia artificial para niños en costa rica"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇨🇷",
-    metaTitle: "Curso de IA para Niños en Costa Rica | Online y Certificado | InnovaKids",
-    metaDescription: "🇨🇷 Curso #1 de IA para niños en Costa Rica (8-17 años). Aprende a programar, crear apps y más. Clase de Prueba GRATIS. ¡Reserva tu cupo hoy!",
+    metaTitle: "Curso de IA para Niños en Costa Rica | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Costa Rica. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en San José, Heredia, Alajuela y toda Costa Rica ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tu tarjeta de crédito o débito o PayPal. La reserva es de $27 USD (aprox ₡14.000 CRC)."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox ₡14.000 CRC)."
   },
   ve: {
     code: "ve",
@@ -385,14 +358,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_VE",
     hreflang: "es-VE",
     tone: "Tecnología global y oportunidades de futuro",
-    keywords: ["cursos de ia en venezuela para niños"],
-    longTailKeywords: ["clases de programacion para niños caracas"],
-    paymentMethods: ["Zelle", "Binance", "PayPal"],
+    keywords: [
+      "curso de ia para niños venezuela",
+      "cursos ia para adolescentes caracas"
+    ],
+    longTailKeywords: [
+      "mejor curso online de inteligencia artificial para niños en venezuela"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇻🇪",
-    metaTitle: "Curso de IA para Niños en Venezuela | Online y Certificado | InnovaKids",
-    metaDescription: "🇻🇪 Curso #1 de IA para niños en Venezuela (8-17 años). Aprende a programar, crear apps y más. Clase de Prueba GRATIS. ¡Reserva tu cupo hoy!",
+    metaTitle: "Curso de IA para Niños en Venezuela | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Venezuela. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Caracas, Maracaibo, Valencia y toda Venezuela ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Ofrecemos facilidades para Venezuela: Zelle, PayPal, Binance USDT o tarjetas internacionales. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito o débito internacional. Procesamos el cobro de forma segura y sin fricción. La reserva es de $27 USD."
   },
   us: {
     code: "us",
@@ -414,27 +392,18 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     hreflang: "es-US",
     tone: "Vibe Coding: La ventaja bilingüe y tecnológica",
     keywords: [
-      "clases de ia para niños latinos usa",
-      "cursos programacion niños español usa",
-      "curso ia para niños latinos miami",
-      "clases de inteligencia artificial niños en español usa",
-      "coding for kids in spanish usa",
-      "cursos tecnologia niños latinos estados unidos",
-      "ia para niños bilingues usa",
+      "curso de ia para niños latinos usa",
+      "cursos ia para adolescentes español miami"
     ],
     longTailKeywords: [
-      "donde aprenden ia los niños latinos en estados unidos",
-      "cursos de chatgpt para niños en español miami",
-      "clases de programacion para niños latinos los angeles",
-      "academia de ia para niños hispanohablantes usa",
-      "mejor curso ia niños bilingues estados unidos garantia",
+      "mejor curso online de inteligencia artificial para niños hispanos en estados unidos"
     ],
-    paymentMethods: ["Credit Card", "PayPal", "Zelle"],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito de USA", "PayPal"],
     flag: "🇺🇸",
-    metaTitle: "Coding p/ Niños Latinos 🇺🇸 (8 a 17 años) | Clases en Español",
-    metaDescription: "🏆 Único con metodología AI-First. Clases de código e Inteligencia Artificial en español (Latino). Tu hijo (8-17) crea apps reales. Paga fácil con Zelle o Tarjeta. ¡Cupos limitados!",
+    metaTitle: "Curso de IA para Niños en USA | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial en español para niños y adolescentes de 8 a 17 años en USA. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias latinas en Miami, California, Texas y todo USA ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con cualquier tarjeta de crédito o débito de USA, Zelle o PayPal. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito de USA o PayPal. La reserva es de $27 USD."
   },
   pa: {
     code: "pa",
@@ -455,14 +424,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_PA",
     hreflang: "es-PA",
     tone: "Innovación desde el Hub de las Américas",
-    keywords: ["cursos de ia para niños panama", "clases de robotica panama"],
-    longTailKeywords: ["escuela de programacion para niños en panama"],
-    paymentMethods: ["Tarjeta", "PayPal", "Yappy"],
+    keywords: [
+      "curso de ia para niños panama",
+      "cursos ia para adolescentes panama"
+    ],
+    longTailKeywords: [
+      "mejor curso online de inteligencia artificial para niños en panama"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇦",
-    metaTitle: "Programación e IA p/ Niños en Panamá 🇵🇦 [Edades 8-17]",
-    metaDescription: "🚀 El Hub del futuro. Curso online EN VIVO de tecnología e IA para adolescentes y niños de 8-17. Aprende creando apps reales. Paga fácil con Yappy. 10 Días Gratis de prueba.",
+    metaTitle: "Curso de IA para Niños en Panamá | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Panamá. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Ciudad de Panamá, Colón y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tarjeta de crédito, PayPal o Yappy. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
   do: {
     code: "do",
@@ -483,14 +457,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_DO",
     hreflang: "es-DO",
     tone: "Futuro tecnológico para el Caribe",
-    keywords: ["cursos de ia para niños republica dominicana", "clases de programacion santo domingo"],
-    longTailKeywords: ["campamento de verano tecnologico republica dominicana"],
-    paymentMethods: ["Tarjeta", "PayPal"],
+    keywords: [
+      "curso de ia para niños republica dominicana",
+      "cursos ia para adolescentes santo domingo"
+    ],
+    longTailKeywords: [
+      "mejor curso online de inteligencia artificial para niños en republica dominicana"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇩🇴",
-    metaTitle: "Cursos de IA p/ Niños en R. Dominicana | Edades 8-17 🇩🇴",
-    metaDescription: "🎯 Academia #1 en el Caribe enseñando Inteligencia Artificial. Grupos ultra reducidos (5 max). Chicos de 8 a 17 programan apps VIVO. 100% Garantía. ¡Asegura cupo!",
+    metaTitle: "Curso de IA para Niños en R. Dominicana | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en República Dominicana. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Santo Domingo, Santiago y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tarjeta de crédito o PayPal. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
   hn: {
     code: "hn",
@@ -511,14 +490,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_HN",
     hreflang: "es-HN",
     tone: "Oportunidades globales desde Honduras",
-    keywords: ["cursos de ia para niños honduras", "clases de computacion tegucigalpa"],
-    longTailKeywords: ["donde estudiar programacion niños honduras"],
-    paymentMethods: ["Tarjeta", "PayPal"],
+    keywords: [
+      "curso de ia para niños honduras",
+      "cursos ia para adolescentes honduras"
+    ],
+    longTailKeywords: [
+      "mejor curso online de inteligencia artificial para niños en honduras"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇭🇳",
-    metaTitle: "Curso de IA para Niños en Honduras | Online y Certificado | InnovaKids",
-    metaDescription: "🇭🇳 Curso #1 de IA para niños en Honduras (8-17 años). Aprende a programar, crear apps y más. Clase de Prueba GRATIS. ¡Reserva tu cupo hoy!",
+    metaTitle: "Curso de IA para Niños en Honduras | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Honduras. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Tegucigalpa, San Pedro Sula y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tarjeta de crédito o PayPal. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
   sv: {
     code: "sv",
@@ -539,14 +523,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_SV",
     hreflang: "es-SV",
     tone: "El futuro es tech en El Salvador",
-    keywords: ["cursos de ia para niños el salvador", "clases de programacion san salvador"],
-    longTailKeywords: ["academia de programacion para niños el salvador"],
-    paymentMethods: ["Tarjeta", "PayPal", "Bitcoin (Chivo)"],
+    keywords: [
+      "curso de ia para niños el salvador",
+      "cursos ia para adolescentes san salvador"
+    ],
+    longTailKeywords: [
+      "mejor curso online de inteligencia artificial para niños en el salvador"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇸🇻",
-    metaTitle: "Curso de IA para Niños en El Salvador | Online y Certificado | InnovaKids",
-    metaDescription: "🇸🇻 Curso #1 de IA para niños en El Salvador (8-17 años). Aprende a programar, crear apps y más. Clase de Prueba GRATIS. ¡Reserva tu cupo hoy!",
+    metaTitle: "Curso de IA para Niños en El Salvador | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en El Salvador. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en San Salvador, Santa Ana y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tarjeta de crédito, PayPal o Bitcoin. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
   gt: {
     code: "gt",
@@ -567,14 +556,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_GT",
     hreflang: "es-GT",
     tone: "Desarrolla el talento chapín",
-    keywords: ["cursos de ia para niños guatemala", "clases de programacion guatemala"],
-    longTailKeywords: ["cursos de robotica para niños en guatemala"],
-    paymentMethods: ["Tarjeta", "PayPal"],
+    keywords: [
+      "curso de ia para niños guatemala",
+      "cursos ia para adolescentes guatemala"
+    ],
+    longTailKeywords: [
+      "mejor curso online de inteligencia artificial para niños en guatemala"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇬🇹",
-    metaTitle: "Curso de IA para Niños en Guatemala | Online y Certificado | InnovaKids",
-    metaDescription: "🇬🇹 Curso #1 de IA para niños en Guatemala (8-17 años). Aprende a programar, crear apps y más. Clase de Prueba GRATIS. ¡Reserva tu cupo hoy!",
+    metaTitle: "Curso de IA para Niños en Guatemala | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Guatemala. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Ciudad de Guatemala, Xela y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tarjeta de crédito o PayPal. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
   py: {
     code: "py",
@@ -595,14 +589,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_PY",
     hreflang: "es-PY",
     tone: "Tecnología sin fronteras en Paraguay",
-    keywords: ["cursos de ia para niños paraguay", "clases de programacion asuncion"],
-    longTailKeywords: ["cursos de informatica para niños asuncion"],
-    paymentMethods: ["Tarjeta", "PayPal"],
+    keywords: [
+      "curso de ia para niños paraguay",
+      "cursos ia para adolescentes paraguay"
+    ],
+    longTailKeywords: [
+      "mejor curso online de inteligencia artificial para niños en paraguay"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇾",
-    metaTitle: "Curso de IA para Niños en Paraguay | Online y Certificado | InnovaKids",
-    metaDescription: "🇵🇾 Curso #1 de IA para niños en Paraguay (8-17 años). Aprende a programar, crear apps y más. Clase de Prueba GRATIS. ¡Reserva tu cupo hoy!",
+    metaTitle: "Curso de IA para Niños en Paraguay | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Paraguay. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Asunción, Ciudad del Este y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tarjeta de crédito o PayPal. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
   bo: {
     code: "bo",
@@ -623,14 +622,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_BO",
     hreflang: "es-BO",
     tone: "Impulsando el talento en Bolivia",
-    keywords: ["cursos de ia para niños bolivia", "clases de programacion la paz"],
-    longTailKeywords: ["robotica para niños santa cruz bolivia"],
-    paymentMethods: ["Tarjeta", "PayPal"],
+    keywords: [
+      "curso de ia para niños bolivia",
+      "cursos ia para adolescentes bolivia"
+    ],
+    longTailKeywords: [
+      "mejor curso online de inteligencia artificial para niños en bolivia"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇧🇴",
-    metaTitle: "Curso de IA para Niños en Bolivia | Online y Certificado | InnovaKids",
-    metaDescription: "🇧🇴 Curso #1 de IA para niños en Bolivia (8-17 años). Aprende a programar, crear apps y más. Clase de Prueba GRATIS. ¡Reserva tu cupo hoy!",
+    metaTitle: "Curso de IA para Niños en Bolivia | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Bolivia. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en La Paz, Santa Cruz y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tarjeta de crédito o PayPal. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
   ni: {
     code: "ni",
@@ -651,14 +655,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_NI",
     hreflang: "es-NI",
     tone: "Futuro digital en Nicaragua",
-    keywords: ["cursos de ia para niños nicaragua", "clases de programacion managua"],
-    longTailKeywords: ["cursos de computacion para niños en managua"],
-    paymentMethods: ["Tarjeta", "PayPal"],
+    keywords: [
+      "curso de ia para niños nicaragua",
+      "cursos ia para adolescentes nicaragua"
+    ],
+    longTailKeywords: [
+      "mejor curso online de inteligencia artificial para niños en nicaragua"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇳🇮",
-    metaTitle: "Curso de IA para Niños en Nicaragua | Online y Certificado | InnovaKids",
-    metaDescription: "🇳🇮 Curso #1 de IA para niños en Nicaragua (8-17 años). Aprende a programar, crear apps y más. Clase de Prueba GRATIS. ¡Reserva tu cupo hoy!",
+    metaTitle: "Curso de IA para Niños en Nicaragua | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Nicaragua. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Managua, León y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tarjeta de crédito o PayPal. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
   pr: {
     code: "pr",
@@ -679,14 +688,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_PR",
     hreflang: "es-PR",
     tone: "Innovación caribeña y global",
-    keywords: ["cursos de ia para niños puerto rico", "clases de coding puerto rico"],
-    longTailKeywords: ["campamentos de verano puerto rico tecnologia"],
-    paymentMethods: ["Tarjeta", "PayPal", "ATH Móvil (consultar)"],
+    keywords: [
+      "curso de ia para niños puerto rico",
+      "cursos ia para adolescentes pr"
+    ],
+    longTailKeywords: [
+      "mejor curso online de inteligencia artificial para niños en puerto rico"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇷",
-    metaTitle: "Curso de IA para Niños en Puerto Rico | Online y Certificado | InnovaKids",
-    metaDescription: "🇵🇷 Curso #1 de IA para niños en Puerto Rico (8-17 años). Aprende a programar, crear apps y más. Clase de Prueba GRATIS. ¡Reserva tu cupo hoy!",
+    metaTitle: "Curso de IA para Niños en Puerto Rico | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Puerto Rico. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en San Juan, Bayamón y toda la isla ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tarjeta de crédito, PayPal o consultar por ATH Móvil. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
   gq: {
     code: "gq",
@@ -707,14 +721,19 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     locale: "es_GQ",
     hreflang: "es-GQ",
     tone: "Conectando África con el futuro",
-    keywords: ["cursos de ia para niños guinea ecuatorial", "clases de informatica malabo"],
-    longTailKeywords: ["formacion tecnologica en guinea ecuatorial"],
-    paymentMethods: ["Tarjeta", "PayPal", "Transferencia"],
+    keywords: [
+      "curso de ia para niños guinea ecuatorial",
+      "cursos ia para adolescentes malabo"
+    ],
+    longTailKeywords: [
+      "mejor curso online de inteligencia artificial para niños en guinea ecuatorial"
+    ],
+    paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇬🇶",
-    metaTitle: "Curso de IA para Niños en Guinea Ecuatorial | Online y Certificado | InnovaKids",
-    metaDescription: "🇬🇶 Curso #1 de IA para niños en Guinea Ecuatorial (8-17 años). Aprende a programar, crear apps y más. Clase de Prueba GRATIS. ¡Reserva tu cupo hoy!",
+    metaTitle: "Curso de IA para Niños en Guinea Ecuatorial | InnovaKids",
+    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Guinea Ecuatorial. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
     heroSubtext: "Familias en Malabo, Bata y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Puedes pagar con tarjeta de crédito internacional o PayPal. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito internacional, débito o PayPal. La reserva es de $27 USD."
   }
 }
 

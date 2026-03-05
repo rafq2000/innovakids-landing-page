@@ -6,6 +6,10 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Calendar, Clock, User, ArrowRight, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
   title: "Cursos de IA para Niños en España (Guía 2026)",
   description:
     "Guía Completa: Lo que todo padre español debe saber antes de inscribir a su hijo en un curso de IA. Precios en euros, herramientas, seguridad y mejores opciones.",

@@ -6,6 +6,10 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Target } from "lucide-react"
 
 export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
   title: "Cursos de IA para Niños en Costa Rica (Guía 2026)",
   description:
     "Guía Completa: Lo que todo padre tico debe saber antes de inscribir a su hijo en un curso de IA. Precios, herramientas, seguridad y mejores opciones.",

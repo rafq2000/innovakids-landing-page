@@ -90,6 +90,10 @@ const QualificationSection = dynamic(
   () => import("@/components/qualification-section").then((mod) => ({ default: mod.QualificationSection })),
   { ssr: true },
 )
+const InstitutionalSolutionsSection = dynamic(
+  () => import("@/components/institutional-solutions-section").then((mod) => ({ default: mod.InstitutionalSolutionsSection })),
+  { ssr: true },
+)
 
 import { faqs } from "@/lib/faq-data"
 
@@ -226,7 +230,14 @@ export default function Home() {
 
         <div className="h-24" />
 
+        <div className="h-24" />
+
         <FAQSection />
+
+        <div className="h-24" />
+
+        {/* Institutional / B2B Section */}
+        <InstitutionalSolutionsSection />
 
         <div className="h-24" />
 

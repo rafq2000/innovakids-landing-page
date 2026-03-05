@@ -1,0 +1,948 @@
+﻿commit 6493d9469f7a191440fa16f786ea9815f0a8a662
+Author: rafq2000 <ricardo.farias.q@gmail.com>
+Date:   Thu Feb 12 15:36:32 2026 -0300
+
+    Update country tone fields to be customer facing marketing copy
+
+diff --git a/Downloads/innovakids-landing-page/lib/countries-config.ts b/Downloads/innovakids-landing-page/lib/countries-config.ts
+index e559f0db..4478e69c 100644
+--- a/Downloads/innovakids-landing-page/lib/countries-config.ts
++++ b/Downloads/innovakids-landing-page/lib/countries-config.ts
+@@ -48,7 +48,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     otherCities: ["Vi├▒a del Mar", "Valpara├¡so", "Concepci├│n", "La Serena"],
+     locale: "es_CL",
+     hreflang: "es-CL",
+-    tone: "Vibe Edition - Creatividad, innovaci├│n, futuro digital",
++    tone: "Prep├íralos para el futuro digital",
+     keywords: ["cursos de IA para ni├▒os santiago", "clases inteligencia artificial infantil chile"],
+     longTailKeywords: ["donde estudiar ia ni├▒os en chile"],
+     paymentMethods: ["Webpay", "Mercado Pago", "PayPal", "Transferencia"],
+@@ -76,7 +76,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     otherCities: ["Guadalajara", "Monterrey", "Puebla", "Tijuana"],
+     locale: "es_MX",
+     hreflang: "es-MX",
+-    tone: "Aspiracional - preparar para el futuro, ventaja competitiva",
++    tone: "Dale una ventaja competitiva a tu hijo",
+     keywords: ["cursos de inteligencia artificial para ni├▒os mx", "clases de IA para ni├▒os cdmx"],
+     longTailKeywords: ["donde aprenden IA mis hijos en m├®xico"],
+     paymentMethods: ["OXXO", "Mercado Pago", "PayPal", "Tarjeta de cr├®dito"],
+@@ -104,7 +104,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     otherCities: ["Medell├¡n", "Cali", "Barranquilla", "Cartagena"],
+     locale: "es_CO",
+     hreflang: "es-CO",
+-    tone: "Innovaci├│n, emprendimiento, crear tecnolog├¡a propia",
++    tone: "Impulsa su creatividad y esp├¡ritu innovador",
+     keywords: ["cursos de inteligencia artificial para ni├▒os bogot├í", "clases de IA para ni├▒os colombia"],
+     longTailKeywords: ["donde estudiar ia ni├▒os en colombia"],
+     paymentMethods: ["PSE", "Nequi", "Daviplata", "Mercado Pago"],
+@@ -132,7 +132,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     otherCities: ["C├│rdoba", "Rosario", "Mendoza", "La Plata"],
+     locale: "es_AR",
+     hreflang: "es-AR",
+-    tone: "Creatividad, pensamiento cr├¡tico, aprender haciendo",
++    tone: "Potencia su pensamiento cr├¡tico creando tecnolog├¡a",
+     keywords: ["cursos de inteligencia artificial para chicos argentina", "talleres de IA para ni├▒os"],
+     longTailKeywords: ["donde aprenden ia los chicos en argentina"],
+     paymentMethods: ["Mercado Pago", "Transferencia", "PayPal"],
+@@ -160,7 +160,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     otherCities: ["Arequipa", "Trujillo", "Cusco", "Piura"],
+     locale: "es_PE",
+     hreflang: "es-PE",
+-    tone: "Accesibilidad, transformaci├│n, educaci├│n de clase mundial",
++    tone: "Educaci├│n tecnol├│gica de clase mundial",
+     keywords: ["cursos de inteligencia artificial para ni├▒os lima", "clases de IA para ni├▒os per├║"],
+     longTailKeywords: ["donde estudiar ia ni├▒os en per├║"],
+     paymentMethods: ["Yape", "Plin", "Mercado Pago", "PayPal"],
+@@ -188,7 +188,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     otherCities: ["Barcelona", "Valencia", "Sevilla", "Bilbao"],
+     locale: "es_ES",
+     hreflang: "es-ES",
+-    tone: "Calidad educativa, metodolog├¡a validada, formaci├│n seria",
++    tone: "Formaci├│n tecnol├│gica de alta calidad",
+     keywords: ["cursos de inteligencia artificial para ni├▒os espa├▒a"],
+     longTailKeywords: ["mejores cursos de ia para ni├▒os madrid"],
+     paymentMethods: ["Tarjeta", "Bizum", "PayPal"],
+@@ -216,7 +216,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     otherCities: ["Guayaquil", "Cuenca", "Ambato"],
+     locale: "es_EC",
+     hreflang: "es-EC",
+-    tone: "Innovaci├│n, tecnolog├¡a accesible",
++    tone: "Innovaci├│n y tecnolog├¡a al alcance de tus hijos",
+     keywords: ["cursos de ia para ni├▒os ecuador"],
+     longTailKeywords: ["clases de computaci├│n para ni├▒os guayaquil"],
+     paymentMethods: ["Tarjeta", "PayPal", "Mercado Pago"],
+@@ -244,7 +244,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     otherCities: ["Punta del Este", "Salto", "Ciudad de la Costa"],
+     locale: "es_UY",
+     hreflang: "es-UY",
+-    tone: "Educaci├│n de calidad, futuro",
++    tone: "Educaci├│n de calidad para el futuro",
+     keywords: ["cursos de programaci├│n para ni├▒os uruguay"],
+     longTailKeywords: ["escuela de programaci├│n para ni├▒os montevideo"],
+     paymentMethods: ["Tarjeta", "Mercado Pago", "PayPal"],
+@@ -272,7 +272,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     otherCities: ["Heredia", "Alajuela", "Cartago"],
+     locale: "es_CR",
+     hreflang: "es-CR",
+-    tone: "Pura vida digital, educaci├│n tech",
++    tone: "L├¡deres en educaci├│n tecnol├│gica",
+     keywords: ["cursos de ia costa rica ni├▒os"],
+     longTailKeywords: ["clases de robotica y programacion para ni├▒os costa rica"],
+     paymentMethods: ["Tarjeta", "PayPal"],
+@@ -300,7 +300,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     otherCities: ["Maracaibo", "Valencia", "Barquisimeto"],
+     locale: "es_VE",
+     hreflang: "es-VE",
+-    tone: "Superaci├│n, tecnolog├¡a global",
++    tone: "Tecnolog├¡a global y oportunidades de futuro",
+     keywords: ["cursos de ia en venezuela para ni├▒os"],
+     longTailKeywords: ["clases de programacion para ni├▒os caracas"],
+     paymentMethods: ["Zelle", "Binance", "PayPal"],
+
+commit 8ebc96110487d6b1fc19f963a44a3463a42c4523
+Author: rafq2000 <ricardo.farias.q@gmail.com>
+Date:   Thu Feb 12 14:31:26 2026 -0300
+
+    Implement Vibe Strategy
+
+diff --git a/Downloads/innovakids-landing-page/lib/countries-config.ts b/Downloads/innovakids-landing-page/lib/countries-config.ts
+index d2282187..e559f0db 100644
+--- a/Downloads/innovakids-landing-page/lib/countries-config.ts
++++ b/Downloads/innovakids-landing-page/lib/countries-config.ts
+@@ -1,4 +1,4 @@
+-export type CountryCode = "mx" | "co" | "ar" | "es" | "cl" | "pe"
++export type CountryCode = "mx" | "co" | "ar" | "es" | "cl" | "pe" | "ec" | "uy" | "cr" | "ve"
+ 
+ export interface CountryConfig {
+   code: CountryCode
+@@ -9,6 +9,9 @@ export interface CountryConfig {
+   currencySymbol: string
+   priceUSD: number
+   priceLocal: number
++  priceDisplay: string
++  reservationPrice: number
++  reservationPriceDisplay: string
+   whatsapp: string
+   timezone: string
+   mainCity: string
+@@ -20,18 +23,53 @@ export interface CountryConfig {
+   longTailKeywords: string[]
+   paymentMethods: string[]
+   flag: string
++  metaTitle: string
++  metaDescription: string
++  heroSubtext: string
++  faqPaymentAnswer: string
+ }
+ 
+ export const countriesConfig: Record<CountryCode, CountryConfig> = {
++  cl: {
++    code: "cl",
++    name: "Chile",
++    demonym: "chilenos",
++    childTerm: "ni├▒os",
++    currency: "CLP",
++    currencySymbol: "$",
++    priceUSD: 267,
++    priceLocal: 250000,
++    priceDisplay: "$250.000 CLP",
++    reservationPrice: 25000,
++    reservationPriceDisplay: "$25.000 CLP",
++    whatsapp: "+56964754219",
++    timezone: "America/Santiago",
++    mainCity: "Santiago",
++    otherCities: ["Vi├▒a del Mar", "Valpara├¡so", "Concepci├│n", "La Serena"],
++    locale: "es_CL",
++    hreflang: "es-CL",
++    tone: "Vibe Edition - Creatividad, innovaci├│n, futuro digital",
++    keywords: ["cursos de IA para ni├▒os santiago", "clases inteligencia artificial infantil chile"],
++    longTailKeywords: ["donde estudiar ia ni├▒os en chile"],
++    paymentMethods: ["Webpay", "Mercado Pago", "PayPal", "Transferencia"],
++    flag: "­ƒç¿­ƒç▒",
++    metaTitle: "Cursos de IA para Ni├▒os en Chile | Clases Online en Vivo | InnovaKids",
++    metaDescription: "Clases de inteligencia artificial para ni├▒os chilenos de 8-14 a├▒os. Grupos de 5 alumnos, proyectos reales. Reserva con $27 USD y prueba 2 clases. 500+ graduados. Pagos con Mercado Pago y tarjeta.",
++    heroSubtext: "Familias en Santiago, Vi├▒a del Mar, Concepci├│n y todo Chile ya aprenden con InnovaKids.",
++    faqPaymentAnswer: "Puedes pagar con tu tarjeta de cr├®dito o d├®bito directamente, con Mercado Pago, PayPal o transferencia bancaria. La reserva es de $27 USD (aprox. $25.000 CLP). Solo pagas el resto despu├®s de las 2 primeras clases."
++  },
+   mx: {
+     code: "mx",
+     name: "M├®xico",
+     demonym: "mexicanos",
+     childTerm: "ni├▒os",
+-    currency: "USD",
++    currency: "MXN",
+     currencySymbol: "$",
+     priceUSD: 267,
+-    priceLocal: 267,
++    priceLocal: 5400,
++    priceDisplay: "$5,400 MXN",
++    reservationPrice: 540,
++    reservationPriceDisplay: "$540 MXN",
+     whatsapp: "+56964754219",
+     timezone: "America/Mexico_City",
+     mainCity: "CDMX",
+@@ -39,31 +77,27 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     locale: "es_MX",
+     hreflang: "es-MX",
+     tone: "Aspiracional - preparar para el futuro, ventaja competitiva",
+-    keywords: [
+-      "cursos de inteligencia artificial para ni├▒os",
+-      "clases de IA para ni├▒os cdmx",
+-      "programaci├│n con IA para ni├▒os",
+-      "cursos de tecnolog├¡a para ni├▒os m├®xico",
+-      "curso ia ni├▒os guadalajara",
+-      "curso ia ni├▒os monterrey",
+-    ],
+-    longTailKeywords: [
+-      "donde aprenden IA mis hijos en m├®xico",
+-      "academias de inteligencia artificial infantil cdmx",
+-      "mejor curso de ia para ni├▒os mexicanos",
+-    ],
++    keywords: ["cursos de inteligencia artificial para ni├▒os mx", "clases de IA para ni├▒os cdmx"],
++    longTailKeywords: ["donde aprenden IA mis hijos en m├®xico"],
+     paymentMethods: ["OXXO", "Mercado Pago", "PayPal", "Tarjeta de cr├®dito"],
+     flag: "­ƒç▓­ƒç¢",
++    metaTitle: "Cursos de IA para Ni├▒os en M├®xico | Clases Online en Vivo | InnovaKids",
++    metaDescription: "Clases de inteligencia artificial para ni├▒os mexicanos de 8-14 a├▒os. Grupos de 5 alumnos, proyectos reales. Reserva con $27 USD y prueba 2 clases. 500+ graduados. Pagos con Mercado Pago y tarjeta.",
++    heroSubtext: "Familias en Ciudad de M├®xico, Guadalajara, Monterrey y todo M├®xico ya aprenden con InnovaKids.",
++    faqPaymentAnswer: "Puedes pagar con tu tarjeta de cr├®dito o d├®bito directamente, con Mercado Pago o PayPal. La reserva es de $27 USD (aprox. $540 MXN). Solo pagas el resto despu├®s de las 2 primeras clases."
+   },
+   co: {
+     code: "co",
+     name: "Colombia",
+     demonym: "colombianos",
+     childTerm: "ni├▒os",
+-    currency: "USD",
++    currency: "COP",
+     currencySymbol: "$",
+     priceUSD: 267,
+-    priceLocal: 267,
++    priceLocal: 1120000,
++    priceDisplay: "$1.120.000 COP",
++    reservationPrice: 113000,
++    reservationPriceDisplay: "$113.000 COP",
+     whatsapp: "+56964754219",
+     timezone: "America/Bogota",
+     mainCity: "Bogot├í",
+@@ -71,30 +105,27 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     locale: "es_CO",
+     hreflang: "es-CO",
+     tone: "Innovaci├│n, emprendimiento, crear tecnolog├¡a propia",
+-    keywords: [
+-      "cursos de inteligencia artificial para ni├▒os bogot├í",
+-      "clases de IA para ni├▒os colombia",
+-      "academias de rob├│tica e IA para ni├▒os",
+-      "educaci├│n en inteligencia artificial infantil",
+-      "curso ia ni├▒os medell├¡n",
+-    ],
+-    longTailKeywords: [
+-      "donde estudiar ia ni├▒os en colombia",
+-      "cursos de tecnolog├¡a para ni├▒os bogot├í",
+-      "mejor academia de ia para ni├▒os colombia",
+-    ],
+-    paymentMethods: ["PSE", "Nequi", "Daviplata", "Mercado Pago", "PayPal"],
++    keywords: ["cursos de inteligencia artificial para ni├▒os bogot├í", "clases de IA para ni├▒os colombia"],
++    longTailKeywords: ["donde estudiar ia ni├▒os en colombia"],
++    paymentMethods: ["PSE", "Nequi", "Daviplata", "Mercado Pago"],
+     flag: "­ƒç¿­ƒç┤",
++    metaTitle: "Cursos de IA para Ni├▒os en Colombia | Clases Online en Vivo | InnovaKids",
++    metaDescription: "Clases de inteligencia artificial para ni├▒os colombianos de 8-14 a├▒os. Grupos de 5 alumnos, proyectos reales. Reserva con $27 USD y prueba 2 clases. 500+ graduados. Pagos con Mercado Pago y tarjeta.",
++    heroSubtext: "Familias en Bogot├í, Medell├¡n, Cali, Barranquilla y toda Colombia ya aprenden con InnovaKids.",
++    faqPaymentAnswer: "Puedes pagar con tu tarjeta de cr├®dito o d├®bito (Visa, Mastercard, American Express), con Mercado Pago o PayPal. La reserva es de $27 USD (aprox. $113.000 COP). Solo pagas el resto despu├®s de las 2 primeras clases."
+   },
+   ar: {
+     code: "ar",
+     name: "Argentina",
+     demonym: "argentinos",
+     childTerm: "chicos",
+-    currency: "USD",
++    currency: "ARS",
+     currencySymbol: "$",
+     priceUSD: 267,
+-    priceLocal: 267,
++    priceLocal: 285000,
++    priceDisplay: "$285.000 ARS (Aprox)",
++    reservationPrice: 29000,
++    reservationPriceDisplay: "$29.000 ARS (Aprox)",
+     whatsapp: "+56964754219",
+     timezone: "America/Argentina/Buenos_Aires",
+     mainCity: "Buenos Aires",
+@@ -102,30 +133,55 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     locale: "es_AR",
+     hreflang: "es-AR",
+     tone: "Creatividad, pensamiento cr├¡tico, aprender haciendo",
+-    keywords: [
+-      "cursos de inteligencia artificial para chicos",
+-      "clases de IA para ni├▒os buenos aires",
+-      "programaci├│n e inteligencia artificial para ni├▒os",
+-      "talleres de IA para ni├▒os argentina",
+-      "curso ia chicos c├│rdoba",
+-    ],
+-    longTailKeywords: [
+-      "donde aprenden ia los chicos en argentina",
+-      "academias de programaci├│n ia buenos aires",
+-      "curso de tecnolog├¡a para chicos online",
+-    ],
+-    paymentMethods: ["Mercado Pago", "Transferencia bancaria", "PayPal"],
++    keywords: ["cursos de inteligencia artificial para chicos argentina", "talleres de IA para ni├▒os"],
++    longTailKeywords: ["donde aprenden ia los chicos en argentina"],
++    paymentMethods: ["Mercado Pago", "Transferencia", "PayPal"],
+     flag: "­ƒçª­ƒçÀ",
++    metaTitle: "Cursos de IA para Ni├▒os en Argentina | Clases Online en Vivo | InnovaKids",
++    metaDescription: "Clases de inteligencia artificial para ni├▒os argentinos de 8-14 a├▒os. Grupos de 5 alumnos, proyectos reales. Reserva con $27 USD y prueba 2 clases. 500+ graduados. Pagos con Mercado Pago y tarjeta.",
++    heroSubtext: "Familias en Buenos Aires, C├│rdoba, Rosario y toda Argentina ya aprenden con InnovaKids.",
++    faqPaymentAnswer: "Puedes pagar con tu tarjeta de cr├®dito o d├®bito internacional (el cobro es en USD), con Mercado Pago o PayPal. La reserva es de $27 USD. Solo pagas el resto despu├®s de las 2 primeras clases."
++  },
++  pe: {
++    code: "pe",
++    name: "Per├║",
++    demonym: "peruanos",
++    childTerm: "ni├▒os",
++    currency: "PEN",
++    currencySymbol: "S/",
++    priceUSD: 267,
++    priceLocal: 1000,
++    priceDisplay: "S/ 1.000 PEN",
++    reservationPrice: 100,
++    reservationPriceDisplay: "S/ 100 PEN",
++    whatsapp: "+56964754219",
++    timezone: "America/Lima",
++    mainCity: "Lima",
++    otherCities: ["Arequipa", "Trujillo", "Cusco", "Piura"],
++    locale: "es_PE",
++    hreflang: "es-PE",
++    tone: "Accesibilidad, transformaci├│n, educaci├│n de clase mundial",
++    keywords: ["cursos de inteligencia artificial para ni├▒os lima", "clases de IA para ni├▒os per├║"],
++    longTailKeywords: ["donde estudiar ia ni├▒os en per├║"],
++    paymentMethods: ["Yape", "Plin", "Mercado Pago", "PayPal"],
++    flag: "­ƒçÁ­ƒç¬",
++    metaTitle: "Cursos de IA para Ni├▒os en Per├║ | Clases Online en Vivo | InnovaKids",
++    metaDescription: "Clases de inteligencia artificial para ni├▒os peruanos de 8-14 a├▒os. Grupos de 5 alumnos, proyectos reales. Reserva con $27 USD y prueba 2 clases. 500+ graduados. Pagos con Mercado Pago y tarjeta.",
++    heroSubtext: "Familias en Lima, Arequipa, Trujillo y todo Per├║ ya aprenden con InnovaKids.",
++    faqPaymentAnswer: "Puedes pagar con tu tarjeta de cr├®dito o d├®bito (Visa, Mastercard), con Mercado Pago o PayPal. La reserva es de $27 USD (aprox. S/ 100). Solo pagas el resto despu├®s de las 2 primeras clases."
+   },
+   es: {
+     code: "es",
+     name: "Espa├▒a",
+     demonym: "espa├▒oles",
+     childTerm: "ni├▒os",
+-    currency: "USD",
+-    currencySymbol: "$",
++    currency: "EUR",
++    currencySymbol: "Ôé¼",
+     priceUSD: 267,
+-    priceLocal: 267,
++    priceLocal: 245,
++    priceDisplay: "245Ôé¼",
++    reservationPrice: 25,
++    reservationPriceDisplay: "25Ôé¼",
+     whatsapp: "+56964754219",
+     timezone: "Europe/Madrid",
+     mainCity: "Madrid",
+@@ -133,83 +189,127 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     locale: "es_ES",
+     hreflang: "es-ES",
+     tone: "Calidad educativa, metodolog├¡a validada, formaci├│n seria",
+-    keywords: [
+-      "cursos de inteligencia artificial para ni├▒os espa├▒a",
+-      "clases de IA para ni├▒os madrid",
+-      "academias de programaci├│n IA infantil",
+-      "formaci├│n en inteligencia artificial para menores",
+-      "curso ia ni├▒os barcelona",
+-    ],
+-    longTailKeywords: [
+-      "donde aprenden ia los ni├▒os en espa├▒a",
+-      "mejores cursos de ia para ni├▒os madrid",
+-      "academia de inteligencia artificial infantil barcelona",
+-    ],
+-    paymentMethods: ["Tarjeta de cr├®dito", "Bizum", "PayPal", "Transferencia SEPA"],
++    keywords: ["cursos de inteligencia artificial para ni├▒os espa├▒a"],
++    longTailKeywords: ["mejores cursos de ia para ni├▒os madrid"],
++    paymentMethods: ["Tarjeta", "Bizum", "PayPal"],
+     flag: "­ƒç¬­ƒç©",
++    metaTitle: "Cursos de IA para Ni├▒os en Espa├▒a | Clases Online en Vivo | InnovaKids",
++    metaDescription: "Clases de inteligencia artificial para ni├▒os de 8-14 a├▒os en Espa├▒a. Grupos de 5 alumnos, proyectos reales. Reserva con 25Ôé¼ y prueba 2 clases. 500+ graduados. Pagos con tarjeta y PayPal.",
++    heroSubtext: "Familias en Madrid, Barcelona, Valencia, Sevilla y toda Espa├▒a ya aprenden con InnovaKids.",
++    faqPaymentAnswer: "Puedes pagar con tu tarjeta de cr├®dito o d├®bito directamente, o con PayPal. La reserva es de solo 25Ôé¼. Tu hijo prueba las 2 primeras clases y solo si te convence pagas el resto (220Ôé¼)."
+   },
+-  cl: {
+-    code: "cl",
+-    name: "Chile",
+-    demonym: "chilenos",
++  ec: {
++    code: "ec",
++    name: "Ecuador",
++    demonym: "ecuatorianos",
+     childTerm: "ni├▒os",
+     currency: "USD",
+     currencySymbol: "$",
+     priceUSD: 267,
+     priceLocal: 267,
++    priceDisplay: "$267 USD",
++    reservationPrice: 27,
++    reservationPriceDisplay: "$27 USD",
+     whatsapp: "+56964754219",
+-    timezone: "America/Santiago",
+-    mainCity: "Santiago",
+-    otherCities: ["Vi├▒a del Mar", "Valpara├¡so", "Concepci├│n", "La Serena", "Antofagasta"],
+-    locale: "es_CL",
+-    hreflang: "es-CL",
+-    tone: "Vibe Edition - Creatividad, innovaci├│n, futuro digital",
+-    keywords: [
+-      "cursos de IA para ni├▒os santiago",
+-      "clases inteligencia artificial infantil chile",
+-      "talleres de IA para ni├▒os",
+-      "curso ia ni├▒os valpara├¡so",
+-      "academia ia ni├▒os chile",
+-    ],
+-    longTailKeywords: [
+-      "donde estudiar ia ni├▒os en chile",
+-      "cursos de tecnolog├¡a para ni├▒os santiago",
+-      "mejor curso de inteligencia artificial para ni├▒os chile",
+-    ],
+-    paymentMethods: ["Webpay", "Mercado Pago", "PayPal", "Transferencia bancaria"],
+-    flag: "­ƒç¿­ƒç▒",
++    timezone: "America/Guayaquil",
++    mainCity: "Quito",
++    otherCities: ["Guayaquil", "Cuenca", "Ambato"],
++    locale: "es_EC",
++    hreflang: "es-EC",
++    tone: "Innovaci├│n, tecnolog├¡a accesible",
++    keywords: ["cursos de ia para ni├▒os ecuador"],
++    longTailKeywords: ["clases de computaci├│n para ni├▒os guayaquil"],
++    paymentMethods: ["Tarjeta", "PayPal", "Mercado Pago"],
++    flag: "­ƒç¬­ƒç¿",
++    metaTitle: "Cursos de IA para Ni├▒os en Ecuador | Clases Online en Vivo | InnovaKids",
++    metaDescription: "Clases de inteligencia artificial para ni├▒os ecuatorianos de 8-14 a├▒os. Grupos de 5 alumnos, proyectos reales. Reserva con $27 y prueba 2 clases. 500+ graduados. Pagos con tarjeta y PayPal.",
++    heroSubtext: "Familias en Quito, Guayaquil, Cuenca y todo Ecuador ya aprenden con InnovaKids.",
++    faqPaymentAnswer: "Puedes pagar con tu tarjeta de cr├®dito directamente, PayPal o Mercado Pago. La reserva es de $27 USD."
+   },
+-  pe: {
+-    code: "pe",
+-    name: "Per├║",
+-    demonym: "peruanos",
++  uy: {
++    code: "uy",
++    name: "Uruguay",
++    demonym: "uruguayos",
++    childTerm: "chiquilines",
++    currency: "UYU",
++    currencySymbol: "$",
++    priceUSD: 267,
++    priceLocal: 11500,
++    priceDisplay: "$11.500 UYU",
++    reservationPrice: 1160,
++    reservationPriceDisplay: "$1.160 UYU",
++    whatsapp: "+56964754219",
++    timezone: "America/Montevideo",
++    mainCity: "Montevideo",
++    otherCities: ["Punta del Este", "Salto", "Ciudad de la Costa"],
++    locale: "es_UY",
++    hreflang: "es-UY",
++    tone: "Educaci├│n de calidad, futuro",
++    keywords: ["cursos de programaci├│n para ni├▒os uruguay"],
++    longTailKeywords: ["escuela de programaci├│n para ni├▒os montevideo"],
++    paymentMethods: ["Tarjeta", "Mercado Pago", "PayPal"],
++    flag: "­ƒç║­ƒç¥",
++    metaTitle: "Cursos de IA para Ni├▒os en Uruguay | Clases Online en Vivo | InnovaKids",
++    metaDescription: "Clases de inteligencia artificial para ni├▒os uruguayos de 8-14 a├▒os. Grupos de 5 alumnos, proyectos reales. Reserva con $27 USD y prueba 2 clases. 500+ graduados.",
++    heroSubtext: "Familias en Montevideo, Punta del Este y todo Uruguay ya aprenden con InnovaKids.",
++    faqPaymentAnswer: "Puedes pagar con tu tarjeta de cr├®dito o d├®bito, Mercado Pago o PayPal. La reserva es de $27 USD (aprox $1.160 UYU)."
++  },
++  cr: {
++    code: "cr",
++    name: "Costa Rica",
++    demonym: "ticos",
+     childTerm: "ni├▒os",
++    currency: "CRC",
++    currencySymbol: "Ôéí",
++    priceUSD: 267,
++    priceLocal: 137000,
++    priceDisplay: "Ôéí137.000 CRC",
++    reservationPrice: 14000,
++    reservationPriceDisplay: "Ôéí14.000 CRC",
++    whatsapp: "+56964754219",
++    timezone: "America/Costa_Rica",
++    mainCity: "San Jos├®",
++    otherCities: ["Heredia", "Alajuela", "Cartago"],
++    locale: "es_CR",
++    hreflang: "es-CR",
++    tone: "Pura vida digital, educaci├│n tech",
++    keywords: ["cursos de ia costa rica ni├▒os"],
++    longTailKeywords: ["clases de robotica y programacion para ni├▒os costa rica"],
++    paymentMethods: ["Tarjeta", "PayPal"],
++    flag: "­ƒç¿­ƒçÀ",
++    metaTitle: "Cursos de IA para Ni├▒os en Costa Rica | Clases Online en Vivo | InnovaKids",
++    metaDescription: "Clases de inteligencia artificial para ni├▒os de 8-14 a├▒os en Costa Rica. Grupos de 5 alumnos, proyectos reales. Reserva con $27 USD y prueba 2 clases. 500+ graduados.",
++    heroSubtext: "Familias en San Jos├®, Heredia, Alajuela y toda Costa Rica ya aprenden con InnovaKids.",
++    faqPaymentAnswer: "Puedes pagar con tu tarjeta de cr├®dito o d├®bito o PayPal. La reserva es de $27 USD (aprox Ôéí14.000 CRC)."
++  },
++  ve: {
++    code: "ve",
++    name: "Venezuela",
++    demonym: "venezolanos",
++    childTerm: "chamos",
+     currency: "USD",
+     currencySymbol: "$",
+     priceUSD: 267,
+     priceLocal: 267,
++    priceDisplay: "$267 USD",
++    reservationPrice: 27,
++    reservationPriceDisplay: "$27 USD",
+     whatsapp: "+56964754219",
+-    timezone: "America/Lima",
+-    mainCity: "Lima",
+-    otherCities: ["Arequipa", "Trujillo", "Cusco", "Piura"],
+-    locale: "es_PE",
+-    hreflang: "es-PE",
+-    tone: "Accesibilidad, transformaci├│n, educaci├│n de clase mundial",
+-    keywords: [
+-      "cursos de inteligencia artificial para ni├▒os lima",
+-      "clases de IA para ni├▒os per├║",
+-      "academias de programaci├│n IA para ni├▒os",
+-      "curso ia ni├▒os arequipa",
+-      "talleres ia infantil per├║",
+-    ],
+-    longTailKeywords: [
+-      "donde estudiar ia ni├▒os en per├║",
+-      "cursos de tecnolog├¡a para ni├▒os lima",
+-      "academia de inteligencia artificial para ni├▒os per├║",
+-    ],
+-    paymentMethods: ["Yape", "Plin", "Mercado Pago", "PayPal", "BCP"],
+-    flag: "­ƒçÁ­ƒç¬",
+-  },
++    timezone: "America/Caracas",
++    mainCity: "Caracas",
++    otherCities: ["Maracaibo", "Valencia", "Barquisimeto"],
++    locale: "es_VE",
++    hreflang: "es-VE",
++    tone: "Superaci├│n, tecnolog├¡a global",
++    keywords: ["cursos de ia en venezuela para ni├▒os"],
++    longTailKeywords: ["clases de programacion para ni├▒os caracas"],
++    paymentMethods: ["Zelle", "Binance", "PayPal"],
++    flag: "­ƒç╗­ƒç¬",
++    metaTitle: "Curso de IA para Ni├▒os y Adolescentes en Venezuela | Online en Vivo",
++    metaDescription: "Ni├▒os y adolescentes venezolanos de 8-14 a├▒os crean apps, arte y m├║sica con IA. Horario Caracas. M├íx 5 por grupo. Garant├¡a 10 d├¡as.",
++    heroSubtext: "Familias en Caracas, Maracaibo, Valencia y toda Venezuela ya aprenden con InnovaKids.",
++    faqPaymentAnswer: "Ofrecemos facilidades para Venezuela: Zelle, PayPal, Binance USDT o tarjetas internacionales. La reserva es de $27 USD."
++  }
+ }
+ 
+ export const getCountryConfig = (code: CountryCode): CountryConfig => {
+
+commit 62489ee8504618845518f073afbd6fc66218adca
+Author: rafq2000 <ricardo.farias.q@gmail.com>
+Date:   Sun Feb 1 23:56:17 2026 -0300
+
+    Fix: Correct pricing to  across all pages
+
+diff --git a/Downloads/innovakids-landing-page/lib/countries-config.ts b/Downloads/innovakids-landing-page/lib/countries-config.ts
+index 4df56240..d2282187 100644
+--- a/Downloads/innovakids-landing-page/lib/countries-config.ts
++++ b/Downloads/innovakids-landing-page/lib/countries-config.ts
+@@ -30,8 +30,8 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     childTerm: "ni├▒os",
+     currency: "USD",
+     currencySymbol: "$",
+-    priceUSD: 197,
+-    priceLocal: 197,
++    priceUSD: 267,
++    priceLocal: 267,
+     whatsapp: "+56964754219",
+     timezone: "America/Mexico_City",
+     mainCity: "CDMX",
+@@ -62,8 +62,8 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     childTerm: "ni├▒os",
+     currency: "USD",
+     currencySymbol: "$",
+-    priceUSD: 197,
+-    priceLocal: 197,
++    priceUSD: 267,
++    priceLocal: 267,
+     whatsapp: "+56964754219",
+     timezone: "America/Bogota",
+     mainCity: "Bogot├í",
+@@ -93,8 +93,8 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     childTerm: "chicos",
+     currency: "USD",
+     currencySymbol: "$",
+-    priceUSD: 197,
+-    priceLocal: 197,
++    priceUSD: 267,
++    priceLocal: 267,
+     whatsapp: "+56964754219",
+     timezone: "America/Argentina/Buenos_Aires",
+     mainCity: "Buenos Aires",
+@@ -124,8 +124,8 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     childTerm: "ni├▒os",
+     currency: "USD",
+     currencySymbol: "$",
+-    priceUSD: 197,
+-    priceLocal: 197,
++    priceUSD: 267,
++    priceLocal: 267,
+     whatsapp: "+56964754219",
+     timezone: "Europe/Madrid",
+     mainCity: "Madrid",
+@@ -155,8 +155,8 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     childTerm: "ni├▒os",
+     currency: "USD",
+     currencySymbol: "$",
+-    priceUSD: 197,
+-    priceLocal: 197,
++    priceUSD: 267,
++    priceLocal: 267,
+     whatsapp: "+56964754219",
+     timezone: "America/Santiago",
+     mainCity: "Santiago",
+@@ -186,8 +186,8 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     childTerm: "ni├▒os",
+     currency: "USD",
+     currencySymbol: "$",
+-    priceUSD: 197,
+-    priceLocal: 197,
++    priceUSD: 267,
++    priceLocal: 267,
+     whatsapp: "+56964754219",
+     timezone: "America/Lima",
+     mainCity: "Lima",
+
+commit 17238376cb53830c560ccd3824d84aa35d212415
+Author: rafq2000 <ricardo.farias.q@gmail.com>
+Date:   Mon Jan 19 19:21:44 2026 -0300
+
+    Update brochure with  reservation
+
+diff --git a/Downloads/innovakids-landing-page/lib/countries-config.ts b/Downloads/innovakids-landing-page/lib/countries-config.ts
+index 30496887..4df56240 100644
+--- a/Downloads/innovakids-landing-page/lib/countries-config.ts
++++ b/Downloads/innovakids-landing-page/lib/countries-config.ts
+@@ -28,10 +28,10 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     name: "M├®xico",
+     demonym: "mexicanos",
+     childTerm: "ni├▒os",
+-    currency: "MXN",
++    currency: "USD",
+     currencySymbol: "$",
+-    priceUSD: 300,
+-    priceLocal: 5500,
++    priceUSD: 197,
++    priceLocal: 197,
+     whatsapp: "+56964754219",
+     timezone: "America/Mexico_City",
+     mainCity: "CDMX",
+@@ -60,10 +60,10 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     name: "Colombia",
+     demonym: "colombianos",
+     childTerm: "ni├▒os",
+-    currency: "COP",
++    currency: "USD",
+     currencySymbol: "$",
+-    priceUSD: 300,
+-    priceLocal: 1200000,
++    priceUSD: 197,
++    priceLocal: 197,
+     whatsapp: "+56964754219",
+     timezone: "America/Bogota",
+     mainCity: "Bogot├í",
+@@ -91,10 +91,10 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     name: "Argentina",
+     demonym: "argentinos",
+     childTerm: "chicos",
+-    currency: "ARS",
++    currency: "USD",
+     currencySymbol: "$",
+-    priceUSD: 300,
+-    priceLocal: 290000,
++    priceUSD: 197,
++    priceLocal: 197,
+     whatsapp: "+56964754219",
+     timezone: "America/Argentina/Buenos_Aires",
+     mainCity: "Buenos Aires",
+@@ -122,10 +122,10 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     name: "Espa├▒a",
+     demonym: "espa├▒oles",
+     childTerm: "ni├▒os",
+-    currency: "EUR",
+-    currencySymbol: "Ôé¼",
+-    priceUSD: 300,
+-    priceLocal: 280,
++    currency: "USD",
++    currencySymbol: "$",
++    priceUSD: 197,
++    priceLocal: 197,
+     whatsapp: "+56964754219",
+     timezone: "Europe/Madrid",
+     mainCity: "Madrid",
+@@ -153,17 +153,17 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     name: "Chile",
+     demonym: "chilenos",
+     childTerm: "ni├▒os",
+-    currency: "CLP",
++    currency: "USD",
+     currencySymbol: "$",
+-    priceUSD: 300,
+-    priceLocal: 290000,
++    priceUSD: 197,
++    priceLocal: 197,
+     whatsapp: "+56964754219",
+     timezone: "America/Santiago",
+     mainCity: "Santiago",
+-    otherCities: ["Valpara├¡so", "Concepci├│n", "La Serena", "Antofagasta"],
++    otherCities: ["Vi├▒a del Mar", "Valpara├¡so", "Concepci├│n", "La Serena", "Antofagasta"],
+     locale: "es_CL",
+     hreflang: "es-CL",
+-    tone: "Pragm├ítico, ROI educativo, inversi├│n en el futuro",
++    tone: "Vibe Edition - Creatividad, innovaci├│n, futuro digital",
+     keywords: [
+       "cursos de IA para ni├▒os santiago",
+       "clases inteligencia artificial infantil chile",
+@@ -184,10 +184,10 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
+     name: "Per├║",
+     demonym: "peruanos",
+     childTerm: "ni├▒os",
+-    currency: "PEN",
+-    currencySymbol: "S/",
+-    priceUSD: 300,
+-    priceLocal: 1150,
++    currency: "USD",
++    currencySymbol: "$",
++    priceUSD: 197,
++    priceLocal: 197,
+     whatsapp: "+56964754219",
+     timezone: "America/Lima",
+     mainCity: "Lima",
+
+commit e5a0b4ff7b1ebe3e342e2538627b58cf228b1a79
+Author: rafq2000 <ricardo.farias.q@gmail.com>
+Date:   Tue Jan 13 23:18:03 2026 -0300
+
+    Add custom 360 USD payment option
+
+diff --git a/Downloads/innovakids-landing-page/lib/countries-config.ts b/Downloads/innovakids-landing-page/lib/countries-config.ts
+new file mode 100644
+index 00000000..30496887
+--- /dev/null
++++ b/Downloads/innovakids-landing-page/lib/countries-config.ts
+@@ -0,0 +1,221 @@
++export type CountryCode = "mx" | "co" | "ar" | "es" | "cl" | "pe"
++
++export interface CountryConfig {
++  code: CountryCode
++  name: string
++  demonym: string
++  childTerm: string // "ni├▒os" vs "chicos" vs "chavales"
++  currency: string
++  currencySymbol: string
++  priceUSD: number
++  priceLocal: number
++  whatsapp: string
++  timezone: string
++  mainCity: string
++  otherCities: string[]
++  locale: string
++  hreflang: string
++  tone: string
++  keywords: string[]
++  longTailKeywords: string[]
++  paymentMethods: string[]
++  flag: string
++}
++
++export const countriesConfig: Record<CountryCode, CountryConfig> = {
++  mx: {
++    code: "mx",
++    name: "M├®xico",
++    demonym: "mexicanos",
++    childTerm: "ni├▒os",
++    currency: "MXN",
++    currencySymbol: "$",
++    priceUSD: 300,
++    priceLocal: 5500,
++    whatsapp: "+56964754219",
++    timezone: "America/Mexico_City",
++    mainCity: "CDMX",
++    otherCities: ["Guadalajara", "Monterrey", "Puebla", "Tijuana"],
++    locale: "es_MX",
++    hreflang: "es-MX",
++    tone: "Aspiracional - preparar para el futuro, ventaja competitiva",
++    keywords: [
++      "cursos de inteligencia artificial para ni├▒os",
++      "clases de IA para ni├▒os cdmx",
++      "programaci├│n con IA para ni├▒os",
++      "cursos de tecnolog├¡a para ni├▒os m├®xico",
++      "curso ia ni├▒os guadalajara",
++      "curso ia ni├▒os monterrey",
++    ],
++    longTailKeywords: [
++      "donde aprenden IA mis hijos en m├®xico",
++      "academias de inteligencia artificial infantil cdmx",
++      "mejor curso de ia para ni├▒os mexicanos",
++    ],
++    paymentMethods: ["OXXO", "Mercado Pago", "PayPal", "Tarjeta de cr├®dito"],
++    flag: "­ƒç▓­ƒç¢",
++  },
++  co: {
++    code: "co",
++    name: "Colombia",
++    demonym: "colombianos",
++    childTerm: "ni├▒os",
++    currency: "COP",
++    currencySymbol: "$",
++    priceUSD: 300,
++    priceLocal: 1200000,
++    whatsapp: "+56964754219",
++    timezone: "America/Bogota",
++    mainCity: "Bogot├í",
++    otherCities: ["Medell├¡n", "Cali", "Barranquilla", "Cartagena"],
++    locale: "es_CO",
++    hreflang: "es-CO",
++    tone: "Innovaci├│n, emprendimiento, crear tecnolog├¡a propia",
++    keywords: [
++      "cursos de inteligencia artificial para ni├▒os bogot├í",
++      "clases de IA para ni├▒os colombia",
++      "academias de rob├│tica e IA para ni├▒os",
++      "educaci├│n en inteligencia artificial infantil",
++      "curso ia ni├▒os medell├¡n",
++    ],
++    longTailKeywords: [
++      "donde estudiar ia ni├▒os en colombia",
++      "cursos de tecnolog├¡a para ni├▒os bogot├í",
++      "mejor academia de ia para ni├▒os colombia",
++    ],
++    paymentMethods: ["PSE", "Nequi", "Daviplata", "Mercado Pago", "PayPal"],
++    flag: "­ƒç¿­ƒç┤",
++  },
++  ar: {
++    code: "ar",
++    name: "Argentina",
++    demonym: "argentinos",
++    childTerm: "chicos",
++    currency: "ARS",
++    currencySymbol: "$",
++    priceUSD: 300,
++    priceLocal: 290000,
++    whatsapp: "+56964754219",
++    timezone: "America/Argentina/Buenos_Aires",
++    mainCity: "Buenos Aires",
++    otherCities: ["C├│rdoba", "Rosario", "Mendoza", "La Plata"],
++    locale: "es_AR",
++    hreflang: "es-AR",
++    tone: "Creatividad, pensamiento cr├¡tico, aprender haciendo",
++    keywords: [
++      "cursos de inteligencia artificial para chicos",
++      "clases de IA para ni├▒os buenos aires",
++      "programaci├│n e inteligencia artificial para ni├▒os",
++      "talleres de IA para ni├▒os argentina",
++      "curso ia chicos c├│rdoba",
++    ],
++    longTailKeywords: [
++      "donde aprenden ia los chicos en argentina",
++      "academias de programaci├│n ia buenos aires",
++      "curso de tecnolog├¡a para chicos online",
++    ],
++    paymentMethods: ["Mercado Pago", "Transferencia bancaria", "PayPal"],
++    flag: "­ƒçª­ƒçÀ",
++  },
++  es: {
++    code: "es",
++    name: "Espa├▒a",
++    demonym: "espa├▒oles",
++    childTerm: "ni├▒os",
++    currency: "EUR",
++    currencySymbol: "Ôé¼",
++    priceUSD: 300,
++    priceLocal: 280,
++    whatsapp: "+56964754219",
++    timezone: "Europe/Madrid",
++    mainCity: "Madrid",
++    otherCities: ["Barcelona", "Valencia", "Sevilla", "Bilbao"],
++    locale: "es_ES",
++    hreflang: "es-ES",
++    tone: "Calidad educativa, metodolog├¡a validada, formaci├│n seria",
++    keywords: [
++      "cursos de inteligencia artificial para ni├▒os espa├▒a",
++      "clases de IA para ni├▒os madrid",
++      "academias de programaci├│n IA infantil",
++      "formaci├│n en inteligencia artificial para menores",
++      "curso ia ni├▒os barcelona",
++    ],
++    longTailKeywords: [
++      "donde aprenden ia los ni├▒os en espa├▒a",
++      "mejores cursos de ia para ni├▒os madrid",
++      "academia de inteligencia artificial infantil barcelona",
++    ],
++    paymentMethods: ["Tarjeta de cr├®dito", "Bizum", "PayPal", "Transferencia SEPA"],
++    flag: "­ƒç¬­ƒç©",
++  },
++  cl: {
++    code: "cl",
++    name: "Chile",
++    demonym: "chilenos",
++    childTerm: "ni├▒os",
++    currency: "CLP",
++    currencySymbol: "$",
++    priceUSD: 300,
++    priceLocal: 290000,
++    whatsapp: "+56964754219",
++    timezone: "America/Santiago",
++    mainCity: "Santiago",
++    otherCities: ["Valpara├¡so", "Concepci├│n", "La Serena", "Antofagasta"],
++    locale: "es_CL",
++    hreflang: "es-CL",
++    tone: "Pragm├ítico, ROI educativo, inversi├│n en el futuro",
++    keywords: [
++      "cursos de IA para ni├▒os santiago",
++      "clases inteligencia artificial infantil chile",
++      "talleres de IA para ni├▒os",
++      "curso ia ni├▒os valpara├¡so",
++      "academia ia ni├▒os chile",
++    ],
++    longTailKeywords: [
++      "donde estudiar ia ni├▒os en chile",
++      "cursos de tecnolog├¡a para ni├▒os santiago",
++      "mejor curso de inteligencia artificial para ni├▒os chile",
++    ],
++    paymentMethods: ["Webpay", "Mercado Pago", "PayPal", "Transferencia bancaria"],
++    flag: "­ƒç¿­ƒç▒",
++  },
++  pe: {
++    code: "pe",
++    name: "Per├║",
++    demonym: "peruanos",
++    childTerm: "ni├▒os",
++    currency: "PEN",
++    currencySymbol: "S/",
++    priceUSD: 300,
++    priceLocal: 1150,
++    whatsapp: "+56964754219",
++    timezone: "America/Lima",
++    mainCity: "Lima",
++    otherCities: ["Arequipa", "Trujillo", "Cusco", "Piura"],
++    locale: "es_PE",
++    hreflang: "es-PE",
++    tone: "Accesibilidad, transformaci├│n, educaci├│n de clase mundial",
++    keywords: [
++      "cursos de inteligencia artificial para ni├▒os lima",
++      "clases de IA para ni├▒os per├║",
++      "academias de programaci├│n IA para ni├▒os",
++      "curso ia ni├▒os arequipa",
++      "talleres ia infantil per├║",
++    ],
++    longTailKeywords: [
++      "donde estudiar ia ni├▒os en per├║",
++      "cursos de tecnolog├¡a para ni├▒os lima",
++      "academia de inteligencia artificial para ni├▒os per├║",
++    ],
++    paymentMethods: ["Yape", "Plin", "Mercado Pago", "PayPal", "BCP"],
++    flag: "­ƒçÁ­ƒç¬",
++  },
++}
++
++export const getCountryConfig = (code: CountryCode): CountryConfig => {
++  return countriesConfig[code]
++}
++
++export const getAllCountryCodes = (): CountryCode[] => {
++  return Object.keys(countriesConfig) as CountryCode[]
++}
