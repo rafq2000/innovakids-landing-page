@@ -392,7 +392,7 @@ export default function QueEsInnovaKids() {
               <Link href="/" className="flex items-center gap-1 text-primary hover:underline">
                 Inicio <ArrowRight className="h-4 w-4" />
               </Link>
-              <Link href="/curso-ia-ninos" className="flex items-center gap-1 text-primary hover:underline">
+              <Link href="/cursos/inteligencia-artificial" className="flex items-center gap-1 text-primary hover:underline">
                 Cursos de IA <ArrowRight className="h-4 w-4" />
               </Link>
               <Link href="/blog" className="flex items-center gap-1 text-primary hover:underline">
