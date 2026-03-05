@@ -649,6 +649,21 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               </h1>
 
               <div className="flex flex-wrap items-center gap-4 text-gray-400 mb-8 text-sm sm:text-base">
+                {/* Author Profile (E-E-A-T) */}
+                <div className="flex items-center gap-3 mr-2 sm:mr-4">
+                  <div className="w-10 h-10 rounded-full overflow-hidden bg-[#1a2942] border-2 border-[#4DD0E1] flex items-center justify-center">
+                    <span className="text-xl">👨‍🏫</span>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-white font-bold">Cristian Contreras</span>
+                    <a href="https://www.linkedin.com/company/innovakidslatam" target="_blank" rel="noopener noreferrer" className="text-[#4DD0E1] text-xs hover:underline">
+                      Director Académico IA
+                    </a>
+                  </div>
+                </div>
+
+                <span className="text-gray-600 hidden sm:inline">•</span>
+
                 <div className="flex items-center gap-2">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path

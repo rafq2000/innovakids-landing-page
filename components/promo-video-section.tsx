@@ -65,7 +65,7 @@ export function PromoVideoSection() {
                       loop
                       muted={isMuted}
                       playsInline
-                      autoPlay
+                      poster="/video-thumbnail.jpg"
                       onPlay={() => setIsPlaying(true)}
                       onPause={() => setIsPlaying(false)}
                     >

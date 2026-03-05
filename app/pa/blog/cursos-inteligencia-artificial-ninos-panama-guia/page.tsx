@@ -5,6 +5,10 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Target } from "lucide-react"
 
 export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: true,
+  },
   title: "Vibe Coding en Panamá: Guía Completa para Padres 2026",
   description:
     "Descubre el Vibe Coding: la nueva forma en que los niños aprenden a programar con IA en Panamá. Comparativa de programas y precios.",
