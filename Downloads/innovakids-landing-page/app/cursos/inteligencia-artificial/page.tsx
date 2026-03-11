@@ -158,7 +158,7 @@ export default function CursoIANinos() {
                 </p>
                 <p className="text-sm text-gray-300 mb-6">Precio Vibe Edition 2026 • Oferta por tiempo limitado</p>
                 <p className="text-lg text-yellow-300 mb-8">
-                  ⏰ Curso inicia la semana del 9 de Marzo de 2026 • Cupos limitados
+                  ⏰ Curso inicia la semana del 30 de Marzo del 2026 • Cupos limitados
                 </p>
                 <Link href="/#sesion-estrategica">
                   <Button

@@ -48,7 +48,7 @@ export function ModulePreviewSection() {
                     <p className="text-lg text-gray-400 max-w-2xl mx-auto">
                         10 clases en vivo de 60 minutos cada una. Grupos de máximo 5 niños.
                         <br />
-                        <span className="text-white font-semibold">Empieza: Semana del 9 de Marzo</span>
+                        <span className="text-white font-semibold">Empieza: Semana del 30 de Marzo del 2026</span>
                     </p>
                 </motion.div>
 
@@ -116,7 +116,7 @@ export function ModulePreviewSection() {
                             Quiero que mi hijo aprenda esto →
                         </Link>
                     </Button>
-                    <p className="mt-4 text-gray-500 text-sm">Solo 2 cupos disponibles para el grupo de Marzo</p>
+                    <p className="mt-4 text-gray-500 text-sm">Solo 2 cupos disponibles para el grupo de la semana del 30 de marzo del 2026</p>
                 </motion.div>
             </div>
         </section>
