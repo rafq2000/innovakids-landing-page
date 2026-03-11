@@ -15,7 +15,7 @@ export function CountryHeroSection({ country }: CountryHeroSectionProps) {
   const cuposTotales = 20
 
   useEffect(() => {
-    const targetDate = new Date("2026-04-30T23:59:59")
+    const targetDate = new Date("2026-03-26T23:59:59")
 
     const calculateTimeLeft = () => {
       const now = new Date()
