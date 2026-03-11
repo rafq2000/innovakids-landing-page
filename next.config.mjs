@@ -23,7 +23,7 @@ const nextConfig = {
     return [
       // Old "el-primer-paso-hacia-el-futuro" URLs
       {
-        source: '/el-primer-paso-hacia-el-futuro/reunión-clase-gratuita',
+        source: '/el-primer-paso-hacia-el-futuro/reuni%C3%B3n-clase-gratuita',
         destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
         permanent: true,
       },
@@ -33,13 +33,13 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/información-próximo-curso-online-últimos-cupos/clase-gratuita-y-reunión-informativa',
+        source: '/informaci%C3%B3n-pr%C3%B3ximo-curso-online-%C3%BAltimos-cupos/clase-gratuita-y-reuni%C3%B3n-informativa',
         destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
         permanent: true,
       },
       // Old booking URLs redirect to new one
       {
-        source: '/información-próximo-curso-online-últimos-cupos',
+        source: '/informaci%C3%B3n-pr%C3%B3ximo-curso-online-%C3%BAltimos-cupos',
         destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
         permanent: true,
       },
@@ -49,61 +49,67 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/el-primer-paso-hacia-el-futuro/reunión-informativa',
+        source: '/el-primer-paso-hacia-el-futuro/reuni%C3%B3n-informativa',
         destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
         permanent: true,
       },
       {
-        source: '/información-próximo-curso-online-últimos-cupos-hora-de-chile-la-reserva/clase-gratuita-y-reunión-informativa-hora-chile',
+        source: '/informaci%C3%B3n-pr%C3%B3ximo-curso-online-%C3%BAltimos-cupos-hora-de-chile-la-reserva/clase-gratuita-y-reuni%C3%B3n-informativa-hora-chile',
         destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
         permanent: true,
       },
       {
-        source: '/información-próximo-curso-online-últimos-cupos-hora-de-chile-la-reserva',
+        source: '/informaci%C3%B3n-pr%C3%B3ximo-curso-online-%C3%BAltimos-cupos-hora-de-chile-la-reserva',
         destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
         permanent: true,
       },
       {
-        source: '/información-próximo-curso-online-últimos-cupos/clase-gratuita-y-reunión-informativa-hora-chile',
+        source: '/informaci%C3%B3n-pr%C3%B3ximo-curso-online-%C3%BAltimos-cupos/clase-gratuita-y-reuni%C3%B3n-informativa-hora-chile',
         destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
         permanent: true,
       },
       {
-        source: '/agenda-ahora-clase-gratis-últimos-cupos/clase-gratuita-y-reunión-informativa-hora-chile',
+        source: '/agenda-ahora-clase-gratis-%C3%BAltimos-cupos/clase-gratuita-y-reuni%C3%B3n-informativa-hora-chile',
         destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
         permanent: true,
       },
       {
-        source: '/agenda-ahora-clase-gratis-últimos-cupos',
+        source: '/agenda-ahora-clase-gratis-%C3%BAltimos-cupos',
         destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
         permanent: true,
       },
       {
-        source: '/agenda-ahora-reunión-gratis-últimos-cupos/clase-gratuita-y-reunión-informativa-hora-chile',
+        source: '/agenda-ahora-reuni%C3%B3n-gratis-%C3%BAltimos-cupos/clase-gratuita-y-reuni%C3%B3n-informativa-hora-chile',
         destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
         permanent: true,
       },
       // Old information URLs
       {
-        source: '/información',
+        source: '/informaci%C3%B3n',
         destination: '/informacion',
         permanent: true,
       },
       {
-        source: '/información/qué-aprenderán-los-niños',
+        source: '/informaci%C3%B3n/qu%C3%A9-aprender%C3%A1n-los-ni%C3%B1os',
         destination: '/informacion',
         permanent: true,
       },
       {
-        source: '/información/herramientas-que-utilizarán',
+        source: '/informaci%C3%B3n/herramientas-que-utilizar%C3%A1n',
         destination: '/informacion',
         permanent: true,
       },
       {
-        source: '/información/formato',
+        source: '/informaci%C3%B3n/formato',
         destination: '/informacion',
         permanent: true,
       },
+      {
+        source: '/reserva-mi-clase-y-reuni%C3%B3n-explicativa-gratis/clase-gratuita-y-reuni%C3%B3n-informativa-hora-chile',
+        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        permanent: true,
+      },
+      // GSC Error 404 Fixes (March 2026)
       {
         source: '/blog/curso-estudio-ia-tutor-personalizado',
         destination: '/blog',
@@ -125,8 +131,23 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/reserva-mi-clase-y-reunión-explicativa-gratis/clase-gratuita-y-reunión-informativa-hora-chile',
-        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        source: '/blog/futuro-trabajo-ia-preparar-hijos',
+        destination: '/blog',
+        permanent: true,
+      },
+      {
+        source: '/co/metodologia-aprender-creando',
+        destination: '/metodologia-aprender-creando',
+        permanent: true,
+      },
+      {
+        source: '/co/resultados',
+        destination: '/resultados',
+        permanent: true,
+      },
+      {
+        source: '/co/programa',
+        destination: '/clases-ia-ninos',
         permanent: true,
       },
       // Malformed URLs

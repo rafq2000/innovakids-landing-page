@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/", "/pago/", "/pagar/", "/admin/", "/auth/", "/downloads/", "/colombia/", "/colombia"],
+      disallow: ["/api/", "/pago/", "/pagar/", "/admin/", "/auth/", "/downloads/"],
     },
     sitemap: "https://www.innovakidslatam.com/sitemap.xml",
   }
