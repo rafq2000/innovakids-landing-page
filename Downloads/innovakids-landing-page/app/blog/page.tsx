@@ -12,6 +12,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "metodologia-erica-pensamiento-computacional-ia-ninos",
+    title: "Metodología ERICA: Pensamiento Computacional e IA para Niños 🧠",
+    excerpt: "Descubre cómo ERICA integra pensamiento computacional, Taxonomía de Bloom, STEM y seguridad digital infantil en cursos de inteligencia artificial para niños y adolescentes.",
+    image: "/kids-learning-ai-on-computer.jpg",
+    date: "2026-03-11",
+    category: "Pedagogía",
+    readTime: "8 min",
+  },
+  {
     slug: "cursos-online-tecnologia-ninos-adolescentes",
     title: "Cursos Online para Niños y Adolescentes de 8 a 17 años (2026) 🚀",
     excerpt: "⭐ ¿Buscas cursos para niños de 10 a 12 años o adolescentes de 14 a 17? Descubre las mejores opciones en programación, videojuegos e IA. ¡Inscripciones abiertas! Grupos reducidos.",
