@@ -10,6 +10,14 @@ export const metadata: Metadata = {
   title: "Cursos Online de IA para Niños y Adolescentes | InnovaKids | Clase Gratis",
   description:
     "🏆 Extraescolar de inteligencia artificial para niños y adolescentes (8 a 17 años). Tu hijo crea videojuegos y apps online con IA. Grupos pequeños. ¡Clase gratis!",
+  keywords: [
+    "escuela online de inteligencia artificial",
+    "ia kids",
+    "curso de tecnologia para niños",
+    "aprender inteligencia artificial online",
+    "vibe coding para niños",
+    "innova kids solutions"
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com",
     languages: generateHreflangs("home"),

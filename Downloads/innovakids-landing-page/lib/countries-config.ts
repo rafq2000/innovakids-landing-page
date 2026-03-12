@@ -62,7 +62,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "donde estudiar programacion con ia niños en chile",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇨🇱",
@@ -103,7 +108,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "donde aprenden IA mis hijos en méxico",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇲🇽",
@@ -144,7 +154,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "donde estudiar ia niños en colombia",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇨🇴",
@@ -185,7 +200,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "donde aprenden ia los chicos en argentina",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇦🇷",
@@ -226,7 +246,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "donde estudiar ia niños en peru",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇪",
@@ -267,7 +292,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "donde estudiar programacion con ia niños en españa",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇪🇸",
@@ -306,7 +336,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños en guayaquil",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇪🇨",
@@ -345,7 +380,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de programacion con ia para niños en uruguay",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇺🇾",
@@ -384,7 +424,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños en costa rica",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇨🇷",
@@ -423,7 +468,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños en venezuela",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇻🇪",
@@ -462,7 +512,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños hispanos en estados unidos",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito de USA", "PayPal"],
     flag: "🇺🇸",
@@ -501,7 +556,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños en panama",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇦",
@@ -540,7 +600,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños en republica dominicana",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇩🇴",
@@ -579,7 +644,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños en honduras",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇭🇳",
@@ -618,7 +688,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños en el salvador",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇸🇻",
@@ -657,7 +732,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños en guatemala",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇬🇹",
@@ -696,7 +776,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños en paraguay",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇾",
@@ -735,7 +820,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños en bolivia",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇧🇴",
@@ -774,7 +864,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños en nicaragua",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇳🇮",
@@ -813,7 +908,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños en puerto rico",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇷",
@@ -852,7 +952,12 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "mejor curso online de inteligencia artificial para niños en guinea ecuatorial",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
-      "taller extraescolar de tecnología para niños"
+      "taller extraescolar de tecnología para niños",
+      "escuela online de inteligencia artificial",
+      "aprender inteligencia artificial online",
+      "curso de tecnología para niños",
+      "vibe coding para niños",
+      "ia kids"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇬🇶",
