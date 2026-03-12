@@ -21,6 +21,15 @@ const blogPosts = [
     readTime: "8 min",
   },
   {
+    slug: "mejores-cursos-verano-programacion-ia-ninos-2026",
+    title: "Programación vs IA: ¿Qué Curso de Verano Elegir para tu Hijo? (2026) 🏆",
+    excerpt: "Comparativa honesta: cursos de verano de programación tradicional vs inteligencia artificial para niños y adolescentes. Precios, metodologías y resultados reales.",
+    image: "/children-using-ai-educational-tools.jpg",
+    date: "2026-03-11",
+    category: "Comparativa",
+    readTime: "6 min",
+  },
+  {
     slug: "cursos-online-tecnologia-ninos-adolescentes",
     title: "Cursos Online para Niños y Adolescentes de 8 a 17 años (2026) 🚀",
     excerpt: "⭐ ¿Buscas cursos para niños de 10 a 12 años o adolescentes de 14 a 17? Descubre las mejores opciones en programación, videojuegos e IA. ¡Inscripciones abiertas! Grupos reducidos.",
