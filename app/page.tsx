@@ -9,14 +9,14 @@ import { generateHreflangs } from "@/lib/seo-config"
 export const metadata: Metadata = {
   title: "Cursos Online de IA para Niños y Adolescentes | InnovaKids | Clase Gratis",
   description:
-    "🏆 Extraescolar de inteligencia artificial para niños y adolescentes (8 a 14 años). Tu hijo crea videojuegos y apps online con IA. Grupos pequeños. ¡Clase gratis!",
+    "🏆 Extraescolar de inteligencia artificial para niños y adolescentes (8 a 17 años). Tu hijo crea videojuegos y apps online con IA. Grupos pequeños. ¡Clase gratis!",
   alternates: {
     canonical: "https://www.innovakidslatam.com",
     languages: generateHreflangs("home"),
   },
   openGraph: {
     title: "Cursos Online de Inteligencia Artificial para Niños y Adolescentes",
-    description: "Extraescolar de inteligencia artificial para niños de 8 a 14 años. Clases online en vivo, grupos de 5. Crea videojuegos y apps. ¡Clase gratis!",
+    description: "Extraescolar de inteligencia artificial para niños y adolescentes de 8 a 17 años. Clases online en vivo, grupos de 5. Crea videojuegos y apps. ¡Clase gratis!",
     url: "https://www.innovakidslatam.com",
     type: "website",
     locale: "es_419",
