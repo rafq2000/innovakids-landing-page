@@ -158,6 +158,9 @@ export function Footer() {
                 <a href="/privacidad" className="hover:text-[#0a1628] hover:underline">
                   Política de Privacidad
                 </a>
+                <a href="/confianza-y-seguridad" className="hover:text-[#0a1628] hover:underline">
+                  Confianza y Seguridad Infantil
+                </a>
                 <a href="/#contacto" className="hover:text-[#0a1628] hover:underline">
                   Contacto
                 </a>

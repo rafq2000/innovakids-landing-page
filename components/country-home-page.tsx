@@ -5,6 +5,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { CountryHeroSection } from "@/components/country-hero-section"
 import { CountryPricingSection } from "@/components/country-pricing-section"
 import { CountryFAQ } from "@/components/country-faq"
+import { BreadcrumbNav } from "@/components/breadcrumb-nav"
 import type { CountryConfig } from "@/lib/countries-config"
 import { CountrySEOContent } from "@/components/country-seo-content"
 import { CountryLinksSection } from "@/components/country-links-section"
@@ -250,6 +251,10 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <Navigation countryCode={country.code} />
+            <BreadcrumbNav items={[
+              { label: "Cursos Online", href: "/cursos/inteligencia-artificial" },
+              { label: `InnovaKids ${country.name}`, href: `/${country.code}` },
+            ]} />
             <main className="min-h-screen bg-background">
                 <CountryHeroSection country={country} />
 
