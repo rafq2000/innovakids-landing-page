@@ -52,16 +52,22 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     keywords: [
       "curso de ia para niños chile",
       "cursos ia para adolescentes chile",
-      "clases inteligencia artificial niños santiago"
+      "clases inteligencia artificial niños santiago",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
       "mejor curso online de inteligencia artificial para niños chilenos",
-      "donde estudiar programacion con ia niños en chile"
+      "donde estudiar programacion con ia niños en chile",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇨🇱",
     metaTitle: "Curso de IA para Niños en Chile | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Chile. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Chile. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Santiago, Viña del Mar, Concepción y todo Chile ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. $25.000 CLP). Solo pagas el resto después de las 2 primeras clases."
   },
@@ -87,16 +93,22 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     keywords: [
       "curso de ia para niños mexico",
       "cursos ia para adolescentes mexico",
-      "clases de IA para niños cdmx"
+      "clases de IA para niños cdmx",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
       "mejor curso online de inteligencia artificial para niños mexicanos",
-      "donde aprenden IA mis hijos en méxico"
+      "donde aprenden IA mis hijos en méxico",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇲🇽",
     metaTitle: "Curso de IA para Niños en México | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en México. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en México. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Ciudad de México, Guadalajara, Monterrey y todo México ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. $540 MXN). Solo pagas el resto después de las 2 primeras clases."
   },
@@ -122,16 +134,22 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     keywords: [
       "curso de ia para niños colombia",
       "cursos ia para adolescentes colombia",
-      "clases de IA para niños bogota"
+      "clases de IA para niños bogota",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
       "mejor curso online de inteligencia artificial para niños colombianos",
-      "donde estudiar ia niños en colombia"
+      "donde estudiar ia niños en colombia",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇨🇴",
     metaTitle: "Curso de IA para Niños en Colombia | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Colombia. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Colombia. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Bogotá, Medellín, Cali, Barranquilla y toda Colombia ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. $113.000 COP). Solo pagas el resto después de las 2 primeras clases."
   },
@@ -157,11 +175,17 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     keywords: [
       "curso de ia para chicos argentina",
       "cursos ia para adolescentes argentina",
-      "clases ia para chicos buenos aires"
+      "clases ia para chicos buenos aires",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
       "mejor curso online de inteligencia artificial para chicos argentinos",
-      "donde aprenden ia los chicos en argentina"
+      "donde aprenden ia los chicos en argentina",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇦🇷",
@@ -192,16 +216,22 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     keywords: [
       "curso de ia para niños peru",
       "cursos ia para adolescentes peru",
-      "clases de IA para niños lima"
+      "clases de IA para niños lima",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
       "mejor curso online de inteligencia artificial para niños peruanos",
-      "donde estudiar ia niños en peru"
+      "donde estudiar ia niños en peru",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇪",
     metaTitle: "Curso de IA para Niños en Perú | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Perú. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Perú. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Lima, Arequipa, Trujillo y todo Perú ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. S/ 100). Solo pagas el resto después de las 2 primeras clases."
   },
@@ -227,16 +257,22 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     keywords: [
       "curso de ia para niños españa",
       "cursos ia para adolescentes madrid",
-      "clases inteligencia artificial niños barcelona"
+      "clases inteligencia artificial niños barcelona",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
       "mejor curso online de inteligencia artificial para niños españoles",
-      "donde estudiar programacion con ia niños en españa"
+      "donde estudiar programacion con ia niños en españa",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇪🇸",
     metaTitle: "Curso de IA para Niños en España | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en España. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en España. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Madrid, Barcelona, Valencia, Sevilla y toda España ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de solo 25€. Tu hijo prueba las 2 primeras clases y solo si te convence pagas el resto (220€)."
   },
@@ -261,15 +297,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Innovación y tecnología al alcance de tus hijos",
     keywords: [
       "curso de ia para niños ecuador",
-      "cursos ia para adolescentes quito"
+      "cursos ia para adolescentes quito",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños en guayaquil"
+      "mejor curso online de inteligencia artificial para niños en guayaquil",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇪🇨",
     metaTitle: "Curso de IA para Niños en Ecuador | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Ecuador. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Ecuador. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Quito, Guayaquil, Cuenca y todo Ecuador ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de solo $27 USD. Después de las 2 primeras clases pagas el resto."
   },
@@ -294,15 +336,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Educación de calidad para el futuro",
     keywords: [
       "curso de ia para niños uruguay",
-      "cursos ia para adolescentes montevideo"
+      "cursos ia para adolescentes montevideo",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de programacion con ia para niños en uruguay"
+      "mejor curso online de programacion con ia para niños en uruguay",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇺🇾",
     metaTitle: "Curso de IA para Niños en Uruguay | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Uruguay. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Uruguay. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Montevideo, Punta del Este y todo Uruguay ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox $1.160 UYU). Después de las 2 primeras clases pagas el resto."
   },
@@ -327,15 +375,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Líderes en educación tecnológica",
     keywords: [
       "curso de ia para niños costa rica",
-      "cursos ia para adolescentes san jose"
+      "cursos ia para adolescentes san jose",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños en costa rica"
+      "mejor curso online de inteligencia artificial para niños en costa rica",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇨🇷",
     metaTitle: "Curso de IA para Niños en Costa Rica | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Costa Rica. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Costa Rica. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en San José, Heredia, Alajuela y toda Costa Rica ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox ₡14.000 CRC)."
   },
@@ -360,15 +414,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Tecnología global y oportunidades de futuro",
     keywords: [
       "curso de ia para niños venezuela",
-      "cursos ia para adolescentes caracas"
+      "cursos ia para adolescentes caracas",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños en venezuela"
+      "mejor curso online de inteligencia artificial para niños en venezuela",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇻🇪",
     metaTitle: "Curso de IA para Niños en Venezuela | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Venezuela. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Venezuela. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Caracas, Maracaibo, Valencia y toda Venezuela ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito o débito internacional. Procesamos el cobro de forma segura y sin fricción. La reserva es de $27 USD."
   },
@@ -393,10 +453,16 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Vibe Coding: La ventaja bilingüe y tecnológica",
     keywords: [
       "curso de ia para niños latinos usa",
-      "cursos ia para adolescentes español miami"
+      "cursos ia para adolescentes español miami",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños hispanos en estados unidos"
+      "mejor curso online de inteligencia artificial para niños hispanos en estados unidos",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito de USA", "PayPal"],
     flag: "🇺🇸",
@@ -426,15 +492,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Innovación desde el Hub de las Américas",
     keywords: [
       "curso de ia para niños panama",
-      "cursos ia para adolescentes panama"
+      "cursos ia para adolescentes panama",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños en panama"
+      "mejor curso online de inteligencia artificial para niños en panama",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇦",
     metaTitle: "Curso de IA para Niños en Panamá | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Panamá. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Panamá. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Ciudad de Panamá, Colón y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
@@ -459,15 +531,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Futuro tecnológico para el Caribe",
     keywords: [
       "curso de ia para niños republica dominicana",
-      "cursos ia para adolescentes santo domingo"
+      "cursos ia para adolescentes santo domingo",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños en republica dominicana"
+      "mejor curso online de inteligencia artificial para niños en republica dominicana",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇩🇴",
     metaTitle: "Curso de IA para Niños en R. Dominicana | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en República Dominicana. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en República Dominicana. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Santo Domingo, Santiago y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
@@ -492,15 +570,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Oportunidades globales desde Honduras",
     keywords: [
       "curso de ia para niños honduras",
-      "cursos ia para adolescentes honduras"
+      "cursos ia para adolescentes honduras",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños en honduras"
+      "mejor curso online de inteligencia artificial para niños en honduras",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇭🇳",
     metaTitle: "Curso de IA para Niños en Honduras | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Honduras. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Honduras. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Tegucigalpa, San Pedro Sula y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
@@ -525,15 +609,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "El futuro es tech en El Salvador",
     keywords: [
       "curso de ia para niños el salvador",
-      "cursos ia para adolescentes san salvador"
+      "cursos ia para adolescentes san salvador",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños en el salvador"
+      "mejor curso online de inteligencia artificial para niños en el salvador",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇸🇻",
     metaTitle: "Curso de IA para Niños en El Salvador | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en El Salvador. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en El Salvador. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en San Salvador, Santa Ana y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
@@ -558,15 +648,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Desarrolla el talento chapín",
     keywords: [
       "curso de ia para niños guatemala",
-      "cursos ia para adolescentes guatemala"
+      "cursos ia para adolescentes guatemala",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños en guatemala"
+      "mejor curso online de inteligencia artificial para niños en guatemala",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇬🇹",
     metaTitle: "Curso de IA para Niños en Guatemala | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Guatemala. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Guatemala. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Ciudad de Guatemala, Xela y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
@@ -591,15 +687,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Tecnología sin fronteras en Paraguay",
     keywords: [
       "curso de ia para niños paraguay",
-      "cursos ia para adolescentes paraguay"
+      "cursos ia para adolescentes paraguay",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños en paraguay"
+      "mejor curso online de inteligencia artificial para niños en paraguay",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇾",
     metaTitle: "Curso de IA para Niños en Paraguay | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Paraguay. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Paraguay. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Asunción, Ciudad del Este y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
@@ -624,15 +726,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Impulsando el talento en Bolivia",
     keywords: [
       "curso de ia para niños bolivia",
-      "cursos ia para adolescentes bolivia"
+      "cursos ia para adolescentes bolivia",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños en bolivia"
+      "mejor curso online de inteligencia artificial para niños en bolivia",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇧🇴",
     metaTitle: "Curso de IA para Niños en Bolivia | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Bolivia. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Bolivia. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en La Paz, Santa Cruz y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
@@ -657,15 +765,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Futuro digital en Nicaragua",
     keywords: [
       "curso de ia para niños nicaragua",
-      "cursos ia para adolescentes nicaragua"
+      "cursos ia para adolescentes nicaragua",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños en nicaragua"
+      "mejor curso online de inteligencia artificial para niños en nicaragua",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇳🇮",
     metaTitle: "Curso de IA para Niños en Nicaragua | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Nicaragua. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Nicaragua. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Managua, León y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
@@ -690,15 +804,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Innovación caribeña y global",
     keywords: [
       "curso de ia para niños puerto rico",
-      "cursos ia para adolescentes pr"
+      "cursos ia para adolescentes pr",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños en puerto rico"
+      "mejor curso online de inteligencia artificial para niños en puerto rico",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇷",
     metaTitle: "Curso de IA para Niños en Puerto Rico | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Puerto Rico. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Puerto Rico. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en San Juan, Bayamón y toda la isla ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
@@ -723,15 +843,21 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     tone: "Conectando África con el futuro",
     keywords: [
       "curso de ia para niños guinea ecuatorial",
-      "cursos ia para adolescentes malabo"
+      "cursos ia para adolescentes malabo",
+      "cursos online para niños",
+      "curso de inteligencia artificial para adolescentes",
+      "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de inteligencia artificial para niños en guinea ecuatorial"
+      "mejor curso online de inteligencia artificial para niños en guinea ecuatorial",
+      "cursos para niños de 10 a 12 años",
+      "clases online de ia para adolescentes de 14 años",
+      "taller extraescolar de tecnología para niños"
     ],
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇬🇶",
     metaTitle: "Curso de IA para Niños en Guinea Ecuatorial | InnovaKids",
-    metaDescription: "El mejor curso online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Guinea Ecuatorial. Grupos de 5 alumnos. Tu hijo crea apps reales en vivo.",
+    metaDescription: "Curso extraescolar online de Inteligencia Artificial para niños y adolescentes (8 a 14 años) en Guinea Ecuatorial. Grupos pequeños. Crea apps reales en vivo.",
     heroSubtext: "Familias en Malabo, Bata y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito internacional, débito o PayPal. La reserva es de $27 USD."
   }
