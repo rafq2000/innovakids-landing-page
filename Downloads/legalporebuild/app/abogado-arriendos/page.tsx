@@ -7,6 +7,7 @@ import Link from "next/link"
 import { Home, Calculator, CheckCircle, Clock, Scale, FileText, MessageCircle, Shield, Gavel, AlertTriangle, Key } from "lucide-react"
 import CalculadoraDesalojo from "./calculadora-desalojo"
 import GeneradorCartaAviso from "./generador-carta"
+import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado Arriendos Chile 2026 | Ley Devuélveme Mi Casa | Desalojo Rápido",
@@ -31,11 +32,11 @@ export const metadata: Metadata = {
 }
 
 const faqs = [
-    { q: "¿En qué consiste la Ley 'Devuélveme mi Casa'?", a: "Es la Ley 21.461, diseñada para acelerar los juicios de arriendo. Permite pedir el desalojo inmediato y el cobro de rentas en un procedimiento 'monitorio' (expres), que puede tardar semanas en vez de años." },
-    { q: "¿Qué pasa si no tengo contrato escrito?", a: "Es más complejo pero no imposible. Se debe iniciar un 'Juicio de Precario' o probar la existencia del arriendo mediante recibos, testigos y transferencias. Sin embargo, la Ley Devuélveme mi Casa funciona mejor con contrato notarial." },
-    { q: "¿Puedo cortar la luz o el agua al arrendatario?", a: "NO. Rotundamente no. Eso es un delito de 'autotutela' y te puede traer problemas penales graves, además de perjudicar tu demanda civil. Debes hacerlo por la vía legal." },
-    { q: "¿Qué hago si dejaron la propiedad con daños?", a: "Debes documentar todo (fotos, videos, actas notarial de salida). Puedes demandar la indemnización de perjuicios y el cobro de la garantía." },
-    { q: "¿Se pueden cobrar los Gastos Comunes en la demanda?", a: "Sí. La nueva ley permite cobrar rentas, gastos comunes y servicios básicos impagos en la misma demanda, siempre que estén acreditados." },
+    { question: "¿En qué consiste la Ley 'Devuélveme mi Casa'?", answer: "Es la Ley 21.461, diseñada para acelerar los juicios de arriendo. Permite pedir el desalojo inmediato y el cobro de rentas en un procedimiento 'monitorio' (expres), que puede tardar semanas en vez de años." },
+    { question: "¿Qué pasa si no tengo contrato escrito?", answer: "Es más complejo pero no imposible. Se debe iniciar un 'Juicio de Precario' o probar la existencia del arriendo mediante recibos, testigos y transferencias. Sin embargo, la Ley Devuélveme mi Casa funciona mejor con contrato notarial." },
+    { question: "¿Puedo cortar la luz o el agua al arrendatario?", answer: "NO. Rotundamente no. Eso es un delito de 'autotutela' y te puede traer problemas penales graves, además de perjudicar tu demanda civil. Debes hacerlo por la vía legal." },
+    { question: "¿Qué hago si dejaron la propiedad con daños?", answer: "Debes documentar todo (fotos, videos, actas notarial de salida). Puedes demandar la indemnización de perjuicios y el cobro de la garantía." },
+    { question: "¿Se pueden cobrar los Gastos Comunes en la demanda?", answer: "Sí. La nueva ley permite cobrar rentas, gastos comunes y servicios básicos impagos en la misma demanda, siempre que estén acreditados." },
 ]
 
 export default function AbogadoArriendosPage() {
@@ -210,10 +211,10 @@ export default function AbogadoArriendosPage() {
                         {faqs.map((faq, i) => (
                             <AccordionItem key={i} value={`faq-${i}`} className="border-white/10 px-4 mb-4 bg-white/5 rounded-lg overflow-hidden">
                                 <AccordionTrigger className="text-left text-white hover:text-orange-400 py-4 px-2 text-lg font-medium">
-                                    {faq.q}
+                                    {faq.question}
                                 </AccordionTrigger>
                                 <AccordionContent className="text-slate-300 pb-6 px-2 text-base leading-relaxed">
-                                    {faq.a}
+                                    {faq.answer}
                                 </AccordionContent>
                             </AccordionItem>
                         ))}
@@ -236,8 +237,8 @@ export default function AbogadoArriendosPage() {
                 </div>
             </section>
 
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "LegalService", name: "LegalPO - Abogado Arriendos Ley Devuélveme Mi Casa", description: "Expertos en juicios de arrendamiento, desalojos y nueva ley 21.461.", serviceType: "Derecho Inmobiliario", areaServed: { "@type": "Country", name: "Chile" }, priceRange: "Honorarios variables" }) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
+            <LegalServiceStructuredData name="LegalPO - Abogado Arriendos Ley Devuélveme Mi Casa" description="Expertos en juicios de arrendamiento, desalojos y nueva ley 21.461." serviceType="Derecho Inmobiliario" priceRange="Honorarios variables" />
+            <FAQStructuredData faqs={faqs} />
         </div>
     )
 }

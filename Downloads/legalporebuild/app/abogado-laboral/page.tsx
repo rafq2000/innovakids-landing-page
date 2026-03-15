@@ -9,6 +9,7 @@ import {
     AlertTriangle, Gavel, FileX, Scale, ArrowRight, ShieldAlert,
     HelpCircle, ChevronRight
 } from "lucide-react"
+import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado Laboral Chile 2026 | Despido, Ley Karin y Finiquitos | LegalPO",
@@ -34,11 +35,11 @@ export const metadata: Metadata = {
 }
 
 const faqs = [
-    { q: "¿Cuánto tiempo tengo para demandar?", a: "El plazo es fatal: Tienes 60 días hábiles (lunes a sábado) desde que te separaron de tus funciones. No dejes pasar el tiempo. Para el cobro de prestaciones adeudadas (vacaciones, sueldos) el plazo es de 2 años, pero la acción de despido caduca rápido." },
-    { q: "¿Qué es la Ley Karin y cómo me protege?", a: "La nueva Ley Karin (vigente 2024/2025) moderniza la protección contra el Acoso Laboral, Sexual y la Violencia en el trabajo. Obliga a las empresas a tener protocolos claros de investigación. Si eres víctima, tienes derecho a denunciar y ser protegido de represalias." },
-    { q: "¿Me pueden despedir estando con licencia?", a: "Por regla general, NO te pueden despedir por la causal 'Necesidades de la Empresa' estando con licencia médica. Si lo hacen, el despido es nulo o injustificado. Sin embargo, sí podrían despedirte por otras causales (como vencimiento del plazo) previo dictamen judicial en ciertos casos." },
-    { q: "¿Qué gano con una demanda por despido injustificado?", a: "Puedes ganar: 1) El pago de tu indemnización por años de servicio aumentada en un 30% a 80% (recargo legal). 2) Devolución del Seguro de Cesantía si te lo descontaron ilegalmente. 3) Pago de cotizaciones adeudadas." },
-    { q: "¿Qué es el Autodespido?", a: "Es cuando TÚ pones término al contrato porque tu empleador incumplió gravemente (ej: no pagó cotizaciones, acoso, no pago de sueldo). Si se hace bien, te deben pagar todas tus indemnizaciones como si te hubieran echado + un recargo del 50% u 80%. OJO: No renuncies, autodespídete con abogado." },
+    { question: "¿Cuánto tiempo tengo para demandar?", answer: "El plazo es fatal: Tienes 60 días hábiles (lunes a sábado) desde que te separaron de tus funciones. No dejes pasar el tiempo. Para el cobro de prestaciones adeudadas (vacaciones, sueldos) el plazo es de 2 años, pero la acción de despido caduca rápido." },
+    { question: "¿Qué es la Ley Karin y cómo me protege?", answer: "La nueva Ley Karin (vigente 2024/2025) moderniza la protección contra el Acoso Laboral, Sexual y la Violencia en el trabajo. Obliga a las empresas a tener protocolos claros de investigación. Si eres víctima, tienes derecho a denunciar y ser protegido de represalias." },
+    { question: "¿Me pueden despedir estando con licencia?", answer: "Por regla general, NO te pueden despedir por la causal 'Necesidades de la Empresa' estando con licencia médica. Si lo hacen, el despido es nulo o injustificado. Sin embargo, sí podrían despedirte por otras causales (como vencimiento del plazo) previo dictamen judicial en ciertos casos." },
+    { question: "¿Qué gano con una demanda por despido injustificado?", answer: "Puedes ganar: 1) El pago de tu indemnización por años de servicio aumentada en un 30% a 80% (recargo legal). 2) Devolución del Seguro de Cesantía si te lo descontaron ilegalmente. 3) Pago de cotizaciones adeudadas." },
+    { question: "¿Qué es el Autodespido?", answer: "Es cuando TÚ pones término al contrato porque tu empleador incumplió gravemente (ej: no pagó cotizaciones, acoso, no pago de sueldo). Si se hace bien, te deben pagar todas tus indemnizaciones como si te hubieran echado + un recargo del 50% u 80%. OJO: No renuncies, autodespídete con abogado." },
 ]
 
 export default function AbogadoLaboralPage() {
@@ -222,10 +223,10 @@ export default function AbogadoLaboralPage() {
                             {faqs.map((faq, i) => (
                                 <AccordionItem key={i} value={`faq-${i}`} className="bg-white shadow-sm border rounded-lg mb-2 px-4">
                                     <AccordionTrigger className="text-left font-medium text-slate-800 hover:text-blue-600 py-4 text-base">
-                                        {faq.q}
+                                        {faq.question}
                                     </AccordionTrigger>
                                     <AccordionContent className="text-slate-600 pb-4 text-base leading-relaxed">
-                                        {faq.a}
+                                        {faq.answer}
                                     </AccordionContent>
                                 </AccordionItem>
                             ))}
@@ -257,24 +258,17 @@ export default function AbogadoLaboralPage() {
                 </div>
             </section>
 
-            <script type="application/ld+json" dangerouslySetInnerHTML={{
-                __html: JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "LegalService",
-                    "name": "LegalPO - Abogados Laborales Expertos",
-                    "url": "https://www.legalpo.cl/abogado-laboral",
-                    "image": "https://www.legalpo.cl/og-laboral.jpg",
-                    "description": "Defensa de trabajadores en Chile. Ley Karin, Despido Injustificado y Autodespido.",
-                    "serviceType": "Derecho Laboral",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressCountry": "CL",
-                        "addressRegion": "Región Metropolitana"
-                    },
-                    "priceRange": "Consulta Gratis",
-                    "telephone": "+56912345678"
-                })
-            }} />
+            <LegalServiceStructuredData
+                name="LegalPO - Abogados Laborales Expertos"
+                description="Defensa de trabajadores en Chile. Ley Karin, Despido Injustificado y Autodespido."
+                url="https://www.legalpo.cl/abogado-laboral"
+                image="https://www.legalpo.cl/og-laboral.jpg"
+                priceRange="Consulta Gratis"
+                telephone="+56912345678"
+                addressRegion="Región Metropolitana"
+                serviceType={["Derecho Laboral", "Despido Injustificado", "Ley Karin"]}
+            />
+            <FAQStructuredData faqs={faqs} />
         </div>
     )
 }

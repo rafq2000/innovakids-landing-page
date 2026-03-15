@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calculator, Info, Heart, DollarSign, TrendingUp, CheckCircle } from "lucide-react"
 import Link from "next/link"
+import { FAQStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Valor Mínimo Pensión Alimentos Chile 2026 | Calcular Pensión Alimenticia",
@@ -57,20 +58,28 @@ const factoresCalculo = [
 
 const faqs = [
     {
-        q: "¿Cuál es el monto mínimo de pensión de alimentos en Chile 2026?",
-        a: `El monto mínimo es el 40% del ingreso mínimo remuneracional, que corresponde a $${valorMinimo2026.pensionMinima.toLocaleString("es-CL")} por hijo con el sueldo mínimo de $${valorMinimo2026.sueldoMinimo.toLocaleString("es-CL")} vigente en 2026.`,
+        question: "¿Cuál es el monto mínimo de pensión de alimentos en Chile 2026?",
+        answer: `El monto mínimo es el 40% del ingreso mínimo remuneracional, que corresponde a $${valorMinimo2026.pensionMinima.toLocaleString("es-CL")} por hijo con el sueldo mínimo de $${valorMinimo2026.sueldoMinimo.toLocaleString("es-CL")} vigente en 2026.`,
     },
     {
-        q: "¿Cuánto es el máximo de pensión alimenticia que puedo pagar?",
-        a: "El máximo por ley es el 50% del ingreso del alimentante cuando hay un solo hijo. Si hay más hijos, se puede llegar hasta el 50% dividido proporcionalmente.",
+        question: "¿Cuánto es el máximo de pensión alimenticia que puedo pagar?",
+        answer: "El máximo por ley es el 50% del ingreso del alimentante cuando hay un solo hijo. Si hay más hijos, se puede llegar hasta el 50% dividido proporcionalmente.",
     },
     {
-        q: "¿Qué pasa si no puedo pagar la pensión mínima?",
-        a: "Si demuestras que tus ingresos no alcanzan para el mínimo legal, el tribunal puede fijar una pensión menor basada en tu capacidad económica real.",
+        question: "¿Qué pasa si no puedo pagar la pensión mínima?",
+        answer: "Si demuestras que tus ingresos no alcanzan para el mínimo legal, el tribunal puede fijar una pensión menor basada en tu capacidad económica real.",
     },
     {
-        q: "¿Cómo solicitar aumento de pensión de alimentos?",
-        a: "Debes presentar una demanda de aumento de pensión ante el Tribunal de Familia, acreditando el cambio de circunstancias (mayores gastos del menor o mayor capacidad del alimentante).",
+        question: "¿Cómo se paga la pensión de alimentos?",
+        answer: "El pago debe realizarse a través de una libreta de ahorro, cuenta RUT o cuenta corriente para que quede el registro de pago. No se recomienda pagos en efectivo informales.",
+    },
+    {
+        question: "¿Qué gastos cubre la pensión de alimentos?",
+        answer: "La pensión cubre necesidades de alimentación, vivienda, vestuario, salud, movilización, educación y recreación básica del menor.",
+    },
+    {
+        question: "¿Hasta qué edad se paga la pensión?",
+        answer: "En Chile la pensión se paga hasta los 21 años de edad, o hasta los 28 años si el hijo está estudiando una profesión u oficio.",
     },
 ]
 
@@ -169,9 +178,9 @@ export default function ValorMinimoPensionAlimentosPage() {
                             <CardContent className="p-6">
                                 <h3 className="font-semibold text-white mb-2 flex items-start gap-2">
                                     <CheckCircle className="h-5 w-5 text-emerald-400 mt-0.5 flex-shrink-0" />
-                                    {faq.q}
+                                    {faq.question}
                                 </h3>
-                                <p className="text-slate-300 pl-7">{faq.a}</p>
+                                <p className="text-slate-300 pl-7">{faq.answer}</p>
                             </CardContent>
                         </Card>
                     ))}
@@ -194,23 +203,7 @@ export default function ValorMinimoPensionAlimentosPage() {
                 </Card>
 
                 {/* Schema.org FAQPage */}
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify({
-                            "@context": "https://schema.org",
-                            "@type": "FAQPage",
-                            mainEntity: faqs.map((faq) => ({
-                                "@type": "Question",
-                                name: faq.q,
-                                acceptedAnswer: {
-                                    "@type": "Answer",
-                                    text: faq.a,
-                                },
-                            })),
-                        }),
-                    }}
-                />
+                <FAQStructuredData faqs={faqs} />
             </div>
         </div>
     )

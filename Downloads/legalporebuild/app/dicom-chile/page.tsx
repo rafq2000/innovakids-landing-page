@@ -20,6 +20,7 @@ import {
     Info,
     Zap,
 } from "lucide-react"
+import { FAQStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Cómo Salir de DICOM Chile 2026 | Prescripción de Deudas | Guía Completa | LegalPO",
@@ -46,28 +47,28 @@ export const metadata: Metadata = {
 
 const faqs = [
     {
-        q: "¿Después de cuánto tiempo prescribe una deuda en Chile?",
-        a: "Las deudas comunes prescriben en 5 años desde que se hicieron exigibles. Las deudas tributarias prescriben en 3 años (normal) o 6 años (evasión). Las deudas por cheques y pagarés prescriben en 1 año. La prescripción se interrumpe si interponen demanda judicial.",
+        question: "¿Después de cuánto tiempo prescribe una deuda en Chile?",
+        answer: "Las deudas comunes prescriben en 5 años desde que se hicieron exigibles. Las deudas tributarias prescriben en 3 años (normal) o 6 años (evasión). Las deudas por cheques y pagarés prescriben en 1 año. La prescripción se interrumpe si interponen demanda judicial.",
     },
     {
-        q: "¿Cuándo me sacan de DICOM?",
-        a: "Automáticamente después de 5 años desde que la deuda se hizo exigible, aunque no la hayas pagado. Si pagas la deuda, debes solicitar que te eliminen, lo cual debe ocurrir en máximo 7 días hábiles después de tu solicitud.",
+        question: "¿Cuándo me sacan de DICOM?",
+        answer: "Automáticamente después de 5 años desde que la deuda se hizo exigible, aunque no la hayas pagado. Si pagas la deuda, debes solicitar que te eliminen, lo cual debe ocurrir en máximo 7 días hábiles después de tu solicitud.",
     },
     {
-        q: "¿Me pueden embargar el sueldo por deudas?",
-        a: "Solo por orden judicial y con límites estrictos: máximo 50% del sueldo que exceda el mínimo. Ejemplo: si ganas $800,000 y el mínimo es $539,000, pueden embargar máximo $130,500 (50% de $261,000).",
+        question: "¿Me pueden embargar el sueldo por deudas?",
+        answer: "Solo por orden judicial y con límites estrictos: máximo 50% del sueldo que exceda el mínimo. Ejemplo: si ganas $800,000 y el mínimo es $539,000, pueden embargar máximo $130,500 (50% de $261,000).",
     },
     {
-        q: "¿Qué bienes no me pueden embargar en Chile?",
-        a: "Son inembargables: el lecho del deudor y familia, ropa necesaria, herramientas de trabajo (hasta 2 UTM), libros de profesión, alimentos para un mes, objetos de culto religioso, pensiones alimenticias, y el 50% del sueldo hasta el mínimo.",
+        question: "¿Qué bienes no me pueden embargar en Chile?",
+        answer: "Son inembargables: el lecho del deudor y familia, ropa necesaria, herramientas de trabajo (hasta 2 UTM), libros de profesión, alimentos para un mes, objetos de culto religioso, pensiones alimenticias, y el 50% del sueldo hasta el mínimo.",
     },
     {
-        q: "¿Qué es la Ley de Quiebras personales?",
-        a: "Es la Ley 20.720 que permite a personas naturales renegociar o liquidar deudas ordenadamente. Puedes proponer un plan de pago a acreedores (renegociación) o liquidar tus bienes para pagar (liquidación). Hay protección contra embargos durante el proceso.",
+        question: "¿Qué es la Ley de Quiebras personales?",
+        answer: "Es la Ley 20.720 que permite a personas naturales renegociar o liquidar deudas ordenadamente. Puedes proponer un plan de pago a acreedores (renegociación) o liquidar tus bienes para pagar (liquidación). Hay protección contra embargos durante el proceso.",
     },
     {
-        q: "¿Puedo renegociar mis deudas sin ir a juicio?",
-        a: "Sí, tienes varias opciones: negociar directamente con el acreedor, acudir a la Superintendencia de Insolvencia para un procedimiento concursal, usar servicios de renegociación de SERNAC, o pedir créditos de consolidación de deudas.",
+        question: "¿Puedo renegociar mis deudas sin ir a juicio?",
+        answer: "Sí, tienes varias opciones: negociar directamente con el acreedor, acudir a la Superintendencia de Insolvencia para un procedimiento concursal, usar servicios de renegociación de SERNAC, o pedir créditos de consolidación de deudas.",
     },
 ]
 
@@ -300,9 +301,9 @@ export default function DicomChile() {
                                 {faqs.map((faq, index) => (
                                     <AccordionItem key={index} value={`faq-${index}`} className="border-white/10 px-6">
                                         <AccordionTrigger className="text-left text-white hover:text-amber-400 py-4">
-                                            {faq.q}
+                                            {faq.question}
                                         </AccordionTrigger>
-                                        <AccordionContent className="text-slate-300 pb-4">{faq.a}</AccordionContent>
+                                        <AccordionContent className="text-slate-300 pb-4">{faq.answer}</AccordionContent>
                                     </AccordionItem>
                                 ))}
                             </Accordion>
@@ -326,23 +327,7 @@ export default function DicomChile() {
             </section>
 
             {/* Schema.org */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        mainEntity: faqs.map((faq) => ({
-                            "@type": "Question",
-                            name: faq.q,
-                            acceptedAnswer: {
-                                "@type": "Answer",
-                                text: faq.a,
-                            },
-                        })),
-                    }),
-                }}
-            />
+            <FAQStructuredData faqs={faqs} />
         </div>
     )
 }

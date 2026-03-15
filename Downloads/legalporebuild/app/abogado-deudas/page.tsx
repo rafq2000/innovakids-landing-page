@@ -7,6 +7,7 @@ import Link from "next/link"
 import { CreditCard, Calculator, CheckCircle, Clock, Scale, FileText, MessageCircle, Shield, Gavel, XCircle, AlertTriangle, DollarSign, ArrowRight } from "lucide-react"
 import QuizQuiebra from "./quiz-quiebra"
 import EmbargoClient from "@/app/calculators/embargo-sueldo/embargo-client"
+import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado Deudas Chile 2026 | Ley de Quiebras, Embargos y DICOM | LegalPO",
@@ -31,11 +32,11 @@ export const metadata: Metadata = {
 }
 
 const faqs = [
-    { q: "¿En qué consiste la Ley de Quiebras (20.720)?", a: "Es un procedimiento legal que permite a personas y empresas declarar su insolvencia. Si cumples los requisitos, puedes entregar tus bienes (aunque sean pocos) para pagar lo que alcances, y el resto de la deuda SE EXTINGUE legalmente, quedando limpio de DICOM." },
-    { q: "¿Qué es una Tercería de Posesión?", a: "Es una defensa clave cuando te quieren embargar bienes que no son tuyos (por ejemplo, si vives con tus padres o pareja y la deuda es tuya). Se prueba que los bienes son de un tercero para evitar el remate." },
-    { q: "¿Cuándo prescriben realmente las deudas?", a: "La acción ejecutiva (para embargarte) prescribe en 3 años desde que se hace exigible (usualmente desde que dejas de pagar). La acción ordinaria en 5 años. OJO: La prescripción debe ser DECLARADA por un juez, no es automática." },
-    { q: "¿Me pueden embargar si no tengo nada a mi nombre?", a: "Si no tienes bienes registrales (casa, auto) a tu nombre, podrían intentar embargar los bienes muebles de tu domicilio (TV, muebles), presumiendo que son tuyos. Ahí es donde entra la Tercería de Posesión." },
-    { q: "¿Cómo borro mis antecedentes comerciales (Dicom)?", a: "1) Pagando la deuda. 2) Si la deuda prescribió (declarado por juez). 3) Si te acogiste a la Ley de Quiebras y obtuviste la Resolución de Término." },
+    { question: "¿En qué consiste la Ley de Quiebras (20.720)?", answer: "Es un procedimiento legal que permite a personas y empresas declarar su insolvencia. Si cumples los requisitos, puedes entregar tus bienes (aunque sean pocos) para pagar lo que alcances, y el resto de la deuda SE EXTINGUE legalmente, quedando limpio de DICOM." },
+    { question: "¿Qué es una Tercería de Posesión?", answer: "Es una defensa clave cuando te quieren embargar bienes que no son tuyos (por ejemplo, si vives con tus padres o pareja y la deuda es tuya). Se prueba que los bienes son de un tercero para evitar el remate." },
+    { question: "¿Cuándo prescriben realmente las deudas?", answer: "La acción ejecutiva (para embargarte) prescribe en 3 años desde que se hace exigible (usualmente desde que dejas de pagar). La acción ordinaria en 5 años. OJO: La prescripción debe ser DECLARADA por un juez, no es automática." },
+    { question: "¿Me pueden embargar si no tengo nada a mi nombre?", answer: "Si no tienes bienes registrales (casa, auto) a tu nombre, podrían intentar embargar los bienes muebles de tu domicilio (TV, muebles), presumiendo que son tuyos. Ahí es donde entra la Tercería de Posesión." },
+    { question: "¿Cómo borro mis antecedentes comerciales (Dicom)?", answer: "1) Pagando la deuda. 2) Si la deuda prescribió (declarado por juez). 3) Si te acogiste a la Ley de Quiebras y obtuviste la Resolución de Término." },
 ]
 
 export default function AbogadoDeudasPage() {
@@ -217,10 +218,10 @@ export default function AbogadoDeudasPage() {
                         {faqs.map((faq, i) => (
                             <AccordionItem key={i} value={`faq-${i}`} className="border-white/10 px-4 mb-4 bg-white/5 rounded-lg overflow-hidden">
                                 <AccordionTrigger className="text-left text-white hover:text-amber-400 py-4 px-2 text-lg font-medium">
-                                    {faq.q}
+                                    {faq.question}
                                 </AccordionTrigger>
                                 <AccordionContent className="text-slate-300 pb-6 px-2 text-base leading-relaxed">
-                                    {faq.a}
+                                    {faq.answer}
                                 </AccordionContent>
                             </AccordionItem>
                         ))}
@@ -243,8 +244,8 @@ export default function AbogadoDeudasPage() {
                 </div>
             </section>
 
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "LegalService", name: "LegalPO - Abogado Deudas y Quiebras", description: "Expertos en Ley de Quiebras, Tercerías y Prescripción de deudas en Chile.", serviceType: "Derecho Concursal", areaServed: { "@type": "Country", name: "Chile" }, priceRange: "Cobro contra resultados / Cuotas" }) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
+            <LegalServiceStructuredData name="LegalPO - Abogado Deudas y Quiebras" description="Expertos en Ley de Quiebras, Tercerías y Prescripción de deudas en Chile." serviceType="Derecho Concursal" priceRange="Cobro contra resultados / Cuotas" />
+            <FAQStructuredData faqs={faqs} />
         </div>
     )
 }

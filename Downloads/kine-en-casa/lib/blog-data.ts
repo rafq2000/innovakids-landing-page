@@ -67,7 +67,7 @@ export const blogPosts = [
     date: "25 Enero, 2024",
     readTime: "4 min lectura",
     category: "Columna Vertebral",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Activity,
     content: `<p>El 80% de la población sufrirá lumbago. Contrario a la creencia popular, el reposo absoluto está contraindicado.</p><h2>Manejo Inicial</h2><p>Calor local y movilidad suave son tus mejores aliados.</p>`
   },
@@ -79,7 +79,7 @@ export const blogPosts = [
     date: "23 Enero, 2024",
     readTime: "5 min lectura",
     category: "Traumatología",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Zap,
     content: `<p>Un esguince mal curado es un tobillo inestable de por vida. Aprende las fases de curación del ligamento.</p>`
   },
@@ -91,7 +91,7 @@ export const blogPosts = [
     date: "21 Enero, 2024",
     readTime: "6 min lectura",
     category: "Neurología Periférica",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Activity,
     content: `<p>No todo dolor que baja por la pierna es una hernia. El músculo piramidal suele ser el culpable oculto.</p>`
   },
@@ -103,7 +103,7 @@ export const blogPosts = [
     date: "19 Enero, 2024",
     readTime: "5 min lectura",
     category: "Extremidad Superior",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Activity,
     content: `<p>El dolor al levantar el brazo es la primera señal de alerta. Fortalecer es la única cura a largo plazo.</p>`
   },
@@ -115,7 +115,7 @@ export const blogPosts = [
     date: "18 Enero, 2024",
     readTime: "6 min lectura",
     category: "Geriatría Activa",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Users,
     content: `<p>El cartílago se nutre con el movimiento. "Desgaste" no significa que debas dejar de caminar.</p>`
   },
@@ -127,7 +127,7 @@ export const blogPosts = [
     date: "17 Enero, 2024",
     readTime: "5 min lectura",
     category: "Rehabilitación Neurológica",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Brain,
     content: `<p>La reeducación neuromuscular facial requiere espejos, masajes específicos y mucha paciencia.</p>`
   },
@@ -139,7 +139,7 @@ export const blogPosts = [
     date: "16 Enero, 2024",
     readTime: "4 min lectura",
     category: "Ergonomía",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: TrendingUp,
     content: `<p>El hormigueo en las manos nocturno es el síntoma clásico. Aprende a estirar el nervio.</p>`
   },
@@ -151,7 +151,7 @@ export const blogPosts = [
     date: "15 Enero, 2024",
     readTime: "5 min lectura",
     category: "Traumatología",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Zap,
     content: `<p>La fascia plantar necesita carga progresiva, no solo estiramiento, para regenerarse.</p>`
   },
@@ -163,7 +163,7 @@ export const blogPosts = [
     date: "14 Enero, 2024",
     readTime: "6 min lectura",
     category: "Respiratorio",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Activity,
     content: `<p>La fatiga crónica no es normal. La kinesiología respiratoria expande tu volumen pulmonar.</p>`
   },
@@ -175,7 +175,7 @@ export const blogPosts = [
     date: "13 Enero, 2024",
     readTime: "4 min lectura",
     category: "Terapia Manual",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Heart,
     content: `<p>El sistema linfático es el alcantarillado del cuerpo. A veces necesita ayuda para fluir.</p>`
   },
@@ -187,7 +187,7 @@ export const blogPosts = [
     date: "12 Enero, 2024",
     readTime: "5 min lectura",
     category: "Cabeza y Cuello",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Smile,
     content: `<p>Apretas los dientes de noche y te duele el cuello de día. Tratamos la ATM para liberar la tensión.</p>`
   },
@@ -199,7 +199,7 @@ export const blogPosts = [
     date: "11 Enero, 2024",
     readTime: "7 min lectura",
     category: "Geriatría Activa",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Users,
     content: `<p>Volver a ponerse de pie lo antes posible es vital para evitar complicaciones mayores.</p>`
   },
@@ -211,7 +211,7 @@ export const blogPosts = [
     date: "10 Enero, 2024",
     readTime: "6 min lectura",
     category: "Salud Mujer",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Shield,
     content: `<p>No es normal que se escape el pipí al reír. El suelo pélvico es un músculo que se entrena.</p>`
   },
@@ -223,7 +223,7 @@ export const blogPosts = [
     date: "09 Enero, 2024",
     readTime: "4 min lectura",
     category: "Ergonomía",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Activity,
     content: `<p>El dolor en la cara externa del codo suele venir de la muñeca. Corregimos la cadena cinética.</p>`
   },
@@ -235,7 +235,7 @@ export const blogPosts = [
     date: "08 Enero, 2024",
     readTime: "5 min lectura",
     category: "Pediatría",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Smile,
     content: `<p>La detección temprana es clave. El ejercicio específico puede evitar el uso de corsé.</p>`
   },
@@ -247,7 +247,7 @@ export const blogPosts = [
     date: "07 Enero, 2024",
     readTime: "6 min lectura",
     category: "Columna Vertebral",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Activity,
     content: `<p>El cuerpo tiene la capacidad de 'comerse' la parte herniada. Nosotros facilitamos ese proceso.</p>`
   },
@@ -259,7 +259,7 @@ export const blogPosts = [
     date: "06 Enero, 2024",
     readTime: "3 min lectura",
     category: "Terapia Manual",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Heart,
     content: `<p>Si hay lesión, necesitas terapia. Si es estrés, necesitas relajación. Aprende la diferencia.</p>`
   },
@@ -271,7 +271,7 @@ export const blogPosts = [
     date: "05 Enero, 2024",
     readTime: "6 min lectura",
     category: "Post-Quirúrgico",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Zap,
     content: `<p>La cirugía es el 50%. La rehabilitación es el otro 50%. Muévela o piérdela.</p>`
   },
@@ -283,7 +283,7 @@ export const blogPosts = [
     date: "04 Enero, 2024",
     readTime: "5 min lectura",
     category: "Cabeza y Cuello",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Brain,
     content: `<p>La tensión en el cuello puede afectar el equilibrio. Relajar la musculatura suboccipital es clave.</p>`
   },
@@ -295,7 +295,7 @@ export const blogPosts = [
     date: "03 Enero, 2024",
     readTime: "5 min lectura",
     category: "Dolor Crónico",
-    image: "/placeholder.svg?height=600&width=1200",
+    image: "/placeholder.jpg",
     icon: Heart,
     content: `<p>Moverse duele, pero no moverse duele más. Encontramos tu dosis justa de ejercicio.</p>`
   }

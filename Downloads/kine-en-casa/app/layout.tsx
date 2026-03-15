@@ -232,62 +232,6 @@ const localBusinessSchema = {
   },
 }
 
-// FAQ Schema for rich snippets
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "¿Cuánto cuesta una sesión de kinesiología a domicilio en Santiago?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "El precio de una sesión de kinesiología a domicilio en el sector oriente de Santiago varía según el tipo de tratamiento y la comuna. Ofrecemos evaluación inicial gratuita. Contáctanos al +56 9 9967 9593 para una cotización personalizada.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Qué comunas atienden en el sector oriente de Santiago?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Atendemos Las Condes, Vitacura, Providencia, Ñuñoa, La Reina, Lo Barnechea, Peñalolén, La Florida y Macul. Todos los tratamientos se realizan directamente en tu hogar.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Trabajan con Fonasa o Isapre?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Emitimos boletas que pueden ser reembolsadas por tu Isapre. También aceptamos pacientes Fonasa con modalidad libre elección. Consulta los detalles de tu plan de salud.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Qué tipos de kinesiología ofrecen a domicilio?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Ofrecemos kinesiología geriátrica, respiratoria, traumatológica, neurológica, rehabilitación postquirúrgica y educación familiar. Nuestros kinesiólogos tienen más de 5 años de experiencia.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Cuánto dura una sesión de kinesiología a domicilio?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Cada sesión tiene una duración de 60 minutos aproximadamente. El tiempo puede variar según las necesidades específicas del paciente y el tipo de tratamiento.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Atienden adultos mayores con movilidad reducida?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Sí, somos especialistas en atención a adultos mayores con movilidad reducida. Llevamos todo el equipamiento necesario a tu hogar y adaptamos cada sesión a las capacidades del paciente.",
-      },
-    },
-  ],
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -299,10 +243,6 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       </head>
       <body className="font-sans">{children}</body>

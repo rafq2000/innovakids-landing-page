@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import FeriadoLegalClient from "./feriado-client"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { HelpCircle, Calendar, Briefcase } from "lucide-react"
+import { FAQStructuredData, CalculatorStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Calculadora Feriado Legal Proporcional Chile 2026 | Vacaciones Finiquito",
@@ -22,48 +23,26 @@ export const metadata: Metadata = {
     },
 }
 
+const faqs = [
+    {
+        question: "¿Qué es el feriado proporcional?",
+        answer: "Es el dinero que te debe pagar el empleador por los días de vacaciones que ganaste pero no alcanzaste a tomar antes de dejar el trabajo.",
+    },
+    {
+        question: "¿Cómo se calculan los días de vacaciones?",
+        answer: "Por cada año trabajado tienes derecho a 15 días hábiles. Si trabajaste menos de un año (o una fracción), se calcula proporcionalmente dividiendo los días trabajados por el año.",
+    },
+]
+
 export default function FeriadoLegalPage() {
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        name: "Calculadora de Feriado Legal Proporcional",
-        applicationCategory: "FinanceApplication",
-        operatingSystem: "Web",
-        offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "CLP",
-        },
-        description: "Herramienta para calcular el pago de vacaciones proporcionales en finiquitos chilenos.",
-    }
-
-    const faqSchema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: [
-            {
-                "@type": "Question",
-                name: "¿Qué es el feriado proporcional?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Es el dinero que te debe pagar el empleador por los días de vacaciones que ganaste pero no alcanzaste a tomar antes de dejar el trabajo.",
-                },
-            },
-            {
-                "@type": "Question",
-                name: "¿Cómo se calculan los días de vacaciones?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Por cada año trabajado tienes derecho a 15 días hábiles. Si trabajaste menos de un año (o una fracción), se calcula proporcionalmente dividiendo los días trabajados por el año.",
-                },
-            },
-        ],
-    }
-
     return (
         <div className="min-h-screen bg-green-50/30">
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <CalculatorStructuredData
+                name="Calculadora de Feriado Legal Proporcional"
+                description="Herramienta para calcular el pago de vacaciones proporcionales en finiquitos chilenos."
+                url="https://www.legalpo.cl/calculators/feriado-legal"
+            />
+            <FAQStructuredData faqs={faqs} />
 
             <main className="container mx-auto px-4 py-12 max-w-6xl">
                 <FeriadoLegalClient />

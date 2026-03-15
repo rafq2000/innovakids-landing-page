@@ -22,6 +22,7 @@ import {
     MessageCircle,
     ChevronRight,
     ArrowLeft,
+    Sparkles,
 } from "lucide-react"
 import Link from "next/link"
 import { SiteFooter } from "@/components/site-footer"
@@ -90,9 +91,9 @@ export default function ComunaPage({ data }: ComunaPageProps) {
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "MedicalBusiness",
-        name: `KineEnCasa - ${data.nombre}`,
+        name: `KINEUM - Kinesiología a Domicilio ${data.nombre}`,
         description: data.descripcion,
-        url: `https://kineencasa.cl/kinesiologo-a-domicilio-${data.slug}`,
+        url: `https://kineum.cl/kinesiologo-a-domicilio-${data.slug}`,
         telephone: "+56999679593",
         address: {
             "@type": "PostalAddress",
@@ -106,8 +107,8 @@ export default function ComunaPage({ data }: ComunaPageProps) {
         },
         parentOrganization: {
             "@type": "Organization",
-            name: "KineEnCasa",
-            url: "https://kineencasa.cl",
+            name: "KINEUM",
+            url: "https://kineum.cl",
         },
     }
 
@@ -126,14 +127,10 @@ export default function ComunaPage({ data }: ComunaPageProps) {
 
     return (
         <div className="min-h-screen bg-slate-50">
-            {/* Schema.org structured data */}
+            {/* Schema.org structured data - LocalBusiness only, FAQ is in layout.tsx */}
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-            />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
             />
 
             {/* WhatsApp floating button */}
@@ -163,7 +160,7 @@ export default function ComunaPage({ data }: ComunaPageProps) {
                                     <Home className="h-8 w-8 text-white" />
                                 </div>
                                 <div>
-                                    <h1 className="text-3xl font-bold font-serif text-white">KineEnCasa</h1>
+                                    <h1 className="text-3xl font-bold font-serif text-white">KINEUM</h1>
                                     <p className="text-sm text-slate-200">Rehabilitación Profesional</p>
                                 </div>
                             </Link>
@@ -196,7 +193,7 @@ export default function ComunaPage({ data }: ComunaPageProps) {
             </header>
 
             {/* Hero Section */}
-            <section className="bg-gradient-to-br from-slate-100 via-gray-50 to-slate-200 py-20 relative overflow-hidden">
+            <section className="bg-gradient-to-br from-slate-100 via-gray-50 to-slate-200 py-24 relative overflow-hidden">
                 <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
                 <div className="absolute top-20 right-20 w-72 h-72 bg-slate-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
                 <div className="absolute bottom-20 left-20 w-72 h-72 bg-amber-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse delay-1000"></div>
@@ -204,7 +201,7 @@ export default function ComunaPage({ data }: ComunaPageProps) {
                 <div className="container mx-auto px-4 text-center relative z-10">
                     <div className="max-w-5xl mx-auto">
                         {/* Breadcrumb */}
-                        <nav className="mb-6 text-sm">
+                        <nav className="mb-8 text-sm">
                             <ol className="flex items-center justify-center space-x-2 text-slate-600">
                                 <li><Link href="/" className="hover:text-amber-700">Inicio</Link></li>
                                 <li><ChevronRight className="h-4 w-4" /></li>
@@ -216,37 +213,29 @@ export default function ComunaPage({ data }: ComunaPageProps) {
                             <MapPin className="h-4 w-4 mr-2" />
                             {data.nombre} - Sector Oriente Santiago
                         </Badge>
-
-                        <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 font-serif leading-tight">
-                            Kinesiólogo a Domicilio en{" "}
-                            <span className="text-amber-700">{data.nombre}</span>
+                        <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-8 font-serif leading-tight">
+                            Elimina tu Dolor en <span className="text-amber-700">{data.nombre}</span>
+                            <br />
+                            <span className="text-3xl md:text-4xl text-slate-600 font-sans font-normal block mt-4">Sin Salir de Casa</span>
                         </h1>
 
-                        <p className="text-xl md:text-2xl text-slate-700 mb-8 leading-relaxed max-w-4xl mx-auto">
-                            {data.descripcion}
+                        <p className="text-xl md:text-2xl text-slate-700 mb-12 leading-relaxed max-w-4xl mx-auto">
+                            Somos los únicos especialistas en {data.nombre} con <strong>Tecnología de Monitoreo + Asistente AI 24/7</strong>.
+                            <br />
+                            Agendamos hoy. Vamos hoy.
                         </p>
 
-                        <p className="text-lg text-slate-600 mb-10 max-w-3xl mx-auto">
-                            {data.poblacion} Nuestros kinesiólogos profesionales ofrecen <strong>rehabilitación especializada</strong> directamente en tu hogar con equipamiento de última generación.
-                        </p>
-
-                        <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+                        <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
                             <Button
                                 size="lg"
-                                className="text-lg px-10 py-6 shadow-xl hover:shadow-2xl transition-all duration-300 bg-emerald-600 hover:bg-emerald-700 text-white border border-emerald-500"
-                                onClick={() => window.open(`https://wa.me/56999679593?text=Hola, necesito un kinesiólogo a domicilio en ${data.nombre}`, "_blank")}
+                                className="text-lg px-10 py-6 shadow-xl hover:shadow-2xl transition-all duration-300 bg-emerald-600 hover:bg-emerald-700 text-white border border-emerald-500 transform hover:scale-105"
+                                onClick={() => window.open(`https://wa.me/56999679593?text=Hola, quiero verificar disponibilidad en ${data.nombre}`, "_blank")}
                             >
-                                <MessageCircle className="h-5 w-5 mr-3" />
-                                Agendar en {data.nombre}
-                            </Button>
-                            <Button
-                                variant="outline"
-                                size="lg"
-                                className="text-lg px-10 py-6 bg-white hover:bg-slate-50 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-slate-300 text-slate-900"
-                                onClick={() => window.open("tel:+56999679593")}
-                            >
-                                <Phone className="h-5 w-5 mr-3" />
-                                Llamar Ahora
+                                <MessageCircle className="h-6 w-6 mr-3" />
+                                <span className="flex flex-col items-start text-left">
+                                    <span className="font-bold">Verificar Disponibilidad en {data.nombre}</span>
+                                    <span className="text-xs font-normal opacity-90">Respuesta en menos de 5 min</span>
+                                </span>
                             </Button>
                         </div>
 
@@ -274,6 +263,7 @@ export default function ComunaPage({ data }: ComunaPageProps) {
                                 <p className="text-slate-600 font-medium">Lunes a Domingo</p>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -338,6 +328,169 @@ export default function ComunaPage({ data }: ComunaPageProps) {
                 </div>
             </section>
 
+            {/* Hormozi PLans Section */}
+            <section id="planes" className="py-24 bg-gradient-to-br from-slate-100 via-gray-50 to-slate-200 relative overflow-hidden">
+                <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+
+                <div className="container mx-auto px-4 relative z-10">
+                    <div className="text-center mb-12">
+                        <Badge className="mb-6 px-6 py-2 text-sm font-medium bg-slate-900 text-white border-slate-800">
+                            Planes Exclusivos {data.nombre}
+                        </Badge>
+                        <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 font-serif">
+                            Elige tu Plan de Recuperación
+                        </h2>
+                        <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                            Incluyen evaluación GRATIS y acceso a nuestra APP de Kinesiología y Asistente AI.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                        {/* Plan Essential */}
+                        <Card className="relative group hover:shadow-2xl transition-all duration-500 border border-slate-300 shadow-lg bg-white hover:-translate-y-3 flex flex-col">
+                            <div className="h-3 bg-gradient-to-r from-emerald-600 to-emerald-800 rounded-t-xl"></div>
+                            <CardHeader className="text-center pb-4 pt-8">
+                                <CardTitle className="text-2xl font-bold text-slate-900 font-serif mb-2">Plan Essential</CardTitle>
+                                <CardDescription className="text-slate-600 text-sm leading-relaxed">Para lesiones leves y mantenimiento.</CardDescription>
+                                <div className="my-6">
+                                    <p className="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Valor Total</p>
+                                    <span className="text-lg font-bold text-slate-400 line-through decoration-red-500 decoration-2">$235.000</span>
+                                    <div className="flex items-center justify-center gap-2 mt-1">
+                                        <span className="text-4xl font-black text-slate-900 tracking-tight">$160.000</span>
+                                    </div>
+                                </div>
+                            </CardHeader>
+                            <CardContent className="pt-0 flex-grow">
+                                <ul className="space-y-3 mb-6">
+                                    <li className="flex items-start text-sm"><Check className="h-4 w-4 text-emerald-600 mr-2" /> 4 Sesiones Kinesiología</li>
+                                    <li className="flex items-start text-sm"><Check className="h-4 w-4 text-emerald-600 mr-2" /> Seguimiento básico</li>
+                                </ul>
+                                <div className="bg-amber-50 rounded-xl p-4 border border-amber-100">
+                                    <h4 className="text-xs font-bold text-amber-800 uppercase tracking-wider mb-2">BONUS GRATIS:</h4>
+                                    <ul className="space-y-1 text-xs text-slate-700">
+                                        <li>• Evaluación Inicial ($45.000)</li>
+                                        <li>• Asistente AI 24/7 ($30.000)</li>
+                                    </ul>
+                                </div>
+                            </CardContent>
+                            <div className="p-6 pt-0 mt-auto">
+                                <Button className="w-full bg-slate-900 hover:bg-slate-800 py-6" onClick={() => window.open(`https://wa.me/56999679593?text=Me interesa el Plan Essential en ${data.nombre}`, "_blank")}>
+                                    Quiero este Plan
+                                </Button>
+                            </div>
+                        </Card>
+
+                        {/* Plan Premium */}
+                        <Card className="relative group hover:shadow-2xl transition-all duration-500 border border-slate-300 shadow-lg bg-white hover:-translate-y-3 flex flex-col ring-4 ring-amber-500 scale-105 z-10">
+                            <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 w-full text-center">
+                                <Badge className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-8 py-2 shadow-xl border-amber-500 text-sm font-bold tracking-wider uppercase">
+                                    <Award className="h-4 w-4 mr-2" /> RECOMENDADO
+                                </Badge>
+                            </div>
+                            <div className="h-3 bg-gradient-to-r from-amber-600 to-amber-800 rounded-t-xl"></div>
+                            <CardHeader className="text-center pb-4 pt-8">
+                                <CardTitle className="text-2xl font-bold text-slate-900 font-serif mb-2">Plan Premium</CardTitle>
+                                <CardDescription className="text-slate-600 text-sm leading-relaxed">El protocolo acelerado para eliminar dolor.</CardDescription>
+                                <div className="my-6">
+                                    <p className="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Valor Total</p>
+                                    <span className="text-lg font-bold text-slate-400 line-through decoration-red-500 decoration-2">$400.000+</span>
+                                    <div className="flex items-center justify-center gap-2 mt-1">
+                                        <span className="text-4xl font-black text-slate-900 tracking-tight">$280.000</span>
+                                    </div>
+                                </div>
+                            </CardHeader>
+                            <CardContent className="pt-0 flex-grow">
+                                <ul className="space-y-3 mb-6">
+                                    <li className="flex items-start text-sm"><Check className="h-4 w-4 text-emerald-600 mr-2" /> 8 Sesiones Expert</li>
+                                    <li className="flex items-start text-sm"><Check className="h-4 w-4 text-emerald-600 mr-2" /> Reportes de Progreso</li>
+                                    <li className="flex items-start text-sm"><Check className="h-4 w-4 text-emerald-600 mr-2" /> Prioridad Agenda</li>
+                                </ul>
+                                <div className="bg-amber-50 rounded-xl p-4 border border-amber-100">
+                                    <h4 className="text-xs font-bold text-amber-800 uppercase tracking-wider mb-2">BONUS GRATIS (Valor $100k+):</h4>
+                                    <ul className="space-y-1 text-xs text-slate-700">
+                                        <li className="font-bold">• Evaluación Digital GRATIS</li>
+                                        <li className="font-bold">• Kit Recuperación (Bandas) GRATIS</li>
+                                        <li>• Asistente AI 24/7 GRATIS</li>
+                                        <li>• Portal Paciente GRATIS</li>
+                                    </ul>
+                                </div>
+                            </CardContent>
+                            <div className="p-6 pt-0 mt-auto">
+                                <Button className="w-full bg-amber-600 hover:bg-amber-700 py-6 text-lg font-bold" onClick={() => window.open(`https://wa.me/56999679593?text=Quiero la OFERTA del Plan Premium en ${data.nombre}`, "_blank")}>
+                                    Quiero la Oferta Premium
+                                </Button>
+                            </div>
+                        </Card>
+
+                        {/* Plan Elite */}
+                        <Card className="relative group hover:shadow-2xl transition-all duration-500 border border-slate-300 shadow-lg bg-white hover:-translate-y-3 flex flex-col">
+                            <div className="h-3 bg-gradient-to-r from-slate-700 to-slate-900 rounded-t-xl"></div>
+                            <CardHeader className="text-center pb-4 pt-8">
+                                <CardTitle className="text-2xl font-bold text-slate-900 font-serif mb-2">Plan Elite</CardTitle>
+                                <CardDescription className="text-slate-600 text-sm leading-relaxed">Experiencia definitiva sin límites.</CardDescription>
+                                <div className="my-6">
+                                    <div className="flex items-center justify-center gap-2 mt-1">
+                                        <span className="text-3xl font-black text-slate-900 tracking-tight">Consultar</span>
+                                    </div>
+                                </div>
+                            </CardHeader>
+                            <CardContent className="pt-0 flex-grow">
+                                <ul className="space-y-3 mb-6">
+                                    <li className="flex items-start text-sm"><Check className="h-4 w-4 text-emerald-600 mr-2" /> Sesiones ILIMITADAS</li>
+                                    <li className="flex items-start text-sm"><Check className="h-4 w-4 text-emerald-600 mr-2" /> Kinesiólogo Dedicado</li>
+                                </ul>
+                                <div className="bg-amber-50 rounded-xl p-4 border border-amber-100">
+                                    <h4 className="text-xs font-bold text-amber-800 uppercase tracking-wider mb-2">TODO INCLUIDO:</h4>
+                                    <ul className="space-y-1 text-xs text-slate-700">
+                                        <li>• Todo el Pack Premium</li>
+                                        <li>• Consultas Ilimitadas</li>
+                                    </ul>
+                                </div>
+                            </CardContent>
+                            <div className="p-6 pt-0 mt-auto">
+                                <Button className="w-full bg-slate-900 hover:bg-slate-800 py-6" onClick={() => window.open(`https://wa.me/56999679593?text=Me interesa el Plan Elite en ${data.nombre}`, "_blank")}>
+                                    Consultar Elite
+                                </Button>
+                            </div>
+                        </Card>
+                    </div>
+                </div>
+            </section>
+
+            {/* Guarantee Section */}
+            <div className="max-w-4xl mx-auto mt-20 mb-16 px-4">
+                <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl border border-slate-700 relative overflow-hidden text-center transform hover:scale-[1.02] transition-transform duration-500">
+                    <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl"></div>
+                    <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl"></div>
+
+                    <Badge className="mb-6 px-6 py-2 text-sm font-bold bg-amber-500 text-slate-900 border-none shadow-lg">
+                        <Shield className="h-4 w-4 mr-2" />
+                        RIESGO CERO
+                    </Badge>
+
+                    <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-serif">
+                        Garantía "Primera Sesión Perfecta" en {data.nombre}
+                    </h3>
+
+                    <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
+                        Si no sientes que recibiste una atención de excelencia en tu primera visita, <span className="text-white font-bold border-b-2 border-amber-500">te devolvemos el 100% de tu dinero</span>.
+                        <br />
+                        Sin preguntas.
+                    </p>
+
+                    <div className="flex justify-center">
+                        <Button
+                            size="lg"
+                            className="text-lg px-8 py-6 bg-white text-slate-900 hover:bg-slate-100 font-bold shadow-xl transition-all duration-300"
+                            onClick={() => window.open(`https://wa.me/56999679593?text=Hola, quiero agendar mi primera sesión con Garantía en ${data.nombre}`, "_blank")}
+                        >
+                            <Check className="h-5 w-5 mr-2 text-emerald-600" />
+                            Agendar Sesión Segura
+                        </Button>
+                    </div>
+                </div>
+            </div>
+
             {/* Cobertura Section */}
             <section id="cobertura" className="py-20 bg-gradient-to-br from-slate-100 via-gray-50 to-slate-200">
                 <div className="container mx-auto px-4">
@@ -386,7 +539,7 @@ export default function ComunaPage({ data }: ComunaPageProps) {
                     {/* Características */}
                     <div className="mt-12 max-w-4xl mx-auto">
                         <h3 className="text-2xl font-bold text-slate-900 text-center mb-8 font-serif">
-                            ¿Por qué elegir KineEnCasa en {data.nombre}?
+                            ¿Por qué elegir KINEUM en {data.nombre}?
                         </h3>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {data.caracteristicas.map((caracteristica, index) => (

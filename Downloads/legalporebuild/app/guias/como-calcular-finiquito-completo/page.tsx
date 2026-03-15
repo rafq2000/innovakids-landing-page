@@ -24,6 +24,7 @@ import {
     Target,
     Info,
 } from "lucide-react"
+import { ArticleStructuredData, HowToStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Guía Completa: Cómo Calcular Finiquito Chile 2026 | Paso a Paso | LegalPO",
@@ -63,10 +64,18 @@ export default function GuiaFiniquitoCompleto() {
                         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-slate-200 to-slate-300 bg-clip-text text-transparent">
                             Cómo Calcular tu Finiquito en Chile
                         </h1>
-                        <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-8">
-                            Guía definitiva con fórmulas actualizadas a 2026, ejemplos prácticos paso a paso, y todo lo que
-                            necesitas saber para calcular exactamente cuánto te corresponde de finiquito.
+                        <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-6">
+                            Guía definitiva con fórmulas actualizadas a 2026, ejemplos prácticos paso a paso, y todo lo que necesitas saber para calcular exactamente cuánto te corresponde de finiquito.
                         </p>
+                        <div className="bg-slate-800/80 border border-emerald-500/30 rounded-xl p-6 text-left max-w-3xl mx-auto mb-8 shadow-lg shadow-emerald-900/20">
+                            <h2 className="text-xl font-bold text-white mb-2 flex items-center">
+                                <CheckCircle className="h-5 w-5 text-emerald-400 mr-2" />
+                                ¿Cómo se calcula el finiquito en Chile?
+                            </h2>
+                            <p className="text-slate-200">
+                                El finiquito en Chile se calcula sumando las <strong>remuneraciones pendientes</strong> (días trabajados en el mes), la <strong>indemnización por años de servicio</strong> (un mes por año trabajado si aplica), la <strong>indemnización sustitutiva de aviso previo</strong> (si corresponde) y el <strong>feriado proporcional o vacaciones no tomadas</strong>.
+                            </p>
+                        </div>
 
                         {/* Quick Stats */}
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
@@ -602,96 +611,27 @@ export default function GuiaFiniquitoCompleto() {
             </article>
 
             {/* Schema.org HowTo */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "HowTo",
-                        name: "Cómo Calcular tu Finiquito en Chile 2026",
-                        description:
-                            "Guía completa paso a paso para calcular el finiquito laboral en Chile según el Código del Trabajo.",
-                        totalTime: "PT15M",
-                        estimatedCost: {
-                            "@type": "MonetaryAmount",
-                            currency: "CLP",
-                            value: "0",
-                        },
-                        tool: [
-                            {
-                                "@type": "HowToTool",
-                                name: "Calculadora de Finiquito LegalPO",
-                            },
-                        ],
-                        step: [
-                            {
-                                "@type": "HowToStep",
-                                name: "Identificar la causal de término",
-                                text: "Determina bajo qué artículo del Código del Trabajo terminó tu contrato (Art. 159, 160 o 161).",
-                                position: 1,
-                            },
-                            {
-                                "@type": "HowToStep",
-                                name: "Calcular tiempo de servicio",
-                                text: "Calcula los años, meses y días trabajados desde la fecha de ingreso hasta la fecha de término.",
-                                position: 2,
-                            },
-                            {
-                                "@type": "HowToStep",
-                                name: "Determinar remuneración base",
-                                text: "Suma tu sueldo base, comisiones, bonos y cualquier remuneración habitual.",
-                                position: 3,
-                            },
-                            {
-                                "@type": "HowToStep",
-                                name: "Calcular indemnizaciones",
-                                text: "Si aplica, calcula indemnización por años de servicio (un mes por año) y aviso previo.",
-                                position: 4,
-                            },
-                            {
-                                "@type": "HowToStep",
-                                name: "Calcular vacaciones proporcionales",
-                                text: "Calcula los días de vacaciones no tomados proporcionalmente al tiempo trabajado.",
-                                position: 5,
-                            },
-                            {
-                                "@type": "HowToStep",
-                                name: "Sumar todos los componentes",
-                                text: "Suma remuneraciones pendientes + indemnizaciones + vacaciones + gratificaciones para obtener el total.",
-                                position: 6,
-                            },
-                        ],
-                    }),
-                }}
+            <HowToStructuredData
+                name="Cómo Calcular tu Finiquito en Chile 2026"
+                description="Guía completa paso a paso para calcular el finiquito laboral en Chile según el Código del Trabajo."
+                totalTime="PT15M"
+                tools={["Calculadora de Finiquito LegalPO"]}
+                steps={[
+                    { name: "Identificar la causal de término", text: "Determina bajo qué artículo del Código del Trabajo terminó tu contrato (Art. 159, 160 o 161)." },
+                    { name: "Calcular tiempo de servicio", text: "Calcula los años, meses y días trabajados desde la fecha de ingreso hasta la fecha de término." },
+                    { name: "Determinar remuneración base", text: "Suma tu sueldo base, comisiones, bonos y cualquier remuneración habitual." },
+                    { name: "Calcular indemnizaciones", text: "Si aplica, calcula indemnización por años de servicio (un mes por año) y aviso previo." },
+                    { name: "Calcular vacaciones proporcionales", text: "Calcula los días de vacaciones no tomados proporcionalmente al tiempo trabajado." },
+                    { name: "Sumar todos los componentes", text: "Suma remuneraciones pendientes + indemnizaciones + vacaciones + gratificaciones para obtener el total." }
+                ]}
             />
 
             {/* Schema.org Article */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Article",
-                        headline: "Cómo Calcular tu Finiquito en Chile 2026 - Guía Completa",
-                        description:
-                            "Guía definitiva para calcular el finiquito laboral en Chile. Fórmulas actualizadas, ejemplos prácticos y calculadora gratis.",
-                        author: {
-                            "@type": "Organization",
-                            name: "LegalPO",
-                            url: "https://legalpo.cl",
-                        },
-                        publisher: {
-                            "@type": "Organization",
-                            name: "LegalPO",
-                            logo: {
-                                "@type": "ImageObject",
-                                url: "https://legalpo.cl/images/legalpo-logo.png",
-                            },
-                        },
-                        datePublished: "2026-01-17",
-                        dateModified: "2026-01-17",
-                    }),
-                }}
+            <ArticleStructuredData
+                headline="Cómo Calcular tu Finiquito en Chile 2026 - Guía Completa"
+                description="Guía definitiva para calcular el finiquito laboral en Chile. Fórmulas actualizadas, ejemplos prácticos y calculadora gratis."
+                datePublished="2026-01-17"
+                dateModified="2026-01-17"
             />
         </div>
     )

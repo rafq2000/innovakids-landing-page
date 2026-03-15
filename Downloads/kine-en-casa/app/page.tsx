@@ -38,6 +38,43 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { SiteFooter } from "@/components/site-footer"
 
 export default function HomePage() {
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Cuánto cuesta una sesión de kinesiología a domicilio en Santiago?",
+        acceptedAnswer: { "@type": "Answer", text: "El precio de una sesión de kinesiología a domicilio en el sector oriente de Santiago varía según el tipo de tratamiento y la comuna. Ofrecemos evaluación inicial gratuita. Contáctanos al +56 9 9967 9593 para una cotización personalizada." }
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué comunas atienden en el sector oriente de Santiago?",
+        acceptedAnswer: { "@type": "Answer", text: "Atendemos Las Condes, Vitacura, Providencia, Ñuñoa, La Reina, Lo Barnechea, Peñalolén, La Florida y Macul. Todos los tratamientos se realizan directamente en tu hogar." }
+      },
+      {
+        "@type": "Question",
+        name: "¿Trabajan con Fonasa o Isapre?",
+        acceptedAnswer: { "@type": "Answer", text: "Emitimos boletas que pueden ser reembolsadas por tu Isapre. También aceptamos pacientes Fonasa con modalidad libre elección. Consulta los detalles de tu plan de salud." }
+      },
+      {
+        "@type": "Question",
+        name: "¿Qué tipos de kinesiología ofrecen a domicilio?",
+        acceptedAnswer: { "@type": "Answer", text: "Ofrecemos kinesiología geriátrica, respiratoria, traumatológica, neurológica, rehabilitación postquirúrgica y educación familiar. Nuestros kinesiólogos tienen más de 5 años de experiencia." }
+      },
+      {
+        "@type": "Question",
+        name: "¿Cuánto dura una sesión de kinesiología a domicilio?",
+        acceptedAnswer: { "@type": "Answer", text: "Cada sesión tiene una duración de 60 minutos aproximadamente. El tiempo puede variar según las necesidades específicas del paciente y el tipo de tratamiento." }
+      },
+      {
+        "@type": "Question",
+        name: "¿Atienden adultos mayores con movilidad reducida?",
+        acceptedAnswer: { "@type": "Answer", text: "Sí, somos especialistas en atención a adultos mayores con movilidad reducida. Llevamos todo el equipamiento necesario a tu hogar y adaptamos cada sesión a las capacidades del paciente." }
+      }
+    ]
+  }
+
   const services = [
     {
       title: "Kinesiología Geriátrica",
@@ -107,56 +144,69 @@ export default function HomePage() {
   const plans = [
     {
       name: "Plan Essential",
-      description: "La base para una recuperación constante y accesible",
+      description: "Para lesiones leves y mantenimiento.",
       icon: Heart,
       features: [
-        "4 sesiones de kinesiología al mes",
-        "Asistente AI 24/7 vía WhatsApp",
-        "Biblioteca de ejercicios personalizada",
+        "4 Sesiones de Kinesiología (1 hr)",
         "Seguimiento de evolución básico",
         "Atención a domicilio garantizada",
+      ],
+      bonuses: [
+        { name: "Evaluación Inicial", value: "$45.000", price: "GRATIS" },
+        { name: "Asistente AI 24/7", value: "$30.000", price: "GRATIS" },
       ],
       popular: false,
       gradient: "from-emerald-600 to-emerald-800",
       price: "160.000",
+      totalValue: "$235.000",
     },
     {
       name: "Plan Premium",
-      description: "El equilibrio perfecto para una rehabilitación acelerada",
+      description: "El protocolo acelerado para eliminar el dolor.",
       icon: Star,
       features: [
-        "8 sesiones de kinesiología al mes",
-        "Evaluación mensual con tecnología",
-        "Teleconsulta Express de seguimiento",
-        "Todo lo del Plan Essential",
-        "Reportes de progreso detallados",
+        "8 Sesiones de Kinesiología Expert",
         "Prioridad en agendamiento",
+        "Reportes de progreso detallados",
+      ],
+      bonuses: [
+        { name: "Evaluación Digital", value: "$45.000", price: "GRATIS" },
+        { name: "Asistente AI 24/7", value: "$30.000", price: "GRATIS" },
+        { name: "Kit de Recuperación", value: "$25.000", price: "GRATIS" },
+        { name: "Portal de Paciente", value: "Invaluable", price: "GRATIS" },
       ],
       popular: true,
       gradient: "from-amber-600 to-amber-800",
       price: "280.000",
+      totalValue: "$400.000+",
     },
     {
       name: "Plan Elite",
-      description: "La experiencia definitiva de salud y bienestar",
+      description: "La experiencia definitiva sin límites.",
       icon: Crown,
       features: [
-        "Sesiones ILIMITADAS*",
+        "Sesiones ILIMITADAS (Todo el mes)",
         "Kinesiólogo dedicado asignado",
-        "Kit Premium a domicilio incluido",
         "Prioridad absoluta en agenda",
-        "Gamificación y premios",
         "Red de especialistas preferente",
-        "Todo incluido, sin límites",
+      ],
+      bonuses: [
+        { name: "Todo el Pack Premium", value: "$400.000", price: "INCLUIDO" },
+        { name: "Consultas Ilimitadas", value: "Invaluable", price: "INCLUIDO" },
       ],
       popular: false,
       gradient: "from-slate-700 to-slate-900",
       price: "Consultar",
+      totalValue: "Incalculable",
     },
   ]
 
   return (
     <div className="min-h-screen bg-slate-50">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <WhatsAppButton />
 
       <header className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white shadow-2xl sticky top-0 z-50 backdrop-blur-sm border-b border-slate-700">
@@ -178,9 +228,9 @@ export default function HomePage() {
               <a href="#planes" className="hover:text-amber-400 transition-colors font-medium text-slate-200">
                 Membresías
               </a>
-              <a href="#nosotros" className="hover:text-amber-400 transition-colors font-medium text-slate-200">
-                Expertise
-              </a>
+              <Link href="/nosotros" className="hover:text-amber-400 transition-colors font-medium text-slate-200">
+                Equipo Clínico
+              </Link>
               <a href="#contacto" className="hover:text-amber-400 transition-colors font-medium text-slate-200">
                 Contacto
               </a>
@@ -209,32 +259,31 @@ export default function HomePage() {
                 The Future of Recovery
               </Badge>
               <h2 className="text-5xl md:text-7xl font-bold text-slate-900 mb-8 font-serif leading-tight">
-                Rehabilitación <span className="text-amber-700">Clínica</span>
+                Elimina tu Dolor y
                 <br />
-                <span className="text-4xl md:text-5xl text-slate-600">a Domicilio</span>
+                <span className="text-amber-700">Recupera tu Libertad</span>
+                <br />
+                <span className="text-3xl md:text-4xl text-slate-600 font-sans font-normal block mt-4">Sin Salir de Casa</span>
               </h2>
             </div>
 
             <p className="text-xl md:text-2xl text-slate-700 mb-12 leading-relaxed max-w-4xl mx-auto">
-              <strong>KINEUM</strong> redefine la kinesiología domiciliaria.
-              Fusionamos la excelencia clínica con <strong>tecnología de monitoreo avanzada</strong> para acelerar su recuperación con precisión y confort.
+              Somos los únicos especialistas en rehabilitación a domicilio con <strong>Tecnología de Monitoreo + Asistente AI 24/7</strong>.
+              <br />
+              Agendamos hoy. Vamos hoy.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
               <Button
                 size="lg"
-                className="text-lg px-10 py-6 shadow-xl hover:shadow-2xl transition-all duration-300 bg-emerald-600 hover:bg-emerald-700 text-white border border-emerald-500"
-                onClick={() => window.open("https://wa.me/56999679593", "_blank")}
+                className="text-lg px-10 py-6 shadow-xl hover:shadow-2xl transition-all duration-300 bg-emerald-600 hover:bg-emerald-700 text-white border border-emerald-500 transform hover:scale-105"
+                onClick={() => window.open("https://wa.me/56999679593?text=Hola, quiero verificar disponibilidad para evaluación kinesiologica", "_blank")}
               >
-                <MessageCircle className="h-5 w-5 mr-3" />
-                WhatsApp +56 9 9967 9593
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="text-lg px-10 py-6 bg-white hover:bg-slate-50 shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-slate-300 text-slate-900"
-              >
-                Ver Todos los Servicios
+                <MessageCircle className="h-6 w-6 mr-3" />
+                <span className="flex flex-col items-start text-left">
+                  <span className="font-bold">Verificar Disponibilidad</span>
+                  <span className="text-xs font-normal opacity-90">Respuesta en menos de 5 min</span>
+                </span>
               </Button>
             </div>
 
@@ -445,86 +494,147 @@ export default function HomePage() {
             {plans.map((plan, index) => (
               <Card
                 key={index}
-                className={`relative group hover:shadow-2xl transition-all duration-500 border border-slate-300 shadow-lg bg-white hover:-translate-y-3 ${plan.popular ? "ring-2 ring-amber-500 scale-105" : ""
+                className={`relative group hover:shadow-2xl transition-all duration-500 border border-slate-300 shadow-lg bg-white hover:-translate-y-3 flex flex-col ${plan.popular ? "ring-4 ring-amber-500 scale-105 z-10" : ""
                   }`}
               >
                 {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <Badge className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-6 py-2 shadow-lg border border-amber-500">
+                  <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 w-full text-center">
+                    <Badge className="bg-gradient-to-r from-amber-600 to-amber-700 text-white px-8 py-2 shadow-xl border-amber-500 text-sm font-bold tracking-wider uppercase">
                       <Crown className="h-4 w-4 mr-2" />
-                      Más Popular
+                      Opción Recomendada
                     </Badge>
                   </div>
                 )}
 
-                <div className={`h-2 bg-gradient-to-r ${plan.gradient} rounded-t-xl`}></div>
+                <div className={`h-3 bg-gradient-to-r ${plan.gradient} rounded-t-xl`}></div>
 
                 <CardHeader className="text-center pb-4 pt-8">
-                  <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r ${plan.gradient} p-0.5`}>
+                  <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-r ${plan.gradient} p-0.5 shadow-md`}>
                     <div className="w-full h-full bg-white rounded-2xl flex items-center justify-center">
                       <plan.icon className="h-8 w-8 text-slate-700" />
                     </div>
                   </div>
                   <CardTitle className="text-2xl font-bold text-slate-900 font-serif mb-2">{plan.name}</CardTitle>
-                  <div className="mb-4">
-                    <span className="text-3xl font-bold text-slate-900">${plan.price}</span>
-                    {plan.price !== "Consultar" && <span className="text-slate-600 font-medium">/mes</span>}
-                  </div>
-                  <CardDescription className="text-slate-600 text-base leading-relaxed">
+                  <CardDescription className="text-slate-600 text-sm leading-relaxed min-h-[40px]">
                     {plan.description}
                   </CardDescription>
+                  <div className="my-6">
+                    <p className="text-xs text-slate-400 uppercase font-bold tracking-widest mb-1">Valor Total</p>
+                    <span className="text-lg font-bold text-slate-400 line-through decoration-red-500 decoration-2">{plan.totalValue}</span>
+                    <div className="flex items-center justify-center gap-2 mt-1">
+                      <span className="text-4xl font-black text-slate-900 tracking-tight">${plan.price}</span>
+                      {plan.price !== "Consultar" && <span className="text-slate-500 font-semibold self-end mb-1">/mes</span>}
+                    </div>
+                  </div>
                 </CardHeader>
 
-                <CardContent className="pt-0">
-                  <ul className="space-y-4 mb-8">
-                    {plan.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-start text-sm">
-                        <div className="bg-emerald-100 rounded-full p-1 mr-3 flex-shrink-0 mt-0.5">
-                          <Check className="h-3 w-3 text-emerald-600" />
-                        </div>
-                        <span className="font-medium leading-relaxed text-slate-700">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
+                <CardContent className="pt-0 flex-grow">
+                  <div className="space-y-6">
+                    <div>
+                      <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3 flex items-center">
+                        <Shield className="h-3 w-3 mr-1" /> Lo que incluye:
+                      </h4>
+                      <ul className="space-y-3">
+                        {plan.features.map((feature, featureIndex) => (
+                          <li key={featureIndex} className="flex items-start text-sm">
+                            <Check className="h-4 w-4 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
+                            <span className="font-medium text-slate-700">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
 
+                    {plan.bonuses && (
+                      <div className="bg-amber-50 rounded-xl p-4 border border-amber-100">
+                        <h4 className="text-xs font-bold text-amber-800 uppercase tracking-wider mb-3 flex items-center">
+                          <Sparkles className="h-3 w-3 mr-1" /> Bonuses (Gratis):
+                        </h4>
+                        <ul className="space-y-2">
+                          {plan.bonuses.map((bonus, bIndex) => (
+                            <li key={bIndex} className="flex items-center justify-between text-xs">
+                              <span className="text-slate-700 font-medium flex items-center">
+                                <span className="h-1.5 w-1.5 rounded-full bg-amber-400 mr-2"></span>
+                                {bonus.name}
+                              </span>
+                              <div className="flex flex-col items-end">
+                                <span className="text-slate-400 line-through text-[10px]">{bonus.value}</span>
+                                <span className="text-emerald-600 font-bold uppercase tracking-wider bg-emerald-100 px-1.5 rounded-[2px]">{bonus.price}</span>
+                              </div>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                </CardContent>
+
+                <div className="p-6 pt-0 mt-auto">
                   <Button
-                    className="w-full text-lg py-6 font-semibold transition-all duration-300 bg-emerald-600 hover:bg-emerald-700 text-white border border-emerald-500"
+                    className={`w-full text-lg py-6 font-bold transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-1 ${plan.popular ? "bg-amber-600 hover:bg-amber-700 text-white border-amber-500" : "bg-slate-900 hover:bg-slate-800 text-white"
+                      }`}
                     onClick={() =>
                       window.open(
-                        `https://wa.me/56999679593?text=Hola, me interesa el ${plan.name}. ¿Podrían darme más información?`,
+                        `https://wa.me/56999679593?text=Hola, quiero aprovechar la oferta del ${plan.name}.`,
                         "_blank",
                       )
                     }
                   >
-                    <MessageCircle className="h-4 w-4 mr-2" />
-                    Consultar {plan.name}
+                    <MessageCircle className="h-5 w-5 mr-2" />
+                    Quiero este Plan
                   </Button>
-                </CardContent>
+                </div>
               </Card>
             ))}
           </div>
 
-          <div className="text-center mt-16">
-            <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 shadow-lg max-w-4xl mx-auto border border-slate-200">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4 font-serif">¿Necesitas un Plan Personalizado?</h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Creamos planes específicos para condiciones complejas, tratamientos de larga duración o necesidades
-                especiales. Contáctanos para una evaluación personalizada sin costo.
+          {/* Risk Reversal / Guarantee Section */}
+          <div className="max-w-4xl mx-auto mt-20 mb-16">
+            <div className="bg-gradient-to-r from-slate-900 to-slate-800 rounded-3xl p-8 md:p-12 shadow-2xl border border-slate-700 relative overflow-hidden text-center transform hover:scale-[1.02] transition-transform duration-500">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl"></div>
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl"></div>
+
+              <Badge className="mb-6 px-6 py-2 text-sm font-bold bg-amber-500 text-slate-900 border-none shadow-lg">
+                <Shield className="h-4 w-4 mr-2" />
+                RIESGO CERO
+              </Badge>
+
+              <h3 className="text-3xl md:text-4xl font-bold text-white mb-6 font-serif">
+                Garantía "Primera Sesión Perfecta"
+              </h3>
+
+              <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-10">
+                Estamos tan seguros de nuestra calidad clínica, que si no sientes que recibiste una atención de excelencia en tu primera visita, <span className="text-white font-bold border-b-2 border-amber-500">te devolvemos el 100% de tu dinero</span>.
+                <br className="hidden md:block" />
+                Sin letra chica. Sin preguntas incómodas.
               </p>
-              <Button
-                size="lg"
-                className="text-lg px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white transition-all duration-300 border border-emerald-500"
-                onClick={() =>
-                  window.open(
-                    "https://wa.me/56999679593?text=Hola, necesito información sobre un plan personalizado de kinesiología",
-                    "_blank",
-                  )
-                }
-              >
-                <MessageCircle className="h-5 w-5 mr-2" />
-                Consulta Personalizada
-              </Button>
+
+              <div className="flex justify-center">
+                <Button
+                  size="lg"
+                  className="text-lg px-8 py-6 bg-white text-slate-900 hover:bg-slate-100 font-bold shadow-xl transition-all duration-300"
+                  onClick={() => window.open("https://wa.me/56999679593?text=Hola, quiero agendar mi primera sesión con Garantía de Satisfacción", "_blank")}
+                >
+                  <Check className="h-5 w-5 mr-2 text-emerald-600" />
+                  Agendar mi Primera Sesión Segura
+                </Button>
+              </div>
             </div>
+          </div>
+
+          <div className="text-center opacity-80 hover:opacity-100 transition-opacity">
+            <p className="text-slate-600 mb-2">¿Tienes una condición compleja?</p>
+            <Button
+              variant="link"
+              className="text-emerald-700 font-semibold text-base p-0 h-auto"
+              onClick={() =>
+                window.open(
+                  "https://wa.me/56999679593?text=Hola, necesito información sobre un plan personalizado",
+                  "_blank",
+                )
+              }
+            >
+              Consulta por un Plan Personalizado →
+            </Button>
           </div>
         </div>
       </section>
@@ -540,7 +650,7 @@ export default function HomePage() {
               <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-8 font-serif leading-tight">
                 ¿Por qué elegir
                 <br />
-                <span className="text-amber-700">KineEnCasa?</span>
+                <span className="text-amber-700">KINEUM?</span>
               </h2>
               <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                 Somos un equipo de kinesiólogos profesionales especializados en atención domiciliaria. Entendemos que la
@@ -725,16 +835,31 @@ export default function HomePage() {
             </a>
           </div>
 
-          <div className="mt-10 text-center">
-            <p className="text-slate-600 mb-4">
-              También atendemos en: <strong>La Florida, Peñalolén, Macul, San Joaquín y Santiago Centro</strong>
-            </p>
+          <div className="mt-12 text-center">
+            <h4 className="text-xl font-bold text-slate-900 mb-6 font-serif">Más comunas en nuestra red de atención:</h4>
+            <div className="flex flex-wrap justify-center gap-3 mb-8">
+              {[
+                { name: 'La Florida', slug: 'la-florida' },
+                { name: 'Peñalolén', slug: 'penalolen' },
+                { name: 'Macul', slug: 'macul' },
+                { name: 'San Joaquín', slug: 'san-joaquin' },
+                { name: 'Santiago Centro', slug: 'santiago-centro' },
+              ].map((comuna) => (
+                <a
+                  key={comuna.slug}
+                  href={`/kinesiologo-a-domicilio-${comuna.slug}`}
+                  className="bg-white border border-slate-200 text-slate-700 hover:bg-emerald-50 hover:text-emerald-700 hover:border-emerald-200 px-5 py-2.5 rounded-full text-sm font-medium transition-all shadow-sm"
+                >
+                  {comuna.name}
+                </a>
+              ))}
+            </div>
             <Button
               className="bg-emerald-600 hover:bg-emerald-700 text-white"
               onClick={() => window.open("https://wa.me/56999679593?text=Hola, ¿atienden kinesiología a domicilio en mi comuna?", "_blank")}
             >
               <MessageCircle className="h-4 w-4 mr-2" />
-              Consultar Cobertura
+              Consultar otra comuna
             </Button>
           </div>
         </div>
@@ -760,7 +885,7 @@ export default function HomePage() {
             <Link href="/blog/neuroplasticidad-recuperacion-acv" className="group cursor-pointer block">
               <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-slate-100">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/neurological-physiotherapy.png"
                   alt="Recovery Science"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -786,7 +911,7 @@ export default function HomePage() {
             <Link href="/blog/ergonomia-home-office-guia-2024" className="group cursor-pointer block">
               <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-slate-100">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/placeholder.jpg"
                   alt="Ergonomics"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -812,7 +937,7 @@ export default function HomePage() {
             <Link href="/blog/sarcopenia-fuerza-es-salud" className="group cursor-pointer block">
               <div className="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-slate-100">
                 <img
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/physiotherapist-elderly-exercise.png"
                   alt="Elderly Care"
                   className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
                 />

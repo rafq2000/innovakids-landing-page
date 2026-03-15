@@ -20,6 +20,7 @@ import {
     Star,
     Zap,
 } from "lucide-react"
+import { FAQStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Preguntas Frecuentes Legales Chile 2026 | FAQ Abogado Gratis | LegalPO",
@@ -269,8 +270,16 @@ const faqCategories = [
 ]
 
 export default function PreguntasFrecuentes() {
+    const allFaqs = faqCategories.flatMap((cat) =>
+        cat.questions.map((faq) => ({
+            question: faq.q,
+            answer: faq.a,
+        }))
+    )
+
     return (
         <div className="min-h-screen bg-slate-900 text-white">
+            <FAQStructuredData faqs={allFaqs} />
             {/* Hero Section */}
             <section className="py-16 bg-gradient-to-b from-slate-800/30 to-transparent border-b border-white/5">
                 <div className="container max-w-5xl mx-auto px-4">
@@ -403,27 +412,6 @@ export default function PreguntasFrecuentes() {
                     </div>
                 </div>
             </section>
-
-            {/* Schema.org FAQ */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        mainEntity: faqCategories.flatMap((cat) =>
-                            cat.questions.map((faq) => ({
-                                "@type": "Question",
-                                name: faq.q,
-                                acceptedAnswer: {
-                                    "@type": "Answer",
-                                    text: faq.a,
-                                },
-                            }))
-                        ),
-                    }),
-                }}
-            />
         </div>
     )
 }

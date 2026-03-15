@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import EmbargoClient from "./embargo-client"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Scale, HeartHandshake, ShieldCheck, CircleHelp } from "lucide-react"
-
+import { Scale, HeartHandshake, ShieldCheck, CircleHelp, CheckCircle2 } from "lucide-react"
+import { CalculatorStructuredData, FAQStructuredData } from "@/components/structured-data"
 export const metadata: Metadata = {
     title: "Calculadora Embargo de Sueldo Chile | Cuánto me pueden quitar",
     description:
@@ -24,55 +24,29 @@ export const metadata: Metadata = {
 }
 
 export default function EmbargoPage() {
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        name: "Calculadora de Embargo de Sueldo",
-        applicationCategory: "FinanceApplication",
-        operatingSystem: "Web",
-        offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "CLP",
+    const faqs = [
+        {
+            question: "¿Cuánto es lo máximo que me pueden embargar?",
+            answer: "Por regla general (deudas de comercio), las remuneraciones son inembargables hasta 56 UF. Todo lo que exceda ese monto puede ser embargado.",
         },
-        description: "Herramienta para calcular los montos inembargables del sueldo según el Código del Trabajo chileno.",
-    }
-
-    const faqSchema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: [
-            {
-                "@type": "Question",
-                name: "¿Cuánto es lo máximo que me pueden embargar?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Por regla general (deudas de comercio), las remuneraciones son inembargables hasta 56 UF. Todo lo que exceda ese monto puede ser embargado.",
-                },
-            },
-            {
-                "@type": "Question",
-                name: "¿Me pueden embargar el sueldo mínimo?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "No. El sueldo mínimo y cualquier monto bajo las 56 UF está protegido por ley contra embargos de deudas comerciales.",
-                },
-            },
-            {
-                "@type": "Question",
-                name: "¿Qué pasa con la pensión de alimentos?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Es la excepción. Por pensión de alimentos se puede embargar hasta el 50% de las rentas, sin aplicar el límite de las 56 UF de protección.",
-                },
-            },
-        ],
-    }
+        {
+            question: "¿Me pueden embargar el sueldo mínimo?",
+            answer: "No. El sueldo mínimo y cualquier monto bajo las 56 UF está protegido por ley contra embargos de deudas comerciales.",
+        },
+        {
+            question: "¿Qué pasa con la pensión de alimentos?",
+            answer: "Es la excepción. Por pensión de alimentos se puede embargar hasta el 50% de las rentas, sin aplicar el límite de las 56 UF de protección.",
+        },
+    ]
 
     return (
         <div className="min-h-screen bg-slate-50">
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <CalculatorStructuredData
+                name="Calculadora de Embargo de Sueldo Chile"
+                description="Herramienta para calcular los montos inembargables del sueldo según el Código del Trabajo chileno."
+                url="https://legalpo.cl/calculators/embargo-sueldo"
+            />
+            <FAQStructuredData faqs={faqs} />
 
             <main className="container mx-auto px-4 py-12 max-w-6xl">
                 <EmbargoClient />
@@ -84,18 +58,24 @@ export default function EmbargoPage() {
                                 <ShieldCheck className="h-6 w-6 text-red-600" />
                                 ¿Cómo funciona el Embargo de Sueldo en Chile?
                             </h2>
+                            <div className="bg-red-50 border border-red-200 rounded-xl p-6 text-left shadow-sm mb-8">
+                                <h2 className="text-xl font-bold text-slate-900 mb-2 flex items-center">
+                                    <CheckCircle2 className="h-5 w-5 text-red-600 mr-2" />
+                                    ¿Cuál es el límite inembargable de mi sueldo?
+                                </h2>
+                                <p className="text-slate-700">
+                                    En Chile, para deudas comunes (créditos de consumo, retail, tarjetas), el sueldo es <strong>inembargable por ley hasta un monto equivalente a 56 Unidades de Fomento (UF)</strong> (aproximadamente $2.100.000). Esto significa que <strong>todo lo que ganes por debajo de ese monto está completamente protegido</strong> y no puede ser retenido ni embargado por instituciones financieras. Solo pueden embargarte el dinero que exceda, o supere, ese tope de las 56 UF mensuales.
+                                </p>
+                            </div>
+
+                            <h3 className="text-xl font-semibold mt-6 mb-3">Marco Legal protector</h3>
                             <div className="prose prose-slate max-w-none text-slate-700">
                                 <p>
-                                    El miedo al embargo es común, pero la ley chilena protege el sustento del trabajador. El <strong>Artículo 57 del Código del Trabajo</strong> establece límites claros para evitar que un trabajador quede sin ingresos para vivir.
-                                </p>
-
-                                <h3 className="text-xl font-semibold mt-6 mb-3">La Regla de las 56 UF</h3>
-                                <p>
-                                    Para deudas comunes (créditos de consumo, retail, tarjetas), el sueldo es <strong>inembargable</strong> hasta un monto de 56 Unidades de Fomento (aprox. $2.100.000).
+                                    El miedo al embargo es común, pero la ley chilena protege el sustento mínimo del trabajador. El <strong>Artículo 57 del Código del Trabajo</strong> establece límites claros para evitar que quedes sin el ingreso básico para vivir junto a tu familia.
                                 </p>
                                 <ul className="list-disc pl-5 mt-2 space-y-2">
-                                    <li><strong>Si ganas menos de 56 UF:</strong> No te pueden tocar ni un peso.</li>
-                                    <li><strong>Si ganas más de 56 UF:</strong> Solo te pueden quitar lo que sobrepase ese monto.</li>
+                                    <li><strong>Si ganas menos de 56 UF líquidas:</strong> No te pueden tocar ni un solo peso de tu liquidación por concepto de embargo de retail o banco.</li>
+                                    <li><strong>Si ganas más de 56 UF:</strong> Pueden retener única y excluvivamente la suma de dinero que está por encima de la línea base protegida legalmente.</li>
                                 </ul>
                             </div>
                         </div>

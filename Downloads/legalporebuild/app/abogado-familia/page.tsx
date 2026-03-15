@@ -10,6 +10,7 @@ import {
     Baby, Home, AlertCircle, FileCheck, Phone, HeartHandshake,
     CheckCircle2, XCircle
 } from "lucide-react"
+import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado de Familia Chile 2026 | Divorcio, Pensión, Tuición | Consulta Gratis",
@@ -35,12 +36,12 @@ export const metadata: Metadata = {
 }
 
 const faqs = [
-    { q: "¿Qué necesito para divorciarme?", a: "Principalmente acreditar el 'Cese de Convivencia'. Si es de mutuo acuerdo, necesitas 1 año de cese. Si es unilateral (uno quiere y el otro no), necesitas 3 años de cese. También existe el divorcio culposo (sin plazo) por faltas graves como infidelidad o violencia." },
-    { q: "¿Cuánto es la pensión mínima en 2026?", a: "Se calcula base al sueldo mínimo. Para un hijo es el 40% del ingreso mínimo. Si tienes dos o más hijos, es el 30% por cada uno. Sin embargo, el juez siempre evaluará la capacidad económica real de las partes." },
-    { q: "¿Qué pasa si no me pagan la pensión?", a: "Se activa el Registro Nacional de Deudores. Puedes solicitar: arraigo nacional (no puede salir del país), retención de devolución de impuestos, suspensión de licencia de conducir y retención de fondos bancarios." },
-    { q: "¿Cómo obtengo la tuición (Cuidado Personal)?", a: "La ley prioriza el acuerdo de los padres (Cuidado Compartido). Si no hay acuerdo, el juez decide basándose en quien ha sido la figura principal de apego, el entorno, y la opinión del niño (Derecho a ser Oído)." },
-    { q: "¿Qué hago ante Violencia Intrafamiliar (VIF)?", a: "Debes denunciar inmediatamente en Carabineros, PDI o Fiscalía. Puedes solicitar medidas cautelares urgentes como la salida del agresor del hogar común y prohibición de acercamiento, antes incluso de iniciar el juicio." },
-    { q: "¿Cuánto cobra un abogado de familia?", a: "Varía según la complejidad. Un divorcio mutuo acuerdo es más económico ($300k-$600k). Juicios complejos de tuición o alimentos pueden costar más. En LegalPO ofrecemos facilidades y orientación inicial gratuita." },
+    { question: "¿Qué necesito para divorciarme?", answer: "Principalmente acreditar el 'Cese de Convivencia'. Si es de mutuo acuerdo, necesitas 1 año de cese. Si es unilateral (uno quiere y el otro no), necesitas 3 años de cese. También existe el divorcio culposo (sin plazo) por faltas graves como infidelidad o violencia." },
+    { question: "¿Cuánto es la pensión mínima en 2026?", answer: "Se calcula base al sueldo mínimo. Para un hijo es el 40% del ingreso mínimo. Si tienes dos o más hijos, es el 30% por cada uno. Sin embargo, el juez siempre evaluará la capacidad económica real de las partes." },
+    { question: "¿Qué pasa si no me pagan la pensión?", answer: "Se activa el Registro Nacional de Deudores. Puedes solicitar: arraigo nacional (no puede salir del país), retención de devolución de impuestos, suspensión de licencia de conducir y retención de fondos bancarios." },
+    { question: "¿Cómo obtengo la tuición (Cuidado Personal)?", answer: "La ley prioriza el acuerdo de los padres (Cuidado Compartido). Si no hay acuerdo, el juez decide basándose en quien ha sido la figura principal de apego, el entorno, y la opinión del niño (Derecho a ser Oído)." },
+    { question: "¿Qué hago ante Violencia Intrafamiliar (VIF)?", answer: "Debes denunciar inmediatamente en Carabineros, PDI o Fiscalía. Puedes solicitar medidas cautelares urgentes como la salida del agresor del hogar común y prohibición de acercamiento, antes incluso de iniciar el juicio." },
+    { question: "¿Cuánto cobra un abogado de familia?", answer: "Varía según la complejidad. Un divorcio mutuo acuerdo es más económico ($300k-$600k). Juicios complejos de tuición o alimentos pueden costar más. En LegalPO ofrecemos facilidades y orientación inicial gratuita." },
 ]
 
 export default function AbogadoFamiliaPage() {
@@ -313,10 +314,10 @@ export default function AbogadoFamiliaPage() {
                             {faqs.map((faq, i) => (
                                 <AccordionItem key={i} value={`faq-${i}`} className="bg-white shadow-sm border rounded-lg mb-2 px-4">
                                     <AccordionTrigger className="text-left font-medium text-slate-800 hover:text-rose-600 py-4 text-base">
-                                        {faq.q}
+                                        {faq.question}
                                     </AccordionTrigger>
                                     <AccordionContent className="text-slate-600 pb-4 text-base leading-relaxed">
-                                        {faq.a}
+                                        {faq.answer}
                                     </AccordionContent>
                                 </AccordionItem>
                             ))}
@@ -348,24 +349,16 @@ export default function AbogadoFamiliaPage() {
                 </div>
             </section>
 
-            <script type="application/ld+json" dangerouslySetInnerHTML={{
-                __html: JSON.stringify({
-                    "@context": "https://schema.org",
-                    "@type": "LegalService",
-                    "name": "LegalPO - Abogados de Familia Expertos",
-                    "url": "https://www.legalpo.cl/abogado-familia",
-                    "image": "https://www.legalpo.cl/og-familia.jpg",
-                    "description": "Especialistas en divorcios, pensiones de alimentos 2026 y tuición. Consulta inicial gratuita.",
-                    "serviceType": "Derecho de Familia",
-                    "address": {
-                        "@type": "PostalAddress",
-                        "addressCountry": "CL",
-                        "addressRegion": "Región Metropolitana"
-                    },
-                    "priceRange": "Consulta Gratis",
-                    "telephone": "+56912345678"
-                })
-            }} />
+            <LegalServiceStructuredData
+                name="LegalPO - Abogados de Familia Expertos"
+                description="Especialistas en divorcios, pensiones de alimentos 2026 y tuición. Consulta inicial gratuita."
+                url="https://www.legalpo.cl/abogado-familia"
+                image="https://www.legalpo.cl/og-familia.jpg"
+                priceRange="Consulta Gratis"
+                telephone="+56912345678"
+                addressRegion="Región Metropolitana"
+            />
+            <FAQStructuredData faqs={faqs} />
         </div>
     )
 }

@@ -38,12 +38,12 @@ export const metadata: Metadata = {
         "kinesiólogo sector oriente",
     ],
     alternates: {
-        canonical: `https://kineencasa.cl/kinesiologo-a-domicilio-${comunaData.slug}`,
+        canonical: `https://kineum.cl/kinesiologo-a-domicilio-${comunaData.slug}`,
     },
     openGraph: {
-        title: `Kinesiólogo a Domicilio en ${comunaData.nombre} | KineEnCasa`,
-        description: `Kinesiología profesional a domicilio en ${comunaData.nombre}. Rehabilitación especializada en tu hogar. ☎ +56 9 9967 9593`,
-        url: `https://kineencasa.cl/kinesiologo-a-domicilio-${comunaData.slug}`,
+        title: `Kinesiólogo a Domicilio en ${comunaData.nombre} | KINEUM`,
+        description: `Kinesiología premium a domicilio en ${comunaData.nombre}. Kinesiólogos certificados a su hogar.`,
+        url: `https://kineum.cl/kinesiologo-a-domicilio-${comunaData.slug}`,
         type: "website",
         locale: "es_CL",
     },

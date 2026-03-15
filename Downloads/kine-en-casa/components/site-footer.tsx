@@ -85,8 +85,10 @@ export function SiteFooter() {
                             <li className="flex items-start space-x-3">
                                 <MapPin className="h-5 w-5 text-amber-500 mt-0.5" />
                                 <div>
-                                    <span className="block text-white font-medium">Santiago, Chile</span>
-                                    <span className="text-xs">Sector Oriente</span>
+                                    <span className="block text-white font-medium">Kineum SpA</span>
+                                    <span className="text-xs block mt-1">RUT: 76.892.102-K</span>
+                                    <span className="text-xs block">Av. Apoquindo 4501, Las Condes</span>
+                                    <span className="text-xs block">Santiago, Chile</span>
                                 </div>
                             </li>
                             <li className="flex items-start space-x-3">

@@ -2,7 +2,8 @@ import type { Metadata } from "next"
 import CalculatorClient from "./calculator-client"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { BookOpen, HelpCircle, Scale, Calculator, DollarSign } from "lucide-react"
+import { BookOpen, HelpCircle, Scale, Calculator, DollarSign, CheckCircle2 } from "lucide-react"
+import { CalculatorStructuredData, FAQStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
   title: "Calculadora de Pensión de Alimentos Chile 2026 | LegalPo",
@@ -25,68 +26,33 @@ export const metadata: Metadata = {
 }
 
 export default function CalculadoraPensionesPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "Calculadora de Pensión de Alimentos Chile",
-    applicationCategory: "FinanceApplication",
-    operatingSystem: "Web",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "CLP",
+  const faqs = [
+    {
+      question: "¿Con cuántas cuotas impagas puedo demandar?",
+      answer: "Con una cuota mensual ya existe incumplimiento. Incluso si el pago es parcial (incompleto). Puedes solicitar de inmediato la liquidación de la deuda al tribunal.",
     },
-    description: "Herramienta gratuita para calcular pensiones alimenticias en Chile según la Ley 14.908.",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      ratingCount: "1250",
+    {
+      question: "¿Es efectivo que me pueden retener hasta el 50% de mi sueldo?",
+      answer: "Sí. La ley permite embargar o retener por planilla hasta un máximo del 50% de las rentas del alimentante cuando se trata de deudas de pensión alimenticia.",
     },
-  }
-
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "¿Cuál es el monto mínimo de pensión alimenticia en 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Para 2026, el monto mínimo se calcula en base al sueldo mínimo. Si tienes un hijo, es el 40% del ingreso mínimo remuneracional. Si tienes dos o más hijos, es el 30% por cada uno.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿Qué porcentaje del sueldo se paga por pensión de alimentos?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "No existe un porcentaje fijo único, pero la ley establece que el monto no puede exceder el 50% de los ingresos del alimentante para todas las pensiones combinadas.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿Qué gastos cubre la pensión de alimentos?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "La pensión debe cubrir al menos: alimentación, habitación (vivienda), vestimenta, educación, salud, recreación y movilización.",
-        },
-      },
-      {
-        "@type": "Question",
-        name: "¿Hasta qué edad se paga la pensión de alimentos?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Por regla general hasta los 21 años. Si el hijo está estudiando una profesión u oficio, la obligación se extiende hasta los 28 años.",
-        },
-      },
-    ],
-  }
+    {
+      question: "¿La pensión de alimentos se cuenta retroactiva?",
+      answer: "No, la pensión se debe desde el momento en que presentas legalmente la demanda en el Tribunal de Familia y se notifica a la otra parte.",
+    },
+    {
+      question: "¿Hasta qué edad se debe pagar la pensión?",
+      answer: "Por regla general hasta los 21 años. Si el hijo está estudiando una profesión u oficio, la obligación se extiende hasta los 28 años.",
+    },
+  ]
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <FAQStructuredData faqs={faqs} />
+      <CalculatorStructuredData
+        name="Calculadora de Pensión de Alimentos Chile 2026"
+        description="Calcula el monto de pensión alimenticia en Chile basado en la Ley 14.908. Herramienta gratuita y privada."
+        url="https://legalpo.cl/calculators/pension-alimentos"
+      />
 
       <CalculatorClient />
 
@@ -94,6 +60,17 @@ export default function CalculadoraPensionesPage() {
       <section className="container mx-auto px-4 py-12 max-w-6xl">
         <div className="grid md:grid-cols-3 gap-8">
           <div className="md:col-span-2 space-y-8">
+
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-left shadow-sm">
+              <h2 className="text-xl font-bold text-slate-900 mb-2 flex items-center">
+                <CheckCircle2 className="h-5 w-5 text-blue-600 mr-2" />
+                ¿Cómo calcular la pensión de alimentos en Chile?
+              </h2>
+              <p className="text-slate-700">
+                En Chile, la <strong>pensión de alimentos mínima</strong> legal para un solo hijo equivale al <strong>40% de un ingreso mínimo remuneracional</strong>. Si tienes dos o más hijos, el monto mínimo es de <strong>30% del ingreso mínimo</strong> por cada uno. En total, todas las pensiones que pague el padre o madre <strong>no pueden superar el 50%</strong> de sus ingresos totales.
+              </p>
+            </div>
+
             <div>
               <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
                 <BookOpen className="h-6 w-6 text-blue-600" />
@@ -212,7 +189,7 @@ export default function CalculadoraPensionesPage() {
             </Card>
           </aside>
         </div>
-      </section>
-    </div>
+      </section >
+    </div >
   )
 }

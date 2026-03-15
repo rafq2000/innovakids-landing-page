@@ -7,13 +7,14 @@ import Link from "next/link"
 import Image from "next/image"
 
 interface BlogPostProps {
-    params: {
+    params: Promise<{
         slug: string
-    }
+    }>
 }
 
 export async function generateMetadata({ params }: BlogPostProps) {
-    const post = getPostBySlug(params.slug)
+    const { slug } = await params
+    const post = getPostBySlug(slug)
     if (!post) return { title: "Artículo no encontrado" }
 
     return {
@@ -22,8 +23,9 @@ export async function generateMetadata({ params }: BlogPostProps) {
     }
 }
 
-export default function BlogPost({ params }: BlogPostProps) {
-    const post = getPostBySlug(params.slug)
+export default async function BlogPost({ params }: BlogPostProps) {
+    const { slug } = await params
+    const post = getPostBySlug(slug)
 
     if (!post) {
         notFound()

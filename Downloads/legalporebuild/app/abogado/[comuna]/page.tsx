@@ -19,6 +19,7 @@ import {
     FileText,
     Star,
 } from "lucide-react"
+import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
 
 interface PageProps {
     params: Promise<{ comuna: string }>
@@ -216,29 +217,13 @@ export default async function ComunaPage({ params }: PageProps) {
             </section>
 
             {/* Schema.org LocalBusiness */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "LegalService",
-                        name: `LegalPO - Abogado Gratis ${comuna.nombre}`,
-                        description: `Asesoría legal gratuita online para habitantes de ${comuna.nombre}. Consultas laborales, familiares y civiles.`,
-                        url: `https://legalpo.cl/abogado/${comuna.slug}`,
-                        areaServed: {
-                            "@type": "City",
-                            name: comuna.nombre,
-                            containedInPlace: {
-                                "@type": "AdministrativeArea",
-                                name: `Región ${comuna.region}`,
-                            },
-                        },
-                        serviceType: ["Asesoría Legal", "Consulta Jurídica", "Abogado Online"],
-                        availableLanguage: "Spanish",
-                        priceRange: "Gratis",
-                        openingHours: "Mo-Su 00:00-23:59",
-                    }),
-                }}
+            <LegalServiceStructuredData
+                name={`LegalPO - Abogado Gratis ${comuna.nombre}`}
+                description={`Asesoría legal gratuita online para habitantes de ${comuna.nombre}. Consultas laborales, familiares y civiles.`}
+                url={`https://legalpo.cl/abogado/${comuna.slug}`}
+                areaServedCity={comuna.nombre}
+                regionName={comuna.region}
+                serviceType={["Asesoría Legal", "Consulta Jurídica", "Abogado Online"]}
             />
         </div>
     )

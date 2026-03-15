@@ -1,4 +1,4 @@
-import { WithContext, Organization, LegalService, WebApplication, FAQPage, BreadcrumbList } from "schema-dts"
+import { WithContext, Organization, LegalService, WebApplication, FAQPage, BreadcrumbList, Article, HowTo } from "schema-dts"
 
 export function GlobalStructuredData() {
     const organizationSchema: WithContext<Organization> = {
@@ -116,6 +116,170 @@ export function FAQStructuredData({ faqs }: { faqs: { question: string; answer: 
                 text: f.answer
             }
         }))
+    }
+
+    return (
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+    )
+}
+
+export function LegalServiceStructuredData({
+    name,
+    description,
+    serviceType,
+    priceRange = "Gratis",
+    url,
+    image,
+    telephone,
+    addressRegion,
+    areaServedCity,
+    regionName,
+}: {
+    name: string;
+    description: string;
+    serviceType: string | string[];
+    priceRange?: string;
+    url?: string;
+    image?: string;
+    telephone?: string;
+    addressRegion?: string;
+    areaServedCity?: string;
+    regionName?: string;
+}) {
+    const schema: any = {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        name: name,
+        description: description,
+        serviceType: serviceType,
+        areaServed: areaServedCity
+            ? {
+                "@type": "City",
+                name: areaServedCity,
+                ...(regionName && {
+                    containedInPlace: {
+                        "@type": "AdministrativeArea",
+                        name: `Región ${regionName}`,
+                    }
+                })
+            }
+            : { "@type": "Country", name: "Chile" },
+        priceRange: priceRange,
+        ...(url && { url }),
+        ...(image && { image }),
+        ...(telephone && { telephone }),
+        ...(addressRegion && {
+            address: {
+                "@type": "PostalAddress",
+                addressCountry: "CL",
+                addressRegion: addressRegion
+            }
+        })
+    }
+
+    return (
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+    )
+}
+
+export function ArticleStructuredData({
+    headline,
+    description,
+    authorName = "LegalPO",
+    authorUrl = "https://legalpo.cl",
+    publisherName = "LegalPO",
+    publisherLogo = "https://legalpo.cl/images/legalpo-logo.png",
+    datePublished,
+    dateModified,
+    image,
+}: {
+    headline: string;
+    description: string;
+    authorName?: string;
+    authorUrl?: string;
+    publisherName?: string;
+    publisherLogo?: string;
+    datePublished: string;
+    dateModified: string;
+    image?: string;
+}) {
+    const schema: WithContext<Article> = {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline,
+        description,
+        author: {
+            "@type": "Organization",
+            name: authorName,
+            url: authorUrl,
+        },
+        publisher: {
+            "@type": "Organization",
+            name: publisherName,
+            logo: {
+                "@type": "ImageObject",
+                url: publisherLogo,
+            },
+        },
+        datePublished,
+        dateModified,
+        ...(image && { image }),
+    }
+
+    return (
+        <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+    )
+}
+
+export function HowToStructuredData({
+    name,
+    description,
+    totalTime,
+    estimatedCostCurrency = "CLP",
+    estimatedCostValue = "0",
+    tools,
+    steps,
+}: {
+    name: string;
+    description: string;
+    totalTime?: string;
+    estimatedCostCurrency?: string;
+    estimatedCostValue?: string;
+    tools?: string[];
+    steps: { name: string; text: string }[];
+}) {
+    const schema: WithContext<HowTo> = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        name,
+        description,
+        ...(totalTime && { totalTime }),
+        estimatedCost: {
+            "@type": "MonetaryAmount",
+            currency: estimatedCostCurrency,
+            value: estimatedCostValue,
+        },
+        ...(tools && tools.length > 0 && {
+            tool: tools.map(t => ({
+                "@type": "HowToTool",
+                name: t
+            }))
+        }),
+        step: steps.map((s, idx) => ({
+            "@type": "HowToStep",
+            name: s.name,
+            text: s.text,
+            position: idx + 1
+        })),
     }
 
     return (

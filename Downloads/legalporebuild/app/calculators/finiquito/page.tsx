@@ -34,6 +34,7 @@ import {
 import { cn } from "@/lib/utils"
 import { ShareButton } from "@/components/share-button"
 import { AdUnit } from "@/components/ad-unit"
+import { CalculatorStructuredData } from "@/components/structured-data"
 import Link from "next/link"
 
 // Función para formatear dinero
@@ -473,6 +474,11 @@ Calcula el tuyo GRATIS en LegalPO.cl
 
   return (
     <div className="min-h-screen bg-slate-900 text-white">
+      <CalculatorStructuredData
+        name="Calculadora de Finiquito Chile 2026"
+        description="Calcula tu finiquito y remuneraciones pendientes según el código legal de Chile."
+        url="https://legalpo.cl/calculators/finiquito"
+      />
       {/* SEO Rich Content Header - Optimizado para "calculadora de finiquito" */}
       <section className="py-16 bg-gradient-to-b from-slate-800/30 to-transparent border-b border-white/5">
         <div className="container">
@@ -495,7 +501,7 @@ Calcula el tuyo GRATIS en LegalPO.cl
             <h2 className="text-xl md:text-2xl font-semibold mb-4 text-emerald-400">
               🚀 La Calculadora de Finiquito Más Precisa y Confiable de Chile
             </h2>
-            <p className="text-lg text-slate-300 leading-relaxed mb-8">
+            <p className="text-lg text-slate-300 leading-relaxed mb-6">
               <strong className="text-white">Calculadora de finiquito Chile #1</strong> - La herramienta más precisa
               para calcular tu finiquito laboral. Calcula tu indemnización por años de servicio, vacaciones
               proporcionales, aviso previo y más según el Código del Trabajo chileno 2026.
@@ -504,6 +510,16 @@ Calcula el tuyo GRATIS en LegalPO.cl
                 Más de 100,000 trabajadores chilenos ya calcularon su finiquito con nosotros.
               </strong>
             </p>
+
+            <div className="bg-slate-800/80 border border-emerald-500/30 rounded-xl p-6 text-left max-w-3xl mx-auto mb-8 shadow-lg shadow-emerald-900/20">
+              <h2 className="text-xl font-bold text-white mb-2 flex items-center">
+                <CheckCircle className="h-5 w-5 text-emerald-400 mr-2" />
+                ¿Cómo se calcula el finiquito en Chile?
+              </h2>
+              <p className="text-slate-200">
+                El cálculo del finiquito incluye el pago de los <strong>días trabajados en el mes del despido</strong>, la <strong>indemnización por años de servicio</strong> (si fuiste despedido por necesidades de la empresa, art. 161), la <strong>indemnización por falta de aviso previo</strong> (1 mes de sueldo si no te avisaron con 30 días) y las <strong>vacaciones proporcionales</strong> que no tomaste.
+              </p>
+            </div>
 
             {/* Trust Indicators - Optimizados para SEO */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">

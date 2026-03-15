@@ -24,10 +24,12 @@ import {
     Info,
     RefreshCw,
     Share2,
-    Printer
+    Printer,
+    CheckCircle2
 } from "lucide-react"
 import { ShareButton } from "@/components/share-button"
 import WhatsAppButton from "@/components/whatsapp-button"
+import { CalculatorStructuredData, FAQStructuredData } from "@/components/structured-data"
 import {
     Accordion,
     AccordionContent,
@@ -218,73 +220,34 @@ export default function CalculadoraSueldoLiquido() {
         return `💰 Calculé mi Sueldo Líquido Real en LegalPO\n\n💵 Bruto: ${formatMoney(result.sueldoBruto)}\n💎 Líquido: ${formatMoney(result.sueldoLiquido)}\n\nCalcula el tuyo exacto aquí: https://legalpo.cl/calculadora-sueldo-liquido`
     }
 
+    const faqs = [
+        {
+            question: "¿Por qué mi sueldo líquido es más bajo de lo esperado?",
+            answer: "El sueldo líquido es siempre menor al bruto porque se deben descontar obligatoriamente la AFP (aprox 11-12%), Salud (7% o pactado Isapre), Seguro de Cesantía (0.6% si es indefinido) y el Impuesto Único si ganas sobre $900.000 aprox."
+        },
+        {
+            question: "¿Cómo afecta el tipo de contrato en mi sueldo?",
+            answer: "Si tienes contrato indefinido, te descuentan 0.6% para el Seguro de Cesantía. Si es a plazo fijo, ese costo lo asume completamente tu empleador, por lo que tu líquido aumenta levemente."
+        },
+        {
+            question: "¿Qué es el tope imponible y cómo me afecta?",
+            answer: "El tope imponible (84.3 UF para 2025/2026) es el monto máximo sobre el cual te pueden calcular descuentos de AFP y Salud. Si ganas más que eso, tus descuentos se congelan en ese tope, aumentando proporcionalmente tu sueldo líquido."
+        },
+        {
+            question: "¿Cuándo debo pagar Impuesto Único?",
+            answer: "Pagas Impuesto Único solo si tu base tributable (sueldo menos AFP, Salud y Cesantía) supera las 13.5 UTM mensuales (aprox. $900.000). Es un impuesto progresivo: mientras más ganas, mayor es el porcentaje del tramo."
+        }
+    ]
+
     return (
         <div className="min-h-screen bg-slate-900 text-white print:bg-white print:text-black">
             {/* Schema.org - SoftwareApp + FAQ */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@graph": [
-                            {
-                                "@type": "SoftwareApplication",
-                                "name": "Calculadora de Sueldo Líquido Chile 2026",
-                                "applicationCategory": "FinanceApplication",
-                                "operatingSystem": "Any",
-                                "offers": {
-                                    "@type": "Offer",
-                                    "price": "0",
-                                    "priceCurrency": "CLP"
-                                },
-                                "description": "Calcula tu sueldo líquido exacto en Chile con nuestra calculadora gratuita. Incluye descuentos de AFP, Salud, Cesantía e Impuesto Único actualizado a 2026.",
-                                "author": {
-                                    "@type": "Organization",
-                                    "name": "LegalPO"
-                                }
-                            },
-                            {
-                                "@type": "FAQPage",
-                                "mainEntity": [
-                                    {
-                                        "@type": "Question",
-                                        "name": "¿Por qué mi sueldo líquido es más bajo de lo esperado?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "El sueldo líquido es siempre menor al bruto porque se deben descontar obligatoriamente la AFP (aprox 11-12%), Salud (7% o pactado Isapre), Seguro de Cesantía (0.6% si es indefinido) y el Impuesto Único si ganas sobre $900.000 aprox."
-                                        }
-                                    },
-                                    {
-                                        "@type": "Question",
-                                        "name": "¿Cómo afecta el tipo de contrato en mi sueldo?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Si tienes contrato indefinido, te descuentan 0.6% para el Seguro de Cesantía. Si es a plazo fijo, ese costo lo asume completamente tu empleador, por lo que tu líquido aumenta levemente."
-                                        }
-                                    },
-                                    {
-                                        "@type": "Question",
-                                        "name": "¿Qué es el tope imponible y cómo me afecta?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "El tope imponible (84.3 UF para 2025/2026) es el monto máximo sobre el cual te pueden calcular descuentos de AFP y Salud. Si ganas más que eso, tus descuentos se congelan en ese tope, aumentando proporcionalmente tu sueldo líquido."
-                                        }
-                                    },
-                                    {
-                                        "@type": "Question",
-                                        "name": "¿Cuándo debo pagar Impuesto Único?",
-                                        "acceptedAnswer": {
-                                            "@type": "Answer",
-                                            "text": "Pagas Impuesto Único solo si tu base tributable (sueldo menos AFP, Salud y Cesantía) supera las 13.5 UTM mensuales (aprox. $900.000). Es un impuesto progresivo: mientras más ganas, mayor es el porcentaje del tramo."
-                                        }
-                                    }
-                                ]
-                            }
-                        ]
-                    })
-                }}
+            <CalculatorStructuredData
+                name="Calculadora de Sueldo Líquido Chile 2026"
+                description="Calcula tu sueldo líquido exacto en Chile con nuestra calculadora gratuita. Incluye descuentos de AFP, Salud, Cesantía e Impuesto Único actualizado a 2026."
+                url="https://legalpo.cl/calculadora-sueldo-liquido"
             />
-
+            <FAQStructuredData faqs={faqs} />
             {/* Header SEO */}
             <section className="py-12 bg-gradient-to-b from-slate-800/50 to-transparent border-b border-white/5 print:hidden">
                 <div className="container max-w-5xl mx-auto px-4">
@@ -550,18 +513,15 @@ export default function CalculadoraSueldoLiquido() {
             {/* SEO Content & FAQ */}
             <section className="py-16 bg-slate-900 border-t border-white/5 print:hidden">
                 <div className="container max-w-4xl px-4">
-                    <div className="prose prose-invert mb-12">
-                        <h2>¿Cómo calcular el sueldo líquido en Chile?</h2>
-                        <p>
-                            Para pasar de <strong>sueldo bruto a líquido</strong> se deben restar los descuentos legales obligatorios en Chile.
-                            Nuestra calculadora automática realiza este proceso considerando:
+
+                    <div className="bg-slate-800/80 border border-emerald-500/30 rounded-xl p-6 mb-12 shadow-lg shadow-emerald-900/20">
+                        <h2 className="text-2xl font-bold text-white mb-3 flex items-center">
+                            <CheckCircle2 className="h-6 w-6 text-emerald-400 mr-2" />
+                            ¿Cómo calcular el sueldo líquido en Chile?
+                        </h2>
+                        <p className="text-slate-200 text-lg leading-relaxed">
+                            Para calcular tu sueldo líquido en Chile debes tomar tu <strong>sueldo bruto</strong> y restarle un <strong>10% más comisión de AFP</strong>, un <strong>7% de Salud</strong> (Fonasa o Isapre), un <strong>0.6% de Seguro de Cesantía</strong> (solo si tienes contrato indefinido), y el <strong>Impuesto Único</strong> de Segunda Categoría si ganas sobre 13.5 UTM ($900.000 aprox).
                         </p>
-                        <ul>
-                            <li><strong>AFP:</strong> 10% obligatorio + comisión de la administradora (entre 0.49% y 1.45%).</li>
-                            <li><strong>Salud:</strong> 7% obligatorio para Fonasa, o el precio de tu plan Isapre (con un mínimo del 7%).</li>
-                            <li><strong>Impuesto Único:</strong> Tributo progresivo que se aplica a sueldos más altos (sobre 13.5 UTM mensuales).</li>
-                            <li><strong>Seguro de Cesantía:</strong> 0.6% si tienes contrato indefinido (a costo del trabajador).</li>
-                        </ul>
                     </div>
 
                     {/* FAQ Accordion */}

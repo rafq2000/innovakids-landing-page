@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import Link from "next/link"
 import { Car, Calculator, CheckCircle, Clock, Scale, FileText, MessageCircle, Shield, Gavel, AlertTriangle, DollarSign, Heart } from "lucide-react"
+import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado Accidentes Chile 2026 | Indemnización, Tránsito | Consulta Gratis | LegalPO",
@@ -29,11 +30,11 @@ export const metadata: Metadata = {
 }
 
 const faqs = [
-    { q: "¿Cuánto puedo recibir de indemnización por accidente?", a: "Depende del daño: lesiones leves $500k-$5M, lesiones graves $5M-$50M, incapacidad permanente $50M-$200M, muerte de familiar $30M-$150M. Incluye daño emergente, lucro cesante y daño moral." },
-    { q: "¿Cuánto tiempo tengo para demandar por accidente?", a: "4 años desde la fecha del accidente para demandas civiles (indemnización). 6 meses para querellarse penalmente. Es importante actuar rápido para conservar pruebas." },
-    { q: "¿Qué necesito para demandar por accidente?", a: "Parte policial, constancia de Carabineros, informes médicos, boletas de gastos, testigos, fotos del accidente, licencia y documentos del vehículo." },
-    { q: "¿El seguro cubre todo el daño?", a: "El SOAP cubre hasta $300 UF (~$11M) solo para lesiones personales. El seguro automotriz puede cubrir daños materiales. Para montos mayores, hay que demandar al responsable." },
-    { q: "¿Qué es el daño moral?", a: "Es la indemnización por sufrimiento psicológico, dolor, angustia, pérdida de calidad de vida. El juez lo determina según la gravedad del caso." },
+    { question: "¿Cuánto puedo recibir de indemnización por accidente?", answer: "Depende del daño: lesiones leves $500k-$5M, lesiones graves $5M-$50M, incapacidad permanente $50M-$200M, muerte de familiar $30M-$150M. Incluye daño emergente, lucro cesante y daño moral." },
+    { question: "¿Cuánto tiempo tengo para demandar por accidente?", answer: "4 años desde la fecha del accidente para demandas civiles (indemnización). 6 meses para querellarse penalmente. Es importante actuar rápido para conservar pruebas." },
+    { question: "¿Qué necesito para demandar por accidente?", answer: "Parte policial, constancia de Carabineros, informes médicos, boletas de gastos, testigos, fotos del accidente, licencia y documentos del vehículo." },
+    { question: "¿El seguro cubre todo el daño?", answer: "El SOAP cubre hasta $300 UF (~$11M) solo para lesiones personales. El seguro automotriz puede cubrir daños materiales. Para montos mayores, hay que demandar al responsable." },
+    { question: "¿Qué es el daño moral?", answer: "Es la indemnización por sufrimiento psicológico, dolor, angustia, pérdida de calidad de vida. El juez lo determina según la gravedad del caso." },
 ]
 
 const servicios = [
@@ -83,8 +84,8 @@ export default function AbogadoAccidentesPage() {
                             <Accordion type="single" collapsible className="w-full">
                                 {faqs.map((faq, i) => (
                                     <AccordionItem key={i} value={`faq-${i}`} className="border-white/10 px-6">
-                                        <AccordionTrigger className="text-left text-white hover:text-red-400 py-4">{faq.q}</AccordionTrigger>
-                                        <AccordionContent className="text-slate-300 pb-4">{faq.a}</AccordionContent>
+                                        <AccordionTrigger className="text-left text-white hover:text-red-400 py-4">{faq.question}</AccordionTrigger>
+                                        <AccordionContent className="text-slate-300 pb-4">{faq.answer}</AccordionContent>
                                     </AccordionItem>
                                 ))}
                             </Accordion>
@@ -97,8 +98,8 @@ export default function AbogadoAccidentesPage() {
                     </div>
                 </div>
             </section>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "LegalService", name: "LegalPO - Abogado Accidentes Chile", description: "Especialistas en accidentes: tránsito, indemnizaciones, lesiones.", serviceType: "Derecho de Accidentes", areaServed: { "@type": "Country", name: "Chile" }, priceRange: "Gratis" }) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
+            <LegalServiceStructuredData name="LegalPO - Abogado Accidentes Chile" description="Especialistas en accidentes: tránsito, indemnizaciones, lesiones." serviceType="Derecho de Accidentes" priceRange="Gratis" />
+            <FAQStructuredData faqs={faqs} />
         </div>
     )
 }

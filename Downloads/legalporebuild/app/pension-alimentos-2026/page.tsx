@@ -23,7 +23,9 @@ import {
     Shield,
     Gavel,
     Info,
+    ShieldCheck,
 } from "lucide-react"
+import { FAQStructuredData, ArticleStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Pensión de Alimentos Chile 2026 | Monto Mínimo $215.600 | Calculadora Gratis | LegalPO",
@@ -51,28 +53,28 @@ export const metadata: Metadata = {
 
 const faqs = [
     {
-        q: "¿Cuál es la pensión mínima de alimentos en Chile 2026?",
-        a: "Con el sueldo mínimo de $539.000 (enero 2026), la pensión mínima es: $215.600 para un hijo (40% del mínimo) y $161.700 por cada hijo cuando hay dos o más (30% del mínimo por cada uno).",
+        question: "¿Cuál es la pensión mínima de alimentos en Chile 2026?",
+        answer: "Con el sueldo mínimo de $539.000 (enero 2026), la pensión mínima es: $215.600 para un hijo (40% del mínimo) y $161.700 por cada hijo cuando hay dos o más (30% del mínimo por cada uno).",
     },
     {
-        q: "¿Hasta qué edad se paga pensión de alimentos en Chile?",
-        a: "Hasta los 21 años, o hasta los 28 años si el hijo está estudiando una profesión u oficio. Puede extenderse indefinidamente si el hijo tiene una discapacidad que le impida mantenerse por sí mismo.",
+        question: "¿Hasta qué edad se paga pensión de alimentos en Chile?",
+        answer: "Hasta los 21 años, o hasta los 28 años si el hijo está estudiando una profesión u oficio. Puede extenderse indefinidamente si el hijo tiene una discapacidad que le impida mantenerse por sí mismo.",
     },
     {
-        q: "¿Qué pasa si el padre no paga la pensión de alimentos?",
-        a: "Con la Ley de Pago Efectivo (21.389), el deudor enfrenta: retención del 50% del sueldo, arraigo nacional, suspensión de licencia de conducir, embargo de bienes, y hasta arresto nocturno o prisión de 15 días.",
+        question: "¿Qué pasa si el padre no paga la pensión de alimentos?",
+        answer: "Con la Ley de Pago Efectivo (21.389), el deudor enfrenta: retención del 50% del sueldo, arraigo nacional, suspensión de licencia de conducir, embargo de bienes, y hasta arresto nocturno o prisión de 15 días.",
     },
     {
-        q: "¿Cómo se calcula la pensión de alimentos?",
-        a: "Se consideran las necesidades del hijo (educación, salud, vivienda, alimentación, recreación) y la capacidad económica del alimentante. Generalmente oscila entre el 20% y 50% de los ingresos, sin exceder el 50%.",
+        question: "¿Cómo se calcula la pensión de alimentos?",
+        answer: "Se consideran las necesidades del hijo (educación, salud, vivienda, alimentación, recreación) y la capacidad económica del alimentante. Generalmente oscila entre el 20% y 50% de los ingresos, sin exceder el 50%.",
     },
     {
-        q: "¿Cuánto demora una demanda de pensión de alimentos?",
-        a: "La primera audiencia se cita en aproximadamente 15-30 días. Se puede solicitar alimentos provisorios mientras dura el juicio, que pueden tardar 3-6 meses en resolverse definitivamente.",
+        question: "¿Cuánto demora una demanda de pensión de alimentos?",
+        answer: "El proceso empieza con una mediación obligatoria (1-2 meses). Si no hay acuerdo y se llega a juicio judicial, puede demorar entre 6 a 12 meses, pero el juez fija una 'pensión provisoria' rápidamente durante el proceso.",
     },
     {
-        q: "¿Puedo pedir aumento de la pensión de alimentos?",
-        a: "Sí, si cambian las circunstancias: el alimentante mejora sus ingresos, el hijo tiene nuevas necesidades (ej: universidad), o por inflación. Se solicita formalmente en el Tribunal de Familia.",
+        question: "¿Puedo rebajar o aumentar la pensión de alimentos fijada?",
+        answer: "Sí. Se puede demandar una 'Rebaja de pensión' si los ingresos del alimentante disminuyeron o tiene nuevos hijos. Y se puede demandar un 'Aumento de pensión' si las necesidades del hijo crecieron (ej: universidad) o si los ingresos del alimentante mejoraron.",
     },
 ]
 
@@ -300,9 +302,9 @@ export default function PensionAlimentos2026() {
                                 {faqs.map((faq, index) => (
                                     <AccordionItem key={index} value={`faq-${index}`} className="border-white/10 px-6">
                                         <AccordionTrigger className="text-left text-white hover:text-rose-400 py-4">
-                                            {faq.q}
+                                            {faq.question}
                                         </AccordionTrigger>
-                                        <AccordionContent className="text-slate-300 pb-4">{faq.a}</AccordionContent>
+                                        <AccordionContent className="text-slate-300 pb-4">{faq.answer}</AccordionContent>
                                     </AccordionItem>
                                 ))}
                             </Accordion>
@@ -334,49 +336,12 @@ export default function PensionAlimentos2026() {
             </section>
 
             {/* Schema.org */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        mainEntity: faqs.map((faq) => ({
-                            "@type": "Question",
-                            name: faq.q,
-                            acceptedAnswer: {
-                                "@type": "Answer",
-                                text: faq.a,
-                            },
-                        })),
-                    }),
-                }}
-            />
-
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Article",
-                        headline: "Pensión de Alimentos Chile 2026 - Guía Completa",
-                        description:
-                            "Todo sobre pensión alimenticia en Chile 2026. Montos mínimos actualizados, calculadora y asesoría legal.",
-                        author: {
-                            "@type": "Organization",
-                            name: "LegalPO",
-                        },
-                        publisher: {
-                            "@type": "Organization",
-                            name: "LegalPO",
-                            logo: {
-                                "@type": "ImageObject",
-                                url: "https://legalpo.cl/images/legalpo-logo.png",
-                            },
-                        },
-                        datePublished: "2026-01-18",
-                        dateModified: "2026-01-18",
-                    }),
-                }}
+            <FAQStructuredData faqs={faqs} />
+            <ArticleStructuredData
+                headline="Pensión de Alimentos Chile 2026 - Guía Completa"
+                description="Todo sobre pensión alimenticia en Chile 2026. Montos mínimos actualizados, calculadora y asesoría legal."
+                datePublished="2026-01-18"
+                dateModified="2026-01-18"
             />
         </div>
     )

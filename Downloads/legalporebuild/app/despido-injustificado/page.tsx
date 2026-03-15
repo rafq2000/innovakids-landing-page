@@ -21,6 +21,7 @@ import {
     Info,
     XCircle,
 } from "lucide-react"
+import { FAQStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Despido Injustificado Chile 2026 | Indemnización Aumentada | Cómo Demandar | LegalPO",
@@ -48,28 +49,28 @@ export const metadata: Metadata = {
 
 const faqs = [
     {
-        q: "¿Qué es un despido injustificado?",
-        a: "Es cuando el empleador despide al trabajador invocando una causal que no corresponde o no puede probar. Por ejemplo, alegar abandono de trabajo cuando el trabajador sí asistió, o alegar incumplimiento grave sin evidencia.",
+        question: "¿Qué es un despido injustificado?",
+        answer: "Es cuando el empleador despide al trabajador invocando una causal que no corresponde o no puede probar. Por ejemplo, alegar abandono de trabajo cuando el trabajador sí asistió, o alegar incumplimiento grave sin evidencia.",
     },
     {
-        q: "¿Cuánto aumenta la indemnización por despido injustificado?",
-        a: "Si el tribunal declara el despido injustificado, la indemnización por años de servicio se incrementa: 30% si se invocó necesidades de la empresa indebidamente, 50% si fue Art. 160 sin causal, y hasta 80% en casos de despido indirecto o tutela laboral.",
+        question: "¿Cuánto aumenta la indemnización por despido injustificado?",
+        answer: "Si el tribunal declara el despido injustificado, la indemnización por años de servicio se incrementa: 30% si se invocó necesidades de la empresa indebidamente, 50% si fue Art. 160 sin causal, y hasta 80% en casos de despido indirecto o tutela laboral.",
     },
     {
-        q: "¿Cuánto tiempo tengo para demandar por despido injustificado?",
-        a: "Tienes 60 días hábiles desde la fecha de despido para interponer la demanda ante el Juzgado del Trabajo. Este plazo es fatal (no se puede extender), así que actúa rápidamente.",
+        question: "¿Cuánto tiempo tengo para demandar por despido injustificado?",
+        answer: "Tienes 60 días hábiles desde la fecha de despido para interponer la demanda ante el Juzgado del Trabajo. Este plazo es fatal (no se puede extender), así que actúa rápidamente.",
     },
     {
-        q: "¿Qué debe contener la carta de despido?",
-        a: "Debe indicar: la causal legal invocada (Art. 159, 160 o 161), los hechos que fundamentan el despido, la fecha de término, y debe entregarse personalmente o por carta certificada dentro de 3 días hábiles.",
+        question: "¿Qué debe contener la carta de despido?",
+        answer: "Debe indicar: la causal legal invocada (Art. 159, 160 o 161), los hechos que fundamentan el despido, la fecha de término, y debe entregarse personalmente o por carta certificada dentro de 3 días hábiles.",
     },
     {
-        q: "¿Puedo demandar aunque haya firmado el finiquito?",
-        a: "Sí, si firmaste 'bajo reserva de derechos'. Si firmaste sin esa reserva, el finiquito ratificado ante ministro de fe tiene 'poder liberatorio' y limita tus opciones, pero aún puedes demandar por conceptos no incluidos o fraude.",
+        question: "¿Puedo demandar aunque haya firmado el finiquito?",
+        answer: "Sí, si firmaste 'bajo reserva de derechos'. Si firmaste sin esa reserva, el finiquito ratificado ante ministro de fe tiene 'poder liberatorio' y limita tus opciones, pero aún puedes demandar por conceptos no incluidos o fraude.",
     },
     {
-        q: "¿Necesito abogado para demandar por despido?",
-        a: "En Chile puedes comparecer sin abogado en causas de hasta 10 ingresos mínimos (~$5.390.000). Para montos mayores necesitas patrocinio de abogado. La Corporación de Asistencia Judicial (CAJ) ofrece abogados gratuitos si calificas.",
+        question: "¿Necesito abogado para demandar por despido?",
+        answer: "En Chile puedes comparecer sin abogado en causas de hasta 10 ingresos mínimos (~$5.390.000). Para montos mayores necesitas patrocinio de abogado. La Corporación de Asistencia Judicial (CAJ) ofrece abogados gratuitos si calificas.",
     },
 ]
 
@@ -316,9 +317,9 @@ export default function DespidoInjustificado() {
                                 {faqs.map((faq, index) => (
                                     <AccordionItem key={index} value={`faq-${index}`} className="border-white/10 px-6">
                                         <AccordionTrigger className="text-left text-white hover:text-red-400 py-4">
-                                            {faq.q}
+                                            {faq.question}
                                         </AccordionTrigger>
-                                        <AccordionContent className="text-slate-300 pb-4">{faq.a}</AccordionContent>
+                                        <AccordionContent className="text-slate-300 pb-4">{faq.answer}</AccordionContent>
                                     </AccordionItem>
                                 ))}
                             </Accordion>
@@ -350,23 +351,7 @@ export default function DespidoInjustificado() {
             </section>
 
             {/* Schema.org */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        mainEntity: faqs.map((faq) => ({
-                            "@type": "Question",
-                            name: faq.q,
-                            acceptedAnswer: {
-                                "@type": "Answer",
-                                text: faq.a,
-                            },
-                        })),
-                    }),
-                }}
-            />
+            <FAQStructuredData faqs={faqs} />
         </div>
     )
 }

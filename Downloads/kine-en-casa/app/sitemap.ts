@@ -5,25 +5,43 @@ import { exercises } from '@/lib/exercises-data'
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://kineum.cl'
 
-    // Static routes
-    const routes = [
+    const comunas = [
+        'las-condes', 'vitacura', 'providencia', 'nunoa', 'la-reina', 'lo-barnechea',
+        'la-florida', 'penalolen', 'macul', 'san-joaquin', 'santiago-centro'
+    ]
+
+    const especialidades = [
+        'kinesiologia-geriatrica', 'rehabilitacion-postquirurgica', 'kinesiologia-respiratoria',
+        'rehabilitacion-neurologica', 'kinesiologia-traumatologica'
+    ]
+
+    const localRoutes: string[] = []
+
+    // Add pure comuna pages
+    comunas.forEach(comuna => {
+        localRoutes.push(`/kinesiologo-a-domicilio-${comuna}`)
+        // Add matrix pages
+        especialidades.forEach(espec => {
+            localRoutes.push(`/${espec}-${comuna}`)
+        })
+    })
+
+    // Static base routes
+    const baseRoutes = [
         '',
+        '/nosotros',
         '/ejercicios',
         '/servicios/respiratoria',
         '/servicios/geriatrica',
         '/servicios/neurologica',
         '/servicios/traumatologica',
-        '/kinesiologo-a-domicilio-las-condes',
-        '/kinesiologo-a-domicilio-vitacura',
-        '/kinesiologo-a-domicilio-lo-barnechea',
-        '/kinesiologo-a-domicilio-nunoa',
-        '/kinesiologo-a-domicilio-la-reina',
-        '/kinesiologo-a-domicilio-providencia',
-    ].map((route) => ({
+    ]
+
+    const allRoutes = [...baseRoutes, ...localRoutes].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
         changeFrequency: 'daily' as const,
-        priority: 1,
+        priority: route === '' ? 1 : 0.9,
     }))
 
     // Blog posts
@@ -40,5 +58,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // If we want to rank for specific exercises, it's better to have them as anchors or separate pages. 
     // Given the current structure, /ejercicios covers it.
 
-    return [...routes, ...posts]
+    return [...allRoutes, ...posts]
 }

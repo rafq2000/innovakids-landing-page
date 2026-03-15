@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import Link from "next/link"
 import { Scroll, Calculator, CheckCircle, Clock, Scale, FileText, MessageCircle, Gavel, Users, Info, ChevronRight } from "lucide-react"
+import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado Herencias Chile 2026 | Guía Posesión Efectiva y Testamentos | LegalPO",
@@ -29,11 +30,11 @@ export const metadata: Metadata = {
 }
 
 const faqs = [
-    { q: "¿Cuál es la diferencia entre Posesión Efectiva en Registro Civil o Tribunales?", a: "Es simple: Si NO hay testamento, se hace online o presencial en el Registro Civil (más barato y rápido). Si SÍ hay testamento, es obligatorio hacerlo con un abogado ante los Tribunales Civiles." },
-    { q: "¿Cuánto tiempo tengo para tramitar la herencia?", a: "No hay un plazo legal límite, pero se recomienda hacerlo cuanto antes. Si no pagas el impuesto a la herencia (si corresponde) dentro de los 2 años, empiezan a correr multas e intereses." },
-    { q: "¿Qué pasa si uno de los herederos no quiere vender?", a: "Nadie está obligado a permanecer en indivisión. Si no hay acuerdo, cualquiera de los herederos puede solicitar un 'Juicio de Partición', donde un juez árbitro remata los bienes y reparte el dinero." },
-    { q: "¿Las deudas se heredan?", a: "Sí, pero existe el 'Beneficio de Inventario'. Esto significa que solo respondes por las deudas hasta el monto de lo que heredaste. No responderás con tu propio patrimonio." },
-    { q: "¿Puedo dejarle mi herencia a quien yo quiera?", a: "En Chile la libertad es restringida. El 50% debe ir obligatoriamente a cónyuge e hijos (legitimarios). El 25% (cuarta de mejoras) puedes usarlo para favorecer a uno de ellos. Solo el 25% restante (cuarta de libre disposición) es totalmente libre." },
+    { question: "¿Cuál es la diferencia entre Posesión Efectiva en Registro Civil o Tribunales?", answer: "Es simple: Si NO hay testamento, se hace online o presencial en el Registro Civil (más barato y rápido). Si SÍ hay testamento, es obligatorio hacerlo con un abogado ante los Tribunales Civiles." },
+    { question: "¿Cuánto tiempo tengo para tramitar la herencia?", answer: "No hay un plazo legal límite, pero se recomienda hacerlo cuanto antes. Si no pagas el impuesto a la herencia (si corresponde) dentro de los 2 años, empiezan a correr multas e intereses." },
+    { question: "¿Qué pasa si uno de los herederos no quiere vender?", answer: "Nadie está obligado a permanecer en indivisión. Si no hay acuerdo, cualquiera de los herederos puede solicitar un 'Juicio de Partición', donde un juez árbitro remata los bienes y reparte el dinero." },
+    { question: "¿Las deudas se heredan?", answer: "Sí, pero existe el 'Beneficio de Inventario'. Esto significa que solo respondes por las deudas hasta el monto de lo que heredaste. No responderás con tu propio patrimonio." },
+    { question: "¿Puedo dejarle mi herencia a quien yo quiera?", answer: "En Chile la libertad es restringida. El 50% debe ir obligatoriamente a cónyuge e hijos (legitimarios). El 25% (cuarta de mejoras) puedes usarlo para favorecer a uno de ellos. Solo el 25% restante (cuarta de libre disposición) es totalmente libre." },
 ]
 
 export default function AbogadoHerenciasPage() {
@@ -169,10 +170,10 @@ export default function AbogadoHerenciasPage() {
                         {faqs.map((faq, i) => (
                             <AccordionItem key={i} value={`faq-${i}`} className="border-white/10 px-4 mb-4 bg-white/5 rounded-lg overflow-hidden">
                                 <AccordionTrigger className="text-left text-white hover:text-purple-400 py-4 px-2 text-lg font-medium">
-                                    {faq.q}
+                                    {faq.question}
                                 </AccordionTrigger>
                                 <AccordionContent className="text-slate-300 pb-6 px-2 text-base leading-relaxed">
-                                    {faq.a}
+                                    {faq.answer}
                                 </AccordionContent>
                             </AccordionItem>
                         ))}
@@ -180,8 +181,8 @@ export default function AbogadoHerenciasPage() {
                 </div>
             </section>
 
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "LegalService", name: "LegalPO - Abogado Herencias Chile", description: "Especialistas en Posesión Efectiva, Testamentos y Partición de Herencias.", serviceType: "Derecho Sucesorio", areaServed: { "@type": "Country", name: "Chile" }, priceRange: "Honorarios según tabla colegio" }) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faqs.map(f => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) }} />
+            <LegalServiceStructuredData name="LegalPO - Abogado Herencias Chile" description="Especialistas en Posesión Efectiva, Testamentos y Partición de Herencias." serviceType="Derecho Sucesorio" priceRange="Honorarios según tabla colegio" />
+            <FAQStructuredData faqs={faqs} />
         </div>
     )
 }

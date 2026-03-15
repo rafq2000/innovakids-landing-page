@@ -210,9 +210,9 @@ export default function Footer() {
                 <Heart className="h-4 w-4 text-red-500/70 fill-current" />
               </div>
             </div>
-            <div className="bg-amber-500/5 border border-amber-500/10 rounded-lg px-4 py-2 hover:bg-amber-500/10 transition-colors">
-              <p className="text-amber-400/80 text-xs font-medium">
-                ⚠️ AVISO: Esta plataforma proporciona información educativa. No constituye asesoría legal profesional.
+            <div className="bg-amber-500/5 border border-amber-500/10 rounded-lg px-4 py-3 hover:bg-amber-500/10 transition-colors max-w-3xl ml-auto text-right">
+              <p className="text-amber-400/80 text-xs font-medium leading-relaxed">
+                ⚠️ AVISO LEGAL YMYL: LegalPO es una empresa de tecnología legal que utiliza Inteligencia Artificial para proveer soluciones gratuitas. La información y calculadoras automatizadas disponibles en esta plataforma constituyen contenido informativo referencial y <strong>no reemplazan la asesoría jurídica y representación de un abogado habilitado para el ejercicio de la profesión</strong> en Chile.
               </p>
             </div>
           </div>

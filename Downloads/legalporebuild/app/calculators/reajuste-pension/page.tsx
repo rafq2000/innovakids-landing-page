@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import ReajustePensionClient from "./reajuste-client"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { BookOpen, HelpCircle, Scale, TrendingUp, AlertCircle } from "lucide-react"
-
+import { BookOpen, HelpCircle, Scale, TrendingUp, AlertCircle, CheckCircle2 } from "lucide-react"
+import { CalculatorStructuredData, FAQStructuredData } from "@/components/structured-data"
 export const metadata: Metadata = {
     title: "Calculadora Reajuste Pensión Alimentos Chile 2026 | IPC y UTM",
     description:
@@ -25,55 +25,29 @@ export const metadata: Metadata = {
 }
 
 export default function ReajustePensionPage() {
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        name: "Calculadora de Reajuste de Pensión de Alimentos",
-        applicationCategory: "FinanceApplication",
-        operatingSystem: "Web",
-        offers: {
-            "@type": "Offer",
-            price: "0",
-            priceCurrency: "CLP",
+    const faqs = [
+        {
+            question: "¿Cuándo se debe reajustar la pensión de alimentos?",
+            answer: "Depende de lo que diga la sentencia o acuerdo. Generalmente es cada 6 o 12 meses si está en pesos (según IPC), o mensualmente de forma automática si está fijada en UTM.",
         },
-        description: "Herramienta para calcular el reajuste de pensiones alimenticias según IPC o UTM en Chile.",
-    }
-
-    const faqSchema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: [
-            {
-                "@type": "Question",
-                name: "¿Cuándo se debe reajustar la pensión de alimentos?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Depende de lo que diga la sentencia o acuerdo. Generalmente es cada 6 o 12 meses si está en pesos (según IPC), o mensualmente de forma automática si está fijada en UTM.",
-                },
-            },
-            {
-                "@type": "Question",
-                name: "¿Cómo se calcula el reajuste por IPC?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Se toma el monto actual de la pensión y se le suma el porcentaje de variación del IPC acumulado en el período (semestral o anual). La calculadora del INE entrega este porcentaje.",
-                },
-            },
-            {
-                "@type": "Question",
-                name: "¿Es obligatorio pasar la pensión a UTM?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Desde la entrada en vigencia de la Ley de Responsabilidad Parental (Nov 2021), los tribunales deben fijar las pensiones en UTM para asegurar su reajustabilidad automática. Si tu pensión es antigua y está en pesos, puedes solicitar al tribunal la conversión.",
-                },
-            },
-        ],
-    }
+        {
+            question: "¿Cómo se calcula el reajuste por IPC?",
+            answer: "Se toma el monto actual de la pensión y se le suma el porcentaje de variación del IPC acumulado en el período (semestral o anual). La calculadora del INE entrega este porcentaje.",
+        },
+        {
+            question: "¿Es obligatorio pasar la pensión a UTM?",
+            answer: "Desde la entrada en vigencia de la Ley de Responsabilidad Parental (Nov 2021), los tribunales deben fijar las pensiones en UTM para asegurar su reajustabilidad automática. Si tu pensión es antigua y está en pesos, puedes solicitar al tribunal la conversión.",
+        },
+    ]
 
     return (
         <div className="min-h-screen bg-slate-50">
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <CalculatorStructuredData
+                name="Calculadora de Reajuste de Pensión de Alimentos"
+                description="Herramienta gratuita para calcular el reajuste de pensiones alimenticias según IPC o convertirlas a UTM en Chile (2026)."
+                url="https://legalpo.cl/calculators/reajuste-pension"
+            />
+            <FAQStructuredData faqs={faqs} />
 
             <main className="container mx-auto px-4 py-12 max-w-6xl">
                 <ReajustePensionClient />
@@ -86,34 +60,39 @@ export default function ReajustePensionPage() {
                                 <BookOpen className="h-6 w-6 text-blue-600" />
                                 Guía de Reajuste de Pensiones 2026
                             </h2>
+                            <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-left shadow-sm mb-8">
+                                <h2 className="text-xl font-bold text-slate-900 mb-2 flex items-center">
+                                    <CheckCircle2 className="h-5 w-5 text-blue-600 mr-2" />
+                                    ¿Cómo se reajusta la pensión de alimentos por IPC?
+                                </h2>
+                                <p className="text-slate-700">
+                                    Para reajustar la pensión de alimentos (cuando está fijada en pesos), debes tomar el monto actual y sumar el porcentaje de variación del Índice de Precios al Consumidor (IPC). En Chile, el reajuste <strong>generalmente se realiza de forma semestral (cada 6 meses) o anual</strong>, dependiendo de lo que dicte tu sentencia definitiva o acuerdo de mediación judicial.
+                                </p>
+                            </div>
+
+                            <h3 className="text-xl font-semibold mt-6 mb-3">La nueva norma: Pensión en UTM</h3>
                             <div className="prose prose-slate max-w-none text-slate-700">
                                 <p>
-                                    Mantener el valor adquisitivo de la pensión de alimentos es un derecho del niño, niña o adolescente.
-                                    En Chile, debido a la inflación, $100.000 de hace un año no compran lo mismo hoy. Por eso existe
-                                    el mecanismo de <strong>reajuste</strong>.
+                                    Mantener el valor de la pensión frente a la inflación es vital para el desarrollo de los hijos. Por ello, la ley chilena evolucionó hacia un sistema automático.
                                 </p>
 
                                 <div className="my-6 p-4 bg-white rounded-lg border shadow-sm border-l-4 border-l-blue-500">
                                     <h3 className="text-lg font-semibold mb-2 flex items-center gap-2">
                                         <TrendingUp className="h-5 w-5 text-blue-600" />
-                                        ¿En Pesos o en UTM?
+                                        Pesos vs. UTM
                                     </h3>
                                     <p className="mb-2">
-                                        <strong>En Pesos:</strong> Requiere cálculo manual. Se reajusta típicamente cada 6 o 12 meses según el IPC (Índice de Precios al Consumidor).
+                                        <strong>En Pesos:</strong> Requiere revisar la inflación en la tabla del INE cada semestre y notificar los nuevos cálculos manualmente al pagador.
                                     </p>
                                     <p>
-                                        <strong>En UTM:</strong> Es el sistema moderno. Se reajusta <em>automáticamente</em> mes a mes. Si la UTM sube, la pensión sube.
+                                        <strong>En UTM:</strong> Es el sistema obligatorio actual. Se reajusta <em>automáticamente</em> todos los meses según el valor publicado por el SII.
                                     </p>
                                 </div>
 
-                                <h3 className="text-xl font-semibold mt-6 mb-3">Paso a Paso para el Reajuste</h3>
-                                <ol className="list-decimal pl-5 space-y-2 mt-2">
-                                    <li>Revisa tu sentencia, mediación o escritura pública.</li>
-                                    <li>Identifica la cláusula de reajuste (¿Semestral? ¿Anual? ¿Cada Enero y Julio?).</li>
-                                    <li>Busca la variación del IPC en la página del INE para ese período.</li>
-                                    <li>Aplica el porcentaje al monto actual (Suma: Monto Actual + % Variación).</li>
-                                    <li>Informa al alimentante del nuevo monto (idealmente por escrito).</li>
-                                </ol>
+                                <h3 className="text-xl font-semibold mt-6 mb-3">¿Cómo convertir mi pensión a UTM?</h3>
+                                <p>
+                                    Si tu mediación o sentencia es antigua y aún figura en pesos, tienes el derecho de solicitar de forma gratuita la liquidación y conversión de pensiones al respectivo Juzgado de Familia a través del portal del Trámite Fácil del Poder Judicial.
+                                </p>
                             </div>
                         </div>
 
