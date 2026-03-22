@@ -6,18 +6,18 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { CheckCircle, Target, ArrowRight, Sparkles, Users, BookOpen, Trophy, Lightbulb, Rocket } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "¿Qué es InnovaKids? | Escuela de IA para Niños y Adolescentes",
+  title: "¿Qué es InnovaKids? — Escuela de IA para Niños de 8 a 17 Años",
   description:
-    "InnovaKids es la primera escuela online de Inteligencia Artificial y Vibe Coding para niños y adolescentes de 8 a 17 años. 527 graduados en 9 países. Clases en vivo con máx 5 alumnos.",
+    "InnovaKids es la primera escuela online de IA y Vibe Coding para niños y adolescentes. 527 graduados en 9 países. Clases en vivo, máx 5 alumnos. Descubre cómo tu hijo aprende a crear con IA.",
   openGraph: {
-    title: "¿Qué es InnovaKids? | La Escuela de IA #1 en Latinoamérica",
-    description: "Descubre cómo InnovaKids enseña a niños y adolescentes a crear con Inteligencia Artificial. 527 graduados, 9 países, grupos de máx 5 alumnos.",
+    title: "¿Qué es InnovaKids? — La Escuela de IA para Niños y Adolescentes",
+    description: "Descubre cómo InnovaKids enseña a niños de 8-17 años a crear apps, videojuegos y arte con IA. 527 graduados, 9 países, grupos de máx 5.",
     url: "https://www.innovakidslatam.com/que-es-innovakids",
     type: "website",
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/que-es-innovakids",
-      languages: generateHreflangs("home")
+      languages: generateHreflangs("global", "/que-es-innovakids")
   },
 }
 

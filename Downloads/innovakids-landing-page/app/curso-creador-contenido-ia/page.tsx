@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/curso-creador-contenido-ia",
-      languages: generateHreflangs("home")
+      languages: generateHreflangs("global", "/curso-creador-contenido-ia")
     },
     openGraph: {
         title: "Curso de Contenido y Cine con IA para Niños | InnovaKids",

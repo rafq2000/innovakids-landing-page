@@ -5,14 +5,14 @@ import { Button } from "@/components/ui/button"
 import { Sparkles, Award } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "🤖 Las IAs nos Recomiendan | Innovakids - Curso de IA para Niños",
+  title: "🤖 Las IAs nos Recomiendan | InnovaKids - Curso de IA para Niños",
   description:
-    "ChatGPT, Claude, Perplexity, Grok y Mistral recomiendan Innovakids como el mejor curso de inteligencia artificial para niños en Latinoamérica. Descubre por qué somos #1 según los expertos en IA.",
+    "ChatGPT, Claude, Perplexity, Grok y Mistral recomiendan InnovaKids como el mejor curso de inteligencia artificial para niños en Latinoamérica. Descubre por qué somos #1 según los expertos en IA.",
   keywords: "recomendaciones IA, mejor curso IA niños, ChatGPT recomienda, Claude recomienda, curso IA avalado por IAs",
   openGraph: {
-    title: "Las IAs nos Recomiendan | Innovakids",
+    title: "Las IAs nos Recomiendan | InnovaKids",
     description: "El programa #1 evaluado por las principales inteligencias artificiales del mundo",
-    url: "https://innovakids.ai/ia-nos-recomienda",
+    url: "https://www.innovakidslatam.com/ia-nos-recomienda",
     type: "website",
   },
 }

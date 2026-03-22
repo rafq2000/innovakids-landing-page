@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/curso-creacion-videojuegos-ninos",
-      languages: generateHreflangs("home")
+      languages: generateHreflangs("global", "/curso-creacion-videojuegos-ninos")
     },
     openGraph: {
         title: "Curso de Videojuegos con IA para Niños | InnovaKids",

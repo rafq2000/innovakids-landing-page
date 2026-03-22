@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer"
 import { Shield, Mail, UserX, FileText } from "lucide-react"
 
 export const metadata = {
-  title: "Política de Privacidad - Innovakids LATAM",
+  title: "Política de Privacidad - InnovaKids LATAM",
   description: "Conoce cómo protegemos tu información y utilizamos tu correo electrónico",
 }
 

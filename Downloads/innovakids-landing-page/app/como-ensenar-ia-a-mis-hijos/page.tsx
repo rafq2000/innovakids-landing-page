@@ -6,7 +6,7 @@ import { ArrowRight, Users, Shield, Star } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Cómo Enseñar IA a Mis Hijos en 2026: Guía Completa para Padres | Innovakids",
+  title: "Cómo Enseñar IA a Mis Hijos en 2026: Guía Completa para Padres | InnovaKids",
   description:
     "Descubre cómo enseñar inteligencia artificial a tus hijos de 8-17 años con métodos probados. Guía paso a paso para padres en Latinoamérica sobre educación en IA para niños.",
   keywords: [

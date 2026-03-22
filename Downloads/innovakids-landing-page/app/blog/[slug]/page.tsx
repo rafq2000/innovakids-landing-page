@@ -589,12 +589,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   if (!post) {
     return {
-      title: "Artículo no encontrado - Innovakids",
+      title: "Artículo no encontrado - InnovaKids",
     }
   }
 
   return {
-    title: `${post.title} - Blog Innovakids`,
+    title: `${post.title} - Blog InnovaKids`,
     description: post.excerpt,
     openGraph: {
       title: post.title,

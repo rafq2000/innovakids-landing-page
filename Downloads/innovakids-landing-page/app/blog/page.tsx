@@ -5,7 +5,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Blog - Innovakids | Educación en IA para Niños",
+  title: "Blog - InnovaKids | Educación en IA para Niños",
   description:
     "Descubre artículos sobre inteligencia artificial para niños, consejos para padres, y las últimas tendencias en educación tecnológica.",
 }
@@ -40,8 +40,8 @@ const blogPosts = [
   },
   {
     slug: "codingal-vs-innovakids-comparativa",
-    title: "Codingal vs Innovakids (2026) 🏆 ¿Cuál es el Mejor Curso de Programación Online?",
-    excerpt: "✅ Análisis HONESTO: Codingal vs Innovakids. Descubre qué academia online de programación, robótica e Inteligencia Artificial es mejor para tu hijo o adolescente.",
+    title: "Codingal vs InnovaKids (2026) 🏆 ¿Cuál es el Mejor Curso de Programación Online?",
+    excerpt: "✅ Análisis HONESTO: Codingal vs InnovaKids. Descubre qué academia online de programación, robótica e Inteligencia Artificial es mejor para tu hijo o adolescente.",
     image: "/children-using-ai-educational-tools.jpg",
     date: "2026-03-03",
     category: "Comparativa",

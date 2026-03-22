@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/curso-emprendimiento-ninos",
-      languages: generateHreflangs("home")
+      languages: generateHreflangs("global", "/curso-emprendimiento-ninos")
     },
     openGraph: {
         title: "Curso de Emprendimiento con IA para Niños | InnovaKids",

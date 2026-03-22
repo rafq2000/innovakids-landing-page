@@ -6,12 +6,12 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños Online | Innovakids - Clases de Inteligencia Artificial 8-17 Años",
+  title: "Curso de IA para Niños (8-17) — Clases Online en Vivo | InnovaKids",
   description:
-    "🚀 Curso de IA para niños #1 en LATAM. Aprende inteligencia artificial en grupos de 5 alumnos. ChatGPT, programación IA y proyectos reales. ✅ Sesión Diagnóstico GRATIS. México, Colombia, Argentina, Chile, Perú.",
+    "El mejor curso de inteligencia artificial para niños y adolescentes. Tu hijo crea apps, arte y videojuegos con IA en 5 semanas. Máx 5 alumnos por grupo. Prueba gratis.",
   openGraph: {
-    title: "Curso de IA para Niños Online | Innovakids LATAM",
-    description: "Clases de inteligencia artificial para niños 8-17 años. Grupos reducidos. ¡Sesión GRATIS!",
+    title: "Curso de IA para Niños — Clases Online en Vivo | InnovaKids",
+    description: "Tu hijo aprende a crear videojuegos y apps con Inteligencia Artificial. Grupos de 5 alumnos. 527 graduados. Prueba una clase gratis.",
   },
 }
 

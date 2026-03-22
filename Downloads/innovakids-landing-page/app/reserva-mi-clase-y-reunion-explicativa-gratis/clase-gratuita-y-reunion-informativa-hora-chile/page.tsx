@@ -5,7 +5,7 @@ import Link from "next/link"
 import { ArrowLeft, Calendar, Clock, Video, CheckCircle2 } from "lucide-react"
 
 export const metadata = {
-  title: "Reserva tu Sesión de Evaluación Gratuita - Innovakids",
+  title: "Reserva tu Sesión de Evaluación Gratuita - InnovaKids",
   description: "Agenda tu sesión de evaluación gratuita y reunión informativa sobre el curso de IA para niños",
 }
 

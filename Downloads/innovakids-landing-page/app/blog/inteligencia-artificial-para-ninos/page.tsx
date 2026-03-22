@@ -186,6 +186,30 @@ export default function BlogPostPage() {
                                 </Button>
                             </Link>
                         </div>
+
+                        {/* Related Articles */}
+                        <section className="mt-16 border-t border-gray-200 pt-10 not-prose">
+                            <h2 className="text-2xl font-bold text-gray-900 mb-6">Artículos Relacionados</h2>
+                            <div className="grid md:grid-cols-2 gap-4">
+                                <Link href="/blog/scratch-vs-ia-ninos" className="block p-4 rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all">
+                                    <h3 className="font-semibold text-gray-900">Scratch vs IA para Niños</h3>
+                                    <p className="text-sm text-gray-600 mt-1">¿Programación por bloques o inteligencia artificial? Descubre cuál conviene más en 2026.</p>
+                                </Link>
+                                <Link href="/blog/metodologia-erica-pensamiento-computacional-ia-ninos" className="block p-4 rounded-lg border border-gray-200 hover:border-blue-400 hover:shadow-md transition-all">
+                                    <h3 className="font-semibold text-gray-900">Metodología ERICA: Pensamiento Computacional e IA</h3>
+                                    <p className="text-sm text-gray-600 mt-1">Conoce el marco pedagógico que usamos para desarrollar habilidades cognitivas reales.</p>
+                                </Link>
+                            </div>
+                        </section>
+
+                        {/* CTA Clase Gratis */}
+                        <section className="mt-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-center text-white not-prose">
+                            <h2 className="text-2xl font-bold mb-3">¿Listo para que tu hijo aprenda IA?</h2>
+                            <p className="mb-6 text-blue-100">Agenda una sesión diagnóstica gratuita y descubre su potencial.</p>
+                            <Link href="/clase-gratis" className="inline-block bg-white text-blue-600 font-bold px-8 py-3 rounded-full hover:bg-blue-50 transition-colors">
+                                Agenda Gratis →
+                            </Link>
+                        </section>
                     </article>
                 </div>
             </main>
