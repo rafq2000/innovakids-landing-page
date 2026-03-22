@@ -5,15 +5,15 @@ import { Button } from "@/components/ui/button"
 import { BookOpen, Download, Sparkles, Brain, Rocket, Gift } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Descarga GRATIS: Guía de IA para Niños 2025 | InnovaKids",
+  title: "Kit Gratuito para Padres: Guía de IA para Niños | InnovaKids",
   description:
-    "Descarga gratis nuestra guía completa de Inteligencia Artificial para niños. Aprende cómo enseñar IA, ChatGPT y crear proyectos increíbles. Guía práctica PDF gratuita.",
+    "Descarga nuestra guía paso a paso para enseñar Inteligencia Artificial a tus hijos. Aprende a usar ChatGPT de forma segura. Descarga en PDF gratis al instante.",
   keywords:
-    "guía ia niños gratis, libro inteligencia artificial niños, descargar guía ia, chatgpt para niños pdf, enseñar ia niños",
+    "guía ia niños, libro inteligencia artificial niños, descargar guía ia, chatgpt para niños pdf, enseñar ia niños",
   openGraph: {
-    title: "Descarga GRATIS: Guía de IA para Niños 2026",
+    title: "Kit para Padres: Cómo Enseñar IA a tus Hijos",
     description:
-      "Guía completa y gratuita para enseñar Inteligencia Artificial a niños de 8-17 años. Incluye proyectos prácticos y ejercicios.",
+      "Aprende paso a paso cómo enseñar Inteligencia Artificial a tu hijo de 8 a 17 años. Incluye proyectos prácticos. Descarga gratuita en PDF.",
     type: "website",
   },
 }

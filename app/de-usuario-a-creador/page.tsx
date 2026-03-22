@@ -4,13 +4,13 @@ import { Button } from "@/components/ui/button"
 import { Sparkles, Gamepad2, Lightbulb, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "🧠 De Usuario a Creador | Innovakids - Curso de IA para Niños",
+  title: "🧠 De Usuario a Creador | InnovaKids - Curso de IA para Niños",
   description:
     "Que tu hijo deje de solo jugar y consumir tecnología. Enséñale a programar el futuro. Transforma a tu hijo de consumidor pasivo a creador activo con IA.",
   keywords:
     "niños creadores de IA, de consumidor a creador, programar IA niños, crear tecnología niños, proyectos IA niños",
   openGraph: {
-    title: "De Usuario a Creador | Innovakids",
+    title: "De Usuario a Creador | InnovaKids",
     description: "Que dejen de solo jugar. Enséñales a programar el futuro.",
     url: "https://innovakids.ai/de-usuario-a-creador",
     type: "website",

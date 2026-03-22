@@ -7,7 +7,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
-    unoptimized: true,
+    unoptimized: false,
     formats: ['image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
@@ -18,6 +18,16 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
     optimizePackageImports: ['@/components'],
+  },
+  async headers() {
+    return [
+      {
+        source: '/:all*(svg|jpg|jpeg|png|webp|gif|ico|woff|woff2)',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+        ],
+      },
+    ]
   },
   async redirects() {
     return [
@@ -275,6 +285,17 @@ const nextConfig = {
       { source: '/curso-ia-ninos', destination: '/cursos/inteligencia-artificial', permanent: true },
       { source: '/oferta-180', destination: '/clases-ia-ninos', permanent: true },
       { source: '/oferta-180a-aprender-c', destination: '/clases-ia-ninos', permanent: true }, // potential variation
+      // SEO AUDIT MAR 2026: Cannibalization fixes
+      // Consolidate "curso ia niños" cluster to single canonical page
+      { source: '/clases-ia-ninos', destination: '/cursos/inteligencia-artificial', permanent: true },
+      { source: '/cursos-online-para-ninos', destination: '/cursos/inteligencia-artificial', permanent: true },
+      // Consolidate duplicate lead magnets
+      { source: '/kit-gratuito-descarga', destination: '/descargar-guia-ia-ninos', permanent: true },
+      // Consolidate brochure into programa
+      { source: '/brochure-programa-ia', destination: '/programa', permanent: true },
+      // Shorten extremely long booking URL
+      { source: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile', destination: '/clase-gratis', permanent: true },
+      { source: '/reserva-mi-clase-y-reunion-explicativa-gratis', destination: '/clase-gratis', permanent: true },
     ]
   },
 }

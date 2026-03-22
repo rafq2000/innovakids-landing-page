@@ -72,7 +72,7 @@ export function HeroSection() {
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#4dd0e1] to-[#8b5cf6] mb-4 text-2xl sm:text-4xl md:text-5xl lg:text-6xl"
                 style={{ textShadow: "0 0 30px rgba(77, 208, 225, 0.3)" }}
               >
-                Curso de Inteligencia Artificial para Niños
+                InnovaKids — Tu Hijo Aprende a Crear con Inteligencia Artificial
               </span>
               <span className="block text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
                 Tu hijo pierde horas en pantallas.

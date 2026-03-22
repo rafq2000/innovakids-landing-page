@@ -214,6 +214,30 @@ export default function ComparativaVeranoPage() {
               </Link>
             </div>
           </div>
+
+          {/* Related Articles */}
+          <section className="mt-16 border-t border-slate-200 pt-10 not-prose">
+            <h2 className="text-2xl font-bold text-[#0a1628] mb-6">Artículos Relacionados</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link href="/blog/codingal-vs-innovakids-comparativa" className="block p-4 rounded-lg border border-slate-200 hover:border-blue-400 hover:shadow-md transition-all">
+                <h3 className="font-semibold text-[#0a1628]">Codingal vs InnovaKids: Comparativa Definitiva (2026)</h3>
+                <p className="text-sm text-slate-600 mt-1">Análisis honesto de las dos plataformas líderes en programación e IA para niños.</p>
+              </Link>
+              <Link href="/blog/scratch-vs-ia-ninos" className="block p-4 rounded-lg border border-slate-200 hover:border-blue-400 hover:shadow-md transition-all">
+                <h3 className="font-semibold text-[#0a1628]">Scratch vs IA para Niños</h3>
+                <p className="text-sm text-slate-600 mt-1">¿Programación por bloques o inteligencia artificial? Descubre cuál conviene más en 2026.</p>
+              </Link>
+            </div>
+          </section>
+
+          {/* CTA Precios */}
+          <section className="mt-12 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl p-8 text-center not-prose">
+            <h2 className="text-2xl font-bold mb-3 text-white">¿Listo para inscribir a tu hijo este verano?</h2>
+            <p className="mb-6 text-amber-100">Consulta nuestros planes y precios con garantía de satisfacción.</p>
+            <Link href="/precios" className="inline-block bg-white text-amber-600 font-bold px-8 py-3 rounded-full hover:bg-amber-50 transition-colors">
+              Ver Precios →
+            </Link>
+          </section>
         </div>
       </article>
 

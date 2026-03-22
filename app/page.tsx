@@ -7,33 +7,39 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "Cursos Online de IA para Niños y Adolescentes | InnovaKids | Clase Gratis",
+  title: "InnovaKids — La Escuela Online #1 de IA para Niños y Adolescentes",
   description:
-    "🏆 Extraescolar de inteligencia artificial para niños y adolescentes (8 a 17 años). Tu hijo crea videojuegos y apps online con IA. Grupos pequeños. ¡Clase gratis!",
+    "InnovaKids es la escuela online líder en Inteligencia Artificial para niños de 8 a 17 años. 527 graduados en 9 países. Clases en vivo, grupos de máx 5. Agenda tu clase gratis.",
   keywords: [
+    "curso inteligencia artificial niños",
+    "curso ia para niños",
+    "cursos de ia para niños",
+    "curso de inteligencia artificial para niños",
+    "cursos de inteligencia artificial para niños",
+    "clases de inteligencia artificial para niños",
+    "ia para niños",
+    "curso ia para adolescentes",
     "escuela online de inteligencia artificial",
-    "ia kids",
-    "curso de tecnologia para niños",
-    "aprender inteligencia artificial online",
     "vibe coding para niños",
-    "innova kids solutions"
+    "innovakids",
+    "innova kids",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com",
     languages: generateHreflangs("home"),
   },
   openGraph: {
-    title: "Cursos Online de Inteligencia Artificial para Niños y Adolescentes",
-    description: "Extraescolar de inteligencia artificial para niños y adolescentes de 8 a 17 años. Clases online en vivo, grupos de 5. Crea videojuegos y apps. ¡Clase gratis!",
+    title: "InnovaKids — La Escuela Online #1 de IA para Niños y Adolescentes",
+    description: "InnovaKids es la escuela online líder en Inteligencia Artificial para niños de 8 a 17 años. 527 graduados en 9 países. Clases en vivo, grupos de máx 5. Agenda tu clase gratis.",
     url: "https://www.innovakidslatam.com",
     type: "website",
     locale: "es_419",
-    images: [{ url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg", width: 1200, height: 630, alt: "Cursos Online de Inteligencia Artificial para Niños y Adolescentes - InnovaKids" }],
+    images: [{ url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg", width: 1200, height: 630, alt: "Niños aprendiendo a crear con Inteligencia Artificial en InnovaKids" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cursos Online de Inteligencia Artificial para Niños y Adolescentes",
-    description: "Extraescolar de inteligencia artificial para niños y adolescentes. ¡Clase gratis online!",
+    title: "InnovaKids — La Escuela Online #1 de IA para Niños y Adolescentes",
+    description: "InnovaKids es la escuela online líder en Inteligencia Artificial para niños de 8 a 17 años. 527 graduados en 9 países. Clases en vivo, grupos de máx 5. Agenda tu clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }

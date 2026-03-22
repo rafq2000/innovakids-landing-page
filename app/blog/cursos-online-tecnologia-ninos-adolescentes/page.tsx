@@ -178,6 +178,30 @@ export default function CursosAdolescentesPage() {
                             </div>
                         </div>
 
+                        {/* Related Articles */}
+                        <section className="mt-16 border-t border-gray-700 pt-10">
+                            <h2 className="text-2xl font-bold text-white mb-6">Artículos Relacionados</h2>
+                            <div className="grid md:grid-cols-2 gap-4">
+                                <Link href="/blog/inteligencia-artificial-para-ninos" className="block p-4 rounded-lg border border-gray-700 hover:border-[#4DD0E1] hover:shadow-md transition-all">
+                                    <h3 className="font-semibold text-white">Inteligencia Artificial para Niños: Guía Completa 2026</h3>
+                                    <p className="text-sm text-gray-400 mt-1">Todo lo que necesitas saber sobre IA para niños: herramientas, actividades y cómo elegir curso.</p>
+                                </Link>
+                                <Link href="/ia-ninos-por-edad" className="block p-4 rounded-lg border border-gray-700 hover:border-[#4DD0E1] hover:shadow-md transition-all">
+                                    <h3 className="font-semibold text-white">IA para Niños por Edad: Guía Personalizada</h3>
+                                    <p className="text-sm text-gray-400 mt-1">Descubre qué herramientas y cursos de IA son ideales según la edad de tu hijo.</p>
+                                </Link>
+                            </div>
+                        </section>
+
+                        {/* CTA */}
+                        <section className="mt-12 bg-gradient-to-r from-[#4DD0E1] to-[#3BBFD1] rounded-2xl p-8 text-center">
+                            <h2 className="text-2xl font-bold mb-3 text-[#0a1628]">¿Listo para que tu hijo aprenda IA?</h2>
+                            <p className="mb-6 text-[#0a1628]/80">Conoce nuestro programa de Inteligencia Artificial para niños y adolescentes.</p>
+                            <Link href="/cursos/inteligencia-artificial" className="inline-block bg-[#0a1628] text-white font-bold px-8 py-3 rounded-full hover:bg-[#1a2942] transition-colors">
+                                Ver Curso de IA →
+                            </Link>
+                        </section>
+
                     </div>
                 </div>
             </article>

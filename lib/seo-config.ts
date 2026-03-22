@@ -53,7 +53,7 @@ export const salesPageSlugs: Record<string, string> = {
  * Generates the 'languages' object for Next.js Metadata alternates.
  * Usage: matches the CURRENT page type (home, product, blog) across all country variants.
  */
-export function generateHreflangs(pageType: "home" | "sales" | "city" | "magnet", extraSlug?: string): Record<string, string> {
+export function generateHreflangs(pageType: "home" | "sales" | "city" | "magnet" | "global", extraSlug?: string): Record<string, string> {
     const languages: Record<string, string> = {}
 
     countryCodes.forEach(({ code }) => {
@@ -72,7 +72,10 @@ export function generateHreflangs(pageType: "home" | "sales" | "city" | "magnet"
             case "magnet":
                 path = "/cursos-online-para-ninos" // Single global page
                 break
-            // Add other cases as needed
+            case "global":
+                // For global pages with no country equivalent, all hreflangs point to the same URL
+                path = extraSlug || ""
+                break
         }
 
         if (path) {
@@ -85,6 +88,8 @@ export function generateHreflangs(pageType: "home" | "sales" | "city" | "magnet"
         languages["x-default"] = `${SITE_URL}/cursos-online-para-ninos`
     } else if (pageType === "home") {
         languages["x-default"] = `${SITE_URL}/`
+    } else if (pageType === "global") {
+        languages["x-default"] = `${SITE_URL}${extraSlug || "/"}`
     }
 
     return languages

@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer"
 import { FileText, ShoppingCart, UserCheck, AlertCircle } from "lucide-react"
 
 export const metadata = {
-  title: "Términos y Condiciones - Innovakids LATAM",
+  title: "Términos y Condiciones - InnovaKids LATAM",
   description: "Lee nuestros términos y condiciones de servicio",
 }
 

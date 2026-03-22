@@ -6,16 +6,16 @@ import { Footer } from "@/components/footer"
 
 // SEO Optimizations for Maximum CTR (Target >40%)
 export const metadata: Metadata = {
-    title: "Codingal vs Innovakids (2026) 🏆 ¿Cuál es el Mejor Curso de Programación Online?",
-    description: "✅ Análisis HONESTO: Codingal vs Innovakids. Descubre qué academia online de programación, robótica e Inteligencia Artificial es mejor para tu hijo o adolescente. ¡Compara precios, metodologías y garantías hoy!",
+    title: "Codingal vs InnovaKids (2026) 🏆 ¿Cuál es el Mejor Curso de Programación Online?",
+    description: "✅ Análisis HONESTO: Codingal vs InnovaKids. Descubre qué academia online de programación, robótica e Inteligencia Artificial es mejor para tu hijo o adolescente. ¡Compara precios, metodologías y garantías hoy!",
     openGraph: {
-        title: "Codingal vs Innovakids: La Comparativa Definitiva (2026)",
+        title: "Codingal vs InnovaKids: La Comparativa Definitiva (2026)",
         description: "Análisis honesto sobre las plataformas líderes enseñando IA y programación a niños y adolescentes.",
         images: [{
             url: "/children-using-ai-educational-tools.jpg",
             width: 1200,
             height: 630,
-            alt: "Niños aprendiendo programación e inteligencia artificial online - Codingal vs Innovakids",
+            alt: "Niños aprendiendo programación e inteligencia artificial online - Codingal vs InnovaKids",
         }],
     },
 }
@@ -210,7 +210,7 @@ export default function CodingalVsInnovakidsPage() {
                                 <h3 className="text-3xl font-bold text-white mb-4">¿Te convence la metodología de Innovakids?</h3>
                                 <p className="text-gray-300 mb-8 text-lg leading-relaxed max-w-2xl">
                                     Prueba nuestro curso online completamente sin riesgo. Enséñale a programar a tus chicos de 8 a 17 años con la potencia de la Inteligencia Artificial.
-                                    <strong className="text-white block mt-2">✨ Cupos limitados a 5 alumnos por clase. Reserva por solo $27 USD.</strong>
+                                    <strong className="text-white block mt-2">Cupos limitados a 5 alumnos por clase. Reserva por solo $27 USD.</strong>
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Link
@@ -225,6 +225,30 @@ export default function CodingalVsInnovakidsPage() {
                                 </div>
                             </div>
                         </div>
+
+                        {/* Related Articles */}
+                        <section className="mt-16 border-t border-gray-700 pt-10">
+                            <h2 className="text-2xl font-bold text-white mb-6">Artículos Relacionados</h2>
+                            <div className="grid md:grid-cols-2 gap-4">
+                                <Link href="/blog/mejores-cursos-verano-programacion-ia-ninos-2026" className="block p-4 rounded-lg border border-gray-700 hover:border-[#4DD0E1] hover:shadow-md transition-all">
+                                    <h3 className="font-semibold text-white">Mejores Cursos de Verano: Programación vs IA (2026)</h3>
+                                    <p className="text-sm text-gray-400 mt-1">Comparativa honesta de cursos de verano de programación e inteligencia artificial para niños.</p>
+                                </Link>
+                                <Link href="/blog/cursos-online-tecnologia-ninos-adolescentes" className="block p-4 rounded-lg border border-gray-700 hover:border-[#4DD0E1] hover:shadow-md transition-all">
+                                    <h3 className="font-semibold text-white">Cursos Online de Tecnología para Niños y Adolescentes</h3>
+                                    <p className="text-sm text-gray-400 mt-1">La guía definitiva para elegir el mejor curso online según la edad de tu hijo.</p>
+                                </Link>
+                            </div>
+                        </section>
+
+                        {/* CTA */}
+                        <section className="mt-12 bg-gradient-to-r from-[#4DD0E1] to-[#3BBFD1] rounded-2xl p-8 text-center">
+                            <h2 className="text-2xl font-bold mb-3 text-[#0a1628]">¿Quieres saber cuál es el mejor curso de IA para tu hijo?</h2>
+                            <p className="mb-6 text-[#0a1628]/80">Descubre el programa ideal según su edad y nivel.</p>
+                            <Link href="/mejor-curso-ia-ninos-2026" className="inline-block bg-[#0a1628] text-white font-bold px-8 py-3 rounded-full hover:bg-[#1a2942] transition-colors">
+                                Ver Recomendación Personalizada →
+                            </Link>
+                        </section>
 
                     </div>
                 </div>

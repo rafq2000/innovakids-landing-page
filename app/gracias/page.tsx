@@ -3,8 +3,9 @@ import { CheckCircle, Sparkles, Calendar, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata = {
-  title: "Gracias por tu Inscripción | Innovakids",
+  title: "Gracias por tu Inscripción | InnovaKids",
   description: "Tu lugar está reservado. Prepárate para una experiencia increíble.",
+  robots: { index: false, follow: false },
 }
 
 export default function ThankYouPage() {

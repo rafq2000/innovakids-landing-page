@@ -178,6 +178,30 @@ export default function MetodologiaERICAPage() {
               </Link>
             </div>
           </div>
+
+          {/* Related Articles */}
+          <section className="mt-16 border-t border-slate-200 pt-10 not-prose">
+            <h2 className="text-2xl font-bold text-[#0a1628] mb-6">Artículos Relacionados</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link href="/blog/inteligencia-artificial-para-ninos" className="block p-4 rounded-lg border border-slate-200 hover:border-blue-400 hover:shadow-md transition-all">
+                <h3 className="font-semibold text-[#0a1628]">Inteligencia Artificial para Niños: Guía Completa 2026</h3>
+                <p className="text-sm text-slate-600 mt-1">Todo lo que necesitas saber sobre IA para niños: herramientas, actividades y cómo elegir curso.</p>
+              </Link>
+              <Link href="/vibe-coding-ninos" className="block p-4 rounded-lg border border-slate-200 hover:border-blue-400 hover:shadow-md transition-all">
+                <h3 className="font-semibold text-[#0a1628]">Vibe Coding para Niños: Programar con IA</h3>
+                <p className="text-sm text-slate-600 mt-1">Descubre cómo los niños aprenden a programar dirigiendo inteligencia artificial en vez de escribir código.</p>
+              </Link>
+            </div>
+          </section>
+
+          {/* CTA Clase Gratis */}
+          <section className="mt-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-center text-white not-prose">
+            <h2 className="text-2xl font-bold mb-3">¿Listo para que tu hijo aprenda IA?</h2>
+            <p className="mb-6 text-blue-100">Agenda una sesión diagnóstica gratuita y descubre su potencial.</p>
+            <Link href="/clase-gratis" className="inline-block bg-white text-blue-600 font-bold px-8 py-3 rounded-full hover:bg-blue-50 transition-colors">
+              Agenda Gratis →
+            </Link>
+          </section>
         </div>
       </article>
 

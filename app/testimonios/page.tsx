@@ -5,8 +5,8 @@ import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata = {
-  title: "Testimonios - Innovakids",
-  description: "Lee las experiencias de padres y niños que han transformado su aprendizaje con Innovakids",
+  title: "Testimonios - InnovaKids",
+  description: "Lee las experiencias de padres y niños que han transformado su aprendizaje con InnovaKids",
 }
 
 export default function TestimoniosPage() {

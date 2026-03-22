@@ -2,6 +2,11 @@ import { CheckCircle } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
+export const metadata = {
+  title: "Pago Exitoso | InnovaKids",
+  robots: { index: false, follow: false },
+}
+
 export default function PagoExitoPage() {
   return (
     <div className="min-h-screen bg-background flex items-center justify-center px-4">

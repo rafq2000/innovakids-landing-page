@@ -10,30 +10,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Static Global Pages
   const staticPages = [
     "", // Home
-    "/cursos-online-para-ninos",
     "/que-es-innovakids",
     "/blog",
     "/descargar-guia-ia-ninos",
     "/testimonios",
     "/cursos/inteligencia-artificial",
-    "/clases-ia-ninos",
     "/como-ensenar-ia-a-mis-hijos",
-    "/brochure-programa-ia",
     "/adolescentes",
     "/contacto",
     "/resultados",
     "/metodologia-aprender-creando",
     "/de-usuario-a-creador",
     "/ia-nos-recomienda",
-    "/kit-gratuito-descarga",
+    "/clase-gratis",
     // Course specializations — high priority for indexing
     "/curso-creacion-videojuegos-ninos",
     "/curso-creador-contenido-ia",
     "/curso-emprendimiento-ninos",
     "/colegios",
+    "/precios",
+    "/mejor-curso-ia-ninos-2026",
+    "/vibe-coding-ninos",
+    "/ia-ninos-por-edad",
+    "/blog/scratch-vs-ia-ninos",
   ]
 
-  const coursePages = ["/curso-creacion-videojuegos-ninos", "/curso-creador-contenido-ia", "/curso-emprendimiento-ninos", "/curso-ia-ninos"]
+  const coursePages = ["/curso-creacion-videojuegos-ninos", "/curso-creador-contenido-ia", "/curso-emprendimiento-ninos"]
 
   const sitemapEntries: MetadataRoute.Sitemap = staticPages.map((route) => ({
     url: `${baseUrl}${route}`,
