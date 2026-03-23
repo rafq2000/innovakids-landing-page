@@ -16,6 +16,7 @@ import ProtectedRoute from "@/components/protected-route"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { ShareButton } from "@/components/share-button"
 import { AdUnit } from "@/components/ad-unit"
+import { BreadcrumbStructuredData } from "@/components/structured-data"
 
 const formatCurrency = (value: number): string => {
   return new Intl.NumberFormat("es-CL", { style: "currency", currency: "CLP" }).format(value)
@@ -228,6 +229,11 @@ Calcula GRATIS en LegalPO.cl
 
   return (
     <ProtectedRoute>
+      <BreadcrumbStructuredData items={[
+        { name: "Inicio", url: "https://legalpo.cl" },
+        { name: "Calculadoras", url: "https://legalpo.cl/herramientas" },
+        { name: "Herencia", url: "https://legalpo.cl/calculators/herencia" },
+      ]} />
       <div className="container py-8 font-sans">
         <div className="flex items-center mb-4">
           <Link href="/" className="flex items-center text-blue-600 hover:text-blue-800">

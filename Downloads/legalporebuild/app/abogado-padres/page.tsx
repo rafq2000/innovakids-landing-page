@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Users, Shield, Gavel, Phone, Scale, HeartHandshake } from "lucide-react"
 import Link from "next/link"
 import { AdUnit } from "@/components/ad-unit"
+import { BreadcrumbStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado de Familia para Hombres y Papás Chile | Derechos del Padre",
@@ -23,6 +24,10 @@ export const metadata: Metadata = {
 export default function AbogadoPadresPage() {
     return (
         <div className="min-h-screen bg-slate-950 text-slate-100">
+            <BreadcrumbStructuredData items={[
+                { name: "Inicio", url: "https://legalpo.cl" },
+                { name: "Derechos del Padre", url: "https://legalpo.cl/abogado-padres" },
+            ]} />
             {/* Hero Section */}
             <section className="relative py-20 overflow-hidden">
                 <div className="absolute inset-0 bg-blue-900/10" />

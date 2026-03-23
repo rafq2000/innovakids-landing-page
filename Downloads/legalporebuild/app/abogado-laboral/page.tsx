@@ -9,7 +9,7 @@ import {
     AlertTriangle, Gavel, FileX, Scale, ArrowRight, ShieldAlert,
     HelpCircle, ChevronRight
 } from "lucide-react"
-import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
+import { FAQStructuredData, LegalServiceStructuredData, BreadcrumbStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado Laboral Chile 2026 | Despido, Ley Karin y Finiquitos | LegalPO",
@@ -45,6 +45,17 @@ const faqs = [
 export default function AbogadoLaboralPage() {
     return (
         <div className="min-h-screen bg-slate-50 text-slate-900">
+            <BreadcrumbStructuredData items={[
+                { name: "Inicio", url: "https://legalpo.cl" },
+                { name: "Abogado Laboral", url: "https://legalpo.cl/abogado-laboral" },
+            ]} />
+            <LegalServiceStructuredData
+                name="Abogado Laboral Chile - LegalPO"
+                description="Asesoría laboral gratuita con IA. Despido injustificado, Ley Karin, autodespido, finiquitos."
+                serviceType={["Asesoría Laboral", "Despido Injustificado", "Ley Karin", "Autodespido"]}
+                url="https://legalpo.cl/abogado-laboral"
+            />
+            <FAQStructuredData faqs={faqs} />
             {/* Hero Section */}
             <section className="relative py-20 bg-slate-900 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-900/40 to-slate-900 z-0" />
@@ -258,17 +269,6 @@ export default function AbogadoLaboralPage() {
                 </div>
             </section>
 
-            <LegalServiceStructuredData
-                name="LegalPO - Abogados Laborales Expertos"
-                description="Defensa de trabajadores en Chile. Ley Karin, Despido Injustificado y Autodespido."
-                url="https://www.legalpo.cl/abogado-laboral"
-                image="https://www.legalpo.cl/og-laboral.jpg"
-                priceRange="Consulta Gratis"
-                telephone="+56912345678"
-                addressRegion="Región Metropolitana"
-                serviceType={["Derecho Laboral", "Despido Injustificado", "Ley Karin"]}
-            />
-            <FAQStructuredData faqs={faqs} />
         </div>
     )
 }

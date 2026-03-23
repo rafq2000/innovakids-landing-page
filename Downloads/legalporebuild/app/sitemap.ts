@@ -3,8 +3,7 @@ import { comunasChile } from "@/lib/comunas-chile"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://legalpo.cl"
-  // Fecha de última actualización del sitio - actualizar manualmente cuando hay cambios importantes
-  const lastUpdate = "2026-01-21T00:00:00.000Z"
+  const lastUpdate = new Date().toISOString()
 
   // Main pages
   const mainPages = [
@@ -44,15 +43,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/carta-de-renuncia`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.95 },
   ]
 
-  // SEO landing pages for calculator keywords
+  // SEO landing pages - only pages with unique content (redirect-only pages removed to avoid cannibalization)
   const seoLandingPages = [
-    { url: `${baseUrl}/calculadora-de-finiquito`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.9 },
-    { url: `${baseUrl}/calculadora-finiquito`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.9 },
-    { url: `${baseUrl}/calculadora-finiquito-chile`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.9 },
-    { url: `${baseUrl}/calcular-finiquito`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.9 },
     { url: `${baseUrl}/como-calcular-finiquito`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.85 },
-    { url: `${baseUrl}/finiquito-calculadora`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.85 },
-    { url: `${baseUrl}/finiquito-chile`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.85 },
     { url: `${baseUrl}/calculadora-pensiones`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.9 },
     { url: `${baseUrl}/como-calcular-pension-alimentos`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.85 },
     { url: `${baseUrl}/como-calcular-herencia`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.85 },
@@ -65,6 +58,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/preguntas-frecuentes`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.95 },
     { url: `${baseUrl}/guias`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.9 },
     { url: `${baseUrl}/guias/como-calcular-finiquito-completo`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.95 },
+    { url: `${baseUrl}/guias/pension-alimentos-chile`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.95 },
+    { url: `${baseUrl}/guias/despido-injustificado-chile`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.95 },
+    { url: `${baseUrl}/guias/herencia-chile`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.95 },
     { url: `${baseUrl}/pension-alimentos-2026`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.95 },
     { url: `${baseUrl}/dicom-chile`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.9 },
     { url: `${baseUrl}/despido-injustificado`, lastModified: lastUpdate, changeFrequency: "weekly" as const, priority: 0.9 },

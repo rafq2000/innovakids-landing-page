@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import Link from "next/link"
 import { Scroll, Calculator, CheckCircle, Clock, Scale, FileText, MessageCircle, Gavel, Users, Info, ChevronRight } from "lucide-react"
-import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
+import { FAQStructuredData, LegalServiceStructuredData, BreadcrumbStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado Herencias Chile 2026 | Guía Posesión Efectiva y Testamentos | LegalPO",
@@ -40,6 +40,10 @@ const faqs = [
 export default function AbogadoHerenciasPage() {
     return (
         <div className="min-h-screen bg-slate-900 text-white font-sans">
+            <BreadcrumbStructuredData items={[
+                { name: "Inicio", url: "https://legalpo.cl" },
+                { name: "Abogado Herencias", url: "https://legalpo.cl/abogado-herencias" },
+            ]} />
             <section className="relative py-20 bg-gradient-to-br from-slate-900 via-purple-900/40 to-slate-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
                 <div className="container max-w-6xl mx-auto px-4 relative z-10 text-center">
@@ -181,7 +185,27 @@ export default function AbogadoHerenciasPage() {
                 </div>
             </section>
 
-            <LegalServiceStructuredData name="LegalPO - Abogado Herencias Chile" description="Especialistas en Posesión Efectiva, Testamentos y Partición de Herencias." serviceType="Derecho Sucesorio" priceRange="Honorarios según tabla colegio" />
+            {/* Internal Linking */}
+            <section className="py-12 bg-slate-100">
+                <div className="container max-w-5xl mx-auto px-4">
+                    <h2 className="text-2xl font-bold mb-6 text-center">Recursos Relacionados</h2>
+                    <div className="grid md:grid-cols-3 gap-4">
+                        <Link href="/guias/herencia-chile" className="block p-5 bg-white rounded-xl shadow-sm hover:shadow-md transition border hover:border-purple-300">
+                            <h3 className="font-bold mb-2">Guía Completa Herencias 2026</h3>
+                            <p className="text-slate-600 text-sm">Posesión efectiva paso a paso, cómo repartir, impuestos.</p>
+                        </Link>
+                        <Link href="/calculators/herencia" className="block p-5 bg-white rounded-xl shadow-sm hover:shadow-md transition border hover:border-emerald-300">
+                            <h3 className="font-bold mb-2">Calculadora de Herencia</h3>
+                            <p className="text-slate-600 text-sm">Calcula la distribución legal entre herederos.</p>
+                        </Link>
+                        <Link href="/abogado-familia" className="block p-5 bg-white rounded-xl shadow-sm hover:shadow-md transition border hover:border-blue-300">
+                            <h3 className="font-bold mb-2">Abogado de Familia</h3>
+                            <p className="text-slate-600 text-sm">Divorcios, pensiones, tuición y más.</p>
+                        </Link>
+                    </div>
+                </div>
+            </section>
+            <LegalServiceStructuredData name="LegalPO - Abogado Herencias Chile" description="Especialistas en Posesión Efectiva, Testamentos y Partición de Herencias." serviceType={["Derecho Sucesorio", "Posesión Efectiva", "Partición de Herencias"]} priceRange="Consulta Gratis" url="https://legalpo.cl/abogado-herencias" />
             <FAQStructuredData faqs={faqs} />
         </div>
     )

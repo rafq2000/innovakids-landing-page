@@ -7,7 +7,7 @@ import Link from "next/link"
 import { Home, Calculator, CheckCircle, Clock, Scale, FileText, MessageCircle, Shield, Gavel, AlertTriangle, Key } from "lucide-react"
 import CalculadoraDesalojo from "./calculadora-desalojo"
 import GeneradorCartaAviso from "./generador-carta"
-import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
+import { FAQStructuredData, LegalServiceStructuredData, BreadcrumbStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado Arriendos Chile 2026 | Ley Devuélveme Mi Casa | Desalojo Rápido",
@@ -42,6 +42,10 @@ const faqs = [
 export default function AbogadoArriendosPage() {
     return (
         <div className="min-h-screen bg-slate-900 text-white font-sans">
+            <BreadcrumbStructuredData items={[
+                { name: "Inicio", url: "https://legalpo.cl" },
+                { name: "Abogado Arriendos", url: "https://legalpo.cl/abogado-arriendos" },
+            ]} />
             <section className="relative py-20 bg-gradient-to-br from-slate-900 via-orange-900/40 to-slate-900 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
                 <div className="container max-w-6xl mx-auto px-4 relative z-10 text-center">

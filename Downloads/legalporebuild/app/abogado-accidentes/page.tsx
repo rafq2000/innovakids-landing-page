@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import Link from "next/link"
 import { Car, Calculator, CheckCircle, Clock, Scale, FileText, MessageCircle, Shield, Gavel, AlertTriangle, DollarSign, Heart } from "lucide-react"
-import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
+import { FAQStructuredData, LegalServiceStructuredData, BreadcrumbStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado Accidentes Chile 2026 | Indemnización, Tránsito | Consulta Gratis | LegalPO",
@@ -47,6 +47,10 @@ const servicios = [
 export default function AbogadoAccidentesPage() {
     return (
         <div className="min-h-screen bg-slate-900 text-white">
+            <BreadcrumbStructuredData items={[
+                { name: "Inicio", url: "https://legalpo.cl" },
+                { name: "Abogado Accidentes", url: "https://legalpo.cl/abogado-accidentes" },
+            ]} />
             <section className="py-16 bg-gradient-to-b from-slate-800/50 to-transparent border-b border-white/5">
                 <div className="container max-w-5xl mx-auto px-4 text-center">
                     <Badge className="mb-4 bg-red-500/20 text-red-300 border-red-500/30">

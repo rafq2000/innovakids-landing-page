@@ -7,7 +7,7 @@ import Link from "next/link"
 import { CreditCard, Calculator, CheckCircle, Clock, Scale, FileText, MessageCircle, Shield, Gavel, XCircle, AlertTriangle, DollarSign, ArrowRight } from "lucide-react"
 import QuizQuiebra from "./quiz-quiebra"
 import EmbargoClient from "@/app/calculators/embargo-sueldo/embargo-client"
-import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
+import { FAQStructuredData, LegalServiceStructuredData, BreadcrumbStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado Deudas Chile 2026 | Ley de Quiebras, Embargos y DICOM | LegalPO",
@@ -42,6 +42,10 @@ const faqs = [
 export default function AbogadoDeudasPage() {
     return (
         <div className="min-h-screen bg-slate-900 text-white font-sans">
+            <BreadcrumbStructuredData items={[
+                { name: "Inicio", url: "https://legalpo.cl" },
+                { name: "Abogado Deudas", url: "https://legalpo.cl/abogado-deudas" },
+            ]} />
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900/40 overflow-hidden">
                 <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
@@ -244,7 +248,27 @@ export default function AbogadoDeudasPage() {
                 </div>
             </section>
 
-            <LegalServiceStructuredData name="LegalPO - Abogado Deudas y Quiebras" description="Expertos en Ley de Quiebras, Tercerías y Prescripción de deudas en Chile." serviceType="Derecho Concursal" priceRange="Cobro contra resultados / Cuotas" />
+            {/* Internal Linking */}
+            <section className="py-12 bg-slate-100">
+                <div className="container max-w-5xl mx-auto px-4">
+                    <h2 className="text-2xl font-bold mb-6 text-center">Recursos Relacionados</h2>
+                    <div className="grid md:grid-cols-3 gap-4">
+                        <Link href="/dicom-chile" className="block p-5 bg-white rounded-xl shadow-sm hover:shadow-md transition border hover:border-emerald-300">
+                            <h3 className="font-bold mb-2">DICOM Chile 2026</h3>
+                            <p className="text-slate-600 text-sm">Cómo salir de DICOM, prescripción, tus derechos.</p>
+                        </Link>
+                        <Link href="/calculators/embargo-sueldo" className="block p-5 bg-white rounded-xl shadow-sm hover:shadow-md transition border hover:border-emerald-300">
+                            <h3 className="font-bold mb-2">Calculadora Embargo de Sueldo</h3>
+                            <p className="text-slate-600 text-sm">Calcula cuánto te pueden embargar legalmente.</p>
+                        </Link>
+                        <Link href="/abogado-laboral" className="block p-5 bg-white rounded-xl shadow-sm hover:shadow-md transition border hover:border-blue-300">
+                            <h3 className="font-bold mb-2">Abogado Laboral</h3>
+                            <p className="text-slate-600 text-sm">Finiquitos, despidos, Ley Karin.</p>
+                        </Link>
+                    </div>
+                </div>
+            </section>
+            <LegalServiceStructuredData name="LegalPO - Abogado Deudas y Quiebras" description="Expertos en Ley de Quiebras, Tercerías y Prescripción de deudas en Chile." serviceType={["Derecho Concursal", "Prescripción Deudas", "Ley de Quiebras"]} priceRange="Consulta Gratis" url="https://legalpo.cl/abogado-deudas" />
             <FAQStructuredData faqs={faqs} />
         </div>
     )

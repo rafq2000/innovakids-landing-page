@@ -10,7 +10,7 @@ import {
     Baby, Home, AlertCircle, FileCheck, Phone, HeartHandshake,
     CheckCircle2, XCircle
 } from "lucide-react"
-import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
+import { FAQStructuredData, LegalServiceStructuredData, BreadcrumbStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado de Familia Chile 2026 | Divorcio, Pensión, Tuición | Consulta Gratis",
@@ -47,6 +47,10 @@ const faqs = [
 export default function AbogadoFamiliaPage() {
     return (
         <div className="min-h-screen bg-slate-50 text-slate-900">
+            <BreadcrumbStructuredData items={[
+                { name: "Inicio", url: "https://legalpo.cl" },
+                { name: "Abogado Familia", url: "https://legalpo.cl/abogado-familia" },
+            ]} />
             {/* Hero Section */}
             <section className="relative py-20 bg-slate-900 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-rose-900/20 to-slate-900 z-0" />
@@ -349,14 +353,36 @@ export default function AbogadoFamiliaPage() {
                 </div>
             </section>
 
+            {/* Internal Linking - Guías Relacionadas */}
+            <section className="py-12 bg-slate-100">
+                <div className="container max-w-5xl mx-auto px-4">
+                    <h2 className="text-2xl font-bold mb-6 text-center">Guías Relacionadas</h2>
+                    <div className="grid md:grid-cols-2 gap-4">
+                        <Link href="/guias/pension-alimentos-chile" className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition border hover:border-emerald-300">
+                            <h3 className="font-bold text-lg mb-2">Pensión de Alimentos Chile 2026</h3>
+                            <p className="text-slate-600 text-sm">Montos mínimos, cómo demandar, consecuencias del no pago. Guía completa.</p>
+                        </Link>
+                        <Link href="/calculators/pension-alimentos" className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition border hover:border-emerald-300">
+                            <h3 className="font-bold text-lg mb-2">Calculadora de Pensión de Alimentos</h3>
+                            <p className="text-slate-600 text-sm">Calcula cuánto corresponde de pensión según ingresos y número de hijos.</p>
+                        </Link>
+                        <Link href="/guias/herencia-chile" className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition border hover:border-purple-300">
+                            <h3 className="font-bold text-lg mb-2">Herencias Chile 2026</h3>
+                            <p className="text-slate-600 text-sm">Posesión efectiva, cómo repartir, impuesto a la herencia.</p>
+                        </Link>
+                        <Link href="/abogado-padres" className="block p-6 bg-white rounded-xl shadow-sm hover:shadow-md transition border hover:border-blue-300">
+                            <h3 className="font-bold text-lg mb-2">Derechos del Padre en Chile</h3>
+                            <p className="text-slate-600 text-sm">Tuición, visitas, derechos de padres separados.</p>
+                        </Link>
+                    </div>
+                </div>
+            </section>
             <LegalServiceStructuredData
                 name="LegalPO - Abogados de Familia Expertos"
                 description="Especialistas en divorcios, pensiones de alimentos 2026 y tuición. Consulta inicial gratuita."
-                url="https://www.legalpo.cl/abogado-familia"
-                image="https://www.legalpo.cl/og-familia.jpg"
+                url="https://legalpo.cl/abogado-familia"
                 priceRange="Consulta Gratis"
-                telephone="+56912345678"
-                addressRegion="Región Metropolitana"
+                serviceType={["Derecho de Familia", "Divorcio", "Pensión de Alimentos", "Tuición"]}
             />
             <FAQStructuredData faqs={faqs} />
         </div>

@@ -245,7 +245,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "./",
+    canonical: "https://legalpo.cl",
   },
   category: "Legal Services",
   classification: "Free Legal Advice and AI Legal Assistant",
@@ -271,8 +271,6 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#0f172a" />
         <meta name="msapplication-TileColor" content="#0f172a" />
-        <meta name="msapplication-config" content="/browserconfig.xml" />
-
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <GlobalStructuredData />
 

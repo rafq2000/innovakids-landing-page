@@ -7,10 +7,20 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    unoptimized: false,
   },
   experimental: {
     optimizePackageImports: ["lucide-react", "date-fns", "recharts"],
+  },
+  async headers() {
+    return [
+      {
+        source: '/:all*(svg|jpg|jpeg|png|webp|avif|ico|woff|woff2)',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+        ],
+      },
+    ]
   },
   async redirects() {
     return [

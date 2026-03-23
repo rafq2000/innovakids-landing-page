@@ -1,7 +1,7 @@
 import type React from "react"
 import type { Metadata } from "next"
 import ProtectedRoute from "@/components/protected-route"
-import { CalculatorStructuredData, FAQStructuredData } from "@/components/structured-data"
+import { CalculatorStructuredData, FAQStructuredData, BreadcrumbStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
   title: "🥇 Calculadora de Finiquito Chile 2026 - La Más Precisa y Gratis | LegalPO",
@@ -93,6 +93,11 @@ export default function CalculadoraFiniquitoLayout({
 }) {
   return (
     <>
+      <BreadcrumbStructuredData items={[
+        { name: "Inicio", url: "https://legalpo.cl" },
+        { name: "Calculadoras", url: "https://legalpo.cl/herramientas" },
+        { name: "Calculadora de Finiquito", url: "https://legalpo.cl/calculators/finiquito" },
+      ]} />
       <CalculatorStructuredData
         name="Calculadora de Finiquito Chile 2026"
         description="Calculadora de finiquito laboral online y gratuita basada en el Código del Trabajo de Chile 2026."

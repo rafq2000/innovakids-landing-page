@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Heart, Shield, Users, Phone, Clock, FileText, CheckCircle } from "lucide-react"
 import Link from "next/link"
 import { AdUnit } from "@/components/ad-unit"
+import { BreadcrumbStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Abogado Tercera Edad Chile | Derechos Adulto Mayor y Pensiones | LegalPO",
@@ -23,6 +24,10 @@ export const metadata: Metadata = {
 export default function AbogadoTerceraEdadPage() {
     return (
         <div className="min-h-screen bg-slate-950 text-slate-100">
+            <BreadcrumbStructuredData items={[
+                { name: "Inicio", url: "https://legalpo.cl" },
+                { name: "Abogado Tercera Edad", url: "https://legalpo.cl/abogado-tercera-edad" },
+            ]} />
             {/* Hero Section */}
             <section className="relative py-20 overflow-hidden">
                 <div className="absolute inset-0 bg-emerald-900/10" />

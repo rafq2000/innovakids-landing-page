@@ -20,7 +20,7 @@ import {
     Info,
     Zap,
 } from "lucide-react"
-import { FAQStructuredData } from "@/components/structured-data"
+import { FAQStructuredData, BreadcrumbStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Cómo Salir de DICOM Chile 2026 | Prescripción de Deudas | Guía Completa | LegalPO",
@@ -75,6 +75,11 @@ const faqs = [
 export default function DicomChile() {
     return (
         <div className="min-h-screen bg-slate-900 text-white">
+            <BreadcrumbStructuredData items={[
+                { name: "Inicio", url: "https://legalpo.cl" },
+                { name: "Abogado Deudas", url: "https://legalpo.cl/abogado-deudas" },
+                { name: "DICOM Chile", url: "https://legalpo.cl/dicom-chile" },
+            ]} />
             {/* Hero Section */}
             <section className="py-16 bg-gradient-to-b from-slate-800/30 to-transparent border-b border-white/5">
                 <div className="container max-w-5xl mx-auto px-4">

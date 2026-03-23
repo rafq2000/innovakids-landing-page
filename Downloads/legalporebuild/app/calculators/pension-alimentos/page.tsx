@@ -3,7 +3,7 @@ import CalculatorClient from "./calculator-client"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { BookOpen, HelpCircle, Scale, Calculator, DollarSign, CheckCircle2 } from "lucide-react"
-import { CalculatorStructuredData, FAQStructuredData } from "@/components/structured-data"
+import { CalculatorStructuredData, FAQStructuredData, BreadcrumbStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
   title: "Calculadora de Pensión de Alimentos Chile 2026 | LegalPo",
@@ -47,6 +47,11 @@ export default function CalculadoraPensionesPage() {
 
   return (
     <div className="min-h-screen bg-slate-50">
+      <BreadcrumbStructuredData items={[
+        { name: "Inicio", url: "https://legalpo.cl" },
+        { name: "Calculadoras", url: "https://legalpo.cl/herramientas" },
+        { name: "Pensión de Alimentos", url: "https://legalpo.cl/calculators/pension-alimentos" },
+      ]} />
       <FAQStructuredData faqs={faqs} />
       <CalculatorStructuredData
         name="Calculadora de Pensión de Alimentos Chile 2026"

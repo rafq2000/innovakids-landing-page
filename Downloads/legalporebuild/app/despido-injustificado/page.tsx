@@ -21,7 +21,7 @@ import {
     Info,
     XCircle,
 } from "lucide-react"
-import { FAQStructuredData } from "@/components/structured-data"
+import { FAQStructuredData, BreadcrumbStructuredData } from "@/components/structured-data"
 
 export const metadata: Metadata = {
     title: "Despido Injustificado Chile 2026 | Indemnización Aumentada | Cómo Demandar | LegalPO",
@@ -77,6 +77,11 @@ const faqs = [
 export default function DespidoInjustificado() {
     return (
         <div className="min-h-screen bg-slate-900 text-white">
+            <BreadcrumbStructuredData items={[
+                { name: "Inicio", url: "https://legalpo.cl" },
+                { name: "Abogado Laboral", url: "https://legalpo.cl/abogado-laboral" },
+                { name: "Despido Injustificado", url: "https://legalpo.cl/despido-injustificado" },
+            ]} />
             {/* Hero Section */}
             <section className="py-16 bg-gradient-to-b from-slate-800/30 to-transparent border-b border-white/5">
                 <div className="container max-w-5xl mx-auto px-4">

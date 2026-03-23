@@ -19,7 +19,7 @@ import {
     FileText,
     Star,
 } from "lucide-react"
-import { FAQStructuredData, LegalServiceStructuredData } from "@/components/structured-data"
+import { FAQStructuredData, LegalServiceStructuredData, BreadcrumbStructuredData } from "@/components/structured-data"
 
 interface PageProps {
     params: Promise<{ comuna: string }>
@@ -80,6 +80,11 @@ export default async function ComunaPage({ params }: PageProps) {
 
     return (
         <div className="min-h-screen bg-slate-900 text-white">
+            <BreadcrumbStructuredData items={[
+                { name: "Inicio", url: "https://legalpo.cl" },
+                { name: "Abogado por Comuna", url: "https://legalpo.cl/abogado" },
+                { name: `Abogado Gratis ${comuna.nombre}`, url: `https://legalpo.cl/abogado/${comuna.slug}` },
+            ]} />
             {/* Hero Section */}
             <section className="py-16 bg-gradient-to-b from-slate-800/50 to-transparent border-b border-white/5">
                 <div className="container max-w-5xl mx-auto px-4">
