@@ -111,7 +111,7 @@ export function TeenHeroSection() {
                             <HeroCountdown />
 
                             <p className="text-white font-semibold mt-6 text-lg font-premium">
-                                Cierre de inscripciones: <span className="text-purple-400">Semana del 30 de Marzo del 2026</span>
+                                Cierre de inscripciones: <span className="text-purple-400">Semana del 6 de Abril del 2026</span>
                             </p>
                         </div>
                     </div>
