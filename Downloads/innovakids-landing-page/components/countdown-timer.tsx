@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 
 interface CountdownTimerProps {
-  targetDate?: string // ISO format: "2026-03-30T23:59:00-03:00"
+  targetDate?: string // ISO format: "2026-04-06T23:59:00-03:00"
   label?: string
 }
 
@@ -16,7 +16,7 @@ export function CountdownTimer({ targetDate, label = "Cierra en" }: CountdownTim
   })
 
   useEffect(() => {
-    const deadline = targetDate ? new Date(targetDate) : new Date("2026-03-26T23:59:59")
+    const deadline = targetDate ? new Date(targetDate) : new Date("2026-04-02T23:59:59")
 
     const timer = setInterval(() => {
       const now = new Date().getTime()

@@ -44,7 +44,7 @@ export function ConsequencesSection() {
 
           {/* 26 DE ENERO */}
           <div className="bg-[#0f2744] rounded-2xl p-8 border-2 border-white/10">
-            <div className="text-2xl font-bold text-white mb-6">Semana del 30 de Marzo del 2026 - Día del Inicio</div>
+            <div className="text-2xl font-bold text-white mb-6">Semana del 6 de Abril del 2026 - Día del Inicio</div>
 
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-green-900/20 rounded-xl p-6 border-2 border-green-500/50">

@@ -121,7 +121,7 @@ export function HeroSection() {
               <HeroCountdown />
 
               <p className="text-white font-semibold mt-6 text-lg font-premium">
-                Próximo curso: <span className="text-primary">Semana del 30 de Marzo del 2026</span>
+                Próximo curso: <span className="text-primary">Semana del 6 de Abril del 2026</span>
               </p>
             </div>
           </div>
