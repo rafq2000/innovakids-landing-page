@@ -141,7 +141,7 @@ export function CountryProgramSection({
                         <p className="text-white/70 mb-2">
                             Valor Total: <span className="line-through">$1,297 USD</span>
                         </p>
-                        <p className="text-4xl font-bold text-[#4ADE80] mb-2">Tu Inversión: $267 USD</p>
+                        <p className="text-4xl font-bold text-[#4ADE80] mb-2">Tu Inversión: $297 USD</p>
                         <p className="text-sm text-white/60">Pago único • Garantía 10 días • Todos los métodos de pago</p>
                     </div>
                 </div>

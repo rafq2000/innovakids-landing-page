@@ -8,6 +8,9 @@ import { Button } from "@/components/ui/button"
 export const metadata: Metadata = {
     title: "InnovaKids B2B | Programas de Inteligencia Artificial para Colegios e Instituciones",
     description: "Llevamos la educación en IA a tu organización. Programas certificados de Inteligencia Artificial para colegios, municipios, fundaciones y empresas.",
+    alternates: {
+        canonical: "https://www.innovakidslatam.com/colegios",
+    },
 }
 
 export default function ColegiosB2B() {

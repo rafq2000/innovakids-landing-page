@@ -31,7 +31,7 @@ export function StickyFooterCTA() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="text-center md:text-left">
             <p className="text-white font-bold text-lg">🚨 Solo 2 de 20 cupos disponibles</p>
-            <p className="text-gray-400 text-sm">Inicia: Semana del 6 de Abril del 2026</p>
+            <p className="text-gray-400 text-sm">Inicia: Semana del 27 de Abril del 2026</p>
           </div>
           <Button
             size="lg"

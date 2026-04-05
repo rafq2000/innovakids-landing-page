@@ -17,7 +17,7 @@ const testimonials = [
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-07%20at%2010.14.10%20PM%20%283%29-Bdow2KWHf2ihYRjPf9rpHNL0OTiGfD.jpeg",
     content:
-      "Antes del curso, Tomás pasaba 3 horas al día en YouTube y Roblox sin aprender nada útil. Después de solo 3 semanas en InnovaKids, creó su primera app funcional. Los $267 mejor invertidos de mi vida.",
+      "Antes del curso, Tomás pasaba 3 horas al día en YouTube y Roblox sin aprender nada útil. Después de solo 3 semanas en InnovaKids, creó su primera app funcional. Los $297 mejor invertidos de mi vida.",
     rating: 5,
     hasVideo: true,
   },

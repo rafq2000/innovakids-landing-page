@@ -16,6 +16,9 @@ export const metadata: Metadata = {
         "preparacion universitaria ingenieria",
         "vibe coding",
     ],
+    alternates: {
+        canonical: "https://www.innovakidslatam.com/adolescentes",
+    },
     openGraph: {
         title: "Curso de IA para Adolescentes | Crea Apps y Startups antes de los 18",
         description: "Programa intensivo para jóvenes de 14-17 años. Domina la IA, crea tu portafolio y destaca en tu aplicación universitaria.",

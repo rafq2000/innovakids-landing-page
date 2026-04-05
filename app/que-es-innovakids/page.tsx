@@ -314,7 +314,7 @@ export default function QueEsInnovaKids() {
                 },
                 {
                   q: "¿Cuánto cuesta el programa?",
-                  a: "El programa completo de 10 clases en vivo tiene un valor de $267 USD. Puedes reservar tu cupo con solo $50 USD. Incluye todas las herramientas, certificación, portafolio web y garantía de 10 días.",
+                  a: "El programa completo de 10 clases en vivo tiene un valor de $297 USD. Puedes reservar tu cupo con solo $50 USD. Incluye todas las herramientas, certificación, portafolio web y garantía de 10 días.",
                 },
                 {
                   q: "¿Qué pasa si no me gusta el curso?",
@@ -446,7 +446,7 @@ export default function QueEsInnovaKids() {
                 name: "¿Cuánto cuesta InnovaKids?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "El programa completo de 10 clases en vivo tiene un valor de $267 USD. Se puede reservar con $50 USD. Incluye garantía de 10 días.",
+                  text: "El programa completo de 10 clases en vivo tiene un valor de $297 USD. Se puede reservar con $50 USD. Incluye garantía de 10 días.",
                 },
               },
             ],

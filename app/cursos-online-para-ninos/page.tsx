@@ -45,7 +45,7 @@ export default function CursosOnlineNinosPage() {
         offers: {
             "@type": "Offer",
             category: "Premium",
-            price: "267",
+            price: "297",
             priceCurrency: "USD",
             availability: "https://schema.org/InStock"
         },

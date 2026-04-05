@@ -83,7 +83,7 @@ export default function BrochurePage() {
             </CardHeader>
             <CardContent className="space-y-4">
               {[
-                { icon: "🚀", label: "Inicio", value: "Semana del 6 de Abril del 2026" },
+                { icon: "🚀", label: "Inicio", value: "Semana del 27 de Abril del 2026" },
                 { icon: "💻", label: "Plataforma", value: "Clases en vivo vía Zoom" },
                 { icon: "⏱️", label: "Duración", value: "5 semanas (5 clases)" },
                 { icon: "📆", label: "Frecuencia", value: "1 clase por semana (60 min c/u)" },
@@ -243,7 +243,7 @@ export default function BrochurePage() {
 
                 <div className="text-center mb-8">
                   <div className="flex items-center justify-center gap-2">
-                    <span className="text-6xl font-black text-white">$267</span>
+                    <span className="text-6xl font-black text-white">$297</span>
                     <div className="text-left">
                       <span className="block text-xl text-purple-400 font-bold">USD</span>
                       <span className="block text-slate-500 text-xs">Pago Único</span>
@@ -274,7 +274,7 @@ export default function BrochurePage() {
                 </ul>
 
                 <Button asChild size="lg" className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-8 text-xl rounded-xl shadow-lg shadow-purple-900/50">
-                  <Link href="/pagar?option=explorer">Inscribir Nivel 1 ($267)</Link>
+                  <Link href="/pagar?option=explorer">Inscribir Nivel 1 ($297)</Link>
                 </Button>
 
                 <p className="mt-4 text-center text-xs text-slate-500">

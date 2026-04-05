@@ -168,7 +168,7 @@ export default function CodingalVsInnovakidsPage() {
                                         <tr>
                                             <td className="p-4 font-semibold text-gray-200">Inversión (Precios)</td>
                                             <td className="p-4 text-gray-300">Membresías prolongadas / alto volumen</td>
-                                            <td className="p-4 font-bold text-white text-green-400">Desde $267 USD único pago (Sin mensualidades sorpresa)</td>
+                                            <td className="p-4 font-bold text-white text-green-400">Desde $297 USD único pago (Sin mensualidades sorpresa)</td>
                                         </tr>
                                         <tr>
                                             <td className="p-4 font-semibold text-gray-200">Garantía</td>

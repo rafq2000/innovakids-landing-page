@@ -27,7 +27,7 @@ export function CountryPricingSection({ country }: CountryPricingSectionProps) {
             if (country.code === 'cr') return 75000
             return 147
         }
-        if (basePrice === 267) return country.priceLocal // Explorer (Main)
+        if (basePrice === 297) return country.priceLocal // Explorer (Main)
         if (basePrice === 534) return country.priceLocal * 2 // Start Pack
         if (basePrice === 1068) return country.priceLocal * 4 // University
         return basePrice
@@ -70,7 +70,7 @@ export function CountryPricingSection({ country }: CountryPricingSectionProps) {
                 "40 Clases en Total (Ahorro Inteligente)",
                 "Incubadora de Startups incluida",
                 "Certificación Master Completa",
-                "Pago Único (Equivale a $267 x 4)",
+                "Pago Único (Equivale a $297 x 4)",
             ],
             cta: "Inscripción VIP",
             link: "/pagar?option=university",

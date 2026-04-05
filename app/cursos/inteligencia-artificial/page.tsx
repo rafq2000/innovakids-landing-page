@@ -154,11 +154,11 @@ export default function CursoIANinos() {
                 <h3 className="text-3xl font-bold text-white mb-4">💎 Oferta Especial de Lanzamiento</h3>
                 <p className="text-xl mb-6">
                   <span className="text-gray-400 line-through">$497 USD</span>{" "}
-                  <span className="text-5xl font-bold text-cyan-400">$267 USD</span>
+                  <span className="text-5xl font-bold text-cyan-400">$297 USD</span>
                 </p>
                 <p className="text-sm text-gray-300 mb-6">Precio Vibe Edition 2026 • Oferta por tiempo limitado</p>
                 <p className="text-lg text-yellow-300 mb-8">
-                  ⏰ Curso inicia la semana del 6 de Abril del 2026 • Cupos limitados
+                  ⏰ Curso inicia la semana del 27 de Abril del 2026 • Cupos limitados
                 </p>
                 <Link href="/#sesion-estrategica">
                   <Button

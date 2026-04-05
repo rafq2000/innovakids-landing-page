@@ -36,7 +36,7 @@ export function QualificationSection() {
                             {[
                                 "Tu hijo tiene entre 8 y 14 años y acceso a un computador.",
                                 "Quieres que aprenda habilidades reales del futuro, no solo a jugar.",
-                                "Estás dispuesto a invertir $267 USD en su futuro profesional.",
+                                "Estás dispuesto a invertir $297 USD en su futuro profesional.",
                                 "Entiendes que el sistema educativo tradicional ya no es suficiente.",
                                 "Valoras la atención personalizada sobre las clases masivas de 50 niños."
                             ].map((item, i) => (

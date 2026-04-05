@@ -98,7 +98,7 @@ export function ValueStackSection({ country }: ValueStackSectionProps) {
         if (country.currency === 'USD' || country.currency === 'EUR') return `${country.currencySymbol}${amount} ${country.currency}`
         // For LATAM currencies, we approximate the "Value" visually
         // 1 USD approx conversion for display value (not exact exchange, just anchor)
-        const exchangeRate = country.priceLocal / 267 // derived rate
+        const exchangeRate = country.priceLocal / 297 // derived rate
         const localVal = Math.round(amount * exchangeRate / 100) * 100 // round to nearest 100
         return `${country.currencySymbol}${localVal.toLocaleString()}`
     }
@@ -107,10 +107,10 @@ export function ValueStackSection({ country }: ValueStackSectionProps) {
     const totalValueDisplay = formatCurrency(totalValueUSD)
 
     // The actual price to pay
-    const actualPriceDisplay = country ? country.priceDisplay : "$267 USD"
+    const actualPriceDisplay = country ? country.priceDisplay : "$297 USD"
     const savingsDisplay = country
         ? formatCurrency(totalValueUSD - (country.priceUSD)) // rough savings calc
-        : `$${totalValueUSD - 267} USD`
+        : `$${totalValueUSD - 297} USD`
 
     return (
         <section ref={sectionRef} className="relative bg-[#0a1628] py-24 overflow-hidden">

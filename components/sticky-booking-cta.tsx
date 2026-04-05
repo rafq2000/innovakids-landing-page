@@ -46,7 +46,7 @@ export function StickyBookingCTA() {
           </div>
           <div className="flex-1">
             <h3 className="text-white font-bold text-sm md:text-base">¡Últimos Cupos Disponibles!</h3>
-            <p className="text-white/90 text-xs">Inicia semana del 6 de Abril del 2026</p>
+            <p className="text-white/90 text-xs">Inicia semana del 27 de Abril del 2026</p>
           </div>
         </div>
 

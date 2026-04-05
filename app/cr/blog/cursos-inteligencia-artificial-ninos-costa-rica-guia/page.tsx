@@ -110,7 +110,7 @@ export default function BlogCursosIANinosCostaRica() {
 
               <h2>¿Cuánto Cuesta un Curso de IA para Niños en Costa Rica?</h2>
               <p>
-                El programa completo de InnovaKids cuesta <strong>$267 USD</strong> e incluye:
+                El programa completo de InnovaKids cuesta <strong>$297 USD</strong> e incluye:
               </p>
               <ul>
                 <li>10 clases en vivo de 60 minutos cada una</li>
@@ -125,7 +125,7 @@ export default function BlogCursosIANinosCostaRica() {
               <h2>Métodos de Pago en Costa Rica</h2>
               <p>
                 Aceptamos tarjetas de crédito/débito, SINPE Móvil y PayPal. Todas las opciones son seguras y el precio
-                es $267 USD.
+                es $297 USD.
               </p>
 
               <h2>Testimonios de Familias Ticas</h2>
