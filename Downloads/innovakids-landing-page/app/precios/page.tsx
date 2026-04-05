@@ -53,7 +53,7 @@ const jsonLd = {
     {
       "@type": "Offer",
       name: "Plan Explorer (Más Popular)",
-      price: "267",
+      price: "297",
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       url: "https://www.innovakidslatam.com/precios",
@@ -80,7 +80,7 @@ const faqJsonLd = {
       name: "¿Cuánto cuesta el curso de IA para niños de InnovaKids?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "InnovaKids ofrece tres planes: Starter desde $147 USD (5 clases), Explorer desde $267 USD (10 clases, el más popular) y Creator VIP desde $397 USD (10 clases + mentoría personalizada). Todos incluyen garantía de satisfacción.",
+        text: "InnovaKids ofrece tres planes: Starter desde $147 USD (5 clases), Explorer desde $297 USD (10 clases, el más popular) y Creator VIP desde $397 USD (10 clases + mentoría personalizada). Todos incluyen garantía de satisfacción.",
       },
     },
     {
@@ -184,8 +184,8 @@ export default function PreciosPage() {
                   <p className="text-gray-400">Programa completo</p>
                 </div>
                 <div className="mb-6">
-                  <span className="text-gray-400 line-through text-lg">$497 USD</span>
-                  <p className="text-5xl font-bold text-cyan-400">$267 <span className="text-lg font-normal text-gray-400">USD</span></p>
+                  <span className="text-gray-400 line-through text-lg">$547 USD</span>
+                  <p className="text-5xl font-bold text-cyan-400">$297 <span className="text-lg font-normal text-gray-400">USD</span></p>
                 </div>
                 <ul className="space-y-3 mb-8 flex-1">
                   {[
@@ -304,7 +304,7 @@ export default function PreciosPage() {
               <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
                 <h3 className="text-xl font-bold text-white mb-3">¿Cuánto cuesta el curso de IA para niños de InnovaKids?</h3>
                 <p className="text-gray-300">
-                  Ofrecemos tres planes: Starter desde $147 USD (5 clases), Explorer desde $267 USD (10 clases, el más popular)
+                  Ofrecemos tres planes: Starter desde $147 USD (5 clases), Explorer desde $297 USD (10 clases, el más popular)
                   y Creator VIP desde $397 USD (10 clases + mentoría personalizada). Todos incluyen garantía de satisfacción.
                 </p>
               </div>

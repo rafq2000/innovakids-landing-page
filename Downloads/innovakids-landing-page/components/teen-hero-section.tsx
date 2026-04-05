@@ -95,7 +95,7 @@ export function TeenHeroSection() {
                         <br className="hidden sm:block" />
                         No necesitas experiencia previa. Solo ganas de programar el futuro.
                         <br />
-                        Certificado con valor curricular • <span className="text-green-400 font-bold">$267 USD</span>
+                        Certificado con valor curricular • <span className="text-green-400 font-bold">$297 USD</span>
                     </p>
 
                     {/* Countdown Timer */}
@@ -111,7 +111,7 @@ export function TeenHeroSection() {
                             <HeroCountdown />
 
                             <p className="text-white font-semibold mt-6 text-lg font-premium">
-                                Cierre de inscripciones: <span className="text-purple-400">Semana del 6 de Abril del 2026</span>
+                                Cierre de inscripciones: <span className="text-purple-400">Semana del 27 de Abril del 2026</span>
                             </p>
                         </div>
                     </div>

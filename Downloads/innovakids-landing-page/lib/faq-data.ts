@@ -36,12 +36,12 @@ export const faqs = [
     {
         question: "¿Cuándo inicia y cuáles son los horarios?",
         answer:
-            "Iniciamos la semana del 6 de Abril del 2026. Los horarios son 100% flexibles: al agendar tu evaluación elegimos juntos el bloque que mejor se adapte a tu rutina escolar (tenemos opciones de Lunes a Sábado, mañanas y tardes).",
+            "Iniciamos la semana del 27 de Abril del 2026. Los horarios son 100% flexibles: al agendar tu evaluación elegimos juntos el bloque que mejor se adapte a tu rutina escolar (tenemos opciones de Lunes a Sábado, mañanas y tardes).",
     },
     {
         question: "¿Cuánto cuesta el programa completo?",
         answer:
-            "$267 USD (Precio Oficial 2026). Esto cubre las 5 semanas, las 10 clases en vivo, acceso de por vida a las grabaciones, software premium durante el curso y garantía total. Es una inversión única para una habilidad que usará el resto de su vida.",
+            "$297 USD (Precio Oficial 2026). Esto cubre las 5 semanas, las 10 clases en vivo, acceso de por vida a las grabaciones, software premium durante el curso y garantía total. Es una inversión única para una habilidad que usará el resto de su vida.",
     },
     {
         question: "¿Qué pasa si falta a una clase?",

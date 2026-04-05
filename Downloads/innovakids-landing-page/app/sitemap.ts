@@ -33,6 +33,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/vibe-coding-ninos",
     "/ia-ninos-por-edad",
     "/blog/scratch-vs-ia-ninos",
+    "/blog/inteligencia-artificial-para-ninos",
+    "/blog/metodologia-erica-pensamiento-computacional-ia-ninos",
+    "/blog/mejores-cursos-verano-programacion-ia-ninos-2026",
+    "/blog/cursos-online-tecnologia-ninos-adolescentes",
+    "/blog/codingal-vs-innovakids-comparativa",
+    "/blog/ia-para-ninos-por-edad-8-10-11-13-14-17",
+    "/blog/vibe-coding-que-es-futuro-programacion-ninos",
+    "/blog/como-proteger-hijos-ia-uso-seguro-responsable",
+    "/blog/innovakids-vs-code-org-comparativa-2026",
+    "/blog/vacaciones-escolares-cursos-ia-ninos-2026",
+    "/cursos-online-para-ninos",
   ]
 
   const coursePages = ["/curso-creacion-videojuegos-ninos", "/curso-creador-contenido-ia", "/curso-emprendimiento-ninos"]

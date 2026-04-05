@@ -8,6 +8,16 @@ export const metadata: Metadata = {
   title: "Blog - InnovaKids | Educación en IA para Niños",
   description:
     "Descubre artículos sobre inteligencia artificial para niños, consejos para padres, y las últimas tendencias en educación tecnológica.",
+  keywords: [
+    "blog inteligencia artificial niños",
+    "educación tecnológica infantil",
+    "IA para niños",
+    "cursos programación niños",
+    "innovakids blog",
+  ],
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/blog",
+  },
 }
 
 const blogPosts = [
@@ -45,6 +55,51 @@ const blogPosts = [
     image: "/children-using-ai-educational-tools.jpg",
     date: "2026-03-03",
     category: "Comparativa",
+    readTime: "6 min",
+  },
+  {
+    slug: "ia-para-ninos-por-edad-8-10-11-13-14-17",
+    title: "IA para Ninos por Edad: Guia 8-10, 11-13 y 14-17 Anos (2026)",
+    excerpt: "Descubre que puede aprender tu hijo segun su edad. Proyectos reales, herramientas y metodologias adaptadas para cada etapa del desarrollo.",
+    image: "/kids-learning-ai-on-computer.jpg",
+    date: "2026-04-01",
+    category: "Guias 2026",
+    readTime: "9 min",
+  },
+  {
+    slug: "vibe-coding-que-es-futuro-programacion-ninos",
+    title: "Vibe Coding: Que Es y Por Que es el Futuro de la Programacion para Ninos",
+    excerpt: "El Vibe Coding permite crear software describiendo lo que quieres en lenguaje natural. Descubre como los ninos ya lo estan usando para crear apps y videojuegos.",
+    image: "/children-using-ai-educational-tools.jpg",
+    date: "2026-04-01",
+    category: "Innovacion",
+    readTime: "8 min",
+  },
+  {
+    slug: "como-proteger-hijos-ia-uso-seguro-responsable",
+    title: "Como Proteger a tus Hijos en la Era de la IA: Guia de Uso Seguro y Responsable",
+    excerpt: "Guia practica para padres sobre supervision, privacidad y uso responsable de la inteligencia artificial por edad.",
+    image: "/parent-and-child-using-chatgpt-safely.jpg",
+    date: "2026-04-01",
+    category: "Seguridad",
+    readTime: "7 min",
+  },
+  {
+    slug: "innovakids-vs-code-org-comparativa-2026",
+    title: "InnovaKids vs Code.org (2026): Cual es Mejor para Tu Hijo?",
+    excerpt: "Comparativa honesta entre Code.org (gratuito, autoguiado) e InnovaKids (clases en vivo, IA, grupos reducidos). Descubre cual se adapta mejor a tu hijo.",
+    image: "/children-using-ai-educational-tools.jpg",
+    date: "2026-04-01",
+    category: "Comparativa",
+    readTime: "7 min",
+  },
+  {
+    slug: "vacaciones-escolares-cursos-ia-ninos-2026",
+    title: "Vacaciones Escolares 2026: Los Mejores Cursos de IA y Tecnologia para Ninos",
+    excerpt: "Aprovecha las vacaciones para que tu hijo aprenda habilidades del futuro. Cursos intensivos de IA, programacion y creacion digital.",
+    image: "/kids-learning-ai-on-computer.jpg",
+    date: "2026-04-01",
+    category: "Guias 2026",
     readTime: "6 min",
   },
   {

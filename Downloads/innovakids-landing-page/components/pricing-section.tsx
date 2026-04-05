@@ -17,7 +17,7 @@ export function PricingSection({ country }: PricingSectionProps) {
     if (!country) return `$${amount}`
     if (country.currency === 'USD' || country.currency === 'EUR') return `${country.currencySymbol}${amount}`
     // For LATAM currencies, approximate conversion for display
-    const exchangeRate = country.priceLocal / 267 // derived rate from base price
+    const exchangeRate = country.priceLocal / 297 // derived rate from base price
     const localVal = Math.round(amount * exchangeRate / 100) * 100
     return `${country.currencySymbol}${localVal.toLocaleString()}`
   }
@@ -28,7 +28,7 @@ export function PricingSection({ country }: PricingSectionProps) {
   const pricingTiers = [
     {
       name: "Vibe Explorer (Nivel 1)",
-      priceUSD: 267,
+      priceUSD: 297,
       description: "El fundamento obligatorio para dominar la IA.",
       icon: Sparkles,
       color: "from-purple-400 to-pink-400",
@@ -56,7 +56,7 @@ export function PricingSection({ country }: PricingSectionProps) {
         "40 Clases en Total (Ahorro Inteligente)",
         "Incubadora de Startups incluida",
         "Certificación Master Completa",
-        "Pago Único (Equivale a $267 x 4)",
+        "Pago Único (Equivale a $297 x 4)",
       ],
       cta: "Inscripción VIP",
       link: "/pagar?option=university",

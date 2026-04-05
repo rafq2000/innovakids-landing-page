@@ -82,6 +82,26 @@ export function Footer() {
                       <ArrowRight className="w-3 h-3" /> Blog Educativo
                     </a>
                   </li>
+                  <li>
+                    <a href="/precios" className="text-[#0a1628]/80 hover:text-[#0a1628] hover:underline transition-colors text-sm flex items-center gap-2">
+                      <ArrowRight className="w-3 h-3" /> Precios y Planes
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/colegios" className="text-[#0a1628]/80 hover:text-[#0a1628] hover:underline transition-colors text-sm flex items-center gap-2">
+                      <ArrowRight className="w-3 h-3" /> Soluciones para Colegios
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/testimonios" className="text-[#0a1628]/80 hover:text-[#0a1628] hover:underline transition-colors text-sm flex items-center gap-2">
+                      <ArrowRight className="w-3 h-3" /> Testimonios
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/resultados" className="text-[#0a1628]/80 hover:text-[#0a1628] hover:underline transition-colors text-sm flex items-center gap-2">
+                      <ArrowRight className="w-3 h-3" /> Resultados
+                    </a>
+                  </li>
                 </ul>
               </div>
 

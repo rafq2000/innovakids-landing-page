@@ -187,7 +187,7 @@ export default function UruguayBlogGuiaPage() {
                     </thead>
                     <tbody className="text-sm">
                       {[
-                        ["Precio", "$267 USD (10 clases)", "$150-400 USD"],
+                        ["Precio", "$297 USD (10 clases)", "$150-400 USD"],
                         ["Alumnos por clase", "Máximo 5", "15-30"],
                         ["Herramientas IA", "10+ profesionales", "1-3 básicas"],
                         ["Metodología", "100% práctica", "Teoría + práctica"],
@@ -272,7 +272,7 @@ export default function UruguayBlogGuiaPage() {
                     },
                     {
                       q: "¿Cómo puedo pagar desde Uruguay?",
-                      a: "Aceptamos tarjeta de crédito, débito internacional y transferencia bancaria. $267 USD el programa completo.",
+                      a: "Aceptamos tarjeta de crédito, débito internacional y transferencia bancaria. $297 USD el programa completo.",
                     },
                   ].map((item, i) => (
                     <div key={i} className="bg-[#0f2744]/50 rounded-xl p-6 border border-white/10">
