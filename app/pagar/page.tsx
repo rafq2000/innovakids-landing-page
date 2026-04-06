@@ -21,6 +21,7 @@ type PaymentOption =
   | "promo180"
   | "restante177"
   | "promo27"
+  | "promo267"
   | "promo240"
   | "promo120"
 
@@ -100,6 +101,11 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
     title: "Promoción Especial",
     price: 27,
     description: "Pago único de $27 USD - Oferta por tiempo limitado",
+  },
+  promo267: {
+    title: "Programa Completo con Descuento",
+    price: 267,
+    description: "Pago único de $267 USD - Precio especial Academy University",
   },
   promo240: {
     title: "Programa Completo con Descuento",

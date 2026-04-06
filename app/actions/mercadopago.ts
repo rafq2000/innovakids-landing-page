@@ -18,6 +18,7 @@ type PaymentOption =
   | "restante177"
   | "remaining"
   | "promo27"
+  | "promo267"
   | "promo240"
   | "promo120"
 
@@ -37,6 +38,7 @@ const paymentTitles: Record<PaymentOption, string> = {
   university: "Academy University Pass",
   restante177: "Innovakids - Pago Restante $177",
   promo27: "Innovakids - Promoción $27",
+  promo267: "Innovakids - Programa Completo $267",
   promo240: "Innovakids - Promoción $240",
   promo120: "Innovakids - Promoción Especial $120",
 }
@@ -57,6 +59,7 @@ const paymentDescriptions: Record<PaymentOption, string> = {
   university: "Acceso Total 4 Módulos",
   restante177: "Pago restante de $177 USD",
   promo27: "Pago único de $27 USD",
+  promo267: "Pago único de $267 USD",
   promo240: "Pago único de $240 USD",
   promo120: "Pago especial de $120 USD",
 }
