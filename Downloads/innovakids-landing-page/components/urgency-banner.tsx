@@ -12,7 +12,7 @@ export function UrgencyBanner() {
   })
 
   useEffect(() => {
-    const targetDate = new Date("2026-04-02T23:59:59-03:00").getTime() // Cierre inscripciones (Jueves previo)
+    const targetDate = new Date("2026-04-24T23:59:59-03:00").getTime() // Cierre inscripciones (Jueves previo)
 
     const updateCountdown = () => {
       const now = new Date().getTime()
