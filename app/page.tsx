@@ -207,14 +207,6 @@ export default function Home() {
 
         <div className="h-24" />
 
-        {/* Module Preview - Show exactly what they get */}
-        <ModulePreviewSection />
-
-        {/* Value Stack - Everything included */}
-        <ValueStackSection />
-
-        <div className="h-24" />
-
         {/* NEW: Vision Section - The Bridge */}
         <VisionSection />
 
@@ -228,8 +220,16 @@ export default function Home() {
 
         <div className="h-24" />
 
-        {/* Curriculum before pricing - builds value */}
+        {/* Curriculum - builds value before pricing */}
         <CurriculumSection />
+
+        <div className="h-24" />
+
+        {/* Module Preview - what they get (before pricing) */}
+        <ModulePreviewSection />
+
+        {/* Value Stack - Everything included (before pricing) */}
+        <ValueStackSection />
 
         <div className="h-24" />
 
@@ -237,9 +237,7 @@ export default function Home() {
 
         {/* Consequences Section Removed - Positivity Focus */}
 
-        <div className="h-24" />
-
-        {/* Pricing at the end - after full value presentation */}
+        {/* ALL PRICING AT THE END - after full value presentation */}
         <PricingSection />
 
         <div className="h-24" />
