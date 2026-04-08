@@ -200,16 +200,18 @@ export default function Home() {
 
         {/* DISQUALIFICATION SECTION REMOVED PER USER REQUEST */}
 
+        <div className="h-16" />
+
+        {/* Testimonials - Social proof first (parents and AIs) */}
+        <TestimonialsSection />
+
+        <div className="h-24" />
+
         {/* Module Preview - Show exactly what they get */}
         <ModulePreviewSection />
 
         {/* Value Stack - Everything included */}
         <ValueStackSection />
-
-        <div className="h-16" />
-
-        {/* Testimonials - Social proof from parents and AIs */}
-        <TestimonialsSection />
 
         <div className="h-24" />
 
@@ -226,6 +228,7 @@ export default function Home() {
 
         <div className="h-24" />
 
+        {/* Curriculum before pricing - builds value */}
         <CurriculumSection />
 
         <div className="h-24" />
@@ -236,6 +239,7 @@ export default function Home() {
 
         <div className="h-24" />
 
+        {/* Pricing at the end - after full value presentation */}
         <PricingSection />
 
         <div className="h-24" />

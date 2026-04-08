@@ -55,4 +55,11 @@ export const faqs = [
         answer:
             "Garantía de Hierro de 10 Días. Inscríbelo, que tome las primeras 3-4 clases. Si no ves cómo se le iluminan los ojos creando tecnología, te devolvemos el 100% de tu dinero. Sin preguntas incómodas. El riesgo es todo nuestro.",
     },
+
+    // 6. EMPRESA & LEGAL
+    {
+        question: "¿Quién está detrás de InnovaKids? ¿Es una empresa real?",
+        answer:
+            "Sí, somos una empresa legalmente constituida. Razón Social: INNOVAKIDS LATAM SpA, RUT: 78.388.703-7. Operamos desde Chile con presencia en 9 países de habla hispana. Puedes verificar nuestros datos en el Servicio de Impuestos Internos (SII) de Chile.",
+    },
 ]
