@@ -24,6 +24,9 @@ type PaymentOption =
   | "promo267"
   | "promo240"
   | "promo120"
+  | "promo480"
+  | "pago240"
+  | "pago480"
 
 interface PaymentDetails {
   title: string
@@ -116,6 +119,21 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
     title: "Promoción Especial 120",
     price: 120,
     description: "Pago de $120 USD - Oferta especial",
+  },
+  promo480: {
+    title: "Programa Completo Premium",
+    price: 480,
+    description: "Pago único de $480 USD - Acceso completo Innovakids",
+  },
+  pago240: {
+    title: "Curso Completo Innovakids",
+    price: 240,
+    description: "Pago único de $240 USD - Acceso completo al curso de IA para niños",
+  },
+  pago480: {
+    title: "Programa Premium Innovakids",
+    price: 480,
+    description: "Pago único de $480 USD - Acceso premium completo al programa de IA",
   },
 }
 
