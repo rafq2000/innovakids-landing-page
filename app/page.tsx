@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "¿Tu Hijo Se Está Quedando Atrás en la Era de la IA? | InnovaKids",
   // Description: fear-first + proof + urgency CTA
   description:
-    "El 85% de los empleos del 2035 exigirán IA. Si tu hijo no aprende ahora, arranca la vida laboral en desventaja. Curso #1 IA niños 8-17. Clase gratis.",
+    "⚠️ 73% de sus compañeros ya usa IA para estudiar. Sin ella, tu hijo queda atrás en colegio y universidad. La IA es el nuevo inglés/internet. Curso #1 IA niños 8-17. Clase gratis.",
   keywords: [
     "mi hijo se queda atrás en la era de la ia",
     "como evitar que mi hijo se quede atras con la ia",
