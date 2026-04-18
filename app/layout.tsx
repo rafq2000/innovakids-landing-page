@@ -28,16 +28,28 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "InnovaKids | Cursos de IA para Niños y Adolescentes Online",
+  // Title: fear-hook opener · keyword-rich · brand at end
+  title: "¿Tu Hijo Se Está Quedando Atrás en la Era de la IA? | InnovaKids",
+  // Description: fear-first + social proof + urgency
   description:
-    "527 alumnos graduados en 9 países ya crean aplicaciones y música con IA. La escuela online #1 de inteligencia artificial para niños y adolescentes (8-17 años). Garantía Total.",
+    "La IA es el inglés/internet/Excel de los 90s: ya la usan sus compañeros en el colegio. Si tu hijo no aprende ahora, llega atrasado a la universidad y al trabajo. Clase gratis.",
   keywords: [
+    "mi hijo se queda atrás en la era de la ia",
+    "como evitar que mi hijo se quede atras con la ia",
+    "niños rezagados inteligencia artificial",
+    "brecha digital niños ia",
+    "ia el nuevo ingles",
+    "ia habilidad basica siglo xxi",
+    "mi hijo no sabe usar ia",
+    "ia para estudiar colegio",
     "curso inteligencia artificial niños",
     "curso inteligencia artificial adolescentes",
+    "cursos de ia para niños",
     "clases online ia niños adolescentes",
     "escuela de inteligencia artificial para niños",
     "aprender chatgpt para niños",
     "curso de programación y ia para adolescentes",
+    "academia ia niños",
     "innovakids",
     "innovakidslatam",
     "cursos de tecnologia para niños y adolescentes"
@@ -64,9 +76,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
-    title: "Curso de Inteligencia Artificial para Niños y Adolescentes | InnovaKids",
+    title: "No Dejes Que Tu Hijo Se Quede Atrás en la Era de la IA | InnovaKids",
     description:
-      "527 alumnos graduados. Tu hijo crea su primera app en 5 semanas. Clases en vivo, máx 5 por grupo. Garantía 100% de devolución.",
+      "La IA es hoy lo que fue internet, inglés y Excel en los 90s: habilidad básica. Sus compañeros ya la usan en el colegio. Si no aprende ahora, queda rezagado para siempre.",
     url: "https://www.innovakidslatam.com",
     siteName: "Innovakids",
     images: [
@@ -74,7 +86,7 @@ export const metadata: Metadata = {
         url: "/hero-child-learning-ai.jpg",
         width: 1200,
         height: 630,
-        alt: "Niños creando apps y juegos con Inteligencia Artificial en Innovakids",
+        alt: "Curso de Inteligencia Artificial para Niños y Adolescentes 8-17 años - InnovaKids",
       },
     ],
     locale: "es_419",
@@ -82,9 +94,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Curso de Inteligencia Artificial para Niños y Adolescentes | InnovaKids",
+    title: "¿Tu Hijo Se Está Quedando Atrás en la Era de la IA? | InnovaKids",
     description:
-      "Formación líder en inteligencia artificial para niños y adolescentes de 8 a 17 años. Clases online en vivo, grupos de 5 alumnos. WhatsApp: +56 9 6475 4219",
+      "La IA es el nuevo inglés/internet. Sus compañeros ya la usan para estudiar. Si no aprende ahora, queda atrás en colegio, universidad y trabajo. Clase gratis.",
     images: ["/hero-child-learning-ai.jpg"],
   },
   robots: {
@@ -133,7 +145,7 @@ export default function RootLayout({
               name: "Innovakids",
               alternateName: ["Innova Kids", "InnovaKids LATAM", "Cursos IA Niños"],
               description:
-                "Academia de Vibe Coding para niños y adolescentes. 527 graduados en 9 países. Enseñamos a niños y adolescentes de 8-17 años a crear software, arte y música usando Inteligencia Artificial.",
+                "Academia #1 en LATAM que evita que los niños y adolescentes (8-17 años) se queden atrás en la era de la IA. La IA es el nuevo inglés/internet/Excel: habilidad básica para el colegio, universidad y trabajo. 527 graduados en 9 países.",
               url: "https://www.innovakidslatam.com",
               logo: "https://www.innovakidslatam.com/logo-innovakids.png",
               address: {

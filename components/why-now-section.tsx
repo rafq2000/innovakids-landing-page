@@ -8,37 +8,37 @@ import { motion, useInView } from "framer-motion"
 const reasons = [
   {
     icon: Sun,
-    emoji: "☀️",
+    emoji: "⚠️",
     number: 1,
-    title: "Está de Vacaciones",
-    description: "Sin estrés de clases ni tareas. Tu hijo puede enfocarse 100% en aprender IA mientras disfruta sus vacaciones de verano.",
-    color: "from-yellow-500/20 to-orange-500/20",
-    borderColor: "border-yellow-500/30",
+    title: "Sus Compañeros Ya La Usan",
+    description: "El 73% de los niños ya usa IA para hacer tareas y estudiar. Si el tuyo no sabe, sus notas empiezan a caer sin que entiendas por qué.",
+    color: "from-red-500/20 to-orange-500/20",
+    borderColor: "border-red-500/30",
   },
   {
     icon: Rocket,
-    emoji: "🚀",
+    emoji: "📚",
     number: 2,
-    title: "Ventaja Temprana",
-    description: "Los que empiezan en Marzo tienen ventaja todo el año. Cuando vuelva a clases, tendrá habilidades que sus compañeros no tienen.",
+    title: "Es El Nuevo Inglés/Internet",
+    description: "Como en los 90s con internet o Excel: los niños que no aprendieron a tiempo quedaron atrás toda la vida. La IA es igual, pero 10x más rápido.",
     color: "from-blue-500/20 to-purple-500/20",
     borderColor: "border-blue-500/30",
   },
   {
     icon: DollarSign,
-    emoji: "💰",
+    emoji: "🎓",
     number: 3,
-    title: "Precio de Lanzamiento 2026",
-    description: "Oferta especial solo para los primeros del año. Este precio no se repetirá.",
+    title: "Lo Necesita Para La Universidad",
+    description: "Los universitarios ya usan IA a diario. Si tu hijo llega sin saberla, competirá en desventaja frente a quienes la dominan hace años.",
     color: "from-green-500/20 to-emerald-500/20",
     borderColor: "border-green-500/30",
   },
   {
     icon: Calendar,
-    emoji: "📅",
+    emoji: "💼",
     number: 4,
-    title: "Termina en Abril",
-    description: "5 semanas intensivas. Tu hijo tendrá certificación y proyectos antes de volver al colegio.",
+    title: "85% De Empleos 2035 La Exigen",
+    description: "Sin IA, tu hijo queda fuera del mercado laboral del futuro. Es la habilidad más básica y mejor pagada del siglo XXI.",
     color: "from-primary/20 to-[#8b5cf6]/20",
     borderColor: "border-primary/30",
   },
@@ -89,7 +89,7 @@ export function WhyNowSection() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl lg:text-6xl font-bold text-white mb-6 font-premium">
-            Por Qué Este es el <span className="premium-gradient-text">Momento Perfecto</span>
+            Por Qué <span className="premium-gradient-text">Cada Día Que Esperas</span>, Tu Hijo Queda Más Atrás
           </h2>
         </motion.div>
 
