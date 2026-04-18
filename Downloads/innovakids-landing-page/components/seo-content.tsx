@@ -88,25 +88,29 @@ export function SEOContent() {
               a dominar la IA como una habilidad básica, igual que se enseña a leer.
             </p>
 
-            <div className="bg-gradient-to-br from-cyan-900/20 to-blue-900/20 p-8 rounded-lg border border-cyan-500/20 my-8">
-              <h3 className="text-2xl font-bold text-cyan-300 mb-4">
-                🎯 Qué Aprenderán en Nuestras Clases de IA para Niños y Adolescentes
+            <div className="bg-gradient-to-br from-red-900/30 to-orange-900/20 p-8 rounded-lg border border-red-500/30 my-8">
+              <h3 className="text-2xl font-bold text-red-300 mb-4">
+                🚨 En Solo 5 Semanas Tu Hijo Deja de Estar Rezagado
               </h3>
+              <p className="text-gray-300 mb-4 text-sm">
+                Cada semana que pasa sin que tu hijo aprenda IA, la brecha con sus compañeros se hace más grande. Este
+                programa es el camino más rápido para que deje de ir atrás:
+              </p>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-bold text-white mb-3">Semana 1-2: Fundamentos de IA</h4>
+                  <h4 className="font-bold text-white mb-3">Semana 1-2: Recupera lo básico que ya saben sus compañeros</h4>
                   <ul className="space-y-2 text-sm">
-                    <li>✓ Introducción a ChatGPT y prompts</li>
-                    <li>✓ Creación de imágenes con IA</li>
-                    <li>✓ Primer proyecto: Chatbot personalizado</li>
+                    <li>✓ ChatGPT y prompts que los demás ya dominan</li>
+                    <li>✓ IA para estudiar y mejorar sus notas ya</li>
+                    <li>✓ Primer chatbot: deja de ser un "analfabeto digital de la IA"</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-bold text-white mb-3">Semana 3-5: Proyectos Avanzados</h4>
+                  <h4 className="font-bold text-white mb-3">Semana 3-5: Pasa al frente de su generación</h4>
                   <ul className="space-y-2 text-sm">
-                    <li>✓ Programación de apps con IA</li>
-                    <li>✓ Videos y música generada con IA</li>
-                    <li>✓ Proyecto final: Tu propia startup</li>
+                    <li>✓ Crea apps con IA — pocos adultos saben hacerlo</li>
+                    <li>✓ Videos y música con IA: el nuevo lenguaje de los adolescentes</li>
+                    <li>✓ Proyecto final: su propia startup. Ya no llega tarde, lidera.</li>
                   </ul>
                 </div>
               </div>
@@ -125,65 +129,69 @@ export function SEOContent() {
               perfecta para recuperar terreno antes de que sea demasiado tarde.
             </p>
 
-            <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 p-8 rounded-xl border border-purple-500/30 my-8">
-              <h3 className="text-2xl font-bold text-purple-300 mb-6 text-center">
-                🎓 Por Qué los Adolescentes de 14-17 Años Aprenden IA Más Rápido
+            <div className="bg-gradient-to-br from-red-900/30 to-pink-900/30 p-8 rounded-xl border border-red-500/30 my-8">
+              <h3 className="text-2xl font-bold text-red-300 mb-6 text-center">
+                ⏰ Último Llamado: Los 14-17 Años Son La Última Ventana Antes de la Universidad
               </h3>
+              <p className="text-gray-300 text-center mb-6 text-sm">
+                Si tu hijo entra a la universidad sin saber IA, competirá en desventaja contra miles de jóvenes que
+                llevan años usándola. No hay vuelta atrás.
+              </p>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-bold text-white mb-3">Ventajas Cognitivas</h4>
+                  <h4 className="font-bold text-white mb-3">Lo que pierde si NO aprende ahora</h4>
                   <ul className="space-y-2 text-sm">
-                    <li>✓ Mayor capacidad de abstracción</li>
-                    <li>✓ Pensamiento lógico desarrollado</li>
-                    <li>✓ Pueden manejar proyectos complejos</li>
-                    <li>✓ Preparación para carreras STEM</li>
+                    <li>❌ Peores notas frente a compañeros que usan IA</li>
+                    <li>❌ Peor puntaje en admisión universitaria</li>
+                    <li>❌ Sin portfolio = sin acceso a carreras STEM top</li>
+                    <li>❌ Arranca la vida laboral con desventaja permanente</li>
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-bold text-white mb-3">Lo Que Aprenderán</h4>
+                  <h4 className="font-bold text-white mb-3">Lo que gana si aprende YA</h4>
                   <ul className="space-y-2 text-sm">
-                    <li>✓ Programación con asistencia de IA</li>
-                    <li>✓ Creación de apps y startups</li>
-                    <li>✓ Portfolio profesional de proyectos</li>
-                    <li>✓ Habilidades para el mercado laboral</li>
+                    <li>✓ Sube notas usando IA como copiloto de estudio</li>
+                    <li>✓ Llega a la universidad 5 años adelantado</li>
+                    <li>✓ CV profesional con apps y startups creadas</li>
+                    <li>✓ Acceso al 85% de los empleos bien pagados del futuro</li>
                   </ul>
                 </div>
               </div>
             </div>
 
-            <div className="bg-gray-800/50 p-6 rounded-lg border border-cyan-500/20 my-6">
-              <h3 className="text-2xl font-bold text-cyan-400 mb-4">
-                Diferencias Entre Nuestros Programas: Niños vs Adolescentes
+            <div className="bg-gray-800/50 p-6 rounded-lg border border-red-500/30 my-6">
+              <h3 className="text-2xl font-bold text-red-400 mb-4">
+                Qué Le Pasa a Tu Hijo SIN IA vs CON IA (Por Edad)
               </h3>
               <div className="overflow-x-auto">
                 <table className="w-full text-left border-collapse text-sm">
                   <thead>
-                    <tr className="bg-cyan-900/30">
-                      <th className="p-3 font-bold text-white border border-cyan-500/20">Aspecto</th>
-                      <th className="p-3 font-bold text-cyan-400 border border-cyan-500/20">Niños 8-13</th>
-                      <th className="p-3 font-bold text-purple-400 border border-cyan-500/20">Adolescentes 14-17</th>
+                    <tr className="bg-red-900/30">
+                      <th className="p-3 font-bold text-white border border-red-500/20">Edad</th>
+                      <th className="p-3 font-bold text-red-400 border border-red-500/20">Sin IA (se queda atrás)</th>
+                      <th className="p-3 font-bold text-green-400 border border-red-500/20">Con IA (va adelante)</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="p-3 border border-cyan-500/20">Enfoque</td>
-                      <td className="p-3 border border-cyan-500/20">Creatividad y exploración</td>
-                      <td className="p-3 border border-cyan-500/20">Proyectos profesionales</td>
+                      <td className="p-3 border border-red-500/20 font-bold">Niños 8-13</td>
+                      <td className="p-3 border border-red-500/20">Se siente "tonto" frente a compañeros que sí usan IA</td>
+                      <td className="p-3 border border-red-500/20">Crea juegos y proyectos que los demás no pueden</td>
                     </tr>
                     <tr className="bg-gray-800/30">
-                      <td className="p-3 border border-cyan-500/20">Proyectos</td>
-                      <td className="p-3 border border-cyan-500/20">Juegos, historias, arte</td>
-                      <td className="p-3 border border-cyan-500/20">Apps, startups, automatización</td>
+                      <td className="p-3 border border-red-500/20 font-bold">Colegio</td>
+                      <td className="p-3 border border-red-500/20">Tarda 3h en tareas que otros hacen en 20 min con IA</td>
+                      <td className="p-3 border border-red-500/20">Usa IA como tutor 24/7: mejores notas, menos estrés</td>
                     </tr>
                     <tr>
-                      <td className="p-3 border border-cyan-500/20">Programación</td>
-                      <td className="p-3 border border-cyan-500/20">Visual y bloques</td>
-                      <td className="p-3 border border-cyan-500/20">Python con asistencia IA</td>
+                      <td className="p-3 border border-red-500/20 font-bold">Adolescentes 14-17</td>
+                      <td className="p-3 border border-red-500/20">Llega a la universidad 5 años atrasado</td>
+                      <td className="p-3 border border-red-500/20">CV con apps y startups antes de postular</td>
                     </tr>
                     <tr className="bg-gray-800/30">
-                      <td className="p-3 border border-cyan-500/20">Resultado</td>
-                      <td className="p-3 border border-cyan-500/20">Portafolio creativo</td>
-                      <td className="p-3 border border-cyan-500/20">CV profesional para universidad</td>
+                      <td className="p-3 border border-red-500/20 font-bold">Resultado a futuro</td>
+                      <td className="p-3 border border-red-500/20">Parte de ese 85% fuera del mercado laboral en 2035</td>
+                      <td className="p-3 border border-red-500/20">Accede al 15% de empleos bien pagados e inteligentes</td>
                     </tr>
                   </tbody>
                 </table>
@@ -191,12 +199,14 @@ export function SEOContent() {
             </div>
 
             <h2 className="text-3xl font-bold text-white mt-10 mb-6">
-              Cursos de IA para Niños y Adolescentes en Toda Latinoamérica
+              Miles de Familias en LATAM Ya Se Dieron Cuenta: No Dejes Que La Tuya Sea La Última
             </h2>
 
             <p>
-              Somos el <strong>curso de IA para niños y adolescentes</strong> líder en LATAM. Tenemos estudiantes de 8 a
-              17 años activos en:
+              Mientras tú evalúas si vale la pena, <strong>500+ familias en LATAM ya tomaron la decisión</strong> de no
+              dejar a sus hijos rezagados en la era de la IA. Somos el <strong>curso de IA para niños y adolescentes</strong>{" "}
+              líder en la región precisamente porque los padres entienden que esto no es opcional. Tenemos estudiantes
+              activos que ya NO se están quedando atrás en:
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 my-6">
@@ -219,9 +229,27 @@ export function SEOContent() {
 
             <p>
               Todas nuestras <strong>clases de inteligencia artificial para niños y adolescentes</strong> se imparten
-              100% online en español, con horarios adaptados a cada zona horaria de Latinoamérica. Ya seas padre de un
-              niño de 8 años o un adolescente de 17, tenemos el programa perfecto.
+              100% online en español. Ya sea tu hijo de 8 años (y aún estás a tiempo de que NO se quede atrás) o un
+              adolescente de 17 (y es su última oportunidad antes de la universidad), existe un programa para rescatarlo
+              de la brecha digital que crece cada día.
             </p>
+
+            <div className="bg-red-950/40 border-2 border-red-500/40 p-8 rounded-xl my-10 text-center">
+              <h3 className="text-3xl font-bold text-white mb-4">
+                ⏳ La Pregunta Real Que Debes Hacerte
+              </h3>
+              <p className="text-xl text-gray-200 mb-4">
+                En 5 años, cuando tu hijo esté compitiendo por un cupo en la universidad o por un trabajo, y pierda
+                contra alguien que sí supo usar IA desde niño…
+              </p>
+              <p className="text-2xl font-bold text-red-400 mb-6">
+                ¿Vas a poder mirarlo a los ojos y decirle que hiciste todo lo posible?
+              </p>
+              <p className="text-gray-300">
+                Los padres que en los 90s no enseñaron internet o inglés a sus hijos hoy lo lamentan. No cometas el
+                mismo error con la IA. Es peor: avanza 10 veces más rápido.
+              </p>
+            </div>
 
             <h2 className="text-3xl font-bold text-white mt-10 mb-6">
               Mi Hijo Se Está Quedando Atrás en IA: Guía de Urgencia para Padres
