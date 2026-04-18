@@ -39,9 +39,9 @@ export function AIFutureSection() {
                         </h2>
 
                         <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
-                            La IA hoy es lo que fue <span className="text-white font-semibold">internet, inglés y Excel en los 90s</span>: una habilidad básica obligatoria. Los niños que no la usen hoy llegarán atrasados al colegio, la universidad y el trabajo.
+                            La IA hoy es lo que fue <span className="text-white font-semibold">internet, inglés y Excel en los 90s</span>: una habilidad básica que abre puertas en el colegio, la universidad y el trabajo.
                             <br />
-                            <span className="text-red-400 font-bold">¿Vas a dejar que tu hijo arranque la vida con esa desventaja?</span>
+                            <span className="text-white font-semibold">Mejor que tu hijo la aprenda ahora, no cuando ya sea tarde.</span>
                         </p>
                     </div>
 
@@ -51,26 +51,26 @@ export function AIFutureSection() {
                             {
                                 stat: "73%",
                                 label: "De estudiantes ya usan IA",
-                                sublabel: "para tareas y estudiar. Si el tuyo no, queda rezagado en el colegio",
-                                icon: AlertTriangle,
-                                color: "from-red-500/20 to-orange-500/20",
-                                borderColor: "border-red-500/30"
+                                sublabel: "para tareas y estudiar. Los que no saben usarla van un paso atrás.",
+                                icon: Sparkles,
+                                color: "from-primary/20 to-cyan-500/20",
+                                borderColor: "border-primary/30"
                             },
                             {
                                 stat: "85%",
                                 label: "De los empleos del 2035",
-                                sublabel: "exigirán IA. Sin esta habilidad, tu hijo queda fuera del mercado laboral",
-                                icon: AlertTriangle,
-                                color: "from-red-500/20 to-pink-500/20",
-                                borderColor: "border-red-500/30"
+                                sublabel: "requerirán IA. Aprenderla hoy es asegurar un mañana con más opciones.",
+                                icon: TrendingUp,
+                                color: "from-purple-500/20 to-pink-500/20",
+                                borderColor: "border-purple-500/30"
                             },
                             {
                                 stat: "3x",
                                 label: "Mejor rendimiento escolar",
-                                sublabel: "en niños que usan IA para estudiar vs los que no saben usarla",
+                                sublabel: "en niños que usan IA para estudiar vs los que aún no la aprovechan.",
                                 icon: TrendingUp,
-                                color: "from-primary/20 to-cyan-500/20",
-                                borderColor: "border-primary/30"
+                                color: "from-green-500/20 to-emerald-500/20",
+                                borderColor: "border-green-500/30"
                             },
                         ].map((item, index) => (
                             <motion.div
@@ -96,9 +96,9 @@ export function AIFutureSection() {
                         className="text-center"
                     >
                         <p className="text-lg text-gray-300 mb-4">
-                            La pregunta ya no es <span className="text-white font-semibold">si</span> tu hijo necesita IA — <span className="text-white font-semibold">la necesita HOY</span> para el colegio.
+                            La pregunta ya no es <span className="text-white font-semibold">si</span> tu hijo necesitará IA — la usa gente de su edad para estudiar hoy.
                             <br />
-                            La pregunta es: <span className="text-red-400 font-bold">¿cuánto tiempo más lo vas a dejar rezagado mientras sus compañeros avanzan?</span>
+                            La pregunta es: <span className="text-primary font-bold">¿empieza ahora o cuando otros ya le lleven ventaja?</span>
                         </p>
                     </motion.div>
                 </motion.div>

@@ -28,11 +28,11 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  // Title: fear-hook opener · keyword-rich · brand at end
-  title: "¿Tu Hijo Se Está Quedando Atrás en la Era de la IA? | InnovaKids",
-  // Description: fear-first + social proof + urgency
+  // Title: empathetic fear-hook · keyword-rich · brand at end
+  title: "Que Tu Hijo No Se Quede Atrás en la Era de la IA | InnovaKids",
+  // Description: empathetic + social proof + soft urgency
   description:
-    "⚠️ El 73% de sus compañeros ya usa IA para estudiar. Si tu hijo no, queda atrás en colegio, universidad y trabajo. La IA es el nuevo inglés/internet. Aún estás a tiempo: clase gratis.",
+    "El 73% de sus compañeros ya usa IA para estudiar. La IA es el nuevo inglés/internet: una habilidad base para el colegio, la universidad y el trabajo. Empezar a tiempo marca la diferencia. Clase gratis.",
   keywords: [
     "mi hijo se queda atrás en la era de la ia",
     "como evitar que mi hijo se quede atras con la ia",
@@ -76,9 +76,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
-    title: "No Dejes Que Tu Hijo Se Quede Atrás en la Era de la IA | InnovaKids",
+    title: "Que Tu Hijo No Se Quede Atrás en la Era de la IA | InnovaKids",
     description:
-      "La IA es hoy lo que fue internet, inglés y Excel en los 90s: habilidad básica. Sus compañeros ya la usan en el colegio. Si no aprende ahora, queda rezagado para siempre.",
+      "La IA es hoy lo que fueron internet, inglés y Excel en los 90s: una habilidad base. Sus compañeros ya la usan para estudiar. Aprenderla a tiempo le abre más oportunidades en el colegio, la universidad y el trabajo.",
     url: "https://www.innovakidslatam.com",
     siteName: "Innovakids",
     images: [
@@ -94,9 +94,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "¿Tu Hijo Se Está Quedando Atrás en la Era de la IA? | InnovaKids",
+    title: "Que Tu Hijo No Se Quede Atrás en la Era de la IA | InnovaKids",
     description:
-      "La IA es el nuevo inglés/internet. Sus compañeros ya la usan para estudiar. Si no aprende ahora, queda atrás en colegio, universidad y trabajo. Clase gratis.",
+      "La IA es el nuevo inglés/internet: una habilidad base. Sus compañeros ya la usan para estudiar. Aprenderla a tiempo le abre más oportunidades. Clase gratis.",
     images: ["/hero-child-learning-ai.jpg"],
   },
   robots: {
@@ -145,7 +145,7 @@ export default function RootLayout({
               name: "Innovakids",
               alternateName: ["Innova Kids", "InnovaKids LATAM", "Cursos IA Niños"],
               description:
-                "Academia #1 en LATAM que evita que los niños y adolescentes (8-17 años) se queden atrás en la era de la IA. La IA es el nuevo inglés/internet/Excel: habilidad básica para el colegio, universidad y trabajo. 527 graduados en 9 países.",
+                "Academia #1 en LATAM para que niños y adolescentes (8-17 años) aprendan IA a tiempo y no se queden atrás. La IA es el nuevo inglés/internet/Excel: una habilidad base para el colegio, la universidad y el trabajo. 527 graduados en 9 países.",
               url: "https://www.innovakidslatam.com",
               logo: "https://www.innovakidslatam.com/logo-innovakids.png",
               address: {

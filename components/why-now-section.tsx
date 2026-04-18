@@ -8,19 +8,19 @@ import { motion, useInView } from "framer-motion"
 const reasons = [
   {
     icon: Sun,
-    emoji: "⚠️",
+    emoji: "🧒",
     number: 1,
     title: "Sus Compañeros Ya La Usan",
-    description: "El 73% de los niños ya usa IA para hacer tareas y estudiar. Si el tuyo no sabe, sus notas empiezan a caer sin que entiendas por qué.",
-    color: "from-red-500/20 to-orange-500/20",
-    borderColor: "border-red-500/30",
+    description: "El 73% de los estudiantes ya usa IA para estudiar y hacer tareas. Que tu hijo aprenda ahora lo mantiene al mismo nivel, sin quedarse atrás.",
+    color: "from-yellow-500/20 to-orange-500/20",
+    borderColor: "border-yellow-500/30",
   },
   {
     icon: Rocket,
     emoji: "📚",
     number: 2,
     title: "Es El Nuevo Inglés/Internet",
-    description: "Como en los 90s con internet o Excel: los niños que no aprendieron a tiempo quedaron atrás toda la vida. La IA es igual, pero 10x más rápido.",
+    description: "En los 90s, los niños que aprendieron inglés e internet a tiempo tuvieron más oportunidades toda la vida. La IA está abriendo la misma ventana hoy.",
     color: "from-blue-500/20 to-purple-500/20",
     borderColor: "border-blue-500/30",
   },
@@ -28,8 +28,8 @@ const reasons = [
     icon: DollarSign,
     emoji: "🎓",
     number: 3,
-    title: "Lo Necesita Para La Universidad",
-    description: "Los universitarios ya usan IA a diario. Si tu hijo llega sin saberla, competirá en desventaja frente a quienes la dominan hace años.",
+    title: "Lo Necesitará En La Universidad",
+    description: "Los universitarios ya usan IA a diario. Llegar ya sabiendo usarla significa mejores notas, menos estrés y más tiempo para lo que importa.",
     color: "from-green-500/20 to-emerald-500/20",
     borderColor: "border-green-500/30",
   },
@@ -37,8 +37,8 @@ const reasons = [
     icon: Calendar,
     emoji: "💼",
     number: 4,
-    title: "85% De Empleos 2035 La Exigen",
-    description: "Sin IA, tu hijo queda fuera del mercado laboral del futuro. Es la habilidad más básica y mejor pagada del siglo XXI.",
+    title: "85% De Empleos 2035 La Usan",
+    description: "Aprenderla ahora es una inversión en su futuro: más opciones de carrera, mejores sueldos y trabajos que aún no existen, pero existirán.",
     color: "from-primary/20 to-[#8b5cf6]/20",
     borderColor: "border-primary/30",
   },
@@ -89,7 +89,7 @@ export function WhyNowSection() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl lg:text-6xl font-bold text-white mb-6 font-premium">
-            Por Qué <span className="premium-gradient-text">Cada Día Que Esperas</span>, Tu Hijo Queda Más Atrás
+            Por Qué <span className="premium-gradient-text">Empezar Ahora</span> Marca La Diferencia
           </h2>
         </motion.div>
 
