@@ -10,18 +10,18 @@ export function VisionSection() {
                 <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
                     <div>
                         <h2 className="text-4xl md:text-6xl font-black text-white mb-8 font-premium leading-tight">
-                            MIENTRAS TÚ LEES ESTO, <br />
-                            OTROS NIÑOS <span className="text-red-400 italic">YA VAN ADELANTE</span> DEL TUYO
+                            LA IA YA NO ES EL FUTURO. <br />
+                            ES <span className="text-primary italic">LA NUEVA BASE</span> PARA ESTUDIAR Y APRENDER.
                         </h2>
                         <div className="space-y-6 text-xl text-gray-400 leading-relaxed">
                             <p>
-                                La IA no es "algo del futuro". Es el <span className="text-white font-bold">inglés, internet y Excel de los 90s</span>: una habilidad básica que YA se exige en el colegio, la universidad y la vida diaria.
+                                La IA es el <span className="text-white font-bold">inglés, internet y Excel de los 90s</span>: una habilidad básica que ya empieza a marcar diferencias en el colegio, la universidad y el día a día.
                             </p>
                             <p>
-                                Los padres que en 1995 no enseñaron inglés o internet a sus hijos los condenaron a competir en desventaja toda la vida. <span className="text-white font-bold">Hoy pasa lo mismo con la IA</span>, solo que 10 veces más rápido.
+                                Igual que aprender inglés o usar internet a tiempo abrió puertas en los 90, <span className="text-white font-bold">aprender IA hoy abre puertas mañana</span>. Y quienes empiezan antes, avanzan más rápido.
                             </p>
                             <p>
-                                El colegio no les está enseñando. Si tu hijo no aprende IA ahora, <span className="text-red-400 font-bold">arranca el próximo año escolar, la universidad y su vida laboral atrasado.</span>
+                                El colegio aún no la enseña. Por eso estamos aquí: para que tu hijo tenga esa base a tiempo y <span className="text-white font-bold">llegue preparado al próximo año escolar, a la universidad y a la vida laboral.</span>
                             </p>
                         </div>
                     </div>
@@ -31,22 +31,22 @@ export function VisionSection() {
                             {
                                 icon: Rocket,
                                 title: "Colegio",
-                                desc: "Usa IA para entender materias, resumir, estudiar y subir sus notas."
+                                desc: "Usa IA para entender materias, resumir y estudiar mejor."
                             },
                             {
                                 icon: Brain,
                                 title: "Universidad",
-                                desc: "Llega con 10 años de ventaja sobre quienes empiecen recién a los 20."
+                                desc: "Llega con años de ventaja y claridad sobre su carrera."
                             },
                             {
                                 icon: Users,
                                 title: "Trabajo",
-                                desc: "El 85% de los empleos del 2035 exigen IA. Sin ella, queda fuera."
+                                desc: "85% de los empleos 2035 usarán IA. Llega preparado."
                             },
                             {
                                 icon: Globe,
                                 title: "Vida diaria",
-                                desc: "La IA ya es el inglés/internet del siglo XXI. Habilidad básica, no opcional."
+                                desc: "La IA ya es parte del día a día. Mejor aprenderla a tiempo."
                             }
                         ].map((item, i) => (
                             <motion.div
@@ -67,7 +67,7 @@ export function VisionSection() {
 
                 <div className="mt-20 p-8 md:p-12 rounded-[32px] bg-gradient-to-r from-primary/10 to-purple-500/10 border border-white/10 text-center max-w-4xl mx-auto">
                     <p className="text-2xl md:text-3xl font-medium text-white italic">
-                        "No estamos aquí para dar clases bonitas. Estamos aquí para asegurarnos de que tu hijo <span className="text-primary">NO se quede atrás</span> mientras el mundo avanza sin él."
+                        "Nuestra misión es simple: darle a tu hijo la base en IA <span className="text-primary">para que no se quede atrás</span> cuando el mundo ya la esté dando por obvia."
                     </p>
                 </div>
             </div>

@@ -70,9 +70,9 @@ export function HeroSection() {
               1. TRUST EYEBROW — Positioning
           —————————————————————————————————————— */}
           <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full holographic-card animate-fadeIn">
-            <span className="text-xl" aria-hidden="true">⚠️</span>
+            <span className="text-xl" aria-hidden="true">🧠</span>
             <span className="text-xs sm:text-sm text-white font-bold tracking-wide relative z-10">
-              La IA es el nuevo inglés · Si tu hijo no la aprende, se queda atrás
+              La IA es el nuevo inglés · Hoy se aprende, mañana se exige
             </span>
           </div>
 
@@ -89,14 +89,14 @@ export function HeroSection() {
               Curso de Inteligencia Artificial para Niños y Adolescentes · 8–17 años
             </span>
 
-            {/* Emotional promise — FEAR HOOK */}
+            {/* Emotional promise — FEAR HOOK (soft) */}
             <span className="block text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-black leading-[1.02] tracking-tight">
-              <span className="block text-white">Tu hijo se está</span>
+              <span className="block text-white">Que tu hijo no</span>
               <span
-                className="block text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-[#ec4899] to-[#8b5cf6] pb-2"
-                style={{ textShadow: "0 0 40px rgba(239, 68, 68, 0.25)" }}
+                className="block text-transparent bg-clip-text bg-gradient-to-r from-[#4dd0e1] via-[#8b5cf6] to-[#ec4899] pb-2"
+                style={{ textShadow: "0 0 40px rgba(77, 208, 225, 0.25)" }}
               >
-                quedando atrás
+                se quede atrás
               </span>
               <span className="block text-white text-2xl sm:text-4xl md:text-5xl lg:text-6xl mt-2">en la era de la IA</span>
             </span>
@@ -109,10 +109,10 @@ export function HeroSection() {
             className="mt-10 text-xl sm:text-2xl md:text-3xl font-bold text-white/95 max-w-3xl leading-snug animate-fadeIn"
             style={{ animationDelay: "0.2s" }}
           >
-            La IA es el <span className="text-red-400">inglés, internet y Excel de los 90s</span> todo junto.
+            La IA es el <span className="text-primary">inglés, internet y Excel de los 90s</span>.
             <br className="hidden sm:block" />
             <span className="text-white/70 font-semibold">
-              Los niños que no la dominen hoy, mañana se quedan fuera del colegio, la universidad y el trabajo.
+              Una habilidad básica que se aprende ahora para estudiar, crear y prosperar más adelante.
             </span>
           </p>
 
@@ -190,7 +190,7 @@ export function HeroSection() {
           >
             <Zap className="w-4 h-4 text-green-400" aria-hidden="true" />
             <span className="text-sm font-bold text-green-400 tracking-wide">
-              Cada semana sin IA tu hijo queda más atrás · Cupos limitados
+              Cupos limitados · Empieza antes de que otros le tomen la delantera
             </span>
           </div>
 

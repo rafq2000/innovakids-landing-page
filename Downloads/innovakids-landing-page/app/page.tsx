@@ -7,11 +7,11 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  // Title: fear-hook · keyword-first · #1 positioning · brand last
-  title: "¿Tu Hijo Se Está Quedando Atrás en la Era de la IA? | InnovaKids",
-  // Description: fear-first + proof + urgency CTA
+  // Title: empathetic fear-hook · keyword-first · brand last
+  title: "Que Tu Hijo No Se Quede Atrás en la Era de la IA | InnovaKids",
+  // Description: empathetic fear + proof + soft CTA
   description:
-    "⚠️ 73% de sus compañeros ya usa IA para estudiar. Sin ella, tu hijo queda atrás en colegio y universidad. La IA es el nuevo inglés/internet. Curso #1 IA niños 8-17. Clase gratis.",
+    "73% de sus compañeros ya usa IA para estudiar. La IA es el nuevo inglés/internet: aprenderla a tiempo marca la diferencia en el colegio y la universidad. Curso #1 IA niños 8-17. Clase gratis.",
   keywords: [
     "mi hijo se queda atrás en la era de la ia",
     "como evitar que mi hijo se quede atras con la ia",
@@ -38,9 +38,9 @@ export const metadata: Metadata = {
     languages: generateHreflangs("home"),
   },
   openGraph: {
-    title: "No Dejes Que Tu Hijo Se Quede Atrás en la Era de la IA | InnovaKids",
+    title: "Que Tu Hijo No Se Quede Atrás en la Era de la IA | InnovaKids",
     description:
-      "Cada día sin IA tu hijo pierde ventaja competitiva frente a sus pares. En 5 semanas pasa de estar rezagado a ir 10 años adelante. Reserva tu clase gratis.",
+      "La IA es el nuevo inglés/internet: una habilidad base que se aprende en 5 semanas. Para que tu hijo avance con su generación y llegue preparado a la universidad. Reserva tu clase gratis.",
     url: "https://www.innovakidslatam.com",
     type: "website",
     locale: "es_419",
@@ -53,9 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "¿Tu Hijo Se Está Quedando Atrás en la Era de la IA? | InnovaKids",
+    title: "Que Tu Hijo No Se Quede Atrás en la Era de la IA | InnovaKids",
     description:
-      "El 85% de los trabajos del 2035 exigirán IA. Cada mes sin formación tu hijo pierde terreno frente a otros niños. Clase gratis de prueba.",
+      "El 85% de los trabajos del 2035 usarán IA. Aprenderla a tiempo le abre más opciones en el colegio, la universidad y el trabajo. Clase gratis de prueba.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -147,7 +147,7 @@ export default function Home() {
     "name": "InnovaKids",
     "alternateName": ["InnovaKids LATAM", "Cursos IA Niños"],
     "url": "https://www.innovakidslatam.com",
-    "description": "Academia líder que evita que los niños y adolescentes de 8 a 17 años se queden atrás en la era de la Inteligencia Artificial. LATAM y España.",
+    "description": "Academia líder para que niños y adolescentes de 8 a 17 años aprendan Inteligencia Artificial a tiempo y no se queden atrás. LATAM y España.",
     "inLanguage": "es",
     "potentialAction": {
       "@type": "SearchAction",
@@ -170,8 +170,8 @@ export default function Home() {
   const courseSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
-    "name": "Curso de Inteligencia Artificial para Niños y Adolescentes - No Dejes Que Se Quede Atrás | InnovaKids",
-    "description": "Evita que tu hijo se quede atrás en la era de la IA. En 5 semanas pasa de estar rezagado tecnológicamente a liderar su generación creando apps, videojuegos y proyectos con IA. 8-17 años. Grupos de 5. Garantía de 10 días.",
+    "name": "Curso de Inteligencia Artificial para Niños y Adolescentes - Que No Se Quede Atrás | InnovaKids",
+    "description": "Para que tu hijo aprenda IA a tiempo y no se quede atrás en la era de la IA. En 5 semanas crea apps, videojuegos y proyectos con IA, y llega preparado al colegio, la universidad y el trabajo. 8-17 años. Grupos de 5. Garantía de 10 días.",
     "url": "https://www.innovakidslatam.com",
     "image": "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
     "provider": {
@@ -276,28 +276,28 @@ export default function Home() {
         {/* Specialized Courses - Internal Linking for SEO */}
         <section className="container mx-auto px-4 py-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">No Dejes Que Tu Hijo Llegue Tarde: Elige Su Camino en IA</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Para Que Aprenda IA A Tiempo: Elige Su Camino</h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              Cada mes sin IA, tu hijo queda más atrás. Después del Nivel 1, se especializa en el área donde sus pares ya están ganando ventaja.
+              Después del Nivel 1, tu hijo se especializa en el área que más le apasiona, para seguir avanzando con su generación.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <a href="/curso-creacion-videojuegos-ninos" className="bg-gradient-to-br from-green-900/30 to-emerald-900/20 p-8 rounded-2xl border border-green-500/20 hover:border-green-500/50 transition-all group hover:scale-[1.02]">
               <div className="text-4xl mb-4">🎮</div>
               <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-colors mb-3">Creación de Videojuegos con IA</h3>
-              <p className="text-slate-400 text-sm mb-4">Mientras otros niños solo consumen juegos, el tuyo los crea. No se queda atrás: lidera.</p>
+              <p className="text-slate-400 text-sm mb-4">En vez de solo consumir juegos, tu hijo aprende a crearlos. Avanza al ritmo de su generación.</p>
               <span className="text-green-400 text-sm font-semibold">Ver curso →</span>
             </a>
             <a href="/curso-creador-contenido-ia" className="bg-gradient-to-br from-pink-900/30 to-purple-900/20 p-8 rounded-2xl border border-pink-500/20 hover:border-pink-500/50 transition-all group hover:scale-[1.02]">
               <div className="text-4xl mb-4">🎬</div>
               <h3 className="text-xl font-bold text-white group-hover:text-pink-400 transition-colors mb-3">Creador de Contenido y Cine IA</h3>
-              <p className="text-slate-400 text-sm mb-4">Sus compañeros ya publican videos con IA. Si tu hijo no aprende ahora, llega tarde al nuevo lenguaje digital.</p>
+              <p className="text-slate-400 text-sm mb-4">Sus compañeros ya publican videos con IA. Aquí tu hijo aprende a tiempo este nuevo lenguaje digital.</p>
               <span className="text-pink-400 text-sm font-semibold">Ver curso →</span>
             </a>
             <a href="/curso-emprendimiento-ninos" className="bg-gradient-to-br from-yellow-900/30 to-orange-900/20 p-8 rounded-2xl border border-yellow-500/20 hover:border-yellow-500/50 transition-all group hover:scale-[1.02]">
               <div className="text-4xl mb-4">💡</div>
               <h3 className="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors mb-3">Emprendimiento y Startups con IA</h3>
-              <p className="text-slate-400 text-sm mb-4">Adolescentes de 15 años ya facturan con IA. No permitas que el tuyo empiece su vida laboral desde cero.</p>
+              <p className="text-slate-400 text-sm mb-4">Adolescentes de 15 años ya emprenden con IA. Tu hijo puede empezar a tiempo y tener más opciones mañana.</p>
               <span className="text-yellow-400 text-sm font-semibold">Ver curso →</span>
             </a>
           </div>
