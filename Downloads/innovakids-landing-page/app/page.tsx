@@ -7,10 +7,18 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
-  title: "InnovaKids — La Escuela Online #1 de IA para Niños y Adolescentes",
+  // Title: fear-hook · keyword-first · #1 positioning · brand last
+  title: "¿Tu Hijo Se Está Quedando Atrás en la Era de la IA? | InnovaKids",
+  // Description: fear-first + proof + urgency CTA
   description:
-    "InnovaKids es la escuela online líder en Inteligencia Artificial para niños de 8 a 17 años. 527 graduados en 9 países. Clases en vivo, grupos de máx 5. Agenda tu clase gratis.",
+    "El 85% de los empleos del 2035 exigirán IA. Si tu hijo no aprende ahora, arranca la vida laboral en desventaja. Curso #1 IA niños 8-17. Clase gratis.",
   keywords: [
+    "mi hijo se queda atrás en la era de la ia",
+    "como evitar que mi hijo se quede atras con la ia",
+    "niños rezagados inteligencia artificial",
+    "brecha digital niños ia",
+    "futuro laboral de mi hijo",
+    "mi hijo no sabe usar ia",
     "curso inteligencia artificial niños",
     "curso ia para niños",
     "cursos de ia para niños",
@@ -20,6 +28,7 @@ export const metadata: Metadata = {
     "ia para niños",
     "curso ia para adolescentes",
     "escuela online de inteligencia artificial",
+    "academia ia niños",
     "vibe coding para niños",
     "innovakids",
     "innova kids",
@@ -29,17 +38,24 @@ export const metadata: Metadata = {
     languages: generateHreflangs("home"),
   },
   openGraph: {
-    title: "InnovaKids — La Escuela Online #1 de IA para Niños y Adolescentes",
-    description: "InnovaKids es la escuela online líder en Inteligencia Artificial para niños de 8 a 17 años. 527 graduados en 9 países. Clases en vivo, grupos de máx 5. Agenda tu clase gratis.",
+    title: "No Dejes Que Tu Hijo Se Quede Atrás en la Era de la IA | InnovaKids",
+    description:
+      "Cada día sin IA tu hijo pierde ventaja competitiva frente a sus pares. En 5 semanas pasa de estar rezagado a ir 10 años adelante. Reserva tu clase gratis.",
     url: "https://www.innovakidslatam.com",
     type: "website",
     locale: "es_419",
-    images: [{ url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg", width: 1200, height: 630, alt: "Niños aprendiendo a crear con Inteligencia Artificial en InnovaKids" }],
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Curso de Inteligencia Artificial para Niños y Adolescentes 8-17 años - InnovaKids"
+    }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "InnovaKids — La Escuela Online #1 de IA para Niños y Adolescentes",
-    description: "InnovaKids es la escuela online líder en Inteligencia Artificial para niños de 8 a 17 años. 527 graduados en 9 países. Clases en vivo, grupos de máx 5. Agenda tu clase gratis.",
+    title: "¿Tu Hijo Se Está Quedando Atrás en la Era de la IA? | InnovaKids",
+    description:
+      "El 85% de los trabajos del 2035 exigirán IA. Cada mes sin formación tu hijo pierde terreno frente a otros niños. Clase gratis de prueba.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -131,7 +147,7 @@ export default function Home() {
     "name": "InnovaKids",
     "alternateName": ["InnovaKids LATAM", "Cursos IA Niños"],
     "url": "https://www.innovakidslatam.com",
-    "description": "Academia líder de Inteligencia Artificial para niños y adolescentes de 8 a 17 años en Latinoamérica y España.",
+    "description": "Academia líder que evita que los niños y adolescentes de 8 a 17 años se queden atrás en la era de la Inteligencia Artificial. LATAM y España.",
     "inLanguage": "es",
     "potentialAction": {
       "@type": "SearchAction",
@@ -154,8 +170,8 @@ export default function Home() {
   const courseSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
-    "name": "Curso de Inteligencia Artificial para Niños y Adolescentes - InnovaKids",
-    "description": "Aprende a crear apps, videojuegos y arte con IA en 5 semanas. Clases online en vivo para niños y adolescentes de 8 a 17 años. Grupos de máximo 5 alumnos. Garantía de 10 días.",
+    "name": "Curso de Inteligencia Artificial para Niños y Adolescentes - No Dejes Que Se Quede Atrás | InnovaKids",
+    "description": "Evita que tu hijo se quede atrás en la era de la IA. En 5 semanas pasa de estar rezagado tecnológicamente a liderar su generación creando apps, videojuegos y proyectos con IA. 8-17 años. Grupos de 5. Garantía de 10 días.",
     "url": "https://www.innovakidslatam.com",
     "image": "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
     "provider": {
@@ -260,28 +276,28 @@ export default function Home() {
         {/* Specialized Courses - Internal Linking for SEO */}
         <section className="container mx-auto px-4 py-16">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Especializaciones: Elige Tu Camino en IA</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">No Dejes Que Tu Hijo Llegue Tarde: Elige Su Camino en IA</h2>
             <p className="text-slate-400 max-w-2xl mx-auto">
-              Después de completar Vibe Explorer (Nivel 1), tu hijo puede especializarse en el área que más le apasiona.
+              Cada mes sin IA, tu hijo queda más atrás. Después del Nivel 1, se especializa en el área donde sus pares ya están ganando ventaja.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <a href="/curso-creacion-videojuegos-ninos" className="bg-gradient-to-br from-green-900/30 to-emerald-900/20 p-8 rounded-2xl border border-green-500/20 hover:border-green-500/50 transition-all group hover:scale-[1.02]">
               <div className="text-4xl mb-4">🎮</div>
               <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-colors mb-3">Creación de Videojuegos con IA</h3>
-              <p className="text-slate-400 text-sm mb-4">Diseña mundos, personajes y lógicas de juego. Tu hijo pasa de jugar a crear.</p>
+              <p className="text-slate-400 text-sm mb-4">Mientras otros niños solo consumen juegos, el tuyo los crea. No se queda atrás: lidera.</p>
               <span className="text-green-400 text-sm font-semibold">Ver curso →</span>
             </a>
             <a href="/curso-creador-contenido-ia" className="bg-gradient-to-br from-pink-900/30 to-purple-900/20 p-8 rounded-2xl border border-pink-500/20 hover:border-pink-500/50 transition-all group hover:scale-[1.02]">
               <div className="text-4xl mb-4">🎬</div>
               <h3 className="text-xl font-bold text-white group-hover:text-pink-400 transition-colors mb-3">Creador de Contenido y Cine IA</h3>
-              <p className="text-slate-400 text-sm mb-4">Producción de videos, cortometrajes y contenido social con IA como copiloto.</p>
+              <p className="text-slate-400 text-sm mb-4">Sus compañeros ya publican videos con IA. Si tu hijo no aprende ahora, llega tarde al nuevo lenguaje digital.</p>
               <span className="text-pink-400 text-sm font-semibold">Ver curso →</span>
             </a>
             <a href="/curso-emprendimiento-ninos" className="bg-gradient-to-br from-yellow-900/30 to-orange-900/20 p-8 rounded-2xl border border-yellow-500/20 hover:border-yellow-500/50 transition-all group hover:scale-[1.02]">
               <div className="text-4xl mb-4">💡</div>
               <h3 className="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors mb-3">Emprendimiento y Startups con IA</h3>
-              <p className="text-slate-400 text-sm mb-4">Educación financiera, creación de startups y negocios digitales con IA.</p>
+              <p className="text-slate-400 text-sm mb-4">Adolescentes de 15 años ya facturan con IA. No permitas que el tuyo empiece su vida laboral desde cero.</p>
               <span className="text-yellow-400 text-sm font-semibold">Ver curso →</span>
             </a>
           </div>

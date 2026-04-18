@@ -33,15 +33,15 @@ export function AIFutureSection() {
                         </motion.div>
 
                         <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-                            Para <span className="text-primary">2035</span>, el <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-purple-400">85%</span> de los trabajos
+                            Para <span className="text-primary">2035</span>, el <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-pink-400">85%</span> de los trabajos
                             <br className="hidden md:block" />
-                            <span className="text-white">requerirán habilidades de IA</span>
+                            <span className="text-white">exigirán dominar IA</span>
                         </h2>
 
                         <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-8">
-                            Los niños que aprenden IA hoy tendrán <span className="text-white font-semibold">10 años de ventaja</span> sobre los demás.
+                            La IA hoy es lo que fue <span className="text-white font-semibold">internet, inglés y Excel en los 90s</span>: una habilidad básica obligatoria. Los niños que no la usen hoy llegarán atrasados al colegio, la universidad y el trabajo.
                             <br />
-                            ¿Tu hijo estará preparado?
+                            <span className="text-red-400 font-bold">¿Vas a dejar que tu hijo arranque la vida con esa desventaja?</span>
                         </p>
                     </div>
 
@@ -49,28 +49,28 @@ export function AIFutureSection() {
                     <div className="grid md:grid-cols-3 gap-6 mb-12">
                         {[
                             {
-                                stat: "97M",
-                                label: "Nuevos empleos de IA",
-                                sublabel: "creados globalmente para 2025",
-                                icon: TrendingUp,
-                                color: "from-green-500/20 to-emerald-500/20",
-                                borderColor: "border-green-500/30"
+                                stat: "73%",
+                                label: "De estudiantes ya usan IA",
+                                sublabel: "para tareas y estudiar. Si el tuyo no, queda rezagado en el colegio",
+                                icon: AlertTriangle,
+                                color: "from-red-500/20 to-orange-500/20",
+                                borderColor: "border-red-500/30"
                             },
                             {
-                                stat: "40%",
-                                label: "De empresas Fortune 500",
-                                sublabel: "buscan habilidades de IA en candidatos",
-                                icon: Sparkles,
-                                color: "from-primary/20 to-cyan-500/20",
-                                borderColor: "border-primary/30"
+                                stat: "85%",
+                                label: "De los empleos del 2035",
+                                sublabel: "exigirán IA. Sin esta habilidad, tu hijo queda fuera del mercado laboral",
+                                icon: AlertTriangle,
+                                color: "from-red-500/20 to-pink-500/20",
+                                borderColor: "border-red-500/30"
                             },
                             {
                                 stat: "3x",
-                                label: "Mayor salario promedio",
-                                sublabel: "para trabajadores con skills de IA",
+                                label: "Mejor rendimiento escolar",
+                                sublabel: "en niños que usan IA para estudiar vs los que no saben usarla",
                                 icon: TrendingUp,
-                                color: "from-purple-500/20 to-pink-500/20",
-                                borderColor: "border-purple-500/30"
+                                color: "from-primary/20 to-cyan-500/20",
+                                borderColor: "border-primary/30"
                             },
                         ].map((item, index) => (
                             <motion.div
@@ -96,9 +96,9 @@ export function AIFutureSection() {
                         className="text-center"
                     >
                         <p className="text-lg text-gray-300 mb-4">
-                            La pregunta no es <span className="text-white font-semibold">si</span> tu hijo necesitará IA,
+                            La pregunta ya no es <span className="text-white font-semibold">si</span> tu hijo necesita IA — <span className="text-white font-semibold">la necesita HOY</span> para el colegio.
                             <br />
-                            sino <span className="text-primary font-bold">cuándo</span> empezará a aprenderla.
+                            La pregunta es: <span className="text-red-400 font-bold">¿cuánto tiempo más lo vas a dejar rezagado mientras sus compañeros avanzan?</span>
                         </p>
                     </motion.div>
                 </motion.div>

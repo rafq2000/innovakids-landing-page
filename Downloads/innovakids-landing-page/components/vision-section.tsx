@@ -10,15 +10,18 @@ export function VisionSection() {
                 <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
                     <div>
                         <h2 className="text-4xl md:text-6xl font-black text-white mb-8 font-premium leading-tight">
-                            NUESTRA MISIÓN ES <br />
-                            <span className="text-primary italic">EL PUENTE</span> QUE EL COLEGIO COLEGIO NO PUEDE CONSTRUIR
+                            MIENTRAS TÚ LEES ESTO, <br />
+                            OTROS NIÑOS <span className="text-red-400 italic">YA VAN ADELANTE</span> DEL TUYO
                         </h2>
                         <div className="space-y-6 text-xl text-gray-400 leading-relaxed">
                             <p>
-                                El sistema educativo está roto. En Latinoamérica, nuestros niños están siendo entrenados para trabajos que, para cuando se gradúen, <span className="text-white font-bold">ya no existirán.</span>
+                                La IA no es "algo del futuro". Es el <span className="text-white font-bold">inglés, internet y Excel de los 90s</span>: una habilidad básica que YA se exige en el colegio, la universidad y la vida diaria.
                             </p>
                             <p>
-                                Nuestra visión es desbloquear el potencial tecnológico de cada rincón de nuestra región, transformando a niños que consumen pantallas en <span className="text-white font-bold">arquitectos de la Inteligencia Artificial.</span>
+                                Los padres que en 1995 no enseñaron inglés o internet a sus hijos los condenaron a competir en desventaja toda la vida. <span className="text-white font-bold">Hoy pasa lo mismo con la IA</span>, solo que 10 veces más rápido.
+                            </p>
+                            <p>
+                                El colegio no les está enseñando. Si tu hijo no aprende IA ahora, <span className="text-red-400 font-bold">arranca el próximo año escolar, la universidad y su vida laboral atrasado.</span>
                             </p>
                         </div>
                     </div>
@@ -27,23 +30,23 @@ export function VisionSection() {
                         {[
                             {
                                 icon: Rocket,
-                                title: "Latinoamérica",
-                                desc: "Exportando creadores de tecnología al mundo."
+                                title: "Colegio",
+                                desc: "Usa IA para entender materias, resumir, estudiar y subir sus notas."
                             },
                             {
                                 icon: Brain,
-                                title: "Mentalidad",
-                                desc: "No enseñamos código, enseñamos a pensar con IA."
+                                title: "Universidad",
+                                desc: "Llega con 10 años de ventaja sobre quienes empiecen recién a los 20."
                             },
                             {
                                 icon: Users,
-                                title: "Comunidad",
-                                desc: "La red más grande de niños genios digitales."
+                                title: "Trabajo",
+                                desc: "El 85% de los empleos del 2035 exigen IA. Sin ella, queda fuera."
                             },
                             {
                                 icon: Globe,
-                                title: "Impacto",
-                                desc: "Cerrando la brecha tecnológica hoy."
+                                title: "Vida diaria",
+                                desc: "La IA ya es el inglés/internet del siglo XXI. Habilidad básica, no opcional."
                             }
                         ].map((item, i) => (
                             <motion.div
@@ -64,7 +67,7 @@ export function VisionSection() {
 
                 <div className="mt-20 p-8 md:p-12 rounded-[32px] bg-gradient-to-r from-primary/10 to-purple-500/10 border border-white/10 text-center max-w-4xl mx-auto">
                     <p className="text-2xl md:text-3xl font-medium text-white italic">
-                        "No estamos aquí para dar clases. Estamos aquí para asegurarnos de que el talento latinoamericano <span className="text-primary">gane la carrera</span> tecnológica."
+                        "No estamos aquí para dar clases bonitas. Estamos aquí para asegurarnos de que tu hijo <span className="text-primary">NO se quede atrás</span> mientras el mundo avanza sin él."
                     </p>
                 </div>
             </div>
