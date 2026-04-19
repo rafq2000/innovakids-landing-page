@@ -142,18 +142,24 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
                 className="md:col-span-3 flex items-center gap-4 md:block md:text-right"
                 style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
               >
-                <div className="relative w-14 h-14 rounded-full overflow-hidden shrink-0 md:ml-auto md:mb-3">
+                <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden shrink-0 md:ml-auto md:mb-4 ring-2 ring-[#C96342]/15 ring-offset-2 ring-offset-[#F5F1E8]">
                   <Image
                     src={t.image}
                     alt={t.name}
                     fill
-                    className="object-cover grayscale contrast-[1.05]"
-                    sizes="56px"
+                    className="object-cover"
+                    sizes="(max-width: 768px) 80px, 96px"
                   />
                 </div>
                 <div>
+                  <div className="flex gap-0.5 text-[#C96342] text-sm mb-1.5 md:justify-end" aria-label="5 estrellas">
+                    ★★★★★
+                  </div>
                   <p className="font-semibold text-sm text-[#2F2F2C]">{t.name}</p>
                   <p className="text-xs text-[#5A5751] mt-0.5">{t.role}</p>
+                  <p className="text-[10px] uppercase tracking-[0.18em] text-[#C96342]/80 mt-1.5 font-semibold">
+                    ✓ Verificado
+                  </p>
                 </div>
               </div>
             </article>
