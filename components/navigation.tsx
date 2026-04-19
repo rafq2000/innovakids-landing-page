@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
-import Image from "next/image"
 
 interface NavigationProps {
   countryCode?: string
@@ -32,23 +31,21 @@ export function Navigation({ countryCode }: NavigationProps) {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-[#F5F1E8]/92 backdrop-blur-md border-b border-[#2F2F2C]/10"
-          : "bg-transparent border-b border-transparent"
+          ? "top-0 bg-[#F5F1E8]/95 backdrop-blur-md border-b border-[#2F2F2C]/10 shadow-[0_4px_20px_-12px_rgba(26,23,20,0.15)]"
+          : "top-[44px] md:top-[40px] bg-[#FAF7EF]/90 backdrop-blur-sm border-b border-[#2F2F2C]/8"
       }`}
     >
-      <div className="max-w-[1100px] mx-auto px-6 md:px-10">
-        <div className="flex items-center justify-between h-16 md:h-20">
-          <a href="/" className="flex items-center" aria-label="InnovaKids">
-            <Image
-              src="/logo-innovakids-v4.png"
-              alt="InnovaKids"
-              width={180}
-              height={60}
-              className="h-10 md:h-12 w-auto"
-              priority
-            />
+      <div className="max-w-[1280px] mx-auto px-6 md:px-10">
+        <div className="flex items-center justify-between h-14 md:h-16">
+          <a href="/" className="flex items-baseline gap-1.5 group" aria-label="InnovaKids - Inicio">
+            <span className="font-display text-[22px] md:text-[26px] leading-none tracking-[-0.02em] text-[#1A1714]">
+              Innova<em className="not-italic font-semibold text-[#C96342]">kids</em>
+            </span>
+            <span className="font-mono-accent text-[8px] md:text-[9px] uppercase tracking-[0.18em] text-[#1A1714]/55 hidden sm:inline pb-0.5">
+              latam
+            </span>
           </a>
 
           <div className="hidden md:flex items-center gap-10">
