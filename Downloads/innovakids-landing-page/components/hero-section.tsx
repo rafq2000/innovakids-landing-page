@@ -51,12 +51,12 @@ export function HeroSection() {
         26
       </div>
 
-      <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-10 pt-24 md:pt-32 pb-24 md:pb-32">
+      <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-10 pt-28 md:pt-32 pb-20 md:pb-24">
 
         {/* ============ MASTHEAD ============ */}
-        <div className="rise rise-1 grid grid-cols-12 gap-6 items-baseline mb-16 md:mb-24">
+        <div className="rise rise-1 grid grid-cols-12 gap-6 items-baseline mb-8 md:mb-10">
           <div className="col-span-12 md:col-span-4 flex items-center gap-4">
-            <span className="font-display italic text-2xl md:text-3xl text-[var(--terracotta)]">No.01</span>
+            <span className="font-display italic text-xl md:text-2xl text-[var(--terracotta)]">No.01</span>
             <div className="h-px flex-1 bg-[var(--ink)]/20" />
           </div>
           <p className="col-span-12 md:col-span-8 font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.32em] text-[var(--ink-soft)]">
@@ -64,9 +64,9 @@ export function HeroSection() {
           </p>
         </div>
 
-        {/* ============ EDITORIAL H1 (broken grid, overflow) ============ */}
-        <div className="relative mb-12 md:mb-16">
-          <h1 className="rise rise-2 font-display text-[56px] sm:text-[88px] md:text-[128px] lg:text-[168px] leading-[0.88] tracking-[-0.04em] text-[var(--ink)] max-w-[18ch]">
+        {/* ============ EDITORIAL H1 (compacto, fits in viewport) ============ */}
+        <div className="relative mb-8 md:mb-10">
+          <h1 className="rise rise-2 font-display text-[44px] sm:text-[64px] md:text-[80px] lg:text-[96px] leading-[0.92] tracking-[-0.035em] text-[var(--ink)] max-w-[18ch]">
             Que tu hijo
             <br />
             no se quede{" "}
@@ -105,29 +105,42 @@ export function HeroSection() {
         </div>
 
         {/* ============ ASYMMETRIC ROW: LEDE + PULL QUOTE CARD ============ */}
-        <div className="grid grid-cols-12 gap-6 md:gap-10 mb-20 md:mb-28">
+        <div className="grid grid-cols-12 gap-6 md:gap-10 mb-14 md:mb-20">
           <div className="rise rise-3 col-span-12 md:col-span-7 lg:col-span-6">
-            <p className="text-xl md:text-2xl leading-[1.45] text-[var(--ink-soft)] max-w-[44ch]">
+            <p className="text-lg md:text-xl leading-[1.45] text-[var(--ink-soft)] max-w-[44ch]">
               La IA es el nuevo inglés. En cinco semanas tu hijo deja de{" "}
               <em className="italic font-display text-[var(--ink)]">consumir</em> tecnología y
               empieza a <em className="italic font-display text-[var(--terracotta)]">crearla</em>:
               construye apps, videojuegos y proyectos reales. En vivo, en grupos de cinco.
             </p>
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
-              <a href="#sesion-estrategica" className="btn-terracotta">
+            <div className="mt-7 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
+              <a
+                href="#sesion-estrategica"
+                className="group relative inline-flex items-center gap-3 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-7 py-4 text-base font-semibold rounded-sm shadow-[0_10px_30px_-12px_rgba(201,99,66,0.55)] hover:shadow-[0_14px_40px_-12px_rgba(201,99,66,0.7)] transition-all duration-300"
+              >
                 <span>Agendar clase gratis</span>
-                <span className="arrow" aria-hidden>→</span>
+                <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>→</span>
               </a>
               <a
                 href="#inversion"
-                className="inline-flex items-center gap-2 px-2 py-4 text-[var(--ink)] link-ink"
+                className="inline-flex items-center gap-2 px-2 py-3 text-[var(--ink)] link-ink"
               >
                 Ver inversión <span aria-hidden>·</span> $297 USD
               </a>
             </div>
-            <p className="mt-5 font-mono-accent text-[11px] uppercase tracking-[0.18em] text-[var(--ink-muted)]">
+            <p className="mt-4 font-mono-accent text-[11px] uppercase tracking-[0.18em] text-[var(--ink-muted)]">
               30 minutos · Sin compromiso · 100% online
             </p>
+
+            {/* Mini trust row above fold */}
+            <div className="mt-6 flex items-center gap-5 text-[11px] font-mono-accent uppercase tracking-[0.16em] text-[var(--ink-muted)]">
+              <span className="flex items-center gap-1.5">
+                <span className="text-[var(--terracotta)] text-sm not-italic">★</span>
+                <span><strong className="text-[var(--ink)] font-semibold">4.9</strong>/5 · 527 familias</span>
+              </span>
+              <span className="hidden sm:inline opacity-40">·</span>
+              <span className="hidden sm:inline">10 días de garantía</span>
+            </div>
           </div>
 
           {/* Pull quote card — overlaps slightly, rotated */}
