@@ -6,9 +6,43 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { CheckCircle, Shield } from "lucide-react"
 
 export const metadata = {
-  title: "Programa de IA para Niños | Temario Completo y Precio | InnovaKids",
+  // 57 chars · keyword-first · brand last
+  title: "Brochure Programa de IA para Niños 8-17 | InnovaKids",
+  // 152 chars · proof + differentiator + CTA
   description:
-    "Descubre el temario completo del curso de Inteligencia Artificial para niños. Aprende a crear videojuegos, apps y más. ¡Reserva tu cupo hoy!",
+    "Brochure del programa de IA para niños 8-17 años. Temario completo, proyectos reales, grupos de 5 y garantía 10 días. 527 graduados. Reserva tu clase.",
+  keywords: [
+    "brochure programa ia niños",
+    "programa ia niños temario",
+    "curso ia niños temario pdf",
+    "programa acelerador ia niños",
+    "curso inteligencia artificial niños temario",
+  ],
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/brochure-programa-ia",
+  },
+  openGraph: {
+    title: "Brochure Programa de IA · Escuela #1 en LATAM | InnovaKids",
+    description:
+      "Descubre el temario del programa acelerador de IA para niños 8-17. Clases en vivo, grupos de 5, proyectos reales. Reserva tu clase gratis.",
+    url: "https://www.innovakidslatam.com/brochure-programa-ia",
+    siteName: "InnovaKids",
+    type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Brochure del programa acelerador de IA para niños 8-17 años - InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Brochure Programa de IA para Niños 8-17 | InnovaKids",
+    description:
+      "Temario completo, proyectos reales y grupos de 5. 527 graduados, garantía 10 días. Reserva tu clase.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
+  },
 }
 
 export default function BrochurePage() {

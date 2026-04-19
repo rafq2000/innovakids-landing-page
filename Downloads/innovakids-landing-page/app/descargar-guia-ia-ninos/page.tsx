@@ -5,16 +5,43 @@ import { Button } from "@/components/ui/button"
 import { BookOpen, Download, Sparkles, Brain, Rocket, Gift } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Kit Gratuito para Padres: Guía de IA para Niños | InnovaKids",
+  // 58 chars · keyword-first · Gratis trigger · brand last
+  title: "Descargar Guía de IA para Niños 8-17 · Gratis | InnovaKids",
+  // 149 chars · proof + differentiator + CTA
   description:
-    "Descarga nuestra guía paso a paso para enseñar Inteligencia Artificial a tus hijos. Aprende a usar ChatGPT de forma segura. Descarga en PDF gratis al instante.",
-  keywords:
-    "guía ia niños, libro inteligencia artificial niños, descargar guía ia, chatgpt para niños pdf, enseñar ia niños",
+    "Descarga gratis la guía de IA para niños 8-17 años: ChatGPT seguro, proyectos prácticos y método ERICA de 527 familias. PDF al instante. Prueba gratis.",
+  keywords: [
+    "guía ia niños",
+    "libro inteligencia artificial niños",
+    "descargar guía ia",
+    "chatgpt para niños pdf",
+    "enseñar ia niños",
+    "guía ia niños gratis pdf",
+  ],
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/descargar-guia-ia-ninos",
+  },
   openGraph: {
-    title: "Kit para Padres: Cómo Enseñar IA a tus Hijos",
+    title: "Descargar Guía de IA para Niños · Kit Gratuito | InnovaKids",
     description:
-      "Aprende paso a paso cómo enseñar Inteligencia Artificial a tu hijo de 8 a 17 años. Incluye proyectos prácticos. Descarga gratuita en PDF.",
+      "Guía paso a paso para que tu hijo pase de consumidor a creador con IA. Probada por 527 familias. Descarga gratis en PDF al instante.",
+    url: "https://www.innovakidslatam.com/descargar-guia-ia-ninos",
+    siteName: "InnovaKids",
     type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Descargar guía gratis de IA para niños 8-17 años - InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Descargar Guía de IA para Niños 8-17 · Gratis | InnovaKids",
+    description:
+      "Guía paso a paso probada por 527 familias. ChatGPT seguro y proyectos prácticos. Descarga gratis.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

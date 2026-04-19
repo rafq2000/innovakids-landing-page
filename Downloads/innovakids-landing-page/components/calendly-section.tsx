@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { CheckCircle, Shield, Clock, ChevronDown, Sparkles } from "lucide-react"
+import { ChevronDown } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 
 const LATIN_AMERICA_COUNTRIES = [
@@ -19,7 +19,7 @@ const LATIN_AMERICA_COUNTRIES = [
   { code: "PA", name: "Panamá", timezone: "America/Panama", flag: "🇵🇦" },
   { code: "PY", name: "Paraguay", timezone: "America/Asuncion", flag: "🇵🇾" },
   { code: "PE", name: "Perú", timezone: "America/Lima", flag: "🇵🇪" },
-  { code: "DO", name: "República Dominicana", timezone: "America/Santo_Domingo", flag: "🇩🇴" },
+  { code: "DO", name: "Rep. Dominicana", timezone: "America/Santo_Domingo", flag: "🇩🇴" },
   { code: "UY", name: "Uruguay", timezone: "America/Montevideo", flag: "🇺🇾" },
   { code: "VE", name: "Venezuela", timezone: "America/Caracas", flag: "🇻🇪" },
   { code: "ES", name: "España", timezone: "Europe/Madrid", flag: "🇪🇸" },
@@ -28,198 +28,220 @@ const LATIN_AMERICA_COUNTRIES = [
 ]
 
 const AGE_RANGES = [
-  { value: "8-10", label: "8-10 años" },
-  { value: "11-14", label: "11-14 años" },
+  { value: "8-10", label: "8–10 años" },
+  { value: "11-14", label: "11–14 años" },
 ]
 
 export function CalendlySection() {
   const [selectedCountry, setSelectedCountry] = useState<string>("CL")
   const [childAge, setChildAge] = useState<string>("")
-  const [formData, setFormData] = useState({
-    name: "",
-    whatsapp: "",
-  })
+  const [formData, setFormData] = useState({ name: "", whatsapp: "" })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitError, setSubmitError] = useState<string | null>(null)
 
-  const selectedCountryData = LATIN_AMERICA_COUNTRIES.find((c) => c.code === selectedCountry)
+  const countryData = LATIN_AMERICA_COUNTRIES.find((c) => c.code === selectedCountry)
 
   const handleBooking = async () => {
-    if (!selectedCountryData || !childAge || !formData.name || !formData.whatsapp) return
-
+    if (!countryData || !childAge || !formData.name || !formData.whatsapp) return
     setIsSubmitting(true)
     setSubmitError(null)
-
     try {
       const supabase = createClient()
-
-      const { error: insertError } = await supabase.from("booking_leads").insert({
+      await supabase.from("booking_leads").insert({
         first_name: formData.name,
         phone: formData.whatsapp,
         country_code: selectedCountry,
-        country_name: selectedCountryData.name,
-        timezone: selectedCountryData.timezone,
+        country_name: countryData.name,
+        timezone: countryData.timezone,
         child_age: childAge,
       })
-
-      if (insertError) {
-        console.error("Error saving lead:", insertError)
-      }
-
-      // Open Calendly with pre-filled data
-      const calendlyUrl = new URL("https://calendly.com/innovakidslatam/reunion-informativa-innovakids")
-      calendlyUrl.searchParams.set("name", formData.name)
-      calendlyUrl.searchParams.set("a1", formData.whatsapp)
-      calendlyUrl.searchParams.set("location", selectedCountryData.name)
-      calendlyUrl.searchParams.set("hide_gdpr_banner", "1")
-      calendlyUrl.searchParams.set("primary_color", "4dd0e1")
-
-      // Use same tab to avoid popup blockers and perceived friction
-      window.location.href = calendlyUrl.toString()
-    } catch (error) {
-      setSubmitError(error instanceof Error ? error.message : "Error desconocido")
+      const url = new URL(
+        "https://calendly.com/innovakidslatam/reunion-informativa-innovakids"
+      )
+      url.searchParams.set("name", formData.name)
+      url.searchParams.set("a1", formData.whatsapp)
+      url.searchParams.set("location", countryData.name)
+      url.searchParams.set("hide_gdpr_banner", "1")
+      url.searchParams.set("primary_color", "C96342")
+      window.location.href = url.toString()
+    } catch (err) {
+      setSubmitError(err instanceof Error ? err.message : "Error desconocido")
     } finally {
       setIsSubmitting(false)
     }
   }
 
-  const isFormValid = formData.name && formData.whatsapp && selectedCountry && childAge
+  const isValid = formData.name && formData.whatsapp && selectedCountry && childAge
 
   return (
-    <section id="sesion-estrategica" className="bg-background py-20 md:py-32">
-      <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-[#4DD0E1]/20 to-[#26C6DA]/20 border border-[#4DD0E1] rounded-full px-6 py-2.5 mb-6">
-              <Sparkles className="w-5 h-5 text-[#4DD0E1]" />
-              <span className="text-[#4DD0E1] font-semibold text-sm uppercase tracking-wide">
-                Solo 30 segundos
-              </span>
-            </div>
+    <section
+      id="sesion-estrategica"
+      className="bg-[#F5F1E8] text-[#2F2F2C] py-28 md:py-40 border-t border-[#2F2F2C]/10"
+    >
+      <div className="max-w-[1100px] mx-auto px-6 md:px-10">
 
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              Agenda tu reunión
-              <br />
-              <span className="text-[#4DD0E1]">informativa gratis</span>
+        <div className="flex items-center gap-5 mb-20">
+          <div className="h-px w-12 bg-[#C96342]" />
+          <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+            Agenda una evaluación
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-12 gap-10 md:gap-20 items-start">
+
+          {/* Left: copy */}
+          <div className="md:col-span-5 md:sticky md:top-28">
+            <h2
+              className="text-5xl sm:text-6xl md:text-7xl leading-[0.98] tracking-[-0.02em] font-normal mb-8"
+              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+            >
+              Treinta minutos, <em className="italic text-[#C96342]">sin compromiso</em>.
             </h2>
+            <p className="text-lg text-[#5A5751] leading-relaxed max-w-[40ch] mb-10">
+              Conversamos contigo, evaluamos el nivel de tu hijo y resolvemos
+              tus dudas. Si es un fit, reservamos su cupo. Si no, quedas con un
+              diagnóstico claro.
+            </p>
 
-            <div className="grid grid-cols-3 gap-4 max-w-md mx-auto mb-8">
-              <div className="flex flex-col items-center gap-2 bg-[#0f1f3a]/50 border border-[#4DD0E1]/20 rounded-xl p-4">
-                <CheckCircle className="w-6 h-6 text-green-500" />
-                <span className="text-xs font-medium text-gray-200">Evaluación</span>
-              </div>
-              <div className="flex flex-col items-center gap-2 bg-[#0f1f3a]/50 border border-[#4DD0E1]/20 rounded-xl p-4">
-                <Clock className="w-6 h-6 text-[#4DD0E1]" />
-                <span className="text-xs font-medium text-gray-200">20 min</span>
-              </div>
-              <div className="flex flex-col items-center gap-2 bg-[#0f1f3a]/50 border border-[#4DD0E1]/20 rounded-xl p-4">
-                <Shield className="w-6 h-6 text-green-500" />
-                <span className="text-xs font-medium text-gray-200">Sin compromiso</span>
-              </div>
-            </div>
+            <dl className="space-y-5 text-sm">
+              {[
+                ["Duración", "30 minutos"],
+                ["Formato", "Videollamada"],
+                ["Costo", "Gratis, sin compromiso"],
+              ].map(([k, v]) => (
+                <div key={k} className="flex items-baseline gap-6 border-b border-[#2F2F2C]/12 pb-4">
+                  <dt className="text-[11px] uppercase tracking-[0.18em] text-[#C96342] font-semibold w-24 shrink-0">
+                    {k}
+                  </dt>
+                  <dd
+                    className="text-lg text-[#2F2F2C]"
+                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                  >
+                    {v}
+                  </dd>
+                </div>
+              ))}
+            </dl>
           </div>
 
-          <div className="bg-white rounded-3xl p-8 shadow-2xl">
-            <div className="space-y-6">
-              {/* Campo 1: Nombre */}
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Tu nombre *
-                </label>
-                <input
-                  type="text"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-[#4DD0E1] text-gray-800 font-medium"
-                  placeholder="María García"
-                />
-              </div>
+          {/* Right: form */}
+          <form
+            onSubmit={(e) => {
+              e.preventDefault()
+              handleBooking()
+            }}
+            className="md:col-span-7 space-y-8"
+          >
+            <div>
+              <label
+                htmlFor="name"
+                className="block text-[11px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-3"
+              >
+                Tu nombre
+              </label>
+              <input
+                id="name"
+                type="text"
+                value={formData.name}
+                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                className="w-full bg-transparent border-0 border-b border-[#2F2F2C]/25 py-3 text-xl text-[#2F2F2C] placeholder:text-[#2F2F2C]/30 focus:outline-none focus:border-[#C96342] transition-colors"
+                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                placeholder="María García"
+                required
+              />
+            </div>
 
-              {/* Campo 2: WhatsApp */}
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  WhatsApp (con código de país) *
-                </label>
-                <input
-                  type="tel"
-                  value={formData.whatsapp}
-                  onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-[#4DD0E1] text-gray-800 font-medium"
-                  placeholder="+56 9 1234 5678"
-                />
-              </div>
+            <div>
+              <label
+                htmlFor="whatsapp"
+                className="block text-[11px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-3"
+              >
+                WhatsApp (con código de país)
+              </label>
+              <input
+                id="whatsapp"
+                type="tel"
+                value={formData.whatsapp}
+                onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
+                className="w-full bg-transparent border-0 border-b border-[#2F2F2C]/25 py-3 text-xl text-[#2F2F2C] placeholder:text-[#2F2F2C]/30 focus:outline-none focus:border-[#C96342] transition-colors"
+                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                placeholder="+56 9 1234 5678"
+                required
+              />
+            </div>
 
-              {/* Campo 3: País */}
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  País *
-                </label>
-                <div className="relative">
-                  <select
-                    value={selectedCountry}
-                    onChange={(e) => setSelectedCountry(e.target.value)}
-                    className="w-full px-4 py-3 pr-10 border-2 border-gray-200 rounded-lg appearance-none focus:outline-none focus:border-[#4DD0E1] text-gray-800 font-medium cursor-pointer"
-                  >
-                    {LATIN_AMERICA_COUNTRIES.map((country) => (
-                      <option key={country.code} value={country.code}>
-                        {country.flag} {country.name}
-                      </option>
-                    ))}
-                  </select>
-                  <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
-                </div>
+            <div>
+              <label
+                htmlFor="country"
+                className="block text-[11px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-3"
+              >
+                País
+              </label>
+              <div className="relative">
+                <select
+                  id="country"
+                  value={selectedCountry}
+                  onChange={(e) => setSelectedCountry(e.target.value)}
+                  className="w-full appearance-none bg-transparent border-0 border-b border-[#2F2F2C]/25 py-3 pr-8 text-xl text-[#2F2F2C] focus:outline-none focus:border-[#C96342] transition-colors cursor-pointer"
+                  style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                >
+                  {LATIN_AMERICA_COUNTRIES.map((c) => (
+                    <option key={c.code} value={c.code}>
+                      {c.flag} {c.name}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-5 h-5 text-[#5A5751] pointer-events-none" />
               </div>
+            </div>
 
-              {/* Campo 4: Edad del niño */}
-              <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Edad de tu hijo/a *
-                </label>
-                <div className="grid grid-cols-2 gap-3">
-                  {AGE_RANGES.map((age) => (
+            <div>
+              <span className="block text-[11px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-3">
+                Edad de tu hijo/a
+              </span>
+              <div className="flex flex-wrap gap-3">
+                {AGE_RANGES.map((age) => {
+                  const active = childAge === age.value
+                  return (
                     <button
                       key={age.value}
+                      type="button"
                       onClick={() => setChildAge(age.value)}
-                      className={`px-4 py-3 rounded-lg border-2 transition-all font-medium ${childAge === age.value
-                        ? "border-[#4DD0E1] bg-[#4DD0E1]/10 text-[#0a1628]"
-                        : "border-gray-200 hover:border-[#4DD0E1]/50 text-gray-700"
-                        }`}
+                      className={`px-6 py-3 rounded-sm border transition-colors ${
+                        active
+                          ? "border-[#C96342] bg-[#C96342] text-[#FAF7EF]"
+                          : "border-[#2F2F2C]/25 text-[#2F2F2C] hover:border-[#C96342] hover:text-[#C96342]"
+                      }`}
+                      style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                     >
                       {age.label}
                     </button>
-                  ))}
-                </div>
+                  )
+                })}
               </div>
+            </div>
 
-              {submitError && (
-                <div className="bg-red-50 border-2 border-red-500 rounded-lg p-4 text-center">
-                  <p className="text-sm text-red-700">{submitError}</p>
-                </div>
-              )}
+            {submitError && (
+              <p className="text-sm text-[#B91C1C] border-l-2 border-[#B91C1C] pl-4 py-1">
+                {submitError}
+              </p>
+            )}
 
+            <div className="pt-6">
               <button
-                onClick={handleBooking}
-                disabled={!isFormValid || isSubmitting}
-                className="w-full bg-gradient-to-r from-[#4DD0E1] to-[#26C6DA] hover:from-[#26C6DA] hover:to-[#4DD0E1] disabled:from-gray-300 disabled:to-gray-300 disabled:cursor-not-allowed text-[#0a1628] font-bold text-xl py-5 rounded-2xl transition-all shadow-lg hover:shadow-2xl hover:scale-[1.02] transform"
+                type="submit"
+                disabled={!isValid || isSubmitting}
+                className="inline-flex items-center bg-[#C96342] hover:bg-[#A8502F] disabled:bg-[#2F2F2C]/20 disabled:cursor-not-allowed text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm transition-colors"
               >
-                {isSubmitting ? (
-                  "Abriendo calendario..."
-                ) : (
-                  <span className="flex items-center justify-center gap-2">
-                    <Sparkles className="w-5 h-5" />
-                    Ver Horarios Disponibles →
-                  </span>
-                )}
+                {isSubmitting ? "Abriendo calendario…" : "Ver horarios disponibles →"}
               </button>
-
-              <p className="text-center text-gray-500 text-sm">
-                🔒 Tu información es confidencial y nunca será compartida
+              <p className="text-xs text-[#5A5751] mt-4">
+                Tu información es confidencial y nunca será compartida.
               </p>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>
   )
 }
-

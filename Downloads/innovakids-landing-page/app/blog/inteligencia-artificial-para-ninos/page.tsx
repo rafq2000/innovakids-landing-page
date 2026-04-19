@@ -10,12 +10,43 @@ import { Badge } from "@/components/ui/badge"
 import { ArrowRight, CheckCircle2, Clock, Calendar } from "lucide-react"
 
 export const metadata: Metadata = {
-    title: "Inteligencia Artificial para Niños: Guía Completa 2026 | InnovaKids",
+    // 59 chars · keyword-first · 2026 trigger · brand
+    title: "Inteligencia Artificial para Niños · Guía 2026 | InnovaKids",
+    // 154 chars · proof + differentiator + CTA
     description:
-        "Todo lo que necesitas saber sobre IA para niños. Qué es, por qué importa, mejores herramientas, actividades para hacer en casa y cómo elegir un curso.",
+        "Guía completa 2026 de IA para niños 8-17 años: qué es, herramientas, actividades en casa y cómo elegir curso. Probado por 527 familias en 9 países. Lee ya.",
+    keywords: [
+        "inteligencia artificial para niños",
+        "ia para niños guia",
+        "que es la ia para niños",
+        "herramientas ia niños 2026",
+        "curso ia niños guía padres",
+    ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/blog/inteligencia-artificial-para-ninos",
       languages: generateHreflangs("home")
+    },
+    openGraph: {
+        title: "Inteligencia Artificial para Niños · Guía Completa 2026 | InnovaKids",
+        description:
+            "Todo lo que necesitas saber sobre IA para niños 8-17: herramientas, actividades en casa y cómo elegir curso. Probado por 527 familias.",
+        url: "https://www.innovakidslatam.com/blog/inteligencia-artificial-para-ninos",
+        siteName: "InnovaKids",
+        type: "article",
+        locale: "es_419",
+        images: [{
+            url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+            width: 1200,
+            height: 630,
+            alt: "Inteligencia artificial para niños - Guía completa 2026 InnovaKids",
+        }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Inteligencia Artificial para Niños · Guía 2026 | InnovaKids",
+        description:
+            "Todo sobre IA para niños 8-17: herramientas, actividades en casa y cómo elegir curso. Probado por 527 familias.",
+        images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
 }
 

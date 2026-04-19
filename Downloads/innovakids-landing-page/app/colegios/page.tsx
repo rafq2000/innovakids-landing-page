@@ -6,10 +6,43 @@ import { InstitutionalSolutionsSection } from "@/components/institutional-soluti
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-    title: "InnovaKids B2B | Programas de Inteligencia Artificial para Colegios e Instituciones",
-    description: "Llevamos la educación en IA a tu organización. Programas certificados de Inteligencia Artificial para colegios, municipios, fundaciones y empresas.",
+    // 59 chars · keyword-first · B2B · brand last
+    title: "IA para Colegios e Instituciones · B2B LATAM | InnovaKids",
+    // 154 chars · proof + differentiator + CTA
+    description:
+        "Programas certificados de IA para colegios, municipios, fundaciones y empresas en LATAM. Metodología ERICA, 527 alumnos formados. Solicita tu reunión.",
+    keywords: [
+        "ia para colegios",
+        "curso ia colegios",
+        "programa ia instituciones",
+        "educacion ia b2b latam",
+        "ia colegios municipios fundaciones",
+        "innovakids b2b colegios",
+    ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/colegios",
+    },
+    openGraph: {
+        title: "IA para Colegios e Instituciones · B2B en LATAM | InnovaKids",
+        description:
+            "Llevamos la educación en IA a tu institución. Programas certificados para colegios, municipios, fundaciones y empresas RSE. Solicita tu reunión B2B.",
+        url: "https://www.innovakidslatam.com/colegios",
+        siteName: "InnovaKids",
+        type: "website",
+        locale: "es_419",
+        images: [{
+            url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+            width: 1200,
+            height: 630,
+            alt: "Programas de IA para colegios e instituciones en LATAM - InnovaKids B2B",
+        }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "IA para Colegios e Instituciones · B2B LATAM | InnovaKids",
+        description:
+            "Programas certificados de IA para colegios, municipios y empresas en LATAM. Solicita tu reunión B2B.",
+        images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
 }
 

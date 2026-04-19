@@ -9,25 +9,42 @@ import { ArrowLeft, CheckCircle2, Clock, Video, Users, Star } from "lucide-react
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Clase Gratis de IA para Ninos — Agenda Tu Sesion Diagnostica | InnovaKids",
+  // 59 chars · keyword-first · Gratis trigger · brand
+  title: "Clase Gratis de IA para Niños 8-17 · Agenda Hoy | InnovaKids",
+  // 151 chars · proof + differentiator + CTA
   description:
-    "Agenda una sesion diagnostica gratuita de 20 minutos para tu hijo. Descubre su potencial con Inteligencia Artificial. Sin costo, sin compromiso. Cupos limitados.",
-  keywords:
-    "clase gratis ia ninos, sesion diagnostica innovakids, prueba gratis curso ia, clase prueba inteligencia artificial ninos",
+    "Clase gratis de IA para niños 8-17 años: sesión diagnóstica de 20 min con demo en vivo. Sin compromiso, cupos limitados. 527 familias. Agenda hoy.",
+  keywords: [
+    "clase gratis ia niños",
+    "sesion diagnostica innovakids",
+    "prueba gratis curso ia",
+    "clase prueba inteligencia artificial niños",
+    "clase gratis innovakids",
+    "agenda clase gratis ia",
+  ],
   openGraph: {
-    title: "Clase Gratis de IA para Ninos | InnovaKids",
+    title: "Clase Gratis de IA para Niños 8-17 · InnovaKids LATAM",
     description:
-      "Sesion diagnostica gratuita de 20 min. Descubre el potencial de tu hijo con IA. Sin costo, sin compromiso.",
+      "Sesión diagnóstica gratuita de 20 min. Tu hijo descubre su potencial con IA en vivo. Sin costo, sin compromiso. Cupos limitados.",
     type: "website",
     url: "https://www.innovakidslatam.com/clase-gratis",
+    siteName: "InnovaKids",
+    locale: "es_419",
     images: [
       {
         url: "https://www.innovakidslatam.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "InnovaKids - Clase Gratis de IA para Ninos",
+        alt: "Clase gratis de IA para niños 8-17 años - Sesión diagnóstica InnovaKids",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Clase Gratis de IA para Niños 8-17 · Agenda Hoy | InnovaKids",
+    description:
+      "Sesión diagnóstica gratuita de 20 min con demo en vivo. Sin compromiso, cupos limitados. Agenda hoy.",
+    images: ["https://www.innovakidslatam.com/og-image.png"],
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/clase-gratis",

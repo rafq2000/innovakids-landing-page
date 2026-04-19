@@ -6,9 +6,11 @@ import { ArrowRight, Users, Shield, Star } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Cómo Enseñar IA a Mis Hijos en 2026: Guía Completa para Padres | InnovaKids",
+  // 58 chars · keyword-first · 2026 trigger · brand last
+  title: "Cómo Enseñar IA a Mis Hijos 8-17 años · 2026 | InnovaKids",
+  // 153 chars · proof + differentiator + CTA
   description:
-    "Descubre cómo enseñar inteligencia artificial a tus hijos de 8-17 años con métodos probados. Guía paso a paso para padres en Latinoamérica sobre educación en IA para niños.",
+    "Cómo enseñar IA a tus hijos 8-17 años: guía paso a paso probada por 527 familias en 9 países. Método activo, grupos de 5 y clases en vivo. Clase gratis.",
   keywords: [
     "cómo enseñar ia a mis hijos",
     "cómo aprender ia",
@@ -19,10 +21,30 @@ export const metadata: Metadata = {
     "enseñar ia paso a paso",
     "herramientas ia niños gratis",
   ],
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/como-ensenar-ia-a-mis-hijos",
+  },
   openGraph: {
-    title: "Cómo Enseñar IA a Mis Hijos: Guía Completa 2026",
-    description: "Descubre cómo enseñar inteligencia artificial a tus hijos con métodos probados por +500 familias.",
+    title: "Cómo Enseñar IA a Mis Hijos: Guía Completa 2026 | InnovaKids",
+    description:
+      "Tu hijo pasa de consumidor a creador. Guía probada por 527 familias en 9 países, con grupos de 5 y clases en vivo. Clase gratis.",
     url: "https://www.innovakidslatam.com/como-ensenar-ia-a-mis-hijos",
+    siteName: "InnovaKids",
+    type: "article",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Cómo enseñar inteligencia artificial a niños 8-17 años - Guía InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cómo Enseñar IA a Mis Hijos 8-17 años · 2026 | InnovaKids",
+    description:
+      "Guía probada por 527 familias en 9 países. Método activo, grupos de 5 y clases en vivo. Clase gratis.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

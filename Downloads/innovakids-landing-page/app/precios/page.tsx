@@ -7,26 +7,43 @@ import { Check, Shield, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Precios del Curso de IA para Niños 2026 — Planes y Opciones | InnovaKids",
+  // 55 chars · keyword-first · 2026 trigger · brand
+  title: "Precios Curso IA para Niños 2026 · desde $27 | InnovaKids",
+  // 151 chars · proof + guarantee + CTA
   description:
-    "Conoce los precios del curso de Inteligencia Artificial para niños. Desde $27 USD la reserva. Planes flexibles para toda Latinoamérica. Garantía de satisfacción.",
+    "Precios del curso de IA para niños 8-17 años en 2026. Reserva desde $27 USD, planes para LATAM y España, garantía 10 días. 527 graduados. Clase gratis.",
   keywords: [
     "curso ia niños precio",
     "precio curso inteligencia artificial niños",
     "cuánto cuesta curso ia niños",
     "curso ia niños barato",
     "planes curso ia niños",
+    "precio innovakids 2026",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/precios",
   },
   openGraph: {
-    title: "Precios del Curso de IA para Niños 2026 — Planes y Opciones | InnovaKids",
+    title: "Precios Curso IA para Niños 2026 · Planes LATAM | InnovaKids",
     description:
-      "Conoce los precios del curso de Inteligencia Artificial para niños. Desde $27 USD la reserva. Planes flexibles para toda Latinoamérica.",
+      "Conoce los precios del curso de IA para niños 8-17. Reserva desde $27 USD, planes flexibles y garantía 10 días. 527 graduados en 9 países.",
     url: "https://www.innovakidslatam.com/precios",
     siteName: "InnovaKids",
     type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Precios del curso de IA para niños 2026 - planes y garantía InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Precios Curso IA para Niños 2026 · desde $27 | InnovaKids",
+    description:
+      "Reserva desde $27 USD, planes flexibles para LATAM y garantía 10 días. 527 graduados. Clase gratis.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

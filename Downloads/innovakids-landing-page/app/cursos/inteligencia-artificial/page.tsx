@@ -6,12 +6,28 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños (8-17) — Clases Online en Vivo | InnovaKids",
+  // 61 chars · keyword first · age range · brand last
+  title: "Curso de IA para Niños y Adolescentes 8-17 años | InnovaKids",
+  // 148 chars · primary keyword + proof + differentiators + soft CTA
   description:
-    "El mejor curso de inteligencia artificial para niños y adolescentes. Tu hijo crea apps, arte y videojuegos con IA en 5 semanas. Máx 5 alumnos por grupo. Prueba gratis.",
+    "El mejor curso de Inteligencia Artificial para niños y adolescentes (8-17). Tu hijo crea apps y videojuegos en 5 semanas. Grupos de 5. Clase gratis.",
   openGraph: {
-    title: "Curso de IA para Niños — Clases Online en Vivo | InnovaKids",
-    description: "Tu hijo aprende a crear videojuegos y apps con Inteligencia Artificial. Grupos de 5 alumnos. 527 graduados. Prueba una clase gratis.",
+    title: "Curso de IA para Niños y Adolescentes · Escuela #1 en LATAM | InnovaKids",
+    description:
+      "Tu hijo crea apps, arte y videojuegos con IA en 5 semanas. 527 graduados, clases en vivo, grupos de máximo 5. Reserva tu clase gratis.",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Curso de Inteligencia Artificial para Niños y Adolescentes 8-17 años",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Curso de IA para Niños 8-17 años · #1 LATAM | InnovaKids",
+    description:
+      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Grupos de máximo 5. 527 graduados. Clase gratis de prueba.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

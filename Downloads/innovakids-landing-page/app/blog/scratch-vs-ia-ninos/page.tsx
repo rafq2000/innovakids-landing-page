@@ -8,9 +8,11 @@ import { ArrowRight, Calendar, Clock } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Scratch vs IA: ¿Qué Debería Aprender Mi Hijo Primero en 2026? | InnovaKids",
+  // 58 chars · keyword-first · 2026 trigger · brand
+  title: "Scratch vs IA para Niños · ¿Qué Aprender Primero? 2026 | InnovaKids",
+  // 151 chars · honesto + differentiator + CTA
   description:
-    "Comparamos Scratch y la Inteligencia Artificial como herramientas educativas para niños. Descubre cuál es mejor para tu hijo según su edad e intereses.",
+    "Scratch vs IA para niños 8-17 años: comparativa honesta 2026 para decidir qué aprender primero según edad e intereses. 527 familias. Lee el análisis.",
   keywords: [
     "scratch vs ia niños",
     "scratch o inteligencia artificial",
@@ -23,12 +25,26 @@ export const metadata: Metadata = {
     canonical: "https://www.innovakidslatam.com/blog/scratch-vs-ia-ninos",
   },
   openGraph: {
-    title: "Scratch vs IA: ¿Qué Debería Aprender Mi Hijo Primero en 2026?",
+    title: "Scratch vs IA · ¿Qué Debería Aprender Tu Hijo Primero? (2026) | InnovaKids",
     description:
-      "Comparamos Scratch y la Inteligencia Artificial como herramientas educativas para niños. Descubre cuál es mejor según su edad.",
+      "Comparativa honesta de Scratch e IA como herramientas educativas para niños 8-17 años. Descubre cuál es mejor según edad e intereses.",
     url: "https://www.innovakidslatam.com/blog/scratch-vs-ia-ninos",
     siteName: "InnovaKids",
     type: "article",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Scratch vs IA para niños - Comparativa 2026 InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Scratch vs IA para Niños · ¿Qué Aprender Primero? | InnovaKids",
+    description:
+      "Comparativa honesta 2026 para decidir entre Scratch e IA según edad e intereses del niño.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

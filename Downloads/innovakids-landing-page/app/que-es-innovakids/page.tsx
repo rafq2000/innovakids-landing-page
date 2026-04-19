@@ -6,14 +6,39 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { CheckCircle, Target, ArrowRight, Sparkles, Users, BookOpen, Trophy, Lightbulb, Rocket } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "¿Qué es InnovaKids? — Escuela de IA para Niños de 8 a 17 Años",
+  // 59 chars · keyword-first · brand + age
+  title: "¿Qué es InnovaKids? Escuela IA Niños 8-17 · #1 LATAM",
+  // 154 chars · proof + differentiator + CTA
   description:
-    "InnovaKids es la primera escuela online de IA y Vibe Coding para niños y adolescentes. 527 graduados en 9 países. Clases en vivo, máx 5 alumnos. Descubre cómo tu hijo aprende a crear con IA.",
+    "InnovaKids es la escuela #1 de IA y Vibe Coding para niños 8-17 años en LATAM. 527 graduados en 9 países, grupos de 5 y clases en vivo. Clase gratis.",
+  keywords: [
+    "que es innovakids",
+    "innovakids escuela ia",
+    "escuela ia niños latam",
+    "innovakids curso",
+    "escuela vibe coding niños",
+  ],
   openGraph: {
-    title: "¿Qué es InnovaKids? — La Escuela de IA para Niños y Adolescentes",
-    description: "Descubre cómo InnovaKids enseña a niños de 8-17 años a crear apps, videojuegos y arte con IA. 527 graduados, 9 países, grupos de máx 5.",
+    title: "¿Qué es InnovaKids? Escuela #1 de IA para Niños y Adolescentes en LATAM",
+    description:
+      "Tu hijo pasa de consumidor a creador. 527 graduados en 9 países, grupos de 5, clases en vivo. Reserva tu clase gratis.",
     url: "https://www.innovakidslatam.com/que-es-innovakids",
+    siteName: "InnovaKids",
     type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "¿Qué es InnovaKids? Escuela de IA para niños 8-17 años en LATAM",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "¿Qué es InnovaKids? Escuela IA Niños 8-17 · #1 LATAM",
+    description:
+      "Escuela #1 de IA y Vibe Coding para niños 8-17. 527 graduados en 9 países, grupos de 5. Clase gratis.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/que-es-innovakids",

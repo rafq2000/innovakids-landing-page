@@ -1,191 +1,159 @@
-import { Button } from "@/components/ui/button"
-import { Sparkles, MapPin, Phone, Instagram, Mail, Clock, ArrowRight, Shield, Award } from "lucide-react"
+import { Instagram } from "lucide-react"
+
+const countries = [
+  { flag: "🇨🇱", name: "Chile", slug: "/cl" },
+  { flag: "🇲🇽", name: "México", slug: "/mx" },
+  { flag: "🇨🇴", name: "Colombia", slug: "/co" },
+  { flag: "🇦🇷", name: "Argentina", slug: "/ar" },
+  { flag: "🇵🇪", name: "Perú", slug: "/pe" },
+  { flag: "🇪🇸", name: "España", slug: "/es" },
+  { flag: "🇺🇸", name: "USA", slug: "/us" },
+  { flag: "🇪🇨", name: "Ecuador", slug: "/ec" },
+  { flag: "🇺🇾", name: "Uruguay", slug: "/uy" },
+  { flag: "🇨🇷", name: "Costa Rica", slug: "/cr" },
+]
+
+const exploreLinks = [
+  { href: "/cursos-online-para-ninos", label: "Cursos online para niños" },
+  { href: "/#metodologia", label: "Metodología" },
+  { href: "/blog", label: "Blog educativo" },
+  { href: "/precios", label: "Precios y planes" },
+  { href: "/colegios", label: "Soluciones para colegios" },
+  { href: "/testimonios", label: "Testimonios" },
+  { href: "/resultados", label: "Resultados" },
+]
 
 export function Footer() {
   return (
-    <footer className="relative overflow-hidden">
-      {/* Gradient Transition from dark to cyan */}
-      <div className="h-32 bg-gradient-to-b from-[#030712] to-[#0a1628]" />
+    <footer className="bg-[#EDE6D3] text-[#2F2F2C] border-t border-[#2F2F2C]/15 pt-24 pb-10">
+      <div className="max-w-[1100px] mx-auto px-6 md:px-10">
 
-      {/* Main Footer */}
-      <div className="bg-gradient-to-b from-[#0a1628] to-[#4DD0E1] py-16 text-white">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-6xl">
-            {/* Trust Badges Row */}
-            <div className="flex flex-wrap justify-center gap-4 mb-12 pb-8 border-b border-white/10">
-              {[
-                { icon: Shield, text: "Pago 100% Seguro" },
-                { icon: Award, text: "Certificación Incluida" },
-                { icon: Sparkles, text: "Garantía 10 Días" },
-              ].map((badge, i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20"
-                >
-                  <badge.icon className="w-4 h-4 text-[#4DD0E1]" />
-                  <span className="text-sm font-medium">{badge.text}</span>
-                </div>
-              ))}
-            </div>
+        {/* Big closing headline */}
+        <div className="pb-20 border-b border-[#2F2F2C]/15">
+          <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+            Próxima cohorte · abril 2026
+          </p>
+          <h2
+            className="text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-[-0.02em] font-normal max-w-[14ch] mb-10"
+            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+          >
+            Empieza <em className="italic text-[#C96342]">hoy</em>.
+          </h2>
+          <a
+            href="/#sesion-estrategica"
+            className="inline-flex items-center bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm transition-colors"
+          >
+            Agendar clase gratis
+          </a>
+        </div>
 
-            <div className="grid md:grid-cols-4 gap-8 mb-12">
-              {/* Brand Column */}
-              <div className="text-center md:text-left md:col-span-1">
-                <div className="mb-6 inline-flex items-center gap-2 text-2xl font-bold font-premium">
-                  <Sparkles className="h-6 w-6 text-[#0a1628]" />
-                  <span className="text-[#0a1628]">Innovakids</span>
-                </div>
-                <p className="mb-6 text-sm text-[#0a1628]/80">
-                  Preparando a la próxima generación de innovadores digitales en toda Latinoamérica
-                </p>
-                <Button
-                  asChild
-                  size="lg"
-                  className="w-full bg-[#0a1628] text-base font-semibold text-white shadow-lg transition-all hover:scale-105 hover:bg-[#0a1628]/90 rounded-full group cursor-pointer"
-                >
-                  <a href="/#sesion-estrategica">
-                    Comienza Hoy
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </Button>
+        {/* Columns */}
+        <div className="grid md:grid-cols-12 gap-10 md:gap-8 py-16">
+          <div className="md:col-span-4">
+            <p
+              className="text-2xl tracking-tight mb-5"
+              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+            >
+              InnovaKids
+            </p>
+            <p className="text-sm text-[#5A5751] leading-relaxed max-w-[40ch] mb-8">
+              Academia online de IA para niños y adolescentes de 8 a 17 años.
+              Presentes en toda Latinoamérica y España.
+            </p>
+            <a
+              href="https://instagram.com/innovakidslatam"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-sm text-[#2F2F2C] hover:text-[#C96342] transition-colors"
+              aria-label="Instagram"
+            >
+              <Instagram className="w-4 h-4" />
+              Instagram
+            </a>
+          </div>
 
-                {/* Social Links */}
-                <div className="mt-6 flex justify-center md:justify-start gap-4">
+          <div className="md:col-span-3">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+              Explora
+            </p>
+            <ul className="space-y-3">
+              {exploreLinks.map((l) => (
+                <li key={l.href}>
                   <a
-                    href="https://instagram.com/innovakidslatam"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-[#0a1628]/10 flex items-center justify-center hover:bg-[#0a1628]/20 transition-colors group"
-                    aria-label="Síguenos en Instagram"
+                    href={l.href}
+                    className="text-sm text-[#2F2F2C] hover:text-[#C96342] transition-colors"
                   >
-                    <Instagram className="w-5 h-5 text-[#0a1628] group-hover:scale-110 transition-transform" />
+                    {l.label}
                   </a>
-                </div>
-              </div>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-              {/* Explora Column (SEO Magnet) */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-bold mb-4 text-[#0a1628] font-premium">Explora</h3>
-                <ul className="space-y-3">
-                  <li>
-                    <a href="/cursos-online-para-ninos" className="text-[#0a1628]/80 hover:text-[#0a1628] hover:underline transition-colors text-sm flex items-center gap-2">
-                      <ArrowRight className="w-3 h-3" /> Cursos Online para Niños
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/#metodologia" className="text-[#0a1628]/80 hover:text-[#0a1628] hover:underline transition-colors text-sm flex items-center gap-2">
-                      <ArrowRight className="w-3 h-3" /> Metodología
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/blog" className="text-[#0a1628]/80 hover:text-[#0a1628] hover:underline transition-colors text-sm flex items-center gap-2">
-                      <ArrowRight className="w-3 h-3" /> Blog Educativo
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/precios" className="text-[#0a1628]/80 hover:text-[#0a1628] hover:underline transition-colors text-sm flex items-center gap-2">
-                      <ArrowRight className="w-3 h-3" /> Precios y Planes
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/colegios" className="text-[#0a1628]/80 hover:text-[#0a1628] hover:underline transition-colors text-sm flex items-center gap-2">
-                      <ArrowRight className="w-3 h-3" /> Soluciones para Colegios
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/testimonios" className="text-[#0a1628]/80 hover:text-[#0a1628] hover:underline transition-colors text-sm flex items-center gap-2">
-                      <ArrowRight className="w-3 h-3" /> Testimonios
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/resultados" className="text-[#0a1628]/80 hover:text-[#0a1628] hover:underline transition-colors text-sm flex items-center gap-2">
-                      <ArrowRight className="w-3 h-3" /> Resultados
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              {/* Contact Column */}
-              <div className="space-y-4">
-                <h3 className="text-lg font-bold mb-4 text-[#0a1628] font-premium">Contacto</h3>
-
-                <a
-                  href="https://maps.google.com/?q=Diagonal+Oriente+1620+Providencia+Chile"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-start gap-3 text-[#0a1628]/80 hover:text-[#0a1628] transition-colors group text-sm"
-                >
-                  <MapPin className="h-4 w-4 mt-1 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                  <p>Diagonal Oriente 1620, Providencia, Chile</p>
+          <div className="md:col-span-3">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+              Contacto
+            </p>
+            <ul className="space-y-3 text-sm">
+              <li className="text-[#5A5751]">
+                Diagonal Oriente 1620,
+                <br />
+                Providencia, Chile
+              </li>
+              <li>
+                <a href="tel:+56964754219" className="text-[#2F2F2C] hover:text-[#C96342] transition-colors">
+                  +56 9 6475 4219
                 </a>
-
-                <a
-                  href="tel:+56964754219"
-                  className="flex items-center gap-3 text-[#0a1628]/80 hover:text-[#0a1628] transition-colors group text-sm"
-                >
-                  <Phone className="h-4 w-4 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                  <span>+56 9 6475 4219</span>
-                </a>
-
+              </li>
+              <li>
                 <a
                   href="mailto:innovakidslatam@gmail.com"
-                  className="flex items-center gap-3 text-[#0a1628]/80 hover:text-[#0a1628] transition-colors group text-sm"
+                  className="text-[#2F2F2C] hover:text-[#C96342] transition-colors"
                 >
-                  <Mail className="h-4 w-4 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                  <span>innovakidslatam@gmail.com</span>
+                  innovakidslatam@gmail.com
                 </a>
-              </div>
+              </li>
+            </ul>
+          </div>
 
-              {/* Countries Served - Now with Links */}
-              <div className="md:col-span-1">
-                <h3 className="text-lg font-bold mb-4 text-[#0a1628] font-premium">InnovaKids en tu País</h3>
-                <div className="flex flex-wrap gap-2">
-                  {[
-                    { flag: "🇨🇱", name: "Chile", slug: "/cl" },
-                    { flag: "🇲🇽", name: "México", slug: "/mx" },
-                    { flag: "🇨🇴", name: "Colombia", slug: "/co" },
-                    { flag: "🇦🇷", name: "Argentina", slug: "/ar" },
-                    { flag: "🇵🇪", name: "Perú", slug: "/pe" },
-                    { flag: "🇪🇸", name: "España", slug: "/es" },
-                    { flag: "🇺🇸", name: "USA", slug: "/us" },
-                    { flag: "🇪🇨", name: "Ecuador", slug: "/ec" },
-                    { flag: "🇺🇾", name: "Uruguay", slug: "/uy" },
-                    { flag: "🇨🇷", name: "Costa Rica", slug: "/cr" },
-                  ].map((country, i) => (
-                    <a
-                      key={i}
-                      href={country.slug}
-                      className="inline-flex items-center gap-1 px-3 py-1.5 rounded-full bg-[#0a1628]/10 text-[#0a1628] text-xs font-medium hover:bg-[#0a1628] hover:text-[#4DD0E1] transition-all transform hover:-translate-y-1"
-                    >
-                      <span>{country.flag}</span>
-                      <span>{country.name}</span>
-                    </a>
-                  ))}
-                  <a href="/gq" className="hidden">Guinea Ecuatorial</a>
-                </div>
-              </div>
-            </div>
+          <div className="md:col-span-2">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+              Países
+            </p>
+            <ul className="space-y-2">
+              {countries.map((c) => (
+                <li key={c.slug}>
+                  <a
+                    href={c.slug}
+                    className="inline-flex items-center gap-2 text-sm text-[#2F2F2C] hover:text-[#C96342] transition-colors"
+                  >
+                    <span aria-hidden="true">{c.flag}</span>
+                    <span>{c.name}</span>
+                  </a>
+                </li>
+              ))}
+              <li>
+                <a href="/gq" className="hidden">
+                  Guinea Ecuatorial
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-            {/* Bottom Bar */}
-            <div className="border-t border-[#0a1628]/20 pt-8">
-              <p className="text-xs text-[#0a1628]/60 text-center mb-4">
-                © 2026 Innovakids. Todos los derechos reservados. <span className="opacity-50 ml-1">v2.1 Global Edition</span>
-              </p>
-              <div className="flex flex-wrap justify-center gap-6 text-xs text-[#0a1628]/80">
-                <a href="/terminos" className="hover:text-[#0a1628] hover:underline">
-                  Términos y Condiciones
-                </a>
-                <a href="/privacidad" className="hover:text-[#0a1628] hover:underline">
-                  Política de Privacidad
-                </a>
-                <a href="/confianza-y-seguridad" className="hover:text-[#0a1628] hover:underline">
-                  Confianza y Seguridad Infantil
-                </a>
-                <a href="/#contacto" className="hover:text-[#0a1628] hover:underline">
-                  Contacto
-                </a>
-              </div>
-            </div>
+        {/* Bottom bar */}
+        <div className="pt-8 border-t border-[#2F2F2C]/15 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#5A5751]">
+          <p>© 2026 InnovaKids. Todos los derechos reservados.</p>
+          <div className="flex flex-wrap justify-center gap-6">
+            <a href="/terminos" className="hover:text-[#C96342] transition-colors">
+              Términos
+            </a>
+            <a href="/privacidad" className="hover:text-[#C96342] transition-colors">
+              Privacidad
+            </a>
+            <a href="/confianza-y-seguridad" className="hover:text-[#C96342] transition-colors">
+              Confianza y seguridad infantil
+            </a>
           </div>
         </div>
       </div>

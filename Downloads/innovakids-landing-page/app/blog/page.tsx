@@ -5,18 +5,43 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  title: "Blog - InnovaKids | Educación en IA para Niños",
+  // 58 chars · keyword-first · brand last
+  title: "Blog · IA para Niños 8-17 · Guías 2026 | InnovaKids",
+  // 153 chars · proof + differentiator + CTA
   description:
-    "Descubre artículos sobre inteligencia artificial para niños, consejos para padres, y las últimas tendencias en educación tecnológica.",
+    "Blog de IA para niños 8-17 años: guías 2026, consejos para padres, comparativas y tendencias. Expertos de 527 familias en 9 países. Lee artículos hoy.",
   keywords: [
     "blog inteligencia artificial niños",
     "educación tecnológica infantil",
-    "IA para niños",
+    "ia para niños",
     "cursos programación niños",
     "innovakids blog",
+    "blog ia padres latam",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/blog",
+  },
+  openGraph: {
+    title: "Blog · IA para Niños 8-17 · Guías 2026 | InnovaKids LATAM",
+    description:
+      "Guías, comparativas y consejos para padres sobre IA para niños 8-17 años. Expertos de la escuela #1 en LATAM. Lee artículos hoy.",
+    url: "https://www.innovakidslatam.com/blog",
+    siteName: "InnovaKids",
+    type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Blog InnovaKids - Artículos sobre IA para niños 8-17 años",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog · IA para Niños 8-17 · Guías 2026 | InnovaKids",
+    description:
+      "Guías, comparativas y consejos para padres sobre IA para niños 8-17 años. Escuela #1 en LATAM.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

@@ -6,17 +6,42 @@ import { BookOpen, Brain, Lightbulb, Puzzle, Target, Zap, GraduationCap, Shield 
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Metodología ERICA: Pensamiento Computacional e IA para Niños | InnovaKids",
+  // 58 chars · keyword-first · brand last
+  title: "Metodología ERICA · Pensamiento Computacional IA Niños | InnovaKids",
+  // 154 chars · proof + differentiator + CTA
   description:
-    "Descubre cómo la metodología ERICA integra pensamiento computacional, Taxonomía de Bloom, STEM y seguridad digital infantil en cursos de IA para niños y adolescentes.",
+    "Metodología ERICA: pensamiento computacional, Taxonomía de Bloom, STEM y seguridad digital para niños 8-17 años. Probada por 527 familias en 9 países.",
+  keywords: [
+    "metodologia erica",
+    "pensamiento computacional niños",
+    "metodologia ia niños",
+    "stem ia niños",
+    "taxonomia bloom ia niños",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/blog/metodologia-erica-pensamiento-computacional-ia-ninos",
   },
   openGraph: {
-    title: "Metodología ERICA: Pensamiento Computacional e IA para Niños",
-    description: "Cómo la metodología activa ERICA desarrolla el pensamiento algorítmico, la creatividad digital y la seguridad digital infantil.",
+    title: "Metodología ERICA · Pensamiento Computacional e IA para Niños | InnovaKids",
+    description:
+      "Cómo la metodología activa ERICA desarrolla pensamiento algorítmico, creatividad digital y seguridad digital en niños 8-17 años.",
+    url: "https://www.innovakidslatam.com/blog/metodologia-erica-pensamiento-computacional-ia-ninos",
+    siteName: "InnovaKids",
     type: "article",
     locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Metodología ERICA - Pensamiento computacional e IA para niños 8-17 años",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Metodología ERICA · Pensamiento Computacional IA Niños | InnovaKids",
+    description:
+      "Pensamiento computacional, Taxonomía de Bloom, STEM y seguridad digital para niños 8-17 años.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

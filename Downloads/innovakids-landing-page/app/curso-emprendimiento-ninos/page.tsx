@@ -9,24 +9,45 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "Curso de Emprendimiento y Startups con IA para Niños | InnovaKids",
-    description: "Tu hijo aprende educación financiera, creación de startups y negocios digitales con Inteligencia Artificial. Curso online para niños y adolescentes (8-17 años). ¡El futuro empresario empieza hoy!",
+    // 63 chars · keyword-first · brand last
+    title: "Curso de Emprendimiento con IA para Niños 8-17 años | InnovaKids",
+    // 148 chars · startup proof + differentiator + CTA
+    description:
+        "Tu hijo crea su primera startup con IA. Educación financiera y negocios digitales para niños y adolescentes 8-17 años. Grupos de 5. Clase gratis.",
     keywords: [
         "curso emprendimiento niños",
         "educacion financiera niños ia",
         "startups para adolescentes",
         "emprendimiento juvenil online",
         "negocios digitales para jovenes",
-        "curso criar emprendedores",
+        "curso crear emprendedores",
+        "negocios con ia para niños",
+        "curso startups adolescentes",
     ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/curso-emprendimiento-ninos",
-      languages: generateHreflangs("global", "/curso-emprendimiento-ninos")
+        languages: generateHreflangs("global", "/curso-emprendimiento-ninos"),
     },
     openGraph: {
-        title: "Curso de Emprendimiento con IA para Niños | InnovaKids",
-        description: "Educación financiera, startups y negocios digitales con IA. Para niños y adolescentes 8-17 años. Grupos de 5.",
+        title: "Curso de Emprendimiento con IA para Niños y Adolescentes | InnovaKids",
+        description:
+            "Tu hijo lanza su primera startup con IA. Educación financiera, negocios digitales y pitch deck. Clases en vivo, grupos de 5. Reserva tu clase gratis.",
         url: "https://www.innovakidslatam.com/curso-emprendimiento-ninos",
+        type: "website",
+        locale: "es_419",
+        images: [{
+            url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+            width: 1200,
+            height: 630,
+            alt: "Curso de Emprendimiento y Startups con IA para Niños 8-17 años",
+        }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Curso de Emprendimiento con IA para Niños 8-17 | InnovaKids",
+        description:
+            "Tu hijo lanza su primera startup con IA. Educación financiera y negocios digitales. Grupos de 5. Clase gratis.",
+        images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
 }
 

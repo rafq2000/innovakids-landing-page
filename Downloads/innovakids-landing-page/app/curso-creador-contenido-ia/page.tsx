@@ -9,8 +9,11 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "Curso de Creador de Contenido y Cine con IA para Niños | InnovaKids",
-    description: "Aprende a crear contenido para YouTube, TikTok y cine usando Inteligencia Artificial. Curso online para niños y adolescentes (8-17 años). Edición de video, efectos especiales y storytelling con IA.",
+    // 65 chars · keyword-first · brand last
+    title: "Curso de Creador de Contenido con IA para Niños 8-17 | InnovaKids",
+    // 144 chars · YouTube/TikTok keyword proof + CTA
+    description:
+        "Tu hijo crea contenido para YouTube y TikTok con IA. Edición de video y storytelling. Para niños y adolescentes 8-17 años. Clase gratis.",
     keywords: [
         "curso creador contenido niños",
         "curso youtube niños ia",
@@ -18,15 +21,33 @@ export const metadata: Metadata = {
         "curso tiktok adolescentes",
         "edicion video ia niños",
         "curso creacion contenido digital",
+        "curso contenido digital niños",
+        "curso cine ia para adolescentes",
     ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/curso-creador-contenido-ia",
-      languages: generateHreflangs("global", "/curso-creador-contenido-ia")
+        languages: generateHreflangs("global", "/curso-creador-contenido-ia"),
     },
     openGraph: {
-        title: "Curso de Contenido y Cine con IA para Niños | InnovaKids",
-        description: "Tu hijo aprende a producir contenido de nivel profesional con Inteligencia Artificial. YouTube, cine y redes sociales. Grupos de 5.",
+        title: "Curso de Creador de Contenido con IA para Niños y Adolescentes | InnovaKids",
+        description:
+            "Tu hijo pasa de CONSUMIR a CREAR contenido pro con IA: YouTube, cine, redes sociales. Clases en vivo, grupos de 5. Reserva tu clase gratis.",
         url: "https://www.innovakidslatam.com/curso-creador-contenido-ia",
+        type: "website",
+        locale: "es_419",
+        images: [{
+            url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+            width: 1200,
+            height: 630,
+            alt: "Curso de Creador de Contenido con IA para Niños 8-17 años",
+        }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Curso de Contenido con IA para Niños 8-17 | InnovaKids",
+        description:
+            "Tu hijo crea contenido pro para YouTube y TikTok con IA en 5 semanas. Grupos de 5. Clase gratis de prueba.",
+        images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
 }
 

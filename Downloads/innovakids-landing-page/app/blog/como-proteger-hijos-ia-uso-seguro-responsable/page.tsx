@@ -8,28 +8,44 @@ import { ArrowRight, Calendar, Clock } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Como Proteger a tus Hijos en la Era de la IA: Guia de Uso Seguro y Responsable | InnovaKids",
+  // 58 chars · keyword-first · safety + brand
+  title: "Cómo Proteger a tus Hijos de la IA · Guía Segura | InnovaKids",
+  // 152 chars · proof + differentiator + CTA
   description:
-    "Guia completa para padres sobre uso seguro de IA para ninos. Aprende a supervisar, proteger la privacidad y ensenar uso responsable de la Inteligencia Artificial.",
+    "Guía para padres sobre uso seguro de IA en niños 8-17 años: supervisa, protege la privacidad y enseña uso responsable. Probada por 527 familias. Lee ya.",
   keywords: [
-    "ia segura para ninos",
+    "ia segura para niños",
     "proteger hijos inteligencia artificial",
-    "uso responsable ia ninos",
-    "seguridad ia ninos",
-    "privacidad ia ninos",
+    "uso responsable ia niños",
+    "seguridad ia niños",
+    "privacidad ia niños",
     "supervisar ia hijos",
-    "como ensenar ia a mis hijos",
+    "como enseñar ia a mis hijos",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/blog/como-proteger-hijos-ia-uso-seguro-responsable",
   },
   openGraph: {
-    title: "Como Proteger a tus Hijos en la Era de la IA: Guia de Uso Seguro y Responsable",
+    title: "Cómo Proteger a tus Hijos en la Era de la IA · Guía Segura | InnovaKids",
     description:
-      "Guia completa para padres sobre uso seguro y responsable de la Inteligencia Artificial para ninos y adolescentes.",
+      "Guía completa para padres: cómo supervisar, proteger la privacidad y enseñar uso responsable de la IA a niños y adolescentes.",
     url: "https://www.innovakidslatam.com/blog/como-proteger-hijos-ia-uso-seguro-responsable",
     siteName: "InnovaKids",
     type: "article",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Cómo proteger a tus hijos en la era de la IA - Guía de uso seguro InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cómo Proteger a tus Hijos de la IA · Guía Segura | InnovaKids",
+    description:
+      "Guía para padres sobre uso seguro y responsable de la IA en niños 8-17 años. Probada por 527 familias.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

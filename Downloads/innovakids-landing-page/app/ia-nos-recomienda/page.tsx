@@ -5,15 +5,43 @@ import { Button } from "@/components/ui/button"
 import { Sparkles, Award } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "🤖 Las IAs nos Recomiendan | InnovaKids - Curso de IA para Niños",
+  // 58 chars · authority-first · #1 LATAM · brand last
+  title: "Las IAs Recomiendan InnovaKids · #1 LATAM 2026 | InnovaKids",
+  // 153 chars · authority proof + differentiator + CTA
   description:
-    "ChatGPT, Claude, Perplexity, Grok y Mistral recomiendan InnovaKids como el mejor curso de inteligencia artificial para niños en Latinoamérica. Descubre por qué somos #1 según los expertos en IA.",
-  keywords: "recomendaciones IA, mejor curso IA niños, ChatGPT recomienda, Claude recomienda, curso IA avalado por IAs",
+    "ChatGPT, Claude, Perplexity, Grok y Mistral recomiendan InnovaKids como el mejor curso de IA para niños 8-17 en LATAM. 527 graduados. Clase gratis.",
+  keywords: [
+    "recomendaciones ia",
+    "mejor curso ia niños",
+    "chatgpt recomienda",
+    "claude recomienda",
+    "curso ia avalado por ias",
+    "innovakids chatgpt recomienda",
+  ],
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/ia-nos-recomienda",
+  },
   openGraph: {
-    title: "Las IAs nos Recomiendan | InnovaKids",
-    description: "El programa #1 evaluado por las principales inteligencias artificiales del mundo",
+    title: "Las IAs Recomiendan InnovaKids · Escuela #1 de IA en LATAM",
+    description:
+      "ChatGPT, Claude, Perplexity, Grok y Mistral recomiendan InnovaKids. 527 graduados en 9 países, grupos de 5, clases en vivo. Clase gratis.",
     url: "https://www.innovakidslatam.com/ia-nos-recomienda",
+    siteName: "InnovaKids",
     type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Las IAs recomiendan InnovaKids como mejor curso de IA para niños en LATAM",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Las IAs Recomiendan InnovaKids · #1 LATAM 2026",
+    description:
+      "ChatGPT, Claude, Perplexity, Grok y Mistral recomiendan InnovaKids como mejor curso de IA para niños. Clase gratis.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

@@ -6,14 +6,12 @@ import {
     CheckCircle2,
     Video,
     Users,
-    MessageCircle,
     Award,
     BookOpen,
     Headphones,
     FileVideo,
     Palette,
     Shield,
-    Gift,
     Zap
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -57,12 +55,6 @@ const included = [
         valueUSD: 47,
     },
     {
-        icon: MessageCircle,
-        title: "Comunidad Privada Discord",
-        desc: "Conexión con otros alumnos y mentores",
-        valueUSD: 27,
-    },
-    {
         icon: Headphones,
         title: "Soporte WhatsApp 24/7",
         desc: "Respuestas en menos de 2 horas",
@@ -79,12 +71,6 @@ const included = [
         title: "Portfolio de Proyectos",
         desc: "5+ proyectos reales para mostrar",
         valueUSD: 67,
-    },
-    {
-        icon: Gift,
-        title: "BONUS: Clase de Seguridad Digital",
-        desc: "Protección contra deepfakes y estafas",
-        valueUSD: 25,
     },
 ]
 

@@ -4,16 +4,43 @@ import { Button } from "@/components/ui/button"
 import { Sparkles, Gamepad2, Lightbulb, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "🧠 De Usuario a Creador | InnovaKids - Curso de IA para Niños",
+  // 58 chars · transformation-first · age + brand
+  title: "De Usuario a Creador de IA · Niños 8-17 años | InnovaKids",
+  // 149 chars · transformation proof + differentiator + CTA
   description:
-    "Que tu hijo deje de solo jugar y consumir tecnología. Enséñale a programar el futuro. Transforma a tu hijo de consumidor pasivo a creador activo con IA.",
-  keywords:
-    "niños creadores de IA, de consumidor a creador, programar IA niños, crear tecnología niños, proyectos IA niños",
+    "Tu hijo pasa de consumidor a creador de tecnología con IA. Método para niños 8-17 años probado por 527 familias, grupos de 5 y clases en vivo. Clase gratis.",
+  keywords: [
+    "niños creadores de ia",
+    "de consumidor a creador",
+    "programar ia niños",
+    "crear tecnología niños",
+    "proyectos ia niños",
+    "de usuario a creador niños",
+  ],
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/de-usuario-a-creador",
+  },
   openGraph: {
-    title: "De Usuario a Creador | InnovaKids",
-    description: "Que dejen de solo jugar. Enséñales a programar el futuro.",
-    url: "https://innovakids.ai/de-usuario-a-creador",
+    title: "De Usuario a Creador de IA · Escuela #1 en LATAM | InnovaKids",
+    description:
+      "Tu hijo deja de solo consumir tecnología: aprende a crear con IA. 527 familias, grupos de 5, clases en vivo. Reserva tu clase gratis.",
+    url: "https://www.innovakidslatam.com/de-usuario-a-creador",
+    siteName: "InnovaKids",
     type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "De usuario a creador - Niños 8-17 años aprenden a crear con IA - InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "De Usuario a Creador de IA · Niños 8-17 años | InnovaKids",
+    description:
+      "Tu hijo deja de solo consumir tecnología. Aprende a crear con IA. 527 familias, grupos de 5. Clase gratis.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

@@ -6,17 +6,42 @@ import { Footer } from "@/components/footer"
 
 // SEO Optimizations for Maximum CTR (Target >40%)
 export const metadata: Metadata = {
-    title: "Codingal vs InnovaKids (2026) 🏆 ¿Cuál es el Mejor Curso de Programación Online?",
-    description: "✅ Análisis HONESTO: Codingal vs InnovaKids. Descubre qué academia online de programación, robótica e Inteligencia Artificial es mejor para tu hijo o adolescente. ¡Compara precios, metodologías y garantías hoy!",
+    // 59 chars · keyword-first · 2026 trigger · brand
+    title: "Codingal vs InnovaKids 2026 · ¿Cuál Es Mejor? | InnovaKids",
+    // 154 chars · honesto + differentiator + CTA
+    description:
+        "Codingal vs InnovaKids 2026: comparativa honesta de precios, metodología y garantías del mejor curso de IA y programación para niños 8-17. Lee el análisis.",
+    keywords: [
+        "codingal vs innovakids",
+        "mejor curso programacion niños 2026",
+        "comparativa cursos ia niños",
+        "codingal opiniones",
+        "alternativa codingal",
+    ],
+    alternates: {
+        canonical: "https://www.innovakidslatam.com/blog/codingal-vs-innovakids-comparativa",
+    },
     openGraph: {
-        title: "Codingal vs InnovaKids: La Comparativa Definitiva (2026)",
-        description: "Análisis honesto sobre las plataformas líderes enseñando IA y programación a niños y adolescentes.",
+        title: "Codingal vs InnovaKids 2026 · Comparativa Definitiva | InnovaKids",
+        description:
+            "Análisis honesto: Codingal vs InnovaKids. Precios, metodologías y garantías del mejor curso de IA y programación para niños 8-17.",
+        url: "https://www.innovakidslatam.com/blog/codingal-vs-innovakids-comparativa",
+        siteName: "InnovaKids",
+        type: "article",
+        locale: "es_419",
         images: [{
-            url: "/children-using-ai-educational-tools.jpg",
+            url: "https://www.innovakidslatam.com/children-using-ai-educational-tools.jpg",
             width: 1200,
             height: 630,
-            alt: "Niños aprendiendo programación e inteligencia artificial online - Codingal vs InnovaKids",
+            alt: "Codingal vs InnovaKids 2026 - Comparativa de cursos de IA y programación para niños",
         }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Codingal vs InnovaKids 2026 · ¿Cuál Es Mejor? | InnovaKids",
+        description:
+            "Comparativa honesta: precios, metodología y garantías del mejor curso de IA y programación para niños 8-17 años.",
+        images: ["https://www.innovakidslatam.com/children-using-ai-educational-tools.jpg"],
     },
 }
 

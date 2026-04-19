@@ -7,9 +7,11 @@ import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Vibe Coding para Niños — Aprende a Crear con IA Hablando | InnovaKids",
+  // 56 chars · keyword-first · age + brand
+  title: "Vibe Coding para Niños 8-17 años · 2026 | InnovaKids",
+  // 150 chars · proof + differentiator + CTA
   description:
-    "Descubre el Vibe Coding: la revolución donde los niños crean apps, juegos y música simplemente hablando con la IA. Curso online para niños de 8-17 años.",
+    "Vibe Coding para niños 8-17 años: crea apps, videojuegos y música hablando con la IA. Clases en vivo, grupos de 5, 527 graduados. Clase gratis.",
   keywords: [
     "vibe coding niños",
     "vibe coding para niños",
@@ -17,17 +19,32 @@ export const metadata: Metadata = {
     "crear apps con ia niños",
     "vibe coding curso",
     "programación ia niños",
+    "vibe coding 2026 niños",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/vibe-coding-ninos",
   },
   openGraph: {
-    title: "Vibe Coding para Niños — Aprende a Crear con IA Hablando | InnovaKids",
+    title: "Vibe Coding para Niños 8-17 años · Escuela #1 en LATAM | InnovaKids",
     description:
-      "Descubre el Vibe Coding: la revolución donde los niños crean apps, juegos y música simplemente hablando con la IA.",
+      "Tu hijo pasa de consumidor a creador: construye apps y juegos hablando con la IA. Grupos de 5, clases en vivo, 527 graduados. Clase gratis.",
     url: "https://www.innovakidslatam.com/vibe-coding-ninos",
     siteName: "InnovaKids",
     type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Vibe Coding para Niños 8-17 años - Programar con IA hablando - InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vibe Coding para Niños 8-17 años · 2026 | InnovaKids",
+    description:
+      "Crea apps y videojuegos hablando con la IA. Grupos de 5, clases en vivo, 527 graduados. Clase gratis.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

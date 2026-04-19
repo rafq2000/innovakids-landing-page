@@ -589,17 +589,39 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   if (!post) {
     return {
-      title: "Artículo no encontrado - InnovaKids",
+      title: "Artículo no encontrado | InnovaKids",
+      robots: { index: false, follow: false },
     }
   }
 
+  const canonical = `https://www.innovakidslatam.com/blog/${params.slug}`
+  const imageUrl = post.image?.startsWith("http")
+    ? post.image
+    : `https://www.innovakidslatam.com${post.image || "/hero-child-learning-ai.jpg"}`
+
   return {
-    title: `${post.title} - Blog InnovaKids`,
+    title: `${post.title} | Blog InnovaKids`,
     description: post.excerpt,
+    alternates: { canonical },
     openGraph: {
       title: post.title,
       description: post.excerpt,
-      images: [post.image],
+      url: canonical,
+      siteName: "InnovaKids",
+      type: "article",
+      locale: "es_419",
+      images: [{
+        url: imageUrl,
+        width: 1200,
+        height: 630,
+        alt: `${post.title} - InnovaKids`,
+      }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: [imageUrl],
     },
   }
 }
