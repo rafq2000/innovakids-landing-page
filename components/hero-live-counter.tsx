@@ -3,31 +3,29 @@
 import { useEffect, useState } from "react"
 
 export function HeroLiveCounter() {
-    const [viewers, setViewers] = useState(0)
+  const [viewers, setViewers] = useState(0)
 
-    useEffect(() => {
-        // Simulate live viewers
-        const baseViewers = Math.floor(Math.random() * 15) + 25
-        setViewers(baseViewers)
+  useEffect(() => {
+    setViewers(Math.floor(Math.random() * 15) + 25)
+    const interval = setInterval(() => {
+      setViewers((prev) => {
+        const change = Math.random() > 0.5 ? 1 : -1
+        return Math.max(20, Math.min(50, prev + change))
+      })
+    }, 5000)
+    return () => clearInterval(interval)
+  }, [])
 
-        const interval = setInterval(() => {
-            setViewers(prev => {
-                const change = Math.random() > 0.5 ? 1 : -1
-                return Math.max(20, Math.min(50, prev + change))
-            })
-        }, 5000)
-
-        return () => clearInterval(interval)
-    }, [])
-
-    return (
-        <div
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 animate-fadeIn"
-            style={{ animationDelay: "1s" }}
-        >
-            <span className="live-indicator text-sm text-gray-300">
-                <span className="font-semibold text-white">{viewers}</span> familias viendo ahora
-            </span>
-        </div>
-    )
+  return (
+    <span className="inline-flex items-center gap-3 font-mono-accent text-[11px] uppercase tracking-[0.18em] text-[var(--ink-soft)]">
+      <span className="relative flex h-2 w-2">
+        <span className="absolute inline-flex h-full w-full rounded-full bg-[var(--terracotta)] live-dot" />
+        <span className="relative inline-flex h-2 w-2 rounded-full bg-[var(--terracotta)]" />
+      </span>
+      <span className="tabular-nums text-[var(--ink)] text-sm normal-case tracking-normal font-display">
+        {viewers}
+      </span>
+      familias viendo ahora
+    </span>
+  )
 }

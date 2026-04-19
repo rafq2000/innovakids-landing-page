@@ -8,28 +8,44 @@ import { ArrowRight, Calendar, Clock } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "InnovaKids vs Code.org (2026): Cual es Mejor para Tu Hijo? | InnovaKids",
+  // 58 chars · keyword-first · 2026 trigger · brand
+  title: "InnovaKids vs Code.org 2026 · ¿Cuál Es Mejor? | InnovaKids",
+  // 153 chars · honesto + differentiator + CTA
   description:
-    "Comparamos InnovaKids y Code.org en detalle. Descubre cual plataforma es mejor para que tu hijo aprenda programacion e IA en 2026 segun su edad y objetivos.",
+    "InnovaKids vs Code.org 2026: comparativa honesta para que tu hijo aprenda programación e IA según su edad. Clases en vivo vs autoguiado. Lee el análisis.",
   keywords: [
     "code.org vs innovakids",
-    "mejor plataforma programacion ninos",
+    "mejor plataforma programacion niños",
     "code.org alternativa",
     "code.org vs clases en vivo",
-    "plataforma ia ninos",
-    "aprender programacion ninos 2026",
+    "plataforma ia niños",
+    "aprender programacion niños 2026",
     "alternativas code.org",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/blog/innovakids-vs-code-org-comparativa-2026",
   },
   openGraph: {
-    title: "InnovaKids vs Code.org (2026): Cual es Mejor para Tu Hijo?",
+    title: "InnovaKids vs Code.org 2026 · Comparativa Honesta | InnovaKids",
     description:
-      "Comparativa honesta entre InnovaKids y Code.org. Descubre cual es la mejor opcion para tu hijo segun su edad y objetivos.",
+      "Comparativa honesta: InnovaKids vs Code.org. Descubre cuál es la mejor opción para tu hijo 8-17 años según su edad y objetivos.",
     url: "https://www.innovakidslatam.com/blog/innovakids-vs-code-org-comparativa-2026",
     siteName: "InnovaKids",
     type: "article",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "InnovaKids vs Code.org 2026 - Comparativa de plataformas de IA y programación",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "InnovaKids vs Code.org 2026 · ¿Cuál Es Mejor? | InnovaKids",
+    description:
+      "Comparativa honesta: clases en vivo vs autoguiado para que tu hijo aprenda programación e IA.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

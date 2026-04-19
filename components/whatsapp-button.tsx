@@ -1,34 +1,31 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion, AnimatePresence } from "framer-motion"
 import { MessageCircle, X } from "lucide-react"
+import { trackWhatsAppClick } from "@/lib/gtag"
 
 export function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(false)
   const [hasInteracted, setHasInteracted] = useState(false)
 
   useEffect(() => {
-    // Show tooltip after 15 seconds (reduced from 30s for higher engagement)
     const timer = setTimeout(() => {
-      if (!hasInteracted) {
-        setShowTooltip(true)
-      }
+      if (!hasInteracted) setShowTooltip(true)
     }, 15000)
-
     return () => clearTimeout(timer)
   }, [hasInteracted])
 
   const handleClick = () => {
     setHasInteracted(true)
     setShowTooltip(false)
+    trackWhatsAppClick()
     window.open(
       "https://wa.me/56964754219?text=Hola%2C%20quiero%20saber%20si%20mi%20hijo%20califica%20para%20InnovaKids",
       "_blank"
     )
   }
 
-  const dismissTooltip = (e: React.MouseEvent) => {
+  const dismiss = (e: React.MouseEvent) => {
     e.stopPropagation()
     setShowTooltip(false)
     setHasInteracted(true)
@@ -36,76 +33,35 @@ export function WhatsAppButton() {
 
   return (
     <div className="fixed bottom-6 right-6 z-[99999] flex flex-col items-end gap-3">
-      {/* Tooltip */}
-      <AnimatePresence>
-        {showTooltip && (
-          <motion.div
-            initial={{ opacity: 0, y: 10, scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 10, scale: 0.9 }}
-            className="relative bg-white rounded-2xl shadow-2xl p-4 max-w-[280px] border border-green-100"
+      {showTooltip && (
+        <div className="relative bg-[#FAF7EF] text-[#2F2F2C] border border-[#2F2F2C]/15 shadow-xl rounded-sm p-4 max-w-[280px] animate-fadeIn">
+          <button
+            onClick={dismiss}
+            className="absolute -top-2 -right-2 w-6 h-6 bg-[#2F2F2C] rounded-full flex items-center justify-center text-[#FAF7EF] hover:bg-[#C96342] transition-colors"
+            aria-label="Cerrar"
           >
-            <button
-              onClick={dismissTooltip}
-              className="absolute -top-2 -right-2 w-6 h-6 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-gray-700 transition-colors"
-            >
-              <X className="w-3 h-3" />
-            </button>
-            <p className="text-gray-800 font-bold text-sm mb-1">
-              ¿Tu hijo tiene 8-17 años? 🎓
-            </p>
-            <p className="text-gray-600 text-xs">
-              Averigua si califica para nuestros cupos disponibles. Te respondo ya.
-            </p>
-            <div className="absolute bottom-0 right-6 translate-y-1/2 rotate-45 w-3 h-3 bg-white border-b border-r border-green-100" />
-          </motion.div>
-        )}
-      </AnimatePresence>
+            <X className="w-3 h-3" />
+          </button>
+          <p
+            className="text-base font-normal mb-1.5 leading-snug"
+            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+          >
+            ¿Tu hijo tiene 8–17 años?
+          </p>
+          <p className="text-xs text-[#5A5751] leading-relaxed">
+            Averigua si califica para los cupos de la próxima cohorte.
+          </p>
+        </div>
+      )}
 
-      {/* WhatsApp Button with Pulse Ring */}
-      <motion.button
+      <button
         onClick={handleClick}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.95 }}
-        className="relative group w-16 h-16 rounded-full shadow-2xl flex items-center justify-center"
-        style={{
-          background: "linear-gradient(135deg, #25D366 0%, #128C7E 100%)",
-        }}
+        className="relative w-14 h-14 rounded-full bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] shadow-lg flex items-center justify-center transition-colors"
         aria-label="Contactar por WhatsApp"
       >
-        {/* Pulsing rings */}
-        <span className="absolute inset-0 rounded-full border-2 border-[#25D366] animate-ping opacity-75" />
-        <span
-          className="absolute inset-[-4px] rounded-full border-2 border-[#25D366] opacity-50"
-          style={{ animation: "pulsing-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite" }}
-        />
-        <span
-          className="absolute inset-[-8px] rounded-full border border-[#25D366] opacity-25"
-          style={{ animation: "pulsing-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite 0.5s" }}
-        />
-
-        {/* Icon */}
-        <MessageCircle className="w-8 h-8 text-white relative z-10" />
-
-        {/* Online indicator */}
-        <span className="absolute top-0 right-0 w-4 h-4 bg-green-400 rounded-full border-2 border-white flex items-center justify-center">
-          <span className="w-2 h-2 bg-white rounded-full animate-pulse" />
-        </span>
-
-        {/* Hover glow */}
-        <div className="absolute inset-0 rounded-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-      </motion.button>
-
-      {/* Online status text */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
-        className="bg-gray-900/90 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-full flex items-center gap-2"
-      >
-        <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-        En línea ahora
-      </motion.div>
+        <span className="absolute inset-0 rounded-full border border-[#C96342] animate-ping opacity-60" />
+        <MessageCircle className="w-6 h-6 relative z-10" />
+      </button>
     </div>
   )
 }

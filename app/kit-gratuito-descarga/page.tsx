@@ -6,9 +6,43 @@ import Link from "next/link"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-  title: "Descarga tu Kit Gratuito - InnovaKids",
+  // 57 chars · keyword-first · Gratis trigger · brand
+  title: "Kit Gratuito de IA para Padres · Descarga | InnovaKids",
+  // 149 chars · proof + differentiator + CTA
   description:
-    "Descarga el Kit Esencial para el Padre Moderno y descubre cómo introducir a tu hijo en el mundo de la IA.",
+    "Kit gratis para padres: guía práctica para introducir a tu hijo 8-17 años en el mundo de la IA. Probada por 527 familias en 9 países. Descarga gratis.",
+  keywords: [
+    "kit gratuito ia niños",
+    "kit padres ia",
+    "descargar kit ia niños",
+    "guía ia padres moderno",
+    "kit esencial padre moderno",
+  ],
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/kit-gratuito-descarga",
+  },
+  openGraph: {
+    title: "Kit Gratuito de IA para Padres · InnovaKids LATAM",
+    description:
+      "Descarga gratis el Kit Esencial para Padres Modernos. Aprende a introducir a tu hijo al mundo de la IA con un método probado por 527 familias.",
+    url: "https://www.innovakidslatam.com/kit-gratuito-descarga",
+    siteName: "InnovaKids",
+    type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Kit gratuito de IA para padres modernos - InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kit Gratuito de IA para Padres · InnovaKids",
+    description:
+      "Guía práctica para introducir a tu hijo 8-17 años al mundo de la IA. Probada por 527 familias. Descarga gratis.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
+  },
 }
 
 export default function KitDownloadPage() {

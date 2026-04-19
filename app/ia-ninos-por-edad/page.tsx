@@ -7,9 +7,11 @@ import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA por Edad: 8-10, 11-13 y 14-17 Años | InnovaKids",
+  // 57 chars · keyword-first · age-specific + brand
+  title: "Cursos de IA por Edad · 8-10, 11-13 y 14-17 | InnovaKids",
+  // 152 chars · differentiator per edad + proof + CTA
   description:
-    "Encuentra el curso de Inteligencia Artificial ideal según la edad de tu hijo. Programas personalizados para niños de 8-10, preadolescentes de 11-13 y adolescentes de 14-17.",
+    "Cursos de IA por edad para niños 8-17: programas específicos para 8-10, 11-13 y 14-17 años. Clases en vivo, grupos de 5, 527 graduados. Clase gratis.",
   keywords: [
     "curso ia niños 8 años",
     "curso ia niños 10 años",
@@ -17,17 +19,32 @@ export const metadata: Metadata = {
     "ia para preadolescentes",
     "curso ia por edad",
     "inteligencia artificial según edad",
+    "curso ia 14-17 años",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/ia-ninos-por-edad",
   },
   openGraph: {
-    title: "Cursos de IA por Edad: 8-10, 11-13 y 14-17 Años | InnovaKids",
+    title: "Cursos de IA por Edad · 8-10, 11-13 y 14-17 años | InnovaKids",
     description:
-      "Encuentra el curso de Inteligencia Artificial ideal según la edad de tu hijo. Programas personalizados para cada etapa.",
+      "Tu hijo aprende IA con un programa diseñado para su edad. Grupos de 5, clases en vivo, proyectos reales. Clase gratis.",
     url: "https://www.innovakidslatam.com/ia-ninos-por-edad",
     siteName: "InnovaKids",
     type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Cursos de IA por edad para niños 8-10, 11-13 y 14-17 años - InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cursos de IA por Edad · 8-10, 11-13 y 14-17 | InnovaKids",
+    description:
+      "Programas de IA diseñados por edad. Grupos de 5, clases en vivo, proyectos reales. Clase gratis.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

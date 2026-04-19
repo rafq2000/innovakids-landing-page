@@ -6,12 +6,42 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Clases de IA para Niños (8-17 Años) | Crea Apps y Videojuegos | InnovaKids",
+  // 58 chars · keyword-first · age range · brand last
+  title: "Clases de IA para Niños 8-17 años · En vivo | InnovaKids",
+  // 152 chars · proof points (4.9★, grupos de 5) + CTA
   description:
-    "🚀 Curso de IA para niños online. Aprende ChatGPT, Programación y Diseño de Videojuegos. Clases en vivo 100% prácticas. ⭐ 4.9/5. 🎁 ¡Agenda tu Clase GRATIS!",
+    "Clases de IA para niños 8-17 años en vivo. Crea apps, videojuegos y arte con ChatGPT. Grupos de 5 alumnos, 4.9★ de 527 familias. Clase gratis.",
+  keywords: [
+    "clases ia niños",
+    "clases inteligencia artificial niños",
+    "clases ia niños en vivo",
+    "clases online ia para niños",
+    "curso ia niños 8 a 17 años",
+  ],
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/clases-ia-ninos",
+  },
   openGraph: {
-    title: "Clases de IA para Niños | InnovaKids LATAM",
-    description: "Aprende inteligencia artificial creando apps y juegos. ¡Clase de prueba GRATIS!",
+    title: "Clases de IA para Niños 8-17 años · Escuela #1 en LATAM | InnovaKids",
+    description:
+      "Tu hijo pasa de consumidor a creador de tecnología. Clases de IA en vivo, grupos de 5 y proyectos reales desde el día 1. Clase gratis.",
+    url: "https://www.innovakidslatam.com/clases-ia-ninos",
+    siteName: "InnovaKids",
+    type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Clases de Inteligencia Artificial para Niños 8-17 años - InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Clases de IA para Niños 8-17 años · En vivo | InnovaKids",
+    description:
+      "Clases de IA en vivo para niños 8-17 años. Crea apps, videojuegos y arte. Grupos de 5, 4.9★. Clase gratis.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

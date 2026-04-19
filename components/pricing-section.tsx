@@ -1,10 +1,3 @@
-"use client"
-
-import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Check, Sparkles, Star, Zap, Crown, MessageCircle } from "lucide-react"
-import Link from "next/link"
 import type { CountryConfig } from "@/lib/countries-config"
 
 interface PricingSectionProps {
@@ -12,155 +5,140 @@ interface PricingSectionProps {
 }
 
 export function PricingSection({ country }: PricingSectionProps) {
-  // Helper to format currency
   const formatPrice = (amount: number) => {
     if (!country) return `$${amount}`
-    if (country.currency === 'USD' || country.currency === 'EUR') return `${country.currencySymbol}${amount}`
-    // For LATAM currencies, approximate conversion for display
-    const exchangeRate = country.priceLocal / 297 // derived rate from base price
-    const localVal = Math.round(amount * exchangeRate / 100) * 100
-    return `${country.currencySymbol}${localVal.toLocaleString()}`
+    if (country.currency === "USD" || country.currency === "EUR") {
+      return `${country.currencySymbol}${amount}`
+    }
+    const rate = country.priceLocal / 297
+    const local = Math.round((amount * rate) / 100) * 100
+    return `${country.currencySymbol}${local.toLocaleString()}`
   }
 
-  const currencyCode = country ? country.currency : "USD"
+  const currencyCode = country?.currency ?? "USD"
+  const price = formatPrice(297)
 
-  // Base prices in USD
-  const pricingTiers = [
-    {
-      name: "Vibe Explorer (Nivel 1)",
-      priceUSD: 297,
-      description: "El fundamento obligatorio para dominar la IA.",
-      icon: Sparkles,
-      color: "from-purple-400 to-pink-400",
-      features: [
-        "Módulo 1: Fundamentos IA (10 Clases)",
-        "Certificado 'Vibe Explorer' Digital",
-        "Acceso a 15+ herramientas IA",
-        "Soporte 24/7 por Discord + WhatsApp",
-        "Requisito para Especializaciones",
-      ],
-      cta: "Inscribir Nivel 1",
-      link: "/pagar?option=explorer",
-      popular: true,
-      badge: "⚡ Comienza Aquí",
-    },
-    {
-      name: "Vibe Academy (4 Módulos)",
-      priceUSD: 1068,
-      description: "Carrera completa: Nivel 1 + 3 Especializaciones.",
-      originalPriceUSD: 1335,
-      icon: Crown,
-      color: "from-yellow-400 to-orange-400",
-      features: [
-        "Nivel 1 + Creators + Gamers + Enterprise",
-        "40 Clases en Total (Ahorro Inteligente)",
-        "Incubadora de Startups incluida",
-        "Certificación Master Completa",
-        "Pago Único (Equivale a $297 x 4)",
-      ],
-      cta: "Inscripción VIP",
-      link: "/pagar?option=university",
-      popular: false,
-      badge: "💎 Carrera Completa",
-    },
+  const features = [
+    "10 clases en vivo, grupos máximo 5 niños",
+    "Certificado digital Vibe Explorer",
+    "Acceso a 15+ herramientas de IA premium",
+    "Soporte 24/7 por Discord y WhatsApp",
+    "Requisito de acceso a las 4 especialidades",
   ]
 
   return (
-    <section id="inversion" className="bg-[#0a1628] py-20 md:py-32 relative">
-      <div className="container mx-auto px-4">
-        <div className="mx-auto mb-16 max-w-3xl text-center">
-          <Badge className="mb-4 bg-purple-500/10 text-purple-400 border-purple-500/20 px-4 py-1">
-            Planes de Acceso 2026
-          </Badge>
-          <h2 className="mb-6 text-4xl md:text-5xl font-bold text-white tracking-tight">
-            Invierte en su <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Futuro</span>
-          </h2>
-          <p className="text-xl text-gray-400">
-            Elige el nivel de profundidad que deseas. Desde explorador hasta líder tecnológico.
+    <section
+      id="inversion"
+      className="bg-[#F5F1E8] text-[#2F2F2C] py-28 md:py-40 border-t border-[#2F2F2C]/10"
+    >
+      <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+
+        <div className="flex items-center gap-5 mb-20">
+          <div className="h-px w-12 bg-[#C96342]" />
+          <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+            Inversión · Cohorte 2026
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto items-start">
-          {pricingTiers.map((tier, index) => (
-            <Card
-              key={index}
-              className={`relative bg-[#0f1f3a] border-white/10 flex flex-col ${tier.popular ? 'border-purple-500/50 shadow-2xl shadow-purple-500/20 scale-105 z-10' : 'hover:border-white/20 transition-colors'}`}
+        <h2
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-[-0.02em] font-normal mb-8 max-w-[14ch]"
+          style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+        >
+          Un fundamento, una <em className="italic text-[#C96342]">cifra</em>.
+        </h2>
+
+        <p className="text-lg md:text-xl text-[#5A5751] max-w-[52ch] leading-relaxed mb-24">
+          No manejamos planes complejos. Todos comienzan por el mismo módulo
+          obligatorio; después eligen especialidad cuando estén listos.
+        </p>
+
+        <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-start">
+          {/* Left: the offer */}
+          <div className="md:col-span-5">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+              Nivel 01 · Vibe Explorer
+            </p>
+            <h3
+              className="text-4xl md:text-5xl leading-[1.05] tracking-tight mb-8 font-normal"
+              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
             >
-              {tier.badge && (
-                <div className="absolute -top-4 inset-x-0 flex justify-center">
-                  <Badge className="bg-gradient-to-r from-purple-500 to-pink-500 text-white font-bold px-4 py-1 uppercase tracking-wide border-0">
-                    {tier.badge}
-                  </Badge>
-                </div>
-              )}
+              El fundamento obligatorio para dominar la IA.
+            </h3>
+            <div className="flex items-baseline gap-3 mb-4">
+              <span
+                className="text-7xl md:text-[88px] leading-none font-normal text-[#2F2F2C]"
+                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+              >
+                {price}
+              </span>
+              <span className="text-base text-[#5A5751] uppercase tracking-widest">
+                {currencyCode}
+              </span>
+            </div>
+            <p className="text-sm text-[#5A5751] mb-10">
+              Pago único. Sin mensualidades. Sin letra chica.
+            </p>
 
-              <CardHeader className="p-6 md:p-8 pb-4">
-                <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${tier.color} p-2.5 mb-4 flex items-center justify-center`}>
-                  <tier.icon className="text-white h-full w-full" />
-                </div>
-                <h3 className="text-2xl font-bold text-white mb-2">{tier.name}</h3>
-                <p className="text-gray-400 text-sm h-10">{tier.description}</p>
-              </CardHeader>
-
-              <CardContent className="p-6 md:p-8 pt-0 flex-1">
-                <div className="mb-6">
-                  {tier.originalPriceUSD && (
-                    <span className="text-gray-500 line-through text-sm font-medium mr-2">
-                      {formatPrice(tier.originalPriceUSD)}
-                    </span>
-                  )}
-                  <div className="flex items-baseline gap-1">
-                    <span className="text-4xl font-bold text-white">{formatPrice(tier.priceUSD)}</span>
-                    <span className="text-gray-400">{currencyCode}</span>
-                  </div>
-                </div>
-
-                <ul className="space-y-3">
-                  {tier.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
-                      <div className={`mt-1 h-5 w-5 rounded-full flex items-center justify-center shrink-0 bg-white/5`}>
-                        <Check className={`h-3 w-3 text-white`} />
-                      </div>
-                      <span className="text-gray-300 text-sm">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-
-              <CardFooter className="p-6 md:p-8 pt-0">
-                <Button
-                  asChild
-                  size="lg"
-                  className={`w-full font-bold h-12 text-base ${tier.popular ? 'bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-lg' : 'bg-white/10 hover:bg-white/20 text-white'}`}
-                >
-                  <Link href={tier.link}>
-                    {tier.cta}
-                  </Link>
-                </Button>
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
-
-        <div className="mt-12 text-center p-6 bg-white/5 rounded-2xl border border-white/10 max-w-3xl mx-auto">
-          <div className="flex items-center justify-center gap-2 mb-2">
-            <Star className="h-5 w-5 text-yellow-400 fill-yellow-400" />
-            <span className="text-white font-bold">Garantía Vibe 100%</span>
+            <a
+              href="/pagar?option=explorer"
+              className="inline-flex items-center justify-center bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm transition-colors"
+            >
+              Inscribir a mi hijo
+            </a>
           </div>
-          <p className="text-gray-400 text-sm">
-            Prueba el Módulo 1 sin riesgo. Si en 10 días no estás impresionado, te devolvemos tu dinero.
-          </p>
+
+          {/* Right: what's included */}
+          <div className="md:col-span-7 md:pl-8 md:border-l border-[#2F2F2C]/12">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-8">
+              Qué incluye
+            </p>
+            <ul className="divide-y divide-[#2F2F2C]/12">
+              {features.map((f, i) => (
+                <li key={i} className="py-5 flex items-baseline gap-6">
+                  <span className="text-xs text-[#C96342] font-semibold tabular-nums shrink-0 w-6">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span
+                    className="text-base md:text-lg text-[#2F2F2C] leading-snug"
+                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                  >
+                    {f}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
-        <div className="mt-8 text-center">
+        {/* Guarantee */}
+        <div className="mt-24 pt-12 border-t border-[#2F2F2C]/12 grid md:grid-cols-12 gap-10">
+          <div className="md:col-span-4">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+              Garantía
+            </p>
+          </div>
+          <div className="md:col-span-8">
+            <p
+              className="text-2xl md:text-3xl leading-tight tracking-tight mb-4"
+              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+            >
+              10 días para probar sin riesgo.
+            </p>
+            <p className="text-base text-[#5A5751] leading-relaxed max-w-[52ch]">
+              Si en los primeros diez días no estás convencido de lo que ves en
+              tu hijo, te devolvemos el total. Sin preguntas.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-20 pt-10 border-t border-[#2F2F2C]/12 text-center">
           <a
             href="https://wa.me/56964754219?text=Hola%2C%20necesito%20ayuda%20para%20elegir%20el%20plan%20perfecto%20para%20mi%20hijo"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-primary hover:text-white transition-colors text-sm font-medium border-b border-primary/20 hover:border-white pb-0.5"
+            className="text-base text-[#2F2F2C] hover:text-[#C96342] underline underline-offset-4 decoration-[#2F2F2C]/20 hover:decoration-[#C96342] transition-colors"
           >
-            <MessageCircle className="w-4 h-4" />
-            ¿No sabes qué plan elegir? Háblame por WhatsApp
+            ¿Dudas? Escríbenos por WhatsApp →
           </a>
         </div>
       </div>

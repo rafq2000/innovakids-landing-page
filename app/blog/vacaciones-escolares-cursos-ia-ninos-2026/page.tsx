@@ -8,28 +8,44 @@ import { ArrowRight, Calendar, Clock } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Vacaciones Escolares 2026: Los Mejores Cursos de IA y Tecnologia para Ninos | InnovaKids",
+  // 59 chars · keyword-first · 2026 trigger · brand
+  title: "Vacaciones Escolares 2026 · Cursos IA y Tecnología Niños | InnovaKids",
+  // 154 chars · proof + differentiator + CTA
   description:
-    "Descubre los mejores cursos de vacaciones de IA y tecnologia para ninos en 2026. Actividades productivas, creativas y divertidas para aprovechar el receso escolar.",
+    "Vacaciones escolares 2026: mejores cursos de IA y tecnología para niños 8-17 años. Actividades productivas y creativas. 527 familias en 9 países. Lee ya.",
   keywords: [
-    "cursos vacaciones ninos",
-    "cursos verano ninos 2026",
-    "actividades vacaciones ninos tecnologia",
-    "cursos invierno ninos",
-    "campamento tecnologia ninos",
-    "vacaciones productivas ninos",
+    "cursos vacaciones niños",
+    "cursos verano niños 2026",
+    "actividades vacaciones niños tecnologia",
+    "cursos invierno niños",
+    "campamento tecnologia niños",
+    "vacaciones productivas niños",
     "cursos ia vacaciones",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/blog/vacaciones-escolares-cursos-ia-ninos-2026",
   },
   openGraph: {
-    title: "Vacaciones Escolares 2026: Los Mejores Cursos de IA y Tecnologia para Ninos",
+    title: "Vacaciones Escolares 2026 · Mejores Cursos IA y Tecnología Niños | InnovaKids",
     description:
-      "Los mejores cursos de vacaciones de IA y tecnologia para ninos. Actividades productivas y creativas para el receso escolar.",
+      "Cursos de vacaciones de IA y tecnología para niños 8-17 años. Actividades productivas, creativas y divertidas para el receso escolar.",
     url: "https://www.innovakidslatam.com/blog/vacaciones-escolares-cursos-ia-ninos-2026",
     siteName: "InnovaKids",
     type: "article",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Vacaciones escolares 2026 - Cursos de IA y tecnología para niños 8-17 años",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vacaciones Escolares 2026 · Cursos IA Niños | InnovaKids",
+    description:
+      "Mejores cursos de IA y tecnología para niños 8-17 años en vacaciones. Actividades productivas y creativas.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

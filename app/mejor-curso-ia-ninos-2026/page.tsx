@@ -7,26 +7,43 @@ import { ArrowRight, Check, X } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Mejor Curso de IA para Niños en 2026 — Guía Comparativa | InnovaKids",
+  // 59 chars · keyword-first · CTR triggers (2026, #1 LATAM) · brand last
+  title: "Mejor Curso de IA para Niños 2026 · #1 LATAM | InnovaKids",
+  // 151 chars · proof (527 graduados, 9 países) + differentiator + soft CTA
   description:
-    "Descubre por qué InnovaKids es el mejor curso de Inteligencia Artificial para niños en 2026. Comparamos metodología, precio, resultados y opiniones de padres.",
+    "Mejor curso de IA para niños 8-17 años en 2026. 527 graduados en 9 países, grupos de 5, clases en vivo y garantía 10 días. Reserva tu clase gratis.",
   keywords: [
     "mejor curso ia niños",
     "mejor curso inteligencia artificial niños 2026",
     "comparativa cursos ia niños",
     "innovakids vs otros cursos",
     "ranking cursos ia infantil",
+    "mejor curso ia niños latam",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/mejor-curso-ia-ninos-2026",
   },
   openGraph: {
-    title: "Mejor Curso de IA para Niños en 2026 — Guía Comparativa | InnovaKids",
+    title: "Mejor Curso de IA para Niños 2026 · Escuela #1 en LATAM | InnovaKids",
     description:
-      "Descubre por qué InnovaKids es el mejor curso de Inteligencia Artificial para niños en 2026. Comparamos metodología, precio, resultados y opiniones de padres.",
+      "Tu hijo pasa de consumidor a creador de tecnología con IA. 527 graduados en 9 países, grupos de 5, clases en vivo. Reserva tu clase gratis.",
     url: "https://www.innovakidslatam.com/mejor-curso-ia-ninos-2026",
     siteName: "InnovaKids",
     type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Mejor Curso de IA para Niños 2026 - InnovaKids LATAM #1",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mejor Curso de IA para Niños 2026 · #1 LATAM | InnovaKids",
+    description:
+      "527 graduados en 9 países, grupos de 5 y clases en vivo. La escuela #1 de IA para niños 8-17 años. Reserva tu clase gratis.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

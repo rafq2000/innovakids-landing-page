@@ -1,15 +1,13 @@
 import type { Metadata } from "next"
 import dynamic from "next/dynamic"
 import { HeroSection } from "@/components/hero-section"
-import { KeyFeaturesSection } from "@/components/key-features-section"
 import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { generateHreflangs } from "@/lib/seo-config"
+import { faqs } from "@/lib/faq-data"
 
 export const metadata: Metadata = {
-  // Title: empathetic fear-hook · keyword-first · brand last
   title: "Que Tu Hijo No Se Quede Atrás en la Era de la IA | InnovaKids",
-  // Description: empathetic fear + proof + soft CTA
   description:
     "73% de sus compañeros ya usa IA para estudiar. La IA es el nuevo inglés/internet: aprenderla a tiempo marca la diferencia en el colegio y la universidad. Curso #1 IA niños 8-17. Clase gratis.",
   keywords: [
@@ -60,22 +58,6 @@ export const metadata: Metadata = {
   },
 }
 
-const AIFutureSection = dynamic(
-  () => import("@/components/ai-future-section").then((mod) => ({ default: mod.AIFutureSection })),
-  { ssr: true, loading: () => <div className="h-[400px] bg-background animate-pulse" /> },
-)
-const ModulePreviewSection = dynamic(
-  () => import("@/components/module-preview-section").then((mod) => ({ default: mod.ModulePreviewSection })),
-  { ssr: true },
-)
-const ValueStackSection = dynamic(
-  () => import("@/components/value-stack-section").then((mod) => ({ default: mod.ValueStackSection })),
-  { ssr: true },
-)
-const WhyNowSection = dynamic(
-  () => import("@/components/why-now-section").then((mod) => ({ default: mod.WhyNowSection })),
-  { ssr: true },
-)
 const TestimonialsSection = dynamic(
   () => import("@/components/testimonials-section").then((mod) => ({ default: mod.TestimonialsSection })),
   { ssr: true },
@@ -84,48 +66,22 @@ const CurriculumSection = dynamic(
   () => import("@/components/curriculum-section").then((mod) => ({ default: mod.CurriculumSection })),
   { ssr: true },
 )
-const ConsequencesSection = dynamic(
-  () => import("@/components/consequences-section").then((mod) => ({ default: mod.ConsequencesSection })),
-  { ssr: true },
-)
 const PricingSection = dynamic(
   () => import("@/components/pricing-section").then((mod) => ({ default: mod.PricingSection })),
-  { ssr: true },
-)
-const UpcomingCoursesSection = dynamic(
-  () => import("@/components/upcoming-courses-section").then((mod) => ({ default: mod.UpcomingCoursesSection })),
   { ssr: true },
 )
 const CalendlySection = dynamic(
   () => import("@/components/calendly-section").then((mod) => ({ default: mod.CalendlySection })),
   { ssr: true, loading: () => <div className="h-[600px] bg-background animate-pulse" /> },
 )
-const FAQSection = dynamic(() => import("@/components/faq-section").then((mod) => ({ default: mod.FAQSection })), {
-  ssr: true,
-  loading: () => <div className="h-[500px] bg-background animate-pulse" />,
-})
-const Footer = dynamic(() => import("@/components/footer").then((mod) => ({ default: mod.Footer })), {
-  ssr: true,
-  loading: () => <div className="h-[300px] bg-[#030712] animate-pulse" />,
-})
-const SEOContent = dynamic(() => import("@/components/seo-content").then((mod) => ({ default: mod.SEOContent })), {
-  ssr: true,
-})
-
-const VisionSection = dynamic(
-  () => import("@/components/vision-section").then((mod) => ({ default: mod.VisionSection })),
-  { ssr: true },
+const FAQSection = dynamic(
+  () => import("@/components/faq-section").then((mod) => ({ default: mod.FAQSection })),
+  { ssr: true, loading: () => <div className="h-[500px] bg-background animate-pulse" /> },
 )
-const QualificationSection = dynamic(
-  () => import("@/components/qualification-section").then((mod) => ({ default: mod.QualificationSection })),
-  { ssr: true },
+const Footer = dynamic(
+  () => import("@/components/footer").then((mod) => ({ default: mod.Footer })),
+  { ssr: true, loading: () => <div className="h-[300px] bg-[#EDE6D3] animate-pulse" /> },
 )
-const InstitutionalSolutionsSection = dynamic(
-  () => import("@/components/institutional-solutions-section").then((mod) => ({ default: mod.InstitutionalSolutionsSection })),
-  { ssr: true },
-)
-
-import { faqs } from "@/lib/faq-data"
 
 export default function Home() {
   const faqSchema = {
@@ -134,10 +90,7 @@ export default function Home() {
     mainEntity: faqs.map((faq: any) => ({
       "@type": "Question",
       name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
     })),
   }
 
@@ -209,103 +162,107 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
       <Navigation />
       <main className="min-h-screen bg-background">
+        {/* 1 · HERO — hook + promesa + CTA primario */}
         <HeroSection />
 
-        {/* AI Future Stats - Show urgency immediately */}
-        <AIFutureSection />
-
-        {/* DISQUALIFICATION SECTION REMOVED PER USER REQUEST */}
-
-        <div className="h-16" />
-
-        {/* Testimonials - Social proof first (parents and AIs) */}
+        {/* 2 · PRUEBA SOCIAL — testimonios reales antes de pedir nada */}
         <TestimonialsSection />
 
         <div className="h-24" />
 
-        {/* NEW: Vision Section - The Bridge */}
-        <VisionSection />
-
-        <div className="h-24" />
-
-        <KeyFeaturesSection />
-
-        <div className="h-24" />
-
-        <WhyNowSection />
-
-        <div className="h-24" />
-
-        {/* Curriculum - builds value before pricing */}
+        {/* 3 · QUÉ APRENDE — currículum concreto */}
         <CurriculumSection />
 
         <div className="h-24" />
 
-        {/* Module Preview - what they get (before pricing) */}
-        <ModulePreviewSection />
-
-        {/* Value Stack - Everything included (before pricing) */}
-        <ValueStackSection />
-
-        <div className="h-24" />
-
-        {/* <UpcomingCoursesSection /> */}
-
-        {/* Consequences Section Removed - Positivity Focus */}
-
-        {/* ALL PRICING AT THE END - after full value presentation */}
+        {/* 4 · PRECIO — única sección de inversión, al final del valor */}
         <PricingSection />
 
         <div className="h-24" />
 
+        {/* 5 · CONVERSIÓN — formulario + Calendly */}
         <CalendlySection />
 
         <div className="h-24" />
 
-        <div className="h-24" />
-
+        {/* 6 · FAQ — objeciones resueltas */}
         <FAQSection />
 
-        <div className="h-24" />
+        <div className="h-16" />
 
-        {/* Institutional / B2B Section */}
-        <InstitutionalSolutionsSection />
+        {/* 7 · SEO INTERNAL LINKS — cursos especializados condensados */}
+        <section
+          className="bg-[#F5F1E8] text-[#2F2F2C] py-28 md:py-40 border-t border-[#2F2F2C]/10"
+          aria-label="Cursos especializados"
+        >
+          <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+            <div className="flex items-center gap-5 mb-16">
+              <div className="h-px w-12 bg-[#C96342]" />
+              <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                Después del Nivel 01
+              </p>
+            </div>
 
-        <div className="h-24" />
+            <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-end mb-20">
+              <h2
+                className="md:col-span-7 text-5xl sm:text-6xl md:text-7xl leading-[0.98] tracking-[-0.02em] font-normal"
+                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+              >
+                Elige su <em className="italic text-[#C96342]">camino</em>.
+              </h2>
+              <p className="md:col-span-5 text-lg text-[#5A5751] leading-relaxed max-w-[40ch]">
+                Al completar el fundamento, tu hijo se especializa en el área
+                que más le apasiona.
+              </p>
+            </div>
 
-        {/* Specialized Courses - Internal Linking for SEO */}
-        <section className="container mx-auto px-4 py-16">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Para Que Aprenda IA A Tiempo: Elige Su Camino</h2>
-            <p className="text-slate-400 max-w-2xl mx-auto">
-              Después del Nivel 1, tu hijo se especializa en el área que más le apasiona, para seguir avanzando con su generación.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <a href="/curso-creacion-videojuegos-ninos" className="bg-gradient-to-br from-green-900/30 to-emerald-900/20 p-8 rounded-2xl border border-green-500/20 hover:border-green-500/50 transition-all group hover:scale-[1.02]">
-              <div className="text-4xl mb-4">🎮</div>
-              <h3 className="text-xl font-bold text-white group-hover:text-green-400 transition-colors mb-3">Creación de Videojuegos con IA</h3>
-              <p className="text-slate-400 text-sm mb-4">En vez de solo consumir juegos, tu hijo aprende a crearlos. Avanza al ritmo de su generación.</p>
-              <span className="text-green-400 text-sm font-semibold">Ver curso →</span>
-            </a>
-            <a href="/curso-creador-contenido-ia" className="bg-gradient-to-br from-pink-900/30 to-purple-900/20 p-8 rounded-2xl border border-pink-500/20 hover:border-pink-500/50 transition-all group hover:scale-[1.02]">
-              <div className="text-4xl mb-4">🎬</div>
-              <h3 className="text-xl font-bold text-white group-hover:text-pink-400 transition-colors mb-3">Creador de Contenido y Cine IA</h3>
-              <p className="text-slate-400 text-sm mb-4">Sus compañeros ya publican videos con IA. Aquí tu hijo aprende a tiempo este nuevo lenguaje digital.</p>
-              <span className="text-pink-400 text-sm font-semibold">Ver curso →</span>
-            </a>
-            <a href="/curso-emprendimiento-ninos" className="bg-gradient-to-br from-yellow-900/30 to-orange-900/20 p-8 rounded-2xl border border-yellow-500/20 hover:border-yellow-500/50 transition-all group hover:scale-[1.02]">
-              <div className="text-4xl mb-4">💡</div>
-              <h3 className="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors mb-3">Emprendimiento y Startups con IA</h3>
-              <p className="text-slate-400 text-sm mb-4">Adolescentes de 15 años ya emprenden con IA. Tu hijo puede empezar a tiempo y tener más opciones mañana.</p>
-              <span className="text-yellow-400 text-sm font-semibold">Ver curso →</span>
-            </a>
+            <ul className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#2F2F2C]/12 border-y border-[#2F2F2C]/12">
+              {[
+                {
+                  href: "/curso-creacion-videojuegos-ninos",
+                  number: "02",
+                  title: "Videojuegos con IA",
+                  desc: "Crea juegos en vez de solo consumirlos.",
+                },
+                {
+                  href: "/curso-creador-contenido-ia",
+                  number: "03",
+                  title: "Creador de Contenido y Cine IA",
+                  desc: "Aprende el nuevo lenguaje digital.",
+                },
+                {
+                  href: "/curso-emprendimiento-ninos",
+                  number: "04",
+                  title: "Emprendimiento con IA",
+                  desc: "Empieza a tiempo, más opciones mañana.",
+                },
+              ].map((c) => (
+                <li key={c.href}>
+                  <a
+                    href={c.href}
+                    className="group block py-10 md:px-8 transition-colors hover:bg-[#EDE6D3]"
+                  >
+                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+                      Nivel {c.number}
+                    </p>
+                    <h3
+                      className="text-2xl md:text-3xl leading-tight tracking-tight mb-4 group-hover:text-[#C96342] transition-colors"
+                      style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                    >
+                      {c.title}
+                    </h3>
+                    <p className="text-base text-[#5A5751] leading-relaxed mb-8 max-w-[32ch]">
+                      {c.desc}
+                    </p>
+                    <span className="text-sm font-semibold text-[#C96342] underline underline-offset-4 decoration-[#C96342]/30 group-hover:decoration-[#C96342]">
+                      Ver curso →
+                    </span>
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
-
-        <div className="h-12" />
-
-        <SEOContent />
 
         <Footer />
       </main>
@@ -313,4 +270,3 @@ export default function Home() {
     </>
   )
 }
-

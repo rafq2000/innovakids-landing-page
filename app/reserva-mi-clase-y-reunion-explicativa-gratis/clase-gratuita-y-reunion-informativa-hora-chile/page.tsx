@@ -5,8 +5,43 @@ import Link from "next/link"
 import { ArrowLeft, Calendar, Clock, Video, CheckCircle2 } from "lucide-react"
 
 export const metadata = {
-  title: "Reserva tu Sesión de Evaluación Gratuita - InnovaKids",
-  description: "Agenda tu sesión de evaluación gratuita y reunión informativa sobre el curso de IA para niños",
+  // 58 chars · keyword-first · Gratis · brand
+  title: "Reserva Clase Gratis de IA para Niños · Hora Chile | InnovaKids",
+  // 154 chars · proof + differentiator + CTA
+  description:
+    "Reserva tu clase gratis y reunión informativa sobre el curso de IA para niños 8-17 años (hora Chile). Demo en vivo, sin compromiso. 527 familias. Agenda hoy.",
+  keywords: [
+    "reserva clase gratis ia niños",
+    "reunion informativa curso ia niños",
+    "agendar clase ia niños chile",
+    "clase gratuita hora chile",
+  ],
+  alternates: {
+    canonical:
+      "https://www.innovakidslatam.com/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile",
+  },
+  openGraph: {
+    title: "Reserva Clase Gratis de IA para Niños · Hora Chile | InnovaKids",
+    description:
+      "Agenda tu clase gratis y reunión informativa (hora Chile). Demo de IA en vivo para tu hijo 8-17 años, sin compromiso. Cupos limitados.",
+    url: "https://www.innovakidslatam.com/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile",
+    siteName: "InnovaKids",
+    type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Reserva clase gratis y reunión informativa - Curso IA niños InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Reserva Clase Gratis IA Niños · Hora Chile | InnovaKids",
+    description:
+      "Clase gratis y reunión informativa en hora Chile. Demo de IA para tu hijo 8-17 años. Agenda hoy.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
+  },
 }
 
 export default function ReservaClasePage() {

@@ -8,28 +8,44 @@ import { ArrowRight, Calendar, Clock } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Vibe Coding: Que Es y Por Que es el Futuro de la Programacion para Ninos | InnovaKids",
+  // 57 chars · keyword-first · brand last
+  title: "Vibe Coding · Qué Es y Futuro Programación Niños | InnovaKids",
+  // 153 chars · proof + differentiator + CTA
   description:
-    "Descubre que es el Vibe Coding, la nueva forma de programar hablando con la IA. Aprende por que es revolucionario para ninos y como InnovaKids lo ensena.",
+    "Vibe Coding para niños 8-17 años: qué es, por qué es el futuro de la programación y cómo tu hijo aprende hablando con la IA. 527 familias. Lee la guía.",
   keywords: [
-    "vibe coding ninos",
+    "vibe coding niños",
     "que es vibe coding",
-    "programacion con ia ninos",
+    "programacion con ia niños",
     "vibe coding que es",
     "programar hablando con ia",
-    "futuro programacion ninos",
-    "vibe coding para ninos",
+    "futuro programacion niños",
+    "vibe coding para niños",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/blog/vibe-coding-que-es-futuro-programacion-ninos",
   },
   openGraph: {
-    title: "Vibe Coding: Que Es y Por Que es el Futuro de la Programacion para Ninos",
+    title: "Vibe Coding · Qué Es y Por Qué es el Futuro para Niños | InnovaKids",
     description:
-      "Descubre que es el Vibe Coding, la nueva forma de programar hablando con la IA en lenguaje natural.",
+      "Vibe Coding: la nueva forma de programar hablando con la IA en lenguaje natural. Por qué es revolucionario para niños 8-17 años.",
     url: "https://www.innovakidslatam.com/blog/vibe-coding-que-es-futuro-programacion-ninos",
     siteName: "InnovaKids",
     type: "article",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Vibe Coding para niños - Qué es y por qué es el futuro de la programación",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vibe Coding · Qué Es y Futuro Programación Niños | InnovaKids",
+    description:
+      "Vibe Coding: la nueva forma de programar hablando con la IA. Por qué es revolucionario para niños 8-17 años.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

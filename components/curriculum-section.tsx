@@ -1,40 +1,36 @@
 "use client"
 
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
-import { CheckCircle2, Sparkles, Code2, Rocket, Brain, Film } from "lucide-react"
+import { useState } from "react"
 
 const modules = {
   explorer: {
-    title: "Módulo 1: Vibe Explorer",
+    number: "01",
+    title: "Vibe Explorer",
     subtitle: "Fundamentos & Creatividad con IA",
-    icon: Sparkles,
-    color: "text-yellow-400",
-    description: "El punto de partida obligatorio. Domina los fundamentos de la IA Generativa, Prompts y Creatividad.",
+    description:
+      "El punto de partida obligatorio. Domina los fundamentos de la IA generativa, prompts y creatividad.",
     lessons: [
-      "Vibe IA: Tu nuevo superpoder (Configuración)",
+      "Vibe IA: Tu nuevo superpoder",
       "Prompt Engineering: El arte de hablar con máquinas",
       "Vibe Voice: Clonación de voz y narración",
       "Vibe Music: Composición musical con IA",
       "Generative Art I: De la imaginación a la imagen",
       "Generative Art II: Storytelling visual consistente",
-      "Vibe Coding: Programación de Videojuegos con IA",
-      "Vibe Study: Hackea tu escuela (Técnicas de estudio)",
+      "Vibe Coding: Programación de videojuegos con IA",
+      "Vibe Study: Hackea tu escuela",
       "Cyber Ethics: Deepfakes y seguridad digital",
       "The Vibe Project: Presentación final de identidad",
     ],
   },
   coding: {
-    title: "Especialidad: Vibe Coding",
-    subtitle: "Programación Asistida por IA",
-    icon: Code2,
-    color: "text-cyan-400",
+    number: "02",
+    title: "Vibe Coding",
+    subtitle: "Programación asistida por IA",
     description:
       "Deja que la IA escriba el código mientras tú diriges la lógica. Crea webs, juegos y apps reales.",
     lessons: [
       "Algorithmic Vibe: Lógica sin código aburrido",
-      "Vision to Reality: De dibujo a Web real",
+      "Vision to Reality: De dibujo a web real",
       "Instant Deploy: Publicando tu sitio en la nube",
       "Interactive JS: Magia y movimiento web",
       "Game Vibe I: Diseño de mecánicas de juego",
@@ -46,11 +42,11 @@ const modules = {
     ],
   },
   enterprise: {
-    title: "Especialidad: Vibe Enterprise",
-    subtitle: "Incubadora de Startups con IA",
-    icon: Rocket,
-    color: "text-purple-400",
-    description: "Tu co-founder es una IA. Metodología Silicon Valley adaptada: De la idea al Pitch.",
+    number: "03",
+    title: "Vibe Enterprise",
+    subtitle: "Incubadora de startups con IA",
+    description:
+      "Tu co-founder es una IA. Metodología Silicon Valley adaptada: de la idea al pitch.",
     lessons: [
       "Pain Detective: Detectando problemas reales",
       "AI Brainstorming: 100 ideas en 10 minutos",
@@ -65,10 +61,9 @@ const modules = {
     ],
   },
   learning: {
-    title: "Especialidad: Vibe Learning",
-    subtitle: "Hackea tu Escuela",
-    icon: Brain,
-    color: "text-emerald-400",
+    number: "04",
+    title: "Vibe Learning",
+    subtitle: "Hackea tu escuela",
     description: "Aprende el doble en la mitad de tiempo. Productividad académica extrema.",
     lessons: [
       "Neuro-AI: Aprendizaje acelerado personalizado",
@@ -84,134 +79,127 @@ const modules = {
     ],
   },
   visual: {
-    title: "Especialidad: Creador Visual",
-    subtitle: "Creadores de Películas con IA 🚀🎬",
-    icon: Film,
-    color: "text-pink-400",
-    description: "De la imaginación a la pantalla grande. Crea películas completas con IA: personajes, storyboards, shorts virales, música de cine y edición profesional.",
+    number: "05",
+    title: "Creador Visual",
+    subtitle: "Creadores de películas con IA",
+    description:
+      "De la imaginación a la pantalla grande. Crea películas completas con IA: personajes, storyboards, shorts virales y edición profesional.",
     lessons: [
-      "Diseña tu Personaje Legendario",
-      "Tu Avatar Habla por Ti",
-      "La Historia Secreta de 7 Escenas",
-      "El Mapa de la Aventura (Storyboard)",
-      "Shorts Súper Virales",
-      "Tu Primera Película IA",
-      "Música Mágica de Cine",
-      "Edición de Director Profesional",
-      "Tráiler Tipo Netflix",
-      "Transformaciones Pro: Cambia Personajes y Anima Mundos ✨",
+      "Diseña tu personaje legendario",
+      "Tu avatar habla por ti",
+      "La historia secreta de 7 escenas",
+      "El mapa de la aventura (storyboard)",
+      "Shorts súper virales",
+      "Tu primera película IA",
+      "Música mágica de cine",
+      "Edición de director profesional",
+      "Tráiler tipo Netflix",
+      "Transformaciones pro: cambia personajes y anima mundos",
     ],
   },
-}
+} as const
+
+type ModuleKey = keyof typeof modules
 
 export function CurriculumSection() {
-  return (
-    <section id="temario" className="bg-[#0a1628] py-20 md:py-32 relative overflow-hidden">
-      {/* Background gradients */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-600/10 rounded-full blur-[100px]" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-[100px]" />
+  const [active, setActive] = useState<ModuleKey>("explorer")
+  const m = modules[active]
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="mx-auto mb-12 max-w-3xl text-center">
-          <Badge className="mb-4 bg-cyan-500/10 text-cyan-400 border-cyan-500/20 px-4 py-1">
-            50 Clases Premium
-          </Badge>
-          <h2 className="mb-6 text-4xl md:text-5xl font-bold text-white tracking-tight">
-            El Currículum <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">Vibe Academy</span>
-          </h2>
-          <p className="text-xl text-gray-400">
-            Un sistema modular diseñado para transformar consumidores de tecnología en creadores del futuro.
+  return (
+    <section
+      id="temario"
+      className="bg-[#F5F1E8] text-[#2F2F2C] py-28 md:py-40"
+    >
+      <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+
+        {/* Masthead */}
+        <div className="flex items-center gap-5 mb-20">
+          <div className="h-px w-12 bg-[#C96342]" />
+          <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+            Currículum · 50 clases
           </p>
         </div>
 
-        <Tabs defaultValue="explorer" className="w-full max-w-5xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5 h-auto p-2 bg-[#0f1f3a] border border-white/10 rounded-xl mb-8">
-            <TabsTrigger
-              value="explorer"
-              className="py-3 px-2 data-[state=active]:bg-yellow-500/20 data-[state=active]:text-yellow-400 text-gray-400"
-            >
-              <div className="flex flex-col items-center gap-2">
-                <Sparkles className="h-5 w-5" />
-                <span className="font-bold">Explorer</span>
-              </div>
-            </TabsTrigger>
-            <TabsTrigger
-              value="coding"
-              className="py-3 px-2 data-[state=active]:bg-cyan-500/20 data-[state=active]:text-cyan-400 text-gray-400"
-            >
-              <div className="flex flex-col items-center gap-2">
-                <Code2 className="h-5 w-5" />
-                <span className="font-bold">Coding</span>
-              </div>
-            </TabsTrigger>
-            <TabsTrigger
-              value="enterprise"
-              className="py-3 px-2 data-[state=active]:bg-purple-500/20 data-[state=active]:text-purple-400 text-gray-400"
-            >
-              <div className="flex flex-col items-center gap-2">
-                <Rocket className="h-5 w-5" />
-                <span className="font-bold">Enterprise</span>
-              </div>
-            </TabsTrigger>
-            <TabsTrigger
-              value="learning"
-              className="py-3 px-2 data-[state=active]:bg-emerald-500/20 data-[state=active]:text-emerald-400 text-gray-400"
-            >
-              <div className="flex flex-col items-center gap-2">
-                <Brain className="h-5 w-5" />
-                <span className="font-bold">Learning</span>
-              </div>
-            </TabsTrigger>
-            <TabsTrigger
-              value="visual"
-              className="py-3 px-2 data-[state=active]:bg-pink-500/20 data-[state=active]:text-pink-400 text-gray-400"
-            >
-              <div className="flex flex-col items-center gap-2">
-                <Film className="h-5 w-5" />
-                <span className="font-bold">Creador Visual</span>
-              </div>
-            </TabsTrigger>
-          </TabsList>
+        <h2
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-[-0.02em] font-normal mb-8 max-w-[16ch]"
+          style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+        >
+          Un sistema modular para convertir consumidores en{" "}
+          <em className="italic text-[#C96342]">creadores</em>.
+        </h2>
 
-          {Object.entries(modules).map(([key, module]) => (
-            <TabsContent key={key} value={key} className="mt-0 animate-in fade-in-50 slide-in-from-bottom-4">
-              <Card className="bg-[#0f1f3a]/50 border-white/10 overflow-hidden">
-                <CardHeader className="bg-gradient-to-r from-white/5 to-transparent border-b border-white/5 p-6 md:p-8">
-                  <div className="flex items-start justify-between gap-4">
-                    <div>
-                      <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 ${module.color} text-sm font-bold mb-3`}>
-                        <module.icon className="h-4 w-4" />
-                        {module.title}
-                      </div>
-                      <h3 className="text-3xl font-bold text-white mb-2">{module.subtitle}</h3>
-                      <p className="text-lg text-gray-400 max-w-2xl">{module.description}</p>
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="p-6 md:p-8">
-                  <div className="grid md:grid-cols-2 gap-4 md:gap-x-12 md:gap-y-6">
-                    {module.lessons.map((lesson, idx) => (
-                      <div key={idx} className="flex items-start gap-4 group">
-                        <div className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white/5 text-white font-bold text-sm group-hover:bg-white/10 transition-colors ${module.color.replace('text', 'bg').replace('400', '500')}/20`}>
-                          {idx + 1}
-                        </div>
-                        <div className="pt-1">
-                          <p className="font-medium text-gray-200 group-hover:text-white transition-colors">
-                            {lesson}
-                          </p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-          ))}
-        </Tabs>
+        <p className="text-lg md:text-xl text-[#5A5751] max-w-[52ch] leading-relaxed mb-20">
+          Todos empiezan en Vibe Explorer. Después, el estudiante elige una de
+          cuatro especialidades según su pasión: código, emprendimiento, estudio
+          o cine.
+        </p>
 
-        <div className="mt-12 text-center">
-          <p className="text-sm text-gray-500 italic">Cada módulo consta de 10 clases maestras de 60 minutos.</p>
+        {/* Module tabs as an editorial index */}
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-0 border-y border-[#2F2F2C]/15 mb-16">
+          {(Object.keys(modules) as ModuleKey[]).map((key) => {
+            const item = modules[key]
+            const isActive = active === key
+            return (
+              <button
+                key={key}
+                onClick={() => setActive(key)}
+                className={`text-left py-6 px-5 border-r border-[#2F2F2C]/10 last:border-r-0 transition-colors ${
+                  isActive ? "bg-[#C96342]/8" : "hover:bg-[#2F2F2C]/[0.03]"
+                }`}
+              >
+                <span className="block text-[11px] text-[#C96342] font-semibold tracking-wider mb-2">
+                  {item.number}
+                </span>
+                <span
+                  className={`block text-lg md:text-xl tracking-tight ${
+                    isActive ? "text-[#C96342]" : "text-[#2F2F2C]"
+                  }`}
+                  style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                >
+                  {item.title}
+                </span>
+              </button>
+            )
+          })}
         </div>
+
+        {/* Active module content */}
+        <div className="grid md:grid-cols-12 gap-10 md:gap-16">
+          <div className="md:col-span-4">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+              Módulo {m.number}
+            </p>
+            <h3
+              className="text-3xl md:text-4xl leading-tight tracking-tight mb-6 font-normal"
+              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+            >
+              {m.subtitle}
+            </h3>
+            <p className="text-base text-[#5A5751] leading-relaxed">
+              {m.description}
+            </p>
+          </div>
+
+          <ol className="md:col-span-8 divide-y divide-[#2F2F2C]/12">
+            {m.lessons.map((lesson, i) => (
+              <li key={i} className="py-5 flex items-baseline gap-6">
+                <span className="text-xs text-[#C96342] font-semibold tabular-nums shrink-0 w-6">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span
+                  className="text-base md:text-lg text-[#2F2F2C] leading-snug"
+                  style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                >
+                  {lesson}
+                </span>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        <p className="text-sm text-[#5A5751] italic mt-16 pt-10 border-t border-[#2F2F2C]/12">
+          Cada módulo consta de 10 clases en vivo de 60 minutos.
+        </p>
       </div>
     </section>
   )

@@ -1,22 +1,30 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
-import { Poppins, Space_Grotesk } from "next/font/google"
+import { Fraunces, Instrument_Sans, JetBrains_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { TrackingPixels } from "@/components/tracking-pixels"
 import { generateHreflangs } from "@/lib/seo-config"
 import "./globals.css"
 
-const poppins = Poppins({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
-  variable: "--font-poppins",
+  style: ["normal", "italic"],
+  variable: "--font-display",
+  display: "swap",
+  axes: ["SOFT", "opsz"],
+})
+
+const instrumentSans = Instrument_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
   display: "swap",
 })
 
-const spaceGrotesk = Space_Grotesk({
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  weight: ["500", "700"],
-  variable: "--font-space-grotesk",
+  weight: ["400", "500", "600"],
+  variable: "--font-mono",
   display: "swap",
 })
 
@@ -24,7 +32,7 @@ export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
-  themeColor: "#030712",
+  themeColor: "#F5F1E8",
 }
 
 export const metadata: Metadata = {
@@ -376,7 +384,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${poppins.variable} ${spaceGrotesk.variable} font-sans antialiased`}>
+      <body className={`${fraunces.variable} ${instrumentSans.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
         <TrackingPixels />
         {children}
         <Analytics />

@@ -3,7 +3,7 @@
 import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { Check, Sparkles, Star, Zap, Crown } from "lucide-react"
+import { Check, Sparkles, Star } from "lucide-react"
 import Link from "next/link"
 import type { CountryConfig } from "@/lib/countries-config"
 
@@ -29,7 +29,6 @@ export function CountryPricingSection({ country }: CountryPricingSectionProps) {
         }
         if (basePrice === 297) return country.priceLocal // Explorer (Main)
         if (basePrice === 534) return country.priceLocal * 2 // Start Pack
-        if (basePrice === 1068) return country.priceLocal * 4 // University
         return basePrice
     }
 
@@ -58,25 +57,6 @@ export function CountryPricingSection({ country }: CountryPricingSectionProps) {
             popular: true,
             badge: "⚡ Comienza Aquí",
         },
-        {
-            name: "Vibe Academy (4 Módulos)",
-            price: country.priceLocal * 4,
-            description: "Carrera completa: Nivel 1 + 3 Especializaciones.",
-            originalPrice: country.priceLocal * 5, // approx
-            icon: Crown,
-            color: "from-yellow-400 to-orange-400",
-            features: [
-                "Nivel 1 + Creators + Gamers + Enterprise",
-                "40 Clases en Total (Ahorro Inteligente)",
-                "Incubadora de Startups incluida",
-                "Certificación Master Completa",
-                "Pago Único (Equivale a $297 x 4)",
-            ],
-            cta: "Inscripción VIP",
-            link: "/pagar?option=university",
-            popular: false,
-            badge: "💎 Carrera Completa",
-        },
     ]
 
     return (
@@ -94,11 +74,11 @@ export function CountryPricingSection({ country }: CountryPricingSectionProps) {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto items-start">
+                <div className="flex justify-center max-w-md mx-auto">
                     {pricingTiers.map((tier, index) => (
                         <Card
                             key={index}
-                            className={`relative bg-[#0f1f3a] border-white/10 flex flex-col ${tier.popular ? 'border-purple-500/50 shadow-2xl shadow-purple-500/20 scale-105 z-10' : 'hover:border-white/20 transition-colors'}`}
+                            className={`relative w-full bg-[#0f1f3a] border-white/10 flex flex-col ${tier.popular ? 'border-purple-500/50 shadow-2xl shadow-purple-500/20' : 'hover:border-white/20 transition-colors'}`}
                         >
                             {tier.badge && (
                                 <div className="absolute -top-4 inset-x-0 flex justify-center">

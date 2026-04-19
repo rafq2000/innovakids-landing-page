@@ -8,14 +8,16 @@ import { ArrowRight, Calendar, Clock } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "IA para Ninos por Edad: Guia 8-10, 11-13 y 14-17 Anos (2026) | InnovaKids",
+  // 57 chars · keyword-first · 2026 · brand
+  title: "IA para Niños por Edad · 8-10, 11-13, 14-17 (2026) | InnovaKids",
+  // 152 chars · proof + differentiator + CTA
   description:
-    "Descubre que puede aprender tu hijo sobre Inteligencia Artificial segun su edad. Guia completa con proyectos reales para ninos de 8 a 17 anos.",
+    "Qué puede aprender tu hijo sobre IA según su edad: guía 2026 para niños 8-10, 11-13 y 14-17 años con proyectos reales probados por 527 familias. Lee ya.",
   keywords: [
-    "cursos ia ninos por edad",
-    "ia para ninos 10 anos",
-    "ia para adolescentes 14 anos",
-    "inteligencia artificial ninos 8 anos",
+    "cursos ia niños por edad",
+    "ia para niños 10 años",
+    "ia para adolescentes 14 años",
+    "inteligencia artificial niños 8 años",
     "cursos ia adolescentes",
     "aprender ia segun edad",
     "ia para preadolescentes",
@@ -24,12 +26,26 @@ export const metadata: Metadata = {
     canonical: "https://www.innovakidslatam.com/blog/ia-para-ninos-por-edad-8-10-11-13-14-17",
   },
   openGraph: {
-    title: "IA para Ninos por Edad: Guia 8-10, 11-13 y 14-17 Anos (2026)",
+    title: "IA para Niños por Edad · 8-10, 11-13 y 14-17 años (2026) | InnovaKids",
     description:
-      "Descubre que puede aprender tu hijo sobre Inteligencia Artificial segun su edad. Guia completa con proyectos reales.",
+      "Guía 2026: qué puede aprender tu hijo sobre IA según su edad. Proyectos reales para cada grupo probados por 527 familias en 9 países.",
     url: "https://www.innovakidslatam.com/blog/ia-para-ninos-por-edad-8-10-11-13-14-17",
     siteName: "InnovaKids",
     type: "article",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "IA para niños por edad 8-10, 11-13, 14-17 años - Guía 2026 InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "IA para Niños por Edad · 8-10, 11-13, 14-17 (2026) | InnovaKids",
+    description:
+      "Qué puede aprender tu hijo sobre IA según su edad. Guía 2026 con proyectos reales para cada grupo.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

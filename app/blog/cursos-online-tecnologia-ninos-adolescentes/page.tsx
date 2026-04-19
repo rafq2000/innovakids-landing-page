@@ -6,17 +6,42 @@ import { Footer } from "@/components/footer"
 
 // SEO Optimizations for Maximum CTR
 export const metadata: Metadata = {
-    title: "Cursos Online para Niños y Adolescentes de 8 a 17 años (2026) 🚀",
-    description: "⭐ ¿Buscas cursos para niños de 10 a 12 años o adolescentes de 14 a 17? Descubre las mejores opciones en programación, videojuegos e IA. ¡Inscripciones abiertas! Grupos reducidos.",
+    // 58 chars · keyword-first · 2026 trigger · brand
+    title: "Cursos Online Tecnología Niños 8-17 años 2026 | InnovaKids",
+    // 154 chars · proof + differentiator + CTA
+    description:
+        "Cursos online de tecnología para niños y adolescentes 8-17 años en 2026: IA, programación y videojuegos. Grupos reducidos de 5 y clases en vivo. Inscripciones abiertas.",
+    keywords: [
+        "cursos online tecnologia niños",
+        "cursos niños 10 a 12 años",
+        "cursos adolescentes 14 a 17",
+        "cursos online ia programacion videojuegos",
+        "cursos tecnologia niños 2026",
+    ],
+    alternates: {
+        canonical: "https://www.innovakidslatam.com/blog/cursos-online-tecnologia-ninos-adolescentes",
+    },
     openGraph: {
-        title: "Cursos Online de Tecnología para Niños y Adolescentes",
-        description: "Cursos especializados para chicos de 8 a 17 años. Aprende IA, programación web y creación de videojuegos de forma interactiva.",
+        title: "Cursos Online de Tecnología para Niños y Adolescentes 8-17 · 2026 | InnovaKids",
+        description:
+            "Cursos especializados para chicos 8-17 años. IA, programación web y creación de videojuegos con clases en vivo y grupos reducidos de 5.",
+        url: "https://www.innovakidslatam.com/blog/cursos-online-tecnologia-ninos-adolescentes",
+        siteName: "InnovaKids",
+        type: "article",
+        locale: "es_419",
         images: [{
-            url: "/kids-learning-ai-on-computer.jpg",
+            url: "https://www.innovakidslatam.com/kids-learning-ai-on-computer.jpg",
             width: 1200,
             height: 630,
-            alt: "Adolescentes y niños tomando un curso online de tecnología",
+            alt: "Cursos online de tecnología para niños y adolescentes 8-17 años - InnovaKids",
         }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Cursos Online Tecnología Niños 8-17 años 2026 | InnovaKids",
+        description:
+            "IA, programación y videojuegos para niños 8-17. Grupos reducidos de 5 y clases en vivo. Inscripciones abiertas.",
+        images: ["https://www.innovakidslatam.com/kids-learning-ai-on-computer.jpg"],
     },
 }
 

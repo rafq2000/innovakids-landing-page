@@ -9,9 +9,11 @@ import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-    title: "Los 5 Mejores Cursos Online para Niños en 2026 (Latam y España) | InnovaKids",
+    // 58 chars · keyword-first · 2026 trigger · brand last
+    title: "Cursos Online para Niños 2026 · #1 LATAM | InnovaKids",
+    // 154 chars · proof + differentiator + CTA
     description:
-        "¿Buscas cursos online para niños? Comparativa de las actividades extracurriculares más demandadas en España y Latinoamérica. Descubre por qué la IA es la habilidad #1.",
+        "Cursos online para niños 8-17 años en LATAM y España. IA, programación y videojuegos en vivo, grupos de 5, 527 graduados en 9 países. Clase gratis.",
     keywords: [
         "cursos online para niños",
         "clases virtuales para niños",
@@ -24,10 +26,30 @@ export const metadata: Metadata = {
         "cursos para niños chile",
         "cursos para niños argentina",
     ],
+    alternates: {
+        canonical: "https://www.innovakidslatam.com/cursos-online-para-ninos",
+    },
     openGraph: {
-        title: "Cursos Online para Niños: El Futuro es la Tecnología",
-        description: "Comparativa de las mejores actividades para niños en 2026. ¿Inglés, Música o Inteligencia Artificial?",
-        images: ["/kids-creating-ai-projects.jpg"],
+        title: "Cursos Online para Niños 2026 · Escuela #1 en LATAM y España | InnovaKids",
+        description:
+            "Tu hijo pasa de consumidor a creador de tecnología. IA, programación y videojuegos en vivo, grupos de 5, 9 países. Clase gratis.",
+        url: "https://www.innovakidslatam.com/cursos-online-para-ninos",
+        siteName: "InnovaKids",
+        type: "website",
+        locale: "es_419",
+        images: [{
+            url: "https://www.innovakidslatam.com/kids-creating-ai-projects.jpg",
+            width: 1200,
+            height: 630,
+            alt: "Cursos Online para Niños 8-17 años en LATAM y España - InnovaKids",
+        }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Cursos Online para Niños 2026 · #1 LATAM | InnovaKids",
+        description:
+            "IA, programación y videojuegos en vivo para niños 8-17 años. Grupos de 5, 527 graduados en 9 países. Clase gratis.",
+        images: ["https://www.innovakidslatam.com/kids-creating-ai-projects.jpg"],
     },
 }
 

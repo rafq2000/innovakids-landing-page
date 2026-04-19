@@ -6,16 +6,42 @@ import { GraduationCap, CheckCircle, XCircle, Trophy, Zap, Star, ArrowRight } fr
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Mejores Cursos de Verano de Programación e IA para Niños (2026) | InnovaKids",
+  // 59 chars · keyword-first · 2026 trigger · brand
+  title: "Mejores Cursos de Verano Programación e IA Niños 2026 | InnovaKids",
+  // 154 chars · proof + differentiator + CTA
   description:
-    "🏆 Comparativa honesta: ¿Curso de verano de programación o de Inteligencia Artificial para niños? Analizamos precios, metodologías y resultados reales. Descubre cuál conviene más.",
+    "Mejores cursos de verano de programación e IA para niños 8-17 años en 2026: comparamos precios, metodologías y resultados reales. 527 familias. Lee ya.",
+  keywords: [
+    "cursos verano niños 2026",
+    "cursos verano programacion niños",
+    "cursos verano ia niños",
+    "mejores cursos verano tecnologia",
+    "campamento ia programacion niños",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/blog/mejores-cursos-verano-programacion-ia-ninos-2026",
   },
   openGraph: {
-    title: "Mejores Cursos de Verano de Programación e IA para Niños (2026)",
-    description: "Comparativa honesta: programación tradicional vs inteligencia artificial para niños. ¿Cuál prepara mejor a tu hijo para el futuro?",
+    title: "Mejores Cursos de Verano · Programación e IA para Niños 2026 | InnovaKids",
+    description:
+      "Comparativa honesta: programación tradicional vs IA para niños 8-17 años. Precios, metodologías y resultados reales.",
+    url: "https://www.innovakidslatam.com/blog/mejores-cursos-verano-programacion-ia-ninos-2026",
+    siteName: "InnovaKids",
     type: "article",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Mejores cursos de verano de programación e IA para niños 2026 - InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mejores Cursos de Verano Programación e IA Niños 2026",
+    description:
+      "Comparativa honesta 2026: programación vs IA para niños 8-17. Precios, metodologías y resultados reales.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 

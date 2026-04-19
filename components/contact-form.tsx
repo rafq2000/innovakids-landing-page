@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Label } from "@/components/ui/label"
 import { Loader2, CheckCircle2 } from "lucide-react"
 import { sendContactEmail } from "@/app/actions/contact"
+import { trackFormSubmit } from "@/lib/gtag"
 
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -33,6 +34,7 @@ export function ContactForm() {
 
       if (result.success) {
         setIsSuccess(true)
+        trackFormSubmit()
           ; (e.target as HTMLFormElement).reset()
         setShowCustomCode(false)
         setCustomCode("")

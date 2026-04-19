@@ -9,8 +9,11 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    title: "Curso de Creación de Videojuegos con IA para Niños y Adolescentes | InnovaKids",
-    description: "Aprende a crear videojuegos con Inteligencia Artificial. Curso online para niños y adolescentes (8-17 años). Roblox, Unity y más. Grupos de 5 alumnos. ¡Empieza hoy!",
+    // 62 chars · keyword-first · age · brand last
+    title: "Curso de Videojuegos con IA para Niños 8-17 años | InnovaKids",
+    // 141 chars · Roblox/Unity social proof + differentiator + soft CTA
+    description:
+        "Tu hijo crea videojuegos con IA: Roblox, Unity y más. Curso online para niños y adolescentes 8-17 años. Grupos de 5. Primera clase gratis.",
     keywords: [
         "curso crear videojuegos niños",
         "curso videojuegos con ia niños",
@@ -18,15 +21,33 @@ export const metadata: Metadata = {
         "curso roblox niños",
         "programacion videojuegos adolescentes",
         "curso game design niños online",
+        "crear videojuegos con ia",
+        "curso unity para niños",
     ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/curso-creacion-videojuegos-ninos",
-      languages: generateHreflangs("global", "/curso-creacion-videojuegos-ninos")
+        languages: generateHreflangs("global", "/curso-creacion-videojuegos-ninos"),
     },
     openGraph: {
-        title: "Curso de Videojuegos con IA para Niños | InnovaKids",
-        description: "Tu hijo pasa de JUGAR a CREAR. Aprende a diseñar mundos, personajes y lógicas de juego usando Inteligencia Artificial. Grupos de 5 alumnos.",
+        title: "Curso de Videojuegos con IA para Niños y Adolescentes | InnovaKids",
+        description:
+            "Tu hijo pasa de JUGAR a CREAR videojuegos con IA. Roblox, Unity, diseño de mundos y lógica. Grupos de 5, clases en vivo. Reserva tu clase gratis.",
         url: "https://www.innovakidslatam.com/curso-creacion-videojuegos-ninos",
+        type: "website",
+        locale: "es_419",
+        images: [{
+            url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+            width: 1200,
+            height: 630,
+            alt: "Curso de Creación de Videojuegos con IA para Niños 8-17 años",
+        }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Curso de Videojuegos con IA para Niños 8-17 | InnovaKids",
+        description:
+            "Tu hijo crea sus propios videojuegos con IA en 5 semanas. Roblox, Unity y más. Grupos de 5. Primera clase gratis.",
+        images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
 }
 

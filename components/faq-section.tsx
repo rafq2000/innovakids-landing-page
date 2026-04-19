@@ -1,78 +1,110 @@
 "use client"
 
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Shield } from "lucide-react"
-
+import { useState } from "react"
 import { faqs } from "@/lib/faq-data"
 
 export function FAQSection() {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id)
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
-    }
-  }
+  const [openIdx, setOpenIdx] = useState<number | null>(0)
 
   return (
-    <section id="faq" className="bg-background py-12 sm:py-16 md:py-20 lg:py-32">
-      <div className="container mx-auto px-3 sm:px-4">
-        <div className="mx-auto mb-8 sm:mb-12 md:mb-16 max-w-3xl text-center">
-          <h2 className="mb-3 sm:mb-4 text-balance text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-            Preguntas Frecuentes
-          </h2>
-          <p className="text-base sm:text-lg text-gray-300 mt-4">
-            Resolvemos todas tus dudas sobre el programa, pagos y garantías
+    <section
+      id="faq"
+      className="bg-[#F5F1E8] text-[#2F2F2C] py-28 md:py-40 border-t border-[#2F2F2C]/10"
+    >
+      <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+
+        {/* Eyebrow */}
+        <div className="flex items-center gap-5 mb-16">
+          <div className="h-px w-12 bg-[#C96342]" />
+          <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+            Preguntas · Respuestas
           </p>
         </div>
 
-        <div className="mx-auto max-w-4xl">
-          <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`faq-${index}`}
-                className="overflow-hidden rounded-lg sm:rounded-xl border-2 border-white/10 bg-[#0f2744] px-3 sm:px-4 md:px-6 shadow-sm transition-all hover:shadow-md hover:border-[#4DD0E1]/50 data-[state=open]:border-[#4DD0E1] data-[state=open]:shadow-lg data-[state=open]:shadow-[#4DD0E1]/20"
-              >
-                <AccordionTrigger className="py-4 sm:py-5 md:py-6 text-left hover:no-underline">
-                  <h3 className="pr-3 sm:pr-4 text-sm sm:text-base md:text-lg font-bold text-white">{faq.question}</h3>
-                </AccordionTrigger>
-                <AccordionContent className="pb-4 sm:pb-5 md:pb-6">
-                  <p className="text-xs sm:text-sm md:text-base leading-relaxed text-gray-300">{faq.answer}</p>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+        {/* Oversized editorial headline */}
+        <h2
+          className="text-6xl sm:text-7xl md:text-8xl lg:text-[104px] leading-[0.95] tracking-[-0.025em] font-normal mb-24 max-w-[16ch]"
+          style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+        >
+          Todo lo que te preguntas,{" "}
+          <em className="italic text-[#C96342]">respondido</em>.
+        </h2>
 
-          <div className="mt-8 sm:mt-10 md:mt-12 rounded-xl sm:rounded-2xl border-2 border-[#4DD0E1] bg-[#0f2744] p-4 sm:p-6 md:p-8 text-center shadow-lg shadow-[#4DD0E1]/20">
-            <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
-              <Shield className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#4DD0E1]" />
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white">Garantía 100% Sin Riesgo</h3>
-            </div>
-            <p className="mb-4 sm:mb-5 md:mb-6 text-gray-300 text-sm sm:text-base md:text-lg">
-              Prueba el programa sin compromiso. Si no te convence después de la primera clase, te devolvemos tu dinero
-              completo.
-            </p>
-            <Button
-              size="lg"
-              onClick={() => scrollToSection("sesion-estrategica")}
-              className="group h-12 sm:h-13 md:h-14 bg-[#4DD0E1] px-6 sm:px-8 md:px-10 text-sm sm:text-base md:text-lg font-bold text-[#0a1628] shadow-xl transition-all hover:scale-105 hover:bg-[#4DD0E1]/90 w-full sm:w-auto"
+        {/* Q&A list — full-width, editorial */}
+        <ul className="border-t border-[#2F2F2C]/20">
+          {faqs.map((faq: any, i: number) => {
+            const open = openIdx === i
+            return (
+              <li key={i} className="border-b border-[#2F2F2C]/20">
+                <button
+                  onClick={() => setOpenIdx(open ? null : i)}
+                  className="w-full py-8 md:py-10 flex items-start gap-6 md:gap-10 text-left group"
+                  aria-expanded={open}
+                >
+                  <span className="text-xs text-[#C96342] font-semibold tabular-nums tracking-[0.15em] shrink-0 w-10 md:w-14 pt-3">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3
+                    className={`flex-1 text-2xl md:text-4xl leading-[1.1] tracking-[-0.01em] transition-colors ${
+                      open ? "text-[#C96342]" : "text-[#2F2F2C] group-hover:text-[#C96342]"
+                    }`}
+                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                  >
+                    {faq.question}
+                  </h3>
+                  <span
+                    className={`text-3xl font-light leading-none shrink-0 pt-2 transition-transform ${
+                      open ? "text-[#C96342] rotate-45" : "text-[#2F2F2C]/50"
+                    }`}
+                    aria-hidden="true"
+                  >
+                    +
+                  </span>
+                </button>
+                {open && (
+                  <div className="pb-12 md:pb-16 pl-16 md:pl-24 pr-8 md:pr-16 animate-fadeIn">
+                    <p
+                      className="text-lg md:text-xl text-[#5A5751] leading-[1.6] max-w-[62ch]"
+                      style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                    >
+                      {faq.answer}
+                    </p>
+                  </div>
+                )}
+              </li>
+            )
+          })}
+        </ul>
+
+        {/* Minimal closing line — no boxes */}
+        <div className="mt-24 md:mt-32 grid md:grid-cols-12 gap-10 items-baseline">
+          <p
+            className="md:col-span-6 text-4xl md:text-5xl leading-[1.05] tracking-[-0.02em]"
+            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+          >
+            ¿Algo más?{" "}
+            <em className="italic text-[#C96342]">Conversemos.</em>
+          </p>
+          <div className="md:col-span-6 flex flex-col items-start gap-5">
+            <a
+              href="#sesion-estrategica"
+              className="text-lg md:text-xl text-[#2F2F2C] hover:text-[#C96342] underline underline-offset-[6px] decoration-[#C96342]/40 hover:decoration-[#C96342] decoration-1 transition-colors"
+              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
             >
-              Agendar Evaluación Gratuita
-              <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-
-            <div className="mt-6 flex justify-center">
-              <Button
-                variant="link"
-                className="text-gray-400 hover:text-[#4DD0E1] p-0 h-auto font-normal text-sm"
-                onClick={() => window.open("https://wa.me/56964754219?text=Hola%2C%20tengo%20una%20pregunta%20que%20no%20está%20en%20las%20FAQs", "_blank")}
-              >
-                ¿Todavía tienes dudas? Chatea con nosotros
-              </Button>
-            </div>
+              Agendar evaluación gratuita →
+            </a>
+            <a
+              href="https://wa.me/56964754219?text=Hola%2C%20tengo%20una%20pregunta%20que%20no%20está%20en%20las%20FAQs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg md:text-xl text-[#2F2F2C] hover:text-[#C96342] underline underline-offset-[6px] decoration-[#2F2F2C]/20 hover:decoration-[#C96342] decoration-1 transition-colors"
+              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+            >
+              Escribir por WhatsApp →
+            </a>
           </div>
         </div>
+
       </div>
     </section>
   )

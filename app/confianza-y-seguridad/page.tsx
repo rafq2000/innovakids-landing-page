@@ -4,10 +4,42 @@ import { Footer } from "@/components/footer"
 import { Shield, Lock, Eye, CheckCircle, Video, Server } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Confianza y Seguridad Infantil | InnovaKids Latam",
-  description: "Conoce nuestras políticas estrictas de protección al menor. Aulas 100% monitoreadas, docentes certificados y entornos virtuales seguros para tus hijos.",
+  // 57 chars · keyword-first · brand last
+  title: "Confianza y Seguridad Infantil · IA Segura | InnovaKids",
+  // 152 chars · proof + differentiator + CTA
+  description:
+    "Aulas 100% monitoreadas, docentes certificados y entornos virtuales seguros para niños 8-17 años. Política de protección al menor. Reserva tu clase gratis.",
+  keywords: [
+    "confianza seguridad innovakids",
+    "proteccion menor ia",
+    "curso ia niños seguro",
+    "seguridad infantil clases online",
+    "aulas monitoreadas niños",
+  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/confianza-y-seguridad",
+  },
+  openGraph: {
+    title: "Confianza y Seguridad Infantil · InnovaKids LATAM",
+    description:
+      "Compromiso absoluto con la seguridad infantil: aulas monitoreadas, docentes certificados y entornos virtuales seguros. Conoce nuestras políticas.",
+    url: "https://www.innovakidslatam.com/confianza-y-seguridad",
+    siteName: "InnovaKids",
+    type: "website",
+    locale: "es_419",
+    images: [{
+      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Confianza y seguridad infantil en cursos online de IA - InnovaKids",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Confianza y Seguridad Infantil · IA Segura | InnovaKids",
+    description:
+      "Aulas monitoreadas, docentes certificados y entornos virtuales seguros para niños 8-17 años.",
+    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 
