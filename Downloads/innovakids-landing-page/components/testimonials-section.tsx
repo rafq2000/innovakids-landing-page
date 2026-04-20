@@ -11,30 +11,30 @@ interface TestimonialsSectionProps {
 const testimonials = [
   {
     name: "Laura M.",
-    role: "Madre de Tomás, 9 años",
+    role: "Madre de un niño de 9 años",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-07%20at%2010.14.10%20PM%20%283%29-Bdow2KWHf2ihYRjPf9rpHNL0OTiGfD.jpeg",
-    pull: "El mejor dinero invertido en mi vida.",
+    pull: "Cada clase es una aventura para él. ¡Un 10!",
     content:
-      "Antes del curso, Tomás pasaba 3 horas al día en YouTube y Roblox sin aprender nada útil. Después de solo 3 semanas en InnovaKids, creó su primera app funcional.",
+      "Innovakids ha logrado que mi hijo de 9 años entienda conceptos de IA de una forma súper divertida. Cada clase es una aventura para él. ¡Un 10!",
   },
   {
     name: "Ana S.",
-    role: "Madre de Valentina, 11 años",
+    role: "Madre de una niña",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-07%20at%2010.14.11%20PM%20%281%29-SXb1h2u9atwbW2cktqrWWvZVHsOTda.jpeg",
-    pull: "Su confianza cambió por completo.",
+    pull: "No para de hablar del curso de IA.",
     content:
-      "Me preocupaba que Valentina se quedara atrás. En InnovaKids no solo aprendió a usar ChatGPT: diseñó un portafolio de 10 proyectos reales.",
+      "Mi hija no para de hablar del curso de IA de Innovakids. ¡Está fascinada con cómo los robots aprenden! Gracias por despertar su curiosidad.",
   },
   {
     name: "Andrés V.",
-    role: "Padre de Mateo, 10 años",
+    role: "Padre de un niño",
     image:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-07%20at%2011.08.32%20PM-PJhXdQgGlR928TCZ56nsRckD911PBF.jpeg",
-    pull: "Un cambio de mentalidad radical.",
+    pull: "Ahora me pregunta cómo funcionan los algoritmos.",
     content:
-      "Increíble ver a un niño de 10 años hablando de algoritmos y prompts con tanta claridad. Pasó de ser un usuario pasivo a entender el porqué detrás de la tecnología.",
+      "Increíble el curso de IA de Innovakids. Mi hijo, que antes no mostraba mucho interés en la tecnología, ahora me pregunta cómo funcionan los algoritmos. ¡Es genial verlo tan motivado!",
   },
 ]
 
