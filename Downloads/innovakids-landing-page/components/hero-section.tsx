@@ -28,11 +28,16 @@ export function HeroSection() {
               <span className="relative rounded-full bg-[var(--terracotta)] w-2 h-2" />
             </span>
             <span className="truncate">
-              Cohorte abril 2026 abierta · <span className="text-[var(--terracotta-pale)]">7 de 15 cupos restantes</span>
+              <span className="hidden sm:inline">Cohorte abril 2026 · </span>
+              <span className="text-[var(--terracotta-pale)] font-semibold">7 de 15 cupos</span>
+              <span className="hidden sm:inline"> restantes</span>
             </span>
           </div>
-          <span className="hidden md:inline text-[var(--paper)]/60">Cierre de inscripciones · Domingo 26.04</span>
-          <a href="#sesion-estrategica" className="hidden md:inline-flex items-center gap-2 text-[var(--paper)] hover:text-[var(--terracotta-pale)] transition-colors">
+          <span className="text-[var(--paper)]/70 sm:text-[var(--paper)]/60 truncate">
+            <span className="hidden sm:inline">Cierre de inscripciones · </span>
+            <span className="sm:hidden">Cierra </span>Dom. 26.04
+          </span>
+          <a href="#sesion-estrategica" className="hidden md:inline-flex items-center gap-2 text-[var(--paper)] hover:text-[var(--terracotta-pale)] transition-colors shrink-0">
             Agendar <span aria-hidden>→</span>
           </a>
         </div>
