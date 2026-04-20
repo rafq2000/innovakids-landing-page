@@ -639,62 +639,103 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
     notFound()
   }
 
+  const canonical = `https://www.innovakidslatam.com/blog/${params.slug}`
+  const imageUrl = post.image?.startsWith("http")
+    ? post.image
+    : `https://www.innovakidslatam.com${post.image || "/hero-child-learning-ai.jpg"}`
+
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": canonical },
+    "headline": post.title,
+    "description": post.excerpt,
+    "image": [imageUrl],
+    "datePublished": post.date,
+    "dateModified": post.dateModified || post.date,
+    "author": {
+      "@type": "Person",
+      "name": "Cristian Contreras",
+      "jobTitle": "Director Académico IA",
+      "url": "https://www.linkedin.com/company/innovakidslatam",
+      "worksFor": { "@type": "Organization", "name": "InnovaKids" },
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "InnovaKids",
+      "url": "https://www.innovakidslatam.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.innovakidslatam.com/innovakids_logo_transparent_hard.png",
+      },
+    },
+    "articleSection": post.category,
+    "inLanguage": "es",
+    "url": canonical,
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "InnovaKids", "item": "https://www.innovakidslatam.com" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.innovakidslatam.com/blog" },
+      { "@type": "ListItem", "position": 3, "name": post.title, "item": canonical },
+    ],
+  }
+
   return (
-    <div className="min-h-screen bg-[#0a1628]">
+    <div className="min-h-screen bg-[#FAF7EF]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <Navigation />
 
-      <article className="pt-24 pb-16">
+      <article className="pt-28 pb-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <Link
-              href="/blog"
-              className="inline-flex items-center gap-2 text-[#4DD0E1] hover:text-[#3BBFD1] transition-colors mb-8 group"
-            >
-              <svg
-                className="w-5 h-5 group-hover:-translate-x-1 transition-transform"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              Volver al blog
-            </Link>
+          <div className="max-w-3xl mx-auto">
+            <nav aria-label="Breadcrumb" className="mb-10 text-[11px] tracking-[0.2em] uppercase text-[#1A1714]/55 font-semibold">
+              <Link href="/" className="hover:text-[#C96342] transition-colors">Inicio</Link>
+              <span className="mx-2 text-[#1A1714]/30">/</span>
+              <Link href="/blog" className="hover:text-[#C96342] transition-colors">Blog</Link>
+              <span className="mx-2 text-[#1A1714]/30">/</span>
+              <span className="text-[#1A1714]/75 normal-case tracking-normal">{post.category}</span>
+            </nav>
 
-            <header className="mb-12">
-              <div className="inline-block bg-gradient-to-r from-[#4DD0E1] to-[#3BBFD1] text-[#0a1628] px-6 py-2 rounded-full text-sm font-bold mb-6 shadow-lg shadow-[#4DD0E1]/30">
-                {post.category}
+            <header className="mb-14">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+                <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+                  {post.category}
+                </span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight text-balance">
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[0.98] text-[#1A1714] tracking-tight text-balance mb-8">
                 {post.title}
               </h1>
 
-              <div className="flex flex-wrap items-center gap-4 text-gray-400 mb-8 text-sm sm:text-base">
-                {/* Author Profile (E-E-A-T) */}
-                <div className="flex items-center gap-3 mr-2 sm:mr-4">
-                  <div className="w-10 h-10 rounded-full overflow-hidden bg-[#1a2942] border-2 border-[#4DD0E1] flex items-center justify-center">
-                    <span className="text-xl">👨‍🏫</span>
+              <p className="text-xl text-[#1A1714]/70 leading-relaxed text-pretty font-light mb-10 max-w-2xl">
+                {post.excerpt}
+              </p>
+
+              <div className="flex flex-wrap items-center gap-x-8 gap-y-4 py-6 border-y border-[#1A1714]/12">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-[#C96342] text-[#FAF7EF] flex items-center justify-center font-serif text-lg">
+                    CC
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-white font-bold">Cristian Contreras</span>
-                    <a href="https://www.linkedin.com/company/innovakidslatam" target="_blank" rel="noopener noreferrer" className="text-[#4DD0E1] text-xs hover:underline">
+                    <span className="text-[#1A1714] font-semibold text-sm">Cristian Contreras</span>
+                    <a
+                      href="https://www.linkedin.com/company/innovakidslatam"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#C96342] text-xs hover:underline"
+                    >
                       Director Académico IA
                     </a>
                   </div>
                 </div>
 
-                <span className="text-gray-600 hidden sm:inline">•</span>
-
-                <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
+                <div className="text-[11px] tracking-[0.18em] uppercase text-[#1A1714]/55 font-semibold">
                   <span>
                     {new Date(post.date).toLocaleDateString("es-ES", {
                       day: "numeric",
@@ -702,114 +743,106 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                       year: "numeric",
                     })}
                   </span>
-                </div>
-                <span className="text-gray-600">•</span>
-                <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
+                  <span className="mx-3 text-[#1A1714]/25">·</span>
                   <span>{post.readTime} de lectura</span>
                 </div>
               </div>
-
-              <div className="relative h-[400px] sm:h-[500px] rounded-2xl overflow-hidden mb-12 shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-transparent to-transparent z-10" />
-                <Image
-                  src={post.image || "/placeholder.svg"}
-                  alt={post.title}
-                  fill
-                  className="object-cover"
-                  priority
-                  quality={90}
-                  sizes="(max-width: 1200px) 100vw, 1200px"
-                />
-              </div>
             </header>
 
+            <div className="relative aspect-[16/10] overflow-hidden bg-[#EDE6D3] mb-16">
+              <Image
+                src={post.image || "/placeholder.svg"}
+                alt={post.title}
+                fill
+                className="object-cover"
+                priority
+                quality={90}
+                sizes="(max-width: 1200px) 100vw, 1200px"
+              />
+            </div>
+
             <div
-              className="prose prose-invert prose-lg max-w-none
-              prose-headings:font-bold prose-headings:text-white prose-headings:mb-6 prose-headings:mt-10
-              prose-h2:text-3xl prose-h2:sm:text-4xl prose-h2:border-b-2 prose-h2:border-[#4DD0E1]/30 prose-h2:pb-4 prose-h2:mb-8
-              prose-h3:text-2xl prose-h3:sm:text-3xl prose-h3:text-[#4DD0E1] prose-h3:mt-8 prose-h3:mb-4
-              prose-p:text-gray-300 prose-p:text-lg prose-p:leading-relaxed prose-p:mb-6
-              prose-a:text-[#4DD0E1] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline hover:prose-a:text-[#3BBFD1] prose-a:transition-colors
-              prose-strong:text-white prose-strong:font-bold
-              prose-ul:text-gray-300 prose-ul:space-y-3 prose-ul:my-6 prose-ul:pl-6
-              prose-ol:text-gray-300 prose-ol:space-y-3 prose-ol:my-6 prose-ol:pl-6
-              prose-li:text-gray-300 prose-li:text-lg prose-li:leading-relaxed prose-li:pl-2
-              prose-li:marker:text-[#4DD0E1] prose-li:marker:font-bold
-              prose-code:text-[#4DD0E1] prose-code:bg-[#1a2942] prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-base
-              prose-blockquote:border-l-4 prose-blockquote:border-[#4DD0E1] prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-gray-400 prose-blockquote:my-8
-              [&>p:first-of-type]:text-xl [&>p:first-of-type]:text-gray-200 [&>p:first-of-type]:leading-relaxed"
+              className="prose prose-lg max-w-none font-serif
+              prose-headings:font-serif prose-headings:tracking-tight prose-headings:text-[#1A1714]
+              prose-h2:text-3xl prose-h2:sm:text-4xl prose-h2:leading-[1.15] prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-[#1A1714]/15
+              prose-h3:text-2xl prose-h3:sm:text-[1.6rem] prose-h3:leading-snug prose-h3:text-[#A8502F] prose-h3:mt-10 prose-h3:mb-4
+              prose-p:font-sans prose-p:text-[#1A1714]/85 prose-p:text-lg prose-p:leading-[1.75] prose-p:mb-6
+              prose-a:text-[#C96342] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline hover:prose-a:text-[#A8502F] prose-a:transition-colors
+              prose-strong:font-sans prose-strong:text-[#1A1714] prose-strong:font-semibold
+              prose-ul:font-sans prose-ul:text-[#1A1714]/85 prose-ul:space-y-2 prose-ul:my-6 prose-ul:pl-6
+              prose-ol:font-sans prose-ol:text-[#1A1714]/85 prose-ol:space-y-2 prose-ol:my-6 prose-ol:pl-6
+              prose-li:font-sans prose-li:text-[#1A1714]/85 prose-li:text-lg prose-li:leading-[1.7] prose-li:pl-1
+              prose-li:marker:text-[#C96342] prose-li:marker:font-semibold
+              prose-code:font-mono prose-code:text-[#A8502F] prose-code:bg-[#F2EDE0] prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-sm prose-code:text-[0.9em] prose-code:before:content-none prose-code:after:content-none
+              prose-blockquote:font-serif prose-blockquote:border-l-2 prose-blockquote:border-[#C96342] prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-[#1A1714]/75 prose-blockquote:my-10 prose-blockquote:text-xl
+              [&>p:first-of-type]:font-sans [&>p:first-of-type]:text-xl [&>p:first-of-type]:text-[#1A1714] [&>p:first-of-type]:leading-[1.7] [&>p:first-of-type]:first-letter:font-serif [&>p:first-of-type]:first-letter:text-6xl [&>p:first-of-type]:first-letter:float-left [&>p:first-of-type]:first-letter:leading-[0.9] [&>p:first-of-type]:first-letter:mr-3 [&>p:first-of-type]:first-letter:mt-1 [&>p:first-of-type]:first-letter:text-[#C96342]"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
 
-            <div className="mt-16 p-8 sm:p-10 bg-gradient-to-br from-[#1a2942] to-[#0f1a2e] rounded-2xl border-2 border-[#4DD0E1] shadow-xl shadow-[#4DD0E1]/20 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#4DD0E1]/10 rounded-full blur-3xl -z-0" />
-              <div className="relative z-10">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-[#4DD0E1] rounded-full flex items-center justify-center">
-                    <svg className="w-6 h-6 text-[#0a1628]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M13 10V3L4 14h7v7l9-11h-7z"
-                      />
-                    </svg>
-                  </div>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-white">¿Listo para que tu hijo domine la IA?</h3>
-                </div>
-                <p className="text-gray-300 mb-6 text-lg leading-relaxed">
-                  Únete a nuestro programa de 4 semanas donde los niños aprenden a crear proyectos increíbles con
-                  inteligencia artificial en grupos reducidos de 5 alumnos. Metodología práctica, instructores expertos
-                  y resultados garantizados.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link
-                    href="/#inversion"
-                    className="inline-flex items-center justify-center gap-2 bg-[#4DD0E1] hover:bg-[#3BBFD1] text-[#0a1628] px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-lg hover:shadow-xl"
-                  >
-                    Ver Programa Completo
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                  </Link>
-                  <Link
-                    href="/#contacto"
-                    className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-[#4DD0E1] text-[#4DD0E1] hover:bg-[#4DD0E1] hover:text-[#0a1628] px-8 py-4 rounded-xl font-bold text-lg transition-all"
-                  >
-                    Contactar
-                  </Link>
-                </div>
+            {/* Editorial CTA block */}
+            <aside className="mt-20 border-y-2 border-[#1A1714]/15 py-12">
+              <div className="flex items-center gap-3 mb-5">
+                <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+                <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+                  Siguiente paso
+                </span>
               </div>
-            </div>
+              <h3 className="font-serif text-3xl sm:text-4xl leading-tight text-[#1A1714] tracking-tight text-balance mb-5">
+                ¿Quieres que tu hijo aprenda IA con instructores reales?
+              </h3>
+              <p className="text-lg text-[#1A1714]/70 leading-relaxed max-w-2xl mb-7 font-light">
+                Programa de 4 semanas. Grupos reducidos de máximo 5 alumnos. Clases en vivo con instructores expertos.
+                Reserva con solo USD $27 y garantía de devolución a los 10 días.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Link
+                  href="/#inversion"
+                  className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                >
+                  Ver el programa completo
+                  <span aria-hidden>→</span>
+                </Link>
+                <Link
+                  href="/clase-gratis"
+                  className="inline-flex items-center justify-center gap-2 border border-[#1A1714] text-[#1A1714] hover:bg-[#1A1714] hover:text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                >
+                  Agendar clase gratis
+                </Link>
+              </div>
+            </aside>
 
-            <div className="mt-16 pt-12 border-t border-gray-700">
-              <h3 className="text-2xl font-bold text-white mb-6">Artículos relacionados</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <Link href="/blog" className="group p-6 bg-[#1a2942] rounded-xl hover:bg-[#1f3152] transition-colors">
-                  <div className="text-[#4DD0E1] text-sm font-semibold mb-2">← Anterior</div>
-                  <div className="text-white font-semibold group-hover:text-[#4DD0E1] transition-colors">
+            {/* Related navigation */}
+            <nav className="mt-16 pt-10 border-t border-[#1A1714]/12">
+              <div className="flex items-center gap-3 mb-6">
+                <span className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 font-semibold">
+                  Continúa leyendo
+                </span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <Link
+                  href="/blog"
+                  className="group p-6 bg-[#F2EDE0] hover:bg-[#EDE6D3] transition-colors"
+                >
+                  <div className="text-[11px] tracking-[0.18em] uppercase text-[#C96342] font-semibold mb-2">
+                    ← Archivo
+                  </div>
+                  <div className="font-serif text-lg text-[#1A1714] group-hover:text-[#A8502F] transition-colors">
                     Ver todos los artículos
                   </div>
                 </Link>
                 <Link
-                  href="/blog"
-                  className="group p-6 bg-[#1a2942] rounded-xl hover:bg-[#1f3152] transition-colors text-right"
+                  href="/cursos/inteligencia-artificial"
+                  className="group p-6 bg-[#F2EDE0] hover:bg-[#EDE6D3] transition-colors text-right"
                 >
-                  <div className="text-[#4DD0E1] text-sm font-semibold mb-2">Siguiente →</div>
-                  <div className="text-white font-semibold group-hover:text-[#4DD0E1] transition-colors">
-                    Explorar más contenido
+                  <div className="text-[11px] tracking-[0.18em] uppercase text-[#C96342] font-semibold mb-2">
+                    Explorar →
+                  </div>
+                  <div className="font-serif text-lg text-[#1A1714] group-hover:text-[#A8502F] transition-colors">
+                    Conocer el curso de IA
                   </div>
                 </Link>
               </div>
-            </div>
+            </nav>
           </div>
         </div>
       </article>

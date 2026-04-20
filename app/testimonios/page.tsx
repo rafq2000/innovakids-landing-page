@@ -1,13 +1,9 @@
 import { Navigation } from "@/components/navigation"
 import { TestimonialsSection } from "@/components/testimonials-section"
-import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowLeft } from "lucide-react"
 
 export const metadata = {
-  // 55 chars · keyword-first · 4.9★ trigger · brand
   title: "Testimonios · 527 Familias y 4.9★ de Padres | InnovaKids",
-  // 153 chars · proof + differentiator + CTA
   description:
     "Testimonios reales de 527 familias en 9 países sobre el curso de IA para niños 8-17 años. 4.9★ de padres. Mira sus experiencias. Reserva tu clase gratis.",
   keywords: [
@@ -46,16 +42,31 @@ export const metadata = {
 
 export default function TestimoniosPage() {
   return (
-    <div className="min-h-screen bg-[#0a1628]">
+    <div className="min-h-screen bg-[#FAF7EF] text-[#1A1714]">
       <Navigation />
-      <main className="pt-24 pb-16">
-        <div className="container mx-auto px-4">
-          <Link href="/">
-            <Button variant="ghost" className="text-white hover:text-[#4DD0E1] mb-8">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Volver al inicio
-            </Button>
-          </Link>
+      <main className="pt-32 pb-20">
+        <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+          <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
+            <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+            <span className="mx-3" aria-hidden>/</span>
+            <span className="text-[#1A1714]">Testimonios</span>
+          </nav>
+
+          <header className="mb-12 pb-12 border-b border-[#1A1714]/12">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+              <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                527 familias · 9 países · 4.9★
+              </span>
+            </div>
+            <h1
+              className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[22ch]"
+              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+            >
+              Lo que dicen las <em className="italic text-[#C96342]">familias</em>.
+            </h1>
+          </header>
+
           <TestimonialsSection />
         </div>
       </main>

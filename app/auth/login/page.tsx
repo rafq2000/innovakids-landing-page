@@ -8,6 +8,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import Link from "next/link"
+import Image from "next/image"
 import { useRouter } from "next/navigation"
 import { useState } from "react"
 
@@ -52,7 +53,7 @@ export default function LoginPage() {
       <div className="w-full max-w-md">
         <div className="mb-8 text-center">
           <Link href="/">
-            <img src="/logo-innovakids.png" alt="Innovakids" className="mx-auto mb-4 h-16" />
+            <Image src="/logo-innovakids.png" alt="Innovakids" width={180} height={64} className="mx-auto mb-4 h-16 w-auto" priority />
           </Link>
         </div>
         <Card>

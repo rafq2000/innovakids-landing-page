@@ -1,146 +1,195 @@
 import type { Metadata } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Shield, Lock, Eye, CheckCircle, Video, Server } from "lucide-react"
+import Link from "next/link"
 
 export const metadata: Metadata = {
-  // 57 chars · keyword-first · brand last
-  title: "Confianza y Seguridad Infantil · IA Segura | InnovaKids",
-  // 152 chars · proof + differentiator + CTA
-  description:
-    "Aulas 100% monitoreadas, docentes certificados y entornos virtuales seguros para niños 8-17 años. Política de protección al menor. Reserva tu clase gratis.",
-  keywords: [
-    "confianza seguridad innovakids",
-    "proteccion menor ia",
-    "curso ia niños seguro",
-    "seguridad infantil clases online",
-    "aulas monitoreadas niños",
-  ],
-  alternates: {
-    canonical: "https://www.innovakidslatam.com/confianza-y-seguridad",
-  },
-  openGraph: {
-    title: "Confianza y Seguridad Infantil · InnovaKids LATAM",
-    description:
-      "Compromiso absoluto con la seguridad infantil: aulas monitoreadas, docentes certificados y entornos virtuales seguros. Conoce nuestras políticas.",
-    url: "https://www.innovakidslatam.com/confianza-y-seguridad",
-    siteName: "InnovaKids",
-    type: "website",
-    locale: "es_419",
-    images: [{
-      url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
-      width: 1200,
-      height: 630,
-      alt: "Confianza y seguridad infantil en cursos online de IA - InnovaKids",
-    }],
-  },
-  twitter: {
-    card: "summary_large_image",
     title: "Confianza y Seguridad Infantil · IA Segura | InnovaKids",
     description:
-      "Aulas monitoreadas, docentes certificados y entornos virtuales seguros para niños 8-17 años.",
-    images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
-  },
+        "Aulas 100% monitoreadas, docentes certificados y entornos virtuales seguros para niños 8-17 años. Política de protección al menor. Reserva tu clase gratis.",
+    keywords: [
+        "confianza seguridad innovakids",
+        "proteccion menor ia",
+        "curso ia niños seguro",
+        "seguridad infantil clases online",
+        "aulas monitoreadas niños",
+    ],
+    alternates: {
+        canonical: "https://www.innovakidslatam.com/confianza-y-seguridad",
+    },
+    openGraph: {
+        title: "Confianza y Seguridad Infantil · InnovaKids LATAM",
+        description:
+            "Compromiso absoluto con la seguridad infantil: aulas monitoreadas, docentes certificados y entornos virtuales seguros.",
+        url: "https://www.innovakidslatam.com/confianza-y-seguridad",
+        siteName: "InnovaKids",
+        type: "website",
+        locale: "es_419",
+        images: [{
+            url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+            width: 1200,
+            height: 630,
+            alt: "Confianza y seguridad infantil en cursos online de IA - InnovaKids",
+        }],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Confianza y Seguridad Infantil · IA Segura | InnovaKids",
+        description:
+            "Aulas monitoreadas, docentes certificados y entornos virtuales seguros para niños 8-17 años.",
+        images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
+    },
 }
 
+const pillars = [
+    {
+        label: "Aulas monitoreadas en vivo",
+        intro:
+            "Todas nuestras sesiones vía Meet/Zoom son monitoreadas por el equipo académico. Política de Cero Tolerancia al bullying y al comportamiento inadecuado.",
+        items: [
+            "Chats filtrados por moderadores",
+            "Bloqueo de pantalla compartida no autorizada",
+            "Reporte inmediato de incidencias a padres",
+        ],
+    },
+    {
+        label: "Docentes investigados",
+        intro:
+            "Cada facilitador pasa por un riguroso proceso de selección: validación de antecedentes, pruebas psicológicas y entrevistas focalizadas en docencia infantil.",
+        items: [
+            "Validación de antecedentes locales e internacionales",
+            "Certificación en metodologías infantiles",
+            "Monitoreo continuo de calidad (NPS Estudiantil)",
+        ],
+    },
+    {
+        label: "Protección de datos personales",
+        intro:
+            "Cumplimos con las regulaciones internacionales más estrictas sobre datos de menores (COPPA compliant). No vendemos, no prestamos y no cedemos información de nuestros alumnos.",
+        items: [
+            "Correos y números encriptados",
+            "Consentimiento explícito parental",
+            "Sin publicidad dentro de las plataformas de estudio",
+        ],
+    },
+    {
+        label: "Entornos IA cerrados",
+        intro:
+            "Las herramientas de IA están configuradas en modalidad educativa (walled gardens). Los prompts están limitados para evitar que la IA genere contenido inapropiado o violento.",
+        items: [
+            "Filtros de contenido estrictos",
+            "Suscripciones administradas por el cuerpo docente",
+            "Revisión de proyectos antes de exposición pública",
+        ],
+    },
+]
+
 export default function SecurityPage() {
-  return (
-    <main className="min-h-screen bg-[#F8FAFC]">
-      <Navigation />
-      
-      <div className="pt-32 pb-20 bg-gradient-to-br from-[#0a1628] to-[#1a2f4c] text-white">
-        <div className="container mx-auto px-4 max-w-4xl text-center">
-          <div className="inline-flex items-center justify-center p-3 bg-white/10 rounded-full mb-6 relative">
-            <div className="absolute inset-0 bg-[#4DD0E1] blur-xl opacity-50 rounded-full"></div>
-            <Shield className="w-12 h-12 text-[#4DD0E1] relative z-10" />
-          </div>
-          <h1 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">
-            Compromiso Absoluto con la <span className="text-[#4DD0E1] drop-shadow-lg">Seguridad Infantil</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Nuestra prioridad número uno es garantizar un entorno digital 100% seguro, auditado e inspirador para todos nuestros alumnos.
-          </p>
-        </div>
-      </div>
+    return (
+        <>
+            <Navigation />
+            <main className="min-h-screen bg-[#FAF7EF] text-[#1A1714]">
+                <section className="pt-32 pb-16">
+                    <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+                        <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
+                            <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                            <span className="mx-3" aria-hidden>/</span>
+                            <span className="text-[#1A1714]">Confianza y seguridad</span>
+                        </nav>
 
-      <div className="container mx-auto px-4 py-20 max-w-6xl">
-        <div className="grid md:grid-cols-2 gap-8 mb-20">
-          
-          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-slate-100 hover:border-[#4DD0E1]/30 transition-all group">
-            <div className="w-14 h-14 bg-[#EEF2FF] rounded-2xl flex items-center justify-center mb-6 text-blue-600 group-hover:scale-110 transition-transform">
-              <Video className="w-7 h-7" />
-            </div>
-            <h3 className="text-2xl font-bold text-[#0a1628] mb-4">Aulas Monitoreadas en Vivo</h3>
-            <p className="text-slate-600 text-lg leading-relaxed mb-6">
-              Todas nuestras sesiones vía Meet/Zoom son monitoreadas por nuestro equipo académico. Implementamos políticas de "Cero Tolerancia" al bullying y al comportamiento inadecuado. 
-            </p>
-            <ul className="space-y-3">
-              {["Chats filtrados por moderadores", "Bloqueo de pantalla compartida no autorizada", "Reporte inmediato de incidencias a padres"].map((item, i) => (
-                <li key={i} className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-slate-700 font-medium">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+                        <header className="mb-20 pb-16 border-b border-[#1A1714]/12">
+                            <div className="flex items-center gap-3 mb-6">
+                                <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+                                <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                    Compromiso absoluto · protección al menor
+                                </span>
+                            </div>
+                            <h1
+                                className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[20ch]"
+                                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                            >
+                                Seguridad <em className="italic text-[#C96342]">infantil</em> por diseño.
+                            </h1>
+                            <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[58ch]">
+                                Nuestra prioridad número uno es garantizar un entorno digital 100% seguro, auditado e
+                                inspirador para todos nuestros alumnos.
+                            </p>
+                        </header>
 
-          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-slate-100 hover:border-[#4DD0E1]/30 transition-all group">
-            <div className="w-14 h-14 bg-[#FFF1F2] rounded-2xl flex items-center justify-center mb-6 text-rose-500 group-hover:scale-110 transition-transform">
-              <Eye className="w-7 h-7" />
-            </div>
-            <h3 className="text-2xl font-bold text-[#0a1628] mb-4">Docentes Investigados (Background Checks)</h3>
-            <p className="text-slate-600 text-lg leading-relaxed mb-6">
-              Cada facilitador de InnovaKids pasa por un riguroso proceso de selección que incluye validación de antecedentes penales, pruebas psicológicas y entrevistas focalizadas en docencia infantil.
-            </p>
-            <ul className="space-y-3">
-              {["Validación de antecedentes locales e internacionales", "Certificación en metodologías infantiles", "Monitoreo de calidad (NPS Estudiantil)"].map((item, i) => (
-                <li key={i} className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-slate-700 font-medium">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+                        <ol className="not-prose border-t border-[#1A1714]/12">
+                            {pillars.map((p, i) => (
+                                <li key={p.label} className="py-12 border-b border-[#1A1714]/12 grid md:grid-cols-12 gap-8 md:gap-12">
+                                    <div className="md:col-span-4">
+                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                                            Pilar 0{i + 1}
+                                        </p>
+                                        <h2
+                                            className="mt-3 text-3xl md:text-4xl leading-[1.05] text-[#1A1714]"
+                                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                        >
+                                            {p.label}
+                                        </h2>
+                                    </div>
+                                    <div className="md:col-span-8">
+                                        <p className="text-[17px] text-[#1A1714]/80 leading-[1.7]">{p.intro}</p>
+                                        <ul className="mt-6 border-t border-[#1A1714]/12">
+                                            {p.items.map((item, j) => (
+                                                <li key={item} className="grid grid-cols-[auto_1fr] gap-6 py-4 border-b border-[#1A1714]/12 items-baseline">
+                                                    <span className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">
+                                                        {String(j + 1).padStart(2, "0")}
+                                                    </span>
+                                                    <span className="text-[15px] md:text-base text-[#1A1714]/85 leading-relaxed">
+                                                        {item}
+                                                    </span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </li>
+                            ))}
+                        </ol>
 
-          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-slate-100 hover:border-[#4DD0E1]/30 transition-all group">
-            <div className="w-14 h-14 bg-[#F0FDF4] rounded-2xl flex items-center justify-center mb-6 text-green-600 group-hover:scale-110 transition-transform">
-              <Lock className="w-7 h-7" />
-            </div>
-            <h3 className="text-2xl font-bold text-[#0a1628] mb-4">Protección de Datos Personales (COPPA Compliant)</h3>
-            <p className="text-slate-600 text-lg leading-relaxed mb-6">
-              Cumplimos con las regulaciones internacionales más estrictas sobre la recopilación de datos de menores. No vendemos, no prestamos y no cedemos información de nuestros alumnos a terceros.
-            </p>
-            <ul className="space-y-3">
-              {["Correos y números encriptados", "Consentimiento explícito parental", "Sin publicidad dentro de las plataformas de estudio"].map((item, i) => (
-                <li key={i} className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-slate-700 font-medium">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl border border-slate-100 hover:border-[#4DD0E1]/30 transition-all group">
-            <div className="w-14 h-14 bg-[#FEF3C7] rounded-2xl flex items-center justify-center mb-6 text-amber-600 group-hover:scale-110 transition-transform">
-              <Server className="w-7 h-7" />
-            </div>
-            <h3 className="text-2xl font-bold text-[#0a1628] mb-4">Entornos IA Cerrados (Walled Gardens)</h3>
-            <p className="text-slate-600 text-lg leading-relaxed mb-6">
-              Las herramientas de inteligencia artificial que utilizamos están configuradas en modalidad educativa. Los Prompts (instrucciones) están limitados para evitar que la IA genere contenido inapropiado o violento.
-            </p>
-            <ul className="space-y-3">
-              {["Filtros de contenido NSFW estrictos", "Suscripciones administradas por el cuerpo docente", "Revisión de proyectos antes de exposición pública"].map((item, i) => (
-                <li key={i} className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-green-500" />
-                  <span className="text-slate-700 font-medium">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </div>
-      
-      <Footer />
-    </main>
-  )
+                        <aside className="mt-20 border-t border-b border-[#1A1714]/12 py-12">
+                            <div className="grid md:grid-cols-12 gap-10 items-start">
+                                <div className="md:col-span-7">
+                                    <div className="flex items-center gap-3 mb-5">
+                                        <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+                                        <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                            ¿Dudas específicas?
+                                        </span>
+                                    </div>
+                                    <h3
+                                        className="text-3xl md:text-4xl leading-[1.05] tracking-tight text-[#1A1714] mb-4"
+                                        style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                    >
+                                        Hablemos antes de inscribir.
+                                    </h3>
+                                    <p className="text-[15px] text-[#1A1714]/70 leading-relaxed max-w-[52ch]">
+                                        Agenda una evaluación gratuita de 30 minutos con nuestro equipo. Resolvemos todas
+                                        tus preguntas sobre protocolo, docentes y protección de datos.
+                                    </p>
+                                </div>
+                                <div className="md:col-span-5 flex flex-col gap-3 md:justify-self-end w-full md:w-auto">
+                                    <Link
+                                        href="/clase-gratis"
+                                        className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                    >
+                                        Agendar conversación
+                                        <span aria-hidden>→</span>
+                                    </Link>
+                                    <Link
+                                        href="/privacidad"
+                                        className="inline-flex items-center justify-center gap-2 border border-[#1A1714]/20 hover:border-[#C96342] text-[#1A1714] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                    >
+                                        Leer política de privacidad
+                                    </Link>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </section>
+            </main>
+            <Footer />
+        </>
+    )
 }

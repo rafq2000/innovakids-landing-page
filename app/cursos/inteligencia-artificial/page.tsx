@@ -4,6 +4,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import type { Metadata } from "next"
+import { generateHreflangs } from "@/lib/seo-config"
 
 export const metadata: Metadata = {
   // 61 chars · keyword first · age range · brand last
@@ -11,10 +12,18 @@ export const metadata: Metadata = {
   // 148 chars · primary keyword + proof + differentiators + soft CTA
   description:
     "El mejor curso de Inteligencia Artificial para niños y adolescentes (8-17). Tu hijo crea apps y videojuegos en 5 semanas. Grupos de 5. Clase gratis.",
+  alternates: {
+    canonical: "https://www.innovakidslatam.com/cursos/inteligencia-artificial",
+    languages: generateHreflangs("global", "/cursos/inteligencia-artificial"),
+  },
   openGraph: {
     title: "Curso de IA para Niños y Adolescentes · Escuela #1 en LATAM | InnovaKids",
     description:
       "Tu hijo crea apps, arte y videojuegos con IA en 5 semanas. 527 graduados, clases en vivo, grupos de máximo 5. Reserva tu clase gratis.",
+    url: "https://www.innovakidslatam.com/cursos/inteligencia-artificial",
+    siteName: "InnovaKids",
+    type: "website",
+    locale: "es_419",
     images: [{
       url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
       width: 1200,
@@ -29,6 +38,7 @@ export const metadata: Metadata = {
       "Tu hijo crea apps y videojuegos con IA en 5 semanas. Grupos de máximo 5. 527 graduados. Clase gratis de prueba.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
+  robots: { index: true, follow: true },
 }
 
 export default function CursoIANinos() {

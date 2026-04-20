@@ -1,153 +1,153 @@
 "use client"
 
 import { Navigation } from "@/components/navigation"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
-import { ArrowLeft, Phone, Mail, MapPin, MessageCircle } from "lucide-react"
 import { ContactForm } from "@/components/contact-form"
 
 export default function ContactoClient() {
-  const whatsappNumber = "56964754219"
-  const whatsappMessage = encodeURIComponent(
-    "Hola, me gustaría obtener más información sobre el curso de IA para niños",
-  )
+    const whatsappNumber = "56964754219"
+    const whatsappMessage = encodeURIComponent(
+        "Hola, me gustaría obtener más información sobre el curso de IA para niños",
+    )
 
-  const openCalendly = () => {
-    if (typeof window !== "undefined" && (window as any).Calendly) {
-      ;(window as any).Calendly.initPopupWidget({
-        url: "https://calendly.com/innovakidslatam/reunion-informativa-innovakids?hide_gdpr_banner=1&hide_event_type_details=1&primary_color=4dd0e1",
-      })
+    const openCalendly = () => {
+        if (typeof window !== "undefined" && (window as any).Calendly) {
+            ;(window as any).Calendly.initPopupWidget({
+                url: "https://calendly.com/innovakidslatam/reunion-informativa-innovakids?hide_gdpr_banner=1&hide_event_type_details=1&primary_color=C96342",
+            })
+        }
     }
-  }
 
-  return (
-    <div className="min-h-screen bg-[#0a1628]">
-      <Navigation />
-      <main className="pt-24 pb-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <Link href="/">
-            <Button variant="ghost" className="text-white hover:text-[#4DD0E1] mb-8">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Volver al inicio
-            </Button>
-          </Link>
+    return (
+        <div className="min-h-screen bg-[#FAF7EF] text-[#1A1714]">
+            <Navigation />
+            <main className="pt-32 pb-20">
+                <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+                    <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
+                        <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                        <span className="mx-3" aria-hidden>/</span>
+                        <span className="text-[#1A1714]">Contacto</span>
+                    </nav>
 
-          <div className="mb-12 text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">Contáctanos</h1>
-            <p className="text-lg text-gray-300">Estamos aquí para responder todas tus preguntas</p>
-          </div>
+                    <header className="mb-16 pb-16 border-b border-[#1A1714]/12">
+                        <div className="flex items-center gap-3 mb-6">
+                            <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                Hablemos
+                            </span>
+                        </div>
+                        <h1
+                            className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[18ch]"
+                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                        >
+                            <em className="italic text-[#C96342]">Contacto</em>.
+                        </h1>
+                        <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[52ch]">
+                            Estamos aquí para responder todas tus preguntas — elige el canal que te resulte más cómodo.
+                        </p>
+                    </header>
 
-          <Card className="bg-gradient-to-br from-[#25D366] to-[#20BA5A] border-0 shadow-2xl mb-8">
-            <CardContent className="p-8">
-              <div className="flex flex-col items-center text-center gap-4">
-                <div className="bg-white p-4 rounded-full">
-                  <MessageCircle className="w-10 h-10 text-[#25D366]" />
+                    <div className="grid lg:grid-cols-12 gap-12">
+                        {/* Left: channels */}
+                        <aside className="lg:col-span-5 space-y-12">
+                            {/* WhatsApp */}
+                            <section>
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                    Canal directo
+                                </p>
+                                <h2
+                                    className="text-3xl md:text-4xl leading-[1.05] text-[#1A1714] mb-4"
+                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                >
+                                    Hablemos por WhatsApp
+                                </h2>
+                                <p className="text-[15px] text-[#1A1714]/70 leading-relaxed mb-6">
+                                    Respuesta en tiempo real para resolver dudas específicas de tu hijo.
+                                </p>
+                                <a
+                                    href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                >
+                                    Abrir WhatsApp
+                                    <span aria-hidden>→</span>
+                                </a>
+                            </section>
+
+                            {/* Info table */}
+                            <dl className="border-t border-[#1A1714]/12">
+                                <div className="py-5 border-b border-[#1A1714]/12 grid grid-cols-[120px_1fr] gap-4 items-baseline">
+                                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Email</dt>
+                                    <dd>
+                                        <a href="mailto:innovakidslatam@gmail.com" className="text-[16px] text-[#1A1714] hover:text-[#C96342] transition-colors">
+                                            innovakidslatam@gmail.com
+                                        </a>
+                                        <p className="text-[13px] text-[#1A1714]/55 mt-1">Respondemos en 24 horas.</p>
+                                    </dd>
+                                </div>
+                                <div className="py-5 border-b border-[#1A1714]/12 grid grid-cols-[120px_1fr] gap-4 items-baseline">
+                                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Teléfono</dt>
+                                    <dd>
+                                        <a href="tel:+56964754219" className="text-[16px] text-[#1A1714] hover:text-[#C96342] transition-colors">
+                                            +56 9 6475 4219
+                                        </a>
+                                        <p className="text-[13px] text-[#1A1714]/55 mt-1">Lun — Sáb · 08:00 — 20:00.</p>
+                                    </dd>
+                                </div>
+                                <div className="py-5 border-b border-[#1A1714]/12 grid grid-cols-[120px_1fr] gap-4 items-baseline">
+                                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Oficina</dt>
+                                    <dd>
+                                        <p className="text-[16px] text-[#1A1714]">Diagonal Oriente 1620</p>
+                                        <p className="text-[13px] text-[#1A1714]/55 mt-1">Providencia, Chile.</p>
+                                    </dd>
+                                </div>
+                            </dl>
+
+                            {/* Calendly block */}
+                            <section>
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                    Sesión estratégica
+                                </p>
+                                <h3
+                                    className="text-2xl md:text-3xl leading-[1.1] text-[#1A1714] mb-3"
+                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                >
+                                    ¿Listo para que tu hijo aprenda IA?
+                                </h3>
+                                <p className="text-[15px] text-[#1A1714]/70 leading-relaxed mb-6">
+                                    Agenda una sesión gratuita de 30 minutos con nuestro equipo.
+                                </p>
+                                <button
+                                    onClick={openCalendly}
+                                    className="inline-flex items-center justify-center gap-2 border border-[#1A1714]/20 hover:border-[#C96342] text-[#1A1714] hover:text-[#C96342] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                >
+                                    Agendar sesión gratuita
+                                </button>
+                            </section>
+                        </aside>
+
+                        {/* Right: form */}
+                        <div className="lg:col-span-7">
+                            <div className="border border-[#1A1714]/12 p-8 md:p-10 bg-[#F2EDE0]/40">
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                    Escríbenos
+                                </p>
+                                <h2
+                                    className="text-3xl md:text-4xl leading-[1.05] text-[#1A1714] mb-3"
+                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                >
+                                    Envíanos un mensaje
+                                </h2>
+                                <p className="text-[15px] text-[#1A1714]/70 leading-relaxed mb-8">
+                                    Completa el formulario y te responderemos a la brevedad.
+                                </p>
+                                <ContactForm />
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                  <h2 className="text-white font-bold text-2xl mb-2">¡Hablemos por WhatsApp!</h2>
-                  <p className="text-white/90 text-lg mb-6">
-                    Chatea con nosotros ahora y resuelve todas tus dudas en tiempo real
-                  </p>
-                  <a
-                    href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Button
-                      size="lg"
-                      className="bg-white hover:bg-gray-100 text-[#25D366] font-bold text-lg px-8 py-6 shadow-lg hover:scale-105 transition-all"
-                    >
-                      <MessageCircle className="w-5 h-5 mr-2" />
-                      Hablemos
-                    </Button>
-                  </a>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-[#1a2942] border-[#2a3952] mb-8">
-            <CardContent className="p-8">
-              <h2 className="text-2xl font-bold text-white mb-2 text-center">Envíanos un mensaje</h2>
-              <p className="text-gray-300 mb-6 text-center">Completa el formulario y te responderemos a la brevedad</p>
-              <ContactForm />
-            </CardContent>
-          </Card>
-
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
-            <Card className="bg-[#1a2942] border-[#2a3952]">
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-[#4DD0E1]/10 p-3 rounded-lg">
-                    <Mail className="w-6 h-6 text-[#4DD0E1]" />
-                  </div>
-                  <div>
-                    <h3 className="text-white font-bold mb-2">Email</h3>
-                    <a
-                      href="mailto:innovakidslatam@gmail.com"
-                      className="text-gray-300 hover:text-[#4DD0E1] transition-colors mb-2 block"
-                    >
-                      innovakidslatam@gmail.com
-                    </a>
-                    <p className="text-sm text-gray-400">Respondemos en 24 horas</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-[#1a2942] border-[#2a3952]">
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-[#4DD0E1]/10 p-3 rounded-lg">
-                    <Phone className="w-6 h-6 text-[#4DD0E1]" />
-                  </div>
-                  <div>
-                    <h3 className="text-white font-bold mb-2">Teléfono</h3>
-                    <a
-                      href="tel:+56964754219"
-                      className="text-gray-300 hover:text-[#4DD0E1] transition-colors mb-2 block"
-                    >
-                      +56 9 6475 4219
-                    </a>
-                    <p className="text-sm text-gray-400">Lun - Sáb: 08:00 - 20:00</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-[#1a2942] border-[#2a3952] md:col-span-2">
-              <CardContent className="p-6">
-                <div className="flex items-start gap-4">
-                  <div className="bg-[#4DD0E1]/10 p-3 rounded-lg">
-                    <MapPin className="w-6 h-6 text-[#4DD0E1]" />
-                  </div>
-                  <div>
-                    <h3 className="text-white font-bold mb-2">Ubicación</h3>
-                    <p className="text-gray-300 mb-2">Diagonal Oriente 1620</p>
-                    <p className="text-sm text-gray-400">Providencia, Chile</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-
-          <Card className="bg-[#1a2942] border-[#2a3952]">
-            <CardContent className="p-8 text-center">
-              <h2 className="text-2xl font-bold text-white mb-4">¿Listo para que tu hijo aprenda IA?</h2>
-              <p className="text-gray-300 mb-6">
-                Agenda una sesión estratégica gratuita y descubre cómo podemos ayudar a tu hijo
-              </p>
-              <Button
-                onClick={openCalendly}
-                className="bg-[#4DD0E1] hover:bg-[#3BBFD1] text-[#0a1628] px-8 py-6 text-lg font-bold"
-              >
-                AGENDAR SESIÓN GRATUITA
-              </Button>
-            </CardContent>
-          </Card>
+            </main>
         </div>
-      </main>
-    </div>
-  )
+    )
 }

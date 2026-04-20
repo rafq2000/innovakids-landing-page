@@ -26,7 +26,7 @@ export default function MercadoPagoCheckout({ paymentOption, amount }: MercadoPa
     setLoading(true)
 
     try {
-      const result = await createMercadoPagoCheckout(studentName, parentEmail, paymentOption, amount)
+      const result = await createMercadoPagoCheckout(studentName, parentEmail, paymentOption as any, amount)
 
       if (result.success && result.checkoutUrl) {
         // Redirect to Mercado Pago checkout

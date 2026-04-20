@@ -1,17 +1,12 @@
 import { generateHreflangs } from "@/lib/seo-config";
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, Film, Rocket, Sparkles, Video, Camera } from "lucide-react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    // 65 chars · keyword-first · brand last
     title: "Curso de Creador de Contenido con IA para Niños 8-17 | InnovaKids",
-    // 144 chars · YouTube/TikTok keyword proof + CTA
     description:
         "Tu hijo crea contenido para YouTube y TikTok con IA. Edición de video y storytelling. Para niños y adolescentes 8-17 años. Clase gratis.",
     keywords: [
@@ -33,6 +28,7 @@ export const metadata: Metadata = {
         description:
             "Tu hijo pasa de CONSUMIR a CREAR contenido pro con IA: YouTube, cine, redes sociales. Clases en vivo, grupos de 5. Reserva tu clase gratis.",
         url: "https://www.innovakidslatam.com/curso-creador-contenido-ia",
+        siteName: "InnovaKids",
         type: "website",
         locale: "es_419",
         images: [{
@@ -49,29 +45,29 @@ export const metadata: Metadata = {
             "Tu hijo crea contenido pro para YouTube y TikTok con IA en 5 semanas. Grupos de 5. Clase gratis de prueba.",
         images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
+    robots: { index: true, follow: true },
 }
 
 const faqs = [
-    {
-        q: "¿Qué herramientas de IA usarán para crear contenido?",
-        a: "Usamos herramientas de IA para edición de video, generación de efectos visuales, creación de guiones, diseño de thumbnails y producción musical. Todo adaptado a la edad y nivel del estudiante.",
-    },
-    {
-        q: "¿Mi hijo necesita una cámara profesional?",
-        a: "No. Con un celular o la cámara de su computador es suficiente para empezar. La IA nos ayuda a mejorar la calidad de producción sin equipo costoso.",
-    },
-    {
-        q: "¿Es seguro para niños crear contenido en redes sociales?",
-        a: "Enseñamos creación de contenido responsable y seguridad digital. Los proyectos se comparten en un entorno controlado y enseñamos a los padres cómo supervisar las publicaciones.",
-    },
-    {
-        q: "¿Qué tipo de contenido aprenderán a crear?",
-        a: "Cortometrajes, vlogs educativos, animaciones, podcasts y contenido para redes sociales. Todo con IA como asistente creativo para producir contenido de calidad profesional.",
-    },
-    {
-        q: "¿Tiene salida profesional este conocimiento?",
-        a: "Absolutamente. La creación de contenido digital es una de las carreras con mayor crecimiento mundial. Aprender a usar IA para producción multimedia da una ventaja competitiva enorme.",
-    },
+    { q: "¿Qué herramientas de IA usarán para crear contenido?", a: "Usamos herramientas de IA para edición de video, generación de efectos visuales, creación de guiones, diseño de thumbnails y producción musical. Todo adaptado a la edad y nivel del estudiante." },
+    { q: "¿Mi hijo necesita una cámara profesional?", a: "No. Con un celular o la cámara de su computador es suficiente para empezar. La IA nos ayuda a mejorar la calidad de producción sin equipo costoso." },
+    { q: "¿Es seguro para niños crear contenido en redes sociales?", a: "Enseñamos creación de contenido responsable y seguridad digital. Los proyectos se comparten en un entorno controlado y enseñamos a los padres cómo supervisar las publicaciones." },
+    { q: "¿Qué tipo de contenido aprenderán a crear?", a: "Cortometrajes, vlogs educativos, animaciones, podcasts y contenido para redes sociales. Todo con IA como asistente creativo para producir contenido de calidad profesional." },
+    { q: "¿Tiene salida profesional este conocimiento?", a: "Absolutamente. La creación de contenido digital es una de las carreras con mayor crecimiento mundial. Aprender a usar IA para producción multimedia da una ventaja competitiva enorme." },
+]
+
+const pillars = [
+    { kicker: "Guión", title: "Storytelling con IA", desc: "Desde la idea al guion estructurado, con asistencia de modelos de lenguaje." },
+    { kicker: "Video", title: "Edición y FX", desc: "Edición no lineal, transiciones, color y efectos visuales asistidos por IA." },
+    { kicker: "Audio", title: "Música y voz", desc: "Composición, locuciones y limpieza de audio con herramientas generativas." },
+    { kicker: "Publicación", title: "YouTube y redes", desc: "Thumbnails, títulos, analítica básica y publicación responsable." },
+]
+
+const countries = [
+    { code: "cl", name: "Chile" }, { code: "mx", name: "México" }, { code: "co", name: "Colombia" },
+    { code: "ar", name: "Argentina" }, { code: "pe", name: "Perú" }, { code: "es", name: "España" },
+    { code: "ec", name: "Ecuador" }, { code: "bo", name: "Bolivia" }, { code: "cr", name: "Costa Rica" },
+    { code: "do", name: "Rep. Dominicana" }, { code: "us", name: "EE.UU." }, { code: "ve", name: "Venezuela" },
 ]
 
 export default function CreatorPage() {
@@ -80,17 +76,9 @@ export default function CreatorPage() {
         "@type": "Course",
         name: "Curso de Creador de Contenido y Cine con IA para Niños y Adolescentes",
         description: "Producción de contenido digital, YouTube, cine y edición profesional usando Inteligencia Artificial. Para niños y adolescentes de 8 a 17 años.",
-        provider: {
-            "@type": "Organization",
-            name: "InnovaKids",
-            url: "https://www.innovakidslatam.com",
-        },
+        provider: { "@type": "Organization", name: "InnovaKids", url: "https://www.innovakidslatam.com" },
         educationalLevel: "Beginner",
-        audience: {
-            "@type": "EducationalAudience",
-            educationalRole: "student",
-            audienceType: "Children and Adolescents aged 8-17",
-        },
+        audience: { "@type": "EducationalAudience", educationalRole: "student", audienceType: "Children and Adolescents aged 8-17" },
         courseMode: "online",
         inLanguage: "es",
         url: "https://www.innovakidslatam.com/curso-creador-contenido-ia",
@@ -102,10 +90,7 @@ export default function CreatorPage() {
         mainEntity: faqs.map((faq) => ({
             "@type": "Question",
             name: faq.q,
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: faq.a,
-            },
+            acceptedAnswer: { "@type": "Answer", text: faq.a },
         })),
     }
 
@@ -114,182 +99,283 @@ export default function CreatorPage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <Navigation />
-            <div className="min-h-screen bg-[#0a1628] text-white">
-                {/* Hero */}
-                <div className="relative overflow-hidden pt-20 pb-16">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-pink-500/20 rounded-full blur-[120px]" />
-                    <div className="container mx-auto px-4 relative z-10 text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-pink-500/10 border border-pink-500/20 rounded-full text-pink-400 text-sm font-bold mb-6">
-                            <Film className="w-4 h-4" />
-                            Para Niños y Adolescentes (8-17 Años)
-                        </div>
-                        <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-                            Curso de <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400">Creador de Contenido y Cine con IA</span>
-                        </h1>
-                        <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
-                            Tu hijo aprende a producir videos, cortometrajes y contenido de nivel profesional usando Inteligencia Artificial como copiloto creativo.
-                        </p>
-                        <Button asChild size="lg" className="bg-pink-500 hover:bg-pink-400 text-white font-bold px-8 py-6 text-lg rounded-full shadow-lg shadow-pink-500/20">
-                            <Link href="#comenzar">Empezar Ahora</Link>
-                        </Button>
-                    </div>
-                </div>
+            <main className="min-h-screen bg-[#FAF7EF] text-[#1A1714]">
+                <section className="pt-32 pb-20 border-b border-[#1A1714]/12">
+                    <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+                        <nav aria-label="Breadcrumb" className="text-[11px] tracking-[0.2em] uppercase text-[#1A1714]/55 font-semibold mb-10">
+                            <Link href="/" className="hover:text-[#C96342]">Inicio</Link>
+                            <span className="mx-2 text-[#1A1714]/30">/</span>
+                            <Link href="/cursos/inteligencia-artificial" className="hover:text-[#C96342]">Cursos</Link>
+                            <span className="mx-2 text-[#1A1714]/30">/</span>
+                            <span className="text-[#1A1714]/75 normal-case tracking-normal">Creador de contenido con IA</span>
+                        </nav>
 
-                {/* Problem/Solution */}
-                <div className="container mx-auto px-4 py-16">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <h2 className="text-3xl font-bold mb-6">¿Tu hijo vive viendo YouTube o TikTok?</h2>
-                            <p className="text-slate-300 text-lg mb-6">
-                                Esa fascinación es <strong>creatividad esperando explotar</strong>. Los mejores creadores del futuro serán quienes dominen la IA como herramienta de producción.
+                        <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-end">
+                            <div className="md:col-span-8">
+                                <div className="flex items-center gap-3 mb-6">
+                                    <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+                                    <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                        Nivel 03 · Especialización para 8 a 17 años
+                                    </span>
+                                </div>
+                                <h1
+                                    className="text-5xl sm:text-6xl md:text-7xl leading-[0.95] tracking-[-0.02em]"
+                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                >
+                                    Creador de <em className="italic text-[#C96342]">contenido</em> con IA.
+                                </h1>
+                                <p className="mt-8 text-lg md:text-xl text-[#1A1714]/70 leading-relaxed max-w-2xl font-light">
+                                    De consumidor pasivo a productor con voz. Tu hijo aprende a escribir, grabar,
+                                    editar y publicar contenido real con inteligencia artificial como asistente.
+                                </p>
+                            </div>
+                            <div className="md:col-span-4 flex flex-col sm:flex-row md:flex-col gap-3">
+                                <Link
+                                    href="#comenzar"
+                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-7 py-4 font-semibold text-base tracking-wide transition-colors"
+                                >
+                                    Empezar ahora <span aria-hidden>→</span>
+                                </Link>
+                                <Link
+                                    href="/clase-gratis"
+                                    className="inline-flex items-center justify-center gap-2 border border-[#1A1714] text-[#1A1714] hover:bg-[#1A1714] hover:text-[#FAF7EF] px-7 py-4 font-semibold text-base tracking-wide transition-colors"
+                                >
+                                    Clase gratis
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section className="py-24 md:py-32 border-b border-[#1A1714]/12">
+                    <div className="max-w-[1100px] mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-12 md:gap-16 items-start">
+                        <div className="md:col-span-6">
+                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+                                El punto de partida
                             </p>
-                            <ul className="space-y-4">
+                            <h2
+                                className="text-4xl md:text-5xl leading-[1.02] tracking-[-0.02em] mb-8"
+                                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                            >
+                                La generación que crece mirando pantallas aprende aquí a hacerse escuchar.
+                            </h2>
+                            <p className="text-lg text-[#1A1714]/70 leading-relaxed mb-8">
+                                Ya no se trata de prohibir YouTube ni TikTok. Se trata de que tu hijo aprenda el
+                                oficio detrás: cómo se construye una idea, se graba, se edita y se comparte con
+                                responsabilidad y criterio.
+                            </p>
+                            <ul className="space-y-5 border-t border-[#1A1714]/12 pt-8">
                                 {[
-                                    "Producción de contenido de calidad profesional",
-                                    "Storytelling y narrativa audiovisual",
-                                    "Edición de video con IA",
-                                    "Efectos especiales y animación",
-                                ].map((item, i) => (
-                                    <li key={i} className="flex items-center gap-3">
-                                        <CheckCircle className="w-5 h-5 text-pink-400" />
-                                        <span>{item}</span>
+                                    "Desarrolla comunicación y síntesis",
+                                    "Aprende narrativa audiovisual real",
+                                    "Entiende algoritmos y audiencia",
+                                    "Construye un portafolio digital propio",
+                                ].map((item) => (
+                                    <li key={item} className="flex items-start gap-4 pb-5 border-b border-[#1A1714]/12 last:border-b-0">
+                                        <span className="text-[#C96342] font-serif text-lg leading-none mt-1" aria-hidden>→</span>
+                                        <span className="text-[#1A1714]/85 leading-relaxed">{item}</span>
                                     </li>
                                 ))}
                             </ul>
                         </div>
-                        <div className="bg-gradient-to-br from-pink-500/10 to-purple-500/5 border border-pink-500/20 rounded-2xl p-8">
-                            <h3 className="text-2xl font-bold text-pink-400 mb-4">La Especialización Creativa</h3>
-                            <p className="text-slate-400 mb-4">
-                                Usamos IA generativa para que niños y adolescentes produzcan contenido que antes requería equipos profesionales.
+
+                        <div className="md:col-span-6 bg-[#F2EDE0] p-10 md:p-12 border-l-2 border-[#C96342]">
+                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+                                La especialización creativa
                             </p>
-                            <div className="grid grid-cols-2 gap-4 mt-6">
-                                <div className="bg-black/20 p-4 rounded-lg text-center">
-                                    <div className="text-2xl mb-2">🎬</div>
-                                    <div className="font-bold text-sm">Cortometrajes</div>
-                                </div>
-                                <div className="bg-black/20 p-4 rounded-lg text-center">
-                                    <div className="text-2xl mb-2">📱</div>
-                                    <div className="font-bold text-sm">Contenido Social</div>
-                                </div>
-                                <div className="bg-black/20 p-4 rounded-lg text-center">
-                                    <div className="text-2xl mb-2">🎵</div>
-                                    <div className="font-bold text-sm">Música con IA</div>
-                                </div>
-                                <div className="bg-black/20 p-4 rounded-lg text-center">
-                                    <div className="text-2xl mb-2">✨</div>
-                                    <div className="font-bold text-sm">Efectos Visuales</div>
-                                </div>
-                            </div>
+                            <h3
+                                className="text-3xl leading-tight mb-5"
+                                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                            >
+                                Cuatro pilares, un oficio real.
+                            </h3>
+                            <p className="text-[#1A1714]/70 leading-relaxed mb-10">
+                                Los niños no aprenden "a usar una app" — aprenden el flujo profesional de producción.
+                            </p>
+                            <ol className="divide-y divide-[#1A1714]/15 border-y border-[#1A1714]/15">
+                                {pillars.map((p, i) => (
+                                    <li key={p.title} className="flex gap-5 py-5">
+                                        <span className="font-serif text-2xl text-[#C96342] leading-none shrink-0 w-10">
+                                            {String(i + 1).padStart(2, "0")}
+                                        </span>
+                                        <div>
+                                            <p className="text-[10px] uppercase tracking-[0.22em] text-[#C96342]/80 font-semibold mb-1.5">
+                                                {p.kicker}
+                                            </p>
+                                            <h4 className="font-serif text-lg text-[#1A1714] leading-tight mb-1">{p.title}</h4>
+                                            <p className="text-sm text-[#1A1714]/70 leading-relaxed">{p.desc}</p>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ol>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                {/* The Path */}
-                <div id="comenzar" className="container mx-auto px-4 py-16 bg-white/5 border-y border-white/10">
-                    <div className="text-center max-w-3xl mx-auto mb-12">
-                        <h2 className="text-3xl font-bold mb-4">¿Cómo convertirse en Creador de Contenido con IA?</h2>
-                        <p className="text-slate-300">Nuestro programa tiene dos niveles diseñados para llevar a tu hijo de consumidor a creador profesional.</p>
-                    </div>
-                    <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        <Card className="bg-gradient-to-br from-purple-600 to-blue-600 border-0 relative overflow-hidden">
-                            <div className="absolute top-4 right-4 bg-white text-purple-600 text-xs font-bold px-2 py-1 rounded">PASO 1 (OBLIGATORIO)</div>
-                            <CardHeader>
-                                <CardTitle className="text-2xl text-white flex items-center gap-3">
-                                    <Rocket className="w-8 h-8" />
-                                    Vibe Explorer (Nivel 1)
-                                </CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <p className="text-purple-100 mb-4">Las bases de la IA que todo creador necesita dominar.</p>
-                                <ul className="space-y-2 text-white text-sm mb-6">
-                                    <li>✅ Generación de Imágenes y Arte IA</li>
-                                    <li>✅ Prompt Engineering Creativo</li>
-                                    <li>✅ Herramientas de Producción con IA</li>
+                <section id="comenzar" className="py-24 md:py-32 bg-[#F5F1E8] border-b border-[#1A1714]/12">
+                    <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+                        <div className="max-w-3xl mb-16">
+                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+                                El camino
+                            </p>
+                            <h2
+                                className="text-4xl md:text-5xl leading-tight tracking-[-0.02em]"
+                                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                            >
+                                Cómo empieza a crear contenido pro.
+                            </h2>
+                            <p className="mt-6 text-lg text-[#1A1714]/70 leading-relaxed">
+                                El Nivel 01 es la puerta de entrada obligatoria. Después desbloquea la especialización
+                                en contenido y cine.
+                            </p>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 gap-8">
+                            <article className="bg-[#FAF7EF] border border-[#1A1714]/12 p-10">
+                                <p className="text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                    Paso 01 · Obligatorio
+                                </p>
+                                <h3
+                                    className="text-3xl leading-tight mb-4"
+                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                >
+                                    Vibe Explorer (Nivel 01)
+                                </h3>
+                                <p className="text-[#1A1714]/70 mb-6 leading-relaxed">
+                                    Base de prompt engineering, generación multimedia y criterio creativo.
+                                </p>
+                                <ul className="space-y-3 text-[#1A1714]/85 mb-8 text-sm">
+                                    <li className="flex gap-3"><span className="text-[#C96342]">→</span> Generación de imagen y video con IA</li>
+                                    <li className="flex gap-3"><span className="text-[#C96342]">→</span> Prompt engineering creativo</li>
+                                    <li className="flex gap-3"><span className="text-[#C96342]">→</span> Seguridad digital y autoría responsable</li>
                                 </ul>
-                                <Button asChild className="w-full bg-white text-purple-600 hover:bg-purple-50 font-bold">
-                                    <Link href="/brochure-programa-ia">Empezar Aquí (Nivel 1)</Link>
-                                </Button>
-                            </CardContent>
-                        </Card>
-                        <Card className="bg-white/5 border-white/10 opacity-75 hover:opacity-100 transition-opacity">
-                            <div className="absolute top-4 right-4 bg-white/10 text-white text-xs font-bold px-2 py-1 rounded">PASO 2 (FUTURO)</div>
-                            <CardHeader>
-                                <CardTitle className="text-2xl text-pink-400 flex items-center gap-3">
-                                    <Camera className="w-8 h-8" />
-                                    Vibe Creators (Especialidad)
-                                </CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <p className="text-slate-400 mb-4">Producción avanzada de contenido y cine con IA.</p>
-                                <ul className="space-y-2 text-slate-300 text-sm mb-6">
-                                    <li>🔒 Edición Profesional de Video con IA</li>
-                                    <li>🔒 Producción de Cortometrajes</li>
-                                    <li>🔒 Monetización de Contenido</li>
-                                </ul>
-                                <Button disabled className="w-full bg-white/10 text-slate-400 border border-white/10 cursor-not-allowed">
-                                    Requiere Nivel 1
-                                </Button>
-                            </CardContent>
-                        </Card>
-                    </div>
-                </div>
-
-                {/* FAQ */}
-                <div className="container mx-auto px-4 py-16">
-                    <h2 className="text-3xl font-bold text-center mb-12">Preguntas Frecuentes sobre el Curso de Contenido y Cine con IA</h2>
-                    <div className="max-w-3xl mx-auto space-y-6">
-                        {faqs.map((faq, i) => (
-                            <div key={i} className="bg-white/5 border border-white/10 rounded-xl p-6">
-                                <h3 className="text-lg font-bold text-pink-400 mb-3">{faq.q}</h3>
-                                <p className="text-slate-300">{faq.a}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Internal Links */}
-                <div className="container mx-auto px-4 py-16 border-t border-white/10">
-                    <h2 className="text-2xl font-bold text-center mb-8">Explora Otros Cursos de InnovaKids</h2>
-                    <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                        <Link href="/cursos/inteligencia-artificial" className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 p-6 rounded-xl border border-cyan-500/30 hover:border-cyan-500/60 transition-colors text-center group">
-                            <div className="text-3xl mb-3">🧠</div>
-                            <h3 className="font-bold text-white group-hover:text-cyan-400 transition-colors">Curso Base de IA</h3>
-                            <p className="text-slate-400 text-sm mt-2">Vibe Explorer — Nivel 1</p>
-                        </Link>
-                        <Link href="/curso-creacion-videojuegos-ninos" className="bg-gradient-to-br from-green-900/30 to-emerald-900/30 p-6 rounded-xl border border-green-500/30 hover:border-green-500/60 transition-colors text-center group">
-                            <div className="text-3xl mb-3">🎮</div>
-                            <h3 className="font-bold text-white group-hover:text-green-400 transition-colors">Creación de Videojuegos</h3>
-                            <p className="text-slate-400 text-sm mt-2">Mundos 3D y Game Design</p>
-                        </Link>
-                        <Link href="/curso-emprendimiento-ninos" className="bg-gradient-to-br from-yellow-900/30 to-orange-900/30 p-6 rounded-xl border border-yellow-500/30 hover:border-yellow-500/60 transition-colors text-center group">
-                            <div className="text-3xl mb-3">💡</div>
-                            <h3 className="font-bold text-white group-hover:text-yellow-400 transition-colors">Emprendimiento</h3>
-                            <p className="text-slate-400 text-sm mt-2">Startups y Negocios con IA</p>
-                        </Link>
-                    </div>
-                    <div className="mt-12 text-center">
-                        <p className="text-slate-500 text-sm mb-4">Disponible en toda Latinoamérica y España:</p>
-                        <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
-                            {[
-                                { code: "cl", name: "Chile" }, { code: "mx", name: "México" }, { code: "co", name: "Colombia" },
-                                { code: "ar", name: "Argentina" }, { code: "pe", name: "Perú" }, { code: "es", name: "España" },
-                                { code: "ec", name: "Ecuador" }, { code: "bo", name: "Bolivia" }, { code: "cr", name: "Costa Rica" },
-                                { code: "do", name: "Rep. Dominicana" }, { code: "us", name: "EE.UU." }, { code: "ve", name: "Venezuela" },
-                            ].map((c) => (
-                                <Link key={c.code} href={`/${c.code}`} className="text-xs text-slate-500 hover:text-pink-400 transition-colors px-2 py-1 border border-white/5 rounded hover:border-pink-500/30">
-                                    {c.name}
+                                <Link
+                                    href="/cursos/inteligencia-artificial"
+                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-7 py-3.5 font-semibold text-sm tracking-wide transition-colors w-full"
+                                >
+                                    Empezar por el Nivel 01 <span aria-hidden>→</span>
                                 </Link>
-                            ))}
+                            </article>
+
+                            <article className="bg-[#FAF7EF] border border-[#1A1714]/12 p-10 opacity-80">
+                                <p className="text-[10px] uppercase tracking-[0.28em] text-[#1A1714]/55 font-semibold mb-4">
+                                    Paso 02 · Próximamente
+                                </p>
+                                <h3
+                                    className="text-3xl leading-tight mb-4"
+                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                >
+                                    Vibe Creators (Especialidad)
+                                </h3>
+                                <p className="text-[#1A1714]/70 mb-6 leading-relaxed">
+                                    Taller avanzado de producción audiovisual con IA.
+                                </p>
+                                <ul className="space-y-3 text-[#1A1714]/60 mb-8 text-sm">
+                                    <li className="flex gap-3"><span className="text-[#1A1714]/40">◦</span> Cortometraje final con IA</li>
+                                    <li className="flex gap-3"><span className="text-[#1A1714]/40">◦</span> Estrategia de canal y audiencia</li>
+                                    <li className="flex gap-3"><span className="text-[#1A1714]/40">◦</span> Producción musical generativa</li>
+                                </ul>
+                                <button
+                                    disabled
+                                    className="inline-flex items-center justify-center gap-2 bg-[#EDE6D3] text-[#1A1714]/50 px-7 py-3.5 font-semibold text-sm tracking-wide w-full cursor-not-allowed"
+                                >
+                                    Requiere completar Nivel 01
+                                </button>
+                            </article>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div className="text-center py-8">
-                    <p className="text-slate-500 text-sm">
-                        ¿Tienes dudas? <Link href="https://wa.me/56964754219" className="text-pink-400 underline">Habla con nosotros por WhatsApp</Link>
-                    </p>
-                </div>
-            </div>
+                <section className="py-24 md:py-32 border-b border-[#1A1714]/12">
+                    <div className="max-w-[900px] mx-auto px-6 md:px-10">
+                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+                            Preguntas frecuentes
+                        </p>
+                        <h2
+                            className="text-4xl md:text-5xl leading-tight tracking-[-0.02em] mb-14"
+                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                        >
+                            Lo que los padres preguntan.
+                        </h2>
+                        <dl className="divide-y divide-[#1A1714]/12 border-y border-[#1A1714]/12">
+                            {faqs.map((faq, i) => (
+                                <div key={i} className="py-8">
+                                    <dt
+                                        className="text-xl md:text-2xl leading-snug text-[#1A1714] mb-3"
+                                        style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                    >
+                                        {faq.q}
+                                    </dt>
+                                    <dd className="text-[#1A1714]/70 leading-relaxed">
+                                        {faq.a}
+                                    </dd>
+                                </div>
+                            ))}
+                        </dl>
+                    </div>
+                </section>
+
+                <section className="py-24 md:py-28 bg-[#F5F1E8]">
+                    <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+                        <div className="flex items-center gap-3 mb-6">
+                            <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                Otros caminos
+                            </span>
+                        </div>
+                        <h2
+                            className="text-3xl md:text-4xl leading-tight tracking-[-0.02em] mb-12 max-w-2xl"
+                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                        >
+                            Explora otras especializaciones.
+                        </h2>
+                        <ul className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#1A1714]/12 border-y border-[#1A1714]/12 mb-16">
+                            {[
+                                { href: "/cursos/inteligencia-artificial", kicker: "Nivel 01", title: "Curso base de IA", desc: "Vibe Explorer — la puerta de entrada." },
+                                { href: "/curso-creacion-videojuegos-ninos", kicker: "Nivel 02", title: "Videojuegos con IA", desc: "Crear en vez de solo jugar." },
+                                { href: "/curso-emprendimiento-ninos", kicker: "Nivel 04", title: "Emprendimiento", desc: "Startups y negocios con IA." },
+                            ].map((c) => (
+                                <li key={c.href}>
+                                    <Link href={c.href} className="group block py-10 md:px-8 transition-colors hover:bg-[#EDE6D3]">
+                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+                                            {c.kicker}
+                                        </p>
+                                        <h3
+                                            className="text-2xl leading-tight mb-3 group-hover:text-[#C96342] transition-colors"
+                                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                        >
+                                            {c.title}
+                                        </h3>
+                                        <p className="text-sm text-[#1A1714]/70 leading-relaxed mb-6">
+                                            {c.desc}
+                                        </p>
+                                        <span className="text-sm font-semibold text-[#C96342] underline underline-offset-4 decoration-[#C96342]/30 group-hover:decoration-[#C96342]">
+                                            Ver curso →
+                                        </span>
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+
+                        <div className="pt-10 border-t border-[#1A1714]/12">
+                            <p className="text-[11px] uppercase tracking-[0.22em] text-[#1A1714]/55 font-semibold mb-4">
+                                Disponible en toda LATAM y España
+                            </p>
+                            <div className="flex flex-wrap gap-x-5 gap-y-2">
+                                {countries.map((c) => (
+                                    <Link
+                                        key={c.code}
+                                        href={`/${c.code}`}
+                                        className="text-sm text-[#1A1714]/65 hover:text-[#C96342] underline underline-offset-4 decoration-[#1A1714]/15 hover:decoration-[#C96342] transition-colors"
+                                    >
+                                        {c.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
             <Footer />
             <WhatsAppButton />
         </>

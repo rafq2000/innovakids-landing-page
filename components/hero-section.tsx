@@ -8,7 +8,7 @@ const tools = [
 ]
 
 const testimonialPull = {
-  quote: "Los $297 mejor invertidos de mi vida.",
+  quote: "El mejor dinero invertido en mi vida.",
   name: "Laura M.",
   role: "Madre de Tomás, 9 años · Chile",
   image:
@@ -130,7 +130,7 @@ export function HeroSection() {
                 href="#inversion"
                 className="inline-flex items-center gap-2 px-2 py-3 text-[var(--ink)] link-ink"
               >
-                Ver inversión <span aria-hidden>·</span> $297 USD
+                Ver qué incluye <span aria-hidden>→</span>
               </a>
             </div>
             <p className="mt-4 font-mono-accent text-[11px] uppercase tracking-[0.18em] text-[var(--ink-muted)]">
@@ -268,7 +268,7 @@ export function HeroSection() {
             </p>
             <HeroCountdown />
             <p className="mt-6 font-display italic text-lg text-[var(--ink-soft)] max-w-[40ch]">
-              Después, la siguiente cohorte abre en septiembre.
+              Después, la siguiente cohorte abre recién en septiembre.
             </p>
           </div>
           <aside className="col-span-12 md:col-span-5 md:border-l md:border-[var(--ink)]/15 md:pl-10 grid grid-cols-3 gap-6 items-start">

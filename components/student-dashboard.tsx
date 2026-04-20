@@ -10,6 +10,7 @@ import { ClassList } from "./class-list"
 import { QuestionsList } from "./questions-list"
 import { createClient } from "@/lib/supabase/client"
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 
 interface StudentDashboardProps {
   user: any
@@ -34,7 +35,7 @@ export function StudentDashboard({ user, profile, enrollments }: StudentDashboar
       <header className="border-b bg-white/80 backdrop-blur-sm">
         <div className="container mx-auto flex items-center justify-between px-4 py-4">
           <div className="flex items-center gap-4">
-            <img src="/logo-innovakids.png" alt="Innovakids" className="h-12" />
+            <Image src="/logo-innovakids.png" alt="Innovakids" width={140} height={48} className="h-12 w-auto" />
             <div>
               <h1 className="text-xl font-bold">Panel de Alumno</h1>
               <p className="text-sm text-muted-foreground">{profile?.full_name}</p>

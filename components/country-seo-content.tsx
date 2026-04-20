@@ -174,51 +174,90 @@ export function CountrySEOContent({ country }: CountrySEOContentProps) {
     // Fallback genérico para países sin contenido específico
     if (!content) {
         return (
-            <section className="py-16 bg-background/50">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto prose prose-invert">
-                        <h2 className="text-3xl font-bold text-white mb-6">
-                            Cursos de IA para {country.childTerm} en {country.name}: Innovación Digital Online
-                        </h2>
-                        <p className="text-gray-300 text-lg">
-                            InnovaKids es la escuela #1 de inteligencia artificial para {country.childTerm} en {country.name}.
-                            Grupos de máximo 5 alumnos, clases en vivo y garantía de 10 días. Tu hijo aprende a crear apps,
-                            arte y música con IA en 5 semanas.
+            <section className="bg-[#F5F1E8] text-[#2F2F2C] border-t border-[#2F2F2C]/10 py-24 md:py-32">
+                <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+                    <div className="flex items-center gap-5 mb-10">
+                        <div className="h-px w-12 bg-[#C96342]" />
+                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                            Guía local · {country.name}
                         </p>
                     </div>
+                    <h2
+                        className="text-4xl sm:text-5xl md:text-6xl leading-[1.02] tracking-[-0.02em] font-normal mb-8 max-w-[28ch]"
+                        style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                    >
+                        Cursos de IA para <em className="italic text-[#C96342]">{country.childTerm}</em> en {country.name}.
+                    </h2>
+                    <p className="text-lg text-[#5A5751] leading-relaxed max-w-[62ch]">
+                        InnovaKids es la escuela #1 de inteligencia artificial para {country.childTerm} en {country.name}.
+                        Grupos de máximo 5 alumnos, clases en vivo y garantía de 10 días. Tu hijo aprende a crear apps,
+                        arte y música con IA en 5 semanas.
+                    </p>
                 </div>
             </section>
         )
     }
 
     return (
-        <section className="py-16 bg-background/50">
-            <div className="container mx-auto px-4">
-                <div className="max-w-4xl mx-auto">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 text-center">{content.h2}</h2>
-
-                    <p className="text-gray-300 text-lg leading-relaxed mb-10 text-center max-w-3xl mx-auto">
-                        {content.intro}
+        <section className="bg-[#F5F1E8] text-[#2F2F2C] border-t border-[#2F2F2C]/10 py-28 md:py-40">
+            <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+                <div className="flex items-center gap-5 mb-12">
+                    <div className="h-px w-12 bg-[#C96342]" />
+                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                        {country.flag} Guía local · {country.name}
                     </p>
+                </div>
 
-                    <div className="space-y-8">
-                        {content.sections.map((section, i) => (
-                            <div key={i} className="bg-white/5 border border-white/10 rounded-xl p-6 md:p-8">
-                                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">{section.h3}</h3>
-                                <p className="text-gray-300 leading-relaxed">{section.text}</p>
+                <h2
+                    className="text-4xl sm:text-5xl md:text-6xl leading-[1.02] tracking-[-0.02em] font-normal mb-10 max-w-[32ch]"
+                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                >
+                    {content.h2}
+                </h2>
+
+                <p className="text-lg md:text-xl text-[#5A5751] leading-relaxed mb-20 max-w-[70ch]">
+                    {content.intro}
+                </p>
+
+                <div className="divide-y divide-[#2F2F2C]/12 border-y border-[#2F2F2C]/12">
+                    {content.sections.map((section, i) => (
+                        <article key={i} className="grid md:grid-cols-12 gap-8 md:gap-12 py-12 md:py-16">
+                            <div className="md:col-span-1">
+                                <span className="font-mono-accent text-[11px] tracking-[0.22em] text-[#C96342] font-semibold">
+                                    {(i + 1).toString().padStart(2, "0")}
+                                </span>
                             </div>
-                        ))}
-                    </div>
+                            <h3
+                                className="md:col-span-5 text-2xl md:text-3xl leading-[1.15] tracking-tight text-[#2F2F2C]"
+                                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                            >
+                                {section.h3}
+                            </h3>
+                            <p className="md:col-span-6 text-base md:text-lg text-[#5A5751] leading-relaxed">
+                                {section.text}
+                            </p>
+                        </article>
+                    ))}
+                </div>
 
-                    {/* Country CTA */}
-                    <div className="mt-10 text-center p-6 bg-gradient-to-r from-primary/10 to-purple-500/10 border border-primary/30 rounded-2xl">
-                        <p className="text-white font-semibold text-lg mb-2">
-                            {country.flag} ¿Listo para inscribir a tu hijo en {country.name}?
+                <div className="mt-20 flex flex-col md:flex-row md:items-center md:justify-between gap-6 border-t border-[#2F2F2C]/12 pt-12">
+                    <div>
+                        <p
+                            className="text-2xl md:text-3xl leading-snug tracking-tight text-[#2F2F2C]"
+                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                        >
+                            {country.flag} ¿Listo para inscribir a tu hijo en <em className="italic text-[#C96342]">{country.name}</em>?
                         </p>
-                        <p className="text-gray-400 text-sm">
-                            Agenda una evaluación gratuita hoy. Sin compromisos. Garantía de 10 días.
+                        <p className="text-sm text-[#5A5751] mt-2">
+                            Agenda una evaluación gratuita. Sin compromiso. Garantía de 10 días.
                         </p>
                     </div>
+                    <a
+                        href="#sesion-estrategica"
+                        className="inline-flex items-center bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-7 py-4 text-base font-semibold rounded-sm transition-colors shrink-0"
+                    >
+                        Ver horarios disponibles →
+                    </a>
                 </div>
             </div>
         </section>

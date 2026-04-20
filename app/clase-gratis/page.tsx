@@ -2,10 +2,8 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { CalendlySection } from "@/components/calendly-section"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
-import { ArrowLeft, CheckCircle2, Clock, Video, Users, Star } from "lucide-react"
+import { ArrowLeft, Clock, Video, Users, Star } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -84,6 +82,31 @@ const jsonLd = {
   isAccessibleForFree: true,
 }
 
+const benefits = [
+  {
+    title: "Demostración de IA en vivo",
+    description: "Tu hijo experimenta cómo funcionan las herramientas de IA de forma práctica y guiada.",
+  },
+  {
+    title: "Evaluación personalizada",
+    description: "Analizamos el nivel e intereses y recomendamos el mejor camino de aprendizaje para él o ella.",
+  },
+  {
+    title: "Reunión informativa para padres",
+    description: "Conoce el programa completo, la metodología ERICA y los resultados reales de nuestras familias.",
+  },
+  {
+    title: "Resolución de todas tus dudas",
+    description: "Responderemos preguntas sobre horarios, precios, garantías y metodología, sin presión de venta.",
+  },
+]
+
+const testimonials = [
+  { quote: "Mi hijo quedó fascinado con la sesión. En 20 minutos ya quería inscribirse al curso completo.", author: "Carolina M.", city: "Santiago, Chile" },
+  { quote: "Excelente la evaluación. Nos dieron un plan personalizado para mi hija de 10 años.", author: "Roberto P.", city: "CDMX, México" },
+  { quote: "Sin presión de venta, súper profesionales. Recomendadísimo.", author: "Lucía G.", city: "Bogotá, Colombia" },
+]
+
 export default function ClaseGratisPage() {
   return (
     <>
@@ -92,188 +115,149 @@ export default function ClaseGratisPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="min-h-screen bg-background pt-24">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <Link href="/">
-            <Button variant="ghost" className="text-white hover:text-[#4DD0E1] mb-8">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Volver al inicio
-            </Button>
+      <main className="min-h-screen bg-[#FAF7EF] pt-28 pb-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-[#1A1714]/55 font-semibold hover:text-[#C96342] transition-colors mb-10"
+          >
+            <ArrowLeft className="w-3.5 h-3.5" />
+            Volver al inicio
           </Link>
 
-          {/* Hero */}
-          <div className="mb-16 text-center">
-            <div className="inline-flex items-center gap-2 bg-green-500/10 border border-green-500/30 rounded-full px-5 py-2 mb-6">
-              <span className="text-green-400 font-semibold text-sm uppercase tracking-wide">
-                100% Gratis - Cupos Limitados
+          {/* Editorial hero */}
+          <header className="max-w-3xl mb-16 border-b border-[#1A1714]/12 pb-12">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+              <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+                100% Gratis · Cupos limitados
               </span>
             </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Agenda una{" "}
-              <span className="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                Sesion Diagnostica Gratuita
-              </span>
-              <br />
-              para tu Hijo
+            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[0.98] text-[#1A1714] tracking-tight text-balance mb-7">
+              Una sesión diagnóstica de 20 minutos que le abrirá la puerta a tu hijo al mundo de la IA.
             </h1>
-            <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-              En solo 20 minutos descubriras como tu hijo puede aprender Inteligencia Artificial
-              de forma practica y divertida. Sin costo. Sin compromiso.
+            <p className="text-lg md:text-xl text-[#1A1714]/70 leading-relaxed text-pretty font-light max-w-2xl">
+              Evaluamos su nivel, le mostramos herramientas reales en vivo y salen con un plan de aprendizaje
+              personalizado. Sin costo. Sin compromiso.
             </p>
-          </div>
+          </header>
 
-          {/* Benefits Grid */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <div>
-              <h2 className="text-2xl font-bold text-white mb-6">
-                Que incluye tu sesion gratuita?
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 mb-20">
+            <div className="lg:col-span-7">
+              <div className="flex items-center gap-3 mb-8">
+                <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+                  Qué incluye
+                </span>
+              </div>
+              <h2 className="font-serif text-3xl sm:text-4xl leading-tight text-[#1A1714] tracking-tight text-balance mb-10">
+                Una conversación diseñada para que te lleves respuestas, no una venta.
               </h2>
-              <div className="space-y-5">
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#4DD0E1] flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-white font-bold mb-1">Demostracion de IA en vivo</h3>
-                    <p className="text-gray-300 text-sm">
-                      Tu hijo experimentara como funcionan las herramientas de IA de forma practica
-                    </p>
-                  </div>
-                </div>
 
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#4DD0E1] flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-white font-bold mb-1">Evaluacion personalizada</h3>
-                    <p className="text-gray-300 text-sm">
-                      Analizamos el nivel e intereses de tu hijo y recomendamos el mejor camino de aprendizaje
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#4DD0E1] flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-white font-bold mb-1">Reunion informativa para padres</h3>
-                    <p className="text-gray-300 text-sm">
-                      Conoce el programa completo, metodologia y beneficios del curso
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#4DD0E1] flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="text-white font-bold mb-1">Resolucion de todas tus dudas</h3>
-                    <p className="text-gray-300 text-sm">
-                      Responderemos todas tus preguntas sobre horarios, precios y metodologia
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Info Cards */}
-              <div className="grid grid-cols-2 gap-4 mt-8">
-                <Card className="bg-[#1a2942] border-[#2a3952]">
-                  <CardContent className="p-5">
-                    <div className="flex items-center gap-3 mb-2">
-                      <Clock className="w-5 h-5 text-[#4DD0E1]" />
-                      <h3 className="text-white font-bold text-sm">Duracion</h3>
+              <ol className="divide-y divide-[#1A1714]/12 border-y border-[#1A1714]/12">
+                {benefits.map((item, i) => (
+                  <li key={item.title} className="flex gap-6 py-7">
+                    <span className="font-serif text-3xl text-[#C96342] leading-none shrink-0 w-12">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <div>
+                      <h3 className="font-serif text-xl text-[#1A1714] mb-2 leading-snug">
+                        {item.title}
+                      </h3>
+                      <p className="text-[#1A1714]/70 leading-relaxed">
+                        {item.description}
+                      </p>
                     </div>
-                    <p className="text-gray-300 text-sm">20 minutos</p>
-                  </CardContent>
-                </Card>
+                  </li>
+                ))}
+              </ol>
 
-                <Card className="bg-[#1a2942] border-[#2a3952]">
-                  <CardContent className="p-5">
-                    <div className="flex items-center gap-3 mb-2">
-                      <Video className="w-5 h-5 text-[#4DD0E1]" />
-                      <h3 className="text-white font-bold text-sm">Modalidad</h3>
+              {/* Logistics grid */}
+              <dl className="grid grid-cols-2 gap-x-8 gap-y-8 mt-14 border-t border-[#1A1714]/12 pt-10">
+                {[
+                  { icon: Clock, label: "Duración", value: "20 minutos" },
+                  { icon: Video, label: "Modalidad", value: "Online vía Zoom" },
+                  { icon: Users, label: "Edades", value: "8 a 17 años" },
+                  { icon: Star, label: "Precio", value: "USD $0" },
+                ].map(({ icon: Icon, label, value }) => (
+                  <div key={label}>
+                    <div className="flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-[#C96342] font-semibold mb-2">
+                      <Icon className="w-3.5 h-3.5" strokeWidth={2.5} />
+                      {label}
                     </div>
-                    <p className="text-gray-300 text-sm">100% Online via Zoom</p>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-[#1a2942] border-[#2a3952]">
-                  <CardContent className="p-5">
-                    <div className="flex items-center gap-3 mb-2">
-                      <Users className="w-5 h-5 text-[#4DD0E1]" />
-                      <h3 className="text-white font-bold text-sm">Edades</h3>
-                    </div>
-                    <p className="text-gray-300 text-sm">8 a 14 anos</p>
-                  </CardContent>
-                </Card>
-
-                <Card className="bg-[#1a2942] border-[#2a3952]">
-                  <CardContent className="p-5">
-                    <div className="flex items-center gap-3 mb-2">
-                      <Star className="w-5 h-5 text-[#4DD0E1]" />
-                      <h3 className="text-white font-bold text-sm">Precio</h3>
-                    </div>
-                    <p className="text-gray-300 text-sm">$0 - Totalmente gratis</p>
-                  </CardContent>
-                </Card>
-              </div>
+                    <dd className="font-serif text-2xl text-[#1A1714] leading-tight">
+                      {value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
             </div>
 
-            {/* Social Proof */}
-            <div>
-              <Card className="bg-gradient-to-br from-[#1a2942] to-[#0f1f3a] border-[#4DD0E1]/20 mb-6">
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-4 text-center">
-                    Lo que dicen los padres
-                  </h3>
-                  <div className="space-y-4">
-                    <div className="bg-[#0a1628]/50 p-4 rounded-lg border border-[#2a3952]">
-                      <p className="text-gray-300 text-sm italic mb-2">
-                        &quot;Mi hijo quedo fascinado con la sesion. En 20 minutos ya queria inscribirse al curso completo.&quot;
-                      </p>
-                      <p className="text-[#4DD0E1] text-xs font-semibold">- Carolina M., Chile</p>
-                    </div>
-                    <div className="bg-[#0a1628]/50 p-4 rounded-lg border border-[#2a3952]">
-                      <p className="text-gray-300 text-sm italic mb-2">
-                        &quot;Excelente la evaluacion. Nos dieron un plan personalizado para mi hija de 10 anos.&quot;
-                      </p>
-                      <p className="text-[#4DD0E1] text-xs font-semibold">- Roberto P., Mexico</p>
-                    </div>
-                    <div className="bg-[#0a1628]/50 p-4 rounded-lg border border-[#2a3952]">
-                      <p className="text-gray-300 text-sm italic mb-2">
-                        &quot;Sin presion de venta, super profesionales. Recomendadisimo.&quot;
-                      </p>
-                      <p className="text-[#4DD0E1] text-xs font-semibold">- Lucia G., Colombia</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+            {/* Testimonials rail */}
+            <aside className="lg:col-span-5">
+              <div className="sticky top-28 bg-[#F2EDE0] p-8 lg:p-10 border-l-2 border-[#C96342]">
+                <div className="flex items-center gap-3 mb-6">
+                  <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+                    Testimonios
+                  </span>
+                </div>
+                <h3 className="font-serif text-2xl text-[#1A1714] mb-8 leading-tight">
+                  Lo que cuentan las familias tras la sesión.
+                </h3>
+                <div className="space-y-8">
+                  {testimonials.map((t) => (
+                    <figure key={t.author} className="border-t border-[#1A1714]/15 pt-6 first:border-t-0 first:pt-0">
+                      <blockquote className="font-serif text-lg text-[#1A1714] leading-snug italic">
+                        &ldquo;{t.quote}&rdquo;
+                      </blockquote>
+                      <figcaption className="mt-3 text-[11px] tracking-[0.18em] uppercase text-[#1A1714]/55 font-semibold">
+                        {t.author} · {t.city}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
 
-              <div className="bg-[#4DD0E1]/10 border border-[#4DD0E1]/30 rounded-xl p-5">
-                <p className="text-sm text-gray-300 text-center">
-                  <strong className="text-white">+527 familias</strong> ya confiaron en InnovaKids.
-                  <br />
-                  Agenda hoy y asegura tu cupo.
-                </p>
+                <div className="mt-10 pt-6 border-t border-[#1A1714]/15">
+                  <p className="text-sm text-[#1A1714]/75 leading-relaxed">
+                    <strong className="text-[#1A1714]">+527 familias</strong> ya confiaron en InnovaKids.
+                    Agenda hoy y asegura tu cupo.
+                  </p>
+                </div>
               </div>
-            </div>
+            </aside>
           </div>
 
           {/* WhatsApp CTA */}
-          <Card className="bg-gradient-to-r from-[#4DD0E1]/20 to-[#00BCD4]/20 border-[#4DD0E1]/30 mb-8">
-            <CardContent className="p-8 text-center">
-              <h2 className="text-2xl font-bold text-white mb-4">
-                Prefieres hablar directamente con nosotros?
-              </h2>
-              <p className="text-gray-300 mb-6">
-                Contactanos por WhatsApp y agendamos tu sesion personalizada
-              </p>
-              <a
-                href="https://wa.me/56964754219?text=Hola,%20quiero%20agendar%20una%20sesi%C3%B3n%20diagn%C3%B3stica%20gratuita%20para%20mi%20hijo"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button className="bg-[#25D366] hover:bg-[#20BA5A] text-white px-8 py-6 text-lg font-bold">
-                  CONTACTAR POR WHATSAPP
-                </Button>
-              </a>
-            </CardContent>
-          </Card>
+          <section className="border-y-2 border-[#1A1714]/15 py-12 mb-4">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+              <div className="md:col-span-7">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+                  <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+                    Canal directo
+                  </span>
+                </div>
+                <h2 className="font-serif text-3xl sm:text-4xl leading-tight text-[#1A1714] tracking-tight text-balance">
+                  ¿Prefieres conversar por WhatsApp antes de agendar?
+                </h2>
+                <p className="mt-4 text-[#1A1714]/70 leading-relaxed">
+                  Nuestro equipo académico responde de 9am a 8pm hora LATAM. Sin bots.
+                </p>
+              </div>
+              <div className="md:col-span-5 md:text-right">
+                <a
+                  href="https://wa.me/56964754219?text=Hola,%20quiero%20agendar%20una%20sesi%C3%B3n%20diagn%C3%B3stica%20gratuita%20para%20mi%20hijo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#1EB055] text-white px-8 py-5 text-base font-semibold tracking-wide transition-colors"
+                >
+                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+                    <path d="M20.52 3.48A11.86 11.86 0 0 0 12.02 0C5.43 0 .08 5.35.07 11.94a11.92 11.92 0 0 0 1.6 5.96L0 24l6.24-1.63a11.94 11.94 0 0 0 5.78 1.47h.01c6.58 0 11.93-5.35 11.94-11.93a11.85 11.85 0 0 0-3.45-8.43zM12.03 21.79h-.01a9.92 9.92 0 0 1-5.05-1.38l-.36-.21-3.7.97.99-3.6-.24-.37a9.9 9.9 0 1 1 18.36-5.27c0 5.47-4.45 9.86-9.99 9.86zm5.46-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.47-2.4-1.48-.89-.8-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.21 5.1 4.5.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z" />
+                  </svg>
+                  Hablar por WhatsApp
+                </a>
+              </div>
+            </div>
+          </section>
         </div>
 
         {/* Calendly Booking Section */}

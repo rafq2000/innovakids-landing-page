@@ -1,16 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  // TypeScript + ESLint build-time safety. Keep these off so real bugs surface in CI.
+  // typescript.ignoreBuildErrors / eslint.ignoreDuringBuilds intentionally removed (2026-04).
   images: {
     unoptimized: false,
     formats: ['image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.public.blob.vercel-storage.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'hebbkx1anhila5yf.public.blob.vercel-storage.com',
+      },
+    ],
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production' ? { exclude: ['error'] } : false,
@@ -37,11 +43,11 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.stripe.com https://www.paypal.com https://www.googletagmanager.com https://connect.facebook.net https://assets.calendly.com https://cdn.jsdelivr.net https://va.vercel-scripts.com",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.stripe.com https://www.paypal.com https://www.googletagmanager.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://connect.facebook.net https://assets.calendly.com https://cdn.jsdelivr.net https://va.vercel-scripts.com",
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com",
               "img-src 'self' data: blob: https: http:",
               "font-src 'self' https://fonts.gstatic.com data:",
-              "connect-src 'self' https://*.supabase.co https://api.stripe.com https://api.emailjs.com https://api.mercadopago.com https://www.google-analytics.com https://calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com",
+              "connect-src 'self' https://*.supabase.co https://api.stripe.com https://api.emailjs.com https://api.mercadopago.com https://www.google-analytics.com https://www.google.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com",
               "frame-src 'self' https://js.stripe.com https://www.paypal.com https://calendly.com https://www.youtube.com https://www.google.com",
               "object-src 'none'",
               "base-uri 'self'",
@@ -176,18 +182,29 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/co/metodologia-aprender-creando',
-        destination: '/metodologia-aprender-creando',
+        source: '/blog/como-ensenar-ia-ninos',
+        destination: '/blog/inteligencia-artificial-para-ninos',
         permanent: true,
       },
       {
-        source: '/co/resultados',
+        source: '/blog/herramientas-ia-educativas-ninos',
+        destination: '/blog',
+        permanent: true,
+      },
+      // Country subpages → canonical root pages (static country folders block [country] dynamic route)
+      {
+        source: '/:country/programa',
+        destination: '/programa',
+        permanent: true,
+      },
+      {
+        source: '/:country/resultados',
         destination: '/resultados',
         permanent: true,
       },
       {
-        source: '/co/programa',
-        destination: '/clases-ia-ninos',
+        source: '/:country/metodologia-aprender-creando',
+        destination: '/metodologia-aprender-creando',
         permanent: true,
       },
       // Malformed URLs
