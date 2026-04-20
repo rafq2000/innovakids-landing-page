@@ -5,18 +5,19 @@ interface PricingSectionProps {
 }
 
 export function PricingSection({ country }: PricingSectionProps) {
-  const formatPrice = (amount: number) => {
-    if (!country) return `$${amount}`
-    if (country.currency === "USD" || country.currency === "EUR") {
-      return `${country.currencySymbol}${amount}`
-    }
-    const rate = country.priceLocal / 297
-    const local = Math.round((amount * rate) / 100) * 100
-    return `${country.currencySymbol}${local.toLocaleString()}`
-  }
+  // Primary price is always USD. For non-USD countries we also show the
+  // approximate local-currency figure underneath so parents see what they'll
+  // actually be charged in their card's currency.
+  const price = "$297"
+  const currencyCode = "USD"
 
-  const currencyCode = country?.currency ?? "USD"
-  const price = formatPrice(297)
+  const localApprox = (() => {
+    if (!country) return null
+    if (country.currency === "USD") return null
+    const rate = country.priceLocal / 297
+    const local = Math.round((297 * rate) / 100) * 100
+    return `aprox. ${country.currencySymbol}${local.toLocaleString()} ${country.currency}`
+  })()
 
   const features = [
     "10 clases en vivo, grupos máximo 5 niños",
@@ -75,6 +76,9 @@ export function PricingSection({ country }: PricingSectionProps) {
                 {currencyCode}
               </span>
             </div>
+            {localApprox && (
+              <p className="text-sm text-[#5A5751] mb-2 italic">{localApprox}</p>
+            )}
             <p className="text-sm text-[#5A5751] mb-3">
               Pago único · sin mensualidades · sin letra chica.
             </p>

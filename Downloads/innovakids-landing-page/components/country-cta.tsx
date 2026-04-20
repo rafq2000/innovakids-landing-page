@@ -41,11 +41,15 @@ export function CountryCTA({ country }: CountryCTAProps) {
         <div className="bg-card border rounded-2xl p-8 max-w-md mx-auto mb-8">
           <p className="text-sm text-muted-foreground mb-2">Inversión programa completo</p>
           <p className="text-4xl font-bold text-primary mb-2">
-            {country.currencySymbol}
-            {country.priceLocal.toLocaleString()} {country.currency}
+            ${country.priceUSD} USD
           </p>
+          {country.currency !== "USD" && (
+            <p className="text-sm text-muted-foreground italic mb-2">
+              aprox. {country.currencySymbol}{country.priceLocal.toLocaleString()} {country.currency}
+            </p>
+          )}
           <p className="text-sm text-muted-foreground mb-6">
-            ~${country.priceUSD} USD | Pagos con {country.paymentMethods[0]}
+            Pagos con {country.paymentMethods[0]}
           </p>
 
           <Button size="lg" onClick={scrollToBooking} className="w-full text-lg py-6 rounded-full">

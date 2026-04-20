@@ -122,7 +122,7 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
     },
     {
       question: `¿Cuánto cuesta el curso de IA para ${country.childTerm} en ${country.name}?`,
-      answer: `El precio para familias de ${country.name} es de ${country.priceDisplay} (${country.priceUSD} USD). ${country.faqPaymentAnswer}`,
+      answer: `El precio para familias de ${country.name} es de ${country.priceDisplay}. ${country.faqPaymentAnswer}`,
     },
     {
       question: `¿A qué hora son las clases para ${country.childTerm} de ${country.name}?`,
