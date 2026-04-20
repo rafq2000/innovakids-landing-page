@@ -64,7 +64,7 @@ export function PricingSection({ country }: PricingSectionProps) {
             >
               El fundamento obligatorio para dominar la IA.
             </h3>
-            <div className="flex items-baseline gap-3 mb-4">
+            <div className="flex items-baseline gap-3 mb-2">
               <span
                 className="text-7xl md:text-[88px] leading-none font-normal text-[#2F2F2C]"
                 style={{ fontFamily: "'Charter', 'Georgia', serif" }}
@@ -75,16 +75,38 @@ export function PricingSection({ country }: PricingSectionProps) {
                 {currencyCode}
               </span>
             </div>
-            <p className="text-sm text-[#5A5751] mb-10">
-              Pago único. Sin mensualidades. Sin letra chica.
+            <p className="text-sm text-[#5A5751] mb-3">
+              Pago único · sin mensualidades · sin letra chica.
+            </p>
+            <p
+              className="text-xs text-[#5A5751] mb-10"
+              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            >
+              o <strong className="text-[#2F2F2C]">3 cuotas sin interés</strong> con tarjeta de crédito.
             </p>
 
             <a
               href="/pagar?option=explorer"
-              className="inline-flex items-center justify-center bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm transition-colors"
+              className="group inline-flex items-center justify-center gap-3 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm shadow-[0_10px_30px_-12px_rgba(201,99,66,0.55)] hover:shadow-[0_14px_40px_-12px_rgba(201,99,66,0.7)] transition-all duration-300"
             >
-              Inscribir a mi hijo
+              <span>Inscribir a mi hijo</span>
+              <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>→</span>
             </a>
+
+            <div
+              className="mt-5 flex items-center gap-4 text-[11px] uppercase tracking-[0.16em] text-[#5A5751]"
+              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+            >
+              <span className="flex items-center gap-1.5">
+                <span className="relative flex w-2 h-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C96342] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C96342]"></span>
+                </span>
+                <span><strong className="text-[#2F2F2C] font-semibold">7</strong> cupos restantes</span>
+              </span>
+              <span className="opacity-40">·</span>
+              <span>Pago seguro 🔒</span>
+            </div>
           </div>
 
           {/* Right: what's included */}
@@ -110,8 +132,49 @@ export function PricingSection({ country }: PricingSectionProps) {
           </div>
         </div>
 
+        {/* Bonuses */}
+        <div className="mt-24 pt-12 border-t border-[#2F2F2C]/12">
+          <div className="grid md:grid-cols-12 gap-10">
+            <div className="md:col-span-4">
+              <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-2">
+                Bonos incluidos
+              </p>
+              <p
+                className="text-sm text-[#5A5751] leading-relaxed"
+                style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+              >
+                Solo para esta cohorte. No se cobran aparte.
+              </p>
+            </div>
+            <div className="md:col-span-8 grid sm:grid-cols-2 gap-6">
+              {[
+                { tag: "Bono 01", title: "Guía para padres: cómo usar IA en casa", value: "$47" },
+                { tag: "Bono 02", title: "Acceso al grupo privado de familias", value: "$97" },
+                { tag: "Bono 03", title: "30 prompts probados para tareas escolares", value: "$27" },
+                { tag: "Bono 04", title: "Sesión 1:1 con mentor (primera semana)", value: "$80" },
+              ].map((b, i) => (
+                <div key={i} className="border-t border-[#2F2F2C]/12 pt-4">
+                  <div
+                    className="flex items-center justify-between text-[10px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-2"
+                    style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
+                  >
+                    <span>{b.tag}</span>
+                    <span className="text-[#5A5751] line-through opacity-60">valor {b.value}</span>
+                  </div>
+                  <p
+                    className="text-base md:text-lg text-[#2F2F2C] leading-snug"
+                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                  >
+                    {b.title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* Guarantee */}
-        <div className="mt-24 pt-12 border-t border-[#2F2F2C]/12 grid md:grid-cols-12 gap-10">
+        <div className="mt-20 pt-12 border-t border-[#2F2F2C]/12 grid md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
             <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
               Garantía
