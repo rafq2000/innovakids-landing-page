@@ -66,6 +66,10 @@ const CurriculumSection = dynamic(
   () => import("@/components/curriculum-section").then((mod) => ({ default: mod.CurriculumSection })),
   { ssr: true },
 )
+const ValuePropositionSection = dynamic(
+  () => import("@/components/value-proposition-section").then((mod) => ({ default: mod.ValuePropositionSection })),
+  { ssr: true },
+)
 const PricingSection = dynamic(
   () => import("@/components/pricing-section").then((mod) => ({ default: mod.PricingSection })),
   { ssr: true },
@@ -170,7 +174,12 @@ export default function Home() {
 
         <div className="h-24" />
 
-        {/* 3 · QUÉ APRENDE — currículum concreto */}
+        {/* 3 · PROPUESTA DE VALOR — oferta completa con iconografía */}
+        <ValuePropositionSection />
+
+        <div className="h-24" />
+
+        {/* 4 · QUÉ APRENDE — currículum concreto */}
         <CurriculumSection />
 
         <div className="h-24" />
