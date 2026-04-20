@@ -1,108 +1,102 @@
 import Link from "next/link"
-import { Home, Search, ArrowRight, MessageCircle } from "lucide-react"
-import { Button } from "@/components/ui/button"
+
+const countries = [
+    { code: "mx", name: "México" },
+    { code: "co", name: "Colombia" },
+    { code: "ar", name: "Argentina" },
+    { code: "pe", name: "Perú" },
+    { code: "cl", name: "Chile" },
+    { code: "es", name: "España" },
+    { code: "us", name: "USA" },
+    { code: "ec", name: "Ecuador" },
+]
 
 export default function NotFound() {
-  return (
-    <div className="min-h-screen bg-[#030712] flex items-center justify-center px-4">
-      <div className="max-w-2xl mx-auto text-center">
-        {/* Animated 404 */}
-        <div className="relative mb-8">
-          <h1 className="text-[150px] md:text-[200px] font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600 leading-none select-none">
-            404
-          </h1>
-          <div className="absolute inset-0 text-[150px] md:text-[200px] font-black text-cyan-400/10 blur-2xl leading-none select-none">
-            404
-          </div>
-        </div>
+    return (
+        <div className="min-h-screen bg-[#FAF7EF] text-[#1A1714] flex items-center">
+            <div className="max-w-[1100px] mx-auto px-6 md:px-10 py-24 w-full">
+                <div className="grid lg:grid-cols-12 gap-12 items-start">
+                    <div className="lg:col-span-5">
+                        <div className="flex items-center gap-3 mb-6">
+                            <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                Error 404
+                            </span>
+                        </div>
+                        <p
+                            className="text-[140px] md:text-[200px] leading-[0.85] tracking-[-0.04em] text-[#C96342]"
+                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                        >
+                            404
+                        </p>
+                    </div>
 
-        <h2 className="text-2xl md:text-4xl font-bold text-white mb-4">Página no encontrada</h2>
+                    <div className="lg:col-span-7">
+                        <h1
+                            className="text-5xl md:text-6xl leading-[1] tracking-[-0.02em] text-[#1A1714]"
+                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                        >
+                            Página <em className="italic text-[#C96342]">no encontrada</em>.
+                        </h1>
+                        <p className="mt-6 text-xl text-[#1A1714]/70 leading-relaxed max-w-[52ch]">
+                            Lo sentimos, la página que buscas no existe o ha sido movida. Te dejamos aquí los atajos más
+                            útiles.
+                        </p>
 
-        <p className="text-lg text-gray-400 mb-8 max-w-md mx-auto">
-          Lo sentimos, la página que buscas no existe o ha sido movida. Pero no te preocupes, te ayudamos a encontrar lo
-          que necesitas.
-        </p>
+                        <div className="mt-10 grid sm:grid-cols-2 gap-px bg-[#1A1714]/12 border border-[#1A1714]/12">
+                            <Link href="/" className="bg-[#FAF7EF] p-6 hover:bg-[#F2EDE0]/50 transition-colors group">
+                                <p className="text-[11px] uppercase tracking-[0.24em] text-[#C96342]/70 group-hover:text-[#C96342] font-semibold mb-2">
+                                    Volver
+                                </p>
+                                <p className="text-xl text-[#1A1714] mb-1" style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
+                                    Ir al inicio
+                                </p>
+                                <p className="text-[14px] text-[#1A1714]/70">Página principal InnovaKids.</p>
+                            </Link>
+                            <Link href="/#programa" className="bg-[#FAF7EF] p-6 hover:bg-[#F2EDE0]/50 transition-colors group">
+                                <p className="text-[11px] uppercase tracking-[0.24em] text-[#C96342]/70 group-hover:text-[#C96342] font-semibold mb-2">
+                                    Programa
+                                </p>
+                                <p className="text-xl text-[#1A1714] mb-1" style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
+                                    Ver el currículum
+                                </p>
+                                <p className="text-[14px] text-[#1A1714]/70">Cursos de IA para niños.</p>
+                            </Link>
+                        </div>
 
-        {/* Quick Links */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
-          <Link href="/">
-            <Button
-              variant="outline"
-              className="w-full h-auto py-4 border-cyan-500/30 hover:border-cyan-400 hover:bg-cyan-400/10 transition-all group bg-transparent"
-            >
-              <Home className="h-5 w-5 mr-3 text-cyan-400" />
-              <div className="text-left">
-                <div className="font-semibold text-white group-hover:text-cyan-400 transition-colors">Ir al Inicio</div>
-                <div className="text-xs text-gray-500">Página principal</div>
-              </div>
-            </Button>
-          </Link>
+                        <section className="mt-12">
+                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+                                Busca tu país
+                            </p>
+                            <ul className="flex flex-wrap gap-x-6 gap-y-3">
+                                {countries.map((c) => (
+                                    <li key={c.code}>
+                                        <Link
+                                            href={`/${c.code}`}
+                                            className="text-[15px] text-[#1A1714]/80 hover:text-[#C96342] transition-colors"
+                                        >
+                                            {c.name}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
 
-          <Link href="/#programa">
-            <Button
-              variant="outline"
-              className="w-full h-auto py-4 border-cyan-500/30 hover:border-cyan-400 hover:bg-cyan-400/10 transition-all group bg-transparent"
-            >
-              <Search className="h-5 w-5 mr-3 text-cyan-400" />
-              <div className="text-left">
-                <div className="font-semibold text-white group-hover:text-cyan-400 transition-colors">
-                  Ver el Programa
+                        <aside className="mt-16 pt-8 border-t border-[#1A1714]/12 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                            <p className="text-[15px] text-[#1A1714]/70">¿Necesitas ayuda?</p>
+                            <a
+                                href="https://wa.me/56964754219?text=Hola%20InnovaKids%2C%20necesito%20ayuda"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                            >
+                                Escribir por WhatsApp
+                                <span aria-hidden>→</span>
+                            </a>
+                        </aside>
+                    </div>
                 </div>
-                <div className="text-xs text-gray-500">Cursos de IA para niños</div>
-              </div>
-            </Button>
-          </Link>
+            </div>
         </div>
-
-        {/* Country Pages */}
-        <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-white/10">
-          <h3 className="text-lg font-semibold text-white mb-4">Busca tu país</h3>
-          <div className="flex flex-wrap justify-center gap-2">
-            {[
-              { code: "mx", name: "México" },
-              { code: "co", name: "Colombia" },
-              { code: "ar", name: "Argentina" },
-              { code: "pe", name: "Perú" },
-              { code: "cl", name: "Chile" },
-              { code: "es", name: "España" },
-              { code: "us", name: "USA" },
-              { code: "ec", name: "Ecuador" },
-            ].map((country) => (
-              <Link
-                key={country.code}
-                href={`/${country.code}`}
-                className="px-3 py-1.5 bg-cyan-400/10 hover:bg-cyan-400/20 text-cyan-400 rounded-full text-sm font-medium transition-colors"
-              >
-                {country.name}
-              </Link>
-            ))}
-          </div>
-        </div>
-
-        {/* WhatsApp CTA */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <span className="text-gray-400">¿Necesitas ayuda?</span>
-          <a
-            href="https://wa.me/56964754219?text=Hola%20InnovaKids%2C%20necesito%20ayuda"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button className="bg-green-600 hover:bg-green-700 text-white">
-              <MessageCircle className="h-4 w-4 mr-2" />
-              Escríbenos por WhatsApp
-              <ArrowRight className="h-4 w-4 ml-2" />
-            </Button>
-          </a>
-        </div>
-
-        {/* SEO Content */}
-        <div className="mt-12 text-xs text-gray-600">
-          <p>
-            InnovaKids - Cursos de Inteligencia Artificial para Niños y Adolescentes | El curso #1 en Latinoamérica y
-            España
-          </p>
-        </div>
-      </div>
-    </div>
-  )
+    )
 }

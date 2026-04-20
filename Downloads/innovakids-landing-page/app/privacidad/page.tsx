@@ -1,132 +1,210 @@
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
-import { Shield, Mail, UserX, FileText } from "lucide-react"
+import Link from "next/link"
 
 export const metadata = {
-  title: "Política de Privacidad - InnovaKids LATAM",
-  description: "Conoce cómo protegemos tu información y utilizamos tu correo electrónico",
+    title: "Política de Privacidad - InnovaKids LATAM",
+    description: "Conoce cómo protegemos tu información y utilizamos tu correo electrónico",
 }
 
-export default function PrivacyPage() {
-  return (
-    <>
-      <Navigation />
-      <main className="min-h-screen bg-background pt-24 pb-16">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <div className="mb-12 text-center">
-            <Shield className="h-16 w-16 mx-auto mb-6 text-[#4DD0E1]" />
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Política de Privacidad</h1>
-            <p className="text-xl text-gray-300">Tu privacidad es importante para nosotros</p>
-            <p className="text-sm text-gray-400 mt-2">Última actualización: Marzo 2026</p>
-          </div>
-
-          <div className="bg-[#1a2942] rounded-2xl p-8 md:p-12 space-y-8 text-gray-200">
-            <section>
-              <div className="flex items-center gap-3 mb-4">
-                <Mail className="h-6 w-6 text-[#4DD0E1]" />
-                <h2 className="text-2xl font-bold text-white">Uso de tu Correo Electrónico</h2>
-              </div>
-              <p className="text-lg leading-relaxed mb-4">
-                Al proporcionar tu dirección de correo electrónico en nuestro sitio web, aceptas que Innovakids LATAM
-                pueda utilizarla para:
-              </p>
-              <ul className="space-y-3 ml-6 list-disc">
-                <li className="leading-relaxed">
-                  Enviarte información sobre nuestros cursos de Inteligencia Artificial para niños
-                </li>
-                <li className="leading-relaxed">Compartir contenido educativo y recursos gratuitos</li>
-                <li className="leading-relaxed">Notificarte sobre fechas de inicio de nuevos grupos</li>
-                <li className="leading-relaxed">Enviarte promociones y ofertas especiales</li>
-                <li className="leading-relaxed">Comunicarte novedades relevantes sobre Innovakids</li>
-              </ul>
-            </section>
-
-            <section>
-              <div className="flex items-center gap-3 mb-4">
-                <Shield className="h-6 w-6 text-[#4DD0E1]" />
-                <h2 className="text-2xl font-bold text-white">Protección de tus Datos</h2>
-              </div>
-              <p className="text-lg leading-relaxed">
-                Nos comprometemos a proteger tu información personal. Tu correo electrónico nunca será vendido,
-                alquilado o compartido con terceros para fines comerciales sin tu consentimiento explícito. Utilizamos
-                medidas de seguridad apropiadas para proteger tu información contra acceso no autorizado.
-              </p>
-            </section>
-
-            <section>
-              <div className="flex items-center gap-3 mb-4">
-                <UserX className="h-6 w-6 text-[#4DD0E1]" />
-                <h2 className="text-2xl font-bold text-white">Derecho a Darte de Baja</h2>
-              </div>
-              <p className="text-lg leading-relaxed mb-4">
-                Respetamos tu decisión si decides no recibir más comunicaciones de nuestra parte. Tienes derecho a darte
-                de baja en cualquier momento:
-              </p>
-              <ul className="space-y-3 ml-6 list-disc">
-                <li className="leading-relaxed">
-                  Haciendo clic en el enlace de "Cancelar suscripción" que aparece en todos nuestros correos
-                </li>
-                <li className="leading-relaxed">
-                  Enviando un correo a{" "}
-                  <a href="mailto:innovakidslatam@gmail.com" className="text-[#4DD0E1] hover:underline font-medium">
-                    innovakidslatam@gmail.com
-                  </a>{" "}
-                  con el asunto "Baja de lista"
-                </li>
-                <li className="leading-relaxed">
-                  Contactándonos por WhatsApp al{" "}
-                  <a href="tel:+56964754219" className="text-[#4DD0E1] hover:underline font-medium">
-                    +56 9 6475 4219
-                  </a>
-                </li>
-              </ul>
-              <p className="text-lg leading-relaxed mt-4">
-                Procesaremos tu solicitud en un plazo máximo de 48 horas y dejarás de recibir comunicaciones de
-                inmediato.
-              </p>
-            </section>
-
-            <section>
-              <div className="flex items-center gap-3 mb-4">
-                <FileText className="h-6 w-6 text-[#4DD0E1]" />
-                <h2 className="text-2xl font-bold text-white">Consentimiento</h2>
-              </div>
-              <p className="text-lg leading-relaxed">
+const sections = [
+    {
+        id: "uso-email",
+        label: "Uso de tu correo electrónico",
+        body: (
+            <>
+                <p className="text-[17px] text-[#1A1714]/85 leading-[1.75]">
+                    Al proporcionar tu dirección de correo electrónico en nuestro sitio web, aceptas que InnovaKids
+                    LATAM pueda utilizarla para:
+                </p>
+                <ul className="mt-5 space-y-3 border-t border-[#1A1714]/12">
+                    {[
+                        "Enviarte información sobre nuestros cursos de Inteligencia Artificial para niños",
+                        "Compartir contenido educativo y recursos gratuitos",
+                        "Notificarte sobre fechas de inicio de nuevos grupos",
+                        "Enviarte promociones y ofertas especiales",
+                        "Comunicarte novedades relevantes sobre InnovaKids",
+                    ].map((item) => (
+                        <li key={item} className="py-3 border-b border-[#1A1714]/12 text-[16px] text-[#1A1714]/80 leading-relaxed grid grid-cols-[auto_1fr] gap-4">
+                            <span className="text-[#C96342] leading-none mt-1">—</span>
+                            <span>{item}</span>
+                        </li>
+                    ))}
+                </ul>
+            </>
+        ),
+    },
+    {
+        id: "proteccion",
+        label: "Protección de tus datos",
+        body: (
+            <p className="text-[17px] text-[#1A1714]/85 leading-[1.75]">
+                Nos comprometemos a proteger tu información personal. Tu correo electrónico nunca será vendido, alquilado
+                o compartido con terceros para fines comerciales sin tu consentimiento explícito. Utilizamos medidas de
+                seguridad apropiadas para proteger tu información contra acceso no autorizado.
+            </p>
+        ),
+    },
+    {
+        id: "darse-de-baja",
+        label: "Derecho a darte de baja",
+        body: (
+            <>
+                <p className="text-[17px] text-[#1A1714]/85 leading-[1.75]">
+                    Respetamos tu decisión si decides no recibir más comunicaciones. Tienes derecho a darte de baja en
+                    cualquier momento:
+                </p>
+                <ul className="mt-5 space-y-3 border-t border-[#1A1714]/12">
+                    <li className="py-3 border-b border-[#1A1714]/12 text-[16px] text-[#1A1714]/80 leading-relaxed grid grid-cols-[auto_1fr] gap-4">
+                        <span className="text-[#C96342] leading-none mt-1">—</span>
+                        <span>Haciendo clic en "Cancelar suscripción" que aparece en todos nuestros correos.</span>
+                    </li>
+                    <li className="py-3 border-b border-[#1A1714]/12 text-[16px] text-[#1A1714]/80 leading-relaxed grid grid-cols-[auto_1fr] gap-4">
+                        <span className="text-[#C96342] leading-none mt-1">—</span>
+                        <span>
+                            Enviando un correo a{" "}
+                            <a href="mailto:innovakidslatam@gmail.com" className="text-[#C96342] font-semibold hover:underline">
+                                innovakidslatam@gmail.com
+                            </a>{" "}
+                            con el asunto "Baja de lista".
+                        </span>
+                    </li>
+                    <li className="py-3 border-b border-[#1A1714]/12 text-[16px] text-[#1A1714]/80 leading-relaxed grid grid-cols-[auto_1fr] gap-4">
+                        <span className="text-[#C96342] leading-none mt-1">—</span>
+                        <span>
+                            Contactándonos por WhatsApp al{" "}
+                            <a href="tel:+56964754219" className="text-[#C96342] font-semibold hover:underline">
+                                +56 9 6475 4219
+                            </a>
+                            .
+                        </span>
+                    </li>
+                </ul>
+                <p className="text-[15px] text-[#1A1714]/70 leading-relaxed mt-6">
+                    Procesaremos tu solicitud en un plazo máximo de 48 horas.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: "consentimiento",
+        label: "Consentimiento",
+        body: (
+            <p className="text-[17px] text-[#1A1714]/85 leading-[1.75]">
                 Al proporcionar tu correo electrónico a través de nuestros formularios, descargas de material gratuito o
-                solicitudes de información, confirmas que has leído y aceptado esta Política de Privacidad y consientes
+                solicitudes de información, confirmas que has leído y aceptado esta Política de Privacidad, y consientes
                 el uso de tu correo electrónico según lo descrito anteriormente.
-              </p>
-            </section>
+            </p>
+        ),
+    },
+    {
+        id: "contacto",
+        label: "Contacto",
+        body: (
+            <>
+                <p className="text-[17px] text-[#1A1714]/85 leading-[1.75]">
+                    Si tienes preguntas sobre esta Política de Privacidad o el manejo de tus datos, contáctanos:
+                </p>
+                <dl className="mt-6 border-t border-[#1A1714]/12">
+                    <div className="py-4 border-b border-[#1A1714]/12 grid grid-cols-[140px_1fr] gap-4 items-baseline">
+                        <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Email</dt>
+                        <dd className="text-[16px] text-[#1A1714]/85">
+                            <a href="mailto:innovakidslatam@gmail.com" className="text-[#C96342] font-semibold hover:underline">
+                                innovakidslatam@gmail.com
+                            </a>
+                        </dd>
+                    </div>
+                    <div className="py-4 border-b border-[#1A1714]/12 grid grid-cols-[140px_1fr] gap-4 items-baseline">
+                        <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Teléfono</dt>
+                        <dd className="text-[16px] text-[#1A1714]/85">
+                            <a href="tel:+56964754219" className="text-[#C96342] font-semibold hover:underline">
+                                +56 9 6475 4219
+                            </a>
+                        </dd>
+                    </div>
+                    <div className="py-4 border-b border-[#1A1714]/12 grid grid-cols-[140px_1fr] gap-4 items-baseline">
+                        <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Dirección</dt>
+                        <dd className="text-[16px] text-[#1A1714]/85">Diagonal Oriente 1620, Providencia, Chile</dd>
+                    </div>
+                </dl>
+            </>
+        ),
+    },
+]
 
-            <section>
-              <div className="flex items-center gap-3 mb-4">
-                <Mail className="h-6 w-6 text-[#4DD0E1]" />
-                <h2 className="text-2xl font-bold text-white">Contacto</h2>
-              </div>
-              <p className="text-lg leading-relaxed">
-                Si tienes preguntas sobre nuestra Política de Privacidad o el manejo de tus datos, no dudes en
-                contactarnos:
-              </p>
-              <div className="mt-4 space-y-2 ml-6">
-                <p>
-                  Email:{" "}
-                  <a href="mailto:innovakidslatam@gmail.com" className="text-[#4DD0E1] hover:underline font-medium">
-                    innovakidslatam@gmail.com
-                  </a>
-                </p>
-                <p>
-                  Teléfono:{" "}
-                  <a href="tel:+56964754219" className="text-[#4DD0E1] hover:underline font-medium">
-                    +56 9 6475 4219
-                  </a>
-                </p>
-                <p>Dirección: Diagonal Oriente 1620, Providencia, Chile</p>
-              </div>
-            </section>
-          </div>
-        </div>
-      </main>
-      <Footer />
-    </>
-  )
+export default function PrivacyPage() {
+    return (
+        <>
+            <Navigation />
+            <main className="min-h-screen bg-[#FAF7EF] text-[#1A1714] pt-32 pb-20">
+                <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+                    <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
+                        <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                        <span className="mx-3" aria-hidden>/</span>
+                        <span className="text-[#1A1714]">Privacidad</span>
+                    </nav>
+
+                    <header className="mb-16 pb-16 border-b border-[#1A1714]/12">
+                        <div className="flex items-center gap-3 mb-6">
+                            <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                Documento legal · última actualización: marzo 2026
+                            </span>
+                        </div>
+                        <h1
+                            className="text-5xl md:text-6xl leading-[1] tracking-[-0.02em] text-[#1A1714] max-w-[20ch]"
+                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                        >
+                            Política de <em className="italic text-[#C96342]">Privacidad</em>.
+                        </h1>
+                        <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[60ch]">
+                            Tu privacidad es importante. Aquí explicamos qué datos pedimos, para qué los usamos y cómo
+                            puedes controlarlos.
+                        </p>
+                    </header>
+
+                    <div className="grid lg:grid-cols-12 gap-12">
+                        <aside className="lg:col-span-3">
+                            <div className="lg:sticky lg:top-32">
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                    Secciones
+                                </p>
+                                <ol className="space-y-3 border-l border-[#1A1714]/15">
+                                    {sections.map((s, i) => (
+                                        <li key={s.id} className="pl-4">
+                                            <a
+                                                href={`#${s.id}`}
+                                                className="text-[14px] text-[#1A1714]/75 hover:text-[#C96342] transition-colors leading-snug block"
+                                            >
+                                                <span className="text-[#C96342]/70 mr-2">0{i + 1}</span>
+                                                {s.label}
+                                            </a>
+                                        </li>
+                                    ))}
+                                </ol>
+                            </div>
+                        </aside>
+
+                        <div className="lg:col-span-9 space-y-16">
+                            {sections.map((s, i) => (
+                                <section key={s.id} id={s.id}>
+                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                        Sección 0{i + 1}
+                                    </p>
+                                    <h2
+                                        className="text-3xl md:text-4xl tracking-tight text-[#1A1714] mb-6 pb-4 border-b border-[#1A1714]/15"
+                                        style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                    >
+                                        {s.label}
+                                    </h2>
+                                    {s.body}
+                                </section>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <Footer />
+        </>
+    )
 }

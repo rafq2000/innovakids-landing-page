@@ -1,17 +1,12 @@
 import { generateHreflangs } from "@/lib/seo-config";
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, Shield, Sparkles, Gamepad2, Rocket, Brain } from "lucide-react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-    // 62 chars · keyword-first · age · brand last
     title: "Curso de Videojuegos con IA para Niños 8-17 años | InnovaKids",
-    // 141 chars · Roblox/Unity social proof + differentiator + soft CTA
     description:
         "Tu hijo crea videojuegos con IA: Roblox, Unity y más. Curso online para niños y adolescentes 8-17 años. Grupos de 5. Primera clase gratis.",
     keywords: [
@@ -33,6 +28,7 @@ export const metadata: Metadata = {
         description:
             "Tu hijo pasa de JUGAR a CREAR videojuegos con IA. Roblox, Unity, diseño de mundos y lógica. Grupos de 5, clases en vivo. Reserva tu clase gratis.",
         url: "https://www.innovakidslatam.com/curso-creacion-videojuegos-ninos",
+        siteName: "InnovaKids",
         type: "website",
         locale: "es_419",
         images: [{
@@ -49,6 +45,7 @@ export const metadata: Metadata = {
             "Tu hijo crea sus propios videojuegos con IA en 5 semanas. Roblox, Unity y más. Grupos de 5. Primera clase gratis.",
         images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
+    robots: { index: true, follow: true },
 }
 
 const faqs = [
@@ -70,8 +67,22 @@ const faqs = [
     },
     {
         q: "¿En qué países está disponible este curso?",
-        a: "El curso es 100% online en vivo y está disponible en Chile, Argentina, Perú, Colombia, México, España, Ecuador, Bolivia, Costa Rica, Panamá, República Dominicana, y todos los países hispanohablantes.",
+        a: "El curso es 100% online en vivo y está disponible en Chile, Argentina, Perú, Colombia, México, España, Ecuador, Bolivia, Costa Rica, Panamá, República Dominicana y todos los países hispanohablantes.",
     },
+]
+
+const pillars = [
+    { kicker: "Diseño", title: "Personajes y mundos", desc: "De la idea al asset usando generación visual con IA." },
+    { kicker: "Lógica", title: "Reglas de juego", desc: "Aprende a pensar como diseñador: qué premia, qué castiga, qué engancha." },
+    { kicker: "Código", title: "Vibe Coding", desc: "Describe la mecánica en lenguaje natural. La IA ayuda a escribir el código." },
+    { kicker: "Lanzamiento", title: "Publicar de verdad", desc: "Tu hijo comparte el juego terminado con amigos y familia." },
+]
+
+const countries = [
+    { code: "cl", name: "Chile" }, { code: "mx", name: "México" }, { code: "co", name: "Colombia" },
+    { code: "ar", name: "Argentina" }, { code: "pe", name: "Perú" }, { code: "es", name: "España" },
+    { code: "ec", name: "Ecuador" }, { code: "bo", name: "Bolivia" }, { code: "cr", name: "Costa Rica" },
+    { code: "do", name: "Rep. Dominicana" }, { code: "us", name: "EE.UU." }, { code: "ve", name: "Venezuela" },
 ]
 
 export default function GameDesignPage() {
@@ -80,17 +91,9 @@ export default function GameDesignPage() {
         "@type": "Course",
         name: "Curso de Creación de Videojuegos con IA para Niños y Adolescentes",
         description: "Aprende a crear videojuegos con Inteligencia Artificial. Diseño de personajes, mundos 3D, lógica de programación y publicación real. Para niños y adolescentes de 8 a 17 años.",
-        provider: {
-            "@type": "Organization",
-            name: "InnovaKids",
-            url: "https://www.innovakidslatam.com",
-        },
+        provider: { "@type": "Organization", name: "InnovaKids", url: "https://www.innovakidslatam.com" },
         educationalLevel: "Beginner",
-        audience: {
-            "@type": "EducationalAudience",
-            educationalRole: "student",
-            audienceType: "Children and Adolescents aged 8-17",
-        },
+        audience: { "@type": "EducationalAudience", educationalRole: "student", audienceType: "Children and Adolescents aged 8-17" },
         courseMode: "online",
         inLanguage: "es",
         url: "https://www.innovakidslatam.com/curso-creacion-videojuegos-ninos",
@@ -102,10 +105,7 @@ export default function GameDesignPage() {
         mainEntity: faqs.map((faq) => ({
             "@type": "Question",
             name: faq.q,
-            acceptedAnswer: {
-                "@type": "Answer",
-                text: faq.a,
-            },
+            acceptedAnswer: { "@type": "Answer", text: faq.a },
         })),
     }
 
@@ -114,192 +114,289 @@ export default function GameDesignPage() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
             <Navigation />
-            <div className="min-h-screen bg-[#0a1628] text-white">
-                {/* Hero */}
-                <div className="relative overflow-hidden pt-20 pb-16">
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-green-500/20 rounded-full blur-[120px]" />
-                    <div className="container mx-auto px-4 relative z-10 text-center">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full text-green-400 text-sm font-bold mb-6">
-                            <Gamepad2 className="w-4 h-4" />
-                            Para Niños y Adolescentes (8-17 Años)
-                        </div>
-                        <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-                            Curso de Creación de <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-400">Videojuegos con IA</span>
-                        </h1>
-                        <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-8">
-                            Deja que tu hijo pase de JUGAR a CREAR. Aprende a diseñar mundos, personajes y lógicas de juego usando Inteligencia Artificial.
-                        </p>
-                        <Button asChild size="lg" className="bg-green-500 hover:bg-green-400 text-slate-900 font-bold px-8 py-6 text-lg rounded-full shadow-lg shadow-green-500/20">
-                            <Link href="#comenzar">Empezar Ahora</Link>
-                        </Button>
-                    </div>
-                </div>
+            <main className="min-h-screen bg-[#FAF7EF] text-[#1A1714]">
+                {/* Editorial hero */}
+                <section className="pt-32 pb-20 border-b border-[#1A1714]/12">
+                    <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+                        <nav aria-label="Breadcrumb" className="text-[11px] tracking-[0.2em] uppercase text-[#1A1714]/55 font-semibold mb-10">
+                            <Link href="/" className="hover:text-[#C96342]">Inicio</Link>
+                            <span className="mx-2 text-[#1A1714]/30">/</span>
+                            <Link href="/cursos/inteligencia-artificial" className="hover:text-[#C96342]">Cursos</Link>
+                            <span className="mx-2 text-[#1A1714]/30">/</span>
+                            <span className="text-[#1A1714]/75 normal-case tracking-normal">Videojuegos con IA</span>
+                        </nav>
 
-                {/* The Problem/Solution */}
-                <div className="container mx-auto px-4 py-16">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <h2 className="text-3xl font-bold mb-6">¿Tu hijo pasa horas en Roblox o Minecraft?</h2>
-                            <p className="text-slate-300 text-lg mb-6">
-                                Eso no es tiempo perdido, es <strong>talento oculto</strong>. La industria de los videojuegos es más grande que el cine y la música juntos.
+                        <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-end">
+                            <div className="md:col-span-8">
+                                <div className="flex items-center gap-3 mb-6">
+                                    <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+                                    <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                        Nivel 02 · Especialización para 8 a 17 años
+                                    </span>
+                                </div>
+                                <h1
+                                    className="text-5xl sm:text-6xl md:text-7xl leading-[0.95] tracking-[-0.02em]"
+                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                >
+                                    Creación de <em className="italic text-[#C96342]">videojuegos</em> con IA.
+                                </h1>
+                                <p className="mt-8 text-lg md:text-xl text-[#1A1714]/70 leading-relaxed max-w-2xl font-light">
+                                    Tu hijo deja de jugar horas en Roblox y empieza a construir los suyos. Diseño,
+                                    lógica y código asistido por inteligencia artificial.
+                                </p>
+                            </div>
+                            <div className="md:col-span-4 flex flex-col sm:flex-row md:flex-col gap-3">
+                                <Link
+                                    href="#comenzar"
+                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-7 py-4 font-semibold text-base tracking-wide transition-colors"
+                                >
+                                    Empezar ahora <span aria-hidden>→</span>
+                                </Link>
+                                <Link
+                                    href="/clase-gratis"
+                                    className="inline-flex items-center justify-center gap-2 border border-[#1A1714] text-[#1A1714] hover:bg-[#1A1714] hover:text-[#FAF7EF] px-7 py-4 font-semibold text-base tracking-wide transition-colors"
+                                >
+                                    Clase gratis
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* Problem + Solution editorial split */}
+                <section className="py-24 md:py-32 border-b border-[#1A1714]/12">
+                    <div className="max-w-[1100px] mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-12 md:gap-16 items-start">
+                        <div className="md:col-span-6">
+                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+                                El punto de partida
                             </p>
-                            <ul className="space-y-4">
+                            <h2
+                                className="text-4xl md:text-5xl leading-[1.02] tracking-[-0.02em] mb-8"
+                                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                            >
+                                Si pasa horas jugando, no es tiempo perdido: es talento sin canalizar.
+                            </h2>
+                            <p className="text-lg text-[#1A1714]/70 leading-relaxed mb-8">
+                                La industria del videojuego factura más que el cine y la música juntos. Los chicos
+                                que aprenden a crear juegos desarrollan lógica, narrativa y pensamiento sistémico,
+                                y construyen un portafolio real antes de llegar a la universidad.
+                            </p>
+                            <ul className="space-y-5 border-t border-[#1A1714]/12 pt-8">
                                 {[
                                     "Desarrolla pensamiento lógico y matemático",
-                                    "Aprende narrativa y storytelling",
+                                    "Aprende narrativa y diseño de experiencias",
                                     "Entiende cómo funciona la tecnología por dentro",
-                                    "Crea su propio portafolio digital"
-                                ].map((item, i) => (
-                                    <li key={i} className="flex items-center gap-3">
-                                        <CheckCircle className="w-5 h-5 text-green-400" />
-                                        <span>{item}</span>
+                                    "Construye su propio portafolio digital",
+                                ].map((item) => (
+                                    <li key={item} className="flex items-start gap-4 pb-5 border-b border-[#1A1714]/12 last:border-b-0">
+                                        <span className="text-[#C96342] font-serif text-lg leading-none mt-1" aria-hidden>→</span>
+                                        <span className="text-[#1A1714]/85 leading-relaxed">{item}</span>
                                     </li>
                                 ))}
                             </ul>
                         </div>
-                        <div className="bg-gradient-to-br from-green-500/10 to-emerald-500/5 border border-green-500/20 rounded-2xl p-8">
-                            <h3 className="text-2xl font-bold text-green-400 mb-4">La Especialización Gamer</h3>
-                            <p className="text-slate-400 mb-4">
-                                En InnovaKids, usamos la IA como copiloto para que niños y adolescentes creen juegos de nivel profesional sin frustración.
+
+                        <div className="md:col-span-6 bg-[#F2EDE0] p-10 md:p-12 border-l-2 border-[#C96342]">
+                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+                                La especialización Gamer
                             </p>
-                            <div className="grid grid-cols-2 gap-4 mt-6">
-                                <div className="bg-black/20 p-4 rounded-lg text-center">
-                                    <div className="text-2xl mb-2">👾</div>
-                                    <div className="font-bold text-sm">Diseño de Personajes</div>
-                                </div>
-                                <div className="bg-black/20 p-4 rounded-lg text-center">
-                                    <div className="text-2xl mb-2">🗺️</div>
-                                    <div className="font-bold text-sm">Mundos 3D</div>
-                                </div>
-                                <div className="bg-black/20 p-4 rounded-lg text-center">
-                                    <div className="text-2xl mb-2">💻</div>
-                                    <div className="font-bold text-sm">Lógica de Programación</div>
-                                </div>
-                                <div className="bg-black/20 p-4 rounded-lg text-center">
-                                    <div className="text-2xl mb-2">🚀</div>
-                                    <div className="font-bold text-sm">Publicación Real</div>
-                                </div>
-                            </div>
+                            <h3
+                                className="text-3xl leading-tight mb-5"
+                                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                            >
+                                La IA como copiloto de desarrollo.
+                            </h3>
+                            <p className="text-[#1A1714]/70 leading-relaxed mb-10">
+                                En InnovaKids tu hijo no pelea contra Scratch ni pelea contra documentación.
+                                Construye con IA como co-desarrollador.
+                            </p>
+                            <ol className="divide-y divide-[#1A1714]/15 border-y border-[#1A1714]/15">
+                                {pillars.map((p, i) => (
+                                    <li key={p.title} className="flex gap-5 py-5">
+                                        <span className="font-serif text-2xl text-[#C96342] leading-none shrink-0 w-10">
+                                            {String(i + 1).padStart(2, "0")}
+                                        </span>
+                                        <div>
+                                            <p className="text-[10px] uppercase tracking-[0.22em] text-[#C96342]/80 font-semibold mb-1.5">
+                                                {p.kicker}
+                                            </p>
+                                            <h4 className="font-serif text-lg text-[#1A1714] leading-tight mb-1">{p.title}</h4>
+                                            <p className="text-sm text-[#1A1714]/70 leading-relaxed">{p.desc}</p>
+                                        </div>
+                                    </li>
+                                ))}
+                            </ol>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                {/* The Path */}
-                <div id="comenzar" className="container mx-auto px-4 py-16 bg-white/5 border-y border-white/10">
-                    <div className="text-center max-w-3xl mx-auto mb-12">
-                        <h2 className="text-3xl font-bold mb-4">¿Cómo convertirse en Creador de Videojuegos?</h2>
-                        <p className="text-slate-300">
-                            Para dominar la creación de juegos con IA, primero necesitamos las bases. Nuestro programa está estructurado para garantizar el éxito.
-                        </p>
-                    </div>
+                {/* Path: Nivel 01 obligatorio -> Nivel 02 */}
+                <section id="comenzar" className="py-24 md:py-32 bg-[#F5F1E8] border-b border-[#1A1714]/12">
+                    <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+                        <div className="max-w-3xl mb-16">
+                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+                                El camino
+                            </p>
+                            <h2
+                                className="text-4xl md:text-5xl leading-tight tracking-[-0.02em]"
+                                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                            >
+                                Cómo se convierte en creador de videojuegos.
+                            </h2>
+                            <p className="mt-6 text-lg text-[#1A1714]/70 leading-relaxed">
+                                El Nivel 01 es la puerta de entrada obligatoria: base de Vibe Coding, generación
+                                de assets y prompt engineering. Después desbloquea la especialización Gamer.
+                            </p>
+                        </div>
 
-                    <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        <Card className="bg-gradient-to-br from-purple-600 to-blue-600 border-0 relative overflow-hidden">
-                            <div className="absolute top-4 right-4 bg-white text-purple-600 text-xs font-bold px-2 py-1 rounded">PASO 1 (OBLIGATORIO)</div>
-                            <CardHeader>
-                                <CardTitle className="text-2xl text-white flex items-center gap-3">
-                                    <Rocket className="w-8 h-8" />
-                                    Vibe Explorer (Nivel 1)
-                                </CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <p className="text-purple-100 mb-4">
-                                    Antes de especializarse, tu hijo debe dominar las herramientas base de la IA.
+                        <div className="grid md:grid-cols-2 gap-8">
+                            <article className="bg-[#FAF7EF] border border-[#1A1714]/12 p-10">
+                                <p className="text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                    Paso 01 · Obligatorio
                                 </p>
-                                <ul className="space-y-2 text-white text-sm mb-6">
-                                    <li>✅ Vibe Coding (Introducción a lógica)</li>
-                                    <li>✅ Generación de Assets de Juego (Arte IA)</li>
-                                    <li>✅ Prompt Engineering para código</li>
-                                </ul>
-                                <Button asChild className="w-full bg-white text-purple-600 hover:bg-purple-50 font-bold">
-                                    <Link href="/brochure-programa-ia">Empezar Aquí (Nivel 1)</Link>
-                                </Button>
-                            </CardContent>
-                        </Card>
-
-                        <Card className="bg-white/5 border-white/10 opacity-75 hover:opacity-100 transition-opacity">
-                            <div className="absolute top-4 right-4 bg-white/10 text-white text-xs font-bold px-2 py-1 rounded">PASO 2 (FUTURO)</div>
-                            <CardHeader>
-                                <CardTitle className="text-2xl text-green-400 flex items-center gap-3">
-                                    <Gamepad2 className="w-8 h-8" />
-                                    Vibe Gamers (Especialidad)
-                                </CardTitle>
-                            </CardHeader>
-                            <CardContent>
-                                <p className="text-slate-400 mb-4">
-                                    Una vez graduado de Vibe Explorer, desbloquea la especialización avanzada.
+                                <h3
+                                    className="text-3xl leading-tight mb-4"
+                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                >
+                                    Vibe Explorer (Nivel 01)
+                                </h3>
+                                <p className="text-[#1A1714]/70 mb-6 leading-relaxed">
+                                    Antes de especializarse, tu hijo domina las bases del uso de IA para creación.
                                 </p>
-                                <ul className="space-y-2 text-slate-300 text-sm mb-6">
-                                    <li>🔒 Motores de Juego Avanzados</li>
-                                    <li>🔒 Multiplayer Networking</li>
-                                    <li>🔒 Monetización de Juegos</li>
+                                <ul className="space-y-3 text-[#1A1714]/85 mb-8 text-sm">
+                                    <li className="flex gap-3"><span className="text-[#C96342]">→</span> Vibe Coding · introducción a la lógica</li>
+                                    <li className="flex gap-3"><span className="text-[#C96342]">→</span> Generación de assets de juego con IA</li>
+                                    <li className="flex gap-3"><span className="text-[#C96342]">→</span> Prompt engineering para código</li>
                                 </ul>
-                                <Button disabled className="w-full bg-white/10 text-slate-400 border border-white/10 cursor-not-allowed">
-                                    Requiere Nivel 1
-                                </Button>
-                            </CardContent>
-                        </Card>
-                    </div>
-                </div>
-
-                {/* FAQ Section */}
-                <div className="container mx-auto px-4 py-16">
-                    <h2 className="text-3xl font-bold text-center mb-12">Preguntas Frecuentes sobre el Curso de Videojuegos con IA</h2>
-                    <div className="max-w-3xl mx-auto space-y-6">
-                        {faqs.map((faq, i) => (
-                            <div key={i} className="bg-white/5 border border-white/10 rounded-xl p-6">
-                                <h3 className="text-lg font-bold text-green-400 mb-3">{faq.q}</h3>
-                                <p className="text-slate-300">{faq.a}</p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Internal Links - Other Courses */}
-                <div className="container mx-auto px-4 py-16 border-t border-white/10">
-                    <h2 className="text-2xl font-bold text-center mb-8">Explora Otros Cursos de InnovaKids</h2>
-                    <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                        <Link href="/cursos/inteligencia-artificial" className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 p-6 rounded-xl border border-cyan-500/30 hover:border-cyan-500/60 transition-colors text-center group">
-                            <div className="text-3xl mb-3">🧠</div>
-                            <h3 className="font-bold text-white group-hover:text-cyan-400 transition-colors">Curso Base de IA</h3>
-                            <p className="text-slate-400 text-sm mt-2">Vibe Explorer — Nivel 1</p>
-                        </Link>
-                        <Link href="/curso-creador-contenido-ia" className="bg-gradient-to-br from-pink-900/30 to-purple-900/30 p-6 rounded-xl border border-pink-500/30 hover:border-pink-500/60 transition-colors text-center group">
-                            <div className="text-3xl mb-3">🎬</div>
-                            <h3 className="font-bold text-white group-hover:text-pink-400 transition-colors">Creador de Contenido</h3>
-                            <p className="text-slate-400 text-sm mt-2">Cine y YouTube con IA</p>
-                        </Link>
-                        <Link href="/curso-emprendimiento-ninos" className="bg-gradient-to-br from-yellow-900/30 to-orange-900/30 p-6 rounded-xl border border-yellow-500/30 hover:border-yellow-500/60 transition-colors text-center group">
-                            <div className="text-3xl mb-3">💡</div>
-                            <h3 className="font-bold text-white group-hover:text-yellow-400 transition-colors">Emprendimiento</h3>
-                            <p className="text-slate-400 text-sm mt-2">Startups y Negocios con IA</p>
-                        </Link>
-                    </div>
-
-                    {/* Country Links for SEO */}
-                    <div className="mt-12 text-center">
-                        <p className="text-slate-500 text-sm mb-4">Disponible en toda Latinoamérica y España:</p>
-                        <div className="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
-                            {[
-                                { code: "cl", name: "Chile" }, { code: "mx", name: "México" }, { code: "co", name: "Colombia" },
-                                { code: "ar", name: "Argentina" }, { code: "pe", name: "Perú" }, { code: "es", name: "España" },
-                                { code: "ec", name: "Ecuador" }, { code: "bo", name: "Bolivia" }, { code: "cr", name: "Costa Rica" },
-                                { code: "do", name: "Rep. Dominicana" }, { code: "us", name: "EE.UU." }, { code: "ve", name: "Venezuela" },
-                            ].map((c) => (
-                                <Link key={c.code} href={`/${c.code}`} className="text-xs text-slate-500 hover:text-green-400 transition-colors px-2 py-1 border border-white/5 rounded hover:border-green-500/30">
-                                    {c.name}
+                                <Link
+                                    href="/cursos/inteligencia-artificial"
+                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-7 py-3.5 font-semibold text-sm tracking-wide transition-colors w-full"
+                                >
+                                    Empezar por el Nivel 01 <span aria-hidden>→</span>
                                 </Link>
-                            ))}
+                            </article>
+
+                            <article className="bg-[#FAF7EF] border border-[#1A1714]/12 p-10 opacity-80">
+                                <p className="text-[10px] uppercase tracking-[0.28em] text-[#1A1714]/55 font-semibold mb-4">
+                                    Paso 02 · Próximamente
+                                </p>
+                                <h3
+                                    className="text-3xl leading-tight mb-4"
+                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                >
+                                    Vibe Gamers (Especialidad)
+                                </h3>
+                                <p className="text-[#1A1714]/70 mb-6 leading-relaxed">
+                                    Una vez graduado del Nivel 01, desbloquea la especialización avanzada.
+                                </p>
+                                <ul className="space-y-3 text-[#1A1714]/60 mb-8 text-sm">
+                                    <li className="flex gap-3"><span className="text-[#1A1714]/40">◦</span> Motores de juego avanzados</li>
+                                    <li className="flex gap-3"><span className="text-[#1A1714]/40">◦</span> Multiplayer y networking</li>
+                                    <li className="flex gap-3"><span className="text-[#1A1714]/40">◦</span> Monetización y publicación</li>
+                                </ul>
+                                <button
+                                    disabled
+                                    className="inline-flex items-center justify-center gap-2 bg-[#EDE6D3] text-[#1A1714]/50 px-7 py-3.5 font-semibold text-sm tracking-wide w-full cursor-not-allowed"
+                                >
+                                    Requiere completar Nivel 01
+                                </button>
+                            </article>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div className="text-center py-8">
-                    <p className="text-slate-500 text-sm">
-                        ¿Tienes dudas? <Link href="https://wa.me/56964754219" className="text-green-400 underline">Habla con nosotros por WhatsApp</Link>
-                    </p>
-                </div>
-            </div>
+                {/* FAQ */}
+                <section className="py-24 md:py-32 border-b border-[#1A1714]/12">
+                    <div className="max-w-[900px] mx-auto px-6 md:px-10">
+                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+                            Preguntas frecuentes
+                        </p>
+                        <h2
+                            className="text-4xl md:text-5xl leading-tight tracking-[-0.02em] mb-14"
+                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                        >
+                            Lo que los padres preguntan.
+                        </h2>
+                        <dl className="divide-y divide-[#1A1714]/12 border-y border-[#1A1714]/12">
+                            {faqs.map((faq, i) => (
+                                <div key={i} className="py-8">
+                                    <dt
+                                        className="text-xl md:text-2xl leading-snug text-[#1A1714] mb-3"
+                                        style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                    >
+                                        {faq.q}
+                                    </dt>
+                                    <dd className="text-[#1A1714]/70 leading-relaxed">
+                                        {faq.a}
+                                    </dd>
+                                </div>
+                            ))}
+                        </dl>
+                    </div>
+                </section>
+
+                {/* Internal links */}
+                <section className="py-24 md:py-28 bg-[#F5F1E8]">
+                    <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+                        <div className="flex items-center gap-3 mb-6">
+                            <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                Otros caminos
+                            </span>
+                        </div>
+                        <h2
+                            className="text-3xl md:text-4xl leading-tight tracking-[-0.02em] mb-12 max-w-2xl"
+                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                        >
+                            Explora otras especializaciones.
+                        </h2>
+                        <ul className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#1A1714]/12 border-y border-[#1A1714]/12 mb-16">
+                            {[
+                                { href: "/cursos/inteligencia-artificial", kicker: "Nivel 01", title: "Curso base de IA", desc: "Vibe Explorer — la puerta de entrada." },
+                                { href: "/curso-creador-contenido-ia", kicker: "Nivel 03", title: "Creador de contenido", desc: "Cine y YouTube con IA." },
+                                { href: "/curso-emprendimiento-ninos", kicker: "Nivel 04", title: "Emprendimiento", desc: "Startups y negocios con IA." },
+                            ].map((c) => (
+                                <li key={c.href}>
+                                    <Link href={c.href} className="group block py-10 md:px-8 transition-colors hover:bg-[#EDE6D3]">
+                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+                                            {c.kicker}
+                                        </p>
+                                        <h3
+                                            className="text-2xl leading-tight mb-3 group-hover:text-[#C96342] transition-colors"
+                                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                        >
+                                            {c.title}
+                                        </h3>
+                                        <p className="text-sm text-[#1A1714]/70 leading-relaxed mb-6">
+                                            {c.desc}
+                                        </p>
+                                        <span className="text-sm font-semibold text-[#C96342] underline underline-offset-4 decoration-[#C96342]/30 group-hover:decoration-[#C96342]">
+                                            Ver curso →
+                                        </span>
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+
+                        <div className="pt-10 border-t border-[#1A1714]/12">
+                            <p className="text-[11px] uppercase tracking-[0.22em] text-[#1A1714]/55 font-semibold mb-4">
+                                Disponible en toda LATAM y España
+                            </p>
+                            <div className="flex flex-wrap gap-x-5 gap-y-2">
+                                {countries.map((c) => (
+                                    <Link
+                                        key={c.code}
+                                        href={`/${c.code}`}
+                                        className="text-sm text-[#1A1714]/65 hover:text-[#C96342] underline underline-offset-4 decoration-[#1A1714]/15 hover:decoration-[#C96342] transition-colors"
+                                    >
+                                        {c.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
             <Footer />
             <WhatsAppButton />
         </>

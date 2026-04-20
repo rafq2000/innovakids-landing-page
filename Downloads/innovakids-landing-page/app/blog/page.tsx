@@ -5,9 +5,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-  // 58 chars · keyword-first · brand last
   title: "Blog · IA para Niños 8-17 · Guías 2026 | InnovaKids",
-  // 153 chars · proof + differentiator + CTA
   description:
     "Blog de IA para niños 8-17 años: guías 2026, consejos para padres, comparativas y tendencias. Expertos de 527 familias en 9 países. Lee artículos hoy.",
   keywords: [
@@ -43,12 +41,13 @@ export const metadata: Metadata = {
       "Guías, comparativas y consejos para padres sobre IA para niños 8-17 años. Escuela #1 en LATAM.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
+  robots: { index: true, follow: true },
 }
 
 const blogPosts = [
   {
     slug: "metodologia-erica-pensamiento-computacional-ia-ninos",
-    title: "Metodología ERICA: Pensamiento Computacional e IA para Niños 🧠",
+    title: "Metodología ERICA: Pensamiento Computacional e IA para Niños",
     excerpt: "Descubre cómo ERICA integra pensamiento computacional, Taxonomía de Bloom, STEM y seguridad digital infantil en cursos de inteligencia artificial para niños y adolescentes.",
     image: "/kids-learning-ai-on-computer.jpg",
     date: "2026-03-11",
@@ -57,7 +56,7 @@ const blogPosts = [
   },
   {
     slug: "mejores-cursos-verano-programacion-ia-ninos-2026",
-    title: "Programación vs IA: ¿Qué Curso de Verano Elegir para tu Hijo? (2026) 🏆",
+    title: "Programación vs IA: ¿Qué Curso de Verano Elegir para tu Hijo? (2026)",
     excerpt: "Comparativa honesta: cursos de verano de programación tradicional vs inteligencia artificial para niños y adolescentes. Precios, metodologías y resultados reales.",
     image: "/children-using-ai-educational-tools.jpg",
     date: "2026-03-11",
@@ -66,8 +65,8 @@ const blogPosts = [
   },
   {
     slug: "cursos-online-tecnologia-ninos-adolescentes",
-    title: "Cursos Online para Niños y Adolescentes de 8 a 17 años (2026) 🚀",
-    excerpt: "⭐ ¿Buscas cursos para niños de 10 a 12 años o adolescentes de 14 a 17? Descubre las mejores opciones en programación, videojuegos e IA. ¡Inscripciones abiertas! Grupos reducidos.",
+    title: "Cursos Online para Niños y Adolescentes de 8 a 17 años (2026)",
+    excerpt: "¿Buscas cursos para niños de 10 a 12 años o adolescentes de 14 a 17? Descubre las mejores opciones en programación, videojuegos e IA. Inscripciones abiertas.",
     image: "/kids-learning-ai-on-computer.jpg",
     date: "2026-03-03",
     category: "Guías 2026",
@@ -75,8 +74,8 @@ const blogPosts = [
   },
   {
     slug: "codingal-vs-innovakids-comparativa",
-    title: "Codingal vs InnovaKids (2026) 🏆 ¿Cuál es el Mejor Curso de Programación Online?",
-    excerpt: "✅ Análisis HONESTO: Codingal vs InnovaKids. Descubre qué academia online de programación, robótica e Inteligencia Artificial es mejor para tu hijo o adolescente.",
+    title: "Codingal vs InnovaKids (2026): ¿Cuál es el Mejor Curso de Programación Online?",
+    excerpt: "Análisis honesto: Codingal vs InnovaKids. Descubre qué academia online de programación, robótica e Inteligencia Artificial es mejor para tu hijo o adolescente.",
     image: "/children-using-ai-educational-tools.jpg",
     date: "2026-03-03",
     category: "Comparativa",
@@ -84,26 +83,26 @@ const blogPosts = [
   },
   {
     slug: "ia-para-ninos-por-edad-8-10-11-13-14-17",
-    title: "IA para Ninos por Edad: Guia 8-10, 11-13 y 14-17 Anos (2026)",
-    excerpt: "Descubre que puede aprender tu hijo segun su edad. Proyectos reales, herramientas y metodologias adaptadas para cada etapa del desarrollo.",
+    title: "IA para Niños por Edad: Guía 8-10, 11-13 y 14-17 Años (2026)",
+    excerpt: "Descubre qué puede aprender tu hijo según su edad. Proyectos reales, herramientas y metodologías adaptadas para cada etapa del desarrollo.",
     image: "/kids-learning-ai-on-computer.jpg",
     date: "2026-04-01",
-    category: "Guias 2026",
+    category: "Guías 2026",
     readTime: "9 min",
   },
   {
     slug: "vibe-coding-que-es-futuro-programacion-ninos",
-    title: "Vibe Coding: Que Es y Por Que es el Futuro de la Programacion para Ninos",
-    excerpt: "El Vibe Coding permite crear software describiendo lo que quieres en lenguaje natural. Descubre como los ninos ya lo estan usando para crear apps y videojuegos.",
+    title: "Vibe Coding: Qué Es y Por Qué es el Futuro de la Programación para Niños",
+    excerpt: "El Vibe Coding permite crear software describiendo lo que quieres en lenguaje natural. Descubre cómo los niños ya lo están usando para crear apps y videojuegos.",
     image: "/children-using-ai-educational-tools.jpg",
     date: "2026-04-01",
-    category: "Innovacion",
+    category: "Innovación",
     readTime: "8 min",
   },
   {
     slug: "como-proteger-hijos-ia-uso-seguro-responsable",
-    title: "Como Proteger a tus Hijos en la Era de la IA: Guia de Uso Seguro y Responsable",
-    excerpt: "Guia practica para padres sobre supervision, privacidad y uso responsable de la inteligencia artificial por edad.",
+    title: "Cómo Proteger a tus Hijos en la Era de la IA: Guía de Uso Seguro y Responsable",
+    excerpt: "Guía práctica para padres sobre supervisión, privacidad y uso responsable de la inteligencia artificial por edad.",
     image: "/parent-and-child-using-chatgpt-safely.jpg",
     date: "2026-04-01",
     category: "Seguridad",
@@ -111,8 +110,8 @@ const blogPosts = [
   },
   {
     slug: "innovakids-vs-code-org-comparativa-2026",
-    title: "InnovaKids vs Code.org (2026): Cual es Mejor para Tu Hijo?",
-    excerpt: "Comparativa honesta entre Code.org (gratuito, autoguiado) e InnovaKids (clases en vivo, IA, grupos reducidos). Descubre cual se adapta mejor a tu hijo.",
+    title: "InnovaKids vs Code.org (2026): ¿Cuál es Mejor para Tu Hijo?",
+    excerpt: "Comparativa honesta entre Code.org (gratuito, autoguiado) e InnovaKids (clases en vivo, IA, grupos reducidos). Descubre cuál se adapta mejor a tu hijo.",
     image: "/children-using-ai-educational-tools.jpg",
     date: "2026-04-01",
     category: "Comparativa",
@@ -120,11 +119,11 @@ const blogPosts = [
   },
   {
     slug: "vacaciones-escolares-cursos-ia-ninos-2026",
-    title: "Vacaciones Escolares 2026: Los Mejores Cursos de IA y Tecnologia para Ninos",
-    excerpt: "Aprovecha las vacaciones para que tu hijo aprenda habilidades del futuro. Cursos intensivos de IA, programacion y creacion digital.",
+    title: "Vacaciones Escolares 2026: Los Mejores Cursos de IA y Tecnología para Niños",
+    excerpt: "Aprovecha las vacaciones para que tu hijo aprenda habilidades del futuro. Cursos intensivos de IA, programación y creación digital.",
     image: "/kids-learning-ai-on-computer.jpg",
     date: "2026-04-01",
-    category: "Guias 2026",
+    category: "Guías 2026",
     readTime: "6 min",
   },
   {
@@ -229,67 +228,152 @@ const blogPosts = [
   },
 ]
 
+const categoryStyles: Record<string, string> = {
+  "Próximos Cursos": "bg-[#1A1714] text-[#FAF7EF]",
+  "Pedagogía": "bg-[#C96342] text-[#FAF7EF]",
+  "Comparativa": "bg-[#A8502F] text-[#FAF7EF]",
+  "Guías 2026": "bg-[#C96342] text-[#FAF7EF]",
+  "Innovación": "bg-[#1A1714] text-[#FAF7EF]",
+  "Seguridad": "bg-[#A8502F] text-[#FAF7EF]",
+  "Educación": "bg-[#C96342] text-[#FAF7EF]",
+  "Tecnología": "bg-[#A8502F] text-[#FAF7EF]",
+  "Guías": "bg-[#C96342] text-[#FAF7EF]",
+  "Proyectos": "bg-[#1A1714] text-[#FAF7EF]",
+  "Futuro": "bg-[#A8502F] text-[#FAF7EF]",
+  "Recursos": "bg-[#1A1714] text-[#FAF7EF]",
+}
+
 export default function BlogPage() {
+  const [featured, ...rest] = blogPosts
+
   return (
-    <div className="min-h-screen bg-[#0a1628]">
+    <div className="min-h-screen bg-[#FAF7EF]">
       <Navigation />
 
-      <main className="pt-24 pb-16">
+      <main className="pt-28 pb-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center mb-12">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 text-balance">
-              Blog de Innovakids
+          {/* Editorial masthead */}
+          <header className="max-w-5xl mx-auto mb-16 border-b border-[#1A1714]/12 pb-12">
+            <div className="flex items-center gap-3 mb-6">
+              <span className="h-px w-10 bg-[#C96342]" aria-hidden />
+              <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+                Diario InnovaKids · Edición {new Date().toLocaleDateString("es-ES", { month: "long", year: "numeric" })}
+              </span>
+            </div>
+            <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-[0.95] text-[#1A1714] tracking-tight text-balance">
+              Lecturas para padres que forman a la próxima generación
             </h1>
-            <p className="text-lg sm:text-xl text-gray-300 text-pretty">
-              Artículos, guías y recursos sobre inteligencia artificial para niños y educación tecnológica
+            <p className="mt-6 max-w-2xl text-lg text-[#1A1714]/70 text-pretty font-light leading-relaxed">
+              Guías, comparativas y ensayos sobre inteligencia artificial para niños y adolescentes de 8 a 17 años.
+              Escritos por nuestro equipo académico y revisados por especialistas en pedagogía.
             </p>
+          </header>
+
+          {/* Featured article */}
+          <Link
+            href={`/blog/${featured.slug}`}
+            className="group max-w-6xl mx-auto mb-20 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center"
+          >
+            <div className="lg:col-span-7 relative aspect-[4/3] lg:aspect-[16/11] overflow-hidden bg-[#EDE6D3]">
+              <Image
+                src={featured.image || "/placeholder.svg"}
+                alt={featured.title}
+                fill
+                priority
+                className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+                sizes="(max-width: 1024px) 100vw, 58vw"
+              />
+              <div className="absolute top-5 left-5">
+                <span className={`px-3 py-1 text-[11px] tracking-[0.18em] uppercase font-semibold ${categoryStyles[featured.category] ?? "bg-[#1A1714] text-[#FAF7EF]"}`}>
+                  {featured.category}
+                </span>
+              </div>
+            </div>
+
+            <article className="lg:col-span-5">
+              <div className="flex items-center gap-3 text-xs tracking-[0.18em] uppercase text-[#1A1714]/55 mb-5">
+                <span>Destacado</span>
+                <span className="h-px w-6 bg-[#1A1714]/25" aria-hidden />
+                <span>
+                  {new Date(featured.date).toLocaleDateString("es-ES", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </span>
+              </div>
+              <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.05] text-[#1A1714] tracking-tight text-balance group-hover:text-[#A8502F] transition-colors">
+                {featured.title}
+              </h2>
+              <p className="mt-5 text-[#1A1714]/70 text-lg leading-relaxed text-pretty">
+                {featured.excerpt}
+              </p>
+              <div className="mt-7 inline-flex items-center gap-3 text-sm font-semibold text-[#C96342]">
+                <span className="tracking-wide">Leer el artículo</span>
+                <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
+                <span className="text-[#1A1714]/45 font-normal ml-3">{featured.readTime} de lectura</span>
+              </div>
+            </article>
+          </Link>
+
+          {/* Section label */}
+          <div className="max-w-6xl mx-auto mb-10 flex items-baseline justify-between border-b border-[#1A1714]/12 pb-4">
+            <div className="flex items-center gap-3">
+              <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+                Archivo completo
+              </span>
+            </div>
+            <span className="text-xs tracking-[0.18em] uppercase text-[#1A1714]/55 font-medium">
+              {rest.length} artículos
+            </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
+          {/* Grid of articles */}
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-14">
+            {rest.map((post) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group bg-[#1a2942] rounded-xl overflow-hidden hover:shadow-xl hover:shadow-[#4DD0E1]/20 transition-all duration-300 hover:-translate-y-1"
+                className="group flex flex-col"
               >
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative aspect-[4/3] overflow-hidden bg-[#EDE6D3] mb-5">
                   <Image
                     src={post.image || "/placeholder.svg"}
                     alt={post.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
-                  <div
-                    className={`absolute top-4 left-4 px-3 py-1 rounded-full text-sm font-semibold ${post.category === "Próximos Cursos"
-                        ? "bg-gradient-to-r from-purple-500 to-pink-500 text-white"
-                        : "bg-[#4DD0E1] text-[#0a1628]"
-                      }`}
-                  >
-                    {post.category}
+                  <div className="absolute top-4 left-4">
+                    <span className={`px-2.5 py-1 text-[10px] tracking-[0.18em] uppercase font-semibold ${categoryStyles[post.category] ?? "bg-[#1A1714] text-[#FAF7EF]"}`}>
+                      {post.category}
+                    </span>
                   </div>
                 </div>
 
-                <div className="p-6">
-                  <div className="flex items-center gap-4 text-sm text-gray-400 mb-3">
-                    <span>
-                      {new Date(post.date).toLocaleDateString("es-ES", {
-                        day: "numeric",
-                        month: "long",
-                        year: "numeric",
-                      })}
-                    </span>
-                    <span>•</span>
-                    <span>{post.readTime} lectura</span>
-                  </div>
+                <div className="flex items-center gap-2 text-[11px] tracking-[0.18em] uppercase text-[#1A1714]/55 mb-3">
+                  <span>
+                    {new Date(post.date).toLocaleDateString("es-ES", {
+                      day: "numeric",
+                      month: "short",
+                      year: "numeric",
+                    })}
+                  </span>
+                  <span className="h-px w-4 bg-[#1A1714]/25" aria-hidden />
+                  <span>{post.readTime}</span>
+                </div>
 
-                  <h2 className="text-xl font-bold text-white mb-3 group-hover:text-[#4DD0E1] transition-colors text-balance">
-                    {post.title}
-                  </h2>
+                <h3 className="font-serif text-xl lg:text-2xl leading-[1.15] text-[#1A1714] tracking-tight text-balance group-hover:text-[#A8502F] transition-colors">
+                  {post.title}
+                </h3>
 
-                  <p className="text-gray-300 text-pretty">{post.excerpt}</p>
+                <p className="mt-3 text-[#1A1714]/65 text-pretty leading-relaxed text-[15px] line-clamp-3">
+                  {post.excerpt}
+                </p>
 
-                  <div className="mt-4 text-[#4DD0E1] font-semibold group-hover:underline">Leer más →</div>
+                <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#C96342]">
+                  <span>Leer</span>
+                  <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
                 </div>
               </Link>
             ))}

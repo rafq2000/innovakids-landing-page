@@ -27,21 +27,24 @@ export function CountryLinksSection({ country }: CountryLinksSectionProps) {
     const allCities = [country.mainCity, ...country.otherCities]
 
     return (
-        <section className="py-12 bg-black/20 border-t border-white/5">
-            <div className="container mx-auto px-4">
-                {/* City-level links for this country */}
+        <section className="bg-[#EDE6D3] text-[#2F2F2C] border-t border-[#2F2F2C]/10 py-20 md:py-28">
+            <div className="max-w-[1100px] mx-auto px-6 md:px-10 space-y-16">
                 {allCities.length > 0 && (
-                    <div className="mb-10">
-                        <p className="text-center text-sm text-gray-500 mb-6 uppercase tracking-widest font-medium">
-                            Cursos de IA en {country.name}
-                        </p>
-                        <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
+                    <div>
+                        <div className="flex items-center gap-5 mb-8">
+                            <div className="h-px w-12 bg-[#C96342]" />
+                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                                Cursos de IA en {country.name}
+                            </p>
+                        </div>
+                        <div className="flex flex-wrap gap-2">
                             {allCities.map((city) => (
                                 <a
                                     key={city}
                                     href={`/${country.code}/${toSlug(city)}/cursos/inteligencia-artificial`}
-                                    className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300 hover:text-white hover:bg-white/10 hover:border-primary/40 transition-all"
                                     title={`Curso de IA para ${country.childTerm} en ${city}, ${country.name}`}
+                                    className="inline-flex items-center px-4 py-2 border border-[#2F2F2C]/20 bg-transparent text-sm text-[#2F2F2C] hover:border-[#C96342] hover:text-[#C96342] hover:bg-[#F5F1E8] rounded-sm transition-colors"
+                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                 >
                                     Cursos IA en {city}
                                 </a>
@@ -50,22 +53,27 @@ export function CountryLinksSection({ country }: CountryLinksSectionProps) {
                     </div>
                 )}
 
-                {/* Other countries */}
-                <p className="text-center text-sm text-gray-500 mb-6 uppercase tracking-widest font-medium">
-                    InnovaKids también está en
-                </p>
-                <div className="flex flex-wrap justify-center gap-3 max-w-3xl mx-auto">
-                    {otherCountries.map((c) => (
-                        <a
-                            key={c.code}
-                            href={`/${c.code}`}
-                            className="flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-sm text-gray-300 hover:text-white hover:bg-white/10 hover:border-primary/40 transition-all"
-                            title={`Curso de IA para ${c.childTerm} en ${c.name}`}
-                        >
-                            <span className="text-base">{c.flag}</span>
-                            <span>{c.name}</span>
-                        </a>
-                    ))}
+                <div>
+                    <div className="flex items-center gap-5 mb-8">
+                        <div className="h-px w-12 bg-[#C96342]" />
+                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                            InnovaKids también está en
+                        </p>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                        {otherCountries.map((c) => (
+                            <a
+                                key={c.code}
+                                href={`/${c.code}`}
+                                title={`Curso de IA para ${c.childTerm} en ${c.name}`}
+                                className="inline-flex items-center gap-2 px-4 py-2 border border-[#2F2F2C]/20 bg-transparent text-sm text-[#2F2F2C] hover:border-[#C96342] hover:text-[#C96342] hover:bg-[#F5F1E8] rounded-sm transition-colors"
+                                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                            >
+                                <span className="text-base leading-none">{c.flag}</span>
+                                <span>{c.name}</span>
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>
