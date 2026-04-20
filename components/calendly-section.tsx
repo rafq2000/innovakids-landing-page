@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { ChevronDown } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
+import { trackCalendlyIntent } from "@/lib/gtag"
 
 const LATIN_AMERICA_COUNTRIES = [
   { code: "AR", name: "Argentina", timezone: "America/Argentina/Buenos_Aires", flag: "🇦🇷" },
@@ -45,30 +46,45 @@ export function CalendlySection() {
     if (!countryData || !childAge || !formData.name || !formData.whatsapp) return
     setIsSubmitting(true)
     setSubmitError(null)
+
+    // 1) Build Calendly URL (siempre primero, no dependemos de nada externo)
+    const url = new URL(
+      "https://calendly.com/innovakidslatam/reunion-informativa-innovakids"
+    )
+    url.searchParams.set("name", formData.name)
+    url.searchParams.set("a1", formData.whatsapp)
+    url.searchParams.set("location", countryData.name)
+    url.searchParams.set("hide_gdpr_banner", "1")
+    url.searchParams.set("primary_color", "C96342")
+    const calendlyUrl = url.toString()
+
+    // 1.5) Analytics — fire the booking_intent event (before redirect)
+    trackCalendlyIntent({
+      country: countryData.code,
+      childAge,
+      source: "hero_form",
+    })
+
+    // 2) Fire-and-forget a Supabase: NUNCA bloquea el redirect
     try {
       const supabase = createClient()
-      await supabase.from("booking_leads").insert({
-        first_name: formData.name,
-        phone: formData.whatsapp,
-        country_code: selectedCountry,
-        country_name: countryData.name,
-        timezone: countryData.timezone,
-        child_age: childAge,
-      })
-      const url = new URL(
-        "https://calendly.com/innovakidslatam/reunion-informativa-innovakids"
-      )
-      url.searchParams.set("name", formData.name)
-      url.searchParams.set("a1", formData.whatsapp)
-      url.searchParams.set("location", countryData.name)
-      url.searchParams.set("hide_gdpr_banner", "1")
-      url.searchParams.set("primary_color", "C96342")
-      window.location.href = url.toString()
-    } catch (err) {
-      setSubmitError(err instanceof Error ? err.message : "Error desconocido")
-    } finally {
-      setIsSubmitting(false)
+      supabase
+        .from("booking_leads")
+        .insert({
+          first_name: formData.name,
+          phone: formData.whatsapp,
+          country_code: selectedCountry,
+          country_name: countryData.name,
+          timezone: countryData.timezone,
+          child_age: childAge,
+        })
+        .then(() => {})
+    } catch {
+      // Ignoramos cualquier error de supabase — el lead se pierde, pero la reserva no.
     }
+
+    // 3) Redirigir a Calendly SIEMPRE
+    window.location.href = calendlyUrl
   }
 
   const isValid = formData.name && formData.whatsapp && selectedCountry && childAge
@@ -235,8 +251,22 @@ export function CalendlySection() {
               >
                 {isSubmitting ? "Abriendo calendario…" : "Ver horarios disponibles →"}
               </button>
+
               <p className="text-xs text-[#5A5751] mt-4">
                 Tu información es confidencial y nunca será compartida.
+              </p>
+
+              {/* Fallback: acceso directo a Calendly sin formulario */}
+              <p className="text-xs text-[#5A5751] mt-3">
+                ¿Prefieres saltarte esto?{" "}
+                <a
+                  href="https://calendly.com/innovakidslatam/reunion-informativa-innovakids"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#C96342] underline underline-offset-2 hover:text-[#A8502F]"
+                >
+                  Abre el calendario directo →
+                </a>
               </p>
             </div>
           </form>

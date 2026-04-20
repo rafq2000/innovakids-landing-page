@@ -74,6 +74,10 @@ const PricingSection = dynamic(
   () => import("@/components/pricing-section").then((mod) => ({ default: mod.PricingSection })),
   { ssr: true },
 )
+const InstitutionalSolutionsSection = dynamic(
+  () => import("@/components/institutional-solutions-section").then((mod) => ({ default: mod.InstitutionalSolutionsSection })),
+  { ssr: true },
+)
 const CalendlySection = dynamic(
   () => import("@/components/calendly-section").then((mod) => ({ default: mod.CalendlySection })),
   { ssr: true, loading: () => <div className="h-[600px] bg-background animate-pulse" /> },
@@ -184,18 +188,23 @@ export default function Home() {
 
         <div className="h-24" />
 
-        {/* 4 · PRECIO — única sección de inversión, al final del valor */}
+        {/* 5 · PRECIO — única sección de inversión, al final del valor */}
         <PricingSection />
 
         <div className="h-24" />
 
-        {/* 5 · CONVERSIÓN — formulario + Calendly */}
+        {/* 6 · CONVERSIÓN — formulario + Calendly */}
         <CalendlySection />
 
         <div className="h-24" />
 
-        {/* 6 · FAQ — objeciones resueltas */}
+        {/* 7 · FAQ — cierre de la presentación para padres, objeciones resueltas */}
         <FAQSection />
+
+        <div className="h-24" />
+
+        {/* 8 · INSTITUCIONAL — pivote a colegios, municipios, empresas */}
+        <InstitutionalSolutionsSection />
 
         <div className="h-16" />
 

@@ -12,7 +12,6 @@ interface PayPalCheckoutProps {
 declare global {
   interface Window {
     paypal?: any
-    fbq?: any
   }
 }
 
