@@ -31,7 +31,7 @@ export function Footer() {
         {/* Big closing headline */}
         <div className="pb-20 border-b border-[#2F2F2C]/15">
           <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
-            Próxima cohorte · abril 2026
+            Próxima cohorte · mayo 2026
           </p>
           <h2
             className="text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-[-0.02em] font-normal max-w-[14ch] mb-10"

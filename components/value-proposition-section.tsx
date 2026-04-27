@@ -647,7 +647,7 @@ export function ValuePropositionSection() {
                     className="font-display text-2xl md:text-4xl leading-[1] tracking-[-0.02em] text-[#1A1714]"
                     style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                   >
-                    Semana del <em className="italic text-[#C96342]">27 de abril</em>.
+                    El <em className="italic text-[#C96342]">11 de mayo</em>.
                   </p>
                 </div>
               </div>
@@ -1056,7 +1056,7 @@ export function ValuePropositionSection() {
                 <div className="flex items-start justify-between mb-10 md:mb-14 pb-6 border-b border-[#FAF7EF]/15">
                   <div>
                     <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-2">Factura · Recibo de cohorte</p>
-                    <p className="font-display italic text-2xl md:text-3xl leading-none">N.º 2026 / COHORTE ABRIL</p>
+                    <p className="font-display italic text-2xl md:text-3xl leading-none">N.º 2026 / COHORTE MAYO</p>
                   </div>
                   <div className="text-right">
                     <p className="font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#FAF7EF]/55 mb-1">Emitido</p>
@@ -1113,7 +1113,7 @@ export function ValuePropositionSection() {
                   >
                     <div className="relative border-[3px] border-[#C96342] px-5 py-2 rounded-sm">
                       <p className="font-display italic text-3xl text-[#C96342] leading-none tracking-[0.04em]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>PAGADO</p>
-                      <p className="font-mono-accent text-[9px] uppercase tracking-[0.3em] text-[#C96342]/80 mt-1">Abril · 2026</p>
+                      <p className="font-mono-accent text-[9px] uppercase tracking-[0.3em] text-[#C96342]/80 mt-1">Mayo · 2026</p>
                     </div>
                   </div>
 

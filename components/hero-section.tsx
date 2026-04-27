@@ -28,14 +28,14 @@ export function HeroSection() {
               <span className="relative rounded-full bg-[var(--terracotta)] w-2 h-2" />
             </span>
             <span className="truncate">
-              <span className="hidden sm:inline">Cohorte abril 2026 · </span>
+              <span className="hidden sm:inline">Cohorte mayo 2026 · </span>
               <span className="text-[var(--terracotta-pale)] font-semibold">7 de 15 cupos</span>
               <span className="hidden sm:inline"> restantes</span>
             </span>
           </div>
           <span className="text-[var(--paper)]/70 sm:text-[var(--paper)]/60 truncate">
             <span className="hidden sm:inline">Cierre de inscripciones · </span>
-            <span className="sm:hidden">Cierra </span>Dom. 26.04
+            <span className="sm:hidden">Cierra </span>Dom. 10.05
           </span>
           <a href="#sesion-estrategica" className="hidden md:inline-flex items-center gap-2 text-[var(--paper)] hover:text-[var(--terracotta-pale)] transition-colors shrink-0">
             Agendar <span aria-hidden>→</span>
@@ -53,7 +53,7 @@ export function HeroSection() {
           fontVariationSettings: '"opsz" 144, "SOFT" 100',
         }}
       >
-        26
+        11
       </div>
 
       <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-10 pt-28 md:pt-32 pb-20 md:pb-24">
@@ -264,7 +264,7 @@ export function HeroSection() {
         <div className="rise rise-7 grid grid-cols-12 gap-10">
           <div className="col-span-12 md:col-span-7">
             <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[var(--ink-muted)] mb-6">
-              Próxima cohorte · Semana del 27 de abril 2026
+              Próxima cohorte · 11 de mayo 2026
             </p>
             <HeroCountdown />
             <p className="mt-6 font-display italic text-lg text-[var(--ink-soft)] max-w-[40ch]">
