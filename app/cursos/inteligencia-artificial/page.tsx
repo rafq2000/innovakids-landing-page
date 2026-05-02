@@ -5,21 +5,20 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import type { Metadata } from "next"
 import { generateHreflangs } from "@/lib/seo-config"
+import { Check, Shield, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  // 61 chars · keyword first · age range · brand last
   title: "Curso de IA para Niños y Adolescentes 8-17 años | InnovaKids",
-  // 148 chars · primary keyword + proof + differentiators + soft CTA
   description:
-    "El mejor curso de Inteligencia Artificial para niños y adolescentes (8-17). Tu hijo crea apps y videojuegos en 5 semanas. Grupos de 5. Clase gratis.",
+    "El mejor curso de Inteligencia Artificial para niños y adolescentes (8-17). Tu hijo crea proyectos reales con IA en 5 semanas. Grupos de 5 alumnos. Inicio semana del 18 de mayo.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/cursos/inteligencia-artificial",
     languages: generateHreflangs("global", "/cursos/inteligencia-artificial"),
   },
   openGraph: {
-    title: "Curso de IA para Niños y Adolescentes · Escuela #1 en LATAM | InnovaKids",
+    title: "Curso de IA para Niños y Adolescentes · InnovaKids",
     description:
-      "Tu hijo crea apps, arte y videojuegos con IA en 5 semanas. 527 graduados, clases en vivo, grupos de máximo 5. Reserva tu clase gratis.",
+      "Tu hijo crea música, arte, historias y proyectos reales con IA en 5 semanas. 10 clases en vivo, grupos de 5. Inicio semana del 18 de mayo.",
     url: "https://www.innovakidslatam.com/cursos/inteligencia-artificial",
     siteName: "InnovaKids",
     type: "website",
@@ -33,214 +32,206 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Curso de IA para Niños 8-17 años · #1 LATAM | InnovaKids",
-    description:
-      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Grupos de máximo 5. 527 graduados. Clase gratis de prueba.",
+    title: "Curso de IA para Niños 8-17 años | InnovaKids",
+    description: "Tu hijo crea con IA en 5 semanas. Grupos de 5. Inicio semana del 18 de mayo.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
   robots: { index: true, follow: true },
 }
 
+const CLASES = [
+  { n: "01", titulo: "Vibe IA", desc: "Tu nuevo superpoder: configurando ChatGPT como copiloto personal", color: "border-primary" },
+  { n: "02", titulo: "Prompt Engineering", desc: "El arte de hablar con IA para que te entienda exactamente", color: "border-primary" },
+  { n: "03", titulo: "Vibe Voice", desc: "Clonación de voz y narración con ElevenLabs · traducción multiidioma", color: "border-primary/60" },
+  { n: "04", titulo: "Vibe Music", desc: "Composición musical con Suno: letra, melodía y voces en 30 minutos", color: "border-primary/60" },
+  { n: "05", titulo: "Generative Art I", desc: "De la imaginación a la imagen con Polar Bear y Google AI Studio", color: "border-primary/60" },
+  { n: "06", titulo: "Generative Art II", desc: "Storytelling visual consistente: cómics, cuentos y narrativas IA", color: "border-primary/40" },
+  { n: "07", titulo: "Vibe Coding", desc: "Creación de apps y proyectos interactivos con Manus sin código", color: "border-primary/40" },
+  { n: "08", titulo: "Vibe Study", desc: "NotebookLM como tutor personal: convierte cualquier materia en un juego", color: "border-primary/40" },
+  { n: "09", titulo: "Cyber Ethics", desc: "Deepfakes, privacidad y cómo navegar la IA con criterio propio", color: "border-primary/30" },
+  { n: "10", titulo: "The Vibe Project · Gala", desc: "Presentación del proyecto final ante la familia — Gala de Graduación", color: "border-primary" },
+]
+
+const INCLUDES = [
+  "10 clases en vivo de 90 min (5 semanas)",
+  "Grupos de máximo 5 alumnos",
+  "Grabaciones de todas las clases",
+  "Kit de Bienvenida completo (8 documentos)",
+  "200 prompts para tareas escolares",
+  "Comunidad Discord exclusiva cohorte",
+  "Certificado Digital Vibe Explorer",
+  "Gala de Graduación con presentación del proyecto",
+  "Soporte por WhatsApp en días de clase",
+  "Garantía de satisfacción de 10 días — 100% devuelto",
+]
+
 export default function CursoIANinos() {
   return (
     <>
       <Navigation />
-      <main className="min-h-screen bg-background pt-24">
-        <div className="container mx-auto px-4 py-16">
-          <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl font-bold text-white mb-6 text-center bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-              Curso de IA para Niños: La Educación del Futuro Empieza Aquí
+      <main className="min-h-screen bg-background">
+
+        {/* Hero */}
+        <section className="py-16 md:py-24 px-4 border-b">
+          <div className="container mx-auto max-w-3xl text-center">
+            <p className="text-sm font-mono tracking-widest uppercase text-primary mb-4">
+              Programa Vibe Explorer · Nivel 01
+            </p>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-balance">
+              Curso de IA para Niños y Adolescentes
             </h1>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
+              Tu hijo pasa de usar tecnología a <strong className="text-foreground">crearla</strong>. En 5 semanas construye
+              música, arte, historias y un proyecto real con las herramientas de IA más relevantes de 2026.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button size="lg" className="font-bold h-13 px-8" asChild>
+                <Link href="/#inversion">
+                  Reservar cupo — $27 USD hoy
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/clase-gratis">Prueba una clase gratis</Link>
+              </Button>
+            </div>
+          </div>
+        </section>
 
-            <div className="prose prose-invert prose-lg max-w-none">
-              <p className="text-xl text-gray-300 text-center mb-12">
-                El mejor <strong>curso de inteligencia artificial para niños</strong> de 8 a 14 años en Latinoamérica.
-                Aprende ChatGPT, programación con IA y crea proyectos reales en grupos de solo 5 alumnos.
-              </p>
-
-              <div className="grid md:grid-cols-3 gap-6 my-12">
-                <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 p-6 rounded-xl border border-cyan-500/30 text-center">
-                  <div className="text-5xl mb-4">🎯</div>
-                  <h3 className="text-xl font-bold text-white mb-2">Grupos de 5</h3>
-                  <p className="text-gray-300 text-sm">Atención 100% personalizada</p>
+        {/* Stats */}
+        <section className="border-b">
+          <div className="container mx-auto max-w-3xl">
+            <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0">
+              {[
+                { num: "5", label: "Semanas" },
+                { num: "10", label: "Clases en vivo" },
+                { num: "5", label: "Alumnos por grupo" },
+                { num: "8–17", label: "Años de edad" },
+              ].map(({ num, label }) => (
+                <div key={label} className="py-6 px-4 text-center">
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-1">{num}</div>
+                  <div className="text-xs text-muted-foreground font-mono tracking-wide uppercase">{label}</div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
-                <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 p-6 rounded-xl border border-purple-500/30 text-center">
-                  <div className="text-5xl mb-4">🚀</div>
-                  <h3 className="text-xl font-bold text-white mb-2">10 Clases</h3>
-                  <p className="text-gray-300 text-sm">Programa completo de IA</p>
+        {/* Programa */}
+        <section className="py-16 md:py-20 px-4">
+          <div className="container mx-auto max-w-3xl">
+            <p className="text-sm font-mono tracking-widest uppercase text-primary mb-2">Contenido</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2">Las 10 clases del programa</h2>
+            <p className="text-muted-foreground mb-10">
+              Inicio: semana del 18 de mayo · Sábados y miércoles · Término: 17 de junio de 2026
+            </p>
+            <div className="space-y-3">
+              {CLASES.map(({ n, titulo, desc, color }) => (
+                <div key={n} className={`flex gap-4 items-start border-l-2 ${color} pl-4 py-3`}>
+                  <span className="font-mono text-xs text-muted-foreground pt-1 flex-shrink-0 w-6">{n}</span>
+                  <div>
+                    <h3 className="font-semibold text-base">{titulo}</h3>
+                    <p className="text-sm text-muted-foreground">{desc}</p>
+                  </div>
                 </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
-                <div className="bg-gradient-to-br from-pink-900/30 to-red-900/30 p-6 rounded-xl border border-pink-500/30 text-center">
-                  <div className="text-5xl mb-4">💎</div>
-                  <h3 className="text-xl font-bold text-white mb-2">Acceso de por Vida</h3>
-                  <p className="text-gray-300 text-sm">Materiales y actualizaciones</p>
-                </div>
-              </div>
-
-              <h2 className="text-3xl font-bold text-white mt-12 mb-6">
-                ¿Por Qué Este es el Mejor Curso de IA para Niños?
-              </h2>
-
-              <p className="text-gray-300">
-                Nuestro <strong>curso de inteligencia artificial para niños</strong> se diferencia de otros programas
-                por su enfoque práctico y personalizado. Mientras otros cursos tienen 20, 30 o más estudiantes por
-                clase, nosotros mantenemos grupos ultra reducidos de solo 5 alumnos.
-              </p>
-
-              <div className="bg-gray-800/50 p-8 rounded-xl border border-cyan-500/20 my-8">
-                <h3 className="text-2xl font-bold text-cyan-400 mb-4">Lo que Incluye el Curso</h3>
+        {/* Incluye */}
+        <section className="py-16 px-4 bg-muted/30 border-y">
+          <div className="container mx-auto max-w-3xl">
+            <div className="grid md:grid-cols-2 gap-10 items-start">
+              <div>
+                <p className="text-sm font-mono tracking-widest uppercase text-primary mb-2">Incluido</p>
+                <h2 className="text-3xl font-bold mb-6">Todo lo que recibe tu hijo</h2>
                 <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-cyan-400 mr-3">✓</span>
-                    <span>10 clases en vivo de 60 minutos (grupos de 5 máximo)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-cyan-400 mr-3">✓</span>
-                    <span>Acceso de por vida a grabaciones y materiales</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-cyan-400 mr-3">✓</span>
-                    <span>Comunidad privada de estudiantes y padres</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-cyan-400 mr-3">✓</span>
-                    <span>Certificado oficial de finalización</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-cyan-400 mr-3">✓</span>
-                    <span>Kit de prompts y recursos exclusivos</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-cyan-400 mr-3">✓</span>
-                    <span>Demo Day final para presentar proyectos</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-cyan-400 mr-3">✓</span>
-                    <span>Garantía 100% de satisfacción o devolución total</span>
-                  </li>
+                  {INCLUDES.map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                      <span className="text-sm md:text-base">{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
-
-              <h2 className="text-3xl font-bold text-white mt-12 mb-6">Programa del Curso de IA para Niños</h2>
-
-              <div className="space-y-4 my-8">
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-yellow-500">
-                  <h4 className="font-bold text-yellow-400 mb-2">Clase 1: Vibe IA (Configuración)</h4>
-                  <p className="text-gray-300 text-sm">Tu nuevo superpoder: Configurando ChatGPT como copiloto</p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-yellow-500">
-                  <h4 className="font-bold text-yellow-400 mb-2">Clase 2: Prompt Engineering</h4>
-                  <p className="text-gray-300 text-sm">El arte de hablar con máquinas para que te obedezcan</p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-orange-500">
-                  <h4 className="font-bold text-orange-400 mb-2">Clase 3: Vibe Voice</h4>
-                  <p className="text-gray-300 text-sm">Clonación de voz y narración con IA + Traducción</p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-orange-500">
-                  <h4 className="font-bold text-orange-400 mb-2">Clase 4: Vibe Music</h4>
-                  <p className="text-gray-300 text-sm">Composición musical: crea tu primer hit con IA</p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-purple-500">
-                  <h4 className="font-bold text-purple-400 mb-2">Clase 5: Generative Art I</h4>
-                  <p className="text-gray-300 text-sm">De la imaginación a la imagen: Midjourney y DALL-E</p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-purple-500">
-                  <h4 className="font-bold text-purple-400 mb-2">Clase 6: Generative Art II</h4>
-                  <p className="text-gray-300 text-sm">Storytelling visual consistente para cómics y cuentos</p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-pink-500">
-                  <h4 className="font-bold text-pink-400 mb-2">Clase 7: Vibe Coding</h4>
-                  <p className="text-gray-300 text-sm">Programación de videojuegos (Roblox/Minecraft vibes) con IA</p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-blue-500">
-                  <h4 className="font-bold text-blue-400 mb-2">Clase 8: Vibe Study</h4>
-                  <p className="text-gray-300 text-sm">Convierte la IA en tu tutor personal para matemáticas y ciencias</p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-green-500">
-                  <h4 className="font-bold text-green-400 mb-2">Clase 9: Cyber Ethics</h4>
-                  <p className="text-gray-300 text-sm">Deepfakes y seguridad digital: navegando el futuro</p>
-                </div>
-
-                <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-6 rounded-lg border-l-4 border-cyan-500">
-                  <h4 className="font-bold text-cyan-400 mb-2">Clase 10: The Vibe Project</h4>
-                  <p className="text-gray-300 text-sm">Presentación final de identidad digital y portafolio</p>
-                </div>
-              </div>
-
-              <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/30 p-8 rounded-xl border-2 border-purple-500/50 my-12 text-center">
-                <h3 className="text-3xl font-bold text-white mb-4">💎 Oferta Especial de Lanzamiento</h3>
-                <p className="text-xl mb-6">
-                  <span className="text-gray-400 line-through">$497 USD</span>{" "}
-                  <span className="text-5xl font-bold text-cyan-400">$297 USD</span>
+              <div className="border-2 border-primary rounded-2xl p-8 text-center">
+                <p className="text-sm font-mono tracking-widest uppercase text-muted-foreground mb-3">Precio</p>
+                <div className="text-6xl font-bold mb-1">$267</div>
+                <div className="text-muted-foreground font-mono text-sm mb-4">USD · pago único</div>
+                <p className="text-sm text-muted-foreground mb-6">
+                  o 3 cuotas de $89 USD<br />
+                  Reserva hoy con solo <strong className="text-primary">$27 USD</strong>
                 </p>
-                <p className="text-sm text-gray-300 mb-6">Precio Vibe Edition 2026 • Oferta por tiempo limitado</p>
-                <p className="text-lg text-yellow-300 mb-8">
-                  ⏰ Curso inicia el 11 de Mayo del 2026 • Cupos limitados
+                <Button className="w-full font-bold h-12" asChild>
+                  <Link href="/#inversion">
+                    Reservar cupo
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+                <p className="text-xs text-muted-foreground mt-3">
+                  Los $27 se descuentan del total · 100% reembolsables
                 </p>
-                <Link href="/#sesion-estrategica">
-                  <Button
-                    size="lg"
-                    className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white font-bold text-lg px-8 py-6 h-auto"
-                  >
-                    Agendar Sesión Diagnóstico GRATIS
-                  </Button>
-                </Link>
-              </div>
-
-              <h2 className="text-3xl font-bold text-white mt-12 mb-6">Disponible en Toda Latinoamérica</h2>
-
-              <p className="text-gray-300">
-                Nuestro <strong>curso de IA para niños</strong> está disponible 100% online para estudiantes en:
-              </p>
-
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-3 my-6">
-                {[
-                  "🇲🇽 México",
-                  "🇨🇴 Colombia",
-                  "🇦🇷 Argentina",
-                  "🇨🇱 Chile",
-                  "🇵🇪 Perú",
-                  "🇪🇨 Ecuador",
-                  "🇺🇾 Uruguay",
-                  "🇨🇷 Costa Rica",
-                  "🇵🇦 Panamá",
-                ].map((country) => (
-                  <div key={country} className="bg-gray-800/50 px-4 py-3 rounded-lg text-center border border-gray-700">
-                    {country}
-                  </div>
-                ))}
-              </div>
-
-              <div className="bg-cyan-900/20 p-6 rounded-xl border border-cyan-500/30 my-8">
-                <h3 className="text-xl font-bold text-white mb-4 text-center">🎁 Garantía Sin Riesgo</h3>
-                <p className="text-gray-300 text-center">
-                  Si después de la primera clase sientes que el curso no es lo que esperabas, te devolvemos el 100% de
-                  tu inversión. Sin preguntas, sin complicaciones.
-                </p>
-              </div>
-
-              <div className="text-center my-12">
-                <Link href="/">
-                  <Button
-                    size="lg"
-                    className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white font-bold text-lg px-8 py-4"
-                  >
-                    Ver Toda la Información del Curso
-                  </Button>
-                </Link>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+
+        {/* Garantía */}
+        <section className="py-12 px-4 border-b">
+          <div className="container mx-auto max-w-2xl text-center">
+            <Shield className="w-9 h-9 text-primary mx-auto mb-3" />
+            <h2 className="text-2xl font-bold mb-2">Garantía de 10 días</h2>
+            <p className="text-muted-foreground">
+              Si durante los primeros 10 días del curso la familia siente que no era lo esperado,
+              devolvemos el <strong className="text-foreground">100% del valor pagado</strong> sin ninguna pregunta.
+            </p>
+          </div>
+        </section>
+
+        {/* Herramientas */}
+        <section className="py-16 px-4">
+          <div className="container mx-auto max-w-3xl">
+            <p className="text-sm font-mono tracking-widest uppercase text-primary mb-2">Herramientas</p>
+            <h2 className="text-3xl font-bold mb-6">Lo que tu hijo usará en el curso</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+              {["Suno", "ElevenLabs", "Google AI Studio", "Manus", "NotebookLM", "chat.z.ai", "Polar Bear", "ChatGPT"].map((tool) => (
+                <div key={tool} className="border rounded-lg px-4 py-3 text-center text-sm font-medium">
+                  {tool}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="py-16 px-4 bg-muted/30 border-t">
+          <div className="container mx-auto max-w-2xl text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">¿Listo para reservar el cupo?</h2>
+            <p className="text-muted-foreground mb-6">
+              Inicio semana del 18 de mayo · Cupos limitados a 5 alumnos por grupo
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button size="lg" className="font-bold" asChild>
+                <Link href="/#inversion">
+                  Reservar cupo — $27 USD hoy
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <a href="https://wa.me/56964754219" target="_blank" rel="noopener noreferrer">
+                  Preguntar por WhatsApp
+                </a>
+              </Button>
+            </div>
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-6 text-sm text-muted-foreground">
+              <Link href="/precios" className="hover:text-foreground underline underline-offset-2">Ver precios detallados</Link>
+              <Link href="/resultados" className="hover:text-foreground underline underline-offset-2">Ver resultados de alumnos</Link>
+              <Link href="/clase-gratis" className="hover:text-foreground underline underline-offset-2">Clase de prueba gratis</Link>
+            </div>
+          </div>
+        </section>
+
       </main>
       <Footer />
       <WhatsAppButton />
