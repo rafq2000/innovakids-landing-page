@@ -336,8 +336,9 @@ const nextConfig = {
       // Consolidate "curso ia niños" cluster to single canonical page
       { source: '/clases-ia-ninos', destination: '/cursos/inteligencia-artificial', permanent: true },
       { source: '/cursos-online-para-ninos', destination: '/cursos/inteligencia-artificial', permanent: true },
-      // Consolidate duplicate lead magnets
-      { source: '/kit-gratuito-descarga', destination: '/descargar-guia-ia-ninos', permanent: true },
+      // Kit de Bienvenida (página para alumnos que pagan)
+      { source: '/descargar-guia-ia-ninos', destination: '/bienvenida', permanent: true },
+      { source: '/kit-gratuito-descarga', destination: '/bienvenida', permanent: true },
       // Consolidate brochure into programa
       { source: '/brochure-programa-ia', destination: '/programa', permanent: true },
       // Shorten extremely long booking URL
