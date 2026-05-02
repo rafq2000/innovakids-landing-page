@@ -18,14 +18,14 @@ import {
 export const metadata: Metadata = {
   title: "Kit de Bienvenida · Cohorte Mayo 2026 | InnovaKids",
   description:
-    "Descarga tu Kit de Bienvenida completo: carta, guía de padres, calendario, reglamento, manual de IA segura, 200 prompts y más. Todo para empezar con confianza el 16 de mayo.",
+    "Descarga tu Kit de Bienvenida completo: carta, guía de padres, calendario, reglamento, manual de IA segura, 200 prompts y más. Todo para empezar con confianza el 18 de mayo.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/bienvenida",
   },
   openGraph: {
     title: "Kit de Bienvenida · Cohorte Mayo 2026 | InnovaKids",
     description:
-      "Descarga tu Kit de Bienvenida completo para el Programa Vibe Explorer. 8 documentos para empezar el 16 de mayo con todo lo que necesitas.",
+      "Descarga tu Kit de Bienvenida completo para el Programa Vibe Explorer. 8 documentos para empezar el 18 de mayo con todo lo que necesitas.",
     url: "https://www.innovakidslatam.com/bienvenida",
     siteName: "InnovaKids",
     type: "website",
@@ -56,7 +56,7 @@ const KIT_DOCS = [
   {
     num: "03",
     title: "Calendario Mayo 2026",
-    desc: "Las 10 fechas del curso con temas, objetivos y lo que tu hijo aprende en cada clase. Sábados y miércoles, 16 mayo – 17 junio.",
+    desc: "Las 10 fechas del curso con temas, objetivos y lo que tu hijo aprende en cada clase. Sábados y miércoles, 18 mayo – 17 junio.",
     icon: Calendar,
     file: "03-calendario-mayo-2026.pdf",
     label: "Imprimir y pegar",
@@ -68,7 +68,7 @@ const KIT_DOCS = [
     desc: "Normas de convivencia, política de asistencia, uso ético de IA, garantía de 10 días y todo lo que necesitan saber antes de empezar.",
     icon: Shield,
     file: "04-reglamento.pdf",
-    label: "Leer antes del 16 mayo",
+    label: "Leer antes del 18 mayo",
     highlight: false,
   },
   {
@@ -95,7 +95,7 @@ const KIT_DOCS = [
     desc: "Un documento especial que tu hijo completa antes de empezar el curso y abre en la Gala de Graduación. Un regalo para su yo futuro.",
     icon: Clock,
     file: "07-capsula-del-tiempo.pdf",
-    label: "Completar antes del 16 mayo",
+    label: "Completar antes del 18 mayo",
     highlight: false,
   },
   {
@@ -121,14 +121,14 @@ export default function BienvenidaPage() {
             <div className="text-center mb-10 md:mb-14">
               <div className="inline-flex items-center gap-2 bg-primary/10 text-primary border border-primary/30 px-4 py-2 rounded-full text-sm font-semibold mb-5">
                 <PartyPopper className="w-4 h-4" />
-                Cohorte Mayo 2026 · Inicio: Sábado 16 de mayo
+                Cohorte Mayo 2026 · Inicio: semana del 18 de mayo
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance leading-tight">
                 ¡Bienvenidos al Programa<br className="hidden md:block" />
                 <span className="text-primary"> Vibe Explorer!</span>
               </h1>
               <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto text-pretty">
-                Aquí tienes tu Kit de Bienvenida completo. Descarga cada documento, léelos antes del <strong className="text-foreground">16 de mayo</strong> y llega listo para la primera clase.
+                Aquí tienes tu Kit de Bienvenida completo. Descarga cada documento, léelos antes del <strong className="text-foreground">18 de mayo</strong> y llega listo para la primera clase.
               </p>
             </div>
 
@@ -224,10 +224,10 @@ export default function BienvenidaPage() {
               </div>
             </div>
 
-            {/* Tres cosas antes del 16 mayo */}
+            {/* Tres cosas antes del 18 mayo */}
             <div className="bg-card border rounded-xl p-6 md:p-8 mb-8 md:mb-10">
               <h3 className="text-lg md:text-xl font-bold mb-5">
-                3 cosas que hacer antes del <span className="text-primary">16 de mayo</span>
+                3 cosas que hacer antes del <span className="text-primary">18 de mayo</span>
               </h3>
               <div className="grid sm:grid-cols-3 gap-4 md:gap-6">
                 <div className="flex flex-col gap-2">
