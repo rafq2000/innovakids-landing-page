@@ -1,8 +1,55 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { createClient } from "@supabase/supabase-js"
+import { createHmac } from "crypto"
 import { saveEnrollmentAndSendWelcome } from "@/lib/enrollment"
 
 export const dynamic = 'force-dynamic'
+
+function verifyMercadoPagoSignature(request: NextRequest, body: any): boolean {
+  const webhookSecret = process.env.MERCADOPAGO_WEBHOOK_SECRET
+  if (!webhookSecret) {
+    console.warn("[mercadopago] MERCADOPAGO_WEBHOOK_SECRET not set — skipping HMAC verification")
+    return true // Graceful degradation: allow if not configured
+  }
+
+  const xSignature = request.headers.get("x-signature")
+  const xRequestId = request.headers.get("x-request-id")
+
+  if (!xSignature || !xRequestId) {
+    console.error("[mercadopago] Missing x-signature or x-request-id headers")
+    return false
+  }
+
+  // Parse ts and v1 from x-signature header: "ts=TIMESTAMP,v1=HASH"
+  const parts: Record<string, string> = {}
+  for (const part of xSignature.split(",")) {
+    const [key, ...valueParts] = part.split("=")
+    parts[key.trim()] = valueParts.join("=").trim()
+  }
+
+  const ts = parts["ts"]
+  const v1 = parts["v1"]
+
+  if (!ts || !v1) {
+    console.error("[mercadopago] Invalid x-signature format:", xSignature)
+    return false
+  }
+
+  // Build the manifest string per MP docs
+  const dataId = body?.data?.id ? String(body.data.id) : ""
+  const manifest = `id:${dataId};request-id:${xRequestId};ts:${ts};`
+
+  const hmac = createHmac("sha256", webhookSecret)
+  hmac.update(manifest)
+  const expectedHash = hmac.digest("hex")
+
+  if (expectedHash !== v1) {
+    console.error("[mercadopago] HMAC mismatch", { expected: expectedHash, received: v1 })
+    return false
+  }
+
+  return true
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -17,7 +64,12 @@ export async function POST(request: NextRequest) {
     const supabase = createClient(supabaseUrl, supabaseKey)
     const body = await request.json()
 
-    console.log("[v0] Mercado Pago webhook received:", body)
+    // Verify HMAC signature if webhook secret is configured
+    if (!verifyMercadoPagoSignature(request, body)) {
+      return NextResponse.json({ error: "Invalid signature" }, { status: 401 })
+    }
+
+    console.log("[mercadopago] Webhook received:", body.type, body.data?.id)
 
     // Mercado Pago sends notifications for different events
     if (body.type === "payment") {
@@ -63,12 +115,11 @@ export async function POST(request: NextRequest) {
       }, { onConflict: "payment_id" })
 
       if (error) {
-        console.error("[v0] Error storing payment:", error)
+        console.error("[mercadopago] Error storing payment:", error)
       }
 
       // Send welcome email on approved payments
       if (payment.status === "approved" && payment.payer?.email) {
-        // Extract student name from external_reference (format: "paymentOption-email-timestamp")
         const refParts = (payment.external_reference || "").split("-")
         const studentName = payment.payer.first_name
           ? `${payment.payer.first_name} ${payment.payer.last_name || ""}`.trim()
@@ -87,7 +138,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ received: true })
   } catch (error) {
-    console.error("[v0] Webhook error:", error)
+    console.error("[mercadopago] Webhook error:", error)
     return NextResponse.json({ error: "Webhook error" }, { status: 400 })
   }
 }
