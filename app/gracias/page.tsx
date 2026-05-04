@@ -6,9 +6,9 @@ import Link from "next/link"
 import { GraciasTracker } from "./gracias-tracker"
 
 export const metadata: Metadata = {
-    title: "Reserva confirmada · InnovaKids",
+    title: "Pago confirmado · InnovaKids",
     description:
-        "Tu sesión estratégica gratuita está confirmada. Revisa tu correo y WhatsApp para los detalles.",
+        "Tu inscripcion esta confirmada. Revisa tu correo para el Kit de Bienvenida y selecciona tus horarios.",
     robots: { index: false, follow: false },
 }
 
@@ -27,18 +27,18 @@ export default function GraciasPage() {
                                 <div className="flex items-center gap-3 mb-6">
                                     <span className="h-px w-10 bg-[#C96342]" aria-hidden />
                                     <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
-                                        Reserva confirmada
+                                        Pago confirmado
                                     </span>
                                 </div>
                                 <h1
                                     className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[20ch]"
                                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                 >
-                                    Listo. Tu sesión está <em className="italic text-[#C96342]">agendada</em>.
+                                    Listo. Tu pago esta <em className="italic text-[#C96342]">confirmado</em>.
                                 </h1>
                                 <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[56ch]">
-                                    Te enviamos la invitación por correo y un recordatorio por WhatsApp 24 horas antes.
-                                    Prepara tus preguntas — son 30 minutos sin compromiso.
+                                    Te enviamos un correo de bienvenida con tu Kit completo y los pasos para comenzar.
+                                    Revisa tu bandeja de entrada (y spam) en los pr\u00f3ximos minutos.
                                 </p>
                             </div>
 
@@ -48,9 +48,9 @@ export default function GraciasPage() {
                                 </p>
                                 <ol className="border-t border-[#1A1714]/12">
                                     {[
-                                        { k: "Revisa tu correo", v: "Recibirás la invitación con el link del Zoom." },
-                                        { k: "Confirma por WhatsApp", v: "Te enviaremos un mensaje para confirmar tu horario." },
-                                        { k: "Prepárate", v: "Piensa qué te gustaría que tu hijo logre con la IA." },
+                                        { k: "Revisa tu correo", v: "Te enviamos el Kit de Bienvenida con 8 documentos esenciales." },
+                                        { k: "Selecciona tus horarios", v: "Elige m\u00ednimo 3 d\u00edas con 2 horarios. Es obligatorio para asignarte grupo." },
+                                        { k: "Escr\u00edbenos por WhatsApp", v: "Al +56 9 2245 0492 para confirmar tu inscripci\u00f3n." },
                                     ].map((item, i) => (
                                         <li
                                             key={item.k}
@@ -98,17 +98,17 @@ export default function GraciasPage() {
                                 </div>
                                 <div className="md:col-span-5 flex flex-col gap-3 md:justify-self-end w-full md:w-auto">
                                     <Link
-                                        href="/#programa"
+                                        href="/mis-horarios"
                                         className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                     >
-                                        Ver el currículum
+                                        Seleccionar mis horarios
                                         <span aria-hidden>→</span>
                                     </Link>
                                     <Link
-                                        href="/testimonios"
+                                        href="/bienvenida"
                                         className="inline-flex items-center justify-center gap-2 border border-[#1A1714]/20 hover:border-[#C96342] text-[#1A1714] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                     >
-                                        Leer testimonios
+                                        Ver Kit de Bienvenida
                                     </Link>
                                 </div>
                             </div>
