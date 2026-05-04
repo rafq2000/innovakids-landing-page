@@ -661,7 +661,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     metaTitle: "Curso de IA para Niños en Honduras — Clases en Vivo Online | InnovaKids",
     metaDescription: "Niños hondureños de 8-17 años aprenden a crear con IA. Clases en vivo online, grupos de máx 5 alumnos. Prueba una clase gratis.",
     heroSubtext: "Familias en Tegucigalpa, San Pedro Sula y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. L 660)."
   },
   sv: {
     code: "sv",
@@ -749,7 +749,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     metaTitle: "Curso de IA para Niños en Guatemala — Aprenden Creando | InnovaKids",
     metaDescription: "Niños guatemaltecos de 8-17 años aprenden a crear con IA. Clases en vivo online, grupos de máx 5 alumnos. Prueba una clase gratis.",
     heroSubtext: "Familias en Ciudad de Guatemala, Xela y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. Q 200)."
   },
   py: {
     code: "py",
@@ -793,7 +793,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     metaTitle: "Curso de IA para Niños en Paraguay — Clases Online en Vivo | InnovaKids",
     metaDescription: "Niños paraguayos de 8-17 años crean apps y videojuegos con Inteligencia Artificial. Clases en vivo, máx 5 alumnos. Primera clase gratis.",
     heroSubtext: "Familias en Asunción, Ciudad del Este y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. ₲ 200.000)."
   },
   bo: {
     code: "bo",
@@ -837,7 +837,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     metaTitle: "Curso de IA para Niños en Bolivia — Crea con IA en Vivo | InnovaKids",
     metaDescription: "Niños bolivianos de 8-17 años aprenden a crear con Inteligencia Artificial. Clases en vivo online, grupos de máx 5 alumnos. Prueba gratis.",
     heroSubtext: "Familias en La Paz, Santa Cruz y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. Bs 185)."
   },
   ni: {
     code: "ni",
@@ -881,7 +881,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     metaTitle: "Curso de IA para Niños en Nicaragua — Clases en Vivo Online | InnovaKids",
     metaDescription: "Niños nicaragüenses de 8-17 años crean apps y videojuegos con IA. Clases en vivo, grupos de máx 5 alumnos. Prueba una clase gratis.",
     heroSubtext: "Familias en Managua, León y todo el país ya aprenden con InnovaKids.",
-    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
+    faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. C$ 980)."
   },
   pr: {
     code: "pr",

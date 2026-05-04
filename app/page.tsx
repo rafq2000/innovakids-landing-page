@@ -185,22 +185,22 @@ export default function Home() {
         {/* 5 · PROPUESTA DE VALOR — catálogo completo + garantía + recibo + precio */}
         <ValuePropositionSection />
 
-        <div className="h-24" />
+        <div className="h-12" />
 
         {/* 6 · CONVERSIÓN — formulario + Calendly */}
         <CalendlySection />
 
-        <div className="h-24" />
+        <div className="h-12" />
 
         {/* 7 · FAQ — cierre de objeciones */}
         <FAQSection />
 
-        <div className="h-24" />
+        <div className="h-12" />
 
         {/* 8 · INSTITUCIONAL — pivote a colegios, municipios, empresas */}
         <InstitutionalSolutionsSection />
 
-        <div className="h-16" />
+        <div className="h-8" />
 
         {/* 7 · SEO INTERNAL LINKS — cursos especializados condensados */}
         <section
