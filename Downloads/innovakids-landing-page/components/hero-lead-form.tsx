@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { createClient } from "@/lib/supabase/client"
+import { trackCTAClick } from "@/lib/gtag"
 
 export function HeroLeadForm() {
   const [name, setName] = useState("")
@@ -27,6 +28,7 @@ export function HeroLeadForm() {
         .then(() => {})
     } catch {}
 
+    trackCTAClick("hero_lead_form")
     setSubmitted(true)
 
     // Scroll to full form
