@@ -545,7 +545,7 @@ export function ValuePropositionSection() {
       />
 
       <section
-        id="propuesta-valor"
+        id="inversion"
         className="relative bg-[#FAF7EF] text-[#1A1714] py-28 md:py-40 border-t border-[#1A1714]/10 overflow-hidden"
       >
         {/* Giant decorative "$" with parallax */}
