@@ -13,23 +13,26 @@ import { Footer } from "@/components/footer"
 import { faqs } from "@/lib/faq-data"
 
 export const metadata: Metadata = {
-    title: "Curso de IA para Adolescentes 14-17 · Vibe Coding | InnovaKids",
+    title: "Cursos de IA para Adolescentes (14-17 años) | Clases en Vivo · Clase Gratis | InnovaKids",
     description:
-        "Curso de IA para adolescentes 14-17 años: Vibe Coding, apps reales y portafolio universitario. Clases en vivo, grupos de 5, certificado. Clase gratis.",
+        "Cursos de Inteligencia Artificial para adolescentes 14-17 años. Crean apps reales y portafolio universitario con IA. Clases en vivo, grupos de 5, certificado. 1ª clase gratis.",
     keywords: [
+        "cursos de ia para adolescentes",
         "curso ia adolescentes",
-        "programacion para jovenes",
-        "bootcamp tecnologia secundaria",
-        "preparacion universitaria ingenieria",
-        "vibe coding",
+        "curso de ia para adolescentes",
+        "clases de ia para adolescentes",
+        "programacion para jovenes con ia",
+        "bootcamp ia adolescentes",
         "curso ia 14-17 años",
         "ia para adolescentes",
+        "inteligencia artificial para jovenes",
+        "cursos online inteligencia artificial adolescentes",
     ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/adolescentes",
     },
     openGraph: {
-        title: "Curso de IA para Adolescentes 14-17 · Escuela #1 en LATAM | InnovaKids",
+        title: "Cursos de IA para Adolescentes (14-17 años) · Escuela #1 en LATAM | InnovaKids",
         description:
             "Tu hijo deja de ser consumidor de tecnología y lanza su primera app con IA. Grupos de 5, portafolio universitario y certificado. Clase gratis.",
         url: "https://www.innovakidslatam.com/adolescentes",
@@ -45,9 +48,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Curso de IA para Adolescentes 14-17 · Vibe Coding | InnovaKids",
+        title: "Cursos de IA para Adolescentes (14-17 años) | InnovaKids",
         description:
-            "Vibe Coding, apps reales y portafolio universitario para jóvenes 14-17 años. Grupos de 5, certificado. Clase gratis.",
+            "Cursos de IA para adolescentes 14-17 años. Apps reales y portafolio universitario. Grupos de 5, certificado. Clase gratis.",
         images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
     robots: { index: true, follow: true },
@@ -99,7 +102,7 @@ export default function AdolescentesPage() {
         "courseMode": "online",
         "offers": {
             "@type": "Offer",
-            "price": "297",
+            "price": "267",
             "priceCurrency": "USD",
             "availability": "https://schema.org/InStock",
             "url": "https://www.innovakidslatam.com/adolescentes",

@@ -12,6 +12,6 @@ export const PRODUCTS: Product[] = [
     name: "Curso de Inteligencia Artificial para Niños",
     description:
       "10 clases en vivo de 60 minutos cada una durante 5 semanas. Grupos de máximo 5 alumnos. Incluye certificado y proyectos reales.",
-    priceInCents: 29700, // $297 USD - Vibe Explorer
+    priceInCents: 26700, // $267 USD - Vibe Explorer
   },
 ]

@@ -8,14 +8,14 @@ export function PricingSection({ country }: PricingSectionProps) {
   // Primary price is always USD. For non-USD countries we also show the
   // approximate local-currency figure underneath so parents see what they'll
   // actually be charged in their card's currency.
-  const price = "$297"
+  const price = "$267"
   const currencyCode = "USD"
 
   const localApprox = (() => {
     if (!country) return null
     if (country.currency === "USD") return null
-    const rate = country.priceLocal / 297
-    const local = Math.round((297 * rate) / 100) * 100
+    const rate = country.priceLocal / 267
+    const local = Math.round((267 * rate) / 100) * 100
     return `aprox. ${country.currencySymbol}${local.toLocaleString()} ${country.currency}`
   })()
 

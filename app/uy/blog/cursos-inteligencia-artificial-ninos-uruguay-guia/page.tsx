@@ -62,7 +62,7 @@ const pillars = [
 ]
 
 const comparisonRows: [string, string, string][] = [
-    ["Precio", "US$297 (10 clases)", "US$150-400"],
+    ["Precio", "US$267 (10 clases)", "US$150-400"],
     ["Alumnos por clase", "Máximo 5", "15-30"],
     ["Herramientas IA", "10+ profesionales", "1-3 básicas"],
     ["Metodología", "100% práctica", "Teoría + práctica"],
@@ -82,7 +82,7 @@ const faqs = [
     { q: "¿Necesita conocimientos previos?", a: "No, partimos desde cero. Solo necesita saber leer, escribir y usar una computadora básicamente." },
     { q: "¿Cómo son las clases online?", a: "Clases en vivo por Zoom con máximo 5 niños. Interactivas y 100% prácticas." },
     { q: "¿Qué pasa si no me convence?", a: "Tenés 10 días de garantía. Si no estás satisfecho, devolvemos el 100% de tu dinero." },
-    { q: "¿Cómo puedo pagar desde Uruguay?", a: "Aceptamos tarjeta de crédito, débito internacional y transferencia bancaria. US$297 el programa completo." },
+    { q: "¿Cómo puedo pagar desde Uruguay?", a: "Aceptamos tarjeta de crédito, débito internacional y transferencia bancaria. US$267 el programa completo." },
 ]
 
 export default function UruguayBlogGuiaPage() {

@@ -60,7 +60,7 @@ const comparisonRows = [
     {
         label: "Inversión",
         codingal: "Membresías prolongadas / alto volumen",
-        innovakids: "Desde US$297 pago único, sin mensualidades sorpresa",
+        innovakids: "Desde US$267 pago único, sin mensualidades sorpresa",
     },
     {
         label: "Garantía",

@@ -3,11 +3,11 @@
 import { useEffect, useState } from "react"
 
 /**
- * Fecha objetivo: Lunes 11 de mayo 2026, 00:00 hora Chile (UTC-4).
+ * Fecha objetivo: Lunes 18 de mayo 2026, 00:00 hora Chile (UTC-4).
  * Se declara con offset explícito para que el cálculo sea idéntico
  * en servidor (SSR) y cliente, sin depender de la zona horaria local.
  */
-const TARGET_ISO = "2026-05-11T00:00:00-04:00"
+const TARGET_ISO = "2026-05-18T00:00:00-04:00"
 const TARGET_MS = new Date(TARGET_ISO).getTime()
 
 type T = { days: number; hours: number; minutes: number; seconds: number }
