@@ -23,6 +23,12 @@ export async function POST(request: NextRequest) {
     if (body.type === "payment") {
       const paymentId = body.data.id
 
+      // Validate paymentId is numeric (MercadoPago IDs are always numbers)
+      if (!paymentId || !/^\d{1,20}$/.test(String(paymentId))) {
+        console.error("[mercadopago] Invalid payment ID:", paymentId)
+        return NextResponse.json({ error: "Invalid payment ID" }, { status: 400 })
+      }
+
       // Fetch payment details from Mercado Pago API
       const response = await fetch(`https://api.mercadopago.com/v1/payments/${paymentId}`, {
         headers: {
