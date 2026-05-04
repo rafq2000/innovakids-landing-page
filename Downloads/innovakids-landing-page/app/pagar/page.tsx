@@ -63,8 +63,8 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   },
   reserve: {
     title: "Reserva tu Cupo",
-    price: 20,
-    description: "Reserva con $20 USD - Paga el resto antes de iniciar",
+    price: 27,
+    description: "Reserva con $27 USD - Paga el resto antes de iniciar",
   },
   earlybird: {
     title: "Early Bird - Primeros 10",
@@ -78,13 +78,13 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   },
   first: {
     title: "Reserva",
-    price: 50,
-    description: "Asegura tu lugar con $50 USD",
+    price: 27,
+    description: "Asegura tu lugar con $27 USD",
   },
   second: {
     title: "Pago Restante",
-    price: 247,
-    description: "Completa tu inscripción - Restante del programa",
+    price: 240,
+    description: "Completa tu inscripci\u00f3n - Restante del programa",
   },
   full: {
     title: "Pago Completo",

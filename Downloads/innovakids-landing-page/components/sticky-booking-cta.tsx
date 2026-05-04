@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Calendar, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { COHORT } from "@/lib/site-config"
 
 export function StickyBookingCTA() {
   const [isVisible, setIsVisible] = useState(false)
@@ -31,7 +32,7 @@ export function StickyBookingCTA() {
 
   return (
     <div className="fixed bottom-4 left-1/2 -translate-x-1/2 w-[calc(100%-2rem)] md:w-96 z-50 animate-in slide-in-from-bottom-5 duration-500">
-      <div className="bg-gradient-to-r from-[#4DD0E1] to-[#00BCD4] rounded-2xl shadow-2xl p-4 border-2 border-white/20">
+      <div className="bg-[#C96342] rounded-2xl shadow-2xl p-4 border border-[#FAF7EF]/20">
         <button
           onClick={() => setIsMinimized(true)}
           className="absolute -top-2 -right-2 bg-gray-800 hover:bg-gray-700 text-white rounded-full p-1.5 transition-colors"
@@ -46,7 +47,7 @@ export function StickyBookingCTA() {
           </div>
           <div className="flex-1">
             <h3 className="text-white font-bold text-sm md:text-base">¡Últimos Cupos Disponibles!</h3>
-            <p className="text-white/90 text-xs">Inicia el 11 de Mayo del 2026</p>
+            <p className="text-white/90 text-xs">Inicia el {COHORT.startDate}</p>
           </div>
         </div>
 

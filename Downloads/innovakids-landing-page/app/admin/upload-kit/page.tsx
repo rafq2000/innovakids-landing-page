@@ -4,6 +4,8 @@ import type React from "react"
 import { useState } from "react"
 
 export default function UploadKitPage() {
+    const [authKey, setAuthKey] = useState("")
+    const [authenticated, setAuthenticated] = useState(false)
     const [file, setFile] = useState<File | null>(null)
     const [uploading, setUploading] = useState(false)
     const [success, setSuccess] = useState(false)
@@ -34,6 +36,7 @@ export default function UploadKitPage() {
 
             const uploadResponse = await fetch("/api/upload-kit", {
                 method: "POST",
+                headers: { Authorization: `Bearer ${authKey}` },
                 body: formData,
             })
 
@@ -49,6 +52,30 @@ export default function UploadKitPage() {
         } finally {
             setUploading(false)
         }
+    }
+
+    if (!authenticated) {
+        return (
+            <div className="min-h-screen bg-[#FAF7EF] text-[#1A1714] flex items-center justify-center px-6">
+                <div className="max-w-sm w-full space-y-4">
+                    <h1 className="text-2xl font-semibold text-center">Admin</h1>
+                    <input
+                        type="password"
+                        placeholder="Clave de acceso"
+                        value={authKey}
+                        onChange={(e) => setAuthKey(e.target.value)}
+                        onKeyDown={(e) => e.key === "Enter" && authKey.length > 10 && setAuthenticated(true)}
+                        className="w-full border border-[#1A1714]/20 px-4 py-3 text-base"
+                    />
+                    <button
+                        onClick={() => authKey.length > 10 && setAuthenticated(true)}
+                        className="w-full bg-[#C96342] text-white px-4 py-3 font-semibold"
+                    >
+                        Entrar
+                    </button>
+                </div>
+            </div>
+        )
     }
 
     return (

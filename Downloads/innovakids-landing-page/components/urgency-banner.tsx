@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { AlertCircle, Clock } from "lucide-react"
+import { COHORT } from "@/lib/site-config"
 
 export function UrgencyBanner() {
   const [timeLeft, setTimeLeft] = useState({
@@ -12,7 +13,7 @@ export function UrgencyBanner() {
   })
 
   useEffect(() => {
-    const targetDate = new Date("2026-05-07T23:59:59-03:00").getTime() // Cierre inscripciones (Jueves previo)
+    const targetDate = new Date("2026-05-14T23:59:59-04:00").getTime() // Cierre inscripciones (Jueves previo)
 
     const updateCountdown = () => {
       const now = new Date().getTime()
@@ -42,7 +43,7 @@ export function UrgencyBanner() {
         <div className="flex items-center gap-2">
           <AlertCircle className="w-5 h-5 md:w-6 md:h-6 text-red-500 animate-pulse flex-shrink-0" />
           <h3 className="text-base md:text-xl lg:text-2xl font-bold text-white text-center">
-            ¡Curso inicia el 11 de Mayo del 2026!
+            ¡Curso inicia el {COHORT.startDate}!
           </h3>
         </div>
 
