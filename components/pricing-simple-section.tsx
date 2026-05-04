@@ -120,7 +120,7 @@ export function PricingSimpleSection() {
                 <Calendar className="w-6 h-6 text-primary" />
                 <p className="text-white font-bold text-xl font-premium">Próximo Curso Inicia</p>
               </div>
-              <p className="premium-gradient-text text-4xl font-black font-premium">11 de Mayo del 2026</p>
+              <p className="premium-gradient-text text-4xl font-black font-premium">18 de Mayo del 2026</p>
               <p className="text-gray-400 text-sm mt-2">Cupos limitados - Solo 5 niños por grupo</p>
             </div>
           </div>
@@ -322,7 +322,7 @@ export function PricingSimpleSection() {
                     <p className="text-gray-400 text-sm">pago completo con tarjeta</p>
                   </div>
                   <div className="bg-primary/10 rounded-xl p-4 border border-primary/30 hover:border-primary/50 transition-colors">
-                    <p className="text-primary font-bold text-2xl">$50 USD</p>
+                    <p className="text-primary font-bold text-2xl">$27 USD</p>
                     <p className="text-gray-400 text-sm">reserva tu cupo ahora</p>
                     <p className="text-gray-500 text-xs mt-1">y paga el resto antes de iniciar</p>
                   </div>

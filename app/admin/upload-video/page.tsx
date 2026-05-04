@@ -8,6 +8,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Upload, CheckCircle, AlertCircle, Loader2 } from "lucide-react"
 
 export default function UploadVideoPage() {
+  const [authKey, setAuthKey] = useState("")
+  const [authenticated, setAuthenticated] = useState(false)
   const [file, setFile] = useState<File | null>(null)
   const [uploading, setUploading] = useState(false)
   const [uploadedUrl, setUploadedUrl] = useState<string>("")
@@ -40,6 +42,7 @@ export default function UploadVideoPage() {
     try {
       const response = await fetch(`/api/upload-video?filename=${file.name}`, {
         method: "POST",
+        headers: { Authorization: `Bearer ${authKey}` },
         body: file,
       })
 
@@ -56,6 +59,30 @@ export default function UploadVideoPage() {
     } finally {
       setUploading(false)
     }
+  }
+
+  if (!authenticated) {
+    return (
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 flex items-center justify-center px-4">
+        <div className="max-w-sm w-full space-y-4">
+          <h1 className="text-2xl font-semibold text-center">Admin</h1>
+          <input
+            type="password"
+            placeholder="Clave de acceso"
+            value={authKey}
+            onChange={(e) => setAuthKey(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && authKey.length > 10 && setAuthenticated(true)}
+            className="w-full border border-gray-300 rounded-lg px-4 py-3 text-base"
+          />
+          <button
+            onClick={() => authKey.length > 10 && setAuthenticated(true)}
+            className="w-full bg-cyan-500 text-white rounded-lg px-4 py-3 font-semibold"
+          >
+            Entrar
+          </button>
+        </div>
+      </div>
+    )
   }
 
   return (

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type ReactNode } from "react"
 import Image from "next/image"
+import { COHORT } from "@/lib/site-config"
 
 /* ============================================================
    HOOKS — tiny IntersectionObserver-based visibility hook.
@@ -647,7 +648,7 @@ export function ValuePropositionSection() {
                     className="font-display text-2xl md:text-4xl leading-[1] tracking-[-0.02em] text-[#1A1714]"
                     style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                   >
-                    El <em className="italic text-[#C96342]">11 de mayo</em>.
+                    El <em className="italic text-[#C96342]">{COHORT.startDateShort}</em>.
                   </p>
                 </div>
               </div>
@@ -1113,7 +1114,7 @@ export function ValuePropositionSection() {
                   >
                     <div className="relative border-[3px] border-[#C96342] px-5 py-2 rounded-sm">
                       <p className="font-display italic text-3xl text-[#C96342] leading-none tracking-[0.04em]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>PAGADO</p>
-                      <p className="font-mono-accent text-[9px] uppercase tracking-[0.3em] text-[#C96342]/80 mt-1">Mayo · 2026</p>
+                      <p className="font-mono-accent text-[9px] uppercase tracking-[0.3em] text-[#C96342]/80 mt-1">{COHORT.name.split(" ")[0]} · {COHORT.name.split(" ")[1]}</p>
                     </div>
                   </div>
 

@@ -1,6 +1,8 @@
 import Image from "next/image"
 import { HeroCountdown } from "@/components/hero-countdown"
+import { HeroLeadForm } from "@/components/hero-lead-form"
 import { HeroLiveCounter } from "@/components/hero-live-counter"
+import { COHORT } from "@/lib/site-config"
 
 const tools = [
   "ChatGPT", "Claude", "Nano Banana", "Suno AI", "Canva AI",
@@ -28,14 +30,14 @@ export function HeroSection() {
               <span className="relative rounded-full bg-[var(--terracotta)] w-2 h-2" />
             </span>
             <span className="truncate">
-              <span className="hidden sm:inline">Cohorte mayo 2026 · </span>
-              <span className="text-[var(--terracotta-pale)] font-semibold">7 de 15 cupos</span>
+              <span className="hidden sm:inline">Cohorte {COHORT.nameShort} · </span>
+              <span className="text-[var(--terracotta-pale)] font-semibold">{COHORT.spotsRemaining} de {COHORT.totalSpots} cupos</span>
               <span className="hidden sm:inline"> restantes</span>
             </span>
           </div>
           <span className="text-[var(--paper)]/70 sm:text-[var(--paper)]/60 truncate">
             <span className="hidden sm:inline">Cierre de inscripciones · </span>
-            <span className="sm:hidden">Cierra </span>Dom. 10.05
+            <span className="sm:hidden">Cierra </span>{COHORT.registrationCloseDate}
           </span>
           <a href="#sesion-estrategica" className="hidden md:inline-flex items-center gap-2 text-[var(--paper)] hover:text-[var(--terracotta-pale)] transition-colors shrink-0">
             Agendar <span aria-hidden>→</span>
@@ -136,6 +138,11 @@ export function HeroSection() {
             <p className="mt-4 font-mono-accent text-[11px] uppercase tracking-[0.18em] text-[var(--ink-muted)]">
               30 minutos · Sin compromiso · 100% online
             </p>
+
+            {/* Quick lead capture */}
+            <div className="mt-8 max-w-[560px]">
+              <HeroLeadForm />
+            </div>
 
             {/* Mini trust row above fold */}
             <div className="mt-6 flex items-center gap-5 text-[11px] font-mono-accent uppercase tracking-[0.16em] text-[var(--ink-muted)]">
@@ -264,11 +271,11 @@ export function HeroSection() {
         <div className="rise rise-7 grid grid-cols-12 gap-10">
           <div className="col-span-12 md:col-span-7">
             <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[var(--ink-muted)] mb-6">
-              Próxima cohorte · 11 de mayo 2026
+              Próxima cohorte · {COHORT.startDateShort} {COHORT.nameShort.split(" ")[1]}
             </p>
             <HeroCountdown />
             <p className="mt-6 font-display italic text-lg text-[var(--ink-soft)] max-w-[40ch]">
-              Después, la siguiente cohorte abre recién en septiembre.
+              Después, la siguiente cohorte abre recién en {COHORT.nextCohort}.
             </p>
           </div>
           <aside className="col-span-12 md:col-span-5 md:border-l md:border-[var(--ink)]/15 md:pl-10 grid grid-cols-3 gap-6 items-start">
