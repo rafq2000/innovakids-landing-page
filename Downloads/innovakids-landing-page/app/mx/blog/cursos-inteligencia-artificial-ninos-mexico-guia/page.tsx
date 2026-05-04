@@ -77,9 +77,9 @@ const tools = [
 ]
 
 const comparisonRows = [
-    { program: "InnovaKids", highlight: true, price: "US$297", classes: "10 en vivo", group: "5 niños", guarantee: "10 días" },
+    { program: "InnovaKids", highlight: true, price: "US$267", classes: "10 en vivo", group: "5 niños", guarantee: "10 días" },
     { program: "Codingal", highlight: false, price: "US$300+", classes: "Variado", group: "1:1", guarantee: "No" },
-    { program: "Platzi Kids", highlight: false, price: "US$297 /año", classes: "Grabadas", group: "N/A", guarantee: "14 días" },
+    { program: "Platzi Kids", highlight: false, price: "US$267 /año", classes: "Grabadas", group: "N/A", guarantee: "14 días" },
     { program: "Código Kids MX", highlight: false, price: "US$150", classes: "8", group: "15 niños", guarantee: "No" },
 ]
 
@@ -340,7 +340,7 @@ export default function GuiaCompletaPage() {
                                         está en la calidad, el tamaño del grupo y el soporte.
                                     </p>
                                     <div className="mt-8 border border-[#1A1714]/12 p-8 bg-[#F2EDE0]/40">
-                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">Qué obtiene tu hijo por US$297</p>
+                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">Qué obtiene tu hijo por US$267</p>
                                         <ul className="divide-y divide-[#1A1714]/12 border-y border-[#1A1714]/12">
                                             {includes.map((item, i) => (
                                                 <li key={item} className="grid grid-cols-[auto_1fr] gap-6 py-4 items-baseline">

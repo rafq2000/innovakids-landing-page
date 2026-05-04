@@ -69,7 +69,7 @@ const courseJsonLd = {
   inLanguage: "es",
   offers: {
     "@type": "Offer",
-    price: "297",
+    price: "267",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
     url: "https://www.innovakidslatam.com/precios",

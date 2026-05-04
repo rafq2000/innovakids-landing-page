@@ -47,7 +47,7 @@ const comparisonRows: [string, string, string][] = [
     ["Proyectos reales", "10 proyectos", "1-3 ejercicios"],
     ["Herramientas", "10+ IAs profesionales", "1-2 básicas"],
     ["Garantía", "10 días devolución", "Sin garantía"],
-    ["Precio", "US$297", "US$150-400"],
+    ["Precio", "US$267", "US$150-400"],
     ["Certificado", "Internacional", "Local o ninguno"],
 ]
 

@@ -237,7 +237,7 @@ const pillars: Lot[] = [
   { num: "06", icon: <IconGroup />,  kicker: "Incluido en el programa", title: "Educación personalizada",         desc: "Máximo 5 niños por grupo. El mentor los conoce por nombre.",                  value: "incluido" },
   { num: "07", icon: <IconMentor />, kicker: "Incluido en el programa", title: "Mentor 1:1 cuando lo necesite",   desc: "Sesiones individuales para resolver dudas o profundizar más.",                value: 97  },
   { num: "08", icon: <IconChat />,   kicker: "Incluido en el programa", title: "Soporte por WhatsApp",            desc: "Tú y tu hijo escriben cuando quieran. Respuesta en menos de 5 min.",          value: "incluido" },
-  { num: "09", icon: <IconShield />, kicker: "Incluido en el programa", title: "Garantía de 10 días",             desc: "Si no lo ves enganchado, devolución total. Sin preguntas.",                   value: 297 },
+  { num: "09", icon: <IconShield />, kicker: "Incluido en el programa", title: "Garantía de 10 días",             desc: "Si no lo ves enganchado, devolución total. Sin preguntas.",                   value: 267 },
   { num: "10", icon: <IconMedal />,  kicker: "Incluido en el programa", title: "Certificado digital",             desc: "Verificable, para portafolio o postulaciones futuras.",                        value: 47  },
 ]
 
@@ -253,7 +253,7 @@ const subtotalSkills  = sumOf(skills)
 const subtotalPillars = sumOf(pillars)
 const subtotalBonos   = sumOf(bonos)
 const grandTotal      = subtotalSkills + subtotalPillars + subtotalBonos
-const priceToday      = 297
+const priceToday      = 267
 const discount        = grandTotal - priceToday
 const fmt = (n: number) => `$${n.toLocaleString("es-CL")}`
 

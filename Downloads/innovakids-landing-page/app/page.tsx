@@ -7,9 +7,9 @@ import { generateHreflangs } from "@/lib/seo-config"
 import { faqs } from "@/lib/faq-data"
 
 export const metadata: Metadata = {
-  title: "Que Tu Hijo No Se Quede Atrás en la Era de la IA | InnovaKids",
+  title: "Cursos de IA para Niños y Adolescentes (8-17 años) | ★4.9 · Clase Gratis | InnovaKids",
   description:
-    "73% de sus compañeros ya usa IA para estudiar. La IA es el nuevo inglés/internet: aprenderla a tiempo marca la diferencia en el colegio y la universidad. Curso #1 IA niños 8-17. Clase gratis.",
+    "Clases en vivo de Inteligencia Artificial para niños y adolescentes 8-17 años. Crean videojuegos, apps y arte con IA. Grupos de máx. 5 alumnos. 527 graduados en 9 países. ★4.9. 1ª clase gratis.",
   keywords: [
     "mi hijo se queda atrás en la era de la ia",
     "como evitar que mi hijo se quede atras con la ia",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     languages: generateHreflangs("home"),
   },
   openGraph: {
-    title: "Que Tu Hijo No Se Quede Atrás en la Era de la IA | InnovaKids",
+    title: "Cursos de IA para Niños y Adolescentes (8-17 años) | ★4.9 · Clase Gratis | InnovaKids",
     description:
-      "La IA es el nuevo inglés/internet: una habilidad base que se aprende en 5 semanas. Para que tu hijo avance con su generación y llegue preparado a la universidad. Reserva tu clase gratis.",
+      "Clases de IA en vivo para niños 8-17 años. Crean videojuegos, apps y arte con Inteligencia Artificial. Máx. 5 alumnos. 527 graduados. ★4.9. Reserva tu 1ª clase gratis hoy →",
     url: "https://www.innovakidslatam.com",
     type: "website",
     locale: "es_419",
@@ -51,27 +51,27 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Que Tu Hijo No Se Quede Atrás en la Era de la IA | InnovaKids",
+    title: "Cursos de IA para Niños y Adolescentes (8-17 años) | ★4.9 | InnovaKids",
     description:
-      "El 85% de los trabajos del 2035 usarán IA. Aprenderla a tiempo le abre más opciones en el colegio, la universidad y el trabajo. Clase gratis de prueba.",
+      "Clases de IA para niños 8-17 años. Crean videojuegos, apps y arte con IA. Grupos de 5. 527 graduados. ★4.9. Primera clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
 
-const TestimonialsSection = dynamic(
-  () => import("@/components/testimonials-section").then((mod) => ({ default: mod.TestimonialsSection })),
-  { ssr: true },
-)
 const CurriculumSection = dynamic(
   () => import("@/components/curriculum-section").then((mod) => ({ default: mod.CurriculumSection })),
   { ssr: true },
 )
-const ValuePropositionSection = dynamic(
-  () => import("@/components/value-proposition-section").then((mod) => ({ default: mod.ValuePropositionSection })),
+const TestimonialsSection = dynamic(
+  () => import("@/components/testimonials-section").then((mod) => ({ default: mod.TestimonialsSection })),
   { ssr: true },
 )
-const PricingSection = dynamic(
-  () => import("@/components/pricing-section").then((mod) => ({ default: mod.PricingSection })),
+const IrresistibleOfferSection = dynamic(
+  () => import("@/components/irresistible-offer-section").then((mod) => ({ default: mod.IrresistibleOfferSection })),
+  { ssr: true },
+)
+const ValuePropositionSection = dynamic(
+  () => import("@/components/value-proposition-section").then((mod) => ({ default: mod.ValuePropositionSection })),
   { ssr: true },
 )
 const InstitutionalSolutionsSection = dynamic(
@@ -148,7 +148,7 @@ export default function Home() {
     "courseMode": "online",
     "offers": {
       "@type": "Offer",
-      "price": "297",
+      "price": "267",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "url": "https://www.innovakidslatam.com",
@@ -173,23 +173,17 @@ export default function Home() {
         {/* 1 · HERO — hook + promesa + CTA primario */}
         <HeroSection />
 
-        {/* 2 · PRUEBA SOCIAL — testimonios reales antes de pedir nada */}
-        <TestimonialsSection />
-
-        <div className="h-24" />
-
-        {/* 3 · PROPUESTA DE VALOR — oferta completa con iconografía */}
-        <ValuePropositionSection />
-
-        <div className="h-24" />
-
-        {/* 4 · QUÉ APRENDE — currículum concreto */}
+        {/* 2 · QUÉ APRENDE — currículum concreto antes de mostrar precio */}
         <CurriculumSection />
 
-        <div className="h-24" />
+        {/* 3 · PRUEBA SOCIAL — testimonios reales, ya saben qué es el curso */}
+        <TestimonialsSection />
 
-        {/* 5 · PRECIO — única sección de inversión, al final del valor */}
-        <PricingSection />
+        {/* 4 · OFERTA IRRESISTIBLE — problema + calificador + offer stack + cierre */}
+        <IrresistibleOfferSection />
+
+        {/* 5 · PROPUESTA DE VALOR — catálogo completo + garantía + recibo + precio */}
+        <ValuePropositionSection />
 
         <div className="h-24" />
 
@@ -198,7 +192,7 @@ export default function Home() {
 
         <div className="h-24" />
 
-        {/* 7 · FAQ — cierre de la presentación para padres, objeciones resueltas */}
+        {/* 7 · FAQ — cierre de objeciones */}
         <FAQSection />
 
         <div className="h-24" />
