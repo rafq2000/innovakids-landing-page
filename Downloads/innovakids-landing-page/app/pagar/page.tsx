@@ -27,6 +27,7 @@ type PaymentOption =
   | "promo480"
   | "pago240"
   | "pago480"
+  | "remaining"
 
 interface PaymentDetails {
   title: string
@@ -37,8 +38,8 @@ interface PaymentDetails {
 const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   explorer: {
     title: "Innovakids Explorer",
-    price: 297,
-    description: "Módulo 1 Base - 10 Clases Fundamentales",
+    price: 267,
+    description: "Programa completo - 10 Clases en vivo de IA",
   },
   start_pack: {
     title: "Vibe Start Pack",
@@ -67,13 +68,13 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   },
   earlybird: {
     title: "Early Bird - Primeros 10",
-    price: 297,
-    description: "Precio especial para los primeros 10 inscritos (60% OFF)",
+    price: 267,
+    description: "Precio especial para los primeros 10 inscritos",
   },
   complete: {
     title: "Programa Completo",
-    price: 297,
-    description: "Precio de lanzamiento 2026 (60% OFF - Valor real $497)",
+    price: 267,
+    description: "Precio de lanzamiento 2026",
   },
   first: {
     title: "Reserva",
@@ -87,8 +88,8 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   },
   full: {
     title: "Pago Completo",
-    price: 297,
-    description: "Acceso inmediato al curso completo",
+    price: 267,
+    description: "Acceso completo al programa de IA",
   },
   promo180: {
     title: "Oferta Especial Limitada",
@@ -133,7 +134,12 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   pago480: {
     title: "Programa Premium Innovakids",
     price: 480,
-    description: "Pago único de $480 USD - Acceso premium completo al programa de IA",
+    description: "Pago \u00fanico de $480 USD - Acceso premium completo al programa de IA",
+  },
+  remaining: {
+    title: "Completar Pago - Saldo Pendiente",
+    price: 240,
+    description: "Pago del saldo restante de $240 USD para confirmar tu cupo en la Cohorte Mayo 2026",
   },
 }
 
