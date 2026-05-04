@@ -4,6 +4,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import Link from "next/link"
 import { GraciasTracker } from "./gracias-tracker"
+import { ReferralSection } from "./referral-section"
 
 export const metadata: Metadata = {
     title: "Pago confirmado · InnovaKids",
@@ -113,6 +114,9 @@ export default function GraciasPage() {
                                 </div>
                             </div>
                         </aside>
+
+                        {/* Referral program */}
+                        <ReferralSection />
                     </div>
                 </section>
             </main>
