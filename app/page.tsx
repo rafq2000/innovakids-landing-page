@@ -90,6 +90,14 @@ const Footer = dynamic(
   () => import("@/components/footer").then((mod) => ({ default: mod.Footer })),
   { ssr: true, loading: () => <div className="h-[300px] bg-[#EDE6D3] animate-pulse" /> },
 )
+const SocialProofToast = dynamic(
+  () => import("@/components/social-proof-toast").then((mod) => ({ default: mod.SocialProofToast })),
+  { ssr: true },
+)
+const ExitIntentPopup = dynamic(
+  () => import("@/components/exit-intent-popup").then((mod) => ({ default: mod.ExitIntentPopup })),
+  { ssr: true },
+)
 
 export default function Home() {
   const faqSchema = {
@@ -279,6 +287,8 @@ export default function Home() {
         <Footer />
       </main>
       <WhatsAppButton />
+      <SocialProofToast />
+      <ExitIntentPopup />
     </>
   )
 }

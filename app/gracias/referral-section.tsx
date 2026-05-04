@@ -1,6 +1,10 @@
 "use client"
 
+import { useState } from "react"
+import { trackCTAClick } from "@/lib/gtag"
+
 export function ReferralSection() {
+    const [copied, setCopied] = useState(false)
     return (
         <aside className="mt-16 bg-[#1A1714] text-[#FAF7EF] p-8 md:p-12 rounded-[3px]">
             <div className="grid md:grid-cols-12 gap-8 items-center">
@@ -35,15 +39,19 @@ export function ReferralSection() {
                             className="w-full bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-5 py-3 text-sm font-semibold rounded-sm transition-colors"
                             onClick={() => {
                                 navigator.clipboard?.writeText("https://www.innovakidslatam.com/?ref=amigo")
+                                trackCTAClick("referral_copy_link")
+                                setCopied(true)
+                                setTimeout(() => setCopied(false), 2000)
                             }}
                         >
-                            Copiar enlace
+                            {copied ? "Copiado" : "Copiar enlace"}
                         </button>
                     </div>
                     <a
                         href="https://wa.me/?text=Mira%20este%20curso%20de%20IA%20para%20niños%20que%20estamos%20tomando%20→%20https://www.innovakidslatam.com/?ref=amigo"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => trackCTAClick("referral_whatsapp_share")}
                         className="inline-flex items-center justify-center gap-2 border border-[#FAF7EF]/20 hover:border-[#C96342] text-[#FAF7EF] px-5 py-3 text-sm font-semibold rounded-sm transition-colors"
                     >
                         Compartir por WhatsApp

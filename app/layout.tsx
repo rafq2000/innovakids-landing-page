@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next"
 import { Fraunces, Instrument_Sans, JetBrains_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { TrackingPixels } from "@/components/tracking-pixels"
+import { ScrollDepthTracker } from "@/components/scroll-depth-tracker"
 import { generateHreflangs } from "@/lib/seo-config"
 import "./globals.css"
 
@@ -37,10 +38,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   // Title: empathetic fear-hook · keyword-rich · brand at end
-  title: "Que Tu Hijo No Se Quede Atrás en la Era de la IA | InnovaKids",
-  // Description: empathetic + social proof + soft urgency
+  title: "Cursos de IA para Niños y Adolescentes (8-17 años) | ★4.9 · Clase Gratis | InnovaKids",
+  // Description: keyword-first + social proof + CTA
   description:
-    "El 73% de sus compañeros ya usa IA para estudiar. La IA es el nuevo inglés/internet: una habilidad base para el colegio, la universidad y el trabajo. Empezar a tiempo marca la diferencia. Clase gratis.",
+    "Clases en vivo de Inteligencia Artificial para niños y adolescentes 8-17 años. Crean videojuegos, apps y arte con IA. Grupos de máx. 5. 527 graduados en 9 países. ★4.9. 1ª clase gratis.",
   keywords: [
     "mi hijo se queda atrás en la era de la ia",
     "como evitar que mi hijo se quede atras con la ia",
@@ -84,9 +85,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
-    title: "Que Tu Hijo No Se Quede Atrás en la Era de la IA | InnovaKids",
+    title: "Cursos de IA para Niños y Adolescentes (8-17 años) | ★4.9 · Clase Gratis | InnovaKids",
     description:
-      "La IA es hoy lo que fueron internet, inglés y Excel en los 90s: una habilidad base. Sus compañeros ya la usan para estudiar. Aprenderla a tiempo le abre más oportunidades en el colegio, la universidad y el trabajo.",
+      "Clases de IA en vivo para niños 8-17 años. Crean videojuegos, apps y arte con Inteligencia Artificial. Máx. 5 alumnos. 527 graduados en 9 países. ★4.9. 1ª clase gratis.",
     url: "https://www.innovakidslatam.com",
     siteName: "Innovakids",
     images: [
@@ -102,9 +103,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Que Tu Hijo No Se Quede Atrás en la Era de la IA | InnovaKids",
+    title: "Cursos de IA para Niños y Adolescentes (8-17) | ★4.9 | InnovaKids",
     description:
-      "La IA es el nuevo inglés/internet: una habilidad base. Sus compañeros ya la usan para estudiar. Aprenderla a tiempo le abre más oportunidades. Clase gratis.",
+      "Clases de IA para niños 8-17 años. Videojuegos, apps y arte con IA. Grupos de 5. 527 graduados. ★4.9. Clase gratis.",
     images: ["/hero-child-learning-ai.jpg"],
   },
   robots: {
@@ -386,6 +387,7 @@ export default function RootLayout({
       </head>
       <body className={`${fraunces.variable} ${instrumentSans.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
         <TrackingPixels />
+        <ScrollDepthTracker />
         {children}
         <Analytics />
       </body>
