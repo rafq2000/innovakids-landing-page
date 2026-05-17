@@ -246,7 +246,7 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                             </h2>
 
                             <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
-                                Quedan solo 5 cupos para el programa de la semana del 30 de marzo del 2026. Agenda tu evaluación gratuita.
+                                Las plazas se agotan rápido para el programa que inicia el 8 de Junio del 2026. Agenda tu evaluación gratuita.
                             </p>
 
                             <Button

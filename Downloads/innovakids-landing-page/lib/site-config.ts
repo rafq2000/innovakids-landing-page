@@ -6,19 +6,21 @@
 /* ─── COHORT DATES ─────────────────────────────────────── */
 
 export const COHORT = {
-  name: "Mayo 2026",
-  nameShort: "mayo 2026",
-  startDate: "18 de Mayo del 2026",
-  startDateShort: "18 de mayo",
-  startDateCompact: "18.05",
-  registrationCloseDate: "Sáb. 17.05",
-  registrationCloseDateLong: "17 de mayo",
+  name: "Junio 2026",
+  nameShort: "junio 2026",
+  startDate: "8 de Junio del 2026",
+  startDateShort: "8 de junio",
+  startDateCompact: "08.06",
+  registrationCloseDate: "Sáb. 07.06",
+  registrationCloseDateLong: "7 de junio",
   /** ISO 8601 — used by countdown timer */
-  startISO: "2026-05-18T00:00:00-04:00",
+  startISO: "2026-06-08T00:00:00-04:00",
   nextCohort: "septiembre",
   totalSpots: 15,
-  spotsRemaining: 7,
+  spotsRemaining: 4,
   groupSize: 5,
+  /** Urgency message shown across CTAs */
+  urgencyMessage: "Las plazas se agotan rápido",
 } as const
 
 /* ─── PRICING ──────────────────────────────────────────── */
