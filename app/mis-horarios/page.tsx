@@ -12,15 +12,15 @@ const COUNTRIES = [
   { id: "CL", label: "Chile", utc: "UTC-4" },
   { id: "AR", label: "Argentina", utc: "UTC-3" },
   { id: "CO", label: "Colombia", utc: "UTC-5" },
-  { id: "MX", label: "M\u00e9xico", utc: "UTC-6" },
-  { id: "PE", label: "Per\u00fa", utc: "UTC-5" },
+  { id: "MX", label: "México", utc: "UTC-6" },
+  { id: "PE", label: "Perú", utc: "UTC-5" },
   { id: "EC", label: "Ecuador", utc: "UTC-5" },
   { id: "BO", label: "Bolivia", utc: "UTC-4" },
   { id: "PY", label: "Paraguay", utc: "UTC-4" },
   { id: "UY", label: "Uruguay", utc: "UTC-3" },
   { id: "VE", label: "Venezuela", utc: "UTC-4" },
   { id: "CR", label: "Costa Rica", utc: "UTC-6" },
-  { id: "PA", label: "Panam\u00e1", utc: "UTC-5" },
+  { id: "PA", label: "Panamá", utc: "UTC-5" },
   { id: "GT", label: "Guatemala", utc: "UTC-6" },
   { id: "SV", label: "El Salvador", utc: "UTC-6" },
   { id: "HN", label: "Honduras", utc: "UTC-6" },
@@ -29,30 +29,44 @@ const COUNTRIES = [
   { id: "PR", label: "Puerto Rico", utc: "UTC-4" },
   { id: "US", label: "Estados Unidos (Este)", utc: "UTC-5" },
   { id: "US-W", label: "Estados Unidos (Oeste)", utc: "UTC-8" },
-  { id: "ES", label: "Espa\u00f1a", utc: "UTC+2" },
+  { id: "ES", label: "España", utc: "UTC+2" },
   { id: "BR", label: "Brasil", utc: "UTC-3" },
 ]
 
 const DAYS = [
   { id: "lunes", label: "Lunes" },
   { id: "martes", label: "Martes" },
-  { id: "miercoles", label: "Mi\u00e9rcoles" },
+  { id: "miercoles", label: "Miércoles" },
   { id: "jueves", label: "Jueves" },
   { id: "viernes", label: "Viernes" },
-  { id: "sabado", label: "S\u00e1bado" },
 ]
 
-const TIME_SLOTS = [
-  { id: "09:00-10:00", label: "09:00 - 10:00" },
-  { id: "10:00-11:00", label: "10:00 - 11:00" },
-  { id: "11:00-12:00", label: "11:00 - 12:00" },
-  { id: "14:00-15:00", label: "14:00 - 15:00" },
-  { id: "15:00-16:00", label: "15:00 - 16:00" },
-  { id: "16:00-17:00", label: "16:00 - 17:00" },
-  { id: "17:00-18:00", label: "17:00 - 18:00" },
-  { id: "18:00-19:00", label: "18:00 - 19:00" },
-  { id: "19:00-20:00", label: "19:00 - 20:00" },
-]
+// Horarios base en hora Chile (UTC-4): 10:00 a 21:00
+const CHILE_SLOTS = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+const CHILE_UTC = -4
+
+function parseUtcOffset(utc: string): number {
+  const match = utc.match(/UTC([+-]\d+)/)
+  return match ? parseInt(match[1]) : -4
+}
+
+function formatHour(h: number): string {
+  const normalized = ((h % 24) + 24) % 24
+  return `${String(normalized).padStart(2, "0")}:00`
+}
+
+function getLocalSlots(countryUtc: string) {
+  const offset = parseUtcOffset(countryUtc)
+  const diff = offset - CHILE_UTC
+  return CHILE_SLOTS.map((chileHour) => {
+    const localHour = ((chileHour + diff) % 24 + 24) % 24
+    const localEnd = ((chileHour + 1 + diff) % 24 + 24) % 24
+    return {
+      id: `${formatHour(chileHour)}-${formatHour(chileHour + 1)}`,
+      label: `${formatHour(localHour)} - ${formatHour(localEnd)}`,
+    }
+  })
+}
 
 type Schedule = Record<string, string[]>
 
@@ -74,6 +88,7 @@ function HorariosForm() {
   const [error, setError] = useState("")
 
   const selectedCountry = COUNTRIES.find((c) => c.id === country)
+  const localSlots = selectedCountry ? getLocalSlots(selectedCountry.utc) : []
 
   const toggleSlot = (day: string, slot: string) => {
     setSchedule((prev) => {
@@ -130,12 +145,12 @@ function HorariosForm() {
         <div className="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-full mb-6">
           <CheckCircle className="w-10 h-10 text-green-600" />
         </div>
-        <h2 className="text-3xl font-bold mb-4">Horarios guardados</h2>
+        <h2 className="text-3xl font-bold mb-4">¡Listo! Recibimos tus horarios</h2>
         <p className="text-lg text-muted-foreground max-w-md mx-auto mb-6">
-          Recibimos tu disponibilidad. Te asignaremos al grupo ideal y te avisaremos por email y WhatsApp.
+          Con tu disponibilidad, te asignaremos al grupo que mejor se ajuste. Te confirmaremos el día y hora exacta de sus 2 clases semanales por email y WhatsApp.
         </p>
         <p className="text-sm text-muted-foreground">
-          Cualquier duda, escr\u00edbenos al{" "}
+          Cualquier duda, escríbenos al{" "}
           <a href="https://wa.me/56922450492" className="text-primary font-semibold underline">
             +56 9 2245 0492
           </a>
@@ -149,14 +164,14 @@ function HorariosForm() {
       <div className="text-center mb-10">
         <div className="inline-flex items-center gap-2 bg-primary/10 text-primary border border-primary/30 px-4 py-2 rounded-full text-sm font-semibold mb-5">
           <Clock className="w-4 h-4" />
-          Paso obligatorio despu\u00e9s del pago
+          Paso obligatorio después del pago
         </div>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-balance leading-tight">
-          Selecciona tus horarios
+          Elige los horarios para las clases de tu hijo/a
         </h1>
         <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
-          Completa los datos y elige <strong className="text-foreground">m\u00ednimo 3 d\u00edas</strong> con{" "}
-          <strong className="text-foreground">al menos 2 horarios por d\u00eda</strong>.
+          Tu hijo/a tendrá <strong className="text-foreground">2 clases por semana</strong>. Para asignarlo al mejor grupo, necesitamos que marques tu disponibilidad: <strong className="text-foreground">mínimo 3 días</strong> con{" "}
+          <strong className="text-foreground">al menos 2 franjas horarias por día</strong>.
         </p>
       </div>
 
@@ -189,7 +204,7 @@ function HorariosForm() {
             />
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="whatsapp" className="block text-sm font-semibold mb-2">WhatsApp (con c\u00f3digo de pa\u00eds)</label>
+            <label htmlFor="whatsapp" className="block text-sm font-semibold mb-2">WhatsApp (con código de país)</label>
             <input
               id="whatsapp"
               type="tel"
@@ -240,21 +255,21 @@ function HorariosForm() {
               <option value="">Selecciona la edad</option>
               {[8, 9, 10, 11, 12, 13, 14, 15, 16, 17].map((age) => (
                 <option key={age} value={age}>
-                  {age} a\u00f1os
+                  {age} años
                 </option>
               ))}
             </select>
           </div>
           <div className="sm:col-span-2">
-            <label htmlFor="country" className="block text-sm font-semibold mb-2">Pa\u00eds de residencia</label>
+            <label htmlFor="country" className="block text-sm font-semibold mb-2">País de residencia</label>
             <select
               id="country"
               value={country}
-              onChange={(e) => setCountry(e.target.value)}
+              onChange={(e) => { setCountry(e.target.value); setSchedule({}) }}
               className="w-full border rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-primary/50 focus:border-primary outline-none bg-background"
               required
             >
-              <option value="">Selecciona tu pa\u00eds</option>
+              <option value="">Selecciona tu país</option>
               {COUNTRIES.map((c) => (
                 <option key={c.id} value={c.id}>
                   {c.label} ({c.utc})
@@ -263,7 +278,7 @@ function HorariosForm() {
             </select>
             {selectedCountry && (
               <p className="text-xs text-muted-foreground mt-1">
-                Zona horaria: <strong>{selectedCountry.utc}</strong> — Los horarios que selecciones abajo son en tu hora local.
+                Zona horaria: <strong>{selectedCountry.utc}</strong>
               </p>
             )}
           </div>
@@ -283,8 +298,8 @@ function HorariosForm() {
                 : "border-border hover:border-primary/30"
             }`}
           >
-            <p className="font-semibold">Cohorte Mayo 2026</p>
-            <p className="text-sm text-muted-foreground">Inicio: semana del 18 de mayo</p>
+            <p className="font-semibold">Cohorte Junio 2026</p>
+            <p className="text-sm text-muted-foreground">Inicio: semana del 8 de junio</p>
           </button>
           <button
             type="button"
@@ -296,7 +311,7 @@ function HorariosForm() {
             }`}
           >
             <p className="font-semibold">Curso posterior</p>
-            <p className="text-sm text-muted-foreground">Sin fecha definida a\u00fan</p>
+            <p className="text-sm text-muted-foreground">Sin fecha definida aún</p>
           </button>
         </div>
       </div>
@@ -305,7 +320,7 @@ function HorariosForm() {
       {cohort === "posterior" && formComplete && (
         <div className="bg-blue-50 border border-blue-200 rounded-xl p-5 mb-6 text-center">
           <p className="text-blue-800 font-medium">
-            Cuando se defina la fecha del pr\u00f3ximo curso, te contactaremos para elegir horarios.
+            Cuando se defina la fecha del próximo curso, te contactaremos para elegir horarios.
           </p>
         </div>
       )}
@@ -326,12 +341,11 @@ function HorariosForm() {
             <span className="text-muted-foreground">
               {selectedDays.length >= 3 ? (
                 <span className="text-green-700 font-semibold">
-                  Tienes suficientes d\u00edas seleccionados
+                  ¡Perfecto! Ya puedes confirmar tus horarios.
                 </span>
               ) : (
                 <>
-                  Selecciona <strong>{3 - selectedDays.length}</strong> d\u00eda(s) m\u00e1s con al menos 2
-                  horarios cada uno
+                  Te faltan <strong>{3 - selectedDays.length}</strong> día(s). Marca al menos 2 franjas horarias en cada día.
                 </>
               )}
             </span>
@@ -340,7 +354,19 @@ function HorariosForm() {
       )}
 
       {/* Schedule grid */}
-      {cohort === "mayo-2026" && <div className="space-y-4 mb-8">
+      {cohort === "mayo-2026" && !country && (
+        <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-6 text-center">
+          <p className="text-sm text-amber-800 font-medium">
+            Selecciona tu país arriba para ver los horarios disponibles en tu zona horaria.
+          </p>
+        </div>
+      )}
+      {cohort === "mayo-2026" && country && <div className="space-y-4 mb-8">
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-2">
+          <p className="text-sm text-blue-800 font-medium">
+            Los horarios se muestran en <strong>hora de {selectedCountry?.label} ({selectedCountry?.utc})</strong>.
+          </p>
+        </div>
         {DAYS.map((day) => {
           const daySlots = schedule[day.id] || []
           const isComplete = daySlots.length >= 2
@@ -367,7 +393,7 @@ function HorariosForm() {
                 </span>
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-2">
-                {TIME_SLOTS.map((slot) => {
+                {localSlots.map((slot) => {
                   const selected = daySlots.includes(slot.id)
                   return (
                     <button
@@ -416,13 +442,13 @@ function HorariosForm() {
 
       {!isValid && formComplete && cohort === "mayo-2026" && (
         <p className="text-center text-sm text-orange-600 mt-3">
-          Necesitas seleccionar al menos 3 d\u00edas con 2 horarios cada uno.
+          Faltan horarios: marca al menos 3 días con 2 franjas cada uno para que podamos asignarte grupo.
         </p>
       )}
 
       {!formComplete && (
         <p className="text-center text-sm text-muted-foreground mt-3">
-          Completa todos los datos para continuar.
+          Completa todos los campos de arriba para continuar.
         </p>
       )}
     </div>

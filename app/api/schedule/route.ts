@@ -101,7 +101,7 @@ export async function POST(request: NextRequest) {
       <p style="color:#166534;font-size:14px;margin:0;">
         <strong>Pa&iacute;s:</strong> ${escapeHtml(country)} &middot;
         <strong>Zona:</strong> ${escapeHtml(timezone)} &middot;
-        <strong>Cohorte:</strong> ${cohort === "posterior" ? "Curso posterior" : "Mayo 2026"}
+        <strong>Cohorte:</strong> ${cohort === "posterior" ? "Curso posterior" : "Junio 2026"}
       </p>
     </div>
     <p style="color:#999;font-size:13px;">
