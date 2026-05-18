@@ -23,6 +23,7 @@ export function buildWelcomeEmailHtml({
   const safeStudentName = escapeHtml(studentName)
   const safeParentEmail = escapeHtml(parentEmail)
   const bienvenidaUrl = `${APP_URL}/bienvenida`
+  const miInscripcionUrl = `${APP_URL}/mi-inscripcion`
   const horariosUrl = `${APP_URL}/mis-horarios?email=${encodeURIComponent(parentEmail)}&student=${encodeURIComponent(studentName)}`
   const isPartial = (amount || 0) <= 30 && (amount || 0) > 0
   const paymentUrl = `${APP_URL}/pagar?option=remaining&email=${encodeURIComponent(parentEmail)}`
@@ -103,6 +104,16 @@ export function buildWelcomeEmailHtml({
       <p style="color:#666;font-size:14px;line-height:1.6;margin:0 0 24px;">
         Tambi&eacute;n puedes <a href="${bienvenidaUrl}" style="color:#C96342;font-weight:600;">descargar tu Kit de Bienvenida</a> con 8 documentos esenciales: carta, gu&iacute;a de padres, calendario, reglamento, manual de IA segura, 200 prompts y m&aacute;s.
       </p>
+
+      <!-- Mi inscripcion -->
+      <div style="background:#F2EDE0;border:1px solid #e8e0d0;border-radius:12px;padding:20px;margin:0 0 24px;text-align:center;">
+        <p style="color:#666;font-size:14px;margin:0 0 12px;line-height:1.5;">
+          &#128204; Si este correo no te lleg&oacute; o lo perdiste, siempre puedes acceder a todos tus documentos, horarios y pasos desde:
+        </p>
+        <a href="${miInscripcionUrl}" style="display:inline-block;background:#1A1714;color:#FAF7EF;text-decoration:none;padding:12px 28px;border-radius:8px;font-weight:700;font-size:15px;">
+          Ver mi inscripci&oacute;n completa
+        </a>
+      </div>
 
       <!-- Contacto directo -->
       <div style="background:#1A1714;border-radius:12px;padding:24px;margin:0 0 24px;text-align:center;">

@@ -1,4 +1,4 @@
-import { CheckCircle } from "lucide-react"
+import { CheckCircle, Download } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
@@ -33,9 +33,24 @@ export default function PagoExitoPage() {
           </ul>
         </div>
 
-        <Button asChild className="w-full">
-          <Link href="/">Volver al inicio</Link>
-        </Button>
+        <div className="space-y-3">
+          <Button asChild className="w-full">
+            <Link href="/mi-inscripcion">
+              <Download className="h-4 w-4 mr-2" />
+              Ver mi inscripcion completa
+            </Link>
+          </Button>
+          <Button asChild variant="outline" className="w-full bg-transparent">
+            <Link href="/mis-horarios">Seleccionar horarios</Link>
+          </Button>
+          <Button asChild variant="ghost" className="w-full">
+            <Link href="/">Volver al inicio</Link>
+          </Button>
+        </div>
+
+        <p className="text-xs text-muted-foreground mt-4">
+          No te llego el correo? En "Mi inscripcion" tienes los documentos, horarios y todo lo que necesitas.
+        </p>
       </div>
     </div>
   )
