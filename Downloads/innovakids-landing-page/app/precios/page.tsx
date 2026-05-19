@@ -47,6 +47,7 @@ const jsonLd = {
   "@type": "Product",
   name: "Programa Vibe Explorer — Curso IA para Niños InnovaKids 2026",
   description: "Curso online en vivo de IA para niños de 8-17 años. 10 clases, grupos de 5 alumnos, proyectos reales y certificado.",
+  image: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
   brand: { "@type": "Brand", name: "InnovaKids" },
   offers: {
     "@type": "Offer",
