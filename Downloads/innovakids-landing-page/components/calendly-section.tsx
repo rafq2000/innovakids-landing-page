@@ -31,6 +31,7 @@ const LATIN_AMERICA_COUNTRIES = [
 const AGE_RANGES = [
   { value: "8-10", label: "8–10 años" },
   { value: "11-14", label: "11–14 años" },
+  { value: "15-17", label: "15–17 años" },
 ]
 
 export function CalendlySection() {
