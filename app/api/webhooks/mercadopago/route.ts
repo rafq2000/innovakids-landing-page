@@ -2,6 +2,7 @@ import { type NextRequest, NextResponse } from "next/server"
 import { createClient } from "@supabase/supabase-js"
 import { createHmac } from "crypto"
 import { saveEnrollmentAndSendWelcome } from "@/lib/enrollment"
+import { notifyN8nPayment } from "@/lib/notify-n8n"
 
 export const dynamic = 'force-dynamic'
 
@@ -125,7 +126,7 @@ export async function POST(request: NextRequest) {
           ? `${payment.payer.first_name} ${payment.payer.last_name || ""}`.trim()
           : payment.payer.email.split("@")[0]
 
-        saveEnrollmentAndSendWelcome({
+        await saveEnrollmentAndSendWelcome({
           studentName,
           parentEmail: payment.payer.email,
           paymentMethod: "mercadopago",
@@ -133,6 +134,16 @@ export async function POST(request: NextRequest) {
           paymentId: String(payment.id),
           paymentOption: refParts[0] || "unknown",
         }).catch((err) => console.error("[mercadopago] Welcome email error:", err))
+
+        // Notify n8n for WhatsApp onboarding (non-blocking)
+        notifyN8nPayment({
+          studentName,
+          parentEmail: payment.payer.email,
+          amount: payment.transaction_amount,
+          paymentMethod: "mercadopago",
+          paymentId: String(payment.id),
+          paymentOption: refParts[0] || "unknown",
+        }).catch(() => {})
       }
     }
 

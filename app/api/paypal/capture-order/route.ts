@@ -1,5 +1,6 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { saveEnrollmentAndSendWelcome } from "@/lib/enrollment"
+import { notifyN8nPayment } from "@/lib/notify-n8n"
 
 export async function POST(request: NextRequest) {
   try {
@@ -47,7 +48,7 @@ export async function POST(request: NextRequest) {
         return NextResponse.json({ error: "Monto capturado inv\u00e1lido" }, { status: 400 })
       }
 
-      saveEnrollmentAndSendWelcome({
+      await saveEnrollmentAndSendWelcome({
         studentName,
         parentEmail,
         paymentMethod: "paypal",
@@ -55,6 +56,16 @@ export async function POST(request: NextRequest) {
         paymentId: orderID,
         paymentOption: paymentOption || "unknown",
       }).catch((err) => console.error("[paypal] Welcome email error:", err))
+
+      // Notify n8n for WhatsApp onboarding (non-blocking)
+      notifyN8nPayment({
+        studentName,
+        parentEmail,
+        amount: capturedAmount,
+        paymentMethod: "paypal",
+        paymentId: orderID,
+        paymentOption: paymentOption || "unknown",
+      }).catch(() => {})
     }
 
     return NextResponse.json(data)

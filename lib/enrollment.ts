@@ -99,23 +99,7 @@ export async function saveEnrollmentAndSendWelcome(data: EnrollmentData) {
     }
   }
 
-  // 4. Notificar al admin
-  try {
-    await sendGmail({
-      to: "innovakidslatam@gmail.com",
-      subject: `Nueva inscripcion: ${data.studentName} - $${data.amount} USD (${data.paymentMethod})`,
-      html: `<h2>Nueva inscripcion confirmada</h2>
-<p><strong>Estudiante:</strong> ${data.studentName}</p>
-<p><strong>Email padre:</strong> ${data.parentEmail}</p>
-<p><strong>Metodo:</strong> ${data.paymentMethod}</p>
-<p><strong>Monto:</strong> $${data.amount} USD</p>
-<p><strong>Payment ID:</strong> ${data.paymentId || "N/A"}</p>
-<p><strong>Fecha:</strong> ${new Date().toLocaleString("es-CL", { timeZone: "America/Santiago" })}</p>
-<p>Email de bienvenida: ${emailSent ? "enviado correctamente" : "NO pudo ser enviado"}.</p>`,
-    })
-  } catch (err) {
-    console.error("[enrollment] Error sending admin notification:", err)
-  }
+  // 4. Admin notification delegated to n8n (sends WhatsApp to admin — faster, no duplicate)
 
   return { emailSent }
 }
