@@ -1,5 +1,7 @@
 import { Navigation } from "@/components/navigation"
 import { TestimonialsSection } from "@/components/testimonials-section"
+import { Footer } from "@/components/footer"
+import { WhatsAppButton } from "@/components/whatsapp-button"
 import Link from "next/link"
 
 export const metadata = {
@@ -70,6 +72,33 @@ export default function TestimoniosPage() {
           <TestimonialsSection />
         </div>
       </main>
+
+      {/* CTA de cierre */}
+      <section className="bg-[#1A1714] text-[#FAF7EF] py-24 md:py-32">
+        <div className="max-w-[1100px] mx-auto px-6 md:px-10 text-center">
+          <h2
+            className="text-4xl sm:text-5xl md:text-6xl leading-[1.02] tracking-[-0.02em] font-normal max-w-[20ch] mx-auto mb-8"
+            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+          >
+            Listo para que tu hijo sea el <em className="italic text-[#C96342]">próximo</em>?
+          </h2>
+          <a
+            href="/#sesion-estrategica"
+            className="inline-flex items-center bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm transition-colors mb-6"
+          >
+            Agendar sesión gratis →
+          </a>
+          <p
+            className="text-[12px] tracking-[0.18em] uppercase text-[#FAF7EF]/50"
+            style={{ fontFamily: "'IBM Plex Mono', 'Menlo', monospace" }}
+          >
+            30 minutos · Sin compromiso · 100% online
+          </p>
+        </div>
+      </section>
+
+      <Footer />
+      <WhatsAppButton />
     </div>
   )
 }

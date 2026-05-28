@@ -93,6 +93,7 @@ export default function ColegiosPage() {
                         { n: "02", t: "Propuesta y piloto", d: "Diseñamos el programa y corremos un piloto con un curso." },
                         { n: "03", t: "Rollout", d: "Escalamos a todos los niveles con instructores + plataforma." },
                     ]}
+                    pricing="Desde USD 45 por estudiante/semestre (min. 15 estudiantes)"
                     closing={{
                         title: "Agenda una demo con dirección.",
                         sub: "Te mostramos la plataforma, los proyectos reales de alumnos actuales y la propuesta económica por sede.",

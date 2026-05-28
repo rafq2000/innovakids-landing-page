@@ -93,6 +93,7 @@ export default function EmpresasPage() {
                         { n: "02", t: "Propuesta corporativa", d: "Tramos de becas, branding y métricas personalizadas." },
                         { n: "03", t: "Lanzamiento", d: "Kickoff, inscripciones y reportería mensual automática." },
                     ]}
+                    pricing="Desde USD 50 por colaborador/hijo (becas corporativas, minimo 10 cupos)"
                     closing={{
                         title: "Habla con el equipo B2B.",
                         sub: "Te enviamos la propuesta corporativa con valores por tramo de becas y ejemplo de reporte ESG en 3 días hábiles.",

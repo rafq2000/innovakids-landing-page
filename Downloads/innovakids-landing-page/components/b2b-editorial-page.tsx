@@ -18,6 +18,8 @@ export interface B2BEditorialPageProps {
   }
   process: { n: string; t: string; d: string }[]
   closing: { title: string; sub: string; cta: string; href: string }
+  /** Optional pricing indication */
+  pricing?: string
 }
 
 /* ============================================================
@@ -74,7 +76,10 @@ export function B2BEditorialPage({
   offer,
   process,
   closing,
+  pricing,
 }: B2BEditorialPageProps) {
+  const [formData, setFormData] = useState({ name: "", institution: "", email: "", role: "", message: "" })
+  const [formSubmitted, setFormSubmitted] = useState(false)
   const { ref: heroRef, inView: heroIn } = useInView<HTMLDivElement>(0.1)
   const { ref: offerRef, inView: offerIn } = useInView<HTMLDivElement>(0.15)
   const { ref: procRef, inView: procIn } = useInView<HTMLDivElement>(0.2)
@@ -103,7 +108,7 @@ export function B2BEditorialPage({
                 IK
               </span>
               <span className="font-mono-accent text-[10px] uppercase tracking-[0.32em] text-[#1A1714]/55">
-                Innovakids Latam · B2B
+                InnovaKids Latam · B2B
               </span>
             </div>
             <span className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342]">
@@ -304,6 +309,166 @@ export function B2BEditorialPage({
         </ul>
       </section>
 
+      {/* —— PRICING INDICATION —— */}
+      {pricing && (
+        <section className="max-w-[1180px] mx-auto px-6 md:px-10 mt-20 md:mt-28">
+          <div className="p-8 md:p-10 bg-[#F2EDE0] border border-[#1A1714]/12 rounded-[3px]">
+            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-3">
+              Referencia de inversion
+            </p>
+            <p className="font-display text-2xl md:text-3xl leading-tight text-[#1A1714]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
+              {pricing}
+            </p>
+            <p className="mt-3 text-sm text-[#1A1714]/55">
+              Precio final depende del volumen y duracion. Solicita una propuesta personalizada.
+            </p>
+          </div>
+        </section>
+      )}
+
+      {/* —— CONTACT FORM —— */}
+      <section id="contacto-b2b" className="max-w-[1180px] mx-auto px-6 md:px-10 mt-20 md:mt-28">
+        <div className="flex items-center gap-4 mb-10">
+          <span className="h-px w-12 bg-[#C96342]" />
+          <span className="font-mono-accent text-[10px] uppercase tracking-[0.32em] text-[#C96342] font-semibold">
+            Contacto institucional
+          </span>
+        </div>
+
+        <div className="grid md:grid-cols-12 gap-10 md:gap-16">
+          <div className="md:col-span-5">
+            <h2
+              className="font-display leading-[1] tracking-[-0.02em] mb-6"
+              style={{ fontSize: "clamp(2rem, 4vw, 3rem)", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
+            >
+              Cuente con <em className="italic text-[#C96342]">nosotros</em>.
+            </h2>
+            <p className="text-base text-[#1A1714]/70 leading-relaxed mb-8 max-w-[38ch]">
+              Complete el formulario y le enviaremos una propuesta personalizada en 48 horas habiles.
+            </p>
+            <p className="text-sm text-[#1A1714]/50">
+              Tambien puede escribirnos por{" "}
+              <a
+                href={closing.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#C96342] underline underline-offset-2"
+              >
+                WhatsApp
+              </a>
+            </p>
+          </div>
+
+          <div className="md:col-span-7">
+            {formSubmitted ? (
+              <div className="p-8 bg-[#F2EDE0] border border-[#1A1714]/12 rounded-[3px] text-center">
+                <p className="font-display text-2xl text-[#1A1714] mb-3">Recibido.</p>
+                <p className="text-base text-[#1A1714]/65">Le contactaremos en 48 horas habiles con una propuesta personalizada.</p>
+              </div>
+            ) : (
+              <form
+                onSubmit={async (e) => {
+                  e.preventDefault()
+                  try {
+                    const { createClient } = await import("@/lib/supabase/client")
+                    const supabase = createClient()
+                    supabase.from("booking_leads").insert({
+                      first_name: formData.name,
+                      email: formData.email,
+                      phone: "",
+                      country_code: "B2B",
+                      country_name: formData.institution,
+                      child_age: formData.role,
+                      source: `b2b-form-${pill.toLowerCase().replace(/\s/g, "-")}`,
+                    }).then(() => {})
+                  } catch {}
+                  setFormSubmitted(true)
+                }}
+                className="space-y-6"
+              >
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-2">
+                      Nombre completo
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:outline-none focus:border-[#C96342] transition-colors"
+                      placeholder="Maria Garcia"
+                    />
+                  </div>
+                  <div>
+                    <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-2">
+                      Institucion
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      value={formData.institution}
+                      onChange={(e) => setFormData({ ...formData, institution: e.target.value })}
+                      className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:outline-none focus:border-[#C96342] transition-colors"
+                      placeholder="Colegio San Patricio"
+                    />
+                  </div>
+                </div>
+                <div className="grid sm:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-2">
+                      Email institucional
+                    </label>
+                    <input
+                      type="email"
+                      required
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:outline-none focus:border-[#C96342] transition-colors"
+                      placeholder="mgarcia@colegio.cl"
+                    />
+                  </div>
+                  <div>
+                    <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-2">
+                      Cargo
+                    </label>
+                    <input
+                      type="text"
+                      value={formData.role}
+                      onChange={(e) => setFormData({ ...formData, role: e.target.value })}
+                      className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:outline-none focus:border-[#C96342] transition-colors"
+                      placeholder="Directora academica"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-2">
+                    Mensaje (opcional)
+                  </label>
+                  <textarea
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    rows={3}
+                    className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:outline-none focus:border-[#C96342] transition-colors resize-none"
+                    placeholder="Numero de estudiantes, fechas, presupuesto..."
+                  />
+                </div>
+                <button
+                  type="submit"
+                  className="inline-flex items-center gap-3 bg-[#1A1714] text-[#FAF7EF] font-mono-accent text-[11px] uppercase tracking-[0.24em] px-8 py-4 rounded-[2px] transition-all duration-300 hover:bg-[#C96342]"
+                >
+                  Solicitar propuesta
+                  <span aria-hidden>&#8594;</span>
+                </button>
+                <p className="text-xs text-[#1A1714]/40">
+                  Su informacion es confidencial y se usa solo para enviarle la propuesta.
+                </p>
+              </form>
+            )}
+          </div>
+        </div>
+      </section>
+
       {/* —— CLOSING · CTA RECEIPT —— */}
       <section
         ref={closeRef}
@@ -356,7 +521,7 @@ export function B2BEditorialPage({
               IK
             </span>
             <span className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#1A1714]/55">
-              Innovakids Latam
+              InnovaKids Latam
             </span>
             <DotLeader />
           </div>

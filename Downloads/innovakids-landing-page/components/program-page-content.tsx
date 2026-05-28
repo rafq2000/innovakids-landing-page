@@ -157,8 +157,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                     en cinco semanas.
                                 </h1>
                                 <p
-                                    className="text-lg md:text-xl leading-[1.5] text-[#1A1714]/70 max-w-[58ch]"
-                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                    className="font-display text-lg md:text-xl leading-[1.5] text-[#1A1714]/70 max-w-[58ch]"
                                 >
                                     Cada clase termina con un proyecto real que puede mostrar con orgullo. Cero
                                     teoría aburrida, cero tareas, cero exámenes. Solo crear — desde el primer día.
@@ -253,8 +252,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                             {c.title}
                                         </h3>
                                         <p
-                                            className="text-[15px] md:text-base leading-[1.6] text-[#1A1714]/68 max-w-[62ch]"
-                                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                            className="font-display text-[15px] md:text-base leading-[1.6] text-[#1A1714]/68 max-w-[62ch]"
                                         >
                                             {c.desc}
                                         </p>
@@ -376,8 +374,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                             </div>
                             <div className="col-span-12 md:col-span-7 md:pt-10">
                                 <p
-                                    className="text-lg md:text-xl leading-[1.55] text-[#1A1714]/70 max-w-[52ch]"
-                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                    className="font-display text-lg md:text-xl leading-[1.55] text-[#1A1714]/70 max-w-[52ch]"
                                 >
                                     Nada de equipos costosos, nada de instalaciones complicadas. Tres cosas básicas
                                     — y desde el primer día está creando junto a sus instructores.
@@ -413,8 +410,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                         {r.t}
                                     </h3>
                                     <p
-                                        className="text-[15px] leading-[1.6] text-[#1A1714]/65"
-                                        style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                        className="font-display text-[15px] leading-[1.6] text-[#1A1714]/65"
                                     >
                                         {r.d}
                                     </p>
@@ -477,8 +473,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                     <em className="italic text-[#C96342]">el siguiente</em>?
                                 </h2>
                                 <p
-                                    className="text-lg md:text-xl leading-[1.55] text-[#FAF7EF]/72 max-w-[54ch]"
-                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                    className="font-display text-lg md:text-xl leading-[1.55] text-[#FAF7EF]/72 max-w-[54ch]"
                                 >
                                     Reserva con <span className="text-[#FAF7EF] font-semibold">{reservationPrice}</span>.
                                     Toma dos clases completas. Si no te convence — o no le gusta a tu hijo — te
@@ -489,7 +484,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                             <div className="col-span-12 md:col-span-4 md:text-right">
                                 <Link
                                     href="/#sesion-estrategica"
-                                    className="group relative inline-flex items-center gap-3 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 md:px-10 py-5 md:py-6 rounded-[3px] transition-colors"
+                                    className="group relative inline-flex items-center gap-3 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 md:px-10 py-5 md:py-6 rounded-[3px] transition-colors"
                                 >
                                     <span
                                         className="font-display italic leading-none"
