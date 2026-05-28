@@ -92,6 +92,7 @@ export default function MunicipalidadesPage() {
                         { n: "02", t: "Propuesta edil", d: "Presentamos alcance, plazos y valor por estudiante." },
                         { n: "03", t: "Convenio anual", d: "Firmamos, lanzamos cohorte piloto y reportamos trimestralmente." },
                     ]}
+                    pricing="Desde USD 35 por estudiante/semestre (becas 100% para la comuna, minimo 30 cupos)"
                     closing={{
                         title: "Solicita una propuesta edil.",
                         sub: "Preparamos una propuesta personalizada para tu comuna en 5 días hábiles, con valores por tramo de becas y hoja de ruta anual.",

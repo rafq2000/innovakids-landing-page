@@ -23,8 +23,7 @@ export function FAQSection() {
 
         {/* Oversized editorial headline */}
         <h2
-          className="text-6xl sm:text-7xl md:text-8xl lg:text-[104px] leading-[0.95] tracking-[-0.025em] font-normal mb-24 max-w-[16ch]"
-          style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+          className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-[104px] leading-[0.95] tracking-[-0.025em] font-normal mb-24 max-w-[16ch]"
         >
           Todo lo que te preguntas,{" "}
           <em className="italic text-[#C96342]">respondido</em>.
@@ -45,10 +44,9 @@ export function FAQSection() {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3
-                    className={`flex-1 text-2xl md:text-4xl leading-[1.1] tracking-[-0.01em] transition-colors ${
+                    className={`font-display flex-1 text-2xl md:text-4xl leading-[1.1] tracking-[-0.01em] transition-colors ${
                       open ? "text-[#C96342]" : "text-[#2F2F2C] group-hover:text-[#C96342]"
                     }`}
-                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                   >
                     {faq.question}
                   </h3>
@@ -64,8 +62,7 @@ export function FAQSection() {
                 {open && (
                   <div className="pb-12 md:pb-16 pl-16 md:pl-24 pr-8 md:pr-16 animate-fadeIn">
                     <p
-                      className="text-lg md:text-xl text-[#5A5751] leading-[1.6] max-w-[62ch]"
-                      style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                      className="font-display text-lg md:text-xl text-[#5A5751] leading-[1.6] max-w-[62ch]"
                     >
                       {faq.answer}
                     </p>
@@ -79,8 +76,7 @@ export function FAQSection() {
         {/* Minimal closing line — no boxes */}
         <div className="mt-24 md:mt-32 grid md:grid-cols-12 gap-10 items-baseline">
           <p
-            className="md:col-span-6 text-4xl md:text-5xl leading-[1.05] tracking-[-0.02em]"
-            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+            className="font-display md:col-span-6 text-4xl md:text-5xl leading-[1.05] tracking-[-0.02em]"
           >
             ¿Algo más?{" "}
             <em className="italic text-[#C96342]">Conversemos.</em>
@@ -88,8 +84,7 @@ export function FAQSection() {
           <div className="md:col-span-6 flex flex-col items-start gap-5">
             <a
               href="#sesion-estrategica"
-              className="text-lg md:text-xl text-[#2F2F2C] hover:text-[#C96342] underline underline-offset-[6px] decoration-[#C96342]/40 hover:decoration-[#C96342] decoration-1 transition-colors"
-              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+              className="font-display text-lg md:text-xl text-[#2F2F2C] hover:text-[#C96342] underline underline-offset-[6px] decoration-[#C96342]/40 hover:decoration-[#C96342] decoration-1 transition-colors"
             >
               Agendar evaluación gratuita →
             </a>
@@ -97,8 +92,7 @@ export function FAQSection() {
               href="https://wa.me/56964754219?text=Hola%2C%20tengo%20una%20pregunta%20que%20no%20está%20en%20las%20FAQs"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-lg md:text-xl text-[#2F2F2C] hover:text-[#C96342] underline underline-offset-[6px] decoration-[#2F2F2C]/20 hover:decoration-[#C96342] decoration-1 transition-colors"
-              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+              className="font-display text-lg md:text-xl text-[#2F2F2C] hover:text-[#C96342] underline underline-offset-[6px] decoration-[#2F2F2C]/20 hover:decoration-[#C96342] decoration-1 transition-colors"
             >
               Escribir por WhatsApp →
             </a>

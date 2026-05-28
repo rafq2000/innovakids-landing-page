@@ -1,13 +1,5 @@
 import Image from "next/image"
-import { HeroCountdown } from "@/components/hero-countdown"
-import { HeroLeadForm } from "@/components/hero-lead-form"
-import { HeroLiveCounter } from "@/components/hero-live-counter"
 import { COHORT } from "@/lib/site-config"
-
-const tools = [
-  "ChatGPT", "Claude", "Nano Banana", "Suno AI", "Canva AI",
-  "Midjourney", "Runway", "ElevenLabs", "Cursor", "Gamma",
-]
 
 const testimonialPull = {
   quote: "El mejor dinero invertido en mi vida.",
@@ -115,10 +107,10 @@ export function HeroSection() {
         <div className="grid grid-cols-12 gap-6 md:gap-10 mb-14 md:mb-20">
           <div className="rise rise-3 col-span-12 md:col-span-7 lg:col-span-6">
             <p className="text-lg md:text-xl leading-[1.45] text-[var(--ink-soft)] max-w-[44ch]">
-              La IA es el nuevo inglés. En cinco semanas tu hijo deja de{" "}
-              <em className="italic font-display text-[var(--ink)]">consumir</em> tecnología y
-              empieza a <em className="italic font-display text-[var(--terracotta)]">crearla</em>:
-              construye apps, videojuegos y proyectos reales. En vivo, en grupos de cinco.
+              En cinco semanas tu hijo deja de{" "}
+              <em className="italic font-display text-[var(--ink)]">consumir</em> pantallas y
+              empieza a <em className="italic font-display text-[var(--terracotta)]">crear</em>{" "}
+              apps, videojuegos y proyectos reales con IA. Clases en vivo, grupos de cinco.
             </p>
             <div className="mt-7 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
               <a
@@ -138,11 +130,6 @@ export function HeroSection() {
             <p className="mt-4 font-mono-accent text-[11px] uppercase tracking-[0.18em] text-[var(--ink-muted)]">
               30 minutos · Sin compromiso · 100% online
             </p>
-
-            {/* Quick lead capture */}
-            <div className="mt-8 max-w-[560px]">
-              <HeroLeadForm />
-            </div>
 
             {/* Mini trust row above fold */}
             <div className="mt-6 flex items-center gap-5 text-[11px] font-mono-accent uppercase tracking-[0.16em] text-[var(--ink-muted)]">
@@ -195,7 +182,7 @@ export function HeroSection() {
         </div>
 
         {/* ============ SPEC SHEET (mono labels, serif values) ============ */}
-        <div className="rise rise-4 grid grid-cols-2 md:grid-cols-5 gap-x-5 gap-y-8 py-10 md:py-12 border-y border-[var(--ink)]/15 mb-20 md:mb-28">
+        <div className="rise rise-4 grid grid-cols-2 md:grid-cols-5 gap-x-5 gap-y-8 py-10 md:py-12 border-y border-[var(--ink)]/15">
           {[
             ["Formato", "10 clases en vivo"],
             ["Duración", "5 semanas"],
@@ -214,90 +201,6 @@ export function HeroSection() {
           ))}
         </div>
 
-        {/* ============ PATH-TO-BOOK (3 steps) ============ */}
-        <div className="rise rise-5 grid grid-cols-12 gap-10 mb-20 md:mb-28">
-          <div className="col-span-12 md:col-span-4">
-            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[var(--ink-muted)] mb-6">
-              Así funciona
-            </p>
-            <h2 className="font-display text-4xl md:text-5xl leading-[1] tracking-[-0.03em]">
-              Tres pasos,{" "}
-              <em className="italic text-[var(--terracotta)]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
-                cero fricción
-              </em>.
-            </h2>
-          </div>
-          <ol className="col-span-12 md:col-span-8 grid sm:grid-cols-3 gap-8 md:gap-4">
-            {[
-              { n: "01", t: "Agendas", d: "Eliges un horario que te acomode. 30 minutos." },
-              { n: "02", t: "Hablamos", d: "Evaluamos el nivel de tu hijo y resolvemos tus dudas." },
-              { n: "03", t: "Decides", d: "Si es un fit, reservamos cupo. Si no, quedas con diagnóstico." },
-            ].map((s) => (
-              <li key={s.n} className="pt-6 border-t-2 border-[var(--ink)]">
-                <p className="font-mono-accent text-xs text-[var(--terracotta)] tracking-[0.2em] mb-4">
-                  {s.n}
-                </p>
-                <h3 className="font-display text-2xl md:text-3xl mb-3 text-[var(--ink)]">
-                  {s.t}
-                </h3>
-                <p className="text-base text-[var(--ink-muted)] leading-[1.55] max-w-[28ch]">
-                  {s.d}
-                </p>
-              </li>
-            ))}
-          </ol>
-        </div>
-
-        {/* ============ TOOLS MARQUEE ============ */}
-        <div className="rise rise-6 relative overflow-hidden border-y border-[var(--ink)]/15 py-8 mb-20 md:mb-28 -mx-6 md:-mx-10">
-          <p className="absolute left-6 md:left-10 top-1/2 -translate-y-1/2 bg-[var(--paper)] pr-4 font-mono-accent text-[10px] uppercase tracking-[0.25em] text-[var(--ink-muted)] z-10">
-            Herramientas enseñadas →
-          </p>
-          <div className="ticker flex whitespace-nowrap pl-72 md:pl-96">
-            {[...tools, ...tools, ...tools].map((t, i) => (
-              <span
-                key={i}
-                className="font-display italic text-3xl md:text-4xl text-[var(--ink)] mx-8 flex items-center gap-8"
-                style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
-              >
-                {t}
-                <span className="text-[var(--terracotta)] not-italic font-body font-normal">✦</span>
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* ============ COUNTDOWN + TRUST STATS ============ */}
-        <div className="rise rise-7 grid grid-cols-12 gap-10">
-          <div className="col-span-12 md:col-span-7">
-            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[var(--ink-muted)] mb-6">
-              Próxima cohorte · {COHORT.startDateShort} {COHORT.nameShort.split(" ")[1]}
-            </p>
-            <HeroCountdown />
-            <p className="mt-6 font-display italic text-lg text-[var(--ink-soft)] max-w-[40ch]">
-              Después, la siguiente cohorte abre recién en {COHORT.nextCohort}.
-            </p>
-          </div>
-          <aside className="col-span-12 md:col-span-5 md:border-l md:border-[var(--ink)]/15 md:pl-10 grid grid-cols-3 gap-6 items-start">
-            {[
-              { n: "527", l: "Graduados" },
-              { n: "4.9", l: "Valoración" },
-              { n: "10", l: "Días garantía" },
-            ].map((s) => (
-              <div key={s.l} className="flex flex-col">
-                <span className="font-display text-4xl md:text-5xl leading-none tabular-nums text-[var(--ink)]">
-                  {s.n}
-                </span>
-                <span className="font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[var(--ink-muted)] mt-3">
-                  {s.l}
-                </span>
-              </div>
-            ))}
-            <div className="col-span-3 pt-6 border-t border-[var(--ink)]/15">
-              <HeroLiveCounter />
-            </div>
-          </aside>
-        </div>
       </div>
     </section>
   )

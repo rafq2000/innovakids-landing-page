@@ -42,8 +42,7 @@ export function PricingSection({ country }: PricingSectionProps) {
         </div>
 
         <h2
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-[-0.02em] font-normal mb-8 max-w-[14ch]"
-          style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+          className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-[-0.02em] font-normal mb-8 max-w-[14ch]"
         >
           Un fundamento, una <em className="italic text-[#C96342]">cifra</em>.
         </h2>
@@ -60,15 +59,13 @@ export function PricingSection({ country }: PricingSectionProps) {
               Nivel 01 · Vibe Explorer
             </p>
             <h3
-              className="text-4xl md:text-5xl leading-[1.05] tracking-tight mb-8 font-normal"
-              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+              className="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight mb-8 font-normal"
             >
               El fundamento obligatorio para dominar la IA.
             </h3>
             <div className="flex items-baseline gap-3 mb-2">
               <span
-                className="text-7xl md:text-[88px] leading-none font-normal text-[#2F2F2C]"
-                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                className="font-display text-7xl md:text-[88px] leading-none font-normal text-[#2F2F2C]"
               >
                 {price}
               </span>
@@ -84,8 +81,7 @@ export function PricingSection({ country }: PricingSectionProps) {
             </p>
             <p
               className="text-xs text-[#5A5751] mb-10"
-              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
-            >
+                >
               o <strong className="text-[#2F2F2C]">3 cuotas sin interés</strong> con tarjeta de crédito.
             </p>
 
@@ -99,14 +95,13 @@ export function PricingSection({ country }: PricingSectionProps) {
 
             <div
               className="mt-5 flex items-center gap-4 text-[11px] uppercase tracking-[0.16em] text-[#5A5751]"
-              style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
-            >
+                >
               <span className="flex items-center gap-1.5">
                 <span className="relative flex w-2 h-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C96342] opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C96342]"></span>
                 </span>
-                <span><strong className="text-[#2F2F2C] font-semibold">7</strong> cupos restantes</span>
+                <span><strong className="text-[#2F2F2C] font-semibold">4</strong> cupos restantes</span>
               </span>
               <span className="opacity-40">·</span>
               <span>Pago seguro 🔒</span>
@@ -125,8 +120,7 @@ export function PricingSection({ country }: PricingSectionProps) {
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span
-                    className="text-base md:text-lg text-[#2F2F2C] leading-snug"
-                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                    className="font-display text-base md:text-lg text-[#2F2F2C] leading-snug"
                   >
                     {f}
                   </span>
@@ -145,8 +139,7 @@ export function PricingSection({ country }: PricingSectionProps) {
               </p>
               <p
                 className="text-sm text-[#5A5751] leading-relaxed"
-                style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
-              >
+                    >
                 Solo para esta cohorte. No se cobran aparte.
               </p>
             </div>
@@ -160,14 +153,12 @@ export function PricingSection({ country }: PricingSectionProps) {
                 <div key={i} className="border-t border-[#2F2F2C]/12 pt-4">
                   <div
                     className="flex items-center justify-between text-[10px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-2"
-                    style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
-                  >
+                            >
                     <span>{b.tag}</span>
                     <span className="text-[#5A5751] line-through opacity-60">valor {b.value}</span>
                   </div>
                   <p
-                    className="text-base md:text-lg text-[#2F2F2C] leading-snug"
-                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                    className="font-display text-base md:text-lg text-[#2F2F2C] leading-snug"
                   >
                     {b.title}
                   </p>
@@ -186,8 +177,7 @@ export function PricingSection({ country }: PricingSectionProps) {
           </div>
           <div className="md:col-span-8">
             <p
-              className="text-2xl md:text-3xl leading-tight tracking-tight mb-4"
-              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+              className="font-display text-2xl md:text-3xl leading-tight tracking-tight mb-4"
             >
               10 días para probar sin riesgo.
             </p>
