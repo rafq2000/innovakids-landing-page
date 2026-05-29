@@ -1,4 +1,4 @@
-const N8N_BASE_URL = process.env.N8N_WEBHOOK_URL || "https://quirky-thompson.74-208-238-121.plesk.page"
+const N8N_BASE_URL = process.env.N8N_WEBHOOK_URL
 
 interface PaymentNotification {
   studentName: string
@@ -17,6 +17,11 @@ interface PaymentNotification {
  */
 export async function notifyN8nPayment(data: PaymentNotification): Promise<void> {
   const tipo = data.amount <= 30 ? "deposito" : "completo"
+
+  if (!N8N_BASE_URL) {
+    console.error("[n8n] N8N_WEBHOOK_URL not configured — skipping payment notification")
+    return
+  }
 
   try {
     await fetch(`${N8N_BASE_URL}/webhook/innovakids-paypal`, {

@@ -9,8 +9,8 @@ export const dynamic = 'force-dynamic'
 function verifyMercadoPagoSignature(request: NextRequest, body: any): boolean {
   const webhookSecret = process.env.MERCADOPAGO_WEBHOOK_SECRET
   if (!webhookSecret) {
-    console.warn("[mercadopago] MERCADOPAGO_WEBHOOK_SECRET not set — skipping HMAC verification")
-    return true // Graceful degradation: allow if not configured
+    console.error("[mercadopago] MERCADOPAGO_WEBHOOK_SECRET not set — rejecting webhook")
+    return false
   }
 
   const xSignature = request.headers.get("x-signature")

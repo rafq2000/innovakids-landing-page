@@ -47,7 +47,7 @@ export const metadata = {
 
 export default function BrochurePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900">
+    <div className="min-h-screen bg-[#F2EDE0]">
       {/* Animated background patterns */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <div className="absolute w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl -top-48 -right-48 animate-pulse" />
@@ -61,7 +61,7 @@ export default function BrochurePage() {
             <div className="absolute inset-0 bg-cyan-500/20 blur-2xl rounded-full" />
             <Image
               src="/logo-innovakids.png"
-              alt="Innovakids"
+              alt="InnovaKids"
               width={240}
               height={80}
               className="relative mx-auto drop-shadow-2xl h-16 w-auto"
@@ -69,18 +69,18 @@ export default function BrochurePage() {
           </div>
 
           <div className="space-y-4">
-            <Badge className="bg-cyan-400 text-slate-900 hover:bg-cyan-300 text-sm px-6 py-2 font-bold shadow-lg shadow-cyan-500/50">
+            <Badge className="bg-[#C96342]/10 text-[#1A1714] hover:bg-[#C96342]/20 text-sm px-6 py-2 font-bold shadow-lg shadow-[#C96342]/20">
               PROGRAMA EXCLUSIVO - ADMISIÓN LIMITADA
             </Badge>
 
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white tracking-tight">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-[#1A1714] tracking-tight">
               Programa Acelerador
               <span className="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 de Inteligencia Artificial
               </span>
             </h1>
 
-            <p className="text-xl text-slate-300 max-w-2xl mx-auto">Formando a los Líderes Tecnológicos del Mañana</p>
+            <p className="text-xl text-[#5A5751] max-w-2xl mx-auto">Formando a los Líderes Tecnológicos del Mañana</p>
           </div>
         </header>
 
@@ -93,13 +93,13 @@ export default function BrochurePage() {
           ].map((stat, idx) => (
             <Card
               key={idx}
-              className="bg-white/5 border-cyan-500/20 backdrop-blur-xl hover:bg-white/10 transition-all duration-300 hover:scale-105"
+              className="bg-[#FAF7EF] border-cyan-500/20 border border-[#E8E0D0] hover:bg-white/10 transition-all duration-300 hover:scale-105"
             >
               <CardContent className="pt-6 text-center">
                 <div className="text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent mb-2">
                   {stat.number}
                 </div>
-                <p className="text-slate-300 text-sm">{stat.label}</p>
+                <p className="text-[#5A5751] text-sm">{stat.label}</p>
               </CardContent>
             </Card>
           ))}
@@ -108,7 +108,7 @@ export default function BrochurePage() {
         {/* Course Details Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {/* Logistics */}
-          <Card className="bg-white/5 border-cyan-500/20 backdrop-blur-xl">
+          <Card className="bg-[#FAF7EF] border-cyan-500/20 border border-[#E8E0D0]">
             <CardHeader>
               <CardTitle className="text-2xl text-cyan-400 flex items-center gap-3">
                 <span className="text-3xl">📅</span>
@@ -117,16 +117,16 @@ export default function BrochurePage() {
             </CardHeader>
             <CardContent className="space-y-4">
               {[
-                { icon: "🚀", label: "Inicio", value: "8 de Junio del 2026" },
+                { icon: "🚀", label: "Inicio", value: "8 de junio del 2026" },
                 { icon: "💻", label: "Plataforma", value: "Clases en vivo vía Zoom" },
                 { icon: "⏱️", label: "Duración", value: "5 semanas (5 clases)" },
-                { icon: "📆", label: "Frecuencia", value: "1 clase por semana (60 min c/u)" },
-                { icon: "👦", label: "Edad", value: "8 a 14 años" },
+                { icon: "📆", label: "Frecuencia", value: "1 clase por semana (aprox. 60 min c/u)" },
+                { icon: "👦", label: "Edad", value: "8 a 17 años" },
               ].map((item, idx) => (
-                <div key={idx} className="flex items-start gap-3 text-slate-300">
+                <div key={idx} className="flex items-start gap-3 text-[#5A5751]">
                   <span className="text-2xl">{item.icon}</span>
                   <div>
-                    <span className="font-bold text-white">{item.label}:</span> {item.value}
+                    <span className="font-bold text-[#1A1714]">{item.label}:</span> {item.value}
                   </div>
                 </div>
               ))}
@@ -134,7 +134,7 @@ export default function BrochurePage() {
           </Card>
 
           {/* What's Included */}
-          <Card className="bg-white/5 border-cyan-500/20 backdrop-blur-xl">
+          <Card className="bg-[#FAF7EF] border-cyan-500/20 border border-[#E8E0D0]">
             <CardHeader>
               <CardTitle className="text-2xl text-cyan-400 flex items-center gap-3">
                 <span className="text-3xl">🎁</span>
@@ -149,7 +149,7 @@ export default function BrochurePage() {
                 { icon: "🧠", text: "Kit de Prompts Infalibles para la escuela" },
                 { icon: "🏆", text: 'Certificado Digital "Creador de IA"' },
               ].map((item, idx) => (
-                <div key={idx} className="flex items-center gap-3 text-slate-300">
+                <div key={idx} className="flex items-center gap-3 text-[#5A5751]">
                   <span className="text-2xl">{item.icon}</span>
                   <span>{item.text}</span>
                 </div>
@@ -160,13 +160,13 @@ export default function BrochurePage() {
 
         {/* Curriculum */}
         {/* Curriculum Level 1 */}
-        <Card className="bg-white/5 border-purple-500/20 backdrop-blur-xl mb-16">
+        <Card className="bg-[#FAF7EF] border-[#E8E0D0] border border-[#E8E0D0] mb-16">
           <CardHeader>
-            <CardTitle className="text-3xl text-purple-400 flex items-center gap-3">
+            <CardTitle className="text-3xl text-[#C96342] flex items-center gap-3">
               <span className="text-4xl">🚀</span>
               Nivel 1: Vibe Explorer (10 Clases)
             </CardTitle>
-            <p className="text-slate-300 text-lg mt-4">El programa base obligatorio para dominar la IA. Para Niños y Adolescentes (8-17 años).</p>
+            <p className="text-[#5A5751] text-lg mt-4">El programa base obligatorio para dominar la IA. Para Niños y Adolescentes (8-17 años).</p>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -182,12 +182,12 @@ export default function BrochurePage() {
                 { num: "9", title: "Cyber Ethics", desc: "Seguridad digital y uso responsable de la IA." },
                 { num: "10", title: "The Vibe Project", desc: "Proyecto final integrando tu Identidad Digital." },
               ].map((clase, idx) => (
-                <div key={idx} className="bg-gradient-to-br from-purple-500/10 to-blue-500/10 border border-purple-500/30 rounded-lg p-5 hover:scale-105 transition-transform duration-300">
+                <div key={idx} className="bg-[#FAF7EF] border border-[#E8E0D0] rounded-lg p-5 hover:scale-105 transition-transform duration-300">
                   <div className="flex items-start gap-3">
-                    <span className="text-3xl font-bold text-purple-400">#{clase.num}</span>
+                    <span className="text-3xl font-bold text-[#C96342]">#{clase.num}</span>
                     <div>
-                      <h4 className="text-white font-bold text-lg">{clase.title}</h4>
-                      <p className="text-slate-400 text-sm mt-1">{clase.desc}</p>
+                      <h4 className="text-[#1A1714] font-bold text-lg">{clase.title}</h4>
+                      <p className="text-[#5A5751] text-sm mt-1">{clase.desc}</p>
                     </div>
                   </div>
                 </div>
@@ -198,21 +198,21 @@ export default function BrochurePage() {
 
         {/* Level 2 Teaser - Specializations */}
         <div className="mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-[#1A1714] mb-8">
             Nivel 2: Especializaciones <span className="text-cyan-400">(Próximamente)</span>
           </h2>
-          <p className="text-center text-slate-400 mb-8 max-w-2xl mx-auto">
+          <p className="text-center text-[#5A5751] mb-8 max-w-2xl mx-auto">
             Una vez completado el Nivel 1, tu hijo podrá desbloquear estas especializaciones avanzadas.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
-            <Card className="bg-gradient-to-br from-pink-500/10 to-purple-500/10 border-pink-500/20 hover:border-pink-500/50 transition-all">
+            <Card className="bg-[#FAF7EF] border-[#E8E0D0] hover:border-[#C96342]/30 transition-all">
               <CardHeader>
                 <div className="text-4xl mb-4">🎬</div>
-                <CardTitle className="text-xl text-pink-400">Vibe Creators</CardTitle>
-                <p className="text-slate-300 text-sm">Cine y Creación de Contenido</p>
+                <CardTitle className="text-xl text-[#C96342]">Vibe Creators</CardTitle>
+                <p className="text-[#5A5751] text-sm">Cine y Creación de Contenido</p>
               </CardHeader>
               <CardContent>
-                <ul className="text-slate-400 text-sm space-y-2">
+                <ul className="text-[#5A5751] text-sm space-y-2">
                   <li>• Tu Primera Película IA</li>
                   <li>• Shorts Súper Virales</li>
                   <li>• Edición de Director</li>
@@ -224,10 +224,10 @@ export default function BrochurePage() {
               <CardHeader>
                 <div className="text-4xl mb-4">🎮</div>
                 <CardTitle className="text-xl text-green-400">Vibe Gamers</CardTitle>
-                <p className="text-slate-300 text-sm">Programación de Videojuegos</p>
+                <p className="text-[#5A5751] text-sm">Programación de Videojuegos</p>
               </CardHeader>
               <CardContent>
-                <ul className="text-slate-400 text-sm space-y-2">
+                <ul className="text-[#5A5751] text-sm space-y-2">
                   <li>• Crea tu Héroe y Villano</li>
                   <li>• Construye tu Juego</li>
                   <li>• Publica tu Juego</li>
@@ -239,10 +239,10 @@ export default function BrochurePage() {
               <CardHeader>
                 <div className="text-4xl mb-4">💡</div>
                 <CardTitle className="text-xl text-yellow-400">Vibe Enterprise</CardTitle>
-                <p className="text-slate-300 text-sm">Emprendimiento y Startups</p>
+                <p className="text-[#5A5751] text-sm">Emprendimiento y Startups</p>
               </CardHeader>
               <CardContent>
-                <ul className="text-slate-400 text-sm space-y-2">
+                <ul className="text-[#5A5751] text-sm space-y-2">
                   <li>• Descubre tu Idea</li>
                   <li>• Tu Tienda Digital</li>
                   <li>• Lanza tu Negocio</li>
@@ -253,7 +253,7 @@ export default function BrochurePage() {
         </div>
 
         {/* Pricing Table */}
-        <Card className="bg-white/5 border-cyan-500/20 backdrop-blur-xl mb-16">
+        <Card className="bg-[#FAF7EF] border-cyan-500/20 border border-[#E8E0D0] mb-16">
           <CardHeader>
             <CardTitle className="text-3xl text-cyan-400 flex items-center gap-3">
               <span className="text-4xl">💰</span>
@@ -262,56 +262,56 @@ export default function BrochurePage() {
           </CardHeader>
           <CardContent>
             <div className="max-w-xl mx-auto">
-              <div className="flex flex-col justify-between p-8 bg-gradient-to-b from-purple-900/40 to-slate-900/40 border border-purple-500/30 rounded-2xl backdrop-blur-xl relative overflow-hidden hover:border-purple-500/50 transition-all shadow-2xl shadow-purple-900/20">
-                <div className="absolute top-0 right-0 bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-bl-xl">
+              <div className="flex flex-col justify-between p-8 bg-[#FAF7EF] border border-[#E8E0D0] rounded-2xl border border-[#E8E0D0] relative overflow-hidden hover:border-[#C96342]/30 transition-all shadow-2xl shadow-[#C96342]/10">
+                <div className="absolute top-0 right-0 bg-[#C96342] text-[#1A1714] text-xs font-bold px-4 py-1 rounded-bl-xl">
                   ADMISIÓN 2026
                 </div>
 
                 <div className="text-center mb-8">
-                  <p className="text-purple-300 font-bold tracking-wider text-sm uppercase mb-2">
+                  <p className="text-[#C96342] font-bold tracking-wider text-sm uppercase mb-2">
                     Nivel 1 (Obligatorio)
                   </p>
-                  <h3 className="text-3xl font-bold text-white mb-2">Vibe Explorer</h3>
-                  <p className="text-slate-400 text-sm">El fundamento para todo futuro creador.</p>
+                  <h3 className="text-3xl font-bold text-[#1A1714] mb-2">Vibe Explorer</h3>
+                  <p className="text-[#5A5751] text-sm">El fundamento para todo futuro creador.</p>
                 </div>
 
                 <div className="text-center mb-8">
                   <div className="flex items-center justify-center gap-2">
-                    <span className="text-6xl font-black text-white">$267</span>
+                    <span className="text-6xl font-black text-[#1A1714]">$267</span>
                     <div className="text-left">
-                      <span className="block text-xl text-purple-400 font-bold">USD</span>
-                      <span className="block text-slate-500 text-xs">Pago Único</span>
+                      <span className="block text-xl text-[#C96342] font-bold">USD</span>
+                      <span className="block text-[#5A5751] text-xs">Pago Único</span>
                     </div>
                   </div>
-                  <p className="text-slate-400 text-sm mt-2">
+                  <p className="text-[#5A5751] text-sm mt-2">
                     Precio por Módulo Completo (10 Semanas)
                   </p>
                 </div>
 
-                <ul className="text-slate-300 text-sm space-y-4 mb-10 text-left max-w-xs mx-auto">
+                <ul className="text-[#5A5751] text-sm space-y-4 mb-10 text-left max-w-xs mx-auto">
                   <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-purple-400 shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#C96342] shrink-0" />
                     <span>10 Clases en Vivo (Fundamentos)</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-purple-400 shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#C96342] shrink-0" />
                     <span>Certificado Digital "Vibe Explorer"</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-purple-400 shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#C96342] shrink-0" />
                     <span>Acceso a 15+ Herramientas IA</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-purple-400 shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#C96342] shrink-0" />
                     <span>Desbloquea Nivel 2 (Especializaciones)</span>
                   </li>
                 </ul>
 
-                <Button asChild size="lg" className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-bold py-8 text-xl rounded-xl shadow-lg shadow-purple-900/50">
+                <Button asChild size="lg" className="w-full bg-[#C96342] hover:bg-[#9A4428] text-[#1A1714] font-bold py-8 text-xl rounded-xl shadow-lg shadow-[#C96342]/20">
                   <Link href="/pagar?option=explorer">Inscribir Nivel 1 ($267)</Link>
                 </Button>
 
-                <p className="mt-4 text-center text-xs text-slate-500">
+                <p className="mt-4 text-center text-xs text-[#5A5751]">
                   *Garantía de Satisfacción de 10 días incluida.
                 </p>
               </div>
@@ -326,25 +326,25 @@ export default function BrochurePage() {
         </Card>
 
         {/* Highlight Box */}
-        <div className="mb-16 p-8 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border-l-4 border-cyan-400 rounded-r-2xl backdrop-blur-xl">
-          <p className="text-xl text-white font-semibold flex items-center gap-4">
+        <div className="mb-16 p-8 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 border-l-4 border-cyan-400 rounded-r-2xl border border-[#E8E0D0]">
+          <p className="text-xl text-[#1A1714] font-semibold flex items-center gap-4">
             <span className="text-4xl">⚡</span>
             <span>No es un curso más. Es una mentoría personalizada para líderes del mañana.</span>
           </p>
         </div>
 
         {/* CTA Section */}
-        <Card className="bg-gradient-to-br from-cyan-400 to-blue-500 border-0 shadow-2xl shadow-cyan-500/50">
+        <Card className="bg-gradient-to-br from-cyan-400 to-blue-500 border-0 shadow-2xl shadow-[#C96342]/20">
           <CardContent className="text-center py-12 space-y-6">
-            <h2 className="text-4xl font-bold text-slate-900">¿Tu Hijo Está Listo?</h2>
-            <p className="text-slate-900 text-lg max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold text-[#1A1714]">¿Tu Hijo Está Listo?</h2>
+            <p className="text-[#1A1714] text-lg max-w-2xl mx-auto">
               Solo aceptamos 5 alumnos por grupo para garantizar resultados. El primer paso es una breve entrevista.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button
                 asChild
                 size="lg"
-                className="bg-slate-900 hover:bg-slate-800 text-white text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform rounded-full"
+                className="bg-slate-900 hover:bg-slate-800 text-[#1A1714] text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform rounded-full"
               >
                 <Link href="/#sesion-estrategica">Agendar Entrevista de Admisión</Link>
               </Button>
@@ -352,7 +352,7 @@ export default function BrochurePage() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="bg-white/20 hover:bg-white/30 text-slate-900 border-slate-900 text-lg px-8 py-6 backdrop-blur-sm"
+                className="bg-white/20 hover:bg-white/30 text-[#1A1714] border-slate-900 text-lg px-8 py-6 backdrop-blur-sm"
               >
                 <Link href="https://wa.me/56964754219?text=Hola%2C%20quiero%20más%20información%20sobre%20el%20Programa%20Acelerador%20de%20IA">
                   Consultar por WhatsApp
@@ -363,8 +363,8 @@ export default function BrochurePage() {
         </Card>
 
         {/* Footer */}
-        <footer className="mt-16 text-center text-slate-400 text-sm space-y-2">
-          <p>© 2026 Innovakids Latam. Todos los derechos reservados.</p>
+        <footer className="mt-16 text-center text-[#5A5751] text-sm space-y-2">
+          <p>© 2026 InnovaKids Latam. Todos los derechos reservados.</p>
           <p className="flex items-center justify-center gap-2">
             <span>📧</span> contacto@innovakidslatam.com
             <span className="mx-2">|</span>

@@ -7,7 +7,7 @@ import { notFound } from "next/navigation"
 
 const blogPosts: Record<string, any> = {
   "como-ensenar-ia-ninos": {
-    title: "Cómo Enseñar Inteligencia Artificial a Niños de 8-14 Años",
+    title: "Cómo Enseñar Inteligencia Artificial a Niños de 8-17 Años",
     excerpt:
       "Descubre las mejores estrategias y herramientas para introducir a tus hijos en el fascinante mundo de la IA de manera divertida y educativa.",
     image: "/kids-learning-ai-on-computer.jpg",
@@ -15,7 +15,7 @@ const blogPosts: Record<string, any> = {
     category: "Educación",
     readTime: "5 min",
     content: `
-      <p>La inteligencia artificial ya no es solo cosa de adultos o expertos en tecnología. Hoy en día, niños de 8 a 14 años pueden aprender sobre IA de manera divertida y educativa, preparándose para un futuro donde esta tecnología será fundamental.</p>
+      <p>La inteligencia artificial ya no es solo cosa de adultos o expertos en tecnología. Hoy en día, niños de 8 a 17 años pueden aprender sobre IA de manera divertida y educativa, preparándose para un futuro donde esta tecnología será fundamental.</p>
 
       <h2>¿Por qué enseñar IA a los niños?</h2>
       <p>La IA está transformando todas las industrias y profesiones. Enseñar a los niños sobre esta tecnología desde temprana edad les da ventajas competitivas importantes:</p>
@@ -52,7 +52,7 @@ const blogPosts: Record<string, any> = {
       </ul>
 
       <h2>Recursos recomendados</h2>
-      <p>En Innovakids ofrecemos un programa estructurado de 4 semanas donde los niños aprenden IA de forma práctica, en grupos reducidos de 5 alumnos, con instructores expertos que guían cada paso del proceso.</p>
+      <p>En InnovaKids ofrecemos un programa estructurado de 4 semanas donde los niños aprenden IA de forma práctica, en grupos reducidos de 5 alumnos, con instructores expertos que guían cada paso del proceso.</p>
 
       <p>Si quieres que tu hijo comience su viaje en el mundo de la IA con la mejor guía y metodología, <a href="/#inversion">conoce nuestro programa aquí</a>.</p>
     `,
@@ -121,7 +121,7 @@ const blogPosts: Record<string, any> = {
       <h2>Conclusión</h2>
       <p>La IA en la educación infantil no es el futuro, es el presente. Los niños que tienen acceso a estas herramientas desarrollan habilidades cognitivas, creativas y técnicas que los preparan para un mundo en constante cambio.</p>
 
-      <p>En Innovakids, aprovechamos todos estos beneficios en nuestro programa diseñado específicamente para niños de 8 a 14 años. Con grupos reducidos de 5 alumnos y metodología práctica, garantizamos que tu hijo obtenga todos estos beneficios. <a href="/#inversion">Descubre cómo tu hijo puede beneficiarse</a>.</p>
+      <p>En InnovaKids, aprovechamos todos estos beneficios en nuestro programa diseñado específicamente para niños de 8 a 17 años. Con grupos reducidos de 5 alumnos y metodología práctica, garantizamos que tu hijo obtenga todos estos beneficios. <a href="/#inversion">Descubre cómo tu hijo puede beneficiarse</a>.</p>
     `,
   },
   "chatgpt-para-ninos-guia-padres": {
@@ -222,7 +222,7 @@ const blogPosts: Record<string, any> = {
       <h2>Conclusión</h2>
       <p>ChatGPT puede ser una herramienta educativa extraordinaria cuando se usa correctamente. Con supervisión apropiada, reglas claras y comunicación abierta, tus hijos pueden aprovechar esta tecnología para potenciar su aprendizaje de forma segura.</p>
 
-      <p>En Innovakids, enseñamos a los niños no solo a usar ChatGPT, sino a dominar múltiples herramientas de IA de forma ética y creativa. Nuestro programa incluye módulos específicos sobre uso responsable y seguro de la tecnología. <a href="/#inversion">Conoce nuestro programa completo</a>.</p>
+      <p>En InnovaKids, enseñamos a los niños no solo a usar ChatGPT, sino a dominar múltiples herramientas de IA de forma ética y creativa. Nuestro programa incluye módulos específicos sobre uso responsable y seguro de la tecnología. <a href="/#inversion">Conoce nuestro programa completo</a>.</p>
     `,
   },
   "proyectos-ia-ninos-principiantes": {
@@ -303,7 +303,7 @@ const blogPosts: Record<string, any> = {
       </ul>
 
       <h2>Siguiente nivel</h2>
-      <p>Estos proyectos son solo el comienzo. En Innovakids, guiamos a los niños a través de proyectos cada vez más complejos y emocionantes, con instructores expertos que les ayudan a superar obstáculos y alcanzar su máximo potencial creativo.</p>
+      <p>Estos proyectos son solo el comienzo. En InnovaKids, guiamos a los niños a través de proyectos cada vez más complejos y emocionantes, con instructores expertos que les ayudan a superar obstáculos y alcanzar su máximo potencial creativo.</p>
 
       <p>Nuestro programa de 4 semanas incluye proyectos prácticos similares a estos, pero con guía profesional y feedback personalizado. <a href="/#inversion">Descubre cómo tu hijo puede crear proyectos increíbles</a>.</p>
     `,
@@ -391,7 +391,7 @@ const blogPosts: Record<string, any> = {
       <p>La teoría es importante, pero la práctica es esencial. Anima a tus hijos a crear proyectos reales con IA.</p>
 
       <h2>La ventaja de empezar temprano</h2>
-      <p>Los niños que aprenden IA entre 8-14 años:</p>
+      <p>Los niños que aprenden IA entre 8-17 años:</p>
       <ul>
         <li>Desarrollan intuición tecnológica natural</li>
         <li>No tienen miedo o resistencia a la tecnología</li>
@@ -406,7 +406,7 @@ const blogPosts: Record<string, any> = {
       <h2>El momento de actuar es ahora</h2>
       <p>Cada día que pasa sin que tus hijos aprendan sobre IA es una oportunidad perdida. La buena noticia es que nunca es tarde para empezar, pero cuanto antes, mejor.</p>
 
-      <p>En Innovakids, preparamos a los niños para el futuro del trabajo con un programa diseñado específicamente para desarrollar tanto habilidades técnicas como humanas. Nuestros alumnos no solo aprenden a usar IA, sino a pensar críticamente, crear soluciones innovadoras y trabajar colaborativamente. <a href="/#inversion">Prepara a tu hijo para el futuro</a>.</p>
+      <p>En InnovaKids, preparamos a los niños para el futuro del trabajo con un programa diseñado específicamente para desarrollar tanto habilidades técnicas como humanas. Nuestros alumnos no solo aprenden a usar IA, sino a pensar críticamente, crear soluciones innovadoras y trabajar colaborativamente. <a href="/#inversion">Prepara a tu hijo para el futuro</a>.</p>
     `,
   },
   "herramientas-ia-educativas-ninos": {
@@ -418,7 +418,7 @@ const blogPosts: Record<string, any> = {
     category: "Recursos",
     readTime: "8 min",
     content: `
-      <p>El mercado de herramientas de IA educativas está creciendo exponencialmente. Aquí te presentamos las mejores opciones para niños de 8-14 años, evaluadas por seguridad, efectividad y facilidad de uso.</p>
+      <p>El mercado de herramientas de IA educativas está creciendo exponencialmente. Aquí te presentamos las mejores opciones para niños de 8-17 años, evaluadas por seguridad, efectividad y facilidad de uso.</p>
 
       <h2>Herramientas de IA conversacional</h2>
       <h3>1. ChatGPT (OpenAI)</h3>
@@ -476,7 +476,7 @@ const blogPosts: Record<string, any> = {
 
       <h2>Herramientas de programación y lógica</h2>
       <h3>5. Scratch (con extensiones de IA)</h3>
-      <p><strong>Edad recomendada:</strong> 8-14 años</p>
+      <p><strong>Edad recomendada:</strong> 8-17 años</p>
       <p><strong>Precio:</strong> Gratuito</p>
       <p><strong>Mejor para:</strong> Introducción a programación y IA</p>
       <p><strong>Pros:</strong></p>
@@ -579,7 +579,7 @@ const blogPosts: Record<string, any> = {
       <h2>Conclusión</h2>
       <p>Estas herramientas son solo el comienzo. El ecosistema de IA educativa está creciendo rápidamente, con nuevas opciones apareciendo constantemente. Lo importante es empezar ahora y adaptarse conforme evoluciona la tecnología.</p>
 
-      <p>En Innovakids, no solo enseñamos a usar estas herramientas, sino a dominarlas y combinarlas creativamente para crear proyectos impresionantes. Nuestros instructores expertos guían a los niños a través de las mejores prácticas y técnicas avanzadas. <a href="/#inversion">Descubre cómo tu hijo puede dominar estas herramientas</a>.</p>
+      <p>En InnovaKids, no solo enseñamos a usar estas herramientas, sino a dominarlas y combinarlas creativamente para crear proyectos impresionantes. Nuestros instructores expertos guían a los niños a través de las mejores prácticas y técnicas avanzadas. <a href="/#inversion">Descubre cómo tu hijo puede dominar estas herramientas</a>.</p>
     `,
   },
 }
@@ -797,7 +797,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/#inversion"
-                  className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                  className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                 >
                   Ver el programa completo
                   <span aria-hidden>→</span>

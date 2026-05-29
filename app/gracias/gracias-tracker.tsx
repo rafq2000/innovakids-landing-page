@@ -1,8 +1,8 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import { useSearchParams, useRouter } from "next/navigation"
-import { trackBookingConfirmed } from "@/lib/gtag"
+import { trackBookingConfirmed, trackPurchase } from "@/lib/gtag"
 
 /**
  * Fires the booking_confirmed GA4 / Google Ads conversion once when /gracias
@@ -22,6 +22,19 @@ export function GraciasTracker() {
         // Valid access: has payment method OR Calendly event params
         if (method || eventId) {
             setVerified(true)
+
+            // Fire purchase tracking for payment methods (PayPal or MercadoPago)
+            if (method) {
+                const amount = parseFloat(searchParams.get("amount") ?? "0")
+                if (amount > 0) {
+                    trackPurchase({ value: amount, currency: "USD", transactionId: orderId ?? "unknown" })
+                    // Fire Meta Pixel Purchase if available
+                    if (typeof window !== "undefined" && typeof (window as { fbq?: (...args: unknown[]) => void }).fbq === "function") {
+                        (window as { fbq?: (...args: unknown[]) => void }).fbq!("track", "Purchase", { value: amount, currency: "USD" })
+                    }
+                }
+            }
+
             trackBookingConfirmed({ eventId: eventId ?? orderId ?? undefined })
         } else {
             // No payment params — redirect to home

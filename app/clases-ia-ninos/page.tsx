@@ -49,85 +49,85 @@ export default function ClasesIANinos() {
   return (
     <>
       <Navigation />
-      <main className="min-h-screen bg-background pt-24">
+      <main className="min-h-screen bg-[#F2EDE0] pt-24">
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl font-bold text-white mb-6 text-center bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+            <h1 className="text-5xl font-bold text-[#C96342] mb-6 text-center font-display">
               Clases de IA para Niños: Aprende Inteligencia Artificial Jugando
             </h1>
 
-            <div className="prose prose-invert prose-lg max-w-none">
-              <p className="text-xl text-gray-300 text-center mb-12">
-                Las mejores <strong>clases de inteligencia artificial para niños</strong> de 8 a 14 años. Aprende
+            <div className="prose prose-lg max-w-none">
+              <p className="text-xl text-[#5A5751] text-center mb-12 font-body">
+                Las mejores <strong className="text-[#1A1714]">clases de inteligencia artificial para niños</strong> de 8 a 17 años. Aprende
                 ChatGPT, crea videos con IA, programa apps y domina las herramientas del futuro.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 my-12">
-                <div className="bg-gradient-to-br from-cyan-900/30 to-blue-900/30 p-8 rounded-xl border border-cyan-500/30">
+                <div className="bg-[#FAF7EF] p-8 rounded-xl border border-[#E8E0D0]">
                   <div className="text-4xl mb-4">👨‍🏫</div>
-                  <h3 className="text-2xl font-bold text-white mb-3">Instructores Expertos</h3>
-                  <p className="text-gray-300">
+                  <h3 className="text-2xl font-bold text-[#1A1714] mb-3">Instructores Expertos</h3>
+                  <p className="text-[#5A5751]">
                     Profesores certificados con experiencia en educación infantil y tecnología
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-br from-purple-900/30 to-pink-900/30 p-8 rounded-xl border border-purple-500/30">
+                <div className="bg-[#FAF7EF] p-8 rounded-xl border border-[#E8E0D0]">
                   <div className="text-4xl mb-4">🎯</div>
-                  <h3 className="text-2xl font-bold text-white mb-3">Atención Personalizada</h3>
-                  <p className="text-gray-300">
+                  <h3 className="text-2xl font-bold text-[#1A1714] mb-3">Atención Personalizada</h3>
+                  <p className="text-[#5A5751]">
                     Solo 5 alumnos por clase para garantizar que cada niño reciba atención individual
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-br from-pink-900/30 to-red-900/30 p-8 rounded-xl border border-pink-500/30">
+                <div className="bg-[#FAF7EF] p-8 rounded-xl border border-[#E8E0D0]">
                   <div className="text-4xl mb-4">🚀</div>
-                  <h3 className="text-2xl font-bold text-white mb-3">Proyectos Reales</h3>
-                  <p className="text-gray-300">
+                  <h3 className="text-2xl font-bold text-[#1A1714] mb-3">Proyectos Reales</h3>
+                  <p className="text-[#5A5751]">
                     Tu hijo creará apps, videos, juegos y más usando inteligencia artificial real
                   </p>
                 </div>
 
-                <div className="bg-gradient-to-br from-orange-900/30 to-yellow-900/30 p-8 rounded-xl border border-orange-500/30">
+                <div className="bg-[#FAF7EF] p-8 rounded-xl border border-[#E8E0D0]">
                   <div className="text-4xl mb-4">🏆</div>
-                  <h3 className="text-2xl font-bold text-white mb-3">Certificación Oficial</h3>
-                  <p className="text-gray-300">Certificado verificable al completar el programa de clases de IA</p>
+                  <h3 className="text-2xl font-bold text-[#1A1714] mb-3">Certificación Oficial</h3>
+                  <p className="text-[#5A5751]">Certificado verificable al completar el programa de clases de IA</p>
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-white mt-12 mb-6">¿Cómo son las Clases de IA para Niños?</h2>
+              <h2 className="text-3xl font-bold text-[#1A1714] mt-12 mb-6 font-display">¿Cómo son las Clases de IA para Niños?</h2>
 
-              <p className="text-gray-300">
-                Nuestras <strong>clases de inteligencia artificial para niños</strong> son 100% prácticas y dinámicas.
+              <p className="text-[#5A5751]">
+                Nuestras <strong className="text-[#1A1714]">clases de inteligencia artificial para niños</strong> son 100% prácticas y dinámicas.
                 Cada clase incluye:
               </p>
 
               <ul className="space-y-3 my-6">
                 <li className="flex items-start">
-                  <span className="text-cyan-400 mr-3 text-2xl">•</span>
-                  <span className="text-gray-300">
-                    <strong>15 min de teoría:</strong> Conceptos de IA explicados de forma simple y visual
+                  <span className="text-[#C96342] mr-3 text-2xl">•</span>
+                  <span className="text-[#5A5751]">
+                    <strong className="text-[#1A1714]">15 min de teoría:</strong> Conceptos de IA explicados de forma simple y visual
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-cyan-400 mr-3 text-2xl">•</span>
-                  <span className="text-gray-300">
-                    <strong>60 min de práctica:</strong> Uso hands-on de herramientas de IA reales
+                  <span className="text-[#C96342] mr-3 text-2xl">•</span>
+                  <span className="text-[#5A5751]">
+                    <strong className="text-[#1A1714]">Aprox. 60 min de práctica:</strong> Uso hands-on de herramientas de IA reales
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-cyan-400 mr-3 text-2xl">•</span>
-                  <span className="text-gray-300">
-                    <strong>15 min de proyecto:</strong> Aplicación práctica del aprendizaje del día
+                  <span className="text-[#C96342] mr-3 text-2xl">•</span>
+                  <span className="text-[#5A5751]">
+                    <strong className="text-[#1A1714]">15 min de proyecto:</strong> Aplicación práctica del aprendizaje del día
                   </span>
                 </li>
               </ul>
 
-              <div className="bg-gradient-to-r from-gray-800 to-gray-900 p-8 rounded-xl border border-cyan-500/30 my-8">
-                <h3 className="text-2xl font-bold text-cyan-400 mb-6 text-center">Lo que Aprenderán en las Clases</h3>
+              <div className="bg-[#FAF7EF] p-8 rounded-xl border border-[#E8E0D0] my-8">
+                <h3 className="text-2xl font-bold text-[#C96342] mb-6 text-center">Lo que Aprenderán en las Clases</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="font-bold text-white mb-3">🎨 Creatividad con IA</h4>
-                    <ul className="space-y-2 text-sm text-gray-300">
+                    <h4 className="font-bold text-[#1A1714] mb-3">🎨 Creatividad con IA</h4>
+                    <ul className="space-y-2 text-sm text-[#5A5751]">
                       <li>• Vibe Art: Generación de imágenes pro</li>
                       <li>• Vibe Cinema: Creación de video con IA</li>
                       <li>• Vibe Music: Composición musical original</li>
@@ -135,8 +135,8 @@ export default function ClasesIANinos() {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="font-bold text-white mb-3">💻 Tecnología & Futuro</h4>
-                    <ul className="space-y-2 text-sm text-gray-300">
+                    <h4 className="font-bold text-[#1A1714] mb-3">💻 Tecnología & Futuro</h4>
+                    <ul className="space-y-2 text-sm text-[#5A5751]">
                       <li>• Vibe Coding: Programación de Videojuegos</li>
                       <li>• Vibe Study: Hackea tus tareas y exámenes</li>
                       <li>• Vibe Voice: Clonación de voz con IA</li>
@@ -146,78 +146,78 @@ export default function ClasesIANinos() {
                 </div>
               </div>
 
-              <h2 className="text-3xl font-bold text-white mt-12 mb-6">Horarios Flexibles para Toda Latinoamérica</h2>
+              <h2 className="text-3xl font-bold text-[#1A1714] mt-12 mb-6 font-display">Horarios Flexibles para Toda Latinoamérica</h2>
 
-              <p className="text-gray-300 mb-6">
-                Nuestras <strong>clases de IA para niños</strong> están disponibles en horarios adaptados a cada zona
+              <p className="text-[#5A5751] mb-6">
+                Nuestras <strong className="text-[#1A1714]">clases de IA para niños</strong> están disponibles en horarios adaptados a cada zona
                 horaria de LATAM:
               </p>
 
               <div className="grid md:grid-cols-2 gap-4">
-                <div className="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
-                  <h4 className="font-bold text-cyan-400 mb-3">🌎 Zona Horaria México/Centro</h4>
-                  <p className="text-gray-300 text-sm">Clases disponibles de lunes a viernes 4:00 PM - 7:00 PM</p>
+                <div className="bg-[#FAF7EF] p-6 rounded-lg border border-[#E8E0D0]">
+                  <h4 className="font-bold text-[#C96342] mb-3">🌎 Zona Horaria México/Centro</h4>
+                  <p className="text-[#5A5751] text-sm">Clases disponibles de lunes a viernes 4:00 PM - 7:00 PM</p>
                 </div>
 
-                <div className="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
-                  <h4 className="font-bold text-purple-400 mb-3">🌎 Zona Horaria Colombia/Perú</h4>
-                  <p className="text-gray-300 text-sm">Clases disponibles de lunes a viernes 5:00 PM - 8:00 PM</p>
+                <div className="bg-[#FAF7EF] p-6 rounded-lg border border-[#E8E0D0]">
+                  <h4 className="font-bold text-[#C96342] mb-3">🌎 Zona Horaria Colombia/Perú</h4>
+                  <p className="text-[#5A5751] text-sm">Clases disponibles de lunes a viernes 5:00 PM - 8:00 PM</p>
                 </div>
 
-                <div className="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
-                  <h4 className="font-bold text-pink-400 mb-3">🌎 Zona Horaria Argentina/Chile</h4>
-                  <p className="text-gray-300 text-sm">Clases disponibles de lunes a viernes 6:00 PM - 9:00 PM</p>
+                <div className="bg-[#FAF7EF] p-6 rounded-lg border border-[#E8E0D0]">
+                  <h4 className="font-bold text-[#C96342] mb-3">🌎 Zona Horaria Argentina/Chile</h4>
+                  <p className="text-[#5A5751] text-sm">Clases disponibles de lunes a viernes 6:00 PM - 9:00 PM</p>
                 </div>
 
-                <div className="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
-                  <h4 className="font-bold text-orange-400 mb-3">📅 Fines de Semana</h4>
-                  <p className="text-gray-300 text-sm">Horarios especiales sábados y domingos 10:00 AM - 1:00 PM</p>
+                <div className="bg-[#FAF7EF] p-6 rounded-lg border border-[#E8E0D0]">
+                  <h4 className="font-bold text-[#C96342] mb-3">📅 Fines de Semana</h4>
+                  <p className="text-[#5A5751] text-sm">Horarios especiales sábados y domingos 10:00 AM - 1:00 PM</p>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/30 p-8 rounded-xl border-2 border-purple-500/50 my-12 text-center">
-                <h3 className="text-3xl font-bold text-white mb-4">🎁 Prueba una Clase GRATIS</h3>
-                <p className="text-xl text-gray-200 mb-6">
+              <div className="bg-[#FAF7EF] p-8 rounded-xl border-2 border-[#C96342]/30 my-12 text-center shadow-md">
+                <h3 className="text-3xl font-bold text-[#1A1714] mb-4 font-display">Prueba una Clase GRATIS</h3>
+                <p className="text-xl text-[#5A5751] mb-6">
                   Agenda una sesión de diagnóstico gratuita y descubre cómo tu hijo puede aprender IA
                 </p>
-                <p className="text-lg text-cyan-300 mb-8">
-                  ⏰ Próximo grupo inicia el 8 de Junio del 2026 • Las plazas se agotan rápido
+                <p className="text-lg text-[#C96342] mb-8">
+                  Próximo grupo inicia el 8 de junio del 2026 -- Las plazas se agotan rápido
                 </p>
                 <Link href="/#sesion-estrategica">
                   <Button
                     size="lg"
-                    className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white font-bold text-lg px-8 py-6 h-auto"
+                    className="bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] font-bold text-lg px-8 py-6 h-auto rounded-sm"
                   >
                     Agendar Clase de Prueba GRATIS
                   </Button>
                 </Link>
               </div>
 
-              <h2 className="text-3xl font-bold text-white mt-12 mb-6">Testimonios de Padres</h2>
+              <h2 className="text-3xl font-bold text-[#1A1714] mt-12 mb-6 font-display">Testimonios de Padres</h2>
 
               <div className="space-y-4 my-8">
-                <blockquote className="bg-gray-800/50 p-6 rounded-lg border-l-4 border-cyan-500 italic">
-                  <p className="mb-3 text-gray-300">
+                <blockquote className="bg-[#FAF7EF] p-6 rounded-lg border-l-4 border-[#C96342] italic">
+                  <p className="mb-3 text-[#5A5751]">
                     "Las clases son excepcionales. El profesor se asegura de que cada niño entienda antes de avanzar. Mi
                     hijo está emocionado con cada clase."
                   </p>
-                  <cite className="text-cyan-400 not-italic font-semibold">- Laura Martínez, Chile 🇨🇱</cite>
+                  <cite className="text-[#C96342] not-italic font-semibold">- Laura Martínez, Chile 🇨🇱</cite>
                 </blockquote>
 
-                <blockquote className="bg-gray-800/50 p-6 rounded-lg border-l-4 border-purple-500 italic">
-                  <p className="mb-3 text-gray-300">
+                <blockquote className="bg-[#FAF7EF] p-6 rounded-lg border-l-4 border-[#C96342] italic">
+                  <p className="mb-3 text-[#5A5751]">
                     "Lo mejor son los grupos pequeños. Mi hija recibe atención constante y ha creado proyectos
                     increíbles en solo 3 semanas."
                   </p>
-                  <cite className="text-purple-400 not-italic font-semibold">- Roberto Sánchez, México 🇲🇽</cite>
+                  <cite className="text-[#C96342] not-italic font-semibold">- Roberto Sánchez, México 🇲🇽</cite>
                 </blockquote>
 
-                <blockquote className="bg-gray-800/50 p-6 rounded-lg border-l-4 border-pink-500 italic">
-                  <p className="mb-3 text-gray-300">
+                <blockquote className="bg-[#FAF7EF] p-6 rounded-lg border-l-4 border-[#C96342] italic">
+                  <p className="mb-3 text-[#5A5751]">
                     "Mi hijo pasó de no saber nada de IA a crear una app funcional. Las clases son dinámicas y muy bien
                     estructuradas."
                   </p>
-                  <cite className="text-pink-400 not-italic font-semibold">- Patricia López, Perú 🇵🇪</cite>
+                  <cite className="text-[#C96342] not-italic font-semibold">- Patricia López, Perú 🇵🇪</cite>
                 </blockquote>
               </div>
 
@@ -226,7 +226,7 @@ export default function ClasesIANinos() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-2 border-cyan-500 text-cyan-400 hover:bg-cyan-500/10 font-bold text-lg px-8 py-4 bg-transparent"
+                    className="border-2 border-[#C96342] text-[#C96342] hover:bg-[#C96342]/10 font-bold text-lg px-8 py-4 bg-transparent rounded-sm"
                   >
                     Ver Programa Completo de Clases
                   </Button>

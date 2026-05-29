@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Clase Gratis de IA para Niños 8-17 · Agenda Hoy | InnovaKids",
   // 151 chars · proof + differentiator + CTA
   description:
-    "Clase gratis de IA para niños 8-17 años: sesión diagnóstica de 20 min con demo en vivo. Sin compromiso, cupos limitados. 527 familias. Agenda hoy.",
+    "Clase gratis de IA para niños 8-17 años: sesión diagnóstica de 30 min con demo en vivo. Sin compromiso, cupos limitados. 527 familias. Agenda hoy.",
   keywords: [
     "clase gratis ia niños",
     "sesion diagnostica innovakids",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Clase Gratis de IA para Niños 8-17 · InnovaKids LATAM",
     description:
-      "Sesión diagnóstica gratuita de 20 min. Tu hijo descubre su potencial con IA en vivo. Sin costo, sin compromiso. Cupos limitados.",
+      "Sesión diagnóstica gratuita de 30 min. Tu hijo descubre su potencial con IA en vivo. Sin costo, sin compromiso. Cupos limitados.",
     type: "website",
     url: "https://www.innovakidslatam.com/clase-gratis",
     siteName: "InnovaKids",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Clase Gratis de IA para Niños 8-17 · Agenda Hoy | InnovaKids",
     description:
-      "Sesión diagnóstica gratuita de 20 min con demo en vivo. Sin compromiso, cupos limitados. Agenda hoy.",
+      "Sesión diagnóstica gratuita de 30 min con demo en vivo. Sin compromiso, cupos limitados. Agenda hoy.",
     images: ["https://www.innovakidslatam.com/og-image.png"],
   },
   alternates: {
@@ -54,7 +54,7 @@ const jsonLd = {
   "@type": "Event",
   name: "Sesion Diagnostica Gratuita - Curso de IA para Ninos | InnovaKids",
   description:
-    "Sesion diagnostica gratuita de 20 minutos para evaluar el potencial de tu hijo con Inteligencia Artificial. Incluye demostracion en vivo y plan personalizado.",
+    "Sesion diagnostica gratuita de 30 minutos para evaluar el potencial de tu hijo con Inteligencia Artificial. Incluye demostracion en vivo y plan personalizado.",
   eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
   eventStatus: "https://schema.org/EventScheduled",
   location: {
@@ -80,6 +80,16 @@ const jsonLd = {
   },
   image: "https://www.innovakidslatam.com/og-image.png",
   isAccessibleForFree: true,
+  startDate: "2026-06-01",
+  eventSchedule: {
+    "@type": "Schedule",
+    "startDate": "2026-06-01",
+    "repeatFrequency": "P1W",
+    "byDay": ["Monday", "Wednesday", "Friday"],
+    "startTime": "17:00-04:00",
+    "endTime": "17:30-04:00",
+    "scheduleTimezone": "America/Santiago",
+  },
 }
 
 const benefits = [
@@ -102,7 +112,7 @@ const benefits = [
 ]
 
 const testimonials = [
-  { quote: "Mi hijo quedó fascinado con la sesión. En 20 minutos ya quería inscribirse al curso completo.", author: "Carolina M.", city: "Santiago, Chile" },
+  { quote: "Mi hijo quedó fascinado con la sesión. En 30 minutos ya quería inscribirse al curso completo.", author: "Carolina M.", city: "Santiago, Chile" },
   { quote: "Excelente la evaluación. Nos dieron un plan personalizado para mi hija de 10 años.", author: "Roberto P.", city: "CDMX, México" },
   { quote: "Sin presión de venta, súper profesionales. Recomendadísimo.", author: "Lucía G.", city: "Bogotá, Colombia" },
 ]
@@ -134,7 +144,7 @@ export default function ClaseGratisPage() {
               </span>
             </div>
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[0.98] text-[#1A1714] tracking-tight text-balance mb-7">
-              Una sesión diagnóstica de 20 minutos que le abrirá la puerta a tu hijo al mundo de la IA.
+              Una sesión diagnóstica de 30 minutos que le abrirá la puerta a tu hijo al mundo de la IA.
             </h1>
             <p className="text-lg md:text-xl text-[#1A1714]/70 leading-relaxed text-pretty font-light max-w-2xl">
               Evaluamos su nivel, le mostramos herramientas reales en vivo y salen con un plan de aprendizaje
@@ -174,7 +184,7 @@ export default function ClaseGratisPage() {
               {/* Logistics grid */}
               <dl className="grid grid-cols-2 gap-x-8 gap-y-8 mt-14 border-t border-[#1A1714]/12 pt-10">
                 {[
-                  { icon: Clock, label: "Duración", value: "20 minutos" },
+                  { icon: Clock, label: "Duración", value: "30 minutos" },
                   { icon: Video, label: "Modalidad", value: "Online vía Zoom" },
                   { icon: Users, label: "Edades", value: "8 a 17 años" },
                   { icon: Star, label: "Precio", value: "USD $0" },
@@ -240,7 +250,7 @@ export default function ClaseGratisPage() {
                   ¿Prefieres conversar por WhatsApp antes de agendar?
                 </h2>
                 <p className="mt-4 text-[#1A1714]/70 leading-relaxed">
-                  Nuestro equipo académico responde de 9am a 8pm hora LATAM. Sin bots.
+                  Nuestro equipo académico responde de 9am a 8pm hora Chile (GMT-4). Sin bots.
                 </p>
               </div>
               <div className="md:col-span-5 md:text-right">

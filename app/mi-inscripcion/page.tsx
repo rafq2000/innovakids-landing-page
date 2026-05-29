@@ -12,11 +12,9 @@ import {
   Clock,
   Users,
   PartyPopper,
-  FileText,
   ArrowRight,
   Mail,
 } from "lucide-react"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Mi Inscripcion · InnovaKids",
@@ -285,7 +283,7 @@ export default function MiInscripcionPage() {
                           variant={doc.highlight ? "default" : "outline"}
                           className={`w-full sm:w-auto gap-2 ${
                             doc.highlight
-                              ? "bg-[#C96342] hover:bg-[#A8502F] text-white"
+                              ? "bg-[#C96342] hover:bg-[#9A4428] text-white"
                               : "border-[#1A1714]/20 hover:border-[#C96342] text-[#1A1714]"
                           }`}
                           asChild

@@ -38,8 +38,8 @@ export function PromoVideoSection() {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent px-4">
-              Descubre Innovakids en Acción
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-[#C96342] px-4">
+              Descubre InnovaKids en Acción
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
               Mira cómo transformamos el aprendizaje de IA en una experiencia divertida y educativa
@@ -78,14 +78,16 @@ export function PromoVideoSection() {
 
                     {/* Play/Pause Overlay */}
                     {!isPlaying && (
-                      <div
-                        className="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer group"
+                      <button
+                        type="button"
+                        className="absolute inset-0 bg-black/40 flex items-center justify-center cursor-pointer group border-0 p-0"
                         onClick={handleVideoClick}
+                        aria-label="Reproducir video promocional"
                       >
-                        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-cyan-500/90 flex items-center justify-center group-hover:bg-cyan-400 transition-all group-hover:scale-110">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-[#C96342] flex items-center justify-center group-hover:bg-[#9A4428] transition-all group-hover:scale-110">
                           <Play className="w-8 h-8 sm:w-10 sm:h-10 text-white ml-1" fill="white" />
                         </div>
-                      </div>
+                      </button>
                     )}
 
                     {/* Mute/Unmute Button */}
@@ -109,7 +111,7 @@ export function PromoVideoSection() {
                 </div>
 
                 {/* Glow effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 via-blue-500/20 to-purple-500/20 blur-3xl -z-10" />
+                <div className="absolute inset-0 bg-[#C96342]/15 blur-3xl -z-10" />
               </div>
             </div>
 
@@ -123,27 +125,27 @@ export function PromoVideoSection() {
 
               <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-2 h-2 rounded-full bg-cyan-400" />
+                  <div className="w-6 h-6 rounded-full bg-[#C96342]/15 flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-2 h-2 rounded-full bg-[#C96342]" />
                   </div>
                   <p className="text-left text-sm sm:text-base">
-                    <strong className="text-cyan-400">Grupos reducidos:</strong> Máximo 5 alumnos por clase
+                    <strong className="text-[#C96342]">Grupos reducidos:</strong> Maximo 5 alumnos por clase
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-2 h-2 rounded-full bg-cyan-400" />
+                  <div className="w-6 h-6 rounded-full bg-[#C96342]/15 flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-2 h-2 rounded-full bg-[#C96342]" />
                   </div>
                   <p className="text-left text-sm sm:text-base">
-                    <strong className="text-cyan-400">Atención personalizada:</strong> Cada niño avanza a su ritmo
+                    <strong className="text-[#C96342]">Atencion personalizada:</strong> Cada nino avanza a su ritmo
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 mt-1">
-                    <div className="w-2 h-2 rounded-full bg-cyan-400" />
+                  <div className="w-6 h-6 rounded-full bg-[#C96342]/15 flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-2 h-2 rounded-full bg-[#C96342]" />
                   </div>
                   <p className="text-left text-sm sm:text-base">
-                    <strong className="text-cyan-400">Resultados garantizados:</strong> Proyectos reales desde la
+                    <strong className="text-[#C96342]">Resultados garantizados:</strong> Proyectos reales desde la
                     primera clase
                   </p>
                 </div>
@@ -153,7 +155,7 @@ export function PromoVideoSection() {
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 rounded-xl shadow-lg hover:shadow-cyan-500/50 transition-all w-full sm:w-auto"
+                  className="bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] font-semibold text-base sm:text-lg px-6 sm:px-8 py-5 sm:py-6 rounded-sm shadow-lg hover:shadow-[#C96342]/30 transition-all w-full sm:w-auto"
                   onClick={() => {
                     document.getElementById("sesion-estrategica")?.scrollIntoView({ behavior: "smooth" })
                   }}

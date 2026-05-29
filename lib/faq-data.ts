@@ -1,4 +1,3 @@
-import { Zap, HelpCircle, Book, Users, Clock, ShieldCheck, DollarSign, Calendar, Monitor, Award, Video } from "lucide-react"
 import { COHORT } from "@/lib/site-config"
 
 export const faqs = [
@@ -6,31 +5,31 @@ export const faqs = [
     {
         question: "¿Mi hijo necesita saber programación o matemáticas avanzadas?",
         answer:
-            "Absolutamente NO. El 90% de nuestros alumnos empieza desde cero. Nuestra metodología 'Vibe Coding' está diseñada para que niños y adolescentes de 8-17 años creen apps y juegos usando lenguaje natural (español), no código complejo. Si tu hijo sabe usar YouTube, está listo para crear con IA.",
+            "No. El 90% de nuestros alumnos empieza desde cero. Usamos 'Vibe Coding', una forma de programar donde tu hijo le da instrucciones a la IA en espanol corriente y ella escribe el codigo por el. Si sabe usar YouTube, esta listo.",
     },
     {
         question: "¿Cuál es la edad ideal? ¿Es muy pequeño o muy grande?",
         answer:
-            "El programa está optimizado para el rango de 8 a 17 años. A esta edad tienen la mezcla perfecta de creatividad explosiva y capacidad lógica para dirigir una IA. Tenemos grupos separados por edad (8-11, 12-14 y 15-17) para asegurar que la dinámica sea perfecta para su etapa.",
+            "El programa es para ninos y adolescentes de 8 a 17 anos. Separamos en tres grupos por edad (8-10, 11-13 y 14-17) para que la dinamica sea ideal para su etapa. A estas edades tienen la creatividad y la capacidad logica perfectas para aprender IA.",
     },
 
     // 2. DREAM OUTCOME (¿Qué va a lograr?) -> Dream Outcome ↑
     {
         question: "¿Qué va a ser capaz de CREAR mi hijo realmente?",
         answer:
-            "No solo 'aprenderá', va a CREAR. En 5 semanas: 1) Entrenará su propio modelo de IA, 2) Creará arte digital y música original, 3) Programará su primer videojuego o app funcional. Pasará de consumidor pasivo de pantallas a Creador Tecnológico Activo.",
+            "En el Nivel 1 (Explorer) crea arte con IA, música, voz clonada, un videojuego y un proyecto final. En el Nivel 2 (Maker) elige un track —Estudio, Emprender, Video, Audio, Transcribir o Programar— y construye proyectos publicados en internet que sus amigos pueden usar.",
     },
     {
         question: "¿Recibe algún certificado oficial?",
         answer:
-            "Sí. Al graduarse recibe el 'InnovaKids AI Explorer Certificate', un certificado digital validado en Blockchain que puede agregar a su portafolio escolar. Es una credencial que lo diferencia del 99% de los niños de su edad.",
+            "Si. Al graduarse recibe el 'InnovaKids AI Explorer Certificate', un certificado digital que puede agregar a su portafolio escolar. Es una credencial que lo diferencia del 99% de los ninos de su edad.",
     },
 
     // 3. SOCIAL PROOF & SCARCITY (¿Por qué ahora?) -> Likelihood ↑
     {
         question: "¿Por qué solo aceptan 5 alumnos por grupo?",
         answer:
-            "Calidad obsesiva. Con 527 graduados, aprendimos que 5 es el número mágico. El instructor puede ver la pantalla de cada niño, corregir en tiempo real y asegurar que NADIE se quede atrás. No somos un webinar masivo; somos mentoria personalizada.",
+            "Con 527 graduados, aprendimos que 5 es el numero ideal. El instructor ve la pantalla de cada nino, corrige en tiempo real y se asegura de que nadie se quede atras. No es un webinar masivo, es mentoria personalizada.",
     },
 
     // 4. LOGISTICS (¿Cómo funciona?) -> Time Delay ↓
@@ -42,25 +41,25 @@ export const faqs = [
     {
         question: "¿Cuánto cuesta el programa completo?",
         answer:
-            "$267 USD. Esto cubre las 5 semanas, las 10 clases en vivo, acceso de por vida a las grabaciones, software premium durante el curso y garant\u00eda total de 10 d\u00edas. Es una inversi\u00f3n \u00fanica para una habilidad que usar\u00e1 el resto de su vida.",
+            "$267 USD por todo el programa: 5 semanas, 10 clases en vivo, grabaciones de por vida, software premium y garantia de 10 dias. Es una inversion unica para una habilidad que usara siempre.",
     },
     {
         question: "¿Qué pasa si falta a una clase?",
         answer:
-            "Cero estrés. Todas las sesiones se graban y se suben a su aula virtual privada. Puede verla cuando quiera para ponerse al día e incluso hacer preguntas al profesor por el chat de soporte.",
+            "Todas las sesiones se graban y se suben a su aula virtual privada. Puede verlas cuando quiera y hacer preguntas al profesor por el chat de soporte.",
     },
 
     // 5. RISK REVERSAL (El cierre) -> Risk = 0
     {
         question: "¿Tiene garantía? ¿Qué pasa si no le gusta?",
         answer:
-            "Garantía de Hierro de 10 Días. Inscríbelo, que tome las primeras 3-4 clases. Si no ves cómo se le iluminan los ojos creando tecnología, te devolvemos el 100% de tu dinero. Sin preguntas incómodas. El riesgo es todo nuestro.",
+            "Garantia de 10 dias. Inscribelo, que tome las primeras clases y, si no estas satisfecho, te devolvemos el 100% de tu dinero sin preguntas. El riesgo es todo nuestro.",
     },
 
     // 6. EMPRESA & LEGAL
     {
         question: "¿Quién está detrás de InnovaKids? ¿Es una empresa real?",
         answer:
-            "Sí, somos una empresa legalmente constituida. Razón Social: INNOVAKIDS LATAM SpA, RUT: 78.388.703-7. Operamos desde Chile con presencia en 9 países de habla hispana. Puedes verificar nuestros datos en el Servicio de Impuestos Internos (SII) de Chile.",
+            "Si, somos una empresa legalmente constituida en Chile: INNOVAKIDS LATAM SpA, RUT 78.388.703-7, con presencia en 9 paises. Puedes verificar nuestros datos en el Servicio de Impuestos Internos (SII) de Chile.",
     },
 ]

@@ -15,13 +15,14 @@ const countries = [
 ]
 
 const exploreLinks = [
-  { href: "/cursos-online-para-ninos", label: "Cursos online para niños" },
-  { href: "/#metodologia", label: "Metodología" },
-  { href: "/blog", label: "Blog educativo" },
-  { href: "/precios", label: "Precios y planes" },
-  { href: "/colegios", label: "Soluciones para colegios" },
-  { href: "/testimonios", label: "Testimonios" },
+  { href: "/programa", label: "Programa" },
+  { href: "/metodologia-aprender-creando", label: "Metodología" },
   { href: "/resultados", label: "Resultados" },
+  { href: "/precios", label: "Precios y planes" },
+  { href: "/testimonios", label: "Testimonios" },
+  { href: "/clase-gratis", label: "Clase gratis" },
+  { href: "/confianza-y-seguridad", label: "Confianza y seguridad" },
+  { href: "/blog", label: "Blog educativo" },
 ]
 
 export function Footer() {
@@ -35,14 +36,13 @@ export function Footer() {
             Próxima cohorte · {COHORT.nameShort}
           </p>
           <h2
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-[-0.02em] font-normal max-w-[14ch] mb-10"
-            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+            className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-[-0.02em] font-normal max-w-[14ch] mb-10"
           >
             Empieza <em className="italic text-[#C96342]">hoy</em>.
           </h2>
           <a
             href="/#sesion-estrategica"
-            className="inline-flex items-center bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm transition-colors"
+            className="inline-flex items-center bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm transition-colors"
           >
             Agendar clase gratis
           </a>
@@ -52,8 +52,7 @@ export function Footer() {
         <div className="grid md:grid-cols-12 gap-10 md:gap-8 py-16">
           <div className="md:col-span-4">
             <p
-              className="text-2xl tracking-tight mb-5"
-              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+              className="font-display text-2xl tracking-tight mb-5"
             >
               InnovaKids
             </p>

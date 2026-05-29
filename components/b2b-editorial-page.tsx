@@ -396,7 +396,7 @@ export function B2BEditorialPage({
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:outline-none focus:border-[#C96342] transition-colors"
+                      className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:border-[#C96342] transition-colors"
                       placeholder="Maria Garcia"
                     />
                   </div>
@@ -409,7 +409,7 @@ export function B2BEditorialPage({
                       required
                       value={formData.institution}
                       onChange={(e) => setFormData({ ...formData, institution: e.target.value })}
-                      className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:outline-none focus:border-[#C96342] transition-colors"
+                      className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:border-[#C96342] transition-colors"
                       placeholder="Colegio San Patricio"
                     />
                   </div>
@@ -424,7 +424,7 @@ export function B2BEditorialPage({
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:outline-none focus:border-[#C96342] transition-colors"
+                      className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:border-[#C96342] transition-colors"
                       placeholder="mgarcia@colegio.cl"
                     />
                   </div>
@@ -436,7 +436,7 @@ export function B2BEditorialPage({
                       type="text"
                       value={formData.role}
                       onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                      className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:outline-none focus:border-[#C96342] transition-colors"
+                      className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:border-[#C96342] transition-colors"
                       placeholder="Directora academica"
                     />
                   </div>
@@ -449,7 +449,7 @@ export function B2BEditorialPage({
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     rows={3}
-                    className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:outline-none focus:border-[#C96342] transition-colors resize-none"
+                    className="font-display w-full bg-transparent border-0 border-b border-[#1A1714]/20 py-3 text-lg text-[#1A1714] placeholder:text-[#1A1714]/30 focus:border-[#C96342] transition-colors resize-none"
                     placeholder="Numero de estudiantes, fechas, presupuesto..."
                   />
                 </div>

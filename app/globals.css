@@ -5,20 +5,24 @@
 
 :root {
   /* Paper-and-terracotta palette */
-  --paper: #F2EDE0;
+  --paper: #FAF7EF;
   --paper-warm: #EDE6D3;
   --paper-card: #FAF7EF;
+  --crema: #F2EDE0;
+  --crema-light: #FAF7EF;
+  --crema-paper: #F5F1E8;
   --ink: #1A1714;
   --ink-soft: #3B3630;
   --ink-muted: #6B645B;
   --terracotta: #C96342;
+  --terracotta-hover: #9A4428;
   --terracotta-deep: #9A4428;
   --terracotta-pale: #E8B69E;
   --plum: #5D2E2E;
   --sage: #7A8B6C;
 
   /* Shadcn compat */
-  --background: var(--paper);
+  --background: var(--crema);
   --foreground: var(--ink);
   --card: var(--paper-card);
   --card-foreground: var(--ink);
@@ -41,9 +45,14 @@
 }
 
 @theme inline {
-  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-body), "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-display), "Fraunces", "Iowan Old Style", Georgia, serif;
   --font-mono: var(--font-mono), "JetBrains Mono", ui-monospace, monospace;
+
+  --color-crema: var(--crema);
+  --color-crema-light: var(--crema-light);
+  --color-crema-paper: var(--crema-paper);
+  --color-terracotta-hover: var(--terracotta-hover);
 
   --color-paper: var(--paper);
   --color-paper-warm: var(--paper-warm);
@@ -95,7 +104,7 @@
 
   body {
     font-family: var(--font-body), system-ui, sans-serif;
-    background-color: var(--paper);
+    background-color: var(--crema);
     color: var(--ink);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

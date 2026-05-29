@@ -25,7 +25,7 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
         body: (
             <>
                 <p>
-                    InnovaKids LATAM ofrece cursos y programas educativos de Inteligencia Artificial para niños de 8 a 14
+                    InnovaKids LATAM ofrece cursos y programas educativos de Inteligencia Artificial para niños de 8 a 17
                     años. Nuestros servicios incluyen:
                 </p>
                 <ul className="mt-5 border-t border-[#1A1714]/12">
@@ -62,7 +62,7 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
                     },
                     {
                         k: "Opciones de pago",
-                        v: "Ofrecemos pago en una sola exhibición o en cuotas según disponibilidad en tu país.",
+                        v: "Ofrecemos pago en una sola cuota o en cuotas según disponibilidad en tu país.",
                     },
                     {
                         k: "Confirmación",

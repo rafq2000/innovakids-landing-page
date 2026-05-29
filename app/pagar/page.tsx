@@ -37,7 +37,7 @@ interface PaymentDetails {
 
 const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   explorer: {
-    title: "Innovakids Explorer",
+    title: "InnovaKids Explorer",
     price: 267,
     description: "Programa completo - 10 Clases en vivo de IA",
   },
@@ -59,7 +59,7 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   custom360: {
     title: "Pago Personalizado",
     price: 360,
-    description: "Pago único de $360 USD - Programa Completo Innovakids",
+    description: "Pago único de $360 USD - Programa Completo InnovaKids",
   },
   reserve: {
     title: "Reserva tu Cupo",
@@ -124,15 +124,15 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   promo480: {
     title: "Programa Completo Premium",
     price: 480,
-    description: "Pago único de $480 USD - Acceso completo Innovakids",
+    description: "Pago único de $480 USD - Acceso completo InnovaKids",
   },
   pago240: {
-    title: "Curso Completo Innovakids",
+    title: "Curso Completo InnovaKids",
     price: 240,
     description: "Pago único de $240 USD - Acceso completo al curso de IA para niños",
   },
   pago480: {
-    title: "Programa Premium Innovakids",
+    title: "Programa Premium InnovaKids",
     price: 480,
     description: "Pago \u00fanico de $480 USD - Acceso premium completo al programa de IA",
   },
@@ -153,7 +153,7 @@ export default async function PagarPage({
   const details = paymentDetails[option] || paymentDetails.explorer
 
   return (
-    <div className="min-h-screen bg-background">
+    <main className="min-h-screen bg-background">
       <div className="container mx-auto px-4 py-8">
         <Link href="/#inversion" className="inline-flex items-center gap-2 text-primary hover:underline mb-6">
           <ArrowLeft className="h-4 w-4" />
@@ -179,7 +179,7 @@ export default async function PagarPage({
           </div>
 
           <div className="text-center mb-8">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Inscribe a tu hijo en Innovakids</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">Inscribe a tu hijo en InnovaKids</h1>
             <p className="text-lg md:text-xl text-muted-foreground">
               Curso de Inteligencia Artificial para Niños y Adolescentes
             </p>
@@ -264,6 +264,6 @@ export default async function PagarPage({
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }

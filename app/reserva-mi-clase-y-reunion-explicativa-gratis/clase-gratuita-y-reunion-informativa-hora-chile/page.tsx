@@ -48,22 +48,22 @@ export default function ReservaClasePage() {
   const calendlyUrl = "https://calendly.com/innovakids" // Reemplaza con tu URL de Calendly
 
   return (
-    <div className="min-h-screen bg-[#0a1628]">
+    <div className="min-h-screen bg-[#F2EDE0]">
       <Navigation />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-5xl">
           <Link href="/">
-            <Button variant="ghost" className="text-white hover:text-[#4DD0E1] mb-8">
+            <Button variant="ghost" className="text-[#1A1714] hover:text-[#C96342] mb-8">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Volver al inicio
             </Button>
           </Link>
 
           <div className="mb-12 text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1A1714] mb-4">
               Reserva tu Sesión de Evaluación Gratuita
             </h1>
-            <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+            <p className="text-lg text-[#5A5751] max-w-3xl mx-auto">
               Agenda una sesión estratégica gratuita y descubre cómo tu hijo puede aprender IA de forma práctica y
               divertida
             </p>
@@ -71,76 +71,76 @@ export default function ReservaClasePage() {
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             <div>
-              <h2 className="text-2xl font-bold text-white mb-6">¿Qué incluye la sesión de evaluación gratuita?</h2>
+              <h2 className="text-2xl font-bold text-[#1A1714] mb-6">¿Qué incluye la sesión de evaluación gratuita?</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#4DD0E1] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#C96342] flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-white font-bold mb-1">Demostración de IA en vivo</h3>
-                    <p className="text-gray-300 text-sm">
+                    <h3 className="text-[#1A1714] font-bold mb-1">Demostración de IA en vivo</h3>
+                    <p className="text-[#5A5751] text-sm">
                       Tu hijo experimentará cómo funcionan las herramientas de IA de forma práctica
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#4DD0E1] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#C96342] flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-white font-bold mb-1">Reunión informativa para padres</h3>
-                    <p className="text-gray-300 text-sm">
+                    <h3 className="text-[#1A1714] font-bold mb-1">Reunión informativa para padres</h3>
+                    <p className="text-[#5A5751] text-sm">
                       Conoce el programa completo, metodología y beneficios para tu hijo
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#4DD0E1] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#C96342] flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-white font-bold mb-1">Evaluación personalizada</h3>
-                    <p className="text-gray-300 text-sm">
+                    <h3 className="text-[#1A1714] font-bold mb-1">Evaluación personalizada</h3>
+                    <p className="text-[#5A5751] text-sm">
                       Analizamos el nivel de tu hijo y recomendamos el mejor camino de aprendizaje
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#4DD0E1] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#C96342] flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-white font-bold mb-1">Resolución de dudas</h3>
-                    <p className="text-gray-300 text-sm">
+                    <h3 className="text-[#1A1714] font-bold mb-1">Resolución de dudas</h3>
+                    <p className="text-[#5A5751] text-sm">
                       Responderemos todas tus preguntas sobre el curso, horarios y metodología
                     </p>
                   </div>
                 </div>
               </div>
 
-              <Card className="bg-[#1a2942] border-[#2a3952] mt-8">
+              <Card className="bg-[#FAF7EF] border-[#E8E0D0] mt-8">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <Clock className="w-5 h-5 text-[#4DD0E1]" />
-                    <h3 className="text-white font-bold">Duración</h3>
+                    <Clock className="w-5 h-5 text-[#C96342]" />
+                    <h3 className="text-[#1A1714] font-bold">Duración</h3>
                   </div>
-                  <p className="text-gray-300">45-60 minutos</p>
+                  <p className="text-[#5A5751]">45-60 minutos</p>
                 </CardContent>
               </Card>
 
-              <Card className="bg-[#1a2942] border-[#2a3952] mt-4">
+              <Card className="bg-[#FAF7EF] border-[#E8E0D0] mt-4">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <Video className="w-5 h-5 text-[#4DD0E1]" />
-                    <h3 className="text-white font-bold">Modalidad</h3>
+                    <Video className="w-5 h-5 text-[#C96342]" />
+                    <h3 className="text-[#1A1714] font-bold">Modalidad</h3>
                   </div>
-                  <p className="text-gray-300">100% Online vía Zoom</p>
+                  <p className="text-[#5A5751]">100% Online vía Zoom</p>
                 </CardContent>
               </Card>
             </div>
 
             <div>
-              <Card className="bg-[#1a2942] border-[#2a3952]">
+              <Card className="bg-[#FAF7EF] border-[#E8E0D0]">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-6">
-                    <Calendar className="w-6 h-6 text-[#4DD0E1]" />
-                    <h2 className="text-xl font-bold text-white">Selecciona tu horario</h2>
+                    <Calendar className="w-6 h-6 text-[#C96342]" />
+                    <h2 className="text-xl font-bold text-[#1A1714]">Selecciona tu horario</h2>
                   </div>
 
                   <div className="bg-white rounded-lg p-4 mb-6">
@@ -153,9 +153,9 @@ export default function ReservaClasePage() {
                     ></iframe>
                   </div>
 
-                  <div className="bg-[#4DD0E1]/10 border border-[#4DD0E1]/30 rounded-lg p-4">
-                    <p className="text-sm text-gray-300">
-                      <strong className="text-white">Nota:</strong> Recibirás un email de confirmación con el enlace de
+                  <div className="bg-[#C96342]/10 border border-[#C96342]/20 rounded-lg p-4">
+                    <p className="text-sm text-[#5A5751]">
+                      <strong className="text-[#1A1714]">Nota:</strong> Recibirás un email de confirmación con el enlace de
                       Zoom para la sesión. Si no encuentras el horario ideal, contáctanos por WhatsApp.
                     </p>
                   </div>
@@ -164,10 +164,10 @@ export default function ReservaClasePage() {
             </div>
           </div>
 
-          <Card className="bg-gradient-to-r from-[#4DD0E1]/20 to-[#00BCD4]/20 border-[#4DD0E1]/30">
+          <Card className="bg-[#F5F1E8] border-[#E8E0D0]">
             <CardContent className="p-8 text-center">
-              <h2 className="text-2xl font-bold text-white mb-4">¿Prefieres hablar directamente con nosotros?</h2>
-              <p className="text-gray-300 mb-6">Contáctanos por WhatsApp y agendamos tu sesión personalizada</p>
+              <h2 className="text-2xl font-bold text-[#1A1714] mb-4">¿Prefieres hablar directamente con nosotros?</h2>
+              <p className="text-[#5A5751] mb-6">Contáctanos por WhatsApp y agendamos tu sesión personalizada</p>
               <a
                 href="https://wa.me/56964754219?text=Hola,%20quiero%20agendar%20una%20sesión%20de%20evaluación%20gratuita"
                 target="_blank"

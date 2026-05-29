@@ -68,7 +68,7 @@ export default function ContactoClient() {
                                     href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                 >
                                     Abrir WhatsApp
                                     <span aria-hidden>→</span>

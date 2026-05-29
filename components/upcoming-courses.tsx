@@ -9,7 +9,7 @@ const upcomingCourses = [
     title: "Maestros del Storytelling Digital",
     subtitle: "De la idea a la película animada",
     icon: Sparkles,
-    color: "from-purple-500 to-pink-500",
+    color: "from-[#C96342] to-[#9A4428]",
     description:
       "Crear una historia épica con voces y visuales de IA. Aprende a ser el director de tu propia película usando inteligencia artificial como tu equipo de artistas.",
     features: [
@@ -26,7 +26,7 @@ const upcomingCourses = [
     title: "Creador de Juegos Inteligentes",
     subtitle: "IA + Coding: Programar videojuegos que piensan",
     icon: Gamepad2,
-    color: "from-green-500 to-emerald-500",
+    color: "from-[#9A4428] to-[#C96342]",
     description:
       "No programamos juegos normales, le damos un 'cerebro' a los personajes para que reaccionen a lo que hacemos. Aprende Machine Learning jugando.",
     features: [
@@ -43,7 +43,7 @@ const upcomingCourses = [
     title: "Lanza tu Idea: Mini Startup con IA",
     subtitle: "Crear una marca real y presencia digital",
     icon: TrendingUp,
-    color: "from-orange-500 to-red-500",
+    color: "from-[#B5522E] to-[#9A4428]",
     description:
       "Crea una marca real en tiempo récord. Desde el logo hasta tu web funcional, aprende a lanzar tu idea al mercado como un verdadero emprendedor.",
     features: [
@@ -60,7 +60,7 @@ const upcomingCourses = [
     title: "Super Estudiante: El Cerebro Aumentado",
     subtitle: "Domina el aprendizaje con técnicas de élite",
     icon: GraduationCap,
-    color: "from-blue-500 to-cyan-500",
+    color: "from-[#C96342] to-[#B5522E]",
     description:
       "Transforma tu forma de estudiar. Aprende Matemáticas, Idiomas y Lenguaje con técnicas de élite usadas por los mejores estudiantes del mundo.",
     features: [
@@ -91,17 +91,17 @@ const commonTools = [
 
 export function UpcomingCourses() {
   return (
-    <section className="bg-gradient-to-b from-[#0a1628] to-background py-12 md:py-20 lg:py-24">
+    <section className="bg-[#F2EDE0] py-12 md:py-20 lg:py-24">
       <div className="container mx-auto px-4">
         <div className="mx-auto mb-8 md:mb-12 max-w-3xl text-center">
-          <Badge className="bg-[#4DD0E1] text-[#0a1628] hover:bg-[#4DD0E1] mb-4 px-4 py-2 text-sm font-bold">
-            PRÓXIMAMENTE
+          <Badge className="bg-[#C96342]/10 text-[#C96342] hover:bg-[#C96342]/15 border border-[#C96342]/20 mb-4 px-4 py-2 text-sm font-bold">
+            PROXIMAMENTE
           </Badge>
-          <h2 className="mb-4 text-balance text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight px-2">
-            Próximos Cursos <span className="block text-[#4DD0E1]">Innovakids</span>
+          <h2 className="mb-4 text-balance text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1A1714] leading-tight px-2">
+            Proximos Cursos <span className="block text-[#C96342]">InnovaKids</span>
           </h2>
-          <p className="text-slate-300 text-base md:text-lg">
-            4 cursos integrales diseñados para potenciar la mente de niños de 8 a 14 años
+          <p className="text-[#5A5751] text-base md:text-lg">
+            4 cursos integrales diseñados para potenciar la mente de niños de 8 a 17 años
           </p>
         </div>
 
@@ -111,7 +111,7 @@ export function UpcomingCourses() {
             return (
               <Card
                 key={course.id}
-                className="bg-[#0f1f3a] border-[#1e3a5f] hover:border-[#4DD0E1] transition-all duration-300 hover:scale-[1.02] overflow-hidden group"
+                className="bg-[#FAF7EF] border-[#E8E0D0] hover:border-[#C96342]/40 transition-all duration-300 hover:scale-[1.02] overflow-hidden group"
               >
                 <CardHeader className="pb-3">
                   <div
@@ -119,19 +119,19 @@ export function UpcomingCourses() {
                   >
                     <Icon className="h-6 w-6 md:h-8 md:w-8 text-white" />
                   </div>
-                  <CardTitle className="text-xl md:text-2xl font-bold text-white mb-2">{course.title}</CardTitle>
-                  <p className="text-sm md:text-base text-slate-400 font-medium">{course.subtitle}</p>
+                  <CardTitle className="text-xl md:text-2xl font-bold text-[#1A1714] mb-2">{course.title}</CardTitle>
+                  <p className="text-sm md:text-base text-[#5A5751] font-medium">{course.subtitle}</p>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  <p className="text-slate-300 text-sm md:text-base leading-relaxed">{course.description}</p>
+                  <p className="text-[#5A5751] text-sm md:text-base leading-relaxed">{course.description}</p>
                   <div className="space-y-2">
-                    <p className="text-xs md:text-sm font-semibold text-[#4DD0E1] uppercase tracking-wide">
+                    <p className="text-xs md:text-sm font-semibold text-[#C96342] uppercase tracking-wide">
                       Lo que aprenderás:
                     </p>
                     <ul className="space-y-2">
                       {course.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start gap-2 text-xs md:text-sm text-slate-300">
-                          <span className="h-1.5 w-1.5 rounded-full bg-[#4DD0E1] flex-shrink-0 mt-1.5" />
+                        <li key={idx} className="flex items-start gap-2 text-xs md:text-sm text-[#5A5751]">
+                          <span className="h-1.5 w-1.5 rounded-full bg-[#C96342] flex-shrink-0 mt-1.5" />
                           <span>{feature}</span>
                         </li>
                       ))}
@@ -144,9 +144,9 @@ export function UpcomingCourses() {
         </div>
 
         <div className="max-w-5xl mx-auto">
-          <div className="bg-gradient-to-r from-[#0f1f3a] to-[#1a2942] border-2 border-[#4DD0E1] rounded-2xl p-6 md:p-8">
-            <h3 className="text-xl md:text-2xl font-bold text-white mb-4 text-center">Herramientas que Usaremos</h3>
-            <p className="text-slate-300 text-sm md:text-base text-center mb-6">
+          <div className="bg-[#FAF7EF] border-2 border-[#E8E0D0] rounded-2xl p-6 md:p-8">
+            <h3 className="text-xl md:text-2xl font-bold text-[#1A1714] mb-4 text-center">Herramientas que Usaremos</h3>
+            <p className="text-[#5A5751] text-sm md:text-base text-center mb-6">
               Trabajaremos con las mejores herramientas de IA del mercado
             </p>
             <div className="flex flex-wrap justify-center gap-3 md:gap-4">
@@ -154,7 +154,7 @@ export function UpcomingCourses() {
                 <Badge
                   key={idx}
                   variant="secondary"
-                  className="bg-[#1e3a5f] text-white hover:bg-[#4DD0E1] hover:text-[#0a1628] transition-colors px-3 md:px-4 py-2 text-xs md:text-sm font-medium"
+                  className="bg-[#F2EDE0] text-[#5A5751] border border-[#E8E0D0] hover:bg-[#C96342] hover:text-[#FAF7EF] hover:border-[#C96342] transition-colors px-3 md:px-4 py-2 text-xs md:text-sm font-medium"
                 >
                   {tool}
                 </Badge>
@@ -163,9 +163,9 @@ export function UpcomingCourses() {
           </div>
 
           <div className="mt-8 md:mt-12 text-center">
-            <div className="inline-block bg-[#0f1f3a] border-2 border-[#4DD0E1] rounded-xl p-6 md:p-8">
-              <p className="text-white text-base md:text-lg font-semibold mb-2">¿Te interesa alguno de estos cursos?</p>
-              <p className="text-slate-300 text-sm md:text-base">
+            <div className="inline-block bg-[#FAF7EF] border-2 border-[#E8E0D0] rounded-xl p-6 md:p-8">
+              <p className="text-[#1A1714] text-base md:text-lg font-semibold mb-2">¿Te interesa alguno de estos cursos?</p>
+              <p className="text-[#5A5751] text-sm md:text-base">
                 Contáctanos por WhatsApp para ser el primero en enterarte cuando estén disponibles
               </p>
             </div>

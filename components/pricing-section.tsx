@@ -29,7 +29,7 @@ export function PricingSection({ country }: PricingSectionProps) {
 
   return (
     <section
-      id="inversion"
+      id="pricing"
       className="bg-[#F5F1E8] text-[#2F2F2C] py-28 md:py-40 border-t border-[#2F2F2C]/10"
     >
       <div className="max-w-[1100px] mx-auto px-6 md:px-10">

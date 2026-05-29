@@ -4,23 +4,23 @@ import { Footer } from "@/components/footer"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    title: "Metodología ERICA · Pensamiento Computacional IA Niños | InnovaKids",
+    title: "Pensamiento Computacional e IA para Niños · STEM 2026 | InnovaKids",
     description:
-        "Metodología ERICA: pensamiento computacional, Taxonomía de Bloom, STEM y seguridad digital para niños 8-17 años. Probada por 527 familias en 9 países.",
+        "Pensamiento computacional, Taxonomía de Bloom y STEM aplicados a la IA para niños 8-17 años. Marco educativo probado por 527 familias en 9 países.",
     keywords: [
-        "metodologia erica",
         "pensamiento computacional niños",
-        "metodologia ia niños",
-        "stem ia niños",
+        "stem ia educacion niños",
         "taxonomia bloom ia niños",
+        "pensamiento logico ia niños",
+        "educacion computacional infantil",
     ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/blog/metodologia-erica-pensamiento-computacional-ia-ninos",
     },
     openGraph: {
-        title: "Metodología ERICA · Pensamiento Computacional e IA para Niños | InnovaKids",
+        title: "Pensamiento Computacional e IA para Niños · STEM 2026 | InnovaKids",
         description:
-            "Cómo la metodología activa ERICA desarrolla pensamiento algorítmico, creatividad digital y seguridad digital en niños 8-17 años.",
+            "Cómo el pensamiento computacional, STEM y Taxonomía de Bloom desarrollan habilidades de IA en niños 8-17 años.",
         url: "https://www.innovakidslatam.com/blog/metodologia-erica-pensamiento-computacional-ia-ninos",
         siteName: "InnovaKids",
         type: "article",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Metodología ERICA · Pensamiento Computacional IA Niños | InnovaKids",
+        title: "Pensamiento Computacional e IA para Niños · STEM 2026 | InnovaKids",
         description:
-            "Pensamiento computacional, Taxonomía de Bloom, STEM y seguridad digital para niños 8-17 años.",
+            "Pensamiento computacional, Taxonomía de Bloom y STEM aplicados a la educación en IA para niños 8-17 años.",
         images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
 }
@@ -138,7 +138,7 @@ export default function MetodologiaERICAPage() {
                         <p>
                             El <strong>pensamiento computacional</strong> (<em>computational thinking</em>) es un marco de resolución de problemas que
                             descompone desafíos complejos en pasos lógicos y manejables. No es "programar código": es la capacidad de
-                            <strong> pensar algorítmicamente</strong>, identificar patrones y diseñar soluciones eficientes. La investigadora Jeannette Wing
+                            <strong> pensar de manera lógica y ordenada</strong>, identificar patrones y diseñar soluciones eficientes. La investigadora Jeannette Wing
                             (2006) lo definió como una competencia fundamental del siglo XXI, al mismo nivel que la lectura, la escritura y las matemáticas.
                         </p>
                         <p>En InnovaKids integramos los 4 pilares del pensamiento computacional en cada módulo:</p>
@@ -194,12 +194,12 @@ export default function MetodologiaERICAPage() {
                         <h2>STEM + IA: la convergencia que los colegios necesitan</h2>
                         <p>
                             Las disciplinas <strong>STEM</strong> (ciencia, tecnología, ingeniería y matemáticas) evolucionan rápidamente hacia la
-                            integración de <strong>inteligencia artificial</strong> como eje transversal. Organismos como la UNESCO y la OCDE ya
-                            recomiendan incluir <strong>machine learning infantil</strong> y <strong>programación visual</strong> desde los 8 años.
+                            integración de <strong>inteligencia artificial</strong> como parte fundamental. Organismos como la UNESCO y la OCDE ya
+                            recomiendan incluir <strong>aprendizaje automático adaptado a niños</strong> y <strong>programación visual</strong> desde los 8 años.
                         </p>
                         <p>
                             En InnovaKids nuestros alumnos no solo "usan" IA: entienden cómo los modelos de <strong>machine learning</strong> reconocen
-                            patrones, cómo los <strong>modelos generativos</strong> crean contenido y cuáles son los <strong>sesgos algorítmicos</strong>
+                            patrones, cómo las <strong>herramientas que crean contenido nuevo</strong> funcionan y cuáles son los <strong>errores y prejuicios de la IA</strong>
                             que deben identificar. Esta comprensión profunda los convierte en ciudadanos digitales preparados, no en simples usuarios pasivos.
                         </p>
 
@@ -212,13 +212,13 @@ export default function MetodologiaERICAPage() {
                             <li><strong>Privacidad de datos:</strong> qué nunca compartir en internet y por qué.</li>
                             <li><strong>Pensamiento crítico digital:</strong> identificación de deepfakes, desinformación y contenido generado por IA.</li>
                             <li><strong>Control parental activo:</strong> herramientas y guías para supervisar la experiencia educativa digital.</li>
-                            <li><strong>Ética en IA:</strong> reflexión sobre sesgos, justicia y responsabilidad al usar herramientas de IA.</li>
+                            <li><strong>Ética en IA:</strong> reflexión sobre errores, prejuicios, justicia y responsabilidad al usar herramientas de IA.</li>
                         </ul>
 
                         <h2>Resultados: del pensamiento algorítmico a la creación real</h2>
                         <p>
                             Después de 5 semanas de inmersión en nuestra metodología, el alumno no solo "sabe usar ChatGPT". Ha desarrollado capacidades
-                            transferibles de <strong>pensamiento algorítmico</strong>, <strong>resolución creativa de problemas</strong> y
+                            transferibles de <strong>pensamiento lógico y ordenado</strong>, <strong>resolución creativa de problemas</strong> y
                             <strong> colaboración digital</strong>. Las evidencias de aprendizaje incluyen:
                         </p>
                         <ul>
@@ -251,7 +251,7 @@ export default function MetodologiaERICAPage() {
                             <div className="md:col-span-5 flex flex-col gap-3 md:justify-self-end w-full md:w-auto">
                                 <Link
                                     href="/clase-gratis"
-                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                 >
                                     Agendar clase gratis
                                     <span aria-hidden>→</span>

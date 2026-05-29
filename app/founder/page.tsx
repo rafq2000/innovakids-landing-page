@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import Link from "next/link"
 
 export const metadata: Metadata = {
   title: "Ricardo Farías Quitral — Founder & CEO, InnovaKids Latam",

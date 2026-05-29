@@ -15,11 +15,21 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Filename is required" }, { status: 400 })
     }
 
+    // Sanitize filename: strip path separators, allow only safe chars, limit length
+    const sanitized = filename
+      .replace(/[/\\]/g, "")          // strip path separators
+      .replace(/[^a-zA-Z0-9._-]/g, "") // only alphanumeric, dots, hyphens, underscores
+      .slice(0, 100)                    // limit to 100 chars
+
+    if (!sanitized || sanitized.startsWith(".")) {
+      return NextResponse.json({ error: "Invalid filename" }, { status: 400 })
+    }
+
     // Get the file from the request body
     const file = await request.blob()
 
     // Upload to Vercel Blob
-    const blob = await put(`videos/${filename}`, file, {
+    const blob = await put(`videos/${sanitized}`, file, {
       access: "public",
       addRandomSuffix: false,
     })

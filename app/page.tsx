@@ -74,7 +74,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "InnovaKids",
-    "alternateName": ["InnovaKids LATAM", "Cursos IA Ninos"],
+    "alternateName": ["InnovaKids LATAM"],
     "url": "https://www.innovakidslatam.com",
     "description": "Academia lider para que ninos y adolescentes de 8 a 17 anos aprendan Inteligencia Artificial a tiempo y no se queden atras. LATAM y Espana.",
     "inLanguage": "es",
@@ -121,13 +121,19 @@ export default function Home() {
       "availability": "https://schema.org/InStock",
       "url": "https://www.innovakidslatam.com",
     },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "127",
-      "bestRating": "5",
-      "worstRating": "1",
-    },
+    "hasCourseInstance": [
+      {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "startDate": "2026-06-08",
+        "endDate": "2026-07-13",
+        "courseWorkload": "PT10H",
+        "instructor": {
+          "@type": "Person",
+          "name": "Rafael Quiroz",
+        },
+      },
+    ],
   }
 
   const priceToday = 267
@@ -165,7 +171,7 @@ export default function Home() {
               {/* Precio */}
               <div className="md:col-span-5">
                 <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
-                  Inversion unica
+                  Inversión única
                 </p>
                 <p
                   className="font-display italic leading-[0.88] tracking-[-0.04em] text-[#FAF7EF] mb-3"
@@ -174,7 +180,7 @@ export default function Home() {
                   ${priceToday}<span className="text-[#C96342]">.</span>
                 </p>
                 <p className="font-mono-accent text-[11px] uppercase tracking-[0.22em] text-[#FAF7EF]/55 mb-6">
-                  USD pago unico o 3 cuotas de ${installments}
+                  USD pago único o 3 cuotas de ${installments}
                 </p>
                 <a
                   href="#sesion-estrategica"
@@ -190,8 +196,8 @@ export default function Home() {
                 <ul className="space-y-4 mb-8">
                   {[
                     "10 clases en vivo (5 semanas, 2 por semana)",
-                    "Grupos de maximo 5 ninos",
-                    "4 habilidades: estudiar, programar, crear y manejar agentes IA",
+                    "Grupos de máximo 5 niños",
+                    "Nivel 1: Explorer (fundamentos) + Nivel 2: Maker (track a elección)",
                     "Mentor 1:1 cuando lo necesite",
                     "Soporte por WhatsApp para ti y tu hijo",
                     "Certificado digital verificable",
@@ -209,7 +215,7 @@ export default function Home() {
                   <div className="flex items-center gap-3 mb-2">
                     <span className="font-display italic text-2xl text-[#C96342]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>10</span>
                     <p className="font-mono-accent text-[10px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">
-                      Dias de garantia total
+                      Días de garantía total
                     </p>
                   </div>
                   <p className="text-sm text-[#FAF7EF]/60 leading-relaxed">
@@ -219,7 +225,7 @@ export default function Home() {
 
                 {/* Reserva $27 */}
                 <p className="mt-5 font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#FAF7EF]/45">
-                  Reserva con USD 27 hoy. El resto se paga despues de la 2a clase.
+                  Reserva con USD 27 hoy. El resto se paga después de la 2ª clase.
                 </p>
               </div>
             </div>
@@ -229,72 +235,61 @@ export default function Home() {
         {/* 6 - FAQ: cierre de objeciones */}
         <FAQSection />
 
-        {/* 7 - CURSOS ESPECIALIZADOS: links internos SEO */}
+        {/* 7 - TRACKS ESPECIALIZADOS: Nivel 2 Vibe Maker */}
         <section
           className="bg-[#F5F1E8] text-[#2F2F2C] py-28 md:py-40 border-t border-[#2F2F2C]/10"
-          aria-label="Cursos especializados"
+          aria-label="Tracks especializados"
         >
           <div className="max-w-[1100px] mx-auto px-6 md:px-10">
             <div className="flex items-center gap-5 mb-16">
               <div className="h-px w-12 bg-[#C96342]" />
               <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
-                Despues del Nivel 01
+                Después del Nivel 01
               </p>
             </div>
 
             <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-end mb-20">
               <h2
-                className="md:col-span-7 text-5xl sm:text-6xl md:text-7xl leading-[0.98] tracking-[-0.02em] font-normal"
-                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                className="md:col-span-7 font-display text-5xl sm:text-6xl md:text-7xl leading-[0.98] tracking-[-0.02em] font-normal"
               >
-                Elige su <em className="italic text-[#C96342]">camino</em>.
+                Elige su <em className="italic text-[#C96342]">track</em>.
               </h2>
               <p className="md:col-span-5 text-lg text-[#5A5751] leading-relaxed max-w-[40ch]">
-                Al completar el fundamento, tu hijo se especializa en el area
-                que mas le apasiona.
+                Al completar Explorer, tu hijo elige una de seis especialidades
+                y construye proyectos reales en 5 misiones.
               </p>
             </div>
 
-            <ul className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#2F2F2C]/12 border-y border-[#2F2F2C]/12">
+            <ul className="grid md:grid-cols-3 gap-px bg-[#2F2F2C]/12 border border-[#2F2F2C]/12">
               {[
-                {
-                  href: "/curso-creacion-videojuegos-ninos",
-                  number: "02",
-                  title: "Videojuegos con IA",
-                  desc: "Crea juegos en vez de solo consumirlos.",
-                },
-                {
-                  href: "/curso-creador-contenido-ia",
-                  number: "03",
-                  title: "Creador de Contenido y Cine IA",
-                  desc: "Aprende el nuevo lenguaje digital.",
-                },
-                {
-                  href: "/curso-emprendimiento-ninos",
-                  number: "04",
-                  title: "Emprendimiento con IA",
-                  desc: "Empieza a tiempo, mas opciones manana.",
-                },
-              ].map((c) => (
-                <li key={c.href}>
+                { href: "/programa#estudio", color: "#2E7D6B", title: "Estudio", desc: "Hackea tu colegio: flashcards, transcripción, mapas mentales con IA." },
+                { href: "/programa#emprender", color: "#C96342", title: "Emprender", desc: "Tu primer negocio: landing, catálogo, bot de ventas, redes sociales." },
+                { href: "/programa#video", color: "#4A3B8C", title: "Video", desc: "Creador de contenido: guion, voz clonada, edición y canal publicado." },
+                { href: "/programa#audio", color: "#B85A8C", title: "Audio", desc: "Música, podcast y voz: EP original, episodios y distribución." },
+                { href: "/programa#transcribir", color: "#1F6FB0", title: "Transcribir", desc: "Procesar info: chat con PDF, resúmenes, extracción de datos." },
+                { href: "/programa#programar", color: "#D17C2A", title: "Programar", desc: "Apps de verdad: JavaScript, API, multiplayer, base de datos." },
+              ].map((t) => (
+                <li key={t.href} className="bg-[#F5F1E8]">
                   <a
-                    href={c.href}
-                    className="group block py-10 md:px-8 transition-colors hover:bg-[#EDE6D3]"
+                    href={t.href}
+                    className="group block py-8 px-6 md:px-8 transition-colors hover:bg-[#EDE6D3] h-full"
                   >
-                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
-                      Nivel {c.number}
-                    </p>
+                    <div className="flex items-center gap-2 mb-4">
+                      <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: t.color }} />
+                      <p className="text-[11px] uppercase tracking-[0.28em] font-semibold" style={{ color: t.color }}>
+                        Track
+                      </p>
+                    </div>
                     <h3
-                      className="text-2xl md:text-3xl leading-tight tracking-tight mb-4 group-hover:text-[#C96342] transition-colors"
-                      style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                      className="font-display text-2xl md:text-3xl leading-tight tracking-tight mb-3 group-hover:text-[#C96342] transition-colors"
                     >
-                      {c.title}
+                      {t.title}
                     </h3>
-                    <p className="text-base text-[#5A5751] leading-relaxed mb-8 max-w-[32ch]">
-                      {c.desc}
+                    <p className="text-sm text-[#5A5751] leading-relaxed mb-6 max-w-[32ch]">
+                      {t.desc}
                     </p>
                     <span className="text-sm font-semibold text-[#C96342] underline underline-offset-4 decoration-[#C96342]/30 group-hover:decoration-[#C96342]">
-                      Ver curso &#8594;
+                      Ver misiones &#8594;
                     </span>
                   </a>
                 </li>
@@ -304,7 +299,7 @@ export default function Home() {
             {/* Links adicionales */}
             <div className="mt-12 pt-8 border-t border-[#2F2F2C]/12 flex flex-wrap gap-6 text-sm">
               <a href="/programa" className="text-[#2F2F2C] hover:text-[#C96342] underline underline-offset-4 decoration-[#2F2F2C]/20 hover:decoration-[#C96342] transition-colors font-display">
-                Ver curriculum completo &#8594;
+                Ver currículum completo &#8594;
               </a>
               <a href="/resultados" className="text-[#2F2F2C] hover:text-[#C96342] underline underline-offset-4 decoration-[#2F2F2C]/20 hover:decoration-[#C96342] transition-colors font-display">
                 Ver resultados &#8594;

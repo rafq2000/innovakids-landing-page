@@ -66,8 +66,7 @@ function CountryIntroStrip({ country }: { country: CountryConfig }) {
 
         <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-end">
           <h2
-            className="md:col-span-8 text-4xl sm:text-5xl md:text-6xl leading-[1.02] tracking-[-0.02em] font-normal"
-            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+            className="font-display md:col-span-8 text-4xl sm:text-5xl md:text-6xl leading-[1.02] tracking-[-0.02em] font-normal"
           >
             Curso de IA para <em className="italic text-[#C96342]">{country.childTerm} {country.demonym}</em> en {country.mainCity} y todo {country.name}.
           </h2>
@@ -86,8 +85,7 @@ function CountryIntroStrip({ country }: { country: CountryConfig }) {
                   {k}
                 </dt>
                 <dd
-                  className="text-base text-[#2F2F2C] leading-snug"
-                  style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                  className="font-display text-base text-[#2F2F2C] leading-snug"
                 >
                   {v}
                 </dd>
@@ -167,7 +165,7 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
       "@type": "CourseInstance",
       courseMode: "online",
       courseWorkload: "PT90M",
-      startDate: "2026-05-18",
+      startDate: "2026-06-08",
       location: {
         "@type": "VirtualLocation",
         url: `https://www.innovakidslatam.com/${country.code}`,

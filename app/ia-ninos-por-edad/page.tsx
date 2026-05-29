@@ -7,27 +7,27 @@ import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  // 57 chars · keyword-first · age-specific + brand
-  title: "Cursos de IA por Edad · 8-10, 11-13 y 14-17 | InnovaKids",
-  // 152 chars · differentiator per edad + proof + CTA
+  // 59 chars · TRANSACTIONAL · age-specific courses + brand
+  title: "Cursos de IA para Niños por Edad · Inscríbete 2026 | InnovaKids",
+  // 154 chars · transactional differentiator + proof + CTA
   description:
-    "Cursos de IA por edad para niños 8-17: programas específicos para 8-10, 11-13 y 14-17 años. Clases en vivo, grupos de 5, 527 graduados. Clase gratis.",
+    "Inscríbete en cursos de IA por edad: programas para 8-10, 11-13 y 14-17 años. Clases en vivo, grupos de 5, 527 graduados en 9 países. Clase gratis.",
   keywords: [
-    "curso ia niños 8 años",
+    "cursos ia niños por edad",
     "curso ia niños 10 años",
-    "curso ia adolescentes",
-    "ia para preadolescentes",
-    "curso ia por edad",
-    "inteligencia artificial según edad",
+    "curso ia niños 8 años",
+    "inscripcion curso ia adolescentes",
     "curso ia 14-17 años",
+    "clases ia por edad niños",
+    "curso inteligencia artificial niños por nivel",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/ia-ninos-por-edad",
   },
   openGraph: {
-    title: "Cursos de IA por Edad · 8-10, 11-13 y 14-17 años | InnovaKids",
+    title: "Cursos de IA para Niños por Edad · Inscríbete 2026 | InnovaKids",
     description:
-      "Tu hijo aprende IA con un programa diseñado para su edad. Grupos de 5, clases en vivo, proyectos reales. Clase gratis.",
+      "Inscríbete en el curso de IA diseñado para la edad de tu hijo. Grupos de 5, clases en vivo, proyectos reales. Clase gratis.",
     url: "https://www.innovakidslatam.com/ia-ninos-por-edad",
     siteName: "InnovaKids",
     type: "website",
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cursos de IA por Edad · 8-10, 11-13 y 14-17 | InnovaKids",
+    title: "Cursos de IA para Niños por Edad · Inscríbete 2026 | InnovaKids",
     description:
-      "Programas de IA diseñados por edad. Grupos de 5, clases en vivo, proyectos reales. Clase gratis.",
+      "Inscríbete en programas de IA por edad. Grupos de 5, clases en vivo, proyectos reales. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -52,17 +52,18 @@ export default function IANinosPorEdadPage() {
   return (
     <>
       <Navigation />
-      <main className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 pt-24">
+      <main className="min-h-screen bg-[#FAF7EF] pt-24">
         {/* Hero */}
-        <section className="py-16 px-4">
-          <div className="container mx-auto max-w-5xl text-center">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+        <section className="py-16 px-6 md:px-10">
+          <div className="max-w-[1100px] mx-auto text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-4">Programas por edad</p>
+            <h1 className="text-5xl md:text-7xl font-display text-[#1A1714] mb-6 leading-tight">
               Cursos de IA Según{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
+              <span className="italic text-[#C96342]">
                 la Edad de Tu Hijo
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-[#6B645B] max-w-3xl mx-auto">
               Cada edad tiene su forma de aprender. Nuestros programas están diseñados para que tu hijo aproveche
               al máximo la Inteligencia Artificial según su etapa de desarrollo.
             </p>
@@ -70,20 +71,20 @@ export default function IANinosPorEdadPage() {
         </section>
 
         {/* Age Group: 8-10 */}
-        <section className="py-16 px-4">
-          <div className="container mx-auto max-w-5xl">
-            <div className="bg-gradient-to-br from-cyan-900/30 to-cyan-900/10 p-8 md:p-12 rounded-3xl border-2 border-cyan-500/30">
+        <section className="py-16 px-6 md:px-10">
+          <div className="max-w-[1100px] mx-auto">
+            <div className="bg-[#FAF7EF] p-8 md:p-12 rounded-sm border border-[#1A1714]/12 shadow-[0_2px_8px_-4px_rgba(26,23,20,0.1)]">
               <div className="flex items-center gap-4 mb-8">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center text-2xl font-bold text-white">
+                <div className="w-16 h-16 rounded-sm bg-[#C96342] flex items-center justify-center text-2xl font-display italic text-[#FAF7EF]">
                   8+
                 </div>
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-white">Exploradores (8-10 años)</h2>
-                  <p className="text-cyan-400 font-semibold">Fase de Exploración y Descubrimiento</p>
+                  <h2 className="text-3xl md:text-4xl font-display text-[#1A1714]">Exploradores (8-10 años)</h2>
+                  <p className="text-[#C96342] font-semibold">Fase de Exploración y Descubrimiento</p>
                 </div>
               </div>
 
-              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg text-[#3B3630] mb-8 leading-relaxed">
                 A esta edad, los niños son curiosos naturales. Aprovechamos esa curiosidad para que descubran
                 la IA como una herramienta mágica que responde a sus ideas. El enfoque es 100% lúdico:
                 jugar, crear y asombrarse.
@@ -91,7 +92,7 @@ export default function IANinosPorEdadPage() {
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-4">Lo que Aprenden</h3>
+                  <h3 className="text-xl font-display text-[#1A1714] mb-4">Lo que Aprenden</h3>
                   <ul className="space-y-3">
                     {[
                       "Conversar con ChatGPT para crear historias y aventuras",
@@ -100,15 +101,15 @@ export default function IANinosPorEdadPage() {
                       "Conceptos básicos de cómo \"piensa\" una IA",
                       "Seguridad digital adaptada a su edad",
                     ].map((item) => (
-                      <li key={item} className="flex items-start text-gray-300">
-                        <span className="text-cyan-400 mr-3">✓</span>
+                      <li key={item} className="flex items-start text-[#3B3630]">
+                        <span className="text-[#C96342] mr-3">-</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-4">Proyectos que Crean</h3>
+                  <h3 className="text-xl font-display text-[#1A1714] mb-4">Proyectos que Crean</h3>
                   <ul className="space-y-3">
                     {[
                       "Un cuento ilustrado con personajes generados por IA",
@@ -116,8 +117,8 @@ export default function IANinosPorEdadPage() {
                       "Un mini cómic digital de 4 páginas",
                       "Un chatbot de su personaje favorito",
                     ].map((item) => (
-                      <li key={item} className="flex items-start text-gray-300">
-                        <span className="text-cyan-400 mr-3">→</span>
+                      <li key={item} className="flex items-start text-[#3B3630]">
+                        <span className="text-[#C96342] mr-3">-</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -125,8 +126,8 @@ export default function IANinosPorEdadPage() {
                 </div>
               </div>
 
-              <div className="bg-cyan-900/30 p-4 rounded-xl text-center">
-                <p className="text-cyan-300 font-semibold">
+              <div className="bg-[#F5F1E8] p-4 rounded-sm text-center border border-[#1A1714]/12">
+                <p className="text-[#C96342] font-semibold">
                   Ideal para: Niños curiosos que aman dibujar, inventar historias o jugar con tecnología.
                 </p>
               </div>
@@ -135,20 +136,20 @@ export default function IANinosPorEdadPage() {
         </section>
 
         {/* Age Group: 11-13 */}
-        <section className="py-16 px-4">
-          <div className="container mx-auto max-w-5xl">
-            <div className="bg-gradient-to-br from-purple-900/30 to-purple-900/10 p-8 md:p-12 rounded-3xl border-2 border-purple-500/30">
+        <section className="py-16 px-6 md:px-10">
+          <div className="max-w-[1100px] mx-auto">
+            <div className="bg-[#FAF7EF] p-8 md:p-12 rounded-sm border border-[#1A1714]/12 shadow-[0_2px_8px_-4px_rgba(26,23,20,0.1)]">
               <div className="flex items-center gap-4 mb-8">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center text-2xl font-bold text-white">
+                <div className="w-16 h-16 rounded-sm bg-[#C96342] flex items-center justify-center text-2xl font-display italic text-[#FAF7EF]">
                   11+
                 </div>
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-white">Creadores (11-13 años)</h2>
-                  <p className="text-purple-400 font-semibold">Fase de Creación y Experimentación</p>
+                  <h2 className="text-3xl md:text-4xl font-display text-[#1A1714]">Creadores (11-13 años)</h2>
+                  <p className="text-[#C96342] font-semibold">Fase de Creación y Experimentación</p>
                 </div>
               </div>
 
-              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg text-[#3B3630] mb-8 leading-relaxed">
                 Los preadolescentes quieren crear cosas propias y compartirlas. A esta edad tienen la madurez
                 para entender conceptos más avanzados y la motivación para completar proyectos ambiciosos.
                 Es el momento perfecto para el Vibe Coding y la creación multimedia.
@@ -156,7 +157,7 @@ export default function IANinosPorEdadPage() {
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-4">Lo que Aprenden</h3>
+                  <h3 className="text-xl font-display text-[#1A1714] mb-4">Lo que Aprenden</h3>
                   <ul className="space-y-3">
                     {[
                       "Prompt Engineering avanzado (obtener resultados precisos)",
@@ -165,15 +166,15 @@ export default function IANinosPorEdadPage() {
                       "Narrativa visual y storytelling con arte generativo",
                       "Ética digital y detección de deepfakes",
                     ].map((item) => (
-                      <li key={item} className="flex items-start text-gray-300">
-                        <span className="text-purple-400 mr-3">✓</span>
+                      <li key={item} className="flex items-start text-[#3B3630]">
+                        <span className="text-[#C96342] mr-3">-</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-4">Proyectos que Crean</h3>
+                  <h3 className="text-xl font-display text-[#1A1714] mb-4">Proyectos que Crean</h3>
                   <ul className="space-y-3">
                     {[
                       "Un videojuego funcional tipo plataforma o RPG",
@@ -181,8 +182,8 @@ export default function IANinosPorEdadPage() {
                       "Un álbum musical de 3 canciones originales",
                       "Un portafolio digital profesional",
                     ].map((item) => (
-                      <li key={item} className="flex items-start text-gray-300">
-                        <span className="text-purple-400 mr-3">→</span>
+                      <li key={item} className="flex items-start text-[#3B3630]">
+                        <span className="text-[#C96342] mr-3">-</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -190,8 +191,8 @@ export default function IANinosPorEdadPage() {
                 </div>
               </div>
 
-              <div className="bg-purple-900/30 p-4 rounded-xl text-center">
-                <p className="text-purple-300 font-semibold">
+              <div className="bg-[#F5F1E8] p-4 rounded-sm text-center border border-[#1A1714]/12">
+                <p className="text-[#C96342] font-semibold">
                   Ideal para: Preadolescentes que quieren crear contenido, juegos o apps y destacar entre sus amigos.
                 </p>
               </div>
@@ -200,20 +201,20 @@ export default function IANinosPorEdadPage() {
         </section>
 
         {/* Age Group: 14-17 */}
-        <section className="py-16 px-4">
-          <div className="container mx-auto max-w-5xl">
-            <div className="bg-gradient-to-br from-pink-900/30 to-pink-900/10 p-8 md:p-12 rounded-3xl border-2 border-pink-500/30">
+        <section className="py-16 px-6 md:px-10">
+          <div className="max-w-[1100px] mx-auto">
+            <div className="bg-[#FAF7EF] p-8 md:p-12 rounded-sm border border-[#1A1714]/12 shadow-[0_2px_8px_-4px_rgba(26,23,20,0.1)]">
               <div className="flex items-center gap-4 mb-8">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-pink-400 to-red-500 flex items-center justify-center text-2xl font-bold text-white">
+                <div className="w-16 h-16 rounded-sm bg-[#C96342] flex items-center justify-center text-2xl font-display italic text-[#FAF7EF]">
                   14+
                 </div>
                 <div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-white">Profesionales (14-17 años)</h2>
-                  <p className="text-pink-400 font-semibold">Fase de Herramientas Profesionales</p>
+                  <h2 className="text-3xl md:text-4xl font-display text-[#1A1714]">Profesionales (14-17 años)</h2>
+                  <p className="text-[#C96342] font-semibold">Fase de Herramientas Profesionales</p>
                 </div>
               </div>
 
-              <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+              <p className="text-lg text-[#3B3630] mb-8 leading-relaxed">
                 Los adolescentes piensan en su futuro. A esta edad, la IA no solo es divertida sino que se convierte
                 en una herramienta profesional real. Les enseñamos a usar las mismas herramientas que usan empresas
                 y emprendedores, preparándolos para la universidad y el mercado laboral.
@@ -221,7 +222,7 @@ export default function IANinosPorEdadPage() {
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-4">Lo que Aprenden</h3>
+                  <h3 className="text-xl font-display text-[#1A1714] mb-4">Lo que Aprenden</h3>
                   <ul className="space-y-3">
                     {[
                       "Herramientas profesionales de IA (ChatGPT-4, Claude, Midjourney V6)",
@@ -231,15 +232,15 @@ export default function IANinosPorEdadPage() {
                       "Pensamiento crítico sobre IA: sesgos, ética, impacto social",
                       "Construcción de marca personal digital",
                     ].map((item) => (
-                      <li key={item} className="flex items-start text-gray-300">
-                        <span className="text-pink-400 mr-3">✓</span>
+                      <li key={item} className="flex items-start text-[#3B3630]">
+                        <span className="text-[#C96342] mr-3">-</span>
                         <span>{item}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-white mb-4">Proyectos que Crean</h3>
+                  <h3 className="text-xl font-display text-[#1A1714] mb-4">Proyectos que Crean</h3>
                   <ul className="space-y-3">
                     {[
                       "Una app o SaaS funcional con usuarios reales",
@@ -248,8 +249,8 @@ export default function IANinosPorEdadPage() {
                       "Contenido multimedia de calidad profesional",
                       "Un ensayo crítico sobre el impacto de la IA",
                     ].map((item) => (
-                      <li key={item} className="flex items-start text-gray-300">
-                        <span className="text-pink-400 mr-3">→</span>
+                      <li key={item} className="flex items-start text-[#3B3630]">
+                        <span className="text-[#C96342] mr-3">-</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -257,8 +258,8 @@ export default function IANinosPorEdadPage() {
                 </div>
               </div>
 
-              <div className="bg-pink-900/30 p-4 rounded-xl text-center">
-                <p className="text-pink-300 font-semibold">
+              <div className="bg-[#F5F1E8] p-4 rounded-sm text-center border border-[#1A1714]/12">
+                <p className="text-[#C96342] font-semibold">
                   Ideal para: Adolescentes que quieren prepararse para la universidad, emprender o dominar herramientas profesionales.
                 </p>
               </div>
@@ -267,17 +268,18 @@ export default function IANinosPorEdadPage() {
         </section>
 
         {/* How to Choose */}
-        <section className="py-16 px-4 bg-gradient-to-b from-gray-800/50 to-gray-900">
-          <div className="container mx-auto max-w-4xl text-center">
-            <h2 className="text-4xl font-bold text-white mb-8">¿No Sabes Cuál Elegir?</h2>
-            <p className="text-xl text-gray-300 mb-8">
+        <section className="py-16 px-6 md:px-10 bg-[#F5F1E8]">
+          <div className="max-w-[1100px] mx-auto text-center">
+            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-4">Orientacion</p>
+            <h2 className="text-4xl font-display text-[#1A1714] mb-8">No Sabes Cuál Elegir?</h2>
+            <p className="text-xl text-[#3B3630] mb-8">
               No te preocupes. En InnovaKids, todos los grupos de edad comparten el mismo curso de 10 clases,
               pero el instructor adapta los proyectos y el nivel de profundidad según la edad de cada alumno.
               Los grupos se forman por edades similares para que todos avancen cómodos.
             </p>
-            <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10 text-left max-w-2xl mx-auto">
-              <h3 className="text-xl font-bold text-white mb-4 text-center">La Ventaja de Grupos de 5</h3>
-              <p className="text-gray-300">
+            <div className="bg-[#FAF7EF] p-8 rounded-sm border border-[#1A1714]/12 text-left max-w-2xl mx-auto">
+              <h3 className="text-xl font-display text-[#1A1714] mb-4 text-center">La Ventaja de Grupos de 5</h3>
+              <p className="text-[#3B3630]">
                 Con solo 5 alumnos por grupo, el instructor puede personalizar cada clase. Si tu hijo de 9 años
                 está en un grupo con niños de 8-10, recibirá proyectos adaptados a su nivel exacto.
                 No se queda atrás ni se aburre.
@@ -287,18 +289,18 @@ export default function IANinosPorEdadPage() {
         </section>
 
         {/* Internal Links */}
-        <section className="py-8 px-4">
-          <div className="container mx-auto max-w-4xl">
+        <section className="py-8 px-6 md:px-10">
+          <div className="max-w-[1100px] mx-auto">
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <Link href="/cursos/inteligencia-artificial" className="text-cyan-400 hover:text-cyan-300 underline">
+              <Link href="/cursos/inteligencia-artificial" className="text-[#C96342] hover:text-[#9A4428] underline">
                 Ver curso completo
               </Link>
-              <span className="text-gray-600">|</span>
-              <Link href="/adolescentes" className="text-cyan-400 hover:text-cyan-300 underline">
+              <span className="text-[#6B645B]">|</span>
+              <Link href="/adolescentes" className="text-[#C96342] hover:text-[#9A4428] underline">
                 Curso para adolescentes
               </Link>
-              <span className="text-gray-600">|</span>
-              <Link href="/programa" className="text-cyan-400 hover:text-cyan-300 underline">
+              <span className="text-[#6B645B]">|</span>
+              <Link href="/programa" className="text-[#C96342] hover:text-[#9A4428] underline">
                 Programa detallado
               </Link>
             </div>
@@ -306,17 +308,18 @@ export default function IANinosPorEdadPage() {
         </section>
 
         {/* CTA */}
-        <section className="py-16 px-4">
-          <div className="container mx-auto max-w-3xl text-center">
-            <div className="bg-gradient-to-r from-cyan-900/30 to-purple-900/30 p-12 rounded-3xl border-2 border-cyan-500/50">
-              <h2 className="text-3xl font-bold text-white mb-4">Encuentra el Grupo Ideal para Tu Hijo</h2>
-              <p className="text-xl text-gray-300 mb-8">
+        <section className="py-16 px-6 md:px-10">
+          <div className="max-w-[1100px] mx-auto text-center">
+            <div className="bg-[#F5F1E8] p-12 rounded-sm border border-[#1A1714]/12">
+              <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-4">Siguiente paso</p>
+              <h2 className="text-3xl font-display text-[#1A1714] mb-4">Encuentra el Grupo Ideal para Tu Hijo</h2>
+              <p className="text-xl text-[#6B645B] mb-8">
                 Agenda una clase gratis y nuestro equipo asignará a tu hijo al grupo perfecto según su edad e intereses.
               </p>
               <Link href="/clase-gratis">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white font-bold text-lg px-10 py-6 h-auto"
+                  className="bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] font-bold text-lg px-10 py-6 h-auto rounded-sm"
                 >
                   Agendar Clase Gratis
                   <ArrowRight className="ml-2 h-5 w-5" />

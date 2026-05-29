@@ -1,4 +1,3 @@
-import { generateHreflangs } from "@/lib/seo-config";
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
@@ -18,7 +17,6 @@ export const metadata: Metadata = {
     ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/blog/inteligencia-artificial-para-ninos",
-        languages: generateHreflangs("home"),
     },
     openGraph: {
         title: "Inteligencia Artificial para Niños · Guía Completa 2026 | InnovaKids",
@@ -127,7 +125,7 @@ export default function BlogPostPage() {
                                 </p>
                                 <Link
                                     href="/clase-gratis"
-                                    className="inline-flex items-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-5 py-3 font-semibold text-[13px] tracking-wide transition-colors"
+                                    className="inline-flex items-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-5 py-3 font-semibold text-[13px] tracking-wide transition-colors"
                                 >
                                     Agendar clase gratis
                                     <span aria-hidden>→</span>
@@ -307,7 +305,7 @@ export default function BlogPostPage() {
                                 <div className="md:col-span-5 flex flex-col gap-3 md:justify-self-end w-full md:w-auto">
                                     <Link
                                         href="/clase-gratis"
-                                        className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                        className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                     >
                                         Agendar clase gratis
                                         <span aria-hidden>→</span>

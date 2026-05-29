@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
 import { Sparkles, Gamepad2, Lightbulb, Zap } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -46,6 +48,8 @@ export const metadata: Metadata = {
 
 export default function DeUsuarioACreadorPage() {
   return (
+    <>
+    <Navigation />
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative pt-40 pb-32">
@@ -237,7 +241,7 @@ export default function DeUsuarioACreadorPage() {
             <h2 className="text-5xl lg:text-6xl font-bold text-white leading-tight">Transforma a tu hijo en creador</h2>
 
             <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
-              Las plazas se agotan rápido para el grupo que inicia el 8 de Junio del 2026. No dejes que siga siendo solo un usuario
+              Las plazas se agotan rápido para el grupo que inicia el 8 de junio del 2026. No dejes que siga siendo solo un usuario
               más.
             </p>
 
@@ -255,5 +259,7 @@ export default function DeUsuarioACreadorPage() {
         </div>
       </section>
     </div>
+    <Footer />
+    </>
   )
 }

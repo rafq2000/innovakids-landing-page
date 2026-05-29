@@ -1,9 +1,8 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { CheckCircle, Globe, Zap, Monitor, Users, GraduationCap, ArrowRight, Star } from "lucide-react"
+import { CheckCircle, Globe, Zap, Monitor, Users, ArrowRight, Star } from "lucide-react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
@@ -58,7 +57,7 @@ export default function CursosOnlineNinosPage() {
         "@context": "https://schema.org",
         "@type": "Course",
         name: "Curso de Inteligencia Artificial para Niños y Adolescentes",
-        description: "Aprende a crear apps, videojuegos y arte con IA. Curso online en vivo para niños de 8 a 14 años.",
+        description: "Aprende a crear apps, videojuegos y arte con IA. Curso online en vivo para niños de 8 a 17 años.",
         provider: {
             "@type": "Organization",
             name: "InnovaKids",
@@ -118,36 +117,32 @@ export default function CursosOnlineNinosPage() {
             <Navigation />
             <WhatsAppButton />
 
-            <main className="min-h-screen bg-[#0a1628]">
+            <main className="min-h-screen bg-[#F2EDE0]">
                 {/* HERO SECTION */}
-                <section className="relative pt-32 pb-24 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/40 via-[#0a1628] to-[#0a1628]" />
-                    {/* Background blobs for visual appeal */}
-                    <div className="absolute top-20 right-0 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-3xl animate-pulse" />
-                    <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
+                <section className="relative pt-32 pb-24 overflow-hidden bg-[#F5F1E8]">
 
                     <div className="container mx-auto px-6 relative z-10 text-center">
-                        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-6 py-2 mb-8 animate-fade-in-up">
-                            <Globe className="w-4 h-4 text-cyan-400" />
-                            <span className="text-gray-200 font-medium text-sm">Disponible en España y toda Latinoamérica</span>
+                        <div className="inline-flex items-center gap-2 bg-[#FAF7EF] border border-[#E8E0D0] rounded-full px-6 py-2 mb-8">
+                            <Globe className="w-4 h-4 text-[#C96342]" />
+                            <span className="text-[#5A5751] font-medium text-sm">Disponible en España y toda Latinoamérica</span>
                         </div>
 
-                        <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight mb-8 font-heading">
+                        <h1 className="text-5xl lg:text-7xl font-bold text-[#1A1714] leading-tight mb-8 font-display">
                             Cursos Online para Niños:
                             <br />
-                            <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+                            <span className="text-[#C96342]">
                                 ¿Cuál es la Mejor Inversión en 2026?
                             </span>
                         </h1>
 
-                        <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+                        <p className="text-xl text-[#5A5751] max-w-3xl mx-auto mb-10 leading-relaxed font-body">
                             En un mundo digital, las actividades extracurriculares están cambiando.
-                            Analizamos las opciones más populares para niños de 8 a 14 años y te contamos
-                            por qué <strong className="text-white">miles de padres en España y Latam</strong> están eligiendo la tecnología.
+                            Analizamos las opciones más populares para niños de 8 a 17 años y te contamos
+                            por qué <strong className="text-[#1A1714]">miles de padres en España y Latam</strong> están eligiendo la tecnología.
                         </p>
 
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
-                            <Button asChild size="lg" className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 text-lg font-bold px-8 py-7 rounded-full shadow-[0_0_30px_rgba(34,211,238,0.4)] hover:shadow-[0_0_50px_rgba(34,211,238,0.6)] transition-all">
+                            <Button asChild size="lg" className="bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] text-lg font-bold px-8 py-7 rounded-sm shadow-md hover:shadow-lg transition-all">
                                 <Link href="#comparativa">
                                     Ver Comparativa 2026
                                 </Link>
@@ -157,21 +152,21 @@ export default function CursosOnlineNinosPage() {
                 </section>
 
                 {/* COMPARISON SECTION */}
-                <section id="comparativa" className="py-20 bg-slate-900/50">
+                <section id="comparativa" className="py-20 bg-[#FAF7EF]">
                     <div className="container mx-auto px-6 max-w-6xl">
-                        <h2 className="text-3xl lg:text-4xl font-bold text-center text-white mb-16">
+                        <h2 className="text-3xl lg:text-4xl font-bold text-center text-[#1A1714] mb-16 font-display">
                             Top 4 Habilidades para el Futuro
                         </h2>
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                             {/* Option 1: English */}
-                            <Card className="bg-[#1a2942] border-slate-700 hover:border-slate-600 transition-all opacity-70 hover:opacity-100">
+                            <Card className="bg-[#FAF7EF] border border-[#E8E0D0] hover:border-[#C96342]/30 transition-all opacity-70 hover:opacity-100">
                                 <CardHeader>
-                                    <CardTitle className="flex items-center gap-3 text-white">
+                                    <CardTitle className="flex items-center gap-3 text-[#1A1714]">
                                         <span className="text-3xl">🇬🇧</span> Inglés
                                     </CardTitle>
                                 </CardHeader>
-                                <CardContent className="text-gray-400">
+                                <CardContent className="text-[#5A5751]">
                                     <p className="mb-4">Esencial, pero ya no es un diferenciador. Es el "desde".</p>
                                     <ul className="text-sm space-y-2">
                                         <li className="flex items-center gap-2">✅ Comunicación global</li>
@@ -181,13 +176,13 @@ export default function CursosOnlineNinosPage() {
                             </Card>
 
                             {/* Option 2: Sports */}
-                            <Card className="bg-[#1a2942] border-slate-700 hover:border-slate-600 transition-all opacity-70 hover:opacity-100">
+                            <Card className="bg-[#FAF7EF] border border-[#E8E0D0] hover:border-[#C96342]/30 transition-all opacity-70 hover:opacity-100">
                                 <CardHeader>
-                                    <CardTitle className="flex items-center gap-3 text-white">
+                                    <CardTitle className="flex items-center gap-3 text-[#1A1714]">
                                         <span className="text-3xl">⚽</span> Deportes
                                     </CardTitle>
                                 </CardHeader>
-                                <CardContent className="text-gray-400">
+                                <CardContent className="text-[#5A5751]">
                                     <p className="mb-4">Vital para la salud física y el trabajo en equipo.</p>
                                     <ul className="text-sm space-y-2">
                                         <li className="flex items-center gap-2">✅ Salud y disciplina</li>
@@ -197,13 +192,13 @@ export default function CursosOnlineNinosPage() {
                             </Card>
 
                             {/* Option 3: Music */}
-                            <Card className="bg-[#1a2942] border-slate-700 hover:border-slate-600 transition-all opacity-70 hover:opacity-100">
+                            <Card className="bg-[#FAF7EF] border border-[#E8E0D0] hover:border-[#C96342]/30 transition-all opacity-70 hover:opacity-100">
                                 <CardHeader>
-                                    <CardTitle className="flex items-center gap-3 text-white">
+                                    <CardTitle className="flex items-center gap-3 text-[#1A1714]">
                                         <span className="text-3xl">🎹</span> Música/Arte
                                     </CardTitle>
                                 </CardHeader>
-                                <CardContent className="text-gray-400">
+                                <CardContent className="text-[#5A5751]">
                                     <p className="mb-4">Desarrolla la creatividad y la sensibilidad.</p>
                                     <ul className="text-sm space-y-2">
                                         <li className="flex items-center gap-2">✅ Creatividad</li>
@@ -213,23 +208,23 @@ export default function CursosOnlineNinosPage() {
                             </Card>
 
                             {/* Option 4: AI (Highlight) */}
-                            <Card className="bg-gradient-to-b from-[#1a2942] to-[#0f172a] border-cyan-500 shadow-[0_0_30px_rgba(6,182,212,0.15)] transform scale-105 relative">
-                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-cyan-500 text-slate-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                            <Card className="bg-[#FAF7EF] border-2 border-[#C96342] shadow-md transform scale-105 relative">
+                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#C96342] text-[#FAF7EF] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
                                     Recomendado 2026
                                 </div>
                                 <CardHeader>
-                                    <CardTitle className="flex items-center gap-3 text-white text-xl">
+                                    <CardTitle className="flex items-center gap-3 text-[#1A1714] text-xl">
                                         <span className="text-3xl">🤖</span> IA y Tech
                                     </CardTitle>
                                 </CardHeader>
-                                <CardContent className="text-gray-300">
-                                    <p className="mb-4 font-medium text-white">La nueva alfabetización. Quien no la use, quedará atrás.</p>
+                                <CardContent className="text-[#5A5751]">
+                                    <p className="mb-4 font-medium text-[#1A1714]">La nueva alfabetización. Quien no la use, quedará atrás.</p>
                                     <ul className="text-sm space-y-3">
-                                        <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-400" /> Salarios +50% altos</li>
-                                        <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-400" /> Crear, no solo consumir</li>
-                                        <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-cyan-400" /> Ventaja competitiva real</li>
+                                        <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#C96342]" /> Salarios +50% altos</li>
+                                        <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#C96342]" /> Crear, no solo consumir</li>
+                                        <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#C96342]" /> Ventaja competitiva real</li>
                                     </ul>
-                                    <Button asChild className="w-full mt-6 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold">
+                                    <Button asChild className="w-full mt-6 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] font-bold rounded-sm">
                                         <Link href="/">Descubrir Curso</Link>
                                     </Button>
                                 </CardContent>
@@ -239,12 +234,12 @@ export default function CursosOnlineNinosPage() {
                 </section>
 
                 {/* WHY ONLINE SECTION */}
-                <section className="py-24 bg-[#0a1628]">
+                <section className="py-24 bg-[#F2EDE0]">
                     <div className="container mx-auto px-6 max-w-5xl">
-                        <h2 className="text-3xl lg:text-4xl font-bold text-center text-white mb-12">
+                        <h2 className="text-3xl lg:text-4xl font-bold text-center text-[#1A1714] mb-12 font-display">
                             ¿Por qué elegir Cursos Online para Niños?
                         </h2>
-                        <p className="text-center text-gray-400 mb-16 max-w-3xl mx-auto">
+                        <p className="text-center text-[#5A5751] mb-16 max-w-3xl mx-auto font-body">
                             La educación virtual ha evolucionado. Ya no se trata de videos grabados aburridos.
                             Las nuevas plataformas conectan a niños de <strong>España, México, Colombia, Argentina</strong> y más,
                             creando un aula global enriquecedora.
@@ -256,12 +251,12 @@ export default function CursosOnlineNinosPage() {
                                 { icon: Users, title: "Networking Temprano", text: "Conecta con otros niños brillantes de todo el mundo hispanohablante que comparten sus intereses." },
                                 { icon: Zap, title: "Habilidades del Futuro", text: "Las herramientas digitales son nativas en el entorno online. Aprenden haciendo." }
                             ].map((item, idx) => (
-                                <div key={idx} className="flex flex-col items-center text-center p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors">
-                                    <div className="bg-cyan-500/10 p-4 rounded-full mb-4">
-                                        <item.icon className="w-8 h-8 text-cyan-400" />
+                                <div key={idx} className="flex flex-col items-center text-center p-6 rounded-2xl bg-[#FAF7EF] border border-[#E8E0D0] hover:shadow-md transition-all">
+                                    <div className="bg-[#C96342]/10 p-4 rounded-full mb-4">
+                                        <item.icon className="w-8 h-8 text-[#C96342]" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
-                                    <p className="text-gray-400">{item.text}</p>
+                                    <h3 className="text-xl font-bold text-[#1A1714] mb-3">{item.title}</h3>
+                                    <p className="text-[#5A5751]">{item.text}</p>
                                 </div>
                             ))}
                         </div>
@@ -269,34 +264,33 @@ export default function CursosOnlineNinosPage() {
                 </section>
 
                 {/* SOLUTION SECTION */}
-                <section className="py-24 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-r from-cyan-900/20 to-blue-900/20" />
+                <section className="py-24 relative overflow-hidden bg-[#F5F1E8]">
                     <div className="container mx-auto px-6 relative z-10">
-                        <div className="bg-gradient-to-br from-[#1a2942] to-[#0f172a] rounded-3xl p-8 md:p-12 border border-cyan-500/30 shadow-2xl lg:flex items-center gap-12">
+                        <div className="bg-[#FAF7EF] rounded-3xl p-8 md:p-12 border border-[#E8E0D0] shadow-lg lg:flex items-center gap-12">
                             <div className="lg:w-1/2 mb-8 lg:mb-0">
-                                <div className="inline-block bg-cyan-500 text-slate-900 font-bold px-4 py-1 rounded-full text-sm mb-6">
+                                <div className="inline-block bg-[#C96342] text-[#FAF7EF] font-bold px-4 py-1 rounded-full text-sm mb-6">
                                     LA OPCIÓN #1 EN LATAM Y ESPAÑA
                                 </div>
-                                <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+                                <h2 className="text-3xl md:text-5xl font-bold text-[#1A1714] mb-6 font-display">
                                     InnovaKids: Más que un curso, una ventaja de por vida
                                 </h2>
-                                <p className="text-lg text-gray-300 mb-8">
+                                <p className="text-lg text-[#5A5751] mb-8 font-body">
                                     Mientras otros juegan videojuegos, nuestros alumnos los crean usando Inteligencia Artificial.
-                                    El programa más completo para niños de 8 a 14 años en español.
+                                    El programa más completo para niños de 8 a 17 años en español.
                                 </p>
                                 <ul className="space-y-4 mb-8">
                                     {["Clases en vivo (No videos grabados)", "Grupos pequeños (Máx 5 alumnos)", "Proyecto final real garantizado"].map((feat, i) => (
-                                        <li key={i} className="flex items-center gap-3 text-white">
-                                            <CheckCircle className="w-5 h-5 text-cyan-400 flex-shrink-0" />
+                                        <li key={i} className="flex items-center gap-3 text-[#1A1714]">
+                                            <CheckCircle className="w-5 h-5 text-[#C96342] flex-shrink-0" />
                                             {feat}
                                         </li>
                                     ))}
                                 </ul>
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <Button asChild size="lg" className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold text-lg">
+                                    <Button asChild size="lg" className="bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] font-bold text-lg rounded-sm">
                                         <Link href="/">Ver Programa Completo</Link>
                                     </Button>
-                                    <Button asChild size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10">
+                                    <Button asChild size="lg" variant="outline" className="border-[#E8E0D0] text-[#1A1714] hover:bg-[#F5F1E8]">
                                         <Link href="/brochure-programa-ia">Descargar Brochure PDF</Link>
                                     </Button>
                                 </div>
@@ -304,37 +298,37 @@ export default function CursosOnlineNinosPage() {
                             <div className="lg:w-1/2 relative">
                                 {/* Abstract representation of global connection */}
                                 <div className="grid grid-cols-2 gap-4">
-                                    <div className="bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/10 animate-float">
+                                    <div className="bg-[#F5F1E8] p-4 rounded-xl border border-[#E8E0D0]">
                                         <div className="flex items-center gap-2 mb-2">
                                             <span className="text-2xl">🇪🇸</span>
-                                            <span className="text-white font-bold">España</span>
+                                            <span className="text-[#1A1714] font-bold">España</span>
                                         </div>
-                                        <p className="text-xs text-gray-400">"Mi hijo espera toda la semana su clase de IA"</p>
-                                        <div className="flex text-yellow-400 mt-2"><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /></div>
+                                        <p className="text-xs text-[#5A5751]">"Mi hijo espera toda la semana su clase de IA"</p>
+                                        <div className="flex text-yellow-500 mt-2"><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /></div>
                                     </div>
-                                    <div className="bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/10 animate-float delay-700 translate-y-8">
+                                    <div className="bg-[#F5F1E8] p-4 rounded-xl border border-[#E8E0D0] translate-y-8">
                                         <div className="flex items-center gap-2 mb-2">
                                             <span className="text-2xl">🇲🇽</span>
-                                            <span className="text-white font-bold">México</span>
+                                            <span className="text-[#1A1714] font-bold">México</span>
                                         </div>
-                                        <p className="text-xs text-gray-400">"La mejor inversión extracurricular que hemos hecho"</p>
-                                        <div className="flex text-yellow-400 mt-2"><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /></div>
+                                        <p className="text-xs text-[#5A5751]">"La mejor inversión extracurricular que hemos hecho"</p>
+                                        <div className="flex text-yellow-500 mt-2"><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /></div>
                                     </div>
-                                    <div className="bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/10 animate-float delay-500">
+                                    <div className="bg-[#F5F1E8] p-4 rounded-xl border border-[#E8E0D0]">
                                         <div className="flex items-center gap-2 mb-2">
                                             <span className="text-2xl">🇨🇴</span>
-                                            <span className="text-white font-bold">Colombia</span>
+                                            <span className="text-[#1A1714] font-bold">Colombia</span>
                                         </div>
-                                        <p className="text-xs text-gray-400">"Profesores excelentes y pacientes"</p>
-                                        <div className="flex text-yellow-400 mt-2"><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /></div>
+                                        <p className="text-xs text-[#5A5751]">"Profesores excelentes y pacientes"</p>
+                                        <div className="flex text-yellow-500 mt-2"><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /></div>
                                     </div>
-                                    <div className="bg-white/5 p-4 rounded-xl backdrop-blur-sm border border-white/10 animate-float delay-1000 translate-y-8">
+                                    <div className="bg-[#F5F1E8] p-4 rounded-xl border border-[#E8E0D0] translate-y-8">
                                         <div className="flex items-center gap-2 mb-2">
                                             <span className="text-2xl">🇨🇱</span>
-                                            <span className="text-white font-bold">Chile</span>
+                                            <span className="text-[#1A1714] font-bold">Chile</span>
                                         </div>
-                                        <p className="text-xs text-gray-400">"100% recomendado para el futuro"</p>
-                                        <div className="flex text-yellow-400 mt-2"><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /></div>
+                                        <p className="text-xs text-[#5A5751]">"100% recomendado para el futuro"</p>
+                                        <div className="flex text-yellow-500 mt-2"><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /><Star className="w-3 h-3 fill-current" /></div>
                                     </div>
                                 </div>
                             </div>
@@ -343,27 +337,27 @@ export default function CursosOnlineNinosPage() {
                 </section>
 
                 {/* FAQ SNIPPET SECTION */}
-                <section className="py-24 bg-[#08101f]">
+                <section className="py-24 bg-[#F2EDE0]">
                     <div className="container mx-auto px-6 max-w-4xl">
-                        <h2 className="text-2xl font-bold text-white mb-10 text-center">Preguntas Frecuentes de Padres</h2>
+                        <h2 className="text-2xl font-bold text-[#1A1714] mb-10 text-center font-display">Preguntas Frecuentes de Padres</h2>
                         <div className="space-y-6">
-                            <div className="border-b border-white/10 pb-6">
-                                <h3 className="text-lg font-semibold text-white mb-2">¿Desde qué países se pueden conectar?</h3>
-                                <p className="text-gray-400">Desde cualquier parte del mundo. Tenemos alumnos activos en España, México, Colombia, Argentina, Chile, Perú, Estados Unidos y más. Los horarios se adaptan a tu zona horaria.</p>
+                            <div className="border-b border-[#E8E0D0] pb-6">
+                                <h3 className="text-lg font-semibold text-[#1A1714] mb-2">¿Desde qué países se pueden conectar?</h3>
+                                <p className="text-[#5A5751]">Desde cualquier parte del mundo. Tenemos alumnos activos en España, México, Colombia, Argentina, Chile, Perú, Estados Unidos y más. Los horarios se adaptan a tu zona horaria.</p>
                             </div>
-                            <div className="border-b border-white/10 pb-6">
-                                <h3 className="text-lg font-semibold text-white mb-2">¿Necesitan saber programar antes?</h3>
-                                <p className="text-gray-400">No, nuestros cursos online para niños empiezan desde cero. La IA facilita el aprendizaje técnico, permitiendo que creen proyectos avanzados sin frustración.</p>
+                            <div className="border-b border-[#E8E0D0] pb-6">
+                                <h3 className="text-lg font-semibold text-[#1A1714] mb-2">¿Necesitan saber programar antes?</h3>
+                                <p className="text-[#5A5751]">No, nuestros cursos online para niños empiezan desde cero. La IA facilita el aprendizaje técnico, permitiendo que creen proyectos avanzados sin frustración.</p>
                             </div>
                         </div>
                         {/* COUNTRY SELECTION SECTION - SEO HUB */}
-                        <section id="paises" className="py-20 bg-slate-900 border-t border-slate-800">
+                        <section id="paises" className="py-20 bg-[#FAF7EF] border-t border-[#E8E0D0] rounded-2xl mt-12">
                             <div className="container mx-auto px-6 max-w-6xl">
                                 <div className="text-center mb-12">
-                                    <h2 className="text-3xl font-bold text-white mb-4">
+                                    <h2 className="text-3xl font-bold text-[#1A1714] mb-4 font-display">
                                         Encuentra el Curso de IA en tu País
                                     </h2>
-                                    <p className="text-gray-400">
+                                    <p className="text-[#5A5751]">
                                         Horarios adaptados y moneda local en toda Latinoamérica y España
                                     </p>
                                 </div>
@@ -394,10 +388,10 @@ export default function CursosOnlineNinosPage() {
                                         <Link
                                             key={country.code}
                                             href={country.slug}
-                                            className="flex items-center gap-3 p-4 rounded-xl bg-[#1a2942] hover:bg-cyan-900/30 border border-slate-700 hover:border-cyan-500/50 transition-all group"
+                                            className="flex items-center gap-3 p-4 rounded-xl bg-[#FAF7EF] hover:bg-[#F5F1E8] border border-[#E8E0D0] hover:border-[#C96342]/50 transition-all group"
                                         >
                                             <span className="text-2xl">{country.flag}</span>
-                                            <span className="text-gray-300 group-hover:text-white font-medium text-sm">{country.name}</span>
+                                            <span className="text-[#5A5751] group-hover:text-[#1A1714] font-medium text-sm">{country.name}</span>
                                         </Link>
                                     ))}
                                 </div>
@@ -405,7 +399,7 @@ export default function CursosOnlineNinosPage() {
                         </section>
 
                         <div className="mt-10 text-center">
-                            <Link href="/" className="text-cyan-400 hover:text-cyan-300 font-semibold inline-flex items-center gap-2">
+                            <Link href="/" className="text-[#C96342] hover:text-[#9A4428] font-semibold inline-flex items-center gap-2">
                                 Ver todas las preguntas frecuentes <ArrowRight className="w-4 h-4" />
                             </Link>
                         </div>

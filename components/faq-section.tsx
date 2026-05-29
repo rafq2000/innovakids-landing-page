@@ -38,7 +38,9 @@ export function FAQSection() {
                 <button
                   onClick={() => setOpenIdx(open ? null : i)}
                   className="w-full py-8 md:py-10 flex items-start gap-6 md:gap-10 text-left group"
+                  id={`faq-btn-${i}`}
                   aria-expanded={open}
+                  aria-controls={`faq-panel-${i}`}
                 >
                   <span className="text-xs text-[#C96342] font-semibold tabular-nums tracking-[0.15em] shrink-0 w-10 md:w-14 pt-3">
                     {String(i + 1).padStart(2, "0")}
@@ -60,7 +62,7 @@ export function FAQSection() {
                   </span>
                 </button>
                 {open && (
-                  <div className="pb-12 md:pb-16 pl-16 md:pl-24 pr-8 md:pr-16 animate-fadeIn">
+                  <div id={`faq-panel-${i}`} role="region" aria-labelledby={`faq-btn-${i}`} className="pb-12 md:pb-16 pl-16 md:pl-24 pr-8 md:pr-16 animate-fadeIn">
                     <p
                       className="font-display text-lg md:text-xl text-[#5A5751] leading-[1.6] max-w-[62ch]"
                     >

@@ -43,8 +43,7 @@ export function CountryLinksSection({ country }: CountryLinksSectionProps) {
                                     key={city}
                                     href={`/${country.code}/${toSlug(city)}/cursos/inteligencia-artificial`}
                                     title={`Curso de IA para ${country.childTerm} en ${city}, ${country.name}`}
-                                    className="inline-flex items-center px-4 py-2 border border-[#2F2F2C]/20 bg-transparent text-sm text-[#2F2F2C] hover:border-[#C96342] hover:text-[#C96342] hover:bg-[#F5F1E8] rounded-sm transition-colors"
-                                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                    className="font-display inline-flex items-center px-4 py-2 border border-[#2F2F2C]/20 bg-transparent text-sm text-[#2F2F2C] hover:border-[#C96342] hover:text-[#C96342] hover:bg-[#F5F1E8] rounded-sm transition-colors"
                                 >
                                     Cursos IA en {city}
                                 </a>
@@ -66,8 +65,7 @@ export function CountryLinksSection({ country }: CountryLinksSectionProps) {
                                 key={c.code}
                                 href={`/${c.code}`}
                                 title={`Curso de IA para ${c.childTerm} en ${c.name}`}
-                                className="inline-flex items-center gap-2 px-4 py-2 border border-[#2F2F2C]/20 bg-transparent text-sm text-[#2F2F2C] hover:border-[#C96342] hover:text-[#C96342] hover:bg-[#F5F1E8] rounded-sm transition-colors"
-                                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                                className="font-display inline-flex items-center gap-2 px-4 py-2 border border-[#2F2F2C]/20 bg-transparent text-sm text-[#2F2F2C] hover:border-[#C96342] hover:text-[#C96342] hover:bg-[#F5F1E8] rounded-sm transition-colors"
                             >
                                 <span className="text-base leading-none">{c.flag}</span>
                                 <span>{c.name}</span>

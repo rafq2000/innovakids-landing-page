@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useRef } from "react"
-import { ChevronDown, Gamepad2, Palette, Music, Video, Code, Brain, BookOpen, Shield, Trophy } from "lucide-react"
+import { ChevronDown, Gamepad2, Palette, Music, Video, Code, BookOpen, Shield, Trophy } from "lucide-react"
 import { motion, useInView, AnimatePresence } from "framer-motion"
 
 const classIcons = [

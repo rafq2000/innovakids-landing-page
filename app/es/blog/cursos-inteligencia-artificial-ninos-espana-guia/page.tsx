@@ -1,4 +1,3 @@
-import { generateHreflangs } from "@/lib/seo-config";
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
@@ -7,7 +6,7 @@ import { Calendar, Clock, User, ArrowRight, CheckCircle } from "lucide-react"
 
 export const metadata: Metadata = {
   robots: {
-    index: false,
+    index: true,
     follow: true,
   },
   title: "Cursos de IA para Niños en España (Guía 2026)",
@@ -29,7 +28,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/es/blog/cursos-inteligencia-artificial-ninos-espana-guia",
-      languages: generateHreflangs("home")
   },
 }
 
@@ -57,7 +55,7 @@ export default function GuiaCompletaEspana() {
                   España
                 </Link>
                 <span>/</span>
-                <Link href="/es/blog" className="hover:text-primary">
+                <Link href="/blog" className="hover:text-primary">
                   Blog
                 </Link>
                 <span>/</span>
@@ -260,7 +258,7 @@ export default function GuiaCompletaEspana() {
                   {[
                     {
                       q: "¿A qué edad puede empezar mi hijo?",
-                      a: "Nuestro programa está diseñado para niños de 8 a 14 años. Es la edad ideal para desarrollar pensamiento computacional y habilidades con IA de forma lúdica y práctica.",
+                      a: "Nuestro programa está diseñado para niños de 8 a 17 años. Es la edad ideal para desarrollar pensamiento computacional y habilidades con IA de forma lúdica y práctica.",
                     },
                     {
                       q: "¿Necesita mi hijo saber programar?",
@@ -332,14 +330,14 @@ export default function GuiaCompletaEspana() {
                 <h3 className="mb-6 text-lg font-bold">Artículos Relacionados</h3>
                 <div className="grid gap-4 md:grid-cols-3">
                   <Link
-                    href="/es/cursos-ia-ninos-espana"
+                    href="/es"
                     className="group rounded-xl bg-card p-4 transition-all hover:shadow-lg"
                   >
                     <h4 className="font-bold group-hover:text-[#C60B1E]">Cursos IA España</h4>
                     <p className="text-sm text-muted-foreground">Programa completo de 10 clases</p>
                   </Link>
                   <Link
-                    href="/es/clases-ia-ninos-madrid"
+                    href="/es/madrid/cursos/inteligencia-artificial"
                     className="group rounded-xl bg-card p-4 transition-all hover:shadow-lg"
                   >
                     <h4 className="font-bold group-hover:text-[#C60B1E]">Clases IA Madrid</h4>

@@ -54,7 +54,7 @@ export function ContactForm() {
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid md:grid-cols-2 gap-4">
         <div className="space-y-2">
-          <Label htmlFor="name" className="text-white">
+          <Label htmlFor="name" className="text-[#1A1714]">
             Nombre completo *
           </Label>
           <Input
@@ -62,11 +62,11 @@ export function ContactForm() {
             name="name"
             required
             placeholder="Tu nombre"
-            className="bg-[#0a1628] border-[#2a3952] text-white placeholder:text-gray-500"
+            className="bg-[#FAF7EF] border-[#E8E0D0] text-[#1A1714] placeholder:text-[#5A5751]/60"
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="email" className="text-white">
+          <Label htmlFor="email" className="text-[#1A1714]">
             Email *
           </Label>
           <Input
@@ -75,13 +75,13 @@ export function ContactForm() {
             type="email"
             required
             placeholder="tu@email.com"
-            className="bg-[#0a1628] border-[#2a3952] text-white placeholder:text-gray-500"
+            className="bg-[#FAF7EF] border-[#E8E0D0] text-[#1A1714] placeholder:text-[#5A5751]/60"
           />
         </div>
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="whatsapp" className="text-white">
+        <Label htmlFor="whatsapp" className="text-[#1A1714]">
           WhatsApp *
         </Label>
         <div className="flex gap-2">
@@ -94,7 +94,7 @@ export function ContactForm() {
                   setShowCustomCode(true)
                 }
               }}
-              className="bg-[#0a1628] border border-[#2a3952] text-white rounded-md px-3 py-2 w-36"
+              className="bg-[#FAF7EF] border border-[#E8E0D0] text-[#1A1714] rounded-md px-3 py-2 w-36"
               aria-label="Código de país"
             >
               <option value="+56">🇨🇱 Chile +56</option>
@@ -128,7 +128,7 @@ export function ContactForm() {
                 onChange={(e) => setCustomCode(e.target.value)}
                 placeholder="+XX"
                 required
-                className="bg-[#0a1628] border-[#2a3952] text-white placeholder:text-gray-500 w-20"
+                className="bg-[#FAF7EF] border-[#E8E0D0] text-[#1A1714] placeholder:text-[#5A5751]/60 w-20"
               />
               <button
                 type="button"
@@ -136,7 +136,7 @@ export function ContactForm() {
                   setShowCustomCode(false)
                   setCustomCode("")
                 }}
-                className="text-[#4DD0E1] hover:text-[#3BBFD1] text-sm"
+                className="text-[#C96342] hover:text-[#9A4428] text-sm"
               >
                 ✕
               </button>
@@ -148,13 +148,13 @@ export function ContactForm() {
             type="tel"
             required
             placeholder="9 1234 5678"
-            className="bg-[#0a1628] border-[#2a3952] text-white placeholder:text-gray-500 flex-1"
+            className="bg-[#FAF7EF] border-[#E8E0D0] text-[#1A1714] placeholder:text-[#5A5751]/60 flex-1"
           />
         </div>
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="message" className="text-white">
+        <Label htmlFor="message" className="text-[#1A1714]">
           Mensaje *
         </Label>
         <Textarea
@@ -163,14 +163,14 @@ export function ContactForm() {
           required
           placeholder="Cuéntanos cómo podemos ayudarte..."
           rows={5}
-          className="bg-[#0a1628] border-[#2a3952] text-white placeholder:text-gray-500 resize-none"
+          className="bg-[#FAF7EF] border-[#E8E0D0] text-[#1A1714] placeholder:text-[#5A5751]/60 resize-none"
         />
       </div>
 
-      {error && <p className="text-red-400 text-sm">{error}</p>}
+      {error && <p role="alert" className="text-red-600 text-sm">{error}</p>}
 
       {isSuccess && (
-        <div className="flex items-center gap-2 text-green-400 bg-green-400/10 p-3 rounded-lg">
+        <div aria-live="polite" className="flex items-center gap-2 text-green-700 bg-green-50 p-3 rounded-lg border border-green-200">
           <CheckCircle2 className="w-5 h-5" />
           <p className="text-sm">¡Mensaje enviado exitosamente! Te responderemos pronto.</p>
         </div>
@@ -179,7 +179,7 @@ export function ContactForm() {
       <Button
         type="submit"
         disabled={isSubmitting}
-        className="w-full bg-[#4DD0E1] hover:bg-[#3BBFD1] text-[#0a1628] font-bold text-lg py-6"
+        className="w-full bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] font-bold text-lg py-6 rounded-sm"
       >
         {isSubmitting ? (
           <>

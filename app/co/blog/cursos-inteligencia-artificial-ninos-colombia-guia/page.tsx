@@ -1,4 +1,3 @@
-import { generateHreflangs } from "@/lib/seo-config";
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
@@ -7,7 +6,7 @@ import { Clock, CheckCircle, Target, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   robots: {
-    index: false,
+    index: true,
     follow: true,
   },
   title: "Cursos de IA para Niños en Colombia (Guía 2026)",
@@ -29,7 +28,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/co/blog/cursos-inteligencia-artificial-ninos-colombia-guia",
-      languages: generateHreflangs("home")
   },
 }
 
@@ -241,7 +239,7 @@ export default function GuiaCursosIAColombia() {
                   garantía de 10 días.
                 </p>
                 <Link
-                  href="/co/cursos-ia-ninos-colombia"
+                  href="/co"
                   className="inline-flex items-center gap-2 rounded-full bg-[#FCD116] px-6 py-3 font-bold text-[#003893]"
                 >
                   Ver Programa Completo <ArrowRight className="h-4 w-4" />
@@ -369,7 +367,7 @@ export default function GuiaCursosIAColombia() {
                 Agendar Evaluación Gratis
               </Link>
               <Link
-                href="/co/cursos-ia-ninos-colombia"
+                href="/co"
                 className="inline-flex items-center gap-2 rounded-full border-2 border-white px-8 py-4 text-lg font-bold text-white"
               >
                 Ver Programa Completo
@@ -398,10 +396,10 @@ export default function GuiaCursosIAColombia() {
               <Link href="/co" className="text-primary hover:underline">
                 InnovaKids Colombia
               </Link>
-              <Link href="/co/cursos-ia-ninos-colombia" className="text-primary hover:underline">
+              <Link href="/co" className="text-primary hover:underline">
                 Cursos IA Niños Colombia
               </Link>
-              <Link href="/co/clases-ia-ninos-bogota" className="text-primary hover:underline">
+              <Link href="/co/bogota/cursos/inteligencia-artificial" className="text-primary hover:underline">
                 Clases en Bogotá
               </Link>
             </div>

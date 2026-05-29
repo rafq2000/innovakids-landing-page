@@ -1,4 +1,3 @@
-import { generateHreflangs } from "@/lib/seo-config";
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
@@ -7,7 +6,7 @@ import { CheckCircle, Target, ArrowRight, Clock, Users, Shield } from "lucide-re
 
 export const metadata: Metadata = {
   robots: {
-    index: false,
+    index: true,
     follow: true,
   },
   title: "Cursos de IA para Niños en Perú (Guía 2026)",
@@ -29,7 +28,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/pe/blog/cursos-inteligencia-artificial-ninos-peru-guia",
-      languages: generateHreflangs("home")
   },
 }
 
@@ -296,14 +294,14 @@ export default function GuiaIANinosPeru() {
                 <h3 className="mb-6 text-xl font-bold">Más recursos sobre InnovaKids en Perú:</h3>
                 <div className="grid gap-4 md:grid-cols-3">
                   <Link
-                    href="/pe/cursos-ia-ninos-peru"
+                    href="/pe"
                     className="group flex items-center gap-2 rounded-xl bg-card p-4 transition-all hover:shadow-lg"
                   >
                     <span className="font-medium group-hover:text-[#D91023]">Cursos IA Niños Perú</span>
                     <ArrowRight className="h-4 w-4 text-[#D91023]" />
                   </Link>
                   <Link
-                    href="/pe/clases-ia-ninos-lima"
+                    href="/pe/lima/cursos/inteligencia-artificial"
                     className="group flex items-center gap-2 rounded-xl bg-card p-4 transition-all hover:shadow-lg"
                   >
                     <span className="font-medium group-hover:text-[#D91023]">Clases IA Lima</span>

@@ -1,6 +1,8 @@
 import { XCircle } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
 
 export const metadata = {
   title: "Error en el Pago | InnovaKids",
@@ -9,6 +11,8 @@ export const metadata = {
 
 export default function PagoErrorPage() {
   return (
+    <>
+    <Navigation />
     <div className="min-h-screen bg-background flex items-center justify-center px-4">
       <div className="max-w-md w-full text-center">
         <div className="mb-6 flex justify-center">
@@ -37,11 +41,21 @@ export default function PagoErrorPage() {
           <Button asChild className="w-full">
             <Link href="/pagar">Intentar nuevamente</Link>
           </Button>
+          <a
+            href="https://wa.me/56922450492?text=Hola%2C%20tuve%20un%20error%20al%20pagar"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full border border-green-500 text-green-700 hover:bg-green-50 rounded-lg px-4 py-3 font-semibold text-sm text-center transition-colors"
+          >
+            Escribir por WhatsApp
+          </a>
           <Button asChild variant="outline" className="w-full bg-transparent">
             <Link href="/">Volver al inicio</Link>
           </Button>
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   )
 }

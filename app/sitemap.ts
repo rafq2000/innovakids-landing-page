@@ -7,31 +7,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.innovakidslatam.com"
   const currentDate = new Date()
 
-  // Static Global Pages
-  const staticPages = [
-    "", // Home
+  // Main pages (priority 0.8)
+  const mainPages = [
     "/que-es-innovakids",
-    "/blog",
-    "/descargar-guia-ia-ninos",
-    "/testimonios",
-    "/cursos/inteligencia-artificial",
-    "/como-ensenar-ia-a-mis-hijos",
-    "/adolescentes",
+    "/programa",
     "/contacto",
     "/resultados",
     "/metodologia-aprender-creando",
     "/de-usuario-a-creador",
     "/ia-nos-recomienda",
     "/clase-gratis",
-    // Course specializations — high priority for indexing
+    "/precios",
+    "/testimonios",
+    "/adolescentes",
+    "/colegios",
+    "/confianza-y-seguridad",
+    "/brochure-programa-ia",
+    "/como-ensenar-ia-a-mis-hijos",
+    "/descargar-guia-ia-ninos",
+    "/kit-gratuito-descarga",
+    "/cursos-online-para-ninos",
+    "/clases-ia-ninos",
+    "/ia-ninos-por-edad",
+    "/cursos/inteligencia-artificial",
+  ]
+
+  // Course specialization pages (priority 0.9)
+  const coursePages = [
     "/curso-creacion-videojuegos-ninos",
     "/curso-creador-contenido-ia",
     "/curso-emprendimiento-ninos",
-    "/colegios",
-    "/precios",
     "/mejor-curso-ia-ninos-2026",
     "/vibe-coding-ninos",
-    "/ia-ninos-por-edad",
+  ]
+
+  // Blog posts (priority 0.7)
+  const blogPages = [
+    "/blog",
     "/blog/scratch-vs-ia-ninos",
     "/blog/inteligencia-artificial-para-ninos",
     "/blog/metodologia-erica-pensamiento-computacional-ia-ninos",
@@ -43,17 +55,49 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/como-proteger-hijos-ia-uso-seguro-responsable",
     "/blog/innovakids-vs-code-org-comparativa-2026",
     "/blog/vacaciones-escolares-cursos-ia-ninos-2026",
-    "/cursos-online-para-ninos",
+    "/blog/extraescolar-inteligencia-artificial-ninos",
+    "/blog/curso-ia-ninos-10-11-12-anos",
   ]
 
-  const coursePages = ["/curso-creacion-videojuegos-ninos", "/curso-creador-contenido-ia", "/curso-emprendimiento-ninos"]
+  // Homepage (priority 1.0)
+  const sitemapEntries: MetadataRoute.Sitemap = [
+    {
+      url: baseUrl,
+      lastModified: currentDate,
+      changeFrequency: "daily",
+      priority: 1.0,
+    },
+  ]
 
-  const sitemapEntries: MetadataRoute.Sitemap = staticPages.map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: currentDate,
-    changeFrequency: route === "" ? "daily" : "weekly",
-    priority: route === "" ? 1 : coursePages.includes(route) ? 0.9 : 0.8,
-  }))
+  // Main pages
+  mainPages.forEach((route) => {
+    sitemapEntries.push({
+      url: `${baseUrl}${route}`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    })
+  })
+
+  // Course pages
+  coursePages.forEach((route) => {
+    sitemapEntries.push({
+      url: `${baseUrl}${route}`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    })
+  })
+
+  // Blog pages
+  blogPages.forEach((route) => {
+    sitemapEntries.push({
+      url: `${baseUrl}${route}`,
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    })
+  })
 
   // Dynamic Country Pages
   const countries = getAllCountryCodes()
@@ -64,7 +108,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/${code}`,
       lastModified: currentDate,
       changeFrequency: "weekly",
-      priority: 1,
+      priority: 0.6,
     })
 
     // 2. Standard Subpages (handled by app/[country]/...)
@@ -75,7 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: `${baseUrl}/${code}/${slug}`,
         lastModified: currentDate,
         changeFrequency: "monthly",
-        priority: 0.8,
+        priority: 0.5,
       })
     })
 
@@ -114,7 +158,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
           url: `${baseUrl}/${code}/${citySlug}/cursos/inteligencia-artificial`,
           lastModified: currentDate,
           changeFrequency: "weekly",
-          priority: 0.8,
+          priority: 0.5,
         })
       })
     }

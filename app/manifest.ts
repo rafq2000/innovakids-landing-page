@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
         description: "Cursos online de Inteligencia Artificial para niños y adolescentes de 8 a 17 años. Aprende a crear apps y videojuegos.",
         start_url: "/",
         display: "standalone",
-        background_color: "#030712",
-        theme_color: "#030712",
+        background_color: "#F2EDE0",
+        theme_color: "#F2EDE0",
         icons: [
             {
                 src: "/favicon.ico",
@@ -16,18 +16,18 @@ export default function manifest(): MetadataRoute.Manifest {
                 type: "image/x-icon",
             },
             {
-                src: "/icon-light-32x32.png",
+                src: "/favicon-32x32.png",
                 sizes: "32x32",
                 type: "image/png",
             },
             {
-                src: "/logo-innovakids-new.png",
+                src: "/icon-192x192.png",
                 sizes: "192x192",
                 type: "image/png",
                 purpose: "maskable",
             },
             {
-                src: "/logo-innovakids-new.png",
+                src: "/icon-512x512.png",
                 sizes: "512x512",
                 type: "image/png",
                 purpose: "maskable",

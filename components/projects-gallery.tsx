@@ -4,7 +4,6 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Badge } from "@/components/ui/badge"
 import { Play, Music, Gamepad2, Mic, Palette, BookOpen } from "lucide-react"
-import Image from "next/image"
 
 // Project data based on strategy examples
 const projects = [
@@ -19,12 +18,12 @@ const projects = [
         image: "/projects/art-1.jpg", // Placeholder path
         description: "Obra de arte generativa",
         icon: Palette,
-        color: "bg-pink-500",
+        color: "bg-[#C96342]",
     },
     {
         id: 2,
         title: "EcoAdventure Game",
-        student: "Tomás",
+        student: "Tomas",
         age: 9,
         country: "🇨🇱",
         category: "Videojuegos",
@@ -32,7 +31,7 @@ const projects = [
         image: "/projects/game-1.jpg",
         description: "Videojuego de plataformas",
         icon: Gamepad2,
-        color: "bg-cyan-500",
+        color: "bg-[#9A4428]",
     },
     {
         id: 3,
@@ -40,25 +39,25 @@ const projects = [
         student: "Valentina",
         age: 11,
         country: "🇦🇷",
-        category: "Música",
+        category: "Musica",
         tool: "Suno AI",
         image: "/projects/music-1.jpg",
-        description: "Canción original pop",
+        description: "Cancion original pop",
         icon: Music,
-        color: "bg-purple-500",
+        color: "bg-[#C96342]",
     },
     {
         id: 4,
-        title: "Narración de Cuento",
+        title: "Narracion de Cuento",
         student: "Matias",
         age: 8,
         country: "🇲🇽",
         category: "Voz",
         tool: "ElevenLabs",
         image: "/projects/voice-1.jpg",
-        description: "Clonación de voz",
+        description: "Clonacion de voz",
         icon: Mic,
-        color: "bg-orange-500",
+        color: "bg-[#B5522E]",
     },
     {
         id: 5,
@@ -71,20 +70,20 @@ const projects = [
         image: "/projects/study-1.jpg",
         description: "Modelo 3D para ciencias",
         icon: BookOpen,
-        color: "bg-emerald-500",
+        color: "bg-[#9A4428]",
     },
     {
         id: 6,
-        title: "Cómic Espacial",
-        student: "Sofía",
+        title: "Comic Espacial",
+        student: "Sofia",
         age: 10,
         country: "🇵🇪",
         category: "Arte",
         tool: "Midjourney",
         image: "/projects/art-2.jpg",
-        description: "Novela gráfica de 4 páginas",
+        description: "Novela grafica de 4 paginas",
         icon: Palette,
-        color: "bg-pink-500",
+        color: "bg-[#C96342]",
     },
     // Add more to reach ~8 minimum as per strategy
     {
@@ -98,24 +97,24 @@ const projects = [
         image: "/projects/code-1.jpg",
         description: "App de productividad",
         icon: Gamepad2, // Reusing icon for code
-        color: "bg-blue-500",
+        color: "bg-[#B5522E]",
     },
     {
         id: 8,
-        title: "Trailer de Película",
+        title: "Trailer de Pelicula",
         student: "Emma",
         age: 11,
         country: "🇺🇾",
         category: "Video",
         tool: "Runway",
         image: "/projects/video-1.jpg",
-        description: "Teaser cinematográfico",
+        description: "Teaser cinematografico",
         icon: Play,
-        color: "bg-red-500",
+        color: "bg-[#9A4428]",
     }
 ]
 
-const categories = ["Todos", "Arte", "Música", "Videojuegos", "Voz", "Estudio"]
+const categories = ["Todos", "Arte", "Musica", "Videojuegos", "Voz", "Estudio"]
 
 export function ProjectsGallery() {
     const [filter, setFilter] = useState("Todos")
@@ -128,7 +127,7 @@ export function ProjectsGallery() {
         <section className="py-20 bg-background">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-500 mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#1A1714] mb-4">
                         Proyectos Reales de Alumnos
                     </h2>
                     <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -143,8 +142,8 @@ export function ProjectsGallery() {
                             key={cat}
                             onClick={() => setFilter(cat)}
                             className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${filter === cat
-                                    ? "bg-[#4ECDC4] text-white shadow-lg scale-105"
-                                    : "bg-muted text-muted-foreground hover:bg-muted/80"
+                                    ? "bg-[#C96342] text-[#FAF7EF] shadow-lg scale-105"
+                                    : "bg-[#F2EDE0] text-[#5A5751] border border-[#E8E0D0] hover:bg-[#E8E0D0]"
                                 }`}
                         >
                             {cat}
