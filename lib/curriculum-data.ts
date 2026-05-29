@@ -158,6 +158,14 @@ export const TRACKS: Track[] = [
   },
 ]
 
+/* ─── ESTRUCTURA DE 3 NIVELES ─────────────────────────── */
+
+export const LEVELS = [
+  { id: "explorer", num: "01", name: "Vibe Explorer", subtitle: "Básico", classes: 10, ageMin: 8, ageMax: 17, description: "Fundamentos de IA generativa. Todos empiezan aquí." },
+  { id: "maker-core", num: "02", name: "Vibe Maker", subtitle: "Intermedio", classes: 5, ageMin: 11, ageMax: 17, description: "Setup + herramientas + primeros proyectos vivos en internet." },
+  { id: "track", num: "03", name: "Track Especializado", subtitle: "Avanzado", classes: 5, ageMin: 11, ageMax: 17, description: "Elige 1 de 6 tracks y construye tu proyecto final publicado." },
+] as const
+
 /* ─── HELPERS ─────────────────────────────────────────── */
 
 export const TOTAL_EXPLORER_CLASSES = EXPLORER_CLASSES.length
