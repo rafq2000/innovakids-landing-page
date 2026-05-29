@@ -383,7 +383,7 @@ export default function InnovaKidsVsCodeOrgPage() {
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Si te interesa comparar con otras plataformas, tambien puedes leer nuestra{" "}
-                <Link href="/codingal-vs-innovakids-comparativa" className="text-[#4ECDC4] hover:underline">
+                <Link href="/blog/codingal-vs-innovakids-comparativa" className="text-[#4ECDC4] hover:underline">
                   comparativa InnovaKids vs Codingal
                 </Link>{" "}
                 para conocer mas opciones y encontrar la mejor combinacion para tu hijo.
@@ -461,7 +461,7 @@ export default function InnovaKidsVsCodeOrgPage() {
               <h2 className="text-2xl font-bold text-[#2D3436] mb-4">Articulos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 <Link
-                  href="/codingal-vs-innovakids-comparativa"
+                  href="/blog/codingal-vs-innovakids-comparativa"
                   className="block p-4 border border-gray-200 rounded-xl hover:border-[#4ECDC4] transition-colors"
                 >
                   <p className="font-semibold text-[#2D3436]">InnovaKids vs Codingal</p>

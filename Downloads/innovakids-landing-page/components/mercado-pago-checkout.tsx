@@ -53,6 +53,7 @@ export default function MercadoPagoCheckout({ paymentOption, amount }: MercadoPa
             value={studentName}
             onChange={(e) => setStudentName(e.target.value)}
             required
+            autoComplete="name"
             className="mt-2"
           />
         </div>
@@ -66,6 +67,7 @@ export default function MercadoPagoCheckout({ paymentOption, amount }: MercadoPa
             value={parentEmail}
             onChange={(e) => setParentEmail(e.target.value)}
             required
+            autoComplete="email"
             className="mt-2"
           />
         </div>

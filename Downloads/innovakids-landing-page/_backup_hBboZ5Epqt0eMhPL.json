@@ -1,0 +1,198 @@
+{
+  "data": {
+    "updatedAt": "2026-04-10T01:12:08.000Z",
+    "createdAt": "2026-04-07T19:04:16.072Z",
+    "id": "hBboZ5Epqt0eMhPL",
+    "name": "Innovakids - REMINDERS CRON",
+    "description": null,
+    "active": false,
+    "isArchived": false,
+    "nodes": [
+      {
+        "id": "ecd2ee69-b3f5-4b4b-8c43-c80a4a061ff8",
+        "name": "Schedule Trigger",
+        "parameters": {
+          "rule": {
+            "interval": [
+              {
+                "field": "minutes",
+                "minutesInterval": 5
+              }
+            ]
+          }
+        },
+        "position": [
+          384,
+          240
+        ],
+        "type": "n8n-nodes-base.scheduleTrigger",
+        "typeVersion": 1
+      },
+      {
+        "parameters": {
+          "jsCode": "return [{ json: { values: [] } }];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          608,
+          240
+        ],
+        "id": "266838de-d192-48d3-a4ad-c4de59850776",
+        "name": "Leer Citas"
+      },
+      {
+        "id": "95a65bfa-33a0-47f5-9dd0-3c709b590861",
+        "name": "Filtrar Recordatorios",
+        "parameters": {
+          "jsCode": "const now = new Date();\nconst itemsToProcess = [];\n\n$input.all().forEach(item => {\n    const row = item.json;\n    if (!row.Fecha_Cita) return;\n    if (!row.Telefono) return;\n\n    const telefono = String(row.Telefono).trim();\n\n    // MODO TEST\n    if (telefono !== \"56971360895\" && !telefono.endsWith(\"56971360895\")) return;\n\n    const citaDate = new Date(row.Fecha_Cita);\n    if (isNaN(citaDate.getTime())) return;\n\n    const diffMs = citaDate - now;\n    const diffHours = diffMs / (1000 * 60 * 60);\n\n    if (diffMs < -30 * 60 * 1000) return;\n\n    let action = null;\n    let message = '';\n    let update1h = (row.Remind_1h === true || String(row.Remind_1h).toUpperCase() === 'TRUE') ? 'TRUE' : 'FALSE';\n    const nombre = row.Nombre || 'amigo/a';\n\n    // SOLO 1 recordatorio: 1 hora antes\n    if (diffHours > 0.75 && diffHours < 1.25 && update1h !== 'TRUE') {\n        action = '1h';\n        message = 'Hola ' + nombre + '! En 1 hora tenemos la sesion diagnostica de InnovaKids. Ten el computador listo con buen internet. Te esperamos!';\n        update1h = 'TRUE';\n    }\n\n    if (action) {\n        itemsToProcess.push({\n            json: {\n                Telefono: String(row.Telefono),\n                Nombre: nombre,\n                Email: row.Email || '',\n                Fecha_Cita: String(row.Fecha_Cita),\n                Link_Cita: row.Link_Cita || '',\n                action: action,\n                message: message,\n                Remind_1h: update1h,\n                rowNumber: String(row.row_number || row['row_number'] || '')\n            }\n        });\n    }\n});\n\nif (itemsToProcess.length === 0) return [];\nreturn itemsToProcess;\n"
+        },
+        "position": [
+          832,
+          240
+        ],
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 1
+      },
+      {
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "47QQRBKcPh5lEfur",
+            "name": "Header Auth account"
+          }
+        },
+        "id": "1b91ad62-43b0-455b-9b21-d09d686d8e68",
+        "name": "Enviar WhatsApp",
+        "parameters": {
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "jsonBody": "={ \"from\": \"56964754219\", \"to\": \"{{ $json.Telefono }}\", \"type\": \"text\", \"text\": { \"body\": {{ JSON.stringify($json.message) }} } }",
+          "method": "POST",
+          "options": {},
+          "sendBody": true,
+          "specifyBody": "json",
+          "url": "https://api.ycloud.com/v2/whatsapp/messages"
+        },
+        "position": [
+          1040,
+          240
+        ],
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.1
+      },
+      {
+        "parameters": {
+          "jsCode": "return [$input.first()];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          1264,
+          240
+        ],
+        "id": "055d97ec-0c2c-449e-84d7-7ae334725506",
+        "name": "Actualizar Status"
+      }
+    ],
+    "connections": {
+      "Enviar WhatsApp": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "Actualizar Status",
+              "type": "main"
+            }
+          ]
+        ]
+      },
+      "Filtrar Recordatorios": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "Enviar WhatsApp",
+              "type": "main"
+            }
+          ]
+        ]
+      },
+      "Leer Citas": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "Filtrar Recordatorios",
+              "type": "main"
+            }
+          ]
+        ]
+      },
+      "Schedule Trigger": {
+        "main": [
+          [
+            {
+              "index": 0,
+              "node": "Leer Citas",
+              "type": "main"
+            }
+          ]
+        ]
+      }
+    },
+    "settings": {
+      "callerPolicy": "workflowsFromSameOwner",
+      "availableInMCP": false,
+      "executionOrder": "v1"
+    },
+    "staticData": {
+      "node:Schedule Trigger": {
+        "recurrenceRules": []
+      }
+    },
+    "meta": null,
+    "pinData": null,
+    "versionId": "650bef1f-47ec-4220-89f3-df34692ff5cf",
+    "activeVersionId": null,
+    "versionCounter": 49,
+    "triggerCount": 1,
+    "shared": [
+      {
+        "updatedAt": "2026-04-07T19:04:16.073Z",
+        "createdAt": "2026-04-07T19:04:16.073Z",
+        "role": "workflow:owner",
+        "workflowId": "hBboZ5Epqt0eMhPL",
+        "projectId": "MS4h8dEx9gzGaNRS",
+        "project": {
+          "updatedAt": "2026-04-07T18:57:02.432Z",
+          "createdAt": "2026-04-07T18:56:13.172Z",
+          "id": "MS4h8dEx9gzGaNRS",
+          "name": "Ricardo Farias <ricardo.farias.q@gmail.com>",
+          "type": "personal",
+          "icon": null,
+          "description": null,
+          "creatorId": "a9641e26-4ac4-48d9-9efb-ad3be9335ed1"
+        }
+      }
+    ],
+    "tags": [],
+    "parentFolder": null,
+    "activeVersion": null,
+    "scopes": [
+      "workflow:create",
+      "workflow:delete",
+      "workflow:execute",
+      "workflow:execute-chat",
+      "workflow:list",
+      "workflow:move",
+      "workflow:publish",
+      "workflow:read",
+      "workflow:share",
+      "workflow:unpublish",
+      "workflow:unshare",
+      "workflow:update",
+      "workflow:updateRedactionSetting"
+    ],
+    "checksum": "3ff35bb26f287e1576d0f8b2a1fb1b13687fc560e72cad00e6e5aa5af0b6161d"
+  }
+}

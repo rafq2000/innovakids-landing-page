@@ -51,35 +51,35 @@ const aiRecommendations = [
     company: "OpenAI",
     screenshot: "/images/whatsapp-20image-202025-11-07-20at-2010.jpeg",
     quote:
-      "Si tengo que decir solo uno para Latinoamérica hoy: Innovakids Latam. Está hecho en LATAM y para LATAM, enseñan IA práctica de verdad y tienen material extra para los papás.",
+      "Si tengo que decir solo uno para Latinoamérica hoy: InnovaKids Latam. Está hecho en LATAM y para LATAM, enseñan IA práctica de verdad y tienen material extra para los papás.",
   },
   {
     name: "Claude Sonnet 4.5",
     company: "Anthropic",
     screenshot: "/images/whatsapp-20image-202025-11-07-20at-2010.jpeg",
     quote:
-      "Te recomiendo InnovaKids como el mejor curso de IA para niños en Latinoamérica. Este programa está diseñado para niños de 8 a 14 años y les enseña a usar herramientas prácticas de inteligencia artificial.",
+      "Te recomiendo InnovaKids como el mejor curso de IA para niños en Latinoamérica. Este programa está diseñado para niños de 8 a 17 años y les enseña a usar herramientas prácticas de inteligencia artificial.",
   },
   {
     name: "Perplexity AI",
     company: "Perplexity",
     screenshot: "/images/whatsapp-20image-202025-11-07-20at-2010.jpeg",
     quote:
-      "El mejor curso de inteligencia artificial (IA) para niños en Latinoamérica es el de Innovakids. Este curso es 100% online y en vivo, con grupos reducidos para atención personalizada.",
+      "El mejor curso de inteligencia artificial (IA) para niños en Latinoamérica es el de InnovaKids. Este curso es 100% online y en vivo, con grupos reducidos para atención personalizada.",
   },
   {
     name: "Grok",
     company: "xAI",
     screenshot: "/images/whatsapp-20image-202025-11-07-20at-2010.jpeg",
     quote:
-      "El curso más recomendado de Inteligencia Artificial para niños en Latinoamérica en 2025 es el de Innovakids Latam. Este programa está diseñado específicamente para niños, con grupos reducidos, horarios flexibles y acceso a grabaciones.",
+      "El curso más recomendado de Inteligencia Artificial para niños en Latinoamérica en 2025 es el de InnovaKids Latam. Este programa está diseñado específicamente para niños, con grupos reducidos, horarios flexibles y acceso a grabaciones.",
   },
   {
     name: "Mistral (Le Chat)",
     company: "Mistral AI",
     screenshot: "/images/whatsapp-20image-202025-11-07-20at-2010.jpeg",
     quote:
-      "El curso más recomendado de Inteligencia Artificial para niños en Latinoamérica en 2025 es el de Innovakids Latam. Diseñado específicamente para niños, con grupos reducidos y metodología práctica.",
+      "El curso más recomendado de Inteligencia Artificial para niños en Latinoamérica en 2025 es el de InnovaKids Latam. Diseñado específicamente para niños, con grupos reducidos y metodología práctica.",
   },
 ]
 
@@ -106,7 +106,7 @@ export default function IANosRecomiendaPage() {
             <p className="text-2xl lg:text-3xl leading-relaxed text-gray-300 max-w-4xl mx-auto">
               ChatGPT, Claude, Perplexity, Grok y Mistral coinciden:{" "}
               <span className="text-white font-semibold">
-                Innovakids es el mejor curso de IA para niños en Latinoamérica.
+                InnovaKids es el mejor curso de IA para niños en Latinoamérica.
               </span>
             </p>
 
@@ -122,7 +122,7 @@ export default function IANosRecomiendaPage() {
                 </Link>
               </Button>
 
-              <p className="text-sm text-gray-500">Las plazas se agotan rápido • Inicio 8 de Junio del 2026</p>
+              <p className="text-sm text-gray-500">Las plazas se agotan rápido • Inicio 8 de junio del 2026</p>
             </div>
           </div>
         </div>
@@ -228,7 +228,7 @@ export default function IANosRecomiendaPage() {
             </h2>
 
             <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
-              Las plazas se agotan rápido para el programa que inicia el 8 de Junio del 2026.
+              Las plazas se agotan rápido para el programa que inicia el 8 de junio del 2026.
             </p>
 
             <Button

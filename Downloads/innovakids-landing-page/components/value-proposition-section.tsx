@@ -246,7 +246,7 @@ const bonos: Lot[] = [
   { num: "A", icon: <IconDocManual />,    kicker: "Documento PDF · 64 pág.", title: "Manual del padre: IA segura en casa",             desc: "Guía visual para entender, acompañar y poner reglas claras sin ser el experto. Se lee en una tarde.",           value: 57  },
   { num: "B", icon: <IconDocPrompts />,   kicker: "Dossier PDF",              title: "200 prompts probados para tareas y proyectos",    desc: "Un catálogo listo para copiar y pegar. Matemáticas, ensayos, ciencias, presentaciones — ordenado por materia.", value: 37  },
   { num: "C", icon: <IconDocTemplates />, kicker: "Pack editorial Canva",     title: "Plantillas de portafolio, pitch y presentación",  desc: "Diseño premium listo para que tu hijo entregue trabajos que se ven de agencia, no de tarea de colegio.",         value: 49  },
-  { num: "D", icon: <IconDocReport />,    kicker: "Informe mensual · PDF",    title: "Reporte personalizado del progreso de tu hijo",   desc: "Un dossier cada mes con avances, proyectos entregados y próximos pasos. Sólo para padres InnovaKids.",           value: 160 },
+  { num: "D", icon: <IconDocReport />,    kicker: "Informe mensual · PDF",    title: "Reporte personalizado del progreso de tu hijo",   desc: "Un dossier cada mes con avances, proyectos entregados y próximos pasos. Solo para padres InnovaKids.",           value: 160 },
 ]
 
 const sumOf = (items: Lot[]) => items.reduce((a, it) => a + (typeof it.value === "number" ? it.value : 0), 0)
@@ -656,7 +656,7 @@ export function ValuePropositionSection() {
               {/* Bloque derecho — stats con count-up */}
               <div className="relative grid grid-cols-3 divide-x divide-[#1A1714]/10 border-t md:border-t-0 md:border-l border-[#1A1714]/12">
                 {[
-                  { n: 12,    suffix: "",      label: "Cupos totales" },
+                  { n: 15,    suffix: "",      label: "Cupos totales" },
                   { n: 5,     suffix: "",      label: "Niños por grupo" },
                   { n: null,  static: "8 – 17", label: "Rango de edad" },
                 ].map((s, i) => (
@@ -854,7 +854,7 @@ export function ValuePropositionSection() {
                     className="font-display italic leading-[1] tracking-[-0.01em]"
                     style={{ fontSize: "clamp(1.5rem, 3vw, 2.5rem)", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                   >
-                    “Por fin uso la IA<br className="hidden md:block" /> para algo mío.”
+                    "Por fin uso la IA<br className="hidden md:block" /> para algo mío."
                   </p>
                   <span className="font-mono-accent text-[9px] md:text-[10px] uppercase tracking-[0.24em] text-[#FAF7EF]/80 shrink-0">
                     Lámina 01
@@ -919,7 +919,7 @@ export function ValuePropositionSection() {
 
           {/* III — DOCUMENTS (bonos) */}
           <div className="mb-16 md:mb-20">
-            <SectionHead num="III." kicker="Anexo · Documentos premium incluidos" title="4 documentos que sólo recibes en esta cohorte" />
+            <SectionHead num="III." kicker="Anexo · Documentos premium incluidos" title="4 documentos que solo recibes en esta cohorte" />
             <div>{bonos.map((b, i) => <LotRow key={b.num} item={b} stagger={i * 80} />)}</div>
             <SubtotalRow label="Subtotal documentos premium" amount={subtotalBonos} />
           </div>
@@ -955,7 +955,7 @@ export function ValuePropositionSection() {
                       style={{ fontFamily: "ui-monospace, 'SFMono-Regular', monospace", fontSize: 13, letterSpacing: 6, textTransform: "uppercase", fontWeight: 600 }}
                     >
                       <textPath href="#vp-seal-circle">
-                        · Si no le gusta · te devolvemos el dinero · si no aprende · te devolvemos el dinero · 10 días · Innovakids ·
+                        · Si no le gusta · te devolvemos el dinero · si no aprende · te devolvemos el dinero · 10 días · InnovaKids ·
                       </textPath>
                     </text>
                   </svg>
@@ -1057,7 +1057,7 @@ export function ValuePropositionSection() {
                 <div className="flex items-start justify-between mb-10 md:mb-14 pb-6 border-b border-[#FAF7EF]/15">
                   <div>
                     <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-2">Factura · Recibo de cohorte</p>
-                    <p className="font-display italic text-2xl md:text-3xl leading-none">N.º 2026 / COHORTE MAYO</p>
+                    <p className="font-display italic text-2xl md:text-3xl leading-none">N.º 2026 / COHORTE JUNIO</p>
                   </div>
                   <div className="text-right">
                     <p className="font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#FAF7EF]/55 mb-1">Emitido</p>
@@ -1148,7 +1148,7 @@ export function ValuePropositionSection() {
                     </a>
 
                     <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-2">
-                      {["Garantía 10 días", "3 cuotas sin interés", "Llamada sin compromiso", "Solo 12 cupos / cohorte"].map((t) => (
+                      {["Garantía 10 días", "3 cuotas sin interés", "Llamada sin compromiso", "Solo 15 cupos / cohorte"].map((t) => (
                         <li key={t} className="flex items-start gap-2 font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.18em] text-[#FAF7EF]/70">
                           <span className="text-[#C96342] mt-[1px]">✓</span>
                           <span>{t}</span>
@@ -1182,7 +1182,7 @@ export function ValuePropositionSection() {
                     </div>
                   </div>
                   <p className="font-display italic text-sm md:text-base text-[#FAF7EF]/70 md:text-right max-w-[42ch]">
-                    “Si no le gusta a tu hijo o no aprende a usar la IA — te devolvemos el dinero.”
+                    "Si no le gusta a tu hijo o no aprende a usar la IA — te devolvemos el dinero."
                   </p>
                 </div>
               </div>

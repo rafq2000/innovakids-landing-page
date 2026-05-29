@@ -17,7 +17,7 @@ const courses = [
     subtitle: "Edición de Autor",
     description: "Dirección de Cine, Narrativa Mitológica y Estética Cinematográfica con IA",
     icon: Film,
-    color: "from-purple-600 to-pink-600",
+    color: "from-[#C96342] to-[#9A4428]",
     highlights: [
       "Viaje del Héroe y Estructura Mítica",
       "Dirección de Arte y Cinematografía",
@@ -26,7 +26,7 @@ const courses = [
     ],
     duration: "6 semanas",
     classes: "12 clases",
-    schedule: "2 clases/semana de 60 min",
+    schedule: "2 clases/semana de aprox. 60 min",
   },
   {
     id: "gaming",
@@ -34,7 +34,7 @@ const courses = [
     subtitle: "IA & Gameplay",
     description: "Lógica Heurística, Comportamiento Emergente y Diseño de Universos",
     icon: Gamepad2,
-    color: "from-blue-600 to-cyan-600",
+    color: "from-[#9A4428] to-[#C96342]",
     highlights: [
       "Entrenar tu propia IA con ML4Kids",
       "NPCs que hablan con ChatGPT",
@@ -43,7 +43,7 @@ const courses = [
     ],
     duration: "6 semanas",
     classes: "12 clases",
-    schedule: "2 clases/semana de 60 min",
+    schedule: "2 clases/semana de aprox. 60 min",
   },
   {
     id: "startup",
@@ -51,7 +51,7 @@ const courses = [
     subtitle: "IA Startup",
     description: "Emprendimiento de Impacto y Estrategia de Crecimiento 4.0",
     icon: Rocket,
-    color: "from-orange-600 to-red-600",
+    color: "from-[#B5522E] to-[#9A4428]",
     highlights: [
       "Crear tu Marca Mítica con IA",
       "Humanos Digitales como Embajadores",
@@ -60,7 +60,7 @@ const courses = [
     ],
     duration: "6 semanas",
     classes: "12 clases",
-    schedule: "2 clases/semana de 60 min",
+    schedule: "2 clases/semana de aprox. 60 min",
   },
   {
     id: "brain",
@@ -68,7 +68,7 @@ const courses = [
     subtitle: "Elite Study",
     description: "Neurociencia, Memoria Foto-Espacial y Gestión del Conocimiento",
     icon: Brain,
-    color: "from-green-600 to-emerald-600",
+    color: "from-[#C96342] to-[#B5522E]",
     highlights: [
       "Palacio Mental para Memoria Fotográfica",
       "Políglota IA: Aprende Idiomas sin Miedo",
@@ -77,7 +77,7 @@ const courses = [
     ],
     duration: "6 semanas",
     classes: "12 clases",
-    schedule: "2 clases/semana de 60 min",
+    schedule: "2 clases/semana de aprox. 60 min",
   },
 ]
 
@@ -100,7 +100,7 @@ export function UpcomingCoursesPremium() {
     setIsSubmitting(true)
     setError("")
 
-    console.log("[v0] Submitting waitlist form:", { ...formData, courseName: selectedCourse?.title })
+    // Form submission logged to Supabase
 
     try {
       const response = await fetch("/api/waitlist", {
@@ -112,9 +112,7 @@ export function UpcomingCoursesPremium() {
         }),
       })
 
-      console.log("[v0] Response status:", response.status)
       const data = await response.json()
-      console.log("[v0] Response data:", data)
 
       if (response.ok) {
         setIsSuccess(true)
@@ -142,23 +140,23 @@ export function UpcomingCoursesPremium() {
   }
 
   return (
-    <section className="py-24 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden">
+    <section className="py-24 bg-[#F2EDE0] relative overflow-hidden">
       {/* Animated background */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(120,119,198,0.15),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(236,72,153,0.15),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(201,99,66,0.08),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(201,99,66,0.05),transparent_50%)]" />
 
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-500/10 border border-cyan-500/20 mb-4">
-            <Sparkles className="w-4 h-4 text-cyan-400" />
-            <span className="text-cyan-400 text-sm font-medium">Próximamente</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C96342]/10 border border-[#C96342]/20 mb-4">
+            <Sparkles className="w-4 h-4 text-[#C96342]" />
+            <span className="text-[#C96342] text-sm font-medium">Proximamente</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-white text-balance">
-            Próximos Cursos de{" "}
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">Innovakids</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-[#1A1714] text-balance">
+            Proximos Cursos de{" "}
+            <span className="text-[#C96342]">InnovaKids</span>
           </h2>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto text-pretty">
+          <p className="text-xl text-[#5A5751] max-w-3xl mx-auto text-pretty">
             4 nuevos programas diseñados para llevar las habilidades de tus hijos al siguiente nivel
           </p>
         </div>
@@ -170,7 +168,7 @@ export function UpcomingCoursesPremium() {
             return (
               <div
                 key={course.id}
-                className="group relative bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 hover:border-slate-600 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/10"
+                className="group relative bg-[#FAF7EF] border border-[#E8E0D0] rounded-2xl p-8 hover:border-[#C96342]/40 transition-all duration-300 hover:shadow-2xl hover:shadow-[#C96342]/10"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Gradient Overlay */}
@@ -186,32 +184,32 @@ export function UpcomingCoursesPremium() {
                 {/* Content */}
                 <div className="space-y-4 relative z-10">
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-2 text-balance">{course.title}</h3>
+                    <h3 className="text-2xl font-bold text-[#1A1714] mb-2 text-balance">{course.title}</h3>
                     <p
                       className={`text-sm font-semibold bg-gradient-to-r ${course.color} bg-clip-text text-transparent mb-3`}
                     >
                       {course.subtitle}
                     </p>
-                    <p className="text-slate-300 text-pretty">{course.description}</p>
+                    <p className="text-[#5A5751] text-pretty">{course.description}</p>
                   </div>
 
                   {/* Stats */}
-                  <div className="flex flex-wrap gap-4 py-4 border-y border-slate-700/50">
+                  <div className="flex flex-wrap gap-4 py-4 border-y border-[#E8E0D0]">
                     <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-cyan-400" />
-                      <span className="text-sm text-slate-300">{course.duration}</span>
+                      <Clock className="w-4 h-4 text-[#C96342]" />
+                      <span className="text-sm text-[#5A5751]">{course.duration}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-cyan-400" />
-                      <span className="text-sm text-slate-300">{course.classes}</span>
+                      <Users className="w-4 h-4 text-[#C96342]" />
+                      <span className="text-sm text-[#5A5751]">{course.classes}</span>
                     </div>
                   </div>
 
                   {/* Highlights */}
                   <ul className="space-y-2">
                     {course.highlights.map((highlight, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
-                        <CheckCircle2 className="w-5 h-5 text-cyan-400 flex-shrink-0 mt-0.5" />
+                      <li key={i} className="flex items-start gap-2 text-sm text-[#5A5751]">
+                        <CheckCircle2 className="w-5 h-5 text-[#C96342] flex-shrink-0 mt-0.5" />
                         <span>{highlight}</span>
                       </li>
                     ))}
@@ -220,7 +218,7 @@ export function UpcomingCoursesPremium() {
                   {/* CTA */}
                   <Button
                     onClick={() => setSelectedCourse(course)}
-                    className={`w-full bg-gradient-to-r ${course.color} hover:opacity-90 text-white font-semibold py-6 rounded-xl transition-all duration-300 group-hover:scale-105`}
+                    className="w-full bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] font-semibold py-6 rounded-sm transition-all duration-300 group-hover:scale-105"
                   >
                     Unirme a la Lista de Espera
                   </Button>
@@ -231,22 +229,22 @@ export function UpcomingCoursesPremium() {
         </div>
 
         {/* Tools Section */}
-        <div className="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 text-center">
-          <h3 className="text-2xl font-bold text-white mb-4">Herramientas de IA de Clase Mundial</h3>
-          <p className="text-slate-300 mb-6 max-w-3xl mx-auto">
+        <div className="bg-[#FAF7EF] border border-[#E8E0D0] rounded-2xl p-8 text-center">
+          <h3 className="text-2xl font-bold text-[#1A1714] mb-4">Herramientas de IA de Clase Mundial</h3>
+          <p className="text-[#5A5751] mb-6 max-w-3xl mx-auto">
             En todos nuestros cursos utilizamos las mejores herramientas de Inteligencia Artificial
           </p>
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-400">
-            <span className="px-4 py-2 bg-slate-700/50 rounded-full">ChatGPT</span>
-            <span className="px-4 py-2 bg-slate-700/50 rounded-full">Leonardo.ai</span>
-            <span className="px-4 py-2 bg-slate-700/50 rounded-full">ElevenLabs</span>
-            <span className="px-4 py-2 bg-slate-700/50 rounded-full">Suno</span>
-            <span className="px-4 py-2 bg-slate-700/50 rounded-full">CapCut</span>
-            <span className="px-4 py-2 bg-slate-700/50 rounded-full">Canva</span>
-            <span className="px-4 py-2 bg-slate-700/50 rounded-full">ML4Kids</span>
-            <span className="px-4 py-2 bg-slate-700/50 rounded-full">Scratch</span>
-            <span className="px-4 py-2 bg-slate-700/50 rounded-full">Notion</span>
-            <span className="px-4 py-2 bg-slate-700/50 rounded-full">Y muchas más...</span>
+          <div className="flex flex-wrap justify-center gap-4 text-sm text-[#5A5751]">
+            <span className="px-4 py-2 bg-[#F2EDE0] border border-[#E8E0D0] rounded-full">ChatGPT</span>
+            <span className="px-4 py-2 bg-[#F2EDE0] border border-[#E8E0D0] rounded-full">Leonardo.ai</span>
+            <span className="px-4 py-2 bg-[#F2EDE0] border border-[#E8E0D0] rounded-full">ElevenLabs</span>
+            <span className="px-4 py-2 bg-[#F2EDE0] border border-[#E8E0D0] rounded-full">Suno</span>
+            <span className="px-4 py-2 bg-[#F2EDE0] border border-[#E8E0D0] rounded-full">CapCut</span>
+            <span className="px-4 py-2 bg-[#F2EDE0] border border-[#E8E0D0] rounded-full">Canva</span>
+            <span className="px-4 py-2 bg-[#F2EDE0] border border-[#E8E0D0] rounded-full">ML4Kids</span>
+            <span className="px-4 py-2 bg-[#F2EDE0] border border-[#E8E0D0] rounded-full">Scratch</span>
+            <span className="px-4 py-2 bg-[#F2EDE0] border border-[#E8E0D0] rounded-full">Notion</span>
+            <span className="px-4 py-2 bg-[#F2EDE0] border border-[#E8E0D0] rounded-full">Y muchas mas...</span>
           </div>
         </div>
       </div>
@@ -384,7 +382,7 @@ export function UpcomingCoursesPremium() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700"
+                  className="w-full bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] rounded-sm"
                 >
                   {isSubmitting ? "Registrando..." : "Unirme a la Lista de Espera"}
                 </Button>

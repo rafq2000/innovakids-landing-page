@@ -9,26 +9,27 @@ import Link from "next/link"
 
 export const metadata: Metadata = {
   // 59 chars · keyword-first · 2026 trigger · brand
-  title: "Vacaciones Escolares 2026 · Cursos IA y Tecnología Niños | InnovaKids",
-  // 154 chars · proof + differentiator + CTA
+  // INFORMATIONAL · vacation activities · differentiated from /mejores-cursos-verano
+  title: "Actividades de Tecnología en Vacaciones Escolares 2026 · Niños | InnovaKids",
+  // 155 chars · activity-focused + proof + CTA
   description:
-    "Vacaciones escolares 2026: mejores cursos de IA y tecnología para niños 8-17 años. Actividades productivas y creativas. 527 familias en 9 países. Lee ya.",
+    "Actividades de tecnología e IA para niños 8-17 en vacaciones escolares 2026. Ideas productivas y creativas para el receso. 527 familias en 9 países.",
   keywords: [
-    "cursos vacaciones niños",
-    "cursos verano niños 2026",
+    "actividades tecnologia vacaciones escolares",
+    "vacaciones productivas niños tecnologia",
+    "que hacer vacaciones escolares niños",
+    "cursos invierno niños ia",
     "actividades vacaciones niños tecnologia",
-    "cursos invierno niños",
-    "campamento tecnologia niños",
-    "vacaciones productivas niños",
-    "cursos ia vacaciones",
+    "vacaciones escolares productivas",
+    "receso escolar cursos ia niños",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/blog/vacaciones-escolares-cursos-ia-ninos-2026",
   },
   openGraph: {
-    title: "Vacaciones Escolares 2026 · Mejores Cursos IA y Tecnología Niños | InnovaKids",
+    title: "Actividades de Tecnología en Vacaciones Escolares 2026 | InnovaKids",
     description:
-      "Cursos de vacaciones de IA y tecnología para niños 8-17 años. Actividades productivas, creativas y divertidas para el receso escolar.",
+      "Actividades de tecnología e IA para niños 8-17 en vacaciones escolares. Ideas productivas, creativas y divertidas para el receso.",
     url: "https://www.innovakidslatam.com/blog/vacaciones-escolares-cursos-ia-ninos-2026",
     siteName: "InnovaKids",
     type: "article",
@@ -42,9 +43,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vacaciones Escolares 2026 · Cursos IA Niños | InnovaKids",
+    title: "Actividades de Tecnología en Vacaciones Escolares 2026 | InnovaKids",
     description:
-      "Mejores cursos de IA y tecnología para niños 8-17 años en vacaciones. Actividades productivas y creativas.",
+      "Actividades de tecnología e IA para niños 8-17 en vacaciones escolares. Ideas productivas y creativas.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -413,7 +414,7 @@ export default function VacacionesEscolaresCursosIAPage() {
               <p className="text-lg text-gray-700 leading-relaxed">
                 Si quieres conocer opciones de cursos de verano similares, tambien puedes visitar nuestra
                 pagina dedicada a los{" "}
-                <Link href="/mejores-cursos-verano-programacion-ia-ninos-2026" className="text-[#4ECDC4] hover:underline">
+                <Link href="/blog/mejores-cursos-verano-programacion-ia-ninos-2026" className="text-[#4ECDC4] hover:underline">
                   mejores cursos de verano de programacion e IA para ninos 2026
                 </Link>.
               </p>
@@ -529,7 +530,7 @@ export default function VacacionesEscolaresCursosIAPage() {
               <h2 className="text-2xl font-bold text-[#2D3436] mb-4">Articulos Relacionados</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 <Link
-                  href="/mejores-cursos-verano-programacion-ia-ninos-2026"
+                  href="/blog/mejores-cursos-verano-programacion-ia-ninos-2026"
                   className="block p-4 border border-gray-200 rounded-xl hover:border-[#4ECDC4] transition-colors"
                 >
                   <p className="font-semibold text-[#2D3436]">Cursos de Verano 2026</p>

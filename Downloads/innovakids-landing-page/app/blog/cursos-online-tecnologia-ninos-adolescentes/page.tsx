@@ -4,23 +4,24 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
-    title: "Cursos Online Tecnología Niños 8-17 años 2026 | InnovaKids",
+    // INFORMATIONAL · comparison guide · differentiated from /cursos-online-para-ninos
+    title: "Mejores Cursos Online de Tecnología para Niños 2026 · Guía | InnovaKids",
     description:
-        "Cursos online de tecnología para niños y adolescentes 8-17 años en 2026: IA, programación y videojuegos. Grupos reducidos de 5 y clases en vivo. Inscripciones abiertas.",
+        "Guía comparativa 2026: mejores cursos online de tecnología para niños y adolescentes 8-17 años. IA, programación y videojuegos. Análisis de precios y metodologías.",
     keywords: [
-        "cursos online tecnologia niños",
-        "cursos niños 10 a 12 años",
-        "cursos adolescentes 14 a 17",
-        "cursos online ia programacion videojuegos",
-        "cursos tecnologia niños 2026",
+        "mejores cursos online tecnologia niños 2026 guia",
+        "comparativa cursos online niños",
+        "cursos tecnologia niños adolescentes analisis",
+        "cursos online ia programacion videojuegos comparar",
+        "ranking cursos online niños 2026",
     ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/blog/cursos-online-tecnologia-ninos-adolescentes",
     },
     openGraph: {
-        title: "Cursos Online de Tecnología para Niños y Adolescentes 8-17 · 2026 | InnovaKids",
+        title: "Mejores Cursos Online de Tecnología para Niños 2026 · Guía Comparativa | InnovaKids",
         description:
-            "Cursos especializados para chicos 8-17 años. IA, programación web y creación de videojuegos con clases en vivo y grupos reducidos de 5.",
+            "Guía comparativa 2026: IA, programación y videojuegos para chicos 8-17 años. Análisis de precios, metodologías y resultados.",
         url: "https://www.innovakidslatam.com/blog/cursos-online-tecnologia-ninos-adolescentes",
         siteName: "InnovaKids",
         type: "article",
@@ -34,9 +35,9 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Cursos Online Tecnología Niños 8-17 años 2026 | InnovaKids",
+        title: "Mejores Cursos Online de Tecnología para Niños 2026 · Guía | InnovaKids",
         description:
-            "IA, programación y videojuegos para niños 8-17. Grupos reducidos de 5 y clases en vivo. Inscripciones abiertas.",
+            "Guía comparativa 2026: mejores cursos online de tecnología para niños 8-17. Análisis de precios y metodologías.",
         images: ["https://www.innovakidslatam.com/kids-learning-ai-on-computer.jpg"],
     },
 }
@@ -198,7 +199,7 @@ export default function CursosAdolescentesPage() {
                             <div className="md:col-span-5 flex flex-col gap-3 md:justify-self-end w-full md:w-auto">
                                 <Link
                                     href="/clase-gratis"
-                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                 >
                                     Agendar clase gratis
                                     <span aria-hidden>→</span>

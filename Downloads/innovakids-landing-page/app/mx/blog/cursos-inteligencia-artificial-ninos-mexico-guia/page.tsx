@@ -1,4 +1,3 @@
-import { generateHreflangs } from "@/lib/seo-config"
 import type { Metadata } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -6,7 +5,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    robots: { index: false, follow: true },
+    robots: { index: true, follow: true },
     title: "Cursos de IA para Niños en México (Guía 2026)",
     description:
         "Guía Completa: Lo que todo padre mexicano debe saber antes de inscribir a su hijo en un curso de IA. Precios en pesos, herramientas, seguridad y mejores opciones.",
@@ -26,7 +25,6 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: "https://www.innovakidslatam.com/mx/blog/cursos-inteligencia-artificial-ninos-mexico-guia",
-        languages: generateHreflangs("home"),
     },
 }
 
@@ -92,7 +90,7 @@ const projectPlan = [
 ]
 
 const includes = [
-    "10 clases en vivo de 60 minutos cada una",
+    "10 clases en vivo de aproximadamente 60 minutos cada una",
     "Grupos de máximo 5 niños (atención personalizada real)",
     "10 proyectos completos para su portfolio",
     "Acceso de por vida a grabaciones",
@@ -392,7 +390,7 @@ export default function GuiaCompletaPage() {
                                         <div className="md:col-span-5 flex flex-col gap-3 md:justify-self-end w-full md:w-auto">
                                             <Link
                                                 href="/#sesion-estrategica"
-                                                className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                                className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                             >
                                                 Agendar evaluación gratis
                                                 <span aria-hidden>→</span>
@@ -413,8 +411,8 @@ export default function GuiaCompletaPage() {
                                     <div className="grid md:grid-cols-3 gap-px bg-[#1A1714]/12 border border-[#1A1714]/12">
                                         {[
                                             { href: "/mx", title: "InnovaKids México", desc: "Página país completa" },
-                                            { href: "/mx/cursos-ia-ninos-mexico", title: "Cursos IA niños México", desc: "Programa por ciudad" },
-                                            { href: "/mx/clases-ia-ninos-cdmx", title: "Clases IA en CDMX", desc: "Clases en vivo para la capital" },
+                                            { href: "/mx", title: "Cursos IA niños México", desc: "Programa por ciudad" },
+                                            { href: "/mx/cdmx/cursos/inteligencia-artificial", title: "Clases IA en CDMX", desc: "Clases en vivo para la capital" },
                                         ].map((l) => (
                                             <Link key={l.href} href={l.href} className="bg-[#FAF7EF] p-6 hover:bg-[#F2EDE0]/50 transition-colors group">
                                                 <p className="text-[11px] uppercase tracking-[0.24em] text-[#C96342]/70 group-hover:text-[#C96342] font-semibold mb-2">Relacionado</p>

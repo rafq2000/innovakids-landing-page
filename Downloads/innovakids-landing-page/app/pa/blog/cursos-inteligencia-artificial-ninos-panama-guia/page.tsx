@@ -6,7 +6,7 @@ import { Target } from "lucide-react"
 
 export const metadata: Metadata = {
   robots: {
-    index: false,
+    index: true,
     follow: true,
   },
   title: "Vibe Coding en Panamá: Guía Completa para Padres 2026",
@@ -80,7 +80,7 @@ export default function BlogCursosIANinosPanama() {
               </ul>
 
               <h2>Edad Recomendada</h2>
-              <p>En InnovaKids trabajamos con niños de 8 a 14 años. Esta es la edad ideal porque:</p>
+              <p>En InnovaKids trabajamos con niños de 8 a 17 años. Esta es la edad ideal porque:</p>
               <ul>
                 <li>Ya tienen habilidades de lectura y escritura desarrolladas</li>
                 <li>Pueden seguir instrucciones complejas</li>
@@ -104,7 +104,7 @@ export default function BlogCursosIANinosPanama() {
                 El programa completo de InnovaKids cuesta <strong>$267 USD</strong> e incluye:
               </p>
               <ul>
-                <li>10 clases en vivo de 60 minutos cada una</li>
+                <li>10 clases en vivo de aproximadamente 60 minutos cada una</li>
                 <li>Grupos de máximo 5 niños (atención personalizada)</li>
                 <li>Acceso a 10+ herramientas de IA profesionales</li>
                 <li>Proyectos reales publicables</li>
@@ -211,13 +211,13 @@ export default function BlogCursosIANinosPanama() {
               <h3 className="mb-4 text-xl font-bold">Artículos Relacionados</h3>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  href="/pa/cursos-ia-ninos-panama"
+                  href="/pa"
                   className="rounded-full bg-card px-4 py-2 text-sm hover:bg-primary hover:text-primary-foreground"
                 >
                   Cursos IA Niños Panamá
                 </Link>
                 <Link
-                  href="/pa/clases-ia-ninos-panama-city"
+                  href="/pa/panama-city/cursos/inteligencia-artificial"
                   className="rounded-full bg-card px-4 py-2 text-sm hover:bg-primary hover:text-primary-foreground"
                 >
                   Clases IA Ciudad de Panamá

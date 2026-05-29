@@ -16,7 +16,7 @@ const testimonials = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-07%20at%2010.14.10%20PM%20%283%29-Bdow2KWHf2ihYRjPf9rpHNL0OTiGfD.jpeg",
     pull: "Cada clase es una aventura para él. ¡Un 10!",
     content:
-      "Innovakids ha logrado que mi hijo de 9 años entienda conceptos de IA de una forma súper divertida. Cada clase es una aventura para él. ¡Un 10!",
+      "InnovaKids ha logrado que mi hijo de 9 años entienda conceptos de IA de una forma súper divertida. Cada clase es una aventura para él. ¡Un 10!",
   },
   {
     name: "Ana S.",
@@ -25,7 +25,7 @@ const testimonials = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-07%20at%2010.14.11%20PM%20%281%29-SXb1h2u9atwbW2cktqrWWvZVHsOTda.jpeg",
     pull: "No para de hablar del curso de IA.",
     content:
-      "Mi hija no para de hablar del curso de IA de Innovakids. ¡Está fascinada con cómo los robots aprenden! Gracias por despertar su curiosidad.",
+      "Mi hija no para de hablar del curso de IA de InnovaKids. ¡Está fascinada con cómo los robots aprenden! Gracias por despertar su curiosidad.",
   },
   {
     name: "Andrés V.",
@@ -34,7 +34,7 @@ const testimonials = [
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-07%20at%2011.08.32%20PM-PJhXdQgGlR928TCZ56nsRckD911PBF.jpeg",
     pull: "Ahora me pregunta cómo funcionan los algoritmos.",
     content:
-      "Increíble el curso de IA de Innovakids. Mi hijo, que antes no mostraba mucho interés en la tecnología, ahora me pregunta cómo funcionan los algoritmos. ¡Es genial verlo tan motivado!",
+      "Increíble el curso de IA de InnovaKids. Mi hijo, que antes no mostraba mucho interés en la tecnología, ahora me pregunta cómo funcionan los algoritmos. ¡Es genial verlo tan motivado!",
   },
 ]
 
@@ -43,7 +43,7 @@ const aiRecommendations = [
     name: "ChatGPT",
     screenshot:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-07%20at%2010.14.09%20PM-bOhUA0PLEUpmOsO6PVdeyMR3TdBfIF.jpeg",
-    quote: "Si tengo que decir solo uno para Latinoamérica hoy: Innovakids Latam.",
+    quote: "Si tengo que decir solo uno para Latinoamérica hoy: InnovaKids Latam.",
   },
   {
     name: "Claude",
@@ -77,8 +77,7 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
   return (
     <section
       id="testimonios"
-      className="bg-[#F5F1E8] text-[#2F2F2C] py-28 md:py-40"
-      style={{ fontFamily: "'Charter', 'Georgia', 'Cambria', 'Times New Roman', serif" }}
+      className="font-display bg-[#F5F1E8] text-[#2F2F2C] py-28 md:py-40"
     >
       <div className="max-w-[1100px] mx-auto px-6 md:px-10">
 
@@ -206,8 +205,7 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
                   </span>
 
                   <span
-                    className="col-span-3 md:col-span-2 text-lg md:text-2xl text-[#2F2F2C] font-normal tracking-tight"
-                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                    className="font-display col-span-3 md:col-span-2 text-lg md:text-2xl text-[#2F2F2C] font-normal tracking-tight"
                   >
                     {ai.name}
                   </span>

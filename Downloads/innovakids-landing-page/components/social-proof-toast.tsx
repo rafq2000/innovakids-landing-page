@@ -6,18 +6,36 @@ interface ToastEntry {
   name: string
   country: string
   action: string
-  time: string
+}
+
+function generateRelativeTime(): string {
+  const offsetMinutes = Math.floor(Math.random() * 118) + 2 // 2–120 min
+  if (offsetMinutes < 60) {
+    return `hace ${offsetMinutes} min`
+  }
+  const hours = Math.floor(offsetMinutes / 60)
+  return `hace ${hours} h`
 }
 
 const DATA: ToastEntry[] = [
-  { name: "María G.", country: "Chile", action: "reservó su clase gratis", time: "hace 12 min" },
-  { name: "Ana L.", country: "México", action: "inscribió a su hijo", time: "hace 47 min" },
-  { name: "Carolina P.", country: "Colombia", action: "agendó sesión de diagnóstico", time: "hace 2 horas" },
-  { name: "Fernanda R.", country: "Argentina", action: "reservó su clase gratis", time: "hace 3 horas" },
-  { name: "Lucía M.", country: "España", action: "inscribió a sus 2 hijos", time: "hace 5 horas" },
-  { name: "Valentina S.", country: "Perú", action: "agendó sesión de diagnóstico", time: "hace 6 horas" },
-  { name: "Camila D.", country: "Ecuador", action: "reservó su clase gratis", time: "hace 8 horas" },
-  { name: "Daniela F.", country: "Costa Rica", action: "inscribió a su hija", time: "hace 1 día" },
+  { name: "María G.", country: "Chile", action: "reservó su clase gratis" },
+  { name: "Ana L.", country: "México", action: "inscribió a su hijo" },
+  { name: "Carolina P.", country: "Colombia", action: "agendó sesión de diagnóstico" },
+  { name: "Fernanda R.", country: "Argentina", action: "reservó su clase gratis" },
+  { name: "Lucía M.", country: "España", action: "inscribió a sus 2 hijos" },
+  { name: "Valentina S.", country: "Perú", action: "agendó sesión de diagnóstico" },
+  { name: "Camila D.", country: "Ecuador", action: "reservó su clase gratis" },
+  { name: "Daniela F.", country: "Costa Rica", action: "inscribió a su hija" },
+  { name: "Sofía T.", country: "Panamá", action: "reservó su clase gratis" },
+  { name: "Isabella M.", country: "Uruguay", action: "inscribió a su hijo" },
+  { name: "Paula R.", country: "Bolivia", action: "agendó sesión de diagnóstico" },
+  { name: "Andrea C.", country: "Paraguay", action: "reservó su clase gratis" },
+  { name: "Gabriela H.", country: "Rep. Dominicana", action: "inscribió a su hija" },
+  { name: "Laura V.", country: "Guatemala", action: "reservó su clase gratis" },
+  { name: "Natalia B.", country: "Honduras", action: "agendó sesión de diagnóstico" },
+  { name: "Claudia S.", country: "El Salvador", action: "inscribió a su hijo" },
+  { name: "Elena P.", country: "Estados Unidos", action: "reservó su clase gratis" },
+  { name: "Mariana K.", country: "Nicaragua", action: "inscribió a sus 2 hijos" },
 ]
 
 const SESSION_KEY = "ik_spt_count"
@@ -43,7 +61,7 @@ function isPastCalendly(): boolean {
 export function SocialProofToast() {
   const [visible, setVisible] = useState(false)
   const [leaving, setLeaving] = useState(false)
-  const [current, setCurrent] = useState<ToastEntry | null>(null)
+  const [current, setCurrent] = useState<(ToastEntry & { time: string }) | null>(null)
 
   const queueRef = useRef<ToastEntry[]>([])
   const shownCountRef = useRef(0)
@@ -70,7 +88,7 @@ export function SocialProofToast() {
     }
 
     const entry = queueRef.current.shift()!
-    setCurrent(entry)
+    setCurrent({ ...entry, time: generateRelativeTime() })
     setLeaving(false)
     setVisible(true)
 
@@ -146,16 +164,14 @@ export function SocialProofToast() {
 
       {/* Label */}
       <p
-        className="text-[#C96342] uppercase tracking-[0.24em] mb-2 leading-none"
-        style={{ fontFamily: "'IBM Plex Mono', 'Courier New', monospace", fontSize: "10px" }}
+        className="font-mono-accent text-[#C96342] uppercase tracking-[0.24em] mb-2 leading-none text-[10px]"
       >
         Actividad reciente
       </p>
 
       {/* Main message */}
       <p
-        className="text-[#FAF7EF] text-base leading-snug"
-        style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+        className="font-display text-[#FAF7EF] text-base leading-snug"
       >
         <strong className="font-semibold">{current.name}</strong> de {current.country}{" "}
         {current.action}
@@ -163,8 +179,7 @@ export function SocialProofToast() {
 
       {/* Time ago */}
       <p
-        className="mt-2 text-[#FAF7EF]/40 leading-none"
-        style={{ fontFamily: "'IBM Plex Mono', 'Courier New', monospace", fontSize: "9px" }}
+        className="font-mono-accent mt-2 text-[#FAF7EF]/40 leading-none text-[9px]"
       >
         {current.time}
       </p>

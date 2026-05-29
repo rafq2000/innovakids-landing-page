@@ -1,7 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server"
 
 // Only allow these exact amounts — prevents $0.01 attacks
-const VALID_AMOUNTS = [20, 27, 50, 120, 177, 180, 240, 267, 360, 480, 494, 691, 788]
+const VALID_AMOUNTS = [27, 120, 177, 180, 240, 267, 360, 480, 494, 691, 788]
 
 export async function POST(request: NextRequest) {
   try {
@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
           },
         ],
         application_context: {
-          brand_name: "Innovakids",
+          brand_name: "InnovaKids",
           landing_page: "NO_PREFERENCE",
           user_action: "PAY_NOW",
           shipping_preference: "NO_SHIPPING",

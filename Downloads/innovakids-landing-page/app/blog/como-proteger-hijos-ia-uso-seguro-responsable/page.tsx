@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   description:
     "Guía para padres sobre uso seguro de IA en niños 8-17 años: supervisa, protege la privacidad y enseña uso responsable. Probada por 527 familias. Lee ya.",
   keywords: [
-    "ia segura para niños",
+    "seguridad digital niños",
     "proteger hijos inteligencia artificial",
     "uso responsable ia niños",
-    "seguridad ia niños",
+    "ia segura para niños",
     "privacidad ia niños",
     "supervisar ia hijos",
-    "como enseñar ia a mis hijos",
+    "peligros ia niños como evitar",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/blog/como-proteger-hijos-ia-uso-seguro-responsable",

@@ -20,6 +20,11 @@ export function Navigation({ countryCode }: NavigationProps) {
   }, [])
 
   useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : ""
+    return () => { document.body.style.overflow = "" }
+  }, [isOpen])
+
+  useEffect(() => {
     if (!orgOpen) return
     const onClick = (e: MouseEvent) => {
       if (orgRef.current && !orgRef.current.contains(e.target as Node)) {
@@ -47,6 +52,7 @@ export function Navigation({ countryCode }: NavigationProps) {
     { href: `${basePath}/metodologia-aprender-creando`, label: "Metodología" },
     { href: `${basePath}/resultados`, label: "Resultados" },
     { href: "/blog", label: "Blog" },
+    { href: "/precios", label: "Precios" },
   ]
 
   const orgLinks = [
@@ -138,8 +144,7 @@ export function Navigation({ countryCode }: NavigationProps) {
                           className="group block px-5 py-4 border-b border-[#2F2F2C]/8 last:border-b-0 hover:bg-[#F5F1E8] transition-colors"
                         >
                           <p
-                            className="text-lg text-[#2F2F2C] group-hover:text-[#C96342] transition-colors"
-                            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                            className="font-display text-lg text-[#2F2F2C] group-hover:text-[#C96342] transition-colors"
                           >
                             {org.label}
                           </p>
@@ -165,7 +170,7 @@ export function Navigation({ countryCode }: NavigationProps) {
               href={calendlyUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-5 py-2.5 text-sm font-semibold rounded-sm transition-colors"
+              className="inline-flex items-center bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-5 py-2.5 text-sm font-semibold rounded-sm transition-colors"
             >
               Agendar evaluación
             </a>
@@ -206,8 +211,7 @@ export function Navigation({ countryCode }: NavigationProps) {
                     className="block py-3 px-3 rounded-sm hover:bg-[#2F2F2C]/5 transition-colors min-h-[44px]"
                   >
                     <p
-                      className="text-base text-[#2F2F2C] hover:text-[#C96342]"
-                      style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                      className="font-display text-base text-[#2F2F2C] hover:text-[#C96342]"
                     >
                       {org.label}
                     </p>
@@ -223,7 +227,7 @@ export function Navigation({ countryCode }: NavigationProps) {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="inline-flex items-center justify-center bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-5 py-3 text-sm font-semibold rounded-sm mt-3 transition-colors"
+                className="inline-flex items-center justify-center bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-5 py-3 text-sm font-semibold rounded-sm mt-3 transition-colors"
               >
                 Agendar evaluación
               </a>

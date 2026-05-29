@@ -1,4 +1,3 @@
-import { generateHreflangs } from "@/lib/seo-config"
 import type { Metadata } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -6,7 +5,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    robots: { index: false, follow: true },
+    robots: { index: true, follow: true },
     title: "Cursos de IA para Niños en Venezuela (Guía 2026)",
     description:
         "Guía Completa: Lo que todo padre venezolano debe saber antes de inscribir a su hijo en un curso de IA. Precios, herramientas, seguridad y mejores opciones.",
@@ -26,7 +25,6 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: "https://www.innovakidslatam.com/ve/blog/cursos-inteligencia-artificial-ninos-venezuela-guia",
-        languages: generateHreflangs("home"),
     },
 }
 
@@ -116,7 +114,7 @@ export default function BlogVenezuelaGuiaPage() {
 
                             <h2>¿Qué edad es ideal para empezar?</h2>
                             <p>
-                                Los cursos de InnovaKids están diseñados para niños de <strong>8 a 14 años</strong>. Esta es la edad perfecta porque
+                                Los cursos de InnovaKids están diseñados para niños de <strong>8 a 17 años</strong>. Esta es la edad perfecta porque
                                 los niños ya tienen capacidad de abstracción pero mantienen la curiosidad y creatividad necesarias.
                             </p>
 
@@ -165,7 +163,7 @@ export default function BlogVenezuelaGuiaPage() {
                                 <div className="md:col-span-5 flex flex-col gap-3 md:justify-self-end w-full md:w-auto">
                                     <Link
                                         href="/clase-gratis"
-                                        className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                        className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                     >
                                         Agendar evaluación gratis
                                         <span aria-hidden>→</span>

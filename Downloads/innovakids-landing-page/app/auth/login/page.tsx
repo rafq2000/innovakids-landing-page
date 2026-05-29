@@ -42,7 +42,7 @@ export default function LoginPage() {
         router.push("/alumnos")
       }
     } catch (error: any) {
-      setError(error.message || "Error al iniciar sesión")
+      setError("Email o contraseña incorrectos")
     } finally {
       setIsLoading(false)
     }
@@ -53,13 +53,13 @@ export default function LoginPage() {
       <div className="w-full max-w-md">
         <div className="mb-8 text-center">
           <Link href="/">
-            <Image src="/logo-innovakids.png" alt="Innovakids" width={180} height={64} className="mx-auto mb-4 h-16 w-auto" priority />
+            <Image src="/logo-innovakids.png" alt="InnovaKids" width={180} height={64} className="mx-auto mb-4 h-16 w-auto" priority />
           </Link>
         </div>
         <Card>
           <CardHeader>
             <CardTitle className="text-2xl">Iniciar Sesión</CardTitle>
-            <CardDescription>Ingresa a tu cuenta de Innovakids</CardDescription>
+            <CardDescription>Ingresa a tu cuenta de InnovaKids</CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleLogin}>

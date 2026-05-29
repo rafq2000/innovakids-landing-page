@@ -4,7 +4,7 @@ const nextConfig = {
   // typescript.ignoreBuildErrors / eslint.ignoreDuringBuilds intentionally removed (2026-04).
   images: {
     unoptimized: false,
-    formats: ['image/webp'],
+    formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     remotePatterns: [
@@ -43,12 +43,12 @@ const nextConfig = {
             key: 'Content-Security-Policy',
             value: [
               "default-src 'self'",
-              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://js.stripe.com https://www.paypal.com https://www.googletagmanager.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://connect.facebook.net https://assets.calendly.com https://cdn.jsdelivr.net https://va.vercel-scripts.com",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.paypal.com https://www.googletagmanager.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://connect.facebook.net https://assets.calendly.com https://cdn.jsdelivr.net https://va.vercel-scripts.com",
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://assets.calendly.com",
               "img-src 'self' data: blob: https: http:",
               "font-src 'self' https://fonts.gstatic.com data:",
-              "connect-src 'self' https://*.supabase.co https://api.stripe.com https://api.emailjs.com https://api.mercadopago.com https://www.google-analytics.com https://www.google.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com",
-              "frame-src 'self' https://js.stripe.com https://www.paypal.com https://calendly.com https://www.youtube.com https://www.google.com",
+              "connect-src 'self' https://*.supabase.co https://api.emailjs.com https://api.mercadopago.com https://www.google-analytics.com https://www.google.com https://googleads.g.doubleclick.net https://www.googleadservices.com https://calendly.com https://va.vercel-scripts.com https://vitals.vercel-insights.com",
+              "frame-src 'self' https://www.paypal.com https://calendly.com https://www.youtube.com https://www.google.com",
               "object-src 'none'",
               "base-uri 'self'",
               "form-action 'self'",

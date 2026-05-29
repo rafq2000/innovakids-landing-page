@@ -12,7 +12,7 @@ export function CTASection() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-green-500 via-green-600 to-green-700 py-20 md:py-32">
+    <section className="relative overflow-hidden bg-[#C96342] py-20 md:py-32">
       {/* Background Pattern */}
       <div className="pointer-events-none absolute inset-0 opacity-20">
         <div className="absolute right-0 top-0 h-96 w-96 rounded-full bg-white blur-3xl" />
@@ -39,7 +39,7 @@ export function CTASection() {
             <Button
               size="lg"
               onClick={() => scrollToSection("sesion-estrategica")}
-              className="group h-16 bg-white px-12 text-xl font-bold text-green-600 shadow-2xl transition-all hover:scale-105 hover:bg-gray-100"
+              className="group h-16 bg-white px-12 text-xl font-bold text-[#C96342] shadow-2xl transition-all hover:scale-105 hover:bg-gray-100"
             >
               ¡Agendar Sesión de Diagnóstico Ahora!
               <ArrowRight className="ml-2 h-6 w-6 transition-transform group-hover:translate-x-1" />

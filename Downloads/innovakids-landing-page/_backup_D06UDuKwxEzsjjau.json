@@ -1,0 +1,169 @@
+{
+  "data": {
+    "updatedAt": "2026-05-02T05:47:56.000Z",
+    "createdAt": "2026-05-02T05:41:32.678Z",
+    "id": "D06UDuKwxEzsjjau",
+    "name": "InnovaKids \u2014 Pendientes 8AM (auto-desactiva)",
+    "description": null,
+    "active": true,
+    "isArchived": false,
+    "nodes": [
+      {
+        "id": "trigger-8am",
+        "name": "Disparo 8AM",
+        "type": "n8n-nodes-base.scheduleTrigger",
+        "typeVersion": 1.1,
+        "position": [
+          200,
+          300
+        ],
+        "parameters": {
+          "rule": {
+            "interval": [
+              {
+                "field": "cronExpression",
+                "expression": "0 8 * * *"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "code-8am",
+        "name": "Enviar a Pendientes",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          450,
+          300
+        ],
+        "parameters": {
+          "jsCode": "// Send Pendientes 8AM \u2014 respuesta a leads sin atencion\nconst pendientes = [{\"phone\": \"522281388295\", \"nombre\": \"Liz\", \"state\": \"NEW\", \"lastText\": \"Hola, quiero saber si mi hijo califica para InnovaKids.\", \"lastIn\": \"2026-04-30T00:00:52.491Z\"}, {\"phone\": \"59173085464\", \"nombre\": \"Dam\", \"state\": \"NEW\", \"lastText\": \"Buenas noches tenia programada mi reuni\u00f3n para hoy a las 20:\", \"lastIn\": \"2026-04-30T00:44:18.932Z\"}];\nconst YCLOUD_KEY = \"b0bdbae389901432af2b47d9c6a4dcbe\";\nconst FROM       = \"56964754219\";\nconst N8N_URL    = \"https://quirky-thompson.74-208-238-121.plesk.page\";\nconst WF_ID_SELF = $workflow.id;\n\nconst resultados = [];\n\nfor (const lead of pendientes) {\n  const n  = lead.nombre ? lead.nombre : '';\n  const saludo = n ? ('Hola ' + n + '! ') : 'Hola! ';\n\n  // Mensaje diferenciado segun contexto del lead\n  let msg;\n  const lastText = (lead.lastText || '').toLowerCase();\n  if (lastText.includes('reunion') || lastText.includes('reuni\u00f3n') || lastText.includes('programada')) {\n    msg = saludo + 'Soy Francisca de InnovaKids \ud83d\ude4b\\u200d\\u2640\\ufe0f\\n' +\n          'Vi que escribiste sobre tu reuni\u00f3n y quiero asegurarme de que quedaste bien atendido/a.\\n' +\n          '\u00bfPudiste agendar tu evaluaci\u00f3n gratuita? \u00bfEn qu\u00e9 te puedo ayudar?';\n  } else if (lastText.includes('pagar') || lastText.includes('pague') || lastText.includes('300') || lastText.includes('pagu\u00e9')) {\n    msg = saludo + 'Soy Francisca de InnovaKids \ud83d\ude0a\\n' +\n          'Vi tu mensaje y quiero resolverlo personalmente.\\n' +\n          '\u00bfMe cuentas qu\u00e9 pas\u00f3 para ayudarte de inmediato?';\n  } else {\n    msg = saludo + 'Soy Francisca de InnovaKids \ud83d\ude4b\\u200d\\u2640\\ufe0f\\n' +\n          'Vi que me escribiste y quiero asegurarme de responderte.\\n' +\n          '\u00bfEn qu\u00e9 te puedo ayudar con el programa de IA para tu hijo/a?';\n  }\n\n  try {\n    const resp = await $helpers.httpRequest({\n      method:  'POST',\n      url:     'https://api.ycloud.com/v2/whatsapp/messages',\n      headers: { 'Content-Type': 'application/json', 'X-API-Key': YCLOUD_KEY },\n      body: JSON.stringify({ from: FROM, to: lead.phone, type: 'text', text: { body: msg } }),\n    });\n    console.log('[SendPendientes] OK', lead.phone, resp.id || '');\n    resultados.push({ phone: lead.phone, status: 'enviado', nombre: lead.nombre, msgId: resp.id || '' });\n  } catch(e) {\n    console.log('[SendPendientes] ERR', lead.phone, e.message);\n    resultados.push({ phone: lead.phone, status: 'error', error: e.message.slice(0,100) });\n  }\n\n  await new Promise(r => setTimeout(r, 2000));\n}\n\n// Auto-desactivar este workflow\ntry {\n  await $helpers.httpRequest({\n    method: 'POST', url: N8N_URL + '/rest/login',\n    headers: { 'Content-Type': 'application/json', 'browser-id': 'pendientes-self' },\n    body: JSON.stringify({ emailOrLdapLoginId: 'ricardo.farias.q@gmail.com', password: 'Gaspi1712#' }),\n  });\n  await $helpers.httpRequest({\n    method: 'PATCH', url: N8N_URL + '/rest/workflows/' + WF_ID_SELF,\n    headers: { 'Content-Type': 'application/json', 'browser-id': 'pendientes-self' },\n    body: JSON.stringify({ active: false }),\n  });\n  console.log('[SendPendientes] Workflow auto-desactivado.');\n} catch(e) {\n  console.log('[SendPendientes] No se pudo auto-desactivar:', e.message);\n}\n\nconst ok = resultados.filter(r => r.status === 'enviado').length;\nconsole.log('[SendPendientes] Total:', ok, '/', pendientes.length, 'enviados.');\nreturn resultados.map(r => ({ json: r }));"
+        }
+      }
+    ],
+    "connections": {
+      "Disparo 8AM": {
+        "main": [
+          [
+            {
+              "node": "Enviar a Pendientes",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "settings": {
+      "timezone": "America/Santiago"
+    },
+    "staticData": {
+      "node:Disparo 8AM": {
+        "recurrenceRules": []
+      }
+    },
+    "meta": null,
+    "pinData": null,
+    "versionId": "7d6cbb62-bae0-4d5b-ad2d-c5315221a593",
+    "activeVersionId": "7d6cbb62-bae0-4d5b-ad2d-c5315221a593",
+    "versionCounter": 21,
+    "triggerCount": 1,
+    "shared": [
+      {
+        "updatedAt": "2026-05-02T05:41:32.682Z",
+        "createdAt": "2026-05-02T05:41:32.682Z",
+        "role": "workflow:owner",
+        "workflowId": "D06UDuKwxEzsjjau",
+        "projectId": "MS4h8dEx9gzGaNRS",
+        "project": {
+          "updatedAt": "2026-04-07T18:57:02.432Z",
+          "createdAt": "2026-04-07T18:56:13.172Z",
+          "id": "MS4h8dEx9gzGaNRS",
+          "name": "Ricardo Farias <ricardo.farias.q@gmail.com>",
+          "type": "personal",
+          "icon": null,
+          "description": null,
+          "creatorId": "a9641e26-4ac4-48d9-9efb-ad3be9335ed1"
+        }
+      }
+    ],
+    "tags": [],
+    "parentFolder": null,
+    "activeVersion": {
+      "updatedAt": "2026-05-02T05:47:51.146Z",
+      "createdAt": "2026-05-02T05:47:51.146Z",
+      "versionId": "7d6cbb62-bae0-4d5b-ad2d-c5315221a593",
+      "workflowId": "D06UDuKwxEzsjjau",
+      "nodes": [
+        {
+          "id": "trigger-8am",
+          "name": "Disparo 8AM",
+          "type": "n8n-nodes-base.scheduleTrigger",
+          "typeVersion": 1.1,
+          "position": [
+            200,
+            300
+          ],
+          "parameters": {
+            "rule": {
+              "interval": [
+                {
+                  "field": "cronExpression",
+                  "expression": "0 8 * * *"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "code-8am",
+          "name": "Enviar a Pendientes",
+          "type": "n8n-nodes-base.code",
+          "typeVersion": 2,
+          "position": [
+            450,
+            300
+          ],
+          "parameters": {
+            "jsCode": "// Send Pendientes 8AM \u2014 respuesta a leads sin atencion\nconst pendientes = [{\"phone\": \"522281388295\", \"nombre\": \"Liz\", \"state\": \"NEW\", \"lastText\": \"Hola, quiero saber si mi hijo califica para InnovaKids.\", \"lastIn\": \"2026-04-30T00:00:52.491Z\"}, {\"phone\": \"59173085464\", \"nombre\": \"Dam\", \"state\": \"NEW\", \"lastText\": \"Buenas noches tenia programada mi reuni\u00f3n para hoy a las 20:\", \"lastIn\": \"2026-04-30T00:44:18.932Z\"}];\nconst YCLOUD_KEY = \"b0bdbae389901432af2b47d9c6a4dcbe\";\nconst FROM       = \"56964754219\";\nconst N8N_URL    = \"https://quirky-thompson.74-208-238-121.plesk.page\";\nconst WF_ID_SELF = $workflow.id;\n\nconst resultados = [];\n\nfor (const lead of pendientes) {\n  const n  = lead.nombre ? lead.nombre : '';\n  const saludo = n ? ('Hola ' + n + '! ') : 'Hola! ';\n\n  // Mensaje diferenciado segun contexto del lead\n  let msg;\n  const lastText = (lead.lastText || '').toLowerCase();\n  if (lastText.includes('reunion') || lastText.includes('reuni\u00f3n') || lastText.includes('programada')) {\n    msg = saludo + 'Soy Francisca de InnovaKids \ud83d\ude4b\\u200d\\u2640\\ufe0f\\n' +\n          'Vi que escribiste sobre tu reuni\u00f3n y quiero asegurarme de que quedaste bien atendido/a.\\n' +\n          '\u00bfPudiste agendar tu evaluaci\u00f3n gratuita? \u00bfEn qu\u00e9 te puedo ayudar?';\n  } else if (lastText.includes('pagar') || lastText.includes('pague') || lastText.includes('300') || lastText.includes('pagu\u00e9')) {\n    msg = saludo + 'Soy Francisca de InnovaKids \ud83d\ude0a\\n' +\n          'Vi tu mensaje y quiero resolverlo personalmente.\\n' +\n          '\u00bfMe cuentas qu\u00e9 pas\u00f3 para ayudarte de inmediato?';\n  } else {\n    msg = saludo + 'Soy Francisca de InnovaKids \ud83d\ude4b\\u200d\\u2640\\ufe0f\\n' +\n          'Vi que me escribiste y quiero asegurarme de responderte.\\n' +\n          '\u00bfEn qu\u00e9 te puedo ayudar con el programa de IA para tu hijo/a?';\n  }\n\n  try {\n    const resp = await $helpers.httpRequest({\n      method:  'POST',\n      url:     'https://api.ycloud.com/v2/whatsapp/messages',\n      headers: { 'Content-Type': 'application/json', 'X-API-Key': YCLOUD_KEY },\n      body: JSON.stringify({ from: FROM, to: lead.phone, type: 'text', text: { body: msg } }),\n    });\n    console.log('[SendPendientes] OK', lead.phone, resp.id || '');\n    resultados.push({ phone: lead.phone, status: 'enviado', nombre: lead.nombre, msgId: resp.id || '' });\n  } catch(e) {\n    console.log('[SendPendientes] ERR', lead.phone, e.message);\n    resultados.push({ phone: lead.phone, status: 'error', error: e.message.slice(0,100) });\n  }\n\n  await new Promise(r => setTimeout(r, 2000));\n}\n\n// Auto-desactivar este workflow\ntry {\n  await $helpers.httpRequest({\n    method: 'POST', url: N8N_URL + '/rest/login',\n    headers: { 'Content-Type': 'application/json', 'browser-id': 'pendientes-self' },\n    body: JSON.stringify({ emailOrLdapLoginId: 'ricardo.farias.q@gmail.com', password: 'Gaspi1712#' }),\n  });\n  await $helpers.httpRequest({\n    method: 'PATCH', url: N8N_URL + '/rest/workflows/' + WF_ID_SELF,\n    headers: { 'Content-Type': 'application/json', 'browser-id': 'pendientes-self' },\n    body: JSON.stringify({ active: false }),\n  });\n  console.log('[SendPendientes] Workflow auto-desactivado.');\n} catch(e) {\n  console.log('[SendPendientes] No se pudo auto-desactivar:', e.message);\n}\n\nconst ok = resultados.filter(r => r.status === 'enviado').length;\nconsole.log('[SendPendientes] Total:', ok, '/', pendientes.length, 'enviados.');\nreturn resultados.map(r => ({ json: r }));"
+          }
+        }
+      ],
+      "connections": {
+        "Disparo 8AM": {
+          "main": [
+            [
+              {
+                "node": "Enviar a Pendientes",
+                "type": "main",
+                "index": 0
+              }
+            ]
+          ]
+        }
+      },
+      "authors": "Ricardo Farias",
+      "name": null,
+      "description": null,
+      "autosaved": false,
+      "workflowPublishHistory": []
+    },
+    "scopes": [
+      "workflow:create",
+      "workflow:delete",
+      "workflow:execute",
+      "workflow:execute-chat",
+      "workflow:list",
+      "workflow:move",
+      "workflow:publish",
+      "workflow:read",
+      "workflow:share",
+      "workflow:unpublish",
+      "workflow:unshare",
+      "workflow:update",
+      "workflow:updateRedactionSetting"
+    ],
+    "checksum": "82e4c3f8a4534a346db5311f4af4ce2d3a3a0c285872a6748d39531a68e65faa"
+  }
+}

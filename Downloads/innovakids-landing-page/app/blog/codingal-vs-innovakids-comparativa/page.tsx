@@ -9,10 +9,10 @@ export const metadata: Metadata = {
         "Codingal vs InnovaKids 2026: comparativa honesta de precios, metodología y garantías del mejor curso de IA y programación para niños 8-17. Lee el análisis.",
     keywords: [
         "codingal vs innovakids",
-        "mejor curso programacion niños 2026",
-        "comparativa cursos ia niños",
         "codingal opiniones",
         "alternativa codingal",
+        "codingal vs innovakids comparativa 2026",
+        "codingal precios y opiniones",
     ],
     alternates: {
         canonical: "https://www.innovakidslatam.com/blog/codingal-vs-innovakids-comparativa",
@@ -136,7 +136,7 @@ export default function CodingalVsInnovakidsPage() {
                             <h3>El enfoque de Codingal</h3>
                             <p>
                                 Codingal utiliza un enfoque tradicional de enseñanza de código por bloques (como Scratch) y luego transiciones
-                                a lenguajes como Python. Sus clases para niños de 8 a 14 años suelen centrarse en la sintaxis, enseñando bucles,
+                                a lenguajes como Python. Sus clases para niños de 8 a 17 años suelen centrarse en la sintaxis, enseñando bucles,
                                 variables y algoritmos paso a paso. Es una excelente metodología técnica, pero muchos padres reportan que para
                                 algunos adolescentes puede resultar repetitiva o "como la escuela" si el niño no tiene un genuino amor previo
                                 por las matemáticas o la lógica dura.
@@ -249,7 +249,7 @@ export default function CodingalVsInnovakidsPage() {
                                 </p>
                                 <Link
                                     href="/clase-gratis"
-                                    className="inline-flex w-full items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-6 py-4 font-semibold text-[14px] tracking-wide transition-colors"
+                                    className="inline-flex w-full items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-6 py-4 font-semibold text-[14px] tracking-wide transition-colors"
                                 >
                                     Agendar clase gratis
                                     <span aria-hidden>→</span>

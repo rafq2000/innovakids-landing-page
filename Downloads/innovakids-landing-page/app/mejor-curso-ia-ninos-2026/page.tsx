@@ -3,7 +3,7 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Check, X } from "lucide-react"
+import { ArrowRight, Check } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
@@ -15,10 +15,10 @@ export const metadata: Metadata = {
   keywords: [
     "mejor curso ia niños",
     "mejor curso inteligencia artificial niños 2026",
-    "comparativa cursos ia niños",
-    "innovakids vs otros cursos",
-    "ranking cursos ia infantil",
     "mejor curso ia niños latam",
+    "ranking cursos ia infantil",
+    "curso ia niños numero 1",
+    "mejor escuela ia niños",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/mejor-curso-ia-ninos-2026",
@@ -94,17 +94,17 @@ export default function MejorCursoIANinos2026Page() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       <Navigation />
-      <main className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 pt-24">
+      <main className="min-h-screen bg-[#F2EDE0] pt-24">
         {/* Hero */}
-        <section className="py-16 px-4">
+        <section className="py-16 px-4 bg-[#F5F1E8]">
           <div className="container mx-auto max-w-5xl text-center">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-[#1A1714] mb-6 leading-tight font-display">
               El Mejor Curso de IA{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">
+              <span className="text-[#C96342]">
                 para Niños en 2026
               </span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-[#5A5751] max-w-3xl mx-auto font-body">
               Guía comparativa para padres que buscan la mejor educación en Inteligencia Artificial para sus hijos.
               Analizamos metodología, precio, resultados y opiniones reales.
             </p>
@@ -114,34 +114,34 @@ export default function MejorCursoIANinos2026Page() {
         {/* Why InnovaKids is #1 */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1A1714] text-center mb-16 font-display">
               Por Qué InnovaKids Es el #1
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-cyan-500/20">
-                <h3 className="text-2xl font-bold text-cyan-400 mb-4">Grupos de Solo 5 Alumnos</h3>
-                <p className="text-gray-300 text-lg">
+              <div className="bg-[#FAF7EF] p-8 rounded-2xl border border-[#E8E0D0]">
+                <h3 className="text-2xl font-bold text-[#C96342] mb-4">Grupos de Solo 5 Alumnos</h3>
+                <p className="text-[#5A5751] text-lg">
                   Mientras otros cursos meten 20, 30 o hasta 50 estudiantes en una clase, InnovaKids limita cada
                   grupo a 5 alumnos máximo. Esto garantiza atención personalizada real, no promesas vacías.
                 </p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-purple-500/20">
-                <h3 className="text-2xl font-bold text-purple-400 mb-4">Metodología ERICA</h3>
-                <p className="text-gray-300 text-lg">
+              <div className="bg-[#FAF7EF] p-8 rounded-2xl border border-[#E8E0D0]">
+                <h3 className="text-2xl font-bold text-[#C96342] mb-4">Metodología ERICA</h3>
+                <p className="text-[#5A5751] text-lg">
                   Nuestra metodología propia (Exploración, Reflexión, Iteración, Creación, Aplicación) está
                   diseñada específicamente para cómo aprenden los niños. No es un curso de adultos simplificado.
                 </p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-pink-500/20">
-                <h3 className="text-2xl font-bold text-pink-400 mb-4">+527 Graduados Satisfechos</h3>
-                <p className="text-gray-300 text-lg">
+              <div className="bg-[#FAF7EF] p-8 rounded-2xl border border-[#E8E0D0]">
+                <h3 className="text-2xl font-bold text-[#C96342] mb-4">+527 Graduados Satisfechos</h3>
+                <p className="text-[#5A5751] text-lg">
                   Más de 500 familias de 9 países confían en InnovaKids. Nuestros testimonios son de padres
                   reales que han visto cómo sus hijos transforman su relación con la tecnología.
                 </p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-cyan-500/20">
-                <h3 className="text-2xl font-bold text-cyan-400 mb-4">Proyectos Reales Desde el Día 1</h3>
-                <p className="text-gray-300 text-lg">
+              <div className="bg-[#FAF7EF] p-8 rounded-2xl border border-[#E8E0D0]">
+                <h3 className="text-2xl font-bold text-[#C96342] mb-4">Proyectos Reales Desde el Día 1</h3>
+                <p className="text-[#5A5751] text-lg">
                   Nada de teoría aburrida. Desde la primera clase, tu hijo crea apps, genera arte con IA,
                   compone música y desarrolla videojuegos. Aprenden haciendo, no escuchando.
                 </p>
@@ -151,19 +151,19 @@ export default function MejorCursoIANinos2026Page() {
         </section>
 
         {/* Comparison Table */}
-        <section className="py-16 px-4 bg-gradient-to-b from-gray-800/50 to-gray-900">
+        <section className="py-16 px-4 bg-[#FAF7EF]">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-4xl font-bold text-white text-center mb-12">
+            <h2 className="text-4xl font-bold text-[#1A1714] text-center mb-12 font-display">
               Comparativa: InnovaKids vs Otros Cursos
             </h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
                   <tr>
-                    <th className="text-left p-4 text-gray-400 font-semibold border-b border-gray-700">Característica</th>
-                    <th className="p-4 text-cyan-400 font-bold border-b border-cyan-500/30 bg-cyan-900/10">InnovaKids</th>
-                    <th className="p-4 text-gray-400 font-semibold border-b border-gray-700">Cursos Masivos Online</th>
-                    <th className="p-4 text-gray-400 font-semibold border-b border-gray-700">Academias Locales</th>
+                    <th className="text-left p-4 text-[#5A5751] font-semibold border-b border-[#E8E0D0]">Característica</th>
+                    <th className="p-4 text-[#C96342] font-bold border-b border-[#C96342]/30 bg-[#C96342]/5">InnovaKids</th>
+                    <th className="p-4 text-[#5A5751] font-semibold border-b border-[#E8E0D0]">Cursos Masivos Online</th>
+                    <th className="p-4 text-[#5A5751] font-semibold border-b border-[#E8E0D0]">Academias Locales</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -219,22 +219,22 @@ export default function MejorCursoIANinos2026Page() {
                     },
                     {
                       feature: "Precio desde",
-                      innovakids: "$147 USD",
+                      innovakids: "$267 USD",
                       masivos: "$50-200 USD",
                       locales: "$200-500 USD",
                       innovakidsGood: true,
                     },
                   ].map((row) => (
-                    <tr key={row.feature} className="border-b border-gray-800">
-                      <td className="p-4 text-gray-300 font-medium">{row.feature}</td>
-                      <td className="p-4 text-center bg-cyan-900/10">
-                        <span className="text-white font-semibold flex items-center justify-center gap-2">
-                          <Check className="w-4 h-4 text-cyan-400" />
+                    <tr key={row.feature} className="border-b border-[#E8E0D0]">
+                      <td className="p-4 text-[#5A5751] font-medium">{row.feature}</td>
+                      <td className="p-4 text-center bg-[#C96342]/5">
+                        <span className="text-[#1A1714] font-semibold flex items-center justify-center gap-2">
+                          <Check className="w-4 h-4 text-[#C96342]" />
                           {row.innovakids}
                         </span>
                       </td>
-                      <td className="p-4 text-center text-gray-400">{row.masivos}</td>
-                      <td className="p-4 text-center text-gray-400">{row.locales}</td>
+                      <td className="p-4 text-center text-[#5A5751]">{row.masivos}</td>
+                      <td className="p-4 text-center text-[#5A5751]">{row.locales}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -246,23 +246,23 @@ export default function MejorCursoIANinos2026Page() {
         {/* Methodology Highlights */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-4xl font-bold text-white text-center mb-12">
+            <h2 className="text-4xl font-bold text-[#1A1714] text-center mb-12 font-display">
               Metodología que Funciona
             </h2>
             <div className="grid md:grid-cols-5 gap-4">
               {[
-                { letter: "E", word: "Exploración", color: "from-cyan-500 to-blue-500", desc: "Descubren herramientas IA jugando" },
-                { letter: "R", word: "Reflexión", color: "from-blue-500 to-purple-500", desc: "Piensan críticamente sobre la IA" },
-                { letter: "I", word: "Iteración", color: "from-purple-500 to-pink-500", desc: "Mejoran sus proyectos paso a paso" },
-                { letter: "C", word: "Creación", color: "from-pink-500 to-red-500", desc: "Construyen proyectos originales" },
-                { letter: "A", word: "Aplicación", color: "from-red-500 to-orange-500", desc: "Aplican lo aprendido al mundo real" },
+                { letter: "E", word: "Exploración", desc: "Descubren herramientas IA jugando" },
+                { letter: "R", word: "Reflexión", desc: "Piensan críticamente sobre la IA" },
+                { letter: "I", word: "Iteración", desc: "Mejoran sus proyectos paso a paso" },
+                { letter: "C", word: "Creación", desc: "Construyen proyectos originales" },
+                { letter: "A", word: "Aplicación", desc: "Aplican lo aprendido al mundo real" },
               ].map((step) => (
                 <div key={step.letter} className="text-center">
-                  <div className={`w-16 h-16 rounded-full bg-gradient-to-br ${step.color} flex items-center justify-center text-2xl font-bold text-white mx-auto mb-3`}>
+                  <div className="w-16 h-16 rounded-full bg-[#C96342] flex items-center justify-center text-2xl font-bold text-[#FAF7EF] mx-auto mb-3">
                     {step.letter}
                   </div>
-                  <h3 className="text-lg font-bold text-white mb-1">{step.word}</h3>
-                  <p className="text-gray-400 text-sm">{step.desc}</p>
+                  <h3 className="text-lg font-bold text-[#1A1714] mb-1">{step.word}</h3>
+                  <p className="text-[#5A5751] text-sm">{step.desc}</p>
                 </div>
               ))}
             </div>
@@ -270,25 +270,25 @@ export default function MejorCursoIANinos2026Page() {
         </section>
 
         {/* Real Results */}
-        <section className="py-16 px-4 bg-gradient-to-b from-gray-800/50 to-gray-900">
+        <section className="py-16 px-4 bg-[#FAF7EF]">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-4xl font-bold text-white text-center mb-12">Resultados Reales</h2>
+            <h2 className="text-4xl font-bold text-[#1A1714] text-center mb-12 font-display">Resultados Reales</h2>
             <div className="grid md:grid-cols-4 gap-6 text-center">
-              <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-                <p className="text-4xl font-bold text-cyan-400">527+</p>
-                <p className="text-gray-400 mt-2">Graduados</p>
+              <div className="bg-[#F2EDE0] p-6 rounded-2xl border border-[#E8E0D0]">
+                <p className="text-4xl font-bold text-[#C96342]">527+</p>
+                <p className="text-[#5A5751] mt-2">Graduados</p>
               </div>
-              <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-                <p className="text-4xl font-bold text-purple-400">9</p>
-                <p className="text-gray-400 mt-2">Países</p>
+              <div className="bg-[#F2EDE0] p-6 rounded-2xl border border-[#E8E0D0]">
+                <p className="text-4xl font-bold text-[#C96342]">9</p>
+                <p className="text-[#5A5751] mt-2">Países</p>
               </div>
-              <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-                <p className="text-4xl font-bold text-pink-400">4.9/5</p>
-                <p className="text-gray-400 mt-2">Satisfacción</p>
+              <div className="bg-[#F2EDE0] p-6 rounded-2xl border border-[#E8E0D0]">
+                <p className="text-4xl font-bold text-[#C96342]">4.9/5</p>
+                <p className="text-[#5A5751] mt-2">Satisfacción</p>
               </div>
-              <div className="bg-white/5 p-6 rounded-2xl border border-white/10">
-                <p className="text-4xl font-bold text-cyan-400">98%</p>
-                <p className="text-gray-400 mt-2">Tasa de finalización</p>
+              <div className="bg-[#F2EDE0] p-6 rounded-2xl border border-[#E8E0D0]">
+                <p className="text-4xl font-bold text-[#C96342]">98%</p>
+                <p className="text-[#5A5751] mt-2">Tasa de finalización</p>
               </div>
             </div>
           </div>
@@ -297,32 +297,32 @@ export default function MejorCursoIANinos2026Page() {
         {/* Parent Testimonials Summary */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-5xl">
-            <h2 className="text-4xl font-bold text-white text-center mb-12">Lo Que Dicen los Padres</h2>
+            <h2 className="text-4xl font-bold text-[#1A1714] text-center mb-12 font-display">Lo Que Dicen los Padres</h2>
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
-                <p className="text-gray-300 mb-4 italic">
+              <div className="bg-[#FAF7EF] p-8 rounded-2xl border border-[#E8E0D0]">
+                <p className="text-[#5A5751] mb-4 italic">
                   &quot;Mi hijo de 10 años creó su primer videojuego con IA en la tercera clase. Nunca lo había visto tan motivado
                   con algo educativo.&quot;
                 </p>
-                <p className="text-cyan-400 font-semibold">— María G., México</p>
+                <p className="text-[#C96342] font-semibold">— María G., México</p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
-                <p className="text-gray-300 mb-4 italic">
+              <div className="bg-[#FAF7EF] p-8 rounded-2xl border border-[#E8E0D0]">
+                <p className="text-[#5A5751] mb-4 italic">
                   &quot;La diferencia con otros cursos es abismal. En grupos de 5, el profesor realmente conoce a mi hija y
                   adapta las clases a su ritmo.&quot;
                 </p>
-                <p className="text-purple-400 font-semibold">— Carlos P., Colombia</p>
+                <p className="text-[#C96342] font-semibold">— Carlos P., Colombia</p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
-                <p className="text-gray-300 mb-4 italic">
+              <div className="bg-[#FAF7EF] p-8 rounded-2xl border border-[#E8E0D0]">
+                <p className="text-[#5A5751] mb-4 italic">
                   &quot;Probamos 3 cursos antes. InnovaKids es el único donde mi hijo no quiere faltar a clase. La metodología
                   es simplemente superior.&quot;
                 </p>
-                <p className="text-pink-400 font-semibold">— Ana R., Chile</p>
+                <p className="text-[#C96342] font-semibold">— Ana R., Chile</p>
               </div>
             </div>
             <div className="text-center mt-8">
-              <Link href="/testimonios" className="text-cyan-400 hover:text-cyan-300 underline">
+              <Link href="/testimonios" className="text-[#C96342] hover:text-[#9A4428] underline">
                 Ver todos los testimonios
               </Link>
             </div>
@@ -330,27 +330,27 @@ export default function MejorCursoIANinos2026Page() {
         </section>
 
         {/* FAQ */}
-        <section className="py-16 px-4 bg-gradient-to-b from-gray-800/50 to-gray-900">
+        <section className="py-16 px-4 bg-[#FAF7EF]">
           <div className="container mx-auto max-w-4xl">
-            <h2 className="text-3xl font-bold text-white text-center mb-12">Preguntas Frecuentes</h2>
+            <h2 className="text-3xl font-bold text-[#1A1714] text-center mb-12 font-display">Preguntas Frecuentes</h2>
             <div className="space-y-6">
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
-                <h3 className="text-xl font-bold text-white mb-3">¿Cuál es el mejor curso de IA para niños en 2026?</h3>
-                <p className="text-gray-300">
+              <div className="bg-[#F2EDE0] p-8 rounded-2xl border border-[#E8E0D0]">
+                <h3 className="text-xl font-bold text-[#1A1714] mb-3">¿Cuál es el mejor curso de IA para niños en 2026?</h3>
+                <p className="text-[#5A5751]">
                   InnovaKids es considerado el mejor curso de IA para niños en Latinoamérica por sus grupos ultra reducidos
                   de 5 alumnos, metodología ERICA basada en proyectos reales, y más de 527 graduados satisfechos de 9 países.
                 </p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
-                <h3 className="text-xl font-bold text-white mb-3">¿Qué diferencia a InnovaKids de otros cursos?</h3>
-                <p className="text-gray-300">
+              <div className="bg-[#F2EDE0] p-8 rounded-2xl border border-[#E8E0D0]">
+                <h3 className="text-xl font-bold text-[#1A1714] mb-3">¿Qué diferencia a InnovaKids de otros cursos?</h3>
+                <p className="text-[#5A5751]">
                   Grupos de máximo 5 alumnos (vs 20-50 en otros), proyectos reales desde el día 1, metodología ERICA propia,
                   garantía 100% de satisfacción, y precios accesibles para toda Latinoamérica.
                 </p>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm p-8 rounded-2xl border border-white/10">
-                <h3 className="text-xl font-bold text-white mb-3">¿InnovaKids funciona para niños sin experiencia previa?</h3>
-                <p className="text-gray-300">
+              <div className="bg-[#F2EDE0] p-8 rounded-2xl border border-[#E8E0D0]">
+                <h3 className="text-xl font-bold text-[#1A1714] mb-3">¿InnovaKids funciona para niños sin experiencia previa?</h3>
+                <p className="text-[#5A5751]">
                   Sí. El 95% de nuestros estudiantes nunca habían programado antes. El curso está diseñado para principiantes
                   absolutos de 8 a 17 años.
                 </p>
@@ -363,19 +363,19 @@ export default function MejorCursoIANinos2026Page() {
         <section className="py-8 px-4">
           <div className="container mx-auto max-w-4xl">
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <Link href="/cursos/inteligencia-artificial" className="text-cyan-400 hover:text-cyan-300 underline">
+              <Link href="/cursos/inteligencia-artificial" className="text-[#C96342] hover:text-[#9A4428] underline">
                 Detalle del curso
               </Link>
-              <span className="text-gray-600">|</span>
-              <Link href="/testimonios" className="text-cyan-400 hover:text-cyan-300 underline">
+              <span className="text-[#E8E0D0]">|</span>
+              <Link href="/testimonios" className="text-[#C96342] hover:text-[#9A4428] underline">
                 Testimonios
               </Link>
-              <span className="text-gray-600">|</span>
-              <Link href="/resultados" className="text-cyan-400 hover:text-cyan-300 underline">
+              <span className="text-[#E8E0D0]">|</span>
+              <Link href="/resultados" className="text-[#C96342] hover:text-[#9A4428] underline">
                 Resultados
               </Link>
-              <span className="text-gray-600">|</span>
-              <Link href="/precios" className="text-cyan-400 hover:text-cyan-300 underline">
+              <span className="text-[#E8E0D0]">|</span>
+              <Link href="/precios" className="text-[#C96342] hover:text-[#9A4428] underline">
                 Precios
               </Link>
             </div>
@@ -385,15 +385,15 @@ export default function MejorCursoIANinos2026Page() {
         {/* CTA */}
         <section className="py-16 px-4">
           <div className="container mx-auto max-w-3xl text-center">
-            <div className="bg-gradient-to-r from-cyan-900/30 to-purple-900/30 p-12 rounded-3xl border-2 border-cyan-500/50">
-              <h2 className="text-3xl font-bold text-white mb-4">Prueba el Mejor Curso de IA Gratis</h2>
-              <p className="text-xl text-gray-300 mb-8">
+            <div className="bg-[#FAF7EF] p-12 rounded-3xl border-2 border-[#C96342]/30 shadow-md">
+              <h2 className="text-3xl font-bold text-[#1A1714] mb-4 font-display">Prueba el Mejor Curso de IA Gratis</h2>
+              <p className="text-xl text-[#5A5751] mb-8 font-body">
                 Agenda una clase de prueba sin compromiso y descubre por qué +500 familias nos eligieron.
               </p>
               <Link href="/clase-gratis">
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 text-white font-bold text-lg px-10 py-6 h-auto"
+                  className="bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] font-bold text-lg px-10 py-6 h-auto rounded-sm"
                 >
                   Agendar Clase Gratis
                   <ArrowRight className="ml-2 h-5 w-5" />

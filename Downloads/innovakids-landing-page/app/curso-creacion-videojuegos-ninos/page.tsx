@@ -148,7 +148,7 @@ export default function GameDesignPage() {
                             <div className="md:col-span-4 flex flex-col sm:flex-row md:flex-col gap-3">
                                 <Link
                                     href="#comenzar"
-                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-7 py-4 font-semibold text-base tracking-wide transition-colors"
+                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-7 py-4 font-semibold text-base tracking-wide transition-colors"
                                 >
                                     Empezar ahora <span aria-hidden>→</span>
                                 </Link>
@@ -270,7 +270,7 @@ export default function GameDesignPage() {
                                 </ul>
                                 <Link
                                     href="/cursos/inteligencia-artificial"
-                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-7 py-3.5 font-semibold text-sm tracking-wide transition-colors w-full"
+                                    className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-7 py-3.5 font-semibold text-sm tracking-wide transition-colors w-full"
                                 >
                                     Empezar por el Nivel 01 <span aria-hidden>→</span>
                                 </Link>

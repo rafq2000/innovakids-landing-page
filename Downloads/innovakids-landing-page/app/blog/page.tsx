@@ -127,46 +127,6 @@ const blogPosts = [
     readTime: "6 min",
   },
   {
-    slug: "curso-storytelling-digital-ninos",
-    title: "Maestros del Storytelling Digital: Crea Cuentos Ilustrados con IA",
-    excerpt:
-      "Descubre cómo los niños pueden crear historias transmedia increíbles usando inteligencia artificial. Desde cuentos ilustrados hasta narrativas interactivas.",
-    image: "/children-creating-digital-stories-with-ai-illustra.jpg",
-    date: "2025-01-20",
-    category: "Próximos Cursos",
-    readTime: "5 min",
-  },
-  {
-    slug: "curso-videojuegos-ia-ninos",
-    title: "Arquitectos de Mundos: Crea Videojuegos con Machine Learning",
-    excerpt:
-      "Tu hijo puede crear sus propios videojuegos entrenando modelos de Machine Learning en Scratch. Aprende cómo funciona este revolucionario curso.",
-    image: "/children-creating-video-games-with-machine-learnin.jpg",
-    date: "2025-01-18",
-    category: "Próximos Cursos",
-    readTime: "6 min",
-  },
-  {
-    slug: "curso-emprendimiento-ia-ninos",
-    title: "Generación Exponencial: Tu Hijo Puede Crear Su Primera Marca Digital",
-    excerpt:
-      "Descubre cómo los niños pueden convertirse en mini emprendedores creando marcas digitales con herramientas de IA. El futuro del emprendimiento infantil.",
-    image: "/children-entrepreneurs-creating-digital-brand-with.jpg",
-    date: "2025-01-16",
-    category: "Próximos Cursos",
-    readTime: "5 min",
-  },
-  {
-    slug: "curso-estudio-ia-tutor-personalizado",
-    title: "El Cerebro Aumentado: Convierte la IA en el Tutor Personal de tu Hijo",
-    excerpt:
-      "Técnicas de estudio revolucionarias con IA. Aprende cómo tu hijo puede usar la inteligencia artificial como tutor personalizado para mejorar su rendimiento escolar.",
-    image: "/child-studying-with-ai-tutor-personalized-learning.jpg",
-    date: "2025-01-14",
-    category: "Próximos Cursos",
-    readTime: "7 min",
-  },
-  {
     slug: "como-ensenar-ia-ninos",
     title: "Cómo Enseñar Inteligencia Artificial a Niños de 8-17 Años",
     excerpt:

@@ -32,7 +32,7 @@ export function CountryTestimonials({ country }: CountryTestimonialsProps) {
         name: "Pablo Martínez",
         city: "Barcelona",
         image: "/testimonial-man-1.jpg",
-        text: "Buscaba formación de calidad en IA para mi hija y encontré Innovakids. Los grupos pequeños hacen toda la diferencia.",
+        text: "Buscaba formación de calidad en IA para mi hija y encontré InnovaKids. Los grupos pequeños hacen toda la diferencia.",
         childAge: 9,
       },
     ],

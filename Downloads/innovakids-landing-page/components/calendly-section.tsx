@@ -30,8 +30,8 @@ const LATIN_AMERICA_COUNTRIES = [
 
 const AGE_RANGES = [
   { value: "8-10", label: "8–10 años" },
-  { value: "11-14", label: "11–14 años" },
-  { value: "15-17", label: "15–17 años" },
+  { value: "11-13", label: "11–13 años" },
+  { value: "14-17", label: "14–17 años" },
 ]
 
 export function CalendlySection() {
@@ -109,8 +109,7 @@ export function CalendlySection() {
           {/* Left: copy */}
           <div className="md:col-span-5 md:sticky md:top-28">
             <h2
-              className="text-5xl sm:text-6xl md:text-7xl leading-[0.98] tracking-[-0.02em] font-normal mb-8"
-              style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+              className="font-display text-5xl sm:text-6xl md:text-7xl leading-[0.98] tracking-[-0.02em] font-normal mb-8"
             >
               Treinta minutos, <em className="italic text-[#C96342]">sin compromiso</em>.
             </h2>
@@ -131,8 +130,7 @@ export function CalendlySection() {
                     {k}
                   </dt>
                   <dd
-                    className="text-lg text-[#2F2F2C]"
-                    style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                    className="font-display text-lg text-[#2F2F2C]"
                   >
                     {v}
                   </dd>
@@ -161,8 +159,7 @@ export function CalendlySection() {
                 type="text"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full bg-transparent border-0 border-b border-[#2F2F2C]/25 py-3 text-xl text-[#2F2F2C] placeholder:text-[#2F2F2C]/30 focus:outline-none focus:border-[#C96342] transition-colors"
-                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                className="font-display w-full bg-transparent border-0 border-b border-[#2F2F2C]/25 py-3 text-xl text-[#2F2F2C] placeholder:text-[#2F2F2C]/30 focus:border-[#C96342] transition-colors"
                 placeholder="María García"
                 required
               />
@@ -180,8 +177,7 @@ export function CalendlySection() {
                 type="tel"
                 value={formData.whatsapp}
                 onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
-                className="w-full bg-transparent border-0 border-b border-[#2F2F2C]/25 py-3 text-xl text-[#2F2F2C] placeholder:text-[#2F2F2C]/30 focus:outline-none focus:border-[#C96342] transition-colors"
-                style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                className="font-display w-full bg-transparent border-0 border-b border-[#2F2F2C]/25 py-3 text-xl text-[#2F2F2C] placeholder:text-[#2F2F2C]/30 focus:border-[#C96342] transition-colors"
                 placeholder="+56 9 1234 5678"
                 required
               />
@@ -199,8 +195,7 @@ export function CalendlySection() {
                   id="country"
                   value={selectedCountry}
                   onChange={(e) => setSelectedCountry(e.target.value)}
-                  className="w-full appearance-none bg-transparent border-0 border-b border-[#2F2F2C]/25 py-3 pr-8 text-xl text-[#2F2F2C] focus:outline-none focus:border-[#C96342] transition-colors cursor-pointer"
-                  style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+                  className="font-display w-full appearance-none bg-transparent border-0 border-b border-[#2F2F2C]/25 py-3 pr-8 text-xl text-[#2F2F2C] focus:border-[#C96342] transition-colors cursor-pointer"
                 >
                   {LATIN_AMERICA_COUNTRIES.map((c) => (
                     <option key={c.code} value={c.code}>
@@ -216,20 +211,21 @@ export function CalendlySection() {
               <span className="block text-[11px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-3">
                 Edad de tu hijo/a
               </span>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3" role="radiogroup" aria-label="Edad de tu hijo/a">
                 {AGE_RANGES.map((age) => {
                   const active = childAge === age.value
                   return (
                     <button
                       key={age.value}
                       type="button"
+                      role="radio"
+                      aria-checked={active}
                       onClick={() => setChildAge(age.value)}
-                      className={`px-6 py-3 rounded-sm border transition-colors ${
+                      className={`font-display px-6 py-3 rounded-sm border transition-colors ${
                         active
                           ? "border-[#C96342] bg-[#C96342] text-[#FAF7EF]"
                           : "border-[#2F2F2C]/25 text-[#2F2F2C] hover:border-[#C96342] hover:text-[#C96342]"
                       }`}
-                      style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                     >
                       {age.label}
                     </button>
@@ -239,7 +235,7 @@ export function CalendlySection() {
             </div>
 
             {submitError && (
-              <p className="text-sm text-[#B91C1C] border-l-2 border-[#B91C1C] pl-4 py-1">
+              <p role="alert" className="text-sm text-[#B91C1C] border-l-2 border-[#B91C1C] pl-4 py-1">
                 {submitError}
               </p>
             )}
@@ -248,7 +244,7 @@ export function CalendlySection() {
               <button
                 type="submit"
                 disabled={!isValid || isSubmitting}
-                className="inline-flex items-center bg-[#C96342] hover:bg-[#A8502F] disabled:bg-[#2F2F2C]/20 disabled:cursor-not-allowed text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm transition-colors"
+                className="inline-flex items-center bg-[#C96342] hover:bg-[#9A4428] disabled:bg-[#2F2F2C]/20 disabled:cursor-not-allowed text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm transition-colors"
               >
                 {isSubmitting ? "Abriendo calendario…" : "Ver horarios disponibles →"}
               </button>

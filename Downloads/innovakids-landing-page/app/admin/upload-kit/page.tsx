@@ -132,7 +132,7 @@ export default function UploadKitPage() {
                             <button
                                 onClick={handleUpload}
                                 disabled={!file || uploading}
-                                className="w-full inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] disabled:bg-[#1A1714]/20 disabled:cursor-not-allowed text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                className="w-full inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] disabled:bg-[#1A1714]/20 disabled:cursor-not-allowed text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                             >
                                 {uploading ? "Subiendo…" : "Subir PDF"}
                                 {!uploading && <span aria-hidden>→</span>}

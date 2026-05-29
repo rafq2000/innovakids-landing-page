@@ -6,6 +6,8 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { FAQSection } from "@/components/faq-section"
+import { EXPLORER_CLASSES, MAKER_CORE, TRACKS } from "@/lib/curriculum-data"
+import { COHORT } from "@/lib/site-config"
 import type { CountryConfig } from "@/lib/countries-config"
 
 interface ProgramPageContentProps {
@@ -13,7 +15,7 @@ interface ProgramPageContentProps {
 }
 
 /* ============================================================
-   useInView — entrance observer (shared helper)
+   useInView — entrance observer
    ============================================================ */
 function useInView<T extends HTMLElement>(opts: IntersectionObserverInit = { threshold: 0.15 }) {
     const ref = useRef<T | null>(null)
@@ -38,34 +40,30 @@ function useInView<T extends HTMLElement>(opts: IntersectionObserverInit = { thr
 }
 
 /* ============================================================
-   DATA — 10 clases · herramientas · requisitos
+   TOOLS & REQUIREMENTS
    ============================================================ */
-const CLASSES = [
-    { n: "I",     num: "01", title: "Exploradores de la IA",           desc: "Introducción al mundo de la IA y sus posibilidades. Qué es, cómo funciona, cómo ya cambió el mundo.", proj: "Mapa mental de IA" },
-    { n: "II",    num: "02", title: "El Prompt Perfecto",              desc: "El arte de escribir instrucciones claras. Aprenden a comunicarse con la IA como si fuera un colaborador.", proj: "Biblioteca de prompts" },
-    { n: "III",   num: "03", title: "Voces y personajes que hablan",   desc: "Crean voces sintéticas y personajes con identidad propia. Dan vida a un avatar con voz personalizada.", proj: "Avatar con voz propia" },
-    { n: "IV",    num: "04", title: "Música con IA",                   desc: "Componen canciones originales sin saber tocar ningún instrumento — con letra, melodía y producción.", proj: "Canción original" },
-    { n: "V",     num: "05", title: "Cómics e historias visuales",     desc: "Diseñan novelas gráficas completas con arte generado por IA y un guion que les pertenece.", proj: "Cómic de 6 páginas" },
-    { n: "VI",    num: "06", title: "Videos con IA + avatar digital",  desc: "Producen videos profesionales con su propio avatar. Edición, voz, imagen y storyboard con IA.", proj: "Video con avatar" },
-    { n: "VII",   num: "07", title: "Vibe Coding: apps, web y juegos", desc: "Construyen aplicaciones funcionales, sitios y minijuegos usando IA como copiloto de código.", proj: "Mini videojuego" },
-    { n: "VIII",  num: "08", title: "Estudio con IA — tutor personal", desc: "Convierten la IA en un tutor 1:1: resúmenes, flashcards, pruebas simuladas y planes de estudio.", proj: "Sistema de estudio" },
-    { n: "IX",    num: "09", title: "Ética — sesgos, fake news, riesgos", desc: "Aprenden a detectar información falsa, entender sesgos en los modelos y usar IA de forma responsable.", proj: "Detector de fake news" },
-    { n: "X",     num: "10", title: "Proyecto final — mi creación",    desc: "Integran todo lo aprendido en un proyecto único que forma parte de su portafolio profesional.", proj: "Portafolio completo" },
+const TOOLS_EXPLORER = [
+    { k: "01", name: "ChatGPT / Claude", note: "Razonamiento · escritura" },
+    { k: "02", name: "Suno AI", note: "Composición musical" },
+    { k: "03", name: "Midjourney / Flux", note: "Arte · imagen generativa" },
+    { k: "04", name: "ElevenLabs", note: "Voz clonada · narración" },
+    { k: "05", name: "Cursor + Claude Code", note: "Vibe Coding · apps" },
+    { k: "06", name: "NotebookLM", note: "Estudio · resúmenes" },
 ]
 
-const TOOLS = [
-    { k: "01", name: "ChatGPT",         note: "Razonamiento · escritura" },
-    { k: "02", name: "Google AI Studio", note: "Modelos Gemini · prompts" },
-    { k: "03", name: "Suno AI",         note: "Composición musical" },
-    { k: "04", name: "Canva AI",        note: "Arte · diseño · cómic" },
-    { k: "05", name: "NotebookLM",      note: "Estudio · resúmenes" },
-    { k: "06", name: "InVideo",         note: "Video · avatar digital" },
+const TOOLS_MAKER = [
+    { k: "07", name: "GitHub + Vercel", note: "Deploy · publicación" },
+    { k: "08", name: "Hugging Face", note: "Modelos · Spaces · APIs" },
+    { k: "09", name: "v0.app", note: "UI generativa" },
+    { k: "10", name: "Groq / Cerebras", note: "LLM rápido (1-2 s)" },
+    { k: "11", name: "n8n", note: "Automatización · workflows" },
+    { k: "12", name: "Telegram Bot", note: "Bots conversacionales" },
 ]
 
 const REQUIREMENTS = [
-    { k: "A", t: "Un computador",   d: "Cualquier laptop o PC. No necesita ser potente ni nuevo — si corre Zoom, sirve." },
+    { k: "A", t: "Un computador", d: "Cualquier laptop o PC. No necesita ser potente ni nuevo — si corre Zoom, sirve." },
     { k: "B", t: "Internet estable", d: "Suficiente para una videollamada fluida. Wi-Fi doméstico normal es más que suficiente." },
-    { k: "C", t: "Ganas de crear",  d: "Cero experiencia previa. Partimos desde cero y llegamos a construir proyectos reales en 5 semanas." },
+    { k: "C", t: "Ganas de crear", d: "Cero experiencia previa. Partimos desde cero y llegamos a construir proyectos reales." },
 ]
 
 /* ============================================================
@@ -73,10 +71,12 @@ const REQUIREMENTS = [
    ============================================================ */
 export function ProgramPageContent({ country }: ProgramPageContentProps) {
     const hero = useInView<HTMLDivElement>({ threshold: 0.2 })
-    const catalog = useInView<HTMLDivElement>({ threshold: 0.05 })
-    const tools = useInView<HTMLDivElement>({ threshold: 0.2 })
-    const reqs = useInView<HTMLDivElement>({ threshold: 0.2 })
-    const closer = useInView<HTMLDivElement>({ threshold: 0.2 })
+    const explorerRef = useInView<HTMLDivElement>({ threshold: 0.05 })
+    const makerCoreRef = useInView<HTMLDivElement>({ threshold: 0.05 })
+    const tracksRef = useInView<HTMLDivElement>({ threshold: 0.05 })
+    const toolsRef = useInView<HTMLDivElement>({ threshold: 0.2 })
+    const reqsRef = useInView<HTMLDivElement>({ threshold: 0.2 })
+    const closerRef = useInView<HTMLDivElement>({ threshold: 0.2 })
 
     const reservationPrice = country?.reservationPriceDisplay ?? "$27 USD"
 
@@ -87,10 +87,9 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
             <main className="min-h-screen bg-[#FAF7EF] text-[#1A1714]">
 
                 {/* =========================================================
-                    HERO EDITORIAL
+                    HERO
                     ========================================================= */}
                 <section className="relative overflow-hidden border-b border-[#1A1714]/12 pt-32 md:pt-40 pb-24 md:pb-32">
-                    {/* grano sutil */}
                     <div
                         aria-hidden
                         className="absolute inset-0 pointer-events-none opacity-[0.05]"
@@ -99,7 +98,6 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                             backgroundSize: "3px 3px",
                         }}
                     />
-                    {/* halo terracota */}
                     <div
                         aria-hidden
                         className="absolute -top-32 -right-40 w-[520px] h-[520px] rounded-full pp-halo-drift pointer-events-none"
@@ -112,24 +110,22 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                             hero.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
                         }`}
                     >
-                        {/* masthead */}
                         <div className="flex items-center justify-between mb-16 md:mb-24 pb-5 border-b border-[#1A1714]/15">
                             <div className="flex items-center gap-4">
                                 <span className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.32em] text-[#C96342] font-semibold">
-                                    Programa · Vol. I
+                                    Programa completo
                                 </span>
                                 <span className="hidden md:inline-block w-10 h-px bg-[#1A1714]/30" />
                                 <span className="hidden md:inline-block font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#1A1714]/55">
-                                    Módulo Vibe Explorer · 10 clases
+                                    2 niveles · 20 clases
                                 </span>
                             </div>
                             <span className="font-mono-accent text-[10px] uppercase tracking-[0.24em] text-[#1A1714]/50">
-                                Cohorte 27·abr·2026
+                                Cohorte {COHORT.nameShort}
                             </span>
                         </div>
 
                         <div className="grid grid-cols-12 gap-8 md:gap-12 items-end">
-                            {/* Numeral lateral */}
                             <div className="col-span-12 md:col-span-2 order-2 md:order-1">
                                 <span
                                     className="block font-display italic text-[#C96342] leading-[0.85]"
@@ -139,11 +135,10 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                     }}
                                     aria-hidden
                                 >
-                                    I
+                                    II
                                 </span>
                             </div>
 
-                            {/* Headline */}
                             <div className="col-span-12 md:col-span-10 order-1 md:order-2">
                                 <h1
                                     className="font-display leading-[0.95] tracking-[-0.025em] text-[#1A1714] mb-8"
@@ -152,26 +147,24 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                         fontVariationSettings: '"opsz" 144, "SOFT" 100',
                                     }}
                                 >
-                                    Esto es exactamente lo que tu hijo{" "}
-                                    <em className="italic text-[#C96342]">va a crear</em>{" "}
-                                    en cinco semanas.
+                                    Dos niveles para ir de{" "}
+                                    <em className="italic text-[#C96342]">consumidor a creador</em>.
                                 </h1>
-                                <p
-                                    className="font-display text-lg md:text-xl leading-[1.5] text-[#1A1714]/70 max-w-[58ch]"
-                                >
-                                    Cada clase termina con un proyecto real que puede mostrar con orgullo. Cero
-                                    teoría aburrida, cero tareas, cero exámenes. Solo crear — desde el primer día.
+                                <p className="font-display text-lg md:text-xl leading-[1.5] text-[#1A1714]/70 max-w-[58ch]">
+                                    Nivel 1 <strong>(Explorer)</strong>: fundamentos de IA generativa en 10 clases.
+                                    Nivel 2 <strong>(Maker)</strong>: 5 misiones core + un track especializado
+                                    donde construye proyectos publicados en internet.
                                 </p>
                             </div>
                         </div>
 
-                        {/* stat ledger */}
-                        <dl className="mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 divide-x divide-[#1A1714]/12 border-y border-[#1A1714]/12">
+                        <dl className="mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-5 divide-x divide-[#1A1714]/12 border-y border-[#1A1714]/12">
                             {[
-                                { n: "10", l: "Clases en vivo" },
-                                { n: "60'", l: "Minutos por clase" },
-                                { n: "2×", l: "Clases por semana" },
-                                { n: "5",  l: "Niños por grupo" },
+                                { n: "20", l: "Clases totales" },
+                                { n: "60'", l: "Por clase" },
+                                { n: "2×", l: "Por semana" },
+                                { n: "5", l: "Niños por grupo" },
+                                { n: "6", l: "Tracks a elegir" },
                             ].map((s, i) => (
                                 <div key={i} className="py-6 md:py-8 px-5 md:px-8">
                                     <dt
@@ -193,94 +186,208 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                 </section>
 
                 {/* =========================================================
-                    CATÁLOGO · 10 CLASES
+                    NIVEL 1 · VIBE EXPLORER · 10 CLASES
                     ========================================================= */}
                 <section className="relative py-24 md:py-36 border-b border-[#1A1714]/12">
-                    <div ref={catalog.ref} className="max-w-[1200px] mx-auto px-6 md:px-10">
+                    <div ref={explorerRef.ref} className="max-w-[1200px] mx-auto px-6 md:px-10">
 
-                        {/* section head */}
                         <div className="flex items-baseline justify-between gap-6 mb-14 md:mb-20 pb-5 border-b border-[#1A1714]/15">
                             <div className="flex items-center gap-5">
                                 <div className="h-px w-12 bg-[#C96342]" />
                                 <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
-                                    Lámina A · Las 10 clases
+                                    Nivel 01 · Vibe Explorer · 10 clases
                                 </p>
                             </div>
-                            <p
-                                className="hidden md:block font-display italic text-lg md:text-2xl text-[#1A1714]/65 tracking-[-0.01em] max-w-[36ch] text-right"
-                                style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
-                            >
-                                Cada línea es una clase. Cada clase termina con un proyecto entregable.
+                            <p className="hidden md:block font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#1A1714]/50">
+                                Edad: 8-17 años
                             </p>
                         </div>
 
-                        {/* catalog rows */}
                         <ol className="divide-y divide-[#1A1714]/12 border-y border-[#1A1714]/12">
-                            {CLASSES.map((c, i) => (
+                            {EXPLORER_CLASSES.map((c, i) => (
                                 <li
                                     key={c.num}
                                     className={`group grid grid-cols-12 gap-4 md:gap-8 items-start py-7 md:py-9 transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                                        catalog.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                                        explorerRef.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                                     }`}
                                     style={{ transitionDelay: `${i * 60}ms` }}
                                 >
-                                    {/* roman numeral */}
                                     <div className="col-span-2 md:col-span-1">
                                         <span
-                                            className="font-display italic text-[#C96342]/80 group-hover:text-[#C96342] leading-none block tabular-nums transition-colors"
-                                            style={{
-                                                fontSize: "clamp(1.5rem, 2.6vw, 2.25rem)",
-                                                fontVariationSettings: '"opsz" 144, "SOFT" 100',
-                                            }}
+                                            className="font-display italic text-[#C96342]/80 group-hover:text-[#C96342] leading-none block tabular-nums transition-colors text-2xl md:text-3xl"
+                                            style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                                         >
-                                            {c.n}
-                                        </span>
-                                        <span className="font-mono-accent text-[9px] uppercase tracking-[0.22em] text-[#1A1714]/45 mt-1 block">
-                                            Clase {c.num}
+                                            {c.num}
                                         </span>
                                     </div>
 
-                                    {/* title + description */}
                                     <div className="col-span-10 md:col-span-7">
                                         <h3
-                                            className="font-display text-[#1A1714] leading-[1.05] tracking-[-0.015em] mb-2"
-                                            style={{
-                                                fontSize: "clamp(1.35rem, 2vw, 1.85rem)",
-                                                fontVariationSettings: '"opsz" 144, "SOFT" 100',
-                                            }}
+                                            className="font-display text-[#1A1714] leading-[1.05] tracking-[-0.015em] mb-2 text-xl md:text-2xl"
+                                            style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                                         >
                                             {c.title}
                                         </h3>
-                                        <p
-                                            className="font-display text-[15px] md:text-base leading-[1.6] text-[#1A1714]/68 max-w-[62ch]"
-                                        >
+                                        <p className="font-display text-[15px] md:text-base leading-[1.6] text-[#1A1714]/68 max-w-[62ch]">
                                             {c.desc}
-                                        </p>
-                                    </div>
-
-                                    {/* project deliverable — right column */}
-                                    <div className="col-span-12 md:col-span-4 md:text-right md:border-l md:border-[#1A1714]/10 md:pl-6">
-                                        <p className="font-mono-accent text-[9px] md:text-[10px] uppercase tracking-[0.24em] text-[#1A1714]/50 mb-1">
-                                            Proyecto entregable
-                                        </p>
-                                        <p
-                                            className="font-display italic text-[#1A1714] leading-tight"
-                                            style={{
-                                                fontSize: "clamp(1rem, 1.3vw, 1.15rem)",
-                                                fontVariationSettings: '"opsz" 144, "SOFT" 100',
-                                            }}
-                                        >
-                                            {c.proj}
                                         </p>
                                     </div>
                                 </li>
                             ))}
                         </ol>
 
-                        {/* footer bar */}
                         <div className="mt-10 flex items-center justify-between text-[10px] uppercase tracking-[0.24em] text-[#1A1714]/45 font-mono-accent">
-                            <span>· 10 entregables · portafolio verificable</span>
-                            <span className="hidden md:inline">Ref · PRG-IK-VOL-I</span>
+                            <span>· 10 clases · 5 semanas · proyecto final de identidad</span>
+                        </div>
+                    </div>
+                </section>
+
+                {/* =========================================================
+                    NIVEL 2 · MAKER CORE · 5 MISIONES
+                    ========================================================= */}
+                <section className="relative py-24 md:py-36 border-b border-[#1A1714]/12 bg-[#F2EDE0]/60">
+                    <div ref={makerCoreRef.ref} className="max-w-[1200px] mx-auto px-6 md:px-10">
+
+                        <div className="flex items-baseline justify-between gap-6 mb-14 md:mb-20 pb-5 border-b border-[#1A1714]/15">
+                            <div className="flex items-center gap-5">
+                                <div className="h-px w-12 bg-[#C96342]" />
+                                <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                                    Nivel 02 · Maker Core · 5 misiones
+                                </p>
+                            </div>
+                            <p className="hidden md:block font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#1A1714]/50">
+                                Edad: 11-17 años · Todos hacen estas 5 primero
+                            </p>
+                        </div>
+
+                        <p className="font-display text-lg md:text-xl leading-[1.5] text-[#1A1714]/70 max-w-[60ch] mb-14">
+                            Antes de elegir su track, cada alumno configura sus herramientas, publica
+                            su primera app, crea un bot y automatiza un workflow. Todo vivo en internet.
+                        </p>
+
+                        <ol className="divide-y divide-[#1A1714]/12 border-y border-[#1A1714]/12">
+                            {MAKER_CORE.map((m, i) => (
+                                <li
+                                    key={m.num}
+                                    className={`group grid grid-cols-12 gap-4 md:gap-8 items-start py-7 md:py-9 transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                                        makerCoreRef.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                                    }`}
+                                    style={{ transitionDelay: `${i * 60}ms` }}
+                                >
+                                    <div className="col-span-2 md:col-span-1">
+                                        <span
+                                            className="font-display italic text-[#C96342]/80 group-hover:text-[#C96342] leading-none block tabular-nums transition-colors text-2xl md:text-3xl"
+                                            style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
+                                        >
+                                            {m.num}
+                                        </span>
+                                    </div>
+
+                                    <div className="col-span-10 md:col-span-7">
+                                        <h3
+                                            className="font-display text-[#1A1714] leading-[1.05] tracking-[-0.015em] mb-2 text-xl md:text-2xl"
+                                            style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
+                                        >
+                                            {m.title}
+                                        </h3>
+                                        <p className="font-display text-[15px] md:text-base leading-[1.6] text-[#1A1714]/68 max-w-[62ch]">
+                                            {m.desc}
+                                        </p>
+                                    </div>
+
+                                    <div className="col-span-12 md:col-span-4 md:text-right md:border-l md:border-[#1A1714]/10 md:pl-6">
+                                        <p className="font-mono-accent text-[9px] md:text-[10px] uppercase tracking-[0.24em] text-[#1A1714]/50 mb-1">
+                                            Loot
+                                        </p>
+                                        <p
+                                            className="font-display italic text-[#1A1714] leading-tight text-sm md:text-base"
+                                            style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
+                                        >
+                                            {m.loot}
+                                        </p>
+                                    </div>
+                                </li>
+                            ))}
+                        </ol>
+                    </div>
+                </section>
+
+                {/* =========================================================
+                    NIVEL 2 · 6 TRACKS ESPECIALIZADOS
+                    ========================================================= */}
+                <section className="relative py-24 md:py-36 border-b border-[#1A1714]/12">
+                    <div ref={tracksRef.ref} className="max-w-[1200px] mx-auto px-6 md:px-10">
+
+                        <div className="flex items-baseline justify-between gap-6 mb-14 md:mb-20 pb-5 border-b border-[#1A1714]/15">
+                            <div className="flex items-center gap-5">
+                                <div className="h-px w-12 bg-[#C96342]" />
+                                <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                                    Nivel 02 · 6 Tracks · 5 misiones cada uno
+                                </p>
+                            </div>
+                            <p className="hidden md:block font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#1A1714]/50">
+                                El alumno elige 1 según su pasión
+                            </p>
+                        </div>
+
+                        <p className="font-display text-lg md:text-xl leading-[1.5] text-[#1A1714]/70 max-w-[60ch] mb-14">
+                            Después de las 5 misiones core, cada alumno elige un track y construye
+                            un proyecto final publicado en internet que sus amigos pueden usar.
+                        </p>
+
+                        <div className="space-y-16">
+                            {TRACKS.map((track, ti) => (
+                                <div
+                                    key={track.id}
+                                    id={track.id}
+                                    className={`scroll-mt-24 transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
+                                        tracksRef.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                                    }`}
+                                    style={{ transitionDelay: `${ti * 100}ms` }}
+                                >
+                                    {/* Track header */}
+                                    <div className="flex items-center gap-3 mb-6 pb-4 border-b border-[#1A1714]/12">
+                                        <span className="w-3 h-3 rounded-full" style={{ backgroundColor: track.color }} />
+                                        <h3 className="font-display text-2xl md:text-3xl tracking-tight" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
+                                            {track.subtitle}
+                                        </h3>
+                                        <span className="font-mono-accent text-[10px] uppercase tracking-wider ml-auto" style={{ color: track.color }}>
+                                            {track.name}
+                                        </span>
+                                    </div>
+
+                                    <div className="grid md:grid-cols-12 gap-8 mb-4">
+                                        <div className="md:col-span-4">
+                                            <p className="text-sm text-[#1A1714]/65 leading-relaxed mb-3">{track.audience}</p>
+                                            <div className="p-4 bg-[#1A1714]/[0.03] border border-[#1A1714]/10 rounded-[3px]">
+                                                <p className="text-[10px] uppercase tracking-wider font-semibold mb-1" style={{ color: track.color }}>
+                                                    Proyecto final
+                                                </p>
+                                                <p className="text-sm text-[#1A1714] leading-relaxed">{track.finalProject}</p>
+                                            </div>
+                                        </div>
+
+                                        <ol className="md:col-span-8 divide-y divide-[#1A1714]/8">
+                                            {track.missions.map((m) => (
+                                                <li key={m.num} className="py-4 flex items-start gap-5">
+                                                    <span className="text-xs font-semibold tabular-nums shrink-0 w-6 pt-0.5" style={{ color: track.color }}>
+                                                        {m.num}
+                                                    </span>
+                                                    <div>
+                                                        <span className="font-display text-base md:text-lg text-[#1A1714] leading-snug">
+                                                            {m.title}
+                                                        </span>
+                                                        <p className="text-sm text-[#1A1714]/60 mt-1">{m.desc}</p>
+                                                        <p className="text-xs mt-1.5 font-mono-accent uppercase tracking-wider" style={{ color: track.color }}>
+                                                            Loot: {m.loot}
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            ))}
+                                        </ol>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </section>
@@ -289,59 +396,63 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                     HERRAMIENTAS
                     ========================================================= */}
                 <section className="relative py-24 md:py-32 border-b border-[#1A1714]/12 bg-[#F2EDE0]/60">
-                    <div ref={tools.ref} className="max-w-[1200px] mx-auto px-6 md:px-10">
+                    <div ref={toolsRef.ref} className="max-w-[1200px] mx-auto px-6 md:px-10">
 
                         <div className="flex items-baseline justify-between gap-6 mb-10 md:mb-14 pb-5 border-b border-[#1A1714]/15">
                             <div className="flex items-center gap-5">
                                 <div className="h-px w-12 bg-[#C96342]" />
                                 <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
-                                    Lámina B · Herramientas
+                                    Herramientas
                                 </p>
                             </div>
-                            <p
-                                className="hidden md:block font-display italic text-base md:text-xl text-[#1A1714]/65 tracking-[-0.01em] max-w-[42ch] text-right"
-                                style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
-                            >
-                                Seis plataformas profesionales que tu hijo domina al terminar.
-                            </p>
                         </div>
 
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-0 border border-[#1A1714]/12 bg-[#FAF7EF]">
-                            {TOOLS.map((t, i) => (
+                        <h3 className="font-display text-2xl md:text-3xl tracking-tight mb-10" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
+                            Explorer
+                        </h3>
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-0 border border-[#1A1714]/12 bg-[#FAF7EF] mb-14">
+                            {TOOLS_EXPLORER.map((t, i) => (
                                 <div
                                     key={t.name}
-                                    className={`relative p-6 md:p-8 border-r border-b border-[#1A1714]/10 last:border-r-0 group transition-all duration-[800ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                                        tools.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+                                    className={`relative p-6 md:p-8 border-r border-b border-[#1A1714]/10 last:border-r-0 group transition-all duration-[800ms] ${
+                                        toolsRef.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
                                     }`}
                                     style={{ transitionDelay: `${i * 90}ms` }}
                                 >
-                                    <span
-                                        className="font-display italic text-[#C96342] leading-none block mb-3"
-                                        style={{
-                                            fontSize: "clamp(1.25rem, 1.8vw, 1.6rem)",
-                                            fontVariationSettings: '"opsz" 144, "SOFT" 100',
-                                        }}
-                                    >
+                                    <span className="font-display italic text-[#C96342] leading-none block mb-3 text-xl" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
                                         {t.k}
                                     </span>
-                                    <h4
-                                        className="font-display text-[#1A1714] leading-tight tracking-[-0.015em] mb-1.5"
-                                        style={{
-                                            fontSize: "clamp(1.15rem, 1.5vw, 1.4rem)",
-                                            fontVariationSettings: '"opsz" 144, "SOFT" 100',
-                                        }}
-                                    >
+                                    <h4 className="font-display text-[#1A1714] leading-tight tracking-[-0.015em] mb-1.5 text-lg" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
                                         {t.name}
                                     </h4>
                                     <p className="font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#1A1714]/55">
                                         {t.note}
                                     </p>
+                                </div>
+                            ))}
+                        </div>
 
-                                    {/* micro underline on hover */}
-                                    <span
-                                        aria-hidden
-                                        className="absolute bottom-4 left-6 md:left-8 right-6 md:right-8 h-px bg-[#C96342] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"
-                                    />
+                        <h3 className="font-display text-2xl md:text-3xl tracking-tight mb-10" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
+                            Maker
+                        </h3>
+                        <div className="grid grid-cols-2 md:grid-cols-3 gap-0 border border-[#1A1714]/12 bg-[#FAF7EF]">
+                            {TOOLS_MAKER.map((t, i) => (
+                                <div
+                                    key={t.name}
+                                    className={`relative p-6 md:p-8 border-r border-b border-[#1A1714]/10 last:border-r-0 group transition-all duration-[800ms] ${
+                                        toolsRef.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
+                                    }`}
+                                    style={{ transitionDelay: `${(i + 6) * 90}ms` }}
+                                >
+                                    <span className="font-display italic text-[#C96342] leading-none block mb-3 text-xl" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
+                                        {t.k}
+                                    </span>
+                                    <h4 className="font-display text-[#1A1714] leading-tight tracking-[-0.015em] mb-1.5 text-lg" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
+                                        {t.name}
+                                    </h4>
+                                    <p className="font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#1A1714]/55">
+                                        {t.note}
+                                    </p>
                                 </div>
                             ))}
                         </div>
@@ -352,14 +463,14 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                     REQUISITOS
                     ========================================================= */}
                 <section className="relative py-24 md:py-32 border-b border-[#1A1714]/12">
-                    <div ref={reqs.ref} className="max-w-[1200px] mx-auto px-6 md:px-10">
+                    <div ref={reqsRef.ref} className="max-w-[1200px] mx-auto px-6 md:px-10">
 
                         <div className="grid grid-cols-12 gap-8 md:gap-12 mb-14 md:mb-20">
                             <div className="col-span-12 md:col-span-5">
                                 <div className="flex items-center gap-5 mb-6">
                                     <div className="h-px w-12 bg-[#C96342]" />
                                     <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
-                                        Lámina C · Requisitos
+                                        Requisitos
                                     </p>
                                 </div>
                                 <h2
@@ -373,9 +484,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                 </h2>
                             </div>
                             <div className="col-span-12 md:col-span-7 md:pt-10">
-                                <p
-                                    className="font-display text-lg md:text-xl leading-[1.55] text-[#1A1714]/70 max-w-[52ch]"
-                                >
+                                <p className="font-display text-lg md:text-xl leading-[1.55] text-[#1A1714]/70 max-w-[52ch]">
                                     Nada de equipos costosos, nada de instalaciones complicadas. Tres cosas básicas
                                     — y desde el primer día está creando junto a sus instructores.
                                 </p>
@@ -386,8 +495,8 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                             {REQUIREMENTS.map((r, i) => (
                                 <div
                                     key={r.k}
-                                    className={`relative p-8 md:p-10 md:border-r border-b md:border-b-0 border-[#1A1714]/12 last:border-r-0 last:border-b-0 transition-all duration-[900ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                                        reqs.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                                    className={`relative p-8 md:p-10 md:border-r border-b md:border-b-0 border-[#1A1714]/12 last:border-r-0 last:border-b-0 transition-all duration-[900ms] ${
+                                        reqsRef.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                                     }`}
                                     style={{ transitionDelay: `${i * 120}ms` }}
                                 >
@@ -401,17 +510,12 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                         {r.k}
                                     </span>
                                     <h3
-                                        className="font-display text-[#1A1714] leading-tight tracking-[-0.015em] mb-3"
-                                        style={{
-                                            fontSize: "clamp(1.3rem, 1.8vw, 1.65rem)",
-                                            fontVariationSettings: '"opsz" 144, "SOFT" 100',
-                                        }}
+                                        className="font-display text-[#1A1714] leading-tight tracking-[-0.015em] mb-3 text-xl md:text-2xl"
+                                        style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                                     >
                                         {r.t}
                                     </h3>
-                                    <p
-                                        className="font-display text-[15px] leading-[1.6] text-[#1A1714]/65"
-                                    >
+                                    <p className="font-display text-[15px] leading-[1.6] text-[#1A1714]/65">
                                         {r.d}
                                     </p>
                                 </div>
@@ -420,16 +524,13 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                     </div>
                 </section>
 
-                {/* =========================================================
-                    FAQ (ya editorial)
-                    ========================================================= */}
+                {/* FAQ */}
                 <FAQSection />
 
                 {/* =========================================================
-                    CLOSING · CTA RECEIPT
+                    CLOSING CTA
                     ========================================================= */}
                 <section className="relative py-24 md:py-36 bg-[#1A1714] text-[#FAF7EF] overflow-hidden">
-                    {/* grano */}
                     <div
                         aria-hidden
                         className="absolute inset-0 pointer-events-none opacity-[0.08] mix-blend-screen"
@@ -438,7 +539,6 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                             backgroundSize: "3px 3px",
                         }}
                     />
-                    {/* halo terracota */}
                     <div
                         aria-hidden
                         className="absolute -bottom-32 -left-32 w-[520px] h-[520px] rounded-full pp-halo-drift pointer-events-none"
@@ -446,17 +546,14 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                     />
 
                     <div
-                        ref={closer.ref}
+                        ref={closerRef.ref}
                         className={`relative max-w-[1100px] mx-auto px-6 md:px-10 transition-all duration-[1100ms] ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                            closer.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+                            closerRef.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
                         }`}
                     >
                         <div className="flex items-center justify-between mb-12 pb-5 border-b border-[#FAF7EF]/15">
                             <span className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
                                 Reserva · 2 clases de prueba
-                            </span>
-                            <span className="font-mono-accent text-[10px] uppercase tracking-[0.24em] text-[#FAF7EF]/45">
-                                Ref · CLOSE-PRG-I
                             </span>
                         </div>
 
@@ -472,9 +569,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                     ¿Quieres que tu hijo sea{" "}
                                     <em className="italic text-[#C96342]">el siguiente</em>?
                                 </h2>
-                                <p
-                                    className="font-display text-lg md:text-xl leading-[1.55] text-[#FAF7EF]/72 max-w-[54ch]"
-                                >
+                                <p className="font-display text-lg md:text-xl leading-[1.55] text-[#FAF7EF]/72 max-w-[54ch]">
                                     Reserva con <span className="text-[#FAF7EF] font-semibold">{reservationPrice}</span>.
                                     Toma dos clases completas. Si no te convence — o no le gusta a tu hijo — te
                                     devolvemos todo. Sin formularios, sin preguntas.
@@ -487,18 +582,12 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                     className="group relative inline-flex items-center gap-3 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 md:px-10 py-5 md:py-6 rounded-[3px] transition-colors"
                                 >
                                     <span
-                                        className="font-display italic leading-none"
-                                        style={{
-                                            fontSize: "clamp(1.1rem, 1.6vw, 1.35rem)",
-                                            fontVariationSettings: '"opsz" 144, "SOFT" 100',
-                                        }}
+                                        className="font-display italic leading-none text-lg md:text-xl"
+                                        style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                                     >
                                         Reservar por {reservationPrice}
                                     </span>
-                                    <span
-                                        aria-hidden
-                                        className="inline-block transition-transform duration-500 group-hover:translate-x-1.5"
-                                    >
+                                    <span aria-hidden className="inline-block transition-transform duration-500 group-hover:translate-x-1.5">
                                         →
                                     </span>
                                 </Link>
@@ -514,9 +603,6 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
             <Footer />
             <WhatsAppButton />
 
-            {/* ============================================================
-                KEYFRAMES
-                ============================================================ */}
             <style
                 dangerouslySetInnerHTML={{
                     __html: `

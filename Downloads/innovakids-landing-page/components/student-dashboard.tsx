@@ -35,7 +35,7 @@ export function StudentDashboard({ user, profile, enrollments }: StudentDashboar
       <header className="border-b bg-white/80 backdrop-blur-sm">
         <div className="container mx-auto flex items-center justify-between px-4 py-4">
           <div className="flex items-center gap-4">
-            <Image src="/logo-innovakids.png" alt="Innovakids" width={140} height={48} className="h-12 w-auto" />
+            <Image src="/logo-innovakids.png" alt="InnovaKids" width={140} height={48} className="h-12 w-auto" />
             <div>
               <h1 className="text-xl font-bold">Panel de Alumno</h1>
               <p className="text-sm text-muted-foreground">{profile?.full_name}</p>
@@ -52,7 +52,7 @@ export function StudentDashboard({ user, profile, enrollments }: StudentDashboar
         {enrollments.length === 0 ? (
           <Card>
             <CardHeader>
-              <CardTitle>Bienvenido a Innovakids</CardTitle>
+              <CardTitle>Bienvenido a InnovaKids</CardTitle>
               <CardDescription>
                 Aún no estás inscrito en ningún curso. Contacta con nosotros para comenzar tu aprendizaje.
               </CardDescription>

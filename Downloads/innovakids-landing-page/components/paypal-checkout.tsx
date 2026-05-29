@@ -68,7 +68,13 @@ export default function PayPalCheckout({ paymentOption, amount }: PayPalCheckout
             const res = await fetch("/api/paypal/capture-order", {
               method: "POST",
               headers: { "Content-Type": "application/json" },
-              body: JSON.stringify({ orderID: data.orderID }),
+              body: JSON.stringify({
+                orderID: data.orderID,
+                studentName,
+                parentEmail,
+                amount,
+                paymentOption,
+              }),
             })
             const result = await res.json()
 
@@ -77,7 +83,7 @@ export default function PayPalCheckout({ paymentOption, amount }: PayPalCheckout
                 window.fbq("track", "Purchase", {
                   value: amount,
                   currency: "USD",
-                  content_name: `Innovakids - ${paymentOption}`,
+                  content_name: `InnovaKids - ${paymentOption}`,
                 })
               }
 

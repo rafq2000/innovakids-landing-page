@@ -19,13 +19,13 @@ export function CountryProgramSection({
                         className="inline-block px-4 py-2 rounded-full text-sm font-bold mb-4"
                         style={{ backgroundColor: `${secondaryColor}15`, color: secondaryColor }}
                     >
-                        PROGRAMA COMPLETO 2025
+                        PROGRAMA COMPLETO 2026
                     </span>
                     <h2 className="text-3xl md:text-4xl font-bold mb-4">
                         InnovaKids: Módulo Explorer - 10 Clases
                     </h2>
                     <p className="max-w-2xl mx-auto text-muted-foreground">
-                        El programa más completo de IA para niños en {countryName}. Tu hijo pasará de consumidor a creador. Cada clase dura 60 minutos.
+                        El programa más completo de IA para niños en {countryName}. Tu hijo pasará de consumidor a creador. Cada clase dura aproximadamente 60 minutos.
                     </p>
                 </div>
 
@@ -119,7 +119,7 @@ export function CountryProgramSection({
                     <h3 className="text-2xl font-bold text-center mb-8">Lo Que Recibes (Valor Real)</h3>
                     <ul className="space-y-4 mb-8">
                         {[
-                            { item: "10 Clases en Vivo (60 min c/u)", valor: "$400" },
+                            { item: "10 Clases en Vivo (aprox. 60 min c/u)", valor: "$400" },
                             { item: "Acceso a 20+ Herramientas IA Premium", valor: "$300" },
                             { item: "Portafolio Profesional de 10 Proyectos", valor: "$200" },
                             { item: "Certificado de Completación", valor: "$50" },
@@ -149,4 +149,3 @@ export function CountryProgramSection({
         </section>
     )
 }
-

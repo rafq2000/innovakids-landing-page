@@ -36,7 +36,7 @@ export function ReferralSection() {
                         </p>
                         <button
                             type="button"
-                            className="w-full bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-5 py-3 text-sm font-semibold rounded-sm transition-colors"
+                            className="w-full bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-5 py-3 text-sm font-semibold rounded-sm transition-colors"
                             onClick={() => {
                                 navigator.clipboard?.writeText("https://www.innovakidslatam.com/?ref=amigo")
                                 trackCTAClick("referral_copy_link")

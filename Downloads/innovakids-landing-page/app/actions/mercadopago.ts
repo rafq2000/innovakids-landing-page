@@ -2,6 +2,8 @@
 
 import { mercadoPagoClient } from "@/lib/mercadopago"
 
+const VALID_AMOUNTS = [27, 120, 177, 180, 240, 267, 360, 480, 494, 691, 788] as const
+
 type PaymentOption =
   | "first"
   | "second"
@@ -26,27 +28,27 @@ type PaymentOption =
   | "pago480"
 
 const paymentTitles: Record<PaymentOption, string> = {
-  reserve: "Innovakids - Reserva de Cupo",
-  remaining: "Innovakids - Pago Restante",
-  full: "Innovakids - Curso Completo",
-  promo180: "Innovakids - Oferta Especial",
-  first: "Innovakids - Reserva",
-  second: "Innovakids - Pago Restante",
-  earlybird: "Innovakids - Early Bird",
-  complete: "Innovakids - Programa Completo",
-  custom360: "Innovakids - Pago Personalizado",
-  explorer: "Innovakids Explorer",
+  reserve: "InnovaKids - Reserva de Cupo",
+  remaining: "InnovaKids - Pago Restante",
+  full: "InnovaKids - Curso Completo",
+  promo180: "InnovaKids - Oferta Especial",
+  first: "InnovaKids - Reserva",
+  second: "InnovaKids - Pago Restante",
+  earlybird: "InnovaKids - Early Bird",
+  complete: "InnovaKids - Programa Completo",
+  custom360: "InnovaKids - Pago Personalizado",
+  explorer: "InnovaKids Explorer",
   start_pack: "Vibe Start Pack",
   pro_pack: "Vibe Pro Pack",
   university: "Academy University Pass",
-  restante177: "Innovakids - Pago Restante $177",
-  promo27: "Innovakids - Promoción $27",
-  promo267: "Innovakids - Programa Completo $267",
-  promo240: "Innovakids - Promoción $240",
-  promo120: "Innovakids - Promoción Especial $120",
-  promo480: "Innovakids - Programa Completo Premium $480",
-  pago240: "Innovakids - Curso Completo $240",
-  pago480: "Innovakids - Programa Premium $480",
+  restante177: "InnovaKids - Pago Restante $177",
+  promo27: "InnovaKids - Promoción $27",
+  promo267: "InnovaKids - Programa Completo $267",
+  promo240: "InnovaKids - Promoción $240",
+  promo120: "InnovaKids - Promoción Especial $120",
+  promo480: "InnovaKids - Programa Completo Premium $480",
+  pago240: "InnovaKids - Curso Completo $240",
+  pago480: "InnovaKids - Programa Premium $480",
 }
 
 const paymentDescriptions: Record<PaymentOption, string> = {
@@ -57,7 +59,7 @@ const paymentDescriptions: Record<PaymentOption, string> = {
   first: "Reserva de cupo",
   second: "Pago restante del programa",
   earlybird: "Precio especial primeros inscritos",
-  complete: "Programa completo Innovakids",
+  complete: "Programa completo InnovaKids",
   custom360: "Pago único programa completo",
   explorer: "Módulo 1 Base - 10 Clases",
   start_pack: "Explorer + 1 Especialidad",
@@ -68,9 +70,9 @@ const paymentDescriptions: Record<PaymentOption, string> = {
   promo267: "Pago único de $267 USD",
   promo240: "Pago único de $240 USD",
   promo120: "Pago especial de $120 USD",
-  promo480: "Pago único de $480 USD - Acceso completo Innovakids",
-  pago240: "Pago único de $240 USD - Curso Completo Innovakids",
-  pago480: "Pago único de $480 USD - Programa Premium Innovakids",
+  promo480: "Pago único de $480 USD - Acceso completo InnovaKids",
+  pago240: "Pago único de $240 USD - Curso Completo InnovaKids",
+  pago480: "Pago único de $480 USD - Programa Premium InnovaKids",
 }
 
 export async function createMercadoPagoCheckout(
@@ -79,6 +81,10 @@ export async function createMercadoPagoCheckout(
   paymentOption: PaymentOption,
   amount: number,
 ) {
+  if (!VALID_AMOUNTS.includes(amount as (typeof VALID_AMOUNTS)[number])) {
+    return { success: false, error: "Monto no valido" }
+  }
+
   try {
     const preference = await mercadoPagoClient.create({
       body: {

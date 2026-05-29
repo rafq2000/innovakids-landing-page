@@ -1,4 +1,3 @@
-import { generateHreflangs } from "@/lib/seo-config";
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
@@ -7,7 +6,7 @@ import { CheckCircle, Target, Clock, Star, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
   robots: {
-    index: false,
+    index: true,
     follow: true,
   },
   title: "Cursos de IA para Niños en Chile (Guía 2026)",
@@ -29,7 +28,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/cl/blog/cursos-inteligencia-artificial-ninos-chile-guia",
-      languages: generateHreflangs("home")
   },
 }
 
@@ -296,7 +294,7 @@ export default function GuiaIANinosChile() {
 
               <h3 className="mt-8 text-xl font-bold">¿Qué edad es la ideal para empezar?</h3>
               <p>
-                Nuestro programa está diseñado para niños de 8 a 14 años. En la evaluación gratuita determinamos si tu
+                Nuestro programa está diseñado para niños de 8 a 17 años. En la evaluación gratuita determinamos si tu
                 hijo está listo para comenzar.
               </p>
 
@@ -344,13 +342,13 @@ export default function GuiaIANinosChile() {
               <h3 className="mb-6 text-xl font-bold">Artículos Relacionados</h3>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  href="/cl/cursos-ia-ninos-chile"
+                  href="/cl"
                   className="inline-flex items-center gap-2 rounded-full bg-card px-4 py-2 transition-all hover:bg-primary hover:text-primary-foreground"
                 >
                   Cursos IA Chile <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
-                  href="/cl/clases-ia-ninos-santiago"
+                  href="/cl/santiago/cursos/inteligencia-artificial"
                   className="inline-flex items-center gap-2 rounded-full bg-card px-4 py-2 transition-all hover:bg-primary hover:text-primary-foreground"
                 >
                   Clases en Santiago <ArrowRight className="h-4 w-4" />

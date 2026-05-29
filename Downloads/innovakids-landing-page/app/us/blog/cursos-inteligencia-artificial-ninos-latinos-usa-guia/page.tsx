@@ -1,4 +1,3 @@
-import { generateHreflangs } from "@/lib/seo-config";
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
@@ -7,7 +6,7 @@ import { Target, Clock } from "lucide-react"
 
 export const metadata: Metadata = {
   robots: {
-    index: false,
+    index: true,
     follow: true,
   },
   title: "Cursos de IA para Niños Latinos en USA (Guía 2026)",
@@ -31,7 +30,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/us/blog/cursos-inteligencia-artificial-ninos-latinos-usa-guia",
-      languages: generateHreflangs("home")
   },
 }
 
@@ -245,7 +243,7 @@ export default function GuiaIANinosLatinosUSA() {
                   similar
                 </li>
                 <li>
-                  <strong>10 clases en vivo</strong> - Una vez por semana, 60 minutos, 100% en español
+                  <strong>10 clases en vivo</strong> - Una vez por semana, aprox. 60 minutos, 100% en español
                 </li>
                 <li>
                   <strong>Proyectos reales</strong> - Tu hijo termina con 6+ proyectos publicables
@@ -325,14 +323,14 @@ export default function GuiaIANinosLatinosUSA() {
               <h3 className="mb-6 text-xl font-bold">Artículos Relacionados</h3>
               <div className="grid gap-4 md:grid-cols-2">
                 <Link
-                  href="/us/cursos-ia-ninos-latinos-usa"
+                  href="/us"
                   className="group rounded-xl bg-card p-4 transition-all hover:shadow-lg"
                 >
                   <h4 className="font-bold group-hover:text-primary">Curso de IA para Latinos en USA →</h4>
                   <p className="text-sm text-muted-foreground">Información completa del programa</p>
                 </Link>
                 <Link
-                  href="/us/clases-ia-ninos-miami"
+                  href="/us/miami/cursos/inteligencia-artificial"
                   className="group rounded-xl bg-card p-4 transition-all hover:shadow-lg"
                 >
                   <h4 className="font-bold group-hover:text-primary">Clases de IA en Miami →</h4>

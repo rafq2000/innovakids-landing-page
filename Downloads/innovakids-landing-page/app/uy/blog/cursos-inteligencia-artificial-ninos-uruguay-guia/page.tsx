@@ -1,4 +1,3 @@
-import { generateHreflangs } from "@/lib/seo-config"
 import type { Metadata } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -6,7 +5,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    robots: { index: false, follow: true },
+    robots: { index: true, follow: true },
     title: "Cursos de IA para Niños en Uruguay (Guía 2026)",
     description:
         "Guía Completa: Lo que todo padre uruguayo debe saber antes de inscribir a su hijo en un curso de IA. Precios, herramientas, seguridad y mejores opciones.",
@@ -26,7 +25,6 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: "https://www.innovakidslatam.com/uy/blog/cursos-inteligencia-artificial-ninos-uruguay-guia",
-        languages: generateHreflangs("home"),
     },
 }
 
@@ -78,7 +76,7 @@ const whyInnova = [
 ]
 
 const faqs = [
-    { q: "¿Qué edad debe tener mi hijo?", a: "El curso está diseñado para niños de 8 a 14 años. Agrupamos por edades similares." },
+    { q: "¿Qué edad debe tener mi hijo?", a: "El curso está diseñado para niños de 8 a 17 años. Agrupamos por edades similares." },
     { q: "¿Necesita conocimientos previos?", a: "No, partimos desde cero. Solo necesita saber leer, escribir y usar una computadora básicamente." },
     { q: "¿Cómo son las clases online?", a: "Clases en vivo por Zoom con máximo 5 niños. Interactivas y 100% prácticas." },
     { q: "¿Qué pasa si no me convence?", a: "Tenés 10 días de garantía. Si no estás satisfecho, devolvemos el 100% de tu dinero." },
@@ -308,13 +306,13 @@ export default function UruguayBlogGuiaPage() {
                                 <div className="md:col-span-5 flex flex-col gap-3 md:justify-self-end w-full md:w-auto">
                                     <Link
                                         href="/clase-gratis"
-                                        className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                        className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                     >
                                         Reservar clase demo gratis
                                         <span aria-hidden>→</span>
                                     </Link>
                                     <Link
-                                        href="/uy/cursos-ia-ninos-uruguay"
+                                        href="/uy"
                                         className="inline-flex items-center justify-center gap-2 border border-[#1A1714] text-[#1A1714] hover:bg-[#1A1714] hover:text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                     >
                                         Ver el programa
@@ -328,7 +326,7 @@ export default function UruguayBlogGuiaPage() {
                             <p className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold mb-6">Sigue leyendo</p>
                             <div className="grid md:grid-cols-3 gap-0 border-t border-[#1A1714]/12">
                                 <Link
-                                    href="/uy/cursos-ia-ninos-uruguay"
+                                    href="/uy"
                                     className="group border-b md:border-r border-[#1A1714]/12 py-8 md:pr-6 hover:bg-[#F2EDE0]/40 transition-colors"
                                 >
                                     <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Uruguay</p>
@@ -340,7 +338,7 @@ export default function UruguayBlogGuiaPage() {
                                     </h4>
                                 </Link>
                                 <Link
-                                    href="/uy/clases-ia-ninos-montevideo"
+                                    href="/uy/montevideo/cursos/inteligencia-artificial"
                                     className="group border-b md:border-r border-[#1A1714]/12 py-8 md:px-6 hover:bg-[#F2EDE0]/40 transition-colors"
                                 >
                                     <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Montevideo</p>

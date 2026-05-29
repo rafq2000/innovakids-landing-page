@@ -51,29 +51,31 @@ export function HeroLeadForm() {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 items-stretch sm:items-end">
       <div className="flex-1 min-w-0">
-        <label className="block font-mono-accent text-[9px] uppercase tracking-[0.18em] text-[var(--ink-muted)] mb-1.5">
+        <label htmlFor="hero-name" className="block font-mono-accent text-[9px] uppercase tracking-[0.18em] text-[var(--ink-muted)] mb-1.5">
           Tu nombre
         </label>
         <input
+          id="hero-name"
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="María"
           required
-          className="w-full bg-transparent border-0 border-b border-[var(--ink)]/20 py-2 text-base text-[var(--ink)] placeholder:text-[var(--ink)]/30 focus:outline-none focus:border-[var(--terracotta)] transition-colors"
+          className="w-full bg-transparent border-0 border-b border-[var(--ink)]/20 py-2 text-base text-[var(--ink)] placeholder:text-[var(--ink)]/30 focus:border-[var(--terracotta)] transition-colors"
         />
       </div>
       <div className="flex-1 min-w-0">
-        <label className="block font-mono-accent text-[9px] uppercase tracking-[0.18em] text-[var(--ink-muted)] mb-1.5">
+        <label htmlFor="hero-whatsapp" className="block font-mono-accent text-[9px] uppercase tracking-[0.18em] text-[var(--ink-muted)] mb-1.5">
           WhatsApp
         </label>
         <input
+          id="hero-whatsapp"
           type="tel"
           value={whatsapp}
           onChange={(e) => setWhatsapp(e.target.value)}
           placeholder="+56 9 1234 5678"
           required
-          className="w-full bg-transparent border-0 border-b border-[var(--ink)]/20 py-2 text-base text-[var(--ink)] placeholder:text-[var(--ink)]/30 focus:outline-none focus:border-[var(--terracotta)] transition-colors"
+          className="w-full bg-transparent border-0 border-b border-[var(--ink)]/20 py-2 text-base text-[var(--ink)] placeholder:text-[var(--ink)]/30 focus:border-[var(--terracotta)] transition-colors"
         />
       </div>
       <button

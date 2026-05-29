@@ -1,4 +1,3 @@
-import { generateHreflangs } from "@/lib/seo-config"
 import type { Metadata } from "next"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
@@ -6,7 +5,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-    robots: { index: false, follow: true },
+    robots: { index: true, follow: true },
     title: "Cursos de IA para Chicos en Argentina (Guía 2026)",
     description:
         "Guía Completa: Lo que todo padre argentino debe saber antes de inscribir a su hijo en un curso de IA. Precios en pesos, herramientas, seguridad y mejores opciones.",
@@ -26,7 +25,6 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: "https://www.innovakidslatam.com/ar/blog/cursos-inteligencia-artificial-chicos-argentina-guia",
-        languages: generateHreflangs("home"),
     },
 }
 
@@ -297,13 +295,13 @@ export default function ArgentinaBlogGuiaPage() {
                                 <div className="md:col-span-5 flex flex-col gap-3 md:justify-self-end w-full md:w-auto">
                                     <Link
                                         href="/clase-gratis"
-                                        className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#A8502F] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                        className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                     >
                                         Reservar clase demo gratis
                                         <span aria-hidden>→</span>
                                     </Link>
                                     <Link
-                                        href="/ar/cursos-ia-chicos-argentina"
+                                        href="/ar"
                                         className="inline-flex items-center justify-center gap-2 border border-[#1A1714] text-[#1A1714] hover:bg-[#1A1714] hover:text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                     >
                                         Ver el programa
@@ -319,7 +317,7 @@ export default function ArgentinaBlogGuiaPage() {
                             </p>
                             <div className="grid md:grid-cols-2 gap-0 border-t border-[#1A1714]/12">
                                 <Link
-                                    href="/ar/cursos-ia-chicos-argentina"
+                                    href="/ar"
                                     className="group border-b md:border-r border-[#1A1714]/12 py-8 md:pr-8 hover:bg-[#F2EDE0]/40 transition-colors"
                                 >
                                     <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Programa</p>
@@ -334,7 +332,7 @@ export default function ArgentinaBlogGuiaPage() {
                                     </p>
                                 </Link>
                                 <Link
-                                    href="/ar/clases-ia-chicos-buenos-aires"
+                                    href="/ar"
                                     className="group border-b border-[#1A1714]/12 py-8 md:pl-8 hover:bg-[#F2EDE0]/40 transition-colors"
                                 >
                                     <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Buenos Aires</p>

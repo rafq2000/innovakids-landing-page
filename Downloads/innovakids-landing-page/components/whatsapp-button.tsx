@@ -43,8 +43,7 @@ export function WhatsAppButton() {
             <X className="w-3 h-3" />
           </button>
           <p
-            className="text-base font-semibold mb-1.5 leading-snug"
-            style={{ fontFamily: "'Charter', 'Georgia', serif" }}
+            className="font-display text-base font-semibold mb-1.5 leading-snug"
           >
             👋 ¿Tu hijo tiene 8–17 años?
           </p>

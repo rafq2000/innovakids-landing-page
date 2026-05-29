@@ -1,4 +1,3 @@
-import { generateHreflangs } from "@/lib/seo-config";
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
@@ -7,7 +6,7 @@ import { Target } from "lucide-react"
 
 export const metadata: Metadata = {
   robots: {
-    index: false,
+    index: true,
     follow: true,
   },
   title: "Cursos de IA para Niños en Costa Rica (Guía 2026)",
@@ -29,7 +28,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.innovakidslatam.com/cr/blog/cursos-inteligencia-artificial-ninos-costa-rica-guia",
-      languages: generateHreflangs("home")
   },
 }
 export default function BlogCursosIANinosCostaRica() {
@@ -94,7 +92,7 @@ export default function BlogCursosIANinosCostaRica() {
 
               <h2>Edad Recomendada</h2>
               <p>
-                En InnovaKids trabajamos con niños de 8 a 14 años. Esta es la edad ideal porque ya tienen habilidades de
+                En InnovaKids trabajamos con niños de 8 a 17 años. Esta es la edad ideal porque ya tienen habilidades de
                 lectura desarrolladas y su creatividad está en su punto máximo.
               </p>
 
@@ -113,7 +111,7 @@ export default function BlogCursosIANinosCostaRica() {
                 El programa completo de InnovaKids cuesta <strong>$267 USD</strong> e incluye:
               </p>
               <ul>
-                <li>10 clases en vivo de 60 minutos cada una</li>
+                <li>10 clases en vivo de aproximadamente 60 minutos cada una</li>
                 <li>Grupos de máximo 5 niños</li>
                 <li>Acceso a 10+ herramientas de IA profesionales</li>
                 <li>Proyectos reales publicables</li>
@@ -171,13 +169,13 @@ export default function BlogCursosIANinosCostaRica() {
               <h3 className="mb-4 text-xl font-bold">Artículos Relacionados</h3>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  href="/cr/cursos-ia-ninos-costa-rica"
+                  href="/cr"
                   className="rounded-full bg-card px-4 py-2 text-sm hover:bg-primary hover:text-primary-foreground"
                 >
                   Cursos IA Niños Costa Rica
                 </Link>
                 <Link
-                  href="/cr/clases-ia-ninos-san-jose"
+                  href="/cr/san-jose/cursos/inteligencia-artificial"
                   className="rounded-full bg-card px-4 py-2 text-sm hover:bg-primary hover:text-primary-foreground"
                 >
                   Clases IA San José
