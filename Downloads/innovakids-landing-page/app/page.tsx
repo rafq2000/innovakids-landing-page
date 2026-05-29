@@ -197,7 +197,7 @@ export default function Home() {
                   {[
                     "10 clases en vivo (5 semanas, 2 por semana)",
                     "Grupos de máximo 5 niños",
-                    "Nivel 1: Explorer (fundamentos) + Nivel 2: Maker (track a elección)",
+                    "3 niveles: Básico (Explorer) + Intermedio (Maker) + Avanzado (track)",
                     "Mentor 1:1 cuando lo necesite",
                     "Soporte por WhatsApp para ti y tu hijo",
                     "Certificado digital verificable",
@@ -235,16 +235,16 @@ export default function Home() {
         {/* 6 - FAQ: cierre de objeciones */}
         <FAQSection />
 
-        {/* 7 - TRACKS ESPECIALIZADOS: Nivel 2 Vibe Maker */}
+        {/* 7 - 3 NIVELES: Básico → Intermedio → Avanzado */}
         <section
           className="bg-[#F5F1E8] text-[#2F2F2C] py-28 md:py-40 border-t border-[#2F2F2C]/10"
-          aria-label="Tracks especializados"
+          aria-label="3 niveles del programa"
         >
           <div className="max-w-[1100px] mx-auto px-6 md:px-10">
             <div className="flex items-center gap-5 mb-16">
               <div className="h-px w-12 bg-[#C96342]" />
               <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
-                Después del Nivel 01
+                3 niveles progresivos
               </p>
             </div>
 
@@ -252,11 +252,12 @@ export default function Home() {
               <h2
                 className="md:col-span-7 font-display text-5xl sm:text-6xl md:text-7xl leading-[0.98] tracking-[-0.02em] font-normal"
               >
-                Elige su <em className="italic text-[#C96342]">track</em>.
+                Básico, intermedio y{" "}
+                <em className="italic text-[#C96342]">avanzado</em>.
               </h2>
               <p className="md:col-span-5 text-lg text-[#5A5751] leading-relaxed max-w-[40ch]">
-                Al completar Explorer, tu hijo elige una de seis especialidades
-                y construye proyectos reales en 5 misiones.
+                Explorer (fundamentos) → Maker (herramientas reales) → Track especializado
+                (proyecto final publicado).
               </p>
             </div>
 

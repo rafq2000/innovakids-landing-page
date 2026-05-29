@@ -31,14 +31,14 @@ export function CurriculumSection() {
         </h2>
 
         <p className="text-lg md:text-xl text-[#5A5751] max-w-[56ch] leading-relaxed mb-20">
-          Todos empiezan en <strong className="text-[#2F2F2C]">Vibe Explorer</strong> (10 clases).
-          Después pasan a <strong className="text-[#2F2F2C]">Vibe Maker</strong>: 5 misiones
-          core + un track especializado según su pasión.
+          Tres niveles progresivos: <strong className="text-[#2F2F2C]">Básico</strong> (Explorer, 10 clases),{" "}
+          <strong className="text-[#2F2F2C]">Intermedio</strong> (Maker, 5 misiones) y{" "}
+          <strong className="text-[#2F2F2C]">Avanzado</strong> (Track especializado, 5 misiones).
         </p>
 
         {/* ─── LEVEL TABS ─── */}
         <div className="flex flex-wrap gap-0 border-y border-[#2F2F2C]/15 mb-16">
-          {/* Explorer */}
+          {/* Explorer - Básico */}
           <button
             onClick={() => setActive("explorer")}
             className={`text-left py-5 px-5 md:px-7 border-r border-[#2F2F2C]/10 transition-colors ${
@@ -46,7 +46,7 @@ export function CurriculumSection() {
             }`}
           >
             <span className="block text-[10px] text-[#C96342] font-semibold tracking-wider mb-1">
-              NIVEL 01
+              BÁSICO
             </span>
             <span className={`font-display block text-base md:text-lg tracking-tight ${
               active === "explorer" ? "text-[#C96342]" : "text-[#2F2F2C]"
@@ -55,7 +55,7 @@ export function CurriculumSection() {
             </span>
           </button>
 
-          {/* Maker Core */}
+          {/* Maker Core - Intermedio */}
           <button
             onClick={() => setActive("maker-core")}
             className={`text-left py-5 px-5 md:px-7 border-r border-[#2F2F2C]/10 transition-colors ${
@@ -63,16 +63,16 @@ export function CurriculumSection() {
             }`}
           >
             <span className="block text-[10px] text-[#C96342] font-semibold tracking-wider mb-1">
-              NIVEL 02
+              INTERMEDIO
             </span>
             <span className={`font-display block text-base md:text-lg tracking-tight ${
               active === "maker-core" ? "text-[#C96342]" : "text-[#2F2F2C]"
             }`}>
-              Maker Core
+              Vibe Maker
             </span>
           </button>
 
-          {/* Track tabs */}
+          {/* Track tabs - Avanzado */}
           {TRACKS.map((track) => (
             <button
               key={track.id}
@@ -82,7 +82,7 @@ export function CurriculumSection() {
               }`}
             >
               <span className="block text-[10px] font-semibold tracking-wider mb-1" style={{ color: track.color }}>
-                TRACK
+                AVANZADO
               </span>
               <span className={`font-display block text-sm md:text-base tracking-tight ${
                 active === track.id ? "text-[#C96342]" : "text-[#2F2F2C]"
