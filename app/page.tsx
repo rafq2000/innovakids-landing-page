@@ -221,13 +221,15 @@ export default function Home() {
               <div className="md:col-span-7 md:border-l md:border-[#FAF7EF]/15 md:pl-10">
                 <ul className="space-y-4 mb-8">
                   {[
-                    "En 10 sesiones tu hijo pasa de consumidor a creador de tecnología",
-                    "Atención real: el profesor conoce a tu hijo por nombre (max 5 por grupo)",
-                    "3 niveles progresivos: avanza a su ritmo sin frustrarse ni aburrirse",
-                    "Si se traba, un mentor lo ayuda en el momento (1:1)",
-                    "Dudas? Te respondemos en minutos por WhatsApp, no en días",
-                    "Certificado digital que puede mostrar en el colegio",
-                    "Si falta a una clase, no pierde nada (grabaciones incluidas)",
+                    "10 clases en vivo de 60 min (2 por semana, 5 semanas)",
+                    "Grupos de máximo 5 niños: el profesor conoce a tu hijo por nombre",
+                    "3 niveles: Básico (fundamentos IA) + Intermedio (apps y bots) + Avanzado (track a elección)",
+                    "Crea proyectos reales: videojuegos, música, arte, apps publicadas en internet",
+                    "Todas las clases grabadas para que las pueda reveer cuando quiera",
+                    "Mentor 1:1 disponible si se traba en algún proyecto",
+                    "Soporte por WhatsApp para ti y tu hijo durante todo el programa",
+                    "Certificado digital verificable al completar cada nivel",
+                    "Herramientas pro: ChatGPT, Claude, Suno, Cursor y más (incluidas)",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-[15px] text-[#FAF7EF]/80 leading-relaxed">
                       <span className="text-[#C96342] mt-[2px] shrink-0">&#10003;</span>
