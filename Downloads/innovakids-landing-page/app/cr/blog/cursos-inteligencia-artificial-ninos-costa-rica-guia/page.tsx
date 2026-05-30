@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     "Guía Completa: Lo que todo padre tico debe saber antes de inscribir a su hijo en un curso de IA. Precios, herramientas, seguridad y mejores opciones.",
   keywords: [
     "guia cursos ia niños costa rica",
-    "mejores cursos programacion niños costa rica",
+    "mejores cursos programación niños costa rica",
     "comparativa escuelas ia costa rica",
-    "consejos padres tecnologia costa rica",
+    "consejos padres tecnología costa rica",
   ],
   openGraph: {
     title: "Cursos de IA para Niños en Costa Rica (Guía 2026)",
@@ -36,7 +36,7 @@ export default function BlogCursosIANinosCostaRica() {
     "Hola! Leí la guía de IA para niños en Costa Rica y quiero más información.",
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
-  const calendlyLink = "https://calendly.com/innovakids/evaluacion"
+  const calendlyLink = "https://calendly.com/innovakids/evaluación"
 
   return (
     <>

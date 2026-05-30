@@ -85,7 +85,7 @@ export default function IANinosPorEdadPage() {
               </div>
 
               <p className="text-lg text-[#3B3630] mb-8 leading-relaxed">
-                A esta edad, los niños son curiosos naturales. Aprovechamos esa curiosidad para que descubran
+                A está edad, los niños son curiosos naturales. Aprovechamos esa curiosidad para que descubran
                 la IA como una herramienta mágica que responde a sus ideas. El enfoque es 100% lúdico:
                 jugar, crear y asombrarse.
               </p>
@@ -150,7 +150,7 @@ export default function IANinosPorEdadPage() {
               </div>
 
               <p className="text-lg text-[#3B3630] mb-8 leading-relaxed">
-                Los preadolescentes quieren crear cosas propias y compartirlas. A esta edad tienen la madurez
+                Los preadolescentes quieren crear cosas propias y compartirlas. A está edad tienen la madurez
                 para entender conceptos más avanzados y la motivación para completar proyectos ambiciosos.
                 Es el momento perfecto para el Vibe Coding y la creación multimedia.
               </p>
@@ -162,7 +162,7 @@ export default function IANinosPorEdadPage() {
                     {[
                       "Prompt Engineering avanzado (obtener resultados precisos)",
                       "Vibe Coding: crear apps y juegos hablando con IA",
-                      "Producción musical completa con IA",
+                      "Producción músical completa con IA",
                       "Narrativa visual y storytelling con arte generativo",
                       "Ética digital y detección de deepfakes",
                     ].map((item) => (
@@ -179,7 +179,7 @@ export default function IANinosPorEdadPage() {
                     {[
                       "Un videojuego funcional tipo plataforma o RPG",
                       "Una app web que resuelve un problema real",
-                      "Un álbum musical de 3 canciones originales",
+                      "Un álbum músical de 3 canciones originales",
                       "Un portafolio digital profesional",
                     ].map((item) => (
                       <li key={item} className="flex items-start text-[#3B3630]">
@@ -215,7 +215,7 @@ export default function IANinosPorEdadPage() {
               </div>
 
               <p className="text-lg text-[#3B3630] mb-8 leading-relaxed">
-                Los adolescentes piensan en su futuro. A esta edad, la IA no solo es divertida sino que se convierte
+                Los adolescentes piensan en su futuro. A está edad, la IA no solo es divertida sino que se convierte
                 en una herramienta profesional real. Les enseñamos a usar las mismas herramientas que usan empresas
                 y emprendedores, preparándolos para la universidad y el mercado laboral.
               </p>

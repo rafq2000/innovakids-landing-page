@@ -58,7 +58,7 @@ export const WHATSAPP = {
 /* ─── SESSION ─────────────────────────────────────────── */
 
 export const SESSION = {
-  name: "Sesion diagnostica gratuita",
+  name: "Sesión diagnostica gratuita",
   duration: 30,
   durationText: "30 minutos",
 } as const

@@ -168,7 +168,7 @@ export default function IANinos10a12Page() {
             </h1>
             <p className="text-lg text-[#F5F1E8]/80 max-w-[60ch] leading-relaxed mb-10">
               Qué puede aprender tu hijo sobre Inteligencia Artificial
-              a esta edad, qué proyectos reales puede crear y cómo
+              a está edad, qué proyectos reales puede crear y cómo
               empezar sin ningún conocimiento previo.
             </p>
             <div className="flex flex-wrap gap-4 text-sm text-[#F5F1E8]/60">
@@ -297,7 +297,7 @@ export default function IANinos10a12Page() {
                 },
                 {
                   q: "¿Cuántas horas a la semana necesita un niño de 11 años para aprender IA?",
-                  a: "Con 90 minutos por semana (una sesión) ya se ven resultados. En InnovaKids hacemos 2 sesiones semanales de 90 minutos durante 5 semanas, para un total de 15 horas que producen proyectos reales terminados.",
+                  a: "Con 90 minutos por semana (una sesión) ya se ven resultados. En InnovaKids hacemos 2 sesiónes semanales de 90 minutos durante 5 semanas, para un total de 15 horas que producen proyectos reales terminados.",
                 },
                 {
                   q: "¿Qué necesita mi hijo de 12 años para empezar?",
@@ -351,7 +351,7 @@ export default function IANinos10a12Page() {
               {[
                 { href: "/blog/ia-para-ninos-por-edad-8-10-11-13-14-17", title: "IA para Niños por Edad: guía completa 8-17 años" },
                 { href: "/blog/extraescolar-inteligencia-artificial-ninos", title: "Extraescolar de IA: cómo elegir la mejor" },
-                { href: "/blog/vibe-coding-que-es-futuro-programacion-ninos", title: "Vibe Coding: la nueva forma de programar" },
+                { href: "/blog/vibe-coding-que-es-futuro-programación-ninos", title: "Vibe Coding: la nueva forma de programar" },
                 { href: "/cursos/inteligencia-artificial", title: "Ver el programa completo InnovaKids" },
               ].map((link) => (
                 <li key={link.href}>

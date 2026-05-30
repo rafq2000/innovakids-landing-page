@@ -9,19 +9,19 @@ export const metadata: Metadata = {
         "Mejores cursos de verano de programación e IA para niños 8-17 años en 2026: comparamos precios, metodologías y resultados reales. 527 familias. Lee ya.",
     keywords: [
         "cursos verano niños 2026",
-        "cursos verano programacion niños",
+        "cursos verano programación niños",
         "cursos verano ia niños",
-        "mejores cursos verano tecnologia",
-        "campamento ia programacion niños",
+        "mejores cursos verano tecnología",
+        "campamento ia programación niños",
     ],
     alternates: {
-        canonical: "https://www.innovakidslatam.com/blog/mejores-cursos-verano-programacion-ia-ninos-2026",
+        canonical: "https://www.innovakidslatam.com/blog/mejores-cursos-verano-programación-ia-ninos-2026",
     },
     openGraph: {
         title: "Mejores Cursos de Verano · Programación e IA para Niños 2026 | InnovaKids",
         description:
             "Comparativa honesta: programación tradicional vs IA para niños 8-17 años. Precios, metodologías y resultados reales.",
-        url: "https://www.innovakidslatam.com/blog/mejores-cursos-verano-programacion-ia-ninos-2026",
+        url: "https://www.innovakidslatam.com/blog/mejores-cursos-verano-programación-ia-ninos-2026",
         siteName: "InnovaKids",
         type: "article",
         locale: "es_419",
@@ -58,7 +58,7 @@ const authorSchema = {
     },
     "datePublished": "2026-03-11",
     "dateModified": "2026-03-11",
-    "mainEntityOfPage": "https://www.innovakidslatam.com/blog/mejores-cursos-verano-programacion-ia-ninos-2026",
+    "mainEntityOfPage": "https://www.innovakidslatam.com/blog/mejores-cursos-verano-programación-ia-ninos-2026",
 }
 
 const comparisons = [
@@ -166,7 +166,7 @@ export default function ComparativaVeranoPage() {
                         <p className="lead text-2xl leading-[1.45] text-[#1A1714]/85 font-sans">
                             Cada año, miles de padres en Latinoamérica y España buscan <strong>cursos de verano de programación para niños</strong> o
                             <strong> talleres tecnológicos para adolescentes</strong>. Pero en 2026, la pregunta ya no es "¿mi hijo debe aprender a programar?",
-                            sino <strong>"¿debería aprender programación tradicional o inteligencia artificial?"</strong> En esta guía comparativa
+                            sino <strong>"¿debería aprender programación tradicional o inteligencia artificial?"</strong> En está guía comparativa
                             analizamos ambas opciones con datos reales.
                         </p>
 

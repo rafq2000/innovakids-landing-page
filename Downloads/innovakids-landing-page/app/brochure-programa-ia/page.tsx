@@ -174,7 +174,7 @@ export default function BrochurePage() {
                 { num: "1", title: "Vibe IA: Tu nuevo superpoder", desc: "Configurando ChatGPT como tu copiloto creativo." },
                 { num: "2", title: "Prompt Engineering", desc: "El arte de hablar con máquinas para que te obedezcan." },
                 { num: "3", title: "Vibe Voice", desc: "Clonando voces y creando narradores sintéticos." },
-                { num: "4", title: "Vibe Music", desc: "Componiendo hits musicales (letra+ritmo) con IA." },
+                { num: "4", title: "Vibe Music", desc: "Componiendo hits músicales (letra+ritmo) con IA." },
                 { num: "5", title: "Generative Art I", desc: "De la imaginación a la pantalla (Midjourney/DALL-E)." },
                 { num: "6", title: "Generative Art II", desc: "Creando universos visuales coherentes." },
                 { num: "7", title: "Vibe Coding", desc: "Pensamiento computacional construyendo sistemas interactivos." },

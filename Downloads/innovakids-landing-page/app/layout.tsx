@@ -37,18 +37,20 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  // Title: empathetic fear-hook · keyword-rich · brand at end
-  title: "Cursos de IA para Niños y Adolescentes (8-17 años) | ★4.9 · Clase Gratis | InnovaKids",
+  title: {
+    template: "%s | InnovaKids",
+    default: "Cursos de IA para Niños y Adolescentes 8-17 | InnovaKids",
+  },
   // Description: keyword-first + social proof + CTA
   description:
     "Clases en vivo de Inteligencia Artificial para niños y adolescentes 8-17 años. Crean videojuegos, apps y arte con IA. Grupos de máx. 5. 527 graduados en 9 países. ★4.9. 1ª clase gratis.",
   keywords: [
     "mi hijo se queda atrás en la era de la ia",
-    "como evitar que mi hijo se quede atras con la ia",
+    "cómo evitar que mi hijo se quede atrás con la ia",
     "niños rezagados inteligencia artificial",
     "brecha digital niños ia",
-    "ia el nuevo ingles",
-    "ia habilidad basica siglo xxi",
+    "ia el nuevo inglés",
+    "ia habilidad básica siglo xxi",
     "mi hijo no sabe usar ia",
     "ia para estudiar colegio",
     "curso inteligencia artificial niños",
@@ -61,7 +63,7 @@ export const metadata: Metadata = {
     "academia ia niños",
     "innovakids",
     "innovakidslatam",
-    "cursos de tecnologia para niños y adolescentes"
+    "cursos de tecnología para niños y adolescentes"
   ],
   authors: [{ name: "InnovaKids Team" }],
   creator: "InnovaKids",

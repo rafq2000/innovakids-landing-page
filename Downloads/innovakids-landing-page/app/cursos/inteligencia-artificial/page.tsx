@@ -43,7 +43,7 @@ const CLASES = [
   { n: "01", titulo: "Vibe IA", desc: "Tu nuevo superpoder: configurando ChatGPT como copiloto personal", color: "border-primary" },
   { n: "02", titulo: "Prompt Engineering", desc: "El arte de hablar con IA para que te entienda exactamente", color: "border-primary" },
   { n: "03", titulo: "Vibe Voice", desc: "Clonación de voz y narración con ElevenLabs · traducción multiidioma", color: "border-primary/60" },
-  { n: "04", titulo: "Vibe Music", desc: "Composición musical con Suno: letra, melodía y voces en 30 minutos", color: "border-primary/60" },
+  { n: "04", titulo: "Vibe Music", desc: "Composición músical con Suno: letra, melodía y voces en 30 minutos", color: "border-primary/60" },
   { n: "05", titulo: "Generative Art I", desc: "De la imaginación a la imagen con Polar Bear y Google AI Studio", color: "border-primary/60" },
   { n: "06", titulo: "Generative Art II", desc: "Storytelling visual consistente: cómics, cuentos y narrativas IA", color: "border-primary/40" },
   { n: "07", titulo: "Vibe Coding", desc: "Creación de apps y proyectos interactivos con Manus sin código", color: "border-primary/40" },

@@ -14,8 +14,8 @@ export const metadata: Metadata = {
         "curso youtube niños ia",
         "cine con inteligencia artificial niños",
         "curso tiktok adolescentes",
-        "edicion video ia niños",
-        "curso creacion contenido digital",
+        "edición video ia niños",
+        "curso creación contenido digital",
         "curso contenido digital niños",
         "curso cine ia para adolescentes",
     ],
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
 }
 
 const faqs = [
-    { q: "¿Qué herramientas de IA usarán para crear contenido?", a: "Usamos herramientas de IA para edición de video, generación de efectos visuales, creación de guiones, diseño de thumbnails y producción musical. Todo adaptado a la edad y nivel del estudiante." },
+    { q: "¿Qué herramientas de IA usarán para crear contenido?", a: "Usamos herramientas de IA para edición de video, generación de efectos visuales, creación de guiones, diseño de thumbnails y producción músical. Todo adaptado a la edad y nivel del estudiante." },
     { q: "¿Mi hijo necesita una cámara profesional?", a: "No. Con un celular o la cámara de su computador es suficiente para empezar. La IA nos ayuda a mejorar la calidad de producción sin equipo costoso." },
     { q: "¿Es seguro para niños crear contenido en redes sociales?", a: "Enseñamos creación de contenido responsable y seguridad digital. Los proyectos se comparten en un entorno controlado y enseñamos a los padres cómo supervisar las publicaciones." },
     { q: "¿Qué tipo de contenido aprenderán a crear?", a: "Cortometrajes, vlogs educativos, animaciones, podcasts y contenido para redes sociales. Todo con IA como asistente creativo para producir contenido de calidad profesional." },
@@ -273,7 +273,7 @@ export default function CreatorPage() {
                                 <ul className="space-y-3 text-[#1A1714]/60 mb-8 text-sm">
                                     <li className="flex gap-3"><span className="text-[#1A1714]/40">◦</span> Cortometraje final con IA</li>
                                     <li className="flex gap-3"><span className="text-[#1A1714]/40">◦</span> Estrategia de canal y audiencia</li>
-                                    <li className="flex gap-3"><span className="text-[#1A1714]/40">◦</span> Producción musical generativa</li>
+                                    <li className="flex gap-3"><span className="text-[#1A1714]/40">◦</span> Producción músical generativa</li>
                                 </ul>
                                 <button
                                     disabled

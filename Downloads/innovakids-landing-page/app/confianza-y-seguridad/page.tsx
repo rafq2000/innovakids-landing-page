@@ -9,7 +9,7 @@ export const metadata: Metadata = {
         "Aulas 100% monitoreadas, docentes certificados y entornos virtuales seguros para niños 8-17 años. Política de protección al menor. Reserva tu clase gratis.",
     keywords: [
         "confianza seguridad innovakids",
-        "proteccion menor ia",
+        "protección menor ia",
         "curso ia niños seguro",
         "seguridad infantil clases online",
         "aulas monitoreadas niños",
@@ -45,7 +45,7 @@ const pillars = [
     {
         label: "Aulas monitoreadas en vivo",
         intro:
-            "Todas nuestras sesiones vía Meet/Zoom son monitoreadas por el equipo académico. Política de Cero Tolerancia al bullying y al comportamiento inadecuado.",
+            "Todas nuestras sesiónes vía Meet/Zoom son monitoreadas por el equipo académico. Política de Cero Tolerancia al bullying y al comportamiento inadecuado.",
         items: [
             "Chats filtrados por moderadores",
             "Bloqueo de pantalla compartida no autorizada",
@@ -55,7 +55,7 @@ const pillars = [
     {
         label: "Docentes investigados",
         intro:
-            "Cada facilitador pasa por un riguroso proceso de selección: validación de antecedentes, pruebas psicológicas y entrevistas focalizadas en docencia infantil.",
+            "Cada fácilitador pasa por un riguroso proceso de selección: validación de antecedentes, pruebas psicológicas y entrevistas focalizadas en docencia infantil.",
         items: [
             "Validación de antecedentes locales e internacionales",
             "Certificación en metodologías infantiles",

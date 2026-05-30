@@ -124,7 +124,7 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
     },
     {
       question: `¿A qué hora son las clases para ${country.childTerm} de ${country.name}?`,
-      answer: `Las clases se programan adaptadas al huso horario de ${country.name}. Tenemos sesiones por las tardes (después del colegio) y sábados por la mañana. Al agendar tu evaluación gratuita, coordinamos el horario ideal para tu familia.`,
+      answer: `Las clases se programan adaptadas al huso horario de ${country.name}. Tenemos sesiónes por las tardes (después del colegio) y sábados por la mañana. Al agendar tu evaluación gratuita, coordinamos el horario ideal para tu familia.`,
     },
     {
       question: `¿Qué van a crear los ${country.childTerm} ${country.demonym} en el curso?`,

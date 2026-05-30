@@ -236,7 +236,7 @@ const skills: Lot[] = [
 const pillars: Lot[] = [
   { num: "05", icon: <IconClock />,  kicker: "Incluido en el programa", title: "Horarios 100% flexibles",         desc: "Eligen el día y la hora. Si no pueden, hay grabación al instante.",           value: "incluido" },
   { num: "06", icon: <IconGroup />,  kicker: "Incluido en el programa", title: "Educación personalizada",         desc: "Máximo 5 niños por grupo. El mentor los conoce por nombre.",                  value: "incluido" },
-  { num: "07", icon: <IconMentor />, kicker: "Incluido en el programa", title: "Mentor 1:1 cuando lo necesite",   desc: "Sesiones individuales para resolver dudas o profundizar más.",                value: 97  },
+  { num: "07", icon: <IconMentor />, kicker: "Incluido en el programa", title: "Mentor 1:1 cuando lo necesite",   desc: "Sesiónes individuales para resolver dudas o profundizar más.",                value: 97  },
   { num: "08", icon: <IconChat />,   kicker: "Incluido en el programa", title: "Soporte por WhatsApp",            desc: "Tú y tu hijo escriben cuando quieran. Respuesta en menos de 5 min.",          value: "incluido" },
   { num: "09", icon: <IconShield />, kicker: "Incluido en el programa", title: "Garantía de 10 días",             desc: "Si no lo ves enganchado, devolución total. Sin preguntas.",                   value: 267 },
   { num: "10", icon: <IconMedal />,  kicker: "Incluido en el programa", title: "Certificado digital",             desc: "Verificable, para portafolio o postulaciones futuras.",                        value: 47  },
@@ -919,7 +919,7 @@ export function ValuePropositionSection() {
 
           {/* III — DOCUMENTS (bonos) */}
           <div className="mb-16 md:mb-20">
-            <SectionHead num="III." kicker="Anexo · Documentos premium incluidos" title="4 documentos que solo recibes en esta cohorte" />
+            <SectionHead num="III." kicker="Anexo · Documentos premium incluidos" title="4 documentos que solo recibes en está cohorte" />
             <div>{bonos.map((b, i) => <LotRow key={b.num} item={b} stagger={i * 80} />)}</div>
             <SubtotalRow label="Subtotal documentos premium" amount={subtotalBonos} />
           </div>

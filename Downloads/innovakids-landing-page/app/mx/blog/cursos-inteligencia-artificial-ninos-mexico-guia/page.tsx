@@ -11,9 +11,9 @@ export const metadata: Metadata = {
         "Guía Completa: Lo que todo padre mexicano debe saber antes de inscribir a su hijo en un curso de IA. Precios en pesos, herramientas, seguridad y mejores opciones.",
     keywords: [
         "guia cursos ia niños mexico",
-        "mejores cursos programacion niños mexico",
+        "mejores cursos programación niños mexico",
         "comparativa escuelas ia mexico",
-        "consejos padres tecnologia mexico",
+        "consejos padres tecnología mexico",
     ],
     openGraph: {
         title: "Cursos de IA para Niños en México (Guía 2026)",
@@ -66,7 +66,7 @@ const tools = [
     },
     {
         name: "Suno AI para música",
-        desc: "Composición musical con inteligencia artificial. Pueden crear canciones originales con letra, melodía y hasta voces generadas por IA.",
+        desc: "Composición músical con inteligencia artificial. Pueden crear canciones originales con letra, melodía y hasta voces generadas por IA.",
     },
     {
         name: "Cursor y Replit",

@@ -11,10 +11,10 @@ export const metadata: Metadata = {
         "Tu hijo crea su primera startup con IA. Educación financiera y negocios digitales para niños y adolescentes 8-17 años. Grupos de 5. Clase gratis.",
     keywords: [
         "curso emprendimiento niños",
-        "educacion financiera niños ia",
+        "educación financiera niños ia",
         "startups para adolescentes",
         "emprendimiento juvenil online",
-        "negocios digitales para jovenes",
+        "negocios digitales para jóvenes",
         "curso crear emprendedores",
         "negocios con ia para niños",
         "curso startups adolescentes",

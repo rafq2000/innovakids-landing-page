@@ -27,7 +27,7 @@ const KIT_DOCS = [
   {
     num: "01",
     title: "Carta de Bienvenida",
-    desc: "Mensaje directo a la familia con los tres pasos para esta semana y el resumen de la inscripcion.",
+    desc: "Mensaje directo a la familia con los tres pasos para está semana y el resumen de la inscripcion.",
     icon: PartyPopper,
     file: "01-carta-bienvenida.pdf",
     label: "Para la familia",

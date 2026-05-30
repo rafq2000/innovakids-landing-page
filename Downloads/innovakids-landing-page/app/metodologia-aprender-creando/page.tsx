@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "proyectos ia para niños",
     "aprendizaje basado en proyectos",
     "curso práctico ia niños",
-    "metodologia erica innovakids",
+    "metodología erica innovakids",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/metodologia-aprender-creando",

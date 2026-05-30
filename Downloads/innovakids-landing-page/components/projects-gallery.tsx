@@ -39,7 +39,7 @@ const projects = [
         student: "Valentina",
         age: 11,
         country: "🇦🇷",
-        category: "Musica",
+        category: "Música",
         tool: "Suno AI",
         image: "/projects/music-1.jpg",
         description: "Cancion original pop",
@@ -81,7 +81,7 @@ const projects = [
         category: "Arte",
         tool: "Midjourney",
         image: "/projects/art-2.jpg",
-        description: "Novela grafica de 4 paginas",
+        description: "Novela grafica de 4 páginas",
         icon: Palette,
         color: "bg-[#C96342]",
     },
@@ -114,7 +114,7 @@ const projects = [
     }
 ]
 
-const categories = ["Todos", "Arte", "Musica", "Videojuegos", "Voz", "Estudio"]
+const categories = ["Todos", "Arte", "Música", "Videojuegos", "Voz", "Estudio"]
 
 export function ProjectsGallery() {
     const [filter, setFilter] = useState("Todos")

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Clase gratis de IA para niños 8-17 años: sesión diagnóstica de 30 min con demo en vivo. Sin compromiso, cupos limitados. 527 familias. Agenda hoy.",
   keywords: [
     "clase gratis ia niños",
-    "sesion diagnostica innovakids",
+    "sesión diagnóstica innovakids",
     "prueba gratis curso ia",
     "clase prueba inteligencia artificial niños",
     "clase gratis innovakids",
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Event",
-  name: "Sesion Diagnostica Gratuita - Curso de IA para Ninos | InnovaKids",
+  name: "Sesión Diagnóstica Gratuita — Curso de IA para Niños | InnovaKids",
   description:
-    "Sesion diagnostica gratuita de 30 minutos para evaluar el potencial de tu hijo con Inteligencia Artificial. Incluye demostracion en vivo y plan personalizado.",
+    "Sesión diagnóstica gratuita de 30 minutos para evaluar el potencial de tu hijo con Inteligencia Artificial. Incluye demostración en vivo y plan personalizado.",
   eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
   eventStatus: "https://schema.org/EventScheduled",
   location: {
@@ -86,8 +86,8 @@ const jsonLd = {
     "startDate": "2026-06-01",
     "repeatFrequency": "P1W",
     "byDay": ["Monday", "Wednesday", "Friday"],
-    "startTime": "17:00-04:00",
-    "endTime": "17:30-04:00",
+    "startTime": "17:00:00",
+    "endTime": "17:30:00",
     "scheduleTimezone": "America/Santiago",
   },
 }

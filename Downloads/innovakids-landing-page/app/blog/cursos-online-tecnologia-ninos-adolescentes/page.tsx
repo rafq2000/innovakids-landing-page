@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     description:
         "Guía comparativa 2026: mejores cursos online de tecnología para niños y adolescentes 8-17 años. IA, programación y videojuegos. Análisis de precios y metodologías.",
     keywords: [
-        "mejores cursos online tecnologia niños 2026 guia",
+        "mejores cursos online tecnología niños 2026 guia",
         "comparativa cursos online niños",
-        "cursos tecnologia niños adolescentes analisis",
-        "cursos online ia programacion videojuegos comparar",
+        "cursos tecnología niños adolescentes análisis",
+        "cursos online ia programación videojuegos comparar",
         "ranking cursos online niños 2026",
     ],
     alternates: {
@@ -113,7 +113,7 @@ export default function CursosAdolescentesPage() {
 
                         <h3>Cursos para niños de 8 a 12 años</h3>
                         <p>
-                            A esta edad sus mentes son esponjas hipervisuales. La frustración bloquea el aprendizaje. Por eso el enfoque debe ser
+                            A está edad sus mentes son esponjas hipervisuales. La frustración bloquea el aprendizaje. Por eso el enfoque debe ser
                             <strong> crear resultados rápidos y sorprendentes</strong>. Con plataformas asistidas por IA, los chicos de 10 a 12 años
                             crean mini juegos interactivos o escriben e ilustran sus propios cuentos en apenas unas horas de práctica a la semana.
                         </p>
@@ -123,7 +123,7 @@ export default function CursosAdolescentesPage() {
                             Buscar cursos para adolescentes (Bogotá, Ciudad de México o Miami) significa lidiar con jóvenes que exigen propósito.
                             Si no sienten que están construyendo algo "pro", se aburrirán y abandonarán.
                         </p>
-                        <p>En esta franja de edad implementamos <strong>Vibe Enterprise</strong> e <strong>Incubadora Tech</strong>. Se trata de clases 100% online y en vivo donde:</p>
+                        <p>En está franja de edad implementamos <strong>Vibe Enterprise</strong> e <strong>Incubadora Tech</strong>. Se trata de clases 100% online y en vivo donde:</p>
                         <ul>
                             <li>Configuran herramientas avanzadas (ChatGPT Pro, Midjourney, generadores de código).</li>
                             <li>Diseñan una <em>landing page</em> para un intento de startup real.</li>

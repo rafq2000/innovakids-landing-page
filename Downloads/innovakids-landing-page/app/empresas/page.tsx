@@ -11,9 +11,9 @@ export const metadata: Metadata = {
     keywords: [
         "ia para empresas",
         "beneficio corporativo ia",
-        "rse educacion ia",
+        "rse educación ia",
         "becas corporativas ia niños",
-        "reporte esg educacion",
+        "reporte esg educación",
         "innovakids empresas",
     ],
     alternates: {

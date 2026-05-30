@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     "InnovaKids vs Code.org 2026: comparativa honesta para que tu hijo aprenda programación e IA según su edad. Clases en vivo vs autoguiado. Lee el análisis.",
   keywords: [
     "code.org vs innovakids",
-    "mejor plataforma programacion niños",
+    "mejor plataforma programación niños",
     "code.org alternativa",
     "code.org vs clases en vivo",
     "plataforma ia niños",
-    "aprender programacion niños 2026",
+    "aprender programación niños 2026",
     "alternativas code.org",
   ],
   alternates: {
@@ -58,7 +58,7 @@ const faqJsonLd = {
       name: "Es Code.org gratis?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Si, Code.org es completamente gratuito. Es una organizacion sin fines de lucro que ofrece cursos de programacion autoguiados para ninos. Sin embargo, no incluye clases en vivo, mentor personal, ni ensenanza de Inteligencia Artificial o Vibe Coding.",
+        text: "Si, Code.org es completamente gratuito. Es una organizacion sin fines de lucro que ofrece cursos de programación autoguiados para niños. Sin embargo, no incluye clases en vivo, mentor personal, ni ensenanza de Inteligencia Artificial o Vibe Coding.",
       },
     },
     {
@@ -66,7 +66,7 @@ const faqJsonLd = {
       name: "Cual es mejor para mi hijo, Code.org o InnovaKids?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Depende de tus objetivos. Si buscas una introduccion gratuita a la logica de programacion basica, Code.org es una buena opcion. Si buscas que tu hijo aprenda habilidades del futuro como IA, Vibe Coding y Prompt Engineering con un mentor en vivo y en espanol, InnovaKids es la mejor opcion.",
+        text: "Depende de tus objetivos. Si buscas una introducción gratuita a la lógica de programación basica, Code.org es una buena opción. Si buscas que tu hijo aprenda habilidades del futuro como IA, Vibe Coding y Prompt Engineering con un mentor en vivo y en español, InnovaKids es la mejor opción.",
       },
     },
     {
@@ -74,7 +74,7 @@ const faqJsonLd = {
       name: "Code.org ensena Inteligencia Artificial?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Code.org tiene algunos modulos introductorios sobre IA, pero su enfoque principal sigue siendo la programacion tradicional con bloques visuales. No ensena herramientas de IA generativa como ChatGPT, Vibe Coding, creacion de arte con IA ni Prompt Engineering, que son las habilidades mas demandadas en 2026.",
+        text: "Code.org tiene algunos modulos introductorios sobre IA, pero su enfoque principal sigue siendo la programación tradicional con bloques visuales. No ensena herramientas de IA generativa como ChatGPT, Vibe Coding, creación de arte con IA ni Prompt Engineering, que son las habilidades mas demandadas en 2026.",
       },
     },
     {
@@ -82,7 +82,7 @@ const faqJsonLd = {
       name: "Mi hijo puede usar Code.org y InnovaKids al mismo tiempo?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Si. Muchos estudiantes de InnovaKids complementan sus clases en vivo con ejercicios autoguiados de Code.org. Son enfoques complementarios: Code.org para practicar logica basica por su cuenta y InnovaKids para aprender IA, Vibe Coding y crear proyectos reales con un mentor.",
+        text: "Si. Muchos estudiantes de InnovaKids complementan sus clases en vivo con ejercicios autoguiados de Code.org. Son enfoques complementarios: Code.org para practicar lógica basica por su cuenta y InnovaKids para aprender IA, Vibe Coding y crear proyectos reales con un mentor.",
       },
     },
   ],
@@ -93,7 +93,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "InnovaKids vs Code.org (2026): Cual es Mejor para Tu Hijo?",
   description:
-    "Comparativa detallada entre InnovaKids y Code.org como plataformas educativas de tecnologia para ninos.",
+    "Comparativa detallada entre InnovaKids y Code.org como plataformas educativas de tecnología para niños.",
   author: {
     "@type": "Organization",
     name: "InnovaKids",
@@ -137,7 +137,7 @@ export default function InnovaKidsVsCodeOrgPage() {
               <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> Lectura: 13 min</span>
             </div>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              Code.org ha sido la plataforma por defecto para ensenar programacion a ninos durante anos.
+              Code.org ha sido la plataforma por defecto para ensenar programación a niños durante años.
               Pero en 2026, con la IA transformando todo, los padres se preguntan: hay algo mejor?
               Comparamos ambas opciones de forma honesta y detallada.
             </p>
@@ -150,21 +150,21 @@ export default function InnovaKidsVsCodeOrgPage() {
             {/* Introduction */}
             <div className="prose prose-lg max-w-none mb-12">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Si estas buscando la mejor forma de que tu hijo aprenda tecnologia en 2026, probablemente
+                Si estas buscando la mejor forma de que tu hijo aprenda tecnología en 2026, probablemente
                 has encontrado a Code.org en tu investigacion. Es una de las plataformas mas conocidas del
-                mundo para ensenar programacion a ninos, respaldada por empresas como Microsoft, Google
+                mundo para ensenar programación a niños, respaldada por empresas como Microsoft, Google
                 y Amazon. Es gratuita, tiene millones de usuarios y se usa en colegios de todo el mundo.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Entonces, ¿por que considerar una alternativa? Porque el mundo cambio. La Inteligencia
-                Artificial redefinio lo que significa &quot;saber tecnologia&quot; y las habilidades que los ninos
-                necesitan para el futuro ya no son las mismas que hace cinco anos. En este articulo
+                Artificial redefinio lo que significa &quot;saber tecnología&quot; y las habilidades que los niños
+                necesitan para el futuro ya no son las mismas que hace cinco años. En este articulo
                 comparamos Code.org con{" "}
                 <Link href="/cursos/inteligencia-artificial" className="text-[#4ECDC4] hover:underline">
                   InnovaKids
                 </Link>{" "}
                 de forma honesta, reconociendo las fortalezas de cada plataforma, para que puedas
-                tomar la mejor decision para tu hijo.
+                tomar la mejor decisión para tu hijo.
               </p>
             </div>
 
@@ -174,12 +174,12 @@ export default function InnovaKidsVsCodeOrgPage() {
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Code.org es una organizacion sin fines de lucro fundada en 2013 con la mision de
                 expandir el acceso a la ciencia de la computacion en las escuelas. Su plataforma
-                ofrece cursos gratuitos de programacion para ninos desde los 4 anos hasta la
-                secundaria, usando principalmente programacion visual con bloques (similar a Scratch).
+                ofrece cursos gratuitos de programación para niños desde los 4 años hasta la
+                secundaria, usando principalmente programación visual con bloques (similar a Scratch).
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Los cursos de Code.org son autoguiados: el nino avanza a su propio ritmo resolviendo
-                puzzles de programacion que se vuelven gradualmente mas complejos. Usa personajes de
+                puzzles de programación que se vuelven gradualmente mas complejos. Usa personajes de
                 Minecraft, Star Wars y Frozen para mantener el interes, y tiene una estructura
                 clara de niveles que da sensacion de progreso.
               </p>
@@ -201,7 +201,7 @@ export default function InnovaKidsVsCodeOrgPage() {
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-green-500 mr-3 font-bold">+</span>
-                    <span><strong>Personajes populares</strong> — Minecraft y Star Wars mantienen el interes inicial de los ninos</span>
+                    <span><strong>Personajes populares</strong> — Minecraft y Star Wars mantienen el interes inicial de los niños</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-green-500 mr-3 font-bold">+</span>
@@ -215,15 +215,15 @@ export default function InnovaKidsVsCodeOrgPage() {
                 <ul className="space-y-2">
                   <li className="flex items-start text-gray-700">
                     <span className="text-red-500 mr-3 font-bold">-</span>
-                    <span><strong>Sin clases en vivo</strong> — No hay mentor ni interaccion humana. El nino esta solo frente a la pantalla</span>
+                    <span><strong>Sin clases en vivo</strong> — No hay mentor ni interaccion humana. El nino está solo frente a la pantalla</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-red-500 mr-3 font-bold">-</span>
-                    <span><strong>Enfoque limitado a bloques</strong> — La mayoria del contenido es programacion visual, no IA ni herramientas modernas</span>
+                    <span><strong>Enfoque limitado a bloques</strong> — La mayoría del contenido es programación visual, no IA ni herramientas modernas</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-red-500 mr-3 font-bold">-</span>
-                    <span><strong>No ensena IA generativa</strong> — No cubre ChatGPT, Vibe Coding, creacion de arte ni musica con IA</span>
+                    <span><strong>No ensena IA generativa</strong> — No cubre ChatGPT, Vibe Coding, creación de arte ni música con IA</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-red-500 mr-3 font-bold">-</span>
@@ -231,11 +231,11 @@ export default function InnovaKidsVsCodeOrgPage() {
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-red-500 mr-3 font-bold">-</span>
-                    <span><strong>Pierde interes rapido</strong> — Muchos ninos abandonan despues de las primeras lecciones sin un guia que los motive</span>
+                    <span><strong>Pierde interes rapido</strong> — Muchos niños abandonan despues de las primeras lecciones sin un guia que los motive</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-red-500 mr-3 font-bold">-</span>
-                    <span><strong>Sin retroalimentacion personalizada</strong> — El sistema solo verifica si el puzzle esta correcto, no por que</span>
+                    <span><strong>Sin retroalimentacion personalizada</strong> — El sistema solo verifica si el puzzle está correcto, no por que</span>
                   </li>
                 </ul>
               </div>
@@ -245,22 +245,22 @@ export default function InnovaKidsVsCodeOrgPage() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Que es InnovaKids: El Enfoque de 2026</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                InnovaKids es una escuela de tecnologia en vivo para ninos y adolescentes de 8 a 17 anos,
-                enfocada en Inteligencia Artificial, Vibe Coding y creacion digital. A diferencia de
+                InnovaKids es una escuela de tecnología en vivo para niños y adolescentes de 8 a 17 años,
+                enfocada en Inteligencia Artificial, Vibe Coding y creación digital. A diferencia de
                 plataformas autoguiadas, InnovaKids ofrece clases en vivo con mentores especializados
-                y grupos reducidos de maximo 6 estudiantes.
+                y grupos reducidos de máximo 6 estudiantes.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                El enfoque de InnovaKids nace de una premisa: las habilidades tecnologicas que los ninos
-                necesitan en 2026 son diferentes a las de 2015. La programacion con bloques fue
+                El enfoque de InnovaKids nace de una premisa: las habilidades tecnologicas que los niños
+                necesitan en 2026 son diferentes a las de 2015. La programación con bloques fue
                 revolucionaria en su momento, pero hoy la IA permite crear aplicaciones, juegos,
-                musica y arte sin necesidad de escribir codigo tradicional. InnovaKids ensena a
-                los ninos a dominar estas herramientas del futuro.
+                música y arte sin necesidad de escribir código tradicional. InnovaKids ensena a
+                los niños a dominar estas herramientas del futuro.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Nuestra{" "}
                 <Link href="/metodologia-aprender-creando" className="text-[#4ECDC4] hover:underline">
-                  metodologia Aprender Creando
+                  metodología Aprender Creando
                 </Link>{" "}
                 se basa en proyectos reales: los estudiantes no resuelven puzzles abstractos, sino que
                 construyen aplicaciones, videojuegos, canciones y cortometrajes que pueden mostrar a
@@ -285,15 +285,15 @@ export default function InnovaKidsVsCodeOrgPage() {
                     {[
                       { criteria: "Precio", codeorg: "Gratis", innovakids: "Desde $49 USD/mes" },
                       { criteria: "Formato", codeorg: "Autoguiado (solo)", innovakids: "Clases en vivo con mentor" },
-                      { criteria: "Tamano del grupo", codeorg: "Individual", innovakids: "Maximo 6 estudiantes" },
-                      { criteria: "Contenido principal", codeorg: "Programacion con bloques", innovakids: "IA, Vibe Coding, Prompt Eng." },
+                      { criteria: "Tamano del grupo", codeorg: "Individual", innovakids: "Máximo 6 estudiantes" },
+                      { criteria: "Contenido principal", codeorg: "Programación con bloques", innovakids: "IA, Vibe Coding, Prompt Eng." },
                       { criteria: "Herramientas de IA", codeorg: "Basico / limitado", innovakids: "ChatGPT, DALL-E, Suno, Cursor" },
-                      { criteria: "Tipo de proyectos", codeorg: "Puzzles y ejercicios", innovakids: "Apps, juegos, musica, video reales" },
+                      { criteria: "Tipo de proyectos", codeorg: "Puzzles y ejercicios", innovakids: "Apps, juegos, música, video reales" },
                       { criteria: "Retroalimentacion", codeorg: "Automatica (correcto/incorrecto)", innovakids: "Personalizada del mentor" },
-                      { criteria: "Idioma", codeorg: "Multiidioma (incluye espanol)", innovakids: "Espanol nativo (Latinoamerica)" },
-                      { criteria: "Edad recomendada", codeorg: "4-18 anos", innovakids: "8-17 anos" },
+                      { criteria: "Idioma", codeorg: "Multiidioma (incluye español)", innovakids: "Espanol nativo (Latinoamerica)" },
+                      { criteria: "Edad recomendada", codeorg: "4-18 años", innovakids: "8-17 años" },
                       { criteria: "Persistencia del estudiante", codeorg: "Baja (alto abandono)", innovakids: "Alta (mentor motiva)" },
-                      { criteria: "Relevancia laboral futura", codeorg: "Media (logica basica)", innovakids: "Alta (IA es la habilidad #1)" },
+                      { criteria: "Relevancia laboral futura", codeorg: "Media (lógica basica)", innovakids: "Alta (IA es la habilidad #1)" },
                     ].map((row) => (
                       <tr key={row.criteria} className="border-b border-gray-200">
                         <td className="p-4 font-medium text-[#2D3436]">{row.criteria}</td>
@@ -310,7 +310,7 @@ export default function InnovaKidsVsCodeOrgPage() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Cuando Elegir Cada Opcion</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Somos honestos: hay situaciones donde Code.org es una buena opcion y otras donde
+                Somos honestos: hay situaciones donde Code.org es una buena opción y otras donde
                 InnovaKids es claramente superior. Aqui te ayudamos a decidir segun tu situacion
                 especifica.
               </p>
@@ -319,22 +319,22 @@ export default function InnovaKidsVsCodeOrgPage() {
                 <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
                   <h3 className="text-xl font-bold text-blue-800 mb-3">Elige Code.org si...</h3>
                   <ul className="space-y-2 text-gray-700">
-                    <li>-- Tu hijo tiene menos de 8 anos y quieres una introduccion gratuita a la logica</li>
-                    <li>-- Tu presupuesto es cero y no puedes invertir en educacion tecnologica</li>
+                    <li>-- Tu hijo tiene menos de 8 años y quieres una introducción gratuita a la lógica</li>
+                    <li>-- Tu presupuesto es cero y no puedes invertir en educación tecnologica</li>
                     <li>-- Solo buscas una actividad complementaria para que haga en sus tiempos libres</li>
-                    <li>-- Tu hijo ya esta en un colegio que usa Code.org y quieres que practique en casa</li>
+                    <li>-- Tu hijo ya está en un colegio que usa Code.org y quieres que practique en casa</li>
                   </ul>
                 </div>
 
                 <div className="bg-[#4ECDC4]/10 p-6 rounded-xl border border-[#4ECDC4]/20">
                   <h3 className="text-xl font-bold text-[#2D3436] mb-3">Elige InnovaKids si...</h3>
                   <ul className="space-y-2 text-gray-700">
-                    <li>-- Tu hijo tiene 8-17 anos y quieres prepararlo para el futuro con IA</li>
+                    <li>-- Tu hijo tiene 8-17 años y quieres prepararlo para el futuro con IA</li>
                     <li>-- Valoras la interaccion humana y quieres que tenga un mentor que lo guie</li>
-                    <li>-- Quieres que cree proyectos reales (apps, juegos, musica) que pueda mostrar</li>
+                    <li>-- Quieres que cree proyectos reales (apps, juegos, música) que pueda mostrar</li>
                     <li>-- Tu hijo se aburre con plataformas autoguiadas o las abandona rapidamente</li>
                     <li>-- Buscas habilidades con relevancia laboral real (IA, Vibe Coding, Prompt Engineering)</li>
-                    <li>-- Quieres clases en espanol con enfoque latinoamericano</li>
+                    <li>-- Quieres clases en español con enfoque latinoamericano</li>
                   </ul>
                 </div>
               </div>
@@ -356,14 +356,14 @@ export default function InnovaKidsVsCodeOrgPage() {
                 explica las altas tasas de abandono de las plataformas autoguiadas.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                En InnovaKids, el mentor detecta en tiempo real cuando un estudiante esta confundido,
+                En InnovaKids, el mentor detecta en tiempo real cuando un estudiante está confundido,
                 aburrido o frustrado, y ajusta la clase en ese momento. Celebra los logros, desafia
-                cuando el estudiante esta listo para mas y crea una relacion de confianza que es
+                cuando el estudiante está listo para mas y crea una relación de confianza que es
                 fundamental para el aprendizaje profundo.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Ademas, el mentor ensena habilidades que ningun algoritmo puede ensenar: etica digital,
-                pensamiento critico frente a la IA, trabajo en equipo y comunicacion efectiva. Estas
+                pensamiento crítico frente a la IA, trabajo en equipo y comunicación efectiva. Estas
                 habilidades blandas son tan importantes como las tecnicas para el futuro de tu hijo.
               </p>
             </section>
@@ -379,10 +379,10 @@ export default function InnovaKidsVsCodeOrgPage() {
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Un plan combinado podria verse asi: tu hijo toma clases semanales en InnovaKids donde
                 aprende IA, Vibe Coding y crea proyectos reales con su mentor. Entre clases, puede
-                practicar logica basica en Code.org por su cuenta. Lo mejor de ambos mundos.
+                practicar lógica basica en Code.org por su cuenta. Lo mejor de ambos mundos.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Si te interesa comparar con otras plataformas, tambien puedes leer nuestra{" "}
+                Si te interesa comparar con otras plataformas, también puedes leer nuestra{" "}
                 <Link href="/blog/codingal-vs-innovakids-comparativa" className="text-[#4ECDC4] hover:underline">
                   comparativa InnovaKids vs Codingal
                 </Link>{" "}
@@ -396,16 +396,16 @@ export default function InnovaKidsVsCodeOrgPage() {
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Es cierto que Code.org es gratis e InnovaKids tiene un costo. Pero vale la pena
                 analizar que estas pagando. Una clase en InnovaKids incluye un mentor experto en vivo,
-                grupo reducido de maximo 6 alumnos, acceso a herramientas de IA profesionales,
+                grupo reducido de máximo 6 alumnos, acceso a herramientas de IA profesionales,
                 proyectos personalizados y retroalimentacion individualizada.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Si comparas el costo con otras actividades extracurriculares como clases de futbol,
-                musica o idiomas, InnovaKids esta en el mismo rango. La diferencia es que las
+                música o idiomas, InnovaKids está en el mismo rango. La diferencia es que las
                 habilidades de IA tienen un retorno de inversion mucho mayor en terminos de
                 oportunidades futuras para tu hijo. Puedes ver nuestros planes en la{" "}
                 <Link href="/precios" className="text-[#4ECDC4] hover:underline">
-                  pagina de precios
+                  página de precios
                 </Link>.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
@@ -425,14 +425,14 @@ export default function InnovaKidsVsCodeOrgPage() {
                 <div className="border border-gray-200 p-6 rounded-xl">
                   <h3 className="text-lg font-bold text-[#2D3436] mb-2">Es Code.org gratis?</h3>
                   <p className="text-gray-700">
-                    Si, Code.org es completamente gratuito. Ofrece cursos autoguiados de programacion
+                    Si, Code.org es completamente gratuito. Ofrece cursos autoguiados de programación
                     con bloques. No incluye clases en vivo, mentor ni ensenanza de IA moderna.
                   </p>
                 </div>
                 <div className="border border-gray-200 p-6 rounded-xl">
                   <h3 className="text-lg font-bold text-[#2D3436] mb-2">Cual es mejor, Code.org o InnovaKids?</h3>
                   <p className="text-gray-700">
-                    Depende de tus objetivos. Code.org es mejor para una introduccion gratuita a la logica.
+                    Depende de tus objetivos. Code.org es mejor para una introducción gratuita a la lógica.
                     InnovaKids es mejor para aprender IA, Vibe Coding y crear proyectos reales con un mentor.
                   </p>
                 </div>
@@ -443,14 +443,14 @@ export default function InnovaKidsVsCodeOrgPage() {
                     <Link href="/blog/vibe-coding-que-es-futuro-programacion-ninos" className="text-[#4ECDC4] hover:underline">
                       Vibe Coding
                     </Link>
-                    , creacion de arte con IA ni Prompt Engineering.
+                    , creación de arte con IA ni Prompt Engineering.
                   </p>
                 </div>
                 <div className="border border-gray-200 p-6 rounded-xl">
                   <h3 className="text-lg font-bold text-[#2D3436] mb-2">Pueden usarse juntos Code.org e InnovaKids?</h3>
                   <p className="text-gray-700">
                     Si. Son complementarios. InnovaKids para clases en vivo de IA y proyectos reales,
-                    Code.org para practicar logica basica por cuenta propia.
+                    Code.org para practicar lógica basica por cuenta propia.
                   </p>
                 </div>
               </div>
@@ -471,14 +471,14 @@ export default function InnovaKidsVsCodeOrgPage() {
                   href="/blog/scratch-vs-ia-ninos"
                   className="block p-4 border border-gray-200 rounded-xl hover:border-[#4ECDC4] transition-colors"
                 >
-                  <p className="font-semibold text-[#2D3436]">Scratch vs IA para Ninos</p>
+                  <p className="font-semibold text-[#2D3436]">Scratch vs IA para Niños</p>
                   <p className="text-gray-500 text-sm">Que deberia aprender tu hijo primero</p>
                 </Link>
                 <Link
                   href="/cursos/inteligencia-artificial"
                   className="block p-4 border border-gray-200 rounded-xl hover:border-[#4ECDC4] transition-colors"
                 >
-                  <p className="font-semibold text-[#2D3436]">Curso de IA para Ninos</p>
+                  <p className="font-semibold text-[#2D3436]">Curso de IA para Niños</p>
                   <p className="text-gray-500 text-sm">Conoce el programa completo de InnovaKids</p>
                 </Link>
                 <Link

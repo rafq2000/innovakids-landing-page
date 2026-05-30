@@ -159,7 +159,7 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
                 {[
                     {
                         k: "Por parte del alumno",
-                        v: "Todas las sesiones quedan grabadas y disponibles de por vida. No es necesario notificar ausencias.",
+                        v: "Todas las sesiónes quedan grabadas y disponibles de por vida. No es necesario notificar ausencias.",
                     },
                     {
                         k: "Por parte de InnovaKids",

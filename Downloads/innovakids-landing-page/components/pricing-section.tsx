@@ -140,7 +140,7 @@ export function PricingSection({ country }: PricingSectionProps) {
               <p
                 className="text-sm text-[#5A5751] leading-relaxed"
                     >
-                Solo para esta cohorte. No se cobran aparte.
+                Solo para está cohorte. No se cobran aparte.
               </p>
             </div>
             <div className="md:col-span-8 grid sm:grid-cols-2 gap-6">

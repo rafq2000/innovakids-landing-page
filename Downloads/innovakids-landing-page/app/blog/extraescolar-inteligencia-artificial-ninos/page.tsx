@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     "extraescolar de inteligencia artificial",
     "extraescolar de ia para niños",
     "actividad extraescolar inteligencia artificial",
-    "extraescolar tecnologia niños",
-    "extraescolar ia ninos",
+    "extraescolar tecnología niños",
+    "extraescolar ia niños",
     "clases extraescolares de ia",
-    "extraescolar programacion ia",
-    "actividades extraescolares tecnologia",
+    "extraescolar programación ia",
+    "actividades extraescolares tecnología",
     "extraescolar de ia online",
     "mejor extraescolar de inteligencia artificial",
   ],
@@ -411,7 +411,7 @@ export default function ExtraescolarIAPage() {
             <ul className="grid sm:grid-cols-2 gap-4">
               {[
                 { href: "/blog/ia-para-ninos-por-edad-8-10-11-13-14-17", title: "IA para Niños por Edad: 8, 10, 11, 13, 14 y 17 años" },
-                { href: "/blog/vibe-coding-que-es-futuro-programacion-ninos", title: "Vibe Coding: Qué Es y Por Qué Es el Futuro para Niños" },
+                { href: "/blog/vibe-coding-que-es-futuro-programación-ninos", title: "Vibe Coding: Qué Es y Por Qué Es el Futuro para Niños" },
                 { href: "/blog/cursos-online-tecnologia-ninos-adolescentes", title: "Cursos Online de Tecnología para Niños y Adolescentes" },
                 { href: "/adolescentes", title: "Cursos de IA para Adolescentes 14-17 años" },
               ].map((link) => (

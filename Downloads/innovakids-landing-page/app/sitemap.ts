@@ -22,12 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/adolescentes",
     "/colegios",
     "/confianza-y-seguridad",
-    "/brochure-programa-ia",
     "/como-ensenar-ia-a-mis-hijos",
-    "/descargar-guia-ia-ninos",
-    "/kit-gratuito-descarga",
-    "/cursos-online-para-ninos",
-    "/clases-ia-ninos",
     "/ia-ninos-por-edad",
     "/cursos/inteligencia-artificial",
   ]
@@ -112,8 +107,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
 
     // 2. Standard Subpages (handled by app/[country]/...)
-    // These exist for all countries via the dynamic route
-    const subpages = ["programa", "resultados", "metodologia-aprender-creando"]
+    const subpages = ["programa", "resultados", "metodología-aprender-creando"]
     subpages.forEach((slug) => {
       sitemapEntries.push({
         url: `${baseUrl}/${code}/${slug}`,
@@ -124,7 +118,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
 
     // 3. Country-Specific Blog Posts (Scan file system)
-    // We look for: app/[code]/blog/[slug]
     try {
       const blogDir = path.join(process.cwd(), "app", code, "blog")
       if (fs.existsSync(blogDir)) {
@@ -152,7 +145,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const config = getCountryConfig(code)
     if (config && config.otherCities && config.otherCities.length > 0) {
       config.otherCities.forEach((city: string) => {
-        // Formateo simple para URLs (minúscula y reemplazo de espacios por guiones)
         const citySlug = city.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-")
         sitemapEntries.push({
           url: `${baseUrl}/${code}/${citySlug}/cursos/inteligencia-artificial`,
@@ -166,4 +158,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return sitemapEntries
 }
-

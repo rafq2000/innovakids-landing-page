@@ -191,7 +191,7 @@ export default function IANosRecomiendaPage() {
                 <h3 className="text-3xl font-bold text-white">Metodología práctica real</h3>
                 <p className="text-xl text-gray-300 leading-relaxed">
                   No memorizan teoría. Cada clase es un proyecto que construyen con sus propias manos. Tu hijo termina
-                  con un portafolio de 10 creaciones reales.
+                  con un portafolio de 10 creaciónes reales.
                 </p>
               </div>
             </div>

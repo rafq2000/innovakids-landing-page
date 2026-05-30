@@ -287,7 +287,7 @@ export default function AdminLeadsPage() {
             <Lock className="w-6 h-6 text-gray-600" />
           </div>
           <h1 className="text-xl font-bold text-center mb-2">Dashboard de Leads</h1>
-          <p className="text-sm text-gray-500 text-center mb-6">Ingresa la contrasena para continuar</p>
+          <p className="text-sm text-gray-500 text-center mb-6">Ingresa la contraseña para continuar</p>
           <input
             type="password"
             value={password}

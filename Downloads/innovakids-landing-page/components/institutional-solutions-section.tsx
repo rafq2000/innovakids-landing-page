@@ -127,7 +127,7 @@ const audiences: Audience[] = [
       "Programa modular por niveles (8 a 17 años)",
       "Plataforma, proyectos y rúbricas incluidas",
       "Reportes de avance para dirección y apoderados",
-      "Formación docente opcional en 4 sesiones",
+      "Formación docente opcional en 4 sesiónes",
     ],
     cta: "Agendar demo con dirección",
     href: "/colegios",

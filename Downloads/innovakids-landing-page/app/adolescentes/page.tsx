@@ -8,24 +8,24 @@ import { faqs } from "@/lib/faq-data"
 import { COHORT, SOCIAL_PROOF } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA para Adolescentes (14-17) | Apps Reales, Portafolio y Certificado | InnovaKids",
+  title: "Cursos de IA para Adolescentes 14-17 años | InnovaKids",
   description:
-    "Curso de Inteligencia Artificial para adolescentes 14-17 anos. Crean apps reales, portafolio universitario y startups con IA. Clases en vivo, grupos de 5, certificado. Clase gratis.",
+    "Curso de Inteligencia Artificial para adolescentes 14-17 años. Crean apps reales, portafolio universitario y startups con IA. Clases en vivo, grupos de 5, certificado. Clase gratis.",
   keywords: [
     "cursos de ia para adolescentes",
     "curso ia adolescentes",
-    "programacion para jovenes con ia",
+    "programación para jóvenes con ia",
     "bootcamp ia adolescentes",
-    "curso ia 14-17 anos",
+    "curso ia 14-17 años",
     "ia para adolescentes",
-    "inteligencia artificial para jovenes",
+    "inteligencia artificial para jóvenes",
     "vibe coding adolescentes",
   ],
   alternates: {
     canonical: "https://www.innovakidslatam.com/adolescentes",
   },
   openGraph: {
-    title: "Cursos de IA para Adolescentes (14-17) | InnovaKids Pro",
+    title: "Cursos de IA para Adolescentes 14-17 años | InnovaKids",
     description:
       "Deja de ser usuario. Aprende a crear apps, contenido y startups con IA. Grupos de 5, portafolio real y certificado.",
     url: "https://www.innovakidslatam.com/adolescentes",
@@ -38,6 +38,13 @@ export const metadata: Metadata = {
       alt: "Adolescentes creando proyectos con IA - InnovaKids Pro Track",
     }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cursos de IA para Adolescentes 14-17 años | InnovaKids",
+    description:
+      "Apps reales, portafolio universitario y startups con IA. Clases en vivo, grupos de 5, certificado. Clase gratis.",
+    images: ["https://www.innovakidslatam.com/kids-creating-ai-projects.jpg"],
+  },
   robots: { index: true, follow: true },
 }
 
@@ -46,26 +53,26 @@ const tracks = [
     num: "01",
     title: "Vibe Coding",
     desc: "Describe una app en lenguaje natural y la IA la construye. Tu la diriges, la publicas y la muestras.",
-    tag: "Programacion",
+    tag: "Programación",
   },
   {
     num: "02",
     title: "Startup con IA",
-    desc: "Detecta un problema real, valida la idea, construye el MVP y prepara un pitch. Metodologia Silicon Valley.",
+    desc: "Detecta un problema real, valida la idea, construye el MVP y prepara un pitch. Metodología Silicon Valley.",
     tag: "Emprendimiento",
   },
   {
     num: "03",
     title: "Creador Visual",
-    desc: "Peliculas, shorts virales y contenido profesional. De la idea al trailer en una semana.",
+    desc: "Películas, shorts virales y contenido profesional. De la idea al trailer en una semana.",
     tag: "Cine y contenido",
   },
 ]
 
 const proofs = [
-  { quote: "Mi hijo de 16 construyo su primera app en la segunda semana. Ahora quiere estudiar ingenieria.", name: "Marcela R.", role: "Madre, Chile" },
-  { quote: "Le cambio la perspectiva. Antes solo consumia contenido, ahora lo crea.", name: "Fernando A.", role: "Padre, Mexico" },
-  { quote: "El portafolio que armo le sirvio para postular a una beca de tecnologia.", name: "Patricia L.", role: "Madre, Colombia" },
+  { quote: "Mi hijo de 16 construyó su primera app en la segunda semana. Ahora quiere estudiar ingeniería.", name: "Marcela R.", role: "Madre, Chile" },
+  { quote: "Le cambió la perspectiva. Antes solo consumía contenido, ahora lo crea.", name: "Fernando A.", role: "Padre, México" },
+  { quote: "El portafolio que armó le sirvió para postular a una beca de tecnología.", name: "Patricia L.", role: "Madre, Colombia" },
 ]
 
 export default function AdolescentesPage() {
@@ -73,7 +80,7 @@ export default function AdolescentesPage() {
     "@context": "https://schema.org",
     "@type": "Course",
     "name": "Curso de IA para Adolescentes 14-17 | InnovaKids Pro",
-    "description": "Vibe Coding, apps reales y portafolio universitario para jovenes 14-17 anos. Clases en vivo, grupos de 5.",
+    "description": "Vibe Coding, apps reales y portafolio universitario para jóvenes 14-17 años. Clases en vivo, grupos de 5.",
     "url": "https://www.innovakidslatam.com/adolescentes",
     "image": "https://www.innovakidslatam.com/kids-creating-ai-projects.jpg",
     "provider": { "@type": "Organization", "name": "InnovaKids", "url": "https://www.innovakidslatam.com" },
@@ -121,7 +128,7 @@ export default function AdolescentesPage() {
               <span className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-[#C96342]" />
                 <span className="text-[#C96342] font-semibold">Pro Track</span>
-                <span className="hidden sm:inline">&#183; 14 a 17 anos</span>
+                <span className="hidden sm:inline">&#183; 14 a 17 años</span>
               </span>
               <span>{COHORT.spotsRemaining} cupos restantes</span>
             </div>
@@ -183,9 +190,9 @@ export default function AdolescentesPage() {
             <div className="grid grid-cols-2 md:grid-cols-5 gap-x-5 gap-y-8 py-10 md:py-12 mt-10 border-t border-[#FAF7EF]/15">
               {[
                 ["Formato", "10 clases en vivo"],
-                ["Duracion", "5 semanas"],
-                ["Grupos", "Max. 5 jovenes"],
-                ["Edad", "14 - 17 anos"],
+                ["Duración", "5 semanas"],
+                ["Grupos", "Máx. 5 jóvenes"],
+                ["Edad", "14 - 17 años"],
                 ["Modalidad", "100% online"],
               ].map(([k, v], i) => (
                 <div key={k} className="flex flex-col gap-2">
@@ -300,7 +307,7 @@ export default function AdolescentesPage() {
                   ${priceToday}<span className="text-[#C96342]">.</span>
                 </p>
                 <p className="font-mono-accent text-[11px] uppercase tracking-[0.22em] text-[#FAF7EF]/55 mb-6">
-                  USD pago unico o 3 cuotas de ${installments}
+                  USD pago único o 3 cuotas de ${installments}
                 </p>
                 <a
                   href="#sesion-estrategica"
@@ -314,7 +321,7 @@ export default function AdolescentesPage() {
                 <ul className="space-y-4 mb-8">
                   {[
                     "10 clases en vivo (5 semanas)",
-                    "Grupos de maximo 5 jovenes",
+                    "Grupos de máximo 5 jóvenes",
                     "Vibe Coding: crea apps reales publicadas",
                     "Portafolio universitario con proyectos documentados",
                     "Certificado digital verificable",

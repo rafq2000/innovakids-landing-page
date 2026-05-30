@@ -132,7 +132,7 @@ export default function VibeCodingNinosPage() {
               </p>
               <p className="text-xl text-gray-300 leading-relaxed">
                 El término fue popularizado por Andrej Karpathy, ex-director de IA en Tesla, y representa
-                el futuro de cómo los humanos interactuarán con la tecnología. Los niños que dominen
+                el futuro de cómo los humanos interactúarán con la tecnología. Los niños que dominen
                 el Vibe Coding hoy serán los creadores del mañana.
               </p>
             </div>
@@ -216,7 +216,7 @@ export default function VibeCodingNinosPage() {
                   <p className="text-gray-300 text-lg">
                     No solo usan la IA como magia. Aprenden los conceptos fundamentales de programación
                     y lógica que están detrás del código generado. Así pueden depurar, mejorar y personalizar
-                    sus creaciones.
+                    sus creaciónes.
                   </p>
                 </div>
               </div>

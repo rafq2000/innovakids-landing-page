@@ -61,7 +61,7 @@ export function ContactSection() {
             </div>
 
             <div className="bg-[#1a2942] p-8 rounded-lg border border-[#2a3952]">
-              <h3 className="text-2xl font-bold text-white mb-6">Envíanos un Mensaje</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Envíaños un Mensaje</h3>
               <ContactForm />
             </div>
           </div>

@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     "Guía Completa: Lo que todo padre dominicano debe saber antes de inscribir a su hijo en un curso de IA. Precios, herramientas, seguridad y mejores opciones.",
   keywords: [
     "guia cursos ia niños republica dominicana",
-    "mejores cursos programacion niños republica dominicana",
+    "mejores cursos programación niños republica dominicana",
     "comparativa escuelas ia republica dominicana",
-    "consejos padres tecnologia republica dominicana",
+    "consejos padres tecnología republica dominicana",
   ],
   openGraph: {
     title: "Cursos de IA para Niños en República Dominicana (Guía 2026)",
@@ -35,7 +35,7 @@ export default function BlogCursosIANinosRD() {
   const whatsappNumber = "56964754219"
   const whatsappMessage = encodeURIComponent("Hola! Leí la guía de IA para niños en RD y quiero más información.")
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
-  const calendlyLink = "https://calendly.com/innovakids/evaluacion"
+  const calendlyLink = "https://calendly.com/innovakids/evaluación"
 
   return (
     <>

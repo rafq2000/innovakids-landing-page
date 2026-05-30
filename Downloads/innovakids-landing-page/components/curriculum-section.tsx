@@ -19,7 +19,7 @@ export function CurriculumSection() {
         <div className="flex items-center gap-5 mb-20">
           <div className="h-px w-12 bg-[#C96342]" />
           <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
-            Currículum · 2 niveles
+            Currículum · 3 niveles
           </p>
         </div>
 

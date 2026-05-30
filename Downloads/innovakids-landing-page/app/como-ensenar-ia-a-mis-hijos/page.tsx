@@ -99,7 +99,7 @@ export default function ComoEnsenarIAPage() {
             </li>
             <li className="flex items-start gap-4">
               <span className="text-[#C96342] text-2xl mt-0.5 font-display">2.</span>
-              <span>Entre los 8 y 17 anos tienen la curiosidad y la capacidad logica ideales para aprender creando, no memorizando.</span>
+              <span>Entre los 8 y 17 años tienen la curiosidad y la capacidad logica ideales para aprender creando, no memorizando.</span>
             </li>
             <li className="flex items-start gap-4">
               <span className="text-[#C96342] text-2xl mt-0.5 font-display">3.</span>
@@ -256,7 +256,7 @@ export default function ComoEnsenarIAPage() {
       <section className="py-32 px-6 md:px-10">
         <div className="max-w-[1100px] mx-auto">
           <div className="text-center mb-16">
-            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-4">Nuestra solucion</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-4">Nuestra solución</p>
             <h2 className="text-5xl md:text-6xl font-display text-[#1A1714] mb-6">Cómo InnovaKids Te Ayuda</h2>
             <p className="text-2xl text-[#6B645B]">
               Hemos perfeccionado la forma de enseñar IA a niños con +527 familias

@@ -13,6 +13,7 @@ export function ProblemSection() {
           </div>
         </div>
 
+        <h2 className="sr-only">Por qué tu hijo necesita aprender IA ahora</h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
           <div className="bg-[#1a2942] p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-[#2a3952]">
             <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">

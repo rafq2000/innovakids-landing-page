@@ -135,7 +135,7 @@ export default function UploadVideoPage() {
                   <code className="text-xs bg-white p-2 rounded border block overflow-x-auto">{uploadedUrl}</code>
                 </div>
                 <p className="text-sm text-gray-600">
-                  Copia esta URL y envíamela en el chat para integrar el video en tu página.
+                  Copia está URL y envíamela en el chat para integrar el video en tu página.
                 </p>
               </div>
             )}

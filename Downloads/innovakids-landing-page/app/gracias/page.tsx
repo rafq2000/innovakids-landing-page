@@ -9,7 +9,7 @@ import { ReferralSection } from "./referral-section"
 export const metadata: Metadata = {
     title: "Pago confirmado · InnovaKids",
     description:
-        "Tu inscripcion esta confirmada. Revisa tu correo para el Kit de Bienvenida y selecciona tus horarios.",
+        "Tu inscripcion está confirmada. Revisa tu correo para el Kit de Bienvenida y selecciona tus horarios.",
     robots: { index: false, follow: false },
 }
 
@@ -35,7 +35,7 @@ export default function GraciasPage() {
                                     className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[20ch]"
                                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                 >
-                                    Listo. Tu pago esta <em className="italic text-[#C96342]">confirmado</em>.
+                                    Listo. Tu pago está <em className="italic text-[#C96342]">confirmado</em>.
                                 </h1>
                                 <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[56ch]">
                                     Te enviamos un correo de bienvenida con tu Kit completo y los pasos para comenzar.

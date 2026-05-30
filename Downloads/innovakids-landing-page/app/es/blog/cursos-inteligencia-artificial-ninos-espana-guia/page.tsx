@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     "Guía Completa: Lo que todo padre español debe saber antes de inscribir a su hijo en un curso de IA. Precios en euros, herramientas, seguridad y mejores opciones.",
   keywords: [
     "guia cursos ia niños españa",
-    "mejores cursos programacion niños españa",
+    "mejores cursos programación niños españa",
     "comparativa escuelas ia españa",
-    "consejos padres tecnologia españa",
+    "consejos padres tecnología españa",
   ],
   openGraph: {
     title: "Cursos de IA para Niños en España (Guía 2026)",
@@ -37,7 +37,7 @@ export default function GuiaCompletaEspana() {
     "¡Hola! Leí la guía de cursos de IA para niños en España y me gustaría más información.",
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
-  const calendlyLink = "https://calendly.com/innovakids/evaluacion"
+  const calendlyLink = "https://calendly.com/innovakids/evaluación"
 
   return (
     <>
@@ -98,7 +98,7 @@ export default function GuiaCompletaEspana() {
                 <p className="lead text-xl text-muted-foreground">
                   La inteligencia artificial está transformando la educación en España y en todo el mundo. Como padre o
                   madre, probablemente te preguntas: ¿debería mi hijo aprender sobre IA? ¿Qué cursos hay disponibles?
-                  ¿Cuál es el mejor para su edad? En esta guía completa responderemos todas tus dudas.
+                  ¿Cuál es el mejor para su edad? En está guía completa responderemos todas tus dudas.
                 </p>
 
                 <h2 className="mt-12 text-2xl font-bold">¿Qué es el Vibe Coding y Por Qué Aprenderlo?</h2>
@@ -230,7 +230,7 @@ export default function GuiaCompletaEspana() {
                   {[
                     "Vibe IA: Chatbots inteligentes con GPT-4",
                     "Vibe Art: Comics y Storytelling con Midjourney",
-                    "Vibe Music: Composición musical con Suno AI",
+                    "Vibe Music: Composición músical con Suno AI",
                     "Vibe Cinema: Producción de video con Runway",
                     "Vibe Coding: Programación de videojuegos con asistencia IA",
                     "Vibe Study: Técnicas de estudio y productividad escolar",
