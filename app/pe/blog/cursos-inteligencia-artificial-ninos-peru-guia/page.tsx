@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     "Guía Completa: Lo que todo padre peruano debe saber antes de inscribir a su hijo en un curso de IA. Precios en soles, herramientas, seguridad y mejores opciones.",
   keywords: [
     "guia cursos ia niños peru",
-    "mejores cursos programacion niños peru",
+    "mejores cursos programación niños peru",
     "comparativa escuelas ia peru",
-    "consejos padres tecnologia peru",
+    "consejos padres tecnología peru",
   ],
   openGraph: {
     title: "Cursos de IA para Niños en Perú (Guía 2026)",
@@ -37,7 +37,7 @@ export default function GuiaIANinosPeru() {
     "Hola! Leí la guía de IA para niños en Perú y me interesa más información.",
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
-  const calendlyLink = "https://calendly.com/innovakids/evaluacion"
+  const calendlyLink = "https://calendly.com/innovakids/evaluación"
 
   return (
     <>
@@ -72,7 +72,7 @@ export default function GuiaIANinosPeru() {
         <section className="border-b py-8">
           <div className="container mx-auto px-4">
             <div className="mx-auto max-w-4xl">
-              <h2 className="mb-4 font-bold">Contenido de esta guía:</h2>
+              <h2 className="mb-4 font-bold">Contenido de está guía:</h2>
               <div className="grid gap-2 md:grid-cols-2">
                 <a href="#que-es-ia" className="text-[#D91023] hover:underline">
                   1. ¿Qué es la IA para niños?

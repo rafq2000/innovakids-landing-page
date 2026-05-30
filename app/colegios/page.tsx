@@ -83,7 +83,7 @@ export default function ColegiosPage() {
                             },
                             {
                                 k: "Docentes",
-                                t: "Formación en 4 sesiones (opcional)",
+                                t: "Formación en 4 sesiónes (opcional)",
                                 d: "Capacitamos a profesores del colegio para que puedan co-facilitar o reemplazar a nuestros instructores en el mediano plazo.",
                             },
                         ],

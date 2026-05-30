@@ -9,12 +9,12 @@ export function HowItWorksSection() {
         <div className="grid grid-cols-12 gap-10 mb-16 md:mb-20">
           <div className="col-span-12 md:col-span-4">
             <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[var(--ink-muted)] mb-6">
-              Asi funciona
+              Así funciona
             </p>
             <h2 className="font-display text-4xl md:text-5xl leading-[1] tracking-[-0.03em]">
               Tres pasos,{" "}
               <em className="italic text-[var(--terracotta)]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
-                cero friccion
+                cero fricción
               </em>.
             </h2>
           </div>
@@ -22,7 +22,7 @@ export function HowItWorksSection() {
             {[
               { n: "01", t: "Agendas", d: "Eliges un horario que te acomode. 30 minutos." },
               { n: "02", t: "Hablamos", d: "Evaluamos el nivel de tu hijo y resolvemos tus dudas." },
-              { n: "03", t: "Decides", d: "Si es compatible, reservamos cupo. Si no, quedas con diagnostico." },
+              { n: "03", t: "Decides", d: "Si es compatible, reservamos cupo. Si no, quedas con diagnóstico." },
             ].map((s) => (
               <li key={s.n} className="pt-6 border-t-2 border-[var(--ink)]">
                 <p className="font-mono-accent text-xs text-[var(--terracotta)] tracking-[0.2em] mb-4">

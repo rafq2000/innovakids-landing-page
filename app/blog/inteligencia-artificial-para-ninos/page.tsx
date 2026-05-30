@@ -177,7 +177,7 @@ export default function BlogPostPage() {
 
                         <h3>La analogía del Pincel Mágico</h3>
                         <p>
-                            En InnovaKids usamos esta analogía: <strong>"La IA es como un pincel muy poderoso. El pincel no pinta cuadros solo
+                            En InnovaKids usamos está analogía: <strong>"La IA es como un pincel muy poderoso. El pincel no pinta cuadros solo
                             — necesita a un artista que lo use. Tu hijo es el artista. La IA es el pincel."</strong>
                         </p>
 
@@ -249,7 +249,7 @@ export default function BlogPostPage() {
                         </ol>
 
                         <h2 id="actividades">5. Actividades de IA para hacer en casa</h2>
-                        <p>Prueba esta actividad hoy mismo:</p>
+                        <p>Prueba está actividad hoy mismo:</p>
                         <h3>Actividad: "El Cuento Infinito"</h3>
                         <p><strong>Herramienta:</strong> ChatGPT (Gratis)</p>
                         <p><strong>Pasos:</strong></p>
@@ -299,7 +299,7 @@ export default function BlogPostPage() {
                                     </h3>
                                     <p className="text-[15px] text-[#1A1714]/70 leading-relaxed max-w-[52ch]">
                                         Inscríbelo en Vibe Explorer. Diez clases en vivo, grupos de cinco, profesores expertos y garantía
-                                        de satisfacción en las primeras dos sesiones.
+                                        de satisfacción en las primeras dos sesiónes.
                                     </p>
                                 </div>
                                 <div className="md:col-span-5 flex flex-col gap-3 md:justify-self-end w-full md:w-auto">

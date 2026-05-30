@@ -58,31 +58,31 @@ const faqJsonLd = {
       name: "A que edad puede un nino empezar a aprender IA?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "A partir de los 8 anos los ninos tienen la madurez cognitiva para empezar a aprender Inteligencia Artificial de forma guiada. InnovaKids ofrece programas adaptados para 8-10, 11-13 y 14-17 anos con proyectos y herramientas diferentes para cada grupo.",
+        text: "A partir de los 8 años los niños tienen la madurez cognitiva para empezar a aprender Inteligencia Artificial de forma guiada. InnovaKids ofrece programas adaptados para 8-10, 11-13 y 14-17 años con proyectos y herramientas diferentes para cada grupo.",
       },
     },
     {
       "@type": "Question",
-      name: "Que proyectos de IA puede hacer un nino de 10 anos?",
+      name: "Que proyectos de IA puede hacer un nino de 10 años?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Un nino de 10 anos puede crear arte digital con IA generativa, componer canciones con Suno AI, disenar historias interactivas con ChatGPT y construir juegos simples con Vibe Coding. Los proyectos se adaptan a su nivel de lectoescritura y pensamiento abstracto.",
+        text: "Un nino de 10 años puede crear arte digital con IA generativa, componer canciones con Suno AI, disenar historias interactivas con ChatGPT y construir juegos simples con Vibe Coding. Los proyectos se adaptan a su nivel de lectoescritura y pensamiento abstracto.",
       },
     },
     {
       "@type": "Question",
-      name: "Es seguro que un adolescente de 14 anos use herramientas de IA?",
+      name: "Es seguro que un adolescente de 14 años use herramientas de IA?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Si, siempre que reciba educacion sobre uso responsable. En InnovaKids ensenamos etica digital, verificacion de informacion y privacidad de datos como parte integral del programa. Un adolescente informado es un adolescente protegido.",
+        text: "Si, siempre que reciba educación sobre uso responsable. En InnovaKids ensenamos etica digital, verificacion de información y privacidad de datos como parte integral del programa. Un adolescente informado es un adolescente protegido.",
       },
     },
     {
       "@type": "Question",
-      name: "Cual es la diferencia entre el curso para ninos de 8 y el de 14 anos?",
+      name: "Cual es la diferencia entre el curso para niños de 8 y el de 14 años?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "El curso de 8-10 anos se enfoca en exploracion creativa con herramientas visuales y proyectos guiados paso a paso. El de 14-17 anos trabaja con herramientas profesionales, Vibe Coding avanzado, creacion de portfolios y preparacion para el mundo laboral.",
+        text: "El curso de 8-10 años se enfoca en exploración creativa con herramientas visuales y proyectos guiados paso a paso. El de 14-17 años trabaja con herramientas profesionales, Vibe Coding avanzado, creación de portfolios y preparación para el mundo laboral.",
       },
     },
   ],
@@ -91,9 +91,9 @@ const faqJsonLd = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "IA para Ninos por Edad: Guia 8-10, 11-13 y 14-17 Anos (2026)",
+  headline: "IA para Niños por Edad: Guia 8-10, 11-13 y 14-17 Anos (2026)",
   description:
-    "Guia completa sobre como la educacion en IA se adapta a cada grupo de edad infantil y adolescente.",
+    "Guia completa sobre como la educación en IA se adapta a cada grupo de edad infantil y adolescente.",
   author: {
     "@type": "Organization",
     name: "InnovaKids",
@@ -129,7 +129,7 @@ export default function IAParaNinosPorEdadPage() {
               Guia por Edades
             </Badge>
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-[#2D3436] leading-tight">
-              IA para Ninos por Edad: Guia <br className="hidden md:block" /> 8-10, 11-13 y 14-17 Anos
+              IA para Niños por Edad: Guia <br className="hidden md:block" /> 8-10, 11-13 y 14-17 Anos
             </h1>
             <div className="flex items-center justify-center gap-4 text-gray-500 text-sm mb-8">
               <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Abril 2026</span>
@@ -137,7 +137,7 @@ export default function IAParaNinosPorEdadPage() {
               <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> Lectura: 14 min</span>
             </div>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              No todos los ninos aprenden igual. La edad marca una diferencia enorme en como un nino interactua
+              No todos los niños aprenden igual. La edad marca una diferencia enorme en como un nino interactúa
               con la Inteligencia Artificial. Aqui te explicamos exactamente que puede aprender tu hijo
               segun su etapa de desarrollo.
             </p>
@@ -154,49 +154,49 @@ export default function IAParaNinosPorEdadPage() {
                 <Link href="/cursos/inteligencia-artificial" className="text-[#4ECDC4] hover:underline">
                   InnovaKids
                 </Link>{" "}
-                es: &quot;Mi hijo tiene X anos, ¿puede aprender IA?&quot;. La respuesta es casi siempre si,
+                es: &quot;Mi hijo tiene X años, ¿puede aprender IA?&quot;. La respuesta es casi siempre si,
                 pero <strong>la forma en que se ensena cambia radicalmente</strong> segun la edad del nino.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Un nino de 8 anos no piensa igual que uno de 14. Sus intereses son diferentes, su capacidad
+                Un nino de 8 años no piensa igual que uno de 14. Sus intereses son diferentes, su capacidad
                 de abstraccion es distinta y las herramientas que pueden manejar varian enormemente. Por eso,
                 en InnovaKids hemos disenado programas especificos para tres grupos de edad, cada uno con
                 su propio enfoque, proyectos y ritmo de aprendizaje.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                En esta guia vamos a desglosar exactamente que puede aprender un nino en cada etapa,
+                En está guia vamos a desglosar exactamente que puede aprender un nino en cada etapa,
                 que proyectos reales puede crear y como la IA se adapta a su nivel de desarrollo cognitivo.
-                Si eres padre o madre y quieres tomar la mejor decision educativa para tu hijo, esta guia
-                te dara toda la informacion que necesitas.
+                Si eres padre o madre y quieres tomar la mejor decisión educativa para tu hijo, está guia
+                te dara toda la información que necesitas.
               </p>
             </div>
 
             {/* Why Age Matters */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Por Que la Edad Importa en la Educacion con IA</h2>
+              <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Por Que la Edad Importa en la Educación con IA</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                La Inteligencia Artificial no es una unica herramienta: es un ecosistema de tecnologias que van
-                desde chatbots conversacionales hasta generadores de imagenes, musica, video y codigo. Cada una
+                La Inteligencia Artificial no es una unica herramienta: es un ecosistema de tecnologías que van
+                desde chatbots conversacionales hasta generadores de imagenes, música, video y codigo. Cada una
                 de estas herramientas requiere un nivel diferente de madurez cognitiva, pensamiento abstracto
-                y capacidad de comunicacion escrita.
+                y capacidad de comunicación escrita.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Segun la psicologia del desarrollo, las capacidades cognitivas de un nino evolucionan
-                significativamente entre los 8 y los 17 anos. Jean Piaget identifico que entre los 7 y 11 anos
-                los ninos estan en la etapa de operaciones concretas, donde piensan de forma logica pero
-                necesitan ejemplos tangibles. A partir de los 11-12 anos entran en la etapa de operaciones
+                significativamente entre los 8 y los 17 años. Jean Piaget identifico que entre los 7 y 11 años
+                los niños estan en la etapa de operaciones concretas, donde piensan de forma logica pero
+                necesitan ejemplos tangibles. A partir de los 11-12 años entran en la etapa de operaciones
                 formales, donde pueden manejar conceptos abstractos y hipoteticos.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Esto tiene implicaciones directas en como ensenamos IA. Un nino de 8 anos necesita ver
-                resultados visuales inmediatos para mantenerse motivado. Un adolescente de 15 anos puede
+                Esto tiene implicaciones directas en como ensenamos IA. Un nino de 8 años necesita ver
+                resultados visuales inmediatos para mantenerse motivado. Un adolescente de 15 años puede
                 entender conceptos como sesgos algoritmicos, etica de datos y pensamiento computacional avanzado.
                 Forzar el mismo contenido para ambos grupos seria un error pedagogico grave.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Por eso, la{" "}
                 <Link href="/metodologia-aprender-creando" className="text-[#4ECDC4] hover:underline">
-                  metodologia Aprender Creando de InnovaKids
+                  metodología Aprender Creando de InnovaKids
                 </Link>{" "}
                 se adapta a cada grupo etario, manteniendo siempre el enfoque practico y basado en proyectos
                 reales, pero ajustando la complejidad, las herramientas y los objetivos de aprendizaje.
@@ -209,22 +209,22 @@ export default function IAParaNinosPorEdadPage() {
               <div className="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-6">
                 <h3 className="text-xl font-bold text-blue-800 mb-3">Perfil del Estudiante</h3>
                 <p className="text-gray-700">
-                  Los ninos de 8 a 10 anos estan en una etapa de curiosidad intensa. Quieren entender como
+                  Los niños de 8 a 10 años estan en una etapa de curiosidad intensa. Quieren entender como
                   funcionan las cosas, les fascina la magia de ver algo creado &quot;de la nada&quot; y tienen una
                   capacidad de asombro que los convierte en los estudiantes mas entusiastas. Sin embargo,
-                  su capacidad de atencion es mas corta y necesitan cambios frecuentes de actividad.
+                  su capacidad de atención es mas corta y necesitan cambios frecuentes de actividad.
                 </p>
               </div>
 
               <h3 className="text-2xl font-bold text-[#2D3436] mb-4">Que Pueden Aprender</h3>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                A esta edad, el enfoque principal es la <strong>exploracion creativa guiada</strong>. Los ninos
-                de 8-10 anos pueden aprender a interactuar con chatbots de IA de forma basica, generando
+                A está edad, el enfoque principal es la <strong>exploración creativa guiada</strong>. Los niños
+                de 8-10 años pueden aprender a interactúar con chatbots de IA de forma basica, generando
                 historias, resolviendo acertijos y creando dialogos con personajes inventados. La clave
-                esta en que cada actividad produce un resultado visible e inmediato.
+                está en que cada actividad produce un resultado visible e inmediato.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Tambien pueden iniciarse en la generacion de arte digital con IA. Herramientas como DALL-E
+                Tambien pueden iniciarse en la generación de arte digital con IA. Herramientas como DALL-E
                 les permiten crear ilustraciones describiendo lo que imaginan. Esto no solo desarrolla
                 su creatividad sino que les ensena a comunicar ideas de forma clara y especifica, una
                 habilidad fundamental del Prompt Engineering.
@@ -243,11 +243,11 @@ export default function IAParaNinosPorEdadPage() {
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold">3.</span>
-                    <span><strong>Mi Primera Cancion</strong> — Componen letras y melodias usando herramientas de musica con IA</span>
+                    <span><strong>Mi Primera Cancion</strong> — Componen letras y melodias usando herramientas de música con IA</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold">4.</span>
-                    <span><strong>Aventura Interactiva</strong> — Programan un juego de decision estilo &quot;elige tu propia aventura&quot; con ayuda de IA</span>
+                    <span><strong>Aventura Interactiva</strong> — Programan un juego de decisión estilo &quot;elige tu propia aventura&quot; con ayuda de IA</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold">5.</span>
@@ -257,9 +257,9 @@ export default function IAParaNinosPorEdadPage() {
               </div>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                El objetivo a esta edad no es la profundidad tecnica sino <strong>encender la chispa</strong>.
-                Queremos que el nino asocie la tecnologia con creatividad, diversion y posibilidades infinitas.
-                Un nino que a los 8 anos descubre que puede crear con IA, a los 12 estara listo para proyectos
+                El objetivo a está edad no es la profundidad tecnica sino <strong>encender la chispa</strong>.
+                Queremos que el nino asocie la tecnología con creatividad, diversion y posibilidades infinitas.
+                Un nino que a los 8 años descubre que puede crear con IA, a los 12 estara listo para proyectos
                 mucho mas ambiciosos.
               </p>
             </section>
@@ -270,10 +270,10 @@ export default function IAParaNinosPorEdadPage() {
               <div className="bg-purple-50 p-6 rounded-xl border border-purple-100 mb-6">
                 <h3 className="text-xl font-bold text-purple-800 mb-3">Perfil del Estudiante</h3>
                 <p className="text-gray-700">
-                  Los preadolescentes de 11 a 13 anos estan en una transicion fascinante. Comienzan a pensar
+                  Los preadolescentes de 11 a 13 años estan en una transicion fascinante. Comienzan a pensar
                   de forma abstracta, tienen opiniones propias y buscan diferenciarse. Quieren crear cosas
                   que impresionen a sus amigos y demostrar que son capaces de cosas &quot;de adultos&quot;. Su capacidad
-                  de atencion y persistencia es significativamente mayor que la del grupo anterior.
+                  de atención y persistencia es significativamente mayor que la del grupo anterior.
                 </p>
               </div>
 
@@ -289,15 +289,15 @@ export default function IAParaNinosPorEdadPage() {
                 <Link href="/vibe-coding-ninos" className="text-[#4ECDC4] hover:underline">
                   Vibe Coding
                 </Link>
-                : la programacion mediante lenguaje natural. Un preadolescente de 12 anos puede describir
-                una aplicacion que quiere crear y trabajar con la IA para construirla paso a paso. Esto les
-                da una sensacion de poder y logro que es tremendamente motivadora a esta edad.
+                : la programación mediante lenguaje natural. Un preadolescente de 12 años puede describir
+                una aplicación que quiere crear y trabajar con la IA para construirla paso a paso. Esto les
+                da una sensacion de poder y logro que es tremendamente motivadora a está edad.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Ademas, a esta edad pueden empezar a entender conceptos basicos de etica digital: que significa
+                Ademas, a está edad pueden empezar a entender conceptos basicos de etica digital: que significa
                 que la IA tenga sesgos, por que no se debe copiar trabajo ajeno, como verificar si la
-                informacion generada por IA es correcta. Estas conversaciones son fundamentales para formar
-                usuarios responsables de la tecnologia.
+                información generada por IA es correcta. Estas conversaciones son fundamentales para formar
+                usuarios responsables de la tecnología.
               </p>
 
               <div className="bg-[#F8F9FA] p-6 rounded-xl border border-gray-200 my-8">
@@ -305,7 +305,7 @@ export default function IAParaNinosPorEdadPage() {
                 <ul className="space-y-2">
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold">1.</span>
-                    <span><strong>Mi Primera App con Vibe Coding</strong> — Crean una aplicacion funcional describiendola en espanol a la IA</span>
+                    <span><strong>Mi Primera App con Vibe Coding</strong> — Crean una aplicación funcional describiendola en espanol a la IA</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold">2.</span>
@@ -313,7 +313,7 @@ export default function IAParaNinosPorEdadPage() {
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold">3.</span>
-                    <span><strong>Cortometraje con IA</strong> — Escriben guion, generan escenas visuales y agregan musica creada con IA</span>
+                    <span><strong>Cortometraje con IA</strong> — Escriben guion, generan escenas visuales y agregan música creada con IA</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold">4.</span>
@@ -321,7 +321,7 @@ export default function IAParaNinosPorEdadPage() {
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold">5.</span>
-                    <span><strong>Podcast con IA</strong> — Producen un episodio completo usando IA para guion, edicion y musica</span>
+                    <span><strong>Podcast con IA</strong> — Producen un episodio completo usando IA para guion, edición y música</span>
                   </li>
                 </ul>
               </div>
@@ -333,9 +333,9 @@ export default function IAParaNinosPorEdadPage() {
               <div className="bg-pink-50 p-6 rounded-xl border border-pink-100 mb-6">
                 <h3 className="text-xl font-bold text-pink-800 mb-3">Perfil del Estudiante</h3>
                 <p className="text-gray-700">
-                  Los adolescentes de 14 a 17 anos estan a pocos anos de entrar a la universidad o al mundo
+                  Los adolescentes de 14 a 17 años estan a pocos años de entrar a la universidad o al mundo
                   laboral. Tienen capacidad de pensamiento abstracto completa, pueden manejar proyectos
-                  complejos de varias semanas y estan motivados por la relevancia practica de lo que aprenden.
+                  complejos de varias semanas y estan motivados por la relevancia práctica de lo que aprenden.
                   Quieren saber que lo que estudian les servira de verdad.
                 </p>
               </div>
@@ -345,7 +345,7 @@ export default function IAParaNinosPorEdadPage() {
                 Para este grupo, la IA ya no es solo una herramienta creativa: es una{" "}
                 <strong>competencia profesional</strong>. Los adolescentes pueden aprender Prompt Engineering
                 avanzado, Vibe Coding para crear aplicaciones complejas, automatizacion de tareas con IA
-                y las bases del pensamiento critico frente a la tecnologia.
+                y las bases del pensamiento crítico frente a la tecnología.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 En{" "}
@@ -359,7 +359,7 @@ export default function IAParaNinosPorEdadPage() {
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Tambien profundizamos en temas como la etica de la IA, el impacto social de la automatizacion,
                 la propiedad intelectual en contenido generado por IA y la privacidad de datos. Un adolescente
-                que entiende estos temas no solo esta preparado para usar la tecnologia, sino para
+                que entiende estos temas no solo está preparado para usar la tecnología, sino para
                 liderarla de forma responsable.
               </p>
 
@@ -372,7 +372,7 @@ export default function IAParaNinosPorEdadPage() {
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold">2.</span>
-                    <span><strong>App con Vibe Coding Avanzado</strong> — Construyen una aplicacion web completa con bases de datos y autenticacion</span>
+                    <span><strong>App con Vibe Coding Avanzado</strong> — Construyen una aplicación web completa con bases de datos y autenticacion</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold">3.</span>
@@ -394,14 +394,14 @@ export default function IAParaNinosPorEdadPage() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Como Elegir el Programa Adecuado para Tu Hijo</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                La edad es el factor principal, pero no el unico. Tambien debes considerar los intereses
-                de tu hijo, su nivel de familiaridad con la tecnologia y su personalidad. Algunos ninos de
-                9 anos son mas maduros que otros de 11, y eso esta bien. En InnovaKids, nuestros mentores
+                La edad es el factor principal, pero no el único. Tambien debes considerar los intereses
+                de tu hijo, su nivel de familiaridad con la tecnología y su personalidad. Algunos niños de
+                9 años son mas maduros que otros de 11, y eso está bien. En InnovaKids, nuestros mentores
                 evaluan a cada estudiante de forma individual para ubicarlo en el grupo donde mejor pueda
                 desarrollarse.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Si tu hijo ya tiene experiencia con tecnologia, por ejemplo si ya ha usado{" "}
+                Si tu hijo ya tiene experiencia con tecnología, por ejemplo si ya ha usado{" "}
                 <Link href="/blog/scratch-vs-ia-ninos" className="text-[#4ECDC4] hover:underline">
                   Scratch o herramientas similares
                 </Link>
@@ -422,11 +422,11 @@ export default function IAParaNinosPorEdadPage() {
                   </thead>
                   <tbody>
                     {[
-                      { aspect: "Enfoque", g1: "Exploracion creativa", g2: "Creacion independiente", g3: "Competencia profesional" },
+                      { aspect: "Enfoque", g1: "Exploracion creativa", g2: "Creación independiente", g3: "Competencia profesional" },
                       { aspect: "Herramientas", g1: "ChatGPT basico, DALL-E, Suno", g2: "Vibe Coding, Prompt Eng.", g3: "IA avanzada, APIs, automatizacion" },
-                      { aspect: "Duracion de proyectos", g1: "1-2 sesiones", g2: "2-4 sesiones", g3: "4-8 sesiones" },
-                      { aspect: "Supervision", g1: "Alta", g2: "Media", g3: "Baja (autonomia guiada)" },
-                      { aspect: "Resultado principal", g1: "Asombro y motivacion", g2: "Confianza y habilidad", g3: "Portfolio y preparacion" },
+                      { aspect: "Duración de proyectos", g1: "1-2 sesiónes", g2: "2-4 sesiónes", g3: "4-8 sesiónes" },
+                      { aspect: "Supervisión", g1: "Alta", g2: "Media", g3: "Baja (autonomia guiada)" },
+                      { aspect: "Resultado principal", g1: "Asombro y motivacion", g2: "Confianza y habilidad", g3: "Portfolio y preparación" },
                     ].map((row) => (
                       <tr key={row.aspect} className="border-b border-gray-200">
                         <td className="p-4 font-medium text-[#2D3436]">{row.aspect}</td>
@@ -453,7 +453,7 @@ export default function IAParaNinosPorEdadPage() {
                 <div className="bg-[#F8F9FA] p-6 rounded-xl border border-gray-200">
                   <h3 className="text-lg font-bold text-[#2D3436] mb-2">&quot;Mi hijo es muy chico para la IA&quot;</h3>
                   <p className="text-gray-700">
-                    Si tiene 8 anos o mas, no es muy chico. La clave esta en la forma de ensenanza. No le
+                    Si tiene 8 años o mas, no es muy chico. La clave está en la forma de ensenanza. No le
                     pedimos que entienda algoritmos: le pedimos que cree, que imagine, que se divierta. Las
                     herramientas de IA modernas son tan intuitivas como dibujar con crayones, solo que los
                     resultados son mucho mas impresionantes. Te invitamos a conocer nuestra{" "}
@@ -474,9 +474,9 @@ export default function IAParaNinosPorEdadPage() {
                 </div>
 
                 <div className="bg-[#F8F9FA] p-6 rounded-xl border border-gray-200">
-                  <h3 className="text-lg font-bold text-[#2D3436] mb-2">&quot;No entiendo de tecnologia, no puedo ayudarlo&quot;</h3>
+                  <h3 className="text-lg font-bold text-[#2D3436] mb-2">&quot;No entiendo de tecnología, no puedo ayudarlo&quot;</h3>
                   <p className="text-gray-700">
-                    No necesitas saber de tecnologia. Nuestros mentores guian a cada estudiante en clases
+                    No necesitas saber de tecnología. Nuestros mentores guian a cada estudiante en clases
                     en vivo con grupos reducidos. Tu rol es apoyar y celebrar lo que tu hijo crea. Muchos
                     padres nos dicen que terminan aprendiendo de sus propios hijos, lo cual fortalece
                     el vinculo familiar.
@@ -495,15 +495,15 @@ export default function IAParaNinosPorEdadPage() {
                 mostrar, compartir y del cual sentirse orgulloso.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Nuestras clases son en vivo, con grupos de maximo 6 estudiantes por mentor. Esto permite
-                una atencion personalizada que es imposible en plataformas autoguiadas o en clases
+                Nuestras clases son en vivo, con grupos de máximo 6 estudiantes por mentor. Esto permite
+                una atención personalizada que es imposible en plataformas autoguiadas o en clases
                 masivas. Cada estudiante avanza a su ritmo, recibe retroalimentacion inmediata y
-                construye una relacion de confianza con su mentor.
+                construye una relación de confianza con su mentor.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Si quieres saber mas sobre nuestra metodologia, visita la pagina de{" "}
+                Si quieres saber mas sobre nuestra metodología, visita la página de{" "}
                 <Link href="/metodologia-aprender-creando" className="text-[#4ECDC4] hover:underline">
-                  Metodologia Aprender Creando
+                  Metodología Aprender Creando
                 </Link>{" "}
                 o{" "}
                 <Link href="/clase-gratis" className="text-[#4ECDC4] hover:underline">
@@ -520,23 +520,23 @@ export default function IAParaNinosPorEdadPage() {
                 <div className="border border-gray-200 p-6 rounded-xl">
                   <h3 className="text-lg font-bold text-[#2D3436] mb-2">A que edad puede un nino empezar a aprender IA?</h3>
                   <p className="text-gray-700">
-                    A partir de los 8 anos. InnovaKids ofrece programas adaptados para{" "}
+                    A partir de los 8 años. InnovaKids ofrece programas adaptados para{" "}
                     <Link href="/ia-ninos-por-edad" className="text-[#4ECDC4] hover:underline">
-                      cada grupo de edad: 8-10, 11-13 y 14-17 anos
+                      cada grupo de edad: 8-10, 11-13 y 14-17 años
                     </Link>.
                   </p>
                 </div>
                 <div className="border border-gray-200 p-6 rounded-xl">
-                  <h3 className="text-lg font-bold text-[#2D3436] mb-2">Que proyectos de IA puede hacer un nino de 10 anos?</h3>
+                  <h3 className="text-lg font-bold text-[#2D3436] mb-2">Que proyectos de IA puede hacer un nino de 10 años?</h3>
                   <p className="text-gray-700">
                     Puede crear arte digital con IA, componer canciones, disenar historias interactivas
                     y construir juegos simples con ayuda de herramientas de IA generativa.
                   </p>
                 </div>
                 <div className="border border-gray-200 p-6 rounded-xl">
-                  <h3 className="text-lg font-bold text-[#2D3436] mb-2">Es seguro que un adolescente de 14 anos use herramientas de IA?</h3>
+                  <h3 className="text-lg font-bold text-[#2D3436] mb-2">Es seguro que un adolescente de 14 años use herramientas de IA?</h3>
                   <p className="text-gray-700">
-                    Si, siempre con educacion sobre uso responsable. En InnovaKids ensenamos etica digital
+                    Si, siempre con educación sobre uso responsable. En InnovaKids ensenamos etica digital
                     y privacidad como parte integral del programa. Conoce mas sobre{" "}
                     <Link href="/blog/como-proteger-hijos-ia-uso-seguro-responsable" className="text-[#4ECDC4] hover:underline">
                       como proteger a tus hijos en la era de la IA
@@ -544,11 +544,11 @@ export default function IAParaNinosPorEdadPage() {
                   </p>
                 </div>
                 <div className="border border-gray-200 p-6 rounded-xl">
-                  <h3 className="text-lg font-bold text-[#2D3436] mb-2">Cual es la diferencia entre el curso para ninos de 8 y el de 14 anos?</h3>
+                  <h3 className="text-lg font-bold text-[#2D3436] mb-2">Cual es la diferencia entre el curso para niños de 8 y el de 14 años?</h3>
                   <p className="text-gray-700">
-                    El curso de 8-10 anos se enfoca en exploracion creativa con herramientas visuales.
+                    El curso de 8-10 años se enfoca en exploración creativa con herramientas visuales.
                     El de 14-17 trabaja con herramientas profesionales, Vibe Coding avanzado y
-                    preparacion para el mundo laboral.
+                    preparación para el mundo laboral.
                   </p>
                 </div>
               </div>
@@ -562,7 +562,7 @@ export default function IAParaNinosPorEdadPage() {
                   href="/cursos/inteligencia-artificial"
                   className="block p-4 border border-gray-200 rounded-xl hover:border-[#4ECDC4] transition-colors"
                 >
-                  <p className="font-semibold text-[#2D3436]">Curso de IA para Ninos</p>
+                  <p className="font-semibold text-[#2D3436]">Curso de IA para Niños</p>
                   <p className="text-gray-500 text-sm">Conoce el programa completo de InnovaKids</p>
                 </Link>
                 <Link
@@ -573,17 +573,17 @@ export default function IAParaNinosPorEdadPage() {
                   <p className="text-gray-500 text-sm">Que deberia aprender tu hijo primero</p>
                 </Link>
                 <Link
-                  href="/blog/vibe-coding-que-es-futuro-programacion-ninos"
+                  href="/blog/vibe-coding-que-es-futuro-programación-ninos"
                   className="block p-4 border border-gray-200 rounded-xl hover:border-[#4ECDC4] transition-colors"
                 >
                   <p className="font-semibold text-[#2D3436]">Que es el Vibe Coding</p>
-                  <p className="text-gray-500 text-sm">El futuro de la programacion para ninos</p>
+                  <p className="text-gray-500 text-sm">El futuro de la programación para niños</p>
                 </Link>
                 <Link
                   href="/blog/como-proteger-hijos-ia-uso-seguro-responsable"
                   className="block p-4 border border-gray-200 rounded-xl hover:border-[#4ECDC4] transition-colors"
                 >
-                  <p className="font-semibold text-[#2D3436]">Uso Seguro de IA para Ninos</p>
+                  <p className="font-semibold text-[#2D3436]">Uso Seguro de IA para Niños</p>
                   <p className="text-gray-500 text-sm">Guia para padres sobre seguridad digital</p>
                 </Link>
               </div>

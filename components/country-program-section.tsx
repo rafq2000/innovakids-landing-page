@@ -50,7 +50,7 @@ export function CountryProgramSection({
                                 { clase: "1", nombre: "Vibe IA", desc: "Tu nuevo superpoder (Configuración)" },
                                 { clase: "2", nombre: "Prompt Engineering", desc: "El arte de hablar con máquinas" },
                                 { clase: "3", nombre: "Vibe Voice", desc: "Clonación de voz y narración" },
-                                { clase: "4", nombre: "Vibe Music", desc: "Composición musical con IA" },
+                                { clase: "4", nombre: "Vibe Music", desc: "Composición músical con IA" },
                                 { clase: "5", nombre: "Generative Art I", desc: "De la imaginación a la imagen" },
                             ].map((item, i) => (
                                 <li key={i} className="flex items-start gap-3">

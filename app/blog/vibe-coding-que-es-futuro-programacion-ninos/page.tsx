@@ -16,20 +16,20 @@ export const metadata: Metadata = {
   keywords: [
     "vibe coding niños",
     "que es vibe coding",
-    "programacion con ia niños",
+    "programación con ia niños",
     "vibe coding que es",
     "programar hablando con ia",
-    "futuro programacion niños",
+    "futuro programación niños",
     "vibe coding para niños",
   ],
   alternates: {
-    canonical: "https://www.innovakidslatam.com/blog/vibe-coding-que-es-futuro-programacion-ninos",
+    canonical: "https://www.innovakidslatam.com/blog/vibe-coding-que-es-futuro-programación-ninos",
   },
   openGraph: {
     title: "Vibe Coding · Qué Es y Por Qué es el Futuro para Niños | InnovaKids",
     description:
       "Vibe Coding: la nueva forma de programar hablando con la IA en lenguaje natural. Por qué es revolucionario para niños 8-17 años.",
-    url: "https://www.innovakidslatam.com/blog/vibe-coding-que-es-futuro-programacion-ninos",
+    url: "https://www.innovakidslatam.com/blog/vibe-coding-que-es-futuro-programación-ninos",
     siteName: "InnovaKids",
     type: "article",
     locale: "es_419",
@@ -58,7 +58,7 @@ const faqJsonLd = {
       name: "Que es el Vibe Coding?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "El Vibe Coding es una nueva forma de programar donde describes lo que quieres crear en lenguaje natural (espanol o ingles) y la Inteligencia Artificial genera el codigo por ti. No necesitas memorizar sintaxis ni lenguajes de programacion. Es como tener una conversacion con un programador experto que construye lo que tu imaginas.",
+        text: "El Vibe Coding es una nueva forma de programar donde describes lo que quieres crear en lenguaje natural (espanol o ingles) y la Inteligencia Artificial genera el código por ti. No necesitas memorizar sintaxis ni lenguajes de programación. Es como tener una conversacion con un programador experto que construye lo que tu imaginas.",
       },
     },
     {
@@ -66,15 +66,15 @@ const faqJsonLd = {
       name: "A que edad puede un nino aprender Vibe Coding?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Los ninos pueden empezar a aprender Vibe Coding a partir de los 8 anos. A esa edad ya pueden comunicar sus ideas por escrito y entender el proceso iterativo de crear, probar y mejorar. Los preadolescentes de 11-13 anos y adolescentes de 14-17 pueden crear proyectos cada vez mas complejos.",
+        text: "Los niños pueden empezar a aprender Vibe Coding a partir de los 8 años. A esa edad ya pueden comunicar sus ideas por escrito y entender el proceso iterativo de crear, probar y mejorar. Los preadolescentes de 11-13 años y adolescentes de 14-17 pueden crear proyectos cada vez mas complejos.",
       },
     },
     {
       "@type": "Question",
-      name: "El Vibe Coding reemplaza la programacion tradicional?",
+      name: "El Vibe Coding reemplaza la programación tradicional?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No la reemplaza completamente, pero la transforma. El Vibe Coding es la forma en que la mayoria de las personas crearan software en el futuro. Los programadores profesionales ya lo usan para acelerar su trabajo. Para ninos, es la puerta de entrada perfecta al mundo de la creacion digital sin la barrera de aprender sintaxis compleja.",
+        text: "No la reemplaza completamente, pero la transforma. El Vibe Coding es la forma en que la mayoría de las personas crearan software en el futuro. Los programadores profesionales ya lo usan para acelerar su trabajo. Para niños, es la puerta de entrada perfecta al mundo de la creación digital sin la barrera de aprender sintaxis compleja.",
       },
     },
     {
@@ -82,7 +82,7 @@ const faqJsonLd = {
       name: "Que puede crear un nino con Vibe Coding?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Con Vibe Coding, un nino puede crear aplicaciones web funcionales, videojuegos, herramientas interactivas, sitios web personales, chatbots y mucho mas. La unica limitacion es su imaginacion, ya que la IA se encarga de traducir sus ideas en codigo funcional.",
+        text: "Con Vibe Coding, un nino puede crear aplicaciones web funcionales, videojuegos, herramientas interactivas, sitios web personales, chatbots y mucho mas. La unica limitacion es su imaginacion, ya que la IA se encarga de traducir sus ideas en código funcional.",
       },
     },
   ],
@@ -91,7 +91,7 @@ const faqJsonLd = {
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Vibe Coding: Que Es y Por Que es el Futuro de la Programacion para Ninos",
+  headline: "Vibe Coding: Que Es y Por Que es el Futuro de la Programación para Niños",
   description:
     "Guia completa sobre Vibe Coding: la nueva forma de programar usando lenguaje natural e Inteligencia Artificial.",
   author: {
@@ -106,7 +106,7 @@ const articleJsonLd = {
   },
   datePublished: "2026-04-01",
   dateModified: "2026-04-01",
-  mainEntityOfPage: "https://www.innovakidslatam.com/blog/vibe-coding-que-es-futuro-programacion-ninos",
+  mainEntityOfPage: "https://www.innovakidslatam.com/blog/vibe-coding-que-es-futuro-programación-ninos",
 }
 
 export default function VibeCodingQueEsPage() {
@@ -129,7 +129,7 @@ export default function VibeCodingQueEsPage() {
               Tendencias Educativas
             </Badge>
             <h1 className="text-3xl md:text-5xl font-bold mb-6 text-[#2D3436] leading-tight">
-              Vibe Coding: Que Es y Por Que <br className="hidden md:block" /> es el Futuro de la Programacion
+              Vibe Coding: Que Es y Por Que <br className="hidden md:block" /> es el Futuro de la Programación
             </h1>
             <div className="flex items-center justify-center gap-4 text-gray-500 text-sm mb-8">
               <span className="flex items-center gap-1"><Calendar className="w-4 h-4" /> Abril 2026</span>
@@ -137,9 +137,9 @@ export default function VibeCodingQueEsPage() {
               <span className="flex items-center gap-1"><Clock className="w-4 h-4" /> Lectura: 13 min</span>
             </div>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              Imagina que tu hijo pudiera crear una aplicacion, un videojuego o una herramienta digital
+              Imagina que tu hijo pudiera crear una aplicación, un videojuego o una herramienta digital
               simplemente describiendo lo que quiere en espanol. Eso es el Vibe Coding, y esta
-              cambiando las reglas de la programacion para siempre.
+              cambiando las reglas de la programación para siempre.
             </p>
           </div>
         </header>
@@ -151,14 +151,14 @@ export default function VibeCodingQueEsPage() {
             <div className="prose prose-lg max-w-none mb-12">
               <p className="text-lg text-gray-700 leading-relaxed">
                 Durante decadas, aprender a programar significaba sentarse frente a una pantalla negra y
-                memorizar comandos en ingles que no tenian ningun sentido intuitivo. Los ninos que querian
+                memorizar comandos en ingles que no tenian ningun sentido intuitivo. Los niños que querian
                 crear un videojuego primero tenian que pasar meses aprendiendo variables, funciones, bucles
-                y la sintaxis exacta de un lenguaje como Python o JavaScript. La mayoria se frustraba
+                y la sintaxis exacta de un lenguaje como Python o JavaScript. La mayoría se frustraba
                 antes de crear algo interesante.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 En 2026, todo eso cambio. El <strong>Vibe Coding</strong> es una revolucion silenciosa que esta
-                transformando la forma en que las personas crean software. Y para los ninos, es quizas
+                transformando la forma en que las personas crean software. Y para los niños, es quizas
                 la oportunidad educativa mas importante de la decada. En este articulo te explicamos
                 exactamente que es, como funciona, por que es relevante para tu hijo y como{" "}
                 <Link href="/cursos/inteligencia-artificial" className="text-[#4ECDC4] hover:underline">
@@ -174,12 +174,12 @@ export default function VibeCodingQueEsPage() {
                 El termino &quot;Vibe Coding&quot; fue acunado por Andrej Karpathy, cofundador de OpenAI y exdirector
                 de IA en Tesla, en febrero de 2025. Lo definio como una nueva forma de programar donde
                 te &quot;entregas al vibe&quot;, describes lo que quieres en lenguaje natural y la IA genera todo
-                el codigo necesario.
+                el código necesario.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                En la practica, el Vibe Coding funciona asi: abres una herramienta de IA como Cursor,
+                En la práctica, el Vibe Coding funciona asi: abres una herramienta de IA como Cursor,
                 Replit Agent, Claude o ChatGPT con Code Interpreter, y le dices en espanol:
-                &quot;Quiero una aplicacion que muestre el clima de mi ciudad con una interfaz bonita y colores
+                &quot;Quiero una aplicación que muestre el clima de mi ciudad con una interfaz bonita y colores
                 azules&quot;. La IA genera todo el codigo, lo ejecuta y te muestra el resultado. Si quieres
                 cambiar algo, simplemente se lo dices: &quot;Agrega un boton para cambiar de ciudad&quot; o
                 &quot;Haz que los numeros sean mas grandes&quot;.
@@ -192,31 +192,31 @@ export default function VibeCodingQueEsPage() {
               <p className="text-lg text-gray-700 leading-relaxed">
                 Es como la diferencia entre aprender a hablar un idioma y aprender a ser linguista.
                 Con el Vibe Coding, puedes &quot;hablar&quot; con las computadoras desde el primer dia, sin
-                necesidad de estudiar su &quot;gramatica&quot; durante anos.
+                necesidad de estudiar su &quot;gramatica&quot; durante años.
               </p>
             </section>
 
             {/* Why Revolutionary for Kids */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Por Que el Vibe Coding es Revolucionario para Ninos</h2>
+              <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Por Que el Vibe Coding es Revolucionario para Niños</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                La programacion tradicional tenia una barrera de entrada enorme para los ninos. No solo
+                La programación tradicional tenia una barrera de entrada enorme para los niños. No solo
                 necesitaban aprender un lenguaje en ingles, sino que los errores de sintaxis (un punto
-                y coma olvidado, un parentesis mal cerrado) causaban frustracion constante. Muchos ninos
+                y coma olvidado, un parentesis mal cerrado) causaban frustracion constante. Muchos niños
                 talentosos abandonaban antes de crear su primer proyecto real.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                El Vibe Coding elimina todas esas barreras. Un nino de 8 anos que habla espanol puede
-                crear una aplicacion funcional en su primera hora de clase. No porque sea un genio de la
+                El Vibe Coding elimina todas esas barreras. Un nino de 8 años que habla espanol puede
+                crear una aplicación funcional en su primera hora de clase. No porque sea un genio de la
                 computacion, sino porque la herramienta se adapta a el, y no al reves.
               </p>
 
               <div className="bg-[#F8F9FA] p-6 rounded-xl border border-gray-200 my-8">
-                <h3 className="text-xl font-bold text-[#2D3436] mb-4">Beneficios del Vibe Coding para Ninos</h3>
+                <h3 className="text-xl font-bold text-[#2D3436] mb-4">Beneficios del Vibe Coding para Niños</h3>
                 <ul className="space-y-2">
                   <li className="flex items-start text-gray-700">
                     <span className="text-green-500 mr-3 font-bold">+</span>
-                    <span><strong>Resultados inmediatos</strong> — Crean algo funcional desde la primera sesion, lo que genera motivacion instantanea</span>
+                    <span><strong>Resultados inmediatos</strong> — Crean algo funcional desde la primera sesión, lo que genera motivacion instantanea</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-green-500 mr-3 font-bold">+</span>
@@ -244,13 +244,13 @@ export default function VibeCodingQueEsPage() {
 
             {/* Vibe Coding vs Traditional */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Vibe Coding vs Programacion Tradicional: Comparativa</h2>
+              <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Vibe Coding vs Programación Tradicional: Comparativa</h2>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse bg-[#F8F9FA] rounded-xl overflow-hidden">
                   <thead>
                     <tr className="bg-[#2D3436] text-white">
                       <th className="text-left p-4 font-semibold">Criterio</th>
-                      <th className="p-4 font-semibold">Programacion Tradicional</th>
+                      <th className="p-4 font-semibold">Programación Tradicional</th>
                       <th className="p-4 font-semibold text-[#4ECDC4]">Vibe Coding</th>
                     </tr>
                   </thead>
@@ -261,7 +261,7 @@ export default function VibeCodingQueEsPage() {
                       { criteria: "Conocimientos previos", trad: "Sintaxis, logica, tipos de datos", vibe: "Saber describir lo que quieres" },
                       { criteria: "Nivel de frustracion", trad: "Alto (errores de sintaxis constantes)", vibe: "Bajo (la IA corrige errores)" },
                       { criteria: "Tipo de proyectos", trad: "Ejercicios academicos basicos", vibe: "Apps y juegos funcionales reales" },
-                      { criteria: "Habilidades desarrolladas", trad: "Logica, sintaxis, depuracion", vibe: "Creatividad, comunicacion, diseno" },
+                      { criteria: "Habilidades desarrolladas", trad: "Logica, sintaxis, depuracion", vibe: "Creatividad, comunicación, diseno" },
                       { criteria: "Relevancia laboral en 2030", trad: "Parcial (se automatiza con IA)", vibe: "Total (asi se trabajara)" },
                       { criteria: "Motivacion del estudiante", trad: "Baja al inicio, crece lento", vibe: "Alta desde el primer dia" },
                     ].map((row) => (
@@ -282,7 +282,7 @@ export default function VibeCodingQueEsPage() {
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 En InnovaKids, el Vibe Coding es uno de los pilares de nuestro{" "}
                 <Link href="/cursos/inteligencia-artificial" className="text-[#4ECDC4] hover:underline">
-                  programa de Inteligencia Artificial para ninos
+                  programa de Inteligencia Artificial para niños
                 </Link>
                 . No lo ensenamos como un concepto teorico: lo ensenamos creando. Desde la primera clase,
                 los estudiantes estan construyendo algo real con Vibe Coding.
@@ -290,12 +290,12 @@ export default function VibeCodingQueEsPage() {
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Nuestra{" "}
                 <Link href="/metodologia-aprender-creando" className="text-[#4ECDC4] hover:underline">
-                  metodologia Aprender Creando
+                  metodología Aprender Creando
                 </Link>{" "}
                 se aplica perfectamente al Vibe Coding. El mentor propone un desafio creativo, los
-                estudiantes diseno la solucion en su mente, la describen a la IA, y luego iteran hasta
-                obtener el resultado deseado. En el proceso, desarrollan habilidades de comunicacion,
-                pensamiento critico, creatividad y resolucion de problemas.
+                estudiantes diseno la solución en su mente, la describen a la IA, y luego iteran hasta
+                obtener el resultado deseado. En el proceso, desarrollan habilidades de comunicación,
+                pensamiento crítico, creatividad y resolución de problemas.
               </p>
 
               <div className="space-y-4 my-8">
@@ -312,7 +312,7 @@ export default function VibeCodingQueEsPage() {
                   <p className="text-gray-700">
                     Aprende a comunicar su idea a la IA de forma clara y especifica. Aqui es donde
                     desarrolla habilidades de Prompt Engineering: saber pedir es saber pensar.
-                    El mentor guia este proceso para que la descripcion sea efectiva.
+                    El mentor guia este proceso para que la descripción sea efectiva.
                   </p>
                 </div>
                 <div className="bg-[#4ECDC4]/10 p-6 rounded-xl border border-[#4ECDC4]/20">
@@ -326,7 +326,7 @@ export default function VibeCodingQueEsPage() {
                 <div className="bg-pink-50 p-6 rounded-xl border border-pink-100">
                   <h3 className="text-xl font-bold text-pink-800 mb-3">Paso 4: Compartir</h3>
                   <p className="text-gray-700">
-                    El proyecto terminado se presenta al grupo. Los companeros dan retroalimentacion
+                    El proyecto terminado se presenta al grupo. Los compañeros dan retroalimentacion
                     constructiva. El estudiante aprende a recibir criticas y a mejorar su trabajo.
                     Es un mini laboratorio de colaboracion profesional.
                   </p>
@@ -336,56 +336,56 @@ export default function VibeCodingQueEsPage() {
 
             {/* Real Projects */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Proyectos Reales Creados con Vibe Coding por Ninos</h2>
+              <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Proyectos Reales Creados con Vibe Coding por Niños</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Estos son ejemplos reales de lo que los estudiantes de InnovaKids han creado usando
                 Vibe Coding. No son proyectos hipoteticos: son aplicaciones funcionales creadas por
-                ninos de 8 a 17 anos.
+                niños de 8 a 17 años.
               </p>
 
               <div className="bg-[#F8F9FA] p-6 rounded-xl border border-gray-200 my-8">
                 <ul className="space-y-4">
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold text-lg">--</span>
-                    <span><strong>Calculadora de Huella de Carbono</strong> (Valeria, 12 anos) — Una app web que calcula cuanto CO2 generas segun tus habitos diarios y te da consejos para reducirlo</span>
+                    <span><strong>Calculadora de Huella de Carbono</strong> (Valeria, 12 años) — Una app web que calcula cuanto CO2 generas segun tus habitos diarios y te da consejos para reducirlo</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold text-lg">--</span>
-                    <span><strong>Juego de Trivia de Historia</strong> (Santiago, 10 anos) — Un quiz interactivo con preguntas sobre civilizaciones antiguas, puntuacion y efectos sonoros</span>
+                    <span><strong>Juego de Trivia de Historia</strong> (Santiago, 10 años) — Un quiz interactivo con preguntas sobre civilizaciones antiguas, puntuacion y efectos sonoros</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold text-lg">--</span>
-                    <span><strong>Gestor de Tareas Familiar</strong> (Camila, 15 anos) — Una aplicacion donde la familia organiza las tareas del hogar con asignaciones y recordatorios</span>
+                    <span><strong>Gestor de Tareas Familiar</strong> (Camila, 15 años) — Una aplicación donde la familia organiza las tareas del hogar con asignaciones y recordatorios</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold text-lg">--</span>
-                    <span><strong>Juego de Plataformas</strong> (Mateo, 9 anos) — Un videojuego con un personaje que salta entre plataformas, recoge monedas y evita enemigos</span>
+                    <span><strong>Juego de Plataformas</strong> (Mateo, 9 años) — Un videojuego con un personaje que salta entre plataformas, recoge monedas y evita enemigos</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold text-lg">--</span>
-                    <span><strong>Asistente de Recetas</strong> (Isabella, 14 anos) — Una app que sugiere recetas segun los ingredientes disponibles en la nevera</span>
+                    <span><strong>Asistente de Recetas</strong> (Isabella, 14 años) — Una app que sugiere recetas segun los ingredientes disponibles en la nevera</span>
                   </li>
                 </ul>
               </div>
 
               <p className="text-lg text-gray-700 leading-relaxed">
-                Cada uno de estos proyectos fue creado en 2-4 sesiones de clase con Vibe Coding. Antes del
-                Vibe Coding, proyectos similares hubieran requerido meses de aprendizaje de programacion.
+                Cada uno de estos proyectos fue creado en 2-4 sesiónes de clase con Vibe Coding. Antes del
+                Vibe Coding, proyectos similares hubieran requerido meses de aprendizaje de programación.
                 Puedes ver mas sobre nuestros{" "}
                 <Link href="/curso-creacion-videojuegos-ninos" className="text-[#4ECDC4] hover:underline">
-                  cursos de creacion de videojuegos para ninos
+                  cursos de creación de videojuegos para niños
                 </Link>.
               </p>
             </section>
 
             {/* Is Vibe Coding Real Programming */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Pero... Es el Vibe Coding &quot;Programacion Real&quot;?</h2>
+              <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Pero... Es el Vibe Coding &quot;Programación Real&quot;?</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Esta es la pregunta que muchos padres y educadores se hacen, y es valida. La respuesta
-                es: <strong>si, absolutamente</strong>. El Vibe Coding produce codigo real que se ejecuta
+                es: <strong>si, absolutamente</strong>. El Vibe Coding produce código real que se ejecuta
                 en navegadores y dispositivos reales. La diferencia es quien escribe el codigo: en la
-                programacion tradicional lo escribe el humano; en el Vibe Coding lo escribe la IA
+                programación tradicional lo escribe el humano; en el Vibe Coding lo escribe la IA
                 siguiendo las instrucciones del humano.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -394,16 +394,16 @@ export default function VibeCodingQueEsPage() {
                 pero la creatividad, la vision y las decisiones siguen siendo humanas.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                De hecho, el Vibe Coding requiere habilidades mas sofisticadas que la programacion
+                De hecho, el Vibe Coding requiere habilidades mas sofisticadas que la programación
                 tradicional en muchos aspectos. Requiere saber comunicar ideas con claridad, tener
                 vision de producto, entender que es posible y que no, y ser capaz de evaluar si
                 el resultado cumple con lo esperado. Estas son habilidades de un ingeniero de
                 software senior, no de un principiante.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Los profesionales de la tecnologia mas exitosos del mundo ya usan Vibe Coding para
+                Los profesionales de la tecnología mas exitosos del mundo ya usan Vibe Coding para
                 acelerar su trabajo. No lo ven como &quot;trampa&quot;: lo ven como la evolucion natural de
-                su oficio. Preparar a los ninos para esta realidad es prepararlos para el futuro.
+                su oficio. Preparar a los niños para está realidad es prepararlos para el futuro.
               </p>
             </section>
 
@@ -421,7 +421,7 @@ export default function VibeCodingQueEsPage() {
                   <h3 className="text-lg font-bold text-[#2D3436] mb-2">Comunicacion Efectiva</h3>
                   <p className="text-gray-700 text-sm">
                     Para que la IA cree lo que imaginas, debes saber expresarlo con precision. Esto
-                    mejora la capacidad de comunicacion escrita y verbal del nino en todos los ambitos.
+                    mejora la capacidad de comunicación escrita y verbal del nino en todos los ambitos.
                   </p>
                 </div>
                 <div className="bg-[#F8F9FA] p-5 rounded-xl border border-gray-200">
@@ -458,17 +458,17 @@ export default function VibeCodingQueEsPage() {
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Sin embargo, aprender solo tiene limitaciones importantes. Sin un mentor que guie el
-                proceso, los ninos tienden a hacer siempre lo mismo, no aprenden buenas practicas de
+                proceso, los niños tienden a hacer siempre lo mismo, no aprenden buenas prácticas de
                 prompting y se pierden las lecciones mas profundas sobre diseno, etica y pensamiento
-                critico.
+                crítico.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 El segundo camino, y el que recomendamos, es unirse a un programa estructurado como el de{" "}
                 <Link href="/vibe-coding-ninos" className="text-[#4ECDC4] hover:underline">
-                  Vibe Coding para ninos de InnovaKids
+                  Vibe Coding para niños de InnovaKids
                 </Link>
                 . Nuestras clases en vivo con grupos reducidos permiten que cada estudiante reciba
-                atencion personalizada mientras crea proyectos cada vez mas ambiciosos. Si quieres
+                atención personalizada mientras crea proyectos cada vez mas ambiciosos. Si quieres
                 que tu hijo lo pruebe sin compromiso,{" "}
                 <Link href="/clase-gratis" className="text-[#4ECDC4] hover:underline">
                   agenda una clase gratis aqui
@@ -490,16 +490,16 @@ export default function VibeCodingQueEsPage() {
                 <div className="border border-gray-200 p-6 rounded-xl">
                   <h3 className="text-lg font-bold text-[#2D3436] mb-2">A que edad puede un nino aprender Vibe Coding?</h3>
                   <p className="text-gray-700">
-                    A partir de los 8 anos. En{" "}
+                    A partir de los 8 años. En{" "}
                     <Link href="/ia-ninos-por-edad" className="text-[#4ECDC4] hover:underline">
                       InnovaKids adaptamos el nivel segun la edad
-                    </Link>: 8-10, 11-13 y 14-17 anos.
+                    </Link>: 8-10, 11-13 y 14-17 años.
                   </p>
                 </div>
                 <div className="border border-gray-200 p-6 rounded-xl">
-                  <h3 className="text-lg font-bold text-[#2D3436] mb-2">El Vibe Coding reemplaza la programacion tradicional?</h3>
+                  <h3 className="text-lg font-bold text-[#2D3436] mb-2">El Vibe Coding reemplaza la programación tradicional?</h3>
                   <p className="text-gray-700">
-                    No la reemplaza, la transforma. Es la forma en que la mayoria creara software en el
+                    No la reemplaza, la transforma. Es la forma en que la mayoría creara software en el
                     futuro. Los programadores profesionales ya lo usan para acelerar su trabajo.
                   </p>
                 </div>
@@ -521,22 +521,22 @@ export default function VibeCodingQueEsPage() {
                   href="/vibe-coding-ninos"
                   className="block p-4 border border-gray-200 rounded-xl hover:border-[#4ECDC4] transition-colors"
                 >
-                  <p className="font-semibold text-[#2D3436]">Vibe Coding para Ninos</p>
+                  <p className="font-semibold text-[#2D3436]">Vibe Coding para Niños</p>
                   <p className="text-gray-500 text-sm">Programa completo de Vibe Coding en InnovaKids</p>
                 </Link>
                 <Link
                   href="/blog/scratch-vs-ia-ninos"
                   className="block p-4 border border-gray-200 rounded-xl hover:border-[#4ECDC4] transition-colors"
                 >
-                  <p className="font-semibold text-[#2D3436]">Scratch vs IA para Ninos</p>
+                  <p className="font-semibold text-[#2D3436]">Scratch vs IA para Niños</p>
                   <p className="text-gray-500 text-sm">Comparativa completa para padres</p>
                 </Link>
                 <Link
                   href="/curso-creacion-videojuegos-ninos"
                   className="block p-4 border border-gray-200 rounded-xl hover:border-[#4ECDC4] transition-colors"
                 >
-                  <p className="font-semibold text-[#2D3436]">Creacion de Videojuegos</p>
-                  <p className="text-gray-500 text-sm">Curso de videojuegos con IA para ninos</p>
+                  <p className="font-semibold text-[#2D3436]">Creación de Videojuegos</p>
+                  <p className="text-gray-500 text-sm">Curso de videojuegos con IA para niños</p>
                 </Link>
                 <Link
                   href="/blog/ia-para-ninos-por-edad-8-10-11-13-14-17"
@@ -556,7 +556,7 @@ export default function VibeCodingQueEsPage() {
             <h2 className="text-3xl font-bold text-[#2D3436] mb-4">Tu Hijo Puede Crear con Vibe Coding Hoy</h2>
             <p className="text-xl text-gray-600 mb-8">
               Agenda una clase gratis y descubre como tu hijo puede crear su primera
-              aplicacion hablando con la IA. Sin conocimientos previos necesarios.
+              aplicación hablando con la IA. Sin conocimientos previos necesarios.
             </p>
             <Link href="/clase-gratis">
               <Button

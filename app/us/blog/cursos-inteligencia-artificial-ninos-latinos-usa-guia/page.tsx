@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     "Guía Completa: Lo que todo padre latino en USA debe saber. Cómo lograr que tu hijo aprenda tecnología de punta sin perder su español.",
   keywords: [
     "guia cursos ia niños latinos",
-    "mejores cursos programacion niños español usa",
-    "educacion bilingue tecnologia",
+    "mejores cursos programación niños español usa",
+    "educación bilingue tecnología",
     "consejos padres latinos usa",
   ],
   openGraph: {
@@ -39,7 +39,7 @@ export default function GuiaIANinosLatinosUSA() {
     "Hola! Leí la guía y me interesa el curso de IA en español para mi hijo en USA.",
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
-  const calendlyLink = "https://calendly.com/innovakids/evaluacion"
+  const calendlyLink = "https://calendly.com/innovakids/evaluación"
 
   return (
     <>

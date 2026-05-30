@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     "Guía Completa: Lo que todo padre colombiano debe saber antes de inscribir a su hijo en un curso de IA. Precios, herramientas, seguridad y mejores opciones en Colombia.",
   keywords: [
     "guia cursos ia niños colombia",
-    "mejores cursos programacion niños colombia",
+    "mejores cursos programación niños colombia",
     "comparativa escuelas ia colombia",
-    "consejos padres tecnologia colombia",
+    "consejos padres tecnología colombia",
   ],
   openGraph: {
     title: "Cursos de IA para Niños en Colombia (Guía 2026)",
@@ -37,7 +37,7 @@ export default function GuiaCursosIAColombia() {
     "Hola! Leí la guía de cursos de IA para niños en Colombia y me interesa saber más.",
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
-  const calendlyLink = "https://calendly.com/innovakids/evaluacion"
+  const calendlyLink = "https://calendly.com/innovakids/evaluación"
 
   return (
     <>
@@ -80,7 +80,7 @@ export default function GuiaCursosIAColombia() {
         {/* TABLE OF CONTENTS */}
         <nav className="border-b bg-card py-8">
           <div className="container mx-auto px-4">
-            <h2 className="mb-4 text-lg font-bold">📋 Contenido de esta Guía</h2>
+            <h2 className="mb-4 text-lg font-bold">📋 Contenido de está Guía</h2>
             <ol className="grid gap-2 text-sm md:grid-cols-2 lg:grid-cols-3">
               {[
                 "¿Qué es la IA para Niños?",
@@ -289,7 +289,7 @@ export default function GuiaCursosIAColombia() {
                   {
                     week: "Semana 3-4",
                     project: "Vibe Music & Voice",
-                    desc: "Composición musical con Suno AI y clonación de voz.",
+                    desc: "Composición músical con Suno AI y clonación de voz.",
                   },
                   {
                     week: "Semana 5-6",

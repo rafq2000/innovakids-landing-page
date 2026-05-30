@@ -24,12 +24,12 @@ export const countryCodes = [
     { code: "gq", name: "Guinea Ecuatorial" },
 ]
 
-// Map of specific sales page slugs per country to handle the "ninos" vs "chicos" difference (Argentina)
+// Map of specific sales page slugs per country to handle the "niños" vs "chicos" difference (Argentina)
 export const salesPageSlugs: Record<string, string> = {
     cl: "cursos-ia-ninos-chile",
     mx: "cursos-ia-ninos-mexico",
     co: "cursos-ia-ninos-colombia",
-    ar: "cursos-ia-chicos-argentina", // Note: chicos vs ninos
+    ar: "cursos-ia-chicos-argentina", // Note: chicos vs niños
     pe: "cursos-ia-ninos-peru",
     es: "cursos-ia-ninos-espana",
     us: "cursos-ia-ninos-latinos-usa",

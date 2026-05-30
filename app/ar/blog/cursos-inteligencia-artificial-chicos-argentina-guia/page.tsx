@@ -11,9 +11,9 @@ export const metadata: Metadata = {
         "Guía Completa: Lo que todo padre argentino debe saber antes de inscribir a su hijo en un curso de IA. Precios en pesos, herramientas, seguridad y mejores opciones.",
     keywords: [
         "guia cursos ia chicos argentina",
-        "mejores cursos programacion chicos argentina",
+        "mejores cursos programación chicos argentina",
         "comparativa escuelas ia argentina",
-        "consejos padres tecnologia argentina",
+        "consejos padres tecnología argentina",
     ],
     openGraph: {
         title: "Cursos de IA para Chicos en Argentina (Guía 2026)",
@@ -103,7 +103,7 @@ export default function ArgentinaBlogGuiaPage() {
                             </h1>
 
                             <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[60ch]">
-                                Si estás buscando el mejor curso de IA para tu hijo en Argentina, esta guía te va a ayudar a tomar la
+                                Si estás buscando el mejor curso de IA para tu hijo en Argentina, está guía te va a ayudar a tomar la
                                 decisión correcta. Analizamos opciones, precios, metodologías y qué deberías buscar en un programa de calidad.
                             </p>
 

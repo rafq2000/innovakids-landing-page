@@ -130,7 +130,7 @@ export default function ClasesIANinos() {
                     <ul className="space-y-2 text-sm text-[#5A5751]">
                       <li>• Vibe Art: Generación de imágenes pro</li>
                       <li>• Vibe Cinema: Creación de video con IA</li>
-                      <li>• Vibe Music: Composición musical original</li>
+                      <li>• Vibe Music: Composición músical original</li>
                       <li>• Digital Twin: Tu avatar 3D parlante</li>
                     </ul>
                   </div>

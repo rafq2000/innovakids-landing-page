@@ -49,7 +49,7 @@ export function Navigation({ countryCode }: NavigationProps) {
 
   const navLinks = [
     { href: `${basePath}/programa`, label: "Programa" },
-    { href: `${basePath}/metodologia-aprender-creando`, label: "Metodología" },
+    { href: `${basePath}/metodología-aprender-creando`, label: "Metodología" },
     { href: `${basePath}/resultados`, label: "Resultados" },
     { href: "/blog", label: "Blog" },
     { href: "/precios", label: "Precios" },

@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     "Guía Completa: Lo que todo padre chileno debe saber antes de inscribir a su hijo en un curso de IA. Precios en pesos, herramientas, seguridad y mejores opciones.",
   keywords: [
     "guia cursos ia niños chile",
-    "mejores cursos programacion niños chile",
+    "mejores cursos programación niños chile",
     "comparativa escuelas ia chile",
-    "consejos padres tecnologia chile",
+    "consejos padres tecnología chile",
   ],
   openGraph: {
     title: "Cursos de IA para Niños en Chile (Guía 2026)",
@@ -35,7 +35,7 @@ export default function GuiaIANinosChile() {
   const whatsappNumber = "56964754219"
   const whatsappMessage = encodeURIComponent("Hola! Leí la guía de IA para niños y me interesa más información.")
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
-  const calendlyLink = "https://calendly.com/innovakids/evaluacion"
+  const calendlyLink = "https://calendly.com/innovakids/evaluación"
 
   return (
     <>

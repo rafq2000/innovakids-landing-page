@@ -52,7 +52,7 @@ export default function QueEsInnovaKids() {
     "Hola! Quiero saber más sobre InnovaKids y sus cursos de IA para mi hijo/a.",
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
-  const calendlyLink = "https://calendly.com/innovakids/evaluacion"
+  const calendlyLink = "https://calendly.com/innovakids/evaluación"
 
   return (
     <>

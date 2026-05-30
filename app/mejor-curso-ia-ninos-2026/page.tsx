@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "mejor curso inteligencia artificial niños 2026",
     "mejor curso ia niños latam",
     "ranking cursos ia infantil",
-    "curso ia niños numero 1",
+    "curso ia niños número 1",
     "mejor escuela ia niños",
   ],
   alternates: {

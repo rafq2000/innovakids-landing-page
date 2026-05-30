@@ -347,11 +347,11 @@ export default function CursosOnlineNinosPage() {
                             </div>
                             <div className="border-b border-[#E8E0D0] pb-6">
                                 <h3 className="text-lg font-semibold text-[#1A1714] mb-2">¿Necesitan saber programar antes?</h3>
-                                <p className="text-[#5A5751]">No, nuestros cursos online para niños empiezan desde cero. La IA facilita el aprendizaje técnico, permitiendo que creen proyectos avanzados sin frustración.</p>
+                                <p className="text-[#5A5751]">No, nuestros cursos online para niños empiezan desde cero. La IA fácilita el aprendizaje técnico, permitiendo que creen proyectos avanzados sin frustración.</p>
                             </div>
                         </div>
                         {/* COUNTRY SELECTION SECTION - SEO HUB */}
-                        <section id="paises" className="py-20 bg-[#FAF7EF] border-t border-[#E8E0D0] rounded-2xl mt-12">
+                        <section id="países" className="py-20 bg-[#FAF7EF] border-t border-[#E8E0D0] rounded-2xl mt-12">
                             <div className="container mx-auto px-6 max-w-6xl">
                                 <div className="text-center mb-12">
                                     <h2 className="text-3xl font-bold text-[#1A1714] mb-4 font-display">

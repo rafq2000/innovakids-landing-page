@@ -9,19 +9,19 @@ export const metadata: Metadata = {
         "Pensamiento computacional, Taxonomía de Bloom y STEM aplicados a la IA para niños 8-17 años. Marco educativo probado por 527 familias en 9 países.",
     keywords: [
         "pensamiento computacional niños",
-        "stem ia educacion niños",
+        "stem ia educación niños",
         "taxonomia bloom ia niños",
         "pensamiento logico ia niños",
-        "educacion computacional infantil",
+        "educación computacional infantil",
     ],
     alternates: {
-        canonical: "https://www.innovakidslatam.com/blog/metodologia-erica-pensamiento-computacional-ia-ninos",
+        canonical: "https://www.innovakidslatam.com/blog/metodología-erica-pensamiento-computacional-ia-ninos",
     },
     openGraph: {
         title: "Pensamiento Computacional e IA para Niños · STEM 2026 | InnovaKids",
         description:
             "Cómo el pensamiento computacional, STEM y Taxonomía de Bloom desarrollan habilidades de IA en niños 8-17 años.",
-        url: "https://www.innovakidslatam.com/blog/metodologia-erica-pensamiento-computacional-ia-ninos",
+        url: "https://www.innovakidslatam.com/blog/metodología-erica-pensamiento-computacional-ia-ninos",
         siteName: "InnovaKids",
         type: "article",
         locale: "es_419",
@@ -58,7 +58,7 @@ const authorSchema = {
     },
     "datePublished": "2026-03-11",
     "dateModified": "2026-03-11",
-    "mainEntityOfPage": "https://www.innovakidslatam.com/blog/metodologia-erica-pensamiento-computacional-ia-ninos",
+    "mainEntityOfPage": "https://www.innovakidslatam.com/blog/metodología-erica-pensamiento-computacional-ia-ninos",
 }
 
 const ladder = [
@@ -156,7 +156,7 @@ export default function MetodologiaERICAPage() {
                             se quedan en los niveles inferiores (recordar comandos, seguir un tutorial). <strong>ERICA fue diseñada para llevar a
                             cada alumno directamente al nivel superior: crear.</strong>
                         </p>
-                        <p>Nuestro ciclo pedagógico sigue esta escalera cognitiva:</p>
+                        <p>Nuestro ciclo pedagógico sigue está escalera cognitiva:</p>
                     </div>
 
                     <ol className="not-prose my-12 border-t border-[#1A1714]/12">
@@ -223,7 +223,7 @@ export default function MetodologiaERICAPage() {
                         </p>
                         <ul>
                             <li>Un <strong>proyecto real funcionando</strong> (app, videojuego, libro ilustrado o startup).</li>
-                            <li>Una <strong>presentación pública</strong> donde practican oratoria y storytelling.</li>
+                            <li>Una <strong>presentación pública</strong> donde práctican oratoria y storytelling.</li>
                             <li>Un <strong>portafolio digital</strong> con la evolución de sus iteraciones.</li>
                             <li><strong>Certificación InnovaKids</strong> que valida sus competencias en IA y pensamiento computacional.</li>
                         </ul>

@@ -348,7 +348,7 @@ export default function ScratchVsIANinosPage() {
                 <div className="bg-blue-50 p-6 rounded-xl border border-blue-100">
                   <h3 className="text-xl font-bold text-blue-800 mb-3">5-7 años: Empieza con Scratch</h3>
                   <p className="text-gray-700">
-                    A esta edad, Scratch es perfecto. Los bloques de colores son intuitivos para niños que
+                    A está edad, Scratch es perfecto. Los bloques de colores son intuitivos para niños que
                     apenas están aprendiendo a leer y escribir. Les da una primera experiencia con la lógica
                     sin frustración. Pueden usarlo en el colegio o en casa sin supervisión constante.
                   </p>
@@ -367,7 +367,7 @@ export default function ScratchVsIANinosPage() {
                   <h3 className="text-xl font-bold text-purple-800 mb-3">11-13 años: IA es Imprescindible</h3>
                   <p className="text-gray-700">
                     Si tu hijo de 11-13 años todavía está solo en Scratch, está perdiendo tiempo valioso.
-                    A esta edad necesitan herramientas que los desafíen y los preparen para el futuro.
+                    A está edad necesitan herramientas que los desafíen y los preparen para el futuro.
                     El Vibe Coding y las herramientas de IA generativa son exactamente eso.
                   </p>
                 </div>

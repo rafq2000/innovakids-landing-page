@@ -59,7 +59,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     ],
     longTailKeywords: [
       "mejor curso online de inteligencia artificial para niños chilenos",
-      "donde estudiar programacion con ia niños en chile",
+      "donde estudiar programación con ia niños en chile",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
       "taller extraescolar de tecnología para niños",
@@ -289,7 +289,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     ],
     longTailKeywords: [
       "mejor curso online de inteligencia artificial para niños españoles",
-      "donde estudiar programacion con ia niños en españa",
+      "donde estudiar programación con ia niños en españa",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
       "taller extraescolar de tecnología para niños",
@@ -377,7 +377,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
       "extraescolar de inteligencia artificial"
     ],
     longTailKeywords: [
-      "mejor curso online de programacion con ia para niños en uruguay",
+      "mejor curso online de programación con ia para niños en uruguay",
       "cursos para niños de 10 a 12 años",
       "clases online de ia para adolescentes de 14 a 17 años",
       "taller extraescolar de tecnología para niños",

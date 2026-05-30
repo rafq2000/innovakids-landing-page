@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         "curso videojuegos con ia niños",
         "crear juegos con inteligencia artificial",
         "curso roblox niños",
-        "programacion videojuegos adolescentes",
+        "programación videojuegos adolescentes",
         "curso game design niños online",
         "crear videojuegos con ia",
         "curso unity para niños",

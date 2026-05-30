@@ -15,10 +15,10 @@ const blogPosts: Record<string, any> = {
     category: "Educación",
     readTime: "5 min",
     content: `
-      <p>La inteligencia artificial ya no es solo cosa de adultos o expertos en tecnología. Hoy en día, niños de 8 a 17 años pueden aprender sobre IA de manera divertida y educativa, preparándose para un futuro donde esta tecnología será fundamental.</p>
+      <p>La inteligencia artificial ya no es solo cosa de adultos o expertos en tecnología. Hoy en día, niños de 8 a 17 años pueden aprender sobre IA de manera divertida y educativa, preparándose para un futuro donde está tecnología será fundamental.</p>
 
       <h2>¿Por qué enseñar IA a los niños?</h2>
-      <p>La IA está transformando todas las industrias y profesiones. Enseñar a los niños sobre esta tecnología desde temprana edad les da ventajas competitivas importantes:</p>
+      <p>La IA está transformando todas las industrias y profesiones. Enseñar a los niños sobre está tecnología desde temprana edad les da ventajas competitivas importantes:</p>
       <ul>
         <li>Desarrollan pensamiento crítico y resolución de problemas</li>
         <li>Aprenden a usar herramientas que serán esenciales en su futuro profesional</li>
@@ -57,7 +57,7 @@ const blogPosts: Record<string, any> = {
       <p>Si quieres que tu hijo comience su viaje en el mundo de la IA con la mejor guía y metodología, <a href="/#inversion">conoce nuestro programa aquí</a>.</p>
     `,
   },
-  "beneficios-ia-educacion-infantil": {
+  "beneficios-ia-educación-infantil": {
     title: "5 Beneficios de la IA en la Educación Infantil",
     excerpt:
       "La inteligencia artificial está transformando la educación. Conoce cómo puede beneficiar el desarrollo cognitivo y creativo de tu hijo.",
@@ -79,7 +79,7 @@ const blogPosts: Record<string, any> = {
       </ul>
 
       <h2>2. Desarrollo del Pensamiento Crítico</h2>
-      <p>Al interactuar con herramientas de IA, los niños aprenden habilidades fundamentales para el siglo XXI:</p>
+      <p>Al interactúar con herramientas de IA, los niños aprenden habilidades fundamentales para el siglo XXI:</p>
       <ul>
         <li><strong>Formular preguntas precisas:</strong> Aprenden que la calidad de las respuestas depende de cómo preguntan</li>
         <li><strong>Evaluar información:</strong> Desarrollan criterio para distinguir respuestas útiles de las que no lo son</li>
@@ -99,7 +99,7 @@ const blogPosts: Record<string, any> = {
       <p>Lo mejor es que pueden materializar sus ideas sin necesitar años de entrenamiento técnico, permitiéndoles enfocarse en la creatividad pura.</p>
 
       <h2>4. Preparación para el Futuro Laboral</h2>
-      <p>Según estudios recientes, más del 80% de los trabajos del futuro requerirán conocimientos de IA. Familiarizarse con esta tecnología desde temprana edad:</p>
+      <p>Según estudios recientes, más del 80% de los trabajos del futuro requerirán conocimientos de IA. Familiarizarse con está tecnología desde temprana edad:</p>
       <ul>
         <li>Elimina el miedo o resistencia a la tecnología</li>
         <li>Desarrolla competencias digitales avanzadas</li>
@@ -191,7 +191,7 @@ const blogPosts: Record<string, any> = {
       <p>"Ayúdame a crear un personaje para mi historia. Es un robot que vive en el océano"</p>
 
       <h3>Para idiomas</h3>
-      <p>"Quiero practicar inglés. ¿Podemos tener una conversación sobre mis hobbies?"</p>
+      <p>"Quiero prácticar inglés. ¿Podemos tener una conversación sobre mis hobbies?"</p>
 
       <h2>Límites y tiempos recomendados</h2>
       <p>Como con cualquier tecnología, es importante establecer límites:</p>
@@ -220,7 +220,7 @@ const blogPosts: Record<string, any> = {
       </ul>
 
       <h2>Conclusión</h2>
-      <p>ChatGPT puede ser una herramienta educativa extraordinaria cuando se usa correctamente. Con supervisión apropiada, reglas claras y comunicación abierta, tus hijos pueden aprovechar esta tecnología para potenciar su aprendizaje de forma segura.</p>
+      <p>ChatGPT puede ser una herramienta educativa extraordinaria cuando se usa correctamente. Con supervisión apropiada, reglas claras y comunicación abierta, tus hijos pueden aprovechar está tecnología para potenciar su aprendizaje de forma segura.</p>
 
       <p>En InnovaKids, enseñamos a los niños no solo a usar ChatGPT, sino a dominar múltiples herramientas de IA de forma ética y creativa. Nuestro programa incluye módulos específicos sobre uso responsable y seguro de la tecnología. <a href="/#inversion">Conoce nuestro programa completo</a>.</p>
     `,
@@ -285,8 +285,8 @@ const blogPosts: Record<string, any> = {
 
       <h2>9. Generador de Música y Letras</h2>
       <p><strong>Herramientas:</strong> ChatGPT para letras + herramientas de música IA</p>
-      <p><strong>Qué aprenden:</strong> Composición musical, ritmo, rima</p>
-      <p>Crean canciones completas con letras originales y melodías generadas por IA en diferentes estilos musicales.</p>
+      <p><strong>Qué aprenden:</strong> Composición músical, ritmo, rima</p>
+      <p>Crean canciones completas con letras originales y melodías generadas por IA en diferentes estilos músicales.</p>
 
       <h2>10. Diseñador de Juegos de Mesa</h2>
       <p><strong>Herramienta:</strong> ChatGPT</p>
@@ -298,7 +298,7 @@ const blogPosts: Record<string, any> = {
         <li><strong>Empieza simple:</strong> Comienza con proyectos básicos y aumenta la complejidad gradualmente</li>
         <li><strong>Itera y mejora:</strong> Los primeros intentos no serán perfectos, y eso está bien</li>
         <li><strong>Documenta el proceso:</strong> Guarda las versiones y aprende de cada iteración</li>
-        <li><strong>Comparte los resultados:</strong> Mostrar sus creaciones aumenta la motivación</li>
+        <li><strong>Comparte los resultados:</strong> Mostrar sus creaciónes aumenta la motivación</li>
         <li><strong>Combina herramientas:</strong> Los mejores proyectos usan múltiples herramientas de IA</li>
       </ul>
 
@@ -418,7 +418,7 @@ const blogPosts: Record<string, any> = {
     category: "Recursos",
     readTime: "8 min",
     content: `
-      <p>El mercado de herramientas de IA educativas está creciendo exponencialmente. Aquí te presentamos las mejores opciones para niños de 8-17 años, evaluadas por seguridad, efectividad y facilidad de uso.</p>
+      <p>El mercado de herramientas de IA educativas está creciendo exponencialmente. Aquí te presentamos las mejores opciones para niños de 8-17 años, evaluadas por seguridad, efectividad y fácilidad de uso.</p>
 
       <h2>Herramientas de IA conversacional</h2>
       <h3>1. ChatGPT (OpenAI)</h3>
@@ -430,7 +430,7 @@ const blogPosts: Record<string, any> = {
         <li>Interfaz simple y fácil de usar</li>
         <li>Respuestas detalladas y educativas</li>
         <li>Puede explicar conceptos de múltiples formas</li>
-        <li>Excelente para practicar idiomas</li>
+        <li>Excelente para prácticar idiomas</li>
       </ul>
       <p><strong>Contras:</strong></p>
       <ul>
@@ -556,7 +556,7 @@ const blogPosts: Record<string, any> = {
         <li><strong>Seguridad:</strong> Filtros de contenido, privacidad de datos</li>
         <li><strong>Edad apropiada:</strong> Interfaz y complejidad adecuadas</li>
         <li><strong>Valor educativo:</strong> Que realmente enseñen, no solo entretengan</li>
-        <li><strong>Facilidad de uso:</strong> Que los niños puedan usarlas independientemente</li>
+        <li><strong>Fácilidad de uso:</strong> Que los niños puedan usarlas independientemente</li>
         <li><strong>Costo:</strong> Relación precio-valor razonable</li>
       </ul>
 
@@ -568,7 +568,7 @@ const blogPosts: Record<string, any> = {
       <p>Define qué quieres que tu hijo aprenda con cada herramienta.</p>
 
       <h3>3. Supervisa inicialmente</h3>
-      <p>Especialmente con niños menores, supervisa las primeras sesiones para asegurar uso apropiado.</p>
+      <p>Especialmente con niños menores, supervisa las primeras sesiónes para asegurar uso apropiado.</p>
 
       <h3>4. Fomenta la experimentación</h3>
       <p>Anima a tus hijos a probar diferentes funciones y descubrir por sí mismos.</p>

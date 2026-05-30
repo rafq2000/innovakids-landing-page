@@ -44,7 +44,7 @@ function useInView<T extends HTMLElement>(opts: IntersectionObserverInit = { thr
    ============================================================ */
 const TOOLS_EXPLORER = [
     { k: "01", name: "ChatGPT / Claude", note: "Razonamiento · escritura" },
-    { k: "02", name: "Suno AI", note: "Composición musical" },
+    { k: "02", name: "Suno AI", note: "Composición músical" },
     { k: "03", name: "Midjourney / Flux", note: "Arte · imagen generativa" },
     { k: "04", name: "ElevenLabs", note: "Voz clonada · narración" },
     { k: "05", name: "Cursor + Claude Code", note: "Vibe Coding · apps" },

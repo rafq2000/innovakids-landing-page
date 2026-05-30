@@ -137,7 +137,7 @@ export default function ContactoClient() {
                                     className="text-3xl md:text-4xl leading-[1.05] text-[#1A1714] mb-3"
                                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                 >
-                                    Envíanos un mensaje
+                                    Envíaños un mensaje
                                 </h2>
                                 <p className="text-[15px] text-[#1A1714]/70 leading-relaxed mb-8">
                                     Completa el formulario y te responderemos a la brevedad.

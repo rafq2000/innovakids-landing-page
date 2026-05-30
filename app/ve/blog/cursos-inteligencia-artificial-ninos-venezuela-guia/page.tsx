@@ -11,9 +11,9 @@ export const metadata: Metadata = {
         "Guía Completa: Lo que todo padre venezolano debe saber antes de inscribir a su hijo en un curso de IA. Precios, herramientas, seguridad y mejores opciones.",
     keywords: [
         "guia cursos ia niños venezuela",
-        "mejores cursos programacion niños venezuela",
+        "mejores cursos programación niños venezuela",
         "comparativa escuelas ia venezuela",
-        "consejos padres tecnologia venezuela",
+        "consejos padres tecnología venezuela",
     ],
     openGraph: {
         title: "Cursos de IA para Niños en Venezuela (Guía 2026)",

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "cursos inteligencia artificial niños panama",
     "mejores cursos ia niños",
     "donde estudiar ia niños panama",
-    "cursos programacion niños ciudad de panama",
+    "cursos programación niños ciudad de panama",
   ],
 }
 
@@ -25,7 +25,7 @@ export default function BlogCursosIANinosPanama() {
   const whatsappNumber = "56964754219"
   const whatsappMessage = encodeURIComponent("Hola! Leí la guía de IA para niños en Panamá y quiero más información.")
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
-  const calendlyLink = "https://calendly.com/innovakids/evaluacion"
+  const calendlyLink = "https://calendly.com/innovakids/evaluación"
 
   return (
     <>

@@ -11,9 +11,9 @@ export const metadata: Metadata = {
         "Guía Completa: Lo que todo padre uruguayo debe saber antes de inscribir a su hijo en un curso de IA. Precios, herramientas, seguridad y mejores opciones.",
     keywords: [
         "guia cursos ia niños uruguay",
-        "mejores cursos programacion niños uruguay",
+        "mejores cursos programación niños uruguay",
         "comparativa escuelas ia uruguay",
-        "consejos padres tecnologia uruguay",
+        "consejos padres tecnología uruguay",
     ],
     openGraph: {
         title: "Cursos de IA para Niños en Uruguay (Guía 2026)",

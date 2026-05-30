@@ -320,7 +320,7 @@ export function B2BEditorialPage({
               {pricing}
             </p>
             <p className="mt-3 text-sm text-[#1A1714]/55">
-              Precio final depende del volumen y duracion. Solicita una propuesta personalizada.
+              Precio final depende del volumen y duración. Solicita una propuesta personalizada.
             </p>
           </div>
         </section>
@@ -461,7 +461,7 @@ export function B2BEditorialPage({
                   <span aria-hidden>&#8594;</span>
                 </button>
                 <p className="text-xs text-[#1A1714]/40">
-                  Su informacion es confidencial y se usa solo para enviarle la propuesta.
+                  Su información es confidencial y se usa solo para enviarle la propuesta.
                 </p>
               </form>
             )}

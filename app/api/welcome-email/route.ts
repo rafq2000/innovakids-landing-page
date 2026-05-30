@@ -4,7 +4,11 @@ import { saveEnrollmentAndSendWelcome } from "@/lib/enrollment"
 export async function POST(request: NextRequest) {
   try {
     // Protect with a secret to prevent abuse (spam relay)
-    const authHeader = request.headers.get("authorization")
+    const cronSecret = process.env.CRON_SECRET
+  if (!cronSecret) {
+    return NextResponse.json({ error: "Server misconfigured" }, { status: 500 })
+  }
+  const authHeader = request.headers.get("authorization")
     if (authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
       return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
     }

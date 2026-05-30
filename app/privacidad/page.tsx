@@ -35,7 +35,7 @@ const sections = [
         ),
     },
     {
-        id: "proteccion",
+        id: "protección",
         label: "Protección de tus datos",
         body: (
             <p className="text-[17px] text-[#1A1714]/85 leading-[1.75]">
@@ -92,7 +92,7 @@ const sections = [
         body: (
             <p className="text-[17px] text-[#1A1714]/85 leading-[1.75]">
                 Al proporcionar tu correo electrónico a través de nuestros formularios, descargas de material gratuito o
-                solicitudes de información, confirmas que has leído y aceptado esta Política de Privacidad, y consientes
+                solicitudes de información, confirmas que has leído y aceptado está Política de Privacidad, y consientes
                 el uso de tu correo electrónico según lo descrito anteriormente.
             </p>
         ),
@@ -103,7 +103,7 @@ const sections = [
         body: (
             <>
                 <p className="text-[17px] text-[#1A1714]/85 leading-[1.75]">
-                    Si tienes preguntas sobre esta Política de Privacidad o el manejo de tus datos, contáctanos:
+                    Si tienes preguntas sobre está Política de Privacidad o el manejo de tus datos, contáctanos:
                 </p>
                 <dl className="mt-6 border-t border-[#1A1714]/12">
                     <div className="py-4 border-b border-[#1A1714]/12 grid grid-cols-[140px_1fr] gap-4 items-baseline">

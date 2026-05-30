@@ -465,13 +465,13 @@ export default function FounderPage() {
                 Ricardo Farías Quitral is a Chilean founder building AI-driven companies for the Spanish-speaking world.
               </p>
               <p>
-                He is the founder of InnovaKids Latam, an online academy that teaches artificial intelligence, app creation, and digital skills to children and teenagers across Latin America. The company has already served more than 30 families, launched its program commercially, and now operates regionally through a practical, live, project-based model.
+                He is the founder of InnovaKids Latam, an online academy that teaches artificial intelligence, app creation, and digital skills to children and teenagers across Latin America. The company has already served more than 30 families, launched its program commercially, and now operates regionally through a práctical, live, project-based model.
               </p>
               <p>
                 Ricardo started InnovaKids after identifying a clear gap in the market: most school systems are still not teaching children the skills they will need for the future. His mission is to help Latin American children develop their full potential through high-impact tools, and he believes AI can be a powerful lever to expand creativity, autonomy, and real-world building capacity from an early age.
               </p>
               <p>
-                Before InnovaKids, he built projects at the intersection of law and technology, including legal services and document automation platforms. Through that journey, he learned not only how to design products, but also how to sell, understand decision psychology, and build trust by connecting deeply with people's real needs.
+                Before InnovaKids, he built projects at the intersection of law and technology, including legal services and document automation platforms. Through that journey, he learned not only how to design products, but also how to sell, understand decisión psychology, and build trust by connecting deeply with people's real needs.
               </p>
               <p>
                 Ricardo holds a Master's in Data Science from the University of Valencia and a Master's in Law and Artificial Intelligence from the University of Salamanca. He is currently focused on building scalable technology companies with meaningful impact across Latin America and the global Spanish-speaking market.
@@ -486,7 +486,7 @@ export default function FounderPage() {
             <p className="fp-section-label" id="building-heading">What I'm Building</p>
             <div className="fp-thesis">
               <p className="fp-thesis-quote">
-                InnovaKids Latam is building practical AI education for children and teenagers in Spanish-speaking markets through live, project-based programs that help students create, not just consume technology.
+                InnovaKids Latam is building práctical AI education for children and teenagers in Spanish-speaking markets through live, project-based programs that help students create, not just consume technology.
               </p>
               <div className="fp-thesis-tag">
                 <span className="fp-thesis-dot" aria-hidden="true"></span>

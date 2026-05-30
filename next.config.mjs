@@ -324,14 +324,14 @@ const nextConfig = {
       { source: '/gq/cursos-ia-ninos-guinea-ecuatorial', destination: '/gq', permanent: true },
       { source: '/gq/clases-ia-ninos-malabo', destination: '/gq', permanent: true },
       // Legacy Pages Cleanup (Round 2)
-      { source: '/informacion', destination: '/clases-ia-ninos', permanent: true },
+      { source: '/informacion', destination: '/cursos/inteligencia-artificial', permanent: true },
       { source: '/grupos-pequenos-5-alumnos', destination: '/clases-ia-ninos', permanent: true },
-      { source: '/oferta-180', destination: '/clases-ia-ninos', permanent: true },
-      { source: '/oferta-180a-aprender-c', destination: '/clases-ia-ninos', permanent: true }, // potential variation
+      { source: '/oferta-180', destination: '/cursos/inteligencia-artificial', permanent: true },
+      { source: '/oferta-180a-aprender-c', destination: '/cursos/inteligencia-artificial', permanent: true }, // potential variation
       // Arquitectura Silo B2C
       { source: '/curso-ia-ninos', destination: '/cursos/inteligencia-artificial', permanent: true },
-      { source: '/oferta-180', destination: '/clases-ia-ninos', permanent: true },
-      { source: '/oferta-180a-aprender-c', destination: '/clases-ia-ninos', permanent: true }, // potential variation
+      { source: '/oferta-180', destination: '/cursos/inteligencia-artificial', permanent: true },
+      { source: '/oferta-180a-aprender-c', destination: '/cursos/inteligencia-artificial', permanent: true }, // potential variation
       // SEO AUDIT MAR 2026: Cannibalization fixes
       // Consolidate "curso ia niños" cluster to single canonical page
       { source: '/clases-ia-ninos', destination: '/cursos/inteligencia-artificial', permanent: true },

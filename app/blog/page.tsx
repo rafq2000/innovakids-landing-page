@@ -55,7 +55,7 @@ const blogPosts = [
     readTime: "8 min",
   },
   {
-    slug: "mejores-cursos-verano-programacion-ia-ninos-2026",
+    slug: "mejores-cursos-verano-programación-ia-ninos-2026",
     title: "Programación vs IA: ¿Qué Curso de Verano Elegir para tu Hijo? (2026)",
     excerpt: "Comparativa honesta: cursos de verano de programación tradicional vs inteligencia artificial para niños y adolescentes. Precios, metodologías y resultados reales.",
     image: "/children-using-ai-educational-tools.jpg",
@@ -127,7 +127,7 @@ const blogPosts = [
     readTime: "6 min",
   },
   {
-    slug: "como-ensenar-ia-ninos",
+    slug: "inteligencia-artificial-para-ninos",
     title: "Cómo Enseñar Inteligencia Artificial a Niños de 8-17 Años",
     excerpt:
       "Descubre las mejores estrategias y herramientas para introducir a tus hijos en el fascinante mundo de la IA de manera divertida y educativa.",
@@ -137,7 +137,7 @@ const blogPosts = [
     readTime: "5 min",
   },
   {
-    slug: "beneficios-ia-educacion-infantil",
+    slug: "beneficios-ia-educación-infantil",
     title: "5 Beneficios de la IA en la Educación Infantil",
     excerpt:
       "La inteligencia artificial está transformando la educación. Conoce cómo puede beneficiar el desarrollo cognitivo y creativo de tu hijo.",

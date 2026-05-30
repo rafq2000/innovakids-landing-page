@@ -35,7 +35,7 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
             title: "Analizador de Emociones",
             description: "Construye una herramienta que detecta emociones en textos y sugiere respuestas empaticas.",
             icon: Lightbulb,
-            skills: ["Analisis de sentimientos", "Etica en IA", "UX Design"],
+            skills: ["Análisis de sentimientos", "Etica en IA", "UX Design"],
         },
         {
             week: "Semana 4",
@@ -47,7 +47,7 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
         {
             week: "Semana 5",
             title: "Startup de IA - Proyecto Final",
-            description: "Tu hijo presenta su propia idea de startup basada en IA ante companeros y familias.",
+            description: "Tu hijo presenta su propia idea de startup basada en IA ante compañeros y familias.",
             icon: Rocket,
             skills: ["Pitch", "Presentacion", "Emprendimiento"],
         },
@@ -62,11 +62,11 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                         <div className="text-center space-y-12 max-w-[900px] mx-auto">
                             <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342]">
-                                Metodologia Aprender Creando
+                                Metodología Aprender Creando
                             </p>
 
                             <h1 className="font-display text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-[#1A1714]">
-                                Los ninos no aprenden
+                                Los niños no aprenden
                                 <br />
                                 <span className="text-[#C96342]">sobre IA.</span>
                                 <br />
@@ -102,7 +102,7 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                         <div className="grid lg:grid-cols-2 gap-20 items-center">
                             <div className="space-y-8">
                                 <h2 className="font-display text-4xl lg:text-5xl font-bold text-[#1A1714] leading-tight">
-                                    La teoria sin practica es conocimiento muerto.
+                                    La teoria sin práctica es conocimiento muerto.
                                 </h2>
 
                                 <div className="space-y-6 text-lg text-[#3B3630] leading-relaxed">
@@ -191,11 +191,11 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                         <div className="text-center space-y-10 max-w-[800px] mx-auto">
                             <h2 className="font-display text-4xl lg:text-5xl font-bold text-[#FAF7EF] leading-tight">
-                                ¿Tu hijo esta listo para crear el futuro?
+                                ¿Tu hijo está listo para crear el futuro?
                             </h2>
 
                             <p className="text-xl text-[#FAF7EF]/70 max-w-[700px] mx-auto">
-                                Las plazas se agotan rapido para el programa que inicia el {COHORT.startDate}. Agenda tu evaluacion gratuita.
+                                Las plazas se agotan rapido para el programa que inicia el {COHORT.startDate}. Agenda tu evaluación gratuita.
                             </p>
 
                             <Button

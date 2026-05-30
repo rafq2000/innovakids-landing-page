@@ -223,7 +223,7 @@ export default function CodingalVsInnovakidsPage() {
                                 <li>
                                     Si quieres que tu hijo desarrolle <strong>creatividad exponencial</strong>, aprenda las habilidades prácticas
                                     de IA que exigen todas las empresas hoy, cree sus propias apps/startups de inmediato y se divierta en grupos
-                                    de 5 personas, <strong>InnovaKids</strong> es indiscutiblemente la ganadora de esta época.
+                                    de 5 personas, <strong>InnovaKids</strong> es indiscutiblemente la ganadora de está época.
                                 </li>
                             </ul>
                             <p>
@@ -271,7 +271,7 @@ export default function CodingalVsInnovakidsPage() {
                         </p>
                         <div className="grid md:grid-cols-2 gap-0 border-t border-[#1A1714]/12">
                             <Link
-                                href="/blog/mejores-cursos-verano-programacion-ia-ninos-2026"
+                                href="/blog/mejores-cursos-verano-programación-ia-ninos-2026"
                                 className="group border-b md:border-r border-[#1A1714]/12 py-8 md:pr-8 hover:bg-[#F2EDE0]/40 transition-colors"
                             >
                                 <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Comparativa</p>
