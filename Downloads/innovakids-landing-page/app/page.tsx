@@ -121,6 +121,13 @@ export default function Home() {
       "availability": "https://schema.org/InStock",
       "url": "https://www.innovakidslatam.com",
     },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "527",
+      "bestRating": "5",
+      "worstRating": "1",
+    },
     "hasCourseInstance": [
       {
         "@type": "CourseInstance",
@@ -160,7 +167,7 @@ export default function Home() {
         {/* 4 - CONVERSION: formulario Calendly (antes estaba en posicion 8) */}
         <CalendlySection />
 
-        {/* 5 - PRECIO + GARANTIA: tarjeta compacta */}
+        {/* 5 - PRECIO + GARANTIA + VALOR */}
         <section
           id="inversion"
           className="bg-[#1A1714] text-[#FAF7EF] py-20 md:py-28 overflow-hidden"
@@ -168,40 +175,59 @@ export default function Home() {
           <div className="max-w-[1100px] mx-auto px-6 md:px-10">
             <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
 
-              {/* Precio */}
+              {/* Precio con anclaje */}
               <div className="md:col-span-5">
                 <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
                   Inversión única
                 </p>
+                <p className="font-mono-accent text-lg text-[#FAF7EF]/40 line-through mb-1">
+                  $797 USD
+                </p>
                 <p
-                  className="font-display italic leading-[0.88] tracking-[-0.04em] text-[#FAF7EF] mb-3"
+                  className="font-display italic leading-[0.88] tracking-[-0.04em] text-[#FAF7EF] mb-1"
                   style={{ fontSize: "clamp(4rem, 10vw, 7rem)", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                 >
                   ${priceToday}<span className="text-[#C96342]">.</span>
                 </p>
-                <p className="font-mono-accent text-[11px] uppercase tracking-[0.22em] text-[#FAF7EF]/55 mb-6">
+                <p className="font-mono-accent text-[11px] uppercase tracking-[0.22em] text-[#FAF7EF]/55 mb-2">
                   USD pago único o 3 cuotas de ${installments}
                 </p>
+                <p className="text-sm text-[#C96342] mb-6">
+                  $26.70 por clase · Menos que una clase particular
+                </p>
+
+                {/* CTA principal: Reserva $27 */}
                 <a
                   href="#sesion-estrategica"
-                  className="group inline-flex items-center gap-3 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-7 py-4 text-base font-semibold rounded-sm shadow-[0_10px_30px_-12px_rgba(201,99,66,0.55)] hover:shadow-[0_14px_40px_-12px_rgba(201,99,66,0.7)] transition-all duration-300"
+                  className="group inline-flex items-center gap-3 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-7 py-4 text-base font-semibold rounded-sm shadow-[0_10px_30px_-12px_rgba(201,99,66,0.55)] hover:shadow-[0_14px_40px_-12px_rgba(201,99,66,0.7)] transition-all duration-300 w-full sm:w-auto justify-center"
                 >
-                  <span>Agendar clase gratis</span>
+                  <span>Reservar por $27 USD</span>
                   <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>&#8594;</span>
+                </a>
+                <p className="mt-3 text-xs text-[#FAF7EF]/50">
+                  100% reembolsable · Pagas el resto solo si te convence
+                </p>
+
+                {/* CTA secundario */}
+                <a
+                  href="#sesion-estrategica"
+                  className="inline-flex items-center gap-2 mt-4 text-sm text-[#FAF7EF]/70 hover:text-[#C96342] transition-colors"
+                >
+                  O agenda una clase gratis primero &#8594;
                 </a>
               </div>
 
-              {/* Que incluye + Garantia */}
+              {/* Que incluye (RESULTADOS, no features) + Garantía */}
               <div className="md:col-span-7 md:border-l md:border-[#FAF7EF]/15 md:pl-10">
                 <ul className="space-y-4 mb-8">
                   {[
-                    "10 clases en vivo (5 semanas, 2 por semana)",
-                    "Grupos de máximo 5 niños",
-                    "3 niveles: Básico (Explorer) + Intermedio (Maker) + Avanzado (track)",
-                    "Mentor 1:1 cuando lo necesite",
-                    "Soporte por WhatsApp para ti y tu hijo",
-                    "Certificado digital verificable",
-                    "Acceso a grabaciones de cada clase",
+                    "En 10 sesiones tu hijo pasa de consumidor a creador de tecnología",
+                    "Atención real: el profesor conoce a tu hijo por nombre (max 5 por grupo)",
+                    "3 niveles progresivos: avanza a su ritmo sin frustrarse ni aburrirse",
+                    "Si se traba, un mentor lo ayuda en el momento (1:1)",
+                    "Dudas? Te respondemos en minutos por WhatsApp, no en días",
+                    "Certificado digital que puede mostrar en el colegio",
+                    "Si falta a una clase, no pierde nada (grabaciones incluidas)",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-[15px] text-[#FAF7EF]/80 leading-relaxed">
                       <span className="text-[#C96342] mt-[2px] shrink-0">&#10003;</span>
@@ -210,23 +236,39 @@ export default function Home() {
                   ))}
                 </ul>
 
-                {/* Garantia compacta */}
-                <div className="p-5 bg-[#FAF7EF]/[0.06] border border-[#FAF7EF]/12 rounded-[3px]">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="font-display italic text-2xl text-[#C96342]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>10</span>
-                    <p className="font-mono-accent text-[10px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">
-                      Días de garantía total
-                    </p>
+                {/* Garantía prominente con escudo */}
+                <div className="p-6 bg-[#FAF7EF]/[0.08] border border-[#C96342]/30 rounded-[3px]">
+                  <div className="flex items-center gap-4 mb-3">
+                    <svg className="w-8 h-8 text-[#C96342] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                      <path d="M9 12l2 2 4-4" />
+                    </svg>
+                    <div>
+                      <p className="font-display text-lg text-[#FAF7EF]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
+                        Garantía total de 10 días
+                      </p>
+                      <p className="text-sm text-[#FAF7EF]/60">
+                        Si después de 2 clases tu hijo no está emocionado, devolvemos el 100%. Un WhatsApp basta.
+                      </p>
+                    </div>
                   </div>
-                  <p className="text-sm text-[#FAF7EF]/60 leading-relaxed">
-                    Si no le gusta a tu hijo o no aprende a usar la IA, te devolvemos el dinero. Un mensaje por WhatsApp basta.
-                  </p>
                 </div>
 
-                {/* Reserva $27 */}
-                <p className="mt-5 font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#FAF7EF]/45">
-                  Reserva con USD 27 hoy. El resto se paga después de la 2ª clase.
-                </p>
+                {/* Comparación de valor */}
+                <div className="mt-6 grid grid-cols-3 gap-4 text-center">
+                  <div className="p-3 bg-[#FAF7EF]/[0.04] rounded-[3px]">
+                    <p className="font-mono-accent text-[9px] uppercase tracking-wider text-[#FAF7EF]/40 mb-1">Tutor particular</p>
+                    <p className="font-display text-lg text-[#FAF7EF]/50 line-through">$500+</p>
+                  </div>
+                  <div className="p-3 bg-[#FAF7EF]/[0.04] rounded-[3px]">
+                    <p className="font-mono-accent text-[9px] uppercase tracking-wider text-[#FAF7EF]/40 mb-1">Campamento tech</p>
+                    <p className="font-display text-lg text-[#FAF7EF]/50 line-through">$800+</p>
+                  </div>
+                  <div className="p-3 bg-[#C96342]/20 border border-[#C96342]/30 rounded-[3px]">
+                    <p className="font-mono-accent text-[9px] uppercase tracking-wider text-[#C96342] mb-1">InnovaKids</p>
+                    <p className="font-display text-lg text-[#FAF7EF]">$267</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -317,6 +359,22 @@ export default function Home() {
 
         <Footer />
       </main>
+      {/* Sticky CTA mobile */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-[#1A1714]/95 backdrop-blur-sm border-t border-[#FAF7EF]/10 p-3 flex items-center gap-3">
+        <a
+          href="#sesion-estrategica"
+          className="flex-1 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] py-3.5 text-center text-sm font-semibold rounded-sm shadow-lg transition-colors"
+        >
+          Agendar clase gratis
+        </a>
+        <a
+          href="https://wa.me/56964754219?text=Hola%2C%20quiero%20info%20del%20curso%20de%20IA%20para%20mi%20hijo"
+          className="shrink-0 bg-[#25D366] text-white p-3.5 rounded-sm"
+          aria-label="WhatsApp"
+        >
+          <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492l4.634-1.215A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75c-2.09 0-4.02-.66-5.608-1.783l-.402-.239-4.17 1.093 1.113-4.063-.263-.418A9.72 9.72 0 012.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75z"/></svg>
+        </a>
+      </div>
       <WhatsAppButton />
       <ExitIntentPopup />
     </>
