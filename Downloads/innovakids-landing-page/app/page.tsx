@@ -87,15 +87,7 @@ export default function Home() {
     "alternateName": ["InnovaKids LATAM"],
     "url": "https://www.innovakidslatam.com",
     "description": "Academia líder para que niños y adolescentes de 8 a 17 años aprendan Inteligencia Artificial a tiempo y no se queden atrás. LATAM y España.",
-    "inLanguage": "es",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://www.innovakidslatam.com/blog?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    }
+    "inLanguage": "es"
   }
 
   const breadcrumbSchema = {

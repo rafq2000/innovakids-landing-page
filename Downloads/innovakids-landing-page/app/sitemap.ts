@@ -5,7 +5,15 @@ import path from "path"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.innovakidslatam.com"
-  const currentDate = new Date()
+
+  // Fechas reales de última modificación por sección
+  const dates = {
+    home: new Date("2026-06-03"),        // Auditoría Hormozi
+    main: new Date("2026-06-03"),        // Páginas principales
+    courses: new Date("2026-05-25"),     // Páginas de cursos
+    blog: new Date("2026-05-18"),        // Blog posts
+    countries: new Date("2026-04-27"),   // Páginas por país
+  }
 
   // Main pages (priority 0.8)
   const mainPages = [
@@ -58,7 +66,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
-      lastModified: currentDate,
+      lastModified: dates.home,
       changeFrequency: "daily",
       priority: 1.0,
     },
@@ -68,7 +76,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   mainPages.forEach((route) => {
     sitemapEntries.push({
       url: `${baseUrl}${route}`,
-      lastModified: currentDate,
+      lastModified: dates.main,
       changeFrequency: "weekly",
       priority: 0.8,
     })
@@ -78,7 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   coursePages.forEach((route) => {
     sitemapEntries.push({
       url: `${baseUrl}${route}`,
-      lastModified: currentDate,
+      lastModified: dates.courses,
       changeFrequency: "weekly",
       priority: 0.9,
     })
@@ -88,7 +96,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   blogPages.forEach((route) => {
     sitemapEntries.push({
       url: `${baseUrl}${route}`,
-      lastModified: currentDate,
+      lastModified: dates.blog,
       changeFrequency: "weekly",
       priority: 0.7,
     })
@@ -101,17 +109,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 1. Country Hub
     sitemapEntries.push({
       url: `${baseUrl}/${code}`,
-      lastModified: currentDate,
+      lastModified: dates.countries,
       changeFrequency: "weekly",
       priority: 0.6,
     })
 
     // 2. Standard Subpages (handled by app/[country]/...)
-    const subpages = ["programa", "resultados", "metodología-aprender-creando"]
+    const subpages = ["programa", "resultados", "metodologia-aprender-creando"]
     subpages.forEach((slug) => {
       sitemapEntries.push({
         url: `${baseUrl}/${code}/${slug}`,
-        lastModified: currentDate,
+        lastModified: dates.countries,
         changeFrequency: "monthly",
         priority: 0.5,
       })
@@ -131,7 +139,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         blogPosts.forEach((slug) => {
           sitemapEntries.push({
             url: `${baseUrl}/${code}/blog/${slug}`,
-            lastModified: currentDate,
+            lastModified: dates.blog,
             changeFrequency: "monthly",
             priority: 0.7,
           })
@@ -148,7 +156,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         const citySlug = city.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-")
         sitemapEntries.push({
           url: `${baseUrl}/${code}/${citySlug}/cursos/inteligencia-artificial`,
-          lastModified: currentDate,
+          lastModified: dates.countries,
           changeFrequency: "weekly",
           priority: 0.5,
         })
