@@ -23,16 +23,16 @@ export function CTASection() {
         <div className="mx-auto max-w-4xl">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/20 px-6 py-3 text-white backdrop-blur-sm">
             <Clock className="h-5 w-5" />
-            <span className="font-semibold">Sesión de Diagnóstico Gratuita</span>
+            <span className="font-semibold">Clase gratuita · 30 minutos</span>
           </div>
 
           <h2 className="mb-6 text-balance text-4xl font-extrabold text-white md:text-5xl lg:text-6xl">
-            Dale a Tu Hijo la Ventaja Competitiva del Futuro
+            Tu hijo creando con IA desde la primera clase
           </h2>
 
           <p className="mb-10 text-pretty text-xl leading-relaxed text-white/95 md:text-2xl">
             Mientras otros niños solo consumen tecnología, tu hijo aprenderá a crearla.
-            <span className="font-bold"> Agenda tu Sesión Estratégica Gratuita hoy.</span>
+            <span className="font-bold"> Agenda su clase gratis hoy.</span>
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -41,7 +41,7 @@ export function CTASection() {
               onClick={() => scrollToSection("sesion-estrategica")}
               className="group h-16 bg-white px-12 text-xl font-bold text-[#C96342] shadow-2xl transition-all hover:scale-105 hover:bg-gray-100"
             >
-              ¡Agendar Sesión de Diagnóstico Ahora!
+              Agendar clase gratis
               <ArrowRight className="ml-2 h-6 w-6 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
@@ -50,22 +50,17 @@ export function CTASection() {
             <div className="bg-white/10 backdrop-blur-md border-2 border-white/30 rounded-xl p-4 md:p-6">
               <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
                 <div className="flex items-center gap-2">
-                  <Shield className="h-5 w-5 text-white" />
-                  <span className="text-sm md:text-base font-bold text-white">Pago 100% Seguro SSL</span>
+                  <CheckCircle className="h-5 w-5 text-white" />
+                  <span className="text-sm md:text-base font-bold text-white">Sin compromiso</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle className="h-5 w-5 text-white" />
-                  <span className="text-sm md:text-base font-bold text-white">Garantía 10 Días</span>
+                  <Shield className="h-5 w-5 text-white" />
+                  <span className="text-sm md:text-base font-bold text-white">Garantía 10 días</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <ArrowRight className="h-5 w-5 text-white" />
-                  <span className="text-sm md:text-base font-bold text-white">Acceso Inmediato</span>
+                  <span className="text-sm md:text-base font-bold text-white">527 familias nos eligieron</span>
                 </div>
-              </div>
-              <div className="mt-3 pt-3 border-t border-white/20">
-                <p className="text-xs md:text-sm text-white/90 font-medium">
-                  Procesado por PayPal y Mercado Pago - Plataformas líderes en seguridad
-                </p>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@ export function PricingSection({ country }: PricingSectionProps) {
   })()
 
   const features = [
-    "10 clases en vivo, grupos máximo 5 niños",
+    "10 clases en vivo por módulo, grupos máximo 5 niños",
     "Certificado digital Vibe Explorer",
     "Acceso a 15+ herramientas de IA premium",
     "Soporte 24/7 por Discord y WhatsApp",
@@ -140,7 +140,7 @@ export function PricingSection({ country }: PricingSectionProps) {
               <p
                 className="text-sm text-[#5A5751] leading-relaxed"
                     >
-                Solo para está cohorte. No se cobran aparte.
+                Solo para esta cohorte. No se cobran aparte.
               </p>
             </div>
             <div className="md:col-span-8 grid sm:grid-cols-2 gap-6">

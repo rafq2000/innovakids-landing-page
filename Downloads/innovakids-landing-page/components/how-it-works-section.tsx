@@ -12,17 +12,17 @@ export function HowItWorksSection() {
               Así funciona
             </p>
             <h2 className="font-display text-4xl md:text-5xl leading-[1] tracking-[-0.03em]">
-              Tres pasos,{" "}
+              Empieza en tres pasos,{" "}
               <em className="italic text-[var(--terracotta)]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
-                cero fricción
+                tu hijo crea desde el día 1
               </em>.
             </h2>
           </div>
           <ol className="col-span-12 md:col-span-8 grid sm:grid-cols-3 gap-8 md:gap-4">
             {[
-              { n: "01", t: "Agendas", d: "Eliges un horario que te acomode. 30 minutos." },
-              { n: "02", t: "Hablamos", d: "Evaluamos el nivel de tu hijo y resolvemos tus dudas." },
-              { n: "03", t: "Decides", d: "Si es compatible, reservamos cupo. Si no, quedas con diagnóstico." },
+              { n: "01", t: "Agendas", d: "Eliges un horario. Solo toma 30 minutos, sin compromiso." },
+              { n: "02", t: "Probamos", d: "Tu hijo prueba una clase en vivo con el profe y otros niños." },
+              { n: "03", t: "Decides", d: "Si le gusta, reservamos su cupo. Si no, quedas con un diagnóstico claro." },
             ].map((s) => (
               <li key={s.n} className="pt-6 border-t-2 border-[var(--ink)]">
                 <p className="font-mono-accent text-xs text-[var(--terracotta)] tracking-[0.2em] mb-4">
@@ -43,9 +43,9 @@ export function HowItWorksSection() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-[var(--ink)]/15">
           {[
             { n: String(SOCIAL_PROOF.graduates), l: "Graduados" },
-            { n: String(SOCIAL_PROOF.rating), l: "Valoracion" },
-            { n: `${SOCIAL_PROOF.countries}`, l: "Paises" },
-            { n: `${SOCIAL_PROOF.guaranteeDays}`, l: "Dias garantia" },
+            { n: String(SOCIAL_PROOF.rating), l: "Valoración" },
+            { n: `${SOCIAL_PROOF.countries}`, l: "Países" },
+            { n: `${SOCIAL_PROOF.guaranteeDays}`, l: "Días garantía" },
           ].map((s) => (
             <div key={s.l} className="flex flex-col">
               <span className="font-display text-4xl md:text-5xl leading-none tabular-nums text-[var(--ink)]">
