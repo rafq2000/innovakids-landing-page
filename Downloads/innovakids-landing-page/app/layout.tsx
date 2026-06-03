@@ -17,16 +17,16 @@ const fraunces = Fraunces({
 
 const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600", "700"],
   variable: "--font-body",
   display: "swap",
 })
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "600"],
   variable: "--font-mono",
-  display: "swap",
+  display: "optional",
 })
 
 export const viewport: Viewport = {
@@ -137,7 +137,9 @@ export default function RootLayout({
   return (
     <html lang="es-419">
       <head>
-        {/* Scripts moved to components/tracking-pixels.tsx for performance */}
+        {/* Preconnect to critical origins */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
