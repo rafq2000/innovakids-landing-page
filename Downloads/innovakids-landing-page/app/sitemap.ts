@@ -60,6 +60,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog/vacaciones-escolares-cursos-ia-ninos-2026",
     "/blog/extraescolar-inteligencia-artificial-ninos",
     "/blog/curso-ia-ninos-10-11-12-anos",
+    "/blog/chatgpt-tareas-escolares-ninos-guia-padres",
+    "/blog/actividades-inteligencia-artificial-ninos-casa",
+    "/blog/crear-videojuegos-con-ia-ninos-guia-completa",
   ]
 
   // Homepage (priority 1.0)
