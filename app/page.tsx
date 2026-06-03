@@ -160,49 +160,49 @@ export default function Home() {
         <HeroSection />
 
         {/* 2 - PROBLEMA: dolor + urgencia → por qué actuar ahora */}
-        <ProblemSection />
+        <div className="cv-auto"><ProblemSection /></div>
 
         {/* 3 - SOLUCIÓN: qué hacemos diferente vs. el colegio */}
-        <SolutionSection />
+        <div className="cv-auto"><SolutionSection /></div>
 
         {/* 4 - PRUEBA SOCIAL: testimonios reales de padres (perceived likelihood) */}
-        <TestimonialsSection />
+        <div className="cv-auto"><TestimonialsSection /></div>
 
         {/* 5 - PROYECTOS: galería visual del dream outcome — lo que crean los alumnos */}
-        <ProjectsGallery />
+        <div className="cv-auto"><ProjectsGallery /></div>
 
         {/* 6 - STATS: números que refuerzan la prueba social (527 familias, 4.9★, 98%) */}
-        <StatsSection />
+        <div className="cv-auto"><StatsSection /></div>
 
         {/* 7 - CÓMO FUNCIONA: 3 pasos → reducir esfuerzo percibido */}
-        <HowItWorksSection />
+        <div className="cv-auto"><HowItWorksSection /></div>
 
         {/* 8 - CURRÍCULUM: qué aprenden → value stack nivel 1 */}
-        <CurriculumSection />
+        <div className="cv-auto"><CurriculumSection /></div>
 
         {/* 9 - PROPUESTA DE VALOR: el ticket completo → value stack nivel 2 */}
-        <ValuePropositionSection />
+        <div className="cv-auto"><ValuePropositionSection /></div>
 
         {/* 10 - ¿ES PARA TI?: calificación + agitación → último empuje emocional */}
-        <IrresistibleOfferSection />
+        <div className="cv-auto"><IrresistibleOfferSection /></div>
 
         {/* 11 - EQUIPO: autoridad y confianza → justo antes del precio */}
-        <TeamSection />
+        <div className="cv-auto"><TeamSection /></div>
 
         {/* 12 - PRECIO: inversión con desglose, anclaje y garantía */}
-        <PricingSection />
+        <div className="cv-auto"><PricingSection /></div>
 
         {/* 13 - CONVERSIÓN: formulario Calendly (clase gratis) */}
-        <CalendlySection />
+        <div className="cv-auto"><CalendlySection /></div>
 
         {/* 14 - FAQ: cierre de objeciones finales */}
-        <FAQSection />
+        <div className="cv-auto"><FAQSection /></div>
 
         {/* 15 - CTA FINAL: último empuje a la conversión */}
-        <CTASection />
+        <div className="cv-auto"><CTASection /></div>
 
         {/* 16 - SEO: contenido largo para posicionamiento orgánico */}
-        <SEOContent />
+        <div className="cv-auto"><SEOContent /></div>
 
         <Footer />
       </main>
