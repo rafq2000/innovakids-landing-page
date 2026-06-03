@@ -6,31 +6,31 @@ import { useEffect, useRef, useState } from "react"
 const stats = [
   {
     icon: Users,
-    value: 500,
+    value: 527,
     suffix: "+",
-    label: "Estudiantes Activos",
-    description: "Niños aprendiendo IA en toda Latinoamérica",
+    label: "Familias nos eligieron",
+    description: "En 9 países de Latinoamérica y España",
   },
   {
     icon: Award,
     value: 98,
     suffix: "%",
-    label: "Tasa de Finalización",
-    description: "Los niños completan el curso completo",
+    label: "Completan el curso",
+    description: "Los niños terminan las 10 clases",
   },
   {
     icon: TrendingUp,
     value: 4.9,
     suffix: "/5",
-    label: "Calificación",
-    description: "Basado en +300 reseñas verificadas",
+    label: "Valoración de padres",
+    description: "Basado en +127 reseñas verificadas",
   },
   {
     icon: Zap,
-    value: 12,
+    value: 10,
     suffix: "",
-    label: "Clases Prácticas",
-    description: "Con proyectos reales de IA",
+    label: "Clases por módulo",
+    description: "En vivo, con proyectos reales de IA",
   },
 ]
 
@@ -86,7 +86,7 @@ export function StatsSection() {
       <div className="relative container mx-auto px-4">
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <h2 className="mb-4 text-balance text-3xl font-bold text-white md:text-4xl animate-fadeInUp">
-            Resultados que Hablan por Sí Mismos
+            527 familias en 9 países ya lo viven
           </h2>
         </div>
 

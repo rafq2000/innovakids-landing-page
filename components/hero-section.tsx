@@ -103,7 +103,7 @@ export function HeroSection() {
           </h1>
         </div>
 
-        {/* ============ ASYMMETRIC ROW: LEDE + PULL QUOTE CARD ============ */}
+        {/* ============ ASYMMETRIC ROW: LEDE + DREAM OUTCOME IMAGE ============ */}
         <div className="grid grid-cols-12 gap-6 md:gap-10 mb-14 md:mb-20">
           <div className="rise rise-3 col-span-12 md:col-span-7 lg:col-span-6">
             <p className="text-lg md:text-xl leading-[1.45] text-[var(--ink-soft)] max-w-[44ch]">
@@ -142,33 +142,45 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* Pull quote card — overlaps slightly, rotated */}
-          <aside className="rise rise-4 col-span-12 md:col-span-5 md:col-start-8 relative md:-mt-4">
+          {/* Dream Outcome Visual — niño creando con IA + Pull Quote */}
+          <aside className="rise rise-4 col-span-12 md:col-span-5 md:col-start-8 relative md:-mt-4 flex flex-col gap-5">
+            {/* Hero image: dream outcome visual */}
+            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm shadow-[0_30px_80px_-40px_rgba(26,23,20,0.3)]">
+              <Image
+                src="/innovakids-hero.webp"
+                alt="Niño latino creando arte y proyectos con inteligencia artificial"
+                fill
+                sizes="(max-width: 768px) 100vw, 40vw"
+                className="object-cover"
+                priority
+              />
+            </div>
+            {/* Pull quote card — rotated */}
             <div
-              className="relative bg-[var(--paper-card)] border border-[var(--ink)]/20 p-7 md:p-9 shadow-[0_30px_80px_-40px_rgba(26,23,20,0.3)]"
+              className="relative bg-[var(--paper-card)] border border-[var(--ink)]/20 p-6 md:p-7 shadow-[0_20px_60px_-30px_rgba(26,23,20,0.25)]"
               style={{ transform: "rotate(-1deg)" }}
             >
               <span
                 aria-hidden
-                className="absolute -top-8 left-5 font-display italic text-8xl text-[var(--terracotta)] leading-none select-none"
+                className="absolute -top-7 left-4 font-display italic text-7xl text-[var(--terracotta)] leading-none select-none"
               >
                 &ldquo;
               </span>
-              <p className="relative font-display text-xl md:text-2xl leading-[1.2] text-[var(--ink)] mb-7">
+              <p className="relative font-display text-lg md:text-xl leading-[1.2] text-[var(--ink)] mb-5">
                 {testimonialPull.quote}
               </p>
-              <div className="flex items-center gap-3 pt-5 border-t border-[var(--ink)]/12">
-                <div className="relative w-11 h-11 rounded-full overflow-hidden border border-[var(--ink)]/15 shrink-0 bg-[var(--paper-warm)]">
+              <div className="flex items-center gap-3 pt-4 border-t border-[var(--ink)]/12">
+                <div className="relative w-10 h-10 rounded-full overflow-hidden border border-[var(--ink)]/15 shrink-0 bg-[var(--paper-warm)]">
                   <Image
                     src={testimonialPull.image}
                     alt={testimonialPull.name}
                     fill
-                    sizes="44px"
+                    sizes="40px"
                     className="object-cover"
                   />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <p className="font-display text-base text-[var(--ink)] truncate">{testimonialPull.name}</p>
+                  <p className="font-display text-sm text-[var(--ink)] truncate">{testimonialPull.name}</p>
                   <p className="font-mono-accent text-[9px] uppercase tracking-[0.14em] text-[var(--ink-muted)] mt-0.5 truncate">
                     Madre · Chile
                   </p>
@@ -184,8 +196,8 @@ export function HeroSection() {
         {/* ============ SPEC SHEET (mono labels, serif values) ============ */}
         <div className="rise rise-4 grid grid-cols-2 md:grid-cols-5 gap-x-5 gap-y-8 py-10 md:py-12 border-y border-[var(--ink)]/15">
           {[
-            ["Formato", "10 clases en vivo"],
-            ["Duración", "5 semanas"],
+            ["Formato", "10 clases en vivo por módulo"],
+            ["Duración", "5 semanas por módulo"],
             ["Grupos", "Máx. 5 niños"],
             ["Edad", "8 – 17 años"],
             ["Modalidad", "100% online"],

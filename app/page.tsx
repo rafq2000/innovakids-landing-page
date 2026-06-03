@@ -110,7 +110,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Course",
     "name": "Curso de Inteligencia Artificial para Niños y Adolescentes - Que No Se Quede Atrás | InnovaKids",
-    "description": "Para que tu hijo aprenda IA a tiempo y no se quede atrás en la era de la IA. En 5 semanas crea apps, videojuegos y proyectos con IA, y llega preparado al colegio, la universidad y el trabajo. 8-17 años. Grupos de 5. Garantía de 10 días.",
+    "description": "Para que tu hijo aprenda IA a tiempo y no se quede atrás en la era de la IA. 10 clases por módulo, crea apps, videojuegos y proyectos con IA, y llega preparado al colegio, la universidad y el trabajo. 8-17 años. Grupos de 5. Garantía de 10 días.",
     "url": "https://www.innovakidslatam.com",
     "image": "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
     "provider": {
@@ -162,46 +162,48 @@ export default function Home() {
       <Navigation />
       <main className="min-h-screen bg-background">
 
-        {/* 1 - HERO: hook + promesa + CTA primario */}
+        {/* ═══ HORMOZI FUNNEL ORDER ═══ */}
+
+        {/* 1 - HERO: dream outcome + CTA + mini social proof + risk reversal */}
         <HeroSection />
 
-        {/* 2 - PROBLEMA: por qué actuar ahora (dolor + urgencia) */}
+        {/* 2 - PROBLEMA: dolor + urgencia → por qué actuar ahora */}
         <ProblemSection />
 
         {/* 3 - SOLUCIÓN: qué hacemos diferente vs. el colegio */}
         <SolutionSection />
 
-        {/* 4 - STATS: números de credibilidad (527 alumnos, 4.9★, 98%) */}
-        <StatsSection />
-
-        {/* 5 - CÓMO FUNCIONA: 3 pasos simples */}
-        <HowItWorksSection />
-
-        {/* 6 - TESTIMONIOS: prueba social (padres reales) */}
+        {/* 4 - PRUEBA SOCIAL: testimonios reales de padres (perceived likelihood) */}
         <TestimonialsSection />
 
-        {/* 7 - PROYECTOS: galería de lo que crean los alumnos */}
+        {/* 5 - PROYECTOS: galería visual del dream outcome — lo que crean los alumnos */}
         <ProjectsGallery />
 
-        {/* 8 - CURRÍCULUM: 3 niveles (Básico → Intermedio → Avanzado) */}
+        {/* 6 - STATS: números que refuerzan la prueba social (527 familias, 4.9★, 98%) */}
+        <StatsSection />
+
+        {/* 7 - CÓMO FUNCIONA: 3 pasos → reducir esfuerzo percibido */}
+        <HowItWorksSection />
+
+        {/* 8 - CURRÍCULUM: qué aprenden → value stack nivel 1 */}
         <CurriculumSection />
 
-        {/* 9 - PROPUESTA DE VALOR: el ticket completo con todo lo que incluye */}
+        {/* 9 - PROPUESTA DE VALOR: el ticket completo → value stack nivel 2 */}
         <ValuePropositionSection />
 
-        {/* 10 - ¿ES PARA TI?: calificación + agitación */}
+        {/* 10 - ¿ES PARA TI?: calificación + agitación → último empuje emocional */}
         <IrresistibleOfferSection />
 
-        {/* 11 - PRECIO: inversión con desglose y garantía */}
-        <PricingSection />
-
-        {/* 12 - EQUIPO: quiénes somos + confianza operacional */}
+        {/* 11 - EQUIPO: autoridad y confianza → justo antes del precio */}
         <TeamSection />
 
-        {/* 13 - CONVERSIÓN: formulario Calendly (sesión estratégica) */}
+        {/* 12 - PRECIO: inversión con desglose, anclaje y garantía */}
+        <PricingSection />
+
+        {/* 13 - CONVERSIÓN: formulario Calendly (clase gratis) */}
         <CalendlySection />
 
-        {/* 14 - FAQ: cierre de objeciones */}
+        {/* 14 - FAQ: cierre de objeciones finales */}
         <FAQSection />
 
         {/* 15 - CTA FINAL: último empuje a la conversión */}
