@@ -153,6 +153,8 @@ export function HeroSection() {
                 sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover"
                 priority
+                unoptimized
+                fetchPriority="high"
               />
             </div>
             {/* Pull quote card — rotated */}

@@ -137,6 +137,8 @@ export default function RootLayout({
   return (
     <html lang="es-419">
       <head>
+        {/* Preload hero image — LCP element */}
+        <link rel="preload" href="/innovakids-hero.webp" as="image" type="image/webp" fetchPriority="high" />
         {/* Preconnect to critical origins */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
