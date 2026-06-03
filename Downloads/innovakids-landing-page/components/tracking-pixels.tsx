@@ -21,9 +21,9 @@ export function TrackingPixels() {
             {/* Google tag — loads once, serves both Google Ads and GA4 */}
             <Script
                 src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
-                strategy="lazyOnload"
+                strategy="afterInteractive"
             />
-            <Script id="google-tag-init" strategy="lazyOnload">
+            <Script id="google-tag-init" strategy="afterInteractive">
                 {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
@@ -37,7 +37,7 @@ export function TrackingPixels() {
             {/* Meta Pixel — only initializes if NEXT_PUBLIC_FACEBOOK_PIXEL_ID is set */}
             {META_PIXEL_ID && (
                 <>
-                    <Script id="facebook-pixel" strategy="lazyOnload">
+                    <Script id="facebook-pixel" strategy="afterInteractive">
                         {`
                             !function(f,b,e,v,n,t,s)
                             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
