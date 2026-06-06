@@ -165,7 +165,7 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
       "@type": "CourseInstance",
       courseMode: "online",
       courseWorkload: "PT90M",
-      startDate: "2026-06-08",
+      startDate: "2026-06-29",
       location: {
         "@type": "VirtualLocation",
         url: `https://www.innovakidslatam.com/${country.code}`,
