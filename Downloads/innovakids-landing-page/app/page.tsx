@@ -134,8 +134,8 @@ export default function Home() {
       {
         "@type": "CourseInstance",
         "courseMode": "online",
-        "startDate": "2026-06-08",
-        "endDate": "2026-07-13",
+        "startDate": "2026-06-29",
+        "endDate": "2026-08-03",
         "courseWorkload": "PT10H",
         "instructor": {
           "@type": "Person",
