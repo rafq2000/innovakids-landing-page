@@ -17,7 +17,7 @@ function buildReminderEmailHtml(studentName: string, parentEmail: string, remind
   const urgencyText = reminderNumber <= 1
     ? "Para confirmar su lugar en la <strong>Cohorte Junio 2026</strong>, necesitamos que completes el pago restante de <strong>$240 USD</strong>."
     : reminderNumber === 2
-      ? "Este es tu segundo recordatorio. El programa inicia la semana del 8 de junio y a&uacute;n falta completar el pago de <strong>$240 USD</strong>."
+      ? "Este es tu segundo recordatorio. El programa inicia la semana del 29 de junio y a&uacute;n falta completar el pago de <strong>$240 USD</strong>."
       : "<strong>&Uacute;ltimo aviso:</strong> Si no completas el pago de <strong>$240 USD</strong> en las pr&oacute;ximas 48 horas, tu cupo podr&iacute;a ser liberado."
 
   return `<!DOCTYPE html>

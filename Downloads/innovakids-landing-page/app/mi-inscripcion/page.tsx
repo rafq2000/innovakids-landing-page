@@ -228,7 +228,7 @@ export default function MiInscripcionPage() {
                 8 documentos para empezar con confianza.
               </h2>
               <p className="text-[15px] text-[#1A1714]/60 leading-relaxed max-w-[52ch] mb-10">
-                Leelos antes del 8 de junio. Cada uno tiene un proposito especifico para
+                Leelos antes del 29 de junio. Cada uno tiene un proposito especifico para
                 que tu hijo/a y tu familia lleguen preparados.
               </p>
 
