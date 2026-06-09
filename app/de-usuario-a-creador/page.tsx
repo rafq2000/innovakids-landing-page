@@ -241,7 +241,7 @@ export default function DeUsuarioACreadorPage() {
             <h2 className="text-5xl lg:text-6xl font-bold text-white leading-tight">Transforma a tu hijo en creador</h2>
 
             <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
-              Las plazas se agotan rápido para el grupo que inicia el 8 de junio del 2026. No dejes que siga siendo solo un usuario
+              Las plazas se agotan rápido para el grupo que inicia el 29 de junio del 2026. No dejes que siga siendo solo un usuario
               más.
             </p>
 

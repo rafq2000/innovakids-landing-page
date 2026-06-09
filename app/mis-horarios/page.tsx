@@ -299,7 +299,7 @@ function HorariosForm() {
             }`}
           >
             <p className="font-semibold">Cohorte Junio 2026</p>
-            <p className="text-sm text-muted-foreground">Inicio: semana del 8 de junio</p>
+            <p className="text-sm text-muted-foreground">Inicio: semana del 29 de junio</p>
           </button>
           <button
             type="button"

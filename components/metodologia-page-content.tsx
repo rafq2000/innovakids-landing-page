@@ -3,54 +3,72 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Sparkles, Lightbulb, Rocket, Brain, Code, Palette } from "lucide-react"
+import { Sparkles, Search, MessageCircle, Lightbulb, Hammer, Presentation, Brain, Palette, Code, Music, Mic, Rocket } from "lucide-react"
 import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import type { CountryConfig } from "@/lib/countries-config"
-import { COHORT } from "@/lib/site-config"
+import { COHORT, SOCIAL_PROOF } from "@/lib/site-config"
 
 interface MetodologiaPageContentProps {
     country?: CountryConfig
 }
 
 export function MetodologiaPageContent({ country }: MetodologiaPageContentProps) {
-    const projects = [
+    const ericaSteps = [
         {
-            week: "Semana 1",
-            title: "Mi Asistente Personal",
-            description: "Tu hijo programa su primer chatbot inteligente que puede responder preguntas y ayudar con tareas.",
-            icon: Brain,
-            skills: ["Prompting", "ChatGPT API", "Logica de conversacion"],
+            letter: "E",
+            name: "Explorar",
+            description: "El alumno interactúa con una herramienta de IA por primera vez. Descubre qué puede hacer, juega y se sorprende.",
+            bloom: "Recordar · Comprender",
+            icon: Search,
         },
         {
-            week: "Semana 2",
-            title: "Generador de Historias Visuales",
-            description: "Crea una app que genera historias ilustradas automaticamente con texto e imagenes de IA.",
-            icon: Palette,
-            skills: ["DALL-E API", "Storytelling", "Diseno de interfaces"],
+            letter: "R",
+            name: "Reflexionar",
+            description: "Discusión guiada: ¿cómo funciona? ¿Qué datos usa? ¿Es justo y ético? Pensamiento crítico desde el día 1.",
+            bloom: "Analizar · Evaluar",
+            icon: MessageCircle,
         },
         {
-            week: "Semana 3",
-            title: "Analizador de Emociones",
-            description: "Construye una herramienta que detecta emociones en textos y sugiere respuestas empaticas.",
+            letter: "I",
+            name: "Imaginar",
+            description: "El alumno diseña su propio proyecto: una historia, una app, un videojuego o una canción. Su idea, su visión.",
+            bloom: "Crear",
             icon: Lightbulb,
-            skills: ["Análisis de sentimientos", "Etica en IA", "UX Design"],
         },
         {
-            week: "Semana 4",
-            title: "Mi Primer Videojuego con IA",
-            description: "Disena un juego donde los personajes tienen inteligencia artificial y toman decisiones propias.",
-            icon: Code,
-            skills: ["Game design", "NPCs inteligentes", "Vibe Coding"],
+            letter: "C",
+            name: "Construir",
+            description: "Desarrollo real con herramientas de IA y programación. Manos en el teclado, errores reales, soluciones propias.",
+            bloom: "Aplicar · Crear",
+            icon: Hammer,
         },
         {
-            week: "Semana 5",
-            title: "Startup de IA - Proyecto Final",
-            description: "Tu hijo presenta su propia idea de startup basada en IA ante compañeros y familias.",
-            icon: Rocket,
-            skills: ["Pitch", "Presentacion", "Emprendimiento"],
+            letter: "A",
+            name: "Presentar (y compartir)",
+            description: "Demo Day: expone su creación ante compañeros y familia, recibe feedback e itera. Aprende a comunicar.",
+            bloom: "Evaluar · Crear",
+            icon: Presentation,
         },
+    ]
+
+    const explorerHighlights = [
+        { title: "Vibe IA: Tu nuevo superpoder", desc: "Fundamentos de la IA generativa.", icon: Brain },
+        { title: "Prompt Engineering", desc: "Estructura de prompts efectivos.", icon: Code },
+        { title: "Vibe Voice & Music", desc: "Clonación de voz y composición musical con IA.", icon: Music },
+        { title: "Generative Art I & II", desc: "De la imaginación a la imagen. Storytelling visual.", icon: Palette },
+        { title: "Vibe Coding", desc: "Programación de videojuegos con IA.", icon: Code },
+        { title: "Cyber Ethics + Proyecto Final", desc: "Deepfakes, seguridad digital y presentación de identidad.", icon: Rocket },
+    ]
+
+    const tracks = [
+        { name: "Estudio", desc: "Flashcards, apuntes automáticos, quizzes y dashboard de progreso.", color: "#2E7D6B" },
+        { name: "Emprender", desc: "Landing, catálogo, bot de ventas y redes sociales con IA.", color: "#C96342" },
+        { name: "Video", desc: "Guion, voz clonada, video generado y publicación automática.", color: "#4A3B8C" },
+        { name: "Audio", desc: "Música original, podcast y distribución en Spotify.", color: "#B85A8C" },
+        { name: "Transcribir", desc: "Chat con PDFs, resúmenes inteligentes y extracción de datos.", color: "#1F6FB0" },
+        { name: "Programar", desc: "JavaScript, APIs, juego multiplayer y tu app publicada.", color: "#D17C2A" },
     ]
 
     return (
@@ -62,7 +80,7 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                         <div className="text-center space-y-12 max-w-[900px] mx-auto">
                             <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342]">
-                                Metodología Aprender Creando
+                                Metodología ERICA · Aprender Creando
                             </p>
 
                             <h1 className="font-display text-5xl lg:text-7xl font-bold leading-[1.05] tracking-tight text-[#1A1714]">
@@ -76,6 +94,7 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                             <p className="text-xl lg:text-2xl leading-relaxed text-[#3B3630] max-w-[800px] mx-auto">
                                 Cada clase es un proyecto real. Tu hijo construye, experimenta, falla, aprende y domina la IA{" "}
                                 <span className="text-[#C96342] font-semibold">haciendo</span>.
+                                {" "}Probado por {SOCIAL_PROOF.graduates}+ familias en {SOCIAL_PROOF.countries} países.
                             </p>
 
                             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
@@ -86,11 +105,11 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                                 >
                                     <Link href="/#sesion-estrategica">
                                         <Sparkles className="mr-3 h-6 w-6" />
-                                        Solicitar Evaluacion Gratuita
+                                        Agendar clase gratis
                                     </Link>
                                 </Button>
 
-                                <p className="text-sm text-[#6B645B]">5 semanas &middot; 10 proyectos reales</p>
+                                <p className="text-sm text-[#6B645B]">2 niveles &middot; 10 clases cada uno &middot; 6 tracks especializados</p>
                             </div>
                         </div>
                     </div>
@@ -102,15 +121,15 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                         <div className="grid lg:grid-cols-2 gap-20 items-center">
                             <div className="space-y-8">
                                 <h2 className="font-display text-4xl lg:text-5xl font-bold text-[#1A1714] leading-tight">
-                                    La teoria sin práctica es conocimiento muerto.
+                                    La teoría sin práctica es conocimiento muerto.
                                 </h2>
 
                                 <div className="space-y-6 text-lg text-[#3B3630] leading-relaxed">
-                                    <p>Tu hijo no necesita memorizar conceptos de IA que olvidara en semanas.</p>
+                                    <p>Tu hijo no necesita memorizar conceptos de IA que olvidará en semanas.</p>
 
                                     <p>
                                         Necesita <span className="text-[#C96342] font-semibold">crear con sus propias manos</span>, ver sus
-                                        ideas cobrar vida, y experimentar el poder de la Inteligencia Artificial en accion.
+                                        ideas cobrar vida, y experimentar el poder de la Inteligencia Artificial en acción.
                                     </p>
 
                                     <p className="text-xl text-[#1A1714] font-semibold pt-4">Cada clase = 1 proyecto terminado.</p>
@@ -120,7 +139,7 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                             <div className="relative">
                                 <Image
                                     src="/child-coding-and-building-ai-project-happily-on-co.jpg"
-                                    alt="Nino creando proyecto de IA"
+                                    alt="Niño creando proyecto de IA"
                                     width={600}
                                     height={600}
                                     className="rounded-sm shadow-[0_2px_8px_-4px_rgba(26,23,20,0.1)]"
@@ -130,22 +149,25 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                     </div>
                 </section>
 
-                {/* Projects Timeline */}
+                {/* ERICA Method */}
                 <section className="py-32 bg-[#FAF7EF]">
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                         <div className="text-center space-y-6 mb-24">
                             <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342]">
-                                Programa completo
+                                Nuestro método pedagógico
                             </p>
-                            <h2 className="font-display text-4xl lg:text-5xl font-bold text-[#1A1714]">5 semanas. 10 proyectos.</h2>
+                            <h2 className="font-display text-4xl lg:text-5xl font-bold text-[#1A1714]">
+                                Metodología ERICA
+                            </h2>
                             <p className="text-xl text-[#3B3630] max-w-[700px] mx-auto">
-                                Tu hijo termina el curso con un portafolio de proyectos reales de IA.
+                                5 pasos basados en la Taxonomía de Bloom que llevan a cada alumno
+                                del descubrimiento a la creación real.
                             </p>
                         </div>
 
-                        <div className="space-y-8">
-                            {projects.map((project, index) => {
-                                const Icon = project.icon
+                        <div className="space-y-6">
+                            {ericaSteps.map((step, index) => {
+                                const Icon = step.icon
                                 return (
                                     <div
                                         key={index}
@@ -153,35 +175,91 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                                     >
                                         <div className="flex flex-col lg:flex-row gap-8 items-start">
                                             <div className="flex-shrink-0">
-                                                <div className="w-20 h-20 bg-[#FAF7EF] rounded-sm flex items-center justify-center border border-[#E8E2D6]">
-                                                    <Icon className="w-10 h-10 text-[#C96342]" />
+                                                <div className="w-20 h-20 bg-[#C96342] rounded-sm flex items-center justify-center">
+                                                    <span className="text-3xl font-bold text-[#FAF7EF]">{step.letter}</span>
                                                 </div>
                                             </div>
 
-                                            <div className="flex-1 space-y-4">
-                                                <div>
-                                                    <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-2">
-                                                        {project.week}
-                                                    </p>
-                                                    <h3 className="font-display text-2xl lg:text-3xl font-bold text-[#1A1714] mb-3">{project.title}</h3>
-                                                    <p className="text-lg text-[#3B3630] leading-relaxed">{project.description}</p>
+                                            <div className="flex-1 space-y-3">
+                                                <div className="flex items-center gap-3">
+                                                    <Icon className="w-5 h-5 text-[#C96342]" />
+                                                    <h3 className="font-display text-2xl lg:text-3xl font-bold text-[#1A1714]">{step.name}</h3>
                                                 </div>
-
-                                                <div className="flex flex-wrap gap-2">
-                                                    {project.skills.map((skill, i) => (
-                                                        <span
-                                                            key={i}
-                                                            className="px-3 py-1.5 bg-[#FAF7EF] text-[#C96342] rounded-sm text-sm font-medium border border-[#E8E2D6]"
-                                                        >
-                                                            {skill}
-                                                        </span>
-                                                    ))}
-                                                </div>
+                                                <p className="text-lg text-[#3B3630] leading-relaxed">{step.description}</p>
+                                                <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#6B645B]">
+                                                    Bloom: {step.bloom}
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 )
                             })}
+                        </div>
+                    </div>
+                </section>
+
+                {/* Nivel 1: Vibe Explorer */}
+                <section className="py-32 bg-[#F5F1E8]">
+                    <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+                        <div className="text-center space-y-6 mb-24">
+                            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342]">
+                                Nivel 1 · 10 clases · 8-17 años
+                            </p>
+                            <h2 className="font-display text-4xl lg:text-5xl font-bold text-[#1A1714]">Vibe Explorer</h2>
+                            <p className="text-xl text-[#3B3630] max-w-[700px] mx-auto">
+                                Fundamentos de IA generativa. Todos empiezan aquí: voz, música, arte, código y ética digital.
+                            </p>
+                        </div>
+
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            {explorerHighlights.map((item, index) => {
+                                const Icon = item.icon
+                                return (
+                                    <div
+                                        key={index}
+                                        className="bg-[#FAF7EF] border border-[#E8E2D6] rounded-sm p-8 hover:shadow-[0_2px_8px_-4px_rgba(26,23,20,0.1)] transition-all duration-300"
+                                    >
+                                        <Icon className="w-8 h-8 text-[#C96342] mb-4" />
+                                        <h3 className="font-display text-lg font-bold text-[#1A1714] mb-2">{item.title}</h3>
+                                        <p className="text-[#3B3630] leading-relaxed">{item.desc}</p>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                </section>
+
+                {/* Nivel 2: Vibe Maker + Tracks */}
+                <section className="py-32 bg-[#FAF7EF]">
+                    <div className="max-w-[1100px] mx-auto px-6 md:px-10">
+                        <div className="text-center space-y-6 mb-24">
+                            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342]">
+                                Nivel 2 · 10 misiones · 11-17 años
+                            </p>
+                            <h2 className="font-display text-4xl lg:text-5xl font-bold text-[#1A1714]">Vibe Maker</h2>
+                            <p className="text-xl text-[#3B3630] max-w-[700px] mx-auto">
+                                5 misiones core + 1 track especializado a elección. Tu hijo construye apps, bots
+                                y automatizaciones reales publicadas en internet.
+                            </p>
+                        </div>
+
+                        <div className="mb-16">
+                            <h3 className="font-display text-2xl font-bold text-[#1A1714] mb-8 text-center">Elige 1 de 6 tracks</h3>
+                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                {tracks.map((track, index) => (
+                                    <div
+                                        key={index}
+                                        className="bg-[#F5F1E8] border border-[#E8E2D6] rounded-sm p-8 hover:shadow-[0_2px_8px_-4px_rgba(26,23,20,0.1)] transition-all duration-300"
+                                    >
+                                        <div
+                                            className="w-3 h-3 rounded-full mb-4"
+                                            style={{ backgroundColor: track.color }}
+                                        />
+                                        <h4 className="font-display text-lg font-bold text-[#1A1714] mb-2">Track {track.name}</h4>
+                                        <p className="text-[#3B3630] leading-relaxed">{track.desc}</p>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -195,7 +273,7 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                             </h2>
 
                             <p className="text-xl text-[#FAF7EF]/70 max-w-[700px] mx-auto">
-                                Las plazas se agotan rapido para el programa que inicia el {COHORT.startDate}. Agenda tu evaluación gratuita.
+                                Las plazas se agotan rápido para el programa que inicia el {COHORT.startDate}. Agenda tu evaluación gratuita.
                             </p>
 
                             <Button
@@ -205,7 +283,7 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                             >
                                 <Link href="/#sesion-estrategica">
                                     <Sparkles className="mr-3 h-6 w-6" />
-                                    Solicitar Evaluacion Ahora
+                                    Agendar clase gratis
                                 </Link>
                             </Button>
                         </div>
