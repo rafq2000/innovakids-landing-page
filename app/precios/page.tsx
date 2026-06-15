@@ -9,7 +9,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Precio Curso IA para Niños 2026 · $267 USD | InnovaKids",
   description:
-    "Curso completo de IA para niños 8-17 años: 10 clases en vivo, grupos de 5 alumnos, certificado y garantía 10 días. $267 USD pago único o 3 cuotas.",
+    "Curso completo de IA para niños 8-17 años: 10 clases en vivo, grupos de 5 alumnos, certificado y garantía 10 días. $267 USD pago único.",
   keywords: [
     "curso ia niños precio",
     "precio curso inteligencia artificial niños",
@@ -121,7 +121,7 @@ export default function PreciosPage() {
                   <span className="text-xl text-muted-foreground font-mono">USD</span>
                 </div>
                 <p className="text-muted-foreground text-sm">
-                  Pago único · o 3 cuotas de $89 USD
+                  Pago único · tu tarjeta puede ofrecer cuotas
                 </p>
                 <p className="text-sm mt-3 text-muted-foreground">
                   Reserva tu cupo hoy con solo{" "}
@@ -188,7 +188,7 @@ export default function PreciosPage() {
                 },
                 {
                   q: "¿Puedo pagar en cuotas?",
-                  a: "Sí. Puedes pagar en 3 cuotas de $89 USD sin interés. También ofrecemos cuotas en moneda local según el país.",
+                  a: "Nosotros cobramos un pago único. Sin embargo, si pagas con tarjeta de crédito, tu banco podría permitirte diferir el cargo en cuotas según sus propias condiciones.",
                 },
                 {
                   q: "¿Qué pasa si mi hijo no puede asistir a alguna clase?",

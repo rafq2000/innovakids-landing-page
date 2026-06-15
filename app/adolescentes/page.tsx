@@ -307,7 +307,7 @@ export default function AdolescentesPage() {
                   ${priceToday}<span className="text-[#C96342]">.</span>
                 </p>
                 <p className="font-mono-accent text-[11px] uppercase tracking-[0.22em] text-[#FAF7EF]/55 mb-6">
-                  USD pago único o 3 cuotas de ${installments}
+                  USD · pago único · tu tarjeta puede ofrecer cuotas
                 </p>
                 <a
                   href="#sesion-estrategica"

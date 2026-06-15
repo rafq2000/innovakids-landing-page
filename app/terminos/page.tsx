@@ -35,7 +35,7 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
                         "Material educativo y recursos descargables",
                         "Comunidad privada para alumnos",
                         "Certificado de finalización del programa",
-                        "Sesión diagnóstica gratuita",
+                        "Sesión informativa gratuita",
                     ].map((item) => (
                         <li key={item} className="py-3 border-b border-[#1A1714]/12 text-[16px] text-[#1A1714]/80 leading-relaxed grid grid-cols-[auto_1fr] gap-4">
                             <span className="text-[#C96342] leading-none mt-1">—</span>
@@ -62,7 +62,7 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
                     },
                     {
                         k: "Opciones de pago",
-                        v: "Ofrecemos pago en una sola cuota o en cuotas según disponibilidad en tu país.",
+                        v: "El pago es único. Si usas tarjeta de crédito, tu banco podría permitirte diferir en cuotas según sus propias condiciones.",
                     },
                     {
                         k: "Confirmación",

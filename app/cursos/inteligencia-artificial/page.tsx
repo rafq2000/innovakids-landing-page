@@ -160,7 +160,7 @@ export default function CursoIANinos() {
                 <div className="text-6xl font-bold mb-1">$267</div>
                 <div className="text-muted-foreground font-mono text-sm mb-4">USD · pago único</div>
                 <p className="text-sm text-muted-foreground mb-6">
-                  o 3 cuotas de $89 USD<br />
+                  Pago único · tu tarjeta puede ofrecer cuotas<br />
                   Reserva hoy con solo <strong className="text-primary">$27 USD</strong>
                 </p>
                 <Button className="w-full font-bold h-12" asChild>
