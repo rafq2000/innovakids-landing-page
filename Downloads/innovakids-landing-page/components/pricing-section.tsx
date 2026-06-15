@@ -82,7 +82,7 @@ export function PricingSection({ country }: PricingSectionProps) {
             <p
               className="text-xs text-[#5A5751] mb-10"
                 >
-              o <strong className="text-[#2F2F2C]">3 cuotas sin interés</strong> con tarjeta de crédito.
+              Si pagas con tarjeta de crédito, <strong className="text-[#2F2F2C]">tu banco puede ofrecerte cuotas</strong>.
             </p>
 
             <a

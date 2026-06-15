@@ -822,88 +822,6 @@ export function ValuePropositionSection() {
             <SubtotalRow label="Subtotal habilidades" amount={subtotalSkills} />
           </div>
 
-          {/* GALERÍA EDITORIAL — fotos reales, prueba visual del valor */}
-          <div className="my-16 md:my-24">
-            <div className="flex items-baseline justify-between gap-4 mb-8 md:mb-12 pb-4 border-b border-[#1A1714]/12">
-              <div className="flex items-center gap-4">
-                <span className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
-                  Lámina A · Galería
-                </span>
-              </div>
-              <p className="font-display italic text-lg md:text-2xl text-[#1A1714]/70 tracking-[-0.01em] max-w-[40ch] text-right">
-                Proyectos reales entregados por alumnos entre 8 y 17 años.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-[1.35fr_1fr] gap-4 md:gap-5">
-              {/* HERO grande — izquierda */}
-              <figure className="relative group overflow-hidden rounded-[3px] bg-[#F2EDE0] border border-[#1A1714]/10 min-h-[360px] md:min-h-[540px]">
-                <Image
-                  src="/small-group-learning.jpg"
-                  alt="Grupo pequeño de niños latinoamericanos aprendiendo IA"
-                  fill
-                  className="object-cover transition-transform duration-[1400ms] group-hover:scale-[1.03]"
-                  sizes="(max-width: 768px) 100vw, 58vw"
-                />
-                <div
-                  className="absolute inset-0 pointer-events-none"
-                  style={{ background: "linear-gradient(180deg, transparent 50%, rgba(26,23,20,0.72))" }}
-                />
-                <figcaption className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4 text-[#FAF7EF]">
-                  <p
-                    className="font-display italic leading-[1] tracking-[-0.01em]"
-                    style={{ fontSize: "clamp(1.5rem, 3vw, 2.5rem)", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
-                  >
-                    "Por fin uso la IA<br className="hidden md:block" /> para algo mío."
-                  </p>
-                  <span className="font-mono-accent text-[9px] md:text-[10px] uppercase tracking-[0.24em] text-[#FAF7EF]/80 shrink-0">
-                    Lámina 01
-                  </span>
-                </figcaption>
-              </figure>
-
-              {/* Grid 2x2 — derecha */}
-              <div className="grid grid-cols-2 gap-4 md:gap-5">
-                {[
-                  { src: "/child-creating-project.jpg",                             caption: "Crea sus proyectos", n: "02" },
-                  { src: "/latino-tech-instructor.jpg",                             caption: "Mentores latinos",   n: "03" },
-                  { src: "/children-creating-video-games-with-machine-learnin.jpg", caption: "Videojuegos con IA", n: "04" },
-                  { src: "/kids-creating-ai-projects.jpg",                          caption: "Portafolio propio",  n: "05" },
-                ].map((img) => (
-                  <figure
-                    key={img.n}
-                    className="relative group overflow-hidden rounded-[3px] bg-[#F2EDE0] border border-[#1A1714]/10"
-                  >
-                    <div className="relative w-full aspect-square">
-                      <Image
-                        src={img.src}
-                        alt={img.caption}
-                        fill
-                        className="object-cover transition-transform duration-[1400ms] group-hover:scale-[1.04]"
-                        sizes="(max-width: 768px) 50vw, 21vw"
-                      />
-                      <div
-                        className="absolute inset-0 pointer-events-none"
-                        style={{ background: "linear-gradient(180deg, transparent 50%, rgba(26,23,20,0.72))" }}
-                      />
-                    </div>
-                    <figcaption className="absolute bottom-3 left-3 right-3 flex items-end justify-between gap-2 text-[#FAF7EF]">
-                      <p
-                        className="font-display italic leading-none"
-                        style={{ fontSize: "clamp(0.9rem, 1.4vw, 1.15rem)", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
-                      >
-                        {img.caption}
-                      </p>
-                      <span className="font-mono-accent text-[9px] uppercase tracking-[0.2em] text-[#FAF7EF]/75 shrink-0">
-                        {img.n}
-                      </span>
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
-            </div>
-          </div>
-
           {/* II — PILLARS */}
           <div className="mb-4">
             <SectionHead num="II." kicker="Todo lo que viene incluido" title="Lotes 05 → 10 · La experiencia alrededor" />
@@ -919,7 +837,7 @@ export function ValuePropositionSection() {
 
           {/* III — DOCUMENTS (bonos) */}
           <div className="mb-16 md:mb-20">
-            <SectionHead num="III." kicker="Anexo · Documentos premium incluidos" title="4 documentos que solo recibes en está cohorte" />
+            <SectionHead num="III." kicker="Anexo · Documentos premium incluidos" title="4 documentos que solo recibes en esta cohorte" />
             <div>{bonos.map((b, i) => <LotRow key={b.num} item={b} stagger={i * 80} />)}</div>
             <SubtotalRow label="Subtotal documentos premium" amount={subtotalBonos} />
           </div>
@@ -1131,7 +1049,7 @@ export function ValuePropositionSection() {
                     </p>
 
                     <p className="font-mono-accent text-[11px] md:text-xs uppercase tracking-[0.22em] text-[#FAF7EF]/55 mt-2">
-                      USD · pago único · o 3 cuotas de {fmt(Math.round(priceToday / 3))}
+                      USD · pago único · tu tarjeta puede ofrecer cuotas
                     </p>
                   </div>
 
@@ -1148,7 +1066,7 @@ export function ValuePropositionSection() {
                     </a>
 
                     <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-2">
-                      {["Garantía 10 días", "3 cuotas sin interés", "Llamada sin compromiso", "Solo 15 cupos / cohorte"].map((t) => (
+                      {["Garantía 10 días", "Pago único seguro", "Llamada sin compromiso", "Solo 15 cupos / cohorte"].map((t) => (
                         <li key={t} className="flex items-start gap-2 font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.18em] text-[#FAF7EF]/70">
                           <span className="text-[#C96342] mt-[1px]">✓</span>
                           <span>{t}</span>
