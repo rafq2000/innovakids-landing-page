@@ -14,11 +14,11 @@
   --ink: #1A1714;
   --ink-soft: #3B3630;
   --ink-muted: #6B645B;
-  --terracotta: #C96342;
+  --terracotta: #B5522F;
   --terracotta-hover: #9A4428;
   --terracotta-deep: #9A4428;
   --terracotta-pale: #E8B69E;
-  --terracotta-text: #A8432A;
+  --terracotta-bright: #C96342;
   --plum: #5D2E2E;
   --sage: #7A8B6C;
 
@@ -113,28 +113,31 @@
     font-feature-settings: "ss01", "cv11";
   }
 
-  /* Paper grain — fixed, very subtle, multiplied over everything */
-  body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 1;
-    opacity: 0.5;
-    mix-blend-mode: multiply;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.08 0 0 0 0.15 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
-  }
+  /* Paper grain + vignette disabled on mobile for LCP performance.
+     SVG noise filter + fixed pseudo-elements cause ~1s extra styleLayout.
+     Desktop keeps the effect via media query. */
+  @media (min-width: 768px) {
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.5;
+      mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.09 0 0 0 0 0.08 0 0 0 0.15 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    }
 
-  /* Warm vignette */
-  body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
-    background:
-      radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201, 99, 66, 0.06), transparent 60%),
-      radial-gradient(ellipse 60% 50% at 100% 100%, rgba(93, 46, 46, 0.05), transparent 60%);
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201, 99, 66, 0.06), transparent 60%),
+        radial-gradient(ellipse 60% 50% at 100% 100%, rgba(93, 46, 46, 0.05), transparent 60%);
+    }
   }
 
   h1, h2, h3, h4 {
@@ -347,7 +350,8 @@
   /* ============ PERFORMANCE: skip layout for off-screen sections ============ */
   .cv-auto {
     content-visibility: auto;
-    contain-intrinsic-size: auto 600px;
+    contain-intrinsic-size: auto 800px;
+    contain: layout style paint;
   }
 
   /* ============ REDUCED MOTION ============ */

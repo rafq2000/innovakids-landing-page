@@ -18,12 +18,12 @@ const META_PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID || ""
 export function TrackingPixels() {
     return (
         <>
-            {/* Google tag — loads once, serves both Google Ads and GA4 */}
+            {/* Google tag — lazyOnload to avoid blocking LCP on mobile (saves ~900ms TBT) */}
             <Script
                 src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
-                strategy="afterInteractive"
+                strategy="lazyOnload"
             />
-            <Script id="google-tag-init" strategy="afterInteractive">
+            <Script id="google-tag-init" strategy="lazyOnload">
                 {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
