@@ -17,33 +17,33 @@ export function ContactSection() {
                 <h3 className="text-2xl font-bold text-white mb-6">Información de Contacto</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <Mail className="w-6 h-6 text-[#4DD0E1] mt-1 flex-shrink-0" />
+                    <Mail className="w-6 h-6 text-[#67E8F9] mt-1 flex-shrink-0" />
                     <div>
                       <p className="text-white font-medium">Email</p>
                       <a
                         href="mailto:innovakidslatam@gmail.com"
-                        className="text-gray-300 hover:text-[#4DD0E1] transition-colors"
+                        className="text-gray-300 hover:text-[#67E8F9] transition-colors"
                       >
                         innovakidslatam@gmail.com
                       </a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <Phone className="w-6 h-6 text-[#4DD0E1] mt-1 flex-shrink-0" />
+                    <Phone className="w-6 h-6 text-[#67E8F9] mt-1 flex-shrink-0" />
                     <div>
                       <p className="text-white font-medium">WhatsApp</p>
                       <a
                         href="https://wa.me/56964754219"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-300 hover:text-[#4DD0E1] transition-colors"
+                        className="text-gray-300 hover:text-[#67E8F9] transition-colors"
                       >
                         +56 9 6475 4219
                       </a>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
-                    <MapPin className="w-6 h-6 text-[#4DD0E1] mt-1 flex-shrink-0" />
+                    <MapPin className="w-6 h-6 text-[#67E8F9] mt-1 flex-shrink-0" />
                     <div>
                       <p className="text-white font-medium">Ubicación</p>
                       <p className="text-gray-300">Santiago, Chile</p>

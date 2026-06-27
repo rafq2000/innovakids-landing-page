@@ -85,7 +85,7 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
         <div className="flex items-center gap-5 mb-20 md:mb-28">
           <div className="h-px w-12 bg-[#C96342]" />
           <p
-            className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold"
+            className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold"
             style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
           >
             Testimonios · N.º 01
@@ -96,7 +96,7 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
         <h2 className="text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-[-0.02em] font-normal mb-6 max-w-[14ch]">
           Padres que ya no tienen
           <br />
-          <em className="italic text-[#C96342]">esa</em> preocupación.
+          <em className="italic text-[#B5522F]">esa</em> preocupación.
         </h2>
 
         <p
@@ -116,7 +116,7 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
             >
               <div className="md:col-span-1 pt-2">
                 <span
-                  className="text-[11px] text-[#C96342] font-semibold tracking-wider"
+                  className="text-[11px] text-[#B5522F] font-semibold tracking-wider"
                   style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
                 >
                   {String(i + 1).padStart(2, "0")}
@@ -125,9 +125,9 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
 
               <div className="md:col-span-8">
                 <p className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] tracking-[-0.015em] mb-6 font-normal">
-                  <span className="text-[#C96342] mr-1">“</span>
+                  <span className="text-[#B5522F] mr-1">“</span>
                   {t.pull}
-                  <span className="text-[#C96342] ml-0.5">”</span>
+                  <span className="text-[#B5522F] ml-0.5">”</span>
                 </p>
                 <p
                   className="text-base md:text-lg text-[#5A5751] leading-relaxed max-w-[56ch]"
@@ -151,12 +151,12 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
                   />
                 </div>
                 <div>
-                  <div className="flex gap-0.5 text-[#C96342] text-sm mb-1.5 md:justify-end" aria-label="5 estrellas">
+                  <div className="flex gap-0.5 text-[#B5522F] text-sm mb-1.5 md:justify-end" aria-label="5 estrellas">
                     ★★★★★
                   </div>
                   <p className="font-semibold text-sm text-[#2F2F2C]">{t.name}</p>
                   <p className="text-xs text-[#5A5751] mt-0.5">{t.role}</p>
-                  <p className="text-[10px] uppercase tracking-[0.18em] text-[#C96342]/80 mt-1.5 font-semibold">
+                  <p className="text-[10px] uppercase tracking-[0.18em] text-[#B5522F]/80 mt-1.5 font-semibold">
                     ✓ Verificado
                   </p>
                 </div>
@@ -170,7 +170,7 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
           <div className="flex items-center gap-5 mb-16">
             <div className="h-px w-12 bg-[#C96342]" />
             <p
-              className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold"
+              className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold"
               style={{ fontFamily: "ui-sans-serif, system-ui, sans-serif" }}
             >
               Testimonios · N.º 02
@@ -179,7 +179,7 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
 
           <h3 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.02] tracking-[-0.02em] font-normal mb-6 max-w-[18ch]">
             Incluso las IA más avanzadas del mundo
-            <em className="italic text-[#C96342]"> nos eligen</em>.
+            <em className="italic text-[#B5522F]"> nos eligen</em>.
           </h3>
 
           <p
@@ -200,7 +200,7 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
                   onClick={() => setSelectedImage(ai.screenshot)}
                   className="group w-full grid grid-cols-12 gap-5 md:gap-8 items-center text-left"
                 >
-                  <span className="col-span-1 text-xs text-[#C96342] font-semibold tracking-wider tabular-nums">
+                  <span className="col-span-1 text-xs text-[#B5522F] font-semibold tracking-wider tabular-nums">
                     {String(i + 1).padStart(2, "0")}
                   </span>
 
@@ -214,7 +214,7 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
                     “{ai.quote}”
                   </span>
 
-                  <span className="col-span-2 text-right text-xs text-[#C96342] opacity-60 group-hover:opacity-100 transition-opacity uppercase tracking-wider">
+                  <span className="col-span-2 text-right text-xs text-[#B5522F]/80 group-hover:text-[#B5522F] transition-colors uppercase tracking-wider">
                     Ver →
                   </span>
                 </button>
@@ -233,9 +233,9 @@ export function TestimonialsSection({ country }: TestimonialsSectionProps = {}) 
           </p>
           <button
             onClick={() => document.getElementById("sesion-estrategica")?.scrollIntoView({ behavior: "smooth" })}
-            className="text-2xl md:text-4xl leading-tight tracking-[-0.015em] text-[#2F2F2C] hover:text-[#C96342] transition-colors"
+            className="text-2xl md:text-4xl leading-tight tracking-[-0.015em] text-[#2F2F2C] hover:text-[#B5522F] transition-colors"
           >
-            Escribir la historia de <em className="italic text-[#C96342]">tu hijo</em> →
+            Escribir la historia de <em className="italic text-[#B5522F]">tu hijo</em> →
           </button>
         </div>
       </div>
