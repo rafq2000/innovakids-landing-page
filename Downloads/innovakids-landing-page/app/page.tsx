@@ -1,26 +1,29 @@
 import type { Metadata } from "next"
+import dynamic from "next/dynamic"
 import { HeroSection } from "@/components/hero-section"
 import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { ProblemSection } from "@/components/problem-section"
 import { SolutionSection } from "@/components/solution-section"
-import { StatsSection } from "@/components/stats-section"
-import { HowItWorksSection } from "@/components/how-it-works-section"
-import { ProjectsGallery } from "@/components/projects-gallery"
 import { TestimonialsSection } from "@/components/testimonials-section"
-import { CurriculumSection } from "@/components/curriculum-section"
-import { ValuePropositionSection } from "@/components/value-proposition-section"
-import { IrresistibleOfferSection } from "@/components/irresistible-offer-section"
-import { PricingSection } from "@/components/pricing-section"
-import { TeamSection } from "@/components/team-section"
-import { CalendlySection } from "@/components/calendly-section"
-import { FAQSection } from "@/components/faq-section"
-import { CTASection } from "@/components/cta-section"
-import { SEOContent } from "@/components/seo-content"
-import { Footer } from "@/components/footer"
-import { ExitIntentPopup } from "@/components/exit-intent-popup"
 import { generateHreflangs } from "@/lib/seo-config"
 import { faqs } from "@/lib/faq-data"
+
+/* Below-fold sections — lazy loaded to reduce initial DOM from 2000+ to ~800 elements */
+const ProjectsGallery = dynamic(() => import("@/components/projects-gallery").then(m => ({ default: m.ProjectsGallery })))
+const StatsSection = dynamic(() => import("@/components/stats-section").then(m => ({ default: m.StatsSection })))
+const HowItWorksSection = dynamic(() => import("@/components/how-it-works-section").then(m => ({ default: m.HowItWorksSection })))
+const CurriculumSection = dynamic(() => import("@/components/curriculum-section").then(m => ({ default: m.CurriculumSection })))
+const ValuePropositionSection = dynamic(() => import("@/components/value-proposition-section").then(m => ({ default: m.ValuePropositionSection })))
+const IrresistibleOfferSection = dynamic(() => import("@/components/irresistible-offer-section").then(m => ({ default: m.IrresistibleOfferSection })))
+const PricingSection = dynamic(() => import("@/components/pricing-section").then(m => ({ default: m.PricingSection })))
+const TeamSection = dynamic(() => import("@/components/team-section").then(m => ({ default: m.TeamSection })))
+const CalendlySection = dynamic(() => import("@/components/calendly-section").then(m => ({ default: m.CalendlySection })))
+const FAQSection = dynamic(() => import("@/components/faq-section").then(m => ({ default: m.FAQSection })))
+const CTASection = dynamic(() => import("@/components/cta-section").then(m => ({ default: m.CTASection })))
+const SEOContent = dynamic(() => import("@/components/seo-content").then(m => ({ default: m.SEOContent })))
+const Footer = dynamic(() => import("@/components/footer").then(m => ({ default: m.Footer })))
+const ExitIntentPopup = dynamic(() => import("@/components/exit-intent-popup").then(m => ({ default: m.ExitIntentPopup })))
 
 export const metadata: Metadata = {
   title: "Curso de Inteligencia Artificial para Niños y Adolescentes (8-17) · Clase Gratis",
