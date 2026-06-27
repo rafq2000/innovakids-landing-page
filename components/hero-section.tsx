@@ -205,7 +205,7 @@ export function HeroSection() {
             ["Modalidad", "100% online"],
           ].map(([k, v], i) => (
             <div key={k} className="flex flex-col gap-2 min-w-0">
-              <span className="font-mono-accent text-[9px] md:text-[10px] uppercase tracking-[0.18em] text-[var(--terracotta)] whitespace-nowrap">
+              <span className="font-mono-accent text-[9px] md:text-[10px] uppercase tracking-[0.18em] text-[var(--terracotta-text)] whitespace-nowrap">
                 N.º {String(i + 1).padStart(2, "0")} · {k}
               </span>
               <span className="font-display text-lg md:text-xl lg:text-2xl text-[var(--ink)] leading-tight">
