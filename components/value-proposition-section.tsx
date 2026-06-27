@@ -358,7 +358,7 @@ const SubtotalRow = ({ label, amount }: { label: string; amount: number }) => (
 
 const SectionHead = ({ num, title, kicker }: { num: string; title: string; kicker: string }) => (
   <div className="flex items-baseline gap-5 mb-10 md:mb-14">
-    <span className="font-display italic text-[#C96342] leading-none" style={{ fontSize: "clamp(2.5rem, 6vw, 4rem)", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>{num}</span>
+    <span className="font-display italic text-[#B5522F] leading-none" style={{ fontSize: "clamp(2.5rem, 6vw, 4rem)", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>{num}</span>
     <div className="flex-1 min-w-0">
       <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#1A1714]/55 font-semibold mb-1">{kicker}</p>
       <h3 className="font-display text-2xl md:text-3xl lg:text-[36px] leading-[1.05] tracking-[-0.02em] text-[#1A1714]">{title}</h3>
@@ -567,7 +567,7 @@ export function ValuePropositionSection() {
           <div className="rise rise-1 flex items-center justify-between mb-16 md:mb-20">
             <div className="flex items-center gap-5">
               <div className="h-px w-12 bg-[#C96342]" />
-              <p className="font-mono-accent text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+              <p className="font-mono-accent text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                 Capítulo III · El catálogo completo
               </p>
             </div>
@@ -581,12 +581,12 @@ export function ValuePropositionSection() {
                   className="font-display italic text-xl md:text-2xl text-[#1A1714] leading-none"
                   style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                 >
-                  I<span className="text-[#C96342]">k</span>
+                  I<span className="text-[#B5522F]">k</span>
                 </span>
               </span>
               <span className="flex flex-col leading-tight">
                 <span className="font-display text-xl md:text-2xl leading-none tracking-[-0.025em] text-[#1A1714]">
-                  Innova<em className="not-italic font-semibold text-[#C96342]">kids</em>
+                  Innova<em className="not-italic font-semibold text-[#B5522F]">kids</em>
                 </span>
                 <span className="font-mono-accent text-[8px] md:text-[9px] uppercase tracking-[0.28em] text-[#1A1714]/60 mt-1">
                   LATAM · desde 2024
@@ -601,7 +601,7 @@ export function ValuePropositionSection() {
               Así se ve el ticket
               <br />
               completo —{" "}
-              <em className="italic text-[#C96342]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>antes</em>{" "}
+              <em className="italic text-[#B5522F]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>antes</em>{" "}
               del precio.
             </h2>
             <div className="rise rise-3 col-span-12 md:col-span-3 md:pt-6 md:border-l md:border-[#1A1714]/15 md:pl-6">
@@ -642,13 +642,13 @@ export function ValuePropositionSection() {
                     <span className="relative inline-block w-2 h-2 rounded-full bg-[#C96342]">
                       <span aria-hidden className="absolute inset-0 rounded-full bg-[#C96342] vp-live-ping" />
                     </span>
-                    <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">Próxima cohorte</p>
+                    <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">Próxima cohorte</p>
                   </div>
                   <p
                     className="font-display text-2xl md:text-4xl leading-[1] tracking-[-0.02em] text-[#1A1714]"
                     style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                   >
-                    El <em className="italic text-[#C96342]">{COHORT.startDateShort}</em>.
+                    El <em className="italic text-[#B5522F]">{COHORT.startDateShort}</em>.
                   </p>
                 </div>
               </div>
@@ -702,7 +702,7 @@ export function ValuePropositionSection() {
 
               {/* Columna 1 — stamp precio ESTÁTICO (siempre visible) */}
               <div className="relative flex flex-col items-start justify-center p-7 md:p-10 md:border-r border-b md:border-b-0 border-[#FAF7EF]/15 min-w-[240px]">
-                <span className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-3 inline-flex items-center gap-2">
+                <span className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-3 inline-flex items-center gap-2">
                   <span className="relative inline-block w-1.5 h-1.5 rounded-full bg-[#C96342]">
                     <span aria-hidden className="absolute inset-0 rounded-full bg-[#C96342] vp-live-ping" />
                   </span>
@@ -755,7 +755,7 @@ export function ValuePropositionSection() {
                     animationDelay: "160ms",
                   }}
                 >
-                  Reserva con <em className="italic text-[#C96342]">USD&nbsp;27</em>.{" "}
+                  Reserva con <em className="italic text-[#B5522F]">USD&nbsp;27</em>.{" "}
                   <span className="text-[#FAF7EF]/85">
                     El resto se paga <em className="italic">después</em> de la 2ª clase.
                   </span>
@@ -783,7 +783,7 @@ export function ValuePropositionSection() {
                     style={{ animationDelay: `${220 + i * 140}ms` }}
                   >
                     <span
-                      className="font-display italic text-[#C96342] leading-none shrink-0 vp-step-num"
+                      className="font-display italic text-[#B5522F] leading-none shrink-0 vp-step-num"
                       style={{
                         fontSize: "clamp(1.25rem, 1.7vw, 1.7rem)",
                         fontVariationSettings: '"opsz" 144, "SOFT" 100',
@@ -831,7 +831,7 @@ export function ValuePropositionSection() {
 
           <div className="flex items-center justify-center gap-4 my-12 md:my-16" aria-hidden>
             <div className="h-px w-16 bg-[#1A1714]/15" />
-            <span className="font-display italic text-xl text-[#C96342] inline-block">✦</span>
+            <span className="font-display italic text-xl text-[#B5522F] inline-block">✦</span>
             <div className="h-px w-16 bg-[#1A1714]/15" />
           </div>
 
@@ -899,7 +899,7 @@ export function ValuePropositionSection() {
                     >
                       10 días.
                     </p>
-                    <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mt-2">
+                    <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mt-2">
                       Devolución total
                     </p>
                   </div>
@@ -910,7 +910,7 @@ export function ValuePropositionSection() {
               <div className="col-span-12 md:col-span-7 relative">
                 <div className="flex items-center gap-4 mb-5">
                   <span className="h-px w-10 bg-[#C96342]" />
-                  <span className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                  <span className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                     Lámina B · Garantía
                   </span>
                 </div>
@@ -918,7 +918,7 @@ export function ValuePropositionSection() {
                   className="font-display text-[#1A1714] leading-[0.98] tracking-[-0.025em] mb-6"
                   style={{ fontSize: "clamp(2.25rem, 5vw, 4rem)", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                 >
-                  Si no le <em className="italic text-[#C96342]">gusta</em> o no aprende a usar la IA,
+                  Si no le <em className="italic text-[#B5522F]">gusta</em> o no aprende a usar la IA,
                   te devolvemos el dinero.
                 </h3>
                 <p className="text-base md:text-lg text-[#1A1714]/75 leading-relaxed max-w-[56ch] mb-8">
@@ -934,7 +934,7 @@ export function ValuePropositionSection() {
                     { k: "03", t: "Por WhatsApp",          d: "un mensaje basta. Cero papeleo, cero trámites." },
                   ].map((it) => (
                     <li key={it.k}>
-                      <p className="font-mono-accent text-[10px] uppercase tracking-[0.24em] text-[#C96342]/70 font-semibold mb-1 tabular-nums">
+                      <p className="font-mono-accent text-[10px] uppercase tracking-[0.24em] text-[#B5522F]/70 font-semibold mb-1 tabular-nums">
                         {it.k}
                       </p>
                       <p
@@ -974,8 +974,8 @@ export function ValuePropositionSection() {
                 {/* Receipt header */}
                 <div className="flex items-start justify-between mb-10 md:mb-14 pb-6 border-b border-[#FAF7EF]/15">
                   <div>
-                    <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-2">Factura · Recibo de cohorte</p>
-                    <p className="font-display italic text-2xl md:text-3xl leading-none">N.º 2026 / COHORTE JUNIO</p>
+                    <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-2">Factura · Recibo de cohorte</p>
+                    <p className="font-display italic text-2xl md:text-3xl leading-none">N.º 2026 / COHORTE JULIO</p>
                   </div>
                   <div className="text-right">
                     <p className="font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#FAF7EF]/55 mb-1">Emitido</p>
@@ -1017,9 +1017,9 @@ export function ValuePropositionSection() {
 
                   {/* Discount */}
                   <div className="flex items-baseline gap-4 py-3">
-                    <span className="font-mono-accent text-[11px] md:text-xs uppercase tracking-[0.24em] text-[#C96342] font-semibold">Descuento de lanzamiento</span>
+                    <span className="font-mono-accent text-[11px] md:text-xs uppercase tracking-[0.24em] text-[#B5522F] font-semibold">Descuento de lanzamiento</span>
                     <DotLeader light />
-                    <span className="font-display italic tabular-nums text-xl md:text-2xl text-[#C96342]">− {fmt(discount)}</span>
+                    <span className="font-display italic tabular-nums text-xl md:text-2xl text-[#B5522F]">− {fmt(discount)}</span>
                   </div>
                 </div>
 
@@ -1031,13 +1031,13 @@ export function ValuePropositionSection() {
                     className={`absolute top-6 md:top-4 right-4 md:right-8 select-none pointer-events-none hidden md:block ${receipt.inView ? "vp-stamp-animate" : "opacity-0"}`}
                   >
                     <div className="relative border-[3px] border-[#C96342] px-5 py-2 rounded-sm">
-                      <p className="font-display italic text-3xl text-[#C96342] leading-none tracking-[0.04em]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>PAGADO</p>
-                      <p className="font-mono-accent text-[9px] uppercase tracking-[0.3em] text-[#C96342]/80 mt-1">{COHORT.name.split(" ")[0]} · {COHORT.name.split(" ")[1]}</p>
+                      <p className="font-display italic text-3xl text-[#B5522F] leading-none tracking-[0.04em]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>PAGADO</p>
+                      <p className="font-mono-accent text-[9px] uppercase tracking-[0.3em] text-[#B5522F]/80 mt-1">{COHORT.name.split(" ")[0]} · {COHORT.name.split(" ")[1]}</p>
                     </div>
                   </div>
 
                   <div className="md:col-span-7 relative">
-                    <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-3">Lo que pagas hoy</p>
+                    <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-3">Lo que pagas hoy</p>
 
                     {/* Price with single shimmer one-shot */}
                     <p
@@ -1045,7 +1045,7 @@ export function ValuePropositionSection() {
                       style={{ fontSize: "clamp(4.5rem, 13vw, 10rem)", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                     >
                       {fmt(priceToday)}
-                      <span className="text-[#C96342]">.</span>
+                      <span className="text-[#B5522F]">.</span>
                     </p>
 
                     <p className="font-mono-accent text-[11px] md:text-xs uppercase tracking-[0.22em] text-[#FAF7EF]/55 mt-2">
@@ -1068,7 +1068,7 @@ export function ValuePropositionSection() {
                     <ul className="mt-5 grid grid-cols-2 gap-x-4 gap-y-2">
                       {["Garantía 10 días", "Pago único seguro", "Llamada sin compromiso", "Solo 15 cupos / cohorte"].map((t) => (
                         <li key={t} className="flex items-start gap-2 font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.18em] text-[#FAF7EF]/70">
-                          <span className="text-[#C96342] mt-[1px]">✓</span>
+                          <span className="text-[#B5522F] mt-[1px]">✓</span>
                           <span>{t}</span>
                         </li>
                       ))}
@@ -1087,12 +1087,12 @@ export function ValuePropositionSection() {
                         className="font-display italic text-base text-[#FAF7EF] leading-none"
                         style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                       >
-                        I<span className="text-[#C96342]">k</span>
+                        I<span className="text-[#B5522F]">k</span>
                       </span>
                     </span>
                     <div className="leading-tight">
                       <p className="font-display text-sm text-[#FAF7EF]">
-                        Innova<em className="not-italic font-semibold text-[#C96342]">kids</em> LATAM
+                        Innova<em className="not-italic font-semibold text-[#B5522F]">kids</em> LATAM
                       </p>
                       <p className="font-mono-accent text-[9px] uppercase tracking-[0.24em] text-[#FAF7EF]/50">
                         innovakidslatam.com
