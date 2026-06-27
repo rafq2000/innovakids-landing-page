@@ -9,7 +9,7 @@ export function SolutionSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
             La escuela les enseña a usar el pasado.
             <br />
-            Nosotros les enseñamos a <span className="text-[#4DD0E1]">crear el futuro.</span>
+            Nosotros les enseñamos a <span className="text-[#67E8F9]">crear el futuro.</span>
           </h2>
 
           <div className="border-l-4 border-[#4DD0E1] pl-4 sm:pl-6 md:pl-8 mt-8 sm:mt-10 md:mt-12">
@@ -26,7 +26,7 @@ export function SolutionSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
             No es un curso más.
             <br />
-            Es una <span className="text-[#4DD0E1]">mentoría personalizada</span> para líderes del mañana.
+            Es una <span className="text-[#67E8F9]">mentoría personalizada</span> para líderes del mañana.
           </h2>
         </div>
 
@@ -98,7 +98,7 @@ export function SolutionSection() {
         <div className="mt-12 sm:mt-16 md:mt-20 max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-[#1a2942] to-[#0a1628] border-2 border-[#4DD0E1] rounded-xl sm:rounded-2xl p-6 sm:p-8 md:p-10 text-center">
             <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-              <Clock className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 text-[#4DD0E1]" />
+              <Clock className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 text-[#67E8F9]" />
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">Horarios que se Adaptan a Ti</h3>
             </div>
             <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed mb-4">
@@ -106,7 +106,7 @@ export function SolutionSection() {
               <span className="font-bold text-white">múltiples horarios disponibles</span> para que tu hijo pueda
               aprender sin interrumpir sus actividades escolares, deportivas o familiares.
             </p>
-            <p className="text-sm sm:text-base md:text-lg text-[#4DD0E1] font-semibold">
+            <p className="text-sm sm:text-base md:text-lg text-[#67E8F9] font-semibold">
               Nos adaptamos al horario de tu hijo, no al revés.
             </p>
           </div>

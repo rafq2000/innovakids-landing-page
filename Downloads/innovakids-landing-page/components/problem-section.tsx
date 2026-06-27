@@ -17,7 +17,7 @@ export function ProblemSection() {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8 max-w-6xl mx-auto">
           <div className="bg-[#1a2942] p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-[#2a3952]">
             <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
-              <AlertTriangle className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#4DD0E1] flex-shrink-0 mt-1" />
+              <AlertTriangle className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#67E8F9] flex-shrink-0 mt-1" />
               <h3 className="text-base sm:text-lg md:text-xl font-bold text-white">El Riesgo de la Pasividad</h3>
             </div>
             <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
@@ -28,7 +28,7 @@ export function ProblemSection() {
 
           <div className="bg-[#1a2942] p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-[#2a3952]">
             <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
-              <AlertTriangle className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#4DD0E1] flex-shrink-0 mt-1" />
+              <AlertTriangle className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#67E8F9] flex-shrink-0 mt-1" />
               <h3 className="text-base sm:text-lg md:text-xl font-bold text-white">La Brecha de Habilidades</h3>
             </div>
             <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
@@ -39,7 +39,7 @@ export function ProblemSection() {
 
           <div className="bg-[#1a2942] p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-[#2a3952] sm:col-span-2 md:col-span-1">
             <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
-              <AlertTriangle className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#4DD0E1] flex-shrink-0 mt-1" />
+              <AlertTriangle className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#67E8F9] flex-shrink-0 mt-1" />
               <h3 className="text-base sm:text-lg md:text-xl font-bold text-white">La Oportunidad que se Escapa</h3>
             </div>
             <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
