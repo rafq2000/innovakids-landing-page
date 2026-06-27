@@ -39,11 +39,10 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: {
     template: "%s | InnovaKids",
-    default: "Cursos de IA para Niños y Adolescentes 8-17 | InnovaKids",
+    default: "Curso de Inteligencia Artificial para Niños y Adolescentes (8-17) · Clase Gratis",
   },
-  // Description: keyword-first + social proof + CTA
   description:
-    "Clases en vivo de Inteligencia Artificial para niños y adolescentes 8-17 años. Crean videojuegos, apps y arte con IA. Grupos de máx. 5. 527 graduados en 9 países. ★4.9. 1ª clase gratis.",
+    "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases en vivo, máx. 5 alumnos por grupo. ★4.9 de 527 familias. Primera clase gratis → reserva hoy.",
   keywords: [
     "mi hijo se queda atrás en la era de la ia",
     "cómo evitar que mi hijo se quede atrás con la ia",
@@ -89,9 +88,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
-    title: "Cursos de IA para Niños y Adolescentes (8-17 años) | ★4.9 · Clase Gratis | InnovaKids",
+    title: "Curso de IA para Niños y Adolescentes (8-17) · Clase Gratis | InnovaKids",
     description:
-      "Clases de IA en vivo para niños 8-17 años. Crean videojuegos, apps y arte con Inteligencia Artificial. Máx. 5 alumnos. 527 graduados en 9 países. ★4.9. 1ª clase gratis.",
+      "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Máx. 5 alumnos. ★4.9 de 527 familias. Reserva su clase gratis hoy.",
     url: "https://www.innovakidslatam.com",
     siteName: "InnovaKids",
     images: [
@@ -107,9 +106,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cursos de IA para Niños y Adolescentes (8-17) | ★4.9 | InnovaKids",
+    title: "Curso de IA para Niños y Adolescentes (8-17) | InnovaKids",
     description:
-      "Clases de IA para niños 8-17 años. Videojuegos, apps y arte con IA. Grupos de 5. 527 graduados. ★4.9. Clase gratis.",
+      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Grupos de 5. ★4.9 de 527 familias. Clase gratis.",
     images: ["/hero-child-learning-ai.jpg"],
   },
   robots: {

@@ -17,9 +17,9 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Mi Inscripcion · InnovaKids",
+  title: "Mi Inscripción · InnovaKids",
   description:
-    "Descarga tu Kit de Bienvenida, selecciona horarios y revisa los proximos pasos de tu inscripcion en InnovaKids.",
+    "Descarga tu Kit de Bienvenida, selecciona horarios y revisa los próximos pasos de tu inscripción en InnovaKids.",
   robots: { index: false, follow: false },
 }
 
@@ -27,7 +27,7 @@ const KIT_DOCS = [
   {
     num: "01",
     title: "Carta de Bienvenida",
-    desc: "Mensaje directo a la familia con los tres pasos para está semana y el resumen de la inscripcion.",
+    desc: "Mensaje directo a la familia con los tres pasos para esta semana y el resumen de la inscripción.",
     icon: PartyPopper,
     file: "01-carta-bienvenida.pdf",
     label: "Para la familia",
@@ -36,7 +36,7 @@ const KIT_DOCS = [
   {
     num: "02",
     title: "Guia de Padres",
-    desc: "Todo lo que necesitas saber para acompanar a tu hijo durante las 5 semanas.",
+    desc: "Todo lo que necesitas saber para acompañar a tu hijo durante las 5 semanas.",
     icon: BookOpen,
     file: "02-guia-padres.pdf",
     label: "Lectura obligatoria",
@@ -44,26 +44,26 @@ const KIT_DOCS = [
   },
   {
     num: "03",
-    title: "Calendario Junio 2026",
-    desc: "Las 10 fechas del curso con temas y objetivos. Sabados y miercoles, 8 junio - 8 julio.",
+    title: "Calendario Julio 2026",
+    desc: "Las 10 fechas del curso con temas y objetivos. Sábados y miércoles, 20 julio - 24 agosto.",
     icon: Calendar,
-    file: "03-calendario-mayo-2026.pdf",
+    file: "03-calendario-julio-2026.pdf",
     label: "Imprimir y pegar",
     highlight: false,
   },
   {
     num: "04",
     title: "Reglamento del Curso",
-    desc: "Normas de convivencia, politica de asistencia, uso etico de IA y garantia de 10 dias.",
+    desc: "Normas de convivencia, política de asistencia, uso ético de IA y garantía de 10 días.",
     icon: Shield,
     file: "04-reglamento.pdf",
-    label: "Leer antes del 8 junio",
+    label: "Leer antes del 20 julio",
     highlight: false,
   },
   {
     num: "05",
     title: "Manual de IA Segura en Casa",
-    desc: "Guia para padres: herramientas seguras, como supervisar sin sobreproteger.",
+    desc: "Guía para padres: herramientas seguras, cómo supervisar sin sobreproteger.",
     icon: Shield,
     file: "05-manual-ia-segura-en-casa.pdf",
     label: "Para toda la familia",
@@ -81,16 +81,16 @@ const KIT_DOCS = [
   {
     num: "07",
     title: "Capsula del Tiempo",
-    desc: "Tu hijo la completa antes de empezar y la abre en la Gala de Graduacion.",
+    desc: "Tu hijo la completa antes de empezar y la abre en la Gala de Graduación.",
     icon: Clock,
     file: "07-capsula-del-tiempo.pdf",
-    label: "Completar antes del 8 junio",
+    label: "Completar antes del 20 julio",
     highlight: false,
   },
   {
     num: "B2",
     title: "Kit del Padre Moderno",
-    desc: "Guia exclusiva: por que la IA es el nuevo ingles, como acompanar sin frenar, guiones de conversacion.",
+    desc: "Guía exclusiva: por qué la IA es el nuevo inglés, cómo acompañar sin frenar, guiones de conversación.",
     icon: Users,
     file: "kit-padre-moderno.pdf",
     label: "Bono exclusivo",
@@ -102,7 +102,7 @@ const STEPS = [
   {
     num: "01",
     title: "Selecciona tus horarios",
-    desc: "Minimo 3 dias con 2 horarios cada uno. Es obligatorio para asignarte grupo.",
+    desc: "Mínimo 3 días con 2 horarios cada uno. Es obligatorio para asignarte grupo.",
     href: "/mis-horarios",
     cta: "Elegir horarios",
     icon: Calendar,
@@ -111,7 +111,7 @@ const STEPS = [
   {
     num: "02",
     title: "Descarga tu Kit de Bienvenida",
-    desc: "8 documentos esenciales: carta, guia, calendario, reglamento, prompts y mas.",
+    desc: "8 documentos esenciales: carta, guía, calendario, reglamento, prompts y más.",
     href: "#kit",
     cta: "Ver documentos",
     icon: Download,
@@ -120,7 +120,7 @@ const STEPS = [
   {
     num: "03",
     title: "Escribenos por WhatsApp",
-    desc: "Al +56 9 2245 0492 para confirmar tu inscripcion o resolver cualquier duda.",
+    desc: "Al +56 9 2245 0492 para confirmar tu inscripción o resolver cualquier duda.",
     href: "https://wa.me/56922450492?text=Hola%2C%20acabo%20de%20inscribirme%20en%20InnovaKids",
     cta: "Abrir WhatsApp",
     icon: MessageCircle,
@@ -139,7 +139,7 @@ export default function MiInscripcionPage() {
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-[#C96342]" aria-hidden />
               <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
-                Tu inscripcion
+                Tu inscripción
               </span>
             </div>
             <h1
@@ -149,13 +149,13 @@ export default function MiInscripcionPage() {
               Todo lo que necesitas en <em className="italic text-[#C96342]">un solo lugar</em>.
             </h1>
             <p className="mt-6 text-lg text-[#1A1714]/70 leading-relaxed max-w-[56ch]">
-              Aqui tienes los mismos recursos que te enviamos por correo. Descarga tus documentos,
-              selecciona horarios y contactanos directamente.
+              Aquí tienes los mismos recursos que te enviamos por correo. Descarga tus documentos,
+              selecciona horarios y contáctanos directamente.
             </p>
 
             <div className="mt-6 inline-flex items-center gap-2 bg-[#F2EDE0] border border-[#1A1714]/10 px-4 py-2.5 text-sm text-[#1A1714]/60">
               <Mail className="w-4 h-4" />
-              No te llego el correo? Aqui tienes todo lo que necesitas.
+              ¿No te llegó el correo? Aquí tienes todo lo que necesitas.
             </div>
           </div>
         </section>
@@ -166,7 +166,7 @@ export default function MiInscripcionPage() {
             <div className="flex items-center gap-3 mb-8">
               <span className="h-px w-10 bg-[#C96342]" aria-hidden />
               <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
-                Proximos pasos
+                Próximos pasos
               </span>
             </div>
 
@@ -228,7 +228,7 @@ export default function MiInscripcionPage() {
                 8 documentos para empezar con confianza.
               </h2>
               <p className="text-[15px] text-[#1A1714]/60 leading-relaxed max-w-[52ch] mb-10">
-                Leelos antes del 29 de junio. Cada uno tiene un proposito especifico para
+                Léelos antes del 20 de julio. Cada uno tiene un propósito específico para
                 que tu hijo/a y tu familia lleguen preparados.
               </p>
 
@@ -314,7 +314,7 @@ export default function MiInscripcionPage() {
                     className="text-lg font-semibold text-green-900"
                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                   >
-                    Garantia de 10 dias
+                    Garantía de 10 días
                   </h3>
                 </div>
                 <p className="text-sm text-green-800/70 leading-relaxed">
@@ -331,13 +331,13 @@ export default function MiInscripcionPage() {
                     className="text-lg font-semibold"
                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                   >
-                    Tienes alguna duda?
+                    ¿Tienes alguna duda?
                   </h3>
                 </div>
                 <p className="text-sm text-[#1A1714]/60 leading-relaxed mb-4">
-                  Escribenos por WhatsApp al <strong className="text-[#1A1714]">+56 9 2245 0492</strong> o
+                  Escríbenos por WhatsApp al <strong className="text-[#1A1714]">+56 9 2245 0492</strong> o
                   a <strong className="text-[#1A1714]">hola@innovakidslatam.com</strong>.
-                  Respondemos en menos de 2 horas en dias habiles.
+                  Respondemos en menos de 2 horas en días hábiles.
                 </p>
                 <Button size="sm" variant="outline" className="border-[#1A1714]/20 hover:border-[#C96342]" asChild>
                   <a

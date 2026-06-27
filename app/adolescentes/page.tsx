@@ -8,9 +8,9 @@ import { faqs } from "@/lib/faq-data"
 import { COHORT, SOCIAL_PROOF } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA para Adolescentes 14-17 años | InnovaKids",
+  title: "Curso de IA para Adolescentes (13-17 años) · Tu Hijo Crea Apps Reales con IA",
   description:
-    "Curso de Inteligencia Artificial para adolescentes 14-17 años. Crean apps reales, portafolio universitario y startups con IA. Clases en vivo, grupos de 5, certificado. Clase gratis.",
+    "Clases de inteligencia artificial para adolescentes de 13 a 17 años. Crea apps, portafolio y proyectos reales con IA en 5 semanas. Grupos de 5, en vivo. ★4.9. Clase gratis.",
   keywords: [
     "cursos de ia para adolescentes",
     "curso ia adolescentes",
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     canonical: "https://www.innovakidslatam.com/adolescentes",
   },
   openGraph: {
-    title: "Cursos de IA para Adolescentes 14-17 años | InnovaKids",
+    title: "Curso de IA para Adolescentes (13-17) · Apps Reales con IA | InnovaKids",
     description:
-      "Deja de ser usuario. Aprende a crear apps, contenido y startups con IA. Grupos de 5, portafolio real y certificado.",
+      "Tu hijo adolescente crea apps, portafolio y proyectos reales con IA en 5 semanas. Grupos de 5, clases en vivo. ★4.9. Clase gratis.",
     url: "https://www.innovakidslatam.com/adolescentes",
     type: "website",
     locale: "es_419",
