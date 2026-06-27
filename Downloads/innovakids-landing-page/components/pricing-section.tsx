@@ -1,4 +1,5 @@
 import type { CountryConfig } from "@/lib/countries-config"
+import { COHORT, PRICING } from "@/lib/site-config"
 
 interface PricingSectionProps {
   country?: CountryConfig
@@ -8,7 +9,7 @@ export function PricingSection({ country }: PricingSectionProps) {
   // Primary price is always USD. For non-USD countries we also show the
   // approximate local-currency figure underneath so parents see what they'll
   // actually be charged in their card's currency.
-  const price = "$267"
+  const price = `$${PRICING.full}`
   const currencyCode = "USD"
 
   const localApprox = (() => {
@@ -24,7 +25,7 @@ export function PricingSection({ country }: PricingSectionProps) {
     "Certificado digital Vibe Explorer",
     "Acceso a 15+ herramientas de IA premium",
     "Soporte 24/7 por Discord y WhatsApp",
-    "Requisito de acceso a las 4 especialidades",
+    "Proyecto final con certificado de graduación",
   ]
 
   return (
@@ -48,8 +49,8 @@ export function PricingSection({ country }: PricingSectionProps) {
         </h2>
 
         <p className="text-lg md:text-xl text-[#5A5751] max-w-[52ch] leading-relaxed mb-24">
-          No manejamos planes complejos. Todos comienzan por el mismo módulo
-          obligatorio; después eligen especialidad cuando estén listos.
+          No manejamos planes complejos. Un solo programa, un solo precio,
+          todo incluido.
         </p>
 
         <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-start">
@@ -76,13 +77,8 @@ export function PricingSection({ country }: PricingSectionProps) {
             {localApprox && (
               <p className="text-sm text-[#5A5751] mb-2 italic">{localApprox}</p>
             )}
-            <p className="text-sm text-[#5A5751] mb-3">
+            <p className="text-sm text-[#5A5751] mb-10">
               Pago único · sin mensualidades · sin letra chica.
-            </p>
-            <p
-              className="text-xs text-[#5A5751] mb-10"
-                >
-              Si pagas con tarjeta de crédito, <strong className="text-[#2F2F2C]">tu banco puede ofrecerte cuotas</strong>.
             </p>
 
             <a
@@ -101,7 +97,7 @@ export function PricingSection({ country }: PricingSectionProps) {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C96342] opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C96342]"></span>
                 </span>
-                <span><strong className="text-[#2F2F2C] font-semibold">4</strong> cupos restantes</span>
+                <span><strong className="text-[#2F2F2C] font-semibold">{COHORT.spotsRemaining}</strong> cupos restantes</span>
               </span>
               <span className="opacity-40">·</span>
               <span>Pago seguro 🔒</span>

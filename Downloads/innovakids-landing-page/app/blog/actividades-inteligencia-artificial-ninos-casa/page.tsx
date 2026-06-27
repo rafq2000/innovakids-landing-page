@@ -5,9 +5,9 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "12 Actividades de IA para Hacer con Tu Hijo en Casa (Sin Programar) | InnovaKids",
+  title: "12 Actividades de Inteligencia Artificial para Niños en Casa [2026]",
   description:
-    "Lista práctica de 12 actividades de inteligencia artificial para niños de 8 a 17 años. Proyectos que puedes hacer en casa con herramientas gratuitas. Por nivel y edad.",
+    "12 proyectos de IA que tu hijo puede hacer hoy en casa — sin programar. Crea cuentos, música, videojuegos y arte con herramientas gratis. Para 8 a 17 años, por nivel.",
   keywords: [
     "actividades ia para niños",
     "actividades inteligencia artificial niños",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     canonical: "https://www.innovakidslatam.com/blog/actividades-inteligencia-artificial-ninos-casa",
   },
   openGraph: {
-    title: "12 Actividades de IA para Hacer con Tu Hijo en Casa | InnovaKids",
+    title: "12 Actividades de Inteligencia Artificial para Niños en Casa [2026]",
     description:
-      "Actividades prácticas de IA para niños por edad. Crea cuentos, música, videojuegos y más con herramientas gratuitas. Sin saber programar.",
+      "12 proyectos de IA que tu hijo puede hacer hoy — cuentos, música, videojuegos y arte con herramientas gratis. Para 8 a 17 años.",
     url: "https://www.innovakidslatam.com/blog/actividades-inteligencia-artificial-ninos-casa",
     siteName: "InnovaKids",
     type: "article",

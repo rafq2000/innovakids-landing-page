@@ -8,13 +8,13 @@
 export const COHORT = {
   name: "Julio 2026",
   nameShort: "julio 2026",
-  startDate: "29 de junio del 2026",
-  startDateShort: "29 de junio",
-  startDateCompact: "29.06",
-  registrationCloseDate: "Dom. 28.06",
-  registrationCloseDateLong: "28 de junio",
+  startDate: "20 de julio del 2026",
+  startDateShort: "20 de julio",
+  startDateCompact: "20.07",
+  registrationCloseDate: "Dom. 19.07",
+  registrationCloseDateLong: "19 de julio",
   /** ISO 8601 — used by countdown timer */
-  startISO: "2026-06-29T00:00:00-04:00",
+  startISO: "2026-07-20T00:00:00-04:00",
   nextCohort: "septiembre",
   totalSpots: 15,
   spotsRemaining: 15,
@@ -79,7 +79,5 @@ export const AGE_GROUPS = {
 export const CURRICULUM = {
   levels: [
     { id: "explorer", name: "Vibe Explorer", classes: 10, weeks: 5, ageMin: 8 },
-    { id: "maker", name: "Vibe Maker", classes: 10, weeks: 5, ageMin: 11 },
   ],
-  tracks: ["Estudio", "Emprender", "Video", "Audio", "Transcribir", "Programar"],
 } as const

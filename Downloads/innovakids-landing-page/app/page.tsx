@@ -23,9 +23,9 @@ import { generateHreflangs } from "@/lib/seo-config"
 import { faqs } from "@/lib/faq-data"
 
 export const metadata: Metadata = {
-  title: "Cursos de IA para Niños y Adolescentes 8-17 años | InnovaKids",
+  title: "Curso de Inteligencia Artificial para Niños y Adolescentes (8-17) · Clase Gratis",
   description:
-    "Clases en vivo de IA para niños 8-17 años. Crean videojuegos, apps y arte con IA. Grupos de máx. 5 alumnos. 527 graduados en 9 países. ★4.9. Clase gratis.",
+    "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases en vivo, máx. 5 alumnos por grupo. ★4.9 de 527 familias. Primera clase gratis → reserva hoy.",
   keywords: [
     "mi hijo se queda atrás en la era de la ia",
     "cómo evitar que mi hijo se quede atrás con la ia",
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
     languages: generateHreflangs("home"),
   },
   openGraph: {
-    title: "Cursos de IA para Niños y Adolescentes 8-17 años | InnovaKids",
+    title: "Curso de IA para Niños y Adolescentes (8-17) · Clase Gratis | InnovaKids",
     description:
-      "Clases de IA en vivo para niños 8-17 años. Crean videojuegos, apps y arte con Inteligencia Artificial. Máx. 5 alumnos. 527 graduados. 4.9★. Reserva tu 1ª clase gratis hoy",
+      "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases en vivo, máx. 5 alumnos. ★4.9 de 527 familias. Reserva su clase gratis hoy.",
     url: "https://www.innovakidslatam.com",
     type: "website",
     locale: "es_419",
@@ -62,9 +62,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cursos de IA para Niños y Adolescentes 8-17 | InnovaKids",
+    title: "Curso de IA para Niños y Adolescentes (8-17) | InnovaKids",
     description:
-      "Clases de IA para niños 8-17 años. Crean videojuegos, apps y arte con IA. Grupos de 5. 527 graduados. 4.9★. Primera clase gratis.",
+      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Grupos de 5. ★4.9 de 527 familias. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -134,8 +134,8 @@ export default function Home() {
       {
         "@type": "CourseInstance",
         "courseMode": "online",
-        "startDate": "2026-06-29",
-        "endDate": "2026-08-03",
+        "startDate": "2026-07-20",
+        "endDate": "2026-08-24",
         "courseWorkload": "PT10H",
         "instructor": {
           "@type": "Person",
