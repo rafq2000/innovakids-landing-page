@@ -8,11 +8,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Fechas reales de última modificación por sección
   const dates = {
-    home: new Date("2026-06-03"),        // Auditoría Hormozi
-    main: new Date("2026-06-03"),        // Páginas principales
-    courses: new Date("2026-05-25"),     // Páginas de cursos
-    blog: new Date("2026-05-18"),        // Blog posts
-    countries: new Date("2026-04-27"),   // Páginas por país
+    home: new Date("2026-06-27"),        // CTR optimization + cohorte julio
+    main: new Date("2026-06-27"),        // Titles/descriptions optimizados
+    courses: new Date("2026-06-27"),     // Solo Vibe Explorer
+    blog: new Date("2026-06-27"),        // Titles optimizados para CTR
+    countries: new Date("2026-06-27"),   // Cohorte 20 julio
   }
 
   // Main pages (priority 0.8)
