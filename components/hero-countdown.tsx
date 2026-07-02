@@ -30,7 +30,9 @@ export function HeroCountdown() {
   const [ready, setReady] = useState(false)
 
   useEffect(() => {
-    // Set inmediato al montar
+    // Set inmediato al montar: el valor real solo puede calcularse en cliente
+    // (el SSR renderiza 00:00:00:00 a propósito para no romper la hidratación)
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setT(compute())
     setReady(true)
 

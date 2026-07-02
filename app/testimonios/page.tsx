@@ -82,12 +82,12 @@ export default function TestimoniosPage() {
           >
             Listo para que tu hijo sea el <em className="italic text-[#B5522F]">próximo</em>?
           </h2>
-          <a
+          <Link
             href="/#sesion-estrategica"
             className="inline-flex items-center bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm transition-colors mb-6"
           >
             Agendar sesión gratis →
-          </a>
+          </Link>
           <p
             className="text-[12px] tracking-[0.18em] uppercase text-[#FAF7EF]/50"
             style={{ fontFamily: "'IBM Plex Mono', 'Menlo', monospace" }}

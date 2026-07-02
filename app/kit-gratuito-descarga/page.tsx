@@ -111,7 +111,7 @@ export default function KitDownloadPage() {
                   size="lg"
                   className="w-full h-16 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] font-bold text-lg uppercase tracking-wide shadow-lg rounded-sm"
                 >
-                  <a href="/kit-padre-moderno-innovakids.pdf" download>
+                  <a href="https://8n2c8ieovwfncuyi.public.blob.vercel-storage.com/kit-padre-moderno.pdf.pdf" download>
                     <Download className="w-6 h-6 mr-2" />
                     DESCARGAR KIT AHORA
                   </a>

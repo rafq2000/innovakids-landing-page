@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState, type ReactNode } from "react"
+import Link from "next/link"
 import Image from "next/image"
 import { COHORT } from "@/lib/site-config"
 
@@ -571,7 +572,7 @@ export function ValuePropositionSection() {
                 Capítulo III · El catálogo completo
               </p>
             </div>
-            <a href="/" className="flex items-center gap-3" aria-label="InnovaKids LATAM">
+            <Link href="/" className="flex items-center gap-3" aria-label="InnovaKids LATAM">
               {/* Monograma "IK" */}
               <span
                 aria-hidden
@@ -592,7 +593,7 @@ export function ValuePropositionSection() {
                   LATAM · desde 2024
                 </span>
               </span>
-            </a>
+            </Link>
           </div>
 
           {/* HEADLINE */}

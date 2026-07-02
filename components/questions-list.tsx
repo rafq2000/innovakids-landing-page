@@ -24,11 +24,6 @@ export function QuestionsList({ courseId }: QuestionsListProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const supabase = createClient()
 
-  useEffect(() => {
-    loadClasses()
-    loadQuestions()
-  }, [courseId])
-
   const loadClasses = async () => {
     const { data } = await supabase
       .from("classes")
@@ -65,6 +60,14 @@ export function QuestionsList({ courseId }: QuestionsListProps) {
       setQuestions(data)
     }
   }
+
+  useEffect(() => {
+    // fetch-on-mount: carga inicial de clases y preguntas del curso
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    loadClasses()
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    loadQuestions()
+  }, [courseId])
 
   const handleSubmitQuestion = async (e: React.FormEvent) => {
     e.preventDefault()

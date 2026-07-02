@@ -70,7 +70,7 @@ const nextConfig = {
       // Old "el-primer-paso-hacia-el-futuro" URLs
       {
         source: '/el-primer-paso-hacia-el-futuro/reuni%C3%B3n-clase-gratuita',
-        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        destination: '/clase-gratis',
         permanent: true,
       },
       {
@@ -80,79 +80,79 @@ const nextConfig = {
       },
       {
         source: '/informaci%C3%B3n-pr%C3%B3ximo-curso-online-%C3%BAltimos-cupos/clase-gratuita-y-reuni%C3%B3n-informativa',
-        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        destination: '/clase-gratis',
         permanent: true,
       },
       // Old booking URLs redirect to new one
       {
         source: '/informaci%C3%B3n-pr%C3%B3ximo-curso-online-%C3%BAltimos-cupos',
-        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        destination: '/clase-gratis',
         permanent: true,
       },
       {
         source: '/reserva-mi-clase-gratis',
-        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        destination: '/clase-gratis',
         permanent: true,
       },
       {
         source: '/el-primer-paso-hacia-el-futuro/reuni%C3%B3n-informativa',
-        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        destination: '/clase-gratis',
         permanent: true,
       },
       {
         source: '/informaci%C3%B3n-pr%C3%B3ximo-curso-online-%C3%BAltimos-cupos-hora-de-chile-la-reserva/clase-gratuita-y-reuni%C3%B3n-informativa-hora-chile',
-        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        destination: '/clase-gratis',
         permanent: true,
       },
       {
         source: '/informaci%C3%B3n-pr%C3%B3ximo-curso-online-%C3%BAltimos-cupos-hora-de-chile-la-reserva',
-        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        destination: '/clase-gratis',
         permanent: true,
       },
       {
         source: '/informaci%C3%B3n-pr%C3%B3ximo-curso-online-%C3%BAltimos-cupos/clase-gratuita-y-reuni%C3%B3n-informativa-hora-chile',
-        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        destination: '/clase-gratis',
         permanent: true,
       },
       {
         source: '/agenda-ahora-clase-gratis-%C3%BAltimos-cupos/clase-gratuita-y-reuni%C3%B3n-informativa-hora-chile',
-        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        destination: '/clase-gratis',
         permanent: true,
       },
       {
         source: '/agenda-ahora-clase-gratis-%C3%BAltimos-cupos',
-        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        destination: '/clase-gratis',
         permanent: true,
       },
       {
         source: '/agenda-ahora-reuni%C3%B3n-gratis-%C3%BAltimos-cupos/clase-gratuita-y-reuni%C3%B3n-informativa-hora-chile',
-        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        destination: '/clase-gratis',
         permanent: true,
       },
       // Old information URLs
       {
         source: '/informaci%C3%B3n',
-        destination: '/informacion',
+        destination: '/cursos/inteligencia-artificial',
         permanent: true,
       },
       {
         source: '/informaci%C3%B3n/qu%C3%A9-aprender%C3%A1n-los-ni%C3%B1os',
-        destination: '/informacion',
+        destination: '/cursos/inteligencia-artificial',
         permanent: true,
       },
       {
         source: '/informaci%C3%B3n/herramientas-que-utilizar%C3%A1n',
-        destination: '/informacion',
+        destination: '/cursos/inteligencia-artificial',
         permanent: true,
       },
       {
         source: '/informaci%C3%B3n/formato',
-        destination: '/informacion',
+        destination: '/cursos/inteligencia-artificial',
         permanent: true,
       },
       {
         source: '/reserva-mi-clase-y-reuni%C3%B3n-explicativa-gratis/clase-gratuita-y-reuni%C3%B3n-informativa-hora-chile',
-        destination: '/reserva-mi-clase-y-reunion-explicativa-gratis/clase-gratuita-y-reunion-informativa-hora-chile',
+        destination: '/clase-gratis',
         permanent: true,
       },
       // GSC Error 404 Fixes (March 2026)
@@ -226,12 +226,12 @@ const nextConfig = {
       },
       {
         source: '/colombia/cursos-ia-ninos-colombia',
-        destination: '/co/cursos-ia-ninos-colombia',
+        destination: '/co',
         permanent: true,
       },
       {
         source: '/colombia/clases-ia-ninos-bogota',
-        destination: '/co/clases-ia-ninos-bogota',
+        destination: '/co',
         permanent: true,
       },
       {
@@ -325,13 +325,11 @@ const nextConfig = {
       { source: '/gq/clases-ia-ninos-malabo', destination: '/gq', permanent: true },
       // Legacy Pages Cleanup (Round 2)
       { source: '/informacion', destination: '/cursos/inteligencia-artificial', permanent: true },
-      { source: '/grupos-pequenos-5-alumnos', destination: '/clases-ia-ninos', permanent: true },
+      { source: '/grupos-pequenos-5-alumnos', destination: '/cursos/inteligencia-artificial', permanent: true },
       { source: '/oferta-180', destination: '/cursos/inteligencia-artificial', permanent: true },
       { source: '/oferta-180a-aprender-c', destination: '/cursos/inteligencia-artificial', permanent: true }, // potential variation
       // Arquitectura Silo B2C
       { source: '/curso-ia-ninos', destination: '/cursos/inteligencia-artificial', permanent: true },
-      { source: '/oferta-180', destination: '/cursos/inteligencia-artificial', permanent: true },
-      { source: '/oferta-180a-aprender-c', destination: '/cursos/inteligencia-artificial', permanent: true }, // potential variation
       // SEO AUDIT MAR 2026: Cannibalization fixes
       // Consolidate "curso ia niños" cluster to single canonical page
       { source: '/clases-ia-ninos', destination: '/cursos/inteligencia-artificial', permanent: true },

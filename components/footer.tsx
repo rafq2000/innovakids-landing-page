@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Instagram } from "lucide-react"
 import { COHORT, WHATSAPP } from "@/lib/site-config"
 
@@ -58,12 +59,12 @@ export function Footer({ countryCode }: FooterProps) {
           >
             Empieza <em className="italic text-[#B5522F]">hoy</em>.
           </h2>
-          <a
+          <Link
             href="/#sesion-estrategica"
             className="inline-flex items-center bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm transition-colors"
           >
             Agendar clase gratis
-          </a>
+          </Link>
         </div>
 
         {/* Columns */}
@@ -158,15 +159,15 @@ export function Footer({ countryCode }: FooterProps) {
         <div className="pt-8 border-t border-[#2F2F2C]/15 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#5A5751]">
           <p>© 2026 InnovaKids. Todos los derechos reservados.</p>
           <div className="flex flex-wrap justify-center gap-6">
-            <a href="/terminos" className="hover:text-[#B5522F] transition-colors">
+            <Link href="/terminos" className="hover:text-[#B5522F] transition-colors">
               Términos
-            </a>
-            <a href="/privacidad" className="hover:text-[#B5522F] transition-colors">
+            </Link>
+            <Link href="/privacidad" className="hover:text-[#B5522F] transition-colors">
               Privacidad
-            </a>
-            <a href="/confianza-y-seguridad" className="hover:text-[#B5522F] transition-colors">
+            </Link>
+            <Link href="/confianza-y-seguridad" className="hover:text-[#B5522F] transition-colors">
               Confianza y seguridad infantil
-            </a>
+            </Link>
           </div>
         </div>
       </div>

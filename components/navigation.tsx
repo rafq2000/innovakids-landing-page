@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
+import Link from "next/link"
 import { Menu, X, ChevronDown } from "lucide-react"
 
 interface NavigationProps {
@@ -83,24 +84,24 @@ export function Navigation({ countryCode }: NavigationProps) {
     >
       <div className="max-w-[1280px] mx-auto px-6 md:px-10">
         <div className="flex items-center justify-between h-14 md:h-16">
-          <a href="/" className="flex items-baseline gap-1.5 group" aria-label="InnovaKids - Inicio">
+          <Link href="/" className="flex items-baseline gap-1.5 group" aria-label="InnovaKids - Inicio">
             <span className="font-display text-[22px] md:text-[26px] leading-none tracking-[-0.02em] text-[#1A1714]">
               Innova<em className="not-italic font-semibold text-[#B5522F]">kids</em>
             </span>
             <span className="font-mono-accent text-[8px] md:text-[9px] uppercase tracking-[0.18em] text-[#1A1714]/55 hidden sm:inline pb-0.5">
               latam
             </span>
-          </a>
+          </Link>
 
           <div className="hidden md:flex items-center gap-8 lg:gap-10">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.href}
                 href={link.href}
                 className="text-sm text-[#2F2F2C] hover:text-[#B5522F] transition-colors"
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
 
             {/* Organizaciones dropdown */}
@@ -138,7 +139,7 @@ export function Navigation({ countryCode }: NavigationProps) {
                   <ul>
                     {orgLinks.map((org) => (
                       <li key={org.href}>
-                        <a
+                        <Link
                           href={org.href}
                           onClick={() => setOrgOpen(false)}
                           className="group block px-5 py-4 border-b border-[#2F2F2C]/8 last:border-b-0 hover:bg-[#F5F1E8] transition-colors"
@@ -151,17 +152,17 @@ export function Navigation({ countryCode }: NavigationProps) {
                           <p className="text-xs text-[#5A5751] mt-1 leading-snug">
                             {org.desc}
                           </p>
-                        </a>
+                        </Link>
                       </li>
                     ))}
                   </ul>
-                  <a
+                  <Link
                     href="/#organizaciones"
                     onClick={() => setOrgOpen(false)}
                     className="block px-5 py-3 text-[11px] uppercase tracking-[0.22em] font-semibold text-[#B5522F] hover:bg-[#F5F1E8] border-t border-[#2F2F2C]/10 transition-colors"
                   >
                     Ver comparativa →
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -189,14 +190,14 @@ export function Navigation({ countryCode }: NavigationProps) {
           <div className="md:hidden py-4 border-t border-[#2F2F2C]/10 animate-fadeIn">
             <div className="flex flex-col gap-1">
               {navLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
                   href={link.href}
                   className="text-[#2F2F2C] hover:text-[#B5522F] hover:bg-[#2F2F2C]/5 py-3 px-3 rounded-sm min-h-[44px] flex items-center transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
 
               <div className="mt-3 pt-3 border-t border-[#2F2F2C]/10">
@@ -204,7 +205,7 @@ export function Navigation({ countryCode }: NavigationProps) {
                   Organizaciones
                 </p>
                 {orgLinks.map((org) => (
-                  <a
+                  <Link
                     key={org.href}
                     href={org.href}
                     onClick={() => setIsOpen(false)}
@@ -218,7 +219,7 @@ export function Navigation({ countryCode }: NavigationProps) {
                     <p className="text-xs text-[#5A5751] mt-0.5 leading-snug">
                       {org.desc}
                     </p>
-                  </a>
+                  </Link>
                 ))}
               </div>
 

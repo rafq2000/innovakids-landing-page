@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState, useRef } from "react"
+import { useEffect } from "react"
 import { useSearchParams, useRouter } from "next/navigation"
 import { trackBookingConfirmed, trackPurchase } from "@/lib/gtag"
 
@@ -12,35 +12,35 @@ import { trackBookingConfirmed, trackPurchase } from "@/lib/gtag"
 export function GraciasTracker() {
     const searchParams = useSearchParams()
     const router = useRouter()
-    const [verified, setVerified] = useState(false)
+
+    const method = searchParams.get("method")
+    const eventId = searchParams.get("event_type_uuid") ?? searchParams.get("invitee_uuid")
+    // Valid access: has payment method OR Calendly event params
+    const verified = Boolean(method || eventId)
 
     useEffect(() => {
-        const method = searchParams.get("method")
-        const orderId = searchParams.get("orderId")
-        const eventId = searchParams.get("event_type_uuid") ?? searchParams.get("invitee_uuid")
-
-        // Valid access: has payment method OR Calendly event params
-        if (method || eventId) {
-            setVerified(true)
-
-            // Fire purchase tracking for payment methods (PayPal or MercadoPago)
-            if (method) {
-                const amount = parseFloat(searchParams.get("amount") ?? "0")
-                if (amount > 0) {
-                    trackPurchase({ value: amount, currency: "USD", transactionId: orderId ?? "unknown" })
-                    // Fire Meta Pixel Purchase if available
-                    if (typeof window !== "undefined" && typeof (window as { fbq?: (...args: unknown[]) => void }).fbq === "function") {
-                        (window as { fbq?: (...args: unknown[]) => void }).fbq!("track", "Purchase", { value: amount, currency: "USD" })
-                    }
-                }
-            }
-
-            trackBookingConfirmed({ eventId: eventId ?? orderId ?? undefined })
-        } else {
+        if (!verified) {
             // No payment params — redirect to home
             router.replace("/")
+            return
         }
-    }, [searchParams, router])
+
+        const orderId = searchParams.get("orderId")
+
+        // Fire purchase tracking for payment methods (PayPal or MercadoPago)
+        if (method) {
+            const amount = parseFloat(searchParams.get("amount") ?? "0")
+            if (amount > 0) {
+                trackPurchase({ value: amount, currency: "USD", transactionId: orderId ?? "unknown" })
+                // Fire Meta Pixel Purchase if available
+                if (typeof window !== "undefined" && typeof (window as { fbq?: (...args: unknown[]) => void }).fbq === "function") {
+                    (window as { fbq?: (...args: unknown[]) => void }).fbq!("track", "Purchase", { value: amount, currency: "USD" })
+                }
+            }
+        }
+
+        trackBookingConfirmed({ eventId: eventId ?? orderId ?? undefined })
+    }, [verified, method, eventId, searchParams, router])
 
     if (!verified) {
         return (

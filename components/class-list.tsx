@@ -16,10 +16,6 @@ export function ClassList({ courseId }: ClassListProps) {
   const [loading, setLoading] = useState(true)
   const supabase = createClient()
 
-  useEffect(() => {
-    loadClasses()
-  }, [courseId])
-
   const loadClasses = async () => {
     setLoading(true)
     const { data, error } = await supabase
@@ -40,6 +36,12 @@ export function ClassList({ courseId }: ClassListProps) {
     }
     setLoading(false)
   }
+
+  useEffect(() => {
+    // fetch-on-mount: el estado de carga debe activarse al cambiar de curso
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    loadClasses()
+  }, [courseId])
 
   if (loading) {
     return (

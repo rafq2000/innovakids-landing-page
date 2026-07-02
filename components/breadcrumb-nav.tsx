@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { ChevronRight, Home } from "lucide-react"
 
 interface BreadcrumbItem {
@@ -17,13 +18,13 @@ export function BreadcrumbNav({ items }: BreadcrumbNavProps) {
       <div className="container mx-auto px-4">
         <ol className="flex items-center gap-1.5 py-3 text-sm text-slate-500 overflow-x-auto whitespace-nowrap">
           <li className="flex items-center gap-1.5">
-            <a
+            <Link
               href="/"
               className="flex items-center gap-1 hover:text-[#B5522F] transition-colors font-medium"
             >
               <Home className="w-3.5 h-3.5" />
               <span>InnovaKids</span>
-            </a>
+            </Link>
           </li>
           {items.map((item, index) => (
             <li key={index} className="flex items-center gap-1.5">
@@ -33,12 +34,12 @@ export function BreadcrumbNav({ items }: BreadcrumbNavProps) {
                   {item.label}
                 </span>
               ) : (
-                <a
+                <Link
                   href={item.href}
                   className="hover:text-[#B5522F] transition-colors truncate max-w-[200px]"
                 >
                   {item.label}
-                </a>
+                </Link>
               )}
             </li>
           ))}

@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState, type ReactNode } from "react"
+import Link from "next/link"
 
 /* ============================================================
    Hook — IntersectionObserver reveal (one-shot)
@@ -285,7 +286,7 @@ export function InstitutionalSolutionsSection() {
               Capítulo IV · Para organizaciones
             </p>
           </div>
-          <a href="/" className="flex items-center gap-3" aria-label="InnovaKids LATAM">
+          <Link href="/" className="flex items-center gap-3" aria-label="InnovaKids LATAM">
             <span
               aria-hidden
               className="relative inline-flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full border-2 border-[#1A1714]"
@@ -305,7 +306,7 @@ export function InstitutionalSolutionsSection() {
                 LATAM · división institucional
               </span>
             </span>
-          </a>
+          </Link>
         </div>
 
         {/* Headline */}

@@ -1,3 +1,4 @@
+import Link from "next/link"
 import type { CountryConfig } from "@/lib/countries-config"
 import { COHORT, PRICING } from "@/lib/site-config"
 
@@ -81,13 +82,13 @@ export function PricingSection({ country }: PricingSectionProps) {
               Pago único · sin mensualidades · sin letra chica.
             </p>
 
-            <a
+            <Link
               href="/pagar?option=explorer"
               className="group inline-flex items-center justify-center gap-3 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm shadow-[0_10px_30px_-12px_rgba(201,99,66,0.55)] hover:shadow-[0_14px_40px_-12px_rgba(201,99,66,0.7)] transition-all duration-300"
             >
               <span>Inscribir a mi hijo</span>
               <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>→</span>
-            </a>
+            </Link>
 
             <div
               className="mt-5 flex items-center gap-4 text-[11px] uppercase tracking-[0.16em] text-[#5A5751]"
