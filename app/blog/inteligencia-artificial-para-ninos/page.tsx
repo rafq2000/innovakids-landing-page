@@ -5,9 +5,9 @@ import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-    title: "Inteligencia Artificial para Niños · Guía 2026 | InnovaKids",
+    title: "Inteligencia Artificial para Niños: Guía Completa 2026",
     description:
-        "Guía completa 2026 de IA para niños 8-17 años: qué es, herramientas, actividades en casa y cómo elegir curso. Probado por 527 familias en 9 países. Lee ya.",
+        "Qué es la IA explicada para niños de 8 a 17, herramientas seguras, actividades en casa y cómo elegir curso. Guía 2026 probada por 527 familias en 9 países.",
     keywords: [
         "inteligencia artificial para niños",
         "ia para niños guia",
@@ -84,7 +84,7 @@ export default function BlogPostPage() {
                         </h1>
 
                         <div className="mt-10 flex flex-wrap items-center gap-6 text-[13px] text-[#1A1714]/60">
-                            <span>Marzo 2026</span>
+                            <span>Actualizado: julio 2026</span>
                             <span aria-hidden>·</span>
                             <span>Equipo InnovaKids</span>
                             <span aria-hidden>·</span>
@@ -270,15 +270,55 @@ export default function BlogPostPage() {
                         </ul>
 
                         <h2 id="faq">7. Preguntas frecuentes</h2>
-                        <h3>¿Es segura la IA para niños?</h3>
+                        <h3>¿Es segura la inteligencia artificial para niños?</h3>
                         <p>
-                            Sí, bajo supervisión. Plataformas como ChatGPT tienen filtros, pero la supervisión parental y la educación sobre
-                            seguridad digital son clave. Eso es lo primero que enseñamos.
+                            Sí, bajo supervisión. Plataformas como ChatGPT y Gemini tienen filtros de contenido, pero la supervisión parental
+                            y la educación sobre seguridad digital son clave. Por eso la primera lección de cualquier buen programa de IA
+                            para niños es uso responsable: qué datos no se comparten, cómo verificar lo que responde la máquina y cuándo
+                            pedir ayuda a un adulto.
                         </p>
-                        <h3>¿Mi hijo necesita saber programar?</h3>
+                        <h3>¿Mi hijo necesita saber programar antes de aprender IA?</h3>
                         <p>
-                            No. La IA permite crear software usando lenguaje natural (español). Es el mejor momento para entrar a la
-                            tecnología sin barreras técnicas.
+                            No. La IA permite crear software, arte y música usando lenguaje natural (español). Es el mejor momento de la
+                            historia para entrar a la tecnología sin barreras técnicas: un niño de 8 años puede crear su primer videojuego
+                            en semanas, no años.
+                        </p>
+                        <h3>¿A qué edad puede un niño empezar a aprender IA?</h3>
+                        <p>
+                            Desde los 8 años con acompañamiento. Lo importante es adaptar el formato: entre 8 y 11 años funcionan mejor los
+                            proyectos creativos cortos (arte, música, historias); de 12 a 14 pueden sostener proyectos complejos como
+                            videojuegos; y de 15 a 17 ya crean apps y portafolios reales. Por eso los buenos cursos separan los grupos por edad.
+                        </p>
+                        <h3>¿Qué herramientas de IA puede usar un niño gratis?</h3>
+                        <p>
+                            Con la cuenta y supervisión de un adulto: ChatGPT y Gemini para conversar e investigar, Suno para crear música,
+                            CapCut para editar video, y NotebookLM para estudiar. Todas tienen versión gratuita suficiente para empezar
+                            con las actividades de esta guía.
+                        </p>
+                        <h3>¿La IA hará que mi hijo haga trampa con las tareas?</h3>
+                        <p>
+                            Ese riesgo existe si nadie le enseña la diferencia entre copiar y crear. Un niño que aprende IA como creador
+                            la usa para entender mejor, no para evitar pensar: le pide a la IA que lo examine, que le explique de otra
+                            forma, que critique su borrador. Esa diferencia es exactamente lo que se entrena en un buen curso.
+                        </p>
+                        <h3>¿Cuánto tiempo de pantalla es recomendable para aprender IA?</h3>
+                        <p>
+                            Sesiones guiadas de 60 minutos, 2 veces por semana, son suficientes para avanzar rápido sin saturar. La clave
+                            no es cuánta pantalla, sino qué tipo: crear un videojuego propio es pantalla activa (como aprender un
+                            instrumento), muy distinta al consumo pasivo de videos.
+                        </p>
+                        <h3>¿Qué diferencia hay entre aprender IA y aprender a programar con Scratch?</h3>
+                        <p>
+                            Scratch enseña lógica de programación con bloques; la IA enseña a crear productos reales conversando con la
+                            máquina y a desarrollar criterio para evaluar resultados. No compiten: hoy la puerta de entrada más
+                            motivadora es la IA. Tenemos una comparación completa en{" "}
+                            <Link href="/blog/scratch-vs-ia-ninos">Scratch vs IA para niños</Link>.
+                        </p>
+                        <h3>¿Cuánto cuesta un curso de inteligencia artificial para niños?</h3>
+                        <p>
+                            Los cursos online en vivo con grupos pequeños van desde los 200 a los 400 USD por programa completo. El programa
+                            Vibe Explorer de InnovaKids cuesta $267 USD por 10 clases en vivo (5 semanas) en grupos de máximo 5 alumnos,
+                            con garantía de 10 días, y puedes <Link href="/clase-gratis">probar una clase gratis</Link> antes de decidir.
                         </p>
 
                         {/* Editorial CTA */}
@@ -299,7 +339,7 @@ export default function BlogPostPage() {
                                     </h3>
                                     <p className="text-[15px] text-[#1A1714]/70 leading-relaxed max-w-[52ch]">
                                         Inscríbelo en Vibe Explorer. Diez clases en vivo, grupos de cinco, profesores expertos y garantía
-                                        de satisfacción en las primeras dos sesiónes.
+                                        de satisfacción en las primeras dos sesiones.
                                     </p>
                                 </div>
                                 <div className="md:col-span-5 flex flex-col gap-3 md:justify-self-end w-full md:w-auto">
@@ -371,15 +411,94 @@ export default function BlogPostPage() {
                         "@context": "https://schema.org",
                         "@type": "Article",
                         "headline": "Inteligencia Artificial para Niños: Guía Completa 2026",
-                        "image": "https://www.innovakidslatam.com/hero-child-bg.png",
-                        "author": { "@type": "Organization", "name": "InnovaKids" },
+                        "description":
+                            "Qué es la IA explicada para niños de 8 a 17, herramientas seguras, actividades en casa y cómo elegir curso.",
+                        "image": "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
+                        "mainEntityOfPage": "https://www.innovakidslatam.com/blog/inteligencia-artificial-para-ninos",
+                        "inLanguage": "es",
+                        "author": { "@type": "Organization", "name": "InnovaKids", "url": "https://www.innovakidslatam.com" },
                         "publisher": {
                             "@type": "Organization",
                             "name": "InnovaKids",
                             "logo": { "@type": "ImageObject", "url": "https://www.innovakidslatam.com/logo.png" },
                         },
                         "datePublished": "2026-02-01",
-                        "dateModified": "2026-02-12",
+                        "dateModified": "2026-07-02",
+                    }),
+                }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": [
+                            {
+                                "@type": "Question",
+                                "name": "¿Es segura la inteligencia artificial para niños?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Sí, bajo supervisión. Plataformas como ChatGPT y Gemini tienen filtros de contenido, pero la supervisión parental y la educación sobre seguridad digital son clave. La primera lección de cualquier buen programa de IA para niños es uso responsable: qué datos no se comparten, cómo verificar lo que responde la máquina y cuándo pedir ayuda a un adulto.",
+                                },
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "¿Mi hijo necesita saber programar antes de aprender IA?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "No. La IA permite crear software, arte y música usando lenguaje natural (español). Un niño de 8 años puede crear su primer videojuego en semanas, sin barreras técnicas.",
+                                },
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "¿A qué edad puede un niño empezar a aprender IA?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Desde los 8 años con acompañamiento. Entre 8 y 11 años funcionan mejor los proyectos creativos cortos; de 12 a 14 pueden sostener proyectos complejos como videojuegos; y de 15 a 17 ya crean apps y portafolios reales. Los buenos cursos separan los grupos por edad.",
+                                },
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "¿Qué herramientas de IA puede usar un niño gratis?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Con la cuenta y supervisión de un adulto: ChatGPT y Gemini para conversar e investigar, Suno para crear música, CapCut para editar video y NotebookLM para estudiar. Todas tienen versión gratuita suficiente para empezar.",
+                                },
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "¿La IA hará que mi hijo haga trampa con las tareas?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Ese riesgo existe si nadie le enseña la diferencia entre copiar y crear. Un niño que aprende IA como creador la usa para entender mejor, no para evitar pensar: le pide a la IA que lo examine, que le explique de otra forma o que critique su borrador.",
+                                },
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "¿Cuánto tiempo de pantalla es recomendable para aprender IA?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Sesiones guiadas de 60 minutos, 2 veces por semana, son suficientes. La clave no es cuánta pantalla sino qué tipo: crear un videojuego propio es pantalla activa, muy distinta al consumo pasivo de videos.",
+                                },
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "¿Qué diferencia hay entre aprender IA y aprender a programar con Scratch?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Scratch enseña lógica de programación con bloques; la IA enseña a crear productos reales conversando con la máquina y a desarrollar criterio para evaluar resultados. No compiten: hoy la puerta de entrada más motivadora es la IA.",
+                                },
+                            },
+                            {
+                                "@type": "Question",
+                                "name": "¿Cuánto cuesta un curso de inteligencia artificial para niños?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Los cursos online en vivo con grupos pequeños van desde los 200 a los 400 USD por programa completo. El programa Vibe Explorer de InnovaKids cuesta $267 USD por 10 clases en vivo (5 semanas) en grupos de máximo 5 alumnos, con garantía de 10 días y una clase de prueba gratis.",
+                                },
+                            },
+                        ],
                     }),
                 }}
             />

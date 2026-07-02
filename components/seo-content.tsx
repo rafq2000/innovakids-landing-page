@@ -318,6 +318,7 @@ export function SEOContent() {
             </p>
             <ul className="grid md:grid-cols-2 gap-3 my-6 list-none pl-0">
               {[
+                { href: "/blog/inteligencia-artificial-para-ninos", label: "Inteligencia artificial para niños: guía completa 2026 para padres" },
                 { href: "/blog/actividades-inteligencia-artificial-ninos-casa", label: "12 actividades de inteligencia artificial para niños en casa" },
                 { href: "/blog/crear-videojuegos-con-ia-ninos-guia-completa", label: "Cómo tu hijo puede crear videojuegos con IA (sin programar)" },
                 { href: "/blog/curso-ia-ninos-10-11-12-anos", label: "Curso de IA para niños de 10, 11 y 12 años: qué pueden aprender" },

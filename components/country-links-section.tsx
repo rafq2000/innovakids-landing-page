@@ -59,6 +59,7 @@ const BLOG_SLUGS: Record<string, string> = {
 
 // Global guide posts (Spanish, shown on every country page for internal linking)
 const GUIDE_POSTS: { slug: string; label: string }[] = [
+    { slug: "inteligencia-artificial-para-ninos", label: "Inteligencia Artificial para Niños: Guía Completa" },
     { slug: "actividades-inteligencia-artificial-ninos-casa", label: "Actividades de IA para Niños en Casa" },
     { slug: "crear-videojuegos-con-ia-ninos-guia-completa", label: "Crear Videojuegos con IA" },
     { slug: "curso-ia-ninos-10-11-12-anos", label: "IA para Niños de 10-12 años" },
