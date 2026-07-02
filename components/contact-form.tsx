@@ -136,7 +136,7 @@ export function ContactForm() {
                   setShowCustomCode(false)
                   setCustomCode("")
                 }}
-                className="text-[#C96342] hover:text-[#9A4428] text-sm"
+                className="text-[#B5522F] hover:text-[#9A4428] text-sm"
               >
                 ✕
               </button>

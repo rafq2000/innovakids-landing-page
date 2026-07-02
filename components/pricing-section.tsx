@@ -37,7 +37,7 @@ export function PricingSection({ country }: PricingSectionProps) {
 
         <div className="flex items-center gap-5 mb-20">
           <div className="h-px w-12 bg-[#C96342]" />
-          <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+          <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
             Inversión · Cohorte 2026
           </p>
         </div>
@@ -45,7 +45,7 @@ export function PricingSection({ country }: PricingSectionProps) {
         <h2
           className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-[-0.02em] font-normal mb-8 max-w-[14ch]"
         >
-          Un fundamento, una <em className="italic text-[#C96342]">cifra</em>.
+          Un fundamento, una <em className="italic text-[#B5522F]">cifra</em>.
         </h2>
 
         <p className="text-lg md:text-xl text-[#5A5751] max-w-[52ch] leading-relaxed mb-24">
@@ -56,7 +56,7 @@ export function PricingSection({ country }: PricingSectionProps) {
         <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-start">
           {/* Left: the offer */}
           <div className="md:col-span-5">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-5">
               Nivel 01 · Vibe Explorer
             </p>
             <h3
@@ -106,13 +106,13 @@ export function PricingSection({ country }: PricingSectionProps) {
 
           {/* Right: what's included */}
           <div className="md:col-span-7 md:pl-8 md:border-l border-[#2F2F2C]/12">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-8">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-8">
               Qué incluye
             </p>
             <ul className="divide-y divide-[#2F2F2C]/12">
               {features.map((f, i) => (
                 <li key={i} className="py-5 flex items-baseline gap-6">
-                  <span className="text-xs text-[#C96342] font-semibold tabular-nums shrink-0 w-6">
+                  <span className="text-xs text-[#B5522F] font-semibold tabular-nums shrink-0 w-6">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <span
@@ -130,7 +130,7 @@ export function PricingSection({ country }: PricingSectionProps) {
         <div className="mt-24 pt-12 border-t border-[#2F2F2C]/12">
           <div className="grid md:grid-cols-12 gap-10">
             <div className="md:col-span-4">
-              <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-2">
+              <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-2">
                 Bonos incluidos
               </p>
               <p
@@ -148,7 +148,7 @@ export function PricingSection({ country }: PricingSectionProps) {
               ].map((b, i) => (
                 <div key={i} className="border-t border-[#2F2F2C]/12 pt-4">
                   <div
-                    className="flex items-center justify-between text-[10px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-2"
+                    className="flex items-center justify-between text-[10px] uppercase tracking-[0.18em] text-[#B5522F] font-semibold mb-2"
                             >
                     <span>{b.tag}</span>
                     <span className="text-[#5A5751] line-through opacity-60">valor {b.value}</span>
@@ -167,7 +167,7 @@ export function PricingSection({ country }: PricingSectionProps) {
         {/* Guarantee */}
         <div className="mt-20 pt-12 border-t border-[#2F2F2C]/12 grid md:grid-cols-12 gap-10">
           <div className="md:col-span-4">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
               Garantía
             </p>
           </div>
@@ -189,7 +189,7 @@ export function PricingSection({ country }: PricingSectionProps) {
             href="https://wa.me/56964754219?text=Hola%2C%20necesito%20ayuda%20para%20elegir%20el%20plan%20perfecto%20para%20mi%20hijo"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-base text-[#2F2F2C] hover:text-[#C96342] underline underline-offset-4 decoration-[#2F2F2C]/20 hover:decoration-[#C96342] transition-colors"
+            className="text-base text-[#2F2F2C] hover:text-[#B5522F] underline underline-offset-4 decoration-[#2F2F2C]/20 hover:decoration-[#C96342] transition-colors"
           >
             ¿Dudas? Escríbenos por WhatsApp →
           </a>

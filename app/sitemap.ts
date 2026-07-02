@@ -108,6 +108,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Dynamic Country Pages
   const countries = getAllCountryCodes()
 
+  // Specialized pages per country (only for countries that have them)
+  const countrySpecialPages: Record<string, string[]> = {
+    mx: ["curso-ia-adolescentes", "curso-ia-ninos-8-12", "cursos-vacacionales-ia", "curso-videojuegos-ia-ninos", "vibe-coding-ninos"],
+    co: ["curso-ia-adolescentes", "curso-ia-ninos-8-12", "cursos-vacacionales-ia", "curso-videojuegos-ia-ninos", "vibe-coding-ninos"],
+    pe: ["curso-ia-adolescentes", "curso-ia-ninos-8-12", "cursos-vacacionales-ia", "curso-videojuegos-ia-ninos", "vibe-coding-ninos"],
+    ar: ["curso-ia-adolescentes", "curso-ia-ninos-8-12", "curso-videojuegos-ia-ninos", "vibe-coding-ninos"],
+    cl: ["curso-ia-adolescentes", "curso-ia-ninos-8-12", "cursos-vacacionales-ia", "curso-videojuegos-ia-ninos", "vibe-coding-ninos"],
+    ec: ["curso-ia-adolescentes", "curso-ia-ninos-8-12", "cursos-vacacionales-ia", "curso-videojuegos-ia-ninos", "vibe-coding-ninos"],
+    es: ["curso-ia-adolescentes", "curso-ia-ninos-8-12"],
+    us: ["curso-ia-adolescentes"],
+    pa: ["curso-ia-adolescentes"],
+  }
+
+  // City pages per country
+  const countryCityPages: Record<string, string[]> = {
+    mx: ["cdmx", "monterrey", "guadalajara"],
+    co: ["bogota", "medellin", "cali"],
+    pe: ["lima", "arequipa"],
+    ar: ["buenos-aires", "cordoba"],
+    cl: ["santiago"],
+    ec: ["quito", "guayaquil"],
+    es: ["madrid", "barcelona"],
+  }
+
   countries.forEach((code) => {
     // 1. Country Hub
     sitemapEntries.push({
@@ -152,7 +176,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       console.error(`Error scanning blogs for ${code}:`, error)
     }
 
-    // 4. City-level SEO routes for course specialization (Long-tail)
+    // 4. Specialized pages (adolescentes, niños 8-12, vacacionales, videojuegos, vibe-coding)
+    const specialPages = countrySpecialPages[code] || []
+    specialPages.forEach((slug) => {
+      sitemapEntries.push({
+        url: `${baseUrl}/${code}/${slug}`,
+        lastModified: dates.countries,
+        changeFrequency: "weekly",
+        priority: 0.7,
+      })
+    })
+
+    // 5. City pages (direct city landing pages)
+    const cityPages = countryCityPages[code] || []
+    cityPages.forEach((citySlug) => {
+      sitemapEntries.push({
+        url: `${baseUrl}/${code}/${citySlug}`,
+        lastModified: dates.countries,
+        changeFrequency: "weekly",
+        priority: 0.6,
+      })
+    })
+
+    // 6. Legacy city-level SEO routes (long-tail, kept for backwards compat)
     const config = getCountryConfig(code)
     if (config && config.otherCities && config.otherCities.length > 0) {
       config.otherCities.forEach((city: string) => {

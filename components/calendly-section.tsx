@@ -99,7 +99,7 @@ export function CalendlySection() {
 
         <div className="flex items-center gap-5 mb-20">
           <div className="h-px w-12 bg-[#C96342]" />
-          <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+          <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
             Agenda una evaluación
           </p>
         </div>
@@ -111,7 +111,7 @@ export function CalendlySection() {
             <h2
               className="font-display text-5xl sm:text-6xl md:text-7xl leading-[0.98] tracking-[-0.02em] font-normal mb-8"
             >
-              Treinta minutos, <em className="italic text-[#C96342]">sin compromiso</em>.
+              Treinta minutos, <em className="italic text-[#B5522F]">sin compromiso</em>.
             </h2>
             <p className="text-lg text-[#5A5751] leading-relaxed max-w-[40ch] mb-10">
               Conversamos contigo, evaluamos el nivel de tu hijo y resolvemos
@@ -126,7 +126,7 @@ export function CalendlySection() {
                 ["Costo", "Gratis, sin compromiso"],
               ].map(([k, v]) => (
                 <div key={k} className="flex items-baseline gap-6 border-b border-[#2F2F2C]/12 pb-4">
-                  <dt className="text-[11px] uppercase tracking-[0.18em] text-[#C96342] font-semibold w-24 shrink-0">
+                  <dt className="text-[11px] uppercase tracking-[0.18em] text-[#B5522F] font-semibold w-24 shrink-0">
                     {k}
                   </dt>
                   <dd
@@ -150,7 +150,7 @@ export function CalendlySection() {
             <div>
               <label
                 htmlFor="name"
-                className="block text-[11px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-3"
+                className="block text-[11px] uppercase tracking-[0.18em] text-[#B5522F] font-semibold mb-3"
               >
                 Tu nombre
               </label>
@@ -168,7 +168,7 @@ export function CalendlySection() {
             <div>
               <label
                 htmlFor="whatsapp"
-                className="block text-[11px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-3"
+                className="block text-[11px] uppercase tracking-[0.18em] text-[#B5522F] font-semibold mb-3"
               >
                 WhatsApp (con código de país)
               </label>
@@ -186,7 +186,7 @@ export function CalendlySection() {
             <div>
               <label
                 htmlFor="country"
-                className="block text-[11px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-3"
+                className="block text-[11px] uppercase tracking-[0.18em] text-[#B5522F] font-semibold mb-3"
               >
                 País
               </label>
@@ -208,7 +208,7 @@ export function CalendlySection() {
             </div>
 
             <div>
-              <span className="block text-[11px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-3">
+              <span className="block text-[11px] uppercase tracking-[0.18em] text-[#B5522F] font-semibold mb-3">
                 Edad de tu hijo/a
               </span>
               <div className="flex flex-wrap gap-3" role="radiogroup" aria-label="Edad de tu hijo/a">
@@ -224,7 +224,7 @@ export function CalendlySection() {
                       className={`font-display px-6 py-3 rounded-sm border transition-colors ${
                         active
                           ? "border-[#C96342] bg-[#C96342] text-[#FAF7EF]"
-                          : "border-[#2F2F2C]/25 text-[#2F2F2C] hover:border-[#C96342] hover:text-[#C96342]"
+                          : "border-[#2F2F2C]/25 text-[#2F2F2C] hover:border-[#C96342] hover:text-[#B5522F]"
                       }`}
                     >
                       {age.label}
@@ -260,7 +260,7 @@ export function CalendlySection() {
                   href="https://calendly.com/innovakidslatam/reunion-informativa-innovakids"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#C96342] underline underline-offset-2 hover:text-[#A8502F]"
+                  className="text-[#B5522F] underline underline-offset-2 hover:text-[#A8502F]"
                 >
                   Abre el calendario directo →
                 </a>

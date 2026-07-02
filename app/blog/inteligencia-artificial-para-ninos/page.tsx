@@ -61,16 +61,16 @@ export default function BlogPostPage() {
                 <header className="pt-32 pb-16 px-6 md:px-10 border-b border-[#1A1714]/12">
                     <div className="max-w-[1100px] mx-auto">
                         <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
-                            <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                            <Link href="/" className="hover:text-[#B5522F] transition-colors">InnovaKids</Link>
                             <span className="mx-3" aria-hidden>/</span>
-                            <Link href="/blog" className="hover:text-[#C96342] transition-colors">Blog</Link>
+                            <Link href="/blog" className="hover:text-[#B5522F] transition-colors">Blog</Link>
                             <span className="mx-3" aria-hidden>/</span>
                             <span className="text-[#1A1714]">Guía de IA para niños</span>
                         </nav>
 
                         <div className="flex items-center gap-3 mb-6">
                             <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                 Guía para padres · 15 min de lectura
                             </span>
                         </div>
@@ -80,7 +80,7 @@ export default function BlogPostPage() {
                             style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                         >
                             Inteligencia Artificial para Niños:
-                            <em className="italic text-[#C96342]"> guía completa</em> para padres 2026.
+                            <em className="italic text-[#B5522F]"> guía completa</em> para padres 2026.
                         </h1>
 
                         <div className="mt-10 flex flex-wrap items-center gap-6 text-[13px] text-[#1A1714]/60">
@@ -97,7 +97,7 @@ export default function BlogPostPage() {
                     {/* Sticky TOC */}
                     <aside className="hidden lg:block lg:col-span-3">
                         <div className="sticky top-32">
-                            <p className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold mb-5">
+                            <p className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold mb-5">
                                 Tabla de contenidos
                             </p>
                             <nav className="space-y-3 text-[14px] text-[#1A1714]/70 border-l border-[#1A1714]/12 pl-4">
@@ -105,9 +105,9 @@ export default function BlogPostPage() {
                                     <Link
                                         key={item.id}
                                         href={`#${item.id}`}
-                                        className="block hover:text-[#C96342] transition-colors"
+                                        className="block hover:text-[#B5522F] transition-colors"
                                     >
-                                        <span className="text-[#C96342] font-semibold mr-2">0{i + 1}</span>
+                                        <span className="text-[#B5522F] font-semibold mr-2">0{i + 1}</span>
                                         {item.label}
                                     </Link>
                                 ))}
@@ -142,9 +142,9 @@ export default function BlogPostPage() {
                             prose-h3:text-[#A8502F] prose-h3:text-xl prose-h3:mt-10
                             prose-p:font-sans prose-p:text-[#1A1714]/85 prose-p:text-lg prose-p:leading-[1.75]
                             prose-strong:text-[#1A1714]
-                            prose-a:text-[#C96342] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
+                            prose-a:text-[#B5522F] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
                             prose-li:font-sans prose-li:text-[#1A1714]/85
-                            prose-li:marker:text-[#C96342]
+                            prose-li:marker:text-[#B5522F]
                             prose-ol:font-sans prose-ul:font-sans"
                     >
                         <p className="lead text-2xl leading-[1.45] text-[#1A1714]/85 font-sans">
@@ -199,7 +199,7 @@ export default function BlogPostPage() {
 
                         <div className="not-prose my-10 grid md:grid-cols-2 border border-[#1A1714]/12 divide-y md:divide-y-0 md:divide-x divide-[#1A1714]/12">
                             <div className="p-8">
-                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
                                     8–10 años
                                 </p>
                                 <h4
@@ -213,7 +213,7 @@ export default function BlogPostPage() {
                                 </p>
                             </div>
                             <div className="p-8">
-                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
                                     11–14 años
                                 </p>
                                 <h4
@@ -287,7 +287,7 @@ export default function BlogPostPage() {
                                 <div className="md:col-span-7">
                                     <div className="flex items-center gap-3 mb-5">
                                         <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                        <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                        <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                             Próximo paso
                                         </span>
                                     </div>
@@ -322,7 +322,7 @@ export default function BlogPostPage() {
 
                         {/* Related */}
                         <section className="not-prose mt-16">
-                            <p className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold mb-6">
+                            <p className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold mb-6">
                                 Sigue leyendo
                             </p>
                             <div className="grid md:grid-cols-2 gap-0 border-t border-[#1A1714]/12">
@@ -332,7 +332,7 @@ export default function BlogPostPage() {
                                 >
                                     <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Metodología</p>
                                     <h4
-                                        className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#C96342] transition-colors"
+                                        className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#B5522F] transition-colors"
                                         style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                     >
                                         Metodología ERICA: pensamiento computacional e IA
@@ -347,7 +347,7 @@ export default function BlogPostPage() {
                                 >
                                     <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Archivo</p>
                                     <h4
-                                        className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#C96342] transition-colors"
+                                        className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#B5522F] transition-colors"
                                         style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                     >
                                         Todas las guías de InnovaKids

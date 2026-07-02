@@ -149,12 +149,12 @@ export function UpcomingCoursesPremium() {
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#C96342]/10 border border-[#C96342]/20 mb-4">
-            <Sparkles className="w-4 h-4 text-[#C96342]" />
-            <span className="text-[#C96342] text-sm font-medium">Proximamente</span>
+            <Sparkles className="w-4 h-4 text-[#B5522F]" />
+            <span className="text-[#B5522F] text-sm font-medium">Proximamente</span>
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-[#1A1714] text-balance">
             Proximos Cursos de{" "}
-            <span className="text-[#C96342]">InnovaKids</span>
+            <span className="text-[#B5522F]">InnovaKids</span>
           </h2>
           <p className="text-xl text-[#5A5751] max-w-3xl mx-auto text-pretty">
             4 nuevos programas diseñados para llevar las habilidades de tus hijos al siguiente nivel
@@ -196,11 +196,11 @@ export function UpcomingCoursesPremium() {
                   {/* Stats */}
                   <div className="flex flex-wrap gap-4 py-4 border-y border-[#E8E0D0]">
                     <div className="flex items-center gap-2">
-                      <Clock className="w-4 h-4 text-[#C96342]" />
+                      <Clock className="w-4 h-4 text-[#B5522F]" />
                       <span className="text-sm text-[#5A5751]">{course.duration}</span>
                     </div>
                     <div className="flex items-center gap-2">
-                      <Users className="w-4 h-4 text-[#C96342]" />
+                      <Users className="w-4 h-4 text-[#B5522F]" />
                       <span className="text-sm text-[#5A5751]">{course.classes}</span>
                     </div>
                   </div>
@@ -209,7 +209,7 @@ export function UpcomingCoursesPremium() {
                   <ul className="space-y-2">
                     {course.highlights.map((highlight, i) => (
                       <li key={i} className="flex items-start gap-2 text-sm text-[#5A5751]">
-                        <CheckCircle2 className="w-5 h-5 text-[#C96342] flex-shrink-0 mt-0.5" />
+                        <CheckCircle2 className="w-5 h-5 text-[#B5522F] flex-shrink-0 mt-0.5" />
                         <span>{highlight}</span>
                       </li>
                     ))}

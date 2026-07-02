@@ -22,12 +22,12 @@ export function ResultsPageContent({ country }: ResultsPageContentProps) {
                 {/* Hero Section */}
                 <section className="pt-32 pb-16 bg-[#FAF7EF] relative overflow-hidden">
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10 relative z-10 text-center">
-                        <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-6">
+                        <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] mb-6">
                             Resultados Reales
                         </p>
                         <h1 className="font-display text-4xl md:text-6xl text-[#1A1714] mb-6 leading-[1.1]">
                             No nos creas a nosotros. <br />
-                            <span className="text-[#C96342]">
+                            <span className="text-[#B5522F]">
                                 Mira lo que crean nuestros alumnos.
                             </span>
                         </h1>
@@ -71,8 +71,8 @@ export function ResultsPageContent({ country }: ResultsPageContentProps) {
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                         <div className="bg-[#F5F1E8] border border-[#1A1714]/12 rounded-sm p-8 md:p-12 flex flex-col md:flex-row items-center gap-10">
                             <div className="flex-1">
-                                <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-4 flex items-center gap-2">
-                                    <Trophy className="w-4 h-4 text-[#C96342]" />
+                                <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] mb-4 flex items-center gap-2">
+                                    <Trophy className="w-4 h-4 text-[#B5522F]" />
                                     Certificaci&oacute;n Internacional
                                 </p>
                                 <h2 className="font-display text-3xl md:text-4xl text-[#1A1714] mb-4">
@@ -91,7 +91,7 @@ export function ResultsPageContent({ country }: ResultsPageContentProps) {
                                 {/* Placeholder for certificate image */}
                                 <div className="aspect-video bg-[#FAF7EF] rounded-sm border border-[#1A1714]/12 flex items-center justify-center relative overflow-hidden">
                                     <div className="text-center z-10">
-                                        <Trophy className="w-16 h-16 text-[#C96342] mx-auto mb-4" />
+                                        <Trophy className="w-16 h-16 text-[#B5522F] mx-auto mb-4" />
                                         <p className="font-display text-2xl text-[#1A1714]">Certificado InnovaKids</p>
                                     </div>
                                 </div>
@@ -103,7 +103,7 @@ export function ResultsPageContent({ country }: ResultsPageContentProps) {
                 {/* CTA */}
                 <section className="py-24 bg-[#1A1714] text-center">
                     <div className="max-w-[1100px] mx-auto max-w-3xl px-6 md:px-10">
-                        <Users className="w-14 h-14 text-[#C96342] mx-auto mb-6" />
+                        <Users className="w-14 h-14 text-[#B5522F] mx-auto mb-6" />
                         <h2 className="font-display text-4xl text-[#FAF7EF] mb-6">
                             &Uacute;nete a la nueva generaci&oacute;n de creadores
                         </h2>

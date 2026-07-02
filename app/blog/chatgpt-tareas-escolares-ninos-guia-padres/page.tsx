@@ -192,13 +192,13 @@ export default function ChatGPTTareasEscolaresPage() {
         {/* Hero */}
         <header className="pt-32 pb-16 px-6 bg-[#2F2F2C] text-[#F5F1E8]">
           <div className="max-w-4xl mx-auto">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">
               Guía para padres · IA en el colegio
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal leading-[1.05] tracking-tight mb-8"
               style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
               ChatGPT para Tareas Escolares:{" "}
-              <em className="italic text-[#C96342]">Guía para Padres</em>
+              <em className="italic text-[#B5522F]">Guía para Padres</em>
             </h1>
             <p className="text-lg text-[#F5F1E8]/80 max-w-[60ch] leading-relaxed mb-10">
               No es trampa si se usa bien. Aprende cómo tu hijo puede usar
@@ -240,7 +240,7 @@ export default function ChatGPTTareasEscolaresPage() {
               </p>
               <p>
                 En{" "}
-                <Link href="/" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+                <Link href="/" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                   InnovaKids
                 </Link>{" "}
                 vemos esto todos los días: niños que llegaron usando ChatGPT solo para copiar,
@@ -312,7 +312,7 @@ export default function ChatGPTTareasEscolaresPage() {
               </p>
               <p>
                 Esto conecta directamente con lo que enseñamos en los cursos de{" "}
-                <Link href="/blog/inteligencia-artificial-para-ninos" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+                <Link href="/blog/inteligencia-artificial-para-ninos" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                   inteligencia artificial para niños
                 </Link>
                 : la IA es una herramienta que amplifica lo que ya hay dentro del niño. Si hay curiosidad, la amplifica. Si hay pereza, también.
@@ -381,7 +381,7 @@ export default function ChatGPTTareasEscolaresPage() {
                 Si el colegio de tu hijo todavía prohíbe la IA, no te preocupes. Puedes enseñarle a usarla en casa para estudiar,
                 repasar y practicar. Lo que aprenda sobre cómo interactuar con la IA le servirá para toda su vida académica y profesional.
                 Te recomendamos leer nuestra guía sobre{" "}
-                <Link href="/blog/como-proteger-hijos-ia-uso-seguro-responsable" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+                <Link href="/blog/como-proteger-hijos-ia-uso-seguro-responsable" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                   cómo proteger a tus hijos en el uso de IA
                 </Link>{" "}
                 para complementar esta información.
@@ -451,7 +451,7 @@ export default function ChatGPTTareasEscolaresPage() {
               </p>
               <p>
                 Eso es exactamente lo que hacemos en{" "}
-                <Link href="/programa" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+                <Link href="/programa" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                   el programa de InnovaKids
                 </Link>
                 : llevamos a los niños de usar IA como consumidores (hacer preguntas) a usarla como creadores (construir proyectos).
@@ -460,7 +460,7 @@ export default function ChatGPTTareasEscolaresPage() {
               <p>
                 Si tu hijo ya usa ChatGPT para estudiar, está listo para el siguiente nivel.
                 Los niños que aprenden a{" "}
-                <Link href="/blog/curso-ia-ninos-10-11-12-anos" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+                <Link href="/blog/curso-ia-ninos-10-11-12-anos" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                   crear con IA desde los 10-12 años
                 </Link>{" "}
                 tienen una ventaja que se acumula con el tiempo. Cada año de experiencia creativa con IA es un año que sus compañeros no tendrán.
@@ -500,7 +500,7 @@ export default function ChatGPTTareasEscolaresPage() {
                 <details key={item.q} className="group bg-white rounded-2xl border border-[#2F2F2C]/8">
                   <summary className="flex justify-between items-center px-7 py-5 cursor-pointer font-semibold text-[#2F2F2C] list-none">
                     {item.q}
-                    <span className="text-[#C96342] group-open:rotate-45 transition-transform">+</span>
+                    <span className="text-[#B5522F] group-open:rotate-45 transition-transform">+</span>
                   </summary>
                   <p className="px-7 pb-6 text-[#5A5751] leading-relaxed">{item.a}</p>
                 </details>
@@ -510,13 +510,13 @@ export default function ChatGPTTareasEscolaresPage() {
 
           {/* CTA */}
           <section className="bg-[#2F2F2C] rounded-3xl p-10 md:p-14 text-center text-[#F5F1E8]">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-5">
               InnovaKids · De consumidor a creador de IA
             </p>
             <h2 className="text-3xl md:text-4xl font-normal tracking-tight mb-5"
               style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
               Tu hijo ya usa ChatGPT.{" "}
-              <em className="italic text-[#C96342]">Enséñale a crear con IA.</em>
+              <em className="italic text-[#B5522F]">Enséñale a crear con IA.</em>
             </h2>
             <p className="text-[#F5F1E8]/70 max-w-[50ch] mx-auto leading-relaxed mb-8">
               Primera clase gratis. Sin compromiso. Grupos de máximo 5 alumnos.

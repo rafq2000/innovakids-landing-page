@@ -39,7 +39,7 @@ export function CTASection() {
             <Button
               size="lg"
               onClick={() => scrollToSection("sesion-estrategica")}
-              className="group h-16 bg-white px-12 text-xl font-bold text-[#C96342] shadow-2xl transition-all hover:scale-105 hover:bg-gray-100"
+              className="group h-16 bg-white px-12 text-xl font-bold text-[#B5522F] shadow-2xl transition-all hover:scale-105 hover:bg-gray-100"
             >
               Agendar clase gratis
               <ArrowRight className="ml-2 h-6 w-6 transition-transform group-hover:translate-x-1" />

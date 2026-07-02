@@ -158,13 +158,13 @@ export default function IANinos10a12Page() {
         {/* Hero */}
         <header className="pt-32 pb-16 px-6 bg-[#2F2F2C] text-[#F5F1E8]">
           <div className="max-w-4xl mx-auto">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">
               Guía para padres · Por edad
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal leading-[1.05] tracking-tight mb-8"
               style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
               IA para Niños de{" "}
-              <em className="italic text-[#C96342]">10, 11 y 12 años</em>
+              <em className="italic text-[#B5522F]">10, 11 y 12 años</em>
             </h1>
             <p className="text-lg text-[#F5F1E8]/80 max-w-[60ch] leading-relaxed mb-10">
               Qué puede aprender tu hijo sobre Inteligencia Artificial
@@ -219,14 +219,14 @@ export default function IANinos10a12Page() {
             <div className="grid sm:grid-cols-3 gap-6">
               {Object.entries(ageProjects).map(([age, data]) => (
                 <div key={age} className="bg-white rounded-2xl p-7 border border-[#2F2F2C]/8">
-                  <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-3">
+                  <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-3">
                     {data.title}
                   </p>
                   <p className="text-sm text-[#5A5751] italic mb-5 leading-relaxed">{data.focus}</p>
                   <ul className="space-y-3">
                     {data.projects.map((p) => (
                       <li key={p} className="flex gap-2 text-sm text-[#2F2F2C]">
-                        <span className="text-[#C96342] shrink-0 mt-0.5">→</span>
+                        <span className="text-[#B5522F] shrink-0 mt-0.5">→</span>
                         {p}
                       </li>
                     ))}
@@ -311,7 +311,7 @@ export default function IANinos10a12Page() {
                 <details key={item.q} className="group bg-white rounded-2xl border border-[#2F2F2C]/8">
                   <summary className="flex justify-between items-center px-7 py-5 cursor-pointer font-semibold text-[#2F2F2C] list-none">
                     {item.q}
-                    <span className="text-[#C96342] group-open:rotate-45 transition-transform">+</span>
+                    <span className="text-[#B5522F] group-open:rotate-45 transition-transform">+</span>
                   </summary>
                   <p className="px-7 pb-6 text-[#5A5751] leading-relaxed">{item.a}</p>
                 </details>
@@ -321,13 +321,13 @@ export default function IANinos10a12Page() {
 
           {/* CTA */}
           <section className="bg-[#2F2F2C] rounded-3xl p-10 md:p-14 text-center text-[#F5F1E8]">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-5">
               InnovaKids · Para niños 8-17 años
             </p>
             <h2 className="text-3xl md:text-4xl font-normal tracking-tight mb-5"
               style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
               Reserva la primera clase de tu hijo{" "}
-              <em className="italic text-[#C96342]">gratis</em>.
+              <em className="italic text-[#B5522F]">gratis</em>.
             </h2>
             <p className="text-[#F5F1E8]/70 max-w-[50ch] mx-auto leading-relaxed mb-8">
               Sin compromiso. Grupos de máximo 5 alumnos.

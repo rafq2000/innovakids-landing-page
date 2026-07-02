@@ -38,7 +38,7 @@ export function PromoVideoSection() {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-[#C96342] px-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 text-[#B5522F] px-4">
               Descubre InnovaKids en Acción
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-4">
@@ -129,7 +129,7 @@ export function PromoVideoSection() {
                     <div className="w-2 h-2 rounded-full bg-[#C96342]" />
                   </div>
                   <p className="text-left text-sm sm:text-base">
-                    <strong className="text-[#C96342]">Grupos reducidos:</strong> Máximo 5 alumnos por clase
+                    <strong className="text-[#B5522F]">Grupos reducidos:</strong> Máximo 5 alumnos por clase
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
@@ -137,7 +137,7 @@ export function PromoVideoSection() {
                     <div className="w-2 h-2 rounded-full bg-[#C96342]" />
                   </div>
                   <p className="text-left text-sm sm:text-base">
-                    <strong className="text-[#C96342]">Atencion personalizada:</strong> Cada nino avanza a su ritmo
+                    <strong className="text-[#B5522F]">Atencion personalizada:</strong> Cada nino avanza a su ritmo
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
@@ -145,7 +145,7 @@ export function PromoVideoSection() {
                     <div className="w-2 h-2 rounded-full bg-[#C96342]" />
                   </div>
                   <p className="text-left text-sm sm:text-base">
-                    <strong className="text-[#C96342]">Resultados garantizados:</strong> Proyectos reales desde la
+                    <strong className="text-[#B5522F]">Resultados garantizados:</strong> Proyectos reales desde la
                     primera clase
                   </p>
                 </div>

@@ -123,14 +123,14 @@ export default function CursosOnlineNinosPage() {
 
                     <div className="container mx-auto px-6 relative z-10 text-center">
                         <div className="inline-flex items-center gap-2 bg-[#FAF7EF] border border-[#E8E0D0] rounded-full px-6 py-2 mb-8">
-                            <Globe className="w-4 h-4 text-[#C96342]" />
+                            <Globe className="w-4 h-4 text-[#B5522F]" />
                             <span className="text-[#5A5751] font-medium text-sm">Disponible en España y toda Latinoamérica</span>
                         </div>
 
                         <h1 className="text-5xl lg:text-7xl font-bold text-[#1A1714] leading-tight mb-8 font-display">
                             Cursos Online para Niños:
                             <br />
-                            <span className="text-[#C96342]">
+                            <span className="text-[#B5522F]">
                                 ¿Cuál es la Mejor Inversión en 2026?
                             </span>
                         </h1>
@@ -220,9 +220,9 @@ export default function CursosOnlineNinosPage() {
                                 <CardContent className="text-[#5A5751]">
                                     <p className="mb-4 font-medium text-[#1A1714]">La nueva alfabetización. Quien no la use, quedará atrás.</p>
                                     <ul className="text-sm space-y-3">
-                                        <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#C96342]" /> Salarios +50% altos</li>
-                                        <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#C96342]" /> Crear, no solo consumir</li>
-                                        <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#C96342]" /> Ventaja competitiva real</li>
+                                        <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#B5522F]" /> Salarios +50% altos</li>
+                                        <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#B5522F]" /> Crear, no solo consumir</li>
+                                        <li className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-[#B5522F]" /> Ventaja competitiva real</li>
                                     </ul>
                                     <Button asChild className="w-full mt-6 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] font-bold rounded-sm">
                                         <Link href="/">Descubrir Curso</Link>
@@ -253,7 +253,7 @@ export default function CursosOnlineNinosPage() {
                             ].map((item, idx) => (
                                 <div key={idx} className="flex flex-col items-center text-center p-6 rounded-2xl bg-[#FAF7EF] border border-[#E8E0D0] hover:shadow-md transition-all">
                                     <div className="bg-[#C96342]/10 p-4 rounded-full mb-4">
-                                        <item.icon className="w-8 h-8 text-[#C96342]" />
+                                        <item.icon className="w-8 h-8 text-[#B5522F]" />
                                     </div>
                                     <h3 className="text-xl font-bold text-[#1A1714] mb-3">{item.title}</h3>
                                     <p className="text-[#5A5751]">{item.text}</p>
@@ -281,7 +281,7 @@ export default function CursosOnlineNinosPage() {
                                 <ul className="space-y-4 mb-8">
                                     {["Clases en vivo (No videos grabados)", "Grupos pequeños (Máx 5 alumnos)", "Proyecto final real garantizado"].map((feat, i) => (
                                         <li key={i} className="flex items-center gap-3 text-[#1A1714]">
-                                            <CheckCircle className="w-5 h-5 text-[#C96342] flex-shrink-0" />
+                                            <CheckCircle className="w-5 h-5 text-[#B5522F] flex-shrink-0" />
                                             {feat}
                                         </li>
                                     ))}
@@ -399,7 +399,7 @@ export default function CursosOnlineNinosPage() {
                         </section>
 
                         <div className="mt-10 text-center">
-                            <Link href="/" className="text-[#C96342] hover:text-[#9A4428] font-semibold inline-flex items-center gap-2">
+                            <Link href="/" className="text-[#B5522F] hover:text-[#9A4428] font-semibold inline-flex items-center gap-2">
                                 Ver todas las preguntas frecuentes <ArrowRight className="w-4 h-4" />
                             </Link>
                         </div>

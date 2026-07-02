@@ -103,9 +103,9 @@ export default function EntrepreneurshipPage() {
                 <section className="pt-32 pb-20 border-b border-[#1A1714]/12">
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                         <nav aria-label="Breadcrumb" className="text-[11px] tracking-[0.2em] uppercase text-[#1A1714]/55 font-semibold mb-10">
-                            <Link href="/" className="hover:text-[#C96342]">Inicio</Link>
+                            <Link href="/" className="hover:text-[#B5522F]">Inicio</Link>
                             <span className="mx-2 text-[#1A1714]/30">/</span>
-                            <Link href="/cursos/inteligencia-artificial" className="hover:text-[#C96342]">Cursos</Link>
+                            <Link href="/cursos/inteligencia-artificial" className="hover:text-[#B5522F]">Cursos</Link>
                             <span className="mx-2 text-[#1A1714]/30">/</span>
                             <span className="text-[#1A1714]/75 normal-case tracking-normal">Emprendimiento con IA</span>
                         </nav>
@@ -114,7 +114,7 @@ export default function EntrepreneurshipPage() {
                             <div className="md:col-span-8">
                                 <div className="flex items-center gap-3 mb-6">
                                     <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                    <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                    <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                         Nivel 04 · Especialización para 8 a 17 años
                                     </span>
                                 </div>
@@ -122,7 +122,7 @@ export default function EntrepreneurshipPage() {
                                     className="text-5xl sm:text-6xl md:text-7xl leading-[0.95] tracking-[-0.02em]"
                                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                 >
-                                    Emprendimiento con <em className="italic text-[#C96342]">IA</em>.
+                                    Emprendimiento con <em className="italic text-[#B5522F]">IA</em>.
                                 </h1>
                                 <p className="mt-8 text-lg md:text-xl text-[#1A1714]/70 leading-relaxed max-w-2xl font-light">
                                     De consumidor a fundador. Tu hijo detecta un problema, construye un MVP con IA
@@ -150,7 +150,7 @@ export default function EntrepreneurshipPage() {
                 <section className="py-24 md:py-32 border-b border-[#1A1714]/12">
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-12 md:gap-16 items-start">
                         <div className="md:col-span-6">
-                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">
                                 El punto de partida
                             </p>
                             <h2
@@ -172,7 +172,7 @@ export default function EntrepreneurshipPage() {
                                     "Presenta su idea frente a inversores simulados",
                                 ].map((item) => (
                                     <li key={item} className="flex items-start gap-4 pb-5 border-b border-[#1A1714]/12 last:border-b-0">
-                                        <span className="text-[#C96342] font-serif text-lg leading-none mt-1" aria-hidden>→</span>
+                                        <span className="text-[#B5522F] font-serif text-lg leading-none mt-1" aria-hidden>→</span>
                                         <span className="text-[#1A1714]/85 leading-relaxed">{item}</span>
                                     </li>
                                 ))}
@@ -180,7 +180,7 @@ export default function EntrepreneurshipPage() {
                         </div>
 
                         <div className="md:col-span-6 bg-[#F2EDE0] p-10 md:p-12 border-l-2 border-[#C96342]">
-                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">
                                 La especialización founder
                             </p>
                             <h3
@@ -195,11 +195,11 @@ export default function EntrepreneurshipPage() {
                             <ol className="divide-y divide-[#1A1714]/15 border-y border-[#1A1714]/15">
                                 {pillars.map((p, i) => (
                                     <li key={p.title} className="flex gap-5 py-5">
-                                        <span className="font-serif text-2xl text-[#C96342] leading-none shrink-0 w-10">
+                                        <span className="font-serif text-2xl text-[#B5522F] leading-none shrink-0 w-10">
                                             {String(i + 1).padStart(2, "0")}
                                         </span>
                                         <div>
-                                            <p className="text-[10px] uppercase tracking-[0.22em] text-[#C96342]/80 font-semibold mb-1.5">
+                                            <p className="text-[10px] uppercase tracking-[0.22em] text-[#B5522F]/80 font-semibold mb-1.5">
                                                 {p.kicker}
                                             </p>
                                             <h4 className="font-serif text-lg text-[#1A1714] leading-tight mb-1">{p.title}</h4>
@@ -215,7 +215,7 @@ export default function EntrepreneurshipPage() {
                 <section id="comenzar" className="py-24 md:py-32 bg-[#F5F1E8] border-b border-[#1A1714]/12">
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                         <div className="max-w-3xl mb-16">
-                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-5">
                                 El camino
                             </p>
                             <h2
@@ -232,7 +232,7 @@ export default function EntrepreneurshipPage() {
 
                         <div className="grid md:grid-cols-2 gap-8">
                             <article className="bg-[#FAF7EF] border border-[#1A1714]/12 p-10">
-                                <p className="text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                <p className="text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
                                     Paso 01 · Obligatorio
                                 </p>
                                 <h3
@@ -245,9 +245,9 @@ export default function EntrepreneurshipPage() {
                                     Base de Vibe Coding, prompt engineering y uso crítico de herramientas IA.
                                 </p>
                                 <ul className="space-y-3 text-[#1A1714]/85 mb-8 text-sm">
-                                    <li className="flex gap-3"><span className="text-[#C96342]">→</span> Vibe Coding — prototipar ideas</li>
-                                    <li className="flex gap-3"><span className="text-[#C96342]">→</span> Análisis de datos básico con IA</li>
-                                    <li className="flex gap-3"><span className="text-[#C96342]">→</span> Comunicación y presentación</li>
+                                    <li className="flex gap-3"><span className="text-[#B5522F]">→</span> Vibe Coding — prototipar ideas</li>
+                                    <li className="flex gap-3"><span className="text-[#B5522F]">→</span> Análisis de datos básico con IA</li>
+                                    <li className="flex gap-3"><span className="text-[#B5522F]">→</span> Comunicación y presentación</li>
                                 </ul>
                                 <Link
                                     href="/cursos/inteligencia-artificial"
@@ -288,7 +288,7 @@ export default function EntrepreneurshipPage() {
 
                 <section className="py-24 md:py-32 border-b border-[#1A1714]/12">
                     <div className="max-w-[900px] mx-auto px-6 md:px-10">
-                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-5">
                             Preguntas frecuentes
                         </p>
                         <h2
@@ -319,7 +319,7 @@ export default function EntrepreneurshipPage() {
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                         <div className="flex items-center gap-3 mb-6">
                             <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                 Otros caminos
                             </span>
                         </div>
@@ -337,11 +337,11 @@ export default function EntrepreneurshipPage() {
                             ].map((c) => (
                                 <li key={c.href}>
                                     <Link href={c.href} className="group block py-10 md:px-8 transition-colors hover:bg-[#EDE6D3]">
-                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-5">
                                             {c.kicker}
                                         </p>
                                         <h3
-                                            className="text-2xl leading-tight mb-3 group-hover:text-[#C96342] transition-colors"
+                                            className="text-2xl leading-tight mb-3 group-hover:text-[#B5522F] transition-colors"
                                             style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                         >
                                             {c.title}
@@ -349,7 +349,7 @@ export default function EntrepreneurshipPage() {
                                         <p className="text-sm text-[#1A1714]/70 leading-relaxed mb-6">
                                             {c.desc}
                                         </p>
-                                        <span className="text-sm font-semibold text-[#C96342] underline underline-offset-4 decoration-[#C96342]/30 group-hover:decoration-[#C96342]">
+                                        <span className="text-sm font-semibold text-[#B5522F] underline underline-offset-4 decoration-[#C96342]/30 group-hover:decoration-[#C96342]">
                                             Ver curso →
                                         </span>
                                     </Link>
@@ -366,7 +366,7 @@ export default function EntrepreneurshipPage() {
                                     <Link
                                         key={c.code}
                                         href={`/${c.code}`}
-                                        className="text-sm text-[#1A1714]/65 hover:text-[#C96342] underline underline-offset-4 decoration-[#1A1714]/15 hover:decoration-[#C96342] transition-colors"
+                                        className="text-sm text-[#1A1714]/65 hover:text-[#B5522F] underline underline-offset-4 decoration-[#1A1714]/15 hover:decoration-[#C96342] transition-colors"
                                     >
                                         {c.name}
                                     </Link>

@@ -19,7 +19,7 @@ export function BreadcrumbNav({ items }: BreadcrumbNavProps) {
           <li className="flex items-center gap-1.5">
             <a
               href="/"
-              className="flex items-center gap-1 hover:text-[#C96342] transition-colors font-medium"
+              className="flex items-center gap-1 hover:text-[#B5522F] transition-colors font-medium"
             >
               <Home className="w-3.5 h-3.5" />
               <span>InnovaKids</span>
@@ -35,7 +35,7 @@ export function BreadcrumbNav({ items }: BreadcrumbNavProps) {
               ) : (
                 <a
                   href={item.href}
-                  className="hover:text-[#C96342] transition-colors truncate max-w-[200px]"
+                  className="hover:text-[#B5522F] transition-colors truncate max-w-[200px]"
                 >
                   {item.label}
                 </a>

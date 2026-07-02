@@ -161,13 +161,13 @@ export default function ExtraescolarIAPage() {
         {/* Hero */}
         <header className="pt-32 pb-16 px-6 bg-[#2F2F2C] text-[#F5F1E8]">
           <div className="max-w-4xl mx-auto">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">
               Guía para padres · 2026
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal leading-[1.05] tracking-tight mb-8"
               style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
               Extraescolar de{" "}
-              <em className="italic text-[#C96342]">Inteligencia Artificial</em>{" "}
+              <em className="italic text-[#B5522F]">Inteligencia Artificial</em>{" "}
               para Niños
             </h1>
             <p className="text-lg text-[#F5F1E8]/80 max-w-[60ch] leading-relaxed mb-10">
@@ -269,7 +269,7 @@ export default function ExtraescolarIAPage() {
                 { n: "05", title: "Proyecto propio terminado", text: "Al finalizar el programa, el alumno tiene un proyecto real creado por él: videojuego, app o proyecto creativo propio con IA." },
               ].map((item) => (
                 <li key={item.n} className="flex gap-6 items-start">
-                  <span className="text-[#C96342] font-mono text-sm font-semibold pt-1 shrink-0">{item.n}</span>
+                  <span className="text-[#B5522F] font-mono text-sm font-semibold pt-1 shrink-0">{item.n}</span>
                   <div>
                     <h3 className="font-semibold text-[#2F2F2C] text-lg mb-1">{item.title}</h3>
                     <p className="text-[#5A5751] leading-relaxed">{item.text}</p>
@@ -291,7 +291,7 @@ export default function ExtraescolarIAPage() {
                   <tr className="bg-[#2F2F2C] text-[#F5F1E8]">
                     <th className="text-left px-6 py-4 font-semibold">Criterio</th>
                     <th className="text-left px-6 py-4 font-semibold text-[#F5F1E8]/60">Extraescolar genérica</th>
-                    <th className="text-left px-6 py-4 font-semibold text-[#C96342]">InnovaKids</th>
+                    <th className="text-left px-6 py-4 font-semibold text-[#B5522F]">InnovaKids</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-[#2F2F2C]/8">
@@ -372,7 +372,7 @@ export default function ExtraescolarIAPage() {
                 <details key={item.q} className="group bg-white rounded-2xl border border-[#2F2F2C]/8">
                   <summary className="flex justify-between items-center px-7 py-5 cursor-pointer font-semibold text-[#2F2F2C] list-none">
                     {item.q}
-                    <span className="text-[#C96342] group-open:rotate-45 transition-transform">+</span>
+                    <span className="text-[#B5522F] group-open:rotate-45 transition-transform">+</span>
                   </summary>
                   <p className="px-7 pb-6 text-[#5A5751] leading-relaxed">{item.a}</p>
                 </details>
@@ -382,13 +382,13 @@ export default function ExtraescolarIAPage() {
 
           {/* CTA */}
           <section className="bg-[#2F2F2C] rounded-3xl p-10 md:p-14 text-center text-[#F5F1E8]">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-5">
               InnovaKids · La Extraescolar de IA #1 en LATAM
             </p>
             <h2 className="text-3xl md:text-4xl font-normal tracking-tight mb-5"
               style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
               Prueba la extraescolar de IA<br />
-              <em className="italic text-[#C96342]">sin compromiso</em>.
+              <em className="italic text-[#B5522F]">sin compromiso</em>.
             </h2>
             <p className="text-[#F5F1E8]/70 max-w-[50ch] mx-auto leading-relaxed mb-8">
               Primera clase 100% gratis. Grupos de máximo 5 alumnos.

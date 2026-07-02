@@ -19,12 +19,12 @@ export default function NotFound() {
                     <div className="lg:col-span-5">
                         <div className="flex items-center gap-3 mb-6">
                             <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                 Error 404
                             </span>
                         </div>
                         <p
-                            className="text-[140px] md:text-[200px] leading-[0.85] tracking-[-0.04em] text-[#C96342]"
+                            className="text-[140px] md:text-[200px] leading-[0.85] tracking-[-0.04em] text-[#B5522F]"
                             style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                         >
                             404
@@ -36,7 +36,7 @@ export default function NotFound() {
                             className="text-5xl md:text-6xl leading-[1] tracking-[-0.02em] text-[#1A1714]"
                             style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                         >
-                            Página <em className="italic text-[#C96342]">no encontrada</em>.
+                            Página <em className="italic text-[#B5522F]">no encontrada</em>.
                         </h1>
                         <p className="mt-6 text-xl text-[#1A1714]/70 leading-relaxed max-w-[52ch]">
                             Lo sentimos, la página que buscas no existe o ha sido movida. Te dejamos aquí los atajos más
@@ -45,7 +45,7 @@ export default function NotFound() {
 
                         <div className="mt-10 grid sm:grid-cols-2 gap-px bg-[#1A1714]/12 border border-[#1A1714]/12">
                             <Link href="/" className="bg-[#FAF7EF] p-6 hover:bg-[#F2EDE0]/50 transition-colors group">
-                                <p className="text-[11px] uppercase tracking-[0.24em] text-[#C96342]/70 group-hover:text-[#C96342] font-semibold mb-2">
+                                <p className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F]/70 group-hover:text-[#B5522F] font-semibold mb-2">
                                     Volver
                                 </p>
                                 <p className="text-xl text-[#1A1714] mb-1" style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
@@ -54,7 +54,7 @@ export default function NotFound() {
                                 <p className="text-[14px] text-[#1A1714]/70">Página principal InnovaKids.</p>
                             </Link>
                             <Link href="/#programa" className="bg-[#FAF7EF] p-6 hover:bg-[#F2EDE0]/50 transition-colors group">
-                                <p className="text-[11px] uppercase tracking-[0.24em] text-[#C96342]/70 group-hover:text-[#C96342] font-semibold mb-2">
+                                <p className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F]/70 group-hover:text-[#B5522F] font-semibold mb-2">
                                     Programa
                                 </p>
                                 <p className="text-xl text-[#1A1714] mb-1" style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
@@ -65,7 +65,7 @@ export default function NotFound() {
                         </div>
 
                         <section className="mt-12">
-                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-5">
                                 Busca tu país
                             </p>
                             <ul className="flex flex-wrap gap-x-6 gap-y-3">
@@ -73,7 +73,7 @@ export default function NotFound() {
                                     <li key={c.code}>
                                         <Link
                                             href={`/${c.code}`}
-                                            className="text-[15px] text-[#1A1714]/80 hover:text-[#C96342] transition-colors"
+                                            className="text-[15px] text-[#1A1714]/80 hover:text-[#B5522F] transition-colors"
                                         >
                                             {c.name}
                                         </Link>

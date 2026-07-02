@@ -264,13 +264,13 @@ export default function CrearVideojuegosConIAPage() {
         {/* Hero */}
         <header className="pt-32 pb-16 px-6 bg-[#2F2F2C] text-[#F5F1E8]">
           <div className="max-w-4xl mx-auto">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">
               Guía para padres · Videojuegos + IA
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal leading-[1.05] tracking-tight mb-8"
               style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
               Cómo Tu Hijo Puede Crear Videojuegos{" "}
-              <em className="italic text-[#C96342]">con IA</em>
+              <em className="italic text-[#B5522F]">con IA</em>
             </h1>
             <p className="text-lg text-[#F5F1E8]/80 max-w-[60ch] leading-relaxed mb-10">
               Ya no necesita saber programar. Con inteligencia artificial puede
@@ -314,7 +314,7 @@ export default function CrearVideojuegosConIAPage() {
               </p>
               <p>
                 En{" "}
-                <Link href="/" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+                <Link href="/" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                   InnovaKids
                 </Link>
                 , los videojuegos son el proyecto más popular entre nuestros alumnos. Y no es casualidad:
@@ -342,7 +342,7 @@ export default function CrearVideojuegosConIAPage() {
                     <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-medium">Gratis</span>
                     <span className="text-xs text-[#5A5751]">({h.url})</span>
                   </div>
-                  <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-2">
+                  <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-2">
                     {h.uso}
                   </p>
                   <p className="text-[#5A5751] text-sm leading-relaxed">{h.descripcion}</p>
@@ -352,7 +352,7 @@ export default function CrearVideojuegosConIAPage() {
             <div className="mt-8 prose prose-lg max-w-none text-[#5A5751] leading-relaxed">
               <p>
                 <strong className="text-[#2F2F2C]">Nota para padres:</strong> si tu hijo ya ha experimentado con{" "}
-                <Link href="/blog/scratch-vs-ia-ninos" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+                <Link href="/blog/scratch-vs-ia-ninos" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                   Scratch
                 </Link>
                 , la combinación con IA es natural. Scratch sigue siendo excelente para la lógica de programación visual;
@@ -369,7 +369,7 @@ export default function CrearVideojuegosConIAPage() {
             </h2>
             <p className="text-[#5A5751] leading-relaxed mb-8">
               Este plan está probado con alumnos reales de{" "}
-              <Link href="/blog/curso-ia-ninos-10-11-12-anos" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+              <Link href="/blog/curso-ia-ninos-10-11-12-anos" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                 10 a 12 años
               </Link>
               . En un fin de semana (7-9 horas totales), tu hijo puede crear un juego funcional y jugable.
@@ -387,7 +387,7 @@ export default function CrearVideojuegosConIAPage() {
                   <ul className="space-y-2">
                     {paso.tareas.map((tarea, i) => (
                       <li key={i} className="flex gap-2 text-sm text-[#5A5751]">
-                        <span className="text-[#C96342] shrink-0 mt-0.5">→</span>
+                        <span className="text-[#B5522F] shrink-0 mt-0.5">→</span>
                         {tarea}
                       </li>
                     ))}
@@ -461,12 +461,12 @@ export default function CrearVideojuegosConIAPage() {
                 },
               ].map((ejemplo) => (
                 <div key={ejemplo.nombre} className="border-l-4 border-[#C96342] pl-6">
-                  <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-1">
+                  <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-1">
                     {ejemplo.nombre}
                   </p>
                   <h3 className="font-semibold text-[#2F2F2C] text-lg mb-2">{ejemplo.juego}</h3>
                   <p className="text-sm text-[#5A5751] leading-relaxed mb-2">{ejemplo.descripcion}</p>
-                  <p className="text-xs text-[#C96342] italic">Aprendió: {ejemplo.aprendio}</p>
+                  <p className="text-xs text-[#B5522F] italic">Aprendió: {ejemplo.aprendio}</p>
                 </div>
               ))}
             </div>
@@ -499,14 +499,14 @@ export default function CrearVideojuegosConIAPage() {
                   "Explorar carreras en game design, desarrollo de software, arte digital o producción audiovisual",
                 ].map((item) => (
                   <li key={item} className="flex gap-2 text-base">
-                    <span className="text-[#C96342] shrink-0 mt-0.5">→</span>
+                    <span className="text-[#B5522F] shrink-0 mt-0.5">→</span>
                     <span>{item}</span>
                   </li>
                 ))}
               </ul>
               <p>
                 En{" "}
-                <Link href="/programa" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+                <Link href="/programa" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                   el programa de InnovaKids
                 </Link>
                 , cada alumno termina con un portafolio de proyectos reales que incluye videojuegos, aplicaciones, contenido digital y más.
@@ -527,7 +527,7 @@ export default function CrearVideojuegosConIAPage() {
               <p>
                 Si quieres explorar más actividades que puedes hacer con tu hijo antes de dar el paso a un programa estructurado,
                 revisa nuestra guía de{" "}
-                <Link href="/blog/actividades-inteligencia-artificial-ninos-casa" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+                <Link href="/blog/actividades-inteligencia-artificial-ninos-casa" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                   12 actividades de IA para hacer en casa
                 </Link>
                 . Varias de ellas están relacionadas con la creación de juegos y pueden ser el punto de partida perfecto.
@@ -563,7 +563,7 @@ export default function CrearVideojuegosConIAPage() {
                 <details key={item.q} className="group bg-white rounded-2xl border border-[#2F2F2C]/8">
                   <summary className="flex justify-between items-center px-7 py-5 cursor-pointer font-semibold text-[#2F2F2C] list-none">
                     {item.q}
-                    <span className="text-[#C96342] group-open:rotate-45 transition-transform">+</span>
+                    <span className="text-[#B5522F] group-open:rotate-45 transition-transform">+</span>
                   </summary>
                   <p className="px-7 pb-6 text-[#5A5751] leading-relaxed">{item.a}</p>
                 </details>
@@ -573,13 +573,13 @@ export default function CrearVideojuegosConIAPage() {
 
           {/* CTA */}
           <section className="bg-[#2F2F2C] rounded-3xl p-10 md:p-14 text-center text-[#F5F1E8]">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-5">
               InnovaKids · De jugador a creador de videojuegos
             </p>
             <h2 className="text-3xl md:text-4xl font-normal tracking-tight mb-5"
               style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
               Tu hijo puede crear su primer videojuego{" "}
-              <em className="italic text-[#C96342]">esta semana.</em>
+              <em className="italic text-[#B5522F]">esta semana.</em>
             </h2>
             <p className="text-[#F5F1E8]/70 max-w-[50ch] mx-auto leading-relaxed mb-8">
               Primera clase gratis. Sin compromiso. Grupos de máximo 5 alumnos.

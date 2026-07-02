@@ -138,7 +138,7 @@ export default function MiInscripcionPage() {
           <div className="max-w-[1100px] mx-auto px-6 md:px-10">
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-              <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+              <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                 Tu inscripción
               </span>
             </div>
@@ -146,7 +146,7 @@ export default function MiInscripcionPage() {
               className="text-4xl md:text-6xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[22ch]"
               style={{ fontFamily: "'Charter', 'Georgia', serif" }}
             >
-              Todo lo que necesitas en <em className="italic text-[#C96342]">un solo lugar</em>.
+              Todo lo que necesitas en <em className="italic text-[#B5522F]">un solo lugar</em>.
             </h1>
             <p className="mt-6 text-lg text-[#1A1714]/70 leading-relaxed max-w-[56ch]">
               Aquí tienes los mismos recursos que te enviamos por correo. Descarga tus documentos,
@@ -165,7 +165,7 @@ export default function MiInscripcionPage() {
           <div className="max-w-[1100px] mx-auto px-6 md:px-10">
             <div className="flex items-center gap-3 mb-8">
               <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-              <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+              <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                 Próximos pasos
               </span>
             </div>
@@ -187,13 +187,13 @@ export default function MiInscripcionPage() {
                     }`}
                   >
                     <div className="flex items-center gap-3 mb-4">
-                      <span className="text-[11px] tracking-[0.24em] uppercase text-[#C96342] font-semibold">
+                      <span className="text-[11px] tracking-[0.24em] uppercase text-[#B5522F] font-semibold">
                         {step.num}
                       </span>
-                      <Icon className="w-5 h-5 text-[#C96342]" />
+                      <Icon className="w-5 h-5 text-[#B5522F]" />
                     </div>
                     <h3
-                      className="text-xl text-[#1A1714] mb-2 group-hover:text-[#C96342] transition-colors"
+                      className="text-xl text-[#1A1714] mb-2 group-hover:text-[#B5522F] transition-colors"
                       style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                     >
                       {step.title}
@@ -201,7 +201,7 @@ export default function MiInscripcionPage() {
                     <p className="text-[14px] text-[#1A1714]/60 leading-relaxed mb-4">
                       {step.desc}
                     </p>
-                    <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#C96342]">
+                    <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#B5522F]">
                       {step.cta} <ArrowRight className="w-4 h-4" />
                     </span>
                   </a>
@@ -217,7 +217,7 @@ export default function MiInscripcionPage() {
             <div className="border-t border-[#1A1714]/12 pt-16">
               <div className="flex items-center gap-3 mb-6">
                 <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                   Kit de Bienvenida
                 </span>
               </div>
@@ -252,7 +252,7 @@ export default function MiInscripcionPage() {
                         >
                           <Icon
                             className={`w-5 h-5 ${
-                              doc.highlight ? "text-[#C96342]" : "text-[#1A1714]/50"
+                              doc.highlight ? "text-[#B5522F]" : "text-[#1A1714]/50"
                             }`}
                           />
                         </div>
@@ -267,7 +267,7 @@ export default function MiInscripcionPage() {
                           <span
                             className={`text-[10px] px-2 py-0.5 font-medium ${
                               doc.highlight
-                                ? "bg-[#C96342]/10 text-[#C96342]"
+                                ? "bg-[#C96342]/10 text-[#B5522F]"
                                 : "bg-[#F2EDE0] text-[#1A1714]/50"
                             }`}
                           >
@@ -326,7 +326,7 @@ export default function MiInscripcionPage() {
               {/* Contacto */}
               <div className="border border-[#1A1714]/12 bg-[#F2EDE0]/40 p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <MessageCircle className="w-6 h-6 text-[#C96342]" />
+                  <MessageCircle className="w-6 h-6 text-[#B5522F]" />
                   <h3
                     className="text-lg font-semibold"
                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}

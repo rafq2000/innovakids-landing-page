@@ -77,9 +77,9 @@ export default function CodingalVsInnovakidsPage() {
             <article className="pt-32 pb-16">
                 <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                     <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
-                        <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                        <Link href="/" className="hover:text-[#B5522F] transition-colors">InnovaKids</Link>
                         <span className="mx-3" aria-hidden>/</span>
-                        <Link href="/blog" className="hover:text-[#C96342] transition-colors">Blog</Link>
+                        <Link href="/blog" className="hover:text-[#B5522F] transition-colors">Blog</Link>
                         <span className="mx-3" aria-hidden>/</span>
                         <span className="text-[#1A1714]">Codingal vs InnovaKids</span>
                     </nav>
@@ -87,7 +87,7 @@ export default function CodingalVsInnovakidsPage() {
                     <header className="mb-16 pb-16 border-b border-[#1A1714]/12">
                         <div className="flex items-center gap-3 mb-6">
                             <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                 Comparativa · 6 min de lectura
                             </span>
                         </div>
@@ -96,7 +96,7 @@ export default function CodingalVsInnovakidsPage() {
                             className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[22ch]"
                             style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                         >
-                            Codingal vs InnovaKids: el <em className="italic text-[#C96342]">mejor curso</em> de programación online.
+                            Codingal vs InnovaKids: el <em className="italic text-[#B5522F]">mejor curso</em> de programación online.
                         </h1>
 
                         <div className="mt-10 flex flex-wrap items-center gap-6 text-[13px] text-[#1A1714]/60">
@@ -114,9 +114,9 @@ export default function CodingalVsInnovakidsPage() {
                                 prose-h3:text-[#A8502F] prose-h3:text-xl prose-h3:mt-10
                                 prose-p:font-sans prose-p:text-[#1A1714]/85 prose-p:text-lg prose-p:leading-[1.75]
                                 prose-strong:text-[#1A1714]
-                                prose-a:text-[#C96342] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
+                                prose-a:text-[#B5522F] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
                                 prose-li:font-sans prose-li:text-[#1A1714]/85
-                                prose-li:marker:text-[#C96342]
+                                prose-li:marker:text-[#B5522F]
                                 prose-ol:font-sans prose-ul:font-sans"
                         >
                             <p className="lead text-2xl leading-[1.45] text-[#1A1714]/85 font-sans">
@@ -168,7 +168,7 @@ export default function CodingalVsInnovakidsPage() {
                                     </p>
                                 </div>
                                 <div className="p-6 md:p-8 bg-[#F2EDE0]/40">
-                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-3">InnovaKids</p>
+                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-3">InnovaKids</p>
                                     <p className="text-[15px] text-[#1A1714]/85 leading-relaxed font-sans">
                                         <strong>Estrictamente 5 alumnos por clase</strong> online en vivo, con cámara y micrófono encendidos.
                                         Atención ultra-personalizada y compañerismo sin que nadie quede atrás.
@@ -185,7 +185,7 @@ export default function CodingalVsInnovakidsPage() {
                                         <tr className="border-y-2 border-[#1A1714]">
                                             <th className="py-4 pr-4 text-[11px] tracking-[0.22em] uppercase text-[#1A1714] font-semibold">Característica</th>
                                             <th className="py-4 px-4 text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/70 font-semibold">Codingal</th>
-                                            <th className="py-4 pl-4 text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">InnovaKids</th>
+                                            <th className="py-4 pl-4 text-[11px] tracking-[0.22em] uppercase text-[#B5522F] font-semibold">InnovaKids</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -235,7 +235,7 @@ export default function CodingalVsInnovakidsPage() {
                         {/* Aside: conversion panel */}
                         <aside className="lg:col-span-3">
                             <div className="lg:sticky lg:top-32 border-t border-[#1A1714]/12 pt-8">
-                                <p className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold mb-4">
+                                <p className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold mb-4">
                                     Reserva con riesgo cero
                                 </p>
                                 <p
@@ -266,7 +266,7 @@ export default function CodingalVsInnovakidsPage() {
 
                     {/* Related */}
                     <section className="mt-24 pt-12 border-t border-[#1A1714]/12">
-                        <p className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold mb-6">
+                        <p className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold mb-6">
                             Sigue leyendo
                         </p>
                         <div className="grid md:grid-cols-2 gap-0 border-t border-[#1A1714]/12">
@@ -276,7 +276,7 @@ export default function CodingalVsInnovakidsPage() {
                             >
                                 <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Comparativa</p>
                                 <h3
-                                    className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#C96342] transition-colors"
+                                    className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#B5522F] transition-colors"
                                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                 >
                                     Mejores cursos de verano: programación vs. IA (2026)
@@ -291,7 +291,7 @@ export default function CodingalVsInnovakidsPage() {
                             >
                                 <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Guía</p>
                                 <h3
-                                    className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#C96342] transition-colors"
+                                    className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#B5522F] transition-colors"
                                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                 >
                                     Cursos online de tecnología para niños y adolescentes

@@ -45,7 +45,7 @@ export const metadata = {
 }
 
 export default function ReservaClasePage() {
-  const calendlyUrl = "https://calendly.com/innovakids" // Reemplaza con tu URL de Calendly
+  const calendlyUrl = "https://calendly.com/innovakidslatam/reunion-informativa-innovakids"
 
   return (
     <div className="min-h-screen bg-[#F2EDE0]">
@@ -53,7 +53,7 @@ export default function ReservaClasePage() {
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4 max-w-5xl">
           <Link href="/">
-            <Button variant="ghost" className="text-[#1A1714] hover:text-[#C96342] mb-8">
+            <Button variant="ghost" className="text-[#1A1714] hover:text-[#B5522F] mb-8">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Volver al inicio
             </Button>
@@ -74,7 +74,7 @@ export default function ReservaClasePage() {
               <h2 className="text-2xl font-bold text-[#1A1714] mb-6">¿Qué incluye la sesión de evaluación gratuita?</h2>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#C96342] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#B5522F] flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-[#1A1714] font-bold mb-1">Demostración de IA en vivo</h3>
                     <p className="text-[#5A5751] text-sm">
@@ -84,7 +84,7 @@ export default function ReservaClasePage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#C96342] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#B5522F] flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-[#1A1714] font-bold mb-1">Reunión informativa para padres</h3>
                     <p className="text-[#5A5751] text-sm">
@@ -94,7 +94,7 @@ export default function ReservaClasePage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#C96342] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#B5522F] flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-[#1A1714] font-bold mb-1">Evaluación personalizada</h3>
                     <p className="text-[#5A5751] text-sm">
@@ -104,7 +104,7 @@ export default function ReservaClasePage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-[#C96342] flex-shrink-0 mt-1" />
+                  <CheckCircle2 className="w-6 h-6 text-[#B5522F] flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-[#1A1714] font-bold mb-1">Resolución de dudas</h3>
                     <p className="text-[#5A5751] text-sm">
@@ -117,7 +117,7 @@ export default function ReservaClasePage() {
               <Card className="bg-[#FAF7EF] border-[#E8E0D0] mt-8">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <Clock className="w-5 h-5 text-[#C96342]" />
+                    <Clock className="w-5 h-5 text-[#B5522F]" />
                     <h3 className="text-[#1A1714] font-bold">Duración</h3>
                   </div>
                   <p className="text-[#5A5751]">45-60 minutos</p>
@@ -127,7 +127,7 @@ export default function ReservaClasePage() {
               <Card className="bg-[#FAF7EF] border-[#E8E0D0] mt-4">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-4">
-                    <Video className="w-5 h-5 text-[#C96342]" />
+                    <Video className="w-5 h-5 text-[#B5522F]" />
                     <h3 className="text-[#1A1714] font-bold">Modalidad</h3>
                   </div>
                   <p className="text-[#5A5751]">100% Online vía Zoom</p>
@@ -139,7 +139,7 @@ export default function ReservaClasePage() {
               <Card className="bg-[#FAF7EF] border-[#E8E0D0]">
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-6">
-                    <Calendar className="w-6 h-6 text-[#C96342]" />
+                    <Calendar className="w-6 h-6 text-[#B5522F]" />
                     <h2 className="text-xl font-bold text-[#1A1714]">Selecciona tu horario</h2>
                   </div>
 

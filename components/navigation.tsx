@@ -85,7 +85,7 @@ export function Navigation({ countryCode }: NavigationProps) {
         <div className="flex items-center justify-between h-14 md:h-16">
           <a href="/" className="flex items-baseline gap-1.5 group" aria-label="InnovaKids - Inicio">
             <span className="font-display text-[22px] md:text-[26px] leading-none tracking-[-0.02em] text-[#1A1714]">
-              Innova<em className="not-italic font-semibold text-[#C96342]">kids</em>
+              Innova<em className="not-italic font-semibold text-[#B5522F]">kids</em>
             </span>
             <span className="font-mono-accent text-[8px] md:text-[9px] uppercase tracking-[0.18em] text-[#1A1714]/55 hidden sm:inline pb-0.5">
               latam
@@ -97,7 +97,7 @@ export function Navigation({ countryCode }: NavigationProps) {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-[#2F2F2C] hover:text-[#C96342] transition-colors"
+                className="text-sm text-[#2F2F2C] hover:text-[#B5522F] transition-colors"
               >
                 {link.label}
               </a>
@@ -111,7 +111,7 @@ export function Navigation({ countryCode }: NavigationProps) {
                 onMouseEnter={() => setOrgOpen(true)}
                 aria-expanded={orgOpen}
                 aria-haspopup="true"
-                className="inline-flex items-center gap-1.5 text-sm text-[#2F2F2C] hover:text-[#C96342] transition-colors"
+                className="inline-flex items-center gap-1.5 text-sm text-[#2F2F2C] hover:text-[#B5522F] transition-colors"
               >
                 Organizaciones
                 <ChevronDown
@@ -131,7 +131,7 @@ export function Navigation({ countryCode }: NavigationProps) {
               >
                 <div className="bg-[#FAF7EF] border border-[#2F2F2C]/12 rounded-sm shadow-[0_20px_60px_-20px_rgba(26,23,20,0.25)] overflow-hidden">
                   <div className="px-5 py-3 border-b border-[#2F2F2C]/10 bg-[#F5F1E8]">
-                    <p className="text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                    <p className="text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                       Soluciones institucionales
                     </p>
                   </div>
@@ -144,7 +144,7 @@ export function Navigation({ countryCode }: NavigationProps) {
                           className="group block px-5 py-4 border-b border-[#2F2F2C]/8 last:border-b-0 hover:bg-[#F5F1E8] transition-colors"
                         >
                           <p
-                            className="font-display text-lg text-[#2F2F2C] group-hover:text-[#C96342] transition-colors"
+                            className="font-display text-lg text-[#2F2F2C] group-hover:text-[#B5522F] transition-colors"
                           >
                             {org.label}
                           </p>
@@ -158,7 +158,7 @@ export function Navigation({ countryCode }: NavigationProps) {
                   <a
                     href="/#organizaciones"
                     onClick={() => setOrgOpen(false)}
-                    className="block px-5 py-3 text-[11px] uppercase tracking-[0.22em] font-semibold text-[#C96342] hover:bg-[#F5F1E8] border-t border-[#2F2F2C]/10 transition-colors"
+                    className="block px-5 py-3 text-[11px] uppercase tracking-[0.22em] font-semibold text-[#B5522F] hover:bg-[#F5F1E8] border-t border-[#2F2F2C]/10 transition-colors"
                   >
                     Ver comparativa →
                   </a>
@@ -192,7 +192,7 @@ export function Navigation({ countryCode }: NavigationProps) {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-[#2F2F2C] hover:text-[#C96342] hover:bg-[#2F2F2C]/5 py-3 px-3 rounded-sm min-h-[44px] flex items-center transition-colors"
+                  className="text-[#2F2F2C] hover:text-[#B5522F] hover:bg-[#2F2F2C]/5 py-3 px-3 rounded-sm min-h-[44px] flex items-center transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
@@ -200,7 +200,7 @@ export function Navigation({ countryCode }: NavigationProps) {
               ))}
 
               <div className="mt-3 pt-3 border-t border-[#2F2F2C]/10">
-                <p className="text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold px-3 pb-2">
+                <p className="text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold px-3 pb-2">
                   Organizaciones
                 </p>
                 {orgLinks.map((org) => (
@@ -211,7 +211,7 @@ export function Navigation({ countryCode }: NavigationProps) {
                     className="block py-3 px-3 rounded-sm hover:bg-[#2F2F2C]/5 transition-colors min-h-[44px]"
                   >
                     <p
-                      className="font-display text-base text-[#2F2F2C] hover:text-[#C96342]"
+                      className="font-display text-base text-[#2F2F2C] hover:text-[#B5522F]"
                     >
                       {org.label}
                     </p>

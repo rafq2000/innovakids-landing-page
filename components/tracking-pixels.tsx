@@ -18,12 +18,13 @@ const META_PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID || ""
 export function TrackingPixels() {
     return (
         <>
-            {/* Google tag — lazyOnload to avoid blocking LCP on mobile (saves ~900ms TBT) */}
+            {/* Google tag — afterInteractive so it's ready BEFORE users click WhatsApp/CTA.
+                lazyOnload lost conversions on mobile (tag not loaded when user clicked → silent no-op). */}
             <Script
                 src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
-                strategy="lazyOnload"
+                strategy="afterInteractive"
             />
-            <Script id="google-tag-init" strategy="lazyOnload">
+            <Script id="google-tag-init" strategy="afterInteractive">
                 {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}

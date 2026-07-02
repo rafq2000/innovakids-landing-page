@@ -102,7 +102,7 @@ export function B2BEditorialPage({
           <div className="flex items-center justify-between mb-10">
             <div className="flex items-center gap-3">
               <span
-                className="font-display italic text-[#C96342]"
+                className="font-display italic text-[#B5522F]"
                 style={{ fontSize: "1.75rem", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
               >
                 IK
@@ -111,7 +111,7 @@ export function B2BEditorialPage({
                 InnovaKids Latam · B2B
               </span>
             </div>
-            <span className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342]">
+            <span className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F]">
               {pill}
             </span>
           </div>
@@ -121,7 +121,7 @@ export function B2BEditorialPage({
             <div className="md:col-span-2">
               <span
                 aria-hidden
-                className="font-display italic leading-none text-[#C96342]/25 select-none block"
+                className="font-display italic leading-none text-[#B5522F]/25 select-none block"
                 style={{
                   fontSize: "clamp(6rem, 14vw, 11rem)",
                   fontVariationSettings: '"opsz" 144, "SOFT" 100',
@@ -140,7 +140,7 @@ export function B2BEditorialPage({
                 }}
               >
                 {headline.pre}{" "}
-                <em className="italic text-[#C96342]">{headline.emphasis}</em>{" "}
+                <em className="italic text-[#B5522F]">{headline.emphasis}</em>{" "}
                 {headline.post}
               </h1>
 
@@ -157,7 +157,7 @@ export function B2BEditorialPage({
         <ul className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#1A1714]/12 border-y border-[#1A1714]/12">
           {stats.map((s, i) => (
             <li key={i} className="py-8 md:py-10 md:px-10 flex items-baseline gap-5">
-              <span className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342]/70 tabular-nums">
+              <span className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F]/70 tabular-nums">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <div>
@@ -191,7 +191,7 @@ export function B2BEditorialPage({
       >
         <div className="flex items-center gap-4 mb-10">
           <span className="h-px w-12 bg-[#C96342]" />
-          <span className="font-mono-accent text-[10px] uppercase tracking-[0.32em] text-[#C96342] font-semibold">
+          <span className="font-mono-accent text-[10px] uppercase tracking-[0.32em] text-[#B5522F] font-semibold">
             Catálogo · N.º 02
           </span>
         </div>
@@ -217,12 +217,12 @@ export function B2BEditorialPage({
                 transition: `opacity 700ms ease ${200 + i * 120}ms, transform 700ms ease ${200 + i * 120}ms`,
               }}
             >
-              <span className="col-span-2 md:col-span-1 font-mono-accent text-xs text-[#C96342] font-semibold tabular-nums tracking-wider">
+              <span className="col-span-2 md:col-span-1 font-mono-accent text-xs text-[#B5522F] font-semibold tabular-nums tracking-wider">
                 {String(i + 1).padStart(2, "0")}
               </span>
 
               <div className="col-span-10 md:col-span-3">
-                <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-2">
+                <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] mb-2">
                   {it.k}
                 </p>
                 <h3
@@ -243,7 +243,7 @@ export function B2BEditorialPage({
               </div>
 
               <div className="hidden md:flex col-span-1 items-center justify-end">
-                <span className="font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#C96342]/60">
+                <span className="font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#B5522F]/60">
                   incluido
                 </span>
               </div>
@@ -259,7 +259,7 @@ export function B2BEditorialPage({
       >
         <div className="flex items-center gap-4 mb-10">
           <span className="h-px w-12 bg-[#C96342]" />
-          <span className="font-mono-accent text-[10px] uppercase tracking-[0.32em] text-[#C96342] font-semibold">
+          <span className="font-mono-accent text-[10px] uppercase tracking-[0.32em] text-[#B5522F] font-semibold">
             Proceso · N.º 03
           </span>
         </div>
@@ -271,7 +271,7 @@ export function B2BEditorialPage({
             fontVariationSettings: '"opsz" 144, "SOFT" 100',
           }}
         >
-          Tres pasos <em className="italic text-[#C96342]">en sesenta días</em>.
+          Tres pasos <em className="italic text-[#B5522F]">en sesenta días</em>.
         </h2>
 
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-0 md:divide-x divide-[#1A1714]/12 border-y border-[#1A1714]/12">
@@ -286,7 +286,7 @@ export function B2BEditorialPage({
               }}
             >
               <span
-                className="font-display italic text-[#C96342]/70 leading-none"
+                className="font-display italic text-[#B5522F]/70 leading-none"
                 style={{
                   fontSize: "clamp(2rem, 3vw, 2.75rem)",
                   fontVariationSettings: '"opsz" 144, "SOFT" 100',
@@ -313,7 +313,7 @@ export function B2BEditorialPage({
       {pricing && (
         <section className="max-w-[1180px] mx-auto px-6 md:px-10 mt-20 md:mt-28">
           <div className="p-8 md:p-10 bg-[#F2EDE0] border border-[#1A1714]/12 rounded-[3px]">
-            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-3">
+            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-3">
               Referencia de inversion
             </p>
             <p className="font-display text-2xl md:text-3xl leading-tight text-[#1A1714]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
@@ -330,7 +330,7 @@ export function B2BEditorialPage({
       <section id="contacto-b2b" className="max-w-[1180px] mx-auto px-6 md:px-10 mt-20 md:mt-28">
         <div className="flex items-center gap-4 mb-10">
           <span className="h-px w-12 bg-[#C96342]" />
-          <span className="font-mono-accent text-[10px] uppercase tracking-[0.32em] text-[#C96342] font-semibold">
+          <span className="font-mono-accent text-[10px] uppercase tracking-[0.32em] text-[#B5522F] font-semibold">
             Contacto institucional
           </span>
         </div>
@@ -341,7 +341,7 @@ export function B2BEditorialPage({
               className="font-display leading-[1] tracking-[-0.02em] mb-6"
               style={{ fontSize: "clamp(2rem, 4vw, 3rem)", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
             >
-              Cuente con <em className="italic text-[#C96342]">nosotros</em>.
+              Cuente con <em className="italic text-[#B5522F]">nosotros</em>.
             </h2>
             <p className="text-base text-[#1A1714]/70 leading-relaxed mb-8 max-w-[38ch]">
               Complete el formulario y le enviaremos una propuesta personalizada en 48 horas habiles.
@@ -352,7 +352,7 @@ export function B2BEditorialPage({
                 href={closing.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#C96342] underline underline-offset-2"
+                className="text-[#B5522F] underline underline-offset-2"
               >
                 WhatsApp
               </a>
@@ -388,7 +388,7 @@ export function B2BEditorialPage({
               >
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-2">
+                    <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#B5522F] font-semibold mb-2">
                       Nombre completo
                     </label>
                     <input
@@ -401,7 +401,7 @@ export function B2BEditorialPage({
                     />
                   </div>
                   <div>
-                    <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-2">
+                    <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#B5522F] font-semibold mb-2">
                       Institucion
                     </label>
                     <input
@@ -416,7 +416,7 @@ export function B2BEditorialPage({
                 </div>
                 <div className="grid sm:grid-cols-2 gap-6">
                   <div>
-                    <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-2">
+                    <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#B5522F] font-semibold mb-2">
                       Email institucional
                     </label>
                     <input
@@ -429,7 +429,7 @@ export function B2BEditorialPage({
                     />
                   </div>
                   <div>
-                    <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-2">
+                    <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#B5522F] font-semibold mb-2">
                       Cargo
                     </label>
                     <input
@@ -442,7 +442,7 @@ export function B2BEditorialPage({
                   </div>
                 </div>
                 <div>
-                  <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#C96342] font-semibold mb-2">
+                  <label className="block font-mono-accent text-[10px] uppercase tracking-[0.18em] text-[#B5522F] font-semibold mb-2">
                     Mensaje (opcional)
                   </label>
                   <textarea
@@ -483,7 +483,7 @@ export function B2BEditorialPage({
           className="relative bg-[#F2EDE0] border border-[#1A1714]/15 rounded-[3px] p-10 md:p-16 text-center"
           style={{ boxShadow: "0 40px 80px -50px rgba(26,23,20,0.35)" }}
         >
-          <span className="font-mono-accent text-[10px] uppercase tracking-[0.32em] text-[#C96342] mb-6 block">
+          <span className="font-mono-accent text-[10px] uppercase tracking-[0.32em] text-[#B5522F] mb-6 block">
             Siguiente paso
           </span>
 
@@ -515,7 +515,7 @@ export function B2BEditorialPage({
           <div className="mt-10 pt-8 border-t border-[#1A1714]/12 flex items-center justify-center gap-3">
             <DotLeader />
             <span
-              className="font-display italic text-[#C96342]"
+              className="font-display italic text-[#B5522F]"
               style={{ fontSize: "1.5rem", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
             >
               IK

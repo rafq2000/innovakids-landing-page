@@ -94,9 +94,9 @@ export default function UruguayBlogGuiaPage() {
                 <article className="pt-32 pb-16">
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                         <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
-                            <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                            <Link href="/" className="hover:text-[#B5522F] transition-colors">InnovaKids</Link>
                             <span className="mx-3" aria-hidden>/</span>
-                            <Link href="/uy" className="hover:text-[#C96342] transition-colors">Uruguay</Link>
+                            <Link href="/uy" className="hover:text-[#B5522F] transition-colors">Uruguay</Link>
                             <span className="mx-3" aria-hidden>/</span>
                             <span className="text-[#1A1714]">Guía de cursos de IA</span>
                         </nav>
@@ -104,7 +104,7 @@ export default function UruguayBlogGuiaPage() {
                         <header className="mb-16 pb-16 border-b border-[#1A1714]/12">
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                     Guía completa 2026 · 15 min de lectura
                                 </span>
                             </div>
@@ -113,7 +113,7 @@ export default function UruguayBlogGuiaPage() {
                                 className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[22ch]"
                                 style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                             >
-                                Vibe Coding en <em className="italic text-[#C96342]">Uruguay</em>: guía completa para padres 2026.
+                                Vibe Coding en <em className="italic text-[#B5522F]">Uruguay</em>: guía completa para padres 2026.
                             </h1>
 
                             <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[60ch]">
@@ -130,7 +130,7 @@ export default function UruguayBlogGuiaPage() {
                         </header>
 
                         <aside className="not-prose my-12 border-l-2 border-[#C96342] pl-6 py-2">
-                            <p className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold mb-2">
+                            <p className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold mb-2">
                                 ¿Por qué enseñar IA a los niños uruguayos?
                             </p>
                             <p
@@ -149,7 +149,7 @@ export default function UruguayBlogGuiaPage() {
                                 prose-h2:text-3xl prose-h2:sm:text-4xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-[#1A1714]/15
                                 prose-p:font-sans prose-p:text-[#1A1714]/85 prose-p:text-lg prose-p:leading-[1.75]
                                 prose-strong:text-[#1A1714]
-                                prose-a:text-[#C96342] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline"
+                                prose-a:text-[#B5522F] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline"
                         >
                             <h2>1. Estado de la IA en la educación uruguaya</h2>
                             <p>
@@ -161,13 +161,13 @@ export default function UruguayBlogGuiaPage() {
 
                         <div className="not-prose my-10 grid md:grid-cols-2 border border-[#1A1714]/12 divide-y md:divide-y-0 md:divide-x divide-[#1A1714]/12">
                             <div className="p-8">
-                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">Ventajas de Uruguay</p>
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">Ventajas de Uruguay</p>
                                 <ul className="space-y-2.5 text-[15px] text-[#1A1714]/80 leading-relaxed">
                                     {advantages.map((a) => <li key={a}>· {a}</li>)}
                                 </ul>
                             </div>
                             <div className="p-8">
-                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">Oportunidades</p>
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">Oportunidades</p>
                                 <ul className="space-y-2.5 text-[15px] text-[#1A1714]/80 leading-relaxed">
                                     {opportunities.map((o) => <li key={o}>· {o}</li>)}
                                 </ul>
@@ -188,7 +188,7 @@ export default function UruguayBlogGuiaPage() {
                             {pillars.map((pillar, i) => (
                                 <li key={pillar.title} className="grid md:grid-cols-[1fr_2fr] gap-6 md:gap-12 py-8 border-b border-[#1A1714]/12">
                                     <div>
-                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-2">
+                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-2">
                                             0{i + 1}
                                         </p>
                                         <p
@@ -216,7 +216,7 @@ export default function UruguayBlogGuiaPage() {
                                 <thead>
                                     <tr className="border-y-2 border-[#1A1714]">
                                         <th className="py-4 pr-4 text-[11px] tracking-[0.22em] uppercase text-[#1A1714] font-semibold">Aspecto</th>
-                                        <th className="py-4 px-4 text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">InnovaKids</th>
+                                        <th className="py-4 px-4 text-[11px] tracking-[0.22em] uppercase text-[#B5522F] font-semibold">InnovaKids</th>
                                         <th className="py-4 pl-4 text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/70 font-semibold">Otros cursos</th>
                                     </tr>
                                 </thead>
@@ -246,7 +246,7 @@ export default function UruguayBlogGuiaPage() {
                                     key={item.title}
                                     className={`p-8 border-[#1A1714]/12 ${i < 2 ? "border-b" : ""} ${i % 2 === 0 ? "md:border-r" : ""}`}
                                 >
-                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
                                         0{i + 1}
                                     </p>
                                     <h4
@@ -289,7 +289,7 @@ export default function UruguayBlogGuiaPage() {
                                 <div className="md:col-span-7">
                                     <div className="flex items-center gap-3 mb-5">
                                         <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                        <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                        <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                             Próximo paso
                                         </span>
                                     </div>
@@ -323,7 +323,7 @@ export default function UruguayBlogGuiaPage() {
 
                         {/* Related */}
                         <section className="mt-16">
-                            <p className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold mb-6">Sigue leyendo</p>
+                            <p className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold mb-6">Sigue leyendo</p>
                             <div className="grid md:grid-cols-3 gap-0 border-t border-[#1A1714]/12">
                                 <Link
                                     href="/uy"
@@ -331,7 +331,7 @@ export default function UruguayBlogGuiaPage() {
                                 >
                                     <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Uruguay</p>
                                     <h4
-                                        className="text-xl leading-tight text-[#1A1714] group-hover:text-[#C96342] transition-colors"
+                                        className="text-xl leading-tight text-[#1A1714] group-hover:text-[#B5522F] transition-colors"
                                         style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                     >
                                         Cursos IA niños Uruguay
@@ -343,7 +343,7 @@ export default function UruguayBlogGuiaPage() {
                                 >
                                     <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Montevideo</p>
                                     <h4
-                                        className="text-xl leading-tight text-[#1A1714] group-hover:text-[#C96342] transition-colors"
+                                        className="text-xl leading-tight text-[#1A1714] group-hover:text-[#B5522F] transition-colors"
                                         style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                     >
                                         Clases IA Montevideo
@@ -355,7 +355,7 @@ export default function UruguayBlogGuiaPage() {
                                 >
                                     <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">País</p>
                                     <h4
-                                        className="text-xl leading-tight text-[#1A1714] group-hover:text-[#C96342] transition-colors"
+                                        className="text-xl leading-tight text-[#1A1714] group-hover:text-[#B5522F] transition-colors"
                                         style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                     >
                                         InnovaKids Uruguay

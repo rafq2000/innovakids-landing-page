@@ -80,9 +80,9 @@ export default function ArgentinaBlogGuiaPage() {
                 <article className="pt-32 pb-16">
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                         <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
-                            <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                            <Link href="/" className="hover:text-[#B5522F] transition-colors">InnovaKids</Link>
                             <span className="mx-3" aria-hidden>/</span>
-                            <Link href="/ar" className="hover:text-[#C96342] transition-colors">Argentina</Link>
+                            <Link href="/ar" className="hover:text-[#B5522F] transition-colors">Argentina</Link>
                             <span className="mx-3" aria-hidden>/</span>
                             <span className="text-[#1A1714]">Guía de cursos de IA</span>
                         </nav>
@@ -90,7 +90,7 @@ export default function ArgentinaBlogGuiaPage() {
                         <header className="mb-16 pb-16 border-b border-[#1A1714]/12">
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                     Guía Argentina · 12 min de lectura
                                 </span>
                             </div>
@@ -99,7 +99,7 @@ export default function ArgentinaBlogGuiaPage() {
                                 className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[22ch]"
                                 style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                             >
-                                Vibe Coding en <em className="italic text-[#C96342]">Argentina</em>: guía completa para padres 2026.
+                                Vibe Coding en <em className="italic text-[#B5522F]">Argentina</em>: guía completa para padres 2026.
                             </h1>
 
                             <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[60ch]">
@@ -123,9 +123,9 @@ export default function ArgentinaBlogGuiaPage() {
                                 prose-h3:text-[#A8502F] prose-h3:text-xl prose-h3:mt-10
                                 prose-p:font-sans prose-p:text-[#1A1714]/85 prose-p:text-lg prose-p:leading-[1.75]
                                 prose-strong:text-[#1A1714]
-                                prose-a:text-[#C96342] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
+                                prose-a:text-[#B5522F] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
                                 prose-li:font-sans prose-li:text-[#1A1714]/85
-                                prose-li:marker:text-[#C96342]
+                                prose-li:marker:text-[#B5522F]
                                 prose-ul:font-sans prose-ol:font-sans"
                         >
                             <h2>¿Qué es el Vibe Coding y por qué aprenderlo?</h2>
@@ -140,7 +140,7 @@ export default function ArgentinaBlogGuiaPage() {
                         </div>
 
                         <aside className="not-prose my-12 border-l-2 border-[#C96342] pl-6 py-2">
-                            <p className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold mb-2">Dato importante</p>
+                            <p className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold mb-2">Dato importante</p>
                             <p
                                 className="text-lg leading-[1.6] text-[#1A1714]/85"
                                 style={{ fontFamily: "'Charter', 'Georgia', serif" }}
@@ -157,7 +157,7 @@ export default function ArgentinaBlogGuiaPage() {
                                 prose-h3:text-[#A8502F] prose-h3:text-xl prose-h3:mt-10
                                 prose-p:font-sans prose-p:text-[#1A1714]/85 prose-p:text-lg prose-p:leading-[1.75]
                                 prose-strong:text-[#1A1714]
-                                prose-a:text-[#C96342] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline"
+                                prose-a:text-[#B5522F] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline"
                         >
                             <h2>¿Qué debe incluir un buen curso de IA para chicos?</h2>
                             <p>No todos los cursos de IA son iguales. Estas son las características a buscar:</p>
@@ -194,7 +194,7 @@ export default function ArgentinaBlogGuiaPage() {
                                 <thead>
                                     <tr className="border-y-2 border-[#1A1714]">
                                         <th className="py-4 pr-4 text-[11px] tracking-[0.22em] uppercase text-[#1A1714] font-semibold">Característica</th>
-                                        <th className="py-4 px-4 text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">InnovaKids</th>
+                                        <th className="py-4 px-4 text-[11px] tracking-[0.22em] uppercase text-[#B5522F] font-semibold">InnovaKids</th>
                                         <th className="py-4 pl-4 text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/70 font-semibold">Otros cursos</th>
                                     </tr>
                                 </thead>
@@ -224,7 +224,7 @@ export default function ArgentinaBlogGuiaPage() {
                         <ul className="not-prose my-10 grid md:grid-cols-2 gap-x-8 gap-y-4 border-t border-[#1A1714]/12 pt-6">
                             {projects.map((p, i) => (
                                 <li key={p} className="flex gap-4 items-baseline">
-                                    <span className="text-[11px] uppercase tracking-[0.22em] text-[#C96342] font-semibold shrink-0">
+                                    <span className="text-[11px] uppercase tracking-[0.22em] text-[#B5522F] font-semibold shrink-0">
                                         0{i < 9 ? i + 1 : ""}{i >= 9 ? i + 1 : ""}
                                     </span>
                                     <span className="text-[15px] text-[#1A1714]/85 leading-relaxed">{p}</span>
@@ -278,7 +278,7 @@ export default function ArgentinaBlogGuiaPage() {
                                 <div className="md:col-span-7">
                                     <div className="flex items-center gap-3 mb-5">
                                         <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                        <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                        <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                             Próximo paso
                                         </span>
                                     </div>
@@ -312,7 +312,7 @@ export default function ArgentinaBlogGuiaPage() {
 
                         {/* Related */}
                         <section className="mt-16">
-                            <p className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold mb-6">
+                            <p className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold mb-6">
                                 Sigue leyendo
                             </p>
                             <div className="grid md:grid-cols-2 gap-0 border-t border-[#1A1714]/12">
@@ -322,7 +322,7 @@ export default function ArgentinaBlogGuiaPage() {
                                 >
                                     <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Programa</p>
                                     <h3
-                                        className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#C96342] transition-colors"
+                                        className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#B5522F] transition-colors"
                                         style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                     >
                                         Cursos de IA para chicos en Argentina
@@ -337,7 +337,7 @@ export default function ArgentinaBlogGuiaPage() {
                                 >
                                     <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Buenos Aires</p>
                                     <h3
-                                        className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#C96342] transition-colors"
+                                        className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#B5522F] transition-colors"
                                         style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                     >
                                         Clases de IA en Buenos Aires

@@ -58,12 +58,12 @@ const faqJsonLd = {
       name: "Es seguro que mi hijo use ChatGPT u otras herramientas de IA?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Si, siempre que se establezcan reglas claras y supervision adecuada. ChatGPT tiene restricciones de contenido, pero ningun filtro es perfecto. Lo mas importante es que tu hijo entienda que información no debe compartir (datos personales, fotos, dirección) y que aprenda a evaluar criticamente las respuestas de la IA.",
+        text: "Si, siempre que se establezcan reglas claras y supervisión adecuada. ChatGPT tiene restricciones de contenido, pero ningún filtro es perfecto. Lo más importante es que tu hijo entienda que información no debe compartir (datos personales, fotos, dirección) y que aprenda a evaluar críticamente las respuestas de la IA.",
       },
     },
     {
       "@type": "Question",
-      name: "Deberia prohibirle a mi hijo usar Inteligencia Artificial?",
+      name: "Debería prohibirle a mi hijo usar Inteligencia Artificial?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "No. Prohibir la IA es como haber prohibido Internet en los años 2000: solo retrasa el aprendizaje de tu hijo sin protegerlo realmente. La IA está en todas partes y tu hijo la encontrará de todas formas. Es mucho mejor enseñarlo a usarla de forma segura y responsable que pretender que no existe.",
@@ -142,25 +142,25 @@ export default function ComoProtegerHijosIAPage() {
             {/* Introduction */}
             <div className="prose prose-lg max-w-none mb-12">
               <p className="text-lg text-gray-700 leading-relaxed">
-                Si eres padre o madre en 2026, probablemente has sentido una mezcla de fascinacion y
-                preocupacion frente a la Inteligencia Artificial. Por un lado, sabes que es una herramienta
+                Si eres padre o madre en 2026, probablemente has sentido una mezcla de fascinación y
+                preocupación frente a la Inteligencia Artificial. Por un lado, sabes que es una herramienta
                 poderosa que puede ayudar a tu hijo a aprender y crear. Por otro lado, te preguntas:
-                ¿es seguro? ¿Que pasa con su privacidad? ¿No deberia esperar a que sea mas grande?
+                ¿es seguro? ¿Qué pasa con su privacidad? ¿No debería esperar a que sea más grande?
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Estas preocupaciones son completamente validas. Pero la evidencia muestra que la mejor
+                Estas preocupaciones son completamente válidas. Pero la evidencia muestra que la mejor
                 protección no es prohibir la tecnología, sino <strong>educar para usarla bien</strong>.
-                Los niños que aprenden a usar la IA de forma guiada y responsable estan mejor preparados
-                que aquellos que la descubren solos, sin contexto ni supervision.
+                Los niños que aprenden a usar la IA de forma guiada y responsable están mejor preparados
+                que aquellos que la descubren solos, sin contexto ni supervisión.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                En está guia, compartimos todo lo que hemos aprendido en{" "}
+                En esta guía, compartimos todo lo que hemos aprendido en{" "}
                 <Link href="/cursos/inteligencia-artificial" className="text-[#4ECDC4] hover:underline">
                   InnovaKids
                 </Link>{" "}
                 trabajando con cientos de familias latinoamericanas. Desde reglas básicas de privacidad
-                hasta estrategias para fomentar el pensamiento crítico, aqui encontrarás un plan
-                practico para que tu hijo navegue la era de la IA con confianza y seguridad.
+                hasta estrategias para fomentar el pensamiento crítico, aquí encontrarás un plan
+                práctico para que tu hijo navegue la era de la IA con confianza y seguridad.
               </p>
             </div>
 
@@ -258,7 +258,7 @@ export default function ComoProtegerHijosIAPage() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Supervisión Segun la Edad</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                El nivel de supervision que necesita tu hijo varia segun su edad y madurez. No es lo mismo
+                El nivel de supervisión que necesita tu hijo varia segun su edad y madurez. No es lo mismo
                 un nino de 8 años que un adolescente de 16. Aqui te damos pautas concretas para cada
                 grupo de edad.
               </p>
@@ -286,7 +286,7 @@ export default function ComoProtegerHijosIAPage() {
                   <h3 className="text-xl font-bold text-purple-800 mb-3">11-13 años: Supervisión Guiada</h3>
                   <p className="text-gray-700 mb-3">
                     Los preadolescentes pueden usar la IA con mas independencia, pero aun necesitan
-                    supervision regular. A está edad, el enfoque cambia de controlar a conversar.
+                    supervisión regular. A está edad, el enfoque cambia de controlar a conversar.
                     Preguntale que está haciendo con la IA, que aprendio, que le sorprendio.
                   </p>
                   <ul className="space-y-1 text-gray-700 text-sm">
@@ -319,7 +319,7 @@ export default function ComoProtegerHijosIAPage() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Ensenando Pensamiento Critico frente a la IA</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                La habilidad mas importante que puedes ensenerle a tu hijo sobre la IA no es como
+                La habilidad más importante que puedes enseñarle a tu hijo sobre la IA no es cómo
                 usarla, sino <strong>como no confiar ciegamente en ella</strong>. La IA se equivoca, inventa
                 datos, tiene sesgos y puede generar contenido danino si no se le dan las instrucciones
                 correctas. Un nino que entiende esto está verdaderamente protegido.
@@ -357,7 +357,7 @@ export default function ComoProtegerHijosIAPage() {
               <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Herramientas de IA Seguras por Edad</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 No todas las herramientas de IA son iguales en terminos de seguridad. Algunas tienen
-                filtros de contenido mas estrictos, otras estan diseñadas específicamente para niños.
+                filtros de contenido más estrictos, otras están diseñadas específicamente para niños.
                 Aqui te orientamos sobre cuales son apropiadas para cada edad.
               </p>
 
@@ -433,7 +433,7 @@ export default function ComoProtegerHijosIAPage() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-[#2D3436] mb-6">IA y Tareas del Colegio: Donde Esta el Limite</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Una de las preocupaciones mas grandes de los padres es que sus hijos usen la IA para
+                Una de las preocupaciones más grandes de los padres es que sus hijos usen la IA para
                 hacer trampa en el colegio. Es una preocupacion valida, pero la solución no es prohibir
                 sino <strong>ensenar la diferencia entre usar y abusar</strong>.
               </p>
@@ -486,12 +486,12 @@ export default function ComoProtegerHijosIAPage() {
                 <div className="border border-gray-200 p-6 rounded-xl">
                   <h3 className="text-lg font-bold text-[#2D3436] mb-2">Es seguro que mi hijo use ChatGPT?</h3>
                   <p className="text-gray-700">
-                    Si, con reglas claras y supervision adecuada a su edad. Lo mas importante es que
-                    sepa que información no debe compartir y que aprenda a evaluar criticamente las respuestas.
+                    Si, con reglas claras y supervisión adecuada a su edad. Lo más importante es que
+                    sepa que información no debe compartir y que aprenda a evaluar críticamente las respuestas.
                   </p>
                 </div>
                 <div className="border border-gray-200 p-6 rounded-xl">
-                  <h3 className="text-lg font-bold text-[#2D3436] mb-2">Deberia prohibirle a mi hijo usar IA?</h3>
+                  <h3 className="text-lg font-bold text-[#2D3436] mb-2">Debería prohibirle a mi hijo usar IA?</h3>
                   <p className="text-gray-700">
                     No. Es mejor enseñarlo a usarla de forma segura y responsable. La IA está en todas
                     partes y tu hijo la encontrará de todas formas. Educarlo es protegerlo.

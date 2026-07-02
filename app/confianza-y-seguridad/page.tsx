@@ -92,7 +92,7 @@ export default function SecurityPage() {
                 <section className="pt-32 pb-16">
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                         <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
-                            <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                            <Link href="/" className="hover:text-[#B5522F] transition-colors">InnovaKids</Link>
                             <span className="mx-3" aria-hidden>/</span>
                             <span className="text-[#1A1714]">Confianza y seguridad</span>
                         </nav>
@@ -100,7 +100,7 @@ export default function SecurityPage() {
                         <header className="mb-20 pb-16 border-b border-[#1A1714]/12">
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                     Compromiso absoluto · protección al menor
                                 </span>
                             </div>
@@ -108,7 +108,7 @@ export default function SecurityPage() {
                                 className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[20ch]"
                                 style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                             >
-                                Seguridad <em className="italic text-[#C96342]">infantil</em> por diseño.
+                                Seguridad <em className="italic text-[#B5522F]">infantil</em> por diseño.
                             </h1>
                             <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[58ch]">
                                 Nuestra prioridad número uno es garantizar un entorno digital 100% seguro, auditado e
@@ -120,7 +120,7 @@ export default function SecurityPage() {
                             {pillars.map((p, i) => (
                                 <li key={p.label} className="py-12 border-b border-[#1A1714]/12 grid md:grid-cols-12 gap-8 md:gap-12">
                                     <div className="md:col-span-4">
-                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                                             Pilar 0{i + 1}
                                         </p>
                                         <h2
@@ -135,7 +135,7 @@ export default function SecurityPage() {
                                         <ul className="mt-6 border-t border-[#1A1714]/12">
                                             {p.items.map((item, j) => (
                                                 <li key={item} className="grid grid-cols-[auto_1fr] gap-6 py-4 border-b border-[#1A1714]/12 items-baseline">
-                                                    <span className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">
+                                                    <span className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">
                                                         {String(j + 1).padStart(2, "0")}
                                                     </span>
                                                     <span className="text-[15px] md:text-base text-[#1A1714]/85 leading-relaxed">
@@ -154,7 +154,7 @@ export default function SecurityPage() {
                                 <div className="md:col-span-7">
                                     <div className="flex items-center gap-3 mb-5">
                                         <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                        <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                        <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                             ¿Dudas específicas?
                                         </span>
                                     </div>

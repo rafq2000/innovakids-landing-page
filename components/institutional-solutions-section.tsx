@@ -189,7 +189,7 @@ const Card = ({ item, index }: { item: Audience; index: number }) => {
       {/* Corner roman numeral */}
       <span
         aria-hidden
-        className="absolute top-4 right-5 font-display italic leading-none text-[#C96342]/35 select-none tabular-nums"
+        className="absolute top-4 right-5 font-display italic leading-none text-[#B5522F]/35 select-none tabular-nums"
         style={{
           fontSize: "clamp(3rem, 5vw, 4.5rem)",
           fontVariationSettings: '"opsz" 144, "SOFT" 100',
@@ -204,7 +204,7 @@ const Card = ({ item, index }: { item: Audience; index: number }) => {
       </div>
 
       {/* Kicker */}
-      <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-3">
+      <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-3">
         {item.kicker}
       </p>
 
@@ -225,7 +225,7 @@ const Card = ({ item, index }: { item: Audience; index: number }) => {
             key={b}
             className="flex items-baseline gap-3 font-body text-[14px] text-[#1A1714]/90 leading-relaxed"
           >
-            <span aria-hidden className="font-display italic text-[#C96342] leading-none mt-0.5">—</span>
+            <span aria-hidden className="font-display italic text-[#B5522F] leading-none mt-0.5">—</span>
             <span>{b}</span>
           </li>
         ))}
@@ -234,7 +234,7 @@ const Card = ({ item, index }: { item: Audience; index: number }) => {
       {/* CTA */}
       <a
         href={item.href}
-        className="group inline-flex items-center justify-between gap-3 border-t border-[#1A1714]/15 pt-5 font-display text-lg md:text-[20px] text-[#1A1714] hover:text-[#C96342] transition-colors duration-300"
+        className="group inline-flex items-center justify-between gap-3 border-t border-[#1A1714]/15 pt-5 font-display text-lg md:text-[20px] text-[#1A1714] hover:text-[#B5522F] transition-colors duration-300"
       >
         <span>{item.cta}</span>
         <span
@@ -281,7 +281,7 @@ export function InstitutionalSolutionsSection() {
         <div className="rise rise-1 flex items-center justify-between mb-16 md:mb-20">
           <div className="flex items-center gap-5">
             <div className="h-px w-12 bg-[#C96342]" />
-            <p className="font-mono-accent text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+            <p className="font-mono-accent text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
               Capítulo IV · Para organizaciones
             </p>
           </div>
@@ -294,12 +294,12 @@ export function InstitutionalSolutionsSection() {
                 className="font-display italic text-xl md:text-2xl text-[#1A1714] leading-none"
                 style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
               >
-                I<span className="text-[#C96342]">k</span>
+                I<span className="text-[#B5522F]">k</span>
               </span>
             </span>
             <span className="flex flex-col leading-tight">
               <span className="font-display text-xl md:text-2xl leading-none tracking-[-0.025em] text-[#1A1714]">
-                Innova<em className="not-italic font-semibold text-[#C96342]">kids</em>
+                Innova<em className="not-italic font-semibold text-[#B5522F]">kids</em>
               </span>
               <span className="font-mono-accent text-[8px] md:text-[9px] uppercase tracking-[0.28em] text-[#1A1714]/60 mt-1">
                 LATAM · división institucional
@@ -312,7 +312,7 @@ export function InstitutionalSolutionsSection() {
         <div className="grid grid-cols-12 gap-6 md:gap-10 mb-20 md:mb-24">
           <h2 className="rise rise-2 col-span-12 md:col-span-9 font-display text-5xl sm:text-6xl md:text-7xl lg:text-[96px] leading-[0.95] tracking-[-0.03em] font-normal">
             No sólo para{" "}
-            <em className="italic text-[#C96342]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
+            <em className="italic text-[#B5522F]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
               familias
             </em>
             .
@@ -339,7 +339,7 @@ export function InstitutionalSolutionsSection() {
         {/* Footer ledger-style social proof */}
         <div className="relative border-t border-[#1A1714]/15 pt-10 grid md:grid-cols-12 gap-6 md:gap-10 items-baseline">
           <div className="md:col-span-5">
-            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-2">
+            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-2">
               Prueba institucional
             </p>
             <p className="font-display italic text-2xl md:text-3xl leading-tight text-[#1A1714]">

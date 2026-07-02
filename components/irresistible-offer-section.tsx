@@ -92,7 +92,7 @@ export function IrresistibleOfferSection() {
 
           <div className={`${painRef.inView ? "io-fade-up" : "opacity-0"} flex items-center gap-4 mb-10`}>
             <span className="h-px w-10 bg-[#C96342]" />
-            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
               El problema real
             </p>
           </div>
@@ -103,7 +103,7 @@ export function IrresistibleOfferSection() {
           >
             En 2030, el trabajo que tu hijo quiere hacer
             <br />
-            <em className="italic text-[#C96342]">ya existe con IA</em> — o no existe.
+            <em className="italic text-[#B5522F]">ya existe con IA</em> — o no existe.
           </h2>
 
           <div className={`${painRef.inView ? "io-fade-up" : "opacity-0"} grid md:grid-cols-3 gap-8 md:gap-12 pt-14 border-t border-[#FAF7EF]/15`}
@@ -115,7 +115,7 @@ export function IrresistibleOfferSection() {
               { stat: "Hoy",  label: "es el mejor momento para que tu hijo aprenda — antes de que el resto lo haga.", src: "InnovaKids" },
             ].map((s, i) => (
               <div key={i} className={`${painRef.inView ? "io-fade-up" : "opacity-0"}`} style={{ animationDelay: `${280 + i * 100}ms` }}>
-                <p className="font-display italic text-[#C96342] leading-none mb-3 tabular-nums"
+                <p className="font-display italic text-[#B5522F] leading-none mb-3 tabular-nums"
                   style={{ fontSize: "clamp(2.5rem,5vw,4.5rem)", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
                   {s.stat}
                 </p>
@@ -128,13 +128,13 @@ export function IrresistibleOfferSection() {
           {/* cost of inaction */}
           <div className={`${painRef.inView ? "io-fade-up" : "opacity-0"} mt-16 md:mt-20 p-8 md:p-12 bg-[#FAF7EF]/05 border border-[#FAF7EF]/12 rounded-[3px]`}
             style={{ animationDelay: "520ms" }}>
-            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-5">
               El costo de no hacer nada
             </p>
             <p className="font-display text-2xl md:text-4xl leading-[1.1] tracking-[-0.02em] text-[#FAF7EF]"
               style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
               Un año de clases particulares de inglés cuesta entre{" "}
-              <em className="italic text-[#C96342]">$600 y $1,800 USD</em>.{" "}
+              <em className="italic text-[#B5522F]">$600 y $1,800 USD</em>.{" "}
               <span className="text-[#FAF7EF]/70">
                 La IA es el nuevo inglés — y todavía pocas familias lo están haciendo.
                 Cada semana que pasa, tu hijo acumula más retraso.
@@ -153,7 +153,7 @@ export function IrresistibleOfferSection() {
 
           <div className="flex items-center gap-4 mb-12">
             <span className="h-px w-10 bg-[#C96342]" />
-            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+            <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
               Antes de continuar
             </p>
           </div>
@@ -161,14 +161,14 @@ export function IrresistibleOfferSection() {
           <h2 className="font-display text-5xl sm:text-6xl md:text-7xl leading-[0.96] tracking-[-0.03em] mb-16 md:mb-20"
             style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
             InnovaKids es para ti{" "}
-            <em className="italic text-[#C96342]">si…</em>
+            <em className="italic text-[#B5522F]">si…</em>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10 md:gap-20">
 
             {/* SÍ */}
             <div>
-              <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+              <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">
                 Es para ti si...
               </p>
               <ul className="space-y-5">
@@ -198,7 +198,7 @@ export function IrresistibleOfferSection() {
                 <p className="font-display italic text-xl md:text-2xl text-[#1A1714] leading-[1.15]"
                   style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
                   "Somos selectivos porque{" "}
-                  <em className="text-[#C96342]">queremos resultados reales</em>{" "}
+                  <em className="text-[#B5522F]">queremos resultados reales</em>{" "}
                   — no solo matriculados."
                 </p>
                 <p className="font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#1A1714]/50 mt-4">

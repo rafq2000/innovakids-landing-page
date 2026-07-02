@@ -150,7 +150,7 @@ export function ProjectsGallery() {
         <section className="py-20 bg-[#FAF7EF]">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-6">
-                    <Badge variant="secondary" className="mb-4 text-sm font-normal bg-[#C96342]/10 text-[#C96342] border-0">
+                    <Badge variant="secondary" className="mb-4 text-sm font-normal bg-[#C96342]/10 text-[#B5522F] border-0">
                         Creados por alumnos reales
                     </Badge>
                     <h2 className="text-3xl md:text-4xl font-bold text-[#1A1714] mb-4">

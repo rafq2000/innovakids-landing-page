@@ -56,10 +56,10 @@ export default function IANinosPorEdadPage() {
         {/* Hero */}
         <section className="py-16 px-6 md:px-10">
           <div className="max-w-[1100px] mx-auto text-center">
-            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-4">Programas por edad</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#B5522F] mb-4">Programas por edad</p>
             <h1 className="text-5xl md:text-7xl font-display text-[#1A1714] mb-6 leading-tight">
               Cursos de IA Según{" "}
-              <span className="italic text-[#C96342]">
+              <span className="italic text-[#B5522F]">
                 la Edad de Tu Hijo
               </span>
             </h1>
@@ -80,7 +80,7 @@ export default function IANinosPorEdadPage() {
                 </div>
                 <div>
                   <h2 className="text-3xl md:text-4xl font-display text-[#1A1714]">Exploradores (8-10 años)</h2>
-                  <p className="text-[#C96342] font-semibold">Fase de Exploración y Descubrimiento</p>
+                  <p className="text-[#B5522F] font-semibold">Fase de Exploración y Descubrimiento</p>
                 </div>
               </div>
 
@@ -102,7 +102,7 @@ export default function IANinosPorEdadPage() {
                       "Seguridad digital adaptada a su edad",
                     ].map((item) => (
                       <li key={item} className="flex items-start text-[#3B3630]">
-                        <span className="text-[#C96342] mr-3">-</span>
+                        <span className="text-[#B5522F] mr-3">-</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -118,7 +118,7 @@ export default function IANinosPorEdadPage() {
                       "Un chatbot de su personaje favorito",
                     ].map((item) => (
                       <li key={item} className="flex items-start text-[#3B3630]">
-                        <span className="text-[#C96342] mr-3">-</span>
+                        <span className="text-[#B5522F] mr-3">-</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -127,7 +127,7 @@ export default function IANinosPorEdadPage() {
               </div>
 
               <div className="bg-[#F5F1E8] p-4 rounded-sm text-center border border-[#1A1714]/12">
-                <p className="text-[#C96342] font-semibold">
+                <p className="text-[#B5522F] font-semibold">
                   Ideal para: Niños curiosos que aman dibujar, inventar historias o jugar con tecnología.
                 </p>
               </div>
@@ -145,7 +145,7 @@ export default function IANinosPorEdadPage() {
                 </div>
                 <div>
                   <h2 className="text-3xl md:text-4xl font-display text-[#1A1714]">Creadores (11-13 años)</h2>
-                  <p className="text-[#C96342] font-semibold">Fase de Creación y Experimentación</p>
+                  <p className="text-[#B5522F] font-semibold">Fase de Creación y Experimentación</p>
                 </div>
               </div>
 
@@ -167,7 +167,7 @@ export default function IANinosPorEdadPage() {
                       "Ética digital y detección de deepfakes",
                     ].map((item) => (
                       <li key={item} className="flex items-start text-[#3B3630]">
-                        <span className="text-[#C96342] mr-3">-</span>
+                        <span className="text-[#B5522F] mr-3">-</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -183,7 +183,7 @@ export default function IANinosPorEdadPage() {
                       "Un portafolio digital profesional",
                     ].map((item) => (
                       <li key={item} className="flex items-start text-[#3B3630]">
-                        <span className="text-[#C96342] mr-3">-</span>
+                        <span className="text-[#B5522F] mr-3">-</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -192,7 +192,7 @@ export default function IANinosPorEdadPage() {
               </div>
 
               <div className="bg-[#F5F1E8] p-4 rounded-sm text-center border border-[#1A1714]/12">
-                <p className="text-[#C96342] font-semibold">
+                <p className="text-[#B5522F] font-semibold">
                   Ideal para: Preadolescentes que quieren crear contenido, juegos o apps y destacar entre sus amigos.
                 </p>
               </div>
@@ -210,7 +210,7 @@ export default function IANinosPorEdadPage() {
                 </div>
                 <div>
                   <h2 className="text-3xl md:text-4xl font-display text-[#1A1714]">Profesionales (14-17 años)</h2>
-                  <p className="text-[#C96342] font-semibold">Fase de Herramientas Profesionales</p>
+                  <p className="text-[#B5522F] font-semibold">Fase de Herramientas Profesionales</p>
                 </div>
               </div>
 
@@ -233,7 +233,7 @@ export default function IANinosPorEdadPage() {
                       "Construcción de marca personal digital",
                     ].map((item) => (
                       <li key={item} className="flex items-start text-[#3B3630]">
-                        <span className="text-[#C96342] mr-3">-</span>
+                        <span className="text-[#B5522F] mr-3">-</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -250,7 +250,7 @@ export default function IANinosPorEdadPage() {
                       "Un ensayo crítico sobre el impacto de la IA",
                     ].map((item) => (
                       <li key={item} className="flex items-start text-[#3B3630]">
-                        <span className="text-[#C96342] mr-3">-</span>
+                        <span className="text-[#B5522F] mr-3">-</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -259,7 +259,7 @@ export default function IANinosPorEdadPage() {
               </div>
 
               <div className="bg-[#F5F1E8] p-4 rounded-sm text-center border border-[#1A1714]/12">
-                <p className="text-[#C96342] font-semibold">
+                <p className="text-[#B5522F] font-semibold">
                   Ideal para: Adolescentes que quieren prepararse para la universidad, emprender o dominar herramientas profesionales.
                 </p>
               </div>
@@ -270,7 +270,7 @@ export default function IANinosPorEdadPage() {
         {/* How to Choose */}
         <section className="py-16 px-6 md:px-10 bg-[#F5F1E8]">
           <div className="max-w-[1100px] mx-auto text-center">
-            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-4">Orientacion</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#B5522F] mb-4">Orientacion</p>
             <h2 className="text-4xl font-display text-[#1A1714] mb-8">No Sabes Cuál Elegir?</h2>
             <p className="text-xl text-[#3B3630] mb-8">
               No te preocupes. En InnovaKids, todos los grupos de edad comparten el mismo curso de 10 clases,
@@ -292,15 +292,15 @@ export default function IANinosPorEdadPage() {
         <section className="py-8 px-6 md:px-10">
           <div className="max-w-[1100px] mx-auto">
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <Link href="/cursos/inteligencia-artificial" className="text-[#C96342] hover:text-[#9A4428] underline">
+              <Link href="/cursos/inteligencia-artificial" className="text-[#B5522F] hover:text-[#9A4428] underline">
                 Ver curso completo
               </Link>
               <span className="text-[#6B645B]">|</span>
-              <Link href="/adolescentes" className="text-[#C96342] hover:text-[#9A4428] underline">
+              <Link href="/adolescentes" className="text-[#B5522F] hover:text-[#9A4428] underline">
                 Curso para adolescentes
               </Link>
               <span className="text-[#6B645B]">|</span>
-              <Link href="/programa" className="text-[#C96342] hover:text-[#9A4428] underline">
+              <Link href="/programa" className="text-[#B5522F] hover:text-[#9A4428] underline">
                 Programa detallado
               </Link>
             </div>
@@ -311,7 +311,7 @@ export default function IANinosPorEdadPage() {
         <section className="py-16 px-6 md:px-10">
           <div className="max-w-[1100px] mx-auto text-center">
             <div className="bg-[#F5F1E8] p-12 rounded-sm border border-[#1A1714]/12">
-              <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-4">Siguiente paso</p>
+              <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#B5522F] mb-4">Siguiente paso</p>
               <h2 className="text-3xl font-display text-[#1A1714] mb-4">Encuentra el Grupo Ideal para Tu Hijo</h2>
               <p className="text-xl text-[#6B645B] mb-8">
                 Agenda una clase gratis y nuestro equipo asignará a tu hijo al grupo perfecto según su edad e intereses.

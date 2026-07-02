@@ -11,7 +11,7 @@ export function CurriculumSection() {
         {/* Masthead */}
         <div className="flex items-center gap-5 mb-20">
           <div className="h-px w-12 bg-[#C96342]" />
-          <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+          <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
             Currículum · 10 clases
           </p>
         </div>
@@ -20,7 +20,7 @@ export function CurriculumSection() {
           className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-[-0.02em] font-normal mb-8 max-w-[16ch]"
         >
           De consumidor a{" "}
-          <em className="italic text-[#C96342]">creador</em>.
+          <em className="italic text-[#B5522F]">creador</em>.
         </h2>
 
         <p className="text-lg md:text-xl text-[#5A5751] max-w-[56ch] leading-relaxed mb-20">
@@ -32,7 +32,7 @@ export function CurriculumSection() {
         {/* ─── EXPLORER CONTENT ─── */}
         <div className="grid md:grid-cols-12 gap-10 md:gap-16">
           <div className="md:col-span-4">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-5">
               Vibe Explorer · 10 clases
             </p>
             <h3 className="font-display text-3xl md:text-4xl leading-tight tracking-tight mb-6">
@@ -50,7 +50,7 @@ export function CurriculumSection() {
           <ol className="md:col-span-8 divide-y divide-[#2F2F2C]/12">
             {EXPLORER_CLASSES.map((cls) => (
               <li key={cls.num} className="py-5 flex items-start gap-6">
-                <span className="text-xs text-[#C96342] font-semibold tabular-nums shrink-0 w-6 pt-0.5">
+                <span className="text-xs text-[#B5522F] font-semibold tabular-nums shrink-0 w-6 pt-0.5">
                   {cls.num}
                 </span>
                 <div>

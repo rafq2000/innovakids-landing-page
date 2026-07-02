@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Footer } from "@/components/footer"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
@@ -37,7 +38,7 @@ export default function GuiaCompletaEspana() {
     "¡Hola! Leí la guía de cursos de IA para niños en España y me gustaría más información.",
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
-  const calendlyLink = "https://calendly.com/innovakids/evaluación"
+  const calendlyLink = "https://calendly.com/innovakidslatam/reunion-informativa-innovakids"
 
   return (
     <>
@@ -352,6 +353,7 @@ export default function GuiaCompletaEspana() {
             </div>
           </div>
         </article>
+              <Footer />
       </main>
     </>
   )

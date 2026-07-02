@@ -119,9 +119,9 @@ export default function GuiaCompletaPage() {
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                         {/* Breadcrumb */}
                         <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
-                            <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                            <Link href="/" className="hover:text-[#B5522F] transition-colors">InnovaKids</Link>
                             <span className="mx-3" aria-hidden>/</span>
-                            <Link href="/mx" className="hover:text-[#C96342] transition-colors">México</Link>
+                            <Link href="/mx" className="hover:text-[#B5522F] transition-colors">México</Link>
                             <span className="mx-3" aria-hidden>/</span>
                             <span className="text-[#1A1714]">Guía de cursos de IA</span>
                         </nav>
@@ -130,7 +130,7 @@ export default function GuiaCompletaPage() {
                         <header className="mb-16 pb-16 border-b border-[#1A1714]/12">
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                     Guía editorial · 15 min de lectura
                                 </span>
                             </div>
@@ -138,7 +138,7 @@ export default function GuiaCompletaPage() {
                                 className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[22ch]"
                                 style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                             >
-                                Vibe Coding en <em className="italic text-[#C96342]">México</em>: guía completa para padres 2026.
+                                Vibe Coding en <em className="italic text-[#B5522F]">México</em>: guía completa para padres 2026.
                             </h1>
                             <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[60ch]">
                                 Todo lo que necesitas saber antes de inscribir a tu hijo en un curso de IA. Comparativas,
@@ -151,12 +151,12 @@ export default function GuiaCompletaPage() {
                             {/* Sticky TOC */}
                             <aside className="lg:col-span-3">
                                 <div className="lg:sticky lg:top-32">
-                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">Índice</p>
+                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">Índice</p>
                                     <ol className="space-y-3 border-l border-[#1A1714]/15">
                                         {tocItems.map((item, i) => (
                                             <li key={item.id} className="pl-4">
-                                                <a href={`#${item.id}`} className="text-[14px] text-[#1A1714]/75 hover:text-[#C96342] transition-colors leading-snug block">
-                                                    <span className="text-[#C96342]/70 mr-2">0{i + 1}</span>
+                                                <a href={`#${item.id}`} className="text-[14px] text-[#1A1714]/75 hover:text-[#B5522F] transition-colors leading-snug block">
+                                                    <span className="text-[#B5522F]/70 mr-2">0{i + 1}</span>
                                                     {item.label}
                                                 </a>
                                             </li>
@@ -173,9 +173,9 @@ export default function GuiaCompletaPage() {
                                         prose-h2:text-3xl prose-h2:sm:text-4xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-[#1A1714]/15
                                         prose-p:font-sans prose-p:text-[#1A1714]/85 prose-p:text-lg prose-p:leading-[1.75]
                                         prose-strong:text-[#1A1714]
-                                        prose-a:text-[#C96342] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
-                                        prose-li:font-sans prose-li:text-[#1A1714]/85 prose-li:marker:text-[#C96342]
-                                        [&>p:first-of-type]:first-letter:text-6xl [&>p:first-of-type]:first-letter:font-serif [&>p:first-of-type]:first-letter:text-[#C96342] [&>p:first-of-type]:first-letter:float-left [&>p:first-of-type]:first-letter:mr-3 [&>p:first-of-type]:first-letter:leading-[0.9]"
+                                        prose-a:text-[#B5522F] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
+                                        prose-li:font-sans prose-li:text-[#1A1714]/85 prose-li:marker:text-[#B5522F]
+                                        [&>p:first-of-type]:first-letter:text-6xl [&>p:first-of-type]:first-letter:font-serif [&>p:first-of-type]:first-letter:text-[#B5522F] [&>p:first-of-type]:first-letter:float-left [&>p:first-of-type]:first-letter:mr-3 [&>p:first-of-type]:first-letter:leading-[0.9]"
                                 >
                                     <section id="que-es">
                                         <h2>¿Qué es el Vibe Coding?</h2>
@@ -210,7 +210,7 @@ export default function GuiaCompletaPage() {
                                         { title: "Uso responsable", desc: "Entienden los límites éticos y la ciudadanía digital." },
                                     ].map((r, i) => (
                                         <li key={r.title} className="grid grid-cols-[auto_1fr] gap-8 py-6 border-b border-[#1A1714]/12 items-baseline">
-                                            <span className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">0{i + 1}</span>
+                                            <span className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">0{i + 1}</span>
                                             <div>
                                                 <p className="text-xl md:text-2xl text-[#1A1714]" style={{ fontFamily: "'Charter', 'Georgia', serif" }}>{r.title}</p>
                                                 <p className="mt-1 text-[15px] text-[#1A1714]/75 leading-relaxed">{r.desc}</p>
@@ -245,13 +245,13 @@ export default function GuiaCompletaPage() {
                                     </p>
                                     <div className="grid md:grid-cols-2 gap-px bg-[#1A1714]/12 border border-[#1A1714]/12 mt-8">
                                         <div className="bg-[#FAF7EF] p-8">
-                                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-3">8-10 años</p>
+                                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-3">8-10 años</p>
                                             <p className="text-[15px] text-[#1A1714]/80 leading-relaxed">
                                                 Creatividad, arte con IA, historias interactivas y juegos simples guiados.
                                             </p>
                                         </div>
                                         <div className="bg-[#FAF7EF] p-8">
-                                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-3">11-14 años</p>
+                                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-3">11-14 años</p>
                                             <p className="text-[15px] text-[#1A1714]/80 leading-relaxed">
                                                 Proyectos complejos: apps funcionales, automatizaciones y mini-startups.
                                             </p>
@@ -272,7 +272,7 @@ export default function GuiaCompletaPage() {
                                             <thead>
                                                 <tr className="border-b border-[#1A1714]/15">
                                                     {["Programa", "Precio", "Clases", "Grupo", "Garantía"].map((h) => (
-                                                        <th key={h} className="text-left py-4 px-5 text-[11px] uppercase tracking-[0.22em] text-[#C96342] font-semibold">{h}</th>
+                                                        <th key={h} className="text-left py-4 px-5 text-[11px] uppercase tracking-[0.22em] text-[#B5522F] font-semibold">{h}</th>
                                                     ))}
                                                 </tr>
                                             </thead>
@@ -280,7 +280,7 @@ export default function GuiaCompletaPage() {
                                                 {comparisonRows.map((row) => (
                                                     <tr key={row.program} className={`border-b border-[#1A1714]/10 last:border-b-0 ${row.highlight ? "bg-[#F2EDE0]/60" : ""}`}>
                                                         <td className="py-5 px-5">
-                                                            <span className={`${row.highlight ? "text-[#C96342] font-semibold" : "text-[#1A1714]"}`} style={{ fontFamily: row.highlight ? "'Charter', 'Georgia', serif" : undefined }}>
+                                                            <span className={`${row.highlight ? "text-[#B5522F] font-semibold" : "text-[#1A1714]"}`} style={{ fontFamily: row.highlight ? "'Charter', 'Georgia', serif" : undefined }}>
                                                                 {row.program}
                                                             </span>
                                                         </td>
@@ -295,7 +295,7 @@ export default function GuiaCompletaPage() {
                                     </div>
 
                                     <div className="mt-8 border-l-2 border-[#C96342] pl-6 py-2">
-                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-3">Por qué destaca</p>
+                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-3">Por qué destaca</p>
                                         <p className="text-[15px] text-[#1A1714]/85 leading-relaxed">
                                             Grupos de 5 niños (no 15-30), 10 proyectos reales para mostrar, garantía de 10 días con
                                             devolución completa, y soporte WhatsApp 24/7 en español.
@@ -316,7 +316,7 @@ export default function GuiaCompletaPage() {
                                         {projectPlan.map((p, i) => (
                                             <li key={p.block} className="grid grid-cols-[auto_1fr] gap-6 md:gap-12 py-7 border-b border-[#1A1714]/12">
                                                 <div>
-                                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">{p.block}</p>
+                                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">{p.block}</p>
                                                     <p className="text-[11px] uppercase tracking-[0.2em] text-[#1A1714]/40 mt-1">Paso 0{i + 1}</p>
                                                 </div>
                                                 <div>
@@ -338,11 +338,11 @@ export default function GuiaCompletaPage() {
                                         está en la calidad, el tamaño del grupo y el soporte.
                                     </p>
                                     <div className="mt-8 border border-[#1A1714]/12 p-8 bg-[#F2EDE0]/40">
-                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">Qué obtiene tu hijo por US$267</p>
+                                        <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">Qué obtiene tu hijo por US$267</p>
                                         <ul className="divide-y divide-[#1A1714]/12 border-y border-[#1A1714]/12">
                                             {includes.map((item, i) => (
                                                 <li key={item} className="grid grid-cols-[auto_1fr] gap-6 py-4 items-baseline">
-                                                    <span className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">0{i + 1}</span>
+                                                    <span className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">0{i + 1}</span>
                                                     <span className="text-[15px] text-[#1A1714]/85 leading-relaxed">{item}</span>
                                                 </li>
                                             ))}
@@ -373,7 +373,7 @@ export default function GuiaCompletaPage() {
                                         <div className="md:col-span-7">
                                             <div className="flex items-center gap-3 mb-5">
                                                 <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                                <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                                <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                                     Próximo paso
                                                 </span>
                                             </div>
@@ -407,7 +407,7 @@ export default function GuiaCompletaPage() {
 
                                 {/* Related links */}
                                 <section className="mt-20">
-                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">Seguir leyendo</p>
+                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">Seguir leyendo</p>
                                     <div className="grid md:grid-cols-3 gap-px bg-[#1A1714]/12 border border-[#1A1714]/12">
                                         {[
                                             { href: "/mx", title: "InnovaKids México", desc: "Página país completa" },
@@ -415,7 +415,7 @@ export default function GuiaCompletaPage() {
                                             { href: "/mx/cdmx/cursos/inteligencia-artificial", title: "Clases IA en CDMX", desc: "Clases en vivo para la capital" },
                                         ].map((l) => (
                                             <Link key={l.href} href={l.href} className="bg-[#FAF7EF] p-6 hover:bg-[#F2EDE0]/50 transition-colors group">
-                                                <p className="text-[11px] uppercase tracking-[0.24em] text-[#C96342]/70 group-hover:text-[#C96342] font-semibold mb-2">Relacionado</p>
+                                                <p className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F]/70 group-hover:text-[#B5522F] font-semibold mb-2">Relacionado</p>
                                                 <p className="text-xl text-[#1A1714] mb-1" style={{ fontFamily: "'Charter', 'Georgia', serif" }}>{l.title}</p>
                                                 <p className="text-[14px] text-[#1A1714]/70">{l.desc}</p>
                                             </Link>

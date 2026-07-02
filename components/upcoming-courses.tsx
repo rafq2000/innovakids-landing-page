@@ -94,11 +94,11 @@ export function UpcomingCourses() {
     <section className="bg-[#F2EDE0] py-12 md:py-20 lg:py-24">
       <div className="container mx-auto px-4">
         <div className="mx-auto mb-8 md:mb-12 max-w-3xl text-center">
-          <Badge className="bg-[#C96342]/10 text-[#C96342] hover:bg-[#C96342]/15 border border-[#C96342]/20 mb-4 px-4 py-2 text-sm font-bold">
+          <Badge className="bg-[#C96342]/10 text-[#B5522F] hover:bg-[#C96342]/15 border border-[#C96342]/20 mb-4 px-4 py-2 text-sm font-bold">
             PROXIMAMENTE
           </Badge>
           <h2 className="mb-4 text-balance text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#1A1714] leading-tight px-2">
-            Proximos Cursos <span className="block text-[#C96342]">InnovaKids</span>
+            Proximos Cursos <span className="block text-[#B5522F]">InnovaKids</span>
           </h2>
           <p className="text-[#5A5751] text-base md:text-lg">
             4 cursos integrales diseñados para potenciar la mente de niños de 8 a 17 años
@@ -125,7 +125,7 @@ export function UpcomingCourses() {
                 <CardContent className="space-y-4">
                   <p className="text-[#5A5751] text-sm md:text-base leading-relaxed">{course.description}</p>
                   <div className="space-y-2">
-                    <p className="text-xs md:text-sm font-semibold text-[#C96342] uppercase tracking-wide">
+                    <p className="text-xs md:text-sm font-semibold text-[#B5522F] uppercase tracking-wide">
                       Lo que aprenderás:
                     </p>
                     <ul className="space-y-2">

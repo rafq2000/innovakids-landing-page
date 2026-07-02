@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Footer } from "@/components/footer"
 import Link from "next/link"
 import { Navigation } from "@/components/navigation"
 import { WhatsAppButton } from "@/components/whatsapp-button"
@@ -35,7 +36,7 @@ export default function GuiaIANinosChile() {
   const whatsappNumber = "56964754219"
   const whatsappMessage = encodeURIComponent("Hola! Leí la guía de IA para niños y me interesa más información.")
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
-  const calendlyLink = "https://calendly.com/innovakids/evaluación"
+  const calendlyLink = "https://calendly.com/innovakidslatam/reunion-informativa-innovakids"
 
   return (
     <>
@@ -363,6 +364,7 @@ export default function GuiaIANinosChile() {
             </div>
           </div>
         </article>
+              <Footer />
       </main>
     </>
   )

@@ -50,9 +50,9 @@ export default function CursosAdolescentesPage() {
             <article className="pt-32 pb-16">
                 <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                     <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
-                        <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                        <Link href="/" className="hover:text-[#B5522F] transition-colors">InnovaKids</Link>
                         <span className="mx-3" aria-hidden>/</span>
-                        <Link href="/blog" className="hover:text-[#C96342] transition-colors">Blog</Link>
+                        <Link href="/blog" className="hover:text-[#B5522F] transition-colors">Blog</Link>
                         <span className="mx-3" aria-hidden>/</span>
                         <span className="text-[#1A1714]">Cursos para niños y adolescentes</span>
                     </nav>
@@ -60,7 +60,7 @@ export default function CursosAdolescentesPage() {
                     <header className="mb-16 pb-16 border-b border-[#1A1714]/12">
                         <div className="flex items-center gap-3 mb-6">
                             <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                 Guía definitiva · 7 min de lectura
                             </span>
                         </div>
@@ -69,7 +69,7 @@ export default function CursosAdolescentesPage() {
                             className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[22ch]"
                             style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                         >
-                            El mejor <em className="italic text-[#C96342]">curso online</em> para niños y adolescentes 8 a 17.
+                            El mejor <em className="italic text-[#B5522F]">curso online</em> para niños y adolescentes 8 a 17.
                         </h1>
 
                         <div className="mt-10 flex flex-wrap items-center gap-6 text-[13px] text-[#1A1714]/60">
@@ -88,9 +88,9 @@ export default function CursosAdolescentesPage() {
                             prose-h3:text-[#A8502F] prose-h3:text-xl prose-h3:mt-10
                             prose-p:font-sans prose-p:text-[#1A1714]/85 prose-p:text-lg prose-p:leading-[1.75]
                             prose-strong:text-[#1A1714]
-                            prose-a:text-[#C96342] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
+                            prose-a:text-[#B5522F] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
                             prose-li:font-sans prose-li:text-[#1A1714]/85
-                            prose-li:marker:text-[#C96342]
+                            prose-li:marker:text-[#B5522F]
                             prose-ol:font-sans prose-ul:font-sans"
                     >
                         <p className="lead text-2xl leading-[1.45] text-[#1A1714]/85 font-sans">
@@ -133,7 +133,7 @@ export default function CursosAdolescentesPage() {
                     </div>
 
                     <aside className="not-prose my-16 border-l-2 border-[#C96342] pl-8 py-4">
-                        <p className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold mb-3">
+                        <p className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold mb-3">
                             Online y en vivo
                         </p>
                         <p
@@ -142,7 +142,7 @@ export default function CursosAdolescentesPage() {
                         >
                             A veces la mejor academia no está en el barrio vecino. InnovaKids opera 100% digital, conectando a tu hijo desde
                             cualquier país hispano (o desde EE. UU.) con clases en micropantallas de apenas
-                            <em className="italic text-[#C96342]"> 5 alumnos</em> junto a expertos top.
+                            <em className="italic text-[#B5522F]"> 5 alumnos</em> junto a expertos top.
                         </p>
                     </aside>
 
@@ -152,9 +152,9 @@ export default function CursosAdolescentesPage() {
                             prose-h2:text-3xl prose-h2:sm:text-4xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-[#1A1714]/15
                             prose-p:font-sans prose-p:text-[#1A1714]/85 prose-p:text-lg prose-p:leading-[1.75]
                             prose-strong:text-[#1A1714]
-                            prose-a:text-[#C96342] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
+                            prose-a:text-[#B5522F] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
                             prose-li:font-sans prose-li:text-[#1A1714]/85
-                            prose-li:marker:text-[#C96342]
+                            prose-li:marker:text-[#B5522F]
                             prose-ol:font-sans"
                     >
                         <h2>Cursos prácticos 2026: ¿qué construyen exactamente?</h2>
@@ -183,7 +183,7 @@ export default function CursosAdolescentesPage() {
                             <div className="md:col-span-7">
                                 <div className="flex items-center gap-3 mb-5">
                                     <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                    <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">Próximo paso</span>
+                                    <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">Próximo paso</span>
                                 </div>
                                 <h3
                                     className="text-3xl md:text-4xl leading-[1.05] tracking-tight text-[#1A1714] mb-4"
@@ -216,7 +216,7 @@ export default function CursosAdolescentesPage() {
 
                     {/* Related */}
                     <section className="mt-16">
-                        <p className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold mb-6">Sigue leyendo</p>
+                        <p className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold mb-6">Sigue leyendo</p>
                         <div className="grid md:grid-cols-2 gap-0 border-t border-[#1A1714]/12">
                             <Link
                                 href="/blog/inteligencia-artificial-para-ninos"
@@ -224,7 +224,7 @@ export default function CursosAdolescentesPage() {
                             >
                                 <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Guía</p>
                                 <h3
-                                    className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#C96342] transition-colors"
+                                    className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#B5522F] transition-colors"
                                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                 >
                                     Inteligencia artificial para niños: guía 2026
@@ -239,7 +239,7 @@ export default function CursosAdolescentesPage() {
                             >
                                 <p className="text-[11px] tracking-[0.22em] uppercase text-[#1A1714]/55 mb-3">Por edad</p>
                                 <h3
-                                    className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#C96342] transition-colors"
+                                    className="text-2xl leading-tight text-[#1A1714] group-hover:text-[#B5522F] transition-colors"
                                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                 >
                                     IA para niños según su edad

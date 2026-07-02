@@ -59,11 +59,11 @@ export default function ComoEnsenarIAPage() {
       <section className="pt-32 pb-24 px-6 md:px-10">
         <div className="max-w-[1100px] mx-auto">
           <div className="text-center space-y-8">
-            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342]">Guia para padres</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#B5522F]">Guia para padres</p>
             <h1 className="text-6xl md:text-8xl font-display text-[#1A1714] leading-tight">
               Cómo Enseñar IA
               <br />
-              <span className="italic text-[#C96342]">
+              <span className="italic text-[#B5522F]">
                 a Tus Hijos
               </span>
             </h1>
@@ -74,13 +74,13 @@ export default function ComoEnsenarIAPage() {
 
             <div className="flex flex-wrap justify-center gap-6 pt-8">
               <div className="bg-[#F5F1E8] border border-[#1A1714]/12 px-8 py-4 rounded-sm">
-                <p className="text-[#C96342] font-bold">+527 Familias</p>
+                <p className="text-[#B5522F] font-bold">+527 Familias</p>
               </div>
               <div className="bg-[#F5F1E8] border border-[#1A1714]/12 px-8 py-4 rounded-sm">
-                <p className="text-[#C96342] font-bold">Método Probado</p>
+                <p className="text-[#B5522F] font-bold">Método Probado</p>
               </div>
               <div className="bg-[#F5F1E8] border border-[#1A1714]/12 px-8 py-4 rounded-sm">
-                <p className="text-[#C96342] font-bold">100% Práctico</p>
+                <p className="text-[#B5522F] font-bold">100% Práctico</p>
               </div>
             </div>
           </div>
@@ -90,19 +90,19 @@ export default function ComoEnsenarIAPage() {
       {/* Why Now Section */}
       <section className="py-24 px-6 md:px-10 bg-[#F5F1E8]">
         <div className="max-w-[1100px] mx-auto">
-          <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342] text-center mb-4">Urgencia</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#B5522F] text-center mb-4">Urgencia</p>
           <h2 className="text-5xl md:text-6xl font-display text-[#1A1714] text-center mb-12">Por que ahora y no despues</h2>
           <ul className="space-y-6 text-xl text-[#3B3630] max-w-2xl mx-auto">
             <li className="flex items-start gap-4">
-              <span className="text-[#C96342] text-2xl mt-0.5 font-display">1.</span>
+              <span className="text-[#B5522F] text-2xl mt-0.5 font-display">1.</span>
               <span>La IA ya no es futuro: las universidades y empresas la exigen hoy. Quien empieza antes, llega con ventaja.</span>
             </li>
             <li className="flex items-start gap-4">
-              <span className="text-[#C96342] text-2xl mt-0.5 font-display">2.</span>
+              <span className="text-[#B5522F] text-2xl mt-0.5 font-display">2.</span>
               <span>Entre los 8 y 17 años tienen la curiosidad y la capacidad logica ideales para aprender creando, no memorizando.</span>
             </li>
             <li className="flex items-start gap-4">
-              <span className="text-[#C96342] text-2xl mt-0.5 font-display">3.</span>
+              <span className="text-[#B5522F] text-2xl mt-0.5 font-display">3.</span>
               <span>Cada semana que pasa sin aprender IA es una semana mas consumiendo pantallas en vez de crear con ellas.</span>
             </li>
           </ul>
@@ -112,7 +112,7 @@ export default function ComoEnsenarIAPage() {
       {/* Method Section */}
       <section className="py-32 px-6 md:px-10">
         <div className="max-w-[1100px] mx-auto">
-          <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342] text-center mb-4">Metodo</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#B5522F] text-center mb-4">Metodo</p>
           <h2 className="text-5xl md:text-6xl font-display text-[#1A1714] text-center mb-16">Cómo Enseñar IA Paso a Paso</h2>
 
           <div className="space-y-12">
@@ -128,7 +128,7 @@ export default function ComoEnsenarIAPage() {
                   Que se enamore primero, aprenda después.
                 </p>
                 <div className="bg-[#F5F1E8] p-6 rounded-sm border border-[#1A1714]/12">
-                  <p className="text-[#C96342] font-semibold mb-2">Herramientas recomendadas:</p>
+                  <p className="text-[#B5522F] font-semibold mb-2">Herramientas recomendadas:</p>
                   <ul className="text-[#3B3630] space-y-2">
                     <li>- ChatGPT (para conversaciones y creatividad)</li>
                     <li>- DALL-E (para generar imágenes)</li>
@@ -150,7 +150,7 @@ export default function ComoEnsenarIAPage() {
                   videojuego con IA, o una app que resuelva un problema real.
                 </p>
                 <div className="bg-[#F5F1E8] p-6 rounded-sm border border-[#1A1714]/12">
-                  <p className="text-[#C96342] font-semibold mb-2">Ideas de proyectos:</p>
+                  <p className="text-[#B5522F] font-semibold mb-2">Ideas de proyectos:</p>
                   <ul className="text-[#3B3630] space-y-2">
                     <li>- Chatbot personalizado de su héroe favorito</li>
                     <li>- Generador de historias con sus personajes</li>
@@ -173,7 +173,7 @@ export default function ComoEnsenarIAPage() {
                   información. El pensamiento crítico es más importante que memorizar comandos.
                 </p>
                 <div className="bg-[#F5F1E8] p-6 rounded-sm border border-[#1A1714]/12">
-                  <p className="text-[#C96342] font-semibold mb-2">Habilidades clave:</p>
+                  <p className="text-[#B5522F] font-semibold mb-2">Habilidades clave:</p>
                   <ul className="text-[#3B3630] space-y-2">
                     <li>- Verificar información (detectar fake news)</li>
                     <li>- Entender errores y prejuicios de la IA</li>
@@ -196,7 +196,7 @@ export default function ComoEnsenarIAPage() {
                   5 alumnos garantizan que cada niño avance a su ritmo.
                 </p>
                 <div className="bg-[#F5F1E8] p-6 rounded-sm border border-[#1A1714]/12">
-                  <p className="text-[#C96342] font-semibold mb-2">Por qué máximo 5 alumnos:</p>
+                  <p className="text-[#B5522F] font-semibold mb-2">Por qué máximo 5 alumnos:</p>
                   <ul className="text-[#3B3630] space-y-2">
                     <li>- Atención personalizada del instructor</li>
                     <li>- Feedback inmediato en cada proyecto</li>
@@ -213,12 +213,12 @@ export default function ComoEnsenarIAPage() {
       {/* Common Mistakes Section */}
       <section className="py-32 px-6 md:px-10 bg-[#F5F1E8]">
         <div className="max-w-[1100px] mx-auto">
-          <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342] text-center mb-4">Evita estos fallos</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#B5522F] text-center mb-4">Evita estos fallos</p>
           <h2 className="text-5xl md:text-6xl font-display text-[#1A1714] text-center mb-16">Errores que Debes Evitar</h2>
 
           <div className="space-y-6">
             <div className="bg-[#FAF7EF] p-8 rounded-sm border border-[#1A1714]/12 shadow-[0_2px_8px_-4px_rgba(26,23,20,0.1)]">
-              <h3 className="text-2xl font-display text-[#C96342] mb-4">Empezar con Teoría Compleja</h3>
+              <h3 className="text-2xl font-display text-[#B5522F] mb-4">Empezar con Teoría Compleja</h3>
               <p className="text-[#3B3630] text-lg">
                 No intentes explicar redes neuronales o algoritmos complejos. Eso mata la motivación. Empieza con crear
                 algo cool y la teoría vendrá después naturalmente.
@@ -226,7 +226,7 @@ export default function ComoEnsenarIAPage() {
             </div>
 
             <div className="bg-[#FAF7EF] p-8 rounded-sm border border-[#1A1714]/12 shadow-[0_2px_8px_-4px_rgba(26,23,20,0.1)]">
-              <h3 className="text-2xl font-display text-[#C96342] mb-4">Clases Masivas Online</h3>
+              <h3 className="text-2xl font-display text-[#B5522F] mb-4">Clases Masivas Online</h3>
               <p className="text-[#3B3630] text-lg">
                 Los cursos de 50+ estudiantes son para adultos disciplinados, no para niños. Tu hijo necesita atención
                 personal o se frustrará y abandonará.
@@ -234,7 +234,7 @@ export default function ComoEnsenarIAPage() {
             </div>
 
             <div className="bg-[#FAF7EF] p-8 rounded-sm border border-[#1A1714]/12 shadow-[0_2px_8px_-4px_rgba(26,23,20,0.1)]">
-              <h3 className="text-2xl font-display text-[#C96342] mb-4">Solo Ver Videos de YouTube</h3>
+              <h3 className="text-2xl font-display text-[#B5522F] mb-4">Solo Ver Videos de YouTube</h3>
               <p className="text-[#3B3630] text-lg">
                 Ver videos pasivamente no enseña. Tu hijo necesita HACER proyectos reales con feedback de expertos para
                 aprender de verdad.
@@ -242,7 +242,7 @@ export default function ComoEnsenarIAPage() {
             </div>
 
             <div className="bg-[#FAF7EF] p-8 rounded-sm border border-[#1A1714]/12 shadow-[0_2px_8px_-4px_rgba(26,23,20,0.1)]">
-              <h3 className="text-2xl font-display text-[#C96342] mb-4">Esperar al Colegio</h3>
+              <h3 className="text-2xl font-display text-[#B5522F] mb-4">Esperar al Colegio</h3>
               <p className="text-[#3B3630] text-lg">
                 La educación tradicional va 5 años atrás de la tecnología. Si esperas a que el colegio enseñe IA, tu
                 hijo perderá años valiosos de ventaja competitiva.
@@ -256,7 +256,7 @@ export default function ComoEnsenarIAPage() {
       <section className="py-32 px-6 md:px-10">
         <div className="max-w-[1100px] mx-auto">
           <div className="text-center mb-16">
-            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-4">Nuestra solución</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#B5522F] mb-4">Nuestra solución</p>
             <h2 className="text-5xl md:text-6xl font-display text-[#1A1714] mb-6">Cómo InnovaKids Te Ayuda</h2>
             <p className="text-2xl text-[#6B645B]">
               Hemos perfeccionado la forma de enseñar IA a niños con +527 familias
@@ -299,7 +299,7 @@ export default function ComoEnsenarIAPage() {
           </div>
 
           <div className="mt-16 bg-[#F5F1E8] p-12 rounded-sm border border-[#1A1714]/12 text-center">
-            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#C96342] mb-4">Cupos limitados</p>
+            <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#B5522F] mb-4">Cupos limitados</p>
             <h3 className="text-3xl font-display text-[#1A1714] mb-4">Solo 2 de 20 Cupos Disponibles</h3>
             <p className="text-xl text-[#6B645B] mb-8">Proximo ciclo inicia el {COHORT.startDate} · Las plazas se agotan rapido</p>
             <Link href="/#sesion-estrategica">

@@ -46,9 +46,9 @@ export default function BlogVenezuelaGuiaPage() {
                 <article className="pt-32 pb-20">
                     <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                         <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
-                            <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                            <Link href="/" className="hover:text-[#B5522F] transition-colors">InnovaKids</Link>
                             <span className="mx-3" aria-hidden>/</span>
-                            <Link href="/ve" className="hover:text-[#C96342] transition-colors">Venezuela</Link>
+                            <Link href="/ve" className="hover:text-[#B5522F] transition-colors">Venezuela</Link>
                             <span className="mx-3" aria-hidden>/</span>
                             <span className="text-[#1A1714]">Guía de cursos de IA</span>
                         </nav>
@@ -56,7 +56,7 @@ export default function BlogVenezuelaGuiaPage() {
                         <header className="mb-16 pb-16 border-b border-[#1A1714]/12">
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                     Guía educativa · 8 min de lectura
                                 </span>
                             </div>
@@ -65,7 +65,7 @@ export default function BlogVenezuelaGuiaPage() {
                                 className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[22ch]"
                                 style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                             >
-                                Vibe Coding en <em className="italic text-[#C96342]">Venezuela</em>: guía completa para padres 2026.
+                                Vibe Coding en <em className="italic text-[#B5522F]">Venezuela</em>: guía completa para padres 2026.
                             </h1>
 
                             <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[60ch]">
@@ -84,9 +84,9 @@ export default function BlogVenezuelaGuiaPage() {
                                 prose-h2:text-3xl prose-h2:sm:text-4xl prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-[#1A1714]/15
                                 prose-p:font-sans prose-p:text-[#1A1714]/85 prose-p:text-lg prose-p:leading-[1.75]
                                 prose-strong:text-[#1A1714]
-                                prose-a:text-[#C96342] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
+                                prose-a:text-[#B5522F] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline
                                 prose-li:font-sans prose-li:text-[#1A1714]/85
-                                prose-li:marker:text-[#C96342]
+                                prose-li:marker:text-[#B5522F]
                                 prose-ul:font-sans"
                         >
                             <h2>¿Qué es el Vibe Coding y por qué aprenderlo?</h2>
@@ -132,7 +132,7 @@ export default function BlogVenezuelaGuiaPage() {
                         <ul className="not-prose my-10 border-t border-[#1A1714]/12">
                             {perks.map((perk, i) => (
                                 <li key={perk} className="grid grid-cols-[auto_1fr] gap-6 py-5 border-b border-[#1A1714]/12 items-baseline">
-                                    <span className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                                    <span className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                                         0{i + 1}
                                     </span>
                                     <span className="text-[15px] md:text-base text-[#1A1714]/85 leading-relaxed">{perk}</span>
@@ -146,7 +146,7 @@ export default function BlogVenezuelaGuiaPage() {
                                 <div className="md:col-span-7">
                                     <div className="flex items-center gap-3 mb-5">
                                         <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                        <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                        <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                             Próximo paso
                                         </span>
                                     </div>

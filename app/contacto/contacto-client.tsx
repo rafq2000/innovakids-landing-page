@@ -24,7 +24,7 @@ export default function ContactoClient() {
             <main className="pt-32 pb-20">
                 <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                     <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
-                        <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                        <Link href="/" className="hover:text-[#B5522F] transition-colors">InnovaKids</Link>
                         <span className="mx-3" aria-hidden>/</span>
                         <span className="text-[#1A1714]">Contacto</span>
                     </nav>
@@ -32,7 +32,7 @@ export default function ContactoClient() {
                     <header className="mb-16 pb-16 border-b border-[#1A1714]/12">
                         <div className="flex items-center gap-3 mb-6">
                             <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                 Hablemos
                             </span>
                         </div>
@@ -40,7 +40,7 @@ export default function ContactoClient() {
                             className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[18ch]"
                             style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                         >
-                            <em className="italic text-[#C96342]">Contacto</em>.
+                            <em className="italic text-[#B5522F]">Contacto</em>.
                         </h1>
                         <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[52ch]">
                             Estamos aquí para responder todas tus preguntas — elige el canal que te resulte más cómodo.
@@ -52,7 +52,7 @@ export default function ContactoClient() {
                         <aside className="lg:col-span-5 space-y-12">
                             {/* WhatsApp */}
                             <section>
-                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
                                     Canal directo
                                 </p>
                                 <h2
@@ -78,25 +78,25 @@ export default function ContactoClient() {
                             {/* Info table */}
                             <dl className="border-t border-[#1A1714]/12">
                                 <div className="py-5 border-b border-[#1A1714]/12 grid grid-cols-[120px_1fr] gap-4 items-baseline">
-                                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Email</dt>
+                                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">Email</dt>
                                     <dd>
-                                        <a href="mailto:innovakidslatam@gmail.com" className="text-[16px] text-[#1A1714] hover:text-[#C96342] transition-colors">
+                                        <a href="mailto:innovakidslatam@gmail.com" className="text-[16px] text-[#1A1714] hover:text-[#B5522F] transition-colors">
                                             innovakidslatam@gmail.com
                                         </a>
                                         <p className="text-[13px] text-[#1A1714]/55 mt-1">Respondemos en 24 horas.</p>
                                     </dd>
                                 </div>
                                 <div className="py-5 border-b border-[#1A1714]/12 grid grid-cols-[120px_1fr] gap-4 items-baseline">
-                                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Teléfono</dt>
+                                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">Teléfono</dt>
                                     <dd>
-                                        <a href="tel:+56964754219" className="text-[16px] text-[#1A1714] hover:text-[#C96342] transition-colors">
+                                        <a href="tel:+56964754219" className="text-[16px] text-[#1A1714] hover:text-[#B5522F] transition-colors">
                                             +56 9 6475 4219
                                         </a>
                                         <p className="text-[13px] text-[#1A1714]/55 mt-1">Lun — Sáb · 08:00 — 20:00.</p>
                                     </dd>
                                 </div>
                                 <div className="py-5 border-b border-[#1A1714]/12 grid grid-cols-[120px_1fr] gap-4 items-baseline">
-                                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Oficina</dt>
+                                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">Oficina</dt>
                                     <dd>
                                         <p className="text-[16px] text-[#1A1714]">Diagonal Oriente 1620</p>
                                         <p className="text-[13px] text-[#1A1714]/55 mt-1">Providencia, Chile.</p>
@@ -106,7 +106,7 @@ export default function ContactoClient() {
 
                             {/* Calendly block */}
                             <section>
-                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
                                     Sesión estratégica
                                 </p>
                                 <h3
@@ -120,7 +120,7 @@ export default function ContactoClient() {
                                 </p>
                                 <button
                                     onClick={openCalendly}
-                                    className="inline-flex items-center justify-center gap-2 border border-[#1A1714]/20 hover:border-[#C96342] text-[#1A1714] hover:text-[#C96342] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
+                                    className="inline-flex items-center justify-center gap-2 border border-[#1A1714]/20 hover:border-[#C96342] text-[#1A1714] hover:text-[#B5522F] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                 >
                                     Agendar sesión gratuita
                                 </button>
@@ -130,7 +130,7 @@ export default function ContactoClient() {
                         {/* Right: form */}
                         <div className="lg:col-span-7">
                             <div className="border border-[#1A1714]/12 p-8 md:p-10 bg-[#F2EDE0]/40">
-                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
                                     Escríbenos
                                 </p>
                                 <h2

@@ -59,7 +59,7 @@ function CountryIntroStrip({ country }: { country: CountryConfig }) {
       <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-16 md:py-24">
         <div className="flex items-center gap-5 mb-10">
           <div className="h-px w-12 bg-[#C96342]" />
-          <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+          <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
             {country.flag} InnovaKids · {country.name}
           </p>
         </div>
@@ -68,7 +68,7 @@ function CountryIntroStrip({ country }: { country: CountryConfig }) {
           <h2
             className="font-display md:col-span-8 text-4xl sm:text-5xl md:text-6xl leading-[1.02] tracking-[-0.02em] font-normal"
           >
-            Curso de IA para <em className="italic text-[#C96342]">{country.childTerm} {country.demonym}</em> en {country.mainCity} y todo {country.name}.
+            Curso de IA para <em className="italic text-[#B5522F]">{country.childTerm} {country.demonym}</em> en {country.mainCity} y todo {country.name}.
           </h2>
 
           <dl className="md:col-span-4 space-y-5 text-sm">
@@ -81,7 +81,7 @@ function CountryIntroStrip({ country }: { country: CountryConfig }) {
                 key={k}
                 className="flex items-baseline gap-6 border-b border-[#2F2F2C]/12 pb-4"
               >
-                <dt className="text-[11px] uppercase tracking-[0.18em] text-[#C96342] font-semibold w-24 shrink-0">
+                <dt className="text-[11px] uppercase tracking-[0.18em] text-[#B5522F] font-semibold w-24 shrink-0">
                   {k}
                 </dt>
                 <dd

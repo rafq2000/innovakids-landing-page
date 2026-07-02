@@ -112,7 +112,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                     >
                         <div className="flex items-center justify-between mb-16 md:mb-24 pb-5 border-b border-[#1A1714]/15">
                             <div className="flex items-center gap-4">
-                                <span className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.32em] text-[#C96342] font-semibold">
+                                <span className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.32em] text-[#B5522F] font-semibold">
                                     Programa completo
                                 </span>
                                 <span className="hidden md:inline-block w-10 h-px bg-[#1A1714]/30" />
@@ -128,7 +128,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                         <div className="grid grid-cols-12 gap-8 md:gap-12 items-end">
                             <div className="col-span-12 md:col-span-2 order-2 md:order-1">
                                 <span
-                                    className="block font-display italic text-[#C96342] leading-[0.85]"
+                                    className="block font-display italic text-[#B5522F] leading-[0.85]"
                                     style={{
                                         fontSize: "clamp(6rem, 14vw, 12rem)",
                                         fontVariationSettings: '"opsz" 144, "SOFT" 100',
@@ -148,7 +148,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                     }}
                                 >
                                     Dos niveles para ir de{" "}
-                                    <em className="italic text-[#C96342]">consumidor a creador</em>.
+                                    <em className="italic text-[#B5522F]">consumidor a creador</em>.
                                 </h1>
                                 <p className="font-display text-lg md:text-xl leading-[1.5] text-[#1A1714]/70 max-w-[58ch]">
                                     Nivel 1 <strong>(Explorer)</strong>: fundamentos de IA generativa en 10 clases.
@@ -194,7 +194,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                         <div className="flex items-baseline justify-between gap-6 mb-14 md:mb-20 pb-5 border-b border-[#1A1714]/15">
                             <div className="flex items-center gap-5">
                                 <div className="h-px w-12 bg-[#C96342]" />
-                                <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                                <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                                     Nivel 01 · Vibe Explorer · 10 clases
                                 </p>
                             </div>
@@ -214,7 +214,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                 >
                                     <div className="col-span-2 md:col-span-1">
                                         <span
-                                            className="font-display italic text-[#C96342]/80 group-hover:text-[#C96342] leading-none block tabular-nums transition-colors text-2xl md:text-3xl"
+                                            className="font-display italic text-[#B5522F]/80 group-hover:text-[#B5522F] leading-none block tabular-nums transition-colors text-2xl md:text-3xl"
                                             style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                                         >
                                             {c.num}
@@ -251,7 +251,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                         <div className="flex items-baseline justify-between gap-6 mb-14 md:mb-20 pb-5 border-b border-[#1A1714]/15">
                             <div className="flex items-center gap-5">
                                 <div className="h-px w-12 bg-[#C96342]" />
-                                <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                                <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                                     Nivel 02 · Maker Core · 5 misiones
                                 </p>
                             </div>
@@ -276,7 +276,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                 >
                                     <div className="col-span-2 md:col-span-1">
                                         <span
-                                            className="font-display italic text-[#C96342]/80 group-hover:text-[#C96342] leading-none block tabular-nums transition-colors text-2xl md:text-3xl"
+                                            className="font-display italic text-[#B5522F]/80 group-hover:text-[#B5522F] leading-none block tabular-nums transition-colors text-2xl md:text-3xl"
                                             style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                                         >
                                             {m.num}
@@ -321,7 +321,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                         <div className="flex items-baseline justify-between gap-6 mb-14 md:mb-20 pb-5 border-b border-[#1A1714]/15">
                             <div className="flex items-center gap-5">
                                 <div className="h-px w-12 bg-[#C96342]" />
-                                <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                                <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                                     Nivel 02 · 6 Tracks · 5 misiones cada uno
                                 </p>
                             </div>
@@ -401,7 +401,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                         <div className="flex items-baseline justify-between gap-6 mb-10 md:mb-14 pb-5 border-b border-[#1A1714]/15">
                             <div className="flex items-center gap-5">
                                 <div className="h-px w-12 bg-[#C96342]" />
-                                <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                                <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                                     Herramientas
                                 </p>
                             </div>
@@ -419,7 +419,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                     }`}
                                     style={{ transitionDelay: `${i * 90}ms` }}
                                 >
-                                    <span className="font-display italic text-[#C96342] leading-none block mb-3 text-xl" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
+                                    <span className="font-display italic text-[#B5522F] leading-none block mb-3 text-xl" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
                                         {t.k}
                                     </span>
                                     <h4 className="font-display text-[#1A1714] leading-tight tracking-[-0.015em] mb-1.5 text-lg" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
@@ -444,7 +444,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                     }`}
                                     style={{ transitionDelay: `${(i + 6) * 90}ms` }}
                                 >
-                                    <span className="font-display italic text-[#C96342] leading-none block mb-3 text-xl" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
+                                    <span className="font-display italic text-[#B5522F] leading-none block mb-3 text-xl" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
                                         {t.k}
                                     </span>
                                     <h4 className="font-display text-[#1A1714] leading-tight tracking-[-0.015em] mb-1.5 text-lg" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
@@ -469,7 +469,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                             <div className="col-span-12 md:col-span-5">
                                 <div className="flex items-center gap-5 mb-6">
                                     <div className="h-px w-12 bg-[#C96342]" />
-                                    <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                                    <p className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                                         Requisitos
                                     </p>
                                 </div>
@@ -480,7 +480,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                         fontVariationSettings: '"opsz" 144, "SOFT" 100',
                                     }}
                                 >
-                                    ¿Qué necesita <em className="italic text-[#C96342]">tu hijo</em> para empezar?
+                                    ¿Qué necesita <em className="italic text-[#B5522F]">tu hijo</em> para empezar?
                                 </h2>
                             </div>
                             <div className="col-span-12 md:col-span-7 md:pt-10">
@@ -501,7 +501,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                     style={{ transitionDelay: `${i * 120}ms` }}
                                 >
                                     <span
-                                        className="font-display italic text-[#C96342] leading-none block mb-6"
+                                        className="font-display italic text-[#B5522F] leading-none block mb-6"
                                         style={{
                                             fontSize: "clamp(3rem, 6vw, 4.5rem)",
                                             fontVariationSettings: '"opsz" 144, "SOFT" 100',
@@ -552,7 +552,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                         }`}
                     >
                         <div className="flex items-center justify-between mb-12 pb-5 border-b border-[#FAF7EF]/15">
-                            <span className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                            <span className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                                 Reserva · 2 clases de prueba
                             </span>
                         </div>
@@ -567,7 +567,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                     }}
                                 >
                                     ¿Quieres que tu hijo sea{" "}
-                                    <em className="italic text-[#C96342]">el siguiente</em>?
+                                    <em className="italic text-[#B5522F]">el siguiente</em>?
                                 </h2>
                                 <p className="font-display text-lg md:text-xl leading-[1.55] text-[#FAF7EF]/72 max-w-[54ch]">
                                     Reserva con <span className="text-[#FAF7EF] font-semibold">{reservationPrice}</span>.

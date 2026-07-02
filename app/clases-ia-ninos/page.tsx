@@ -52,7 +52,7 @@ export default function ClasesIANinos() {
       <main className="min-h-screen bg-[#F2EDE0] pt-24">
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-5xl font-bold text-[#C96342] mb-6 text-center font-display">
+            <h1 className="text-5xl font-bold text-[#B5522F] mb-6 text-center font-display">
               Clases de IA para Niños: Aprende Inteligencia Artificial Jugando
             </h1>
 
@@ -103,19 +103,19 @@ export default function ClasesIANinos() {
 
               <ul className="space-y-3 my-6">
                 <li className="flex items-start">
-                  <span className="text-[#C96342] mr-3 text-2xl">•</span>
+                  <span className="text-[#B5522F] mr-3 text-2xl">•</span>
                   <span className="text-[#5A5751]">
                     <strong className="text-[#1A1714]">15 min de teoría:</strong> Conceptos de IA explicados de forma simple y visual
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#C96342] mr-3 text-2xl">•</span>
+                  <span className="text-[#B5522F] mr-3 text-2xl">•</span>
                   <span className="text-[#5A5751]">
                     <strong className="text-[#1A1714]">Aprox. 60 min de práctica:</strong> Uso hands-on de herramientas de IA reales
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#C96342] mr-3 text-2xl">•</span>
+                  <span className="text-[#B5522F] mr-3 text-2xl">•</span>
                   <span className="text-[#5A5751]">
                     <strong className="text-[#1A1714]">15 min de proyecto:</strong> Aplicación práctica del aprendizaje del día
                   </span>
@@ -123,7 +123,7 @@ export default function ClasesIANinos() {
               </ul>
 
               <div className="bg-[#FAF7EF] p-8 rounded-xl border border-[#E8E0D0] my-8">
-                <h3 className="text-2xl font-bold text-[#C96342] mb-6 text-center">Lo que Aprenderán en las Clases</h3>
+                <h3 className="text-2xl font-bold text-[#B5522F] mb-6 text-center">Lo que Aprenderán en las Clases</h3>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <h4 className="font-bold text-[#1A1714] mb-3">🎨 Creatividad con IA</h4>
@@ -155,22 +155,22 @@ export default function ClasesIANinos() {
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-[#FAF7EF] p-6 rounded-lg border border-[#E8E0D0]">
-                  <h4 className="font-bold text-[#C96342] mb-3">🌎 Zona Horaria México/Centro</h4>
+                  <h4 className="font-bold text-[#B5522F] mb-3">🌎 Zona Horaria México/Centro</h4>
                   <p className="text-[#5A5751] text-sm">Clases disponibles de lunes a viernes 4:00 PM - 7:00 PM</p>
                 </div>
 
                 <div className="bg-[#FAF7EF] p-6 rounded-lg border border-[#E8E0D0]">
-                  <h4 className="font-bold text-[#C96342] mb-3">🌎 Zona Horaria Colombia/Perú</h4>
+                  <h4 className="font-bold text-[#B5522F] mb-3">🌎 Zona Horaria Colombia/Perú</h4>
                   <p className="text-[#5A5751] text-sm">Clases disponibles de lunes a viernes 5:00 PM - 8:00 PM</p>
                 </div>
 
                 <div className="bg-[#FAF7EF] p-6 rounded-lg border border-[#E8E0D0]">
-                  <h4 className="font-bold text-[#C96342] mb-3">🌎 Zona Horaria Argentina/Chile</h4>
+                  <h4 className="font-bold text-[#B5522F] mb-3">🌎 Zona Horaria Argentina/Chile</h4>
                   <p className="text-[#5A5751] text-sm">Clases disponibles de lunes a viernes 6:00 PM - 9:00 PM</p>
                 </div>
 
                 <div className="bg-[#FAF7EF] p-6 rounded-lg border border-[#E8E0D0]">
-                  <h4 className="font-bold text-[#C96342] mb-3">📅 Fines de Semana</h4>
+                  <h4 className="font-bold text-[#B5522F] mb-3">📅 Fines de Semana</h4>
                   <p className="text-[#5A5751] text-sm">Horarios especiales sábados y domingos 10:00 AM - 1:00 PM</p>
                 </div>
               </div>
@@ -180,7 +180,7 @@ export default function ClasesIANinos() {
                 <p className="text-xl text-[#5A5751] mb-6">
                   Agenda una sesión de diagnóstico gratuita y descubre cómo tu hijo puede aprender IA
                 </p>
-                <p className="text-lg text-[#C96342] mb-8">
+                <p className="text-lg text-[#B5522F] mb-8">
                   Próximo grupo inicia el 20 de julio del 2026 — Las plazas se agotan rápido
                 </p>
                 <Link href="/#sesion-estrategica">
@@ -201,7 +201,7 @@ export default function ClasesIANinos() {
                     "Las clases son excepcionales. El profesor se asegura de que cada niño entienda antes de avanzar. Mi
                     hijo está emocionado con cada clase."
                   </p>
-                  <cite className="text-[#C96342] not-italic font-semibold">- Laura Martínez, Chile 🇨🇱</cite>
+                  <cite className="text-[#B5522F] not-italic font-semibold">- Laura Martínez, Chile 🇨🇱</cite>
                 </blockquote>
 
                 <blockquote className="bg-[#FAF7EF] p-6 rounded-lg border-l-4 border-[#C96342] italic">
@@ -209,7 +209,7 @@ export default function ClasesIANinos() {
                     "Lo mejor son los grupos pequeños. Mi hija recibe atención constante y ha creado proyectos
                     increíbles en solo 3 semanas."
                   </p>
-                  <cite className="text-[#C96342] not-italic font-semibold">- Roberto Sánchez, México 🇲🇽</cite>
+                  <cite className="text-[#B5522F] not-italic font-semibold">- Roberto Sánchez, México 🇲🇽</cite>
                 </blockquote>
 
                 <blockquote className="bg-[#FAF7EF] p-6 rounded-lg border-l-4 border-[#C96342] italic">
@@ -217,7 +217,7 @@ export default function ClasesIANinos() {
                     "Mi hijo pasó de no saber nada de IA a crear una app funcional. Las clases son dinámicas y muy bien
                     estructuradas."
                   </p>
-                  <cite className="text-[#C96342] not-italic font-semibold">- Patricia López, Perú 🇵🇪</cite>
+                  <cite className="text-[#B5522F] not-italic font-semibold">- Patricia López, Perú 🇵🇪</cite>
                 </blockquote>
               </div>
 
@@ -226,7 +226,7 @@ export default function ClasesIANinos() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-2 border-[#C96342] text-[#C96342] hover:bg-[#C96342]/10 font-bold text-lg px-8 py-4 bg-transparent rounded-sm"
+                    className="border-2 border-[#C96342] text-[#B5522F] hover:bg-[#C96342]/10 font-bold text-lg px-8 py-4 bg-transparent rounded-sm"
                   >
                     Ver Programa Completo de Clases
                   </Button>

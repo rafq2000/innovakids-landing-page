@@ -27,7 +27,7 @@ export default function GraciasPage() {
                             <div className="lg:col-span-7">
                                 <div className="flex items-center gap-3 mb-6">
                                     <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                    <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                    <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                         Pago confirmado
                                     </span>
                                 </div>
@@ -35,7 +35,7 @@ export default function GraciasPage() {
                                     className="text-5xl md:text-7xl leading-[0.98] tracking-[-0.02em] text-[#1A1714] max-w-[20ch]"
                                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                 >
-                                    Listo. Tu pago está <em className="italic text-[#C96342]">confirmado</em>.
+                                    Listo. Tu pago está <em className="italic text-[#B5522F]">confirmado</em>.
                                 </h1>
                                 <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[56ch]">
                                     Te enviamos un correo de bienvenida con tu Kit completo y los pasos para comenzar.
@@ -44,7 +44,7 @@ export default function GraciasPage() {
                             </div>
 
                             <aside className="lg:col-span-5 border border-[#1A1714]/12 p-8 bg-[#F2EDE0]/40">
-                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-5">
                                     Próximos pasos
                                 </p>
                                 <ol className="border-t border-[#1A1714]/12">
@@ -57,7 +57,7 @@ export default function GraciasPage() {
                                             key={item.k}
                                             className="grid grid-cols-[auto_1fr] gap-5 py-5 border-b border-[#1A1714]/12 items-baseline"
                                         >
-                                            <span className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">
+                                            <span className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">
                                                 0{i + 1}
                                             </span>
                                             <div>
@@ -69,7 +69,7 @@ export default function GraciasPage() {
                                                         className="group"
                                                     >
                                                         <p
-                                                            className="text-xl text-[#1A1714] group-hover:text-[#C96342] transition-colors underline underline-offset-4 decoration-[#C96342]/40"
+                                                            className="text-xl text-[#1A1714] group-hover:text-[#B5522F] transition-colors underline underline-offset-4 decoration-[#C96342]/40"
                                                             style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                                         >
                                                             {item.k} <span aria-hidden>→</span>
@@ -103,7 +103,7 @@ export default function GraciasPage() {
                                 <div className="md:col-span-7">
                                     <div className="flex items-center gap-3 mb-5">
                                         <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                                        <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                                        <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                             Mientras esperas
                                         </span>
                                     </div>

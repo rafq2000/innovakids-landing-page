@@ -53,7 +53,7 @@ export default function KitDownloadPage() {
           <div className="max-w-4xl mx-auto">
             {/* Header */}
             <div className="text-center mb-12">
-              <div className="inline-block bg-[#C96342]/10 text-[#C96342] px-6 py-2 rounded-full text-sm font-semibold mb-6 border border-[#C96342]/20">
+              <div className="inline-block bg-[#C96342]/10 text-[#B5522F] px-6 py-2 rounded-full text-sm font-semibold mb-6 border border-[#C96342]/20">
                 ACCESO DIRECTO
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-[#1A1714] mb-4">Tu Kit Esencial para el Padre Moderno</h1>
@@ -81,7 +81,7 @@ export default function KitDownloadPage() {
 
                 <div className="space-y-5 mb-8">
                   <div className="flex items-start gap-4 bg-[#FAF7EF] p-4 rounded-lg border border-[#E8E0D0]">
-                    <Sparkles className="w-6 h-6 text-[#C96342] flex-shrink-0 mt-1" />
+                    <Sparkles className="w-6 h-6 text-[#B5522F] flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-[#1A1714] mb-1">5 Proyectos Creativos para Empezar Hoy</h3>
                       <p className="text-[#5A5751] text-sm">Sin necesidad de saber programar</p>
@@ -89,7 +89,7 @@ export default function KitDownloadPage() {
                   </div>
 
                   <div className="flex items-start gap-4 bg-[#FAF7EF] p-4 rounded-lg border border-[#E8E0D0]">
-                    <Shield className="w-6 h-6 text-[#C96342] flex-shrink-0 mt-1" />
+                    <Shield className="w-6 h-6 text-[#B5522F] flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-[#1A1714] mb-1">Checklist de Seguridad Digital</h3>
                       <p className="text-[#5A5751] text-sm">Para proteger a tu hijo online</p>
@@ -97,7 +97,7 @@ export default function KitDownloadPage() {
                   </div>
 
                   <div className="flex items-start gap-4 bg-[#FAF7EF] p-4 rounded-lg border border-[#E8E0D0]">
-                    <BookOpen className="w-6 h-6 text-[#C96342] flex-shrink-0 mt-1" />
+                    <BookOpen className="w-6 h-6 text-[#B5522F] flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold text-[#1A1714] mb-1">Glosario de Términos de IA</h3>
                       <p className="text-[#5A5751] text-sm">Para que ambos hablen el mismo idioma</p>

@@ -162,7 +162,7 @@ export default function BrochurePage() {
         {/* Curriculum Level 1 */}
         <Card className="bg-[#FAF7EF] border-[#E8E0D0] border border-[#E8E0D0] mb-16">
           <CardHeader>
-            <CardTitle className="text-3xl text-[#C96342] flex items-center gap-3">
+            <CardTitle className="text-3xl text-[#B5522F] flex items-center gap-3">
               <span className="text-4xl">🚀</span>
               Nivel 1: Vibe Explorer (10 Clases)
             </CardTitle>
@@ -184,7 +184,7 @@ export default function BrochurePage() {
               ].map((clase, idx) => (
                 <div key={idx} className="bg-[#FAF7EF] border border-[#E8E0D0] rounded-lg p-5 hover:scale-105 transition-transform duration-300">
                   <div className="flex items-start gap-3">
-                    <span className="text-3xl font-bold text-[#C96342]">#{clase.num}</span>
+                    <span className="text-3xl font-bold text-[#B5522F]">#{clase.num}</span>
                     <div>
                       <h4 className="text-[#1A1714] font-bold text-lg">{clase.title}</h4>
                       <p className="text-[#5A5751] text-sm mt-1">{clase.desc}</p>
@@ -208,7 +208,7 @@ export default function BrochurePage() {
             <Card className="bg-[#FAF7EF] border-[#E8E0D0] hover:border-[#C96342]/30 transition-all">
               <CardHeader>
                 <div className="text-4xl mb-4">🎬</div>
-                <CardTitle className="text-xl text-[#C96342]">Vibe Creators</CardTitle>
+                <CardTitle className="text-xl text-[#B5522F]">Vibe Creators</CardTitle>
                 <p className="text-[#5A5751] text-sm">Cine y Creación de Contenido</p>
               </CardHeader>
               <CardContent>
@@ -268,7 +268,7 @@ export default function BrochurePage() {
                 </div>
 
                 <div className="text-center mb-8">
-                  <p className="text-[#C96342] font-bold tracking-wider text-sm uppercase mb-2">
+                  <p className="text-[#B5522F] font-bold tracking-wider text-sm uppercase mb-2">
                     Nivel 1 (Obligatorio)
                   </p>
                   <h3 className="text-3xl font-bold text-[#1A1714] mb-2">Vibe Explorer</h3>
@@ -279,7 +279,7 @@ export default function BrochurePage() {
                   <div className="flex items-center justify-center gap-2">
                     <span className="text-6xl font-black text-[#1A1714]">$267</span>
                     <div className="text-left">
-                      <span className="block text-xl text-[#C96342] font-bold">USD</span>
+                      <span className="block text-xl text-[#B5522F] font-bold">USD</span>
                       <span className="block text-[#5A5751] text-xs">Pago Único</span>
                     </div>
                   </div>
@@ -290,19 +290,19 @@ export default function BrochurePage() {
 
                 <ul className="text-[#5A5751] text-sm space-y-4 mb-10 text-left max-w-xs mx-auto">
                   <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#C96342] shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#B5522F] shrink-0" />
                     <span>10 Clases en Vivo (Fundamentos)</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#C96342] shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#B5522F] shrink-0" />
                     <span>Certificado Digital "Vibe Explorer"</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#C96342] shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#B5522F] shrink-0" />
                     <span>Acceso a 15+ Herramientas IA</span>
                   </li>
                   <li className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-[#C96342] shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-[#B5522F] shrink-0" />
                     <span>Desbloquea Nivel 2 (Especializaciones)</span>
                   </li>
                 </ul>

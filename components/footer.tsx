@@ -50,13 +50,13 @@ export function Footer({ countryCode }: FooterProps) {
 
         {/* Big closing headline */}
         <div className="pb-20 border-b border-[#2F2F2C]/15">
-          <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+          <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">
             Próxima cohorte · {COHORT.nameShort}
           </p>
           <h2
             className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[88px] leading-[0.98] tracking-[-0.02em] font-normal max-w-[14ch] mb-10"
           >
-            Empieza <em className="italic text-[#C96342]">hoy</em>.
+            Empieza <em className="italic text-[#B5522F]">hoy</em>.
           </h2>
           <a
             href="/#sesion-estrategica"
@@ -82,7 +82,7 @@ export function Footer({ countryCode }: FooterProps) {
               href="https://instagram.com/innovakidslatam"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-[#2F2F2C] hover:text-[#C96342] transition-colors"
+              className="inline-flex items-center gap-2 text-sm text-[#2F2F2C] hover:text-[#B5522F] transition-colors"
               aria-label="Instagram"
             >
               <Instagram className="w-4 h-4" />
@@ -91,7 +91,7 @@ export function Footer({ countryCode }: FooterProps) {
           </div>
 
           <div className="md:col-span-3">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">
               Explora
             </p>
             <ul className="space-y-3">
@@ -99,7 +99,7 @@ export function Footer({ countryCode }: FooterProps) {
                 <li key={l.href}>
                   <a
                     href={l.href}
-                    className="text-sm text-[#2F2F2C] hover:text-[#C96342] transition-colors"
+                    className="text-sm text-[#2F2F2C] hover:text-[#B5522F] transition-colors"
                   >
                     {l.label}
                   </a>
@@ -109,7 +109,7 @@ export function Footer({ countryCode }: FooterProps) {
           </div>
 
           <div className="md:col-span-2">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">
               Contacto
             </p>
             <ul className="space-y-3 text-sm">
@@ -118,7 +118,7 @@ export function Footer({ countryCode }: FooterProps) {
                   href={`https://wa.me/${phone}?text=Hola%2C%20quiero%20info%20del%20curso%20de%20IA%20para%20mi%20hijo`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#2F2F2C] hover:text-[#C96342] transition-colors"
+                  className="text-[#2F2F2C] hover:text-[#B5522F] transition-colors"
                 >
                   WhatsApp: {phoneFormatted}
                 </a>
@@ -126,7 +126,7 @@ export function Footer({ countryCode }: FooterProps) {
               <li>
                 <a
                   href="mailto:innovakidslatam@gmail.com"
-                  className="text-[#2F2F2C] hover:text-[#C96342] transition-colors"
+                  className="text-[#2F2F2C] hover:text-[#B5522F] transition-colors"
                 >
                   innovakidslatam@gmail.com
                 </a>
@@ -135,7 +135,7 @@ export function Footer({ countryCode }: FooterProps) {
           </div>
 
           <div className="md:col-span-3">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">
               Países
             </p>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-1.5">
@@ -143,7 +143,7 @@ export function Footer({ countryCode }: FooterProps) {
                 <li key={c.slug}>
                   <a
                     href={c.slug}
-                    className="inline-flex items-center gap-1.5 text-[13px] text-[#2F2F2C] hover:text-[#C96342] transition-colors"
+                    className="inline-flex items-center gap-1.5 text-[13px] text-[#2F2F2C] hover:text-[#B5522F] transition-colors"
                   >
                     <span aria-hidden="true">{c.flag}</span>
                     <span>{c.name}</span>
@@ -158,13 +158,13 @@ export function Footer({ countryCode }: FooterProps) {
         <div className="pt-8 border-t border-[#2F2F2C]/15 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#5A5751]">
           <p>© 2026 InnovaKids. Todos los derechos reservados.</p>
           <div className="flex flex-wrap justify-center gap-6">
-            <a href="/terminos" className="hover:text-[#C96342] transition-colors">
+            <a href="/terminos" className="hover:text-[#B5522F] transition-colors">
               Términos
             </a>
-            <a href="/privacidad" className="hover:text-[#C96342] transition-colors">
+            <a href="/privacidad" className="hover:text-[#B5522F] transition-colors">
               Privacidad
             </a>
-            <a href="/confianza-y-seguridad" className="hover:text-[#C96342] transition-colors">
+            <a href="/confianza-y-seguridad" className="hover:text-[#B5522F] transition-colors">
               Confianza y seguridad infantil
             </a>
           </div>

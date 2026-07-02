@@ -164,7 +164,7 @@ export function SocialProofToast() {
 
       {/* Label */}
       <p
-        className="font-mono-accent text-[#C96342] uppercase tracking-[0.24em] mb-2 leading-none text-[10px]"
+        className="font-mono-accent text-[#B5522F] uppercase tracking-[0.24em] mb-2 leading-none text-[10px]"
       >
         Actividad reciente
       </p>

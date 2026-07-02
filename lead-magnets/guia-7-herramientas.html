@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7 Herramientas de IA — InnovaKids Latam</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --paper: #FAF7EF;
+    --crema: #F5F1E8;
+    --ink: #1A1714;
+    --ink-soft: #3B3630;
+    --ink-muted: #6B645B;
+    --terracotta: #B5522F;
+    --terracotta-bright: #C96342;
+    --plum: #5D2E2E;
+    --sage: #7A8B6C;
+  }
+
+  body {
+    font-family: 'Instrument Sans', system-ui, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    width: 794px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    width: 794px;
+    min-height: 1123px;
+    page-break-after: always;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ─── Typography ─── */
+  .display { font-family: 'Fraunces', Georgia, serif; font-weight: 400; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-weight: 600;
+    color: var(--terracotta);
+  }
+
+  /* ─── Page number ─── */
+  .page-num {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    color: var(--ink);
+    opacity: 0.2;
+  }
+  .page-num.light { color: var(--paper); }
+
+  /* ====== COVER ====== */
+  .cover {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cover-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .cover-line { height: 1px; width: 48px; background: var(--terracotta); }
+
+  .cover-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 0;
+  }
+
+  .cover h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 0.98;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    max-width: 580px;
+  }
+
+  .cover h1 em {
+    font-style: italic;
+    color: var(--terracotta-bright);
+  }
+
+  .cover .subtitle {
+    font-size: 18px;
+    color: rgba(250,247,239,0.55);
+    max-width: 420px;
+    line-height: 1.6;
+  }
+
+  .cover-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-top: 1px solid rgba(250,247,239,0.1);
+    padding-top: 24px;
+  }
+
+  .cover-footer-brand {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(250,247,239,0.35);
+  }
+
+  .cover-footer-age {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: rgba(250,247,239,0.35);
+  }
+
+  /* ====== INTRO PAGE ====== */
+  .intro {
+    background: var(--paper);
+    padding: 80px 60px;
+  }
+
+  .intro h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+    max-width: 500px;
+  }
+
+  .intro h2 em { font-style: italic; color: var(--terracotta); }
+
+  .intro-text {
+    font-size: 16px;
+    line-height: 1.75;
+    color: var(--ink-muted);
+    max-width: 520px;
+    margin-bottom: 48px;
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: rgba(26,23,20,0.1);
+    border: 1px solid rgba(26,23,20,0.1);
+    margin-bottom: 48px;
+  }
+
+  .intro-stat {
+    background: var(--paper);
+    padding: 32px;
+  }
+
+  .intro-stat-num {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+
+  .intro-stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--ink-muted);
+  }
+
+  .intro-callout {
+    border-left: 2px solid var(--terracotta);
+    padding-left: 24px;
+  }
+
+  .intro-callout h3 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .intro-callout p {
+    font-size: 14px;
+    color: var(--ink-muted);
+    line-height: 1.6;
+    max-width: 460px;
+  }
+
+  /* ====== TOOL PAGES ====== */
+  .tool-page {
+    background: var(--paper);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tool-header {
+    padding: 70px 60px 40px;
+    border-bottom: 1px solid rgba(26,23,20,0.1);
+  }
+
+  .tool-num {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 96px;
+    font-weight: 400;
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    color: var(--ink);
+    opacity: 0.05;
+    line-height: 1;
+  }
+
+  .tool-header h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+    max-width: 480px;
+  }
+
+  .tool-header h2 em { font-style: italic; color: var(--terracotta); }
+
+  .tool-header .tool-desc {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--ink-muted);
+    max-width: 480px;
+  }
+
+  .tool-body {
+    flex: 1;
+    padding: 40px 60px 50px;
+  }
+
+  .tool-class-tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--paper);
+    background: var(--ink);
+    padding: 4px 12px;
+    margin-bottom: 20px;
+  }
+
+  .tool-steps {
+    margin-bottom: 36px;
+  }
+
+  .tool-step {
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(26,23,20,0.08);
+  }
+
+  .tool-step:first-child { border-top: 1px solid rgba(26,23,20,0.08); }
+
+  .tool-step-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--terracotta);
+    font-weight: 600;
+    flex-shrink: 0;
+    width: 24px;
+  }
+
+  .tool-step-content h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 4px;
+  }
+
+  .tool-step-content p {
+    font-size: 14px;
+    color: var(--ink-muted);
+    line-height: 1.55;
+  }
+
+  .tool-tip {
+    border-left: 2px solid var(--terracotta);
+    padding: 16px 0 16px 24px;
+    margin-top: 8px;
+  }
+
+  .tool-tip-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--terracotta);
+    margin-bottom: 6px;
+  }
+
+  .tool-tip p {
+    font-size: 14px;
+    color: var(--ink-muted);
+    line-height: 1.55;
+    max-width: 480px;
+  }
+
+  /* Proyecto highlight */
+  .tool-project {
+    background: var(--crema);
+    padding: 24px 28px;
+    margin-bottom: 32px;
+  }
+
+  .tool-project-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--terracotta);
+    margin-bottom: 8px;
+  }
+
+  .tool-project p {
+    font-size: 15px;
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+
+  /* ====== DARK TOOL PAGE variant ====== */
+  .tool-page.dark {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .tool-page.dark .tool-header { border-color: rgba(250,247,239,0.08); }
+  .tool-page.dark .tool-num { color: var(--paper); opacity: 0.04; }
+  .tool-page.dark .tool-desc { color: rgba(250,247,239,0.5); }
+  .tool-page.dark .tool-class-tag { background: var(--paper); color: var(--ink); }
+  .tool-page.dark .tool-step { border-color: rgba(250,247,239,0.06); }
+  .tool-page.dark .tool-step-content h4 { color: var(--paper); }
+  .tool-page.dark .tool-step-content p { color: rgba(250,247,239,0.5); }
+  .tool-page.dark .tool-tip { border-color: var(--terracotta-bright); }
+  .tool-page.dark .tool-tip p { color: rgba(250,247,239,0.5); }
+  .tool-page.dark .tool-project { background: rgba(250,247,239,0.05); }
+  .tool-page.dark .tool-project p { color: rgba(250,247,239,0.6); }
+
+  /* ====== FINAL PAGE ====== */
+  .final {
+    background: var(--ink);
+    color: var(--paper);
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .final h2 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    max-width: 520px;
+  }
+
+  .final h2 em { font-style: italic; color: var(--terracotta-bright); }
+
+  .final-text {
+    font-size: 17px;
+    color: rgba(250,247,239,0.5);
+    line-height: 1.7;
+    max-width: 440px;
+    margin-bottom: 48px;
+  }
+
+  .final-cta {
+    display: inline-block;
+    background: var(--terracotta-bright);
+    color: var(--paper);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.26em;
+    padding: 18px 40px;
+    text-decoration: none;
+    margin-bottom: 12px;
+  }
+
+  .final-url {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: rgba(250,247,239,0.3);
+    letter-spacing: 0.1em;
+  }
+
+  .final-benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1px;
+    background: rgba(250,247,239,0.06);
+    border: 1px solid rgba(250,247,239,0.06);
+    margin-top: 48px;
+  }
+
+  .final-benefit {
+    background: var(--ink);
+    padding: 24px;
+    text-align: center;
+  }
+
+  .final-benefit-num {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 28px;
+    color: var(--paper);
+    margin-bottom: 6px;
+  }
+
+  .final-benefit-text {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: rgba(250,247,239,0.35);
+  }
+
+  .final-footer {
+    border-top: 1px solid rgba(250,247,239,0.08);
+    padding-top: 24px;
+    margin-top: auto;
+  }
+
+  .final-footer p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: rgba(250,247,239,0.25);
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ PAGE 1 · COVER ═══ -->
+<div class="page cover">
+  <div class="cover-top">
+    <div class="cover-line"></div>
+    <span class="label" style="color: var(--terracotta-bright);">Guía gratuita · 2026</span>
+  </div>
+
+  <div class="cover-body">
+    <h1 class="display">Las 7 herramientas de IA que tu hijo debe <em>dominar</em>.</h1>
+    <p class="subtitle">Las mismas herramientas que usamos en clase. Ahora, en tus manos.</p>
+  </div>
+
+  <div class="cover-footer">
+    <span class="cover-footer-brand">InnovaKids Latam</span>
+    <span class="cover-footer-age">Para jóvenes de 8 a 17 años</span>
+  </div>
+  <span class="page-num light">01</span>
+</div>
+
+<!-- ═══ PAGE 2 · INTRO ═══ -->
+<div class="page intro">
+  <div style="display:flex;align-items:center;gap:12px;margin-bottom:48px;">
+    <div class="cover-line"></div>
+    <span class="label">Por qué esta guía</span>
+  </div>
+
+  <h2 class="display">Tu hijo consume IA. Debería <em>crearla</em>.</h2>
+
+  <p class="intro-text">
+    En 2026, la inteligencia artificial ya no es el futuro — es la herramienta. Los jóvenes
+    que aprendan a usarla como creadores (no como consumidores) tendrán una ventaja
+    que ningún colegio está dando hoy.<br><br>
+    Estas 7 herramientas son las que usamos en nuestras clases en vivo. Las seleccionamos
+    porque son <strong style="color:var(--ink);">seguras, gratuitas y producen resultados reales</strong>.
+  </p>
+
+  <div class="intro-grid">
+    <div class="intro-stat">
+      <div class="intro-stat-num display">527+</div>
+      <div class="intro-stat-label">Graduados</div>
+    </div>
+    <div class="intro-stat">
+      <div class="intro-stat-num display">21</div>
+      <div class="intro-stat-label">Países</div>
+    </div>
+    <div class="intro-stat">
+      <div class="intro-stat-num display">4.9</div>
+      <div class="intro-stat-label">Calificación</div>
+    </div>
+    <div class="intro-stat">
+      <div class="intro-stat-num display">15+</div>
+      <div class="intro-stat-label">Herramientas IA</div>
+    </div>
+  </div>
+
+  <div class="intro-callout">
+    <h3 class="display">Bonus: clase en vivo gratis</h3>
+    <p>Al final de esta guía encontrarás cómo inscribir a tu hijo a una clase
+       grupal gratuita donde probará estas herramientas en tiempo real.</p>
+  </div>
+  <span class="page-num">02</span>
+</div>
+
+<!-- ═══ PAGE 3 · TOOL 01 — ChatGPT ═══ -->
+<div class="page tool-page">
+  <div class="tool-header">
+    <span class="tool-num">01</span>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+      <div class="cover-line"></div>
+      <span class="label">Herramienta 01</span>
+    </div>
+    <h2 class="display">ChatGPT <em>— tu copiloto personal</em></h2>
+    <p class="tool-desc">El asistente de IA más poderoso del mundo. Tu hijo le pide que explique
+       cualquier tema, invente historias o lo ayude a resolver problemas reales.</p>
+  </div>
+  <div class="tool-body">
+    <span class="tool-class-tag">Clase 01–02 · Vibe IA + Prompt Engineering</span>
+
+    <div class="tool-project">
+      <div class="tool-project-label">Proyecto en clase</div>
+      <p>Tu hijo escribe prompts estructurados para que ChatGPT genere una historia
+         interactiva con múltiples finales. Aprende que la calidad del resultado
+         depende de la calidad de la instrucción.</p>
+    </div>
+
+    <div class="tool-steps">
+      <div class="tool-step">
+        <span class="tool-step-num">01</span>
+        <div class="tool-step-content">
+          <h4 class="display">Entra a chatgpt.com</h4>
+          <p>Cuenta gratuita, sin tarjeta de crédito. Un padre puede supervisar.</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">02</span>
+        <div class="tool-step-content">
+          <h4 class="display">Escribe un prompt con estructura</h4>
+          <p>Rol + contexto + tarea + formato. Ejemplo: "Eres un guionista de cine. Escribe una escena de 200 palabras sobre un astronauta que descubre un planeta de caramelos. Formato: diálogo con acotaciones."</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">03</span>
+        <div class="tool-step-content">
+          <h4 class="display">Itera hasta que quede perfecto</h4>
+          <p>Pídele que cambie el tono, agregue un personaje o lo convierta en guión de película.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-tip">
+      <div class="tool-tip-label">Tip del profesor</div>
+      <p>Enséñale a tu hijo que ChatGPT no siempre tiene razón. Verificar la información
+         es parte de pensar críticamente con IA — y es exactamente lo que enseñamos en clase.</p>
+    </div>
+  </div>
+  <span class="page-num">03</span>
+</div>
+
+<!-- ═══ PAGE 4 · TOOL 02 — ElevenLabs ═══ -->
+<div class="page tool-page dark">
+  <div class="tool-header">
+    <span class="tool-num">02</span>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+      <div class="cover-line"></div>
+      <span class="label">Herramienta 02</span>
+    </div>
+    <h2 class="display">ElevenLabs <em>— clona tu voz</em></h2>
+    <p class="tool-desc">Crea voces realistas con IA. Tu hijo puede narrar sus historias,
+       crear podcasts o darle voz a los personajes de sus videojuegos.</p>
+  </div>
+  <div class="tool-body">
+    <span class="tool-class-tag">Clase 03 · Vibe Voice</span>
+
+    <div class="tool-project">
+      <div class="tool-project-label">Proyecto en clase</div>
+      <p>Tu hijo clona su propia voz y la usa para narrar un cortometraje animado.
+         El resultado es tan profesional que los padres no lo creen.</p>
+    </div>
+
+    <div class="tool-steps">
+      <div class="tool-step">
+        <span class="tool-step-num">01</span>
+        <div class="tool-step-content">
+          <h4 class="display">Entra a elevenlabs.io</h4>
+          <p>Plan gratuito con 10.000 caracteres al mes. Suficiente para empezar.</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">02</span>
+        <div class="tool-step-content">
+          <h4 class="display">Escribe un texto y elige una voz</h4>
+          <p>Hay voces en español, inglés y 29 idiomas más. Controla el tono, las pausas y la emoción.</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">03</span>
+        <div class="tool-step-content">
+          <h4 class="display">Descarga y usa el audio</h4>
+          <p>Úsalo en videos de YouTube, presentaciones escolares o para narrar tus historias.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-tip">
+      <div class="tool-tip-label">Lo que aprende</div>
+      <p>Que la voz es una interfaz. Que clonarla implica responsabilidad ética.
+         Y que con una herramienta así, puede producir contenido de nivel profesional.</p>
+    </div>
+  </div>
+  <span class="page-num light">04</span>
+</div>
+
+<!-- ═══ PAGE 5 · TOOL 03 — Suno ═══ -->
+<div class="page tool-page">
+  <div class="tool-header">
+    <span class="tool-num">03</span>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+      <div class="cover-line"></div>
+      <span class="label">Herramienta 03</span>
+    </div>
+    <h2 class="display">Suno <em>— compón tu música</em></h2>
+    <p class="tool-desc">Composición musical completa con IA. Tu hijo escribe la letra
+       (o deja que la IA la invente) y Suno genera la música, las voces y la producción.</p>
+  </div>
+  <div class="tool-body">
+    <span class="tool-class-tag">Clase 04 · Vibe Music</span>
+
+    <div class="tool-project">
+      <div class="tool-project-label">Proyecto en clase</div>
+      <p>Cada alumno compone una canción original con letra propia y estilo musical elegido.
+         Es la clase favorita del 90% de nuestros estudiantes.</p>
+    </div>
+
+    <div class="tool-steps">
+      <div class="tool-step">
+        <span class="tool-step-num">01</span>
+        <div class="tool-step-content">
+          <h4 class="display">Entra a suno.com</h4>
+          <p>50 créditos gratis al día. Cada canción usa entre 5–10 créditos.</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">02</span>
+        <div class="tool-step-content">
+          <h4 class="display">Describe tu canción</h4>
+          <p>"Un reggaetón sobre un gato espacial que viaja a Marte." Sí, así de creativo puede ser.</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">03</span>
+        <div class="tool-step-content">
+          <h4 class="display">Descarga y comparte</h4>
+          <p>Usa la canción en tus videos, presentaciones o simplemente presúmela.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-tip">
+      <div class="tool-tip-label">Por qué importa</div>
+      <p>La música es la puerta de entrada. Cuando un niño crea algo que puede escuchar y compartir
+         en 30 segundos, entiende que la IA es una herramienta creativa — no solo un chatbot.</p>
+    </div>
+  </div>
+  <span class="page-num">05</span>
+</div>
+
+<!-- ═══ PAGE 6 · TOOL 04 — Flux / Midjourney ═══ -->
+<div class="page tool-page dark">
+  <div class="tool-header">
+    <span class="tool-num">04</span>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+      <div class="cover-line"></div>
+      <span class="label">Herramienta 04</span>
+    </div>
+    <h2 class="display">Flux &amp; Midjourney <em>— arte generativo</em></h2>
+    <p class="tool-desc">De la imaginación a la imagen. Tu hijo describe una escena con palabras
+       y la IA genera arte visual de nivel profesional en segundos.</p>
+  </div>
+  <div class="tool-body">
+    <span class="tool-class-tag">Clases 05–06 · Generative Art I &amp; II</span>
+
+    <div class="tool-project">
+      <div class="tool-project-label">Proyecto en clase</div>
+      <p>Tu hijo crea un cómic de 6 páginas con personajes consistentes generados por IA.
+         Aprende storytelling visual y coherencia de estilo.</p>
+    </div>
+
+    <div class="tool-steps">
+      <div class="tool-step">
+        <span class="tool-step-num">01</span>
+        <div class="tool-step-content">
+          <h4 class="display">Elige tu herramienta</h4>
+          <p>Flux (gratis en fal.ai), Midjourney (con suscripción) o Bing Image Creator (gratis).</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">02</span>
+        <div class="tool-step-content">
+          <h4 class="display">Escribe un prompt visual detallado</h4>
+          <p>"Un zorro samurái en un bosque de bambú al atardecer, estilo acuarela japonesa, luz cálida."</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">03</span>
+        <div class="tool-step-content">
+          <h4 class="display">Itera el estilo</h4>
+          <p>Cambia la iluminación, el estilo artístico, los colores. El arte está en la dirección, no en el dibujo.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-tip">
+      <div class="tool-tip-label">Dato clave</div>
+      <p>En 2 clases, nuestros alumnos pasan de "dibújame un gato" a componer escenas
+         cinematográficas con consistencia visual. La curva de aprendizaje es asombrosamente rápida.</p>
+    </div>
+  </div>
+  <span class="page-num light">06</span>
+</div>
+
+<!-- ═══ PAGE 7 · TOOL 05 — Cursor ═══ -->
+<div class="page tool-page">
+  <div class="tool-header">
+    <span class="tool-num">05</span>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+      <div class="cover-line"></div>
+      <span class="label">Herramienta 05</span>
+    </div>
+    <h2 class="display">Cursor <em>— vibe coding</em></h2>
+    <p class="tool-desc">Crear aplicaciones y videojuegos reales hablándole a la IA. Cursor convierte
+       tus ideas en código funcional sin memorizar sintaxis.</p>
+  </div>
+  <div class="tool-body">
+    <span class="tool-class-tag">Clase 07 · Vibe Coding</span>
+
+    <div class="tool-project">
+      <div class="tool-project-label">Proyecto en clase</div>
+      <p>Tu hijo construye un videojuego jugable desde cero usando Cursor como copiloto.
+         Le habla en español, la IA escribe el código, él lo prueba y lo mejora.</p>
+    </div>
+
+    <div class="tool-steps">
+      <div class="tool-step">
+        <span class="tool-step-num">01</span>
+        <div class="tool-step-content">
+          <h4 class="display">Descarga Cursor (cursor.com)</h4>
+          <p>Editor de código con IA integrada. Plan gratuito disponible.</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">02</span>
+        <div class="tool-step-content">
+          <h4 class="display">Describe lo que quieres crear</h4>
+          <p>"Un juego de plataformas donde un gato recolecta estrellas y evita obstáculos."</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">03</span>
+        <div class="tool-step-content">
+          <h4 class="display">Itera hasta que funcione perfecto</h4>
+          <p>"Hazlo más rápido", "agrega vidas", "pon música de fondo". Cada instrucción mejora el juego.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-tip">
+      <div class="tool-tip-label">Esto es vibe coding</div>
+      <p>La nueva forma de crear tecnología. No necesitas memorizar código — necesitas saber
+         pensar, iterar y dirigir. Es la habilidad más valiosa que puede aprender un joven en 2026.</p>
+    </div>
+  </div>
+  <span class="page-num">07</span>
+</div>
+
+<!-- ═══ PAGE 8 · TOOL 06 — NotebookLM ═══ -->
+<div class="page tool-page dark">
+  <div class="tool-header">
+    <span class="tool-num">06</span>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+      <div class="cover-line"></div>
+      <span class="label">Herramienta 06</span>
+    </div>
+    <h2 class="display">NotebookLM <em>— hackea tu estudio</em></h2>
+    <p class="tool-desc">La herramienta de Google que convierte cualquier material de estudio
+       en resúmenes, flashcards y hasta un podcast con dos voces que explican el tema.</p>
+  </div>
+  <div class="tool-body">
+    <span class="tool-class-tag">Clase 08 · Vibe Study</span>
+
+    <div class="tool-project">
+      <div class="tool-project-label">Proyecto en clase</div>
+      <p>Tu hijo sube sus apuntes del colegio y NotebookLM genera un podcast de 5 minutos
+         donde dos "profesores IA" le explican la materia de forma entretenida.</p>
+    </div>
+
+    <div class="tool-steps">
+      <div class="tool-step">
+        <span class="tool-step-num">01</span>
+        <div class="tool-step-content">
+          <h4 class="display">Entra a notebooklm.google.com</h4>
+          <p>100% gratis con cuenta Google. Sin límites de uso.</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">02</span>
+        <div class="tool-step-content">
+          <h4 class="display">Sube tus materiales</h4>
+          <p>PDFs, apuntes, URLs, videos de YouTube. NotebookLM los procesa y los entiende.</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">03</span>
+        <div class="tool-step-content">
+          <h4 class="display">Pregúntale sobre tu materia</h4>
+          <p>Hazle preguntas específicas, pide resúmenes, genera una guía de estudio o un podcast.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-tip">
+      <div class="tool-tip-label">Ventaja escolar real</div>
+      <p>Los alumnos que usan NotebookLM estudian en la mitad del tiempo. No porque
+         la IA haga la tarea — sino porque organiza la información para que el cerebro
+         la absorba más rápido.</p>
+    </div>
+  </div>
+  <span class="page-num light">08</span>
+</div>
+
+<!-- ═══ PAGE 9 · TOOL 07 — Google AI Studio ═══ -->
+<div class="page tool-page">
+  <div class="tool-header">
+    <span class="tool-num">07</span>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:24px;">
+      <div class="cover-line"></div>
+      <span class="label">Herramienta 07</span>
+    </div>
+    <h2 class="display">Google AI Studio <em>— el laboratorio</em></h2>
+    <p class="tool-desc">La plataforma de Google para experimentar con Gemini, el modelo de IA
+       más avanzado. Tu hijo puede procesar texto, imágenes, audio y video en un solo lugar.</p>
+  </div>
+  <div class="tool-body">
+    <span class="tool-class-tag">Transversal · Se usa en múltiples clases</span>
+
+    <div class="tool-project">
+      <div class="tool-project-label">Proyecto en clase</div>
+      <p>Tu hijo construye un asistente personalizado que responde preguntas sobre su tema
+         favorito, usando Gemini como cerebro. Lo publica y lo comparte con sus amigos.</p>
+    </div>
+
+    <div class="tool-steps">
+      <div class="tool-step">
+        <span class="tool-step-num">01</span>
+        <div class="tool-step-content">
+          <h4 class="display">Entra a aistudio.google.com</h4>
+          <p>Gratis con cuenta Google. Acceso a Gemini Pro y Gemini Flash.</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">02</span>
+        <div class="tool-step-content">
+          <h4 class="display">Experimenta con multimodalidad</h4>
+          <p>Sube una foto y pide que la describa. Sube un audio y pide que lo transcriba. Todo funciona.</p>
+        </div>
+      </div>
+      <div class="tool-step">
+        <span class="tool-step-num">03</span>
+        <div class="tool-step-content">
+          <h4 class="display">Crea tu propio "system prompt"</h4>
+          <p>Define las reglas de tu asistente: personalidad, conocimiento, restricciones. Es como programar sin código.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tool-tip">
+      <div class="tool-tip-label">Por qué Google AI Studio</div>
+      <p>Porque es el playground más completo y gratuito que existe. Tu hijo puede experimentar
+         con texto, imagen, audio y video — todo en el mismo lugar, sin pagar.</p>
+    </div>
+  </div>
+  <span class="page-num">09</span>
+</div>
+
+<!-- ═══ PAGE 10 · CTA FINAL ═══ -->
+<div class="page final">
+  <div>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:48px;">
+      <div class="cover-line"></div>
+      <span class="label" style="color:var(--terracotta-bright);">Siguiente paso</span>
+    </div>
+
+    <h2 class="display">Tu hijo ya tiene la guía. Ahora falta la <em>práctica</em>.</h2>
+
+    <p class="final-text">
+      Estas herramientas son poderosas, pero aprenderlas solo no es lo mismo que
+      aprenderlas con un profesor, en grupo, creando proyectos reales. En una clase
+      de 60 minutos, tu hijo va a crear algo concreto con estas herramientas.
+    </p>
+
+    <a href="https://calendly.com/innovakidslatam/reunion-informativa-innovakids" class="final-cta">Agendar clase gratis en vivo &rarr;</a>
+    <p class="final-url" style="margin-bottom: 20px;">calendly.com/innovakidslatam</p>
+
+    <a href="https://wa.me/56964754219?text=Hola%2C%20descargué%20la%20guía%20de%20las%207%20herramientas%20de%20IA.%20Quiero%20agendar%20la%20clase%20gratis%20para%20mi%20hijo." class="final-cta" style="background:#25D366;">Escribir por WhatsApp &rarr;</a>
+    <p class="final-url">wa.me/56964754219</p>
+  </div>
+
+  <div class="final-benefits">
+    <div class="final-benefit">
+      <div class="final-benefit-num display">5</div>
+      <div class="final-benefit-text">Máx. alumnos<br>por grupo</div>
+    </div>
+    <div class="final-benefit">
+      <div class="final-benefit-num display">60'</div>
+      <div class="final-benefit-text">Clase en vivo<br>por Zoom</div>
+    </div>
+    <div class="final-benefit">
+      <div class="final-benefit-num display">$0</div>
+      <div class="final-benefit-text">Sin compromiso<br>100% gratis</div>
+    </div>
+    <div class="final-benefit">
+      <div class="final-benefit-num display">4.9</div>
+      <div class="final-benefit-text">Calificación<br>de padres</div>
+    </div>
+  </div>
+
+  <div class="final-footer">
+    <p>InnovaKids Latam &middot; IA para jóvenes de 8 a 17 años &middot; www.innovakidslatam.com</p>
+  </div>
+  <span class="page-num light">10</span>
+</div>
+
+</body>
+</html>

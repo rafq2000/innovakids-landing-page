@@ -16,7 +16,7 @@ export function FAQSection() {
         {/* Eyebrow */}
         <div className="flex items-center gap-5 mb-16">
           <div className="h-px w-12 bg-[#C96342]" />
-          <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+          <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
             Preguntas · Respuestas
           </p>
         </div>
@@ -26,7 +26,7 @@ export function FAQSection() {
           className="font-display text-6xl sm:text-7xl md:text-8xl lg:text-[104px] leading-[0.95] tracking-[-0.025em] font-normal mb-24 max-w-[16ch]"
         >
           Todo lo que te preguntas,{" "}
-          <em className="italic text-[#C96342]">respondido</em>.
+          <em className="italic text-[#B5522F]">respondido</em>.
         </h2>
 
         {/* Q&A list — full-width, editorial */}
@@ -42,19 +42,19 @@ export function FAQSection() {
                   aria-expanded={open}
                   aria-controls={`faq-panel-${i}`}
                 >
-                  <span className="text-xs text-[#C96342] font-semibold tabular-nums tracking-[0.15em] shrink-0 w-10 md:w-14 pt-3">
+                  <span className="text-xs text-[#B5522F] font-semibold tabular-nums tracking-[0.15em] shrink-0 w-10 md:w-14 pt-3">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <h3
                     className={`font-display flex-1 text-2xl md:text-4xl leading-[1.1] tracking-[-0.01em] transition-colors ${
-                      open ? "text-[#C96342]" : "text-[#2F2F2C] group-hover:text-[#C96342]"
+                      open ? "text-[#B5522F]" : "text-[#2F2F2C] group-hover:text-[#B5522F]"
                     }`}
                   >
                     {faq.question}
                   </h3>
                   <span
                     className={`text-3xl font-light leading-none shrink-0 pt-2 transition-transform ${
-                      open ? "text-[#C96342] rotate-45" : "text-[#2F2F2C]/50"
+                      open ? "text-[#B5522F] rotate-45" : "text-[#2F2F2C]/50"
                     }`}
                     aria-hidden="true"
                   >
@@ -81,12 +81,12 @@ export function FAQSection() {
             className="font-display md:col-span-6 text-4xl md:text-5xl leading-[1.05] tracking-[-0.02em]"
           >
             ¿Algo más?{" "}
-            <em className="italic text-[#C96342]">Conversemos.</em>
+            <em className="italic text-[#B5522F]">Conversemos.</em>
           </p>
           <div className="md:col-span-6 flex flex-col items-start gap-5">
             <a
               href="#sesion-estrategica"
-              className="font-display text-lg md:text-xl text-[#2F2F2C] hover:text-[#C96342] underline underline-offset-[6px] decoration-[#C96342]/40 hover:decoration-[#C96342] decoration-1 transition-colors"
+              className="font-display text-lg md:text-xl text-[#2F2F2C] hover:text-[#B5522F] underline underline-offset-[6px] decoration-[#C96342]/40 hover:decoration-[#C96342] decoration-1 transition-colors"
             >
               Agendar evaluación gratuita →
             </a>
@@ -94,7 +94,7 @@ export function FAQSection() {
               href="https://wa.me/56964754219?text=Hola%2C%20tengo%20una%20pregunta%20que%20no%20está%20en%20las%20FAQs"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-display text-lg md:text-xl text-[#2F2F2C] hover:text-[#C96342] underline underline-offset-[6px] decoration-[#2F2F2C]/20 hover:decoration-[#C96342] decoration-1 transition-colors"
+              className="font-display text-lg md:text-xl text-[#2F2F2C] hover:text-[#B5522F] underline underline-offset-[6px] decoration-[#2F2F2C]/20 hover:decoration-[#C96342] decoration-1 transition-colors"
             >
               Escribir por WhatsApp →
             </a>

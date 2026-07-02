@@ -127,7 +127,7 @@ export default function AdolescentesPage() {
             <div className="max-w-[1280px] mx-auto px-6 md:px-10 py-3 flex items-center justify-between text-[11px] font-mono-accent tracking-[0.14em] uppercase text-[#FAF7EF]/60">
               <span className="flex items-center gap-2">
                 <span className="w-2 h-2 rounded-full bg-[#C96342]" />
-                <span className="text-[#C96342] font-semibold">Pro Track</span>
+                <span className="text-[#B5522F] font-semibold">Pro Track</span>
                 <span className="hidden sm:inline">&#183; 14 a 17 años</span>
               </span>
               <span>{COHORT.spotsRemaining} cupos restantes</span>
@@ -137,7 +137,7 @@ export default function AdolescentesPage() {
           <div className="relative z-10 max-w-[1280px] mx-auto px-6 md:px-10 pt-24 md:pt-32 pb-20 md:pb-28">
             {/* Kicker */}
             <div className="flex items-center gap-4 mb-8">
-              <span className="font-display italic text-xl text-[#C96342]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>14-17</span>
+              <span className="font-display italic text-xl text-[#B5522F]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>14-17</span>
               <div className="h-px flex-1 max-w-[60px] bg-[#FAF7EF]/20" />
               <p className="font-mono-accent text-[10px] uppercase tracking-[0.32em] text-[#FAF7EF]/50">
                 Grupo Profesionales
@@ -151,7 +151,7 @@ export default function AdolescentesPage() {
               la IA.
               <br />
               Aprende a{" "}
-              <em className="italic text-[#C96342]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>crear</em>{" "}
+              <em className="italic text-[#B5522F]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>crear</em>{" "}
               con ella.
             </h1>
 
@@ -196,7 +196,7 @@ export default function AdolescentesPage() {
                 ["Modalidad", "100% online"],
               ].map(([k, v], i) => (
                 <div key={k} className="flex flex-col gap-2">
-                  <span className="font-mono-accent text-[9px] uppercase tracking-[0.18em] text-[#C96342]">
+                  <span className="font-mono-accent text-[9px] uppercase tracking-[0.18em] text-[#B5522F]">
                     {String(i + 1).padStart(2, "0")} &#183; {k}
                   </span>
                   <span className="font-display text-lg md:text-xl text-[#FAF7EF] leading-tight">
@@ -212,7 +212,7 @@ export default function AdolescentesPage() {
         <section className="bg-[#FAF7EF] text-[#1A1714] py-12 border-b border-[#1A1714]/10">
           <div className="max-w-[1100px] mx-auto px-6 md:px-10">
             <p className="text-center text-base text-[#1A1714]/60 leading-relaxed max-w-[60ch] mx-auto">
-              Si, se llama Innova<strong className="text-[#C96342] font-semibold">Kids</strong>.
+              Si, se llama Innova<strong className="text-[#B5522F] font-semibold">Kids</strong>.
               Pero el track <strong className="text-[#1A1714] font-semibold">Pro (14-17)</strong> es nivel pre-universitario.
               Misma academia, nivel completamente distinto.
             </p>
@@ -224,24 +224,24 @@ export default function AdolescentesPage() {
           <div className="max-w-[1100px] mx-auto px-6 md:px-10">
             <div className="flex items-center gap-4 mb-12">
               <span className="h-px w-10 bg-[#C96342]" />
-              <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+              <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                 3 especialidades despues del fundamento
               </p>
             </div>
 
             <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-[0.96] tracking-[-0.03em] mb-16 max-w-[18ch]">
               Elige tu{" "}
-              <em className="italic text-[#C96342]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>camino</em>.
+              <em className="italic text-[#B5522F]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>camino</em>.
             </h2>
 
             <div className="grid md:grid-cols-3 gap-6">
               {tracks.map((t) => (
                 <article key={t.num} className="border border-[#1A1714]/12 rounded-[3px] p-7 md:p-9 flex flex-col">
-                  <p className="font-mono-accent text-[10px] uppercase tracking-[0.24em] text-[#C96342] font-semibold mb-2">{t.tag}</p>
+                  <p className="font-mono-accent text-[10px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold mb-2">{t.tag}</p>
                   <h3 className="font-display text-2xl md:text-3xl leading-tight tracking-tight mb-4 text-[#1A1714]">{t.title}</h3>
                   <p className="text-[15px] text-[#1A1714]/65 leading-relaxed flex-1">{t.desc}</p>
                   <div className="mt-6 pt-5 border-t border-[#1A1714]/10">
-                    <span className="font-display italic text-4xl text-[#C96342]/30" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>{t.num}</span>
+                    <span className="font-display italic text-4xl text-[#B5522F]/30" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>{t.num}</span>
                   </div>
                 </article>
               ))}
@@ -258,25 +258,25 @@ export default function AdolescentesPage() {
           <div className="max-w-[1100px] mx-auto px-6 md:px-10">
             <div className="flex items-center gap-4 mb-12">
               <span className="h-px w-10 bg-[#C96342]" />
-              <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+              <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                 Padres de adolescentes
               </p>
             </div>
 
             <h2 className="font-display text-4xl sm:text-5xl md:text-6xl leading-[0.96] tracking-[-0.03em] mb-16 max-w-[16ch]">
               Lo que dicen los padres de{" "}
-              <em className="italic text-[#C96342]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>teens</em>.
+              <em className="italic text-[#B5522F]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>teens</em>.
             </h2>
 
             <div className="space-y-12">
               {proofs.map((p, i) => (
                 <article key={i} className="grid md:grid-cols-12 gap-6 items-start pt-8 border-t border-[#1A1714]/12">
-                  <span className="md:col-span-1 text-[11px] text-[#C96342] font-semibold tracking-wider font-mono-accent">
+                  <span className="md:col-span-1 text-[11px] text-[#B5522F] font-semibold tracking-wider font-mono-accent">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div className="md:col-span-8">
                     <p className="font-display text-2xl md:text-3xl leading-[1.1] tracking-[-0.01em] text-[#1A1714]">
-                      <span className="text-[#C96342]">&ldquo;</span>{p.quote}<span className="text-[#C96342]">&rdquo;</span>
+                      <span className="text-[#B5522F]">&ldquo;</span>{p.quote}<span className="text-[#B5522F]">&rdquo;</span>
                     </p>
                   </div>
                   <div className="md:col-span-3 md:text-right">
@@ -297,14 +297,14 @@ export default function AdolescentesPage() {
           <div className="max-w-[1100px] mx-auto px-6 md:px-10">
             <div className="grid md:grid-cols-12 gap-10 md:gap-16 items-center">
               <div className="md:col-span-5">
-                <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
                   Inversion unica
                 </p>
                 <p
                   className="font-display italic leading-[0.88] tracking-[-0.04em] text-[#FAF7EF] mb-3"
                   style={{ fontSize: "clamp(4rem, 10vw, 7rem)", fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                 >
-                  ${priceToday}<span className="text-[#C96342]">.</span>
+                  ${priceToday}<span className="text-[#B5522F]">.</span>
                 </p>
                 <p className="font-mono-accent text-[11px] uppercase tracking-[0.22em] text-[#FAF7EF]/55 mb-6">
                   USD · pago único · tu tarjeta puede ofrecer cuotas
@@ -329,13 +329,13 @@ export default function AdolescentesPage() {
                     "Acceso a grabaciones",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-[15px] text-[#FAF7EF]/80 leading-relaxed">
-                      <span className="text-[#C96342] mt-[2px] shrink-0">&#10003;</span>
+                      <span className="text-[#B5522F] mt-[2px] shrink-0">&#10003;</span>
                       <span>{item}</span>
                     </li>
                   ))}
                 </ul>
                 <div className="p-5 bg-[#FAF7EF]/[0.06] border border-[#FAF7EF]/12 rounded-[3px]">
-                  <p className="font-mono-accent text-[10px] uppercase tracking-[0.24em] text-[#C96342] font-semibold mb-2">
+                  <p className="font-mono-accent text-[10px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold mb-2">
                     Garantia {SOCIAL_PROOF.guaranteeDays} dias
                   </p>
                   <p className="text-sm text-[#FAF7EF]/60 leading-relaxed">

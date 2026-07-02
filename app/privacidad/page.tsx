@@ -26,7 +26,7 @@ const sections = [
                         "Comunicarte novedades relevantes sobre InnovaKids",
                     ].map((item) => (
                         <li key={item} className="py-3 border-b border-[#1A1714]/12 text-[16px] text-[#1A1714]/80 leading-relaxed grid grid-cols-[auto_1fr] gap-4">
-                            <span className="text-[#C96342] leading-none mt-1">—</span>
+                            <span className="text-[#B5522F] leading-none mt-1">—</span>
                             <span>{item}</span>
                         </li>
                     ))}
@@ -56,24 +56,24 @@ const sections = [
                 </p>
                 <ul className="mt-5 space-y-3 border-t border-[#1A1714]/12">
                     <li className="py-3 border-b border-[#1A1714]/12 text-[16px] text-[#1A1714]/80 leading-relaxed grid grid-cols-[auto_1fr] gap-4">
-                        <span className="text-[#C96342] leading-none mt-1">—</span>
+                        <span className="text-[#B5522F] leading-none mt-1">—</span>
                         <span>Haciendo clic en "Cancelar suscripción" que aparece en todos nuestros correos.</span>
                     </li>
                     <li className="py-3 border-b border-[#1A1714]/12 text-[16px] text-[#1A1714]/80 leading-relaxed grid grid-cols-[auto_1fr] gap-4">
-                        <span className="text-[#C96342] leading-none mt-1">—</span>
+                        <span className="text-[#B5522F] leading-none mt-1">—</span>
                         <span>
                             Enviando un correo a{" "}
-                            <a href="mailto:innovakidslatam@gmail.com" className="text-[#C96342] font-semibold hover:underline">
+                            <a href="mailto:innovakidslatam@gmail.com" className="text-[#B5522F] font-semibold hover:underline">
                                 innovakidslatam@gmail.com
                             </a>{" "}
                             con el asunto "Baja de lista".
                         </span>
                     </li>
                     <li className="py-3 border-b border-[#1A1714]/12 text-[16px] text-[#1A1714]/80 leading-relaxed grid grid-cols-[auto_1fr] gap-4">
-                        <span className="text-[#C96342] leading-none mt-1">—</span>
+                        <span className="text-[#B5522F] leading-none mt-1">—</span>
                         <span>
                             Contactándonos por WhatsApp al{" "}
-                            <a href="tel:+56964754219" className="text-[#C96342] font-semibold hover:underline">
+                            <a href="tel:+56964754219" className="text-[#B5522F] font-semibold hover:underline">
                                 +56 9 6475 4219
                             </a>
                             .
@@ -107,23 +107,23 @@ const sections = [
                 </p>
                 <dl className="mt-6 border-t border-[#1A1714]/12">
                     <div className="py-4 border-b border-[#1A1714]/12 grid grid-cols-[140px_1fr] gap-4 items-baseline">
-                        <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Email</dt>
+                        <dt className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">Email</dt>
                         <dd className="text-[16px] text-[#1A1714]/85">
-                            <a href="mailto:innovakidslatam@gmail.com" className="text-[#C96342] font-semibold hover:underline">
+                            <a href="mailto:innovakidslatam@gmail.com" className="text-[#B5522F] font-semibold hover:underline">
                                 innovakidslatam@gmail.com
                             </a>
                         </dd>
                     </div>
                     <div className="py-4 border-b border-[#1A1714]/12 grid grid-cols-[140px_1fr] gap-4 items-baseline">
-                        <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Teléfono</dt>
+                        <dt className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">Teléfono</dt>
                         <dd className="text-[16px] text-[#1A1714]/85">
-                            <a href="tel:+56964754219" className="text-[#C96342] font-semibold hover:underline">
+                            <a href="tel:+56964754219" className="text-[#B5522F] font-semibold hover:underline">
                                 +56 9 6475 4219
                             </a>
                         </dd>
                     </div>
                     <div className="py-4 border-b border-[#1A1714]/12 grid grid-cols-[140px_1fr] gap-4 items-baseline">
-                        <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Dirección</dt>
+                        <dt className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">Dirección</dt>
                         <dd className="text-[16px] text-[#1A1714]/85">Diagonal Oriente 1620, Providencia, Chile</dd>
                     </div>
                 </dl>
@@ -139,7 +139,7 @@ export default function PrivacyPage() {
             <main className="min-h-screen bg-[#FAF7EF] text-[#1A1714] pt-32 pb-20">
                 <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                     <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
-                        <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                        <Link href="/" className="hover:text-[#B5522F] transition-colors">InnovaKids</Link>
                         <span className="mx-3" aria-hidden>/</span>
                         <span className="text-[#1A1714]">Privacidad</span>
                     </nav>
@@ -147,7 +147,7 @@ export default function PrivacyPage() {
                     <header className="mb-16 pb-16 border-b border-[#1A1714]/12">
                         <div className="flex items-center gap-3 mb-6">
                             <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                 Documento legal · última actualización: marzo 2026
                             </span>
                         </div>
@@ -155,7 +155,7 @@ export default function PrivacyPage() {
                             className="text-5xl md:text-6xl leading-[1] tracking-[-0.02em] text-[#1A1714] max-w-[20ch]"
                             style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                         >
-                            Política de <em className="italic text-[#C96342]">Privacidad</em>.
+                            Política de <em className="italic text-[#B5522F]">Privacidad</em>.
                         </h1>
                         <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[60ch]">
                             Tu privacidad es importante. Aquí explicamos qué datos pedimos, para qué los usamos y cómo
@@ -166,7 +166,7 @@ export default function PrivacyPage() {
                     <div className="grid lg:grid-cols-12 gap-12">
                         <aside className="lg:col-span-3">
                             <div className="lg:sticky lg:top-32">
-                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
                                     Secciones
                                 </p>
                                 <ol className="space-y-3 border-l border-[#1A1714]/15">
@@ -174,9 +174,9 @@ export default function PrivacyPage() {
                                         <li key={s.id} className="pl-4">
                                             <a
                                                 href={`#${s.id}`}
-                                                className="text-[14px] text-[#1A1714]/75 hover:text-[#C96342] transition-colors leading-snug block"
+                                                className="text-[14px] text-[#1A1714]/75 hover:text-[#B5522F] transition-colors leading-snug block"
                                             >
-                                                <span className="text-[#C96342]/70 mr-2">0{i + 1}</span>
+                                                <span className="text-[#B5522F]/70 mr-2">0{i + 1}</span>
                                                 {s.label}
                                             </a>
                                         </li>
@@ -188,7 +188,7 @@ export default function PrivacyPage() {
                         <div className="lg:col-span-9 space-y-16">
                             {sections.map((s, i) => (
                                 <section key={s.id} id={s.id}>
-                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
                                         Sección 0{i + 1}
                                     </p>
                                     <h2

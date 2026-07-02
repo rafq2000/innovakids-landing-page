@@ -83,7 +83,7 @@ export default function UploadKitPage() {
             <div className="max-w-[760px] mx-auto">
                 <div className="flex items-center gap-3 mb-6">
                     <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                    <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                    <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                         Admin · subida interna
                     </span>
                 </div>
@@ -91,7 +91,7 @@ export default function UploadKitPage() {
                     className="text-4xl md:text-5xl leading-[1] tracking-[-0.02em] text-[#1A1714] mb-4"
                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                 >
-                    Subir <em className="italic text-[#C96342]">Kit del Padre Moderno</em>.
+                    Subir <em className="italic text-[#B5522F]">Kit del Padre Moderno</em>.
                 </h1>
                 <p className="text-[16px] text-[#1A1714]/70 leading-relaxed mb-12 max-w-[56ch]">
                     Sube el PDF que los padres descargarán al registrarse. Se guarda en Vercel Blob y queda disponible
@@ -110,7 +110,7 @@ export default function UploadKitPage() {
                                     id="file-upload"
                                 />
                                 <label htmlFor="file-upload" className="cursor-pointer block">
-                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
                                         Arrastra o haz clic
                                     </p>
                                     <p
@@ -140,7 +140,7 @@ export default function UploadKitPage() {
                         </div>
                     ) : (
                         <div className="space-y-6">
-                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold">
+                            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
                                 Listo
                             </p>
                             <h2
@@ -156,7 +156,7 @@ export default function UploadKitPage() {
                                 <p className="text-[11px] uppercase tracking-[0.24em] text-[#1A1714]/55 font-semibold mb-2">
                                     URL del archivo
                                 </p>
-                                <p className="text-[#C96342] text-[13px] break-all font-mono">{uploadedUrl}</p>
+                                <p className="text-[#B5522F] text-[13px] break-all font-mono">{uploadedUrl}</p>
                             </div>
                             <button
                                 onClick={() => {
@@ -173,7 +173,7 @@ export default function UploadKitPage() {
                 </section>
 
                 <section className="mt-10 border-l-2 border-[#C96342] pl-6 py-2">
-                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-3">
+                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-3">
                         Instrucciones
                     </p>
                     <ol className="space-y-2 text-[14px] text-[#1A1714]/80 list-decimal list-inside">

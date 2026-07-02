@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   title: "Clase Gratis de IA para Niños 8-17 · Agenda Hoy | InnovaKids",
   // 151 chars · proof + differentiator + CTA
   description:
-    "Clase gratis de IA para niños 8-17 años: sesión diagnóstica de 30 min con demo en vivo. Sin compromiso, cupos limitados. 527 familias. Agenda hoy.",
+    "Clase gratis de IA para niños 8-17 años: sesión informativa de 30 min con demo en vivo. Sin compromiso, cupos limitados. 527 familias. Agenda hoy.",
   keywords: [
     "clase gratis ia niños",
-    "sesión diagnóstica innovakids",
+    "sesión informativa innovakids",
     "prueba gratis curso ia",
     "clase prueba inteligencia artificial niños",
     "clase gratis innovakids",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Clase Gratis de IA para Niños 8-17 · InnovaKids LATAM",
     description:
-      "Sesión diagnóstica gratuita de 30 min. Tu hijo descubre su potencial con IA en vivo. Sin costo, sin compromiso. Cupos limitados.",
+      "Sesión informativa gratuita de 30 min. Tu hijo descubre su potencial con IA en vivo. Sin costo, sin compromiso. Cupos limitados.",
     type: "website",
     url: "https://www.innovakidslatam.com/clase-gratis",
     siteName: "InnovaKids",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         url: "https://www.innovakidslatam.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Clase gratis de IA para niños 8-17 años - Sesión diagnóstica InnovaKids",
+        alt: "Clase gratis de IA para niños 8-17 años - Sesión informativa InnovaKids",
       },
     ],
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Clase Gratis de IA para Niños 8-17 · Agenda Hoy | InnovaKids",
     description:
-      "Sesión diagnóstica gratuita de 30 min con demo en vivo. Sin compromiso, cupos limitados. Agenda hoy.",
+      "Sesión informativa gratuita de 30 min con demo en vivo. Sin compromiso, cupos limitados. Agenda hoy.",
     images: ["https://www.innovakidslatam.com/og-image.png"],
   },
   alternates: {
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Event",
-  name: "Sesión Diagnóstica Gratuita — Curso de IA para Niños | InnovaKids",
+  name: "Sesión Informativa Gratuita — Curso de IA para Niños | InnovaKids",
   description:
-    "Sesión diagnóstica gratuita de 30 minutos para evaluar el potencial de tu hijo con Inteligencia Artificial. Incluye demostración en vivo y plan personalizado.",
+    "Sesión informativa gratuita de 30 minutos para evaluar el potencial de tu hijo con Inteligencia Artificial. Incluye demostración en vivo y plan personalizado.",
   eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
   eventStatus: "https://schema.org/EventScheduled",
   location: {
@@ -129,7 +129,7 @@ export default function ClaseGratisPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-[#1A1714]/55 font-semibold hover:text-[#C96342] transition-colors mb-10"
+            className="inline-flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-[#1A1714]/55 font-semibold hover:text-[#B5522F] transition-colors mb-10"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
             Volver al inicio
@@ -139,12 +139,12 @@ export default function ClaseGratisPage() {
           <header className="max-w-3xl mb-16 border-b border-[#1A1714]/12 pb-12">
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-              <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+              <span className="text-[11px] tracking-[0.22em] uppercase text-[#B5522F] font-semibold">
                 100% Gratis · Cupos limitados
               </span>
             </div>
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[0.98] text-[#1A1714] tracking-tight text-balance mb-7">
-              Una sesión diagnóstica de 30 minutos que le abrirá la puerta a tu hijo al mundo de la IA.
+              Una sesión informativa de 30 minutos que le abrirá la puerta a tu hijo al mundo de la IA.
             </h1>
             <p className="text-lg md:text-xl text-[#1A1714]/70 leading-relaxed text-pretty font-light max-w-2xl">
               Evaluamos su nivel, le mostramos herramientas reales en vivo y salen con un plan de aprendizaje
@@ -155,7 +155,7 @@ export default function ClaseGratisPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 mb-20">
             <div className="lg:col-span-7">
               <div className="flex items-center gap-3 mb-8">
-                <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+                <span className="text-[11px] tracking-[0.22em] uppercase text-[#B5522F] font-semibold">
                   Qué incluye
                 </span>
               </div>
@@ -166,7 +166,7 @@ export default function ClaseGratisPage() {
               <ol className="divide-y divide-[#1A1714]/12 border-y border-[#1A1714]/12">
                 {benefits.map((item, i) => (
                   <li key={item.title} className="flex gap-6 py-7">
-                    <span className="font-serif text-3xl text-[#C96342] leading-none shrink-0 w-12">
+                    <span className="font-serif text-3xl text-[#B5522F] leading-none shrink-0 w-12">
                       {String(i + 1).padStart(2, "0")}
                     </span>
                     <div>
@@ -190,7 +190,7 @@ export default function ClaseGratisPage() {
                   { icon: Star, label: "Precio", value: "USD $0" },
                 ].map(({ icon: Icon, label, value }) => (
                   <div key={label}>
-                    <div className="flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-[#C96342] font-semibold mb-2">
+                    <div className="flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-[#B5522F] font-semibold mb-2">
                       <Icon className="w-3.5 h-3.5" strokeWidth={2.5} />
                       {label}
                     </div>
@@ -206,7 +206,7 @@ export default function ClaseGratisPage() {
             <aside className="lg:col-span-5">
               <div className="sticky top-28 bg-[#F2EDE0] p-8 lg:p-10 border-l-2 border-[#C96342]">
                 <div className="flex items-center gap-3 mb-6">
-                  <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+                  <span className="text-[11px] tracking-[0.22em] uppercase text-[#B5522F] font-semibold">
                     Testimonios
                   </span>
                 </div>
@@ -242,7 +242,7 @@ export default function ClaseGratisPage() {
               <div className="md:col-span-7">
                 <div className="flex items-center gap-3 mb-4">
                   <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                  <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+                  <span className="text-[11px] tracking-[0.22em] uppercase text-[#B5522F] font-semibold">
                     Canal directo
                   </span>
                 </div>

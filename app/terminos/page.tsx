@@ -38,7 +38,7 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
                         "Sesión informativa gratuita",
                     ].map((item) => (
                         <li key={item} className="py-3 border-b border-[#1A1714]/12 text-[16px] text-[#1A1714]/80 leading-relaxed grid grid-cols-[auto_1fr] gap-4">
-                            <span className="text-[#C96342] leading-none mt-1">—</span>
+                            <span className="text-[#B5522F] leading-none mt-1">—</span>
                             <span>{item}</span>
                         </li>
                     ))}
@@ -70,7 +70,7 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
                     },
                 ].map(({ k, v }) => (
                     <div key={k} className="py-5 border-b border-[#1A1714]/12 grid md:grid-cols-[200px_1fr] gap-4 items-baseline">
-                        <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">{k}</dt>
+                        <dt className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">{k}</dt>
                         <dd className="text-[16px] text-[#1A1714]/80 leading-relaxed">{v}</dd>
                     </div>
                 ))}
@@ -91,7 +91,7 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
                         "Después del período de garantía no se realizan reembolsos, pero puedes transferir tu cupo a otro estudiante.",
                     ].map((item) => (
                         <li key={item} className="py-3 border-b border-[#1A1714]/12 text-[16px] text-[#1A1714]/80 leading-relaxed grid grid-cols-[auto_1fr] gap-4">
-                            <span className="text-[#C96342] leading-none mt-1">—</span>
+                            <span className="text-[#B5522F] leading-none mt-1">—</span>
                             <span>{item}</span>
                         </li>
                     ))}
@@ -115,7 +115,7 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
                         "Descargar materiales para uso personal y no comercial.",
                     ].map((item) => (
                         <li key={item} className="py-3 border-b border-[#1A1714]/12 text-[16px] text-[#1A1714]/80 leading-relaxed grid grid-cols-[auto_1fr] gap-4">
-                            <span className="text-[#C96342] leading-none mt-1">—</span>
+                            <span className="text-[#B5522F] leading-none mt-1">—</span>
                             <span>{item}</span>
                         </li>
                     ))}
@@ -143,7 +143,7 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
                         "Asistir puntualmente a las clases programadas.",
                     ].map((item) => (
                         <li key={item} className="py-3 border-b border-[#1A1714]/12 text-[16px] text-[#1A1714]/80 leading-relaxed grid grid-cols-[auto_1fr] gap-4">
-                            <span className="text-[#C96342] leading-none mt-1">—</span>
+                            <span className="text-[#B5522F] leading-none mt-1">—</span>
                             <span>{item}</span>
                         </li>
                     ))}
@@ -171,7 +171,7 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
                     },
                 ].map(({ k, v }) => (
                     <div key={k} className="py-5 border-b border-[#1A1714]/12 grid md:grid-cols-[200px_1fr] gap-4 items-baseline">
-                        <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">{k}</dt>
+                        <dt className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">{k}</dt>
                         <dd className="text-[16px] text-[#1A1714]/80 leading-relaxed">{v}</dd>
                     </div>
                 ))}
@@ -196,7 +196,7 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
         body: (
             <p>
                 El uso de tus datos personales está regido por nuestra{" "}
-                <Link href="/privacidad" className="text-[#C96342] font-semibold hover:underline">
+                <Link href="/privacidad" className="text-[#B5522F] font-semibold hover:underline">
                     Política de Privacidad
                 </Link>
                 . Al aceptar estos términos, también aceptas nuestra política de privacidad.
@@ -220,23 +220,23 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
         body: (
             <dl className="border-t border-[#1A1714]/12">
                 <div className="py-4 border-b border-[#1A1714]/12 grid grid-cols-[140px_1fr] gap-4 items-baseline">
-                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Email</dt>
+                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">Email</dt>
                     <dd>
-                        <a href="mailto:innovakidslatam@gmail.com" className="text-[16px] text-[#C96342] font-semibold hover:underline">
+                        <a href="mailto:innovakidslatam@gmail.com" className="text-[16px] text-[#B5522F] font-semibold hover:underline">
                             innovakidslatam@gmail.com
                         </a>
                     </dd>
                 </div>
                 <div className="py-4 border-b border-[#1A1714]/12 grid grid-cols-[140px_1fr] gap-4 items-baseline">
-                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">WhatsApp</dt>
+                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">WhatsApp</dt>
                     <dd>
-                        <a href="https://wa.me/56964754219" className="text-[16px] text-[#C96342] font-semibold hover:underline">
+                        <a href="https://wa.me/56964754219" className="text-[16px] text-[#B5522F] font-semibold hover:underline">
                             +56 9 6475 4219
                         </a>
                     </dd>
                 </div>
                 <div className="py-4 border-b border-[#1A1714]/12 grid grid-cols-[140px_1fr] gap-4 items-baseline">
-                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#C96342] font-semibold">Dirección</dt>
+                    <dt className="text-[11px] uppercase tracking-[0.24em] text-[#B5522F] font-semibold">Dirección</dt>
                     <dd className="text-[16px] text-[#1A1714]/85">Diagonal Oriente 1620, Providencia, Santiago, Chile</dd>
                 </div>
             </dl>
@@ -261,7 +261,7 @@ export default function TermsPage() {
             <main className="min-h-screen bg-[#FAF7EF] text-[#1A1714] pt-32 pb-20">
                 <div className="max-w-[1100px] mx-auto px-6 md:px-10">
                     <nav aria-label="Breadcrumb" className="mb-10 text-[12px] tracking-[0.2em] uppercase text-[#1A1714]/55">
-                        <Link href="/" className="hover:text-[#C96342] transition-colors">InnovaKids</Link>
+                        <Link href="/" className="hover:text-[#B5522F] transition-colors">InnovaKids</Link>
                         <span className="mx-3" aria-hidden>/</span>
                         <span className="text-[#1A1714]">Términos y condiciones</span>
                     </nav>
@@ -269,7 +269,7 @@ export default function TermsPage() {
                     <header className="mb-16 pb-16 border-b border-[#1A1714]/12">
                         <div className="flex items-center gap-3 mb-6">
                             <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#C96342] font-semibold">
+                            <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
                                 Documento legal · última actualización: marzo 2026
                             </span>
                         </div>
@@ -277,7 +277,7 @@ export default function TermsPage() {
                             className="text-5xl md:text-6xl leading-[1] tracking-[-0.02em] text-[#1A1714] max-w-[22ch]"
                             style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                         >
-                            Términos y <em className="italic text-[#C96342]">Condiciones</em>.
+                            Términos y <em className="italic text-[#B5522F]">Condiciones</em>.
                         </h1>
                         <p className="mt-8 text-xl text-[#1A1714]/70 leading-relaxed max-w-[60ch]">
                             Condiciones de uso de nuestros servicios, pagos, garantías, propiedad intelectual y ley
@@ -288,7 +288,7 @@ export default function TermsPage() {
                     <div className="grid lg:grid-cols-12 gap-12">
                         <aside className="lg:col-span-3">
                             <div className="lg:sticky lg:top-32">
-                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
                                     Secciones
                                 </p>
                                 <ol className="space-y-3 border-l border-[#1A1714]/15">
@@ -296,9 +296,9 @@ export default function TermsPage() {
                                         <li key={s.id} className="pl-4">
                                             <a
                                                 href={`#${s.id}`}
-                                                className="text-[13px] text-[#1A1714]/75 hover:text-[#C96342] transition-colors leading-snug block"
+                                                className="text-[13px] text-[#1A1714]/75 hover:text-[#B5522F] transition-colors leading-snug block"
                                             >
-                                                <span className="text-[#C96342]/70 mr-2">
+                                                <span className="text-[#B5522F]/70 mr-2">
                                                     {String(i + 1).padStart(2, "0")}
                                                 </span>
                                                 {s.label}
@@ -312,7 +312,7 @@ export default function TermsPage() {
                         <div className="lg:col-span-9 space-y-16 text-[17px] text-[#1A1714]/85 leading-[1.75]">
                             {sections.map((s, i) => (
                                 <section key={s.id} id={s.id}>
-                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-4">
+                                    <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
                                         Sección {String(i + 1).padStart(2, "0")}
                                     </p>
                                     <h2

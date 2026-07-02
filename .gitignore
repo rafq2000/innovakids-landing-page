@@ -27,3 +27,7 @@ yarn-error.log*
 next-env.d.ts
 .vercel
 .env*.local
+
+# artefactos de auditorías one-off
+lh-*.json
+/fix_*.js

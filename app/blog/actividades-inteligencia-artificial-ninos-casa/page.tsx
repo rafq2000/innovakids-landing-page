@@ -366,13 +366,13 @@ export default function ActividadesIANinosCasaPage() {
         {/* Hero */}
         <header className="pt-32 pb-16 px-6 bg-[#2F2F2C] text-[#F5F1E8]">
           <div className="max-w-4xl mx-auto">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-6">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">
               Guía práctica · IA en familia
             </p>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-normal leading-[1.05] tracking-tight mb-8"
               style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
               12 Actividades de IA para Hacer con Tu Hijo{" "}
-              <em className="italic text-[#C96342]">en Casa</em>
+              <em className="italic text-[#B5522F]">en Casa</em>
             </h1>
             <p className="text-lg text-[#F5F1E8]/80 max-w-[60ch] leading-relaxed mb-10">
               No necesitas saber programar. Solo un computador, internet y ganas de crear juntos.
@@ -410,7 +410,7 @@ export default function ActividadesIANinosCasaPage() {
               </p>
               <p>
                 En{" "}
-                <Link href="/" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+                <Link href="/" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                   InnovaKids
                 </Link>{" "}
                 siempre decimos que las mejores experiencias de aprendizaje ocurren cuando el niño tiene a alguien con quien compartir su emoción de crear.
@@ -419,7 +419,7 @@ export default function ActividadesIANinosCasaPage() {
               <p>
                 Y si te preocupa la seguridad, estas actividades usan herramientas con filtros de contenido apropiados para menores.
                 Te recomendamos revisar nuestra guía sobre{" "}
-                <Link href="/blog/como-proteger-hijos-ia-uso-seguro-responsable" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+                <Link href="/blog/como-proteger-hijos-ia-uso-seguro-responsable" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                   cómo proteger a tus hijos en el uso de IA
                 </Link>{" "}
                 para tener un marco de seguridad antes de empezar.
@@ -447,7 +447,7 @@ export default function ActividadesIANinosCasaPage() {
                 { item: "60-90 minutos de tiempo libre", detalle: "Las actividades más simples toman 30 minutos. Las más elaboradas, un fin de semana." },
               ].map((req) => (
                 <li key={req.item} className="flex gap-3 text-sm">
-                  <span className="text-[#C96342] shrink-0 mt-0.5 font-bold">✓</span>
+                  <span className="text-[#B5522F] shrink-0 mt-0.5 font-bold">✓</span>
                   <div>
                     <span className="font-semibold text-[#2F2F2C]">{req.item}</span>
                     <p className="text-[#5A5751] mt-0.5">{req.detalle}</p>
@@ -496,13 +496,13 @@ export default function ActividadesIANinosCasaPage() {
                     <ol className="space-y-2">
                       {act.pasos.map((paso, i) => (
                         <li key={i} className="flex gap-2 text-sm text-[#5A5751]">
-                          <span className="text-[#C96342] shrink-0 font-semibold">{i + 1}.</span>
+                          <span className="text-[#B5522F] shrink-0 font-semibold">{i + 1}.</span>
                           {paso}
                         </li>
                       ))}
                     </ol>
                   </div>
-                  <p className="text-xs text-[#C96342] italic">Aprende: {act.aprende}</p>
+                  <p className="text-xs text-[#B5522F] italic">Aprende: {act.aprende}</p>
                 </div>
               ))}
             </div>
@@ -517,7 +517,7 @@ export default function ActividadesIANinosCasaPage() {
             <p className="text-[#5A5751] leading-relaxed mb-8">
               Proyectos más elaborados que requieren planificación y varias herramientas. El niño lidera, el padre acompaña.
               Si tu hijo tiene entre{" "}
-              <Link href="/blog/curso-ia-ninos-10-11-12-anos" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+              <Link href="/blog/curso-ia-ninos-10-11-12-anos" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                 10 y 12 años
               </Link>
               , estas actividades son el punto ideal entre desafío y diversión.
@@ -544,13 +544,13 @@ export default function ActividadesIANinosCasaPage() {
                     <ol className="space-y-2">
                       {act.pasos.map((paso, i) => (
                         <li key={i} className="flex gap-2 text-sm text-[#5A5751]">
-                          <span className="text-[#C96342] shrink-0 font-semibold">{i + 1}.</span>
+                          <span className="text-[#B5522F] shrink-0 font-semibold">{i + 1}.</span>
                           {paso}
                         </li>
                       ))}
                     </ol>
                   </div>
-                  <p className="text-xs text-[#C96342] italic">Aprende: {act.aprende}</p>
+                  <p className="text-xs text-[#B5522F] italic">Aprende: {act.aprende}</p>
                 </div>
               ))}
             </div>
@@ -588,13 +588,13 @@ export default function ActividadesIANinosCasaPage() {
                     <ol className="space-y-2">
                       {act.pasos.map((paso, i) => (
                         <li key={i} className="flex gap-2 text-sm text-[#5A5751]">
-                          <span className="text-[#C96342] shrink-0 font-semibold">{i + 1}.</span>
+                          <span className="text-[#B5522F] shrink-0 font-semibold">{i + 1}.</span>
                           {paso}
                         </li>
                       ))}
                     </ol>
                   </div>
-                  <p className="text-xs text-[#C96342] italic">Aprende: {act.aprende}</p>
+                  <p className="text-xs text-[#B5522F] italic">Aprende: {act.aprende}</p>
                 </div>
               ))}
             </div>
@@ -614,7 +614,7 @@ export default function ActividadesIANinosCasaPage() {
               </p>
               <p>
                 Eso es exactamente lo que ofrecemos en{" "}
-                <Link href="/programa" className="text-[#C96342] underline underline-offset-2 hover:text-[#b8573a]">
+                <Link href="/programa" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                   el programa de InnovaKids
                 </Link>
                 : un camino estructurado donde cada actividad construye sobre la anterior, con un profesor experto que guía el proceso
@@ -661,7 +661,7 @@ export default function ActividadesIANinosCasaPage() {
                 <details key={item.q} className="group bg-white rounded-2xl border border-[#2F2F2C]/8">
                   <summary className="flex justify-between items-center px-7 py-5 cursor-pointer font-semibold text-[#2F2F2C] list-none">
                     {item.q}
-                    <span className="text-[#C96342] group-open:rotate-45 transition-transform">+</span>
+                    <span className="text-[#B5522F] group-open:rotate-45 transition-transform">+</span>
                   </summary>
                   <p className="px-7 pb-6 text-[#5A5751] leading-relaxed">{item.a}</p>
                 </details>
@@ -671,13 +671,13 @@ export default function ActividadesIANinosCasaPage() {
 
           {/* CTA */}
           <section className="bg-[#2F2F2C] rounded-3xl p-10 md:p-14 text-center text-[#F5F1E8]">
-            <p className="text-[11px] uppercase tracking-[0.28em] text-[#C96342] font-semibold mb-5">
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-5">
               InnovaKids · De la actividad casera al proyecto real
             </p>
             <h2 className="text-3xl md:text-4xl font-normal tracking-tight mb-5"
               style={{ fontFamily: "'Charter', 'Georgia', serif" }}>
               ¿Tu hijo quiere ir más lejos?{" "}
-              <em className="italic text-[#C96342]">Primera clase gratis.</em>
+              <em className="italic text-[#B5522F]">Primera clase gratis.</em>
             </h2>
             <p className="text-[#F5F1E8]/70 max-w-[50ch] mx-auto leading-relaxed mb-8">
               Grupos de máximo 5 alumnos. Clases en vivo, 100% online.

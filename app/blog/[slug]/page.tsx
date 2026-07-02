@@ -694,9 +694,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto">
             <nav aria-label="Breadcrumb" className="mb-10 text-[11px] tracking-[0.2em] uppercase text-[#1A1714]/55 font-semibold">
-              <Link href="/" className="hover:text-[#C96342] transition-colors">Inicio</Link>
+              <Link href="/" className="hover:text-[#B5522F] transition-colors">Inicio</Link>
               <span className="mx-2 text-[#1A1714]/30">/</span>
-              <Link href="/blog" className="hover:text-[#C96342] transition-colors">Blog</Link>
+              <Link href="/blog" className="hover:text-[#B5522F] transition-colors">Blog</Link>
               <span className="mx-2 text-[#1A1714]/30">/</span>
               <span className="text-[#1A1714]/75 normal-case tracking-normal">{post.category}</span>
             </nav>
@@ -704,7 +704,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             <header className="mb-14">
               <div className="flex items-center gap-3 mb-6">
                 <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+                <span className="text-[11px] tracking-[0.22em] uppercase text-[#B5522F] font-semibold">
                   {post.category}
                 </span>
               </div>
@@ -728,7 +728,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                       href="https://www.linkedin.com/company/innovakidslatam"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#C96342] text-xs hover:underline"
+                      className="text-[#B5522F] text-xs hover:underline"
                     >
                       Director Académico IA
                     </a>
@@ -767,15 +767,15 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               prose-h2:text-3xl prose-h2:sm:text-4xl prose-h2:leading-[1.15] prose-h2:mt-16 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-[#1A1714]/15
               prose-h3:text-2xl prose-h3:sm:text-[1.6rem] prose-h3:leading-snug prose-h3:text-[#A8502F] prose-h3:mt-10 prose-h3:mb-4
               prose-p:font-sans prose-p:text-[#1A1714]/85 prose-p:text-lg prose-p:leading-[1.75] prose-p:mb-6
-              prose-a:text-[#C96342] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline hover:prose-a:text-[#A8502F] prose-a:transition-colors
+              prose-a:text-[#B5522F] prose-a:font-semibold prose-a:no-underline hover:prose-a:underline hover:prose-a:text-[#A8502F] prose-a:transition-colors
               prose-strong:font-sans prose-strong:text-[#1A1714] prose-strong:font-semibold
               prose-ul:font-sans prose-ul:text-[#1A1714]/85 prose-ul:space-y-2 prose-ul:my-6 prose-ul:pl-6
               prose-ol:font-sans prose-ol:text-[#1A1714]/85 prose-ol:space-y-2 prose-ol:my-6 prose-ol:pl-6
               prose-li:font-sans prose-li:text-[#1A1714]/85 prose-li:text-lg prose-li:leading-[1.7] prose-li:pl-1
-              prose-li:marker:text-[#C96342] prose-li:marker:font-semibold
+              prose-li:marker:text-[#B5522F] prose-li:marker:font-semibold
               prose-code:font-mono prose-code:text-[#A8502F] prose-code:bg-[#F2EDE0] prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-sm prose-code:text-[0.9em] prose-code:before:content-none prose-code:after:content-none
               prose-blockquote:font-serif prose-blockquote:border-l-2 prose-blockquote:border-[#C96342] prose-blockquote:pl-6 prose-blockquote:italic prose-blockquote:text-[#1A1714]/75 prose-blockquote:my-10 prose-blockquote:text-xl
-              [&>p:first-of-type]:font-sans [&>p:first-of-type]:text-xl [&>p:first-of-type]:text-[#1A1714] [&>p:first-of-type]:leading-[1.7] [&>p:first-of-type]:first-letter:font-serif [&>p:first-of-type]:first-letter:text-6xl [&>p:first-of-type]:first-letter:float-left [&>p:first-of-type]:first-letter:leading-[0.9] [&>p:first-of-type]:first-letter:mr-3 [&>p:first-of-type]:first-letter:mt-1 [&>p:first-of-type]:first-letter:text-[#C96342]"
+              [&>p:first-of-type]:font-sans [&>p:first-of-type]:text-xl [&>p:first-of-type]:text-[#1A1714] [&>p:first-of-type]:leading-[1.7] [&>p:first-of-type]:first-letter:font-serif [&>p:first-of-type]:first-letter:text-6xl [&>p:first-of-type]:first-letter:float-left [&>p:first-of-type]:first-letter:leading-[0.9] [&>p:first-of-type]:first-letter:mr-3 [&>p:first-of-type]:first-letter:mt-1 [&>p:first-of-type]:first-letter:text-[#B5522F]"
               dangerouslySetInnerHTML={{ __html: post.content }}
             />
 
@@ -783,7 +783,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
             <aside className="mt-20 border-y-2 border-[#1A1714]/15 py-12">
               <div className="flex items-center gap-3 mb-5">
                 <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-                <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+                <span className="text-[11px] tracking-[0.22em] uppercase text-[#B5522F] font-semibold">
                   Siguiente paso
                 </span>
               </div>
@@ -823,7 +823,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                   href="/blog"
                   className="group p-6 bg-[#F2EDE0] hover:bg-[#EDE6D3] transition-colors"
                 >
-                  <div className="text-[11px] tracking-[0.18em] uppercase text-[#C96342] font-semibold mb-2">
+                  <div className="text-[11px] tracking-[0.18em] uppercase text-[#B5522F] font-semibold mb-2">
                     ← Archivo
                   </div>
                   <div className="font-serif text-lg text-[#1A1714] group-hover:text-[#A8502F] transition-colors">
@@ -834,7 +834,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                   href="/cursos/inteligencia-artificial"
                   className="group p-6 bg-[#F2EDE0] hover:bg-[#EDE6D3] transition-colors text-right"
                 >
-                  <div className="text-[11px] tracking-[0.18em] uppercase text-[#C96342] font-semibold mb-2">
+                  <div className="text-[11px] tracking-[0.18em] uppercase text-[#B5522F] font-semibold mb-2">
                     Explorar →
                   </div>
                   <div className="font-serif text-lg text-[#1A1714] group-hover:text-[#A8502F] transition-colors">
