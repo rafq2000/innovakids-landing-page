@@ -6,11 +6,11 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import { CheckCircle, Target, ArrowRight, Sparkles, Users, BookOpen, Trophy, Lightbulb, Rocket } from "lucide-react"
 
 export const metadata: Metadata = {
-  // 59 chars · keyword-first · brand + age
-  title: "¿Qué es InnovaKids? Escuela IA Niños 8-17 · #1 LATAM",
-  // 154 chars · proof + differentiator + CTA
+  // brand-first · gana el clic en búsquedas de marca
+  title: "InnovaKids · Escuela #1 de IA para Niños y Adolescentes en LATAM",
+  // proof + rating + CTA
   description:
-    "InnovaKids es la escuela #1 de IA y Vibe Coding para niños 8-17 años en LATAM. 527 graduados en 9 países, grupos de 5 y clases en vivo. Clase gratis.",
+    "InnovaKids: escuela #1 de IA y Vibe Coding para niños y adolescentes (8-17). ★4.9 de 527 familias en 9 países. Clases en vivo, grupos de 5. Reserva tu clase gratis.",
   keywords: [
     "que es innovakids",
     "innovakids escuela ia",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     "escuela vibe coding niños",
   ],
   openGraph: {
-    title: "¿Qué es InnovaKids? Escuela #1 de IA para Niños y Adolescentes en LATAM",
+    title: "InnovaKids · Escuela #1 de IA para Niños y Adolescentes en LATAM",
     description:
-      "Tu hijo pasa de consumidor a creador. 527 graduados en 9 países, grupos de 5, clases en vivo. Reserva tu clase gratis.",
+      "Tu hijo pasa de consumidor a creador. ★4.9 de 527 familias en 9 países, grupos de 5, clases en vivo. Reserva tu clase gratis.",
     url: "https://www.innovakidslatam.com/que-es-innovakids",
     siteName: "InnovaKids",
     type: "website",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "¿Qué es InnovaKids? Escuela IA Niños 8-17 · #1 LATAM",
+    title: "InnovaKids · Escuela #1 de IA para Niños y Adolescentes en LATAM",
     description:
-      "Escuela #1 de IA y Vibe Coding para niños 8-17. 527 graduados en 9 países, grupos de 5. Clase gratis.",
+      "Escuela #1 de IA y Vibe Coding para niños y adolescentes (8-17). ★4.9 de 527 familias en 9 países, grupos de 5. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
   alternates: {
@@ -52,7 +52,7 @@ export default function QueEsInnovaKids() {
     "Hola! Quiero saber más sobre InnovaKids y sus cursos de IA para mi hijo/a.",
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
-  const calendlyLink = "https://calendly.com/innovakids/evaluación"
+  const calendlyLink = "https://calendly.com/innovakidslatam/reunion-informativa-innovakids"
 
   return (
     <>

@@ -46,6 +46,66 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "actividades-inteligencia-artificial-ninos-casa",
+    title: "12 Actividades de Inteligencia Artificial para Niños en Casa [2026]",
+    excerpt:
+      "12 proyectos de IA que tu hijo puede hacer hoy en casa sin programar: crear cuentos, música, videojuegos y arte con herramientas gratis. Guía por edad, 8 a 17 años.",
+    image: "/kids-creating-ai-projects.jpg",
+    date: "2026-06-20",
+    category: "Proyectos",
+    readTime: "10 min",
+  },
+  {
+    slug: "crear-videojuegos-con-ia-ninos-guia-completa",
+    title: "Cómo Tu Hijo Puede Crear Videojuegos con IA (Sin Programar)",
+    excerpt:
+      "Guía completa para que tu hijo diseñe y publique su primer videojuego usando inteligencia artificial, paso a paso y sin experiencia previa en programación.",
+    image: "/children-using-ai-educational-tools.jpg",
+    date: "2026-06-15",
+    category: "Proyectos",
+    readTime: "9 min",
+  },
+  {
+    slug: "scratch-vs-ia-ninos",
+    title: "Scratch vs IA para Niños: ¿Qué Aprender Primero? (2026)",
+    excerpt:
+      "Comparativa honesta entre Scratch e inteligencia artificial para niños. Descubre qué conviene aprender primero según la edad y los objetivos de tu hijo.",
+    image: "/children-using-ai-educational-tools.jpg",
+    date: "2026-06-10",
+    category: "Comparativa",
+    readTime: "7 min",
+  },
+  {
+    slug: "curso-ia-ninos-10-11-12-anos",
+    title: "Curso de IA para Niños de 10, 11 y 12 Años: Qué Pueden Aprender",
+    excerpt:
+      "Todo lo que un niño de 10 a 12 años puede crear con inteligencia artificial: apps, videojuegos y proyectos reales. Proyectos, herramientas y metodología por edad.",
+    image: "/kids-learning-ai-on-computer.jpg",
+    date: "2026-06-05",
+    category: "Guías 2026",
+    readTime: "8 min",
+  },
+  {
+    slug: "chatgpt-tareas-escolares-ninos-guia-padres",
+    title: "ChatGPT para Tareas Escolares: Guía para Padres que Quieren Hacerlo Bien",
+    excerpt:
+      "Cómo acompañar a tu hijo para que use ChatGPT en sus tareas de forma responsable, sin copiar y potenciando su aprendizaje. Ejemplos y reglas prácticas por edad.",
+    image: "/parent-and-child-using-chatgpt-safely.jpg",
+    date: "2026-05-28",
+    category: "Guías",
+    readTime: "8 min",
+  },
+  {
+    slug: "extraescolar-inteligencia-artificial-ninos",
+    title: "Extraescolar de Inteligencia Artificial para Niños: Guía Completa 2026",
+    excerpt:
+      "Por qué una actividad extraescolar de IA es la mejor inversión para tu hijo en 2026. Qué buscar, qué aprende y cómo elegir el mejor curso de inteligencia artificial.",
+    image: "/educational-ai-tools-for-children.jpg",
+    date: "2026-05-20",
+    category: "Guías 2026",
+    readTime: "7 min",
+  },
+  {
     slug: "metodologia-erica-pensamiento-computacional-ia-ninos",
     title: "Metodología ERICA: Pensamiento Computacional e IA para Niños",
     excerpt: "Descubre cómo ERICA integra pensamiento computacional, Taxonomía de Bloom, STEM y seguridad digital infantil en cursos de inteligencia artificial para niños y adolescentes.",
@@ -216,7 +276,7 @@ export default function BlogPage() {
           <header className="max-w-5xl mx-auto mb-16 border-b border-[#1A1714]/12 pb-12">
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-[#C96342]" aria-hidden />
-              <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+              <span className="text-[11px] tracking-[0.22em] uppercase text-[#B5522F] font-semibold">
                 Diario InnovaKids · Edición {new Date().toLocaleDateString("es-ES", { month: "long", year: "numeric" })}
               </span>
             </div>
@@ -268,7 +328,7 @@ export default function BlogPage() {
               <p className="mt-5 text-[#1A1714]/70 text-lg leading-relaxed text-pretty">
                 {featured.excerpt}
               </p>
-              <div className="mt-7 inline-flex items-center gap-3 text-sm font-semibold text-[#C96342]">
+              <div className="mt-7 inline-flex items-center gap-3 text-sm font-semibold text-[#B5522F]">
                 <span className="tracking-wide">Leer el artículo</span>
                 <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
                 <span className="text-[#1A1714]/45 font-normal ml-3">{featured.readTime} de lectura</span>
@@ -279,7 +339,7 @@ export default function BlogPage() {
           {/* Section label */}
           <div className="max-w-6xl mx-auto mb-10 flex items-baseline justify-between border-b border-[#1A1714]/12 pb-4">
             <div className="flex items-center gap-3">
-              <span className="text-[11px] tracking-[0.22em] uppercase text-[#C96342] font-semibold">
+              <span className="text-[11px] tracking-[0.22em] uppercase text-[#B5522F] font-semibold">
                 Archivo completo
               </span>
             </div>
@@ -331,7 +391,7 @@ export default function BlogPage() {
                   {post.excerpt}
                 </p>
 
-                <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#C96342]">
+                <div className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-[#B5522F]">
                   <span>Leer</span>
                   <span aria-hidden className="transition-transform group-hover:translate-x-1">→</span>
                 </div>

@@ -37,35 +37,35 @@ export function SEOContent() {
             </h2>
 
             <div className="bg-[#FAF7EF] p-6 rounded-lg border border-[#E8E0D0]">
-              <h3 className="text-2xl font-bold text-[#C96342] mb-4">5 Razones para Elegir InnovaKids</h3>
+              <h3 className="text-2xl font-bold text-[#B5522F] mb-4">5 Razones para Elegir InnovaKids</h3>
               <ul className="list-none space-y-3">
                 <li className="flex items-start">
-                  <span className="text-[#C96342] mr-3 text-2xl">✓</span>
+                  <span className="text-[#B5522F] mr-3 text-2xl">✓</span>
                   <span>
                     <strong>Grupos Ultra Reducidos:</strong> Solo 5 alumnos por clase para atención 100% personalizada
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#C96342] mr-3 text-2xl">✓</span>
+                  <span className="text-[#B5522F] mr-3 text-2xl">✓</span>
                   <span>
                     <strong>Metodología Probada:</strong> +527 niños y adolescentes han completado exitosamente el
                     programa
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#C96342] mr-3 text-2xl">✓</span>
+                  <span className="text-[#B5522F] mr-3 text-2xl">✓</span>
                   <span>
                     <strong>Proyectos Reales:</strong> Tu hijo crea apps, videos y juegos con IA desde la primera clase
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#C96342] mr-3 text-2xl">✓</span>
+                  <span className="text-[#B5522F] mr-3 text-2xl">✓</span>
                   <span>
                     <strong>Acceso de Por Vida:</strong> Grabaciones, materiales y actualizaciones sin límite de tiempo
                   </span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#C96342] mr-3 text-2xl">✓</span>
+                  <span className="text-[#B5522F] mr-3 text-2xl">✓</span>
                   <span>
                     <strong>Garantía Total:</strong> 100% de devolución si no quedas satisfecho después de la primera
                     clase
@@ -89,7 +89,7 @@ export function SEOContent() {
             </p>
 
             <div className="bg-[#FAF7EF] p-8 rounded-lg border border-[#E8E0D0] my-8">
-              <h3 className="text-2xl font-bold text-[#C96342] mb-4">
+              <h3 className="text-2xl font-bold text-[#B5522F] mb-4">
                 🎯 En Solo 5 Semanas Tu Hijo Se Pone Al Día Y Avanza Con Su Generación
               </h3>
               <p className="text-[#5A5751] mb-4 text-sm">
@@ -129,7 +129,7 @@ export function SEOContent() {
             </p>
 
             <div className="bg-[#F5F1E8] p-8 rounded-xl border border-[#E8E0D0] my-8">
-              <h3 className="text-2xl font-bold text-[#C96342] mb-6 text-center">
+              <h3 className="text-2xl font-bold text-[#B5522F] mb-6 text-center">
                 🎓 La Diferencia Real Entre Aprender IA Antes o Después de la Universidad
               </h3>
               <p className="text-[#5A5751] text-center mb-6 text-sm">
@@ -159,7 +159,7 @@ export function SEOContent() {
             </div>
 
             <div className="bg-[#FAF7EF] p-6 rounded-lg border border-[#E8E0D0] my-6">
-              <h3 className="text-2xl font-bold text-[#C96342] mb-4">
+              <h3 className="text-2xl font-bold text-[#B5522F] mb-4">
                 La Diferencia Entre Aprender IA a Tiempo o Aprenderla Tarde (Por Edad)
               </h3>
               <div className="overflow-x-auto">
@@ -262,12 +262,12 @@ export function SEOContent() {
             </p>
 
             <div className="bg-[#FAF7EF] p-8 rounded-xl border border-[#E8E0D0] my-8">
-              <h3 className="text-2xl font-bold text-[#C96342] mb-6 text-center">
+              <h3 className="text-2xl font-bold text-[#B5522F] mb-6 text-center">
                 4 Buenas Razones Para Que Tu Hijo Aprenda IA Más Temprano Que Tarde
               </h3>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <span className="text-[#C96342] mr-3 text-2xl">1.</span>
+                  <span className="text-[#B5522F] mr-3 text-2xl">1.</span>
                   <div>
                     <strong className="text-[#1A1714]">Para mantener el ritmo en el colegio:</strong>
                     <p className="text-[#5A5751] text-sm">
@@ -277,7 +277,7 @@ export function SEOContent() {
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#C96342] mr-3 text-2xl">2.</span>
+                  <span className="text-[#B5522F] mr-3 text-2xl">2.</span>
                   <div>
                     <strong className="text-[#1A1714]">Para llegar tranquilo a la universidad:</strong>
                     <p className="text-[#5A5751] text-sm">
@@ -287,7 +287,7 @@ export function SEOContent() {
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#C96342] mr-3 text-2xl">3.</span>
+                  <span className="text-[#B5522F] mr-3 text-2xl">3.</span>
                   <div>
                     <strong className="text-[#1A1714]">Para tener más opciones laborales:</strong>
                     <p className="text-[#5A5751] text-sm">
@@ -297,7 +297,7 @@ export function SEOContent() {
                   </div>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-[#C96342] mr-3 text-2xl">4.</span>
+                  <span className="text-[#B5522F] mr-3 text-2xl">4.</span>
                   <div>
                     <strong className="text-[#1A1714]">Porque es más fácil aprender sin presión:</strong>
                     <p className="text-[#5A5751] text-sm">
@@ -308,6 +308,33 @@ export function SEOContent() {
                 </li>
               </ul>
             </div>
+
+            <h2 className="text-3xl font-bold text-[#1A1714] mt-10 mb-6">
+              Guías y Recursos de IA para Niños (Gratis)
+            </h2>
+            <p>
+              Antes de reservar la clase gratis, explora nuestras guías para padres. Ideas prácticas para empezar hoy
+              en casa, comparativas honestas y consejos por edad para que tu hijo aprenda inteligencia artificial a tiempo:
+            </p>
+            <ul className="grid md:grid-cols-2 gap-3 my-6 list-none pl-0">
+              {[
+                { href: "/blog/actividades-inteligencia-artificial-ninos-casa", label: "12 actividades de inteligencia artificial para niños en casa" },
+                { href: "/blog/crear-videojuegos-con-ia-ninos-guia-completa", label: "Cómo tu hijo puede crear videojuegos con IA (sin programar)" },
+                { href: "/blog/curso-ia-ninos-10-11-12-anos", label: "Curso de IA para niños de 10, 11 y 12 años: qué pueden aprender" },
+                { href: "/blog/ia-para-ninos-por-edad-8-10-11-13-14-17", label: "IA para niños por edad: guía 8-10, 11-13 y 14-17 años" },
+                { href: "/blog/chatgpt-tareas-escolares-ninos-guia-padres", label: "ChatGPT para tareas escolares: guía para padres" },
+                { href: "/blog/extraescolar-inteligencia-artificial-ninos", label: "Extraescolar de inteligencia artificial para niños" },
+                { href: "/blog/scratch-vs-ia-ninos", label: "Scratch vs IA para niños: ¿qué aprender primero?" },
+                { href: "/blog", label: "Ver todas las guías del blog de InnovaKids" },
+              ].map((post) => (
+                <li key={post.href} className="flex items-start">
+                  <span className="text-[#B5522F] mr-2 text-lg leading-6">→</span>
+                  <a href={post.href} className="text-[#B5522F] hover:underline font-medium">
+                    {post.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
