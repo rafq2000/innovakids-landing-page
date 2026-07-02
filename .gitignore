@@ -31,3 +31,4 @@ next-env.d.ts
 # artefactos de auditorías one-off
 lh-*.json
 /fix_*.js
+lint-*.log
