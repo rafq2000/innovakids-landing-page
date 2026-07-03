@@ -127,7 +127,7 @@ export default function CursoIAAdolescentesPanamaPage() {
               <span>&#183;</span>
               <span>{SOCIAL_PROOF.graduates} graduados</span>
               <span>&#183;</span>
-              <span>{COHORT.spotsRemaining} cupos restantes</span>
+              <span>{COHORT.totalSpots} cupos por cohorte</span>
             </div>
           </div>
         </section>

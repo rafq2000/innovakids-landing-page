@@ -23,8 +23,8 @@ export function HeroSection() {
             </span>
             <span className="truncate">
               <span className="hidden sm:inline">Cohorte {COHORT.nameShort} · </span>
-              <span className="text-[var(--terracotta-pale)] font-semibold">{COHORT.spotsRemaining} de {COHORT.totalSpots} cupos</span>
-              <span className="hidden sm:inline"> restantes</span>
+              <span className="text-[var(--terracotta-pale)] font-semibold">{COHORT.totalSpots} cupos</span>
+              <span className="hidden sm:inline"> · grupos de {COHORT.groupSize}</span>
             </span>
           </div>
           <span className="text-[var(--paper)]/70 sm:text-[var(--paper)]/60 truncate">

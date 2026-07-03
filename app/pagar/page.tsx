@@ -49,12 +49,12 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   pro_pack: {
     title: "Vibe Pro Pack",
     price: 691,
-    description: "Explorer + 2 Especialidades (Ahorras $100)",
+    description: "Explorer + 2 Especialidades (ahorras $110 vs módulos por separado)",
   },
   university: {
     title: "Academy University Pass",
     price: 788,
-    description: "Acceso Total: 4 Módulos (Ahorras $300)",
+    description: "Acceso Total: 4 Módulos (ahorras $280 vs módulos por separado)",
   },
   custom360: {
     title: "Pago Personalizado",
@@ -67,9 +67,9 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
     description: "Reserva con $27 USD - Paga el resto antes de iniciar",
   },
   earlybird: {
-    title: "Early Bird - Primeros 10",
+    title: "Programa Completo",
     price: 267,
-    description: "Precio especial para los primeros 10 inscritos",
+    description: "Pago único de $267 USD - 10 clases en vivo de IA",
   },
   complete: {
     title: "Programa Completo",
@@ -92,9 +92,9 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
     description: "Acceso completo al programa de IA",
   },
   promo180: {
-    title: "Oferta Especial Limitada",
+    title: "Pago Acordado",
     price: 180,
-    description: "Acceso completo - Precio Especial",
+    description: "Acceso completo - Monto acordado con tu asesor",
   },
   restante177: {
     title: "Pago Restante del Programa",
@@ -102,14 +102,14 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
     description: "Completa tu inscripción - $177 USD restantes después de reserva",
   },
   promo27: {
-    title: "Promoción Especial",
+    title: "Pago Acordado",
     price: 27,
-    description: "Pago único de $27 USD - Oferta por tiempo limitado",
+    description: "Pago único de $27 USD - Monto acordado con tu asesor",
   },
   promo267: {
-    title: "Programa Completo con Descuento",
+    title: "Programa Completo",
     price: 267,
-    description: "Pago único de $267 USD - Precio especial Academy University",
+    description: "Pago único de $267 USD - 10 clases en vivo de IA",
   },
   promo240: {
     title: "Programa Completo con Descuento",
@@ -117,9 +117,9 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
     description: "Pago único de $240 USD - Ahorra $27 sobre el precio regular",
   },
   promo120: {
-    title: "Promoción Especial 120",
+    title: "Pago Acordado",
     price: 120,
-    description: "Pago de $120 USD - Oferta especial",
+    description: "Pago de $120 USD - Monto acordado con tu asesor",
   },
   promo480: {
     title: "Programa Completo Premium",

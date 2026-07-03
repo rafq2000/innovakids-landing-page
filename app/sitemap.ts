@@ -8,11 +8,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Fechas reales de última modificación por sección
   const dates = {
-    home: new Date("2026-06-27"),        // CTR optimization + cohorte julio
-    main: new Date("2026-06-27"),        // Titles/descriptions optimizados
+    home: new Date("2026-07-02"),        // Precios transparentes (sin anchors) + pixel + PDF guía
+    main: new Date("2026-07-02"),        // Cupos por cohorte + precios transparentes
     courses: new Date("2026-06-27"),     // Solo Vibe Explorer
     blog: new Date("2026-06-27"),        // Titles optimizados para CTR
-    countries: new Date("2026-06-27"),   // Cohorte 20 julio
+    countries: new Date("2026-07-02"),   // Value stack honesto en páginas país
   }
 
   // Main pages (priority 0.8)

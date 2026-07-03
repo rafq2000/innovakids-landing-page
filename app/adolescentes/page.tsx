@@ -130,7 +130,7 @@ export default function AdolescentesPage() {
                 <span className="text-[#B5522F] font-semibold">Pro Track</span>
                 <span className="hidden sm:inline">&#183; 14 a 17 años</span>
               </span>
-              <span>{COHORT.spotsRemaining} cupos restantes</span>
+              <span>{COHORT.totalSpots} cupos por cohorte</span>
             </div>
           </div>
 

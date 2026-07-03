@@ -17,10 +17,7 @@ export const COHORT = {
   startISO: "2026-07-20T00:00:00-04:00",
   nextCohort: "septiembre",
   totalSpots: 15,
-  spotsRemaining: 15,
   groupSize: 5,
-  /** Urgency message shown across CTAs */
-  urgencyMessage: "Las plazas se agotan rápido",
 } as const
 
 /* ─── PRICING ──────────────────────────────────────────── */
@@ -32,8 +29,6 @@ export const PRICING = {
   reservation: 27,
   /** Remaining balance after 2 classes */
   remainder: 240,
-  /** "Regular" / anchor price for value stack */
-  regularAnchor: 797,
   /** Number of installments */
   installments: 3,
 } as const

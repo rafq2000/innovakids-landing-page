@@ -98,7 +98,7 @@ export function PricingSection({ country }: PricingSectionProps) {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C96342] opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C96342]"></span>
                 </span>
-                <span><strong className="text-[#2F2F2C] font-semibold">{COHORT.spotsRemaining}</strong> cupos restantes</span>
+                <span><strong className="text-[#2F2F2C] font-semibold">{COHORT.totalSpots}</strong> cupos por cohorte · grupos de {COHORT.groupSize}</span>
               </span>
               <span className="opacity-40">·</span>
               <span>Pago seguro 🔒</span>
@@ -142,17 +142,17 @@ export function PricingSection({ country }: PricingSectionProps) {
             </div>
             <div className="md:col-span-8 grid sm:grid-cols-2 gap-6">
               {[
-                { tag: "Bono 01", title: "Guía para padres: cómo usar IA en casa", value: "$47" },
-                { tag: "Bono 02", title: "Acceso al grupo privado de familias", value: "$97" },
-                { tag: "Bono 03", title: "30 prompts probados para tareas escolares", value: "$27" },
-                { tag: "Bono 04", title: "Sesión 1:1 con mentor (primera semana)", value: "$80" },
+                { tag: "Bono 01", title: "Guía para padres: cómo usar IA en casa" },
+                { tag: "Bono 02", title: "Acceso al grupo privado de familias" },
+                { tag: "Bono 03", title: "30 prompts probados para tareas escolares" },
+                { tag: "Bono 04", title: "Sesión 1:1 con mentor (primera semana)" },
               ].map((b, i) => (
                 <div key={i} className="border-t border-[#2F2F2C]/12 pt-4">
                   <div
                     className="flex items-center justify-between text-[10px] uppercase tracking-[0.18em] text-[#B5522F] font-semibold mb-2"
                             >
                     <span>{b.tag}</span>
-                    <span className="text-[#5A5751] line-through opacity-60">valor {b.value}</span>
+                    <span className="text-[#5A5751] opacity-60">incluido</span>
                   </div>
                   <p
                     className="font-display text-base md:text-lg text-[#2F2F2C] leading-snug"

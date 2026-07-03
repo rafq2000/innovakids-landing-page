@@ -228,35 +228,29 @@ const IconDocReport = () => (
 interface Lot { num: string; icon: ReactNode; kicker: string; title: string; desc: string; value: number | "incluido" }
 
 const skills: Lot[] = [
-  { num: "01", icon: <IconStudy />,  kicker: "Habilidad fundamental", title: "Estudia con IA",         desc: "Resúmenes en segundos, mapas mentales, prompts probados para tareas. El colegio se vuelve rápido — y entiende mejor lo que estudia.", value: 180 },
-  { num: "02", icon: <IconCode />,   kicker: "Habilidad fundamental", title: "Programa de verdad",     desc: "Apps, videojuegos y webs funcionales. No ejercicios de juguete: código real que puede mostrar, compartir y seguir mejorando.",         value: 320 },
-  { num: "03", icon: <IconAgent />,  kicker: "Habilidad fundamental", title: "Maneja agentes IA",      desc: "ChatGPT, Claude, Gemini, agentes autónomos. Aprende a delegar tareas a la IA — no a depender de ella.",                                value: 240 },
-  { num: "04", icon: <IconCreate />, kicker: "Habilidad fundamental", title: "Crea con IA",            desc: "Imágenes, música, voces, video, presentaciones. Pasa de consumir contenido a producirlo, con su propio estilo.",                         value: 220 },
+  { num: "01", icon: <IconStudy />,  kicker: "Habilidad fundamental", title: "Estudia con IA",         desc: "Resúmenes en segundos, mapas mentales, prompts probados para tareas. El colegio se vuelve rápido — y entiende mejor lo que estudia.", value: "incluido" },
+  { num: "02", icon: <IconCode />,   kicker: "Habilidad fundamental", title: "Programa de verdad",     desc: "Apps, videojuegos y webs funcionales. No ejercicios de juguete: código real que puede mostrar, compartir y seguir mejorando.",         value: "incluido" },
+  { num: "03", icon: <IconAgent />,  kicker: "Habilidad fundamental", title: "Maneja agentes IA",      desc: "ChatGPT, Claude, Gemini, agentes autónomos. Aprende a delegar tareas a la IA — no a depender de ella.",                                value: "incluido" },
+  { num: "04", icon: <IconCreate />, kicker: "Habilidad fundamental", title: "Crea con IA",            desc: "Imágenes, música, voces, video, presentaciones. Pasa de consumir contenido a producirlo, con su propio estilo.",                         value: "incluido" },
 ]
 
 const pillars: Lot[] = [
   { num: "05", icon: <IconClock />,  kicker: "Incluido en el programa", title: "Horarios 100% flexibles",         desc: "Eligen el día y la hora. Si no pueden, hay grabación al instante.",           value: "incluido" },
   { num: "06", icon: <IconGroup />,  kicker: "Incluido en el programa", title: "Educación personalizada",         desc: "Máximo 5 niños por grupo. El mentor los conoce por nombre.",                  value: "incluido" },
-  { num: "07", icon: <IconMentor />, kicker: "Incluido en el programa", title: "Mentor 1:1 cuando lo necesite",   desc: "Sesiónes individuales para resolver dudas o profundizar más.",                value: 97  },
+  { num: "07", icon: <IconMentor />, kicker: "Incluido en el programa", title: "Mentor 1:1 cuando lo necesite",   desc: "Sesiónes individuales para resolver dudas o profundizar más.",                value: "incluido" },
   { num: "08", icon: <IconChat />,   kicker: "Incluido en el programa", title: "Soporte por WhatsApp",            desc: "Tú y tu hijo escriben cuando quieran. Respuesta en menos de 5 min.",          value: "incluido" },
-  { num: "09", icon: <IconShield />, kicker: "Incluido en el programa", title: "Garantía de 10 días",             desc: "Si no lo ves enganchado, devolución total. Sin preguntas.",                   value: 267 },
-  { num: "10", icon: <IconMedal />,  kicker: "Incluido en el programa", title: "Certificado digital",             desc: "Verificable, para portafolio o postulaciones futuras.",                        value: 47  },
+  { num: "09", icon: <IconShield />, kicker: "Incluido en el programa", title: "Garantía de 10 días",             desc: "Si no lo ves enganchado, devolución total. Sin preguntas.",                   value: "incluido" },
+  { num: "10", icon: <IconMedal />,  kicker: "Incluido en el programa", title: "Certificado digital",             desc: "Verificable, para portafolio o postulaciones futuras.",                        value: "incluido" },
 ]
 
 const bonos: Lot[] = [
-  { num: "A", icon: <IconDocManual />,    kicker: "Documento PDF · 64 pág.", title: "Manual del padre: IA segura en casa",             desc: "Guía visual para entender, acompañar y poner reglas claras sin ser el experto. Se lee en una tarde.",           value: 57  },
-  { num: "B", icon: <IconDocPrompts />,   kicker: "Dossier PDF",              title: "200 prompts probados para tareas y proyectos",    desc: "Un catálogo listo para copiar y pegar. Matemáticas, ensayos, ciencias, presentaciones — ordenado por materia.", value: 37  },
-  { num: "C", icon: <IconDocTemplates />, kicker: "Pack editorial Canva",     title: "Plantillas de portafolio, pitch y presentación",  desc: "Diseño premium listo para que tu hijo entregue trabajos que se ven de agencia, no de tarea de colegio.",         value: 49  },
-  { num: "D", icon: <IconDocReport />,    kicker: "Informe mensual · PDF",    title: "Reporte personalizado del progreso de tu hijo",   desc: "Un dossier cada mes con avances, proyectos entregados y próximos pasos. Solo para padres InnovaKids.",           value: 160 },
+  { num: "A", icon: <IconDocManual />,    kicker: "Documento PDF · 64 pág.", title: "Manual del padre: IA segura en casa",             desc: "Guía visual para entender, acompañar y poner reglas claras sin ser el experto. Se lee en una tarde.",           value: "incluido" },
+  { num: "B", icon: <IconDocPrompts />,   kicker: "Dossier PDF",              title: "200 prompts probados para tareas y proyectos",    desc: "Un catálogo listo para copiar y pegar. Matemáticas, ensayos, ciencias, presentaciones — ordenado por materia.", value: "incluido" },
+  { num: "C", icon: <IconDocTemplates />, kicker: "Pack editorial Canva",     title: "Plantillas de portafolio, pitch y presentación",  desc: "Diseño premium listo para que tu hijo entregue trabajos que se ven de agencia, no de tarea de colegio.",         value: "incluido" },
+  { num: "D", icon: <IconDocReport />,    kicker: "Informe mensual · PDF",    title: "Reporte personalizado del progreso de tu hijo",   desc: "Un dossier cada mes con avances, proyectos entregados y próximos pasos. Solo para padres InnovaKids.",           value: "incluido" },
 ]
 
-const sumOf = (items: Lot[]) => items.reduce((a, it) => a + (typeof it.value === "number" ? it.value : 0), 0)
-const subtotalSkills  = sumOf(skills)
-const subtotalPillars = sumOf(pillars)
-const subtotalBonos   = sumOf(bonos)
-const grandTotal      = subtotalSkills + subtotalPillars + subtotalBonos
 const priceToday      = 267
-const discount        = grandTotal - priceToday
 const fmt = (n: number) => `$${n.toLocaleString("es-CL")}`
 
 /* ============================================================
@@ -288,7 +282,6 @@ const DotLeader = ({ light = false }: { light?: boolean }) => {
 /* One catalog row */
 const LotRow = ({ item, stagger = 0 }: { item: Lot; stagger?: number }) => {
   const { ref, inView } = useInView<HTMLElement>({ threshold: 0.15 })
-  const isIncluded = item.value === "incluido"
   return (
     <article
       ref={ref}
@@ -329,33 +322,15 @@ const LotRow = ({ item, stagger = 0 }: { item: Lot; stagger?: number }) => {
           <DotLeader />
           <div className="flex flex-col items-start md:items-end shrink-0 leading-tight">
             <span className="font-mono-accent text-[9px] uppercase tracking-[0.26em] text-[#1A1714]/45">
-              {isIncluded ? "Incluido" : "Valor individual"}
+              En el programa
             </span>
-            {isIncluded ? (
-              <span className="font-display italic text-2xl md:text-[26px] text-[#1A1714] tabular-nums">✓ sin costo</span>
-            ) : (
-              <span className="font-display italic tabular-nums text-2xl md:text-3xl text-[#1A1714] transition-transform duration-300 group-hover:scale-[1.06]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
-                {fmt(item.value as number)}{" "}
-                <span className="text-[#1A1714]/45 text-base not-italic font-mono-accent">USD</span>
-              </span>
-            )}
+            <span className="font-display italic text-2xl md:text-[26px] text-[#1A1714] tabular-nums transition-transform duration-300 group-hover:scale-[1.06]">✓ incluido</span>
           </div>
         </div>
       </div>
     </article>
   )
 }
-
-/* Animated subtotal row with count-up */
-const SubtotalRow = ({ label, amount }: { label: string; amount: number }) => (
-  <div className="flex items-baseline gap-4 py-5 md:py-6">
-    <span className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] font-semibold text-[#1A1714]/55">{label}</span>
-    <DotLeader />
-    <span className="font-display italic tabular-nums text-xl md:text-2xl text-[#1A1714]" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
-      <CountUp to={amount} /> USD
-    </span>
-  </div>
-)
 
 const SectionHead = ({ num, title, kicker }: { num: string; title: string; kicker: string }) => (
   <div className="flex items-baseline gap-5 mb-10 md:mb-14">
@@ -608,7 +583,7 @@ export function ValuePropositionSection() {
             <div className="rise rise-3 col-span-12 md:col-span-3 md:pt-6 md:border-l md:border-[#1A1714]/15 md:pl-6">
               <p className="font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#1A1714]/55 mb-3">Cómo leer</p>
               <p className="font-display italic text-xl md:text-2xl leading-tight text-[#1A1714]/80">
-                Cada ítem con su valor. Al final, la factura.
+                Todo lo que incluye. Al final, el precio.
               </p>
             </div>
           </div>
@@ -820,14 +795,12 @@ export function ValuePropositionSection() {
           <div className="mb-4">
             <SectionHead num="I." kicker="Las 4 habilidades que se lleva para siempre" title="Lotes 01 → 04 · El programa central" />
             <div>{skills.map((s, i) => <LotRow key={s.num} item={s} stagger={i * 80} />)}</div>
-            <SubtotalRow label="Subtotal habilidades" amount={subtotalSkills} />
           </div>
 
           {/* II — PILLARS */}
           <div className="mb-4">
             <SectionHead num="II." kicker="Todo lo que viene incluido" title="Lotes 05 → 10 · La experiencia alrededor" />
             <div>{pillars.map((p, i) => <LotRow key={p.num} item={p} stagger={i * 80} />)}</div>
-            <SubtotalRow label="Subtotal experiencia" amount={subtotalPillars} />
           </div>
 
           <div className="flex items-center justify-center gap-4 my-12 md:my-16" aria-hidden>
@@ -840,7 +813,6 @@ export function ValuePropositionSection() {
           <div className="mb-16 md:mb-20">
             <SectionHead num="III." kicker="Anexo · Documentos premium incluidos" title="4 documentos que solo recibes en esta cohorte" />
             <div>{bonos.map((b, i) => <LotRow key={b.num} item={b} stagger={i * 80} />)}</div>
-            <SubtotalRow label="Subtotal documentos premium" amount={subtotalBonos} />
           </div>
 
           {/* GARANTÍA — sello visual grande antes del recibo */}
@@ -991,36 +963,29 @@ export function ValuePropositionSection() {
                   <div className="flex items-baseline gap-4 py-3">
                     <span className="font-mono-accent text-[11px] md:text-xs uppercase tracking-[0.2em] text-[#FAF7EF]/75">Habilidades (lotes 01–04)</span>
                     <DotLeader light />
-                    <span className="font-display italic tabular-nums text-xl md:text-2xl text-[#FAF7EF]">{fmt(subtotalSkills)}</span>
+                    <span className="font-display italic tabular-nums text-xl md:text-2xl text-[#FAF7EF]">incluidas</span>
                   </div>
                   <div className="flex items-baseline gap-4 py-3">
                     <span className="font-mono-accent text-[11px] md:text-xs uppercase tracking-[0.2em] text-[#FAF7EF]/75">Experiencia (lotes 05–10)</span>
                     <DotLeader light />
-                    <span className="font-display italic tabular-nums text-xl md:text-2xl text-[#FAF7EF]">{fmt(subtotalPillars)}</span>
+                    <span className="font-display italic tabular-nums text-xl md:text-2xl text-[#FAF7EF]">incluida</span>
                   </div>
                   <div className="flex items-baseline gap-4 py-3">
                     <span className="font-mono-accent text-[11px] md:text-xs uppercase tracking-[0.2em] text-[#FAF7EF]/75">Bonos de cohorte (anexo A)</span>
                     <DotLeader light />
-                    <span className="font-display italic tabular-nums text-xl md:text-2xl text-[#FAF7EF]">{fmt(subtotalBonos)}</span>
+                    <span className="font-display italic tabular-nums text-xl md:text-2xl text-[#FAF7EF]">incluidos</span>
                   </div>
 
-                  {/* Total with animated strikethrough */}
+                  {/* Extra charges — none, and we say it */}
                   <div className="flex items-baseline gap-4 pt-5 mt-3 border-t border-[#FAF7EF]/20">
-                    <span className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#FAF7EF]/75 font-semibold">Total si lo compras por separado</span>
+                    <span className="font-mono-accent text-[10px] md:text-[11px] uppercase tracking-[0.28em] text-[#FAF7EF]/75 font-semibold">Cargos adicionales · mensualidades · letra chica</span>
                     <DotLeader light />
                     <span
-                      className={`relative font-display italic tabular-nums text-3xl md:text-5xl text-[#FAF7EF]/55 ${receipt.inView ? "vp-strike-animate" : ""}`}
+                      className="relative font-display italic tabular-nums text-3xl md:text-5xl text-[#FAF7EF]/55"
                       style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
                     >
-                      {fmt(grandTotal)} USD
+                      $0
                     </span>
-                  </div>
-
-                  {/* Discount */}
-                  <div className="flex items-baseline gap-4 py-3">
-                    <span className="font-mono-accent text-[11px] md:text-xs uppercase tracking-[0.24em] text-[#B5522F] font-semibold">Descuento de lanzamiento</span>
-                    <DotLeader light />
-                    <span className="font-display italic tabular-nums text-xl md:text-2xl text-[#B5522F]">− {fmt(discount)}</span>
                   </div>
                 </div>
 

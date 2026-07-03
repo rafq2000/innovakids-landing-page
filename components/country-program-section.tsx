@@ -116,32 +116,30 @@ export function CountryProgramSection({
                     className="max-w-3xl mx-auto rounded-3xl p-8 md:p-12 text-white"
                     style={{ background: `linear-gradient(to bottom right, ${primaryColor}, ${primaryColor}cc)` }}
                 >
-                    <h3 className="text-2xl font-bold text-center mb-8">Lo Que Recibes (Valor Real)</h3>
+                    <h3 className="text-2xl font-bold text-center mb-8">Todo lo que recibes</h3>
                     <ul className="space-y-4 mb-8">
                         {[
-                            { item: "10 Clases en Vivo (aprox. 60 min c/u)", valor: "$400" },
-                            { item: "Acceso a 20+ Herramientas IA Premium", valor: "$300" },
-                            { item: "Portafolio Profesional de 10 Proyectos", valor: "$200" },
-                            { item: "Certificado de Completación", valor: "$50" },
-                            { item: "Comunidad Discord Exclusiva", valor: "$97" },
-                            { item: "Soporte WhatsApp Ilimitado", valor: "$150" },
-                            { item: "Grabaciones de Todas las Clases", valor: "$100" },
-                            { item: "Grupos de Máximo 5 Niños", valor: "Invaluable" },
+                            { item: "10 Clases en Vivo (aprox. 60 min c/u)" },
+                            { item: "Acceso a 20+ Herramientas IA Premium" },
+                            { item: "Portafolio Profesional de 10 Proyectos" },
+                            { item: "Certificado de Completación" },
+                            { item: "Comunidad Discord Exclusiva" },
+                            { item: "Soporte WhatsApp Ilimitado" },
+                            { item: "Grabaciones de Todas las Clases" },
+                            { item: "Grupos de Máximo 5 Niños" },
                         ].map((item, i) => (
                             <li key={i} className="flex items-center justify-between border-b border-white/20 pb-3">
                                 <span className="flex items-center gap-2">
                                     <CheckCircle className="h-5 w-5 text-[#4ADE80]" />
                                     {item.item}
                                 </span>
-                                <span className="text-white/70 line-through">{item.valor}</span>
+                                <span className="text-white/70">incluido</span>
                             </li>
                         ))}
                     </ul>
                     <div className="text-center border-t border-white/20 pt-6">
-                        <p className="text-white/70 mb-2">
-                            Valor Total: <span className="line-through">$1,267 USD</span>
-                        </p>
-                        <p className="text-4xl font-bold text-[#4ADE80] mb-2">Tu Inversión: $267 USD</p>
+                        <p className="text-white/70 mb-2">Un solo precio, sin cargos extra</p>
+                        <p className="text-4xl font-bold text-[#4ADE80] mb-2">$267 USD</p>
                         <p className="text-sm text-white/60">Pago único • Garantía 10 días • Todos los métodos de pago</p>
                     </div>
                 </div>
