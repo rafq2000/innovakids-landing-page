@@ -112,9 +112,9 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
     description: "Pago único de $267 USD - 10 clases en vivo de IA",
   },
   promo240: {
-    title: "Programa Completo con Descuento",
+    title: "Pago Restante",
     price: 240,
-    description: "Pago único de $240 USD - Ahorra $27 sobre el precio regular",
+    description: "Completa tu inscripción - Restante del programa",
   },
   promo120: {
     title: "Pago Acordado",
