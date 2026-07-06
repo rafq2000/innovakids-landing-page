@@ -2,13 +2,14 @@
 
 import { mercadoPagoClient } from "@/lib/mercadopago"
 
-const VALID_AMOUNTS = [27, 120, 177, 180, 240, 267, 270, 297, 360, 480, 494, 691, 788] as const
+const VALID_AMOUNTS = [27, 30, 120, 177, 180, 240, 267, 270, 297, 360, 480, 494, 691, 788] as const
 
 type PaymentOption =
   | "first"
   | "second"
   | "full"
   | "reserve"
+  | "reserve30"
   | "earlybird"
   | "complete"
   | "custom360"
@@ -29,6 +30,7 @@ type PaymentOption =
 
 const paymentTitles: Record<PaymentOption, string> = {
   reserve: "InnovaKids - Reserva de Cupo",
+  reserve30: "InnovaKids - Reserva de Cupo",
   remaining: "InnovaKids - Pago Restante",
   full: "InnovaKids - Curso Completo",
   promo180: "InnovaKids - Pago Acordado $180",
@@ -53,6 +55,7 @@ const paymentTitles: Record<PaymentOption, string> = {
 
 const paymentDescriptions: Record<PaymentOption, string> = {
   reserve: "Reserva tu lugar en el Curso de IA para Niños",
+  reserve30: "Reserva tu lugar en el Curso de IA para Niños",
   remaining: "Completa tu pago del Curso de IA para Niños",
   full: "Curso Completo de IA para Niños - 12 clases + Proyectos + Certificado",
   promo180: "Acceso Completo al Curso de IA para Niños - Precio Especial",

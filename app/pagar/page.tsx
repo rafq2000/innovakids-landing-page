@@ -11,6 +11,7 @@ type PaymentOption =
   | "second"
   | "full"
   | "reserve"
+  | "reserve30"
   | "earlybird"
   | "complete"
   | "custom360"
@@ -65,6 +66,11 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
     title: "Reserva tu Cupo",
     price: 27,
     description: "Reserva con $27 USD - Paga el resto antes de iniciar",
+  },
+  reserve30: {
+    title: "Reserva tu Cupo",
+    price: 30,
+    description: "Reserva con $30 USD - Paga el resto antes de iniciar",
   },
   earlybird: {
     title: "Programa Completo - Decisión Temprana",
