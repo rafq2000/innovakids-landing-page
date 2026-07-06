@@ -128,7 +128,7 @@ export function HeroSection() {
               </a>
             </div>
             <p className="mt-4 font-mono-accent text-[11px] uppercase tracking-[0.18em] text-[var(--ink-muted)]">
-              30 minutos · Sin compromiso · 100% online
+              30 a 45 minutos · Sin compromiso · 100% online
             </p>
 
             {/* Mini trust row above fold */}

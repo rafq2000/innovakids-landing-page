@@ -121,7 +121,7 @@ export function CalendlySection() {
 
             <dl className="space-y-5 text-sm">
               {[
-                ["Duración", "30 minutos"],
+                ["Duración", "30 a 45 minutos"],
                 ["Formato", "Videollamada"],
                 ["Costo", "Gratis, sin compromiso"],
               ].map(([k, v]) => (

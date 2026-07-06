@@ -59,7 +59,7 @@ export const WHATSAPP = {
 export const SESSION = {
   name: "Sesión diagnostica gratuita",
   duration: 30,
-  durationText: "30 minutos",
+  durationText: "30 a 45 minutos",
 } as const
 
 /* ─── AGE GROUPS ──────────────────────────────────────── */

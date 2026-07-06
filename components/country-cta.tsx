@@ -23,7 +23,7 @@ export function CountryCTA({ country }: CountryCTAProps) {
           Reserva la Evaluación Gratuita para tu Hijo/a en {country.name}
         </h2>
         <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-          En 30 minutos descubrirás si tu {country.childTerm.slice(0, -1)} está listo para aprender inteligencia
+          En 30 a 45 minutos descubrirás si tu {country.childTerm.slice(0, -1)} está listo para aprender inteligencia
           artificial y transformar su futuro.
         </p>
 

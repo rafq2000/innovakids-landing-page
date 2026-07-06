@@ -23,7 +23,7 @@ export function CTASection() {
         <div className="mx-auto max-w-4xl">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/20 px-6 py-3 text-white backdrop-blur-sm">
             <Clock className="h-5 w-5" />
-            <span className="font-semibold">Clase gratuita · 30 minutos</span>
+            <span className="font-semibold">Clase gratuita · 30 a 45 minutos</span>
           </div>
 
           <h2 className="mb-6 text-balance text-4xl font-extrabold text-white md:text-5xl lg:text-6xl">

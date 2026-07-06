@@ -20,7 +20,7 @@ export function HowItWorksSection() {
           </div>
           <ol className="col-span-12 md:col-span-8 grid sm:grid-cols-3 gap-8 md:gap-4">
             {[
-              { n: "01", t: "Agendas", d: "Eliges un horario. Solo toma 30 minutos, sin compromiso." },
+              { n: "01", t: "Agendas", d: "Eliges un horario. Toma entre 30 y 45 minutos, sin compromiso." },
               { n: "02", t: "Probamos", d: "Tu hijo prueba una clase en vivo con el profe y otros niños." },
               { n: "03", t: "Decides", d: "Si le gusta, reservamos su cupo. Si no, quedas con un diagnóstico claro." },
             ].map((s) => (
