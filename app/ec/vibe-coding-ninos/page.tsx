@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Vibe Coding para Niños en Ecuador — Programa con IA | InnovaKids",
   description:
-    "Vibe Coding para niños en Ecuador: tu hijo crea apps, videojuegos y chatbots hablando con la IA. Clases en vivo, grupos de 5 (8-17 años). $267 USD. Clase gratis.",
+    "Vibe Coding para niños en Ecuador: tu hijo crea apps, videojuegos y chatbots hablando con la IA. Clases en vivo, grupos de 5 (8-17 años). $297 USD. Clase gratis.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/ec/vibe-coding-ninos",
   },
@@ -172,7 +172,7 @@ export default function VibeCodingEcuadorPage() {
                 Tu Hijo Puede Ser un Vibe Coder
               </h2>
               <p className="text-xl text-gray-300 mb-4">
-                Programa completo de 5 semanas por <strong className="text-white">$267 USD</strong>.
+                Programa completo de 5 semanas por <strong className="text-white">$297 USD</strong>.
                 Familias en Quito, Guayaquil, Cuenca y todo Ecuador ya aprenden con nosotros.
               </p>
               <p className="text-gray-400 mb-8">

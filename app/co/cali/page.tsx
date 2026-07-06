@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Curso de IA para Niños en Cali — Clases Online | InnovaKids",
   description:
-    "Tu hijo en Cali crea apps, videojuegos y arte con Inteligencia Artificial. Clases en vivo, máx 5 alumnos (8-17 años). 1ª clase gratis. Aprox. $1.120.000 COP.",
+    "Tu hijo en Cali crea apps, videojuegos y arte con Inteligencia Artificial. Clases en vivo, máx 5 alumnos (8-17 años). 1ª clase gratis. Aprox. $1.245.000 COP.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/co/cali",
   },
@@ -136,10 +136,10 @@ export default function CaliPage() {
             </h2>
             <div className="bg-[#2F2F2C]/5 rounded-2xl p-8 border border-[#C96342]/20 mb-8">
               <p className="text-4xl font-bold text-[#B5522F] mb-2">
-                $267 USD
+                $297 USD
               </p>
               <p className="text-[#5A5751] mb-1">
-                Aproximadamente $1.120.000 COP
+                Aproximadamente $1.245.000 COP
               </p>
               <p className="text-sm text-[#5A5751] mb-6">
                 Reserva con solo $27 USD (aprox. $113.000 COP). Paga el resto después de las 2 primeras clases.

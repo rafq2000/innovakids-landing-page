@@ -174,7 +174,7 @@ export default function CursoIAAdolescentesEspanaPage() {
             <div className="mt-12 p-6 bg-[#1A1714]/[0.04] border border-[#1A1714]/10 rounded-[3px]">
               <p className="text-[15px] text-[#1A1714]/70 leading-relaxed">
                 <strong className="text-[#1A1714] font-semibold">Familias en Madrid, Barcelona, Valencia, Sevilla y Bilbao</strong> ya confían en InnovaKids.
-                100% online, compatible con el horario escolar. Pago seguro con tarjeta o PayPal (aprox. 245€).
+                100% online, compatible con el horario escolar. Pago seguro con tarjeta o PayPal (aprox. 273€).
               </p>
             </div>
           </div>
@@ -189,7 +189,7 @@ export default function CursoIAAdolescentesEspanaPage() {
                 ["Duración", "5 semanas"],
                 ["Grupos", "Máx. 5 jóvenes"],
                 ["Edad", "13 - 17 años"],
-                ["Precio", "$267 USD (≈245€)"],
+                ["Precio", "$297 USD (≈273€)"],
               ].map(([k, v], i) => (
                 <div key={k} className="flex flex-col gap-2">
                   <span className="font-mono-accent text-[9px] uppercase tracking-[0.18em] text-[#B5522F]">

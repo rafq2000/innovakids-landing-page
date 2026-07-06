@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 const city = "Quito"
 const countryCode = "ec"
 const countryName = "Ecuador"
-const priceDisplay = "$267 USD"
+const priceDisplay = "$297 USD"
 const reservationDisplay = "$27 USD"
 
 export const metadata: Metadata = {

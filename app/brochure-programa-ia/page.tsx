@@ -277,7 +277,7 @@ export default function BrochurePage() {
 
                 <div className="text-center mb-8">
                   <div className="flex items-center justify-center gap-2">
-                    <span className="text-6xl font-black text-[#1A1714]">$267</span>
+                    <span className="text-6xl font-black text-[#1A1714]">$297</span>
                     <div className="text-left">
                       <span className="block text-xl text-[#B5522F] font-bold">USD</span>
                       <span className="block text-[#5A5751] text-xs">Pago Único</span>
@@ -308,7 +308,7 @@ export default function BrochurePage() {
                 </ul>
 
                 <Button asChild size="lg" className="w-full bg-[#C96342] hover:bg-[#9A4428] text-[#1A1714] font-bold py-8 text-xl rounded-xl shadow-lg shadow-[#C96342]/20">
-                  <Link href="/pagar?option=explorer">Inscribir Nivel 1 ($267)</Link>
+                  <Link href="/pagar?option=explorer">Inscribir Nivel 1 ($297)</Link>
                 </Button>
 
                 <p className="mt-4 text-center text-xs text-[#5A5751]">

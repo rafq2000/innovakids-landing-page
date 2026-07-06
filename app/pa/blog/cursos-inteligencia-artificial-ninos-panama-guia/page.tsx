@@ -102,7 +102,7 @@ export default function BlogCursosIANinosPanama() {
 
               <h2>¿Cuánto Cuesta un Curso de IA para Niños en Panamá?</h2>
               <p>
-                El programa completo de InnovaKids cuesta <strong>$267 USD</strong> e incluye:
+                El programa completo de InnovaKids cuesta <strong>$297 USD</strong> e incluye:
               </p>
               <ul>
                 <li>10 clases en vivo de aproximadamente 60 minutos cada una</li>

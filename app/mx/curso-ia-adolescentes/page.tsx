@@ -212,7 +212,7 @@ export default function CursoIAAdolescentesMexico() {
                     ["Orientación vocacional tech", "Si", "No incluida"],
                     ["Vibe Coding (apps reales con IA)", "Si", "No disponible"],
                     ["1ª clase gratis sin compromiso", "Si", "Pago anticipado"],
-                    ["Precio", "$267 USD (aprox. $5,400 MXN)", "$300-600 USD"],
+                    ["Precio", "$297 USD (aprox. $6,000 MXN)", "$300-600 USD"],
                   ].map(([feature, inno, other], i) => (
                     <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                       <td className="p-4 font-medium text-gray-900">{feature}</td>

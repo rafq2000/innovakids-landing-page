@@ -157,7 +157,7 @@ export default function CursoIANinos() {
               </div>
               <div className="border-2 border-primary rounded-2xl p-8 text-center">
                 <p className="text-sm font-mono tracking-widest uppercase text-muted-foreground mb-3">Precio</p>
-                <div className="text-6xl font-bold mb-1">$267</div>
+                <div className="text-6xl font-bold mb-1">$297</div>
                 <div className="text-muted-foreground font-mono text-sm mb-4">USD · pago único</div>
                 <p className="text-sm text-muted-foreground mb-6">
                   Pago único · tu tarjeta puede ofrecer cuotas<br />

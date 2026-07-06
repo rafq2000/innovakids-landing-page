@@ -24,7 +24,7 @@ export default function CursoIANinos812MX() {
         <section className="relative py-20 px-4 text-center bg-gradient-to-b from-[#2F2F2C] to-[#1a1510] text-white">
           <div className="max-w-4xl mx-auto">
             <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-[#C96342]/10 text-[#B5522F] text-sm font-medium border border-[#C96342]/20">
-              Niños de 8 a 12 años — Aprox. $5,400 MXN ($267 USD)
+              Niños de 8 a 12 años — Aprox. $6,000 MXN ($297 USD)
             </span>
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
               Curso de Inteligencia Artificial para Niños de 8 a 12 Años en México
@@ -141,7 +141,7 @@ export default function CursoIANinos812MX() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Inscríbelo hoy</h2>
             <p className="text-[#5A5751] mb-2">
-              Programa completo: <span className="text-[#2F2F2C] font-bold">$267 USD (aprox. $5,400 MXN)</span>
+              Programa completo: <span className="text-[#2F2F2C] font-bold">$297 USD (aprox. $6,000 MXN)</span>
             </p>
             <p className="text-[#5A5751] mb-8 text-sm">Reserva con $27 USD (aprox. $540 MXN). Solo pagas el resto después de las 2 primeras clases.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">

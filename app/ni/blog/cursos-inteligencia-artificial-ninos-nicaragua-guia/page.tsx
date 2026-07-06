@@ -226,7 +226,7 @@ export default function GuiaIANinosNicaragua() {
                     </tr>
                     <tr className="border-t">
                       <td className="p-4">Precio</td>
-                      <td className="p-4 font-bold text-[#0067C6]">$267 USD (aprox. C$ 9,800)</td>
+                      <td className="p-4 font-bold text-[#0067C6]">$297 USD (aprox. C$ 10,900)</td>
                       <td className="p-4 text-muted-foreground">$150-$400 USD</td>
                     </tr>
                   </tbody>
@@ -394,7 +394,7 @@ export default function GuiaIANinosNicaragua() {
 
               <h3 className="mt-8 text-xl font-bold">¿Cómo se paga? ¿Puedo pagar en córdobas?</h3>
               <p>
-                El precio es de $267 USD (aproximadamente C$ 9,800 NIO). Puedes pagar con tarjeta de crédito, débito
+                El precio es de $297 USD (aproximadamente C$ 10,900 NIO). Puedes pagar con tarjeta de crédito, débito
                 o PayPal en dólares o córdobas. La reserva es de solo $27 USD (aprox. C$ 980). Sin cargos ocultos ni
                 comisiones adicionales.
               </p>
@@ -454,7 +454,7 @@ export default function GuiaIANinosNicaragua() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$267 USD (aprox. C$ 9,800) · 10 clases · Máx 5 niños · Garantía de 10 días</p>
+              <p className="mt-4 text-sm text-white/60">$297 USD (aprox. C$ 10,900) · 10 clases · Máx 5 niños · Garantía de 10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

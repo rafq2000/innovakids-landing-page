@@ -24,10 +24,14 @@ export const COHORT = {
 
 export const PRICING = {
   /** Full price in USD */
-  full: 267,
+  full: 297,
+  /** Early-decision price: enrolling within 48h after the diagnostic session */
+  earlyDecision: 267,
+  /** Hours after the diagnostic session during which earlyDecision applies */
+  earlyDecisionWindowHours: 48,
   /** Reservation deposit in USD */
   reservation: 27,
-  /** Remaining balance after 2 classes */
+  /** Remaining balance after 2 classes (early-decision flow: 27 + 240 = 267) */
   remainder: 240,
   /** Number of installments */
   installments: 3,

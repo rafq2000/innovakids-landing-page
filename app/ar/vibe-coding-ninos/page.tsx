@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Vibe Coding para Chicos en Argentina — Programa con IA | InnovaKids",
   description:
-    "Vibe Coding para chicos en Argentina: tu hijo crea apps, videojuegos y chatbots hablando con la IA. Clases en vivo, grupos de 5 (8-17 años). Desde $285.000 ARS. Clase gratis.",
+    "Vibe Coding para chicos en Argentina: tu hijo crea apps, videojuegos y chatbots hablando con la IA. Clases en vivo, grupos de 5 (8-17 años). Desde $317.000 ARS. Clase gratis.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/ar/vibe-coding-ninos",
   },
@@ -172,7 +172,7 @@ export default function VibeCodingArgentinaPage() {
                 Tu Hijo Puede Ser un Vibe Coder
               </h2>
               <p className="text-xl text-gray-300 mb-4">
-                Programa completo de 5 semanas por <strong className="text-white">$267 USD (aprox. $285.000 ARS)</strong>.
+                Programa completo de 5 semanas por <strong className="text-white">$297 USD (aprox. $317.000 ARS)</strong>.
                 Familias en Buenos Aires, Córdoba, Rosario y toda Argentina ya aprenden con nosotros.
               </p>
               <p className="text-gray-400 mb-8">

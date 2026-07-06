@@ -24,7 +24,7 @@ export default function CursoIANinos812AR() {
         <section className="relative py-20 px-4 text-center bg-gradient-to-b from-[#2F2F2C] to-[#1a1510] text-white">
           <div className="max-w-4xl mx-auto">
             <span className="inline-block mb-4 px-4 py-1.5 rounded-full bg-[#C96342]/10 text-[#B5522F] text-sm font-medium border border-[#C96342]/20">
-              Chicos de 8 a 12 años — Aprox. $285.000 ARS ($267 USD)
+              Chicos de 8 a 12 años — Aprox. $317.000 ARS ($297 USD)
             </span>
             <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
               Curso de Inteligencia Artificial para Chicos de 8 a 12 Años en Argentina
@@ -141,7 +141,7 @@ export default function CursoIANinos812AR() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Inscribilo hoy</h2>
             <p className="text-[#5A5751] mb-2">
-              Programa completo: <span className="text-[#2F2F2C] font-bold">$267 USD (aprox. $285.000 ARS)</span>
+              Programa completo: <span className="text-[#2F2F2C] font-bold">$297 USD (aprox. $317.000 ARS)</span>
             </p>
             <p className="text-[#5A5751] mb-8 text-sm">Reservá con $27 USD (aprox. $29.000 ARS). Solo pagás el resto después de las 2 primeras clases.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">

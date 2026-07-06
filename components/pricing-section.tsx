@@ -16,8 +16,8 @@ export function PricingSection({ country }: PricingSectionProps) {
   const localApprox = (() => {
     if (!country) return null
     if (country.currency === "USD") return null
-    const rate = country.priceLocal / 267
-    const local = Math.round((267 * rate) / 100) * 100
+    const rate = country.priceLocal / PRICING.full
+    const local = Math.round((PRICING.full * rate) / 100) * 100
     return `aprox. ${country.currencySymbol}${local.toLocaleString()} ${country.currency}`
   })()
 
@@ -78,8 +78,13 @@ export function PricingSection({ country }: PricingSectionProps) {
             {localApprox && (
               <p className="text-sm text-[#5A5751] mb-2 italic">{localApprox}</p>
             )}
-            <p className="text-sm text-[#5A5751] mb-10">
+            <p className="text-sm text-[#5A5751] mb-4">
               Pago único · sin mensualidades · sin letra chica.
+            </p>
+            <p className="text-sm text-[#2F2F2C] mb-10 border-l-2 border-[#C96342] pl-3">
+              <strong className="font-semibold">${PRICING.earlyDecision} USD</strong> si confirmas la
+              inscripción dentro de las <strong className="font-semibold">48 horas</strong> posteriores
+              a tu Sesión de Diagnóstico gratuita.
             </p>
 
             <Link

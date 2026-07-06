@@ -225,7 +225,7 @@ export default function GuiaIANinosParaguay() {
                     </tr>
                     <tr className="border-t">
                       <td className="p-4">Precio</td>
-                      <td className="p-4 font-bold text-[#0038A8]">$267 USD (aprox. ₲ 2.000.000)</td>
+                      <td className="p-4 font-bold text-[#0038A8]">$297 USD (aprox. ₲ 2.200.000)</td>
                       <td className="p-4 text-muted-foreground">₲ 1.500.000 - ₲ 3.500.000</td>
                     </tr>
                   </tbody>
@@ -402,7 +402,7 @@ export default function GuiaIANinosParaguay() {
 
               <h3 className="mt-8 text-xl font-bold">¿Cómo se paga? ¿Aceptan guaraníes?</h3>
               <p>
-                El precio es de $267 USD (aproximadamente ₲ 2.000.000). Podés pagar con tarjeta de crédito, débito
+                El precio es de $297 USD (aproximadamente ₲ 2.200.000). Podés pagar con tarjeta de crédito, débito
                 o PayPal. Aceptamos pagos en guaraníes y en dólares. La reserva es de solo $27 USD
                 (aprox. ₲ 200.000).
               </p>
@@ -461,7 +461,7 @@ export default function GuiaIANinosParaguay() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$267 USD (₲ 2.000.000) · 10 clases · Máx 5 niños · Garantía de 10 días</p>
+              <p className="mt-4 text-sm text-white/60">$297 USD (₲ 2.200.000) · 10 clases · Máx 5 niños · Garantía de 10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

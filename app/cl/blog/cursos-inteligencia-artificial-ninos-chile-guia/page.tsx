@@ -184,7 +184,7 @@ export default function GuiaIANinosChile() {
                     </tr>
                     <tr className="border-t">
                       <td className="p-4">Precio</td>
-                      <td className="p-4 font-bold text-[#0039A6]">$267 USD</td>
+                      <td className="p-4 font-bold text-[#0039A6]">$297 USD</td>
                       <td className="p-4 text-muted-foreground">$150-$400 USD</td>
                     </tr>
                   </tbody>
@@ -335,7 +335,7 @@ export default function GuiaIANinosChile() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$267 USD • 10 clases • Máx 5 niños • Garantía de 10 días</p>
+              <p className="mt-4 text-sm text-white/60">$297 USD • 10 clases • Máx 5 niños • Garantía de 10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

@@ -41,7 +41,7 @@ export const faqs = [
     {
         question: "¿Cuánto cuesta el programa completo?",
         answer:
-            "$267 USD por módulo: 5 semanas, 10 clases en vivo, grabaciones de por vida, software premium y garantía de 10 días. Es una inversión única para una habilidad que usará siempre.",
+            "$297 USD por módulo: 5 semanas, 10 clases en vivo, grabaciones de por vida, software premium y garantía de 10 días. Es una inversión única para una habilidad que usará siempre.",
     },
     {
         question: "¿Qué pasa si falta a una clase?",

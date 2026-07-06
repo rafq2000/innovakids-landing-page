@@ -237,7 +237,7 @@ export default function GuiaIANinosGuineaEcuatorial() {
                     </tr>
                     <tr className="border-t">
                       <td className="p-4">Precio</td>
-                      <td className="p-4 font-bold text-[#3E9A00]">$267 USD (~160.000 FCFA)</td>
+                      <td className="p-4 font-bold text-[#3E9A00]">$297 USD (~178.000 FCFA)</td>
                       <td className="p-4 text-muted-foreground">Variable</td>
                     </tr>
                   </tbody>
@@ -403,7 +403,7 @@ export default function GuiaIANinosGuineaEcuatorial() {
 
               <h3 className="mt-8 text-xl font-bold">¿Cómo se paga desde Guinea Ecuatorial?</h3>
               <p>
-                El precio es de $267 USD (aproximadamente 160.000 FCFA). Puedes pagar con tarjeta de crédito internacional,
+                El precio es de $297 USD (aproximadamente 178.000 FCFA). Puedes pagar con tarjeta de crédito internacional,
                 tarjeta de débito Visa/Mastercard o PayPal. La reserva es de solo $27 USD (aprox. 16.000 FCFA).
               </p>
 
@@ -467,7 +467,7 @@ export default function GuiaIANinosGuineaEcuatorial() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$267 USD (~160.000 FCFA) · 10 clases · Máx 5 niños · Garantía de 10 días</p>
+              <p className="mt-4 text-sm text-white/60">$297 USD (~178.000 FCFA) · 10 clases · Máx 5 niños · Garantía de 10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

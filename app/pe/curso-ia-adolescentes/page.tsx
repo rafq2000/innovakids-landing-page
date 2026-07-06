@@ -212,7 +212,7 @@ export default function CursoIAAdolescentesPeru() {
                     ["Portfolio profesional al terminar", "Sí", "Diploma genérico"],
                     ["Orientación vocacional incluida", "Sí", "No"],
                     ["Clase de prueba gratis", "Sí", "Cobro desde el día 1"],
-                    ["Precio", "$267 USD (aprox. S/ 1.000)", "$200-500 USD"],
+                    ["Precio", "$297 USD (aprox. S/ 1.000)", "$200-500 USD"],
                   ].map(([feature, inno, other], i) => (
                     <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                       <td className="p-4 font-medium text-gray-900">{feature}</td>

@@ -212,7 +212,7 @@ export default function CursoIAAdolescentesArgentina() {
                     ["Portfolio profesional publicado", "Sí", "Certificado impreso"],
                     ["Orientación vocacional tech", "Sí", "No incluida"],
                     ["Clase de prueba gratis", "Sí", "Pago por adelantado"],
-                    ["Precio", "$267 USD (aprox. $285.000 ARS)", "$300-600 USD"],
+                    ["Precio", "$297 USD (aprox. $317.000 ARS)", "$300-600 USD"],
                   ].map(([feature, inno, other], i) => (
                     <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                       <td className="p-4 font-medium text-gray-900">{feature}</td>

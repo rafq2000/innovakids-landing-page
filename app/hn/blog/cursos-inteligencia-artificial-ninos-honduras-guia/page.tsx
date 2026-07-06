@@ -223,7 +223,7 @@ export default function GuiaIANinosHonduras() {
                     </tr>
                     <tr className="border-t">
                       <td className="p-4">Precio</td>
-                      <td className="p-4 font-bold text-[#0073CF]">$267 USD (aprox L 6,600)</td>
+                      <td className="p-4 font-bold text-[#0073CF]">$297 USD (aprox L 7,300)</td>
                       <td className="p-4 text-muted-foreground">$150-$400 USD</td>
                     </tr>
                   </tbody>
@@ -390,7 +390,7 @@ export default function GuiaIANinosHonduras() {
 
               <h3 className="mt-8 text-xl font-bold">¿Cómo se paga? ¿Aceptan lempiras?</h3>
               <p>
-                El precio es de $267 USD (aproximadamente L 6,600 HNL). Puedes pagar con tarjeta de crédito, débito o
+                El precio es de $297 USD (aproximadamente L 7,300 HNL). Puedes pagar con tarjeta de crédito, débito o
                 PayPal en dólares. La reserva es de solo $27 USD (aprox L 660). Tu banco realizará la conversión
                 automáticamente.
               </p>
@@ -449,7 +449,7 @@ export default function GuiaIANinosHonduras() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$267 USD (aprox L 6,600) · 10 clases · Máx 5 niños · Garantía de 10 días</p>
+              <p className="mt-4 text-sm text-white/60">$297 USD (aprox L 7,300) · 10 clases · Máx 5 niños · Garantía de 10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

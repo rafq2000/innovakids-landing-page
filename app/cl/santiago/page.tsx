@@ -7,7 +7,7 @@ import { Footer } from "@/components/footer"
 
 const city = "Santiago"
 const countryCode = "cl"
-const priceDisplay = "$267 USD (aprox. $250.000 CLP)"
+const priceDisplay = "$297 USD (aprox. $278.000 CLP)"
 const reservationDisplay = "$27 USD (aprox. $25.000 CLP)"
 
 export const metadata: Metadata = {

@@ -224,7 +224,7 @@ export default function GuiaIANinosGuatemala() {
                     </tr>
                     <tr className="border-t">
                       <td className="p-4">Precio</td>
-                      <td className="p-4 font-bold text-[#4997D0]">$267 USD (aprox Q 2,000)</td>
+                      <td className="p-4 font-bold text-[#4997D0]">$297 USD (aprox Q 2,200)</td>
                       <td className="p-4 text-muted-foreground">Q 1,500-Q 4,000</td>
                     </tr>
                   </tbody>
@@ -399,7 +399,7 @@ export default function GuiaIANinosGuatemala() {
 
               <h3 className="mt-8 text-xl font-bold">¿Cómo se paga? ¿Aceptan quetzales?</h3>
               <p>
-                El precio es de $267 USD (aproximadamente Q 2,000). Podés pagar con tarjeta de crédito, débito o
+                El precio es de $297 USD (aproximadamente Q 2,200). Podés pagar con tarjeta de crédito, débito o
                 PayPal en quetzales o dólares. La reserva es de solo $27 USD (aprox Q 200).
               </p>
 
@@ -457,7 +457,7 @@ export default function GuiaIANinosGuatemala() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$267 USD (aprox Q 2,000) · 10 clases · Máx 5 niños · Garantía de 10 días</p>
+              <p className="mt-4 text-sm text-white/60">$297 USD (aprox Q 2,200) · 10 clases · Máx 5 niños · Garantía de 10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

@@ -78,7 +78,7 @@ export default function CursoIAAdolescentesUSAPage() {
     typicalAgeRange: "13-17",
     inLanguage: "es",
     courseMode: "online",
-    offers: { "@type": "Offer", price: "267", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+    offers: { "@type": "Offer", price: "297", priceCurrency: "USD", availability: "https://schema.org/InStock" },
   }
 
   return (
@@ -189,7 +189,7 @@ export default function CursoIAAdolescentesUSAPage() {
                 ["Duración", "5 semanas"],
                 ["Grupos", "Máx. 5 jóvenes"],
                 ["Edad", "13 - 17 años"],
-                ["Precio", "$267 USD"],
+                ["Precio", "$297 USD"],
               ].map(([k, v], i) => (
                 <div key={k} className="flex flex-col gap-2">
                   <span className="font-mono-accent text-[9px] uppercase tracking-[0.18em] text-[#B5522F]">

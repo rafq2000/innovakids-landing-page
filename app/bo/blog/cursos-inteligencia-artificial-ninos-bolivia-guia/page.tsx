@@ -225,7 +225,7 @@ export default function GuiaIANinosBolivia() {
                     </tr>
                     <tr className="border-t">
                       <td className="p-4">Precio</td>
-                      <td className="p-4 font-bold text-[#007934]">$267 USD (aprox Bs 1.850)</td>
+                      <td className="p-4 font-bold text-[#007934]">$297 USD (aprox Bs 2.060)</td>
                       <td className="p-4 text-muted-foreground">Bs 1.000-Bs 3.000</td>
                     </tr>
                   </tbody>
@@ -399,7 +399,7 @@ export default function GuiaIANinosBolivia() {
 
               <h3 className="mt-8 text-xl font-bold">¿Cómo se paga? ¿Aceptan bolivianos?</h3>
               <p>
-                El precio es de $267 USD (aproximadamente Bs 1.850). Puedes pagar con tarjeta de crédito, débito
+                El precio es de $297 USD (aproximadamente Bs 2.060). Puedes pagar con tarjeta de crédito, débito
                 o PayPal en bolivianos o en dólares. La reserva es de solo $27 USD (aprox Bs 185) para asegurar
                 el cupo de tu hijo.
               </p>
@@ -459,7 +459,7 @@ export default function GuiaIANinosBolivia() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$267 USD (Bs 1.850) · 10 clases · Máx 5 niños · Garantía de 10 días</p>
+              <p className="mt-4 text-sm text-white/60">$297 USD (Bs 2.060) · 10 clases · Máx 5 niños · Garantía de 10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

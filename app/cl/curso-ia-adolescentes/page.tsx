@@ -216,7 +216,7 @@ export default function CursoIAAdolescentesChile() {
                     ["Portfolio profesional publicado", "Sí", "Diploma genérico"],
                     ["Orientación vocacional tech", "Sí", "No incluida"],
                     ["Clase de prueba gratis", "Sí", "Cobro desde el inicio"],
-                    ["Precio", "$267 USD (aprox. $250.000 CLP)", "$300-600 USD"],
+                    ["Precio", "$297 USD (aprox. $278.000 CLP)", "$300-600 USD"],
                   ].map(([feature, inno, other], i) => (
                     <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                       <td className="p-4 font-medium text-gray-900">{feature}</td>

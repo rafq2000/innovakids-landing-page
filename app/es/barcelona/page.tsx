@@ -147,7 +147,7 @@ export default function BarcelonaPage() {
             Programa completo de 5 semanas (10 clases en vivo de 60 min).
           </p>
           <div className="bg-[#2F2F2C]/5 border border-[#C96342]/20 rounded-2xl p-8 max-w-md mx-auto">
-            <p className="text-4xl font-bold text-[#B5522F] mb-2">245€</p>
+            <p className="text-4xl font-bold text-[#B5522F] mb-2">273€</p>
             <p className="text-[#5A5751] text-sm mb-4">
               Reserva con 25€ — pagas el resto tras las 2 primeras clases.
             </p>

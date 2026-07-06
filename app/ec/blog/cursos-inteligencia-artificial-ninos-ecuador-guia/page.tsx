@@ -221,7 +221,7 @@ export default function GuiaIANinosEcuador() {
                     </tr>
                     <tr className="border-t">
                       <td className="p-4">Precio</td>
-                      <td className="p-4 font-bold text-[#003DA5]">$267 USD</td>
+                      <td className="p-4 font-bold text-[#003DA5]">$297 USD</td>
                       <td className="p-4 text-muted-foreground">$150-$400 USD</td>
                     </tr>
                   </tbody>
@@ -385,7 +385,7 @@ export default function GuiaIANinosEcuador() {
 
               <h3 className="mt-8 text-xl font-bold">¿Cómo se paga? ¿Aceptan dólares?</h3>
               <p>
-                Sí, el precio es de $267 USD y como Ecuador usa el dólar, no hay conversión de moneda. Puedes pagar
+                Sí, el precio es de $297 USD y como Ecuador usa el dólar, no hay conversión de moneda. Puedes pagar
                 con tarjeta de crédito, débito o PayPal. La reserva es de solo $27 USD.
               </p>
 
@@ -443,7 +443,7 @@ export default function GuiaIANinosEcuador() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$267 USD · 10 clases · Máx 5 niños · Garantía de 10 días</p>
+              <p className="mt-4 text-sm text-white/60">$297 USD · 10 clases · Máx 5 niños · Garantía de 10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

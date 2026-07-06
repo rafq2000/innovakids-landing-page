@@ -150,8 +150,8 @@ export default function CursosVacacionalesMexicoPage() {
             Precio accesible para familias mexicanas. Paga en pesos o en dólares.
           </p>
           <div className="bg-white/5 border border-[#C96342]/30 rounded-2xl p-8">
-            <p className="text-4xl font-bold text-[#B5522F] mb-2">$267 USD</p>
-            <p className="text-lg text-[#5A5751] mb-1">aprox. $5,400 MXN</p>
+            <p className="text-4xl font-bold text-[#B5522F] mb-2">$297 USD</p>
+            <p className="text-lg text-[#5A5751] mb-1">aprox. $6,000 MXN</p>
             <p className="text-[#5A5751] mb-1">10 clases en vivo · 5 semanas · máx 5 alumnos</p>
             <p className="text-sm text-[#5A5751] mb-6">Reserva con solo $27 USD (aprox. $540 MXN). Pagas el resto después de las 2 primeras clases.</p>
             <p className="text-lg font-semibold text-green-400 mb-6">1ª clase completamente gratis</p>

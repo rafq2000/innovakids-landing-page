@@ -219,7 +219,7 @@ export default function MejorCursoIANinos2026Page() {
                     },
                     {
                       feature: "Precio desde",
-                      innovakids: "$267 USD",
+                      innovakids: "$297 USD",
                       masivos: "$50-200 USD",
                       locales: "$200-500 USD",
                       innovakidsGood: true,

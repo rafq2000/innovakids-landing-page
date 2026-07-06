@@ -118,7 +118,7 @@ export default function Home() {
     "courseMode": "online",
     "offers": {
       "@type": "Offer",
-      "price": "267",
+      "price": "297",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "url": "https://www.innovakidslatam.com",

@@ -18,7 +18,7 @@ const CTA_CLICK_LABEL = `${GOOGLE_ADS_ID}/CozlCNvN7JwcEPbtt7JD`
 // Dedicated conversion for Calendly-confirmed bookings.
 // TODO: Create this conversion action in Google Ads →
 //   Tools → Conversions → New → Website → name "Diagnóstico Agendado"
-//   Category: Lead · Value: $267 · Count: 1 per click · Attribution: Data-driven
+//   Category: Lead · Value: $297 · Count: 1 per click · Attribution: Data-driven
 //   Then replace the placeholder label below with the real one (format: AW-XXXXXXX/YYYYYYY).
 const CALENDLY_BOOKING_LABEL = process.env.NEXT_PUBLIC_GOOGLE_ADS_BOOKING_LABEL ?? FORM_SUBMIT_LABEL
 
@@ -186,13 +186,13 @@ export function trackBookingConfirmed(payload: { eventId?: string } = {}): void 
     if (isGtagReady()) {
         window.gtag("event", "booking_confirmed", {
             currency: "USD",
-            value: 267.0,
+            value: 297.0,
             event_id: payload.eventId,
         })
 
         window.gtag("event", "conversion", {
             send_to: CALENDLY_BOOKING_LABEL,
-            value: 267.0,
+            value: 297.0,
             currency: "USD",
         })
     }
@@ -202,13 +202,13 @@ export function trackBookingConfirmed(payload: { eventId?: string } = {}): void 
     // in Ads Manager without additional setup.
     trackMeta("Schedule", {
         content_name: "strategic_session",
-        value: 267.0,
+        value: 297.0,
         currency: "USD",
         event_id: payload.eventId,
     })
     trackMeta("CompleteRegistration", {
         content_name: "booking_confirmed",
-        value: 267.0,
+        value: 297.0,
         currency: "USD",
         status: "confirmed",
         event_id: payload.eventId,

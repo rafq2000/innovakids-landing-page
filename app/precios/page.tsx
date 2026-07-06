@@ -7,9 +7,9 @@ import { Check, Shield, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Precio Curso IA para Niños 2026 · $267 USD | InnovaKids",
+  title: "Precio Curso IA para Niños 2026 · $297 USD | InnovaKids",
   description:
-    "Curso completo de IA para niños 8-17 años: 10 clases en vivo, grupos de 5 alumnos, certificado y garantía 10 días. $267 USD pago único.",
+    "Curso completo de IA para niños 8-17 años: 10 clases en vivo, grupos de 5 alumnos, certificado y garantía 10 días. $297 USD pago único.",
   keywords: [
     "curso ia niños precio",
     "precio curso inteligencia artificial niños",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     canonical: "https://www.innovakidslatam.com/precios",
   },
   openGraph: {
-    title: "Precio Curso IA para Niños 2026 · $267 USD | InnovaKids",
+    title: "Precio Curso IA para Niños 2026 · $297 USD | InnovaKids",
     description:
-      "10 clases en vivo, grupos de 5 alumnos, certificado y garantía 10 días. $267 USD. Reserva tu cupo con $27 USD hoy.",
+      "10 clases en vivo, grupos de 5 alumnos, certificado y garantía 10 días. $297 USD. Reserva tu cupo con $27 USD hoy.",
     url: "https://www.innovakidslatam.com/precios",
     siteName: "InnovaKids",
     type: "website",
@@ -31,12 +31,12 @@ export const metadata: Metadata = {
       url: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
       width: 1200,
       height: 630,
-      alt: "Precio curso IA para niños 2026 - InnovaKids $267 USD",
+      alt: "Precio curso IA para niños 2026 - InnovaKids $297 USD",
     }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Precio Curso IA para Niños 2026 · $267 USD | InnovaKids",
+    title: "Precio Curso IA para Niños 2026 · $297 USD | InnovaKids",
     description: "10 clases en vivo, grupos de 5, certificado y garantía 10 días. Reserva con $27 USD.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
@@ -52,7 +52,7 @@ const jsonLd = {
   offers: {
     "@type": "Offer",
     name: "Programa Vibe Explorer",
-    price: "267",
+    price: "297",
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
     url: "https://www.innovakidslatam.com/precios",
@@ -117,7 +117,7 @@ export default function PreciosPage() {
               {/* Price */}
               <div className="px-8 py-8 text-center border-b">
                 <div className="flex items-baseline justify-center gap-2 mb-2">
-                  <span className="text-6xl md:text-7xl font-bold">$267</span>
+                  <span className="text-6xl md:text-7xl font-bold">$297</span>
                   <span className="text-xl text-muted-foreground font-mono">USD</span>
                 </div>
                 <p className="text-muted-foreground text-sm">

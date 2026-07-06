@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Vibe Coding para Niños en Chile — Programa con IA | InnovaKids",
   description:
-    "Vibe Coding para niños en Chile: tu hijo crea apps, videojuegos y chatbots hablando con la IA. Clases en vivo, grupos de 5 (8-17 años). Desde $250.000 CLP. Clase gratis.",
+    "Vibe Coding para niños en Chile: tu hijo crea apps, videojuegos y chatbots hablando con la IA. Clases en vivo, grupos de 5 (8-17 años). Desde $278.000 CLP. Clase gratis.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/cl/vibe-coding-ninos",
   },
@@ -172,7 +172,7 @@ export default function VibeCodingChilePage() {
                 Tu Hijo Puede Ser un Vibe Coder
               </h2>
               <p className="text-xl text-gray-300 mb-4">
-                Programa completo de 5 semanas por <strong className="text-white">$267 USD (aprox. $250.000 CLP)</strong>.
+                Programa completo de 5 semanas por <strong className="text-white">$297 USD (aprox. $278.000 CLP)</strong>.
                 Familias en Santiago, Viña del Mar, Concepción y todo Chile ya aprenden con nosotros.
               </p>
               <p className="text-gray-400 mb-8">

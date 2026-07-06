@@ -2,7 +2,7 @@
 
 import { mercadoPagoClient } from "@/lib/mercadopago"
 
-const VALID_AMOUNTS = [27, 120, 177, 180, 240, 267, 360, 480, 494, 691, 788] as const
+const VALID_AMOUNTS = [27, 120, 177, 180, 240, 267, 270, 297, 360, 480, 494, 691, 788] as const
 
 type PaymentOption =
   | "first"
@@ -43,7 +43,7 @@ const paymentTitles: Record<PaymentOption, string> = {
   university: "Academy University Pass",
   restante177: "InnovaKids - Pago Restante $177",
   promo27: "InnovaKids - Pago Acordado $27",
-  promo267: "InnovaKids - Programa Completo $267",
+  promo267: "InnovaKids - Programa Completo $267 (Decisión Temprana)",
   promo240: "InnovaKids - Promoción $240",
   promo120: "InnovaKids - Pago Acordado $120",
   promo480: "InnovaKids - Programa Completo Premium $480",
@@ -58,7 +58,7 @@ const paymentDescriptions: Record<PaymentOption, string> = {
   promo180: "Acceso Completo al Curso de IA para Niños - Precio Especial",
   first: "Reserva de cupo",
   second: "Pago restante del programa",
-  earlybird: "Precio especial primeros inscritos",
+  earlybird: "Precio por decisión temprana - 48h tras la Sesión de Diagnóstico",
   complete: "Programa completo InnovaKids",
   custom360: "Pago único programa completo",
   explorer: "Módulo 1 Base - 10 Clases",
@@ -67,7 +67,7 @@ const paymentDescriptions: Record<PaymentOption, string> = {
   university: "Acceso Total 4 Módulos",
   restante177: "Pago restante de $177 USD",
   promo27: "Pago único de $27 USD",
-  promo267: "Pago único de $267 USD",
+  promo267: "Pago único de $267 USD - Precio por decisión temprana",
   promo240: "Pago único de $240 USD",
   promo120: "Pago especial de $120 USD",
   promo480: "Pago único de $480 USD - Acceso completo InnovaKids",

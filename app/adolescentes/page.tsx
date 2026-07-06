@@ -90,13 +90,13 @@ export default function AdolescentesPage() {
     "courseMode": "online",
     "offers": {
       "@type": "Offer",
-      "price": "267",
+      "price": "297",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
     },
   }
 
-  const priceToday = 267
+  const priceToday = 297
   const installments = Math.round(priceToday / 3)
 
   return (

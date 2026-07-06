@@ -7,7 +7,7 @@ import { Footer } from "@/components/footer"
 
 const city = "Arequipa"
 const countryCode = "pe"
-const priceDisplay = "$267 USD (aprox. S/ 1.000 PEN)"
+const priceDisplay = "$297 USD (aprox. S/ 1.100 PEN)"
 const reservationDisplay = "$27 USD (aprox. S/ 100)"
 
 export const metadata: Metadata = {

@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Vibe Coding para Niños en México — Programa con IA | InnovaKids",
   description:
-    "Vibe Coding para niños en México: tu hijo crea apps, videojuegos y chatbots hablando con la IA. Clases en vivo, grupos de 5 (8-17 años). Desde $5,400 MXN. Clase gratis.",
+    "Vibe Coding para niños en México: tu hijo crea apps, videojuegos y chatbots hablando con la IA. Clases en vivo, grupos de 5 (8-17 años). Desde $6,000 MXN. Clase gratis.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/mx/vibe-coding-ninos",
   },
@@ -172,7 +172,7 @@ export default function VibeCodingMexicoPage() {
                 Tu Hijo Puede Ser un Vibe Coder
               </h2>
               <p className="text-xl text-gray-300 mb-4">
-                Programa completo de 5 semanas por <strong className="text-white">$267 USD (aprox. $5,400 MXN)</strong>.
+                Programa completo de 5 semanas por <strong className="text-white">$297 USD (aprox. $6,000 MXN)</strong>.
                 Familias en CDMX, Guadalajara, Monterrey y todo México ya aprenden con nosotros.
               </p>
               <p className="text-gray-400 mb-8">

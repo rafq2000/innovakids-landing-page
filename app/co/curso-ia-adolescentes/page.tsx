@@ -212,7 +212,7 @@ export default function CursoIAAdolescentesColombia() {
                     ["Portfolio publicado al terminar", "Sí", "Solo certificado"],
                     ["Orientación vocacional tech", "Sí", "No incluida"],
                     ["Clase de prueba gratis", "Sí", "Pago anticipado completo"],
-                    ["Precio", "$267 USD (aprox. $1.120.000 COP)", "$350-700 USD"],
+                    ["Precio", "$297 USD (aprox. $1.245.000 COP)", "$350-700 USD"],
                   ].map(([feature, inno, other], i) => (
                     <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
                       <td className="p-4 font-medium text-gray-900">{feature}</td>

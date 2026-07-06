@@ -38,7 +38,7 @@ interface PaymentDetails {
 const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   explorer: {
     title: "InnovaKids Explorer",
-    price: 267,
+    price: 297,
     description: "Programa completo - 10 Clases en vivo de IA",
   },
   start_pack: {
@@ -67,14 +67,14 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
     description: "Reserva con $27 USD - Paga el resto antes de iniciar",
   },
   earlybird: {
-    title: "Programa Completo",
+    title: "Programa Completo - Decisión Temprana",
     price: 267,
-    description: "Pago único de $267 USD - 10 clases en vivo de IA",
+    description: "Pago único de $267 USD - Precio por inscripción dentro de las 48h posteriores a tu Sesión de Diagnóstico",
   },
   complete: {
     title: "Programa Completo",
-    price: 267,
-    description: "Precio de lanzamiento 2026",
+    price: 297,
+    description: "Precio estándar 2026",
   },
   first: {
     title: "Reserva",
@@ -88,7 +88,7 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   },
   full: {
     title: "Pago Completo",
-    price: 267,
+    price: 297,
     description: "Acceso completo al programa de IA",
   },
   promo180: {
@@ -107,9 +107,9 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
     description: "Pago único de $27 USD - Monto acordado con tu asesor",
   },
   promo267: {
-    title: "Programa Completo",
+    title: "Programa Completo - Decisión Temprana",
     price: 267,
-    description: "Pago único de $267 USD - 10 clases en vivo de IA",
+    description: "Pago único de $267 USD - Precio por decisión temprana acordado con tu asesor",
   },
   promo240: {
     title: "Programa Completo con Descuento",

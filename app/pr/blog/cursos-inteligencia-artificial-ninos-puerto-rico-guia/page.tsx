@@ -256,7 +256,7 @@ export default function GuiaIANinosPuertoRico() {
                     </tr>
                     <tr className="border-t">
                       <td className="p-4">Precio</td>
-                      <td className="p-4 font-bold text-[#00205B]">$267 USD</td>
+                      <td className="p-4 font-bold text-[#00205B]">$297 USD</td>
                       <td className="p-4 text-muted-foreground">$200-$500 USD</td>
                     </tr>
                   </tbody>
@@ -438,7 +438,7 @@ export default function GuiaIANinosPuertoRico() {
 
               <h3 className="mt-8 text-xl font-bold">¿Cómo se paga? ¿Aceptan dólares?</h3>
               <p>
-                Sí, el precio es de $267 USD y como Puerto Rico usa el dólar estadounidense, no hay conversión de
+                Sí, el precio es de $297 USD y como Puerto Rico usa el dólar estadounidense, no hay conversión de
                 moneda. Puedes pagar con tarjeta de crédito, débito o PayPal. La reserva es de solo $27 USD.
               </p>
 
@@ -496,7 +496,7 @@ export default function GuiaIANinosPuertoRico() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$267 USD · 10 clases · Máx 5 niños · Garantía de 10 días</p>
+              <p className="mt-4 text-sm text-white/60">$297 USD · 10 clases · Máx 5 niños · Garantía de 10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

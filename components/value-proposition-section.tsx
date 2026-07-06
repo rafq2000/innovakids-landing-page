@@ -250,7 +250,7 @@ const bonos: Lot[] = [
   { num: "D", icon: <IconDocReport />,    kicker: "Informe mensual · PDF",    title: "Reporte personalizado del progreso de tu hijo",   desc: "Un dossier cada mes con avances, proyectos entregados y próximos pasos. Solo para padres InnovaKids.",           value: "incluido" },
 ]
 
-const priceToday      = 267
+const priceToday      = 297
 const fmt = (n: number) => `$${n.toLocaleString("es-CL")}`
 
 /* ============================================================

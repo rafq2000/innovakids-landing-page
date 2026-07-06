@@ -124,7 +124,7 @@ export default function CursoVideojuegosIAEcuador() {
             </p>
             <div className="bg-white/5 border border-[#C96342]/30 rounded-2xl p-8 mb-8">
               <p className="text-[#B5522F] text-sm font-semibold mb-2">Inversión</p>
-              <p className="text-4xl font-bold mb-1">$267 USD</p>
+              <p className="text-4xl font-bold mb-1">$297 USD</p>
               <p className="text-white/60">Pago directo en dólares</p>
               <p className="text-white/50 text-sm mt-2">Reserva con $27 USD. Solo pagas el resto después de las 2 primeras clases.</p>
             </div>

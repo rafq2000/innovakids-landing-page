@@ -7,7 +7,7 @@ import { Footer } from "@/components/footer"
 
 const city = "Buenos Aires"
 const countryCode = "ar"
-const priceDisplay = "$267 USD (aprox. $285.000 ARS)"
+const priceDisplay = "$297 USD (aprox. $317.000 ARS)"
 const reservationDisplay = "$27 USD (aprox. $29.000 ARS)"
 
 export const metadata: Metadata = {
