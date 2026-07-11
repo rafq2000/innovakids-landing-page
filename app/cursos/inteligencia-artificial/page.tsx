@@ -204,6 +204,37 @@ export default function CursoIANinos() {
           </div>
         </section>
 
+        {/* Qué sigue después: Vibe Director + especializaciones */}
+        <section className="py-16 px-4 border-t">
+          <div className="container mx-auto max-w-3xl">
+            <p className="text-sm font-mono tracking-widest uppercase text-primary mb-2">Después del Explorer</p>
+            <h2 className="text-3xl font-bold mb-6">El camino sigue: Vibe Director</h2>
+            <div className="border-2 border-primary rounded-2xl p-8 mb-8">
+              <p className="text-sm font-mono tracking-widest uppercase text-muted-foreground mb-2">
+                Continuación exclusiva para graduados
+              </p>
+              <h3 className="text-2xl font-bold mb-3">🎬 Vibe Director — cine hecho por tu hijo</h3>
+              <p className="text-muted-foreground mb-5">
+                Al terminar Vibe Explorer, tu hijo puede dar el salto de creador a <strong className="text-foreground">director</strong>:
+                personajes consistentes con IA, animación con Kling AI, voces y diálogos, banda sonora propia,
+                lip-sync y edición en CapCut — hasta estrenar su primer cortometraje de 45 a 90 segundos.
+              </p>
+              <Button variant="outline" asChild>
+                <Link href="/curso-cine-ia-ninos">
+                  Conocer Vibe Director
+                  <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+            </div>
+            <p className="text-sm text-muted-foreground mb-3">También puede especializarse en:</p>
+            <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+              <Link href="/curso-creacion-videojuegos-ninos" className="text-primary hover:underline underline-offset-2">Videojuegos con IA</Link>
+              <Link href="/curso-creador-contenido-ia" className="text-primary hover:underline underline-offset-2">Creador de contenido</Link>
+              <Link href="/curso-emprendimiento-ninos" className="text-primary hover:underline underline-offset-2">Emprendimiento con IA</Link>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="py-16 px-4 bg-muted/30 border-t">
           <div className="container mx-auto max-w-2xl text-center">
