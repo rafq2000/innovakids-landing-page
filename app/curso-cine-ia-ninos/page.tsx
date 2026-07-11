@@ -8,7 +8,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
     title: "Vibe Director · Curso de Cine con IA para Niños 8-17 | InnovaKids",
     description:
-        "Tu hijo dirige su primer cortometraje con IA: personajes, animación, voces, música y edición. 10 clases en vivo, grupos de 5. Prerrequisito: Vibe Explorer.",
+        "Tu hijo dirige su primer cortometraje con IA: personajes, animación, voces, música y edición. 10 clases en vivo, $297 USD. Prerrequisito: Vibe Explorer.",
     keywords: [
         "curso cine ia niños",
         "curso creación audiovisual ia niños",
@@ -83,6 +83,10 @@ const faqs = [
         q: "¿Cuánto dura el curso?",
         a: "Son 10 clases en vivo de 60 minutos, 2 veces por semana (5 semanas), igual que el programa base. Cada clase termina con un logro concreto: desde su primera imagen generada hasta el cortometraje final.",
     },
+    {
+        q: "¿Cuánto cuesta Vibe Director?",
+        a: "El módulo completo de 10 clases en vivo cuesta $297 USD (pago único), el mismo valor que el programa base. Solo pueden inscribirse graduados de Vibe Explorer; la inscripción se coordina directamente con el equipo por WhatsApp.",
+    },
 ]
 
 const countries = [
@@ -105,6 +109,13 @@ export default function VibeDirectorPage() {
         courseMode: "online",
         inLanguage: "es",
         url: "https://www.innovakidslatam.com/curso-cine-ia-ninos",
+        offers: {
+            "@type": "Offer",
+            price: "297",
+            priceCurrency: "USD",
+            availability: "https://schema.org/InStock",
+            url: "https://www.innovakidslatam.com/curso-cine-ia-ninos",
+        },
         syllabusSections: clases.map((c) => ({
             "@type": "Syllabus",
             name: `Clase ${c.n}: ${c.titulo}`,
@@ -273,8 +284,12 @@ export default function VibeDirectorPage() {
                                 >
                                     Vibe Director (este curso)
                                 </h3>
-                                <p className="text-[#1A1714]/70 mb-6 leading-relaxed">
+                                <p className="text-[#1A1714]/70 mb-2 leading-relaxed">
                                     10 clases en vivo para pasar de generar imágenes a estrenar su cortometraje.
+                                </p>
+                                <p className="mb-6">
+                                    <span className="font-serif text-3xl text-[#1A1714]">$297</span>
+                                    <span className="text-sm text-[#1A1714]/60"> USD · pago único · 10 clases</span>
                                 </p>
                                 <ul className="space-y-3 text-[#1A1714]/85 mb-8 text-sm">
                                     <li className="flex gap-3"><span className="text-[#B5522F]">→</span> Personajes consistentes y animación con Kling AI</li>
