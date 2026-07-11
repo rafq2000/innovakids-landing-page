@@ -5,7 +5,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "12 Actividades de Inteligencia Artificial para Niños en Casa [2026]",
+  title: "12 Actividades de Inteligencia Artificial para Niños en Casa [2026] | InnovaKids",
   description:
     "12 proyectos de IA que tu hijo puede hacer hoy en casa — sin programar. Crea cuentos, música, videojuegos y arte con herramientas gratis. Para 8 a 17 años, por nivel.",
   keywords: [

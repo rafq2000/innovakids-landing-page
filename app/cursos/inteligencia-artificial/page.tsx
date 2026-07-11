@@ -8,9 +8,9 @@ import { generateHreflangs } from "@/lib/seo-config"
 import { Check, Shield, ArrowRight } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños y Adolescentes 8-17 años | InnovaKids",
+  title: "Clases de IA Online para Niños · Programa Vibe Explorer | InnovaKids",
   description:
-    "El mejor curso de Inteligencia Artificial para niños y adolescentes (8-17). Tu hijo crea proyectos reales con IA en 5 semanas. Grupos de 5 alumnos. Inicio semana del 20 de julio.",
+    "Clases de Inteligencia Artificial online para niños y adolescentes (8-17): programa Vibe Explorer completo, temario de 10 clases en vivo, grupos de 5 alumnos.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/cursos/inteligencia-artificial",
     languages: generateHreflangs("global", "/cursos/inteligencia-artificial"),

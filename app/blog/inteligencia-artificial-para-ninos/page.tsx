@@ -5,7 +5,7 @@ import { Footer } from "@/components/footer"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 
 export const metadata: Metadata = {
-    title: "Inteligencia Artificial para Niños: Guía Completa 2026",
+    title: "Inteligencia Artificial para Niños: Guía Completa 2026 | InnovaKids",
     description:
         "Qué es la IA explicada para niños de 8 a 17, herramientas seguras, actividades en casa y cómo elegir curso. Guía 2026 probada por 527 familias en 9 países.",
     keywords: [

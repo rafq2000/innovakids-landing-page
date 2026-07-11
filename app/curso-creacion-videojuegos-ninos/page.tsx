@@ -350,9 +350,10 @@ export default function GameDesignPage() {
                         >
                             Explora otras especializaciones.
                         </h2>
-                        <ul className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#1A1714]/12 border-y border-[#1A1714]/12 mb-16">
+                        <ul className="grid md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-[#1A1714]/12 border-y border-[#1A1714]/12 mb-16">
                             {[
                                 { href: "/cursos/inteligencia-artificial", kicker: "Nivel 01", title: "Curso base de IA", desc: "Vibe Explorer — la puerta de entrada." },
+                                { href: "/curso-cine-ia-ninos", kicker: "Especialización", title: "Vibe Director", desc: "Su primer cortometraje con IA." },
                                 { href: "/curso-creador-contenido-ia", kicker: "Nivel 03", title: "Creador de contenido", desc: "Cine y YouTube con IA." },
                                 { href: "/curso-emprendimiento-ninos", kicker: "Nivel 04", title: "Emprendimiento", desc: "Startups y negocios con IA." },
                             ].map((c) => (

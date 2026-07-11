@@ -38,7 +38,8 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | InnovaKids",
+    // Sin sufijo: 79 páginas ya traen "| InnovaKids" en su propio title y el template lo duplicaba ("| InnovaKids | InnovaKids" en Google)
+    template: "%s",
     default: "Curso de Inteligencia Artificial para Niños y Adolescentes (8-17) · Clase Gratis",
   },
   description:

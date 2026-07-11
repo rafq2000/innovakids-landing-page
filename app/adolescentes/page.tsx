@@ -8,7 +8,7 @@ import { faqs } from "@/lib/faq-data"
 import { COHORT, SOCIAL_PROOF } from "@/lib/site-config"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Adolescentes (13-17 años) · Tu Hijo Crea Apps Reales con IA",
+  title: "Curso de IA para Adolescentes (13-17 años) · Crea Apps Reales | InnovaKids",
   description:
     "Clases de inteligencia artificial para adolescentes de 13 a 17 años. Crea apps, portafolio y proyectos reales con IA en 5 semanas. Grupos de 5, en vivo. ★4.9. Clase gratis.",
   keywords: [

@@ -329,11 +329,12 @@ export default function EntrepreneurshipPage() {
                         >
                             Explora otras especializaciones.
                         </h2>
-                        <ul className="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#1A1714]/12 border-y border-[#1A1714]/12 mb-16">
+                        <ul className="grid md:grid-cols-2 lg:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-[#1A1714]/12 border-y border-[#1A1714]/12 mb-16">
                             {[
                                 { href: "/cursos/inteligencia-artificial", kicker: "Nivel 01", title: "Curso base de IA", desc: "Vibe Explorer — la puerta de entrada." },
                                 { href: "/curso-creacion-videojuegos-ninos", kicker: "Nivel 02", title: "Videojuegos con IA", desc: "Crear en vez de solo jugar." },
                                 { href: "/curso-creador-contenido-ia", kicker: "Nivel 03", title: "Creador de contenido", desc: "Cine y YouTube con IA." },
+                                { href: "/curso-cine-ia-ninos", kicker: "Especialización", title: "Vibe Director", desc: "Su primer cortometraje con IA." },
                             ].map((c) => (
                                 <li key={c.href}>
                                     <Link href={c.href} className="group block py-10 md:px-8 transition-colors hover:bg-[#EDE6D3]">

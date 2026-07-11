@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next"
-import { getAllCountryCodes, getCountryConfig } from "@/lib/countries-config"
+import { getAllCountryCodes } from "@/lib/countries-config"
 import fs from "fs"
 import path from "path"
 
@@ -40,6 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/curso-creacion-videojuegos-ninos",
     "/curso-creador-contenido-ia",
     "/curso-emprendimiento-ninos",
+    "/curso-cine-ia-ninos",
     "/mejor-curso-ia-ninos-2026",
     "/vibe-coding-ninos",
   ]
@@ -141,16 +142,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     })
 
-    // 2. Standard Subpages (handled by app/[country]/...)
-    const subpages = ["programa", "resultados", "metodologia-aprender-creando"]
-    subpages.forEach((slug) => {
-      sitemapEntries.push({
-        url: `${baseUrl}/${code}/${slug}`,
-        lastModified: dates.countries,
-        changeFrequency: "monthly",
-        priority: 0.5,
-      })
-    })
+    // 2. Standard Subpages — RETIRADAS del sitemap (2026-07-11): /xx/programa|resultados|metodologia
+    // redirigen 308 a la versión global; 63 URLs de redirect no deben declararse en el sitemap.
 
     // 3. Country-Specific Blog Posts (Scan file system)
     try {
@@ -198,19 +191,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       })
     })
 
-    // 6. Legacy city-level SEO routes (long-tail, kept for backwards compat)
-    const config = getCountryConfig(code)
-    if (config && config.otherCities && config.otherCities.length > 0) {
-      config.otherCities.forEach((city: string) => {
-        const citySlug = city.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-")
-        sitemapEntries.push({
-          url: `${baseUrl}/${code}/${citySlug}/cursos/inteligencia-artificial`,
-          lastModified: dates.countries,
-          changeFrequency: "weekly",
-          priority: 0.5,
-        })
-      })
-    }
+    // 6. Legacy city-level SEO routes \u2014 RETIRADAS del sitemap (2026-07-11): la ruta
+    // /xx/{ciudad}/cursos/inteligencia-artificial ya no existe (69 URLs devolv\u00edan 404).
   })
 
   return sitemapEntries
