@@ -1,8 +1,16 @@
+import type { Metadata } from "next"
 import MercadoPagoCheckout from "@/components/mercado-pago-checkout"
 import PayPalCheckout from "@/components/paypal-checkout"
 import { ArrowLeft, Shield, Lock, CreditCard, CheckCircle2 } from "lucide-react"
 import Link from "next/link"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+
+export const metadata: Metadata = {
+  title: "Pagar — InnovaKids",
+  description: "Completa el pago de tu inscripción al curso de IA para niños de InnovaKids.",
+  // Paso interno de checkout — no debe indexarse ni gastar presupuesto de rastreo.
+  robots: { index: false, follow: false },
+}
 
 export const dynamic = "force-dynamic"
 

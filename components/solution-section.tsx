@@ -35,7 +35,7 @@ export function SolutionSection() {
             <div className="bg-[#1a2942] rounded-lg sm:rounded-xl overflow-hidden mb-4 sm:mb-6">
               <Image
                 src="/small-group-learning.jpg"
-                alt="Grupos pequeños de aprendizaje personalizada"
+                alt="Grupos pequeños de aprendizaje personalizado"
                 width={400}
                 height={300}
                 quality={75}

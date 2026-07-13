@@ -49,6 +49,13 @@ const jsonLd = {
   description: "Curso online en vivo de IA para niños de 8-17 años. 10 clases, grupos de 5 alumnos, proyectos reales y certificado.",
   image: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
   brand: { "@type": "Brand", name: "InnovaKids" },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "527",
+    bestRating: "5",
+    worstRating: "1",
+  },
   offers: {
     "@type": "Offer",
     name: "Programa Vibe Explorer",

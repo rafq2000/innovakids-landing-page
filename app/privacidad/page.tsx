@@ -5,6 +5,17 @@ import Link from "next/link"
 export const metadata = {
     title: "Política de Privacidad - InnovaKids LATAM",
     description: "Conoce cómo protegemos tu información y utilizamos tu correo electrónico",
+    alternates: {
+        canonical: "https://www.innovakidslatam.com/privacidad",
+    },
+    openGraph: {
+        title: "Política de Privacidad - InnovaKids LATAM",
+        description: "Conoce cómo protegemos tu información y utilizamos tu correo electrónico en InnovaKids LATAM.",
+        url: "https://www.innovakidslatam.com/privacidad",
+        siteName: "InnovaKids",
+        type: "website",
+        locale: "es_419",
+    },
 }
 
 const sections = [

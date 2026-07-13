@@ -1,4 +1,3 @@
-import { generateHreflangs } from "@/lib/seo-config";
 import type { Metadata } from "next"
 import { ResultsPageContent } from "@/components/results-page-content"
 
@@ -39,7 +38,6 @@ export const metadata: Metadata = {
     },
     alternates: {
         canonical: "https://www.innovakidslatam.com/resultados",
-      languages: generateHreflangs("sales")
     },
 }
 

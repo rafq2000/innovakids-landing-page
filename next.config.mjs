@@ -67,6 +67,14 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // Apex -> www: el dominio sin www servía el sitio completo en paralelo (dos hosts indexables,
+      // señales divididas). Canónico = www (coincide con sitemap y canonicals).
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'innovakidslatam.com' }],
+        destination: 'https://www.innovakidslatam.com/:path*',
+        permanent: true,
+      },
       // Old "el-primer-paso-hacia-el-futuro" URLs
       {
         source: '/el-primer-paso-hacia-el-futuro/reuni%C3%B3n-clase-gratuita',

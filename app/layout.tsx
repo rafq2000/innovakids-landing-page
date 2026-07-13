@@ -4,7 +4,6 @@ import { Fraunces, Instrument_Sans, JetBrains_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import { TrackingPixels } from "@/components/tracking-pixels"
 import { ScrollDepthTracker } from "@/components/scroll-depth-tracker"
-import { generateHreflangs } from "@/lib/seo-config"
 import "./globals.css"
 
 const fraunces = Fraunces({
@@ -40,31 +39,11 @@ export const metadata: Metadata = {
   title: {
     // Sin sufijo: 79 páginas ya traen "| InnovaKids" en su propio title y el template lo duplicaba ("| InnovaKids | InnovaKids" en Google)
     template: "%s",
-    default: "Curso de Inteligencia Artificial para Niños y Adolescentes (8-17) · Clase Gratis",
+    // ≤60 chars para que Google no corte el CTA "Clase Gratis"
+    default: "Curso de IA para Niños 8-17 · Clase Gratis | InnovaKids",
   },
   description:
-    "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases en vivo, máx. 5 alumnos por grupo. ★4.9 de 527 familias. Primera clase gratis → reserva hoy.",
-  keywords: [
-    "mi hijo se queda atrás en la era de la ia",
-    "cómo evitar que mi hijo se quede atrás con la ia",
-    "niños rezagados inteligencia artificial",
-    "brecha digital niños ia",
-    "ia el nuevo inglés",
-    "ia habilidad básica siglo xxi",
-    "mi hijo no sabe usar ia",
-    "ia para estudiar colegio",
-    "curso inteligencia artificial niños",
-    "curso inteligencia artificial adolescentes",
-    "cursos de ia para niños",
-    "clases online ia niños adolescentes",
-    "escuela de inteligencia artificial para niños",
-    "aprender chatgpt para niños",
-    "curso de programación y ia para adolescentes",
-    "academia ia niños",
-    "innovakids",
-    "innovakidslatam",
-    "cursos de tecnología para niños y adolescentes"
-  ],
+    "Clases de IA en vivo para niños de 8 a 17: crean videojuegos, música y arte con IA. Grupos de máx. 5 alumnos. Primera clase gratis, reserva hoy.",
   authors: [{ name: "InnovaKids Team" }],
   creator: "InnovaKids",
   publisher: "InnovaKids",
@@ -74,10 +53,8 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL("https://www.innovakidslatam.com"),
-  alternates: {
-    canonical: "/",
-    languages: generateHreflangs("home"),
-  },
+  // OJO: sin `alternates` aquí. Un canonical "/" en el root layout lo heredan TODAS las páginas
+  // sin alternates propios (27 páginas declaraban ser duplicado de la home). Cada página define el suyo.
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -139,8 +116,8 @@ export default function RootLayout({
   return (
     <html lang="es-419">
       <head>
-        {/* Preload hero image — LCP element */}
-        <link rel="preload" href="/innovakids-hero.webp" as="image" type="image/webp" fetchPriority="high" />
+        {/* Sin preload global del hero: solo la home lo usa (next/image priority ya lo precarga allí);
+            en las otras ~170 páginas era una descarga desperdiciada en el critical path */}
         {/* Preconnect to critical origins */}
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />

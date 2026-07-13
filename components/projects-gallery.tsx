@@ -120,7 +120,7 @@ function AudioPlayer({ src }: { src: string }) {
     )
 }
 
-function VideoPlayer({ src }: { src: string }) {
+function VideoPlayer({ src, poster }: { src: string; poster?: string }) {
     const [playing, setPlaying] = useState(false)
     const videoRef = useRef<HTMLVideoElement>(null)
 
@@ -132,7 +132,8 @@ function VideoPlayer({ src }: { src: string }) {
 
     return (
         <div className="absolute inset-0">
-            <video ref={videoRef} src={src} className="w-full h-full object-cover" onEnded={() => setPlaying(false)} playsInline muted />
+            {/* preload="none" + poster: el mp4 (~40 MB) ya no se descarga al cargar la home, solo al dar play */}
+            <video ref={videoRef} src={src} poster={poster} preload="none" className="w-full h-full object-cover" onEnded={() => setPlaying(false)} playsInline muted />
             <div className={`absolute inset-0 flex items-center justify-center bg-black/30 ${playing ? "opacity-0 hover:opacity-100" : "opacity-100"} transition-opacity cursor-pointer`} onClick={toggle}>
                 <button aria-label={playing ? "Pausar video" : "Reproducir video"} className="w-14 h-14 rounded-full bg-white/90 flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
                     {playing ? <Pause className="w-6 h-6 text-red-600" /> : <Play className="w-6 h-6 text-red-600 ml-1" />}
@@ -177,7 +178,7 @@ export function ProjectsGallery() {
                                 <div className="group relative bg-white border border-[#1A1714]/5 rounded-2xl overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 h-full flex flex-col">
                                     <div className="aspect-[4/3] relative overflow-hidden bg-[#1A1714]/5">
                                         {project.type === "video" && "videoSrc" in project ? (
-                                            <VideoPlayer src={(project as any).videoSrc} />
+                                            <VideoPlayer src={(project as any).videoSrc} poster={project.image} />
                                         ) : (
                                             <>
                                                 <Image src={project.image} alt={project.title} fill className="object-cover" />

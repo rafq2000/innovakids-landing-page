@@ -33,6 +33,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/como-ensenar-ia-a-mis-hijos",
     "/ia-ninos-por-edad",
     "/cursos/inteligencia-artificial",
+    "/empresas",
+    "/municipalidades",
   ]
 
   // Course specialization pages (priority 0.9)

@@ -5,6 +5,17 @@ import Link from "next/link"
 export const metadata = {
     title: "Términos y Condiciones - InnovaKids LATAM",
     description: "Lee nuestros términos y condiciones de servicio",
+    alternates: {
+        canonical: "https://www.innovakidslatam.com/terminos",
+    },
+    openGraph: {
+        title: "Términos y Condiciones - InnovaKids LATAM",
+        description: "Términos y condiciones de servicio de los cursos de IA para niños de InnovaKids LATAM.",
+        url: "https://www.innovakidslatam.com/terminos",
+        siteName: "InnovaKids",
+        type: "website",
+        locale: "es_419",
+    },
 }
 
 const sections: { id: string; label: string; body: React.ReactNode }[] = [

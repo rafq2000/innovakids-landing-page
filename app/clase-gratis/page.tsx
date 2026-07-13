@@ -49,6 +49,11 @@ export const metadata: Metadata = {
   },
 }
 
+// Fecha de inicio dinámica: se recalcula en cada build para que el evento
+// (clases recurrentes Lun/Mié/Vie) nunca quede con una fecha en el pasado,
+// requisito de Google para mostrarlo en rich snippets.
+const nextClassDate = new Date().toISOString().split("T")[0]
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -80,10 +85,10 @@ const jsonLd = {
   },
   image: "https://www.innovakidslatam.com/og-image.png",
   isAccessibleForFree: true,
-  startDate: "2026-06-01",
+  startDate: nextClassDate,
   eventSchedule: {
     "@type": "Schedule",
-    "startDate": "2026-06-01",
+    "startDate": nextClassDate,
     "repeatFrequency": "P1W",
     "byDay": ["Monday", "Wednesday", "Friday"],
     "startTime": "17:00:00",

@@ -91,7 +91,7 @@ export default function ComoEnsenarIAPage() {
       <section className="py-24 px-6 md:px-10 bg-[#F5F1E8]">
         <div className="max-w-[1100px] mx-auto">
           <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#B5522F] text-center mb-4">Urgencia</p>
-          <h2 className="text-5xl md:text-6xl font-display text-[#1A1714] text-center mb-12">Por que ahora y no despues</h2>
+          <h2 className="text-5xl md:text-6xl font-display text-[#1A1714] text-center mb-12">Por qué ahora y no después</h2>
           <ul className="space-y-6 text-xl text-[#3B3630] max-w-2xl mx-auto">
             <li className="flex items-start gap-4">
               <span className="text-[#B5522F] text-2xl mt-0.5 font-display">1.</span>

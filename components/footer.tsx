@@ -39,6 +39,20 @@ const exploreLinks = [
   { href: "/clase-gratis", label: "Clase gratis" },
   { href: "/confianza-y-seguridad", label: "Confianza y seguridad" },
   { href: "/blog", label: "Blog educativo" },
+  { href: "/que-es-innovakids", label: "Qué es InnovaKids" },
+  { href: "/contacto", label: "Contacto" },
+]
+
+// Páginas de cursos/especializaciones: antes eran huérfanas (cero enlaces internos)
+const courseLinks = [
+  { href: "/cursos/inteligencia-artificial", label: "Curso de IA para niños" },
+  { href: "/curso-creacion-videojuegos-ninos", label: "Creación de videojuegos" },
+  { href: "/curso-cine-ia-ninos", label: "Cine con IA" },
+  { href: "/curso-creador-contenido-ia", label: "Creador de contenido" },
+  { href: "/curso-emprendimiento-ninos", label: "Emprendimiento" },
+  { href: "/vibe-coding-ninos", label: "Vibe Coding" },
+  { href: "/adolescentes", label: "IA para adolescentes" },
+  { href: "/mejor-curso-ia-ninos-2026", label: "Mejor curso de IA 2026" },
 ]
 
 export function Footer({ countryCode }: FooterProps) {
@@ -111,6 +125,21 @@ export function Footer({ countryCode }: FooterProps) {
 
           <div className="md:col-span-2">
             <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6">
+              Cursos
+            </p>
+            <ul className="space-y-3">
+              {courseLinks.map((l) => (
+                <li key={l.href}>
+                  <a
+                    href={l.href}
+                    className="text-sm text-[#2F2F2C] hover:text-[#B5522F] transition-colors"
+                  >
+                    {l.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-6 mt-10">
               Contacto
             </p>
             <ul className="space-y-3 text-sm">
