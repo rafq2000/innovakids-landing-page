@@ -23,9 +23,10 @@ import { generateHreflangs } from "@/lib/seo-config"
 import { faqs } from "@/lib/faq-data"
 
 export const metadata: Metadata = {
-  title: "Curso de Inteligencia Artificial para Niños y Adolescentes (8-17) · Clase Gratis",
+  // ≤60 chars: con el title largo Google cortaba el CTA "Clase Gratis"
+  title: "Curso de IA para Niños 8-17 · Clase Gratis | InnovaKids",
   description:
-    "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases en vivo, máx. 5 alumnos por grupo. ★4.9 de 527 familias. Primera clase gratis → reserva hoy.",
+    "Clases de IA en vivo para niños de 8 a 17: crean videojuegos, música y arte con IA. Grupos de máx. 5 alumnos. Primera clase gratis, reserva hoy.",
   keywords: [
     "mi hijo se queda atrás en la era de la ia",
     "cómo evitar que mi hijo se quede atrás con la ia",
