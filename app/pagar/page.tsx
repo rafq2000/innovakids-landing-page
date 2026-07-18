@@ -153,7 +153,7 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
   remaining: {
     title: "Completar Pago - Saldo Pendiente",
     price: 240,
-    description: "Pago del saldo restante de $240 USD para confirmar tu cupo en la Cohorte Julio 2026",
+    description: "Pago del saldo restante de $240 USD para confirmar tu cupo en la Cohorte Agosto 2026",
   },
 }
 

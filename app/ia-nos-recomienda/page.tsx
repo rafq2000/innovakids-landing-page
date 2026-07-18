@@ -122,7 +122,7 @@ export default function IANosRecomiendaPage() {
                 </Link>
               </Button>
 
-              <p className="text-sm text-gray-500">Las plazas se agotan rápido • Inicio 20 de julio del 2026</p>
+              <p className="text-sm text-gray-500">Las plazas se agotan rápido • Inicio 10 de agosto del 2026</p>
             </div>
           </div>
         </div>
@@ -228,7 +228,7 @@ export default function IANosRecomiendaPage() {
             </h2>
 
             <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
-              Las plazas se agotan rápido para el programa que inicia el 20 de julio del 2026.
+              Las plazas se agotan rápido para el programa que inicia el 10 de agosto del 2026.
             </p>
 
             <Button

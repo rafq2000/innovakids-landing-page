@@ -94,7 +94,7 @@ export default function PreciosPage() {
         <section className="py-16 md:py-24 px-4 border-b">
           <div className="container mx-auto max-w-3xl text-center">
             <p className="text-sm font-mono tracking-widest uppercase text-primary mb-4">
-              Programa Vibe Explorer · Cohorte Julio 2026
+              Programa Vibe Explorer · Cohorte Agosto 2026
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight text-balance">
               Un solo programa.<br />Un solo precio.

@@ -6,16 +6,16 @@
 /* ─── COHORT DATES ─────────────────────────────────────── */
 
 export const COHORT = {
-  name: "Julio 2026",
-  nameShort: "julio 2026",
-  startDate: "20 de julio del 2026",
-  startDateShort: "20 de julio",
-  startDateCompact: "20.07",
-  registrationCloseDate: "Dom. 19.07",
-  registrationCloseDateLong: "19 de julio",
+  name: "Agosto 2026",
+  nameShort: "agosto 2026",
+  startDate: "10 de agosto del 2026",
+  startDateShort: "10 de agosto",
+  startDateCompact: "10.08",
+  registrationCloseDate: "Dom. 09.08",
+  registrationCloseDateLong: "9 de agosto",
   /** ISO 8601 — used by countdown timer */
-  startISO: "2026-07-20T00:00:00-04:00",
-  nextCohort: "septiembre",
+  startISO: "2026-08-10T00:00:00-04:00",
+  nextCohort: "octubre",
   totalSpots: 15,
   groupSize: 5,
 } as const
