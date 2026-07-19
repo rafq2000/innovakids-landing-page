@@ -298,8 +298,8 @@ function HorariosForm() {
                 : "border-border hover:border-primary/30"
             }`}
           >
-            <p className="font-semibold">Cohorte Julio 2026</p>
-            <p className="text-sm text-muted-foreground">Inicio: semana del 20 de julio</p>
+            <p className="font-semibold">Cohorte Agosto 2026</p>
+            <p className="text-sm text-muted-foreground">Inicio: semana del 10 de agosto</p>
           </button>
           <button
             type="button"

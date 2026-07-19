@@ -85,7 +85,7 @@ export function ReservaExpress() {
 
       <div className="bg-[#FAF7EF] border border-[#2F2F2C]/12 rounded-2xl p-8 md:p-10 shadow-[0_20px_60px_-24px_rgba(47,47,44,0.35)]">
         <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-4">
-          Reserva de cupo · Cohorte Julio 2026
+          Reserva de cupo · Cohorte Agosto 2026
         </p>
         <h1 className="font-display text-4xl md:text-5xl leading-[1.02] tracking-tight text-[#2F2F2C] mb-6 font-normal">
           Asegura el cupo de tu hijo hoy.

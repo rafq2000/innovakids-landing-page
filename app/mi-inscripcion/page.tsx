@@ -44,10 +44,10 @@ const KIT_DOCS = [
   },
   {
     num: "03",
-    title: "Calendario Julio 2026",
-    desc: "Las 10 fechas del curso con temas y objetivos. Sábados y miércoles, 20 julio - 24 agosto.",
+    title: "Calendario Agosto 2026",
+    desc: "Las 10 fechas del curso con temas y objetivos. Sábados y miércoles, 10 agosto - 14 septiembre.",
     icon: Calendar,
-    file: "03-calendario-julio-2026.pdf",
+    file: "03-calendario-mayo-2026.pdf",
     label: "Imprimir y pegar",
     highlight: false,
   },
@@ -57,7 +57,7 @@ const KIT_DOCS = [
     desc: "Normas de convivencia, política de asistencia, uso ético de IA y garantía de 10 días.",
     icon: Shield,
     file: "04-reglamento.pdf",
-    label: "Leer antes del 20 julio",
+    label: "Leer antes del 10 agosto",
     highlight: false,
   },
   {
@@ -84,7 +84,7 @@ const KIT_DOCS = [
     desc: "Tu hijo la completa antes de empezar y la abre en la Gala de Graduación.",
     icon: Clock,
     file: "07-capsula-del-tiempo.pdf",
-    label: "Completar antes del 20 julio",
+    label: "Completar antes del 10 agosto",
     highlight: false,
   },
   {
@@ -228,7 +228,7 @@ export default function MiInscripcionPage() {
                 8 documentos para empezar con confianza.
               </h2>
               <p className="text-[15px] text-[#1A1714]/60 leading-relaxed max-w-[52ch] mb-10">
-                Léelos antes del 20 de julio. Cada uno tiene un propósito específico para
+                Léelos antes del 10 de agosto. Cada uno tiene un propósito específico para
                 que tu hijo/a y tu familia lleguen preparados.
               </p>
 

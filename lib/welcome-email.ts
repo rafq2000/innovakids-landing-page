@@ -35,8 +35,8 @@ export function buildWelcomeEmailHtml({
         </h3>
         <p style="color:#78350F;font-size:14px;margin:0 0 12px;line-height:1.6;">
           Reservaste tu cupo con <strong>$${amount} USD</strong>. Para confirmar tu lugar en la
-          <strong>Cohorte Julio 2026</strong>, debes completar el pago restante de <strong>$240 USD</strong>
-          antes de la semana del 20 de julio.
+          <strong>Cohorte Agosto 2026</strong>, debes completar el pago restante de <strong>$240 USD</strong>
+          antes de la semana del 10 de agosto.
         </p>
         <a href="${paymentUrl}" style="display:inline-block;background:#F59E0B;color:#78350F;text-decoration:none;padding:14px 32px;border-radius:8px;font-weight:700;font-size:16px;">
           Completar mi pago ($240 USD)
@@ -44,8 +44,8 @@ export function buildWelcomeEmailHtml({
       </div>` : ""
 
   const confirmationText = isPartial
-    ? `Tu reserva de <strong>$${amount} USD</strong> ha sido recibida. Tu cupo est&aacute; separado en la <strong>Cohorte Julio 2026</strong> del Programa Vibe Explorer de InnovaKids.`
-    : `Tu pago ha sido confirmado exitosamente. Ya eres parte de la <strong>Cohorte Julio 2026</strong> del Programa Vibe Explorer de InnovaKids.`
+    ? `Tu reserva de <strong>$${amount} USD</strong> ha sido recibida. Tu cupo est&aacute; separado en la <strong>Cohorte Agosto 2026</strong> del Programa Vibe Explorer de InnovaKids.`
+    : `Tu pago ha sido confirmado exitosamente. Ya eres parte de la <strong>Cohorte Agosto 2026</strong> del Programa Vibe Explorer de InnovaKids.`
 
   const footerText = isPartial
     ? `Este correo fue enviado a ${safeParentEmail} porque realizaste una reserva en el programa.`
@@ -155,7 +155,7 @@ export function buildWelcomeEmailHtml({
           </td>
           <td style="padding:12px 16px;border-bottom:1px solid #eee;">
             <strong style="color:#1A1714;">Completa tu pago</strong><br>
-            <span style="color:#666;font-size:14px;">Paga los $240 USD restantes antes de la semana del 20 de julio.</span>
+            <span style="color:#666;font-size:14px;">Paga los $240 USD restantes antes de la semana del 10 de agosto.</span>
           </td>
         </tr>` : ""}
         <tr>
@@ -164,7 +164,7 @@ export function buildWelcomeEmailHtml({
           </td>
           <td style="padding:12px 16px;border-bottom:1px solid #eee;">
             <strong style="color:#1A1714;">Descarga tu Kit de Bienvenida</strong><br>
-            <span style="color:#666;font-size:14px;">Lee los documentos antes de la semana del 20 de julio.</span>
+            <span style="color:#666;font-size:14px;">Lee los documentos antes de la semana del 10 de agosto.</span>
           </td>
         </tr>
         <tr>

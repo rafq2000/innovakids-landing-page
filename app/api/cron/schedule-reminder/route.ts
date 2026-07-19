@@ -28,7 +28,7 @@ function buildScheduleReminderHtml(studentName: string, parentEmail: string) {
         ${safeStudentName}, a&uacute;n no seleccionaste tus horarios
       </h2>
       <p style="color:#444;font-size:16px;line-height:1.6;margin:0 0 24px;">
-        Para poder asignarte al grupo ideal de la <strong>Cohorte Julio 2026</strong>,
+        Para poder asignarte al grupo ideal de la <strong>Cohorte Agosto 2026</strong>,
         necesitamos que completes el formulario de horarios. Solo toma 2 minutos.
       </p>
 
