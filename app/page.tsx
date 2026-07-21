@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   // ≤60 chars: con el title largo Google cortaba el CTA "Clase Gratis"
   title: "Curso de IA para Niños 8-17 · Clase Gratis | InnovaKids",
   description:
-    "Clases de IA en vivo para niños de 8 a 17: crean videojuegos, música y arte con IA. Grupos de máx. 5 alumnos. Primera clase gratis, reserva hoy.",
+    "Clases de IA en vivo para niños de 8 a 17: crean videojuegos, música y arte con IA. Clases 1 a 1. Primera clase gratis, reserva hoy.",
   keywords: [
     "mi hijo se queda atrás en la era de la ia",
     "cómo evitar que mi hijo se quede atrás con la ia",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Niños y Adolescentes (8-17) · Clase Gratis | InnovaKids",
     description:
-      "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases en vivo, máx. 5 alumnos. ★4.9 de 527 familias. Reserva su clase gratis hoy.",
+      "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases en vivo 1 a 1. ★4.9 de 527 familias. Reserva su clase gratis hoy.",
     url: "https://www.innovakidslatam.com",
     type: "website",
     locale: "es_419",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Curso de IA para Niños y Adolescentes (8-17) | InnovaKids",
     description:
-      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Grupos de 5. ★4.9 de 527 familias. Clase gratis.",
+      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Clases 1 a 1. ★4.9 de 527 familias. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -103,7 +103,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Course",
     "name": "Curso de Inteligencia Artificial para Niños y Adolescentes - Que No Se Quede Atrás | InnovaKids",
-    "description": "Para que tu hijo aprenda IA a tiempo y no se quede atrás en la era de la IA. 10 clases por módulo, crea apps, videojuegos y proyectos con IA, y llega preparado al colegio, la universidad y el trabajo. 8-17 años. Grupos de 5. Garantía de 10 días.",
+    "description": "Para que tu hijo aprenda IA a tiempo y no se quede atrás en la era de la IA. 10 clases por módulo, crea apps, videojuegos y proyectos con IA, y llega preparado al colegio, la universidad y el trabajo. 8-17 años. Clases 1 a 1. Garantía de 10 días.",
     "url": "https://www.innovakidslatam.com",
     "image": "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
     "provider": {

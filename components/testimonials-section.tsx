@@ -67,7 +67,7 @@ const aiRecommendations = [
     name: "Mistral",
     screenshot:
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-11-07%20at%2010.14.08%20PM-tbczER0L9JIXqnqUNCEGPyZrfhsFuC.jpeg",
-    quote: "Grupos reducidos, horarios flexibles y acceso a grabaciones.",
+    quote: "Clases 1 a 1, horarios flexibles y acceso a grabaciones.",
   },
 ]
 

@@ -24,7 +24,7 @@ export function HeroSection() {
             <span className="truncate">
               <span className="hidden sm:inline">Cohorte {COHORT.nameShort} · </span>
               <span className="text-[var(--terracotta-pale)] font-semibold">{COHORT.totalSpots} cupos</span>
-              <span className="hidden sm:inline"> · grupos de {COHORT.groupSize}</span>
+              <span className="hidden sm:inline"> · clases 1 a 1</span>
             </span>
           </div>
           <span className="text-[var(--paper)]/70 sm:text-[var(--paper)]/60 truncate">
@@ -110,7 +110,7 @@ export function HeroSection() {
               En cinco semanas tu hijo deja de{" "}
               <em className="italic font-display text-[var(--ink)]">consumir</em> pantallas y
               empieza a <em className="italic font-display text-[var(--terracotta)]">crear</em>{" "}
-              apps, videojuegos y proyectos reales con IA. Clases en vivo, grupos de cinco.
+              apps, videojuegos y proyectos reales con IA. Clases en vivo, 1 a 1.
             </p>
             <div className="mt-7 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
               <a
@@ -200,7 +200,7 @@ export function HeroSection() {
           {[
             ["Formato", "10 clases en vivo por módulo"],
             ["Duración", "5 semanas por módulo"],
-            ["Grupos", "Máx. 5 niños"],
+            ["Formato de clase", "1 a 1 (individual)"],
             ["Edad", "8 – 17 años"],
             ["Modalidad", "100% online"],
           ].map(([k, v], i) => (

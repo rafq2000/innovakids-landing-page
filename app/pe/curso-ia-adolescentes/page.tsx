@@ -8,7 +8,7 @@ import { CheckCircle, Target, ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Curso de IA para Adolescentes (13-17 años) en Perú | InnovaKids",
   description:
-    "1ª clase gratis. Adolescentes peruanos crean apps, videojuegos y portfolio digital con Inteligencia Artificial. Clases en vivo, máx 5 alumnos. Educación tech de clase mundial desde Lima, Arequipa o cualquier ciudad.",
+    "1ª clase gratis. Adolescentes peruanos crean apps, videojuegos y portfolio digital con Inteligencia Artificial. Clases en vivo, 1 a 1. Educación tech de clase mundial desde Lima, Arequipa o cualquier ciudad.",
   keywords: [
     "curso ia adolescentes perú",
     "inteligencia artificial para adolescentes lima",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Adolescentes (13-17) en Perú | InnovaKids",
     description:
-      "Tu hijo adolescente crea apps, videojuegos y un portfolio profesional con IA en 5 semanas. Clases en vivo, grupos de 5. 1ª clase gratis.",
+      "Tu hijo adolescente crea apps, videojuegos y un portfolio profesional con IA en 5 semanas. Clases en vivo, 1 a 1. 1ª clase gratis.",
     url: "https://www.innovakidslatam.com/pe/curso-ia-adolescentes",
     type: "website",
     locale: "es_PE",
@@ -176,8 +176,8 @@ export default function CursoIAAdolescentesPeru() {
                   desc: "Cada proyecto incluye reflexión sobre carreras tech, opciones universitarias en Perú y el mundo, y habilidades que demanda el mercado.",
                 },
                 {
-                  label: "Grupos reducidos por edad",
-                  desc: "Máximo 5 alumnos, todos entre 13 y 17 años. El ritmo, los ejemplos y la conversación son apropiados para adolescentes.",
+                  label: "Contenido apropiado para su edad",
+                  desc: "Clases 1 a 1, con ejemplos y conversación pensados para adolescentes de 13 a 17 años.",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
@@ -206,7 +206,7 @@ export default function CursoIAAdolescentesPeru() {
                 </thead>
                 <tbody className="bg-white">
                   {[
-                    ["Grupos reducidos (máx 5)", "Sí", "10-25 alumnos"],
+                    ["Clases 1 a 1, individuales", "Sí", "10-25 alumnos"],
                     ["Clases en vivo con profesor", "Sí", "Videos pregrabados"],
                     ["IA generativa y Vibe Coding 2026", "Sí", "Scratch o HTML básico"],
                     ["Portfolio profesional al terminar", "Sí", "Diploma genérico"],

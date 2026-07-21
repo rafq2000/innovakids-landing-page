@@ -75,7 +75,7 @@ const tools = [
 ]
 
 const comparisonRows = [
-    { program: "InnovaKids", highlight: true, price: "US$297", classes: "10 en vivo", group: "5 niños", guarantee: "10 días" },
+    { program: "InnovaKids", highlight: true, price: "US$297", classes: "10 en vivo", group: "1 a 1", guarantee: "10 días" },
     { program: "Codingal", highlight: false, price: "US$300+", classes: "Variado", group: "1:1", guarantee: "No" },
     { program: "Platzi Kids", highlight: false, price: "US$297 /año", classes: "Grabadas", group: "N/A", guarantee: "14 días" },
     { program: "Código Kids MX", highlight: false, price: "US$150", classes: "8", group: "15 niños", guarantee: "No" },
@@ -91,7 +91,7 @@ const projectPlan = [
 
 const includes = [
     "10 clases en vivo de aproximadamente 60 minutos cada una",
-    "Grupos de máximo 5 niños (atención personalizada real)",
+    "Clases 1 a 1 (atención personalizada real)",
     "10 proyectos completos para su portfolio",
     "Acceso de por vida a grabaciones",
     "Certificado oficial internacional",
@@ -297,7 +297,7 @@ export default function GuiaCompletaPage() {
                                     <div className="mt-8 border-l-2 border-[#C96342] pl-6 py-2">
                                         <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-3">Por qué destaca</p>
                                         <p className="text-[15px] text-[#1A1714]/85 leading-relaxed">
-                                            Grupos de 5 niños (no 15-30), 10 proyectos reales para mostrar, garantía de 10 días con
+                                            Clases 1 a 1 (no grupos de 15-30), 10 proyectos reales para mostrar, garantía de 10 días con
                                             devolución completa, y soporte WhatsApp 24/7 en español.
                                         </p>
                                     </div>

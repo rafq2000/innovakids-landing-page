@@ -4,11 +4,11 @@ import { ProgramPageContent } from "@/components/program-page-content"
 export const metadata: Metadata = {
     title: "Programa Vibe Explorer · IA para Niños 8-17 | InnovaKids",
     description:
-        "Programa de IA para niños 8-17: Vibe Explorer, 10 clases en vivo — arte, música, voz clonada y su primer videojuego con IA. Grupos de máx. 5 alumnos.",
+        "Programa de IA para niños 8-17: Vibe Explorer, 10 clases en vivo 1 a 1 — arte, música, voz clonada y su primer videojuego con IA.",
     openGraph: {
         title: "Programa Vibe Explorer · IA para Niños 8-17 | InnovaKids",
         description:
-            "De consumidor a creador con Vibe Explorer: 10 clases en vivo de IA para niños 8-17. Arte, música y su primer videojuego. Grupos de 5. Reserva con $27 USD.",
+            "De consumidor a creador con Vibe Explorer: 10 clases en vivo de IA para niños 8-17. Arte, música y su primer videojuego. Clases 1 a 1. Reserva con $27 USD.",
         url: "https://www.innovakidslatam.com/programa",
         siteName: "InnovaKids",
         type: "website",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Programa Vibe Explorer · IA para Niños 8-17 | InnovaKids",
         description:
-            "Vibe Explorer: 10 clases en vivo de IA para niños 8-17. Arte, música, voz clonada y su primer videojuego. Grupos de 5.",
+            "Vibe Explorer: 10 clases en vivo de IA para niños 8-17. Arte, música, voz clonada y su primer videojuego. Clases 1 a 1.",
         images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
     alternates: {

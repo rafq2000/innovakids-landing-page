@@ -519,7 +519,7 @@ export default function ChatGPTTareasEscolaresPage() {
               <em className="italic text-[#B5522F]">Enséñale a crear con IA.</em>
             </h2>
             <p className="text-[#F5F1E8]/70 max-w-[50ch] mx-auto leading-relaxed mb-8">
-              Primera clase gratis. Sin compromiso. Grupos de máximo 5 alumnos.
+              Primera clase gratis. Sin compromiso. Clases 1 a 1, individuales.
               Clases en vivo, 100% online. Proyectos reales terminados.
             </p>
             <Link

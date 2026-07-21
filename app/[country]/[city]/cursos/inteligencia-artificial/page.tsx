@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: { country: string; 
     const image = "https://www.innovakidslatam.com/hero-child-learning-ai.jpg"
 
     const title = `Curso de IA para ${config.childTerm} en ${cityFormatted}, ${config.name} | InnovaKids`
-    const description = `Curso online de inteligencia artificial para ${config.childTerm} ${config.demonym} en ${cityFormatted}. Grupos de máx. 5 alumnos, clases en vivo, garantía 10 días. Reserva con ${config.reservationPriceDisplay}.`
+    const description = `Curso online de inteligencia artificial para ${config.childTerm} ${config.demonym} en ${cityFormatted}. Clases 1 a 1, en vivo, garantía 10 días. Reserva con ${config.reservationPriceDisplay}.`
 
     return {
         title,

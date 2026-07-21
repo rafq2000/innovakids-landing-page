@@ -113,7 +113,7 @@ export default function BlogCursosIANinosCostaRica() {
               </p>
               <ul>
                 <li>10 clases en vivo de aproximadamente 60 minutos cada una</li>
-                <li>Grupos de máximo 5 niños</li>
+                <li>Clases 1 a 1 (individuales)</li>
                 <li>Acceso a 10+ herramientas de IA profesionales</li>
                 <li>Proyectos reales publicables</li>
                 <li>Certificado de finalización</li>
@@ -130,7 +130,7 @@ export default function BlogCursosIANinosCostaRica() {
               <h2>Testimonios de Familias Ticas</h2>
               <blockquote>
                 "Mi hijo Mateo creó su primera app en un mes. ¡Pura vida! Los profes son tuanis y el contenido está muy
-                actualizado. Los grupos pequeños hacen toda la diferencia."
+                actualizado. Las clases 1 a 1 hacen toda la diferencia."
                 <footer>— Carolina Jiménez, Escazú</footer>
               </blockquote>
             </div>

@@ -27,16 +27,16 @@ export const faqs = [
 
     // 3. SOCIAL PROOF & SCARCITY (¿Por qué ahora?) -> Likelihood ↑
     {
-        question: "¿Por qué solo aceptan 5 alumnos por grupo?",
+        question: "¿Cómo son las clases, en grupo o individuales?",
         answer:
-            "Con 527 graduados, aprendimos que 5 es el número ideal. El instructor ve la pantalla de cada niño, corrige en tiempo real y se asegura de que nadie se quede atrás. No es un webinar masivo, es mentoría personalizada.",
+            "Las clases son 1 a 1: tu hijo es el único alumno en cada sesión. El instructor ve su pantalla, corrige en tiempo real y se asegura de que no se quede atrás. No es un webinar masivo, es mentoría personalizada.",
     },
 
     // 4. LOGISTICS (¿Cómo funciona?) -> Time Delay ↓
     {
         question: "¿Cuándo inicia y cuáles son los horarios?",
         answer:
-            `Iniciamos la semana del ${COHORT.startDate}. Los horarios son 100% flexibles: al inscribirte eliges tus bloques preferidos (Lunes a S\u00e1bado, ma\u00f1anas y tardes) y te asignamos al grupo ideal.`,
+            `Iniciamos la semana del ${COHORT.startDate}. Los horarios son 100% flexibles: al inscribirte eliges tus bloques preferidos (Lunes a S\u00e1bado, ma\u00f1anas y tardes) y agendamos tus clases 1 a 1 en el horario ideal.`,
     },
     {
         question: "¿Cuánto cuesta el programa completo?",

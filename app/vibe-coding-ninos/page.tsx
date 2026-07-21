@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Vibe Coding para Niños 8-17 años · 2026 | InnovaKids",
   // 150 chars · proof + differentiator + CTA
   description:
-    "Vibe Coding para niños 8-17 años: crea apps, videojuegos y música hablando con la IA. Clases en vivo, grupos de 5, 527 graduados. Clase gratis.",
+    "Vibe Coding para niños 8-17 años: crea apps, videojuegos y música hablando con la IA. Clases en vivo 1 a 1, 527 graduados. Clase gratis.",
   keywords: [
     "vibe coding niños",
     "vibe coding para niños",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vibe Coding para Niños 8-17 años · Escuela #1 en LATAM | InnovaKids",
     description:
-      "Tu hijo pasa de consumidor a creador: construye apps y juegos hablando con la IA. Grupos de 5, clases en vivo, 527 graduados. Clase gratis.",
+      "Tu hijo pasa de consumidor a creador: construye apps y juegos hablando con la IA. Clases 1 a 1 en vivo, 527 graduados. Clase gratis.",
     url: "https://www.innovakidslatam.com/vibe-coding-ninos",
     siteName: "InnovaKids",
     type: "website",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vibe Coding para Niños 8-17 años · 2026 | InnovaKids",
     description:
-      "Crea apps y videojuegos hablando con la IA. Grupos de 5, clases en vivo, 527 graduados. Clase gratis.",
+      "Crea apps y videojuegos hablando con la IA. Clases 1 a 1 en vivo, 527 graduados. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }

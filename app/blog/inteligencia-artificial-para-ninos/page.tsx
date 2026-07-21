@@ -121,7 +121,7 @@ export default function BlogPostPage() {
                                     ¿Quieres que tu hijo aprenda IA?
                                 </p>
                                 <p className="text-[13px] text-[#1A1714]/65 leading-relaxed mb-4">
-                                    Clases en vivo, grupos de 5 y certificado al finalizar.
+                                    Clases en vivo, 1 a 1, y certificado al finalizar.
                                 </p>
                                 <Link
                                     href="/clase-gratis"
@@ -264,7 +264,7 @@ export default function BlogPostPage() {
                         <p>No todos los cursos son iguales. Busca esto:</p>
                         <ul>
                             <li><strong>Clases en vivo:</strong> los videos grabados aburren a los niños. Necesitan interacción.</li>
-                            <li><strong>Grupos pequeños:</strong> máximo 5–8 alumnos. Si son 30, tu hijo es invisible.</li>
+                            <li><strong>Clases 1 a 1:</strong> tu hijo es el único alumno, no uno más entre 30.</li>
                             <li><strong>Proyectos, no teoría:</strong> deben terminar la clase con algo creado (una imagen, un juego).</li>
                             <li><strong>Seguridad:</strong> instructores capacitados que enseñen uso ético.</li>
                         </ul>
@@ -316,8 +316,8 @@ export default function BlogPostPage() {
                         </p>
                         <h3>¿Cuánto cuesta un curso de inteligencia artificial para niños?</h3>
                         <p>
-                            Los cursos online en vivo con grupos pequeños van desde los 200 a los 400 USD por programa completo. El programa
-                            Vibe Explorer de InnovaKids cuesta $297 USD por 10 clases en vivo (5 semanas) en grupos de máximo 5 alumnos,
+                            Los cursos online en vivo con clases 1 a 1 van desde los 200 a los 400 USD por programa completo. El programa
+                            Vibe Explorer de InnovaKids cuesta $297 USD por 10 clases en vivo (5 semanas), 1 a 1,
                             con garantía de 10 días, y puedes <Link href="/clase-gratis">probar una clase gratis</Link> antes de decidir.
                         </p>
 
@@ -338,7 +338,7 @@ export default function BlogPostPage() {
                                         ¿Listo para transformar el futuro de tu hijo?
                                     </h3>
                                     <p className="text-[15px] text-[#1A1714]/70 leading-relaxed max-w-[52ch]">
-                                        Inscríbelo en Vibe Explorer. Diez clases en vivo, grupos de cinco, profesores expertos y garantía
+                                        Inscríbelo en Vibe Explorer. Diez clases en vivo, 1 a 1, profesores expertos y garantía
                                         de satisfacción en las primeras dos sesiones.
                                     </p>
                                 </div>
@@ -495,7 +495,7 @@ export default function BlogPostPage() {
                                 "name": "¿Cuánto cuesta un curso de inteligencia artificial para niños?",
                                 "acceptedAnswer": {
                                     "@type": "Answer",
-                                    "text": "Los cursos online en vivo con grupos pequeños van desde los 200 a los 400 USD por programa completo. El programa Vibe Explorer de InnovaKids cuesta $297 USD por 10 clases en vivo (5 semanas) en grupos de máximo 5 alumnos, con garantía de 10 días y una clase de prueba gratis.",
+                                    "text": "Los cursos online en vivo con clases 1 a 1 van desde los 200 a los 400 USD por programa completo. El programa Vibe Explorer de InnovaKids cuesta $297 USD por 10 clases en vivo (5 semanas), 1 a 1, con garantía de 10 días y una clase de prueba gratis.",
                                 },
                             },
                         ],

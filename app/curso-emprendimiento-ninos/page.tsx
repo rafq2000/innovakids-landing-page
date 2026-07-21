@@ -8,7 +8,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
     title: "Curso de Emprendimiento con IA para Niños 8-17 años | InnovaKids",
     description:
-        "Tu hijo crea su primera startup con IA. Educación financiera y negocios digitales para niños y adolescentes 8-17 años. Grupos de 5. Clase gratis.",
+        "Tu hijo crea su primera startup con IA. Educación financiera y negocios digitales para niños y adolescentes 8-17 años. Clases 1 a 1. Clase gratis.",
     keywords: [
         "curso emprendimiento niños",
         "educación financiera niños ia",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Curso de Emprendimiento con IA para Niños y Adolescentes | InnovaKids",
         description:
-            "Tu hijo lanza su primera startup con IA. Educación financiera, negocios digitales y pitch deck. Clases en vivo, grupos de 5. Reserva tu clase gratis.",
+            "Tu hijo lanza su primera startup con IA. Educación financiera, negocios digitales y pitch deck. Clases en vivo 1 a 1. Reserva tu clase gratis.",
         url: "https://www.innovakidslatam.com/curso-emprendimiento-ninos",
         siteName: "InnovaKids",
         type: "website",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Curso de Emprendimiento con IA para Niños 8-17 | InnovaKids",
         description:
-            "Tu hijo lanza su primera startup con IA. Educación financiera y negocios digitales. Grupos de 5. Clase gratis.",
+            "Tu hijo lanza su primera startup con IA. Educación financiera y negocios digitales. Clases 1 a 1. Clase gratis.",
         images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
     robots: { index: true, follow: true },

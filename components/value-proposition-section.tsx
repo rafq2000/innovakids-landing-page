@@ -236,7 +236,7 @@ const skills: Lot[] = [
 
 const pillars: Lot[] = [
   { num: "05", icon: <IconClock />,  kicker: "Incluido en el programa", title: "Horarios 100% flexibles",         desc: "Eligen el día y la hora. Si no pueden, hay grabación al instante.",           value: "incluido" },
-  { num: "06", icon: <IconGroup />,  kicker: "Incluido en el programa", title: "Educación personalizada",         desc: "Máximo 5 niños por grupo. El mentor los conoce por nombre.",                  value: "incluido" },
+  { num: "06", icon: <IconGroup />,  kicker: "Incluido en el programa", title: "Educación personalizada",         desc: "Clases 1 a 1: tu hijo es el único alumno. El mentor lo conoce por nombre.",                  value: "incluido" },
   { num: "07", icon: <IconMentor />, kicker: "Incluido en el programa", title: "Mentor 1:1 cuando lo necesite",   desc: "Sesiónes individuales para resolver dudas o profundizar más.",                value: "incluido" },
   { num: "08", icon: <IconChat />,   kicker: "Incluido en el programa", title: "Soporte por WhatsApp",            desc: "Tú y tu hijo escriben cuando quieran. Respuesta en menos de 5 min.",          value: "incluido" },
   { num: "09", icon: <IconShield />, kicker: "Incluido en el programa", title: "Garantía de 10 días",             desc: "Si no lo ves enganchado, devolución total. Sin preguntas.",                   value: "incluido" },
@@ -633,7 +633,7 @@ export function ValuePropositionSection() {
               <div className="relative grid grid-cols-3 divide-x divide-[#1A1714]/10 border-t md:border-t-0 md:border-l border-[#1A1714]/12">
                 {[
                   { n: 15,    suffix: "",      label: "Cupos totales" },
-                  { n: 5,     suffix: "",      label: "Niños por grupo" },
+                  { n: 1,     suffix: "",      label: "Alumno por clase" },
                   { n: null,  static: "8 – 17", label: "Rango de edad" },
                 ].map((s, i) => (
                   <div key={i} className="py-5 md:py-6 px-4 md:px-6 flex flex-col items-center text-center justify-center">

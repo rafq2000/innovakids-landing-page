@@ -38,9 +38,9 @@ export function WhatIsInnovakids() {
                 <Users className="w-6 h-6 text-[#67E8F9]" />
               </div>
               <div>
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Grupos Pequeños</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Clases 1 a 1</h3>
                 <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
-                  Máximo 5 alumnos por grupo. Atención personalizada donde cada niño recibe el apoyo que necesita.
+                  Tu hijo es el único alumno en cada clase. Atención personalizada donde recibe el apoyo que necesita.
                 </p>
               </div>
             </div>

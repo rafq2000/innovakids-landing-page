@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Extraescolar de IA para Niños en Barcelona | InnovaKids",
   description:
-    "Tu hijo aprende Inteligencia Artificial desde Barcelona. Clases online en vivo, máx 5 alumnos (8-17 años). Compatible con horario escolar. 1ª clase gratis.",
+    "Tu hijo aprende Inteligencia Artificial desde Barcelona. Clases online en vivo, 1 a 1 (8-17 años). Compatible con horario escolar. 1ª clase gratis.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/es/barcelona",
   },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Extraescolar de IA para Niños en Barcelona | InnovaKids",
     description:
-      "Tu hijo aprende Inteligencia Artificial desde Barcelona. Clases online en vivo, máx 5 alumnos (8-17 años). Compatible con horario escolar. 1ª clase gratis.",
+      "Tu hijo aprende Inteligencia Artificial desde Barcelona. Clases online en vivo, 1 a 1 (8-17 años). Compatible con horario escolar. 1ª clase gratis.",
     url: "https://www.innovakidslatam.com/es/barcelona",
     type: "website",
     siteName: "InnovaKids",
@@ -54,7 +54,7 @@ export default function BarcelonaPage() {
           </p>
           <p className="text-[#5A5751] mb-8">
             Clases impartidas en castellano, perfectas para familias bilingües
-            catalán-castellano. Grupos reducidos de máximo 5 alumnos.
+            catalán-castellano. Clases 1 a 1 (individuales).
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

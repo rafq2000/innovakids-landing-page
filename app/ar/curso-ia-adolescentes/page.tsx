@@ -8,7 +8,7 @@ import { CheckCircle, Target, ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Curso de IA para Adolescentes (13-17 años) en Argentina | InnovaKids",
   description:
-    "1ª clase gratis. Adolescentes argentinos crean apps, videojuegos y portfolio profesional con Inteligencia Artificial. Clases en vivo, máx 5 alumnos. Ideal para prepararse para la universidad y el primer laburo tech.",
+    "1ª clase gratis. Adolescentes argentinos crean apps, videojuegos y portfolio profesional con Inteligencia Artificial. Clases en vivo, 1 a 1. Ideal para prepararse para la universidad y el primer laburo tech.",
   keywords: [
     "curso ia adolescentes argentina",
     "inteligencia artificial para adolescentes buenos aires",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Adolescentes (13-17) en Argentina | InnovaKids",
     description:
-      "Tu hijo adolescente crea apps reales, videojuegos y un portfolio profesional con IA en 5 semanas. Clases en vivo, grupos de 5. 1ª clase gratis.",
+      "Tu hijo adolescente crea apps reales, videojuegos y un portfolio profesional con IA en 5 semanas. Clases en vivo, 1 a 1. 1ª clase gratis.",
     url: "https://www.innovakidslatam.com/ar/curso-ia-adolescentes",
     type: "website",
     locale: "es_AR",
@@ -176,8 +176,8 @@ export default function CursoIAAdolescentesArgentina() {
                   desc: "Carreras tech en Argentina y en el exterior, cómo armar un perfil para trabajar remoto, qué estudiar en la universidad. Todo integrado al curso.",
                 },
                 {
-                  label: "Grupos de pares",
-                  desc: "Máximo 5 alumnos por grupo, todos entre 13 y 17. Nada de mezclar chicos de 8 con adolescentes. El ritmo y la conversación son los correctos.",
+                  label: "Contenido para su edad",
+                  desc: "Clases 1 a 1, siempre entre 13 y 17 años. Nada de mezclar chicos de 8 con adolescentes. El ritmo y la conversación son los correctos.",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
@@ -206,7 +206,7 @@ export default function CursoIAAdolescentesArgentina() {
                 </thead>
                 <tbody className="bg-white">
                   {[
-                    ["Grupos reducidos (máx 5)", "Sí", "15-30 alumnos"],
+                    ["Clases 1 a 1 (individuales)", "Sí", "15-30 alumnos"],
                     ["Clases en vivo con profe", "Sí", "Videos grabados"],
                     ["IA generativa y Vibe Coding", "Sí", "Scratch o robótica"],
                     ["Portfolio profesional publicado", "Sí", "Certificado impreso"],

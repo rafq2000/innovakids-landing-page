@@ -14,7 +14,7 @@ const reservationDisplay = "$27 USD"
 export const metadata: Metadata = {
   title: "Curso de IA para Niños en Quito | InnovaKids",
   description:
-    "Tu hijo en Quito crea apps, videojuegos y proyectos reales con Inteligencia Artificial. Clases en vivo, máx 5 alumnos (8-17 años). Avalado por familias cerca de la EPN y la USFQ. 1.ª clase gratis.",
+    "Tu hijo en Quito crea apps, videojuegos y proyectos reales con Inteligencia Artificial. Clases en vivo, 1 a 1 (8-17 años). Avalado por familias cerca de la EPN y la USFQ. 1.ª clase gratis.",
   alternates: {
     canonical: `https://www.innovakidslatam.com/${countryCode}/quito`,
   },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Niños en Quito | InnovaKids",
     description:
-      "Niños y adolescentes en Quito aprenden a crear tecnología real con IA. Clases en vivo, grupos reducidos.",
+      "Niños y adolescentes en Quito aprenden a crear tecnología real con IA. Clases en vivo, 1 a 1.",
     url: `https://www.innovakidslatam.com/${countryCode}/quito`,
     type: "website",
     locale: "es_EC",
@@ -95,7 +95,7 @@ export default function QuitoPage() {
                   text: "Clases diseñadas para compatibilizar con el calendario escolar Sierra. Tu hijo aprende sin afectar sus estudios.",
                 },
                 {
-                  title: "Grupos de máx. 5 alumnos",
+                  title: "Clases 1 a 1",
                   text: "Atención personalizada en cada clase en vivo. Tu hijo no es un número: el profesor conoce su ritmo y sus intereses.",
                 },
                 {

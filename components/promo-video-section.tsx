@@ -129,7 +129,7 @@ export function PromoVideoSection() {
                     <div className="w-2 h-2 rounded-full bg-[#C96342]" />
                   </div>
                   <p className="text-left text-sm sm:text-base">
-                    <strong className="text-[#B5522F]">Grupos reducidos:</strong> Máximo 5 alumnos por clase
+                    <strong className="text-[#B5522F]">Clases 1 a 1:</strong> tu hijo es el único alumno en cada clase
                   </p>
                 </div>
                 <div className="flex items-start gap-3">

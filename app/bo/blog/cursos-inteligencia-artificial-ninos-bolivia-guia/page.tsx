@@ -136,10 +136,10 @@ export default function GuiaIANinosBolivia() {
                 videojuegos, música, arte digital. Cosas que pueda mostrar en el colegio y compartir con la familia.
               </p>
 
-              <h3 className="mt-8 text-2xl font-bold">3. Grupos Reducidos</h3>
+              <h3 className="mt-8 text-2xl font-bold">3. Clases 1 a 1</h3>
               <p>
-                Las clases con 20 o 30 niños no funcionan para enseñar habilidades técnicas. Busca cursos con máximo
-                5 niños por grupo para garantizar atención personalizada real.
+                Las clases con 20 o 30 niños no funcionan para enseñar habilidades técnicas. Busca cursos con clases
+                1 a 1 para garantizar atención personalizada real.
               </p>
 
               <h3 className="mt-8 text-2xl font-bold">4. Garantía de Satisfacción</h3>
@@ -189,8 +189,8 @@ export default function GuiaIANinosBolivia() {
                   </thead>
                   <tbody>
                     <tr className="border-t">
-                      <td className="p-4">Niños por grupo</td>
-                      <td className="p-4 font-bold text-[#007934]">Máximo 5</td>
+                      <td className="p-4">Niños por clase</td>
+                      <td className="p-4 font-bold text-[#007934]">1 (individual)</td>
                       <td className="p-4 text-muted-foreground">15-30</td>
                     </tr>
                     <tr className="border-t">
@@ -422,9 +422,9 @@ export default function GuiaIANinosBolivia() {
                 lenguaje natural, sin memorizar código complejo.
               </p>
 
-              <h3 className="mt-8 text-xl font-bold">¿Cuántos niños hay por grupo?</h3>
+              <h3 className="mt-8 text-xl font-bold">¿Cuántos niños hay por clase?</h3>
               <p>
-                Máximo 5 niños por grupo. Esto garantiza atención personalizada real, no clases masivas donde tu hijo
+                Las clases son 1 a 1. Esto garantiza atención personalizada real, no clases masivas donde tu hijo
                 se pierde.
               </p>
 
@@ -459,7 +459,7 @@ export default function GuiaIANinosBolivia() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$297 USD (Bs 2.060) · 10 clases · Máx 5 niños · Garantía de 10 días</p>
+              <p className="mt-4 text-sm text-white/60">$297 USD (Bs 2.060) · 10 clases · 1 a 1 · Garantía de 10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

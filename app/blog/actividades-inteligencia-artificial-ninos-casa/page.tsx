@@ -610,15 +610,15 @@ export default function ActividadesIANinosCasaPage() {
               <p>
                 Si tu hijo disfrutó estas actividades y quiere ir más lejos, es una señal clara: está listo para proyectos más serios.
                 Las actividades caseras son excelentes para despertar la curiosidad, pero tienen un límite natural.
-                Llega un momento en que el niño necesita <strong className="text-[#2F2F2C]">estructura, guía experta y compañeros de su nivel</strong>.
+                Llega un momento en que el niño necesita <strong className="text-[#2F2F2C]">estructura y guía experta, 100% dedicada a él</strong>.
               </p>
               <p>
                 Eso es exactamente lo que ofrecemos en{" "}
                 <Link href="/programa" className="text-[#B5522F] underline underline-offset-2 hover:text-[#b8573a]">
                   el programa de InnovaKids
                 </Link>
-                : un camino estructurado donde cada actividad construye sobre la anterior, con un profesor experto que guía el proceso
-                y un grupo pequeño de compañeros que comparten la misma pasión.
+                : un camino estructurado donde cada actividad construye sobre la anterior, con un profesor experto dedicado 100% a él,
+                guiando el proceso paso a paso.
               </p>
               <p>
                 Los niños que empiezan con actividades caseras y después pasan a un programa estructurado tienen una ventaja enorme:
@@ -680,7 +680,7 @@ export default function ActividadesIANinosCasaPage() {
               <em className="italic text-[#B5522F]">Primera clase gratis.</em>
             </h2>
             <p className="text-[#F5F1E8]/70 max-w-[50ch] mx-auto leading-relaxed mb-8">
-              Grupos de máximo 5 alumnos. Clases en vivo, 100% online.
+              Clases 1 a 1, individuales. Clases en vivo, 100% online.
               Proyectos reales terminados. Para niños y adolescentes de 8 a 17 años.
             </p>
             <Link

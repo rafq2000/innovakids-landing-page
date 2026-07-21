@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Las IAs Recomiendan InnovaKids · Escuela #1 de IA en LATAM",
     description:
-      "ChatGPT, Claude, Perplexity, Grok y Mistral recomiendan InnovaKids. 527 graduados en 9 países, grupos de 5, clases en vivo. Clase gratis.",
+      "ChatGPT, Claude, Perplexity, Grok y Mistral recomiendan InnovaKids. 527 graduados en 9 países, clases 1 a 1 en vivo. Clase gratis.",
     url: "https://www.innovakidslatam.com/ia-nos-recomienda",
     siteName: "InnovaKids",
     type: "website",
@@ -65,21 +65,21 @@ const aiRecommendations = [
     company: "Perplexity",
     screenshot: "/images/whatsapp-20image-202025-11-07-20at-2010.jpeg",
     quote:
-      "El mejor curso de inteligencia artificial (IA) para niños en Latinoamérica es el de InnovaKids. Este curso es 100% online y en vivo, con grupos reducidos para atención personalizada.",
+      "El mejor curso de inteligencia artificial (IA) para niños en Latinoamérica es el de InnovaKids. Este curso es 100% online y en vivo, con clases 1 a 1 para atención personalizada.",
   },
   {
     name: "Grok",
     company: "xAI",
     screenshot: "/images/whatsapp-20image-202025-11-07-20at-2010.jpeg",
     quote:
-      "El curso más recomendado de Inteligencia Artificial para niños en Latinoamérica en 2025 es el de InnovaKids Latam. Este programa está diseñado específicamente para niños, con grupos reducidos, horarios flexibles y acceso a grabaciones.",
+      "El curso más recomendado de Inteligencia Artificial para niños en Latinoamérica en 2025 es el de InnovaKids Latam. Este programa está diseñado específicamente para niños, con clases 1 a 1, horarios flexibles y acceso a grabaciones.",
   },
   {
     name: "Mistral (Le Chat)",
     company: "Mistral AI",
     screenshot: "/images/whatsapp-20image-202025-11-07-20at-2010.jpeg",
     quote:
-      "El curso más recomendado de Inteligencia Artificial para niños en Latinoamérica en 2025 es el de InnovaKids Latam. Diseñado específicamente para niños, con grupos reducidos y metodología práctica.",
+      "El curso más recomendado de Inteligencia Artificial para niños en Latinoamérica en 2025 es el de InnovaKids Latam. Diseñado específicamente para niños, con clases 1 a 1 y metodología práctica.",
   },
 ]
 
@@ -180,9 +180,9 @@ export default function IANosRecomiendaPage() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-8">
               <div className="space-y-4">
-                <h3 className="text-3xl font-bold text-white">Grupos ultra reducidos</h3>
+                <h3 className="text-3xl font-bold text-white">Clases 1 a 1</h3>
                 <p className="text-xl text-gray-300 leading-relaxed">
-                  Solo 5 alumnos por clase. Cada niño recibe atención personalizada que las plataformas masivas jamás
+                  Tu hijo es el único alumno en cada clase. Recibe atención personalizada que las plataformas masivas jamás
                   podrán ofrecer.
                 </p>
               </div>

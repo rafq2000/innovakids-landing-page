@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 }
 
 const perks = [
-    "Grupos de máximo 5 niños (atención personalizada)",
+    "Clases 1 a 1 (atención 100% personalizada)",
     "Clases en vivo (no videos pregrabados)",
     "Horarios adaptados a Venezuela (GMT-4)",
     "Pagos en USD vía Zelle, PayPal, Binance",
@@ -123,7 +123,7 @@ export default function BlogVenezuelaGuiaPage() {
                             <ul>
                                 <li><strong>Academias tradicionales:</strong> US$400-800 por módulo.</li>
                                 <li><strong>Cursos grabados:</strong> US$50-150 (sin interacción).</li>
-                                <li><strong>InnovaKids:</strong> US$297 por 10 clases en vivo en grupos de 5.</li>
+                                <li><strong>InnovaKids:</strong> US$297 por 10 clases en vivo, 1 a 1.</li>
                             </ul>
 
                             <h2>¿Por qué InnovaKids es la mejor opción?</h2>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Cursos de IA para Niños por Edad · Inscríbete 2026 | InnovaKids",
   // 154 chars · transactional differentiator + proof + CTA
   description:
-    "Inscríbete en cursos de IA por edad: programas para 8-10, 11-13 y 14-17 años. Clases en vivo, grupos de 5, 527 graduados en 9 países. Clase gratis.",
+    "Inscríbete en cursos de IA por edad: programas para 8-10, 11-13 y 14-17 años. Clases en vivo 1 a 1, 527 graduados en 9 países. Clase gratis.",
   keywords: [
     "cursos ia niños por edad",
     "curso ia niños 10 años",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cursos de IA para Niños por Edad · Inscríbete 2026 | InnovaKids",
     description:
-      "Inscríbete en el curso de IA diseñado para la edad de tu hijo. Grupos de 5, clases en vivo, proyectos reales. Clase gratis.",
+      "Inscríbete en el curso de IA diseñado para la edad de tu hijo. Clases 1 a 1 en vivo, proyectos reales. Clase gratis.",
     url: "https://www.innovakidslatam.com/ia-ninos-por-edad",
     siteName: "InnovaKids",
     type: "website",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cursos de IA para Niños por Edad · Inscríbete 2026 | InnovaKids",
     description:
-      "Inscríbete en programas de IA por edad. Grupos de 5, clases en vivo, proyectos reales. Clase gratis.",
+      "Inscríbete en programas de IA por edad. Clases 1 a 1 en vivo, proyectos reales. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -273,15 +273,15 @@ export default function IANinosPorEdadPage() {
             <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#B5522F] mb-4">Orientacion</p>
             <h2 className="text-4xl font-display text-[#1A1714] mb-8">No Sabes Cuál Elegir?</h2>
             <p className="text-xl text-[#3B3630] mb-8">
-              No te preocupes. En InnovaKids, todos los grupos de edad comparten el mismo curso de 10 clases,
-              pero el instructor adapta los proyectos y el nivel de profundidad según la edad de cada alumno.
-              Los grupos se forman por edades similares para que todos avancen cómodos.
+              No te preocupes. En InnovaKids, todos los alumnos comparten el mismo curso de 10 clases,
+              pero el instructor adapta los proyectos y el nivel de profundidad a la edad y el ritmo de tu hijo,
+              porque cada clase es 1 a 1, individual.
             </p>
             <div className="bg-[#FAF7EF] p-8 rounded-sm border border-[#1A1714]/12 text-left max-w-2xl mx-auto">
-              <h3 className="text-xl font-display text-[#1A1714] mb-4 text-center">La Ventaja de Grupos de 5</h3>
+              <h3 className="text-xl font-display text-[#1A1714] mb-4 text-center">La Ventaja de las Clases 1 a 1</h3>
               <p className="text-[#3B3630]">
-                Con solo 5 alumnos por grupo, el instructor puede personalizar cada clase. Si tu hijo de 9 años
-                está en un grupo con niños de 8-10, recibirá proyectos adaptados a su nivel exacto.
+                Al ser el único alumno en cada sesión, el instructor personaliza la clase al 100%. Si tu hijo tiene
+                9 años, recibirá proyectos adaptados exactamente a su nivel, sin compartir el tiempo de clase con nadie más.
                 No se queda atrás ni se aburre.
               </p>
             </div>

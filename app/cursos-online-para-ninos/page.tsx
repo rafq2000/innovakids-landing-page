@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Cursos Online para Niños 2026 · #1 LATAM | InnovaKids",
     // 154 chars · proof + differentiator + CTA
     description:
-        "Cursos online para niños 8-17 años en LATAM y España. IA, programación y videojuegos en vivo, grupos de 5, 527 graduados en 9 países. Clase gratis.",
+        "Cursos online para niños 8-17 años en LATAM y España. IA, programación y videojuegos en clases 1 a 1, 527 graduados en 9 países. Clase gratis.",
     keywords: [
         "cursos online para niños",
         "clases virtuales para niños",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Cursos Online para Niños 2026 · Escuela #1 en LATAM y España | InnovaKids",
         description:
-            "Tu hijo pasa de consumidor a creador de tecnología. IA, programación y videojuegos en vivo, grupos de 5, 9 países. Clase gratis.",
+            "Tu hijo pasa de consumidor a creador de tecnología. IA, programación y videojuegos en clases 1 a 1, 9 países. Clase gratis.",
         url: "https://www.innovakidslatam.com/cursos-online-para-ninos",
         siteName: "InnovaKids",
         type: "website",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Cursos Online para Niños 2026 · #1 LATAM | InnovaKids",
         description:
-            "IA, programación y videojuegos en vivo para niños 8-17 años. Grupos de 5, 527 graduados en 9 países. Clase gratis.",
+            "IA, programación y videojuegos en vivo para niños 8-17 años. Clases 1 a 1, 527 graduados en 9 países. Clase gratis.",
         images: ["https://www.innovakidslatam.com/kids-creating-ai-projects.jpg"],
     },
 }
@@ -279,7 +279,7 @@ export default function CursosOnlineNinosPage() {
                                     El programa más completo para niños de 8 a 17 años en español.
                                 </p>
                                 <ul className="space-y-4 mb-8">
-                                    {["Clases en vivo (No videos grabados)", "Grupos pequeños (Máx 5 alumnos)", "Proyecto final real garantizado"].map((feat, i) => (
+                                    {["Clases en vivo (No videos grabados)", "Clases 1 a 1 (tu hijo es el único alumno)", "Proyecto final real garantizado"].map((feat, i) => (
                                         <li key={i} className="flex items-center gap-3 text-[#1A1714]">
                                             <CheckCircle className="w-5 h-5 text-[#B5522F] flex-shrink-0" />
                                             {feat}

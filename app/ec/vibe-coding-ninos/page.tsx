@@ -8,7 +8,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Vibe Coding para Niños en Ecuador — Programa con IA | InnovaKids",
   description:
-    "Vibe Coding para niños en Ecuador: tu hijo crea apps, videojuegos y chatbots hablando con la IA. Clases en vivo, grupos de 5 (8-17 años). $297 USD. Clase gratis.",
+    "Vibe Coding para niños en Ecuador: tu hijo crea apps, videojuegos y chatbots hablando con la IA. Clases en vivo, 1 a 1 (8-17 años). $297 USD. Clase gratis.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/ec/vibe-coding-ninos",
   },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vibe Coding para Niños en Ecuador — Programa con IA | InnovaKids",
     description:
-      "Tu hijo crea apps y videojuegos hablando con la IA. Clases en vivo, máx 5 alumnos. 527 graduados en 9 países. Clase gratis.",
+      "Tu hijo crea apps y videojuegos hablando con la IA. Clases en vivo, 1 a 1. 527 graduados en 9 países. Clase gratis.",
     url: "https://www.innovakidslatam.com/ec/vibe-coding-ninos",
     siteName: "InnovaKids",
     type: "website",
@@ -50,7 +50,7 @@ export default function VibeCodingEcuadorPage() {
                 <p className="text-white font-semibold">100% Online en Vivo</p>
               </div>
               <div className="bg-white/10 px-6 py-3 rounded-full border border-white/20">
-                <p className="text-white font-semibold">Grupos de máx. 5</p>
+                <p className="text-white font-semibold">Clases 1 a 1</p>
               </div>
             </div>
           </div>

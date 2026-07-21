@@ -10,7 +10,7 @@ import { COHORT, SOCIAL_PROOF } from "@/lib/site-config"
 export const metadata: Metadata = {
   title: "Curso de IA para Adolescentes (13-17) en USA | InnovaKids",
   description:
-    "Adolescentes latinos en USA crean apps, portafolio para college applications y proyectos STEM con IA. Ventaja bilingüe. Clases en vivo en español, grupos de 5. Clase gratis.",
+    "Adolescentes latinos en USA crean apps, portafolio para college applications y proyectos STEM con IA. Ventaja bilingüe. Clases en vivo en español, 1 a 1. Clase gratis.",
   keywords: [
     "curso ia adolescentes latinos usa",
     "curso ia adolescentes español miami",
@@ -103,7 +103,7 @@ export default function CursoIAAdolescentesUSAPage() {
 
             <p className="text-lg md:text-xl leading-[1.5] text-[#FAF7EF]/70 max-w-[52ch] mb-8">
               En 5 semanas lanza su primera app, arma un portafolio STEM para college applications y domina IA antes que sus compañeros.
-              Clases en vivo en español, grupos de máximo 5 jóvenes. Desde Miami, Los Angeles, Houston o cualquier estado.
+              Clases en vivo en español, 1 a 1. Desde Miami, Los Angeles, Houston o cualquier estado.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-8">
@@ -187,7 +187,7 @@ export default function CursoIAAdolescentesUSAPage() {
               {[
                 ["Formato", "10 clases en vivo"],
                 ["Duración", "5 semanas"],
-                ["Grupos", "Máx. 5 jóvenes"],
+                ["Atención", "1 a 1, individual"],
                 ["Edad", "13 - 17 años"],
                 ["Precio", "$297 USD"],
               ].map(([k, v], i) => (

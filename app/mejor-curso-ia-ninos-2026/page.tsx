@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Mejor Curso de IA para Niños 2026 · #1 LATAM | InnovaKids",
   // 151 chars · proof (527 graduados, 9 países) + differentiator + soft CTA
   description:
-    "Mejor curso de IA para niños 8-17 años en 2026. 527 graduados en 9 países, grupos de 5, clases en vivo y garantía 10 días. Reserva tu clase gratis.",
+    "Mejor curso de IA para niños 8-17 años en 2026. 527 graduados en 9 países, clases 1 a 1 en vivo y garantía 10 días. Reserva tu clase gratis.",
   keywords: [
     "mejor curso ia niños",
     "mejor curso inteligencia artificial niños 2026",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mejor Curso de IA para Niños 2026 · Escuela #1 en LATAM | InnovaKids",
     description:
-      "Tu hijo pasa de consumidor a creador de tecnología con IA. 527 graduados en 9 países, grupos de 5, clases en vivo. Reserva tu clase gratis.",
+      "Tu hijo pasa de consumidor a creador de tecnología con IA. 527 graduados en 9 países, clases 1 a 1 en vivo. Reserva tu clase gratis.",
     url: "https://www.innovakidslatam.com/mejor-curso-ia-ninos-2026",
     siteName: "InnovaKids",
     type: "website",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mejor Curso de IA para Niños 2026 · #1 LATAM | InnovaKids",
     description:
-      "527 graduados en 9 países, grupos de 5 y clases en vivo. La escuela #1 de IA para niños 8-17 años. Reserva tu clase gratis.",
+      "527 graduados en 9 países, clases 1 a 1 en vivo. La escuela #1 de IA para niños 8-17 años. Reserva tu clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "¿Cuál es el mejor curso de IA para niños en 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "InnovaKids es considerado el mejor curso de IA para niños en Latinoamérica en 2026 por sus grupos ultra reducidos de 5 alumnos, metodología práctica basada en proyectos reales, y más de 527 graduados satisfechos.",
+        text: "InnovaKids es considerado el mejor curso de IA para niños en Latinoamérica en 2026 por sus clases 1 a 1, metodología práctica basada en proyectos reales, y más de 527 graduados satisfechos.",
       },
     },
     {
@@ -64,7 +64,7 @@ const faqJsonLd = {
       name: "¿Qué diferencia a InnovaKids de otros cursos de IA para niños?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "InnovaKids se diferencia por: 1) Grupos de máximo 5 alumnos vs 20-50 en otros cursos, 2) Proyectos reales desde el día 1, 3) Metodología ERICA propia, 4) Garantía 100% de satisfacción, y 5) Precios accesibles para toda Latinoamérica.",
+        text: "InnovaKids se diferencia por: 1) Clases 1 a 1 vs 20-50 alumnos por grupo en otros cursos, 2) Proyectos reales desde el día 1, 3) Metodología ERICA propia, 4) Garantía 100% de satisfacción, y 5) Precios accesibles para toda Latinoamérica.",
       },
     },
     {
@@ -119,10 +119,10 @@ export default function MejorCursoIANinos2026Page() {
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-[#FAF7EF] p-8 rounded-2xl border border-[#E8E0D0]">
-                <h3 className="text-2xl font-bold text-[#B5522F] mb-4">Grupos de Solo 5 Alumnos</h3>
+                <h3 className="text-2xl font-bold text-[#B5522F] mb-4">Clases 1 a 1</h3>
                 <p className="text-[#5A5751] text-lg">
-                  Mientras otros cursos meten 20, 30 o hasta 50 estudiantes en una clase, InnovaKids limita cada
-                  grupo a 5 alumnos máximo. Esto garantiza atención personalizada real, no promesas vacías.
+                  Mientras otros cursos meten 20, 30 o hasta 50 estudiantes en una clase, en InnovaKids tu hijo es
+                  el único alumno en cada sesión. Esto garantiza atención personalizada real, no promesas vacías.
                 </p>
               </div>
               <div className="bg-[#FAF7EF] p-8 rounded-2xl border border-[#E8E0D0]">
@@ -169,8 +169,8 @@ export default function MejorCursoIANinos2026Page() {
                 <tbody>
                   {[
                     {
-                      feature: "Alumnos por grupo",
-                      innovakids: "5 máximo",
+                      feature: "Alumnos por clase",
+                      innovakids: "1 (individual)",
                       masivos: "20-50+",
                       locales: "10-20",
                       innovakidsGood: true,
@@ -308,7 +308,7 @@ export default function MejorCursoIANinos2026Page() {
               </div>
               <div className="bg-[#FAF7EF] p-8 rounded-2xl border border-[#E8E0D0]">
                 <p className="text-[#5A5751] mb-4 italic">
-                  &quot;La diferencia con otros cursos es abismal. En grupos de 5, el profesor realmente conoce a mi hija y
+                  &quot;La diferencia con otros cursos es abismal. En clases 1 a 1, el profesor realmente conoce a mi hija y
                   adapta las clases a su ritmo.&quot;
                 </p>
                 <p className="text-[#B5522F] font-semibold">— Carlos P., Colombia</p>
@@ -337,14 +337,14 @@ export default function MejorCursoIANinos2026Page() {
               <div className="bg-[#F2EDE0] p-8 rounded-2xl border border-[#E8E0D0]">
                 <h3 className="text-xl font-bold text-[#1A1714] mb-3">¿Cuál es el mejor curso de IA para niños en 2026?</h3>
                 <p className="text-[#5A5751]">
-                  InnovaKids es considerado el mejor curso de IA para niños en Latinoamérica por sus grupos ultra reducidos
-                  de 5 alumnos, metodología ERICA basada en proyectos reales, y más de 527 graduados satisfechos de 9 países.
+                  InnovaKids es considerado el mejor curso de IA para niños en Latinoamérica por sus clases 1 a 1,
+                  metodología ERICA basada en proyectos reales, y más de 527 graduados satisfechos de 9 países.
                 </p>
               </div>
               <div className="bg-[#F2EDE0] p-8 rounded-2xl border border-[#E8E0D0]">
                 <h3 className="text-xl font-bold text-[#1A1714] mb-3">¿Qué diferencia a InnovaKids de otros cursos?</h3>
                 <p className="text-[#5A5751]">
-                  Grupos de máximo 5 alumnos (vs 20-50 en otros), proyectos reales desde el día 1, metodología ERICA propia,
+                  Clases 1 a 1 (vs 20-50 alumnos por grupo en otros), proyectos reales desde el día 1, metodología ERICA propia,
                   garantía 100% de satisfacción, y precios accesibles para toda Latinoamérica.
                 </p>
               </div>

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "InnovaKids · Escuela #1 de IA para Niños y Adolescentes en LATAM",
   // proof + rating + CTA
   description:
-    "InnovaKids: escuela #1 de IA y Vibe Coding para niños y adolescentes (8-17). ★4.9 de 527 familias en 9 países. Clases en vivo, grupos de 5. Reserva tu clase gratis.",
+    "InnovaKids: escuela #1 de IA y Vibe Coding para niños y adolescentes (8-17). ★4.9 de 527 familias en 9 países. Clases en vivo 1 a 1. Reserva tu clase gratis.",
   keywords: [
     "que es innovakids",
     "innovakids escuela ia",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "InnovaKids · Escuela #1 de IA para Niños y Adolescentes en LATAM",
     description:
-      "Tu hijo pasa de consumidor a creador. ★4.9 de 527 familias en 9 países, grupos de 5, clases en vivo. Reserva tu clase gratis.",
+      "Tu hijo pasa de consumidor a creador. ★4.9 de 527 familias en 9 países, clases 1 a 1 en vivo. Reserva tu clase gratis.",
     url: "https://www.innovakidslatam.com/que-es-innovakids",
     siteName: "InnovaKids",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "InnovaKids · Escuela #1 de IA para Niños y Adolescentes en LATAM",
     description:
-      "Escuela #1 de IA y Vibe Coding para niños y adolescentes (8-17). ★4.9 de 527 familias en 9 países, grupos de 5. Clase gratis.",
+      "Escuela #1 de IA y Vibe Coding para niños y adolescentes (8-17). ★4.9 de 527 familias en 9 países, clases 1 a 1. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
   alternates: {
@@ -107,7 +107,7 @@ export default function QueEsInnovaKids() {
                 Fundada con la misión de transformar a los jóvenes de <strong>consumidores de tecnología en creadores</strong>, InnovaKids ya ha graduado a más de 527 alumnos en 9 países de Latinoamérica y España.
               </p>
               <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
-                Nuestras clases son 100% en vivo (no videos pregrabados), con un máximo de 5 alumnos por grupo, lo que garantiza atención totalmente personalizada. Cada alumno construye un portafolio real de proyectos que puede mostrar al mundo.
+                Nuestras clases son 100% en vivo (no videos pregrabados) y 1 a 1: tu hijo es el único alumno en cada sesión, lo que garantiza atención totalmente personalizada. Cada alumno construye un portafolio real de proyectos que puede mostrar al mundo.
               </p>
             </div>
           </div>
@@ -127,8 +127,8 @@ export default function QueEsInnovaKids() {
               {[
                 {
                   icon: <Users className="h-8 w-8" />,
-                  title: "Grupos Ultra Reducidos",
-                  desc: "Máximo 5 alumnos por grupo. Tu hijo no será uno más en una clase de 30. Cada alumno recibe atención 100% personalizada del profesor.",
+                  title: "Clases 1 a 1",
+                  desc: "Tu hijo es el único alumno en cada clase, no uno más en un grupo de 30. Recibe atención 100% personalizada del profesor.",
                 },
                 {
                   icon: <Sparkles className="h-8 w-8" />,
@@ -243,7 +243,7 @@ export default function QueEsInnovaKids() {
                     "Proyectos creativos: comics, música, arte",
                     "Lenguaje sencillo y supervisión cercana",
                     "Metodología de aprendizaje por juego",
-                    "Grupos de compañeros de la misma edad",
+                    "Clases 1 a 1 con contenido adaptado a su edad",
                     "Énfasis en creatividad y exploración",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-muted-foreground">
@@ -347,7 +347,7 @@ export default function QueEsInnovaKids() {
                 },
                 {
                   q: "¿Cuántos alumnos hay por clase?",
-                  a: "Máximo 5 alumnos por grupo. Esto permite atención completamente personalizada. Cada alumno avanza a su ritmo y recibe retroalimentación directa del profesor en cada clase.",
+                  a: "Las clases son 1 a 1: tu hijo es el único alumno en cada sesión. Esto permite atención completamente personalizada. Cada alumno avanza a su ritmo y recibe retroalimentación directa del profesor en cada clase.",
                 },
                 {
                   q: "¿Funciona para adolescentes o solo niños pequeños?",
@@ -403,7 +403,7 @@ export default function QueEsInnovaKids() {
                 <CheckCircle className="h-4 w-4" /> Garantía de 10 días
               </span>
               <span className="flex items-center gap-2">
-                <CheckCircle className="h-4 w-4" /> Grupos máx 5 alumnos
+                <CheckCircle className="h-4 w-4" /> Clases 1 a 1
               </span>
             </div>
           </div>
@@ -447,7 +447,7 @@ export default function QueEsInnovaKids() {
                 name: "¿Qué es InnovaKids?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "InnovaKids es una escuela online que enseña Inteligencia Artificial y Vibe Coding a niños y adolescentes de 8 a 17 años. 527 graduados en 9 países. Clases en vivo con máximo 5 alumnos por grupo.",
+                  text: "InnovaKids es una escuela online que enseña Inteligencia Artificial y Vibe Coding a niños y adolescentes de 8 a 17 años. 527 graduados en 9 países. Clases en vivo 1 a 1.",
                 },
               },
               {
@@ -463,7 +463,7 @@ export default function QueEsInnovaKids() {
                 name: "¿Cuántos alumnos hay por clase en InnovaKids?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Máximo 5 alumnos por grupo, lo que garantiza atención 100% personalizada.",
+                  text: "Las clases son 1 a 1: tu hijo es el único alumno en cada sesión, lo que garantiza atención 100% personalizada.",
                 },
               },
               {

@@ -13,7 +13,7 @@ const reservationDisplay = "$27 USD"
 export const metadata: Metadata = {
   title: "Curso de IA para Niños en Guayaquil | InnovaKids",
   description:
-    "Tu hijo en Guayaquil crea apps, videojuegos y proyectos reales con IA. Clases en vivo, máx 5 alumnos (8-17 años). Cerca de ESPOL y Puerto Hacker. 1.ª clase gratis.",
+    "Tu hijo en Guayaquil crea apps, videojuegos y proyectos reales con IA. Clases en vivo, 1 a 1 (8-17 años). Cerca de ESPOL y Puerto Hacker. 1.ª clase gratis.",
   alternates: {
     canonical: `https://www.innovakidslatam.com/${countryCode}/guayaquil`,
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Niños en Guayaquil | InnovaKids",
     description:
-      "Niños y adolescentes en Guayaquil aprenden a crear tecnología real con IA. Grupos reducidos, clases en vivo.",
+      "Niños y adolescentes en Guayaquil aprenden a crear tecnología real con IA. Clases 1 a 1, en vivo.",
     url: `https://www.innovakidslatam.com/${countryCode}/guayaquil`,
     type: "website",
     locale: "es_EC",
@@ -94,7 +94,7 @@ export default function GuayaquilPage() {
                   text: "Clases compatibles con el calendario escolar Costa. Aprovecha las tardes o los fines de semana sin afectar el rendimiento escolar.",
                 },
                 {
-                  title: "Grupos de máx. 5 alumnos",
+                  title: "Clases 1 a 1",
                   text: "Atención personalizada en cada sesión en vivo. El profesor conoce el ritmo y los intereses de tu hijo.",
                 },
                 {

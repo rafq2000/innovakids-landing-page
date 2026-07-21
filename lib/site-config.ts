@@ -17,7 +17,6 @@ export const COHORT = {
   startISO: "2026-08-10T00:00:00-04:00",
   nextCohort: "octubre",
   totalSpots: 15,
-  groupSize: 5,
 } as const
 
 /* ─── PRICING ──────────────────────────────────────────── */

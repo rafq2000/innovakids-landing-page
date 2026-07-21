@@ -13,7 +13,7 @@ const reservationDisplay = "$27 USD (aprox. S/ 100)"
 export const metadata: Metadata = {
   title: "Curso de IA para Niños en Lima | InnovaKids",
   description:
-    "Tu hijo en Lima crea apps, videojuegos y proyectos reales con IA. Clases en vivo, máx 5 alumnos (8-17 años). Cerca de la PUCP, UPC y San Isidro tech hub. 1.ª clase gratis.",
+    "Tu hijo en Lima crea apps, videojuegos y proyectos reales con IA. Clases en vivo, 1 a 1 (8-17 años). Cerca de la PUCP, UPC y San Isidro tech hub. 1.ª clase gratis.",
   alternates: {
     canonical: `https://www.innovakidslatam.com/${countryCode}/lima`,
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Niños en Lima | InnovaKids",
     description:
-      "Niños y adolescentes en Lima aprenden a crear tecnología real con IA. Grupos reducidos, clases en vivo.",
+      "Niños y adolescentes en Lima aprenden a crear tecnología real con IA. Clases 1 a 1, en vivo.",
     url: `https://www.innovakidslatam.com/${countryCode}/lima`,
     type: "website",
     locale: "es_PE",
@@ -94,8 +94,8 @@ export default function LimaPage() {
                   text: "Clases en vivo por Zoom: tu hijo aprende desde Miraflores, Los Olivos, Surco o cualquier distrito sin perder tiempo en el tráfico.",
                 },
                 {
-                  title: "Grupos de máx. 5 alumnos",
-                  text: "Atención personalizada real. El profesor conoce a cada alumno por nombre, ritmo e intereses.",
+                  title: "Clases 1 a 1, individuales",
+                  text: "Atención 100% personalizada real: el profesor está enfocado solo en tu hijo, conoce su nombre, ritmo e intereses.",
                 },
                 {
                   title: "Proyectos reales en 5 semanas",

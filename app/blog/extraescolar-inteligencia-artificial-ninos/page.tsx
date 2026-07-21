@@ -7,7 +7,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Extraescolar de Inteligencia Artificial para Niños · Guía Completa 2026 | InnovaKids",
   description:
-    "Qué es una extraescolar de IA para niños, cómo elegir la mejor y por qué es la actividad más demandada en 2026. Clases online en vivo, grupos de 5. Primera clase gratis.",
+    "Qué es una extraescolar de IA para niños, cómo elegir la mejor y por qué es la actividad más demandada en 2026. Clases online en vivo, 1 a 1. Primera clase gratis.",
   keywords: [
     "extraescolar de inteligencia artificial",
     "extraescolar de ia para niños",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Extraescolar de Inteligencia Artificial para Niños · Guía 2026 | InnovaKids",
     description:
-      "Todo lo que necesitas saber para elegir la mejor extraescolar de IA para tu hijo. Online, en vivo, grupos de 5. Primera clase gratis.",
+      "Todo lo que necesitas saber para elegir la mejor extraescolar de IA para tu hijo. Online, en vivo, 1 a 1. Primera clase gratis.",
     url: "https://www.innovakidslatam.com/blog/extraescolar-inteligencia-artificial-ninos",
     siteName: "InnovaKids",
     type: "article",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Extraescolar de IA para Niños · Guía 2026 | InnovaKids",
     description:
-      "Cómo elegir la mejor extraescolar de inteligencia artificial para tu hijo. Online, en vivo, grupos de 5.",
+      "Cómo elegir la mejor extraescolar de inteligencia artificial para tu hijo. Online, en vivo, 1 a 1.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -72,7 +72,7 @@ const faqJsonLd = {
       name: "¿Es mejor una extraescolar de IA online o presencial?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Las extraescolares de IA online tienen varias ventajas: más flexibilidad de horario, acceso a los mejores profesores sin importar el país, y los niños aprenden a trabajar con tecnología digital desde casa. Lo más importante es que sean clases en vivo (no grabadas), con grupos pequeños de máximo 5-6 alumnos para garantizar atención personalizada.",
+        text: "Las extraescolares de IA online tienen varias ventajas: más flexibilidad de horario, acceso a los mejores profesores sin importar el país, y los niños aprenden a trabajar con tecnología digital desde casa. Lo más importante es que sean clases en vivo (no grabadas) y 1 a 1, para garantizar atención personalizada real.",
       },
     },
     {
@@ -80,7 +80,7 @@ const faqJsonLd = {
       name: "¿Cuánto cuesta una extraescolar de inteligencia artificial?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "El precio de una extraescolar de IA varía según el formato. Los programas de calidad con clases en vivo y grupos pequeños rondan los $150-$300 USD por programa completo (5 semanas). En InnovaKids ofrecemos una primera clase gratuita para que puedas evaluar sin compromiso.",
+        text: "El precio de una extraescolar de IA varía según el formato. Los programas de calidad con clases en vivo 1 a 1 rondan los $150-$300 USD por programa completo (5 semanas). En InnovaKids ofrecemos una primera clase gratuita para que puedas evaluar sin compromiso.",
       },
     },
     {
@@ -123,9 +123,9 @@ const comparisons = [
     innovakids: "En vivo con profesor, interacción real en tiempo real",
   },
   {
-    criteria: "Tamaño del grupo",
+    criteria: "Formato de la clase",
     tradicional: "15 a 30 alumnos o sin interacción",
-    innovakids: "Máximo 5 alumnos por sesión garantizado",
+    innovakids: "1 a 1: un solo alumno por sesión, garantizado",
   },
   {
     criteria: "Proyecto al terminar",
@@ -320,8 +320,8 @@ export default function ExtraescolarIAPage() {
                   a: "Las clases grabadas son cómodas pero no funcionan para niños. Necesitan interacción en tiempo real, poder preguntar, y un profesor que los guíe. Busca programas con clases en vivo.",
                 },
                 {
-                  q: "2. Grupos pequeños (máximo 5-6 alumnos)",
-                  a: "Con grupos grandes, los niños se pierden y el profesor no puede dar atención personalizada. Exige este dato antes de inscribir. En InnovaKids garantizamos máximo 5 alumnos.",
+                  q: "2. Clases 1 a 1, individuales",
+                  a: "Con grupos grandes, los niños se pierden y el profesor no puede dar atención personalizada. Exige este dato antes de inscribir. En InnovaKids garantizamos clases 1 a 1: tu hijo es el único alumno.",
                 },
                 {
                   q: "3. Proyectos reales al terminar",
@@ -366,7 +366,7 @@ export default function ExtraescolarIAPage() {
                 },
                 {
                   q: "¿Es mejor online o presencial?",
-                  a: "Para IA, online en vivo es igual de efectivo que presencial —y más flexible. Lo importante es que sean clases en vivo con grupos pequeños, no vídeos grabados.",
+                  a: "Para IA, online en vivo es igual de efectivo que presencial —y más flexible. Lo importante es que sean clases en vivo y 1 a 1, no vídeos grabados.",
                 },
               ].map((item) => (
                 <details key={item.q} className="group bg-white rounded-2xl border border-[#2F2F2C]/8">
@@ -391,7 +391,7 @@ export default function ExtraescolarIAPage() {
               <em className="italic text-[#B5522F]">sin compromiso</em>.
             </h2>
             <p className="text-[#F5F1E8]/70 max-w-[50ch] mx-auto leading-relaxed mb-8">
-              Primera clase 100% gratis. Grupos de máximo 5 alumnos.
+              Primera clase 100% gratis. Clases 1 a 1, individuales.
               Clases en vivo. 527 graduados en 9 países. ★4.9.
             </p>
             <Link

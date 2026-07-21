@@ -10,7 +10,7 @@ export const metadata = {
   title: "Brochure Programa de IA para Niños 8-17 | InnovaKids",
   // 152 chars · proof + differentiator + CTA
   description:
-    "Brochure del programa de IA para niños 8-17 años. Temario completo, proyectos reales, grupos de 5 y garantía 10 días. 527 graduados. Reserva tu clase.",
+    "Brochure del programa de IA para niños 8-17 años. Temario completo, proyectos reales, clases 1 a 1 y garantía 10 días. 527 graduados. Reserva tu clase.",
   keywords: [
     "brochure programa ia niños",
     "programa ia niños temario",
@@ -24,7 +24,7 @@ export const metadata = {
   openGraph: {
     title: "Brochure Programa de IA · Escuela #1 en LATAM | InnovaKids",
     description:
-      "Descubre el temario del programa acelerador de IA para niños 8-17. Clases en vivo, grupos de 5, proyectos reales. Reserva tu clase gratis.",
+      "Descubre el temario del programa acelerador de IA para niños 8-17. Clases en vivo 1 a 1, proyectos reales. Reserva tu clase gratis.",
     url: "https://www.innovakidslatam.com/brochure-programa-ia",
     siteName: "InnovaKids",
     type: "website",
@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Brochure Programa de IA para Niños 8-17 | InnovaKids",
     description:
-      "Temario completo, proyectos reales y grupos de 5. 527 graduados, garantía 10 días. Reserva tu clase.",
+      "Temario completo, proyectos reales y clases 1 a 1. 527 graduados, garantía 10 días. Reserva tu clase.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -89,7 +89,7 @@ export default function BrochurePage() {
           {[
             { number: "94%", label: "Mejora académica comprobada" },
             { number: "100%", label: "Proyectos reales creados" },
-            { number: "5", label: "Alumnos máximo por grupo elite" },
+            { number: "1 a 1", label: "Clases individuales, nivel elite" },
           ].map((stat, idx) => (
             <Card
               key={idx}
@@ -338,7 +338,7 @@ export default function BrochurePage() {
           <CardContent className="text-center py-12 space-y-6">
             <h2 className="text-4xl font-bold text-[#1A1714]">¿Tu Hijo Está Listo?</h2>
             <p className="text-[#1A1714] text-lg max-w-2xl mx-auto">
-              Solo aceptamos 5 alumnos por grupo para garantizar resultados. El primer paso es una breve entrevista.
+              Clases 1 a 1 para garantizar resultados: tu hijo es el único alumno en cada sesión. El primer paso es una breve entrevista.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button

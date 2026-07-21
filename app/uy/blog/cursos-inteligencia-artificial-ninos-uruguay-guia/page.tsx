@@ -55,13 +55,13 @@ const opportunities = [
 const pillars = [
     { title: "Herramientas reales", desc: "ChatGPT, Midjourney, DALL·E, Suno AI — las mismas herramientas que usan los profesionales." },
     { title: "Proyectos prácticos", desc: "Los niños aprenden creando: chatbots, arte, música, videojuegos y apps funcionales." },
-    { title: "Grupos pequeños", desc: "Máximo 5 niños por clase para garantizar atención personalizada." },
+    { title: "Clases 1 a 1", desc: "Tu hijo es el único alumno en cada clase, con atención 100% personalizada." },
     { title: "Ética y seguridad", desc: "Enseñanza responsable sobre los límites y riesgos de la IA." },
 ]
 
 const comparisonRows: [string, string, string][] = [
     ["Precio", "US$297 (10 clases)", "US$150-400"],
-    ["Alumnos por clase", "Máximo 5", "15-30"],
+    ["Alumnos por clase", "1 a 1 (individual)", "15-30"],
     ["Herramientas IA", "10+ profesionales", "1-3 básicas"],
     ["Metodología", "100% práctica", "Teoría + práctica"],
     ["Garantía", "10 días devolución", "Sin garantía"],
@@ -70,7 +70,7 @@ const comparisonRows: [string, string, string][] = [
 
 const whyInnova = [
     { title: "Resultados comprobados", desc: "187+ niños uruguayos graduados con proyectos reales: videojuegos, apps, arte generativo y más." },
-    { title: "Atención personalizada", desc: "Máximo 5 niños por clase. Tu hijo no será uno más en una clase masiva." },
+    { title: "Atención personalizada", desc: "Clases 1 a 1. Tu hijo no será uno más en una clase masiva — es el único alumno." },
     { title: "Horarios flexibles", desc: "Nos adaptamos a la agenda de las familias uruguayas. Clases en horarios convenientes." },
     { title: "Garantía total", desc: "10 días de garantía. Si no te convence, devolvemos el 100% de tu dinero." },
 ]
@@ -78,7 +78,7 @@ const whyInnova = [
 const faqs = [
     { q: "¿Qué edad debe tener mi hijo?", a: "El curso está diseñado para niños de 8 a 17 años. Agrupamos por edades similares." },
     { q: "¿Necesita conocimientos previos?", a: "No, partimos desde cero. Solo necesita saber leer, escribir y usar una computadora básicamente." },
-    { q: "¿Cómo son las clases online?", a: "Clases en vivo por Zoom con máximo 5 niños. Interactivas y 100% prácticas." },
+    { q: "¿Cómo son las clases online?", a: "Clases en vivo por Zoom, 1 a 1. Interactivas y 100% prácticas." },
     { q: "¿Qué pasa si no me convence?", a: "Tenés 10 días de garantía. Si no estás satisfecho, devolvemos el 100% de tu dinero." },
     { q: "¿Cómo puedo pagar desde Uruguay?", a: "Aceptamos tarjeta de crédito, débito internacional y transferencia bancaria. US$297 el programa completo." },
 ]

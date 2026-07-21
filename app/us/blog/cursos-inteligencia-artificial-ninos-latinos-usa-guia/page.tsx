@@ -167,7 +167,7 @@ export default function GuiaIANinosLatinosUSA() {
                     <tr className="border-t bg-[#002868]/5">
                       <td className="p-4 font-bold">InnovaKids (recomendado)</td>
                       <td className="p-4 font-bold">$297</td>
-                      <td className="p-4 font-bold">Máximo 5</td>
+                      <td className="p-4 font-bold">1 a 1 (individual)</td>
                     </tr>
                   </tbody>
                 </table>
@@ -181,7 +181,7 @@ export default function GuiaIANinosLatinosUSA() {
                 <div className="rounded-xl bg-green-50 p-4 dark:bg-green-950">
                   <h4 className="mt-0 text-green-700 dark:text-green-300">✅ Lo Que SÍ Debes Buscar</h4>
                   <ul className="mb-0 text-sm">
-                    <li>Grupos pequeños (máx 5-8 niños)</li>
+                    <li>Clases 1 a 1 o grupos muy pequeños con atención real</li>
                     <li>Clases en vivo (no pregrabadas)</li>
                     <li>Proyectos prácticos reales</li>
                     <li>Profesores hispanohablantes nativos</li>
@@ -240,8 +240,8 @@ export default function GuiaIANinosLatinosUSA() {
                   hijo
                 </li>
                 <li>
-                  <strong>Grupo personalizado</strong> - Asignamos a tu hijo a un grupo de máximo 5 niños de edad
-                  similar
+                  <strong>Clase personalizada</strong> - Asignamos a tu hijo un profesor 1 a 1, con contenido
+                  adaptado a su edad y nivel
                 </li>
                 <li>
                   <strong>10 clases en vivo</strong> - Una vez por semana, aprox. 60 minutos, 100% en español
@@ -316,7 +316,7 @@ export default function GuiaIANinosLatinosUSA() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-6 text-sm text-white/60">$297 USD • 10 clases • Máximo 5 niños • Garantía de 10 días</p>
+              <p className="mt-6 text-sm text-white/60">$297 USD • 10 clases • Clases 1 a 1 • Garantía de 10 días</p>
             </div>
 
             {/* RELATED LINKS */}

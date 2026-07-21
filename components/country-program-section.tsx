@@ -126,7 +126,7 @@ export function CountryProgramSection({
                             { item: "Comunidad Discord Exclusiva" },
                             { item: "Soporte WhatsApp Ilimitado" },
                             { item: "Grabaciones de Todas las Clases" },
-                            { item: "Grupos de Máximo 5 Niños" },
+                            { item: "Clases 1 a 1, Individuales" },
                         ].map((item, i) => (
                             <li key={i} className="flex items-center justify-between border-b border-white/20 pb-3">
                                 <span className="flex items-center gap-2">

@@ -326,9 +326,9 @@ export default function VibeCodingQueEsPage() {
                 <div className="bg-pink-50 p-6 rounded-xl border border-pink-100">
                   <h3 className="text-xl font-bold text-pink-800 mb-3">Paso 4: Compartir</h3>
                   <p className="text-gray-700">
-                    El proyecto terminado se presenta al grupo. Los compañeros dan retroalimentacion
-                    constructiva. El estudiante aprende a recibir criticas y a mejorar su trabajo.
-                    Es un mini laboratorio de colaboracion profesional.
+                    El proyecto terminado se presenta a su mentor, quien da retroalimentacion
+                    constructiva en el momento, 1 a 1. El estudiante aprende a recibir criticas
+                    y a mejorar su trabajo antes de mostrarlo a familia y amigos.
                   </p>
                 </div>
               </div>
@@ -467,8 +467,8 @@ export default function VibeCodingQueEsPage() {
                 <Link href="/vibe-coding-ninos" className="text-[#4ECDC4] hover:underline">
                   Vibe Coding para niños de InnovaKids
                 </Link>
-                . Nuestras clases en vivo con grupos reducidos permiten que cada estudiante reciba
-                atención personalizada mientras crea proyectos cada vez mas ambiciosos. Si quieres
+                . Nuestras clases en vivo 1 a 1 permiten que cada estudiante reciba toda la
+                atención de su mentor mientras crea proyectos cada vez mas ambiciosos. Si quieres
                 que tu hijo lo pruebe sin compromiso,{" "}
                 <Link href="/clase-gratis" className="text-[#4ECDC4] hover:underline">
                   agenda una clase gratis aqui

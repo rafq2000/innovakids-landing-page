@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "De Usuario a Creador de IA · Niños 8-17 años | InnovaKids",
   // 149 chars · transformation proof + differentiator + CTA
   description:
-    "Tu hijo pasa de consumidor a creador de tecnología con IA. Método para niños 8-17 años probado por 527 familias, grupos de 5 y clases en vivo. Clase gratis.",
+    "Tu hijo pasa de consumidor a creador de tecnología con IA. Método para niños 8-17 años probado por 527 familias, clases 1 a 1 en vivo. Clase gratis.",
   keywords: [
     "niños creadores de ia",
     "de consumidor a creador",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "De Usuario a Creador de IA · Escuela #1 en LATAM | InnovaKids",
     description:
-      "Tu hijo deja de solo consumir tecnología: aprende a crear con IA. 527 familias, grupos de 5, clases en vivo. Reserva tu clase gratis.",
+      "Tu hijo deja de solo consumir tecnología: aprende a crear con IA. 527 familias, clases 1 a 1 en vivo. Reserva tu clase gratis.",
     url: "https://www.innovakidslatam.com/de-usuario-a-creador",
     siteName: "InnovaKids",
     type: "website",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "De Usuario a Creador de IA · Niños 8-17 años | InnovaKids",
     description:
-      "Tu hijo deja de solo consumir tecnología. Aprende a crear con IA. 527 familias, grupos de 5. Clase gratis.",
+      "Tu hijo deja de solo consumir tecnología. Aprende a crear con IA. 527 familias, clases 1 a 1. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }

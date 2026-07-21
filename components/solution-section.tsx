@@ -35,7 +35,7 @@ export function SolutionSection() {
             <div className="bg-[#1a2942] rounded-lg sm:rounded-xl overflow-hidden mb-4 sm:mb-6">
               <Image
                 src="/small-group-learning.jpg"
-                alt="Grupos pequeños de aprendizaje personalizado"
+                alt="Clases 1 a 1 de aprendizaje personalizado"
                 width={400}
                 height={300}
                 quality={75}
@@ -47,7 +47,7 @@ export function SolutionSection() {
               Atención Real, No Masas
             </h3>
             <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
-              Grupos de Máximo 5 Alumnos. Tu hijo recibe la atención que se merece, haciendo preguntas y avanzando a su
+              Clases 1 a 1, Individuales. Tu hijo recibe la atención que se merece, haciendo preguntas y avanzando a su
               propio ritmo. Olvídate de las clases masivas donde nadie te escucha.
             </p>
           </div>

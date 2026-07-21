@@ -22,7 +22,7 @@ export function PricingSection({ country }: PricingSectionProps) {
   })()
 
   const features = [
-    "10 clases en vivo por módulo, grupos máximo 5 niños",
+    "10 clases en vivo 1 a 1 por módulo",
     "Certificado digital Vibe Explorer",
     "Acceso a 15+ herramientas de IA premium",
     "Soporte 24/7 por Discord y WhatsApp",
@@ -103,11 +103,15 @@ export function PricingSection({ country }: PricingSectionProps) {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#C96342] opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C96342]"></span>
                 </span>
-                <span><strong className="text-[#2F2F2C] font-semibold">{COHORT.totalSpots}</strong> cupos por cohorte · grupos de {COHORT.groupSize}</span>
+                <span><strong className="text-[#2F2F2C] font-semibold">{COHORT.totalSpots}</strong> cupos por cohorte · clases 1 a 1</span>
               </span>
               <span className="opacity-40">·</span>
               <span>Pago seguro 🔒</span>
             </div>
+
+            <p className="mt-4 text-sm text-[#5A5751]">
+              ¿Vienen hermanos o un grupo de amigos? Escríbenos por WhatsApp y te contamos las promociones para grupos.
+            </p>
           </div>
 
           {/* Right: what's included */}

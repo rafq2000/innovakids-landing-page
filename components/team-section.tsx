@@ -2,7 +2,7 @@ const teamMembers = [
   {
     name: "Equipo Acad\u00e9mico",
     role: "Instructores certificados",
-    bio: "Profesionales de tecnolog\u00eda con formaci\u00f3n pedag\u00f3gica. Cada instructor maneja m\u00e1ximo 5 alumnos por grupo.",
+    bio: "Profesionales de tecnolog\u00eda con formaci\u00f3n pedag\u00f3gica. Cada instructor da clases 1 a 1, un alumno a la vez.",
     initials: "EA",
   },
   {

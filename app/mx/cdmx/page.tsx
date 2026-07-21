@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Curso de IA para Niños en CDMX — Clases Online | InnovaKids",
   description:
-    "Tu hijo en Ciudad de México crea apps, videojuegos y arte con Inteligencia Artificial. Clases en vivo, máx 5 alumnos (8-17 años). 1ª clase gratis. Aprox. $6,000 MXN.",
+    "Tu hijo en Ciudad de México crea apps, videojuegos y arte con Inteligencia Artificial. Clases en vivo, 1 a 1 (8-17 años). 1ª clase gratis. Aprox. $6,000 MXN.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/mx/cdmx",
   },
@@ -35,7 +35,7 @@ export default function CDMXPage() {
             </h1>
             <p className="text-lg md:text-xl text-[#5A5751] max-w-2xl mx-auto mb-8">
               Niños y adolescentes capitalinos (8-17 años) aprenden a crear videojuegos, apps y
-              proyectos reales con IA. Clases en vivo con máximo 5 alumnos. 100% online — tu hijo
+              proyectos reales con IA. Clases en vivo 1 a 1. 100% online — tu hijo
               participa desde cualquier colonia o alcaldía de la Ciudad de México.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -147,7 +147,7 @@ export default function CDMXPage() {
               <ul className="text-left space-y-2 mb-6 max-w-sm mx-auto">
                 {[
                   "10 clases en vivo de 60 minutos",
-                  "Grupos de máximo 5 alumnos",
+                  "Clases 1 a 1 (individuales)",
                   "Profesor especializado en IA",
                   "Certificado de finalización",
                   "1ª clase completamente gratis",

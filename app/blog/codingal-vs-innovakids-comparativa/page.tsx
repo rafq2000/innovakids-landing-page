@@ -154,9 +154,9 @@ export default function CodingalVsInnovakidsPage() {
                                 <li>Promueve habilidades de <em>liderazgo, prompt engineering y diseño estructural</em>, las verdaderas habilidades del futuro laboral.</li>
                             </ul>
 
-                            <h2>2. Tamaño de las clases y personalización</h2>
+                            <h2>2. Atención personalizada: clases grupales vs. clases 1 a 1</h2>
                             <p>
-                                El éxito online depende brutalmente del tamaño del grupo. Ningún niño atiende en Zoom si es "uno más del montón".
+                                El éxito online depende brutalmente de cuánta atención individual recibe el niño. Ningún niño atiende en Zoom si es "uno más del montón".
                             </p>
 
                             <div className="not-prose my-10 border border-[#1A1714]/12 divide-y divide-[#1A1714]/12">
@@ -170,8 +170,8 @@ export default function CodingalVsInnovakidsPage() {
                                 <div className="p-6 md:p-8 bg-[#F2EDE0]/40">
                                     <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold mb-3">InnovaKids</p>
                                     <p className="text-[15px] text-[#1A1714]/85 leading-relaxed font-sans">
-                                        <strong>Estrictamente 5 alumnos por clase</strong> online en vivo, con cámara y micrófono encendidos.
-                                        Atención ultra-personalizada y compañerismo sin que nadie quede atrás.
+                                        <strong>Clases 1 a 1, individuales, incluidas en el precio base</strong>: tu hijo es el único alumno de la sesión online en vivo, con cámara y micrófono encendidos.
+                                        Atención 100% personalizada, sin compartir tiempo ni ritmo con nadie más.
                                     </p>
                                 </div>
                             </div>
@@ -222,8 +222,8 @@ export default function CodingalVsInnovakidsPage() {
                                 </li>
                                 <li>
                                     Si quieres que tu hijo desarrolle <strong>creatividad exponencial</strong>, aprenda las habilidades prácticas
-                                    de IA que exigen todas las empresas hoy, cree sus propias apps/startups de inmediato y se divierta en grupos
-                                    de 5 personas, <strong>InnovaKids</strong> es indiscutiblemente la ganadora de está época.
+                                    de IA que exigen todas las empresas hoy, cree sus propias apps/startups de inmediato y reciba atención
+                                    1 a 1 de principio a fin, <strong>InnovaKids</strong> es indiscutiblemente la ganadora de está época.
                                 </li>
                             </ul>
                             <p>
@@ -245,7 +245,7 @@ export default function CodingalVsInnovakidsPage() {
                                     ¿Te convence la metodología de InnovaKids?
                                 </p>
                                 <p className="text-[14px] text-[#1A1714]/65 leading-relaxed mb-6">
-                                    Grupos estrictos de 5 alumnos. Clases en vivo. Garantía de 10 días.
+                                    Clases 1 a 1, individuales. Clases en vivo. Garantía de 10 días.
                                 </p>
                                 <Link
                                     href="/clase-gratis"

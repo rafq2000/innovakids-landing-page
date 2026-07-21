@@ -17,8 +17,8 @@ export function SEOContent() {
                 cursos de inteligencia artificial para niños de 8 a 17 años
               </strong>{" "}
               pensados para que tu hijo <strong>aprenda a tiempo</strong> y avance al ritmo de su generación, sin quedarse
-              atrás. Más de 527 familias en LATAM ya tomaron está decisión, con clases en vivo en grupos ultra reducidos
-              de máximo 5 alumnos.
+              atrás. Más de 527 familias en LATAM ya tomaron está decisión, con clases en vivo 1 a 1: tu hijo es el
+              único alumno en cada sesión.
             </p>
 
             <div className="bg-primary/10 border-l-4 border-primary p-6 rounded-r-lg my-8">
@@ -42,7 +42,7 @@ export function SEOContent() {
                 <li className="flex items-start">
                   <span className="text-[#B5522F] mr-3 text-2xl">✓</span>
                   <span>
-                    <strong>Grupos Ultra Reducidos:</strong> Solo 5 alumnos por clase para atención 100% personalizada
+                    <strong>Clases 1 a 1:</strong> tu hijo es el único alumno en cada clase, con atención 100% personalizada
                   </span>
                 </li>
                 <li className="flex items-start">

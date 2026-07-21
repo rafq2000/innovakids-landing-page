@@ -8,7 +8,7 @@ import { CheckCircle, Target, ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Curso de IA para Adolescentes (13-17 años) en México | InnovaKids",
   description:
-    "1ª clase gratis. Adolescentes mexicanos crean apps, videojuegos y portfolio digital con Inteligencia Artificial. Clases en vivo, máx 5 alumnos. Preparación universitaria y primer empleo tech.",
+    "1ª clase gratis. Adolescentes mexicanos crean apps, videojuegos y portfolio digital con Inteligencia Artificial. Clases en vivo, 1 a 1. Preparación universitaria y primer empleo tech.",
   keywords: [
     "curso ia adolescentes méxico",
     "inteligencia artificial para adolescentes cdmx",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Adolescentes (13-17) en México | InnovaKids",
     description:
-      "Tu hijo adolescente crea apps reales, videojuegos y un portfolio profesional con IA en 5 semanas. Clases en vivo, grupos de 5. 1ª clase gratis.",
+      "Tu hijo adolescente crea apps reales, videojuegos y un portfolio profesional con IA en 5 semanas. Clases en vivo, 1 a 1. 1ª clase gratis.",
     url: "https://www.innovakidslatam.com/mx/curso-ia-adolescentes",
     type: "website",
     locale: "es_MX",
@@ -175,8 +175,8 @@ export default function CursoIAAdolescentesMexico() {
                   desc: "Descubren si quieren ser ingenieros, diseñadores, emprendedores o creadores de contenido tech.",
                 },
                 {
-                  label: "Grupos exclusivos por edad",
-                  desc: "Máximo 5 alumnos por grupo, todos entre 13 y 17 años. Nadie se aburre, nadie se queda atrás.",
+                  label: "Clases 1 a 1 por edad",
+                  desc: "Un profesor, un alumno, siempre entre 13 y 17 años. Nadie se aburre, nadie se queda atrás.",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
@@ -205,7 +205,7 @@ export default function CursoIAAdolescentesMexico() {
                 </thead>
                 <tbody className="bg-white">
                   {[
-                    ["Grupos reducidos (máx 5)", "Si", "15-30 alumnos"],
+                    ["Clases 1 a 1 (individuales)", "Si", "Grupos de 15-30 alumnos"],
                     ["Clases en vivo con profesor", "Si", "Videos pregrabados"],
                     ["Enfoque en IA generativa 2026", "Si", "Scratch / robótica"],
                     ["Portfolio profesional al terminar", "Si", "Certificado genérico"],

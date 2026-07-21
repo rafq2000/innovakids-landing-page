@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Cursos Vacacionales de IA para Niños en México (8-17 años) | InnovaKids",
   description:
-    "Aprovecha las vacaciones de verano (julio-agosto) para que tu hijo aprenda Inteligencia Artificial creando apps, videojuegos y arte. 5 semanas, 10 clases en vivo. Grupos de máx 5. 1ª clase gratis.",
+    "Aprovecha las vacaciones de verano (julio-agosto) para que tu hijo aprenda Inteligencia Artificial creando apps, videojuegos y arte. 5 semanas, 10 clases en vivo. Clases 1 a 1. 1ª clase gratis.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/mx/cursos-vacacionales-ia",
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cursos Vacacionales de IA para Niños en México | InnovaKids",
     description:
-      "Tu hijo crea apps, videojuegos y música con IA en estas vacaciones. 10 clases en vivo, grupos reducidos. 1ª clase gratis.",
+      "Tu hijo crea apps, videojuegos y música con IA en estas vacaciones. 10 clases en vivo, 1 a 1. 1ª clase gratis.",
     url: "https://www.innovakidslatam.com/mx/cursos-vacacionales-ia",
     siteName: "InnovaKids",
     locale: "es_MX",
@@ -79,7 +79,7 @@ export default function CursosVacacionalesMexicoPage() {
             {[
               "Aprende una habilidad real que usará toda su vida, no solo pasa el rato",
               "Clases en vivo con profesor experto, no videos pregrabados",
-              "Grupos de máximo 5 alumnos: atención personalizada garantizada",
+              "Clases 1 a 1: atención personalizada garantizada",
               "Desde casa, sin transporte ni logística complicada",
               "Crea un portfolio profesional que puede mostrar en su escuela",
               "527+ graduados en 9 países avalan nuestra metodología",
@@ -108,7 +108,7 @@ export default function CursosVacacionalesMexicoPage() {
             {[
               { title: "2 clases por semana", desc: "60 minutos cada una. Tiempo suficiente para aprender sin saturarse." },
               { title: "100% online y en vivo", desc: "Solo necesita una computadora con internet. Desde CDMX, Monterrey o cualquier ciudad." },
-              { title: "Máximo 5 alumnos", desc: "El profesor conoce a cada niño por su nombre y adapta el ritmo." },
+              { title: "Clases 1 a 1", desc: "El profesor conoce a cada niño por su nombre y adapta el ritmo." },
               { title: "Edad: 8 a 17 años", desc: "Grupos separados por edad para que cada niño avance a su ritmo." },
               { title: "Metodología ERICA", desc: "Explorar, Reflexionar, Idear, Crear y Aplicar. Aprenden haciendo." },
               { title: "Certificado final", desc: "Al completar las 10 clases recibe su certificado InnovaKids." },
@@ -152,7 +152,7 @@ export default function CursosVacacionalesMexicoPage() {
           <div className="bg-white/5 border border-[#C96342]/30 rounded-2xl p-8">
             <p className="text-4xl font-bold text-[#B5522F] mb-2">$297 USD</p>
             <p className="text-lg text-[#5A5751] mb-1">aprox. $6,000 MXN</p>
-            <p className="text-[#5A5751] mb-1">10 clases en vivo · 5 semanas · máx 5 alumnos</p>
+            <p className="text-[#5A5751] mb-1">10 clases en vivo · 5 semanas · clases 1 a 1</p>
             <p className="text-sm text-[#5A5751] mb-6">Reserva con solo $27 USD (aprox. $540 MXN). Pagas el resto después de las 2 primeras clases.</p>
             <p className="text-lg font-semibold text-green-400 mb-6">1ª clase completamente gratis</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

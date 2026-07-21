@@ -73,9 +73,9 @@ const comparisons = [
         innovakids: "App funcional, videojuego, libro ilustrado o startup propia",
     },
     {
-        criteria: "Tamaño del grupo",
+        criteria: "Formato de la clase",
         traditional: "15 a 30 alumnos por clase",
-        innovakids: "Máximo 5 alumnos por sesión",
+        innovakids: "1 a 1: un solo alumno por sesión",
     },
     {
         criteria: "Modalidad",
@@ -256,7 +256,7 @@ export default function ComparativaVeranoPage() {
                                     ¿Listo para dar el siguiente paso?
                                 </h3>
                                 <p className="text-[15px] text-[#1A1714]/70 leading-relaxed max-w-[52ch]">
-                                    Más de 500 familias en 9 países ya eligieron InnovaKids. Grupos de máximo 5 alumnos, clases 100% online
+                                    Más de 500 familias en 9 países ya eligieron InnovaKids. Clases 1 a 1, individuales, 100% online
                                     y garantía de satisfacción de 10 días.
                                 </p>
                             </div>

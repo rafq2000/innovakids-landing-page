@@ -247,8 +247,8 @@ export default function InnovaKidsVsCodeOrgPage() {
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 InnovaKids es una escuela de tecnología en vivo para niños y adolescentes de 8 a 17 años,
                 enfocada en Inteligencia Artificial, Vibe Coding y creación digital. A diferencia de
-                plataformas autoguiadas, InnovaKids ofrece clases en vivo con mentores especializados
-                y grupos reducidos de máximo 6 estudiantes.
+                plataformas autoguiadas, InnovaKids ofrece clases en vivo 1 a 1 con mentores
+                especializados, cada estudiante con toda la atención de su mentor.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 El enfoque de InnovaKids nace de una premisa: las habilidades tecnologicas que los niños
@@ -285,7 +285,7 @@ export default function InnovaKidsVsCodeOrgPage() {
                     {[
                       { criteria: "Precio", codeorg: "Gratis", innovakids: "Desde $49 USD/mes" },
                       { criteria: "Formato", codeorg: "Autoguiado (solo)", innovakids: "Clases en vivo con mentor" },
-                      { criteria: "Tamano del grupo", codeorg: "Individual", innovakids: "Máximo 6 estudiantes" },
+                      { criteria: "Tamano del grupo", codeorg: "Individual, autoguiado (sin profesor)", innovakids: "1 a 1, con mentor en vivo" },
                       { criteria: "Contenido principal", codeorg: "Programación con bloques", innovakids: "IA, Vibe Coding, Prompt Eng." },
                       { criteria: "Herramientas de IA", codeorg: "Basico / limitado", innovakids: "ChatGPT, DALL-E, Suno, Cursor" },
                       { criteria: "Tipo de proyectos", codeorg: "Puzzles y ejercicios", innovakids: "Apps, juegos, música, video reales" },
@@ -395,8 +395,8 @@ export default function InnovaKidsVsCodeOrgPage() {
               <h2 className="text-3xl font-bold text-[#2D3436] mb-6">Sobre los Precios: Es el Costo una Barrera Real?</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
                 Es cierto que Code.org es gratis e InnovaKids tiene un costo. Pero vale la pena
-                analizar que estas pagando. Una clase en InnovaKids incluye un mentor experto en vivo,
-                grupo reducido de máximo 6 alumnos, acceso a herramientas de IA profesionales,
+                analizar que estas pagando. Una clase en InnovaKids incluye un mentor experto en vivo
+                dedicado 1 a 1 a tu hijo, acceso a herramientas de IA profesionales,
                 proyectos personalizados y retroalimentacion individualizada.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">

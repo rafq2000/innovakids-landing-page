@@ -305,7 +305,7 @@ export default function IANinos10a12Page() {
                 },
                 {
                   q: "¿Es InnovaKids adecuado para niños de 10-12 años?",
-                  a: "Sí. Tenemos grupos específicos para 8-10 años y para 11-13 años con contenidos y metodología adaptados a cada rango. Los grupos son de máximo 5 alumnos para garantizar atención personalizada.",
+                  a: "Sí. Adaptamos el contenido y la metodología según el rango de edad (8-10 años y 11-13 años). Además, las clases son 1 a 1: tu hijo tiene atención 100% personalizada del instructor, sin compartir tiempo con otros alumnos.",
                 },
               ].map((item) => (
                 <details key={item.q} className="group bg-white rounded-2xl border border-[#2F2F2C]/8">
@@ -330,7 +330,7 @@ export default function IANinos10a12Page() {
               <em className="italic text-[#B5522F]">gratis</em>.
             </h2>
             <p className="text-[#F5F1E8]/70 max-w-[50ch] mx-auto leading-relaxed mb-8">
-              Sin compromiso. Grupos de máximo 5 alumnos.
+              Sin compromiso. Clases 1 a 1, individuales.
               Clases en vivo, 100% online. Proyectos reales terminados.
             </p>
             <Link

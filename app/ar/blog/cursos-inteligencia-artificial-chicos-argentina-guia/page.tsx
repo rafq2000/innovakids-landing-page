@@ -40,7 +40,7 @@ const jsonLd = {
 }
 
 const comparisonRows: [string, string, string][] = [
-    ["Chicos por clase", "Máximo 5", "15-30"],
+    ["Chicos por clase", "1 (individual)", "15-30"],
     ["Clases totales", "10 clases", "4-8 clases"],
     ["Proyectos reales", "10 proyectos", "1-3 ejercicios"],
     ["Herramientas", "10+ IAs profesionales", "1-2 básicas"],
@@ -64,7 +64,7 @@ const projects = [
 
 const faqs = [
     { q: "¿Mi hijo necesita saber programar?", a: "No. El curso está diseñado para principiantes absolutos. Empezamos desde cero." },
-    { q: "¿Las clases son en vivo o grabadas?", a: "Son en vivo vía Zoom, con grupos de máximo 5 chicos. También quedan grabadas para ver después." },
+    { q: "¿Las clases son en vivo o grabadas?", a: "Son en vivo vía Zoom, 1 a 1 con cada chico. También quedan grabadas para ver después." },
     { q: "¿Qué pasa si mi hijo falta a una clase?", a: "Todas las clases quedan grabadas con acceso de por vida." },
     { q: "¿Cómo puedo pagar desde Argentina?", a: "Aceptamos PayPal, tarjetas de crédito internacionales y transferencia bancaria." },
 ]
@@ -162,10 +162,10 @@ export default function ArgentinaBlogGuiaPage() {
                             <h2>¿Qué debe incluir un buen curso de IA para chicos?</h2>
                             <p>No todos los cursos de IA son iguales. Estas son las características a buscar:</p>
 
-                            <h3>1. Grupos reducidos</h3>
+                            <h3>1. Clases 1 a 1</h3>
                             <p>
                                 Un curso con 20 o 30 chicos por clase no funciona. La IA es un tema complejo que requiere atención personalizada.
-                                Buscá programas con máximo 5 alumnos por grupo. Así cada chico puede hacer preguntas y recibir feedback individual.
+                                Buscá programas con clases 1 a 1, donde tu hijo tenga toda la atención del instructor y pueda hacer preguntas y recibir feedback individual.
                             </p>
 
                             <h3>2. Enfoque práctico</h3>
@@ -267,7 +267,7 @@ export default function ArgentinaBlogGuiaPage() {
                                 tendrán una ventaja enorme en el futuro.
                             </p>
                             <p>
-                                Lo más importante es elegir un curso con grupos reducidos, enfoque práctico y garantía de satisfacción. No te
+                                Lo más importante es elegir un curso con clases 1 a 1, enfoque práctico y garantía de satisfacción. No te
                                 dejes llevar solo por el precio: un curso barato con 30 chicos por clase no le va a servir a tu hijo.
                             </p>
                         </div>

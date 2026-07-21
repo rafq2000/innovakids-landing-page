@@ -477,7 +477,7 @@ export default function IAParaNinosPorEdadPage() {
                   <h3 className="text-lg font-bold text-[#2D3436] mb-2">&quot;No entiendo de tecnología, no puedo ayudarlo&quot;</h3>
                   <p className="text-gray-700">
                     No necesitas saber de tecnología. Nuestros mentores guian a cada estudiante en clases
-                    en vivo con grupos reducidos. Tu rol es apoyar y celebrar lo que tu hijo crea. Muchos
+                    en vivo 1 a 1. Tu rol es apoyar y celebrar lo que tu hijo crea. Muchos
                     padres nos dicen que terminan aprendiendo de sus propios hijos, lo cual fortalece
                     el vinculo familiar.
                   </p>
@@ -495,9 +495,9 @@ export default function IAParaNinosPorEdadPage() {
                 mostrar, compartir y del cual sentirse orgulloso.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Nuestras clases son en vivo, con grupos de máximo 6 estudiantes por mentor. Esto permite
-                una atención personalizada que es imposible en plataformas autoguiadas o en clases
-                masivas. Cada estudiante avanza a su ritmo, recibe retroalimentacion inmediata y
+                Nuestras clases son en vivo, 1 a 1, un mentor dedicado a cada estudiante. Esto permite
+                una atención completamente personalizada que es imposible en plataformas autoguiadas o en clases
+                grupales o masivas. Cada estudiante avanza a su ritmo, recibe retroalimentacion inmediata y
                 construye una relación de confianza con su mentor.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">

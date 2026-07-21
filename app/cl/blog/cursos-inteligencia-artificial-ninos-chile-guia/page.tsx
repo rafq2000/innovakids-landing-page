@@ -105,10 +105,10 @@ export default function GuiaIANinosChile() {
                 chatbots, videos, música. Cosas que pueda mostrar y usar.
               </p>
 
-              <h3 className="mt-8 text-2xl font-bold">3. Grupos Pequeños</h3>
+              <h3 className="mt-8 text-2xl font-bold">3. Clases 1 a 1</h3>
               <p>
                 Las clases masivas de 20 o 30 niños no funcionan para enseñar habilidades técnicas. Busca cursos con
-                máximo 5 niños por grupo para garantizar atención personalizada.
+                clases 1 a 1 para garantizar atención personalizada.
               </p>
 
               <h3 className="mt-8 text-2xl font-bold">4. Profesores con Experiencia Real</h3>
@@ -158,8 +158,8 @@ export default function GuiaIANinosChile() {
                   </thead>
                   <tbody>
                     <tr className="border-t">
-                      <td className="p-4">Niños por grupo</td>
-                      <td className="p-4 font-bold text-[#0039A6]">Máximo 5</td>
+                      <td className="p-4">Niños por clase</td>
+                      <td className="p-4 font-bold text-[#0039A6]">1 (individual)</td>
                       <td className="p-4 text-muted-foreground">15-30</td>
                     </tr>
                     <tr className="border-t">
@@ -335,7 +335,7 @@ export default function GuiaIANinosChile() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$297 USD • 10 clases • Máx 5 niños • Garantía de 10 días</p>
+              <p className="mt-4 text-sm text-white/60">$297 USD • 10 clases • 1 a 1 • Garantía de 10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

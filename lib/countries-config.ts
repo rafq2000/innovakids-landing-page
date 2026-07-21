@@ -72,7 +72,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇨🇱",
     metaTitle: "Curso de IA para Niños en Chile — Tu Hijo Crea Apps con IA",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Chile. Clases en vivo, máx 5 alumnos (8-17 años). 527 graduados en 9 países. 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Chile. Clases en vivo, clases 1 a 1 (8-17 años). 527 graduados en 9 países. 1ª clase gratis.",
     heroSubtext: "Familias en Santiago, Viña del Mar, Concepción y todo Chile ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. $25.000 CLP). Solo pagas el resto después de las 2 primeras clases."
   },
@@ -118,7 +118,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇲🇽",
     metaTitle: "Curso de IA para Niños en México — Tu Hijo Crea Apps con IA",
-    metaDescription: "Niños y adolescentes en México (8-17 años) crean videojuegos, apps y arte con Inteligencia Artificial. Clases en vivo, grupos de máx 5. Prueba gratis.",
+    metaDescription: "Niños y adolescentes en México (8-17 años) crean videojuegos, apps y arte con Inteligencia Artificial. Clases en vivo 1 a 1. Prueba gratis.",
     heroSubtext: "Familias en Ciudad de México, Guadalajara, Monterrey y todo México ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. $540 MXN). Solo pagas el resto después de las 2 primeras clases."
   },
@@ -166,7 +166,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇨🇴",
     metaTitle: "Inteligencia Artificial para Niños en Colombia · Clase Gratis",
-    metaDescription: "★4.9 · Tu hijo crea apps y videojuegos con IA. Clases en vivo para Colombia, máx. 5 alumnos (8-17 años). 527 graduados en 9 países. Primera clase gratis.",
+    metaDescription: "★4.9 · Tu hijo crea apps y videojuegos con IA. Clases en vivo para Colombia, clases 1 a 1 (8-17 años). 527 graduados en 9 países. Primera clase gratis.",
     heroSubtext: "Familias en Bogotá, Medellín, Cali, Barranquilla y toda Colombia ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. $113.000 COP). Solo pagas el resto después de las 2 primeras clases."
   },
@@ -214,7 +214,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇦🇷",
     metaTitle: "Inteligencia Artificial para Chicos en Argentina · Clase Gratis",
-    metaDescription: "★4.9 · Tu hijo crea apps y videojuegos con IA. Clases en vivo para Argentina, máx. 5 chicos (8-17 años). Pagá con Mercado Pago. Primera clase gratis.",
+    metaDescription: "★4.9 · Tu hijo crea apps y videojuegos con IA. Clases en vivo para Argentina, clases 1 a 1 (8-17 años). Pagá con Mercado Pago. Primera clase gratis.",
     heroSubtext: "Familias en Buenos Aires, Córdoba, Rosario y toda Argentina ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito o débito internacional. El cobro seguro en plataforma procesa sin fricción. La reserva es de $27 USD. Solo pagas el resto después de las 2 primeras clases."
   },
@@ -262,7 +262,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇪",
     metaTitle: "Inteligencia Artificial para Niños en Perú · Clase Gratis",
-    metaDescription: "★4.9 · Tu hijo crea apps y videojuegos con IA. Clases en vivo para Perú, máx. 5 alumnos (8-17 años). Paga con Yape o tarjeta. Primera clase gratis.",
+    metaDescription: "★4.9 · Tu hijo crea apps y videojuegos con IA. Clases en vivo para Perú, clases 1 a 1 (8-17 años). Paga con Yape o tarjeta. Primera clase gratis.",
     heroSubtext: "Familias en Lima, Arequipa, Trujillo y todo Perú ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. S/ 100). Solo pagas el resto después de las 2 primeras clases."
   },
@@ -310,7 +310,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇪🇸",
     metaTitle: "Extraescolar de IA para Niños en España — Crea Apps con IA",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en España. Extraescolar online en vivo, máx 5 alumnos (8-17 años). Paga con Bizum. 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en España. Extraescolar online en vivo, clases 1 a 1 (8-17 años). Paga con Bizum. 1ª clase gratis.",
     heroSubtext: "Familias en Madrid, Barcelona, Valencia, Sevilla y toda España ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. 25€). Tu hijo prueba las 2 primeras clases y solo si te convence pagas el resto."
   },
@@ -357,7 +357,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇪🇨",
     metaTitle: "Inteligencia Artificial para Niños en Ecuador · Clase Gratis",
-    metaDescription: "★4.9 · Tu hijo crea apps y videojuegos con IA. Clases en vivo para Ecuador, máx. 5 alumnos (8-17 años). Pago directo en USD. Primera clase gratis.",
+    metaDescription: "★4.9 · Tu hijo crea apps y videojuegos con IA. Clases en vivo para Ecuador, clases 1 a 1 (8-17 años). Pago directo en USD. Primera clase gratis.",
     heroSubtext: "Familias en Quito, Guayaquil, Cuenca y todo Ecuador ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de solo $27 USD. Después de las 2 primeras clases pagas el resto."
   },
@@ -401,7 +401,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇺🇾",
     metaTitle: "Curso de IA para Niños en Uruguay — Tu Hijo Crea Apps con IA",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Uruguay. Clases en vivo, máx 5 alumnos (8-17 años). Paga con Mercado Pago. 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Uruguay. Clases en vivo, clases 1 a 1 (8-17 años). Paga con Mercado Pago. 1ª clase gratis.",
     heroSubtext: "Familias en Montevideo, Punta del Este y todo Uruguay ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox $1.160 UYU). Después de las 2 primeras clases pagas el resto."
   },
@@ -445,7 +445,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇨🇷",
     metaTitle: "Curso de IA para Niños en Costa Rica — Crea Apps y Videojuegos",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Costa Rica. Clases en vivo, máx 5 alumnos (8-17 años). Paga con SINPE. 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Costa Rica. Clases en vivo, clases 1 a 1 (8-17 años). Paga con SINPE. 1ª clase gratis.",
     heroSubtext: "Familias en San José, Heredia, Alajuela y toda Costa Rica ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox ₡14.000 CRC)."
   },
@@ -489,7 +489,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇻🇪",
     metaTitle: "Curso de IA para Niños en Venezuela — Crea Apps y Videojuegos",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Venezuela. Clases en vivo, máx 5 alumnos (8-17 años). Pago en USD. 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Venezuela. Clases en vivo, clases 1 a 1 (8-17 años). Pago en USD. 1ª clase gratis.",
     heroSubtext: "Familias en Caracas, Maracaibo, Valencia y toda Venezuela ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito o débito internacional. Procesamos el cobro de forma segura y sin fricción. La reserva es de $27 USD."
   },
@@ -538,7 +538,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito de USA", "PayPal"],
     flag: "🇺🇸",
     metaTitle: "Curso de IA para Niños y Adolescentes en USA · Clase Gratis",
-    metaDescription: "Niños latinos (8-17) en Miami, LA, Houston y toda USA crean apps y videojuegos con IA. Clases en vivo 100% en español, grupos de 5. ★4.9 de 527 familias. 1ª clase gratis.",
+    metaDescription: "Niños latinos (8-17) en Miami, LA, Houston y toda USA crean apps y videojuegos con IA. Clases en vivo 1 a 1, 100% en español. ★4.9 de 527 familias. 1ª clase gratis.",
     heroSubtext: "Familias latinas en Miami, California, Texas y todo USA ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito de USA o PayPal. La reserva es de $27 USD."
   },
@@ -585,7 +585,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇦",
     metaTitle: "Curso de IA para Niños en Panamá — Crea Apps y Videojuegos",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Panamá. Clases en vivo, máx 5 alumnos (8-17 años). Pago en USD. 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Panamá. Clases en vivo, clases 1 a 1 (8-17 años). Pago en USD. 1ª clase gratis.",
     heroSubtext: "Familias en Ciudad de Panamá, Colón y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
@@ -629,7 +629,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇩🇴",
     metaTitle: "Curso de IA para Niños en R. Dominicana — Crea Apps con IA",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Rep. Dominicana. Clases en vivo, máx 5 alumnos (8-17 años). 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Rep. Dominicana. Clases en vivo, clases 1 a 1 (8-17 años). 1ª clase gratis.",
     heroSubtext: "Familias en Santo Domingo, Santiago y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
@@ -673,7 +673,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇭🇳",
     metaTitle: "Curso de IA para Niños en Honduras — Crea Apps y Videojuegos",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Honduras. Clases en vivo, máx 5 alumnos (8-17 años). 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Honduras. Clases en vivo, clases 1 a 1 (8-17 años). 1ª clase gratis.",
     heroSubtext: "Familias en Tegucigalpa, San Pedro Sula y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. L 660)."
   },
@@ -717,7 +717,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇸🇻",
     metaTitle: "Curso de IA para Niños en El Salvador — Crea Apps y Videojuegos",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en El Salvador. Clases en vivo, máx 5 alumnos (8-17 años). Pago en USD. 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en El Salvador. Clases en vivo, clases 1 a 1 (8-17 años). Pago en USD. 1ª clase gratis.",
     heroSubtext: "Familias en San Salvador, Santa Ana y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
@@ -761,7 +761,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇬🇹",
     metaTitle: "Curso de IA para Niños en Guatemala — Crean Apps con IA",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Guatemala. Clases en vivo, máx 5 alumnos (8-17 años). 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Guatemala. Clases en vivo, clases 1 a 1 (8-17 años). 1ª clase gratis.",
     heroSubtext: "Familias en Ciudad de Guatemala, Xela y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. Q 200)."
   },
@@ -805,7 +805,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇾",
     metaTitle: "Curso de IA para Niños en Paraguay — Crea Apps y Videojuegos",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Paraguay. Clases en vivo, máx 5 alumnos (8-17 años). 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Paraguay. Clases en vivo, clases 1 a 1 (8-17 años). 1ª clase gratis.",
     heroSubtext: "Familias en Asunción, Ciudad del Este y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. ₲ 200.000)."
   },
@@ -849,7 +849,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇧🇴",
     metaTitle: "Inteligencia Artificial para Niños en Bolivia · Clase Gratis",
-    metaDescription: "★4.9 · Tu hijo crea apps y videojuegos con IA. Clases en vivo para Bolivia, máx. 5 alumnos (8-17 años). 527 graduados en 9 países. Primera clase gratis.",
+    metaDescription: "★4.9 · Tu hijo crea apps y videojuegos con IA. Clases en vivo para Bolivia, clases 1 a 1 (8-17 años). 527 graduados en 9 países. Primera clase gratis.",
     heroSubtext: "Familias en La Paz, Santa Cruz y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. Bs 185)."
   },
@@ -893,7 +893,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇳🇮",
     metaTitle: "Curso de IA para Niños en Nicaragua — Crea Apps y Videojuegos",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Nicaragua. Clases en vivo, máx 5 alumnos (8-17 años). 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Nicaragua. Clases en vivo, clases 1 a 1 (8-17 años). 1ª clase gratis.",
     heroSubtext: "Familias en Managua, León y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD (aprox. C$ 980)."
   },
@@ -937,7 +937,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇵🇷",
     metaTitle: "Curso de IA para Niños en Puerto Rico — Crea Apps con IA",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Puerto Rico. Clases en vivo en español, máx 5 alumnos (8-17 años). 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Puerto Rico. Clases en vivo en español, clases 1 a 1 (8-17 años). 1ª clase gratis.",
     heroSubtext: "Familias en San Juan, Bayamón y toda la isla ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito, débito o PayPal. La reserva es de $27 USD."
   },
@@ -981,7 +981,7 @@ export const countriesConfig: Record<CountryCode, CountryConfig> = {
     paymentMethods: ["Tarjeta de crédito", "Tarjeta de débito", "PayPal"],
     flag: "🇬🇶",
     metaTitle: "Curso de IA para Niños en Guinea Ecuatorial — Crea Apps con IA",
-    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Guinea Ecuatorial. Clases en vivo en español, máx 5 alumnos (8-17 años). 1ª clase gratis.",
+    metaDescription: "Tu hijo crea apps, videojuegos y arte con IA en Guinea Ecuatorial. Clases en vivo en español, clases 1 a 1 (8-17 años). 1ª clase gratis.",
     heroSubtext: "Familias en Malabo, Bata y todo el país ya aprenden con InnovaKids.",
     faqPaymentAnswer: "Proceso global y seguro: paga en 1 clic con cualquier tarjeta de crédito internacional, débito o PayPal. La reserva es de $27 USD."
   }

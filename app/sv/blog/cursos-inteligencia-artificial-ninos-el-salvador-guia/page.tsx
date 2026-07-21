@@ -136,10 +136,10 @@ export default function GuiaIANinosElSalvador() {
                 videojuegos, música, arte digital. Cosas que pueda mostrar en el colegio y compartir con la familia.
               </p>
 
-              <h3 className="mt-8 text-2xl font-bold">3. Grupos Reducidos</h3>
+              <h3 className="mt-8 text-2xl font-bold">3. Clases 1 a 1</h3>
               <p>
-                Las clases con 20 o 30 niños no funcionan para enseñar habilidades técnicas. Busca cursos con máximo
-                5 niños por grupo para garantizar atención personalizada real.
+                Las clases con 20 o 30 niños no funcionan para enseñar habilidades técnicas. Busca cursos con clases
+                1 a 1, individuales, para garantizar atención personalizada real.
               </p>
 
               <h3 className="mt-8 text-2xl font-bold">4. Garantía de Satisfacción</h3>
@@ -189,8 +189,8 @@ export default function GuiaIANinosElSalvador() {
                   </thead>
                   <tbody>
                     <tr className="border-t">
-                      <td className="p-4">Niños por grupo</td>
-                      <td className="p-4 font-bold text-[#0047AB]">Máximo 5</td>
+                      <td className="p-4">Formato de clase</td>
+                      <td className="p-4 font-bold text-[#0047AB]">1 a 1 (individual)</td>
                       <td className="p-4 text-muted-foreground">15-30</td>
                     </tr>
                     <tr className="border-t">
@@ -412,10 +412,10 @@ export default function GuiaIANinosElSalvador() {
                 lenguaje natural, sin memorizar código complejo.
               </p>
 
-              <h3 className="mt-8 text-xl font-bold">¿Cuántos niños hay por grupo?</h3>
+              <h3 className="mt-8 text-xl font-bold">¿Cuántos niños hay por clase?</h3>
               <p>
-                Máximo 5 niños por grupo. Esto garantiza atención personalizada real, no clases masivas donde tu hijo
-                se pierde.
+                Las clases son 1 a 1: tu hijo es el único alumno con el profesor. Esto garantiza atención
+                personalizada real, no clases masivas donde se pierde entre otros niños.
               </p>
             </div>
 
@@ -442,7 +442,7 @@ export default function GuiaIANinosElSalvador() {
                   Consultar por WhatsApp
                 </Link>
               </div>
-              <p className="mt-4 text-sm text-white/60">$297 USD · 10 clases · Máx 5 niños · Garantía de 10 días</p>
+              <p className="mt-4 text-sm text-white/60">$297 USD · 10 clases · Clases 1 a 1 · Garantía de 10 días</p>
             </div>
 
             {/* LINKS RELACIONADOS */}

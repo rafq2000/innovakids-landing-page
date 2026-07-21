@@ -8,7 +8,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
     title: "Curso de Videojuegos con IA para Niños 8-17 años | InnovaKids",
     description:
-        "Tu hijo crea videojuegos con IA: Roblox, Unity y más. Curso online para niños y adolescentes 8-17 años. Grupos de 5. Primera clase gratis.",
+        "Tu hijo crea videojuegos con IA: Roblox, Unity y más. Curso online 1 a 1 para niños y adolescentes 8-17 años. Primera clase gratis.",
     keywords: [
         "curso crear videojuegos niños",
         "curso videojuegos con ia niños",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Curso de Videojuegos con IA para Niños y Adolescentes | InnovaKids",
         description:
-            "Tu hijo pasa de JUGAR a CREAR videojuegos con IA. Roblox, Unity, diseño de mundos y lógica. Grupos de 5, clases en vivo. Reserva tu clase gratis.",
+            "Tu hijo pasa de JUGAR a CREAR videojuegos con IA. Roblox, Unity, diseño de mundos y lógica. Clases 1 a 1 en vivo. Reserva tu clase gratis.",
         url: "https://www.innovakidslatam.com/curso-creacion-videojuegos-ninos",
         siteName: "InnovaKids",
         type: "website",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Curso de Videojuegos con IA para Niños 8-17 | InnovaKids",
         description:
-            "Tu hijo crea sus propios videojuegos con IA en 5 semanas. Roblox, Unity y más. Grupos de 5. Primera clase gratis.",
+            "Tu hijo crea sus propios videojuegos con IA en 5 semanas. Roblox, Unity y más. Clases 1 a 1. Primera clase gratis.",
         images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
     robots: { index: true, follow: true },

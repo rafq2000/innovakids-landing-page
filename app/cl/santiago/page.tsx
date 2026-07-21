@@ -13,7 +13,7 @@ const reservationDisplay = "$27 USD (aprox. $25.000 CLP)"
 export const metadata: Metadata = {
   title: "Curso de IA para Niños en Santiago | InnovaKids",
   description:
-    "Tu hijo en Santiago crea apps, videojuegos y proyectos reales con IA. Clases en vivo, máx 5 alumnos (8-17 años). Start-Up Chile, PUC, Chile Digital. 1.ª clase gratis.",
+    "Tu hijo en Santiago crea apps, videojuegos y proyectos reales con IA. Clases en vivo, 1 a 1 (8-17 años). Start-Up Chile, PUC, Chile Digital. 1.ª clase gratis.",
   alternates: {
     canonical: `https://www.innovakidslatam.com/${countryCode}/santiago`,
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Niños en Santiago | InnovaKids",
     description:
-      "Niños y adolescentes en Santiago aprenden a crear tecnología real con IA. Grupos reducidos, clases en vivo.",
+      "Niños y adolescentes en Santiago aprenden a crear tecnología real con IA. Clases 1 a 1, en vivo.",
     url: `https://www.innovakidslatam.com/${countryCode}/santiago`,
     type: "website",
     locale: "es_CL",
@@ -94,7 +94,7 @@ export default function SantiagoPage() {
                   text: "Las universidades más prestigiosas del país están en Santiago. Tu hijo empieza a pensar como ingeniero mucho antes de la universidad.",
                 },
                 {
-                  title: "Grupos de máx. 5 alumnos",
+                  title: "Clases 1 a 1",
                   text: "Atención personalizada en cada clase en vivo. El profesor conoce a cada alumno por nombre, ritmo e intereses.",
                 },
                 {

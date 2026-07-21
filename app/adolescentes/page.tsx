@@ -10,7 +10,7 @@ import { COHORT, SOCIAL_PROOF } from "@/lib/site-config"
 export const metadata: Metadata = {
   title: "Curso de IA para Adolescentes (13-17 años) · Crea Apps Reales | InnovaKids",
   description:
-    "Clases de inteligencia artificial para adolescentes de 13 a 17 años. Crea apps, portafolio y proyectos reales con IA en 5 semanas. Grupos de 5, en vivo. ★4.9. Clase gratis.",
+    "Clases de inteligencia artificial para adolescentes de 13 a 17 años. Crea apps, portafolio y proyectos reales con IA en 5 semanas. Clases 1 a 1, en vivo. ★4.9. Clase gratis.",
   keywords: [
     "cursos de ia para adolescentes",
     "curso ia adolescentes",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Adolescentes (13-17) · Apps Reales con IA | InnovaKids",
     description:
-      "Tu hijo adolescente crea apps, portafolio y proyectos reales con IA en 5 semanas. Grupos de 5, clases en vivo. ★4.9. Clase gratis.",
+      "Tu hijo adolescente crea apps, portafolio y proyectos reales con IA en 5 semanas. Clases 1 a 1 en vivo. ★4.9. Clase gratis.",
     url: "https://www.innovakidslatam.com/adolescentes",
     type: "website",
     locale: "es_419",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cursos de IA para Adolescentes 14-17 años | InnovaKids",
     description:
-      "Apps reales, portafolio universitario y startups con IA. Clases en vivo, grupos de 5, certificado. Clase gratis.",
+      "Apps reales, portafolio universitario y startups con IA. Clases en vivo 1 a 1, certificado. Clase gratis.",
     images: ["https://www.innovakidslatam.com/kids-creating-ai-projects.jpg"],
   },
   robots: { index: true, follow: true },
@@ -80,7 +80,7 @@ export default function AdolescentesPage() {
     "@context": "https://schema.org",
     "@type": "Course",
     "name": "Curso de IA para Adolescentes 14-17 | InnovaKids Pro",
-    "description": "Vibe Coding, apps reales y portafolio universitario para jóvenes 14-17 años. Clases en vivo, grupos de 5.",
+    "description": "Vibe Coding, apps reales y portafolio universitario para jóvenes 14-17 años. Clases 1 a 1, en vivo.",
     "url": "https://www.innovakidslatam.com/adolescentes",
     "image": "https://www.innovakidslatam.com/kids-creating-ai-projects.jpg",
     "provider": { "@type": "Organization", "name": "InnovaKids", "url": "https://www.innovakidslatam.com" },
@@ -157,7 +157,7 @@ export default function AdolescentesPage() {
 
             {/* Subtitulo */}
             <p className="text-lg md:text-xl leading-[1.45] text-[#FAF7EF]/70 max-w-[48ch] mb-8">
-              En 5 semanas lanzas tu primera app, armas un portafolio real y llegas a la universidad con ventaja. Clases en vivo, grupos de 5.
+              En 5 semanas lanzas tu primera app, armas un portafolio real y llegas a la universidad con ventaja. Clases en vivo 1 a 1.
             </p>
 
             {/* CTAs */}
@@ -191,7 +191,7 @@ export default function AdolescentesPage() {
               {[
                 ["Formato", "10 clases en vivo"],
                 ["Duración", "5 semanas"],
-                ["Grupos", "Máx. 5 jóvenes"],
+                ["Formato de clase", "1 a 1 (individual)"],
                 ["Edad", "14 - 17 años"],
                 ["Modalidad", "100% online"],
               ].map(([k, v], i) => (
@@ -321,7 +321,7 @@ export default function AdolescentesPage() {
                 <ul className="space-y-4 mb-8">
                   {[
                     "10 clases en vivo (5 semanas)",
-                    "Grupos de máximo 5 jóvenes",
+                    "Clases 1 a 1: tu hijo es el único alumno en cada sesión",
                     "Vibe Coding: crea apps reales publicadas",
                     "Portafolio universitario con proyectos documentados",
                     "Certificado digital verificable",

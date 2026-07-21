@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Curso de IA para Niños de 8 a 12 Años en Perú | InnovaKids",
   description:
-    "Tu hijo de 8 a 12 años crea arte, música, mini-juegos y su primer chatbot con Inteligencia Artificial. Clases en vivo, grupos de máx 5 alumnos. No necesita saber programar. 1ª clase gratis.",
+    "Tu hijo de 8 a 12 años crea arte, música, mini-juegos y su primer chatbot con Inteligencia Artificial. Clases en vivo, 1 a 1. No necesita saber programar. 1ª clase gratis.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/pe/curso-ia-ninos-8-12",
   },
@@ -84,7 +84,7 @@ export default function CursoIANinos812PE() {
                 "Vibe Coding simplificado: le habla a la IA en español y ella genera el código. Cero frustración.",
                 "Proyectos visuales y creativos: cada clase termina con algo que puede mostrar a su familia.",
                 "Feedback inmediato: ve el resultado en tiempo real, lo que mantiene su atención y motivación.",
-                "Grupos de máximo 5 alumnos: atención personalizada del instructor en cada sesión.",
+                "Clases 1 a 1: tu hijo es el único alumno, con atención 100% personalizada del instructor en cada sesión.",
                 "Clases de 60 minutos en vivo: la duración justa para mantener el foco sin agotarse.",
               ].map((text) => (
                 <div key={text} className="flex items-start gap-3 bg-white/80 rounded-xl p-4">
@@ -124,7 +124,7 @@ export default function CursoIANinos812PE() {
               {[
                 "Filtros de contenido activos: las herramientas de IA están configuradas para uso infantil seguro.",
                 "Instructor adulto en cada sesión: un profesional supervisa y guía a tu hijo en todo momento.",
-                "Grupos reducidos de máximo 5 niños: control total del entorno de aprendizaje.",
+                "Clases 1 a 1, individuales: control total del entorno de aprendizaje.",
                 "No necesita saber programar ni leer en inglés: todo es en español y con interfaz visual.",
               ].map((text) => (
                 <div key={text} className="flex items-start gap-3">

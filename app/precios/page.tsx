@@ -9,7 +9,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Precio Curso IA para Niños 2026 · $297 USD | InnovaKids",
   description:
-    "Curso completo de IA para niños 8-17 años: 10 clases en vivo, grupos de 5 alumnos, certificado y garantía 10 días. $297 USD pago único.",
+    "Curso completo de IA para niños 8-17 años: 10 clases en vivo 1 a 1, certificado y garantía 10 días. $297 USD pago único.",
   keywords: [
     "curso ia niños precio",
     "precio curso inteligencia artificial niños",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Precio Curso IA para Niños 2026 · $297 USD | InnovaKids",
     description:
-      "10 clases en vivo, grupos de 5 alumnos, certificado y garantía 10 días. $297 USD. Reserva tu cupo con $27 USD hoy.",
+      "10 clases en vivo 1 a 1, certificado y garantía 10 días. $297 USD. Reserva tu cupo con $27 USD hoy.",
     url: "https://www.innovakidslatam.com/precios",
     siteName: "InnovaKids",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Precio Curso IA para Niños 2026 · $297 USD | InnovaKids",
-    description: "10 clases en vivo, grupos de 5, certificado y garantía 10 días. Reserva con $27 USD.",
+    description: "10 clases en vivo 1 a 1, certificado y garantía 10 días. Reserva con $27 USD.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -46,7 +46,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Programa Vibe Explorer — Curso IA para Niños InnovaKids 2026",
-  description: "Curso online en vivo de IA para niños de 8-17 años. 10 clases, grupos de 5 alumnos, proyectos reales y certificado.",
+  description: "Curso online en vivo de IA para niños de 8-17 años. 10 clases 1 a 1, proyectos reales y certificado.",
   image: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
   brand: { "@type": "Brand", name: "InnovaKids" },
   aggregateRating: {
@@ -69,7 +69,7 @@ const jsonLd = {
 
 const INCLUDES = [
   "10 clases en vivo de 90 min (5 semanas)",
-  "Grupos de máximo 5 alumnos",
+  "Clases 1 a 1: tu hijo es el único alumno en cada sesión",
   "Grabaciones de todas las clases",
   "Kit de Bienvenida completo (8 documentos)",
   "200 prompts para tareas escolares",
@@ -187,7 +187,7 @@ export default function PreciosPage() {
               {[
                 {
                   q: "¿Por qué hay una reserva de $27 USD?",
-                  a: "La reserva garantiza el cupo de tu hijo en el grupo de máximo 5 alumnos. Se descuenta del precio total y es 100% reembolsable. El resto se cobra recién después de la 2ª clase, cuando ya verificaste que funciona.",
+                  a: "La reserva garantiza el cupo de tu hijo en sus clases 1 a 1. Se descuenta del precio total y es 100% reembolsable. El resto se cobra recién después de la 2ª clase, cuando ya verificaste que funciona.",
                 },
                 {
                   q: "¿Puedo pagar en mi moneda local?",

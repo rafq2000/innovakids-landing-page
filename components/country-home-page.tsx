@@ -141,7 +141,7 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
     "@context": "https://schema.org",
     "@type": "Course",
     name: `Curso de IA para ${country.childTerm} en ${country.name} - InnovaKids`,
-    description: `Clases online de inteligencia artificial para ${country.childTerm} ${country.demonym} de 8 a 17 años en ${country.name}. Grupos de máximo 5 alumnos. Metodología Vibe Coding. Garantía de 10 días.`,
+    description: `Clases online de inteligencia artificial para ${country.childTerm} ${country.demonym} de 8 a 17 años en ${country.name}. Clases 1 a 1. Metodología Vibe Coding. Garantía de 10 días.`,
     url: `https://www.innovakidslatam.com/${country.code}`,
     image: "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
     provider: {
@@ -229,7 +229,7 @@ export function CountryHomePage({ country }: CountryHomePageProps) {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     name: `InnovaKids ${country.name}`,
-    description: `Academia online de inteligencia artificial para ${country.childTerm} en ${country.name}. Grupos de 5 alumnos, clases en vivo, garantía de 10 días.`,
+    description: `Academia online de inteligencia artificial para ${country.childTerm} en ${country.name}. Clases 1 a 1 en vivo, garantía de 10 días.`,
     url: `https://www.innovakidslatam.com/${country.code}`,
     telephone: country.whatsapp,
     email: "innovakidslatam@gmail.com",

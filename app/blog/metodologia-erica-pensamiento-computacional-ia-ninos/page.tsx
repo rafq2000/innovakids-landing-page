@@ -244,8 +244,8 @@ export default function MetodologiaERICAPage() {
                                     ¿Quieres que tu hijo desarrolle estas habilidades?
                                 </h3>
                                 <p className="text-[15px] text-[#1A1714]/70 leading-relaxed max-w-[52ch]">
-                                    Agenda una clase gratis y conoce la Metodología ERICA en acción. Grupos de máximo 5 alumnos,
-                                    clases en vivo y 100% online.
+                                    Agenda una clase gratis y conoce la Metodología ERICA en acción. Clases 1 a 1, individuales,
+                                    en vivo y 100% online.
                                 </p>
                             </div>
                             <div className="md:col-span-5 flex flex-col gap-3 md:justify-self-end w-full md:w-auto">

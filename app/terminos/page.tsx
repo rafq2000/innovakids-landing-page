@@ -41,7 +41,7 @@ const sections: { id: string; label: string; body: React.ReactNode }[] = [
                 </p>
                 <ul className="mt-5 border-t border-[#1A1714]/12">
                     {[
-                        "Clases en vivo online con grupos reducidos de máximo 5 alumnos",
+                        "Clases en vivo online 1 a 1, individuales",
                         "Acceso de por vida a grabaciones de las clases",
                         "Material educativo y recursos descargables",
                         "Comunidad privada para alumnos",

@@ -211,10 +211,10 @@ export default function GuiaIANinosPeru() {
                 </p>
                 <div className="space-y-6">
                   <div className="rounded-xl border-l-4 border-[#D91023] bg-card p-6">
-                    <h3 className="mb-2 font-bold">Grupos Reducidos</h3>
+                    <h3 className="mb-2 font-bold">Clases 1 a 1</h3>
                     <p className="text-muted-foreground">
-                      Evita clases masivas de 20-30 niños. Busca programas con máximo 5 niños por grupo para atención
-                      personalizada.
+                      Evita clases masivas de 20-30 niños. Busca programas con clases 1 a 1, individuales, para
+                      atención personalizada real.
                     </p>
                   </div>
                   <div className="rounded-xl border-l-4 border-[#D91023] bg-card p-6">
@@ -252,8 +252,8 @@ export default function GuiaIANinosPeru() {
                   <div className="mb-8 grid gap-4 md:grid-cols-3">
                     <div className="rounded-xl bg-card p-4 text-center">
                       <Users className="mx-auto mb-2 h-8 w-8 text-[#D91023]" />
-                      <div className="font-bold">5 niños máx</div>
-                      <div className="text-sm text-muted-foreground">Por grupo</div>
+                      <div className="font-bold">1 a 1</div>
+                      <div className="text-sm text-muted-foreground">Alumno por clase</div>
                     </div>
                     <div className="rounded-xl bg-card p-4 text-center">
                       <Clock className="mx-auto mb-2 h-8 w-8 text-[#D91023]" />

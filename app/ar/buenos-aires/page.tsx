@@ -13,7 +13,7 @@ const reservationDisplay = "$27 USD (aprox. $29.000 ARS)"
 export const metadata: Metadata = {
   title: "Curso de IA para Chicos en Buenos Aires | InnovaKids",
   description:
-    "Tu hijo en Buenos Aires crea apps, videojuegos y proyectos reales con IA. Clases en vivo, máx 5 alumnos (8-17 años). Capital startup de LATAM, UBA, ITBA. 1.ª clase gratis.",
+    "Tu hijo en Buenos Aires crea apps, videojuegos y proyectos reales con IA. Clases en vivo, 1 a 1 (8-17 años). Capital startup de LATAM, UBA, ITBA. 1.ª clase gratis.",
   alternates: {
     canonical: `https://www.innovakidslatam.com/${countryCode}/buenos-aires`,
   },
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Chicos en Buenos Aires | InnovaKids",
     description:
-      "Chicos y adolescentes en Buenos Aires aprenden a crear tecnología real con IA. Grupos reducidos, clases en vivo.",
+      "Chicos y adolescentes en Buenos Aires aprenden a crear tecnología real con IA. Clases 1 a 1, en vivo.",
     url: `https://www.innovakidslatam.com/${countryCode}/buenos-aires`,
     type: "website",
     locale: "es_AR",
@@ -94,7 +94,7 @@ export default function BuenosAiresPage() {
                   text: "La ciudad cuenta con las universidades técnicas más prestigiosas de Argentina. Tu hijo empieza a pensar como ingeniero antes de entrar a la facu.",
                 },
                 {
-                  title: "Grupos de máx. 5 alumnos",
+                  title: "Clases 1 a 1",
                   text: "Atención personalizada en cada clase en vivo. El profe conoce a cada chico por nombre, ritmo e intereses.",
                 },
                 {

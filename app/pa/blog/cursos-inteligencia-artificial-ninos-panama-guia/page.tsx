@@ -106,7 +106,7 @@ export default function BlogCursosIANinosPanama() {
               </p>
               <ul>
                 <li>10 clases en vivo de aproximadamente 60 minutos cada una</li>
-                <li>Grupos de máximo 5 niños (atención personalizada)</li>
+                <li>Clases 1 a 1: tu hijo es el único alumno en cada sesión (atención personalizada)</li>
                 <li>Acceso a 10+ herramientas de IA profesionales</li>
                 <li>Proyectos reales publicables</li>
                 <li>Certificado de finalización</li>
@@ -125,8 +125,8 @@ export default function BlogCursosIANinosPanama() {
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Niños por grupo</td>
-                    <td className="text-green-600 font-bold">Máx 5</td>
+                    <td>Formato de clase</td>
+                    <td className="text-green-600 font-bold">1 a 1 (individual)</td>
                     <td>15-30</td>
                   </tr>
                   <tr>
@@ -150,7 +150,7 @@ export default function BlogCursosIANinosPanama() {
               <h2>Testimonios de Familias Panameñas</h2>
               <blockquote>
                 "Mi hijo Diego creó su primera app en 4 semanas. Los profesores son excelentes y realmente se preocupan
-                por cada niño. Los grupos pequeños hacen toda la diferencia."
+                por cada niño. Las clases 1 a 1 hacen toda la diferencia."
                 <footer>— María González, Ciudad de Panamá</footer>
               </blockquote>
 

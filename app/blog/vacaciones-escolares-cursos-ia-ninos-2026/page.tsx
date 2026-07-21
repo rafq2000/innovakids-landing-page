@@ -388,15 +388,15 @@ export default function VacacionesEscolaresCursosIAPage() {
                   InnovaKids
                 </Link>{" "}
                 ofrecemos programas de vacaciones diseñados específicamente para aprovechar al máximo
-                el tiempo libre de tu hijo. Todos nuestros cursos son en vivo, con mentores
-                especializados y grupos reducidos de máximo 6 estudiantes.
+                el tiempo libre de tu hijo. Todos nuestros cursos son en vivo, 1 a 1, con un mentor
+                especializado dedicado por completo a cada estudiante.
               </p>
 
               <div className="bg-[#4ECDC4]/10 p-6 rounded-xl border border-[#4ECDC4]/20 my-8">
                 <h3 className="text-xl font-bold text-[#2D3436] mb-4">Lo que Incluyen Nuestros Programas Vacacionales</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li>-- Clases en vivo por videollamada con mentor especializado en IA educativa</li>
-                  <li>-- Grupos de máximo 6 estudiantes para atención personalizada</li>
+                  <li>-- Clases 1 a 1 para atención completamente personalizada</li>
                   <li>-- Herramientas de IA profesionales configuradas y seguras para cada estudiante</li>
                   <li>-- Proyecto final completo que el nino puede mostrar a familia y amigos</li>
                   <li>-- Certificado de finalizacion del programa</li>
@@ -437,7 +437,7 @@ export default function VacacionesEscolaresCursosIAPage() {
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold">?</span>
-                    <span><strong>El grupo es reducido?</strong> — Máximo 6-8 estudiantes por clase. Mas que eso y la atención personalizada desaparece.</span>
+                    <span><strong>La clase es 1 a 1?</strong> — Ningun grupo, por reducido que sea, iguala la atención de un mentor dedicado por completo a un solo estudiante.</span>
                   </li>
                   <li className="flex items-start text-gray-700">
                     <span className="text-[#4ECDC4] mr-3 font-bold">?</span>

@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Curso de Videojuegos con IA para Niños en Colombia (8-17) | InnovaKids",
   description:
-    "Tu hijo crea videojuegos reales con Inteligencia Artificial en Colombia. Plataformas, aventuras y puzzles con Cursor, Replit y ChatGPT. Clases en vivo, máx 5 alumnos. 1ª clase gratis.",
+    "Tu hijo crea videojuegos reales con Inteligencia Artificial en Colombia. Plataformas, aventuras y puzzles con Cursor, Replit y ChatGPT. Clases en vivo, 1 a 1. 1ª clase gratis.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/co/curso-videojuegos-ia-ninos",
   },
@@ -120,7 +120,7 @@ export default function CursoVideojuegosIAColombia() {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">De jugador a creador en 5 semanas</h2>
             <p className="text-white/80 text-lg mb-8">
-              En solo 5 semanas, tu hijo pasa de jugar videojuegos a <strong className="text-white">crearlos</strong>. Clases en vivo con máximo 5 alumnos, profesores expertos y un proyecto final publicable.
+              En solo 5 semanas, tu hijo pasa de jugar videojuegos a <strong className="text-white">crearlos</strong>. Clases en vivo 1 a 1, profesores expertos y un proyecto final publicable.
             </p>
             <div className="bg-white/5 border border-[#C96342]/30 rounded-2xl p-8 mb-8">
               <p className="text-[#B5522F] text-sm font-semibold mb-2">Inversión</p>

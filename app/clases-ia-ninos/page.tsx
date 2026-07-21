@@ -8,9 +8,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   // 58 chars · keyword-first · age range · brand last
   title: "Clases de IA para Niños 8-17 años · En vivo | InnovaKids",
-  // 152 chars · proof points (4.9★, grupos de 5) + CTA
+  // 152 chars · proof points (4.9★, clases 1 a 1) + CTA
   description:
-    "Clases de IA para niños 8-17 años en vivo. Crea apps, videojuegos y arte con ChatGPT. Grupos de 5 alumnos, 4.9★ de 527 familias. Clase gratis.",
+    "Clases de IA para niños 8-17 años en vivo. Crea apps, videojuegos y arte con ChatGPT. Clases 1 a 1, 4.9★ de 527 familias. Clase gratis.",
   keywords: [
     "clases ia niños",
     "clases inteligencia artificial niños",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Clases de IA para Niños 8-17 años · Escuela #1 en LATAM | InnovaKids",
     description:
-      "Tu hijo pasa de consumidor a creador de tecnología. Clases de IA en vivo, grupos de 5 y proyectos reales desde el día 1. Clase gratis.",
+      "Tu hijo pasa de consumidor a creador de tecnología. Clases de IA en vivo 1 a 1 y proyectos reales desde el día 1. Clase gratis.",
     url: "https://www.innovakidslatam.com/clases-ia-ninos",
     siteName: "InnovaKids",
     type: "website",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Clases de IA para Niños 8-17 años · En vivo | InnovaKids",
     description:
-      "Clases de IA en vivo para niños 8-17 años. Crea apps, videojuegos y arte. Grupos de 5, 4.9★. Clase gratis.",
+      "Clases de IA en vivo para niños 8-17 años. Crea apps, videojuegos y arte. Clases 1 a 1, 4.9★. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -75,7 +75,7 @@ export default function ClasesIANinos() {
                   <div className="text-4xl mb-4">🎯</div>
                   <h3 className="text-2xl font-bold text-[#1A1714] mb-3">Atención Personalizada</h3>
                   <p className="text-[#5A5751]">
-                    Solo 5 alumnos por clase para garantizar que cada niño reciba atención individual
+                    Tu hijo es el único alumno en cada clase, con atención 100% individual
                   </p>
                 </div>
 
@@ -206,7 +206,7 @@ export default function ClasesIANinos() {
 
                 <blockquote className="bg-[#FAF7EF] p-6 rounded-lg border-l-4 border-[#C96342] italic">
                   <p className="mb-3 text-[#5A5751]">
-                    "Lo mejor son los grupos pequeños. Mi hija recibe atención constante y ha creado proyectos
+                    "Lo mejor son las clases 1 a 1. Mi hija recibe atención constante y ha creado proyectos
                     increíbles en solo 3 semanas."
                   </p>
                   <cite className="text-[#B5522F] not-italic font-semibold">- Roberto Sánchez, México 🇲🇽</cite>

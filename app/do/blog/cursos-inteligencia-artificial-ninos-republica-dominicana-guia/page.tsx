@@ -112,7 +112,7 @@ export default function BlogCursosIANinosRD() {
               </p>
               <ul>
                 <li>10 clases en vivo de aproximadamente 60 minutos cada una</li>
-                <li>Grupos de máximo 5 niños</li>
+                <li>Clases 1 a 1 (individuales)</li>
                 <li>Acceso a 10+ herramientas de IA profesionales</li>
                 <li>Proyectos reales publicables</li>
                 <li>Certificado de finalización</li>

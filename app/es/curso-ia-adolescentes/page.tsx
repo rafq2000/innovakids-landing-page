@@ -10,7 +10,7 @@ import { COHORT, SOCIAL_PROOF } from "@/lib/site-config"
 export const metadata: Metadata = {
   title: "Curso de IA para Adolescentes (13-17) en España | InnovaKids",
   description:
-    "Extraescolar de inteligencia artificial para adolescentes de 13 a 17 años en España. Tu hijo crea apps, portafolio universitario y proyectos reales con IA. Clases en vivo, grupos de 5. Clase gratis.",
+    "Extraescolar de inteligencia artificial para adolescentes de 13 a 17 años en España. Tu hijo crea apps, portafolio universitario y proyectos reales con IA. Clases en vivo, 1 a 1. Clase gratis.",
   keywords: [
     "extraescolar ia adolescentes españa",
     "curso ia adolescentes madrid",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Adolescentes (13-17) en España | InnovaKids",
     description:
-      "Extraescolar de IA para adolescentes. Tu hijo crea apps, portafolio y proyectos reales en 5 semanas. Grupos de 5, en vivo. Clase gratis.",
+      "Extraescolar de IA para adolescentes. Tu hijo crea apps, portafolio y proyectos reales en 5 semanas. Clases 1 a 1, en vivo. Clase gratis.",
     url: "https://www.innovakidslatam.com/es/curso-ia-adolescentes",
     type: "website",
     locale: "es_ES",
@@ -49,7 +49,7 @@ const benefits = [
   {
     icon: CheckCircle,
     title: "La mejor extraescolar tecnológica",
-    desc: "No es una extraescolar más. En 5 semanas tu hijo crea apps reales, aprende Vibe Coding y trabaja en grupos de máximo 5 jóvenes con un mentor dedicado.",
+    desc: "No es una extraescolar más. En 5 semanas tu hijo crea apps reales, aprende Vibe Coding y trabaja 1 a 1 con un mentor dedicado.",
   },
   {
     icon: ArrowRight,
@@ -103,7 +103,7 @@ export default function CursoIAAdolescentesEspanaPage() {
 
             <p className="text-lg md:text-xl leading-[1.5] text-[#FAF7EF]/70 max-w-[52ch] mb-8">
               En 5 semanas lanza su primera app, arma un portafolio profesional y llega a selectividad y a la universidad con ventaja real.
-              Clases en vivo, grupos de máximo 5 jóvenes. Desde Madrid, Barcelona, Valencia o cualquier ciudad de España.
+              Clases en vivo, 1 a 1. Desde Madrid, Barcelona, Valencia o cualquier ciudad de España.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-8">
@@ -187,7 +187,7 @@ export default function CursoIAAdolescentesEspanaPage() {
               {[
                 ["Formato", "10 clases en vivo"],
                 ["Duración", "5 semanas"],
-                ["Grupos", "Máx. 5 jóvenes"],
+                ["Clases", "1 a 1"],
                 ["Edad", "13 - 17 años"],
                 ["Precio", "$297 USD (≈273€)"],
               ].map(([k, v], i) => (

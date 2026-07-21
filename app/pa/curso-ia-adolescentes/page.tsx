@@ -10,7 +10,7 @@ import { COHORT, SOCIAL_PROOF } from "@/lib/site-config"
 export const metadata: Metadata = {
   title: "Curso de IA para Adolescentes (13-17) en Panamá | InnovaKids",
   description:
-    "Adolescentes panameños de 13 a 17 años crean apps, portafolio digital y proyectos reales con IA. Desde el Hub de las Américas, prepáralos para las oportunidades tech. Clases en vivo, grupos de 5. Clase gratis.",
+    "Adolescentes panameños de 13 a 17 años crean apps, portafolio digital y proyectos reales con IA. Desde el Hub de las Américas, prepáralos para las oportunidades tech. Clases en vivo, 1 a 1. Clase gratis.",
   keywords: [
     "curso ia adolescentes panamá",
     "curso ia adolescentes ciudad de panamá",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Adolescentes (13-17) en Panamá | InnovaKids",
     description:
-      "Tu hijo adolescente crea apps, portafolio y proyectos reales con IA en 5 semanas. Desde el Hub de las Américas. Grupos de 5, en vivo. Clase gratis.",
+      "Tu hijo adolescente crea apps, portafolio y proyectos reales con IA en 5 semanas. Desde el Hub de las Américas. Clases 1 a 1, en vivo. Clase gratis.",
     url: "https://www.innovakidslatam.com/pa/curso-ia-adolescentes",
     type: "website",
     locale: "es_PA",
@@ -101,7 +101,7 @@ export default function CursoIAAdolescentesPanamaPage() {
 
             <p className="text-lg md:text-xl leading-[1.5] text-[#FAF7EF]/70 max-w-[52ch] mb-8">
               En 5 semanas tu hijo lanza su primera app, arma un portafolio profesional y se prepara para las oportunidades tech que Panamá atrae.
-              Clases en vivo, grupos de máximo 5 jóvenes. Desde Ciudad de Panamá, Colón, David o cualquier ciudad.
+              Clases en vivo, 1 a 1. Desde Ciudad de Panamá, Colón, David o cualquier ciudad.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-8">
@@ -185,7 +185,7 @@ export default function CursoIAAdolescentesPanamaPage() {
               {[
                 ["Formato", "10 clases en vivo"],
                 ["Duración", "5 semanas"],
-                ["Grupos", "Máx. 5 jóvenes"],
+                ["Formato", "1 a 1, individual"],
                 ["Edad", "13 - 17 años"],
                 ["Precio", "$297 USD"],
               ].map(([k, v], i) => (

@@ -10,7 +10,7 @@ import { COHORT, SOCIAL_PROOF } from "@/lib/site-config"
 export const metadata: Metadata = {
   title: "Curso de IA para Adolescentes (13-17) en Ecuador | InnovaKids",
   description:
-    "Adolescentes ecuatorianos de 13 a 17 años crean apps, portafolio digital y proyectos reales con IA. Curso vacacional o regular, clases en vivo, grupos de 5. Pago en USD. Clase gratis.",
+    "Adolescentes ecuatorianos de 13 a 17 años crean apps, portafolio digital y proyectos reales con IA. Curso vacacional o regular, clases en vivo, 1 a 1. Pago en USD. Clase gratis.",
   keywords: [
     "curso ia adolescentes ecuador",
     "curso vacacional ia adolescentes quito",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Adolescentes (13-17) en Ecuador | InnovaKids",
     description:
-      "Tu hijo adolescente crea apps, portafolio y proyectos reales con IA en 5 semanas. Curso vacacional o regular. Grupos de 5, en vivo. Clase gratis.",
+      "Tu hijo adolescente crea apps, portafolio y proyectos reales con IA en 5 semanas. Curso vacacional o regular. Clases 1 a 1, en vivo. Clase gratis.",
     url: "https://www.innovakidslatam.com/ec/curso-ia-adolescentes",
     type: "website",
     locale: "es_EC",
@@ -102,7 +102,7 @@ export default function CursoIAAdolescentesEcuadorPage() {
 
             <p className="text-lg md:text-xl leading-[1.5] text-[#FAF7EF]/70 max-w-[52ch] mb-8">
               En 5 semanas lanza su primera app, arma un portafolio profesional y llega preparado a la universidad.
-              Clases en vivo, grupos de máximo 5 jóvenes. Ideal como curso vacacional en Quito, Guayaquil o Cuenca.
+              Clases en vivo, 1 a 1. Ideal como curso vacacional en Quito, Guayaquil o Cuenca.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center mb-8">
@@ -186,7 +186,7 @@ export default function CursoIAAdolescentesEcuadorPage() {
               {[
                 ["Formato", "10 clases en vivo"],
                 ["Duración", "5 semanas"],
-                ["Grupos", "Máx. 5 jóvenes"],
+                ["Clases", "1 a 1"],
                 ["Edad", "13 - 17 años"],
                 ["Precio", "$297 USD"],
               ].map(([k, v], i) => (

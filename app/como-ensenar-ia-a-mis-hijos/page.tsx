@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Cómo Enseñar IA a Mis Hijos 8-17 años · 2026 | InnovaKids",
   // 153 chars · proof + differentiator + CTA
   description:
-    "Cómo enseñar IA a tus hijos 8-17 años: guía paso a paso probada por 527 familias en 9 países. Método activo, grupos de 5 y clases en vivo. Clase gratis.",
+    "Cómo enseñar IA a tus hijos 8-17 años: guía paso a paso probada por 527 familias en 9 países. Método activo, clases 1 a 1 en vivo. Clase gratis.",
   keywords: [
     "cómo enseñar ia a mis hijos",
     "cómo aprender ia",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cómo Enseñar IA a Mis Hijos: Guía Completa 2026 | InnovaKids",
     description:
-      "Tu hijo pasa de consumidor a creador. Guía probada por 527 familias en 9 países, con grupos de 5 y clases en vivo. Clase gratis.",
+      "Tu hijo pasa de consumidor a creador. Guía probada por 527 familias en 9 países, con clases 1 a 1 en vivo. Clase gratis.",
     url: "https://www.innovakidslatam.com/como-ensenar-ia-a-mis-hijos",
     siteName: "InnovaKids",
     type: "article",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cómo Enseñar IA a Mis Hijos 8-17 años · 2026 | InnovaKids",
     description:
-      "Guía probada por 527 familias en 9 países. Método activo, grupos de 5 y clases en vivo. Clase gratis.",
+      "Guía probada por 527 familias en 9 países. Método activo, clases 1 a 1 en vivo. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -190,13 +190,13 @@ export default function ComoEnsenarIAPage() {
                 4
               </div>
               <div className="flex-1">
-                <h3 className="text-3xl font-display text-[#1A1714] mb-4">Grupos Pequeños Son Clave</h3>
+                <h3 className="text-3xl font-display text-[#1A1714] mb-4">Las Clases 1 a 1 Son Clave</h3>
                 <p className="text-xl text-[#3B3630] mb-6">
-                  Tu hijo necesita atención personalizada. En grupos de 30+ nunca recibirá feedback real. Los grupos de
-                  5 alumnos garantizan que cada niño avance a su ritmo.
+                  Tu hijo necesita atención personalizada. En grupos de 30+ nunca recibirá feedback real. Las clases
+                  1 a 1 garantizan que avance a su propio ritmo, sin compartir el tiempo del instructor con nadie más.
                 </p>
                 <div className="bg-[#F5F1E8] p-6 rounded-sm border border-[#1A1714]/12">
-                  <p className="text-[#B5522F] font-semibold mb-2">Por qué máximo 5 alumnos:</p>
+                  <p className="text-[#B5522F] font-semibold mb-2">Por qué clases 1 a 1:</p>
                   <ul className="text-[#3B3630] space-y-2">
                     <li>- Atención personalizada del instructor</li>
                     <li>- Feedback inmediato en cada proyecto</li>
@@ -268,7 +268,7 @@ export default function ComoEnsenarIAPage() {
               <div className="w-16 h-16 rounded-sm bg-[#C96342] flex items-center justify-center mb-6">
                 <Users className="w-8 h-8 text-[#FAF7EF]" />
               </div>
-              <h3 className="text-2xl font-display text-[#1A1714] mb-4">Grupos de 5 Máximo</h3>
+              <h3 className="text-2xl font-display text-[#1A1714] mb-4">Clases 1 a 1</h3>
               <p className="text-[#6B645B] text-lg">
                 Tu hijo recibe atención personalizada en cada clase. El instructor conoce su nombre, sus proyectos y sus
                 desafíos específicos.

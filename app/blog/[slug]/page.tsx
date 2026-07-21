@@ -52,7 +52,7 @@ const blogPosts: Record<string, any> = {
       </ul>
 
       <h2>Recursos recomendados</h2>
-      <p>En InnovaKids ofrecemos un programa estructurado de 4 semanas donde los niños aprenden IA de forma práctica, en grupos reducidos de 5 alumnos, con instructores expertos que guían cada paso del proceso.</p>
+      <p>En InnovaKids ofrecemos un programa estructurado de 4 semanas donde los niños aprenden IA de forma práctica, en clases 1 a 1 individuales, con instructores expertos que guían cada paso del proceso.</p>
 
       <p>Si quieres que tu hijo comience su viaje en el mundo de la IA con la mejor guía y metodología, <a href="/#inversion">conoce nuestro programa aquí</a>.</p>
     `,
@@ -121,7 +121,7 @@ const blogPosts: Record<string, any> = {
       <h2>Conclusión</h2>
       <p>La IA en la educación infantil no es el futuro, es el presente. Los niños que tienen acceso a estas herramientas desarrollan habilidades cognitivas, creativas y técnicas que los preparan para un mundo en constante cambio.</p>
 
-      <p>En InnovaKids, aprovechamos todos estos beneficios en nuestro programa diseñado específicamente para niños de 8 a 17 años. Con grupos reducidos de 5 alumnos y metodología práctica, garantizamos que tu hijo obtenga todos estos beneficios. <a href="/#inversion">Descubre cómo tu hijo puede beneficiarse</a>.</p>
+      <p>En InnovaKids, aprovechamos todos estos beneficios en nuestro programa diseñado específicamente para niños de 8 a 17 años. Con clases 1 a 1 individuales y metodología práctica, garantizamos que tu hijo obtenga todos estos beneficios. <a href="/#inversion">Descubre cómo tu hijo puede beneficiarse</a>.</p>
     `,
   },
   "chatgpt-para-ninos-guia-padres": {
@@ -791,7 +791,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
                 ¿Quieres que tu hijo aprenda IA con instructores reales?
               </h3>
               <p className="text-lg text-[#1A1714]/70 leading-relaxed max-w-2xl mb-7 font-light">
-                Programa de 4 semanas. Grupos reducidos de máximo 5 alumnos. Clases en vivo con instructores expertos.
+                Programa de 4 semanas. Clases 1 a 1, individuales. Clases en vivo con instructores expertos.
                 Reserva con solo USD $27 y garantía de devolución a los 10 días.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">

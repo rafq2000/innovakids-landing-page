@@ -10,7 +10,7 @@ import { Check, Shield, ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Clases de IA Online para Niños · Programa Vibe Explorer | InnovaKids",
   description:
-    "Clases de Inteligencia Artificial online para niños y adolescentes (8-17): programa Vibe Explorer completo, temario de 10 clases en vivo, grupos de 5 alumnos.",
+    "Clases de Inteligencia Artificial online para niños y adolescentes (8-17): programa Vibe Explorer completo, temario de 10 clases en vivo 1 a 1.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/cursos/inteligencia-artificial",
     languages: generateHreflangs("global", "/cursos/inteligencia-artificial"),
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Niños y Adolescentes · InnovaKids",
     description:
-      "Tu hijo crea música, arte, historias y proyectos reales con IA en 5 semanas. 10 clases en vivo, grupos de 5. Inicio semana del 10 de agosto.",
+      "Tu hijo crea música, arte, historias y proyectos reales con IA en 5 semanas. 10 clases en vivo 1 a 1. Inicio semana del 10 de agosto.",
     url: "https://www.innovakidslatam.com/cursos/inteligencia-artificial",
     siteName: "InnovaKids",
     type: "website",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Curso de IA para Niños 8-17 años | InnovaKids",
-    description: "Tu hijo crea con IA en 5 semanas. Grupos de 5. Inicio semana del 10 de agosto.",
+    description: "Tu hijo crea con IA en 5 semanas. Clases 1 a 1. Inicio semana del 10 de agosto.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
   robots: { index: true, follow: true },
@@ -54,7 +54,7 @@ const CLASES = [
 
 const INCLUDES = [
   "10 clases en vivo de 90 min (5 semanas)",
-  "Grupos de máximo 5 alumnos",
+  "Clases 1 a 1: tu hijo es el único alumno en cada sesión",
   "Grabaciones de todas las clases",
   "Kit de Bienvenida completo (8 documentos)",
   "200 prompts para tareas escolares",
@@ -105,7 +105,7 @@ export default function CursoIANinos() {
               {[
                 { num: "5", label: "Semanas" },
                 { num: "10", label: "Clases en vivo" },
-                { num: "5", label: "Alumnos por grupo" },
+                { num: "1", label: "Alumno por clase" },
                 { num: "8–17", label: "Años de edad" },
               ].map(({ num, label }) => (
                 <div key={label} className="py-6 px-4 text-center">
@@ -240,7 +240,7 @@ export default function CursoIANinos() {
           <div className="container mx-auto max-w-2xl text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-3">¿Listo para reservar el cupo?</h2>
             <p className="text-muted-foreground mb-6">
-              Inicio semana del 10 de agosto · Las plazas se agotan rápido · Solo 5 alumnos por grupo
+              Inicio semana del 10 de agosto · Las plazas se agotan rápido · Clases 1 a 1
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button size="lg" className="font-bold" asChild>

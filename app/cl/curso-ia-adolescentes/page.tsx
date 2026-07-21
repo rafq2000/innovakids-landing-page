@@ -8,7 +8,7 @@ import { CheckCircle, Target, ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Curso de IA para Adolescentes (13-17 años) en Chile | InnovaKids",
   description:
-    "1ª clase gratis. Adolescentes chilenos crean apps, videojuegos y portfolio profesional con Inteligencia Artificial. Clases en vivo, máx 5 alumnos. Preparación para la PSU/PAES, universidad y primer empleo tech.",
+    "1ª clase gratis. Adolescentes chilenos crean apps, videojuegos y portfolio profesional con Inteligencia Artificial. Clases en vivo, 1 a 1. Preparación para la PSU/PAES, universidad y primer empleo tech.",
   keywords: [
     "curso ia adolescentes chile",
     "inteligencia artificial para adolescentes santiago",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Adolescentes (13-17) en Chile | InnovaKids",
     description:
-      "Tu hijo adolescente crea apps reales, videojuegos y un portfolio profesional con IA en 5 semanas. Clases en vivo, grupos de 5. 1ª clase gratis.",
+      "Tu hijo adolescente crea apps reales, videojuegos y un portfolio profesional con IA en 5 semanas. Clases en vivo, 1 a 1. 1ª clase gratis.",
     url: "https://www.innovakidslatam.com/cl/curso-ia-adolescentes",
     type: "website",
     locale: "es_CL",
@@ -180,8 +180,8 @@ export default function CursoIAAdolescentesChile() {
                   desc: "Cada módulo conecta con oportunidades reales: startups, empresas tech, trabajo remoto internacional y carreras universitarias en demanda.",
                 },
                 {
-                  label: "Grupos exclusivos de adolescentes",
-                  desc: "Máximo 5 alumnos entre 13 y 17 años. El ritmo, los ejemplos y la dinámica son para jóvenes, no para niños pequeños.",
+                  label: "Contenido exclusivo para adolescentes",
+                  desc: "Clases 1 a 1 entre 13 y 17 años. El ritmo, los ejemplos y la dinámica son para jóvenes, no para niños pequeños.",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
@@ -210,7 +210,7 @@ export default function CursoIAAdolescentesChile() {
                 </thead>
                 <tbody className="bg-white">
                   {[
-                    ["Grupos reducidos (máx 5)", "Sí", "15-30 alumnos"],
+                    ["Clases 1 a 1 (individuales)", "Sí", "15-30 alumnos"],
                     ["Clases en vivo con profesor", "Sí", "Videos pregrabados"],
                     ["IA generativa y Vibe Coding 2026", "Sí", "Scratch o robótica"],
                     ["Portfolio profesional publicado", "Sí", "Diploma genérico"],

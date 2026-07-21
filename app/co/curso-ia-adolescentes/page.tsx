@@ -8,7 +8,7 @@ import { CheckCircle, Target, ArrowRight } from "lucide-react"
 export const metadata: Metadata = {
   title: "Curso de IA para Adolescentes (13-17 años) en Colombia | InnovaKids",
   description:
-    "1ª clase gratis. Adolescentes colombianos crean apps, videojuegos y portfolio profesional con Inteligencia Artificial. Clases en vivo, máx 5 alumnos. Ideal para prepararse para universidades y el mercado tech.",
+    "1ª clase gratis. Adolescentes colombianos crean apps, videojuegos y portfolio profesional con Inteligencia Artificial. Clases en vivo, 1 a 1. Ideal para prepararse para universidades y el mercado tech.",
   keywords: [
     "curso ia adolescentes colombia",
     "inteligencia artificial para adolescentes bogotá",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Adolescentes (13-17) en Colombia | InnovaKids",
     description:
-      "Tu hijo adolescente crea apps, videojuegos y un portfolio profesional con IA en 5 semanas. Clases en vivo, grupos de 5. 1ª clase gratis.",
+      "Tu hijo adolescente crea apps, videojuegos y un portfolio profesional con IA en 5 semanas. Clases en vivo, 1 a 1. 1ª clase gratis.",
     url: "https://www.innovakidslatam.com/co/curso-ia-adolescentes",
     type: "website",
     locale: "es_CO",
@@ -176,8 +176,8 @@ export default function CursoIAAdolescentesColombia() {
                   desc: "Exploramos carreras tech, cómo armar un portfolio para la universidad y qué habilidades buscan las empresas colombianas e internacionales.",
                 },
                 {
-                  label: "Compañeros de su edad",
-                  desc: "Grupos exclusivos de 13 a 17 años, máximo 5 por clase. Aprenden entre pares con intereses similares y ritmo adecuado.",
+                  label: "Contenido para su edad",
+                  desc: "Clases 1 a 1, exclusivas para chicos de 13 a 17 años. Ritmo, ejemplos y dinámica pensados para adolescentes.",
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
@@ -206,7 +206,7 @@ export default function CursoIAAdolescentesColombia() {
                 </thead>
                 <tbody className="bg-white">
                   {[
-                    ["Grupos reducidos (máx 5)", "Sí", "15-30 alumnos"],
+                    ["Clases 1 a 1 (individuales)", "Sí", "15-30 alumnos"],
                     ["Clases en vivo con profesor", "Sí", "Videos pregrabados"],
                     ["IA generativa y Vibe Coding", "Sí", "Scratch o robótica básica"],
                     ["Portfolio publicado al terminar", "Sí", "Solo certificado"],

@@ -77,7 +77,7 @@ const faqs = [
     },
     {
         q: "¿Para qué edad es Vibe Director?",
-        a: "Para niños y adolescentes de 8 a 17 años que ya completaron Vibe Explorer. Los grupos se separan por edad y son de máximo 5 alumnos, con clases en vivo.",
+        a: "Para niños y adolescentes de 8 a 17 años que ya completaron Vibe Explorer. Las clases son 1 a 1, en vivo, con proyectos y ritmo adaptados a la edad de cada estudiante.",
     },
     {
         q: "¿Cuánto dura el curso?",

@@ -8,7 +8,7 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Extraescolar de IA para Niños en Madrid | InnovaKids",
   description:
-    "Tu hijo aprende Inteligencia Artificial desde Madrid. Clases online en vivo, máx 5 alumnos (8-17 años). Horarios de extraescolar 16:00-21:00. 1ª clase gratis.",
+    "Tu hijo aprende Inteligencia Artificial desde Madrid. Clases online en vivo, 1 a 1 (8-17 años). Horarios de extraescolar 16:00-21:00. 1ª clase gratis.",
   alternates: {
     canonical: "https://www.innovakidslatam.com/es/madrid",
   },
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Extraescolar de IA para Niños en Madrid | InnovaKids",
     description:
-      "Tu hijo aprende Inteligencia Artificial desde Madrid. Clases online en vivo, máx 5 alumnos (8-17 años). Horarios de extraescolar 16:00-21:00. 1ª clase gratis.",
+      "Tu hijo aprende Inteligencia Artificial desde Madrid. Clases online en vivo, 1 a 1 (8-17 años). Horarios de extraescolar 16:00-21:00. 1ª clase gratis.",
     url: "https://www.innovakidslatam.com/es/madrid",
     type: "website",
     siteName: "InnovaKids",
@@ -53,7 +53,7 @@ export default function MadridPage() {
             necesita un ordenador y conexión a internet.
           </p>
           <p className="text-[#5A5751] mb-8">
-            Horarios de extraescolar: <strong className="text-[#2F2F2C]">16:00 a 21:00 h</strong> (hora de Madrid). Grupos reducidos de máximo 5 alumnos.
+            Horarios de extraescolar: <strong className="text-[#2F2F2C]">16:00 a 21:00 h</strong> (hora de Madrid). Clases 1 a 1 (individuales).
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

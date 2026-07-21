@@ -171,7 +171,7 @@ const blogPosts = [
   {
     slug: "innovakids-vs-code-org-comparativa-2026",
     title: "InnovaKids vs Code.org (2026): ¿Cuál es Mejor para Tu Hijo?",
-    excerpt: "Comparativa honesta entre Code.org (gratuito, autoguiado) e InnovaKids (clases en vivo, IA, grupos reducidos). Descubre cuál se adapta mejor a tu hijo.",
+    excerpt: "Comparativa honesta entre Code.org (gratuito, autoguiado) e InnovaKids (clases en vivo 1 a 1, IA). Descubre cuál se adapta mejor a tu hijo.",
     image: "/children-using-ai-educational-tools.jpg",
     date: "2026-04-01",
     category: "Comparativa",

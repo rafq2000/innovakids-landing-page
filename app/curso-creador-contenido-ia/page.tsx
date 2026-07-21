@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Curso de Creador de Contenido con IA para Niños y Adolescentes | InnovaKids",
         description:
-            "Tu hijo pasa de CONSUMIR a CREAR contenido pro con IA: YouTube, cine, redes sociales. Clases en vivo, grupos de 5. Reserva tu clase gratis.",
+            "Tu hijo pasa de CONSUMIR a CREAR contenido pro con IA: YouTube, cine, redes sociales. Clases en vivo 1 a 1. Reserva tu clase gratis.",
         url: "https://www.innovakidslatam.com/curso-creador-contenido-ia",
         siteName: "InnovaKids",
         type: "website",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Curso de Contenido con IA para Niños 8-17 | InnovaKids",
         description:
-            "Tu hijo crea contenido pro para YouTube y TikTok con IA en 5 semanas. Grupos de 5. Clase gratis de prueba.",
+            "Tu hijo crea contenido pro para YouTube y TikTok con IA en 5 semanas. Clases 1 a 1. Clase gratis de prueba.",
         images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
     robots: { index: true, follow: true },

@@ -43,7 +43,7 @@ const forYes = [
   "Tu hijo tiene entre 8 y 17 años y todavía no sabe usar la IA.",
   "Quieres que entienda cómo funciona la IA — no que solo copie respuestas.",
   "Buscas resultados concretos en 5 semanas, con clases en vivo.",
-  "Valoras la atención personalizada: máx. 5 niños por grupo.",
+  "Valoras la atención personalizada: clases 1 a 1, individuales.",
   "Prefieres invertir hoy en vez de pagar más (en tiempo y dinero) después.",
 ]
 

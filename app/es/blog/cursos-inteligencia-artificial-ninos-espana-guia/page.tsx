@@ -146,10 +146,10 @@ export default function GuiaCompletaEspana() {
                   primer día: crear cómics con IA, componer música, programar aplicaciones, diseñar videojuegos...
                 </p>
 
-                <h3 className="mt-8 text-xl font-bold">2. Grupos Reducidos</h3>
+                <h3 className="mt-8 text-xl font-bold">2. Clases 1 a 1</h3>
                 <p>
                   Evita cursos con 20 o 30 niños por clase. La atención personalizada es fundamental para que tu hijo
-                  avance a su ritmo y resuelva sus dudas. Lo ideal son grupos de máximo 5 alumnos.
+                  avance a su ritmo y resuelva sus dudas. Lo ideal son clases 1 a 1 (individuales).
                 </p>
 
                 <h3 className="mt-8 text-xl font-bold">3. Herramientas Actualizadas</h3>
@@ -184,9 +184,9 @@ export default function GuiaCompletaEspana() {
                         <td className="p-4">Grabado</td>
                       </tr>
                       <tr className="border-b">
-                        <td className="p-4 font-medium">Alumnos por grupo</td>
-                        <td className="p-4 text-[#C60B1E] font-bold">Máx 5</td>
-                        <td className="p-4">15-25</td>
+                        <td className="p-4 font-medium">Formato de clase</td>
+                        <td className="p-4 text-[#C60B1E] font-bold">1 a 1</td>
+                        <td className="p-4">Grupos de 15-25</td>
                         <td className="p-4">Ilimitado</td>
                       </tr>
                       <tr className="border-b">
@@ -295,8 +295,8 @@ export default function GuiaCompletaEspana() {
                 </p>
 
                 <p>
-                  En InnovaKids ofrecemos exactamente eso: un programa de 10 clases en vivo, con grupos de máximo 5
-                  niños, metodología 100% práctica, y garantía de devolución de 10 días. Si quieres que tu hijo sea
+                  En InnovaKids ofrecemos exactamente eso: un programa de 10 clases en vivo, 1 a 1, metodología 100%
+                  práctica, y garantía de devolución de 10 días. Si quieres que tu hijo sea
                   creador de tecnología en lugar de solo consumidor, agenda una evaluación gratuita.
                 </p>
               </div>

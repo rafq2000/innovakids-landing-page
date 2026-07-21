@@ -25,7 +25,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     cl: {
         h2: "IA para Niños en Chile: Guía para Padres 2026",
         intro:
-            "Llevamos +2 años formando niños y adolescentes chilenos de 8 a 17 años. Clases online en vivo, grupos de 5 alumnos y 10 días de garantía.",
+            "Llevamos +2 años formando niños y adolescentes chilenos de 8 a 17 años. Clases online en vivo, 1 a 1, y 10 días de garantía.",
         sections: [
             {
                 h3: "Por Qué Aprender IA Ahora en Chile",
@@ -33,7 +33,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "100% online y en vivo. Horarios flexibles que se adaptan a tu rutina familiar.\n\nCada grupo tiene máximo 5 alumnos -- atención personalizada real. Pagos en CLP con Webpay, Mercado Pago, tarjeta de crédito/débito o transferencia bancaria.",
+                text: "100% online y en vivo. Horarios flexibles que se adaptan a tu rutina familiar.\n\nCada clase es 1 a 1 -- atención personalizada real. Pagos en CLP con Webpay, Mercado Pago, tarjeta de crédito/débito o transferencia bancaria.",
             },
             {
                 h3: "Qué Crea Tu Hijo en 5 Semanas",
@@ -48,7 +48,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     mx: {
         h2: "IA para Niños en México: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma niños mexicanos de 8 a 17 años en IA. Grupos de máximo 5 alumnos, clases en vivo y pago con OXXO, SPEI o tarjeta en pesos mexicanos.",
+            "InnovaKids forma niños mexicanos de 8 a 17 años en IA. Clases 1 a 1, en vivo y pago con OXXO, SPEI o tarjeta en pesos mexicanos.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en México",
@@ -71,7 +71,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     co: {
         h2: "IA para Niños en Colombia: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma niños colombianos de 8 a 17 años en IA. Grupos de 5 alumnos, clases en vivo y pago con Nequi, Daviplata o PSE en pesos colombianos.",
+            "InnovaKids forma niños colombianos de 8 a 17 años en IA. Clases 1 a 1, en vivo y pago con Nequi, Daviplata o PSE en pesos colombianos.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Colombia",
@@ -83,7 +83,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Proyectos Reales de Alumnos Colombianos",
-                text: "Nuestros alumnos han creado cuentas de TikTok con arte generativo, apps para organizar sus tareas y música original compuesta con IA.\n\nLa metodología Vibe Coding es 100% práctica desde la primera clase. Las familias destacan la atención personalizada por el tamaño reducido de los grupos.",
+                text: "Nuestros alumnos han creado cuentas de TikTok con arte generativo, apps para organizar sus tareas y música original compuesta con IA.\n\nLa metodología Vibe Coding es 100% práctica desde la primera clase. Las familias destacan la atención personalizada de las clases 1 a 1.",
             },
             {
                 h3: "Preguntas Frecuentes en Colombia",
@@ -94,7 +94,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     ar: {
         h2: "IA para Chicos en Argentina: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma chicos argentinos de 8 a 17 años en IA. Grupos de 5 alumnos, clases en vivo y pago con Mercado Pago en ARS.",
+            "InnovaKids forma chicos argentinos de 8 a 17 años en IA. Clases 1 a 1, en vivo y pago con Mercado Pago en ARS.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Argentina",
@@ -102,7 +102,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "Clases online en vivo para chicos de todo el país. Usamos el vocabulario argentino: decimos 'chicos', no 'niños'.\n\nPagos con Mercado Pago, transferencia CBU o PayPal. Grupos de 5 chicos para máxima atención.",
+                text: "Clases online en vivo para chicos de todo el país. Usamos el vocabulario argentino: decimos 'chicos', no 'niños'.\n\nPagos con Mercado Pago, transferencia CBU o PayPal. Clases 1 a 1 para máxima atención.",
             },
             {
                 h3: "Resultados Reales",
@@ -117,7 +117,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     pe: {
         h2: "IA para Niños en Perú: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma niños peruanos de 8 a 17 años en IA. Grupos de 5 alumnos, clases en vivo y pago con Yape o Plin en soles.",
+            "InnovaKids forma niños peruanos de 8 a 17 años en IA. Clases 1 a 1, en vivo y pago con Yape o Plin en soles.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Perú",
@@ -125,7 +125,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "100% online y en vivo. Solo necesitas internet -- da igual si estás en Lima, Arequipa, Cusco o cualquier provincia.\n\nPagos con Yape, Plin, tarjeta de crédito, PayPal o Mercado Pago. Grupos de máximo 5 alumnos.",
+                text: "100% online y en vivo. Solo necesitas internet -- da igual si estás en Lima, Arequipa, Cusco o cualquier provincia.\n\nPagos con Yape, Plin, tarjeta de crédito, PayPal o Mercado Pago. Cada clase es 1 a 1.",
             },
             {
                 h3: "Proyectos Reales de Alumnos Peruanos",
@@ -140,7 +140,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     es: {
         h2: "IA para Niños en España: La Mejor Extraescolar Tech 2026",
         intro:
-            "InnovaKids es la extraescolar de IA para niños de 8 a 17 años en España. Clases online en vivo, grupos de 5 alumnos y pago con Bizum o tarjeta en euros.",
+            "InnovaKids es la extraescolar de IA para niños de 8 a 17 años en España. Clases online en vivo, clases 1 a 1 y pago con Bizum o tarjeta en euros.",
         sections: [
             {
                 h3: "Por Qué Elegir IA Como Extraescolar",
@@ -163,7 +163,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     us: {
         h2: "IA en Español para Niños Latinos en USA 2026",
         intro:
-            "InnovaKids forma niños hispanos de 8 a 17 años en IA, 100% en español. Clases en vivo, grupos de 5 alumnos y pago con Zelle o tarjeta en USD.",
+            "InnovaKids forma niños hispanos de 8 a 17 años en IA, 100% en español. Clases en vivo, clases 1 a 1 y pago con Zelle o tarjeta en USD.",
         sections: [
             {
                 h3: "Por Qué los Niños Latinos en USA Deben Aprender IA",
@@ -186,7 +186,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     ec: {
         h2: "IA para Niños en Ecuador: Cursos Online en Vivo 2026",
         intro:
-            "InnovaKids forma niños ecuatorianos de 8 a 17 años en inteligencia artificial. Clases en vivo, grupos de 5 alumnos y pago directo en dólares americanos (USD). Ideal como curso vacacional o extraescolar todo el año.",
+            "InnovaKids forma niños ecuatorianos de 8 a 17 años en inteligencia artificial. Clases en vivo, clases 1 a 1 y pago directo en dólares americanos (USD). Ideal como curso vacacional o extraescolar todo el año.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Ecuador",
@@ -209,7 +209,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     uy: {
         h2: "IA para Chiquilines en Uruguay: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma chiquilines uruguayos de 8 a 17 años en inteligencia artificial. Grupos de 5 alumnos, clases en vivo y pago con Mercado Pago en pesos uruguayos.",
+            "InnovaKids forma chiquilines uruguayos de 8 a 17 años en inteligencia artificial. Clases 1 a 1, en vivo y pago con Mercado Pago en pesos uruguayos.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Uruguay",
@@ -217,7 +217,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "100% online y en vivo. Con internet desde Montevideo, Punta del Este, Salto o cualquier departamento del interior, tu hijo puede participar.\n\nPagos con **Mercado Pago en UYU**, tarjeta de crédito/débito o PayPal. Grupos de máximo 5 alumnos para atención personalizada real.",
+                text: "100% online y en vivo. Con internet desde Montevideo, Punta del Este, Salto o cualquier departamento del interior, tu hijo puede participar.\n\nPagos con **Mercado Pago en UYU**, tarjeta de crédito/débito o PayPal. Cada clase es 1 a 1, para atención personalizada real.",
             },
             {
                 h3: "Proyectos Reales",
@@ -232,7 +232,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     cr: {
         h2: "IA para Niños en Costa Rica: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma niños ticos de 8 a 17 años en inteligencia artificial. Grupos de 5 alumnos, clases en vivo y pago con SINPE Móvil en colones.",
+            "InnovaKids forma niños ticos de 8 a 17 años en inteligencia artificial. Clases 1 a 1, en vivo y pago con SINPE Móvil en colones.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Costa Rica",
@@ -240,7 +240,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "Clases 100% online y en vivo. Desde San José, Heredia, Alajuela, Cartago o cualquier provincia, solo necesitas internet.\n\nPago fácil con **SINPE Móvil en colones (CRC)**, tarjeta de crédito/débito o PayPal. Sin complicaciones. Grupos de máximo 5 alumnos.",
+                text: "Clases 100% online y en vivo. Desde San José, Heredia, Alajuela, Cartago o cualquier provincia, solo necesitas internet.\n\nPago fácil con **SINPE Móvil en colones (CRC)**, tarjeta de crédito/débito o PayPal. Sin complicaciones. Cada clase es 1 a 1.",
             },
             {
                 h3: "Resultados Reales",
@@ -255,7 +255,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     ve: {
         h2: "IA para Chamos en Venezuela: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma chamos venezolanos de 8 a 17 años en inteligencia artificial. Grupos de 5 alumnos, clases en vivo y pago en dólares (USD).",
+            "InnovaKids forma chamos venezolanos de 8 a 17 años en inteligencia artificial. Clases 1 a 1, en vivo y pago en dólares (USD).",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Venezuela",
@@ -263,7 +263,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "100% online y en vivo. Funciona desde Caracas, Maracaibo, Valencia, Barquisimeto o cualquier estado -- solo necesitas una conexión a internet estable.\n\nPago en **USD** por PayPal, Zelle o tarjeta de crédito internacional. Sin complicaciones cambiarias. Grupos de máximo 5 alumnos.",
+                text: "100% online y en vivo. Funciona desde Caracas, Maracaibo, Valencia, Barquisimeto o cualquier estado -- solo necesitas una conexión a internet estable.\n\nPago en **USD** por PayPal, Zelle o tarjeta de crédito internacional. Sin complicaciones cambiarias. Cada clase es 1 a 1.",
             },
             {
                 h3: "Resultados Reales",
@@ -278,7 +278,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     pa: {
         h2: "IA para Niños en Panamá: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma niños panameños de 8 a 17 años en inteligencia artificial. Grupos de 5 alumnos, clases en vivo y pago directo en dólares (USD) desde el Hub de las Américas.",
+            "InnovaKids forma niños panameños de 8 a 17 años en inteligencia artificial. Clases 1 a 1, en vivo y pago directo en dólares (USD) desde el Hub de las Américas.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Panamá",
@@ -286,7 +286,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "100% online y en vivo. Desde Ciudad de Panamá, David, Colón o cualquier provincia, solo necesitas internet.\n\nPago en **USD** -- Panamá usa el dólar, así que no hay conversión. Aceptamos tarjeta de crédito/débito, PayPal y Yappy. Grupos de máximo 5 alumnos.",
+                text: "100% online y en vivo. Desde Ciudad de Panamá, David, Colón o cualquier provincia, solo necesitas internet.\n\nPago en **USD** -- Panamá usa el dólar, así que no hay conversión. Aceptamos tarjeta de crédito/débito, PayPal y Yappy. Cada clase es 1 a 1.",
             },
             {
                 h3: "Proyectos Reales",
@@ -301,7 +301,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     do: {
         h2: "IA para Niños en República Dominicana: Clases Online 2026",
         intro:
-            "InnovaKids forma niños dominicanos de 8 a 17 años en inteligencia artificial. Grupos de 5 alumnos, clases en vivo y pago en pesos dominicanos o dólares.",
+            "InnovaKids forma niños dominicanos de 8 a 17 años en inteligencia artificial. Clases 1 a 1, en vivo y pago en pesos dominicanos o dólares.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en República Dominicana",
@@ -309,7 +309,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "Clases 100% online y en vivo. Desde Santo Domingo, Santiago, Punta Cana o cualquier provincia, solo necesitas internet.\n\nPago en **DOP (pesos dominicanos)** o **USD** -- como prefieras. Aceptamos tarjeta de crédito, PayPal y transferencia. Grupos de máximo 5 alumnos.",
+                text: "Clases 100% online y en vivo. Desde Santo Domingo, Santiago, Punta Cana o cualquier provincia, solo necesitas internet.\n\nPago en **DOP (pesos dominicanos)** o **USD** -- como prefieras. Aceptamos tarjeta de crédito, PayPal y transferencia. Cada clase es 1 a 1.",
             },
             {
                 h3: "Resultados Reales",
@@ -324,7 +324,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     hn: {
         h2: "IA para Niños en Honduras: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma niños hondureños de 8 a 17 años en inteligencia artificial. Grupos de 5 alumnos, clases en vivo y pago accesible desde Tegucigalpa, San Pedro Sula o cualquier departamento.",
+            "InnovaKids forma niños hondureños de 8 a 17 años en inteligencia artificial. Clases 1 a 1, en vivo y pago accesible desde Tegucigalpa, San Pedro Sula o cualquier departamento.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Honduras",
@@ -332,7 +332,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "100% online y en vivo. Desde Tegucigalpa, San Pedro Sula, La Ceiba o cualquier departamento -- solo necesitas internet.\n\nPago con tarjeta de crédito/débito, PayPal o transferencia en USD. Grupos de máximo 5 alumnos para atención personalizada.",
+                text: "100% online y en vivo. Desde Tegucigalpa, San Pedro Sula, La Ceiba o cualquier departamento -- solo necesitas internet.\n\nPago con tarjeta de crédito/débito, PayPal o transferencia en USD. Cada clase es 1 a 1, para atención personalizada.",
             },
             {
                 h3: "Resultados Reales",
@@ -347,7 +347,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     sv: {
         h2: "IA para Niños en El Salvador: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma niños salvadoreños de 8 a 17 años en inteligencia artificial. Grupos de 5 alumnos, clases en vivo y pago en dólares americanos (USD).",
+            "InnovaKids forma niños salvadoreños de 8 a 17 años en inteligencia artificial. Clases 1 a 1, en vivo y pago en dólares americanos (USD).",
         sections: [
             {
                 h3: "Por Qué Aprender IA en El Salvador",
@@ -355,7 +355,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "100% online y en vivo. Desde San Salvador, Santa Ana, San Miguel o cualquier departamento, solo necesitas internet.\n\nPago en **USD** -- sin conversiones porque El Salvador ya usa el dólar. Aceptamos tarjeta de crédito/débito y PayPal. Grupos de máximo 5 alumnos.",
+                text: "100% online y en vivo. Desde San Salvador, Santa Ana, San Miguel o cualquier departamento, solo necesitas internet.\n\nPago en **USD** -- sin conversiones porque El Salvador ya usa el dólar. Aceptamos tarjeta de crédito/débito y PayPal. Cada clase es 1 a 1.",
             },
             {
                 h3: "Resultados Reales",
@@ -370,7 +370,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     gt: {
         h2: "IA para Patojos en Guatemala: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma patojos guatemaltecos de 8 a 17 años en inteligencia artificial. Grupos de 5 alumnos, clases en vivo y pago en quetzales (GTQ) o dólares.",
+            "InnovaKids forma patojos guatemaltecos de 8 a 17 años en inteligencia artificial. Clases 1 a 1, en vivo y pago en quetzales (GTQ) o dólares.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Guatemala",
@@ -378,7 +378,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "Clases 100% online y en vivo. Desde Ciudad de Guatemala, Xela, Antigua, Cobán o cualquier departamento, solo necesitas internet.\n\nPago en **quetzales (GTQ)** o **USD** -- como prefieras. Aceptamos tarjeta de crédito/débito y PayPal. Grupos de máximo 5 alumnos.",
+                text: "Clases 100% online y en vivo. Desde Ciudad de Guatemala, Xela, Antigua, Cobán o cualquier departamento, solo necesitas internet.\n\nPago en **quetzales (GTQ)** o **USD** -- como prefieras. Aceptamos tarjeta de crédito/débito y PayPal. Cada clase es 1 a 1.",
             },
             {
                 h3: "Resultados Reales",
@@ -393,7 +393,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     py: {
         h2: "IA para Niños en Paraguay: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma niños paraguayos de 8 a 17 años en inteligencia artificial. Grupos de 5 alumnos, clases en vivo y pago en guaraníes (PYG) o dólares.",
+            "InnovaKids forma niños paraguayos de 8 a 17 años en inteligencia artificial. Clases 1 a 1, en vivo y pago en guaraníes (PYG) o dólares.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Paraguay",
@@ -401,7 +401,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "100% online y en vivo. Desde Asunción, Ciudad del Este, Encarnación o cualquier departamento, solo necesitas internet.\n\nPago en **guaraníes (PYG)** o **USD** -- como te resulte más cómodo. Aceptamos tarjeta de crédito/débito, PayPal y transferencia. Grupos de máximo 5 alumnos.",
+                text: "100% online y en vivo. Desde Asunción, Ciudad del Este, Encarnación o cualquier departamento, solo necesitas internet.\n\nPago en **guaraníes (PYG)** o **USD** -- como te resulte más cómodo. Aceptamos tarjeta de crédito/débito, PayPal y transferencia. Cada clase es 1 a 1.",
             },
             {
                 h3: "Proyectos Reales",
@@ -416,7 +416,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     bo: {
         h2: "IA para Niños en Bolivia: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma niños bolivianos de 8 a 17 años en inteligencia artificial. Grupos de 5 alumnos, clases en vivo y pago en bolivianos (BOB) o dólares.",
+            "InnovaKids forma niños bolivianos de 8 a 17 años en inteligencia artificial. Clases 1 a 1, en vivo y pago en bolivianos (BOB) o dólares.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Bolivia",
@@ -424,7 +424,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "Clases 100% online y en vivo. Desde La Paz, Santa Cruz, Cochabamba, Sucre o cualquier departamento, solo necesitas internet.\n\nPago en **bolivianos (BOB)** o **USD** -- elige lo que te convenga. Aceptamos tarjeta de crédito/débito, PayPal y transferencia. Grupos de máximo 5 alumnos.",
+                text: "Clases 100% online y en vivo. Desde La Paz, Santa Cruz, Cochabamba, Sucre o cualquier departamento, solo necesitas internet.\n\nPago en **bolivianos (BOB)** o **USD** -- elige lo que te convenga. Aceptamos tarjeta de crédito/débito, PayPal y transferencia. Cada clase es 1 a 1.",
             },
             {
                 h3: "Resultados Reales",
@@ -439,7 +439,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     ni: {
         h2: "IA para Niños en Nicaragua: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma niños nicaragüenses de 8 a 17 años en inteligencia artificial. Grupos de 5 alumnos, clases en vivo y pago en córdobas (NIO) o dólares.",
+            "InnovaKids forma niños nicaragüenses de 8 a 17 años en inteligencia artificial. Clases 1 a 1, en vivo y pago en córdobas (NIO) o dólares.",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Nicaragua",
@@ -447,7 +447,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "100% online y en vivo. Desde Managua, León, Granada, Estelí o cualquier departamento, solo necesitas conexión a internet.\n\nPago en **córdobas (NIO)** o **USD** -- como prefieras. Aceptamos tarjeta de crédito/débito y PayPal. Grupos de máximo 5 alumnos para atención personalizada.",
+                text: "100% online y en vivo. Desde Managua, León, Granada, Estelí o cualquier departamento, solo necesitas conexión a internet.\n\nPago en **córdobas (NIO)** o **USD** -- como prefieras. Aceptamos tarjeta de crédito/débito y PayPal. Cada clase es 1 a 1, para atención personalizada.",
             },
             {
                 h3: "Resultados Reales",
@@ -462,7 +462,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     pr: {
         h2: "IA para Niños en Puerto Rico: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma niños puertorriqueños de 8 a 17 años en inteligencia artificial. Clases 100% en español, grupos de 5 alumnos y pago en dólares (USD).",
+            "InnovaKids forma niños puertorriqueños de 8 a 17 años en inteligencia artificial. Clases 100% en español, clases 1 a 1 y pago en dólares (USD).",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Puerto Rico",
@@ -470,7 +470,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "100% online y en vivo, en español. Desde San Juan, Ponce, Mayagüez, Bayamón o cualquier municipio de la isla, solo necesitas internet.\n\nPago en **USD** -- sin conversiones. Aceptamos tarjeta de crédito americana, PayPal y Zelle. Grupos de máximo 5 alumnos.",
+                text: "100% online y en vivo, en español. Desde San Juan, Ponce, Mayagüez, Bayamón o cualquier municipio de la isla, solo necesitas internet.\n\nPago en **USD** -- sin conversiones. Aceptamos tarjeta de crédito americana, PayPal y Zelle. Cada clase es 1 a 1.",
             },
             {
                 h3: "La Ventaja Bilingüe Boricua",
@@ -485,7 +485,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
     gq: {
         h2: "IA para Niños en Guinea Ecuatorial: Clases Online en Vivo 2026",
         intro:
-            "InnovaKids forma niños ecuatoguineanos de 8 a 17 años en inteligencia artificial. El único país hispanohablante de África, con clases en español, grupos de 5 alumnos y pago en dólares (USD).",
+            "InnovaKids forma niños ecuatoguineanos de 8 a 17 años en inteligencia artificial. El único país hispanohablante de África, con clases en español, clases 1 a 1 y pago en dólares (USD).",
         sections: [
             {
                 h3: "Por Qué Aprender IA en Guinea Ecuatorial",
@@ -493,7 +493,7 @@ const countryContent: Record<string, { h2: string; intro: string; sections: { h3
             },
             {
                 h3: "Cómo Funcionan las Clases",
-                text: "100% online y en vivo, en español. Desde Malabo, Bata o cualquier punto del país con internet, tu hijo puede participar.\n\nPago en **USD** por tarjeta de crédito internacional o PayPal. Grupos de máximo 5 alumnos. El huso horario de Guinea Ecuatorial (UTC+1) es compatible con nuestros turnos de mañana.",
+                text: "100% online y en vivo, en español. Desde Malabo, Bata o cualquier punto del país con internet, tu hijo puede participar.\n\nPago en **USD** por tarjeta de crédito internacional o PayPal. Cada clase es 1 a 1. El huso horario de Guinea Ecuatorial (UTC+1) es compatible con nuestros turnos de mañana.",
             },
             {
                 h3: "Resultados Reales",
@@ -528,7 +528,7 @@ export function CountrySEOContent({ country }: CountrySEOContentProps) {
                     </h2>
                     <p className="text-lg text-[#5A5751] leading-relaxed max-w-[62ch]">
                         InnovaKids es la escuela #1 de inteligencia artificial para {country.childTerm} en {country.name}.
-                        Grupos de máximo 5 alumnos, clases en vivo y garantía de 10 días. Tu hijo aprende a crear apps,
+                        Clases 1 a 1, en vivo y garantía de 10 días. Tu hijo aprende a crear apps,
                         arte y música con IA en 5 semanas.
                     </p>
                 </div>

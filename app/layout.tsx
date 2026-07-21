@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     default: "Curso de IA para Niños 8-17 · Clase Gratis | InnovaKids",
   },
   description:
-    "Clases de IA en vivo para niños de 8 a 17: crean videojuegos, música y arte con IA. Grupos de máx. 5 alumnos. Primera clase gratis, reserva hoy.",
+    "Clases de IA en vivo para niños de 8 a 17: crean videojuegos, música y arte con IA. Clases 1 a 1. Primera clase gratis, reserva hoy.",
   authors: [{ name: "InnovaKids Team" }],
   creator: "InnovaKids",
   publisher: "InnovaKids",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Niños y Adolescentes (8-17) · Clase Gratis | InnovaKids",
     description:
-      "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Máx. 5 alumnos. ★4.9 de 527 familias. Reserva su clase gratis hoy.",
+      "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases 1 a 1. ★4.9 de 527 familias. Reserva su clase gratis hoy.",
     url: "https://www.innovakidslatam.com",
     siteName: "InnovaKids",
     images: [
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Curso de IA para Niños y Adolescentes (8-17) | InnovaKids",
     description:
-      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Grupos de 5. ★4.9 de 527 familias. Clase gratis.",
+      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Clases 1 a 1. ★4.9 de 527 familias. Clase gratis.",
     images: ["/hero-child-learning-ai.jpg"],
   },
   robots: {

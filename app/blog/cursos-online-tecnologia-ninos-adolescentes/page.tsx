@@ -141,8 +141,8 @@ export default function CursosAdolescentesPage() {
                             style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                         >
                             A veces la mejor academia no está en el barrio vecino. InnovaKids opera 100% digital, conectando a tu hijo desde
-                            cualquier país hispano (o desde EE. UU.) con clases en micropantallas de apenas
-                            <em className="italic text-[#B5522F]"> 5 alumnos</em> junto a expertos top.
+                            cualquier país hispano (o desde EE. UU.) con clases 1 a 1, donde tu hijo es
+                            <em className="italic text-[#B5522F]"> el único alumno</em> junto a expertos top.
                         </p>
                     </aside>
 
