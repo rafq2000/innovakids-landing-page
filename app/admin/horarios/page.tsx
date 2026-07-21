@@ -1,7 +1,8 @@
 "use client"
 
-import { useState } from "react"
-import { Lock, Loader2, Download, RefreshCw } from "lucide-react"
+import { useState, useMemo } from "react"
+import { Lock, Loader2, Download, RefreshCw, LayoutGrid, List } from "lucide-react"
+import { COHORT } from "@/lib/site-config"
 
 type ScheduleEntry = {
   id: string
@@ -25,6 +26,39 @@ const DAY_LABELS: Record<string, string> = {
   viernes: "Vie",
 }
 
+const DAY_ORDER = ["lunes", "martes", "miercoles", "jueves", "viernes"]
+
+type DraftCell = { student: string; parentEmail: string }
+
+function buildDraftGrid(entries: ScheduleEntry[]) {
+  // Solo entradas con disponibilidad real (cohorte "posterior" no trae horario)
+  const withSchedule = entries.filter((e) => e.schedule && Object.keys(e.schedule).length > 0)
+
+  const slotSet = new Set<string>()
+  withSchedule.forEach((e) => {
+    Object.values(e.schedule).forEach((slots) => (slots || []).forEach((s) => slotSet.add(s)))
+  })
+  const slots = Array.from(slotSet).sort()
+
+  const grid: Record<string, Record<string, DraftCell[]>> = {}
+  slots.forEach((slot) => {
+    grid[slot] = {}
+    DAY_ORDER.forEach((day) => (grid[slot][day] = []))
+  })
+
+  withSchedule.forEach((e) => {
+    DAY_ORDER.forEach((day) => {
+      const daySlots = e.schedule[day] || []
+      daySlots.forEach((slot) => {
+        if (!grid[slot]) return
+        grid[slot][day].push({ student: e.student_name, parentEmail: e.parent_email })
+      })
+    })
+  })
+
+  return { slots, grid, totalStudents: withSchedule.length }
+}
+
 export default function AdminHorariosPage() {
   const [password, setPassword] = useState("")
   const [authenticated, setAuthenticated] = useState(false)
@@ -32,6 +66,9 @@ export default function AdminHorariosPage() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
   const [savedPassword, setSavedPassword] = useState("")
+  const [view, setView] = useState<"lista" | "borrador">("lista")
+
+  const draft = useMemo(() => buildDraftGrid(data), [data])
 
   const fetchData = async (pw?: string) => {
     const pass = pw || savedPassword
@@ -94,7 +131,7 @@ export default function AdminHorariosPage() {
         d.student_age,
         d.country,
         d.timezone,
-        d.cohort,
+        d.cohort === "posterior" ? "Cohorte posterior (diferido)" : COHORT.name,
         scheduleStr,
         new Date(d.updated_at).toLocaleString("es-CL"),
       ]
@@ -151,9 +188,31 @@ export default function AdminHorariosPage() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div>
             <h1 className="text-xl font-bold">Horarios registrados</h1>
-            <p className="text-sm text-gray-500">{data.length} registro(s)</p>
+            <p className="text-sm text-gray-500">
+              {data.length} registro(s) · Cohorte actual: {COHORT.name}
+            </p>
           </div>
           <div className="flex gap-3">
+            <div className="flex bg-gray-100 rounded-lg p-1">
+              <button
+                onClick={() => setView("lista")}
+                className={`inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-md font-medium transition-colors ${
+                  view === "lista" ? "bg-white shadow-sm text-gray-900" : "text-gray-500 hover:text-gray-700"
+                }`}
+              >
+                <List className="w-4 h-4" />
+                Lista
+              </button>
+              <button
+                onClick={() => setView("borrador")}
+                className={`inline-flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-md font-medium transition-colors ${
+                  view === "borrador" ? "bg-white shadow-sm text-gray-900" : "text-gray-500 hover:text-gray-700"
+                }`}
+              >
+                <LayoutGrid className="w-4 h-4" />
+                Horario Borrador
+              </button>
+            </div>
             <button
               onClick={() => fetchData()}
               className="inline-flex items-center gap-2 text-sm border rounded-lg px-4 py-2 hover:bg-gray-50 transition-colors"
@@ -176,6 +235,72 @@ export default function AdminHorariosPage() {
         {data.length === 0 ? (
           <div className="bg-white rounded-xl border p-12 text-center">
             <p className="text-gray-500">No hay registros de horarios todavía.</p>
+          </div>
+        ) : view === "borrador" ? (
+          <div className="bg-white rounded-xl border p-5">
+            <div className="flex items-center justify-between mb-4">
+              <div>
+                <h2 className="font-bold">Borrador de horario semanal</h2>
+                <p className="text-sm text-gray-500">
+                  Disponibilidad declarada de {draft.totalStudents} alumno(s) con formulario completo · hora Chile (UTC-4).
+                  Esto NO revisa choques con la agenda real de los profesores en Google Calendar — es solo el punto de partida para armar los horarios a mano.
+                </p>
+              </div>
+            </div>
+            {draft.slots.length === 0 ? (
+              <p className="text-gray-500 text-center py-8">Ningún alumno tiene disponibilidad registrada todavía.</p>
+            ) : (
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr>
+                      <th className="text-left px-3 py-2 text-xs font-semibold uppercase tracking-wider text-gray-400 border-b">
+                        Horario
+                      </th>
+                      {DAY_ORDER.map((day) => (
+                        <th
+                          key={day}
+                          className="text-left px-3 py-2 text-xs font-semibold uppercase tracking-wider text-gray-400 border-b"
+                        >
+                          {DAY_LABELS[day]}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {draft.slots.map((slot) => (
+                      <tr key={slot} className="border-b last:border-0 align-top">
+                        <td className="px-3 py-3 font-mono text-xs font-semibold text-gray-600 whitespace-nowrap">
+                          {slot}
+                        </td>
+                        {DAY_ORDER.map((day) => {
+                          const cell = draft.grid[slot][day]
+                          return (
+                            <td key={day} className="px-3 py-3">
+                              {cell.length === 0 ? (
+                                <span className="text-gray-300">—</span>
+                              ) : (
+                                <div className="flex flex-col gap-1">
+                                  {cell.map((c, i) => (
+                                    <span
+                                      key={i}
+                                      title={c.parentEmail}
+                                      className="text-xs bg-blue-50 text-blue-800 border border-blue-200 rounded px-2 py-1 whitespace-nowrap"
+                                    >
+                                      {c.student}
+                                    </span>
+                                  ))}
+                                </div>
+                              )}
+                            </td>
+                          )
+                        })}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </div>
         ) : (
           <div className="space-y-4">
@@ -207,7 +332,7 @@ export default function AdminHorariosPage() {
                   </div>
                   <div>
                     <p className="text-xs text-gray-400 uppercase tracking-wider font-semibold">Cohorte</p>
-                    <p className="font-medium">{entry.cohort === "mayo-2026" ? "Junio 2026" : "Posterior"}</p>
+                    <p className="font-medium">{entry.cohort === "posterior" ? "Cohorte posterior (diferido)" : COHORT.name}</p>
                     <p className="text-sm text-gray-500">
                       {new Date(entry.updated_at).toLocaleDateString("es-CL", {
                         day: "2-digit",

@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useMemo } from "react"
+import { COHORT } from "@/lib/site-config"
 import {
   Lock,
   Loader2,
@@ -491,7 +492,7 @@ export default function AdminLeadsPage() {
 
                     {expanded && (
                       <div className="border-t px-4 py-4 bg-gray-50 text-sm space-y-4">
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                           <div>
                             <p className="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mb-1">Pago</p>
                             <p className="font-medium">${e.amount} USD via {e.payment_method}</p>
@@ -521,6 +522,16 @@ export default function AdminLeadsPage() {
                             ) : (
                               <p className="text-orange-600">Pendiente</p>
                             )}
+                          </div>
+                          <div>
+                            <p className="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mb-1">Cohorte</p>
+                            <p className="font-medium">
+                              {e.schedule
+                                ? e.schedule.cohort === "posterior"
+                                  ? "Posterior (diferido)"
+                                  : COHORT.name
+                                : "-"}
+                            </p>
                           </div>
                           <div>
                             <p className="text-[10px] uppercase tracking-wider text-gray-400 font-semibold mb-1">Reminders</p>
