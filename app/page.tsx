@@ -23,10 +23,10 @@ import { generateHreflangs } from "@/lib/seo-config"
 import { faqs } from "@/lib/faq-data"
 
 export const metadata: Metadata = {
-  // ≤60 chars: con el title largo Google cortaba el CTA "Clase Gratis"
-  title: "Curso de IA para Niños 8-17 · Clase Gratis | InnovaKids",
+  // ≤60 chars: con el title largo Google cortaba el CTA "Diagnóstico Gratis"
+  title: "Curso de IA para Niños 8-17 · Diagnóstico Gratis | InnovaKids",
   description:
-    "Clases de IA en vivo para niños de 8 a 17: crean videojuegos, música y arte con IA. Clases 1 a 1. Primera clase gratis, reserva hoy.",
+    "Clases de IA en vivo para niños de 8 a 17: crean videojuegos, música y arte con IA. Clases 1 a 1. Sesión de diagnóstico gratis: reserva hoy.",
   keywords: [
     "mi hijo se queda atrás en la era de la ia",
     "cómo evitar que mi hijo se quede atrás con la ia",
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     languages: generateHreflangs("home"),
   },
   openGraph: {
-    title: "Curso de IA para Niños y Adolescentes (8-17) · Clase Gratis | InnovaKids",
+    title: "Curso de IA para Niños y Adolescentes (8-17) · Diagnóstico Gratis | InnovaKids",
     description:
-      "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases en vivo 1 a 1. ★4.9 de 527 familias. Reserva su clase gratis hoy.",
+      "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases en vivo 1 a 1. ★4.9 de 527 familias. Agenda su diagnóstico gratis hoy.",
     url: "https://www.innovakidslatam.com",
     type: "website",
     locale: "es_419",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Curso de IA para Niños y Adolescentes (8-17) | InnovaKids",
     description:
-      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Clases 1 a 1. ★4.9 de 527 familias. Clase gratis.",
+      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Clases 1 a 1. ★4.9 de 527 familias. Diagnóstico gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -214,7 +214,7 @@ export default function Home() {
           href="#sesion-estrategica"
           className="flex-1 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] py-3.5 text-center text-sm font-semibold rounded-sm shadow-lg transition-colors"
         >
-          Agendar clase gratis
+          Agendar diagnóstico gratis
         </a>
         <a
           href="https://wa.me/56964754219?text=Hola%2C%20quiero%20info%20del%20curso%20de%20IA%20para%20mi%20hijo"

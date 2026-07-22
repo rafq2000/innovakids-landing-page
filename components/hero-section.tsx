@@ -114,10 +114,12 @@ export function HeroSection() {
             </p>
             <div className="mt-7 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
               <a
-                href="#sesion-estrategica"
+                href="https://wa.me/56964754219?text=Hola%2C%20quiero%20agendar%20la%20Sesi%C3%B3n%20de%20Diagn%C3%B3stico%20gratuita%20para%20mi%20hijo%2Fa"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group relative inline-flex items-center gap-3 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-7 py-4 text-base font-semibold rounded-sm shadow-[0_10px_30px_-12px_rgba(201,99,66,0.55)] hover:shadow-[0_14px_40px_-12px_rgba(201,99,66,0.7)] transition-all duration-300"
               >
-                <span>Agendar clase gratis</span>
+                <span>Agendar diagnóstico gratis</span>
                 <span className="transition-transform duration-300 group-hover:translate-x-1" aria-hidden>→</span>
               </a>
               <a

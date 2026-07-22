@@ -18,23 +18,23 @@ function generateRelativeTime(): string {
 }
 
 const DATA: ToastEntry[] = [
-  { name: "María G.", country: "Chile", action: "reservó su clase gratis" },
+  { name: "María G.", country: "Chile", action: "agendó su Sesión de Diagnóstico" },
   { name: "Ana L.", country: "México", action: "inscribió a su hijo" },
   { name: "Carolina P.", country: "Colombia", action: "agendó sesión de diagnóstico" },
-  { name: "Fernanda R.", country: "Argentina", action: "reservó su clase gratis" },
+  { name: "Fernanda R.", country: "Argentina", action: "agendó su Sesión de Diagnóstico" },
   { name: "Lucía M.", country: "España", action: "inscribió a sus 2 hijos" },
   { name: "Valentina S.", country: "Perú", action: "agendó sesión de diagnóstico" },
-  { name: "Camila D.", country: "Ecuador", action: "reservó su clase gratis" },
+  { name: "Camila D.", country: "Ecuador", action: "agendó su Sesión de Diagnóstico" },
   { name: "Daniela F.", country: "Costa Rica", action: "inscribió a su hija" },
-  { name: "Sofía T.", country: "Panamá", action: "reservó su clase gratis" },
+  { name: "Sofía T.", country: "Panamá", action: "agendó su Sesión de Diagnóstico" },
   { name: "Isabella M.", country: "Uruguay", action: "inscribió a su hijo" },
   { name: "Paula R.", country: "Bolivia", action: "agendó sesión de diagnóstico" },
-  { name: "Andrea C.", country: "Paraguay", action: "reservó su clase gratis" },
+  { name: "Andrea C.", country: "Paraguay", action: "agendó su Sesión de Diagnóstico" },
   { name: "Gabriela H.", country: "Rep. Dominicana", action: "inscribió a su hija" },
-  { name: "Laura V.", country: "Guatemala", action: "reservó su clase gratis" },
+  { name: "Laura V.", country: "Guatemala", action: "agendó su Sesión de Diagnóstico" },
   { name: "Natalia B.", country: "Honduras", action: "agendó sesión de diagnóstico" },
   { name: "Claudia S.", country: "El Salvador", action: "inscribió a su hijo" },
-  { name: "Elena P.", country: "Estados Unidos", action: "reservó su clase gratis" },
+  { name: "Elena P.", country: "Estados Unidos", action: "agendó su Sesión de Diagnóstico" },
   { name: "Mariana K.", country: "Nicaragua", action: "inscribió a sus 2 hijos" },
 ]
 

@@ -82,7 +82,7 @@ export function HeroLeadForm() {
         type="submit"
         className="shrink-0 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-6 py-3 text-sm font-semibold rounded-sm transition-colors"
       >
-        Reservar clase gratis →
+        Reservar diagnóstico gratis →
       </button>
     </form>
   )

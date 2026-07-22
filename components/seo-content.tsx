@@ -313,7 +313,7 @@ export function SEOContent() {
               Guías y Recursos de IA para Niños (Gratis)
             </h2>
             <p>
-              Antes de reservar la clase gratis, explora nuestras guías para padres. Ideas prácticas para empezar hoy
+              Antes de reservar la Sesión de Diagnóstico gratuita, explora nuestras guías para padres. Ideas prácticas para empezar hoy
               en casa, comparativas honestas y consejos por edad para que tu hijo aprenda inteligencia artificial a tiempo:
             </p>
             <ul className="grid md:grid-cols-2 gap-3 my-6 list-none pl-0">

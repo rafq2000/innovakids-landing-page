@@ -36,7 +36,7 @@ const exploreLinks = [
   { href: "/resultados", label: "Resultados" },
   { href: "/precios", label: "Precios" },
   { href: "/testimonios", label: "Testimonios" },
-  { href: "/clase-gratis", label: "Clase gratis" },
+  { href: "/clase-gratis", label: "Sesión de Diagnóstico" },
   { href: "/confianza-y-seguridad", label: "Confianza y seguridad" },
   { href: "/blog", label: "Blog educativo" },
   { href: "/que-es-innovakids", label: "Qué es InnovaKids" },
@@ -77,7 +77,7 @@ export function Footer({ countryCode }: FooterProps) {
             href="/#sesion-estrategica"
             className="inline-flex items-center bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 text-base font-semibold rounded-sm transition-colors"
           >
-            Agendar clase gratis
+            Agendar diagnóstico gratis
           </Link>
         </div>
 

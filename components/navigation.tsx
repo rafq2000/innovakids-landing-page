@@ -173,7 +173,7 @@ export function Navigation({ countryCode }: NavigationProps) {
               rel="noopener noreferrer"
               className="inline-flex items-center bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-5 py-2.5 text-sm font-semibold rounded-sm transition-colors"
             >
-              Agendar evaluación
+              Agendar diagnóstico
             </a>
           </div>
 
@@ -230,7 +230,7 @@ export function Navigation({ countryCode }: NavigationProps) {
                 onClick={() => setIsOpen(false)}
                 className="inline-flex items-center justify-center bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-5 py-3 text-sm font-semibold rounded-sm mt-3 transition-colors"
               >
-                Agendar evaluación
+                Agendar diagnóstico
               </a>
             </div>
           </div>

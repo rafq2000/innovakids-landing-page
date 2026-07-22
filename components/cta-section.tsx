@@ -32,7 +32,7 @@ export function CTASection() {
 
           <p className="mb-10 text-pretty text-xl leading-relaxed text-white/95 md:text-2xl">
             Mientras otros niños solo consumen tecnología, tu hijo aprenderá a crearla.
-            <span className="font-bold"> Agenda su clase gratis hoy.</span>
+            <span className="font-bold"> Agenda su Sesión de Diagnóstico gratuita hoy.</span>
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -41,7 +41,7 @@ export function CTASection() {
               onClick={() => scrollToSection("sesion-estrategica")}
               className="group h-16 bg-white px-12 text-xl font-bold text-[#B5522F] shadow-2xl transition-all hover:scale-105 hover:bg-gray-100"
             >
-              Agendar clase gratis
+              Agendar diagnóstico gratis
               <ArrowRight className="ml-2 h-6 w-6 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>

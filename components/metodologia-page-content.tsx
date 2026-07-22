@@ -105,7 +105,7 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                                 >
                                     <Link href="/#sesion-estrategica">
                                         <Sparkles className="mr-3 h-6 w-6" />
-                                        Agendar clase gratis
+                                        Agendar diagnóstico gratis
                                     </Link>
                                 </Button>
 
@@ -283,7 +283,7 @@ export function MetodologiaPageContent({ country }: MetodologiaPageContentProps)
                             >
                                 <Link href="/#sesion-estrategica">
                                     <Sparkles className="mr-3 h-6 w-6" />
-                                    Agendar clase gratis
+                                    Agendar diagnóstico gratis
                                 </Link>
                             </Button>
                         </div>

@@ -100,7 +100,7 @@ export function CalendlySection() {
         <div className="flex items-center gap-5 mb-20">
           <div className="h-px w-12 bg-[#C96342]" />
           <p className="text-[11px] uppercase tracking-[0.28em] text-[#B5522F] font-semibold">
-            Agenda una evaluación
+            Agenda tu Sesión de Diagnóstico
           </p>
         </div>
 

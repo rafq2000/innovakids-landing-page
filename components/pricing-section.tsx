@@ -24,7 +24,7 @@ export function PricingSection({ country }: PricingSectionProps) {
   const features = [
     "10 clases en vivo 1 a 1 por módulo",
     "Certificado digital Vibe Explorer",
-    "Acceso a 15+ herramientas de IA premium",
+    "Acceso a las 13 herramientas de IA del programa",
     "Soporte 24/7 por Discord y WhatsApp",
     "Proyecto final con certificado de graduación",
   ]

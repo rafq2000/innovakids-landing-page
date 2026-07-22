@@ -223,7 +223,7 @@ export function ProjectsGallery() {
                 <div className="text-center mt-12">
                     <p className="text-[#1A1714]/60 mb-4">Tu hijo puede crear proyectos como estos en solo 5 semanas.</p>
                     <a href="#sesion-estrategica" className="inline-flex items-center gap-2 px-8 py-4 bg-[#C96342] text-white font-semibold rounded-full shadow-[0_10px_30px_-12px_rgba(201,99,66,0.55)] hover:bg-[#9A4428] transition-colors">
-                        Agendar clase gratis
+                        Agendar diagnóstico gratis
                     </a>
                 </div>
             </div>

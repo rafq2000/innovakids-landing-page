@@ -272,7 +272,7 @@ export function ExitIntentPopup() {
                 onClick={dismiss}
                 className="font-mono-accent text-[10px] uppercase tracking-[0.24em] text-[#FAF7EF]/35 hover:text-[#FAF7EF]/60 transition-colors duration-150"
               >
-                No gracias, mi hijo ya domina la IA
+                Ahora no
               </button>
             </div>
 
