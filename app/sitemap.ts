@@ -51,6 +51,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Blog posts (priority 0.7)
   const blogPages = [
     "/blog",
+    "/blog/escuela-inteligencia-artificial-ninos",
+    "/blog/tutoriales-inteligencia-artificial-ninos",
     "/blog/scratch-vs-ia-ninos",
     "/blog/inteligencia-artificial-para-ninos",
     "/blog/metodologia-erica-pensamiento-computacional-ia-ninos",

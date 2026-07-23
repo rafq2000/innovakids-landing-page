@@ -5,7 +5,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: "Curso de IA para Niños de 10, 11 y 12 Años · Qué Pueden Aprender | InnovaKids",
+  title: "Curso de Inteligencia Artificial para Niños de 10, 11 y 12 Años | InnovaKids",
   description:
     "Guía para padres: qué puede aprender un niño de 10, 11 o 12 años sobre Inteligencia Artificial. Proyectos reales, herramientas adecuadas y cómo empezar. Primera clase gratis.",
   keywords: [

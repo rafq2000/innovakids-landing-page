@@ -123,7 +123,7 @@ export default function CursosAdolescentesPage() {
                             Buscar cursos para adolescentes (Bogotá, Ciudad de México o Miami) significa lidiar con jóvenes que exigen propósito.
                             Si no sienten que están construyendo algo "pro", se aburrirán y abandonarán.
                         </p>
-                        <p>En está franja de edad implementamos <strong>Vibe Enterprise</strong> e <strong>Incubadora Tech</strong>. Se trata de clases 100% online y en vivo donde:</p>
+                        <p>En esta franja de edad, el programa <strong>Vibe Explorer</strong> se adapta a su nivel de exigencia. Son clases 100% online y en vivo donde:</p>
                         <ul>
                             <li>Configuran herramientas avanzadas (ChatGPT Pro, Midjourney, generadores de código).</li>
                             <li>Diseñan una <em>landing page</em> para un intento de startup real.</li>
@@ -201,7 +201,7 @@ export default function CursosAdolescentesPage() {
                                     href="/clase-gratis"
                                     className="inline-flex items-center justify-center gap-2 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] px-8 py-4 font-semibold text-base tracking-wide transition-colors"
                                 >
-                                    Agendar clase gratis
+                                    Agendar diagnóstico gratis
                                     <span aria-hidden>→</span>
                                 </Link>
                                 <Link

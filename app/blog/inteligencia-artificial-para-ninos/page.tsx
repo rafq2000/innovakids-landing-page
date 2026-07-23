@@ -314,6 +314,13 @@ export default function BlogPostPage() {
                             motivadora es la IA. Tenemos una comparación completa en{" "}
                             <Link href="/blog/scratch-vs-ia-ninos">Scratch vs IA para niños</Link>.
                         </p>
+                        <h3>¿Dónde puede empezar gratis mi hijo hoy mismo?</h3>
+                        <p>
+                            Preparamos <Link href="/blog/tutoriales-inteligencia-artificial-ninos">7 tutoriales de inteligencia artificial
+                            para niños</Link> paso a paso y gratis (cuentos, música, arte y su primer mini videojuego). Y si buscas un camino
+                            con profesor y progresión real, mira cómo funciona una{" "}
+                            <Link href="/blog/escuela-inteligencia-artificial-ninos">escuela de inteligencia artificial para niños</Link>.
+                        </p>
                         <h3>¿Cuánto cuesta un curso de inteligencia artificial para niños?</h3>
                         <p>
                             Los cursos online en vivo con clases 1 a 1 van desde los 200 a los 400 USD por programa completo. El programa

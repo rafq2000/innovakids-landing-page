@@ -46,6 +46,26 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "tutoriales-inteligencia-artificial-ninos",
+    title: "Tutoriales de Inteligencia Artificial para Niños: 7 Paso a Paso Gratis",
+    excerpt:
+      "7 tutoriales gratis y sin programar: cuentos, música con Suno, arte, su primer videojuego con Vibe Coding y más. IA básica para niños de 8 a 17, para partir hoy.",
+    image: "/kids-creating-ai-projects.jpg",
+    date: "2026-07-22",
+    category: "Tutoriales",
+    readTime: "8 min",
+  },
+  {
+    slug: "escuela-inteligencia-artificial-ninos",
+    title: "Escuela de Inteligencia Artificial para Niños Online (8-17)",
+    excerpt:
+      "Qué debe tener una escuela de IA de verdad: clases en vivo 1 a 1, currículum por edades, proyectos reales y herramientas de la industria. Así funciona InnovaKids.",
+    image: "/kids-learning-ai-on-computer.jpg",
+    date: "2026-07-22",
+    category: "Guías",
+    readTime: "6 min",
+  },
+  {
     slug: "actividades-inteligencia-artificial-ninos-casa",
     title: "12 Actividades de Inteligencia Artificial para Niños en Casa [2026]",
     excerpt:
