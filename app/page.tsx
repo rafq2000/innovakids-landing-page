@@ -211,7 +211,9 @@ export default function Home() {
       {/* Sticky CTA mobile */}
       <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-[#1A1714]/95 backdrop-blur-sm border-t border-[#FAF7EF]/10 p-3 flex items-center gap-3">
         <a
-          href="#sesion-estrategica"
+          href="https://wa.me/56964754219?text=Hola%2C%20quiero%20agendar%20la%20Sesi%C3%B3n%20de%20Diagn%C3%B3stico%20gratuita%20para%20mi%20hijo%2Fa"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex-1 bg-[#C96342] hover:bg-[#9A4428] text-[#FAF7EF] py-3.5 text-center text-sm font-semibold rounded-sm shadow-lg transition-colors"
         >
           Agendar diagnóstico gratis

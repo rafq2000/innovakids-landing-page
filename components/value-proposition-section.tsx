@@ -32,7 +32,7 @@ function useInView<T extends HTMLElement>(options: IntersectionObserverInit = { 
 /* Count-up number — animates from 0 to target when visible */
 function CountUp({ to, duration = 1400, prefix = "$", suffix = "" }: { to: number; duration?: number; prefix?: string; suffix?: string }) {
   const { ref, inView } = useInView<HTMLSpanElement>({ threshold: 0.4 })
-  const [value, setValue] = useState(0)
+  const [value, setValue] = useState(to)
   useEffect(() => {
     if (!inView) return
     let raf = 0
