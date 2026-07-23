@@ -44,7 +44,7 @@ export function Navigation({ countryCode }: NavigationProps) {
   }, [orgOpen])
 
   const calendlyUrl =
-    "https://calendly.com/innovakidslatam/reunion-informativa-innovakids?hide_gdpr_banner=1&hide_event_type_details=1&primary_color=C96342"
+    "https://calendly.com/innovakidslatam/reunion-informativa-innovakids?hide_gdpr_banner=1&hide_event_type_details=1&primary_color=C96342&utm_source=web&utm_medium=nav"
 
   const basePath = countryCode ? `/${countryCode}` : ""
 

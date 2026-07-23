@@ -35,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/cursos/inteligencia-artificial",
     "/empresas",
     "/municipalidades",
+    "/verificar",
   ]
 
   // Course specialization pages (priority 0.9)

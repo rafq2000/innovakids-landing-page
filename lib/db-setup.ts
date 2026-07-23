@@ -63,5 +63,32 @@ export async function ensureTables() {
     }
   }
 
+  const { error: certErr } = await supabase.from("certificates").select("id").limit(1)
+
+  if (certErr?.code === "42P01") {
+    console.log("[db-setup] Creating certificates table...")
+    const { error: err3 } = await supabase.rpc("exec_sql", {
+      sql: `
+        CREATE TABLE IF NOT EXISTS certificates (
+          id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+          code TEXT UNIQUE NOT NULL,
+          student_name TEXT NOT NULL,
+          course_name TEXT NOT NULL,
+          level TEXT,
+          hours INTEGER DEFAULT 10,
+          completion_date DATE NOT NULL,
+          issued_at TIMESTAMPTZ DEFAULT NOW(),
+          instructor TEXT,
+          revoked BOOLEAN DEFAULT FALSE,
+          created_at TIMESTAMPTZ DEFAULT NOW()
+        );
+        CREATE UNIQUE INDEX IF NOT EXISTS idx_certificates_code ON certificates(code);
+      `,
+    })
+    if (err3) {
+      console.warn("[db-setup] Could not create certificates via RPC - run scripts/006_create_certificates.sql manually")
+    }
+  }
+
   tablesChecked = true
 }

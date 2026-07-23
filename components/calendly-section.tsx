@@ -57,6 +57,8 @@ export function CalendlySection() {
     url.searchParams.set("location", countryData.name)
     url.searchParams.set("hide_gdpr_banner", "1")
     url.searchParams.set("primary_color", "C96342")
+    url.searchParams.set("utm_source", "web")
+    url.searchParams.set("utm_medium", "hero_form")
     const calendlyUrl = url.toString()
 
     // 1.5) Analytics — fire the booking_intent event (before redirect)
@@ -257,7 +259,7 @@ export function CalendlySection() {
               <p className="text-xs text-[#5A5751] mt-3">
                 ¿Prefieres saltarte esto?{" "}
                 <a
-                  href="https://calendly.com/innovakidslatam/reunion-informativa-innovakids"
+                  href="https://calendly.com/innovakidslatam/reunion-informativa-innovakids?utm_source=web&utm_medium=skip_form"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[#B5522F] underline underline-offset-2 hover:text-[#A8502F]"
