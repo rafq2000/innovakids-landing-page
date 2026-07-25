@@ -37,6 +37,7 @@ type PaymentOption =
   | "pago240"
   | "pago480"
   | "remaining"
+  | "hopkins426"
 
 interface PaymentDetails {
   title: string
@@ -64,6 +65,11 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
     title: "Academy University Pass",
     price: 788,
     description: "Acceso Total: 4 Módulos (ahorras $280 vs módulos por separado)",
+  },
+  hopkins426: {
+    title: "Pago Restante — Hermanas Hopkins",
+    price: 426,
+    description: "Completa la inscripción de Alessia y Alana (2x Vibe Explorer con descuento de grupo: $213 c/u)",
   },
   custom360: {
     title: "Pago Personalizado",
