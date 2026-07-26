@@ -24,9 +24,9 @@ import { faqs } from "@/lib/faq-data"
 
 export const metadata: Metadata = {
   // ≤60 chars: con el title largo Google cortaba el CTA "Diagnóstico Gratis"
-  title: "Curso de IA para Niños 8-17 · Diagnóstico Gratis | InnovaKids",
+  title: "Curso de IA para Niños 8-17 · Clase Diagnóstico Gratis | InnovaKids",
   description:
-    "Clases de IA en vivo para niños de 8 a 17: crean videojuegos, música y arte con IA. Clases 1 a 1. Sesión de diagnóstico gratis: reserva hoy.",
+    "Clases de IA en vivo para niños de 8 a 17: crean videojuegos, música y arte con IA. Clases 1 a 1. Clase de diagnóstico gratis con un profe en vivo: reserva hoy.",
   keywords: [
     "mi hijo se queda atrás en la era de la ia",
     "cómo evitar que mi hijo se quede atrás con la ia",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     languages: generateHreflangs("home"),
   },
   openGraph: {
-    title: "Curso de IA para Niños y Adolescentes (8-17) · Diagnóstico Gratis | InnovaKids",
+    title: "Curso de IA para Niños y Adolescentes (8-17) · Clase Diagnóstico Gratis | InnovaKids",
     description:
       "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases en vivo 1 a 1. ★4.9 de 527 familias. Agenda su diagnóstico gratis hoy.",
     url: "https://www.innovakidslatam.com",
