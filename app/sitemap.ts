@@ -6,13 +6,17 @@ import path from "path"
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://www.innovakidslatam.com"
 
-  // Fechas reales de última modificación por sección
+  // Fechas reales de última modificación por sección.
+  // Actualizar A MANO cuando la sección cambie de verdad — no usar fs.statSync:
+  // en Vercel el build corre sobre un checkout fresco y todas las URLs quedarían
+  // con la hora del deploy, que es peor que una fecha fija (Google deja de confiar
+  // en el lastmod del sitio entero).
   const dates = {
-    home: new Date("2026-07-02"),        // Precios transparentes (sin anchors) + pixel + PDF guía
-    main: new Date("2026-07-02"),        // Cupos por cohorte + precios transparentes
-    courses: new Date("2026-06-27"),     // Solo Vibe Explorer
-    blog: new Date("2026-06-27"),        // Titles optimizados para CTR
-    countries: new Date("2026-07-02"),   // Value stack honesto en páginas país
+    home: new Date("2026-07-27"),        // Hero sin miedo, cifras 745, título 57ch
+    main: new Date("2026-07-27"),        // /programa: 13 herramientas reales, sin Vibe Maker
+    courses: new Date("2026-07-27"),     // Solo Vibe Explorer, 10 clases 1 a 1
+    blog: new Date("2026-07-23"),        // 2 posts nuevos + enlazado interno
+    countries: new Date("2026-07-27"),   // Sin GPS ni rating inventado
   }
 
   // Main pages (priority 0.8)
