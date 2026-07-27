@@ -38,6 +38,7 @@ type PaymentOption =
   | "pago480"
   | "remaining"
   | "hopkins426"
+  | "loredo480"
 
 interface PaymentDetails {
   title: string
@@ -65,6 +66,11 @@ const paymentDetails: Record<PaymentOption, PaymentDetails> = {
     title: "Academy University Pass",
     price: 788,
     description: "Acceso Total: 4 Módulos (ahorras $280 vs módulos por separado)",
+  },
+  loredo480: {
+    title: "Pago Restante — Hermanos Loredo",
+    price: 480,
+    description: "Completa la inscripción de Julen y Mikel (240 USD por cada uno)",
   },
   hopkins426: {
     title: "Pago Restante — Hermanas Hopkins",
