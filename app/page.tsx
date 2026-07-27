@@ -96,6 +96,17 @@ export default function Home() {
       "url": "https://www.innovakidslatam.com",
     },
     "educationalLevel": "Beginner",
+    // Reseñas reales de padres del programa (confirmadas por el equipo 2026-07-27).
+    // Va en Course, NO en EducationalOrganization: Google ignora el rating que una
+    // organización se pone a sí misma en su propio sitio (self-serving), pero sí
+    // acepta el de un curso cuando las reseñas son genuinas.
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1",
+    },
     "coursePrerequisites": [],
     "numberOfLessons": 10,
     "timeRequired": "P5W",
