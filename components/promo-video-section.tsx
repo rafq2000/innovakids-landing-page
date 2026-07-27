@@ -119,8 +119,8 @@ export function PromoVideoSection() {
             <div className="flex-1 text-center lg:text-left px-4 sm:px-0">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">¡Próximo Curso por Comenzar!</h3>
               <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8 leading-relaxed">
-                No dejes que tu hijo se quede atrás en la era de la Inteligencia Artificial. Nuestros cupos son
-                limitados y se llenan rápidamente.
+                Cada cohorte tiene cupos limitados porque las clases son 1 a 1. Si quieres partir este mes,
+                conviene agendar la clase gratis ahora.
               </p>
 
               <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">

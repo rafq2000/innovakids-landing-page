@@ -131,7 +131,7 @@ export default function RootLayout({
               name: "InnovaKids",
               alternateName: ["Innova Kids", "InnovaKids LATAM"],
               description:
-                "Academia #1 en LATAM para que niños y adolescentes (8-17 años) aprendan IA a tiempo y no se queden atrás. La IA es el nuevo inglés/internet/Excel: una habilidad base para el colegio, la universidad y el trabajo. 527 graduados en 9 países.",
+                "Academia en LATAM donde niños y adolescentes (8-17 años) aprenden a crear con IA en clases en vivo 1 a 1: videojuegos, música, arte y sus propios proyectos. La IA como habilidad base para el colegio, la universidad y el trabajo.",
               url: "https://www.innovakidslatam.com",
               logo: "https://www.innovakidslatam.com/logo-innovakids.png",
               address: {

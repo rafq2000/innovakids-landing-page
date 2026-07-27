@@ -40,11 +40,11 @@ export function ProblemSection() {
           <div className="bg-[#1a2942] p-4 sm:p-6 md:p-8 rounded-lg sm:rounded-xl border border-[#2a3952] sm:col-span-2 md:col-span-1">
             <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
               <AlertTriangle className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-[#67E8F9] flex-shrink-0 mt-1" />
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-white">La Oportunidad que se Escapa</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-white">La ventaja de empezar temprano</h3>
             </div>
             <p className="text-sm sm:text-base text-gray-400 leading-relaxed">
-              Cada mes que pasa, miles de niños en el mundo empiezan a dominar estas herramientas. No dejes que el tuyo
-              se quede atrás.
+              Los niños que empiezan ahora tienen años para volverse buenos de verdad, no solo para aprender lo justo.
+              Ese tiempo es la ventaja.
             </p>
           </div>
         </div>
