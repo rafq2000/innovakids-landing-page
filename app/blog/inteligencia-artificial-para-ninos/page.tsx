@@ -164,7 +164,7 @@ export default function BlogPostPage() {
                                 style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                             >
                                 Esta guía te explica todo lo que necesitas saber como padre: qué es la IA a un nivel comprensible,
-                                por qué importa (mucho), herramientas gratuitas para empezar, y cómo asegurar que tu hijo no se quede atrás.
+                                por qué importa (mucho), herramientas gratuitas para empezar, y cómo acompañar a tu hijo para que la use con criterio.
                             </p>
                         </aside>
 

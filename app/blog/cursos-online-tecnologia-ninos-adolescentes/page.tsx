@@ -189,7 +189,7 @@ export default function CursosAdolescentesPage() {
                                     className="text-3xl md:text-4xl leading-[1.05] tracking-tight text-[#1A1714] mb-4"
                                     style={{ fontFamily: "'Charter', 'Georgia', serif" }}
                                 >
-                                    No dejes que se queden atrás.
+                                    Dales tiempo de volverse buenos.
                                 </h3>
                                 <p className="text-[15px] text-[#1A1714]/70 leading-relaxed max-w-[52ch]">
                                     Inscribe a tu hijo en el curso online de tecnología más premiado y práctico de 2026. Solo 5 cupos por horario.
