@@ -24,31 +24,15 @@ import { faqs } from "@/lib/faq-data"
 
 export const metadata: Metadata = {
   // ≤60 chars: con el title largo Google cortaba el CTA "Diagnóstico Gratis"
-  title: "Curso de IA para Niños 8-17 · Clase Gratis en Vivo | InnovaKids",
+  title: "Curso de IA para Niños 8-17 · Clase Gratis | InnovaKids",
   description:
     "Clases de IA en vivo para niños de 8 a 17: crean videojuegos, música y arte con IA. Clases 1 a 1. Clase de diagnóstico gratis con un profe en vivo: reserva hoy.",
-  keywords: [
-    "mi hijo se queda atrás en la era de la ia",
-    "cómo evitar que mi hijo se quede atrás con la ia",
-    "curso inteligencia artificial niños",
-    "curso ia para niños",
-    "cursos de ia para niños",
-    "curso de inteligencia artificial para niños",
-    "clases de inteligencia artificial para niños",
-    "ia para niños",
-    "curso ia para adolescentes",
-    "escuela online de inteligencia artificial",
-    "academia ia niños",
-    "vibe coding para niños",
-    "innovakids",
-    "innova kids",
-  ],
   alternates: {
     canonical: "https://www.innovakidslatam.com",
     languages: generateHreflangs("home"),
   },
   openGraph: {
-    title: "Curso de IA para Niños y Adolescentes (8-17) · Clase Gratis en Vivo | InnovaKids",
+    title: "Curso de IA para Niños y Adolescentes (8-17) · Clase Gratis | InnovaKids",
     description:
       "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases en vivo 1 a 1. ★4.9 de 527 familias. Agenda su diagnóstico gratis hoy.",
     url: "https://www.innovakidslatam.com",
@@ -102,7 +86,7 @@ export default function Home() {
   const courseSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
-    "name": "Curso de Inteligencia Artificial para Niños y Adolescentes - Que No Se Quede Atrás | InnovaKids",
+    "name": "Vibe Explorer: Curso de Inteligencia Artificial para Niños y Adolescentes",
     "description": "Para que tu hijo aprenda a crear con IA, no solo a usarla. 10 clases por módulo, crea apps, videojuegos y proyectos con IA, y llega preparado al colegio, la universidad y el trabajo. 8-17 años. Clases 1 a 1. Garantía de 10 días.",
     "url": "https://www.innovakidslatam.com",
     "image": "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
@@ -123,13 +107,6 @@ export default function Home() {
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
       "url": "https://www.innovakidslatam.com",
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "527",
-      "bestRating": "5",
-      "worstRating": "1",
     },
     "hasCourseInstance": [
       {

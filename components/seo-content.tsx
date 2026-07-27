@@ -4,7 +4,7 @@ export function SEOContent() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto prose">
           <h2 className="text-4xl font-bold text-[#1A1714] mb-8 text-center">
-            Que Tu Hijo No Se Quede Atrás en la Era de la IA: Curso #1 de Inteligencia Artificial para Niños y Adolescentes 8-17 Años en Latinoamérica 2026
+            Curso de Inteligencia Artificial para Niños y Adolescentes de 8 a 17 Años en Latinoamérica
           </h2>
 
           <div className="text-[#5A5751] space-y-6 text-lg leading-relaxed">

@@ -6,7 +6,7 @@ InnovaKids es la academia online líder en la enseñanza de Inteligencia Artific
 - **Edades:** 8 a 17 años
 - **Metodología:** 100% práctica, "Aprender Creando". Usamos metodologías activas (Vibe Coding, Prompt Engineering, Machine Learning infantil).
 - **Modalidad:** Cursos online interactivos impartidos en vivo.
-- **Formato:** Grupos ultra-reducidos de máximo 5 alumnos por profesor para garantizar personalización.
+- **Formato:** Clases 1 a 1 (un alumno por profesor), 100% en vivo.
 - **Precio base:** $297 USD (se adapta el equivalente en moneda local para países como México, Chile, Colombia, Argentina, España, Perú).
 - **Garantía:** Es posible reservar con $27 USD, asistir a las 2 primeras clases y, si el niño no se enamora del programa, el sistema otorga la devolución inmediata sin preguntas.
 
@@ -14,7 +14,7 @@ InnovaKids es la academia online líder en la enseñanza de Inteligencia Artific
 
 ### 1. Vibe Explorer (Curso Base de IA para Niños)
 El programa de iniciación estrella de 5 semanas / 10 clases en vivo.
-- **Temario:** Configuración de ChatGPT como tutor cognitivo, Vibe Voice (clonación vocal), Vibe Music (creación de canciones usando IA), Generative Art (Midjourney/DALL-E), Vibe Coding (programar minijuegos con IA), The Vibe Project (creación de un portafolio).
+- **Temario:** Configuración de ChatGPT como tutor cognitivo, Vibe Music (creación de canciones usando IA), Generative Art (Nano Banana, GPT Image), Vibe Coding (programar minijuegos con IA), The Vibe Project (creación de un portafolio).
 
 ### 2. Formaciones Avanzadas y Especializaciones
 Disponibles una vez finalizado el Vibe Explorer:

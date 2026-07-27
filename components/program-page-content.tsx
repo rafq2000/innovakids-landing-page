@@ -43,21 +43,12 @@ function useInView<T extends HTMLElement>(opts: IntersectionObserverInit = { thr
    TOOLS & REQUIREMENTS
    ============================================================ */
 const TOOLS_EXPLORER = [
-    { k: "01", name: "ChatGPT / Claude", note: "Razonamiento · escritura" },
-    { k: "02", name: "Suno AI", note: "Composición músical" },
-    { k: "03", name: "Midjourney / Flux", note: "Arte · imagen generativa" },
-    { k: "04", name: "ElevenLabs", note: "Voz clonada · narración" },
-    { k: "05", name: "Cursor + Claude Code", note: "Vibe Coding · apps" },
-    { k: "06", name: "NotebookLM", note: "Estudio · resúmenes" },
-]
-
-const TOOLS_MAKER = [
-    { k: "07", name: "GitHub + Vercel", note: "Deploy · publicación" },
-    { k: "08", name: "Hugging Face", note: "Modelos · Spaces · APIs" },
-    { k: "09", name: "v0.app", note: "UI generativa" },
-    { k: "10", name: "Groq / Cerebras", note: "LLM rápido (1-2 s)" },
-    { k: "11", name: "n8n", note: "Automatización · workflows" },
-    { k: "12", name: "Telegram Bot", note: "Bots conversacionales" },
+    { k: "01", name: "ChatGPT · Gemini · Claude", note: "Razonamiento · escritura" },
+    { k: "02", name: "Suno · Udio", note: "Música · canciones propias" },
+    { k: "03", name: "Nano Banana · GPT Image", note: "Arte · imagen generativa" },
+    { k: "04", name: "Google AI Studio · chat.z.ai", note: "Experimentar con modelos" },
+    { k: "05", name: "CapCut · Google Vids · Polar Beard", note: "Video · edición" },
+    { k: "06", name: "NotebookLM", note: "Estudiar con IA · resúmenes" },
 ]
 
 const REQUIREMENTS = [
@@ -117,7 +108,7 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                                 </span>
                                 <span className="hidden md:inline-block w-10 h-px bg-[#1A1714]/30" />
                                 <span className="hidden md:inline-block font-mono-accent text-[10px] uppercase tracking-[0.28em] text-[#1A1714]/55">
-                                    2 niveles · 20 clases
+                                    10 clases en vivo · 1 a 1
                                 </span>
                             </div>
                             <span className="font-mono-accent text-[10px] uppercase tracking-[0.24em] text-[#1A1714]/50">
@@ -407,9 +398,6 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                             </div>
                         </div>
 
-                        <h3 className="font-display text-2xl md:text-3xl tracking-tight mb-10" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
-                            Explorer
-                        </h3>
                         <div className="grid grid-cols-2 md:grid-cols-3 gap-0 border border-[#1A1714]/12 bg-[#FAF7EF] mb-14">
                             {TOOLS_EXPLORER.map((t, i) => (
                                 <div
@@ -432,30 +420,6 @@ export function ProgramPageContent({ country }: ProgramPageContentProps) {
                             ))}
                         </div>
 
-                        <h3 className="font-display text-2xl md:text-3xl tracking-tight mb-10" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
-                            Maker
-                        </h3>
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-0 border border-[#1A1714]/12 bg-[#FAF7EF]">
-                            {TOOLS_MAKER.map((t, i) => (
-                                <div
-                                    key={t.name}
-                                    className={`relative p-6 md:p-8 border-r border-b border-[#1A1714]/10 last:border-r-0 group transition-all duration-[800ms] ${
-                                        toolsRef.inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
-                                    }`}
-                                    style={{ transitionDelay: `${(i + 6) * 90}ms` }}
-                                >
-                                    <span className="font-display italic text-[#B5522F] leading-none block mb-3 text-xl" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
-                                        {t.k}
-                                    </span>
-                                    <h4 className="font-display text-[#1A1714] leading-tight tracking-[-0.015em] mb-1.5 text-lg" style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}>
-                                        {t.name}
-                                    </h4>
-                                    <p className="font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#1A1714]/55">
-                                        {t.note}
-                                    </p>
-                                </div>
-                            ))}
-                        </div>
                     </div>
                 </section>
 
