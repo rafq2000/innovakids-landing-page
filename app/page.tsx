@@ -87,7 +87,7 @@ export default function Home() {
     "name": "InnovaKids",
     "alternateName": ["InnovaKids LATAM"],
     "url": "https://www.innovakidslatam.com",
-    "description": "Academia líder para que niños y adolescentes de 8 a 17 años aprendan Inteligencia Artificial a tiempo y no se queden atrás. LATAM y España.",
+    "description": "Academia de Inteligencia Artificial para niños y adolescentes de 8 a 17 años: clases en vivo 1 a 1 donde crean proyectos reales. LATAM y España.",
     "inLanguage": "es"
   }
 
@@ -103,7 +103,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Course",
     "name": "Curso de Inteligencia Artificial para Niños y Adolescentes - Que No Se Quede Atrás | InnovaKids",
-    "description": "Para que tu hijo aprenda IA a tiempo y no se quede atrás en la era de la IA. 10 clases por módulo, crea apps, videojuegos y proyectos con IA, y llega preparado al colegio, la universidad y el trabajo. 8-17 años. Clases 1 a 1. Garantía de 10 días.",
+    "description": "Para que tu hijo aprenda a crear con IA, no solo a usarla. 10 clases por módulo, crea apps, videojuegos y proyectos con IA, y llega preparado al colegio, la universidad y el trabajo. 8-17 años. Clases 1 a 1. Garantía de 10 días.",
     "url": "https://www.innovakidslatam.com",
     "image": "https://www.innovakidslatam.com/hero-child-learning-ai.jpg",
     "provider": {

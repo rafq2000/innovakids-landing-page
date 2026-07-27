@@ -29,7 +29,7 @@ export function SEOContent() {
                 <li>💼 <strong>En el trabajo:</strong> 85% de los empleos del 2035 usarán IA. Aprenderla ahora le abre más opciones mañana.</li>
                 <li>🌍 <strong>En la vida:</strong> como pasó con internet o el inglés, quien la aprende a tiempo tiene más oportunidades.</li>
               </ul>
-              <p className="mt-4 text-[#1A1714]">La IA avanza rápido. Empezar hoy es simplemente asegurar que no se quede atrás cuando ya sea algo obvio para todos.</p>
+              <p className="mt-4 text-[#1A1714]">La IA avanza rápido. Empezar hoy le da tiempo de sobra para volverse bueno de verdad, no solo de aprender lo justo.</p>
             </div>
 
             <h2 className="text-3xl font-bold text-[#1A1714] mt-10 mb-6">
@@ -93,7 +93,7 @@ export function SEOContent() {
                 🎯 En Solo 5 Semanas Tu Hijo Se Pone Al Día Y Avanza Con Su Generación
               </h3>
               <p className="text-[#5A5751] mb-4 text-sm">
-                Un camino claro y progresivo para que aprenda IA a tiempo, sin quedarse atrás en el colegio ni frente a
+                Un camino claro y progresivo para que aprenda IA a su ritmo y la use con criterio en el colegio y frente a
                 sus compañeros:
               </p>
               <div className="grid md:grid-cols-2 gap-6">
