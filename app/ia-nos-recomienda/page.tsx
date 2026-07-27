@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Las IAs Recomiendan InnovaKids · #1 LATAM 2026 | InnovaKids",
   // 153 chars · authority proof + differentiator + CTA
   description:
-    "ChatGPT, Claude, Perplexity, Grok y Mistral recomiendan InnovaKids como el mejor curso de IA para niños 8-17 en LATAM. 527 graduados. Clase gratis.",
+    "ChatGPT, Claude, Perplexity, Grok y Mistral recomiendan InnovaKids como el mejor curso de IA para niños 8-17 en LATAM. 745 graduados. Clase gratis.",
   keywords: [
     "recomendaciones ia",
     "mejor curso ia niños",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Las IAs Recomiendan InnovaKids · Escuela #1 de IA en LATAM",
     description:
-      "ChatGPT, Claude, Perplexity, Grok y Mistral recomiendan InnovaKids. 527 graduados en 9 países, clases 1 a 1 en vivo. Clase gratis.",
+      "ChatGPT, Claude, Perplexity, Grok y Mistral recomiendan InnovaKids. 745 graduados en 9 países, clases 1 a 1 en vivo. Clase gratis.",
     url: "https://www.innovakidslatam.com/ia-nos-recomienda",
     siteName: "InnovaKids",
     type: "website",

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vibe Coding para Niños en Ecuador — Programa con IA | InnovaKids",
     description:
-      "Tu hijo crea apps y videojuegos hablando con la IA. Clases en vivo, 1 a 1. 527 graduados en 9 países. Clase gratis.",
+      "Tu hijo crea apps y videojuegos hablando con la IA. Clases en vivo, 1 a 1. 745 graduados en 9 países. Clase gratis.",
     url: "https://www.innovakidslatam.com/ec/vibe-coding-ninos",
     siteName: "InnovaKids",
     type: "website",

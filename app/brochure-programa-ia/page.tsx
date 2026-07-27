@@ -10,7 +10,7 @@ export const metadata = {
   title: "Brochure Programa de IA para Niños 8-17 | InnovaKids",
   // 152 chars · proof + differentiator + CTA
   description:
-    "Brochure del programa de IA para niños 8-17 años. Temario completo, proyectos reales, clases 1 a 1 y garantía 10 días. 527 graduados. Reserva tu clase.",
+    "Brochure del programa de IA para niños 8-17 años. Temario completo, proyectos reales, clases 1 a 1 y garantía 10 días. 745 graduados. Reserva tu clase.",
   keywords: [
     "brochure programa ia niños",
     "programa ia niños temario",
@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Brochure Programa de IA para Niños 8-17 | InnovaKids",
     description:
-      "Temario completo, proyectos reales y clases 1 a 1. 527 graduados, garantía 10 días. Reserva tu clase.",
+      "Temario completo, proyectos reales y clases 1 a 1. 745 graduados, garantía 10 días. Reserva tu clase.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }

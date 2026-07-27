@@ -6,7 +6,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
     title: "Mejores Cursos de Verano Programación e IA Niños 2026 | InnovaKids",
     description:
-        "Mejores cursos de verano de programación e IA para niños 8-17 años en 2026: comparamos precios, metodologías y resultados reales. 527 familias. Lee ya.",
+        "Mejores cursos de verano de programación e IA para niños 8-17 años en 2026: comparamos precios, metodologías y resultados reales. 745 familias. Lee ya.",
     keywords: [
         "cursos verano niños 2026",
         "cursos verano programación niños",

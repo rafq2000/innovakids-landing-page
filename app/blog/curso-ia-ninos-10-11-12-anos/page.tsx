@@ -203,7 +203,7 @@ export default function IANinos10a12Page() {
                 El rol del alumno es el de <em>director creativo</em>, no técnico.
               </p>
               <p>
-                En InnovaKids hemos formado a más de 527 niños y adolescentes en 9 países.
+                En InnovaKids hemos formado a más de 745 niños y adolescentes en 9 países.
                 Los alumnos de 10-12 años son frecuentemente los que más avanzan: combinan
                 creatividad desbordante con la capacidad de aprender herramientas nuevas muy rápido.
               </p>

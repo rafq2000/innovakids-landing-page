@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Clase Gratis de IA para Niños 8-17 · Agenda Hoy | InnovaKids",
   // 151 chars · proof + differentiator + CTA
   description:
-    "Clase gratis de IA para niños 8-17 años: sesión informativa de 30 min con demo en vivo. Sin compromiso, cupos limitados. 527 familias. Agenda hoy.",
+    "Clase gratis de IA para niños 8-17 años: sesión informativa de 30 min con demo en vivo. Sin compromiso, cupos limitados. 745 familias. Agenda hoy.",
   keywords: [
     "clase gratis ia niños",
     "sesión informativa innovakids",
@@ -233,7 +233,7 @@ export default function ClaseGratisPage() {
 
                 <div className="mt-10 pt-6 border-t border-[#1A1714]/15">
                   <p className="text-sm text-[#1A1714]/75 leading-relaxed">
-                    <strong className="text-[#1A1714]">+527 familias</strong> ya confiaron en InnovaKids.
+                    <strong className="text-[#1A1714]">+745 familias</strong> ya confiaron en InnovaKids.
                     Agenda hoy y asegura tu cupo.
                   </p>
                 </div>

@@ -7,7 +7,7 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 export const metadata: Metadata = {
     title: "Inteligencia Artificial para Niños: Guía Completa 2026 | InnovaKids",
     description:
-        "Qué es la IA explicada para niños de 8 a 17, herramientas seguras, actividades en casa y cómo elegir curso. Guía 2026 probada por 527 familias en 9 países.",
+        "Qué es la IA explicada para niños de 8 a 17, herramientas seguras, actividades en casa y cómo elegir curso. Guía 2026 probada por 745 familias en 9 países.",
     keywords: [
         "inteligencia artificial para niños",
         "ia para niños guia",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Inteligencia Artificial para Niños · Guía Completa 2026 | InnovaKids",
         description:
-            "Todo lo que necesitas saber sobre IA para niños 8-17: herramientas, actividades en casa y cómo elegir curso. Probado por 527 familias.",
+            "Todo lo que necesitas saber sobre IA para niños 8-17: herramientas, actividades en casa y cómo elegir curso. Probado por 745 familias.",
         url: "https://www.innovakidslatam.com/blog/inteligencia-artificial-para-ninos",
         siteName: "InnovaKids",
         type: "article",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Inteligencia Artificial para Niños · Guía 2026 | InnovaKids",
         description:
-            "Todo sobre IA para niños 8-17: herramientas, actividades en casa y cómo elegir curso. Probado por 527 familias.",
+            "Todo sobre IA para niños 8-17: herramientas, actividades en casa y cómo elegir curso. Probado por 745 familias.",
         images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
 }

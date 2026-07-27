@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Vibe Coding · Qué Es y Futuro Programación Niños | InnovaKids",
   // 153 chars · proof + differentiator + CTA
   description:
-    "Vibe Coding para niños 8-17 años: qué es, por qué es el futuro de la programación y cómo tu hijo aprende hablando con la IA. 527 familias. Lee la guía.",
+    "Vibe Coding para niños 8-17 años: qué es, por qué es el futuro de la programación y cómo tu hijo aprende hablando con la IA. 745 familias. Lee la guía.",
   keywords: [
     "vibe coding niños",
     "que es vibe coding",

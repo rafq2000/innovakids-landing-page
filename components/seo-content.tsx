@@ -17,7 +17,7 @@ export function SEOContent() {
                 cursos de inteligencia artificial para niños de 8 a 17 años
               </strong>{" "}
               pensados para que tu hijo <strong>aprenda a tiempo</strong> y avance al ritmo de su generación, sin quedarse
-              atrás. Más de 527 familias en LATAM ya tomaron está decisión, con clases en vivo 1 a 1: tu hijo es el
+              atrás. Más de 745 alumnos en LATAM ya tomaron está decisión, con clases en vivo 1 a 1: tu hijo es el
               único alumno en cada sesión.
             </p>
 
@@ -48,7 +48,7 @@ export function SEOContent() {
                 <li className="flex items-start">
                   <span className="text-[#B5522F] mr-3 text-2xl">✓</span>
                   <span>
-                    <strong>Metodología Probada:</strong> +527 niños y adolescentes han completado exitosamente el
+                    <strong>Metodología Probada:</strong> +745 niños y adolescentes han completado exitosamente el
                     programa
                   </span>
                 </li>

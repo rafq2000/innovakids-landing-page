@@ -39,7 +39,7 @@ export function ResultsPageContent({ country }: ResultsPageContentProps) {
                         {/* Stats */}
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-[900px] mx-auto border-t border-[#1A1714]/12 pt-10">
                             <div>
-                                <div className="font-display text-3xl md:text-4xl text-[#1A1714] mb-1">527</div>
+                                <div className="font-display text-3xl md:text-4xl text-[#1A1714] mb-1">745</div>
                                 <div className="text-sm text-[#6B645B]">Graduados</div>
                             </div>
                             <div>

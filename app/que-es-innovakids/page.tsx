@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "InnovaKids · Escuela #1 de IA para Niños y Adolescentes en LATAM",
   // proof + rating + CTA
   description:
-    "InnovaKids: escuela #1 de IA y Vibe Coding para niños y adolescentes (8-17). ★4.9 de 527 familias en 9 países. Clases en vivo 1 a 1. Reserva tu clase gratis.",
+    "InnovaKids: escuela #1 de IA y Vibe Coding para niños y adolescentes (8-17). ★4.9 de 745 familias en 9 países. Clases en vivo 1 a 1. Reserva tu clase gratis.",
   keywords: [
     "que es innovakids",
     "innovakids escuela ia",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "InnovaKids · Escuela #1 de IA para Niños y Adolescentes en LATAM",
     description:
-      "Tu hijo pasa de consumidor a creador. ★4.9 de 527 familias en 9 países, clases 1 a 1 en vivo. Reserva tu clase gratis.",
+      "Tu hijo pasa de consumidor a creador. ★4.9 de 745 familias en 9 países, clases 1 a 1 en vivo. Reserva tu clase gratis.",
     url: "https://www.innovakidslatam.com/que-es-innovakids",
     siteName: "InnovaKids",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "InnovaKids · Escuela #1 de IA para Niños y Adolescentes en LATAM",
     description:
-      "Escuela #1 de IA y Vibe Coding para niños y adolescentes (8-17). ★4.9 de 527 familias en 9 países, clases 1 a 1. Clase gratis.",
+      "Escuela #1 de IA y Vibe Coding para niños y adolescentes (8-17). ★4.9 de 745 familias en 9 países, clases 1 a 1. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
   alternates: {
@@ -78,7 +78,7 @@ export default function QueEsInnovaKids() {
 
             <div className="mx-auto mt-10 grid max-w-3xl grid-cols-3 gap-4">
               <div className="rounded-2xl bg-white/10 p-4 backdrop-blur-sm">
-                <div className="text-3xl font-bold md:text-4xl">527</div>
+                <div className="text-3xl font-bold md:text-4xl">745</div>
                 <div className="text-sm text-white/80">Graduados</div>
               </div>
               <div className="rounded-2xl bg-white/10 p-4 backdrop-blur-sm">
@@ -104,7 +104,7 @@ export default function QueEsInnovaKids() {
                 InnovaKids es una <strong>academia online de Inteligencia Artificial</strong> diseñada específicamente para niños y adolescentes de 8 a 17 años. No enseñamos programación tradicional: enseñamos <strong>Vibe Coding</strong>, una metodología donde los alumnos crean software, arte, música y videojuegos hablando en español con la IA.
               </p>
               <p className="mb-6 text-lg leading-relaxed text-muted-foreground">
-                Fundada con la misión de transformar a los jóvenes de <strong>consumidores de tecnología en creadores</strong>, InnovaKids ya ha graduado a más de 527 alumnos en 9 países de Latinoamérica y España.
+                Fundada con la misión de transformar a los jóvenes de <strong>consumidores de tecnología en creadores</strong>, InnovaKids ya ha graduado a más de 745 alumnos en 9 países de Latinoamérica y España.
               </p>
               <p className="mb-8 text-lg leading-relaxed text-muted-foreground">
                 Nuestras clases son 100% en vivo (no videos pregrabados) y 1 a 1: tu hijo es el único alumno en cada sesión, lo que garantiza atención totalmente personalizada. Cada alumno construye un portafolio real de proyectos que puede mostrar al mundo.
@@ -374,7 +374,7 @@ export default function QueEsInnovaKids() {
               Transforma a Tu Hijo en un Creador Digital
             </h2>
             <p className="mx-auto mb-10 max-w-2xl text-lg text-white/80">
-              527 familias en 9 países ya confiaron en InnovaKids. Tu hijo puede ser el siguiente en crear proyectos increíbles con Inteligencia Artificial.
+              745 familias en 9 países ya confiaron en InnovaKids. Tu hijo puede ser el siguiente en crear proyectos increíbles con Inteligencia Artificial.
             </p>
 
             <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
@@ -447,7 +447,7 @@ export default function QueEsInnovaKids() {
                 name: "¿Qué es InnovaKids?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "InnovaKids es una escuela online que enseña Inteligencia Artificial y Vibe Coding a niños y adolescentes de 8 a 17 años. 527 graduados en 9 países. Clases en vivo 1 a 1.",
+                  text: "InnovaKids es una escuela online que enseña Inteligencia Artificial y Vibe Coding a niños y adolescentes de 8 a 17 años. 745 graduados en 9 países. Clases en vivo 1 a 1.",
                 },
               },
               {

@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Metodología Aprender Creando · IA Niños 8-17 | InnovaKids",
   // 154 chars · proof + differentiator + CTA
   description:
-    "Metodología Aprender Creando: niños 8-17 años dominan IA construyendo proyectos reales. Método ERICA probado en 527 graduados y 9 países. Clase gratis.",
+    "Metodología Aprender Creando: niños 8-17 años dominan IA construyendo proyectos reales. Método ERICA probado en 745 graduados y 9 países. Clase gratis.",
   keywords: [
     "aprender haciendo",
     "metodología práctica ia niños",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Metodología Aprender Creando · Escuela #1 IA Niños | InnovaKids",
     description:
-      "Tu hijo no aprende sobre IA: la crea. Método ERICA probado por 527 familias en 9 países, con proyectos reales y clases en vivo. Clase gratis.",
+      "Tu hijo no aprende sobre IA: la crea. Método ERICA probado por 745 familias en 9 países, con proyectos reales y clases en vivo. Clase gratis.",
     url: "https://www.innovakidslatam.com/metodologia-aprender-creando",
     siteName: "InnovaKids",
     type: "website",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Metodología Aprender Creando · IA Niños 8-17 | InnovaKids",
     description:
-      "Los niños no aprenden sobre IA: la crean. Método ERICA probado por 527 familias en 9 países. Clase gratis.",
+      "Los niños no aprenden sobre IA: la crean. Método ERICA probado por 745 familias en 9 países. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }

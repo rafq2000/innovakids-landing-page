@@ -277,7 +277,7 @@ export function ExitIntentPopup() {
             </div>
 
             <p className="mt-7 text-center font-mono-accent text-[10px] uppercase tracking-[0.22em] text-[#FAF7EF]/30">
-              527 graduados &middot; &#9733; 4.9 &middot; 21 pa&iacute;ses
+              745 alumnos &middot; &#9733; 4.9 &middot; 21 pa&iacute;ses
             </p>
           </>
         )}

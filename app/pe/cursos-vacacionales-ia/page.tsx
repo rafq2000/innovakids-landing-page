@@ -82,7 +82,7 @@ export default function CursosVacacionalesPeruPage() {
               "Clases 1 a 1: atención 100% personalizada garantizada",
               "Desde casa, sin transporte ni logística complicada",
               "Crea un portfolio profesional que puede mostrar en su colegio",
-              "527+ graduados en 9 países avalan nuestra metodología",
+              "745+ graduados en 9 países avalan nuestra metodología",
             ].map((item, i) => (
               <div key={i} className="flex gap-3 items-start">
                 <CheckCircle className="w-6 h-6 text-[#B5522F] flex-shrink-0 mt-0.5" />

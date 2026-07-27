@@ -6,7 +6,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
     title: "Pensamiento Computacional e IA para Niños · STEM 2026 | InnovaKids",
     description:
-        "Pensamiento computacional, Taxonomía de Bloom y STEM aplicados a la IA para niños 8-17 años. Marco educativo probado por 527 familias en 9 países.",
+        "Pensamiento computacional, Taxonomía de Bloom y STEM aplicados a la IA para niños 8-17 años. Marco educativo probado por 745 familias en 9 países.",
     keywords: [
         "pensamiento computacional niños",
         "stem ia educación niños",

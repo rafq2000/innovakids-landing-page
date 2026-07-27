@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "Cursos de IA para Niños por Edad · Inscríbete 2026 | InnovaKids",
   // 154 chars · transactional differentiator + proof + CTA
   description:
-    "Inscríbete en cursos de IA por edad: programas para 8-10, 11-13 y 14-17 años. Clases en vivo 1 a 1, 527 graduados en 9 países. Clase gratis.",
+    "Inscríbete en cursos de IA por edad: programas para 8-10, 11-13 y 14-17 años. Clases en vivo 1 a 1, 745 graduados en 9 países. Clase gratis.",
   keywords: [
     "cursos ia niños por edad",
     "curso ia niños 10 años",

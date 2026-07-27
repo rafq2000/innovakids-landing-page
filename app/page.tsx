@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Niños y Adolescentes (8-17) · Clase Gratis | InnovaKids",
     description:
-      "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases en vivo 1 a 1. ★4.9 de 527 familias. Agenda su diagnóstico gratis hoy.",
+      "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases en vivo 1 a 1. ★4.9 de 745 alumnos. Agenda su diagnóstico gratis hoy.",
     url: "https://www.innovakidslatam.com",
     type: "website",
     locale: "es_419",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Curso de IA para Niños y Adolescentes (8-17) | InnovaKids",
     description:
-      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Clases 1 a 1. ★4.9 de 527 familias. Diagnóstico gratis.",
+      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Clases 1 a 1. ★4.9 de 745 alumnos. Diagnóstico gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -149,7 +149,7 @@ export default function Home() {
         {/* 5 - PROYECTOS: galería visual del dream outcome — lo que crean los alumnos */}
         <div className="cv-auto"><ProjectsGallery /></div>
 
-        {/* 6 - STATS: números que refuerzan la prueba social (527 familias, 4.9★, 98%) */}
+        {/* 6 - STATS: números que refuerzan la prueba social (745 alumnos, 4.9★, 98%) */}
         <div className="cv-auto"><StatsSection /></div>
 
         {/* 7 - CÓMO FUNCIONA: 3 pasos → reducir esfuerzo percibido */}

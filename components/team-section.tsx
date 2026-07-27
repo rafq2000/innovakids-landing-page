@@ -1,21 +1,21 @@
 const teamMembers = [
   {
-    name: "Equipo Acad\u00e9mico",
-    role: "Instructores certificados",
-    bio: "Profesionales de tecnolog\u00eda con formaci\u00f3n pedag\u00f3gica. Cada instructor da clases 1 a 1, un alumno a la vez.",
-    initials: "EA",
+    name: "Profesores",
+    role: "Formación en tecnología y pedagogía",
+    bio: "Cada profesor enseña 1 a 1: un alumno a la vez, con cámara encendida y la clase abierta para que el padre entre cuando quiera.",
+    initials: "PR",
   },
   {
-    name: "Equipo de Soporte",
-    role: "Atenci\u00f3n a familias",
-    bio: "Disponibles por WhatsApp de 9:00 a 20:00 (GMT-4). Respuesta promedio: 5 minutos.",
-    initials: "ES",
+    name: "Selección y seguridad",
+    role: "Antes de entrar a una clase",
+    bio: "Todo profesor pasa por entrevista, prueba de clase y revisión de antecedentes. Las clases se dictan en salas privadas por familia, nunca en enlaces públicos.",
+    initials: "SS",
   },
   {
-    name: "Metodolog\u00eda ERICA",
-    role: "Dise\u00f1o curricular",
-    bio: "Programa de 50 clases calibrado por edad. Actualizado cada cohorte con las \u00faltimas herramientas de IA.",
-    initials: "ME",
+    name: "Soporte a familias",
+    role: "Atención directa",
+    bio: "Un canal de WhatsApp con personas reales, de 9:00 a 20:00 (hora Chile). Si algo falla en una clase, se reagenda sin costo.",
+    initials: "SF",
   },
 ]
 
@@ -89,7 +89,7 @@ export function TeamSection() {
           <p
             className="text-center text-sm md:text-base text-[var(--ink-muted)] leading-relaxed"
           >
-            Empresa constituida en Chile {"\u00b7"} RUT 78.388.703-7 {"\u00b7"} M{"\u00e1"}s de 527 familias conf{"\u00ed"}an en nosotros
+            Empresa constituida en Chile {"\u00b7"} RUT 78.388.703-7 {"\u00b7"} M{"\u00e1"}s de 745 alumnos conf{"\u00ed"}an en nosotros
           </p>
         </div>
       </div>

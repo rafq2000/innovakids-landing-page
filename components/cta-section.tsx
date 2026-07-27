@@ -59,7 +59,7 @@ export function CTASection() {
                 </div>
                 <div className="flex items-center gap-2">
                   <ArrowRight className="h-5 w-5 text-white" />
-                  <span className="text-sm md:text-base font-bold text-white">527 familias nos eligieron</span>
+                  <span className="text-sm md:text-base font-bold text-white">745 alumnos nos eligieron</span>
                 </div>
               </div>
             </div>

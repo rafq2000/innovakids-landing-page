@@ -5,7 +5,7 @@ export const metadata = {
   title: "Contacto · Curso de IA para Niños 8-17 | InnovaKids",
   // 152 chars · proof + differentiator + CTA
   description:
-    "Contáctanos para resolver dudas sobre el curso de IA para niños 8-17 años. Soporte por WhatsApp, email y llamada. 527 familias en 9 países. Escríbenos.",
+    "Contáctanos para resolver dudas sobre el curso de IA para niños 8-17 años. Soporte por WhatsApp, email y llamada. 745 familias en 9 países. Escríbenos.",
   keywords: [
     "contacto innovakids",
     "contacto curso ia niños",
@@ -18,7 +18,7 @@ export const metadata = {
   openGraph: {
     title: "Contacto · InnovaKids Curso de IA para Niños 8-17 años",
     description:
-      "Contáctanos por WhatsApp, email o llamada. Resolvemos tus dudas sobre el curso de IA para niños 8-17 años. 527 familias en 9 países.",
+      "Contáctanos por WhatsApp, email o llamada. Resolvemos tus dudas sobre el curso de IA para niños 8-17 años. 745 familias en 9 países.",
     url: "https://www.innovakidslatam.com/contacto",
     siteName: "InnovaKids",
     type: "website",

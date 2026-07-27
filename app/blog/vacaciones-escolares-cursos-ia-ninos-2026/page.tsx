@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Actividades de Tecnología en Vacaciones Escolares 2026 · Niños | InnovaKids",
   // 155 chars · activity-focused + proof + CTA
   description:
-    "Actividades de tecnología e IA para niños 8-17 en vacaciones escolares 2026. Ideas productivas y creativas para el receso. 527 familias en 9 países.",
+    "Actividades de tecnología e IA para niños 8-17 en vacaciones escolares 2026. Ideas productivas y creativas para el receso. 745 familias en 9 países.",
   keywords: [
     "actividades tecnología vacaciones escolares",
     "vacaciones productivas niños tecnología",

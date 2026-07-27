@@ -392,7 +392,7 @@ export default function ExtraescolarIAPage() {
             </h2>
             <p className="text-[#F5F1E8]/70 max-w-[50ch] mx-auto leading-relaxed mb-8">
               Primera clase 100% gratis. Clases 1 a 1, individuales.
-              Clases en vivo. 527 graduados en 9 países. ★4.9.
+              Clases en vivo. 745 graduados en 9 países. ★4.9.
             </p>
             <Link
               href="/"

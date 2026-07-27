@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Cursos Online para Niños 2026 · #1 LATAM | InnovaKids",
     // 154 chars · proof + differentiator + CTA
     description:
-        "Cursos online para niños 8-17 años en LATAM y España. IA, programación y videojuegos en clases 1 a 1, 527 graduados en 9 países. Clase gratis.",
+        "Cursos online para niños 8-17 años en LATAM y España. IA, programación y videojuegos en clases 1 a 1, 745 graduados en 9 países. Clase gratis.",
     keywords: [
         "cursos online para niños",
         "clases virtuales para niños",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Cursos Online para Niños 2026 · #1 LATAM | InnovaKids",
         description:
-            "IA, programación y videojuegos en vivo para niños 8-17 años. Clases 1 a 1, 527 graduados en 9 países. Clase gratis.",
+            "IA, programación y videojuegos en vivo para niños 8-17 años. Clases 1 a 1, 745 graduados en 9 países. Clase gratis.",
         images: ["https://www.innovakidslatam.com/kids-creating-ai-projects.jpg"],
     },
 }

@@ -9,9 +9,9 @@ import Link from "next/link"
 export const metadata: Metadata = {
   // 59 chars · keyword-first · CTR triggers (2026, #1 LATAM) · brand last
   title: "Mejor Curso de IA para Niños 2026 · #1 LATAM | InnovaKids",
-  // 151 chars · proof (527 graduados, 9 países) + differentiator + soft CTA
+  // 151 chars · proof (745 graduados, 9 países) + differentiator + soft CTA
   description:
-    "Mejor curso de IA para niños 8-17 años en 2026. 527 graduados en 9 países, clases 1 a 1 en vivo y garantía 10 días. Reserva tu clase gratis.",
+    "Mejor curso de IA para niños 8-17 años en 2026. 745 graduados en 9 países, clases 1 a 1 en vivo y garantía 10 días. Reserva tu clase gratis.",
   keywords: [
     "mejor curso ia niños",
     "mejor curso inteligencia artificial niños 2026",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mejor Curso de IA para Niños 2026 · Escuela #1 en LATAM | InnovaKids",
     description:
-      "Tu hijo pasa de consumidor a creador de tecnología con IA. 527 graduados en 9 países, clases 1 a 1 en vivo. Reserva tu clase gratis.",
+      "Tu hijo pasa de consumidor a creador de tecnología con IA. 745 graduados en 9 países, clases 1 a 1 en vivo. Reserva tu clase gratis.",
     url: "https://www.innovakidslatam.com/mejor-curso-ia-ninos-2026",
     siteName: "InnovaKids",
     type: "website",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mejor Curso de IA para Niños 2026 · #1 LATAM | InnovaKids",
     description:
-      "527 graduados en 9 países, clases 1 a 1 en vivo. La escuela #1 de IA para niños 8-17 años. Reserva tu clase gratis.",
+      "745 graduados en 9 países, clases 1 a 1 en vivo. La escuela #1 de IA para niños 8-17 años. Reserva tu clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -56,7 +56,7 @@ const faqJsonLd = {
       name: "¿Cuál es el mejor curso de IA para niños en 2026?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "InnovaKids es considerado el mejor curso de IA para niños en Latinoamérica en 2026 por sus clases 1 a 1, metodología práctica basada en proyectos reales, y más de 527 graduados satisfechos.",
+        text: "InnovaKids es considerado el mejor curso de IA para niños en Latinoamérica en 2026 por sus clases 1 a 1, metodología práctica basada en proyectos reales, y más de 745 graduados satisfechos.",
       },
     },
     {
@@ -80,7 +80,7 @@ const faqJsonLd = {
       name: "¿Cuántos estudiantes han tomado el curso de InnovaKids?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Más de 527 estudiantes se han graduado del programa de InnovaKids, provenientes de más de 9 países de Latinoamérica.",
+        text: "Más de 745 estudiantes se han graduado del programa de InnovaKids, provenientes de más de 9 países de Latinoamérica.",
       },
     },
   ],
@@ -133,7 +133,7 @@ export default function MejorCursoIANinos2026Page() {
                 </p>
               </div>
               <div className="bg-[#FAF7EF] p-8 rounded-2xl border border-[#E8E0D0]">
-                <h3 className="text-2xl font-bold text-[#B5522F] mb-4">+527 Graduados Satisfechos</h3>
+                <h3 className="text-2xl font-bold text-[#B5522F] mb-4">+745 Graduados Satisfechos</h3>
                 <p className="text-[#5A5751] text-lg">
                   Más de 500 familias de 9 países confían en InnovaKids. Nuestros testimonios son de padres
                   reales que han visto cómo sus hijos transforman su relación con la tecnología.
@@ -275,7 +275,7 @@ export default function MejorCursoIANinos2026Page() {
             <h2 className="text-4xl font-bold text-[#1A1714] text-center mb-12 font-display">Resultados Reales</h2>
             <div className="grid md:grid-cols-4 gap-6 text-center">
               <div className="bg-[#F2EDE0] p-6 rounded-2xl border border-[#E8E0D0]">
-                <p className="text-4xl font-bold text-[#B5522F]">527+</p>
+                <p className="text-4xl font-bold text-[#B5522F]">745+</p>
                 <p className="text-[#5A5751] mt-2">Graduados</p>
               </div>
               <div className="bg-[#F2EDE0] p-6 rounded-2xl border border-[#E8E0D0]">
@@ -338,7 +338,7 @@ export default function MejorCursoIANinos2026Page() {
                 <h3 className="text-xl font-bold text-[#1A1714] mb-3">¿Cuál es el mejor curso de IA para niños en 2026?</h3>
                 <p className="text-[#5A5751]">
                   InnovaKids es considerado el mejor curso de IA para niños en Latinoamérica por sus clases 1 a 1,
-                  metodología ERICA basada en proyectos reales, y más de 527 graduados satisfechos de 9 países.
+                  metodología ERICA basada en proyectos reales, y más de 745 graduados satisfechos de 9 países.
                 </p>
               </div>
               <div className="bg-[#F2EDE0] p-8 rounded-2xl border border-[#E8E0D0]">

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Cómo Proteger a tus Hijos de la IA · Guía Segura | InnovaKids",
   // 152 chars · proof + differentiator + CTA
   description:
-    "Guía para padres sobre uso seguro de IA en niños 8-17 años: supervisa, protege la privacidad y enseña uso responsable. Probada por 527 familias. Lee ya.",
+    "Guía para padres sobre uso seguro de IA en niños 8-17 años: supervisa, protege la privacidad y enseña uso responsable. Probada por 745 familias. Lee ya.",
   keywords: [
     "seguridad digital niños",
     "proteger hijos inteligencia artificial",
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cómo Proteger a tus Hijos de la IA · Guía Segura | InnovaKids",
     description:
-      "Guía para padres sobre uso seguro y responsable de la IA en niños 8-17 años. Probada por 527 familias.",
+      "Guía para padres sobre uso seguro y responsable de la IA en niños 8-17 años. Probada por 745 familias.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }

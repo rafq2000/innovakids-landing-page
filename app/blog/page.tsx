@@ -7,7 +7,7 @@ import { Footer } from "@/components/footer"
 export const metadata: Metadata = {
   title: "Blog · IA para Niños 8-17 · Guías 2026 | InnovaKids",
   description:
-    "Blog de IA para niños 8-17 años: guías 2026, consejos para padres, comparativas y tendencias. Expertos de 527 familias en 9 países. Lee artículos hoy.",
+    "Blog de IA para niños 8-17 años: guías 2026, consejos para padres, comparativas y tendencias. Expertos de 745 familias en 9 países. Lee artículos hoy.",
   keywords: [
     "blog inteligencia artificial niños",
     "educación tecnológica infantil",

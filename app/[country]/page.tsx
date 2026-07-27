@@ -31,7 +31,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
         title: country.metaTitle,
         description: country.metaDescription,
-        keywords: [...country.keywords, ...country.longTailKeywords],
         alternates: {
             canonical: url,
             languages: generateHreflangs("home"),

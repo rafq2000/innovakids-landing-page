@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Cómo Enseñar IA a Mis Hijos 8-17 años · 2026 | InnovaKids",
   // 153 chars · proof + differentiator + CTA
   description:
-    "Cómo enseñar IA a tus hijos 8-17 años: guía paso a paso probada por 527 familias en 9 países. Método activo, clases 1 a 1 en vivo. Clase gratis.",
+    "Cómo enseñar IA a tus hijos 8-17 años: guía paso a paso probada por 745 familias en 9 países. Método activo, clases 1 a 1 en vivo. Clase gratis.",
   keywords: [
     "cómo enseñar ia a mis hijos",
     "cómo aprender ia",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cómo Enseñar IA a Mis Hijos: Guía Completa 2026 | InnovaKids",
     description:
-      "Tu hijo pasa de consumidor a creador. Guía probada por 527 familias en 9 países, con clases 1 a 1 en vivo. Clase gratis.",
+      "Tu hijo pasa de consumidor a creador. Guía probada por 745 familias en 9 países, con clases 1 a 1 en vivo. Clase gratis.",
     url: "https://www.innovakidslatam.com/como-ensenar-ia-a-mis-hijos",
     siteName: "InnovaKids",
     type: "article",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cómo Enseñar IA a Mis Hijos 8-17 años · 2026 | InnovaKids",
     description:
-      "Guía probada por 527 familias en 9 países. Método activo, clases 1 a 1 en vivo. Clase gratis.",
+      "Guía probada por 745 familias en 9 países. Método activo, clases 1 a 1 en vivo. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -74,7 +74,7 @@ export default function ComoEnsenarIAPage() {
 
             <div className="flex flex-wrap justify-center gap-6 pt-8">
               <div className="bg-[#F5F1E8] border border-[#1A1714]/12 px-8 py-4 rounded-sm">
-                <p className="text-[#B5522F] font-bold">+527 Familias</p>
+                <p className="text-[#B5522F] font-bold">+745 Familias</p>
               </div>
               <div className="bg-[#F5F1E8] border border-[#1A1714]/12 px-8 py-4 rounded-sm">
                 <p className="text-[#B5522F] font-bold">Método Probado</p>
@@ -259,7 +259,7 @@ export default function ComoEnsenarIAPage() {
             <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-[#B5522F] mb-4">Nuestra solución</p>
             <h2 className="text-5xl md:text-6xl font-display text-[#1A1714] mb-6">Cómo InnovaKids Te Ayuda</h2>
             <p className="text-2xl text-[#6B645B]">
-              Hemos perfeccionado la forma de enseñar IA a niños con +527 familias
+              Hemos perfeccionado la forma de enseñar IA a niños con +745 familias
             </p>
           </div>
 

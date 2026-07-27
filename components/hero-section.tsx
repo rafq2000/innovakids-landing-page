@@ -136,7 +136,7 @@ export function HeroSection() {
             <div className="mt-6 flex items-center gap-5 text-[11px] font-mono-accent uppercase tracking-[0.16em] text-[var(--ink-muted)]">
               <span className="flex items-center gap-1.5">
                 <span className="text-[var(--terracotta)] text-sm not-italic">★</span>
-                <span><strong className="text-[var(--ink)] font-semibold">4.9</strong>/5 · 527 familias</span>
+                <span><strong className="text-[var(--ink)] font-semibold">4.9</strong>/5 · 745 alumnos</span>
               </span>
               <span className="hidden sm:inline opacity-40">·</span>
               <span className="hidden sm:inline">10 días de garantía</span>

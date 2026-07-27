@@ -68,7 +68,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Curso de IA para Niños y Adolescentes (8-17) · Clase Gratis | InnovaKids",
     description:
-      "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases 1 a 1. ★4.9 de 527 familias. Agenda su diagnóstico gratis hoy.",
+      "Tu hijo crea apps, videojuegos y proyectos reales con IA en 5 semanas. Clases 1 a 1. ★4.9 de 745 alumnos. Agenda su diagnóstico gratis hoy.",
     url: "https://www.innovakidslatam.com",
     siteName: "InnovaKids",
     images: [
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Curso de IA para Niños y Adolescentes (8-17) | InnovaKids",
     description:
-      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Clases 1 a 1. ★4.9 de 527 familias. Clase gratis.",
+      "Tu hijo crea apps y videojuegos con IA en 5 semanas. Clases 1 a 1. ★4.9 de 745 alumnos. Clase gratis.",
     images: ["/hero-child-learning-ai.jpg"],
   },
   robots: {

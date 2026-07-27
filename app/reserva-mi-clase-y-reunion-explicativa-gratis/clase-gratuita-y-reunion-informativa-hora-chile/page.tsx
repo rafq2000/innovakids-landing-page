@@ -9,7 +9,7 @@ export const metadata = {
   title: "Reserva Clase Gratis de IA para Niños · Hora Chile | InnovaKids",
   // 154 chars · proof + differentiator + CTA
   description:
-    "Reserva tu clase gratis y reunión informativa sobre el curso de IA para niños 8-17 años (hora Chile). Demo en vivo, sin compromiso. 527 familias. Agenda hoy.",
+    "Reserva tu clase gratis y reunión informativa sobre el curso de IA para niños 8-17 años (hora Chile). Demo en vivo, sin compromiso. 745 familias. Agenda hoy.",
   keywords: [
     "reserva clase gratis ia niños",
     "reunion informativa curso ia niños",

@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react"
 const stats = [
   {
     icon: Users,
-    value: 527,
+    value: 745,
     suffix: "+",
     label: "Familias nos eligieron",
     description: "En 9 países de Latinoamérica y España",
@@ -86,7 +86,7 @@ export function StatsSection() {
       <div className="relative container mx-auto px-4">
         <div className="mx-auto mb-12 max-w-3xl text-center">
           <h2 className="mb-4 text-balance text-3xl font-bold text-white md:text-4xl animate-fadeInUp">
-            527 familias en 9 países ya lo viven
+            745 alumnos en 9 países ya lo viven
           </h2>
         </div>
 

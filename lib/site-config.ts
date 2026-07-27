@@ -39,7 +39,7 @@ export const PRICING = {
 /* ─── SOCIAL PROOF ────────────────────────────────────── */
 
 export const SOCIAL_PROOF = {
-  graduates: 527,
+  graduates: 745,
   rating: 4.9,
   reviews: 127,
   countries: 9,

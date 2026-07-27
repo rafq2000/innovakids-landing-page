@@ -5,9 +5,9 @@ import { WhatsAppButton } from "@/components/whatsapp-button"
 import Link from "next/link"
 
 export const metadata = {
-  title: "Testimonios · 527 Familias y 4.9★ de Padres | InnovaKids",
+  title: "Testimonios · 745 Familias y 4.9★ de Padres | InnovaKids",
   description:
-    "Testimonios reales de 527 familias en 9 países sobre el curso de IA para niños 8-17 años. 4.9★ de padres. Mira sus experiencias. Reserva tu clase gratis.",
+    "Testimonios reales de 745 familias en 9 países sobre el curso de IA para niños 8-17 años. 4.9★ de padres. Mira sus experiencias. Reserva tu clase gratis.",
   keywords: [
     "testimonios innovakids",
     "opiniones curso ia niños",
@@ -19,9 +19,9 @@ export const metadata = {
     canonical: "https://www.innovakidslatam.com/testimonios",
   },
   openGraph: {
-    title: "Testimonios · 527 Familias y 4.9★ | InnovaKids",
+    title: "Testimonios · 745 Familias y 4.9★ | InnovaKids",
     description:
-      "Experiencias reales de 527 familias en 9 países. 4.9★ de padres sobre el curso de IA para niños 8-17 años. Reserva tu clase gratis.",
+      "Experiencias reales de 745 familias en 9 países. 4.9★ de padres sobre el curso de IA para niños 8-17 años. Reserva tu clase gratis.",
     url: "https://www.innovakidslatam.com/testimonios",
     siteName: "InnovaKids",
     type: "website",
@@ -35,9 +35,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Testimonios · 527 Familias y 4.9★ | InnovaKids",
+    title: "Testimonios · 745 Familias y 4.9★ | InnovaKids",
     description:
-      "Experiencias de 527 familias en 9 países. 4.9★ de padres sobre el curso de IA para niños 8-17. Clase gratis.",
+      "Experiencias de 745 familias en 9 países. 4.9★ de padres sobre el curso de IA para niños 8-17. Clase gratis.",
     images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
   },
 }
@@ -58,7 +58,7 @@ export default function TestimoniosPage() {
             <div className="flex items-center gap-3 mb-6">
               <span className="h-px w-10 bg-[#C96342]" aria-hidden />
               <span className="text-[11px] tracking-[0.28em] uppercase text-[#B5522F] font-semibold">
-                527 familias · 9 países · 4.9★
+                745 familias · 9 países · 4.9★
               </span>
             </div>
             <h1

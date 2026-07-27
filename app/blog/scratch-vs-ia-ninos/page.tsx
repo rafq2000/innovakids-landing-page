@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Scratch vs IA para Niños · ¿Qué Aprender Primero? 2026 | InnovaKids",
   // 151 chars · honesto + differentiator + CTA
   description:
-    "Scratch vs IA para niños 8-17 años: comparativa honesta 2026 para decidir qué aprender primero según edad e intereses. 527 familias. Lee el análisis.",
+    "Scratch vs IA para niños 8-17 años: comparativa honesta 2026 para decidir qué aprender primero según edad e intereses. 745 familias. Lee el análisis.",
   keywords: [
     "scratch vs ia niños",
     "scratch o inteligencia artificial",

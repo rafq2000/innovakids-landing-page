@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Qué IA Enseñar Según la Edad de tu Hijo · Guía 2026 | InnovaKids",
   // 155 chars · informational differentiator + proof + CTA
   description:
-    "Qué puede aprender tu hijo sobre IA según su edad: guía 2026 con actividades para 8-10, 11-13 y 14-17 años. Proyectos reales probados por 527 familias.",
+    "Qué puede aprender tu hijo sobre IA según su edad: guía 2026 con actividades para 8-10, 11-13 y 14-17 años. Proyectos reales probados por 745 familias.",
   keywords: [
     "que ia enseñar segun edad",
     "actividades ia por edad niños",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Qué IA Enseñar Según la Edad de tu Hijo · Guía 2026 | InnovaKids",
     description:
-      "Guía 2026: qué puede aprender tu hijo sobre IA según su edad. Actividades y proyectos reales para cada grupo probados por 527 familias.",
+      "Guía 2026: qué puede aprender tu hijo sobre IA según su edad. Actividades y proyectos reales para cada grupo probados por 745 familias.",
     url: "https://www.innovakidslatam.com/blog/ia-para-ninos-por-edad-8-10-11-13-14-17",
     siteName: "InnovaKids",
     type: "article",

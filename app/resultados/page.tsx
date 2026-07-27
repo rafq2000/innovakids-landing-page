@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: "Resultados · Proyectos Reales Niños 8-17 con IA | InnovaKids",
     // 154 chars · proof + differentiator + CTA
     description:
-        "Mira lo que crean niños 8-17 años con IA en InnovaKids: videojuegos, arte, música y apps. 527 graduados, 9 países, 4.9★. Clase gratis.",
+        "Mira lo que crean niños 8-17 años con IA en InnovaKids: videojuegos, arte, música y apps. 745 graduados, 9 países, 4.9★. Clase gratis.",
     keywords: [
         "resultados innovakids",
         "proyectos ia niños",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: "Resultados · Proyectos Reales de Niños con IA | InnovaKids",
         description:
-            "Videojuegos, arte, música y apps creados por niños 8-17 años con IA. 527 graduados en 9 países, 4.9★. Reserva tu clase gratis.",
+            "Videojuegos, arte, música y apps creados por niños 8-17 años con IA. 745 graduados en 9 países, 4.9★. Reserva tu clase gratis.",
         url: "https://www.innovakidslatam.com/resultados",
         siteName: "InnovaKids",
         type: "website",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         card: "summary_large_image",
         title: "Resultados · Proyectos Reales Niños 8-17 con IA | InnovaKids",
         description:
-            "Videojuegos, arte, música y apps creados por niños 8-17. 527 graduados en 9 países, 4.9★. Clase gratis.",
+            "Videojuegos, arte, música y apps creados por niños 8-17. 745 graduados en 9 países, 4.9★. Clase gratis.",
         images: ["https://www.innovakidslatam.com/hero-child-learning-ai.jpg"],
     },
     alternates: {

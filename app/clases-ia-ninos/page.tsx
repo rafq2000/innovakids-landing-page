@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Clases de IA para Niños 8-17 años · En vivo | InnovaKids",
   // 152 chars · proof points (4.9★, clases 1 a 1) + CTA
   description:
-    "Clases de IA para niños 8-17 años en vivo. Crea apps, videojuegos y arte con ChatGPT. Clases 1 a 1, 4.9★ de 527 familias. Clase gratis.",
+    "Clases de IA para niños 8-17 años en vivo. Crea apps, videojuegos y arte con ChatGPT. Clases 1 a 1, 4.9★ de 745 familias. Clase gratis.",
   keywords: [
     "clases ia niños",
     "clases inteligencia artificial niños",
