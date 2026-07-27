@@ -66,15 +66,14 @@ export function HeroSection() {
         {/* ============ EDITORIAL H1 (compacto, fits in viewport) ============ */}
         <div className="relative mb-8 md:mb-10">
           <h1 className="rise rise-2 font-display text-[44px] sm:text-[64px] md:text-[80px] lg:text-[96px] leading-[0.92] tracking-[-0.035em] text-[var(--ink)] max-w-[18ch]">
-            Que tu hijo
+            Tu hijo puede
             <br />
-            no se quede{" "}
             <span className="relative inline-block">
               <em
                 className="italic text-[var(--terracotta)]"
                 style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
               >
-                atrás
+                crear
               </em>
               {/* hand-drawn scribble underline */}
               <svg
@@ -93,12 +92,12 @@ export function HeroSection() {
               </svg>
             </span>
             <br />
-            <span className="text-[var(--ink-soft)]">en la era de la </span>
+            <span className="text-[var(--ink-soft)]">con IA, no solo </span>
             <em
               className="italic"
               style={{ fontVariationSettings: '"opsz" 144, "SOFT" 100' }}
             >
-              IA.
+              usarla.
             </em>
           </h1>
         </div>
